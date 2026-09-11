@@ -6,7 +6,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -68,7 +68,10 @@ jobs:
       - run: node scripts/qa_unit5_f6_ui.mjs
       - run: node scripts/qa_unit6_f6_ui.mjs
       - run: node scripts/qa_site_ux.mjs
-      - run: node scripts/qa_github_pages_static.mjs
+      - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-a
+      - run: PAGES_SITE_ROOT=/tmp/memory-palace-pages-a node scripts/qa_github_pages_static.mjs
+      - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-b
+      - run: diff -qr /tmp/memory-palace-pages-a /tmp/memory-palace-pages-b
       - run: python scripts/qa_site_contrast.py
       - run: python scripts/qa_site_http_live.py
       - run: python -m pytest -q
