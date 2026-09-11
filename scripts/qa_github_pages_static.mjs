@@ -2,7 +2,8 @@ import {readFile} from 'node:fs/promises';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import path from 'node:path';
 
-const ROOT=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
+const SOURCE_ROOT=path.resolve(fileURLToPath(new URL('..',import.meta.url)));
+const ROOT=process.env.PAGES_SITE_ROOT?path.resolve(process.env.PAGES_SITE_ROOT):SOURCE_ROOT;
 const originalFetch=globalThis.fetch;
 globalThis.fetch=async(input)=>{
   const url=input instanceof URL?input:new URL(String(input));
@@ -76,4 +77,4 @@ assert(mixedSets===220,`expected 220 mixed-discrimination sets, got ${mixedSets}
 assert(mixedQuestions===600,`expected 600 mixed questions, got ${mixedQuestions}`);
 
 console.log('GITHUB PAGES STATIC QA PASS');
-console.log(JSON.stringify({units:8,journeys,scenes,quick_recalls:recalls,challenge_lab_items:challenges,review_targets:reviewTargets,mixed_sets:mixedSets,mixed_questions:mixedQuestions,objects_resolved:objectRequests.size},null,2));
+console.log(JSON.stringify({site_root:ROOT,units:8,journeys,scenes,quick_recalls:recalls,challenge_lab_items:challenges,review_targets:reviewTargets,mixed_sets:mixedSets,mixed_questions:mixedQuestions,objects_resolved:objectRequests.size},null,2));
