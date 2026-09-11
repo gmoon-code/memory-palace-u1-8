@@ -1,0 +1,48 @@
+{
+  "schema": "memory-palace-v2-unit8-f6-content-lock-1.0",
+  "unit_id": "unit-8",
+  "stage": "F6",
+  "curriculum_content_changed": false,
+  "files": {
+    "ux-validation-f6.json": "10468d9e7025a4959610b24886857bc3693588f0d29b3c0a232582f2b2e1fbe6",
+    "status-f6.json": "7d7a6abf2c47ab90f4763c6a93d7e146aae30b8c0a8e5e80fb6e1503235efb41",
+    "f6-release-manifest.json": "115cd6ce21625938bae90fbe3da871f0b00606cd0bbcf122bb6b6e83c8785417"
+  },
+  "runtime_file_sha256": {
+    "backend/main.py": "2fb490c24f6df9a2acb04869e02eecb1d7275c3e37037e7b5cd593b866e524e0",
+    "backend/content.py": "0473f60c2495839d818e94bcf6e252a3a31a64fb5eab38aa139f7e7c3c3f6469",
+    "backend/settings.py": "408f9ccf84baacbc7c8b71888c3d696de968949a3be63b95bc4bf8f0c4fb2e5c",
+    "frontend/js/app.js": "acfe768150cacd609e3726dabe44f5cb8b895712113e9ba49e1d4e94faccdd65",
+    "frontend/js/api.js": "7ea249133a6514e49adab56784988954cdea8456f9c40fb5af179e32771f7e44",
+    "frontend/js/audio.js": "cf29a8d1096a6f37ee6c578dd000a9362c834af5cde02e884c1619ba82306d68",
+    "frontend/js/state.js": "35d3828dc39236fa19abe8db71ae6fa32acc331c35a3a8876e925039362549c9",
+    "frontend/js/views/home.js": "eab63293f3aec59fe3843f4f463da82d53a270dcb14674390677eb1f4b9d7006",
+    "frontend/js/views/learn.js": "57489f35dc6fcf021fb639bd05c4cac3f00b37233012c5f1754d5633f0604070",
+    "frontend/js/views/review.js": "dbe4009c72dee6c9e6cf433402a8fc856c8b9612a15be503e6ccd75a59e38c63",
+    "frontend/js/views/practice.js": "9189c8ee87853b0ccf35837531e9c9e25467bd2e97595d2e74dad19737b719a4"
+  },
+  "f5_lock_sha256": "c1e9fe347a0bbc89d8c7ae43c3b5548ca5989b043ebe65120c66e5b795aaee82",
+  "protected_narratives": {
+    "journeys/U8-J1.json": "073ad777339630387ef18f137066f3e0624efe55c4442a574579d7165fc4f73b",
+    "journeys/U8-J2.json": "dbe8d282147135458a6ab425b78a455e6fbe511962aac28e04743c541c7e645a",
+    "journeys/U8-J3.json": "60fc915ba1832e6df96f429ec43dd2c642f7deac904cfff8b149bc7d2d2bd1dc",
+    "journeys/U8-J4.json": "12a450de99d3cde682aac14f02c3060476ba507819e5b376dd21af897102f833",
+    "journeys/U8-J5.json": "d22f79d04292cf343b071c7605ba637ee39c7ca1c50c67d944bb413272dfa65f",
+    "journeys/U8-J6.json": "7fdb9ed6a3bfb4ae270865b31eaec37191202f9c43068b6e965b9d839afee6ea",
+    "journeys/U8-J7.json": "b36e3a0446b4473dc9bdfa156e5f6b98b8a3691276c74ace8e7173a6a7de5876",
+    "journeys/U8-J8.json": "8d9ae2e42bce1669787d7db058aaabeea270a5445614290f806417fed499e2a9"
+  },
+  "protected_upstream_locks": {
+    "f1-source-lock.json": "d792df5d4599dad879a96f623b17d53a8fd4fb34ce1ebe8234560324b132d4da",
+    "content-lock-f2.json": "190b5d99f8f15ada2fed8cd1c954e2060af0022d29da15fd6c96124e558cfbff",
+    "content-lock-f3.json": "26645b159f8d9a503d84ae70dbab83258242769c4355424358fec887a4c1aacb",
+    "content-lock-f4a.json": "2413651fe8fbf636d94aced6891b4a9671c6920c809c67e4258904356534263f",
+    "content-lock-f4b.json": "28d2375cf6ee7f5d11808e734e774bf24672ebd8cd302434bba3baa38513831f",
+    "content-lock-f4c.json": "914144bb3338c20dc8742e347c9ff51a4c808922ffd927c31c74e3d1ca9013ab",
+    "content-lock-f4d.json": "7d9e5f16dc16eae54c430fc22759aad24a7faa718a5acd028eb04ce2d4ac7075",
+    "content-lock-f4e.json": "239a8735ec0f7e23d4297e6f178b203d75827b8c4f2c4d80a2de2ce5887f9a94",
+    "content-lock-f4f.json": "d2f769c6e165ea21de234366535490412bfd6a3e1cd6c148f292722306f76ada",
+    "content-lock-f4g.json": "4813ac22a222cabbfa6a80c017bd05b2a2185487598bb99123a988af2170907c",
+    "content-lock-f4h.json": "104910e8a67885863ed22d7a514aae476d9bb63f9cece767c74817a976db6401"
+  }
+}

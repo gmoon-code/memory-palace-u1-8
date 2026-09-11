@@ -1,0 +1,1816 @@
+{
+  "schema": "memory-palace-v2-unit4-f5-mixed-discrimination-1.0",
+  "unit_id": "unit-4",
+  "set_count": 33,
+  "question_count": 99,
+  "sets": [
+    {
+      "set_id": "U4-CF-01",
+      "title": "Communication scale",
+      "knowledge_ids": [
+        "U4-K-040",
+        "U4-K-044",
+        "U4-K-053"
+      ],
+      "terms": [
+        "direct-contact signaling",
+        "local signaling",
+        "long-distance signaling"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-01-Q01",
+          "prompt": "Which option best matches this scientific description? _____ occurs when cells communicate through cell junctions or _____ interactions between cell-surface molecules.",
+          "choices": [
+            "direct-contact signaling",
+            "local signaling",
+            "long-distance signaling"
+          ],
+          "answer": "direct-contact signaling",
+          "explanation": "Direct-contact signaling occurs when cells communicate through cell junctions or direct interactions between cell-surface molecules.",
+          "knowledge_id": "U4-K-040"
+        },
+        {
+          "question_id": "U4-CF-01-Q02",
+          "prompt": "Which option best matches this scientific description? _____ uses secreted chemical messengers that act over short _____ on nearby target cells.",
+          "choices": [
+            "direct-contact signaling",
+            "local signaling",
+            "long-distance signaling"
+          ],
+          "answer": "local signaling",
+          "explanation": "Local signaling uses secreted chemical messengers that act over short distances on nearby target cells.",
+          "knowledge_id": "U4-K-044"
+        },
+        {
+          "question_id": "U4-CF-01-Q03",
+          "prompt": "Which option best matches this scientific description? _____ uses messengers that travel from _____ cells to _____ target cells.",
+          "choices": [
+            "direct-contact signaling",
+            "local signaling",
+            "long-distance signaling"
+          ],
+          "answer": "long-distance signaling",
+          "explanation": "Long-distance signaling uses messengers that travel from signaling cells to distant target cells.",
+          "knowledge_id": "U4-K-053"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-02",
+      "title": "Direct intercellular channels",
+      "knowledge_ids": [
+        "U4-K-041",
+        "U4-K-042"
+      ],
+      "terms": [
+        "gap junction",
+        "plasmodesmata"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-02-Q01",
+          "prompt": "Which option best matches this scientific description? _____s are intercellular channels in animals that permit regulated passage of ions and small signaling molecules between adjacent cells.",
+          "choices": [
+            "gap junction",
+            "plasmodesmata"
+          ],
+          "answer": "gap junction",
+          "explanation": "Gap junctions are intercellular channels in animals that permit regulated passage of ions and small signaling molecules between adjacent cells.",
+          "knowledge_id": "U4-K-041"
+        },
+        {
+          "question_id": "U4-CF-02-Q02",
+          "prompt": "Which option best matches this scientific description? _____ are membrane-lined channels through plant cell walls that connect cytoplasm of neighboring cells and allow regulated intercellular transport/signaling.",
+          "choices": [
+            "gap junction",
+            "plasmodesmata"
+          ],
+          "answer": "plasmodesmata",
+          "explanation": "Plasmodesmata are membrane-lined channels through plant cell walls that connect cytoplasm of neighboring cells and allow regulated intercellular transport/signaling.",
+          "knowledge_id": "U4-K-042"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-03",
+      "title": "Local signaling vocabulary",
+      "knowledge_ids": [
+        "U4-K-045",
+        "U4-K-046",
+        "U4-K-047"
+      ],
+      "terms": [
+        "local regulator",
+        "ligand",
+        "target cell"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-03-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a secreted signaling molecule that acts on cells in the vicinity of the signaling cell.",
+          "choices": [
+            "local regulator",
+            "ligand",
+            "target cell"
+          ],
+          "answer": "local regulator",
+          "explanation": "A local regulator is a secreted signaling molecule that acts on cells in the vicinity of the signaling cell.",
+          "knowledge_id": "U4-K-045"
+        },
+        {
+          "question_id": "U4-CF-03-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a signaling molecule that binds specifically to a receptor and can initiate a signaling response.",
+          "choices": [
+            "local regulator",
+            "ligand",
+            "target cell"
+          ],
+          "answer": "ligand",
+          "explanation": "A ligand is a signaling molecule that binds specifically to a receptor and can initiate a signaling response.",
+          "knowledge_id": "U4-K-046"
+        },
+        {
+          "question_id": "U4-CF-03-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ responds to a signaling molecule because it has the appropriate receptor and downstream machinery.",
+          "choices": [
+            "local regulator",
+            "ligand",
+            "target cell"
+          ],
+          "answer": "target cell",
+          "explanation": "A target cell responds to a signaling molecule because it has the appropriate receptor and downstream machinery.",
+          "knowledge_id": "U4-K-047"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-04",
+      "title": "Named signaling modes",
+      "knowledge_ids": [
+        "U4-K-048",
+        "U4-K-050",
+        "U4-K-055"
+      ],
+      "terms": [
+        "paracrine signaling",
+        "synaptic signaling",
+        "endocrine signaling"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-04-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is local _____ in which secreted regulators act on nearby target cells.",
+          "choices": [
+            "paracrine signaling",
+            "synaptic signaling",
+            "endocrine signaling"
+          ],
+          "answer": "paracrine signaling",
+          "explanation": "Paracrine signaling is local signaling in which secreted regulators act on nearby target cells.",
+          "knowledge_id": "U4-K-048"
+        },
+        {
+          "question_id": "U4-CF-04-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is specialized local _____ in which a neuron releases neurotransmitter across a narrow _____ cleft to a target cell.",
+          "choices": [
+            "paracrine signaling",
+            "synaptic signaling",
+            "endocrine signaling"
+          ],
+          "answer": "synaptic signaling",
+          "explanation": "Synaptic signaling is specialized local signaling in which a neuron releases neurotransmitter across a narrow synaptic cleft to a target cell.",
+          "knowledge_id": "U4-K-050"
+        },
+        {
+          "question_id": "U4-CF-04-Q03",
+          "prompt": "Which option best matches this scientific description? In animal _____, specialized cells release hormones into circulation, allowing them to reach distant target cells.",
+          "choices": [
+            "paracrine signaling",
+            "synaptic signaling",
+            "endocrine signaling"
+          ],
+          "answer": "endocrine signaling",
+          "explanation": "In animal endocrine signaling, specialized cells release hormones into circulation, allowing them to reach distant target cells.",
+          "knowledge_id": "U4-K-055"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-05",
+      "title": "Synaptic vocabulary",
+      "knowledge_ids": [
+        "U4-K-051",
+        "U4-K-052"
+      ],
+      "terms": [
+        "neurotransmitter",
+        "synaptic cleft"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-05-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a chemical signal released by a _____ that diffuses across a _____ and binds receptors on a target cell.",
+          "choices": [
+            "neurotransmitter",
+            "synaptic cleft"
+          ],
+          "answer": "neurotransmitter",
+          "explanation": "A neurotransmitter is a chemical signal released by a neuron that diffuses across a synaptic cleft and binds receptors on a target cell.",
+          "knowledge_id": "U4-K-051"
+        },
+        {
+          "question_id": "U4-CF-05-Q02",
+          "prompt": "Which option best matches this scientific description? The _____ is the narrow extracellular gap between a presynaptic _____ and its target cell across which _____s diffuse.",
+          "choices": [
+            "neurotransmitter",
+            "synaptic cleft"
+          ],
+          "answer": "synaptic cleft",
+          "explanation": "The synaptic cleft is the narrow extracellular gap between a presynaptic neuron and its target cell across which neurotransmitters diffuse.",
+          "knowledge_id": "U4-K-052"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-06",
+      "title": "Chemical messenger categories",
+      "knowledge_ids": [
+        "U4-K-045",
+        "U4-K-051",
+        "U4-K-054"
+      ],
+      "terms": [
+        "local regulator",
+        "neurotransmitter",
+        "hormone"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-06-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a secreted signaling molecule that acts on cells in the vicinity of the signaling cell.",
+          "choices": [
+            "local regulator",
+            "neurotransmitter",
+            "hormone"
+          ],
+          "answer": "local regulator",
+          "explanation": "A local regulator is a secreted signaling molecule that acts on cells in the vicinity of the signaling cell.",
+          "knowledge_id": "U4-K-045"
+        },
+        {
+          "question_id": "U4-CF-06-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a chemical signal released by a _____ that diffuses across a synaptic cleft and binds receptors on a target cell.",
+          "choices": [
+            "local regulator",
+            "neurotransmitter",
+            "hormone"
+          ],
+          "answer": "neurotransmitter",
+          "explanation": "A neurotransmitter is a chemical signal released by a neuron that diffuses across a synaptic cleft and binds receptors on a target cell.",
+          "knowledge_id": "U4-K-051"
+        },
+        {
+          "question_id": "U4-CF-06-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ is a signaling molecule produced by cells and transported to target cells, often over long distances.",
+          "choices": [
+            "local regulator",
+            "neurotransmitter",
+            "hormone"
+          ],
+          "answer": "hormone",
+          "explanation": "A hormone is a signaling molecule produced by cells and transported to target cells, often over long distances.",
+          "knowledge_id": "U4-K-054"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-07",
+      "title": "Core signaling stages",
+      "knowledge_ids": [
+        "U4-K-058",
+        "U4-K-068",
+        "U4-K-077"
+      ],
+      "terms": [
+        "reception",
+        "transduction",
+        "cellular response"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-07-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is a target cell’s detection of a signaling molecule when the ligand binds its _____.",
+          "choices": [
+            "reception",
+            "transduction",
+            "cellular response"
+          ],
+          "answer": "reception",
+          "explanation": "Reception is a target cell’s detection of a signaling molecule when the ligand binds its receptor.",
+          "knowledge_id": "U4-K-058"
+        },
+        {
+          "question_id": "U4-CF-07-Q02",
+          "prompt": "Which option best matches this scientific description? Signal _____ converts information from _____ activation into intracellular molecular changes that can produce a _____.",
+          "choices": [
+            "reception",
+            "transduction",
+            "cellular response"
+          ],
+          "answer": "transduction",
+          "explanation": "Signal transduction converts information from receptor activation into intracellular molecular changes that can produce a cellular response.",
+          "knowledge_id": "U4-K-068"
+        },
+        {
+          "question_id": "U4-CF-07-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ is the change in cell activity produced by a signaling pathway, such as altered membrane _____, enzyme activity, secretion, growth, or gene expression.",
+          "choices": [
+            "reception",
+            "transduction",
+            "cellular response"
+          ],
+          "answer": "cellular response",
+          "explanation": "A cellular response is the change in cell activity produced by a signaling pathway, such as altered membrane transport, enzyme activity, secretion, growth, or gene expression.",
+          "knowledge_id": "U4-K-077"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-08",
+      "title": "Signal recognition roles",
+      "knowledge_ids": [
+        "U4-K-046",
+        "U4-K-059",
+        "U4-K-047"
+      ],
+      "terms": [
+        "ligand",
+        "receptor",
+        "target cell"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-08-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a signaling molecule that binds specifically to a _____ and can initiate a signaling response.",
+          "choices": [
+            "ligand",
+            "receptor",
+            "target cell"
+          ],
+          "answer": "ligand",
+          "explanation": "A ligand is a signaling molecule that binds specifically to a receptor and can initiate a signaling response.",
+          "knowledge_id": "U4-K-046"
+        },
+        {
+          "question_id": "U4-CF-08-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a macromolecule, usually a protein, whose _____-binding site recognizes particular signaling molecules and whose activation produces an intracellular effect.",
+          "choices": [
+            "ligand",
+            "receptor",
+            "target cell"
+          ],
+          "answer": "receptor",
+          "explanation": "A receptor is a macromolecule, usually a protein, whose ligand-binding site recognizes particular signaling molecules and whose activation produces an intracellular effect.",
+          "knowledge_id": "U4-K-059"
+        },
+        {
+          "question_id": "U4-CF-08-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ responds to a signaling molecule because it has the appropriate _____ and downstream machinery.",
+          "choices": [
+            "ligand",
+            "receptor",
+            "target cell"
+          ],
+          "answer": "target cell",
+          "explanation": "A target cell responds to a signaling molecule because it has the appropriate receptor and downstream machinery.",
+          "knowledge_id": "U4-K-047"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-09",
+      "title": "Receptor location",
+      "knowledge_ids": [
+        "U4-K-062",
+        "U4-K-063"
+      ],
+      "terms": [
+        "cell-surface receptor",
+        "intracellular receptor"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-09-Q01",
+          "prompt": "Which option best matches this scientific description? _____s span or associate with the plasma membrane and are used by signaling molecules that do not readily cross the lipid bilayer.",
+          "choices": [
+            "cell-surface receptor",
+            "intracellular receptor"
+          ],
+          "answer": "cell-surface receptor",
+          "explanation": "Cell-surface receptors span or associate with the plasma membrane and are used by signaling molecules that do not readily cross the lipid bilayer.",
+          "knowledge_id": "U4-K-062"
+        },
+        {
+          "question_id": "U4-CF-09-Q02",
+          "prompt": "Which option best matches this scientific description? _____s are located in the cytoplasm or nucleus and bind signaling molecules able to cross the plasma membrane.",
+          "choices": [
+            "cell-surface receptor",
+            "intracellular receptor"
+          ],
+          "answer": "intracellular receptor",
+          "explanation": "Intracellular receptors are located in the cytoplasm or nucleus and bind signaling molecules able to cross the plasma membrane.",
+          "knowledge_id": "U4-K-063"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-10",
+      "title": "GPCR machinery",
+      "knowledge_ids": [
+        "U4-K-081",
+        "U4-K-082"
+      ],
+      "terms": [
+        "G protein-coupled receptor (GPCR)",
+        "heterotrimeric G protein"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-10-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a cell-surface _____ that changes conformation upon ligand binding and regulates a _____ on the cytoplasmic side of the membrane.",
+          "choices": [
+            "G protein-coupled receptor (GPCR)",
+            "heterotrimeric G protein"
+          ],
+          "answer": "G protein-coupled receptor (GPCR)",
+          "explanation": "A GPCR is a cell-surface receptor that changes conformation upon ligand binding and regulates a heterotrimeric G protein on the cytoplasmic side of the membrane.",
+          "knowledge_id": "U4-K-081"
+        },
+        {
+          "question_id": "U4-CF-10-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a membrane-associated molecular switch regulated by GDP/GTP binding and interaction with an activated _____.",
+          "choices": [
+            "G protein-coupled receptor (GPCR)",
+            "heterotrimeric G protein"
+          ],
+          "answer": "heterotrimeric G protein",
+          "explanation": "A heterotrimeric G protein is a membrane-associated molecular switch regulated by GDP/GTP binding and interaction with an activated GPCR.",
+          "knowledge_id": "U4-K-082"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-11",
+      "title": "G-protein switch directions",
+      "knowledge_ids": [
+        "U4-K-083",
+        "U4-K-084"
+      ],
+      "terms": [
+        "GDP-to-GTP exchange",
+        "GTP hydrolysis and switch reset"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-11-Q01",
+          "prompt": "Which option best matches this scientific description? Activated GPCR promotes release of _____ from the G protein and binding of _____; the _____ form can regulate downstream effector proteins.",
+          "choices": [
+            "GDP-to-GTP exchange",
+            "GTP hydrolysis and switch reset"
+          ],
+          "answer": "GDP-to-GTP exchange",
+          "explanation": "Activated GPCR promotes release of GDP from the G protein and binding of GTP; the GTP-bound form can regulate downstream effector proteins.",
+          "knowledge_id": "U4-K-083"
+        },
+        {
+          "question_id": "U4-CF-11-Q02",
+          "prompt": "Which option best matches this scientific description? Intrinsic _____ activity converts _____ to _____ and helps return the G protein to its inactive state; _____ functions here primarily as part of a molecular _____.",
+          "choices": [
+            "GDP-to-GTP exchange",
+            "GTP hydrolysis and switch reset"
+          ],
+          "answer": "GTP hydrolysis and switch reset",
+          "explanation": "Intrinsic GTPase activity converts GTP to GDP and helps return the G protein to its inactive state; GTP functions here primarily as part of a molecular switch.",
+          "knowledge_id": "U4-K-084"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-12",
+      "title": "Protein phosphorylation control",
+      "knowledge_ids": [
+        "U4-K-070",
+        "U4-K-072",
+        "U4-K-073"
+      ],
+      "terms": [
+        "protein kinase",
+        "protein phosphatase",
+        "dephosphorylation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-12-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ transfers a _____ group, usually from ATP, to a target _____; _____ changes the target _____’s functional state.",
+          "choices": [
+            "protein kinase",
+            "protein phosphatase",
+            "dephosphorylation"
+          ],
+          "answer": "protein kinase",
+          "explanation": "A protein kinase transfers a phosphate group, usually from ATP, to a target protein; phosphorylation changes the target protein’s functional state.",
+          "knowledge_id": "U4-K-070"
+        },
+        {
+          "question_id": "U4-CF-12-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ removes _____ groups from target _____ and thereby changes their activity or signaling state.",
+          "choices": [
+            "protein kinase",
+            "protein phosphatase",
+            "dephosphorylation"
+          ],
+          "answer": "protein phosphatase",
+          "explanation": "A protein phosphatase removes phosphate groups from target proteins and thereby changes their activity or signaling state.",
+          "knowledge_id": "U4-K-072"
+        },
+        {
+          "question_id": "U4-CF-12-Q03",
+          "prompt": "Which option best matches this scientific description? _____ is removal of a _____ group; it may activate or inactivate a target depending on the pathway.",
+          "choices": [
+            "protein kinase",
+            "protein phosphatase",
+            "dephosphorylation"
+          ],
+          "answer": "dephosphorylation",
+          "explanation": "Dephosphorylation is removal of a phosphate group; it may activate or inactivate a target depending on the pathway.",
+          "knowledge_id": "U4-K-073"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-13",
+      "title": "Intracellular relay terms",
+      "knowledge_ids": [
+        "U4-K-071",
+        "U4-K-075",
+        "U4-K-074"
+      ],
+      "terms": [
+        "phosphorylation cascade",
+        "second messenger",
+        "signal amplification"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-13-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a series in which activated protein kinases _____ downstream proteins, allowing relay and often _____ of a _____.",
+          "choices": [
+            "phosphorylation cascade",
+            "second messenger",
+            "signal amplification"
+          ],
+          "answer": "phosphorylation cascade",
+          "explanation": "A phosphorylation cascade is a series in which activated protein kinases phosphorylate downstream proteins, allowing relay and often amplification of a signal.",
+          "knowledge_id": "U4-K-071"
+        },
+        {
+          "question_id": "U4-CF-13-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a small intracellular molecule or ion that relays information from an activated receptor or upstream _____ component to downstream targets.",
+          "choices": [
+            "phosphorylation cascade",
+            "second messenger",
+            "signal amplification"
+          ],
+          "answer": "second messenger",
+          "explanation": "A second messenger is a small intracellular molecule or ion that relays information from an activated receptor or upstream signaling component to downstream targets.",
+          "knowledge_id": "U4-K-075"
+        },
+        {
+          "question_id": "U4-CF-13-Q03",
+          "prompt": "Which option best matches this scientific description? _____ occurs when activation of one _____ component leads to activation of many downstream molecules, increasing the magnitude of the intracellular response.",
+          "choices": [
+            "phosphorylation cascade",
+            "second messenger",
+            "signal amplification"
+          ],
+          "answer": "signal amplification",
+          "explanation": "Signal amplification occurs when activation of one signaling component leads to activation of many downstream molecules, increasing the magnitude of the intracellular response.",
+          "knowledge_id": "U4-K-074"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-14",
+      "title": "First signal versus intracellular messenger",
+      "knowledge_ids": [
+        "U4-K-046",
+        "U4-K-075",
+        "U4-K-076"
+      ],
+      "terms": [
+        "ligand",
+        "second messenger",
+        "cyclic AMP (cAMP)"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-14-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a signaling molecule that binds specifically to a receptor and can initiate a signaling response.",
+          "choices": [
+            "ligand",
+            "second messenger",
+            "cyclic AMP (cAMP)"
+          ],
+          "answer": "ligand",
+          "explanation": "A ligand is a signaling molecule that binds specifically to a receptor and can initiate a signaling response.",
+          "knowledge_id": "U4-K-046"
+        },
+        {
+          "question_id": "U4-CF-14-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a small intracellular molecule or ion that relays information from an activated receptor or upstream signaling component to downstream targets.",
+          "choices": [
+            "ligand",
+            "second messenger",
+            "cyclic AMP (cAMP)"
+          ],
+          "answer": "second messenger",
+          "explanation": "A second messenger is a small intracellular molecule or ion that relays information from an activated receptor or upstream signaling component to downstream targets.",
+          "knowledge_id": "U4-K-075"
+        },
+        {
+          "question_id": "U4-CF-14-Q03",
+          "prompt": "Which option best matches this scientific description? _____ adenosine monophosphate (_____) is a common _____ that can relay and _____ intracellular signaling.",
+          "choices": [
+            "ligand",
+            "second messenger",
+            "cyclic AMP (cAMP)"
+          ],
+          "answer": "cyclic AMP (cAMP)",
+          "explanation": "Cyclic adenosine monophosphate (cAMP) is a common second messenger that can relay and amplify intracellular signaling.",
+          "knowledge_id": "U4-K-076"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-15",
+      "title": "Cellular response branches",
+      "knowledge_ids": [
+        "U4-K-078",
+        "U4-K-079",
+        "U4-K-080"
+      ],
+      "terms": [
+        "membrane-permeability response",
+        "metabolic response",
+        "gene-expression response"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-15-Q01",
+          "prompt": "Which option best matches this scientific description? Signaling pathways can change _____ by modifying channels or transport proteins.",
+          "choices": [
+            "membrane-permeability response",
+            "metabolic response",
+            "gene-expression response"
+          ],
+          "answer": "membrane-permeability response",
+          "explanation": "Signaling pathways can change membrane permeability by modifying channels or transport proteins.",
+          "knowledge_id": "U4-K-078"
+        },
+        {
+          "question_id": "U4-CF-15-Q02",
+          "prompt": "Which option best matches this scientific description? Signaling pathways can alter _____ activity by modifying enzymes or other _____ regulators.",
+          "choices": [
+            "membrane-permeability response",
+            "metabolic response",
+            "gene-expression response"
+          ],
+          "answer": "metabolic response",
+          "explanation": "Signaling pathways can alter metabolic activity by modifying enzymes or other metabolic regulators.",
+          "knowledge_id": "U4-K-079"
+        },
+        {
+          "question_id": "U4-CF-15-Q03",
+          "prompt": "Which option best matches this scientific description? Signaling pathways can activate or repress proteins that regulate transcription and therefore change _____.",
+          "choices": [
+            "membrane-permeability response",
+            "metabolic response",
+            "gene-expression response"
+          ],
+          "answer": "gene-expression response",
+          "explanation": "Signaling pathways can activate or repress proteins that regulate transcription and therefore change gene expression.",
+          "knowledge_id": "U4-K-080"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-16",
+      "title": "Pathway mutation location",
+      "knowledge_ids": [
+        "U4-K-090",
+        "U4-K-091"
+      ],
+      "terms": [
+        "receptor mutation effect",
+        "downstream-component mutation effect"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-16-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ that changes a _____’s ligand-binding, membrane, or intracellular signaling domain can alter whether and how the pathway responds.",
+          "choices": [
+            "receptor mutation effect",
+            "downstream-component mutation effect"
+          ],
+          "answer": "receptor mutation effect",
+          "explanation": "A mutation that changes a receptor’s ligand-binding, membrane, or intracellular signaling domain can alter whether and how the pathway responds.",
+          "knowledge_id": "U4-K-090"
+        },
+        {
+          "question_id": "U4-CF-16-Q02",
+          "prompt": "Which option best matches this scientific description? _____ in intracellular signaling _____ can change propagation, amplification, termination, or output even when ligand binding is normal.",
+          "choices": [
+            "receptor mutation effect",
+            "downstream-component mutation effect"
+          ],
+          "answer": "downstream-component mutation effect",
+          "explanation": "Mutations in intracellular signaling components can change propagation, amplification, termination, or output even when ligand binding is normal.",
+          "knowledge_id": "U4-K-091"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-17",
+      "title": "Feedback direction",
+      "knowledge_ids": [
+        "U4-K-019",
+        "U4-K-020"
+      ],
+      "terms": [
+        "negative feedback",
+        "positive feedback"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-17-Q01",
+          "prompt": "Which option best matches this scientific description? _____ reduces the initial stimulus and helps return a perturbed system toward a regulated target or set point at molecular, cellular, or organismal levels.",
+          "choices": [
+            "negative feedback",
+            "positive feedback"
+          ],
+          "answer": "negative feedback",
+          "explanation": "Negative feedback reduces the initial stimulus and helps return a perturbed system toward a regulated target or set point at molecular, cellular, or organismal levels.",
+          "knowledge_id": "U4-K-019"
+        },
+        {
+          "question_id": "U4-CF-17-Q02",
+          "prompt": "Which option best matches this scientific description? _____ amplifies a response so the initiating variable is driven further in the same direction until another event ends the loop.",
+          "choices": [
+            "negative feedback",
+            "positive feedback"
+          ],
+          "answer": "positive feedback",
+          "explanation": "Positive feedback amplifies a response so the initiating variable is driven further in the same direction until another event ends the loop.",
+          "knowledge_id": "U4-K-020"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-18",
+      "title": "Feedback-loop roles",
+      "knowledge_ids": [
+        "U4-K-097",
+        "U4-K-098",
+        "U4-K-099",
+        "U4-K-100",
+        "U4-K-101"
+      ],
+      "terms": [
+        "stimulus",
+        "sensor/receptor",
+        "control/integration function",
+        "effector",
+        "feedback response"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-18-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a change in a regulated variable or condition that can be detected by a _____ system.",
+          "choices": [
+            "stimulus",
+            "sensor/receptor",
+            "control/integration function",
+            "effector",
+            "feedback response"
+          ],
+          "answer": "stimulus",
+          "explanation": "A stimulus is a change in a regulated variable or condition that can be detected by a feedback system.",
+          "knowledge_id": "U4-K-097"
+        },
+        {
+          "question_id": "U4-CF-18-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ detects a relevant change and generates information used by the regulatory system; _____ may be molecular, cellular, or organismal.",
+          "choices": [
+            "stimulus",
+            "sensor/receptor",
+            "control/integration function",
+            "effector",
+            "feedback response"
+          ],
+          "answer": "sensor/receptor",
+          "explanation": "A sensor detects a relevant change and generates information used by the regulatory system; sensors may be molecular, cellular, or organismal.",
+          "knowledge_id": "U4-K-098"
+        },
+        {
+          "question_id": "U4-CF-18-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ system compares or _____ incoming information and coordinates downstream _____; this role need not be a brain or nervous-system center.",
+          "choices": [
+            "stimulus",
+            "sensor/receptor",
+            "control/integration function",
+            "effector",
+            "feedback response"
+          ],
+          "answer": "control/integration function",
+          "explanation": "A feedback system compares or integrates incoming information and coordinates downstream responses; this role need not be a brain or nervous-system center.",
+          "knowledge_id": "U4-K-099"
+        },
+        {
+          "question_id": "U4-CF-18-Q04",
+          "prompt": "Which option best matches this scientific description? An _____ is a component whose activity changes the regulated variable or system output.",
+          "choices": [
+            "stimulus",
+            "sensor/receptor",
+            "control/integration function",
+            "effector",
+            "feedback response"
+          ],
+          "answer": "effector",
+          "explanation": "An effector is a component whose activity changes the regulated variable or system output.",
+          "knowledge_id": "U4-K-100"
+        },
+        {
+          "question_id": "U4-CF-18-Q05",
+          "prompt": "Which option best matches this scientific description? The _____ is the system change produced by _____s; in negative _____ it opposes the initial deviation, while in positive _____ it reinforces the ongoing change.",
+          "choices": [
+            "stimulus",
+            "sensor/receptor",
+            "control/integration function",
+            "effector",
+            "feedback response"
+          ],
+          "answer": "feedback response",
+          "explanation": "The response is the system change produced by effectors; in negative feedback it opposes the initial deviation, while in positive feedback it reinforces the ongoing change.",
+          "knowledge_id": "U4-K-101"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-19",
+      "title": "Homeostatic reference terms",
+      "knowledge_ids": [
+        "U4-K-094",
+        "U4-K-095"
+      ],
+      "terms": [
+        "homeostasis",
+        "set point"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-19-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is dynamic regulation of internal conditions within ranges compatible with function despite internal and external change.",
+          "choices": [
+            "homeostasis",
+            "set point"
+          ],
+          "answer": "homeostasis",
+          "explanation": "Homeostasis is dynamic regulation of internal conditions within ranges compatible with function despite internal and external change.",
+          "knowledge_id": "U4-K-094"
+        },
+        {
+          "question_id": "U4-CF-19-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a regulated target value or range used by a feedback system; _____s can vary with physiological context.",
+          "choices": [
+            "homeostasis",
+            "set point"
+          ],
+          "answer": "set point",
+          "explanation": "A set point is a regulated target value or range used by a feedback system; set points can vary with physiological context.",
+          "knowledge_id": "U4-K-095"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-20",
+      "title": "Genome packing hierarchy",
+      "knowledge_ids": [
+        "U4-K-110",
+        "U4-K-111",
+        "U4-K-112",
+        "U4-K-113"
+      ],
+      "terms": [
+        "histone",
+        "nucleosome",
+        "chromatin",
+        "chromosome"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-20-Q01",
+          "prompt": "Which option best matches this scientific description? _____s are DNA-associated proteins around which eukaryotic DNA is wrapped as part of _____ organization.",
+          "choices": [
+            "histone",
+            "nucleosome",
+            "chromatin",
+            "chromosome"
+          ],
+          "answer": "histone",
+          "explanation": "Histones are DNA-associated proteins around which eukaryotic DNA is wrapped as part of chromatin organization.",
+          "knowledge_id": "U4-K-110"
+        },
+        {
+          "question_id": "U4-CF-20-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ consists of DNA wrapped around a core of _____ proteins and is a fundamental unit of eukaryotic _____.",
+          "choices": [
+            "histone",
+            "nucleosome",
+            "chromatin",
+            "chromosome"
+          ],
+          "answer": "nucleosome",
+          "explanation": "A nucleosome consists of DNA wrapped around a core of histone proteins and is a fundamental unit of eukaryotic chromatin.",
+          "knowledge_id": "U4-K-111"
+        },
+        {
+          "question_id": "U4-CF-20-Q03",
+          "prompt": "Which option best matches this scientific description? _____ is the DNA-protein complex that constitutes eukaryotic _____s; its compaction changes through the cell cycle.",
+          "choices": [
+            "histone",
+            "nucleosome",
+            "chromatin",
+            "chromosome"
+          ],
+          "answer": "chromatin",
+          "explanation": "Chromatin is the DNA-protein complex that constitutes eukaryotic chromosomes; its compaction changes through the cell cycle.",
+          "knowledge_id": "U4-K-112"
+        },
+        {
+          "question_id": "U4-CF-20-Q04",
+          "prompt": "Which option best matches this scientific description? A _____ is a DNA molecule with associated proteins carrying genetic information; it exists throughout the cell cycle and becomes highly condensed during mitosis.",
+          "choices": [
+            "histone",
+            "nucleosome",
+            "chromatin",
+            "chromosome"
+          ],
+          "answer": "chromosome",
+          "explanation": "A chromosome is a DNA molecule with associated proteins carrying genetic information; it exists throughout the cell cycle and becomes highly condensed during mitosis.",
+          "knowledge_id": "U4-K-113"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-21",
+      "title": "Replicated chromosome relationships",
+      "knowledge_ids": [
+        "U4-K-114",
+        "U4-K-115",
+        "U4-K-120"
+      ],
+      "terms": [
+        "replicated chromosome",
+        "sister chromatid",
+        "homologous chromosomes"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-21-Q01",
+          "prompt": "Which option best matches this scientific description? After S phase, one _____ consists of two _____s produced by DNA _____.",
+          "choices": [
+            "replicated chromosome",
+            "sister chromatid",
+            "homologous chromosomes"
+          ],
+          "answer": "replicated chromosome",
+          "explanation": "After S phase, one replicated chromosome consists of two sister chromatids produced by DNA replication.",
+          "knowledge_id": "U4-K-114"
+        },
+        {
+          "question_id": "U4-CF-21-Q02",
+          "prompt": "Which option best matches this scientific description? _____s are the two _____ DNA-protein copies of a _____ held together until they separate during anaphase.",
+          "choices": [
+            "replicated chromosome",
+            "sister chromatid",
+            "homologous chromosomes"
+          ],
+          "answer": "sister chromatid",
+          "explanation": "Sister chromatids are the two replicated DNA-protein copies of a chromosome held together until they separate during anaphase.",
+          "knowledge_id": "U4-K-115"
+        },
+        {
+          "question_id": "U4-CF-21-Q03",
+          "prompt": "Which option best matches this scientific description? _____ carry corresponding gene loci and similar structural organization but can contain different alleles; they are distinct from _____s.",
+          "choices": [
+            "replicated chromosome",
+            "sister chromatid",
+            "homologous chromosomes"
+          ],
+          "answer": "homologous chromosomes",
+          "explanation": "Homologous chromosomes carry corresponding gene loci and similar structural organization but can contain different alleles; they are distinct from sister chromatids.",
+          "knowledge_id": "U4-K-120"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-22",
+      "title": "Chromosome attachment structures",
+      "knowledge_ids": [
+        "U4-K-116",
+        "U4-K-117"
+      ],
+      "terms": [
+        "centromere",
+        "kinetochore"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-22-Q01",
+          "prompt": "Which option best matches this scientific description? The _____ is the specialized chromosome region that helps hold sister chromatids together and organizes _____ assembly.",
+          "choices": [
+            "centromere",
+            "kinetochore"
+          ],
+          "answer": "centromere",
+          "explanation": "The centromere is the specialized chromosome region that helps hold sister chromatids together and organizes kinetochore assembly.",
+          "knowledge_id": "U4-K-116"
+        },
+        {
+          "question_id": "U4-CF-22-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a protein complex assembled at the _____ of each chromatid where spindle microtubules attach.",
+          "choices": [
+            "centromere",
+            "kinetochore"
+          ],
+          "answer": "kinetochore",
+          "explanation": "A kinetochore is a protein complex assembled at the centromere of each chromatid where spindle microtubules attach.",
+          "knowledge_id": "U4-K-117"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-23",
+      "title": "Ploidy and cell type",
+      "knowledge_ids": [
+        "U4-K-121",
+        "U4-K-122",
+        "U4-K-123",
+        "U4-K-124"
+      ],
+      "terms": [
+        "somatic cell",
+        "diploid",
+        "gamete",
+        "haploid"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-23-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a non-_____ body cell; in a _____ organism most _____s carry two homologous chromosome sets.",
+          "choices": [
+            "somatic cell",
+            "diploid",
+            "gamete",
+            "haploid"
+          ],
+          "answer": "somatic cell",
+          "explanation": "A somatic cell is a non-gamete body cell; in a diploid organism most somatic cells carry two homologous chromosome sets.",
+          "knowledge_id": "U4-K-121"
+        },
+        {
+          "question_id": "U4-CF-23-Q02",
+          "prompt": "Which option best matches this scientific description? _____ (2n) describes cells with two chromosome sets, one set inherited from each biological parent in sexually reproducing _____ organisms.",
+          "choices": [
+            "somatic cell",
+            "diploid",
+            "gamete",
+            "haploid"
+          ],
+          "answer": "diploid",
+          "explanation": "Diploid (2n) describes cells with two chromosome sets, one set inherited from each biological parent in sexually reproducing diploid organisms.",
+          "knowledge_id": "U4-K-122"
+        },
+        {
+          "question_id": "U4-CF-23-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ is a _____ reproductive cell produced through meiosis or meiotic processes, not a cell that itself divides by meiosis.",
+          "choices": [
+            "somatic cell",
+            "diploid",
+            "gamete",
+            "haploid"
+          ],
+          "answer": "gamete",
+          "explanation": "A gamete is a haploid reproductive cell produced through meiosis or meiotic processes, not a cell that itself divides by meiosis.",
+          "knowledge_id": "U4-K-123"
+        },
+        {
+          "question_id": "U4-CF-23-Q04",
+          "prompt": "Which option best matches this scientific description? _____ (n) describes a cell with one chromosome set.",
+          "choices": [
+            "somatic cell",
+            "diploid",
+            "gamete",
+            "haploid"
+          ],
+          "answer": "haploid",
+          "explanation": "Haploid (n) describes a cell with one chromosome set.",
+          "knowledge_id": "U4-K-124"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-24",
+      "title": "Cell-cycle intervals",
+      "knowledge_ids": [
+        "U4-K-125",
+        "U4-K-126"
+      ],
+      "terms": [
+        "interphase",
+        "M phase"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-24-Q01",
+          "prompt": "Which option best matches this scientific description? _____ comprises G1, S, and G2 and is commonly the longest portion of the cell cycle, although duration varies widely.",
+          "choices": [
+            "interphase",
+            "M phase"
+          ],
+          "answer": "interphase",
+          "explanation": "Interphase comprises G1, S, and G2 and is commonly the longest portion of the cell cycle, although duration varies widely.",
+          "knowledge_id": "U4-K-125"
+        },
+        {
+          "question_id": "U4-CF-24-Q02",
+          "prompt": "Which option best matches this scientific description? _____ includes mitosis and usually cytokinesis, coordinating nuclear chromosome segregation with cell division.",
+          "choices": [
+            "interphase",
+            "M phase"
+          ],
+          "answer": "M phase",
+          "explanation": "M phase includes mitosis and usually cytokinesis, coordinating nuclear chromosome segregation with cell division.",
+          "knowledge_id": "U4-K-126"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-25",
+      "title": "Cell-cycle states",
+      "knowledge_ids": [
+        "U4-K-023",
+        "U4-K-024",
+        "U4-K-025",
+        "U4-K-143"
+      ],
+      "terms": [
+        "G1 phase",
+        "S phase",
+        "G2 phase",
+        "G0"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-25-Q01",
+          "prompt": "Which option best matches this scientific description? During G1, the cell is metabolically active and duplicates organelles and cytosolic components as it grows.",
+          "choices": [
+            "G1 phase",
+            "S phase",
+            "G2 phase",
+            "G0"
+          ],
+          "answer": "G1 phase",
+          "explanation": "During G1, the cell is metabolically active and duplicates organelles and cytosolic components as it grows.",
+          "knowledge_id": "U4-K-023"
+        },
+        {
+          "question_id": "U4-CF-25-Q02",
+          "prompt": "Which option best matches this scientific description? During _____, DNA replicates so each replicated chromosome consists of two sister chromatids joined at a centromere.",
+          "choices": [
+            "G1 phase",
+            "S phase",
+            "G2 phase",
+            "G0"
+          ],
+          "answer": "S phase",
+          "explanation": "During S phase, DNA replicates so each replicated chromosome consists of two sister chromatids joined at a centromere.",
+          "knowledge_id": "U4-K-024"
+        },
+        {
+          "question_id": "U4-CF-25-Q03",
+          "prompt": "Which option best matches this scientific description? During G2, the cell continues protein synthesis and preparation for mitosis; centrosome duplication is completed by this period in typical animal cells.",
+          "choices": [
+            "G1 phase",
+            "S phase",
+            "G2 phase",
+            "G0"
+          ],
+          "answer": "G2 phase",
+          "explanation": "During G2, the cell continues protein synthesis and preparation for mitosis; centrosome duplication is completed by this period in typical animal cells.",
+          "knowledge_id": "U4-K-025"
+        },
+        {
+          "question_id": "U4-CF-25-Q04",
+          "prompt": "Which option best matches this scientific description? _____ is a nondividing state outside the active division cycle; some cells can reenter the cycle, while many terminally differentiated cells remain nondividing for long periods.",
+          "choices": [
+            "G1 phase",
+            "S phase",
+            "G2 phase",
+            "G0"
+          ],
+          "answer": "G0",
+          "explanation": "G0 is a nondividing state outside the active division cycle; some cells can reenter the cycle, while many terminally differentiated cells remain nondividing for long periods.",
+          "knowledge_id": "U4-K-143"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-26",
+      "title": "Mitotic stages",
+      "knowledge_ids": [
+        "U4-K-031",
+        "U4-K-129",
+        "U4-K-032",
+        "U4-K-033",
+        "U4-K-034"
+      ],
+      "terms": [
+        "prophase",
+        "prometaphase",
+        "metaphase",
+        "anaphase",
+        "telophase"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-26-Q01",
+          "prompt": "Which option best matches this scientific description? In _____, replicated chromosomes condense, the mitotic spindle begins forming, and centrosomes move toward opposite poles.",
+          "choices": [
+            "prophase",
+            "prometaphase",
+            "metaphase",
+            "anaphase",
+            "telophase"
+          ],
+          "answer": "prophase",
+          "explanation": "In prophase, replicated chromosomes condense, the mitotic spindle begins forming, and centrosomes move toward opposite poles.",
+          "knowledge_id": "U4-K-031"
+        },
+        {
+          "question_id": "U4-CF-26-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is the mitotic interval in which the nuclear envelope breaks down and spindle microtubules gain access to and attach to kinetochores.",
+          "choices": [
+            "prophase",
+            "prometaphase",
+            "metaphase",
+            "anaphase",
+            "telophase"
+          ],
+          "answer": "prometaphase",
+          "explanation": "Prometaphase is the mitotic interval in which the nuclear envelope breaks down and spindle microtubules gain access to and attach to kinetochores.",
+          "knowledge_id": "U4-K-129"
+        },
+        {
+          "question_id": "U4-CF-26-Q03",
+          "prompt": "Which option best matches this scientific description? In _____, spindle microtubules position chromosomes at the cell equator/_____ plate.",
+          "choices": [
+            "prophase",
+            "prometaphase",
+            "metaphase",
+            "anaphase",
+            "telophase"
+          ],
+          "answer": "metaphase",
+          "explanation": "In metaphase, spindle microtubules position chromosomes at the cell equator/metaphase plate.",
+          "knowledge_id": "U4-K-032"
+        },
+        {
+          "question_id": "U4-CF-26-Q04",
+          "prompt": "Which option best matches this scientific description? In _____, sister chromatids separate and move toward opposite poles as spindle dynamics redistribute the chromosomes.",
+          "choices": [
+            "prophase",
+            "prometaphase",
+            "metaphase",
+            "anaphase",
+            "telophase"
+          ],
+          "answer": "anaphase",
+          "explanation": "In anaphase, sister chromatids separate and move toward opposite poles as spindle dynamics redistribute the chromosomes.",
+          "knowledge_id": "U4-K-033"
+        },
+        {
+          "question_id": "U4-CF-26-Q05",
+          "prompt": "Which option best matches this scientific description? In _____, the mitotic spindle disassembles, new nuclear envelopes form, and chromosomes begin to decondense.",
+          "choices": [
+            "prophase",
+            "prometaphase",
+            "metaphase",
+            "anaphase",
+            "telophase"
+          ],
+          "answer": "telophase",
+          "explanation": "In telophase, the mitotic spindle disassembles, new nuclear envelopes form, and chromosomes begin to decondense.",
+          "knowledge_id": "U4-K-034"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-27",
+      "title": "Spindle geography",
+      "knowledge_ids": [
+        "U4-K-127",
+        "U4-K-128",
+        "U4-K-117",
+        "U4-K-130"
+      ],
+      "terms": [
+        "mitotic spindle",
+        "centrosome",
+        "kinetochore",
+        "metaphase plate"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-27-Q01",
+          "prompt": "Which option best matches this scientific description? The _____ is a microtubule-based apparatus that organizes and segregates chromosomes during mitosis.",
+          "choices": [
+            "mitotic spindle",
+            "centrosome",
+            "kinetochore",
+            "metaphase plate"
+          ],
+          "answer": "mitotic spindle",
+          "explanation": "The mitotic spindle is a microtubule-based apparatus that organizes and segregates chromosomes during mitosis.",
+          "knowledge_id": "U4-K-127"
+        },
+        {
+          "question_id": "U4-CF-27-Q02",
+          "prompt": "Which option best matches this scientific description? In animal cells, _____s organize _____ microtubules and move apart as the _____ forms.",
+          "choices": [
+            "mitotic spindle",
+            "centrosome",
+            "kinetochore",
+            "metaphase plate"
+          ],
+          "answer": "centrosome",
+          "explanation": "In animal cells, centrosomes organize spindle microtubules and move apart as the mitotic spindle forms.",
+          "knowledge_id": "U4-K-128"
+        },
+        {
+          "question_id": "U4-CF-27-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ is a protein complex assembled at the _____ of each chromatid where _____ microtubules attach.",
+          "choices": [
+            "mitotic spindle",
+            "centrosome",
+            "kinetochore",
+            "metaphase plate"
+          ],
+          "answer": "kinetochore",
+          "explanation": "A kinetochore is a protein complex assembled at the centromere of each chromatid where spindle microtubules attach.",
+          "knowledge_id": "U4-K-117"
+        },
+        {
+          "question_id": "U4-CF-27-Q04",
+          "prompt": "Which option best matches this scientific description? The _____ is an imaginary plane at the cell equator where chromosomes align during _____.",
+          "choices": [
+            "mitotic spindle",
+            "centrosome",
+            "kinetochore",
+            "metaphase plate"
+          ],
+          "answer": "metaphase plate",
+          "explanation": "The metaphase plate is an imaginary plane at the cell equator where chromosomes align during metaphase.",
+          "knowledge_id": "U4-K-130"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-28",
+      "title": "Cytokinesis structures",
+      "knowledge_ids": [
+        "U4-K-131",
+        "U4-K-132",
+        "U4-K-133"
+      ],
+      "terms": [
+        "cleavage furrow",
+        "contractile ring",
+        "cell plate"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-28-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is the inward constriction of an animal cell membrane during cytokinesis, driven by a _____.",
+          "choices": [
+            "cleavage furrow",
+            "contractile ring",
+            "cell plate"
+          ],
+          "answer": "cleavage furrow",
+          "explanation": "A cleavage furrow is the inward constriction of an animal cell membrane during cytokinesis, driven by a contractile ring.",
+          "knowledge_id": "U4-K-131"
+        },
+        {
+          "question_id": "U4-CF-28-Q02",
+          "prompt": "Which option best matches this scientific description? The animal-cell _____ is composed mainly of actin filaments with myosin motors and constricts the cell during cytokinesis.",
+          "choices": [
+            "cleavage furrow",
+            "contractile ring",
+            "cell plate"
+          ],
+          "answer": "contractile ring",
+          "explanation": "The animal-cell contractile ring is composed mainly of actin filaments with myosin motors and constricts the cell during cytokinesis.",
+          "knowledge_id": "U4-K-132"
+        },
+        {
+          "question_id": "U4-CF-28-Q03",
+          "prompt": "Which option best matches this scientific description? In plant cytokinesis, Golgi-derived vesicles fuse near the center of the cell to form a _____ that develops into new cell wall and membranes between daughter cells.",
+          "choices": [
+            "cleavage furrow",
+            "contractile ring",
+            "cell plate"
+          ],
+          "answer": "cell plate",
+          "explanation": "In plant cytokinesis, Golgi-derived vesicles fuse near the center of the cell to form a cell plate that develops into new cell wall and membranes between daughter cells.",
+          "knowledge_id": "U4-K-133"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-29",
+      "title": "Cell-cycle checkpoints",
+      "knowledge_ids": [
+        "U4-K-142",
+        "U4-K-144",
+        "U4-K-145"
+      ],
+      "terms": [
+        "G1 checkpoint",
+        "G2 checkpoint",
+        "spindle assembly checkpoint"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-29-Q01",
+          "prompt": "Which option best matches this scientific description? At the _____, cell growth conditions, signaling cues, and DNA integrity influence commitment to continue through the division cycle or enter/maintain a nondividing state.",
+          "choices": [
+            "G1 checkpoint",
+            "G2 checkpoint",
+            "spindle assembly checkpoint"
+          ],
+          "answer": "G1 checkpoint",
+          "explanation": "At the G1 checkpoint, cell growth conditions, signaling cues, and DNA integrity influence commitment to continue through the division cycle or enter/maintain a nondividing state.",
+          "knowledge_id": "U4-K-142"
+        },
+        {
+          "question_id": "U4-CF-29-Q02",
+          "prompt": "Which option best matches this scientific description? The _____ helps prevent entry into mitosis when DNA replication is incomplete or DNA damage remains unresolved.",
+          "choices": [
+            "G1 checkpoint",
+            "G2 checkpoint",
+            "spindle assembly checkpoint"
+          ],
+          "answer": "G2 checkpoint",
+          "explanation": "The G2 checkpoint helps prevent entry into mitosis when DNA replication is incomplete or DNA damage remains unresolved.",
+          "knowledge_id": "U4-K-144"
+        },
+        {
+          "question_id": "U4-CF-29-Q03",
+          "prompt": "Which option best matches this scientific description? The _____ delays anaphase until chromosomes have appropriate kinetochore-microtubule attachment and alignment.",
+          "choices": [
+            "G1 checkpoint",
+            "G2 checkpoint",
+            "spindle assembly checkpoint"
+          ],
+          "answer": "spindle assembly checkpoint",
+          "explanation": "The spindle assembly checkpoint delays anaphase until chromosomes have appropriate kinetochore-microtubule attachment and alignment.",
+          "knowledge_id": "U4-K-145"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-30",
+      "title": "Cell-safety outcomes",
+      "knowledge_ids": [
+        "U4-K-141",
+        "U4-K-146",
+        "U4-K-148"
+      ],
+      "terms": [
+        "checkpoint",
+        "cell-cycle arrest",
+        "apoptosis"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-30-Q01",
+          "prompt": "Which option best matches this scientific description? A cell-_____ is a regulatory control point where internal and external information influences whether the cell proceeds, pauses, exits, repairs damage, or initiates another response.",
+          "choices": [
+            "checkpoint",
+            "cell-cycle arrest",
+            "apoptosis"
+          ],
+          "answer": "checkpoint",
+          "explanation": "A cell-cycle checkpoint is a regulatory control point where internal and external information influences whether the cell proceeds, pauses, exits, repairs damage, or initiates another response.",
+          "knowledge_id": "U4-K-141"
+        },
+        {
+          "question_id": "U4-CF-30-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is a pause in progression that can provide time for repair or prevent segregation/division under unsuitable conditions.",
+          "choices": [
+            "checkpoint",
+            "cell-cycle arrest",
+            "apoptosis"
+          ],
+          "answer": "cell-cycle arrest",
+          "explanation": "Cell-cycle arrest is a pause in progression that can provide time for repair or prevent segregation/division under unsuitable conditions.",
+          "knowledge_id": "U4-K-146"
+        },
+        {
+          "question_id": "U4-CF-30-Q03",
+          "prompt": "Which option best matches this scientific description? _____ is regulated programmed cell death that can remove damaged, unnecessary, or potentially dangerous cells.",
+          "choices": [
+            "checkpoint",
+            "cell-cycle arrest",
+            "apoptosis"
+          ],
+          "answer": "apoptosis",
+          "explanation": "Apoptosis is regulated programmed cell death that can remove damaged, unnecessary, or potentially dangerous cells.",
+          "knowledge_id": "U4-K-148"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-31",
+      "title": "Cyclin-CDK vocabulary",
+      "knowledge_ids": [
+        "U4-K-149",
+        "U4-K-150",
+        "U4-K-151"
+      ],
+      "terms": [
+        "cyclin",
+        "cyclin-dependent kinase (CDK)",
+        "cyclin-CDK complex"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-31-Q01",
+          "prompt": "Which option best matches this scientific description? _____s are regulatory proteins whose concentrations often rise and fall during the cell cycle and whose binding helps activate _____-_____.",
+          "choices": [
+            "cyclin",
+            "cyclin-dependent kinase (CDK)",
+            "cyclin-CDK complex"
+          ],
+          "answer": "cyclin",
+          "explanation": "Cyclins are regulatory proteins whose concentrations often rise and fall during the cell cycle and whose binding helps activate cyclin-dependent kinases.",
+          "knowledge_id": "U4-K-149"
+        },
+        {
+          "question_id": "U4-CF-31-Q02",
+          "prompt": "Which option best matches this scientific description? A _____-_____ is a protein _____ whose activity _____ on regulatory interactions including _____ binding.",
+          "choices": [
+            "cyclin",
+            "cyclin-dependent kinase (CDK)",
+            "cyclin-CDK complex"
+          ],
+          "answer": "cyclin-dependent kinase (CDK)",
+          "explanation": "A cyclin-dependent kinase is a protein kinase whose activity depends on regulatory interactions including cyclin binding.",
+          "knowledge_id": "U4-K-150"
+        },
+        {
+          "question_id": "U4-CF-31-Q03",
+          "prompt": "Which option best matches this scientific description? An active _____ phosphorylates target proteins that promote or regulate specific cell-cycle events.",
+          "choices": [
+            "cyclin",
+            "cyclin-dependent kinase (CDK)",
+            "cyclin-CDK complex"
+          ],
+          "answer": "cyclin-CDK complex",
+          "explanation": "An active cyclin-CDK complex phosphorylates target proteins that promote or regulate specific cell-cycle events.",
+          "knowledge_id": "U4-K-151"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-32",
+      "title": "External proliferation constraints",
+      "knowledge_ids": [
+        "U4-K-154",
+        "U4-K-155",
+        "U4-K-156"
+      ],
+      "terms": [
+        "growth-factor signaling",
+        "density-dependent inhibition",
+        "anchorage dependence"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-32-Q01",
+          "prompt": "Which option best matches this scientific description? _____ can activate _____ pathways that influence cyclin/CDK activity and cell-cycle progression.",
+          "choices": [
+            "growth-factor signaling",
+            "density-dependent inhibition",
+            "anchorage dependence"
+          ],
+          "answer": "growth-factor signaling",
+          "explanation": "Growth factors can activate signal-transduction pathways that influence cyclin/CDK activity and cell-cycle progression.",
+          "knowledge_id": "U4-K-154"
+        },
+        {
+          "question_id": "U4-CF-32-Q02",
+          "prompt": "Which option best matches this scientific description? Many normal animal cells reduce proliferation when cell _____/contact _____ indicate crowded conditions; this is commonly called _____.",
+          "choices": [
+            "growth-factor signaling",
+            "density-dependent inhibition",
+            "anchorage dependence"
+          ],
+          "answer": "density-dependent inhibition",
+          "explanation": "Many normal animal cells reduce proliferation when cell density/contact signals indicate crowded conditions; this is commonly called density-dependent inhibition.",
+          "knowledge_id": "U4-K-155"
+        },
+        {
+          "question_id": "U4-CF-32-Q03",
+          "prompt": "Which option best matches this scientific description? Many normal animal cells require attachment to extracellular matrix or an appropriate substrate to proliferate; loss of _____ can accompany transformation.",
+          "choices": [
+            "growth-factor signaling",
+            "density-dependent inhibition",
+            "anchorage dependence"
+          ],
+          "answer": "anchorage dependence",
+          "explanation": "Many normal animal cells require attachment to extracellular matrix or an appropriate substrate to proliferate; loss of anchorage dependence can accompany transformation.",
+          "knowledge_id": "U4-K-156"
+        }
+      ]
+    },
+    {
+      "set_id": "U4-CF-33",
+      "title": "Tumor terminology",
+      "knowledge_ids": [
+        "U4-K-157",
+        "U4-K-162",
+        "U4-K-163",
+        "U4-K-164",
+        "U4-K-165"
+      ],
+      "terms": [
+        "cancer",
+        "tumor",
+        "benign tumor",
+        "malignant tumor",
+        "metastasis"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 4 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U4-CF-33-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is a disease of dysregulated cell behavior in which genetic/epigenetic changes enable uncontrolled proliferation and other _____ properties.",
+          "choices": [
+            "cancer",
+            "tumor",
+            "benign tumor",
+            "malignant tumor",
+            "metastasis"
+          ],
+          "answer": "cancer",
+          "explanation": "Cancer is a disease of dysregulated cell behavior in which genetic/epigenetic changes enable uncontrolled proliferation and other malignant properties.",
+          "knowledge_id": "U4-K-157"
+        },
+        {
+          "question_id": "U4-CF-33-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a mass of abnormally proliferating cells; _____s may be _____ or _____.",
+          "choices": [
+            "cancer",
+            "tumor",
+            "benign tumor",
+            "malignant tumor",
+            "metastasis"
+          ],
+          "answer": "tumor",
+          "explanation": "A tumor is a mass of abnormally proliferating cells; tumors may be benign or malignant.",
+          "knowledge_id": "U4-K-162"
+        },
+        {
+          "question_id": "U4-CF-33-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ is a nonmalignant localized mass whose cells do not invade surrounding tissue or _____; _____ does not mean “_____ous later.”",
+          "choices": [
+            "cancer",
+            "tumor",
+            "benign tumor",
+            "malignant tumor",
+            "metastasis"
+          ],
+          "answer": "benign tumor",
+          "explanation": "A benign tumor is a nonmalignant localized mass whose cells do not invade surrounding tissue or metastasize; benign does not mean “cancerous later.”",
+          "knowledge_id": "U4-K-163"
+        },
+        {
+          "question_id": "U4-CF-33-Q04",
+          "prompt": "Which option best matches this scientific description? A _____ contains _____ cells capable of invasive growth and potentially spread to distant sites.",
+          "choices": [
+            "cancer",
+            "tumor",
+            "benign tumor",
+            "malignant tumor",
+            "metastasis"
+          ],
+          "answer": "malignant tumor",
+          "explanation": "A malignant tumor contains cancer cells capable of invasive growth and potentially spread to distant sites.",
+          "knowledge_id": "U4-K-164"
+        },
+        {
+          "question_id": "U4-CF-33-Q05",
+          "prompt": "Which option best matches this scientific description? _____ is the spread of _____ cells from a primary _____ to distant sites where secondary _____s may form.",
+          "choices": [
+            "cancer",
+            "tumor",
+            "benign tumor",
+            "malignant tumor",
+            "metastasis"
+          ],
+          "answer": "metastasis",
+          "explanation": "Metastasis is the spread of cancer cells from a primary tumor to distant sites where secondary tumors may form.",
+          "knowledge_id": "U4-K-165"
+        }
+      ]
+    }
+  ]
+}

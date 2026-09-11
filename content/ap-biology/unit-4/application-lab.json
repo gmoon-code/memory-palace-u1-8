@@ -1,0 +1,310 @@
+{
+  "schema": "memory-palace-v2-unit4-f5-challenge-lab-1.0",
+  "unit_id": "unit-4",
+  "title": "Unit 4 Challenge Lab",
+  "student_intro": "Use these after the related journeys. One challenge appears at a time so signaling, feedback, chromosome, cell-cycle, checkpoint, and cancer reasoning can be practiced without depending on the mnemonic story.",
+  "challenge_count": 15,
+  "practice_only_runtime_count": 15,
+  "practice_only_runtime_object_ids": [
+    "U4-K-170",
+    "U4-K-171",
+    "U4-K-172",
+    "U4-K-173",
+    "U4-K-174",
+    "U4-K-136",
+    "U4-K-139",
+    "U4-K-140",
+    "U4-K-169",
+    "U4-K-175",
+    "U4-K-176",
+    "U4-K-177",
+    "U4-K-178",
+    "U4-K-179",
+    "U4-K-180"
+  ],
+  "items": [
+    {
+      "challenge_id": "U4-CH-01",
+      "knowledge_id": "U4-K-170",
+      "domain": "Communication and signaling",
+      "title": "Route five biological messages",
+      "type": "SCENARIO_CLASSIFICATION",
+      "prerequisite_loci": [
+        "U4-L02",
+        "U4-L03",
+        "U4-L04",
+        "U4-L05",
+        "U4-L06"
+      ],
+      "prompt": "Classify each scenario as direct-contact, paracrine/local, synaptic, or endocrine/long-distance signaling and justify the route using distance, medium, and target context. A plant cell passes a small signaling molecule through plasmodesmata to its neighbor. A wounded tissue releases a growth factor that affects cells a few cell diameters away. A neuron releases neurotransmitter across a narrow cleft. A pancreatic cell releases insulin into blood. A plant hormone moves through vascular tissue to a distant organ.",
+      "answer_guide": "Plasmodesmata support direct-contact signaling because connected neighboring cells exchange material through an intercellular channel. The growth-factor example is local/paracrine because a secreted regulator acts over a short extracellular distance. Neurotransmitter crossing a synaptic cleft is synaptic signaling, a specialized local mechanism. Insulin carried through blood is endocrine long-distance signaling. The plant hormone traveling through vascular tissue is also long-distance signaling. Classification should use the physical route and target context, not merely the identity of a messenger.",
+      "story_hint": "Rebuild the communication route card from Journey 1: sender, messenger or contact, route/distance, and target.",
+      "canonical_statement": "Given a biological scenario, distinguish direct-contact, local, synaptic/paracrine, and long-distance signaling using distance, medium, and receptor context.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-02",
+      "knowledge_id": "U4-K-171",
+      "domain": "Signal reception",
+      "title": "Alter a receptor binding site",
+      "type": "STRUCTURE_FUNCTION_FRQ",
+      "prerequisite_loci": [
+        "U4-L07",
+        "U4-L08",
+        "U4-L10",
+        "U4-L12"
+      ],
+      "prompt": "A mutation changes several amino acids in the extracellular ligand-binding region of a cell-surface receptor but leaves its intracellular signaling region intact. The normal ligand concentration is unchanged. Predict how receptor activation and downstream signaling could change, and explain why the effect depends on receptor structure.",
+      "answer_guide": "Changing the ligand-binding region can alter shape, charge, or other chemical features needed for specific ligand-receptor interaction. If binding affinity or compatibility falls, fewer receptors may enter the ligand-bound activated state and downstream signaling can decrease even though the intracellular domain is unchanged. A different structural change could also alter specificity or favor abnormal activation. The inference must connect receptor structure to ligand recognition and then to pathway activation.",
+      "story_hint": "Return to the Reception Checkpoint: incorrect ligands fail at the binding gate before downstream transduction begins.",
+      "canonical_statement": "Infer how a change in receptor binding-site structure changes ligand specificity or pathway activation.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-03",
+      "knowledge_id": "U4-K-172",
+      "domain": "Signal transduction",
+      "title": "Label an unfamiliar pathway",
+      "type": "MODEL_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L07",
+        "U4-L13",
+        "U4-L16",
+        "U4-L17"
+      ],
+      "prompt": "An unfamiliar pathway diagram shows an extracellular signal binding a membrane receptor at step A, a sequence of intracellular phosphorylation events at step B, and increased transcription of a target gene at step C. Assign reception, transduction, and response to A, B, and C and justify each assignment from what physically changes.",
+      "answer_guide": "A is reception because the extracellular signal is detected when it binds the receptor. B is transduction because intracellular molecular state changes relay the information through the cell. C is the cellular response because cell activity changes, here through altered gene expression. The extracellular ligand need not travel through the intracellular relay; information is transmitted by changes in pathway components.",
+      "story_hint": "Use the Journey 2 receptor monitor and the Journey 3 violet information trace. The ligand stays at reception while intracellular components change state.",
+      "canonical_statement": "Map an unfamiliar pathway diagram to reception, transduction, and response and justify each step.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-04",
+      "knowledge_id": "U4-K-173",
+      "domain": "Signal transduction",
+      "title": "Predict a pathway break",
+      "type": "CAUSAL_PATHWAY_FRQ",
+      "prerequisite_loci": [
+        "U4-L14",
+        "U4-L15",
+        "U4-L16",
+        "U4-L18",
+        "U4-L19"
+      ],
+      "prompt": "A signaling pathway runs ligand → receptor → kinase A → kinase B → response protein. A chemical specifically prevents kinase A from phosphorylating its target, while receptor binding remains normal. Predict the effect on kinase B and the response protein. Then predict what could happen if a separate mutation made kinase B constitutively active.",
+      "answer_guide": "Blocking kinase A should reduce or prevent activation of kinase B and the downstream response if that route depends on kinase A. Normal ligand-receptor binding alone does not guarantee a response when transduction is interrupted. If kinase B becomes constitutively active, downstream signaling can occur despite the upstream block, depending on whether the response machinery remains functional. The reasoning should follow causal order through the pathway.",
+      "story_hint": "Picture the Signal Relay Tower. Move the information trace only when a real pathway component changes state.",
+      "canonical_statement": "Predict downstream effects of a receptor/pathway mutation or chemical inhibitor using causal pathway logic.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-05",
+      "knowledge_id": "U4-K-174",
+      "domain": "Feedback regulation",
+      "title": "Determine feedback direction from data",
+      "type": "DATA_MODEL_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L20",
+        "U4-L22",
+        "U4-L24",
+        "U4-L25"
+      ],
+      "prompt": "A regulated variable has a reference value near 100 units. After a disturbance it rises to 130. A response begins and the variable falls to 112 and then 103. In a second system, a disturbance raises a variable from 10 to 14, the response raises it to 19, and that stronger change triggers still more response until an endpoint occurs. Identify the feedback type in each system and predict what loss of the first response would do.",
+      "answer_guide": "The first system shows negative feedback because the response opposes the initial increase and moves the regulated variable back toward its reference range. The second shows positive feedback because the response reinforces the initiating change until an endpoint or changed condition interrupts the loop. If the first response is lost, the variable should remain farther from the regulated range or deviate further because the corrective response is missing.",
+      "story_hint": "Return to the regulated-variable gauge. Ask whether the response pushes the needle back toward range or farther in the initiating direction.",
+      "canonical_statement": "Use data or a pathway model to determine whether a response represents negative or positive feedback and predict effects of disruption.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-06",
+      "knowledge_id": "U4-K-136",
+      "domain": "Mitosis",
+      "title": "Identify stages from chromosome features",
+      "type": "IMAGE_STAGE_IDENTIFICATION",
+      "prerequisite_loci": [
+        "U4-L35",
+        "U4-L36",
+        "U4-L37",
+        "U4-L38",
+        "U4-L39",
+        "U4-L40",
+        "U4-L41"
+      ],
+      "prompt": "Four unlabeled micrographs show the following features. Cell A has condensed chromosomes that are not yet aligned and the spindle is forming. Cell B has chromosomes aligned at the equatorial plane. Cell C shows sister chromatids moving toward opposite poles. Cell D shows chromosome sets at opposite ends with new nuclei forming. Identify the most likely mitotic stage for each cell and justify the visual evidence.",
+      "answer_guide": "A is most consistent with prophase or early prometaphase depending on nuclear-envelope and attachment details; the key evidence is condensation without metaphase alignment. B is metaphase because replicated chromosomes are aligned at the metaphase plane. C is anaphase because sister chromatids have separated and daughter chromosomes move toward opposite poles. D is telophase because separated chromosome sets are at opposite poles and nuclear reassembly is occurring. Identification should use visible chromosome, spindle, nuclear-envelope, and cytokinesis features.",
+      "story_hint": "Walk the Mitosis Transit Hall in order and reconstruct what the same chromosome set is doing at each station.",
+      "canonical_statement": "Mitotic stages can be identified from chromosome condensation, alignment, separation, nuclear-envelope state, and cytokinesis features in micrographs.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-07",
+      "knowledge_id": "U4-K-139",
+      "domain": "Chromosome number",
+      "title": "Recover diploid number from gametes",
+      "type": "QUANTITATIVE",
+      "prerequisite_loci": [
+        "U4-L28"
+      ],
+      "prompt": "A sexually reproducing diploid organism produces normal gametes containing 8 chromosomes. What is the typical chromosome number of its somatic cells? State the haploid and diploid notation and explain the relationship rather than giving only a number.",
+      "answer_guide": "The gametes are haploid, so n = 8. Typical somatic cells contain two chromosome sets, so 2n = 16. The calculation doubles the number of homologous chromosome types represented in one gamete; it does not describe DNA replication or sister-chromatid number.",
+      "story_hint": "Return to Chromosome Sets Gallery: one gamete set is n, while a typical diploid somatic cell carries two sets, 2n.",
+      "canonical_statement": "For a diploid organism, if gametes contain n chromosomes, typical somatic cells contain 2n chromosomes.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-08",
+      "knowledge_id": "U4-K-140",
+      "domain": "Mitosis",
+      "title": "Predict failed sister-chromatid segregation",
+      "type": "CHROMOSOME_SEGREGATION_FRQ",
+      "prerequisite_loci": [
+        "U4-L27",
+        "U4-L38"
+      ],
+      "prompt": "During mitosis, one pair of sister chromatids fails to segregate normally while the other chromosomes separate correctly. Predict the chromosome-number consequence for the two daughter cells after cytokinesis and explain why the daughters can become unequal.",
+      "answer_guide": "If both copies from the affected chromosome move to one side while none moves to the other, one daughter receives an extra chromosome and the other lacks that chromosome relative to the normal daughter-cell number. The unequal outcome results from failed sister-chromatid segregation during mitosis, not from a change in DNA replication before mitosis.",
+      "story_hint": "Picture Anaphase Separation Track: daughter chromosomes must move to opposite poles before cytokinesis partitions the cell.",
+      "canonical_statement": "Failure of sister-chromatid segregation can produce daughter cells with unequal chromosome numbers.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-09",
+      "knowledge_id": "U4-K-169",
+      "domain": "Mitosis and checkpoints",
+      "title": "Explain vinblastine-induced arrest",
+      "type": "MECHANISM_PREDICTION",
+      "prerequisite_loci": [
+        "U4-L35",
+        "U4-L36",
+        "U4-L37",
+        "U4-L38",
+        "U4-L45"
+      ],
+      "prompt": "Vinblastine binds tubulin and inhibits microtubule assembly. Predict how treatment can affect spindle formation, kinetochore attachment, the spindle-assembly checkpoint, and progression into normal anaphase.",
+      "answer_guide": "Inhibiting microtubule assembly disrupts formation and function of the mitotic spindle and can prevent adequate kinetochore-microtubule attachment. Unattached or improperly attached kinetochores maintain spindle-checkpoint signaling, so cells can arrest in mitosis and fail to progress normally into anaphase. The mechanism begins with tubulin/microtubule disruption and proceeds through attachment failure and checkpoint control.",
+      "story_hint": "Combine Prophase Spindle Setup, Prometaphase Kinetochore Access, and the Spindle-Assembly Checkpoint from Journeys 6 and 7.",
+      "canonical_statement": "Vinblastine binds tubulin and inhibits microtubule assembly, disrupting spindle formation/kinetochore attachment and activating mitotic arrest before normal anaphase progression.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-10",
+      "knowledge_id": "U4-K-175",
+      "domain": "Cell-cycle data",
+      "title": "Infer a block from phase distribution",
+      "type": "DATA_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L29",
+        "U4-L30",
+        "U4-L31",
+        "U4-L32",
+        "U4-L33"
+      ],
+      "prompt": "A control culture contains 55% of cells in G1, 25% in S, and 20% in G2/M. After treatment, a second culture contains 25% in G1, 20% in S, and 55% in G2/M. Describe the major change and infer one cell-cycle location where progression may be slowed or blocked. State a limitation of the inference.",
+      "answer_guide": "The treated culture has a much larger fraction of cells in G2/M and a smaller fraction in G1. This pattern is consistent with cells spending longer in late interphase or mitosis, so a G2 or mitotic block is one plausible explanation. The distribution alone does not identify the exact molecular checkpoint or distinguish every G2 versus mitotic mechanism without additional markers or time-course evidence.",
+      "story_hint": "Use the Cell-Cycle Clock and the later G2/spindle gates. Accumulation in a category can indicate prolonged residence there.",
+      "canonical_statement": "Use tables, graphs, or cell images to identify phase, describe trends, and infer where progression is blocked.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-11",
+      "knowledge_id": "U4-K-176",
+      "domain": "Cell-cycle quantitative reasoning",
+      "title": "Calculate a mitotic index change",
+      "type": "QUANTITATIVE_DATA",
+      "prerequisite_loci": [
+        "U4-L29",
+        "U4-L31",
+        "U4-L34"
+      ],
+      "prompt": "Researchers count 500 cells in a control sample and observe 50 cells in mitosis. In a treated sample they count 500 cells and observe 125 cells in mitosis. Calculate the mitotic index for each sample as a percentage and the fold change in mitotic index from control to treatment.",
+      "answer_guide": "Control mitotic index = 50/500 × 100 = 10%. Treated mitotic index = 125/500 × 100 = 25%. The treated mitotic index is 25/10 = 2.5 times the control value. The calculation describes the observed fraction of cells in mitosis; it does not by itself prove whether cells entered mitosis faster or remained in mitosis longer.",
+      "story_hint": "Picture the Cell-Cycle Clock, then treat the counted cells as a snapshot. A larger mitotic fraction can arise from altered entry or altered time spent in mitosis.",
+      "canonical_statement": "Calculate means, rates, ratios, percentages, or percent changes from cell-cycle data when required by the AP skill.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-12",
+      "knowledge_id": "U4-K-177",
+      "domain": "Chromosome counting",
+      "title": "Track DNA and chromosome number through division",
+      "type": "QUANTITATIVE_MODEL_REASONING",
+      "prerequisite_loci": [
+        "U4-L27",
+        "U4-L31",
+        "U4-L38"
+      ],
+      "prompt": "Consider one diploid cell with 2n = 6 before S phase. State the chromosome number before S phase, immediately after S phase before mitosis, during anaphase within the still-undivided cell, and in each daughter cell after cytokinesis. Also state what happens to DNA amount during S phase.",
+      "answer_guide": "Before S phase the cell has 6 chromosomes. After S phase it still has 6 chromosomes, now replicated as sister-chromatid pairs, while DNA amount has doubled. At anaphase, after sister chromatids separate and each becomes a daughter chromosome, the still-undivided cell transiently contains 12 chromosomes. After cytokinesis, each normal daughter cell contains 6 chromosomes. DNA replication changes DNA/chromatid amount before it changes chromosome count.",
+      "story_hint": "Use the three counters from S-Phase Replication Room and then carry them to Anaphase Separation Track.",
+      "canonical_statement": "Track chromosome/chromatid/DNA relationships through S phase, mitosis, and cytokinesis without confusing DNA amount with chromosome number.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-13",
+      "knowledge_id": "U4-K-178",
+      "domain": "Cell-cycle checkpoints",
+      "title": "Predict checkpoint failure",
+      "type": "CHECKPOINT_MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U4-L42",
+        "U4-L43",
+        "U4-L44",
+        "U4-L45",
+        "U4-L46"
+      ],
+      "prompt": "A cell has several kinetochores that are not properly attached to spindle microtubules, but a mutation disables the spindle-assembly checkpoint. Predict how the mutation can affect anaphase timing and chromosome distribution in daughter cells.",
+      "answer_guide": "With a functional checkpoint, inadequate attachment can delay progression into anaphase. If checkpoint signaling is disabled, the cell may enter anaphase despite improper attachments. Some chromosomes can then fail to segregate correctly, increasing the probability of daughter cells with abnormal or unequal chromosome numbers. The checkpoint defect affects the decision to proceed; the attachment defect creates the segregation risk.",
+      "story_hint": "Return to the security file: SPINDLE ATTACHMENT should influence the DECISION field before the anaphase gate opens.",
+      "canonical_statement": "Predict consequences of a failed checkpoint protein or spindle attachment defect on cell-cycle progression and chromosome segregation.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-14",
+      "knowledge_id": "U4-K-179",
+      "domain": "Cyclin-CDK regulation",
+      "title": "Interpret cyclin and CDK activity patterns",
+      "type": "GRAPH_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L47"
+      ],
+      "prompt": "A graph shows one regulatory cyclin rising from low concentration to a peak before a cell-cycle transition and then falling rapidly. The amount of its partner CDK changes little, while measured cyclin-CDK kinase activity rises and falls with the cyclin. Explain the pattern without naming a specific cyclin-CDK pair.",
+      "answer_guide": "The data are consistent with regulation in which cyclin abundance changes while the CDK protein is more stable. Increased cyclin allows more active cyclin-CDK complexes to form, raising kinase activity toward the transition. Cyclin degradation then reduces active complex formation and kinase activity. The required reasoning is the relationship among cyclin abundance, CDK, active complex, and target phosphorylation; specific named pairs are outside the required scope.",
+      "story_hint": "Picture the Cyclin–CDK Control Rack: changing cyclin availability controls how much active complex forms even when CDK amount is relatively stable.",
+      "canonical_statement": "Interpret relative cyclin/CDK abundance or activity data to explain cell-cycle transitions without memorizing named cyclin-CDK pairs.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U4-CH-15",
+      "knowledge_id": "U4-K-180",
+      "domain": "Cancer and cell-cycle control",
+      "title": "Explain a treatment using control evidence",
+      "type": "EVIDENCE_MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U4-L48",
+        "U4-L49",
+        "U4-L50",
+        "U4-L51"
+      ],
+      "prompt": "A tumor-cell line carries a mutation that weakens a DNA-damage checkpoint and also shows reduced apoptosis after severe DNA damage. A treatment restores strong arrest after damage but does not directly repair the DNA. Predict one way the treatment could reduce tumor-cell proliferation and explain why the result does not mean every treated cell will die.",
+      "answer_guide": "Restoring arrest can prevent damaged cells from continuing rapidly through the cell cycle, reducing proliferation and providing time for repair or other outcomes. Because arrest and apoptosis are distinct responses, restored checkpoint control does not imply that every arrested cell undergoes programmed cell death. The effect on a tumor population depends on the treatment, the remaining pathways, and whether cells repair, remain arrested, senesce, undergo apoptosis, or eventually reenter the cycle.",
+      "story_hint": "Use the model-cell security file: checkpoint decision, arrest, repair, and apoptosis are separate possible outcomes.",
+      "canonical_statement": "Use evidence about cell-cycle control, DNA damage, apoptosis, or signaling to explain how a treatment or mutation changes tumor-cell proliferation.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    }
+  ]
+}

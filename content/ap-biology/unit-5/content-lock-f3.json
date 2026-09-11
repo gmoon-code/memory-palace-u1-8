@@ -1,0 +1,46 @@
+{
+  "schema": "memory-palace-v2-unit5-f3-content-lock-1.0",
+  "generated_utc": "2026-09-04T06:30:00+00:00",
+  "unit_id": "unit-5",
+  "lock_status": "LOCKED_F3",
+  "student_release": false,
+  "parents": [
+    "LOCKED_F1",
+    "LOCKED_F2"
+  ],
+  "files": {
+    "content/ap-biology/unit-5/source/canonical-unit5-f1.json": {
+      "sha256": "752ed48b2268da6acb8a0755c14859cd81edc31f96fecd9438902abc41ad8444",
+      "bytes": 245170
+    },
+    "content/ap-biology/unit-5/architecture/learning-classification-f2.json": {
+      "sha256": "d1d6fc9388f762a44d9c88f495bd6104e4bae8676d3ff56f9255e7d712324d68",
+      "bytes": 104943
+    },
+    "content/ap-biology/unit-5/architecture/palace-architecture-f2.json": {
+      "sha256": "c57c7ee597802a601c89ec2727b5608d378275e76ce5fb5b93bfe88c65a6e611",
+      "bytes": 65402
+    },
+    "content/ap-biology/unit-5/briefs/journey-briefs-f3.json": {
+      "sha256": "97adc55529950a4dcf5804fc57893e30d125c050959b70d8cd5f3450f6a922d5",
+      "bytes": 39715
+    },
+    "content/ap-biology/unit-5/briefs/scene-briefs-f3.json": {
+      "sha256": "03632404578366d622b483aea04417d4df1ec8450d5c95cfac872fc96f5a3fdd",
+      "bytes": 689734
+    },
+    "content/ap-biology/unit-5/f3-release-manifest.json": {
+      "sha256": "606b9526a785b37130dabab8fd2e14dcfb7a0c94de34ba0f8bf909ff152df25c",
+      "bytes": 578
+    },
+    "content/ap-biology/unit-5/status-f3.json": {
+      "sha256": "9cedb134c2ea138296c7404eabb61e3e4d7ab3e8324c8e0daac4ef8aad8acb9e",
+      "bytes": 1193
+    },
+    "content/ap-biology/unit-5/audit/APBIO_Unit5_F3_Scene_Briefs.xlsx": {
+      "sha256": "96bb42f65007ed25df435f70a42f34bab1b22da84b3bd49bcb9a067ec870bfff",
+      "bytes": 117145
+    }
+  },
+  "rule": "F3 locks Unit 5 journey continuity and science-bearing scene briefs only. F1 canonical science and F2 destinations/loci remain immutable; polished Unit 5 story prose remains prohibited until F4A."
+}

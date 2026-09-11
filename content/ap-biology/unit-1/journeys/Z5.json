@@ -1,0 +1,416 @@
+{
+  "palace_id": "Z5",
+  "palace_name": "Polymer Assembly Hall",
+  "story_title": "The Molecular Assembly Line Jam",
+  "tagline": "A conveyor is clogged with loose building blocks. Help the mechanic join them, cut them apart, and sort the four major biomolecule classes correctly.",
+  "guide": {
+    "name": "Pip Moreno",
+    "role": "assembly-line mechanic",
+    "visual": "green coveralls, red wrench, clear water canister clipped to the belt",
+    "story_job": "keeps one molecular crate moving through joining, cutting, and classification stations"
+  },
+  "premise": "The assembly hall has stopped because loose molecular pieces are piling up at the receiving dock. A half-built chain blocks the conveyor and must be completed, disassembled, and sorted correctly.",
+  "mission": "Follow Pip through four stations to distinguish monomers from polymers, see dehydration synthesis and hydrolysis as opposite covalent-bond processes, and compare the four major classes of biological macromolecules.",
+  "finale": "At the shipping board, every crate is routed correctly. You leave with one simple mechanical picture: small units can be covalently joined into chains, water chemistry can reverse those links, and the four macromolecule classes do not all use the same architecture.",
+  "estimated_minutes": 8,
+  "scene_count": 4,
+  "checkpoint_count": 2,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The assembly hall is a straight conveyor line. You begin at Receiving, move through the hot Dehydration Welder, pass the Hydrolysis Wash Station, and end at the shipping board.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Macromolecule Receiving Dock",
+      "short": "Receiving",
+      "floor": "Dock",
+      "symbol": "▣"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Dehydration Welder",
+      "short": "Join",
+      "floor": "Line 1",
+      "symbol": "🔥"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Hydrolysis Wash Station",
+      "short": "Split",
+      "floor": "Line 2",
+      "symbol": "💧"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Comparison Shipping Board",
+      "short": "Compare",
+      "floor": "Shipping",
+      "symbol": "⇢"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Macromolecule Receiving Dock",
+      "title": "Loose Parts at Receiving",
+      "scene_kicker": "Before the conveyor can run, you need to know which pieces are building units and which structures are chains.",
+      "location_description": "A loading dock is buried under small molecular crates. Three conveyor lanes accept repeating building units; a fourth lipid lane carries irregular hydrophobic packages that do not form true polymers.",
+      "scene_layout": {
+        "orientation": "Loose building units pile up left, a chain-linking conveyor runs through center, and four destination signs—carbohydrates, proteins, nucleic acids, lipids—hang on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Loose-unit bins",
+            "symbol": "•",
+            "description": "Contain repeating molecular building units."
+          },
+          {
+            "position": "center",
+            "label": "Chain conveyor",
+            "symbol": "••••",
+            "description": "Links repeating units covalently into chain-like structures."
+          },
+          {
+            "position": "right",
+            "label": "Four-class signs",
+            "symbol": "C/P/NA/L",
+            "description": "Separate carbohydrates, proteins, nucleic acids, and lipids without pretending all four are polymers."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Pip Moreno",
+          "kind": "guide",
+          "visual": "green coveralls, red wrench, clear water canister clipped to the belt",
+          "job": "keeps one molecular crate moving through joining, cutting, and classification stations"
+        },
+        {
+          "name": "Monomer",
+          "kind": "building unit",
+          "visual": "one small standardized piece waiting beside many copies of itself",
+          "job": "can serve as a repeating unit used to build a polymer"
+        },
+        {
+          "name": "Polymer",
+          "kind": "chain-like macromolecule",
+          "visual": "many repeating units covalently linked in a long chain",
+          "job": "is a chain-like molecule built from repeating units"
+        },
+        {
+          "name": "Lipid lane",
+          "kind": "important exception",
+          "visual": "oily packages traveling together without a repeating-chain connector",
+          "job": "reminds you that lipids are a major biomolecule class but do not form true polymers"
+        }
+      ],
+      "story_open": "Pip Moreno kicks a jammed wheel and points to a single loose piece. A **monomer** is a building unit that can serve as one repeating part of a larger chain. When many repeating units are covalently connected, the resulting chain-like macromolecule is a **polymer**.",
+      "story_paragraphs": [
+        "Pip Moreno kicks a jammed wheel and points to a single loose piece. A **monomer** is a building unit that can serve as one repeating part of a larger chain. When many repeating units are covalently connected, the resulting chain-like macromolecule is a **polymer**.",
+        "Three destination lanes make that pattern easy to see: carbohydrates can contain sugar polymers, proteins are built as amino-acid chains, and nucleic acids are nucleotide polymers. The lipid lane is deliberately different. Lipids are one of the four major biological-molecule classes, but they do **not** form true polymers.",
+        "Pip lifts a crate containing the four class labels—**carbohydrates, proteins, nucleic acids, and lipids**—and pushes the loose monomers toward a glowing welding station. “Now we join the pieces without losing track of what the chemistry actually does.”"
+      ],
+      "story_close": "Pip lifts a crate containing the four class labels—**carbohydrates, proteins, nucleic acids, and lipids**—and pushes the loose monomers toward a glowing welding station. “Now we join the pieces without losing track of what the chemistry actually does.”",
+      "object_ids": [
+        "MO-APBIO-U1-PA001",
+        "MO-APBIO-U1-PA002",
+        "MO-APBIO-U1-PA003"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PA001",
+          "term": "Four macromolecule classes",
+          "story": "four receiving bays for carbohydrate, protein, nucleic-acid, and lipid cargo",
+          "science": "Carbohydrates, proteins, nucleic acids, and lipids are four major classes of large biological molecules. Carbohydrates, proteins, and nucleic acids include polymers; lipids do not form true polymers.",
+          "exact_name": false,
+          "hint": "four receiving bays for carbohydrate, protein, nucleic-acid, and lipid cargo"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PA002",
+          "term": "Monomer",
+          "story": "one isolated repeating-unit bead",
+          "science": "A monomer is a repeating unit that can make up a polymer.",
+          "exact_name": true,
+          "hint": "one isolated repeating-unit bead"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PA003",
+          "term": "Polymer",
+          "story": "a chain made of many repeating units",
+          "science": "A polymer is a chain-like macromolecule of repeating units covalently bonded together.",
+          "exact_name": true,
+          "hint": "a chain made of many repeating units"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Four macromolecule classes",
+          "meaning": "Carbohydrates, proteins, nucleic acids, and lipids are four major classes of large biological molecules. Carbohydrates, proteins, and nucleic acids include polymers; lipids do not form true polymers.",
+          "image": "four receiving bays for carbohydrate, protein, nucleic-acid, and lipid cargo"
+        },
+        {
+          "term": "Monomer",
+          "meaning": "A monomer is a repeating unit that can make up a polymer.",
+          "image": "one isolated repeating-unit bead"
+        },
+        {
+          "term": "Polymer",
+          "meaning": "A polymer is a chain-like macromolecule of repeating units covalently bonded together.",
+          "image": "a chain made of many repeating units"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PA002",
+      "checkpoint_prompt": "",
+      "next_locus": "Dehydration Welder"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Dehydration Welder",
+      "title": "Join the Pieces, Release Water",
+      "scene_kicker": "The welding station forms covalent connections while components equivalent to water leave the reaction.",
+      "location_description": "A hot orange welding machine grips two monomer pieces. One side releases an H tag, the other an OH tag. The tags combine in a small water tray as a new covalent connection locks between the monomers.",
+      "scene_layout": {
+        "orientation": "Unjoined monomers enter from left, the glowing welder occupies center, and a growing polymer exits right beside a collecting water tray.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Monomer feed",
+            "symbol": "• •",
+            "description": "Supplies smaller units to be joined."
+          },
+          {
+            "position": "center",
+            "label": "Dehydration welder",
+            "symbol": "H + OH → H₂O",
+            "description": "Forms a covalent connection while water-equivalent components are removed."
+          },
+          {
+            "position": "right",
+            "label": "Growing chain",
+            "symbol": "••••",
+            "description": "Extends as repeated joining reactions continue."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Pip Moreno",
+          "kind": "guide",
+          "visual": "green coveralls, red wrench, clear water canister clipped to the belt",
+          "job": "keeps one molecular crate moving through joining, cutting, and classification stations"
+        },
+        {
+          "name": "Dehydration synthesis",
+          "kind": "joining reaction",
+          "visual": "a welder that removes H and OH as a water molecule while fastening two units together",
+          "job": "forms covalent bonds between smaller units while removing components equivalent to water"
+        },
+        {
+          "name": "Polymerization",
+          "kind": "many-unit assembly",
+          "visual": "a conveyor repeating the same joining operation again and again",
+          "job": "builds a polymer by connecting many monomer units"
+        }
+      ],
+      "story_open": "A conveyor alarm pulls you and Pip Moreno into **Dehydration Welder**. A hot orange welding machine grips two monomer pieces. One side releases an H tag, the other an OH tag. The tags combine in a small water tray as a new covalent connection locks between the monomers. The Monomer feed occupies your left, the Dehydration welder is directly ahead on the line, and the Growing chain waits on your right. The same molecular pieces stay on the belt, so you can watch exactly what changes as the assembly line moves them forward.",
+      "story_paragraphs": [
+        "A conveyor alarm pulls you and Pip Moreno into **Dehydration Welder**. A hot orange welding machine grips two monomer pieces. One side releases an H tag, the other an OH tag. The tags combine in a small water tray as a new covalent connection locks between the monomers. The Monomer feed occupies your left, the Dehydration welder is directly ahead on the line, and the Growing chain waits on your right. The same molecular pieces stay on the belt, so you can watch exactly what changes as the assembly line moves them forward.",
+        "Two monomers enter the jaws. The welder removes an H from one side and an OH from the other; together those components leave as water while a new covalent bond forms between the units. That joining process is **dehydration synthesis**.",
+        "The machine repeats the operation down the conveyor. Joining many monomers into a growing chain is **polymerization**. The key image is not “water somehow glues the pieces.” The bond forms as the reactants lose components equivalent to water.",
+        "Pip hands you the newly built chain. A warning alarm immediately sends it through a blue wash tunnel labeled REVERSE LINE."
+      ],
+      "story_close": "Pip hands you the newly built chain. A warning alarm immediately sends it through a blue wash tunnel labeled REVERSE LINE.",
+      "object_ids": [
+        "MO-APBIO-U1-PA004",
+        "MO-APBIO-U1-PA005"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PA004",
+          "term": "Dehydration synthesis",
+          "story": "a builder joining two monomers at a welding platform",
+          "science": "Dehydration synthesis covalently joins monomers while removing H and OH equivalent to water.",
+          "exact_name": true,
+          "hint": "a builder joining two monomers at a welding platform"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PA005",
+          "term": "Polymerization",
+          "story": "a conveyor repeatedly adding monomer units to a growing chain",
+          "science": "Connecting many monomers is polymerization.",
+          "exact_name": true,
+          "hint": "a conveyor repeatedly adding monomer units to a growing chain"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Dehydration synthesis",
+          "meaning": "Dehydration synthesis covalently joins monomers while removing H and OH equivalent to water.",
+          "image": "a builder joining two monomers at a welding platform"
+        },
+        {
+          "term": "Polymerization",
+          "meaning": "Connecting many monomers is polymerization.",
+          "image": "a conveyor repeatedly adding monomer units to a growing chain"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-PA004",
+      "checkpoint_prompt": "What reaction joins smaller units covalently while removing components equivalent to water?",
+      "next_locus": "Hydrolysis Wash Station"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Hydrolysis Wash Station",
+      "title": "Water Cuts the Chain",
+      "scene_kicker": "The reverse line uses water to break the covalent connection.",
+      "location_description": "A blue wash tunnel surrounds one bond in the polymer chain. A water molecule is split across that connection. The bond opens and the larger chain separates into smaller pieces.",
+      "scene_layout": {
+        "orientation": "The intact polymer enters left, a high-pressure water nozzle targets one bond at center, and smaller molecular pieces exit on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Polymer inlet",
+            "symbol": "••••",
+            "description": "Carries the covalently linked chain into the station."
+          },
+          {
+            "position": "center",
+            "label": "Hydrolysis nozzle",
+            "symbol": "H₂O",
+            "description": "Adds water across a covalent bond as that bond is cleaved."
+          },
+          {
+            "position": "right",
+            "label": "Smaller products",
+            "symbol": "••",
+            "description": "Receives the separated molecules after cleavage."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Pip Moreno",
+          "kind": "guide",
+          "visual": "green coveralls, red wrench, clear water canister clipped to the belt",
+          "job": "keeps one molecular crate moving through joining, cutting, and classification stations"
+        },
+        {
+          "name": "Hydrolysis",
+          "kind": "bond-cleaving reaction",
+          "visual": "a water jet splitting across one covalent link",
+          "job": "breaks a covalent bond by adding water across it, producing smaller molecules"
+        }
+      ],
+      "story_open": "A conveyor alarm pulls you and Pip Moreno into **Hydrolysis Wash Station**. A blue wash tunnel surrounds one bond in the polymer chain. A water molecule is split across that connection. The bond opens and the larger chain separates into smaller pieces. The Polymer inlet occupies your left, the Hydrolysis nozzle is directly ahead on the line, and the Smaller products waits on your right. The same molecular pieces stay on the belt, so you can watch exactly what changes as the assembly line moves them forward.",
+      "story_paragraphs": [
+        "A conveyor alarm pulls you and Pip Moreno into **Hydrolysis Wash Station**. A blue wash tunnel surrounds one bond in the polymer chain. A water molecule is split across that connection. The bond opens and the larger chain separates into smaller pieces. The Polymer inlet occupies your left, the Hydrolysis nozzle is directly ahead on the line, and the Smaller products waits on your right. The same molecular pieces stay on the belt, so you can watch exactly what changes as the assembly line moves them forward.",
+        "The wash nozzle fires at one covalent connection. Water is added across the bond, and the chain separates. This is **hydrolysis**: water participates in cleaving the covalent bond and breaking the larger molecule into smaller products.",
+        "Pip places the dehydration welder and hydrolysis nozzle side by side. One joins smaller units while removing water-equivalent components; the other breaks a covalent connection by adding water across it. Holding those opposite motions together makes the names much easier to retrieve.",
+        "The split pieces roll onto the final shipping board, where four enormous columns are waiting to compare what each biomolecule class is made from."
+      ],
+      "story_close": "The split pieces roll onto the final shipping board, where four enormous columns are waiting to compare what each biomolecule class is made from.",
+      "object_ids": [
+        "MO-APBIO-U1-PA006"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PA006",
+          "term": "Hydrolysis",
+          "story": "a water-fed splitter positioned over one covalent bond",
+          "science": "Hydrolysis cleaves covalent bonds and breaks polymers into smaller molecules by adding water across the bond.",
+          "exact_name": true,
+          "hint": "a water-fed splitter positioned over one covalent bond"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Hydrolysis",
+          "meaning": "Hydrolysis cleaves covalent bonds and breaks polymers into smaller molecules by adding water across the bond.",
+          "image": "a water-fed splitter positioned over one covalent bond"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-PA006",
+      "checkpoint_prompt": "What reaction breaks a covalent bond by adding water across that bond?",
+      "next_locus": "Comparison Shipping Board"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Comparison Shipping Board",
+      "title": "Four Classes, Four Structural Patterns",
+      "scene_kicker": "The final board compares the classes without forcing them into the same monomer–polymer template.",
+      "location_description": "The shipping wall contains four illuminated columns: carbohydrate, protein, nucleic acid, and lipid. Each column has slots for building units, elements, linkage patterns, and representative roles.",
+      "scene_layout": {
+        "orientation": "Carbohydrate and protein columns stand left, nucleic acid is center, and lipid occupies the rightmost column with a clear NOT A TRUE POLYMER marker.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Carbohydrate / protein columns",
+            "symbol": "C / P",
+            "description": "Contrast sugar-based polymers with amino-acid polypeptides."
+          },
+          {
+            "position": "center",
+            "label": "Nucleic-acid column",
+            "symbol": "NA",
+            "description": "Shows nucleotide polymers containing C, H, O, N, and P."
+          },
+          {
+            "position": "right",
+            "label": "Lipid column",
+            "symbol": "L",
+            "description": "Groups fats, phospholipids, and steroids without assigning a repeating monomer/polymer architecture."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Pip Moreno",
+          "kind": "guide",
+          "visual": "green coveralls, red wrench, clear water canister clipped to the belt",
+          "job": "keeps one molecular crate moving through joining, cutting, and classification stations"
+        },
+        {
+          "name": "Macromolecule comparison board",
+          "kind": "synthesis tool",
+          "visual": "four side-by-side class columns",
+          "job": "organizes similarities and differences in building units, elements, structures, and roles without creating false equivalences"
+        }
+      ],
+      "story_open": "Pip locks the final crate beneath the **macromolecule comparison** board. Carbohydrates are built from monosaccharides and can form polysaccharides. Proteins are built from amino acids and necessarily contain carbon, hydrogen, oxygen, and nitrogen, with sulfur present in some proteins. Nucleic acids are nucleotide polymers containing carbon, hydrogen, oxygen, nitrogen, and phosphorus.",
+      "story_paragraphs": [
+        "Pip locks the final crate beneath the **macromolecule comparison** board. Carbohydrates are built from monosaccharides and can form polysaccharides. Proteins are built from amino acids and necessarily contain carbon, hydrogen, oxygen, and nitrogen, with sulfur present in some proteins. Nucleic acids are nucleotide polymers containing carbon, hydrogen, oxygen, nitrogen, and phosphorus.",
+        "The lipid column refuses to accept the POLYMER stamp. Lipids include fats, phospholipids, and steroids, but they do not form true repeating-unit polymers. Their shared chemistry is more strongly associated with hydrophobic character than with a single monomer-to-polymer construction rule.",
+        "Pip flips the shipping board into a **macromolecule comparison table**. Carbohydrates, proteins, nucleic acids, and lipids can now be compared by building units, covalent connections, elements, structures, and biological roles without pretending that all four are true polymers.",
+        "The conveyor restarts. Pip grins as the four crates leave through different doors. The mechanism you carry forward is simple: identify the building unit when one exists, identify the covalent connection, and never force every biomolecule into the same architecture."
+      ],
+      "story_close": "The conveyor restarts. Pip grins as the four crates leave through different doors. The mechanism you carry forward is simple: identify the building unit when one exists, identify the covalent connection, and never force every biomolecule into the same architecture.",
+      "object_ids": [
+        "MO-APBIO-U1-PA007"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PA007",
+          "term": "Macromolecule comparison table",
+          "story": "a four-column dispatch board",
+          "science": "Compare the four major macromolecule classes by their building units, covalent connections, elements, structures, and biological roles.",
+          "exact_name": true,
+          "hint": "a four-column dispatch board"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Macromolecule comparison table",
+          "meaning": "Compare the four major macromolecule classes by their building units, covalent connections, elements, structures, and biological roles.",
+          "image": "a four-column dispatch board"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PA007",
+      "checkpoint_prompt": "",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}

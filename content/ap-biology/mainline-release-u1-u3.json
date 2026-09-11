@@ -1,0 +1,60 @@
+{
+  "schema": "memory-palace-v2-mainline-u1-u3-1.0",
+  "release_name": "AP Biology Units 1-3 Mainline",
+  "runtime_version": "v2-apbio-0.20.0-u3-f6",
+  "student_ready_units": [
+    "unit-1",
+    "unit-2",
+    "unit-3"
+  ],
+  "unreleased_units": [
+    "unit-4",
+    "unit-5",
+    "unit-6",
+    "unit-7",
+    "unit-8"
+  ],
+  "totals": {
+    "canonical_records_units_1_3": 557,
+    "guided_journeys": 23,
+    "permanent_scenes": 181,
+    "challenge_lab_items": 36
+  },
+  "units": {
+    "unit-1": {
+      "title": "Chemistry of Life",
+      "canonical_records": 229,
+      "guided_journeys": 9,
+      "permanent_scenes": 78,
+      "challenge_lab_items": 16,
+      "release_state": "STUDENT_READY"
+    },
+    "unit-2": {
+      "title": "Cells",
+      "canonical_records": 142,
+      "guided_journeys": 7,
+      "permanent_scenes": 49,
+      "challenge_lab_items": 9,
+      "release_state": "STUDENT_READY_F5"
+    },
+    "unit-3": {
+      "title": "Cellular Energetics",
+      "canonical_records": 186,
+      "guided_journeys": 7,
+      "permanent_scenes": 54,
+      "challenge_lab_items": 11,
+      "release_state": "STUDENT_READY_F6_CLASSROOM_BROWSER_VALIDATED"
+    }
+  },
+  "next_curriculum_gate": "Unit 4 scientific lock before narrative generation",
+  "integration_status": "MAINLINE_READY",
+  "qa": {
+    "historical_build_chain": "PASS",
+    "automated_tests": 140,
+    "unit3_f6_ui_logic": "PASS",
+    "deterministic_git_diff": "PASS",
+    "tracked_pdf_files": 0,
+    "tracked_sqlite_files": 0,
+    "tracked_cache_artifacts": 0
+  }
+}

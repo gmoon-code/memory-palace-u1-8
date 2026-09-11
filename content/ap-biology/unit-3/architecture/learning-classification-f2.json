@@ -1,0 +1,3505 @@
+{
+  "schema": "memory-palace-v2-unit3-f2-classification-1.0",
+  "generated_utc": "2026-09-03T02:05:00+00:00",
+  "unit_id": "unit-3",
+  "canonical_source_lock": "F1",
+  "counts": {
+    "total": 186,
+    "by_destination": {
+      "PALACE_EMBEDDED": 117,
+      "PALACE_PRIMARY_LOCUS": 54,
+      "SUPPORTING_NON_RUNTIME_SCOPE_GUARD": 4,
+      "CHALLENGE_LAB": 11
+    },
+    "by_name_support": {
+      "SEMANTIC_SCIENCE_CUE_SUFFICIENT": 61,
+      "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE": 65,
+      "NO_EXACT_NAME_GATE": 60
+    },
+    "exact_name_targets": 126,
+    "mandatory_spelling_targets": 0
+  },
+  "records": [
+    {
+      "knowledge_id": "U3-K-001",
+      "canonical_label": "Enzyme regulation role",
+      "topic": "3.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_PROFILE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-002",
+      "canonical_label": "Enzymes are protein catalysts",
+      "topic": "3.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_PROFILE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-003",
+      "canonical_label": "Activation-energy reduction",
+      "topic": "3.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L01",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_PROFILE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-004",
+      "canonical_label": "Active-site compatibility",
+      "topic": "3.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L02",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MOLECULAR_DOCKING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-005",
+      "canonical_label": "Enzyme-substrate complex",
+      "topic": "3.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_DOCKING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-006",
+      "canonical_label": "Structure-function disruption",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_STRESS_TEST",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-007",
+      "canonical_label": "Enzyme denaturation",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L04",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_FUNCTION_STRESS_TEST",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-008",
+      "canonical_label": "Temperature and pH outside optimum",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_STRESS_TEST",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-009",
+      "canonical_label": "Reversible denaturation",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_STRESS_TEST",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-010",
+      "canonical_label": "Substrate and product concentrations",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L05",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RATE_VARIABLES_GRAPH_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-011",
+      "canonical_label": "Temperature and collision frequency",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RATE_VARIABLES_GRAPH_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-012",
+      "canonical_label": "Competitive inhibition",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L07",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMPETITION_MECHANISM",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-013",
+      "canonical_label": "Noncompetitive inhibition",
+      "topic": "3.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L08",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ALLOSTERIC_CONTROL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-014",
+      "canonical_label": "Energy input",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_COUPLING_WORK_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-015",
+      "canonical_label": "Life and thermodynamics",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "THERMODYNAMIC_ACCOUNTING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-016",
+      "canonical_label": "Energy input and maintenance",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L15",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "THERMODYNAMIC_DIRECTION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-017",
+      "canonical_label": "Energy coupling",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L17",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_COUPLING_WORK_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-018",
+      "canonical_label": "Loss of energy flow",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L15",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "THERMODYNAMIC_DIRECTION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-019",
+      "canonical_label": "Sequential metabolic pathways",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-020",
+      "canonical_label": "Pathway intermediates",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-021",
+      "canonical_label": "Conserved core metabolism",
+      "topic": "3.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L21",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EVOLUTIONARY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-022",
+      "canonical_label": "Photosynthesis overall process",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NUTRITION_STRATEGY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-023",
+      "canonical_label": "Solar energy capture",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NUTRITION_STRATEGY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-024",
+      "canonical_label": "Prokaryotic origin of photosynthesis",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L23",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EVOLUTIONARY_TIMELINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-025",
+      "canonical_label": "Atmospheric oxygenation",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EVOLUTIONARY_TIMELINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-026",
+      "canonical_label": "Foundation of eukaryotic photosynthesis",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EVOLUTIONARY_TIMELINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-027",
+      "canonical_label": "Chloroplast compartments",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L25",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-028",
+      "canonical_label": "Stroma and carbon fixation",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-029",
+      "canonical_label": "Thylakoid membrane machinery",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-030",
+      "canonical_label": "Grana and light reactions",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-031",
+      "canonical_label": "Light-reaction energy products",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L33",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-032",
+      "canonical_label": "ETC locations across life",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L31",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MEMBRANE_ETC_GRADIENT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-033",
+      "canonical_label": "NADPH formation",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L32",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_OUTPUT_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-034",
+      "canonical_label": "Light excitation of chlorophyll",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PIGMENT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-035",
+      "canonical_label": "Water supplies PSII electrons",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L30",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_REPLACEMENT_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-036",
+      "canonical_label": "Photosystem linkage",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L31",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MEMBRANE_ETC_GRADIENT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-037",
+      "canonical_label": "Thylakoid proton gradient",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L31",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MEMBRANE_ETC_GRADIENT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-038",
+      "canonical_label": "Photophosphorylation",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L33",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-039",
+      "canonical_label": "Calvin-cycle energy input",
+      "topic": "3.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L34",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_INPUT_PATHWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-040",
+      "canonical_label": "Respiration and ATP synthesis",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L39",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SYSTEM_OVERVIEW_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-041",
+      "canonical_label": "Respiration and fermentation across life",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L51",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROCESS_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-042",
+      "canonical_label": "Aerobic respiration as coordinated pathway",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_OVERVIEW_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-043",
+      "canonical_label": "Respiratory electron transfer",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L45",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REDOX_CHAIN",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-044",
+      "canonical_label": "Mitochondrial proton gradient",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L46",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GRADIENT_BUILDING_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-045",
+      "canonical_label": "Cristae and ATP-production surface",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L44",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-046",
+      "canonical_label": "Prokaryotic respiratory membrane",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L50",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CROSS_DOMAIN_MEMBRANE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-047",
+      "canonical_label": "Oxidative phosphorylation",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L48",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-048",
+      "canonical_label": "Respiratory uncoupling and heat",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L49",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_PARTITION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-049",
+      "canonical_label": "Glycolysis outputs",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L40",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PATHWAY_OUTPUT_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-050",
+      "canonical_label": "Pyruvate oxidation and Krebs inputs",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L42",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PATHWAY_TRANSITION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-051",
+      "canonical_label": "Krebs-cycle location and outputs",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L43",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CYCLIC_PATHWAY_OUTPUT_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-052",
+      "canonical_label": "Reduced coenzymes feed ETC",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_CHAIN",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-053",
+      "canonical_label": "Matrix-intermembrane pH difference",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L46",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GRADIENT_BUILDING_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-054",
+      "canonical_label": "Fermentation and NAD+ recycling",
+      "topic": "3.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L52",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REDOX_RECYCLING_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-055",
+      "canonical_label": "Metabolism",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L12",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-056",
+      "canonical_label": "Metabolic pathway",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-057",
+      "canonical_label": "Catabolic pathway",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-058",
+      "canonical_label": "Anabolic pathway",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-059",
+      "canonical_label": "Energy",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L13",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_FORM_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-060",
+      "canonical_label": "Kinetic energy",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_FORM_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-061",
+      "canonical_label": "Thermal energy",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_FORM_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-062",
+      "canonical_label": "Potential energy",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_FORM_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-063",
+      "canonical_label": "Chemical energy",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_FORM_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-064",
+      "canonical_label": "Thermodynamics",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "THERMODYNAMIC_ACCOUNTING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-065",
+      "canonical_label": "First law of thermodynamics",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L14",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "THERMODYNAMIC_ACCOUNTING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-066",
+      "canonical_label": "Second law of thermodynamics",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L15",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "THERMODYNAMIC_DIRECTION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-067",
+      "canonical_label": "Entropy and living order",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L15",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "THERMODYNAMIC_DIRECTION_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-068",
+      "canonical_label": "Gibbs free energy",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L16",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_LANDSCAPE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-002"
+    },
+    {
+      "knowledge_id": "U3-K-069",
+      "canonical_label": "Gibbs free-energy equation scope guard",
+      "topic": "3.3",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-002"
+    },
+    {
+      "knowledge_id": "U3-K-070",
+      "canonical_label": "Exergonic reaction",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_LANDSCAPE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-071",
+      "canonical_label": "Endergonic reaction",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_LANDSCAPE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-072",
+      "canonical_label": "Cells remain out of equilibrium",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_LANDSCAPE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-073",
+      "canonical_label": "Mechanical cellular work",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_COUPLING_WORK_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-074",
+      "canonical_label": "Transport work",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_COUPLING_WORK_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-075",
+      "canonical_label": "Chemical work",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_COUPLING_WORK_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-076",
+      "canonical_label": "ATP",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L18",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MOLECULAR_STRUCTURE_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-077",
+      "canonical_label": "ATP structure",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_STRUCTURE_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-078",
+      "canonical_label": "ATP hydrolysis",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L19",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COUPLED_REACTION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-001"
+    },
+    {
+      "knowledge_id": "U3-K-079",
+      "canonical_label": "ATP hydrolysis energy source",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COUPLED_REACTION_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-001"
+    },
+    {
+      "knowledge_id": "U3-K-080",
+      "canonical_label": "ATP energy coupling",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COUPLED_REACTION_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-081",
+      "canonical_label": "Phosphorylation",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COUPLED_REACTION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-001"
+    },
+    {
+      "knowledge_id": "U3-K-082",
+      "canonical_label": "ATP regeneration cycle",
+      "topic": "3.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L20",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_CYCLE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-083",
+      "canonical_label": "Activation energy",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_PROFILE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-084",
+      "canonical_label": "Substrate",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_DOCKING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-085",
+      "canonical_label": "Active site",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_DOCKING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-086",
+      "canonical_label": "Induced fit",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_DOCKING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-087",
+      "canonical_label": "Enzymes are reusable catalysts",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L03",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CATALYTIC_CYCLE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-088",
+      "canonical_label": "Enzyme naming convention",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CATALYTIC_CYCLE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-003"
+    },
+    {
+      "knowledge_id": "U3-K-089",
+      "canonical_label": "Enzymes in catabolic reactions",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-090",
+      "canonical_label": "Enzymes in anabolic reactions",
+      "topic": "3.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-091",
+      "canonical_label": "Optimal conditions",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_STRESS_TEST",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-092",
+      "canonical_label": "Substrate saturation",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RATE_VARIABLES_GRAPH_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-093",
+      "canonical_label": "Cofactor",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L06",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MOLECULAR_ASSEMBLY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-004"
+    },
+    {
+      "knowledge_id": "U3-K-094",
+      "canonical_label": "Coenzyme",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L06",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_ASSEMBLY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-004"
+    },
+    {
+      "knowledge_id": "U3-K-095",
+      "canonical_label": "Holoenzyme",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L06",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_ASSEMBLY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-004"
+    },
+    {
+      "knowledge_id": "U3-K-096",
+      "canonical_label": "Irreversible enzyme inhibition",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L11",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DISTINCTION_STRESS_TEST",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-005"
+    },
+    {
+      "knowledge_id": "U3-K-097",
+      "canonical_label": "Competitive inhibition and substrate concentration",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPETITION_MECHANISM",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-005"
+    },
+    {
+      "knowledge_id": "U3-K-098",
+      "canonical_label": "Allosteric site",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ALLOSTERIC_CONTROL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-007"
+    },
+    {
+      "knowledge_id": "U3-K-099",
+      "canonical_label": "Allosteric regulation",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ALLOSTERIC_CONTROL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-007"
+    },
+    {
+      "knowledge_id": "U3-K-100",
+      "canonical_label": "Allosteric activator",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ALLOSTERIC_CONTROL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-006"
+    },
+    {
+      "knowledge_id": "U3-K-101",
+      "canonical_label": "Allosteric inhibitor",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ALLOSTERIC_CONTROL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-006"
+    },
+    {
+      "knowledge_id": "U3-K-102",
+      "canonical_label": "Cooperativity",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L09",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COOPERATIVITY_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-007"
+    },
+    {
+      "knowledge_id": "U3-K-103",
+      "canonical_label": "Feedback inhibition",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L10",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PATHWAY_FEEDBACK_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-007"
+    },
+    {
+      "knowledge_id": "U3-K-104",
+      "canonical_label": "Metabolic pathway regulation",
+      "topic": "3.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L10",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PATHWAY_FEEDBACK_LOOP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-007"
+    },
+    {
+      "knowledge_id": "U3-K-105",
+      "canonical_label": "Autotroph",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L22",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NUTRITION_STRATEGY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-008"
+    },
+    {
+      "knowledge_id": "U3-K-106",
+      "canonical_label": "Photoautotroph",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NUTRITION_STRATEGY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-008"
+    },
+    {
+      "knowledge_id": "U3-K-107",
+      "canonical_label": "Heterotroph",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NUTRITION_STRATEGY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-008"
+    },
+    {
+      "knowledge_id": "U3-K-108",
+      "canonical_label": "Cyanobacteria and oxygenic photosynthesis",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EVOLUTIONARY_TIMELINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-109",
+      "canonical_label": "Leaf photosynthesis",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-110",
+      "canonical_label": "Stomata",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L24",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-111",
+      "canonical_label": "Chloroplast",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-112",
+      "canonical_label": "Chlorophyll",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L28",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PIGMENT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-113",
+      "canonical_label": "Photosynthesis equation as model",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_SYSTEM_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_STOICHIOMETRY_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-029"
+    },
+    {
+      "knowledge_id": "U3-K-114",
+      "canonical_label": "Photosynthetic oxygen comes from water",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_SYSTEM_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-009"
+    },
+    {
+      "knowledge_id": "U3-K-115",
+      "canonical_label": "Photosynthesis as redox",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L26",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REDOX_SYSTEM_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-009"
+    },
+    {
+      "knowledge_id": "U3-K-116",
+      "canonical_label": "Light reactions and Calvin cycle",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_SYSTEM_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-117",
+      "canonical_label": "Photon",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L27",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SPECTRUM_ENERGY_VISUAL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-010"
+    },
+    {
+      "knowledge_id": "U3-K-118",
+      "canonical_label": "Wavelength",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SPECTRUM_ENERGY_VISUAL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-010"
+    },
+    {
+      "knowledge_id": "U3-K-119",
+      "canonical_label": "Pigment absorption and reflection",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SPECTRUM_ENERGY_VISUAL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-010"
+    },
+    {
+      "knowledge_id": "U3-K-120",
+      "canonical_label": "Chlorophyll a",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PIGMENT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-010"
+    },
+    {
+      "knowledge_id": "U3-K-121",
+      "canonical_label": "Chlorophyll b",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PIGMENT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-010"
+    },
+    {
+      "knowledge_id": "U3-K-122",
+      "canonical_label": "Carotenoids",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PIGMENT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-010"
+    },
+    {
+      "knowledge_id": "U3-K-123",
+      "canonical_label": "Photosystem",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L29",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EXCITATION_TRANSFER_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-124",
+      "canonical_label": "Reaction center",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EXCITATION_TRANSFER_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-015"
+    },
+    {
+      "knowledge_id": "U3-K-125",
+      "canonical_label": "Light-harvesting complex",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EXCITATION_TRANSFER_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-011"
+    },
+    {
+      "knowledge_id": "U3-K-126",
+      "canonical_label": "Photosystem II",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L30",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REDOX_REPLACEMENT_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-127",
+      "canonical_label": "Photosystem I",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L32",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REDOX_OUTPUT_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-128",
+      "canonical_label": "P680 and P700 reaction-center labels",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L32",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_OUTPUT_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-015"
+    },
+    {
+      "knowledge_id": "U3-K-129",
+      "canonical_label": "Photosynthetic electron-carrier names scope guard",
+      "topic": "3.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-015"
+    },
+    {
+      "knowledge_id": "U3-K-130",
+      "canonical_label": "Water-splitting products",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L30",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_REPLACEMENT_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-009"
+    },
+    {
+      "knowledge_id": "U3-K-131",
+      "canonical_label": "Excitation-energy transfer",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EXCITATION_TRANSFER_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-011"
+    },
+    {
+      "knowledge_id": "U3-K-132",
+      "canonical_label": "Light-reaction inputs and outputs",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L33",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-133",
+      "canonical_label": "Calvin cycle",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L34",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_INPUT_PATHWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-013"
+    },
+    {
+      "knowledge_id": "U3-K-134",
+      "canonical_label": "Carbon fixation",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L35",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CARBON_FIXATION_REACTION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-014"
+    },
+    {
+      "knowledge_id": "U3-K-135",
+      "canonical_label": "Rubisco",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L35",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CARBON_FIXATION_REACTION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-014"
+    },
+    {
+      "knowledge_id": "U3-K-136",
+      "canonical_label": "RuBP",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L35",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CARBON_FIXATION_REACTION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-014"
+    },
+    {
+      "knowledge_id": "U3-K-137",
+      "canonical_label": "G3P",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L36",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PATHWAY_ACCOUNTING_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-014"
+    },
+    {
+      "knowledge_id": "U3-K-138",
+      "canonical_label": "Detailed Calvin-cycle stoichiometry",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L36",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PATHWAY_ACCOUNTING_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_STOICHIOMETRY_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-014"
+    },
+    {
+      "knowledge_id": "U3-K-139",
+      "canonical_label": "Calvin-cycle memorization scope guard",
+      "topic": "3.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-014"
+    },
+    {
+      "knowledge_id": "U3-K-140",
+      "canonical_label": "Photorespiration",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L37",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMPETING_SUBSTRATE_PATHWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-016"
+    },
+    {
+      "knowledge_id": "U3-K-141",
+      "canonical_label": "Photorespiration evolutionary interpretation",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPETING_SUBSTRATE_PATHWAY",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-017"
+    },
+    {
+      "knowledge_id": "U3-K-142",
+      "canonical_label": "C4 photosynthesis",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L38",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ADAPTATION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-018"
+    },
+    {
+      "knowledge_id": "U3-K-143",
+      "canonical_label": "CAM photosynthesis",
+      "topic": "3.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ADAPTATION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-018"
+    },
+    {
+      "knowledge_id": "U3-K-144",
+      "canonical_label": "Mitochondrial structural review",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-145",
+      "canonical_label": "Cellular respiration overall equation",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_OVERVIEW_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_STOICHIOMETRY_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-146",
+      "canonical_label": "Respiratory fuels",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_OVERVIEW_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-019"
+    },
+    {
+      "knowledge_id": "U3-K-147",
+      "canonical_label": "Glucose oxidation and oxygen reduction",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_OVERVIEW_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-148",
+      "canonical_label": "NAD+ and NADH",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L41",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REDOX_CARRIER_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-149",
+      "canonical_label": "FAD and FADH2",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L41",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_CARRIER_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-150",
+      "canonical_label": "Cellular respiration stages",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_OVERVIEW_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-151",
+      "canonical_label": "Glycolysis location and carbon products",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L40",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PATHWAY_OUTPUT_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-152",
+      "canonical_label": "Glycolysis ATP accounting",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L40",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PATHWAY_OUTPUT_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_STOICHIOMETRY_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-153",
+      "canonical_label": "Substrate-level phosphorylation",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L40",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PATHWAY_OUTPUT_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-154",
+      "canonical_label": "Pyruvate oxidation",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L42",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PATHWAY_TRANSITION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-020"
+    },
+    {
+      "knowledge_id": "U3-K-155",
+      "canonical_label": "Acetyl-CoA",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L42",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PATHWAY_TRANSITION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-156",
+      "canonical_label": "Citric acid cycle",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L43",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CYCLIC_PATHWAY_OUTPUT_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-157",
+      "canonical_label": "Detailed citric-cycle bookkeeping",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L43",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CYCLIC_PATHWAY_OUTPUT_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_STOICHIOMETRY_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-158",
+      "canonical_label": "Oxidative phosphorylation components",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-159",
+      "canonical_label": "Respiratory electron transport chain",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_CHAIN",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-160",
+      "canonical_label": "Respiratory proton pumping",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L46",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GRADIENT_BUILDING_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-022"
+    },
+    {
+      "knowledge_id": "U3-K-161",
+      "canonical_label": "Oxygen terminal reduction",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L47",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TERMINAL_REDOX_REACTION",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_STOICHIOMETRY_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-021"
+    },
+    {
+      "knowledge_id": "U3-K-162",
+      "canonical_label": "Chemiosmosis",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-163",
+      "canonical_label": "ATP synthase",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-164",
+      "canonical_label": "ATP synthase rotational catalysis",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-165",
+      "canonical_label": "Respiratory ATP-yield estimate",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_STOICHIOMETRY_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-166",
+      "canonical_label": "Respiration-detail memorization scope guard",
+      "topic": "3.5",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-167",
+      "canonical_label": "Anaerobic respiration",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L51",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROCESS_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-168",
+      "canonical_label": "Non-oxygen terminal acceptors",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L51",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROCESS_COMPARISON",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-030"
+    },
+    {
+      "knowledge_id": "U3-K-169",
+      "canonical_label": "Fermentation",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L52",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_RECYCLING_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-024"
+    },
+    {
+      "knowledge_id": "U3-K-170",
+      "canonical_label": "Fermentation and oxygen",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L52",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REDOX_RECYCLING_LOOP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-024"
+    },
+    {
+      "knowledge_id": "U3-K-171",
+      "canonical_label": "Alcohol fermentation",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L53",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "FERMENTATION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-172",
+      "canonical_label": "Acetaldehyde in alcohol fermentation",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L53",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "FERMENTATION_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-023"
+    },
+    {
+      "knowledge_id": "U3-K-173",
+      "canonical_label": "Lactate formation",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U3-L54",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "FERMENTATION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-174",
+      "canonical_label": "Human exercise lactate",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L54",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "FERMENTATION_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-024"
+    },
+    {
+      "knowledge_id": "U3-K-175",
+      "canonical_label": "Lactate shuttle and Cori-cycle connection",
+      "topic": "3.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U3-L54",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "FERMENTATION_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-025"
+    },
+    {
+      "knowledge_id": "U3-K-176",
+      "canonical_label": "Fever and enzyme-function FRQ",
+      "topic": "3.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-177",
+      "canonical_label": "Vitamin-cofactor FRQ",
+      "topic": "3.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-004"
+    },
+    {
+      "knowledge_id": "U3-K-178",
+      "canonical_label": "Peroxidase pH data interpretation",
+      "topic": "3.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-179",
+      "canonical_label": "Penicillin transpeptidase inhibition scenario",
+      "topic": "3.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-026"
+    },
+    {
+      "knowledge_id": "U3-K-180",
+      "canonical_label": "Enzyme saturation graph",
+      "topic": "3.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-181",
+      "canonical_label": "Light-wavelength plant-growth FRQ",
+      "topic": "3.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-182",
+      "canonical_label": "Photorespiration evidence FRQ",
+      "topic": "3.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-017"
+    },
+    {
+      "knowledge_id": "U3-K-183",
+      "canonical_label": "Bentazon photosystem-II disruption",
+      "topic": "3.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U3-027"
+    },
+    {
+      "knowledge_id": "U3-K-184",
+      "canonical_label": "Yeast sugar-fermentation data",
+      "topic": "3.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-185",
+      "canonical_label": "Fish oxygen-deprivation FRQ",
+      "topic": "3.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U3-K-186",
+      "canonical_label": "Mitochondrial pH-gradient FRQ",
+      "topic": "3.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    }
+  ]
+}

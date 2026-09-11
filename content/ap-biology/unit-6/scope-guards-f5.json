@@ -1,0 +1,257 @@
+{
+  "schema": "memory-palace-v2-unit6-f5-scope-guards-1.0",
+  "unit_id": "unit-6",
+  "guard_count": 25,
+  "guards": [
+    {
+      "knowledge_id": "U6-K-017",
+      "canonical_label": "Replication enzyme-name scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "For the AP Exam, names of replication steps and particular enzymes beyond DNA polymerase, ligase, RNA polymerase, helicase, and topoisomerase are outside required scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-043",
+      "canonical_label": "Translation factor-name scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Details and names of enzymes and factors involved in translation steps are outside AP Exam scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-044",
+      "canonical_label": "Genetic-code memorization scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Memorization of the genetic code is outside AP Exam scope except for the start codon AUG; students should use a supplied code chart.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-065",
+      "canonical_label": "Specific-mutation effect scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Specific named mutations and their detailed effects are beyond AP Exam scope unless provided in a question context.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-073",
+      "canonical_label": "Specific chromosome-disorder scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Specific disorders caused by chromosome-number changes are beyond AP Exam scope unless supplied in context.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-089",
+      "canonical_label": "Biotechnology-detail scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Detailed procedural knowledge of gel electrophoresis, PCR, bacterial transformation, and DNA sequencing is beyond AP Exam scope beyond the required functional principles.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-184",
+      "canonical_label": "Backbone bond versus base-pair bond",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not answer a generic “bond holding nucleotides together” prompt with hydrogen bonds. Phosphodiester bonds link adjacent nucleotides within a strand; hydrogen bonds stabilize complementary base pairing between strands/regions.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-185",
+      "canonical_label": "Typical DNA/RNA structure is not absolute",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Treat double-stranded DNA and single-stranded RNA as typical cellular patterns, not universal rules across all nucleic acids and viruses.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-186",
+      "canonical_label": "Extra replication enzyme names are enrichment",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "SSBPs, primase, DNA polymerase I/III, and detailed primer-removal machinery are scientifically useful teacher enrichment but are not current AP-required enzyme-name targets.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-187",
+      "canonical_label": "Telomere mechanism is enrichment",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Telomeres/telomerase are valid biology but are outside the current Unit 6 AP-required replication content.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-188",
+      "canonical_label": "Transcription location depends on cell type",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not encode “transcription occurs in the nucleus” as universal; that statement applies to eukaryotic nuclear genes, while prokaryotes transcribe DNA without a nucleus.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-189",
+      "canonical_label": "TATA box is not every eukaryotic promoter",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not equate “eukaryotic promoter” with “TATA box.” TATA is one promoter element found in some genes.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-190",
+      "canonical_label": "Exon does not mean entirely protein-coding",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not define exons simply as amino-acid-coding sequence; mature transcripts can retain noncoding exon regions such as UTRs.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-191",
+      "canonical_label": "Genetic code is nearly universal",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Use near universality, not absolute universality, when connecting the genetic code to common ancestry.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-192",
+      "canonical_label": "Ribosome size values are enrichment and corrected",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not use the slide’s 30S/40S prokaryotic pair. If ribosomal S values are retained as enrichment, use bacterial 30S + 50S and eukaryotic cytosolic 40S + 60S.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-193",
+      "canonical_label": "Retroviral DNA integrates into host DNA",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not encode the slide phrase that reverse-transcribed DNA becomes part of RNA. It can integrate into host genomic DNA.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-194",
+      "canonical_label": "trp repressor is not an enzyme",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not encode the trp repressor as an allosteric enzyme. It is a regulatory protein activated by the corepressor tryptophan.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-195",
+      "canonical_label": "lac operon is not a human lactase pathway",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not teach the lac operon as simply producing lactase. Its structural genes encode bacterial proteins including β-galactosidase and lactose permease.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-196",
+      "canonical_label": "Epigenetic effects are context dependent",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Avoid universal claims that methylation always condenses DNA or that twin disease discordance is simply “inherited epigenetics.” Preserve reversible gene-regulatory effects with appropriate context.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-197",
+      "canonical_label": "Developmental mechanism names are enrichment",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Morphogenesis, cytoplasmic determinants, homeotic genes, and apoptosis are teacher enrichment; the current AP-required core is regulation, transcription-factor effects, differential expression, and specialization.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-198",
+      "canonical_label": "Frameshift effects are not universally catastrophic",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Insertion/deletion frameshifts can strongly alter downstream coding sequence, but effects vary and in-frame indels do not shift the frame.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-199",
+      "canonical_label": "Named chromosome disorders are contextual",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Named disorders such as trisomy 21 remain contextual enrichment because the current CED excludes specific chromosome-number disorders as required knowledge.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-200",
+      "canonical_label": "Aneuploidy versus polyploidy",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Use aneuploidy for gain/loss of individual chromosomes and polyploidy/triploidy for extra whole chromosome sets; do not merge these categories.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-201",
+      "canonical_label": "Selection acts on heritable phenotypic variation",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Do not imply every mutation is directly selected. Selection changes frequencies of heritable variants when their phenotypic effects influence reproductive success in context.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U6-K-202",
+      "canonical_label": "Biotechnology functional scope",
+      "policy": "NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY",
+      "canonical_statement": "Teach what gel electrophoresis, PCR, bacterial transformation, and sequencing accomplish and how to interpret results; do not require unnecessary procedural details beyond current CED scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement."
+    }
+  ]
+}

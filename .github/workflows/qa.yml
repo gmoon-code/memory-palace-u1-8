@@ -1,0 +1,86 @@
+name: Memory Palace QA
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_site_ux1.py
+      - run: python scripts/verify_content.py
+      - run: python scripts/qa_unit1_full.py
+      - run: python scripts/qa_unit2_f5.py
+      - run: python scripts/qa_unit3_f6.py
+      - run: python scripts/qa_unit4_f6.py
+      - run: python scripts/qa_unit5_f6.py
+      - run: python scripts/qa_mainline_u1_u3.py
+      - run: python scripts/qa_mainline_u1_u4.py
+      - run: python scripts/qa_mainline_u1_u5.py
+      - run: python scripts/qa_unit6_f1.py
+      - run: python scripts/qa_unit6_f2.py
+      - run: python scripts/qa_unit6_f3.py
+      - run: python scripts/qa_unit6_f4a.py
+      - run: python scripts/qa_unit6_f4b.py
+      - run: python scripts/qa_unit6_f4c.py
+      - run: python scripts/qa_unit6_f4d.py
+      - run: python scripts/qa_unit6_f4e.py
+      - run: python scripts/qa_unit6_f4f.py
+      - run: python scripts/qa_unit6_f5.py
+      - run: python scripts/qa_unit6_f6.py
+      - run: python scripts/qa_mainline_u1_u6.py
+      - run: python scripts/qa_unit7_f1.py
+      - run: python scripts/qa_unit7_f2.py
+      - run: python scripts/qa_unit7_f3.py
+      - run: python scripts/qa_unit7_f4a.py
+      - run: python scripts/qa_unit7_f4b.py
+      - run: python scripts/qa_unit7_f4c.py
+      - run: python scripts/qa_unit7_f4d.py
+      - run: python scripts/qa_unit7_f4e.py
+      - run: python scripts/qa_unit7_f4f.py
+      - run: python scripts/qa_unit7_f5.py
+      - run: python scripts/qa_unit7_f6.py
+      - run: node scripts/qa_unit7_f6_ui.mjs
+      - run: python scripts/qa_mainline_u1_u7.py
+      - run: python scripts/qa_unit8_f3.py
+      - run: python scripts/qa_unit8_f4a.py
+      - run: python scripts/qa_unit8_f4b.py
+      - run: python scripts/qa_unit8_f4c.py
+      - run: python scripts/qa_unit8_f4d.py
+      - run: python scripts/qa_unit8_f4e.py
+      - run: python scripts/qa_unit8_f4f.py
+      - run: python scripts/qa_unit8_f4g.py
+      - run: python scripts/qa_unit8_f4h.py
+      - run: python scripts/qa_unit8_f5.py
+      - run: node scripts/qa_unit8_f5_ui.mjs
+      - run: python scripts/qa_unit8_f6.py
+      - run: node scripts/qa_unit8_f6_ui.mjs
+      - run: python scripts/qa_mainline_u1_u8.py
+      - run: node scripts/qa_unit3_f6_ui.mjs
+      - run: node scripts/qa_unit4_f6_ui.mjs
+      - run: node scripts/qa_unit5_f6_ui.mjs
+      - run: node scripts/qa_unit6_f6_ui.mjs
+      - run: node scripts/qa_site_ux.mjs
+      - run: python scripts/qa_site_contrast.py
+      - run: python scripts/qa_site_http_live.py
+      - run: python -m pytest -q
+      - run: node --check frontend/js/app.js
+      - run: node --check frontend/js/api.js
+      - run: node --check frontend/js/state.js
+      - run: node --check frontend/js/audio.js
+      - run: node --check frontend/js/views/home.js
+      - run: node --check frontend/js/views/learn.js
+      - run: node --check frontend/js/views/review.js
+      - run: node --check frontend/js/views/practice.js
+      - run: python -m compileall -q backend scripts tests
+      - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-a.zip
+      - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-b.zip
+      - run: cmp /tmp/site-ux1-a.zip /tmp/site-ux1-b.zip
+      - run: git diff --exit-code

@@ -1,0 +1,32 @@
+{
+  "schema": "memory-palace-v2-unit7-f4a-lock-1.0",
+  "unit_id": "unit-7",
+  "lock_status": "LOCKED_F4A_J1",
+  "student_release": false,
+  "preview_release": true,
+  "protected_prior_locks": [
+    "content-lock-f1.json",
+    "content-lock-f2.json",
+    "content-lock-f3.json"
+  ],
+  "journey_id": "U7-J1",
+  "scene_count": 10,
+  "knowledge_record_count": 26,
+  "exact_name_target_count": 15,
+  "checkpoint_count": 3,
+  "files": {
+    "journeys/U7-J1.json": {
+      "bytes": 131342,
+      "sha256": "6ed0642e61cb3fb6343c61a7bfadc9d060add051438e9d556595444773daf812"
+    },
+    "journeys-f4a.json": {
+      "bytes": 2866,
+      "sha256": "5099057335e1279a82320136883b4d0053c50d86a54bfa13f444c2f97143ab0b"
+    },
+    "status-f4a.json": {
+      "bytes": 1119,
+      "sha256": "8d4023bd567413c60652dc6294ab83e7eabc88c8d26ee3cbe0c654039718f57b"
+    }
+  },
+  "rule": "Journey 1 polished prose may not change after F4A without a new explicit narrative version. F1 science, F2 classification/geometry, and F3 scene briefs remain authoritative boundaries."
+}

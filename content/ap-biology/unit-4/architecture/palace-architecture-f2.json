@@ -1,0 +1,2190 @@
+{
+  "schema": "memory-palace-v2-unit4-f2-architecture-1.0",
+  "generated_utc": "2026-09-03T07:00:00+00:00",
+  "unit": {
+    "unit_id": "unit-4",
+    "title": "Cell Communication and Cell Cycle",
+    "canonical_source_lock": "F1",
+    "student_release": false,
+    "narrative_generation_allowed": false
+  },
+  "design_rules": {
+    "student_simplicity": "The learner will eventually see guided journeys, Review, and Challenge Lab; F2 classification machinery remains hidden.",
+    "locus_rule": "A permanent locus represents one coherent causal, spatial, sequence, or comparison model rather than one vocabulary item.",
+    "embedded_rule": "Closely related definitions, mechanisms, AP relationships, and teacher-required enrichment are embedded in the locus whose scientific action makes them intelligible.",
+    "practice_rule": "Applied-transfer records remain in Challenge Lab and do not consume permanent palace locations.",
+    "scope_guard_rule": "Scope guards protect AP boundaries and remain non-runtime support metadata.",
+    "signal_rule": "Communication and transduction scenes must preserve signal source, distance/medium, receptor location, membrane boundaries, causal direction, and distinction between extracellular ligand and intracellular relay.",
+    "cell_cycle_rule": "Cell-cycle scenes must preserve chromosome/chromatid identity, centromere/kinetochore distinction, DNA amount versus chromosome count, spindle geometry, and animal-versus-plant cytokinesis.",
+    "regulation_rule": "Checkpoint, cyclin-CDK, apoptosis, and cancer scenes must represent regulation as conditional control rather than a deterministic one-factor script.",
+    "narrative_gate": "No polished Unit 4 story prose may be authored until F3 scene briefs pass spatial, scientific, causal, and misconception-control QA.",
+    "spelling_rule": "No mandatory spelling gate. Exact-name support is adaptive and optional sound cues are used only when they improve retrieval."
+  },
+  "counts": {
+    "canonical_records": 180,
+    "palace_managed_records": 162,
+    "scope_guard_records": 3,
+    "practice_only_records": 15,
+    "journeys": 7,
+    "bundles": 17,
+    "permanent_loci": 51,
+    "confusable_sets": 33
+  },
+  "journeys": [
+    {
+      "journey_id": "U4-J1",
+      "working_title": "Cellular Communications Exchange",
+      "content_focus": "Direct contact, local signals, synaptic communication, endocrine signaling, hormones, and plant long-distance signaling",
+      "setting_logic": "A communications exchange makes distance, medium, signal type, and target-cell access physically distinct before receptor mechanisms begin.",
+      "bundles": [
+        {
+          "bundle_id": "U4-B01",
+          "title": "Communication scale and direct contact",
+          "loci": [
+            "U4-L01",
+            "U4-L02"
+          ]
+        },
+        {
+          "bundle_id": "U4-B02",
+          "title": "Local and synaptic communication",
+          "loci": [
+            "U4-L03",
+            "U4-L04"
+          ]
+        },
+        {
+          "bundle_id": "U4-B03",
+          "title": "Long-distance communication",
+          "loci": [
+            "U4-L05",
+            "U4-L06"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U4-J2",
+      "working_title": "Signal Reception Gateway",
+      "content_focus": "Reception, ligand-receptor specificity, receptor location, intracellular receptors, GPCRs, G proteins, and ligand-gated channels",
+      "setting_logic": "A receptor gateway keeps extracellular signal recognition, membrane crossing constraints, receptor state change, and two membrane-receptor mechanisms spatially separate.",
+      "bundles": [
+        {
+          "bundle_id": "U4-B04",
+          "title": "Reception and receptor location",
+          "loci": [
+            "U4-L07",
+            "U4-L08",
+            "U4-L09"
+          ]
+        },
+        {
+          "bundle_id": "U4-B05",
+          "title": "Membrane-receptor mechanisms",
+          "loci": [
+            "U4-L10",
+            "U4-L11",
+            "U4-L12"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U4-J3",
+      "working_title": "Signal Relay Tower",
+      "content_focus": "Transduction, phosphorylation, kinases and phosphatases, second messengers, amplification, cellular responses, and pathway disruption",
+      "setting_logic": "A relay tower follows information after receptor activation through molecular switches and amplification before branching into responses and experimentally disrupted pathways.",
+      "bundles": [
+        {
+          "bundle_id": "U4-B06",
+          "title": "Intracellular relay and amplification",
+          "loci": [
+            "U4-L13",
+            "U4-L14",
+            "U4-L15",
+            "U4-L16"
+          ]
+        },
+        {
+          "bundle_id": "U4-B07",
+          "title": "Responses and pathway perturbation",
+          "loci": [
+            "U4-L17",
+            "U4-L18",
+            "U4-L19"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U4-J4",
+      "working_title": "Feedback Regulation Center",
+      "content_focus": "Homeostasis, feedback-loop components, negative feedback, positive feedback, and dysregulation",
+      "setting_logic": "A control center makes regulated variables, sensors, integrators, effectors, and reinforcing or opposing response directions visible as a single control-system logic.",
+      "bundles": [
+        {
+          "bundle_id": "U4-B08",
+          "title": "Homeostatic control-loop anatomy",
+          "loci": [
+            "U4-L20",
+            "U4-L21"
+          ]
+        },
+        {
+          "bundle_id": "U4-B09",
+          "title": "Negative-feedback control",
+          "loci": [
+            "U4-L22",
+            "U4-L23"
+          ]
+        },
+        {
+          "bundle_id": "U4-B10",
+          "title": "Positive feedback and failed regulation",
+          "loci": [
+            "U4-L24",
+            "U4-L25"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U4-J5",
+      "working_title": "Cell-Cycle Preparation Archive",
+      "content_focus": "Genome and chromosome organization, ploidy, interphase, G1, S, G2, G0, and chromosome-count logic across replication",
+      "setting_logic": "An archive-to-clock route prepares the learner to understand mitosis by first making chromosome identity, replicated structure, ploidy, and cell-cycle phase changes stable and visible.",
+      "bundles": [
+        {
+          "bundle_id": "U4-B11",
+          "title": "Genome and chromosome organization",
+          "loci": [
+            "U4-L26",
+            "U4-L27",
+            "U4-L28"
+          ]
+        },
+        {
+          "bundle_id": "U4-B12",
+          "title": "Interphase and cell-cycle states",
+          "loci": [
+            "U4-L29",
+            "U4-L30",
+            "U4-L31",
+            "U4-L32",
+            "U4-L33"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U4-J6",
+      "working_title": "Mitosis Transit Hall",
+      "content_focus": "Mitosis purpose and sequence, spindle formation, prometaphase, metaphase, anaphase, telophase, chromosome counting, and animal/plant cytokinesis",
+      "setting_logic": "A physical transit hall follows the same replicated chromosomes from condensation through attachment, alignment, separation, nuclear reassembly, and cytoplasmic division.",
+      "bundles": [
+        {
+          "bundle_id": "U4-B13",
+          "title": "Mitotic chromosome movement",
+          "loci": [
+            "U4-L34",
+            "U4-L35",
+            "U4-L36",
+            "U4-L37",
+            "U4-L38",
+            "U4-L39"
+          ]
+        },
+        {
+          "bundle_id": "U4-B14",
+          "title": "Cytokinesis mechanisms",
+          "loci": [
+            "U4-L40",
+            "U4-L41"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U4-J7",
+      "working_title": "Cell-Cycle Security Headquarters",
+      "content_focus": "Checkpoints, arrest, DNA-damage response, apoptosis, cyclin-CDK control, extracellular growth constraints, cancer, tumors, metastasis, and carcinogen risk",
+      "setting_logic": "A security headquarters treats cell-cycle progression as a sequence of permission decisions, then shows how signaling and regulatory failures can produce uncontrolled proliferation and cancer progression.",
+      "bundles": [
+        {
+          "bundle_id": "U4-B15",
+          "title": "Checkpoint decisions and cell safety",
+          "loci": [
+            "U4-L42",
+            "U4-L43",
+            "U4-L44",
+            "U4-L45",
+            "U4-L46"
+          ]
+        },
+        {
+          "bundle_id": "U4-B16",
+          "title": "Cyclin control and external proliferation cues",
+          "loci": [
+            "U4-L47",
+            "U4-L48"
+          ]
+        },
+        {
+          "bundle_id": "U4-B17",
+          "title": "Cancer-control failure and progression",
+          "loci": [
+            "U4-L49",
+            "U4-L50",
+            "U4-L51"
+          ]
+        }
+      ]
+    }
+  ],
+  "loci": [
+    {
+      "locus_id": "U4-L01",
+      "journey_id": "U4-J1",
+      "bundle_id": "U4-B01",
+      "title": "Communication Compass",
+      "micro_anchor": "the central communication map separating contact, nearby chemical signaling, and distant chemical signaling",
+      "scene_geometry": {
+        "left": "direct-contact lane",
+        "center": "communication-scale map",
+        "right": "distance-signaling lane"
+      },
+      "primary_knowledge_id": "U4-K-001",
+      "knowledge_ids": [
+        "U4-K-001",
+        "U4-K-039"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-039"
+      ],
+      "visual_mode": "COMMUNICATION_MODE_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L02",
+      "journey_id": "U4-J1",
+      "bundle_id": "U4-B01",
+      "title": "Contact Junction Gallery",
+      "micro_anchor": "the side-by-side animal and plant cell-contact wall with a surface-recognition station",
+      "scene_geometry": {
+        "left": "animal gap-junction channel",
+        "center": "direct surface-recognition contact",
+        "right": "plant plasmodesmata channel"
+      },
+      "primary_knowledge_id": "U4-K-040",
+      "knowledge_ids": [
+        "U4-K-040",
+        "U4-K-041",
+        "U4-K-042",
+        "U4-K-043"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-041",
+        "U4-K-042",
+        "U4-K-043"
+      ],
+      "visual_mode": "JUNCTION_AND_CONTACT_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L03",
+      "journey_id": "U4-J1",
+      "bundle_id": "U4-B02",
+      "title": "Local Signal Courtyard",
+      "micro_anchor": "the short-range signaling courtyard where a released ligand reaches only nearby receptor-bearing cells",
+      "scene_geometry": {
+        "left": "signal-emitting cell and local regulator",
+        "center": "ligand-to-target-cell radius",
+        "right": "nearby paracrine target cells"
+      },
+      "primary_knowledge_id": "U4-K-044",
+      "knowledge_ids": [
+        "U4-K-002",
+        "U4-K-044",
+        "U4-K-045",
+        "U4-K-046",
+        "U4-K-047",
+        "U4-K-048",
+        "U4-K-049"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-002",
+        "U4-K-045",
+        "U4-K-046",
+        "U4-K-047",
+        "U4-K-048",
+        "U4-K-049"
+      ],
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L04",
+      "journey_id": "U4-J1",
+      "bundle_id": "U4-B02",
+      "title": "Synaptic Dock",
+      "micro_anchor": "the neuron terminal dock where neurotransmitter crosses a narrow cleft to a receptor-bearing target",
+      "scene_geometry": {
+        "left": "presynaptic terminal",
+        "center": "synaptic cleft and neurotransmitter release",
+        "right": "postsynaptic target membrane"
+      },
+      "primary_knowledge_id": "U4-K-050",
+      "knowledge_ids": [
+        "U4-K-050",
+        "U4-K-051",
+        "U4-K-052"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-051",
+        "U4-K-052"
+      ],
+      "visual_mode": "SYNAPSE_CUTAWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L05",
+      "journey_id": "U4-J1",
+      "bundle_id": "U4-B03",
+      "title": "Endocrine Transit Hub",
+      "micro_anchor": "the circulation hub carrying hormones from endocrine cells to distant receptor-bearing targets",
+      "scene_geometry": {
+        "left": "hormone-releasing endocrine cell",
+        "center": "bloodstream transport route",
+        "right": "distant target cell and insulin example"
+      },
+      "primary_knowledge_id": "U4-K-055",
+      "knowledge_ids": [
+        "U4-K-003",
+        "U4-K-013",
+        "U4-K-053",
+        "U4-K-054",
+        "U4-K-055",
+        "U4-K-057"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-003",
+        "U4-K-013",
+        "U4-K-053",
+        "U4-K-054",
+        "U4-K-057"
+      ],
+      "visual_mode": "ENDOCRINE_TRANSPORT_ROUTE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L06",
+      "journey_id": "U4-J1",
+      "bundle_id": "U4-B03",
+      "title": "Plant Hormone Route",
+      "micro_anchor": "the plant transport display showing tissue movement, vascular transport, and volatile ethylene diffusion",
+      "scene_geometry": {
+        "left": "source tissue",
+        "center": "plant transport pathways",
+        "right": "target tissue / volatile ethylene route"
+      },
+      "primary_knowledge_id": "U4-K-056",
+      "knowledge_ids": [
+        "U4-K-056"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "PLANT_HORMONE_TRANSPORT",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L07",
+      "journey_id": "U4-J2",
+      "bundle_id": "U4-B04",
+      "title": "Reception Checkpoint",
+      "micro_anchor": "the molecular checkpoint where only a chemically compatible ligand activates its receptor and changes receptor state",
+      "scene_geometry": {
+        "left": "approaching ligand candidates",
+        "center": "receptor binding and state-change gate",
+        "right": "activated receptor interior face"
+      },
+      "primary_knowledge_id": "U4-K-058",
+      "knowledge_ids": [
+        "U4-K-004",
+        "U4-K-006",
+        "U4-K-007",
+        "U4-K-011",
+        "U4-K-058",
+        "U4-K-059",
+        "U4-K-060",
+        "U4-K-061"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-004",
+        "U4-K-006",
+        "U4-K-007",
+        "U4-K-011",
+        "U4-K-059",
+        "U4-K-060",
+        "U4-K-061"
+      ],
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L08",
+      "journey_id": "U4-J2",
+      "bundle_id": "U4-B04",
+      "title": "Receptor Location Split",
+      "micro_anchor": "the plasma-membrane divide comparing cell-surface reception with signals that cross the bilayer to intracellular receptors",
+      "scene_geometry": {
+        "left": "extracellular ligand / surface receptor",
+        "center": "plasma-membrane permeability boundary",
+        "right": "cytoplasmic or nuclear receptor"
+      },
+      "primary_knowledge_id": "U4-K-009",
+      "knowledge_ids": [
+        "U4-K-009",
+        "U4-K-062",
+        "U4-K-063",
+        "U4-K-064"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-062",
+        "U4-K-063",
+        "U4-K-064"
+      ],
+      "visual_mode": "RECEPTOR_LOCATION_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L09",
+      "journey_id": "U4-J2",
+      "bundle_id": "U4-B04",
+      "title": "Intracellular Signal Suite",
+      "micro_anchor": "the interior receptor suite comparing steroid, thyroid-hormone, and nitric-oxide signaling routes",
+      "scene_geometry": {
+        "left": "steroid-hormone receptor route",
+        "center": "intracellular/nuclear target area",
+        "right": "thyroid-hormone and nitric-oxide routes"
+      },
+      "primary_knowledge_id": "U4-K-065",
+      "knowledge_ids": [
+        "U4-K-065",
+        "U4-K-066",
+        "U4-K-067"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-066",
+        "U4-K-067"
+      ],
+      "visual_mode": "INTRACELLULAR_SIGNALING_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L10",
+      "journey_id": "U4-J2",
+      "bundle_id": "U4-B05",
+      "title": "GPCR Receptor Door",
+      "micro_anchor": "the seven-pass membrane receptor door that changes conformation when ligand binds",
+      "scene_geometry": {
+        "left": "extracellular ligand-binding face",
+        "center": "seven-pass GPCR body",
+        "right": "cytoplasmic G-protein interface"
+      },
+      "primary_knowledge_id": "U4-K-081",
+      "knowledge_ids": [
+        "U4-K-008",
+        "U4-K-081"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-008"
+      ],
+      "visual_mode": "GPCR_MEMBRANE_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L11",
+      "journey_id": "U4-J2",
+      "bundle_id": "U4-B05",
+      "title": "G-Protein Switchboard",
+      "micro_anchor": "the membrane switchboard where GDP/GTP state changes control effector interaction and reset",
+      "scene_geometry": {
+        "left": "inactive GDP-bound G protein",
+        "center": "GPCR-triggered GDP-to-GTP switch",
+        "right": "effector activation and GTP-hydrolysis reset"
+      },
+      "primary_knowledge_id": "U4-K-082",
+      "knowledge_ids": [
+        "U4-K-082",
+        "U4-K-083",
+        "U4-K-084",
+        "U4-K-085"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-083",
+        "U4-K-084",
+        "U4-K-085"
+      ],
+      "visual_mode": "G_PROTEIN_MOLECULAR_SWITCH",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L12",
+      "journey_id": "U4-J2",
+      "bundle_id": "U4-B05",
+      "title": "Ligand-Gated Channel Gate",
+      "micro_anchor": "the ion-channel doorway whose open or closed state changes when ligand binds",
+      "scene_geometry": {
+        "left": "closed channel / ligand approach",
+        "center": "ligand-binding channel gate",
+        "right": "ion-flow response after channel-state change"
+      },
+      "primary_knowledge_id": "U4-K-086",
+      "knowledge_ids": [
+        "U4-K-014",
+        "U4-K-086",
+        "U4-K-087"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-014",
+        "U4-K-087"
+      ],
+      "visual_mode": "LIGAND_GATED_CHANNEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L13",
+      "journey_id": "U4-J3",
+      "bundle_id": "U4-B06",
+      "title": "Transduction Relay Map",
+      "micro_anchor": "the intracellular route map carrying information from an activated receptor through interacting molecular components",
+      "scene_geometry": {
+        "left": "activated receptor input",
+        "center": "signal-transduction pathway",
+        "right": "downstream target branch"
+      },
+      "primary_knowledge_id": "U4-K-068",
+      "knowledge_ids": [
+        "U4-K-068",
+        "U4-K-069"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-069"
+      ],
+      "visual_mode": "TRANSDUCTION_PATHWAY_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L14",
+      "journey_id": "U4-J3",
+      "bundle_id": "U4-B06",
+      "title": "Kinase–Phosphatase Switchboard",
+      "micro_anchor": "the reversible protein-control board where kinases add phosphate and phosphatases remove it",
+      "scene_geometry": {
+        "left": "protein kinase / ATP phosphate transfer",
+        "center": "target-protein state panel",
+        "right": "protein phosphatase / phosphate removal"
+      },
+      "primary_knowledge_id": "U4-K-070",
+      "knowledge_ids": [
+        "U4-K-070",
+        "U4-K-072",
+        "U4-K-073"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-072",
+        "U4-K-073"
+      ],
+      "visual_mode": "PHOSPHORYLATION_SWITCH_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L15",
+      "journey_id": "U4-J3",
+      "bundle_id": "U4-B06",
+      "title": "Phosphorylation Cascade Staircase",
+      "micro_anchor": "the multi-step kinase staircase where one activated protein changes the state of the next",
+      "scene_geometry": {
+        "left": "upstream activated kinase",
+        "center": "multi-step phosphorylation cascade",
+        "right": "downstream activated targets"
+      },
+      "primary_knowledge_id": "U4-K-071",
+      "knowledge_ids": [
+        "U4-K-005",
+        "U4-K-071"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-005"
+      ],
+      "visual_mode": "KINASE_CASCADE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L16",
+      "journey_id": "U4-J3",
+      "bundle_id": "U4-B06",
+      "title": "Second-Messenger Amplifier",
+      "micro_anchor": "the amplification chamber where enzymes generate many small intracellular messengers such as cAMP",
+      "scene_geometry": {
+        "left": "upstream enzyme / receptor input",
+        "center": "second-messenger production and amplification",
+        "right": "many downstream relay targets"
+      },
+      "primary_knowledge_id": "U4-K-075",
+      "knowledge_ids": [
+        "U4-K-010",
+        "U4-K-012",
+        "U4-K-074",
+        "U4-K-075",
+        "U4-K-076"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-010",
+        "U4-K-012",
+        "U4-K-074",
+        "U4-K-076"
+      ],
+      "visual_mode": "SECOND_MESSENGER_AMPLIFICATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L17",
+      "journey_id": "U4-J3",
+      "bundle_id": "U4-B07",
+      "title": "Cellular Response Dispatch",
+      "micro_anchor": "the branching dispatch room where one pathway can change membrane transport, metabolism, gene expression, phenotype, or apoptosis",
+      "scene_geometry": {
+        "left": "membrane and metabolic response branches",
+        "center": "cellular-response dispatch center",
+        "right": "gene-expression / phenotype / apoptosis branches"
+      },
+      "primary_knowledge_id": "U4-K-077",
+      "knowledge_ids": [
+        "U4-K-015",
+        "U4-K-077",
+        "U4-K-078",
+        "U4-K-079",
+        "U4-K-080",
+        "U4-K-088",
+        "U4-K-089"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-015",
+        "U4-K-078",
+        "U4-K-079",
+        "U4-K-080",
+        "U4-K-088",
+        "U4-K-089"
+      ],
+      "visual_mode": "RESPONSE_BRANCHING",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L18",
+      "journey_id": "U4-J3",
+      "bundle_id": "U4-B07",
+      "title": "Mutation Breakpoint Lab",
+      "micro_anchor": "the pathway test bench comparing receptor mutations, downstream-component mutations, and failed phosphatase control",
+      "scene_geometry": {
+        "left": "receptor-level mutation",
+        "center": "signaling pathway breakpoint",
+        "right": "downstream-component / phosphatase defect"
+      },
+      "primary_knowledge_id": "U4-K-016",
+      "knowledge_ids": [
+        "U4-K-016",
+        "U4-K-090",
+        "U4-K-091",
+        "U4-K-093"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-090",
+        "U4-K-091",
+        "U4-K-093"
+      ],
+      "visual_mode": "MUTATION_PERTURBATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L19",
+      "journey_id": "U4-J3",
+      "bundle_id": "U4-B07",
+      "title": "Agonist–Antagonist Console",
+      "micro_anchor": "the chemical perturbation console where pathway activity can be increased or inhibited without changing the DNA sequence",
+      "scene_geometry": {
+        "left": "pathway-activating chemical input",
+        "center": "signaling activity readout",
+        "right": "pathway-inhibiting chemical input"
+      },
+      "primary_knowledge_id": "U4-K-017",
+      "knowledge_ids": [
+        "U4-K-017",
+        "U4-K-092"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-092"
+      ],
+      "visual_mode": "AGONIST_ANTAGONIST_PERTURBATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L20",
+      "journey_id": "U4-J4",
+      "bundle_id": "U4-B08",
+      "title": "Homeostasis Control Map",
+      "micro_anchor": "the homeostatic control map organized around a regulated condition, reference range, and feedback path",
+      "scene_geometry": {
+        "left": "regulated variable / disturbance",
+        "center": "homeostatic set-point or reference range",
+        "right": "feedback path supporting internal stability"
+      },
+      "primary_knowledge_id": "U4-K-094",
+      "knowledge_ids": [
+        "U4-K-018",
+        "U4-K-094",
+        "U4-K-095",
+        "U4-K-096",
+        "U4-K-108"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-018",
+        "U4-K-095",
+        "U4-K-096",
+        "U4-K-108"
+      ],
+      "visual_mode": "HOMEOSTATIC_LOOP_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L21",
+      "journey_id": "U4-J4",
+      "bundle_id": "U4-B08",
+      "title": "Sensor–Integrator–Effector Loop",
+      "micro_anchor": "the feedback circuit carrying a disturbance from sensor to integration and effector response",
+      "scene_geometry": {
+        "left": "stimulus and sensor/receptor",
+        "center": "control / integration function",
+        "right": "effector and response return path"
+      },
+      "primary_knowledge_id": "U4-K-099",
+      "knowledge_ids": [
+        "U4-K-097",
+        "U4-K-098",
+        "U4-K-099",
+        "U4-K-100",
+        "U4-K-101"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-097",
+        "U4-K-098",
+        "U4-K-100",
+        "U4-K-101"
+      ],
+      "visual_mode": "SENSOR_INTEGRATOR_EFFECTOR_LOOP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L22",
+      "journey_id": "U4-J4",
+      "bundle_id": "U4-B09",
+      "title": "Negative-Feedback Thermostat",
+      "micro_anchor": "the temperature-control loop where a deviation triggers responses that oppose the original change",
+      "scene_geometry": {
+        "left": "temperature deviation",
+        "center": "negative-feedback control response",
+        "right": "return toward regulated range"
+      },
+      "primary_knowledge_id": "U4-K-019",
+      "knowledge_ids": [
+        "U4-K-019",
+        "U4-K-102"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-102"
+      ],
+      "visual_mode": "NEGATIVE_FEEDBACK_LOOP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L23",
+      "journey_id": "U4-J4",
+      "bundle_id": "U4-B09",
+      "title": "Blood-Glucose Regulator",
+      "micro_anchor": "the blood-glucose loop showing signaling-driven responses that counter a rise or fall in circulating glucose",
+      "scene_geometry": {
+        "left": "blood-glucose disturbance",
+        "center": "hormonal feedback signaling",
+        "right": "target-tissue response restoring range"
+      },
+      "primary_knowledge_id": "U4-K-103",
+      "knowledge_ids": [
+        "U4-K-103"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "GLUCOSE_FEEDBACK_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L24",
+      "journey_id": "U4-J4",
+      "bundle_id": "U4-B10",
+      "title": "Positive-Feedback Amplifier",
+      "micro_anchor": "the reinforcing loop comparing childbirth, clotting, and fruit-ripening examples",
+      "scene_geometry": {
+        "left": "initial stimulus",
+        "center": "self-reinforcing positive-feedback loop",
+        "right": "amplified childbirth / clotting / ripening response"
+      },
+      "primary_knowledge_id": "U4-K-020",
+      "knowledge_ids": [
+        "U4-K-020",
+        "U4-K-104",
+        "U4-K-105",
+        "U4-K-106"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-104",
+        "U4-K-105",
+        "U4-K-106"
+      ],
+      "visual_mode": "POSITIVE_FEEDBACK_LOOP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L25",
+      "journey_id": "U4-J4",
+      "bundle_id": "U4-B10",
+      "title": "Dysregulation Alarm",
+      "micro_anchor": "the failed-control display where disrupted feedback permits regulated conditions to move outside healthy ranges",
+      "scene_geometry": {
+        "left": "normally regulated condition",
+        "center": "failed or inadequate feedback control",
+        "right": "dysregulated state / disease risk"
+      },
+      "primary_knowledge_id": "U4-K-107",
+      "knowledge_ids": [
+        "U4-K-107"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "HOMEOSTATIC_DYSREGULATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L26",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B11",
+      "title": "Genome Packing Archive",
+      "micro_anchor": "the DNA-packing archive moving from histones and nucleosomes into chromatin while preserving the whole genome",
+      "scene_geometry": {
+        "left": "DNA and histone components",
+        "center": "nucleosome / chromatin packing hierarchy",
+        "right": "genome-scale organization"
+      },
+      "primary_knowledge_id": "U4-K-112",
+      "knowledge_ids": [
+        "U4-K-109",
+        "U4-K-110",
+        "U4-K-111",
+        "U4-K-112",
+        "U4-K-138"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-109",
+        "U4-K-110",
+        "U4-K-111",
+        "U4-K-138"
+      ],
+      "visual_mode": "CHROMATIN_PACKING_HIERARCHY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L27",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B11",
+      "title": "Chromosome Anatomy Workbench",
+      "micro_anchor": "the replicated-chromosome workbench labeling sister chromatids, centromere, and kinetochore on one physical chromosome",
+      "scene_geometry": {
+        "left": "one sister chromatid",
+        "center": "centromere / kinetochore region",
+        "right": "second sister chromatid"
+      },
+      "primary_knowledge_id": "U4-K-113",
+      "knowledge_ids": [
+        "U4-K-113",
+        "U4-K-114",
+        "U4-K-115",
+        "U4-K-116",
+        "U4-K-117"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-114",
+        "U4-K-115",
+        "U4-K-116",
+        "U4-K-117"
+      ],
+      "visual_mode": "CHROMOSOME_ANATOMY_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L28",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B11",
+      "title": "Chromosome Sets Gallery",
+      "micro_anchor": "the comparison gallery separating prokaryotic and eukaryotic chromosome organization, homologs, ploidy, somatic cells, and gametes",
+      "scene_geometry": {
+        "left": "prokaryotic / haploid-side examples",
+        "center": "homologous chromosome-set comparison",
+        "right": "diploid somatic / gamete relationships"
+      },
+      "primary_knowledge_id": "U4-K-120",
+      "knowledge_ids": [
+        "U4-K-118",
+        "U4-K-119",
+        "U4-K-120",
+        "U4-K-121",
+        "U4-K-122",
+        "U4-K-123",
+        "U4-K-124"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-118",
+        "U4-K-119",
+        "U4-K-121",
+        "U4-K-122",
+        "U4-K-123",
+        "U4-K-124"
+      ],
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L29",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B12",
+      "title": "Cell-Cycle Clock",
+      "micro_anchor": "the full circular cell-cycle clock separating interphase from M phase and locating G1, S, and G2 in sequence",
+      "scene_geometry": {
+        "left": "G1-S-G2 interphase arc",
+        "center": "cell-cycle control clock",
+        "right": "M-phase division arc"
+      },
+      "primary_knowledge_id": "U4-K-022",
+      "knowledge_ids": [
+        "U4-K-021",
+        "U4-K-022",
+        "U4-K-125",
+        "U4-K-126"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-021",
+        "U4-K-125",
+        "U4-K-126"
+      ],
+      "visual_mode": "CELL_CYCLE_CLOCK",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L30",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B12",
+      "title": "G1 Growth Gate",
+      "micro_anchor": "the first interphase gate where a newly formed cell grows and performs normal functions before DNA synthesis",
+      "scene_geometry": {
+        "left": "post-division cell",
+        "center": "G1 growth / cellular activity zone",
+        "right": "commitment toward DNA synthesis"
+      },
+      "primary_knowledge_id": "U4-K-023",
+      "knowledge_ids": [
+        "U4-K-023"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "G1_PHASE_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L31",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B12",
+      "title": "S-Phase Replication Room",
+      "micro_anchor": "the DNA-copying room where DNA content and chromatid number double while centromere-counted chromosome number stays constant",
+      "scene_geometry": {
+        "left": "unreplicated chromosome set",
+        "center": "S-phase DNA replication",
+        "right": "replicated chromosome set / unchanged centromere count"
+      },
+      "primary_knowledge_id": "U4-K-024",
+      "knowledge_ids": [
+        "U4-K-024",
+        "U4-K-134"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-134"
+      ],
+      "visual_mode": "S_PHASE_REPLICATION_AND_COUNT",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L32",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B12",
+      "title": "G2 Preparation Bay",
+      "micro_anchor": "the second interphase bay where the cell prepares for mitosis after DNA replication",
+      "scene_geometry": {
+        "left": "completed DNA replication",
+        "center": "G2 growth and mitotic preparation",
+        "right": "entry toward mitosis"
+      },
+      "primary_knowledge_id": "U4-K-025",
+      "knowledge_ids": [
+        "U4-K-025"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "G2_PHASE_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L33",
+      "journey_id": "U4-J5",
+      "bundle_id": "U4-B12",
+      "title": "G0 Side Chamber",
+      "micro_anchor": "the side chamber outside the active division cycle showing reversible and long-term nondividing states",
+      "scene_geometry": {
+        "left": "cell-cycle exit",
+        "center": "G0 nondividing state",
+        "right": "possible reentry or long-term differentiated state"
+      },
+      "primary_knowledge_id": "U4-K-026",
+      "knowledge_ids": [
+        "U4-K-026",
+        "U4-K-027"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-027"
+      ],
+      "visual_mode": "G0_BRANCH",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L34",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B13",
+      "title": "Mitosis Mission Control",
+      "micro_anchor": "the mitosis route overview showing replicated chromosomes segregated into daughter nuclei for growth, repair, or asexual reproduction",
+      "scene_geometry": {
+        "left": "replicated genome before mitosis",
+        "center": "mitotic sequence control map",
+        "right": "equivalent chromosome sets in daughter nuclei"
+      },
+      "primary_knowledge_id": "U4-K-028",
+      "knowledge_ids": [
+        "U4-K-028",
+        "U4-K-029",
+        "U4-K-030"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-029",
+        "U4-K-030"
+      ],
+      "visual_mode": "MITOSIS_SEQUENCE_OVERVIEW",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L35",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B13",
+      "title": "Prophase Spindle Setup",
+      "micro_anchor": "the early mitosis bay where chromosomes condense and centrosomes organize the forming spindle",
+      "scene_geometry": {
+        "left": "condensing replicated chromosomes",
+        "center": "forming mitotic spindle",
+        "right": "separating animal-cell centrosomes"
+      },
+      "primary_knowledge_id": "U4-K-031",
+      "knowledge_ids": [
+        "U4-K-031",
+        "U4-K-127",
+        "U4-K-128"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-127",
+        "U4-K-128"
+      ],
+      "visual_mode": "SPINDLE_FORMATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L36",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B13",
+      "title": "Prometaphase Kinetochore Access",
+      "micro_anchor": "the open-nucleus interval where spindle microtubules gain access to chromosome kinetochores",
+      "scene_geometry": {
+        "left": "nuclear-envelope breakdown",
+        "center": "prometaphase attachment zone",
+        "right": "spindle microtubules engaging kinetochores"
+      },
+      "primary_knowledge_id": "U4-K-129",
+      "knowledge_ids": [
+        "U4-K-129"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "KINETOCHORE_ATTACHMENT_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L37",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B13",
+      "title": "Metaphase Plate Station",
+      "micro_anchor": "the equatorial alignment station where spindle forces position chromosomes at the metaphase plate",
+      "scene_geometry": {
+        "left": "one spindle pole",
+        "center": "chromosomes aligned at metaphase plate",
+        "right": "opposite spindle pole"
+      },
+      "primary_knowledge_id": "U4-K-032",
+      "knowledge_ids": [
+        "U4-K-032",
+        "U4-K-130"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-130"
+      ],
+      "visual_mode": "METAPHASE_ALIGNMENT",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L38",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B13",
+      "title": "Anaphase Separation Track",
+      "micro_anchor": "the chromosome-separation track where sister chromatids become daughter chromosomes and move toward opposite poles",
+      "scene_geometry": {
+        "left": "one set of separating daughter chromosomes",
+        "center": "anaphase spindle-dynamics zone",
+        "right": "opposite daughter-chromosome set"
+      },
+      "primary_knowledge_id": "U4-K-033",
+      "knowledge_ids": [
+        "U4-K-033",
+        "U4-K-135",
+        "U4-K-137"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-135",
+        "U4-K-137"
+      ],
+      "visual_mode": "ANAPHASE_DYNAMICS_AND_COUNT",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L39",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B13",
+      "title": "Telophase Reassembly Room",
+      "micro_anchor": "the late-mitosis room where chromosomes decondense as spindle structures disappear and new nuclei form",
+      "scene_geometry": {
+        "left": "one chromosome set / reforming envelope",
+        "center": "telophase reassembly zone",
+        "right": "second chromosome set / reforming envelope"
+      },
+      "primary_knowledge_id": "U4-K-034",
+      "knowledge_ids": [
+        "U4-K-034"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "TELOPHASE_REASSEMBLY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L40",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B14",
+      "title": "Animal Cytokinesis Ring",
+      "micro_anchor": "the animal-cell division station where an actin–myosin contractile ring drives a cleavage furrow inward",
+      "scene_geometry": {
+        "left": "cell cortex and contractile ring",
+        "center": "cleavage furrow constriction",
+        "right": "two separating animal daughter cells"
+      },
+      "primary_knowledge_id": "U4-K-035",
+      "knowledge_ids": [
+        "U4-K-035",
+        "U4-K-131",
+        "U4-K-132"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-131",
+        "U4-K-132"
+      ],
+      "visual_mode": "ANIMAL_CYTOKINESIS",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L41",
+      "journey_id": "U4-J6",
+      "bundle_id": "U4-B14",
+      "title": "Plant Cell-Plate Works",
+      "micro_anchor": "the plant-cell division station where Golgi-derived vesicles assemble a cell plate between daughter cells",
+      "scene_geometry": {
+        "left": "Golgi-derived vesicles",
+        "center": "growing cell plate",
+        "right": "new separating wall and membranes"
+      },
+      "primary_knowledge_id": "U4-K-133",
+      "knowledge_ids": [
+        "U4-K-133"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "PLANT_CYTOKINESIS",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L42",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B15",
+      "title": "Checkpoint Command Map",
+      "micro_anchor": "the cell-cycle security map showing decision points where internal and external information can pause or permit progression",
+      "scene_geometry": {
+        "left": "incoming cellular / environmental information",
+        "center": "checkpoint decision control",
+        "right": "proceed, pause, exit, repair, or death outcomes"
+      },
+      "primary_knowledge_id": "U4-K-141",
+      "knowledge_ids": [
+        "U4-K-036",
+        "U4-K-141"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-036"
+      ],
+      "visual_mode": "CHECKPOINT_DECISION_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L43",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B15",
+      "title": "G1 Commitment Gate",
+      "micro_anchor": "the G1 decision gate integrating growth conditions, signaling, and DNA integrity before S phase or G0",
+      "scene_geometry": {
+        "left": "G1 cell and external cues",
+        "center": "G1 checkpoint commitment gate",
+        "right": "S-phase entry or G0 branch"
+      },
+      "primary_knowledge_id": "U4-K-142",
+      "knowledge_ids": [
+        "U4-K-142",
+        "U4-K-143"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-143"
+      ],
+      "visual_mode": "G1_COMMITMENT_DECISION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L44",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B15",
+      "title": "G2 DNA-Integrity Gate",
+      "micro_anchor": "the premitotic checkpoint where incomplete replication or DNA damage can trigger arrest and repair responses",
+      "scene_geometry": {
+        "left": "DNA replication / damage status",
+        "center": "G2 checkpoint and arrest control",
+        "right": "repair / delayed mitotic entry / other response"
+      },
+      "primary_knowledge_id": "U4-K-144",
+      "knowledge_ids": [
+        "U4-K-144",
+        "U4-K-146",
+        "U4-K-147"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-146",
+        "U4-K-147"
+      ],
+      "visual_mode": "G2_DNA_DAMAGE_DECISION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L45",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B15",
+      "title": "Spindle-Assembly Checkpoint",
+      "micro_anchor": "the metaphase security gate that blocks anaphase until kinetochore–microtubule attachments and alignment are adequate",
+      "scene_geometry": {
+        "left": "unattached / misattached chromosome",
+        "center": "spindle-assembly checkpoint",
+        "right": "permission for anaphase only after adequate attachment"
+      },
+      "primary_knowledge_id": "U4-K-145",
+      "knowledge_ids": [
+        "U4-K-145"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "SPINDLE_CHECKPOINT",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L46",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B15",
+      "title": "Apoptosis Safety Exit",
+      "micro_anchor": "the regulated cell-death route that removes cells with severe damage or other dangerous states",
+      "scene_geometry": {
+        "left": "damage / death signal",
+        "center": "regulated apoptosis program",
+        "right": "orderly removal of the cell"
+      },
+      "primary_knowledge_id": "U4-K-148",
+      "knowledge_ids": [
+        "U4-K-148"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "APOPTOSIS_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L47",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B16",
+      "title": "Cyclin–CDK Control Rack",
+      "micro_anchor": "the oscillating regulator rack where changing cyclin levels control CDK activity and phosphorylation of cell-cycle targets",
+      "scene_geometry": {
+        "left": "changing cyclin concentration",
+        "center": "cyclin–CDK complex / kinase activity",
+        "right": "phosphorylated targets driving cycle events"
+      },
+      "primary_knowledge_id": "U4-K-037",
+      "knowledge_ids": [
+        "U4-K-037",
+        "U4-K-149",
+        "U4-K-150",
+        "U4-K-151"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-149",
+        "U4-K-150",
+        "U4-K-151"
+      ],
+      "visual_mode": "CYCLIN_CDK_OSCILLATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L48",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B16",
+      "title": "Growth and Attachment Signals Bay",
+      "micro_anchor": "the external-cue bay comparing growth-factor signaling, crowding signals, and anchorage requirements for normal proliferation",
+      "scene_geometry": {
+        "left": "growth-factor signaling",
+        "center": "cell-density / contact environment",
+        "right": "substrate / extracellular-matrix anchorage"
+      },
+      "primary_knowledge_id": "U4-K-154",
+      "knowledge_ids": [
+        "U4-K-154",
+        "U4-K-155",
+        "U4-K-156"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-155",
+        "U4-K-156"
+      ],
+      "visual_mode": "EXTRACELLULAR_GROWTH_CONSTRAINTS",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L49",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B17",
+      "title": "Cancer Control-Failure Board",
+      "micro_anchor": "the control-failure board linking accumulated driver alterations to checkpoint evasion, apoptosis evasion, and uncontrolled proliferation",
+      "scene_geometry": {
+        "left": "driver alterations / DNA-control failures",
+        "center": "dysregulated cancer-cell control network",
+        "right": "checkpoint and apoptosis evasion / proliferation"
+      },
+      "primary_knowledge_id": "U4-K-157",
+      "knowledge_ids": [
+        "U4-K-038",
+        "U4-K-157",
+        "U4-K-158",
+        "U4-K-159",
+        "U4-K-160"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-038",
+        "U4-K-158",
+        "U4-K-159",
+        "U4-K-160"
+      ],
+      "visual_mode": "CANCER_CONTROL_FAILURE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L50",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B17",
+      "title": "Tumor Progression Corridor",
+      "micro_anchor": "the progression corridor distinguishing tumor formation, benign localization, malignant invasion, metastasis, and extended proliferative capacity",
+      "scene_geometry": {
+        "left": "localized tumor / benign state",
+        "center": "malignant invasive progression",
+        "right": "metastatic spread / extensive proliferation"
+      },
+      "primary_knowledge_id": "U4-K-162",
+      "knowledge_ids": [
+        "U4-K-161",
+        "U4-K-162",
+        "U4-K-163",
+        "U4-K-164",
+        "U4-K-165"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-161",
+        "U4-K-163",
+        "U4-K-164",
+        "U4-K-165"
+      ],
+      "visual_mode": "TUMOR_PROGRESSION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U4-L51",
+      "journey_id": "U4-J7",
+      "bundle_id": "U4-B17",
+      "title": "Carcinogen Risk Bay",
+      "micro_anchor": "the DNA-damage risk bay comparing ultraviolet exposure with tobacco-smoke carcinogens",
+      "scene_geometry": {
+        "left": "UV exposure and DNA damage",
+        "center": "cancer-risk reduction / damage context",
+        "right": "tobacco-smoke carcinogens and DNA damage"
+      },
+      "primary_knowledge_id": "U4-K-166",
+      "knowledge_ids": [
+        "U4-K-166",
+        "U4-K-167"
+      ],
+      "embedded_knowledge_ids": [
+        "U4-K-167"
+      ],
+      "visual_mode": "CARCINOGEN_RISK_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    }
+  ],
+  "challenge_lab": [
+    {
+      "challenge_id": "U4-CH-01",
+      "knowledge_id": "U4-K-170",
+      "title": "Communication-mode discrimination",
+      "type": "SCENARIO_CLASSIFICATION",
+      "prerequisite_loci": [
+        "U4-L02",
+        "U4-L03",
+        "U4-L04",
+        "U4-L05",
+        "U4-L06"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-02",
+      "knowledge_id": "U4-K-171",
+      "title": "Receptor structure-function inference",
+      "type": "STRUCTURE_FUNCTION_FRQ",
+      "prerequisite_loci": [
+        "U4-L07",
+        "U4-L08",
+        "U4-L10",
+        "U4-L12"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-03",
+      "knowledge_id": "U4-K-172",
+      "title": "Signaling-stage diagram interpretation",
+      "type": "MODEL_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L07",
+        "U4-L13",
+        "U4-L16",
+        "U4-L17"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-04",
+      "knowledge_id": "U4-K-173",
+      "title": "Pathway-disruption prediction",
+      "type": "CAUSAL_PATHWAY_FRQ",
+      "prerequisite_loci": [
+        "U4-L14",
+        "U4-L15",
+        "U4-L16",
+        "U4-L18",
+        "U4-L19"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-05",
+      "knowledge_id": "U4-K-174",
+      "title": "Feedback graph and data reasoning",
+      "type": "DATA_MODEL_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L20",
+        "U4-L22",
+        "U4-L24",
+        "U4-L25"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-06",
+      "knowledge_id": "U4-K-136",
+      "title": "Mitosis-stage visual identification",
+      "type": "IMAGE_STAGE_IDENTIFICATION",
+      "prerequisite_loci": [
+        "U4-L35",
+        "U4-L36",
+        "U4-L37",
+        "U4-L38",
+        "U4-L39",
+        "U4-L40",
+        "U4-L41"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-07",
+      "knowledge_id": "U4-K-139",
+      "title": "Diploid-from-gamete calculation",
+      "type": "QUANTITATIVE",
+      "prerequisite_loci": [
+        "U4-L28"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-08",
+      "knowledge_id": "U4-K-140",
+      "title": "Mitosis segregation error prediction",
+      "type": "CHROMOSOME_SEGREGATION_FRQ",
+      "prerequisite_loci": [
+        "U4-L27",
+        "U4-L38"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-09",
+      "knowledge_id": "U4-K-169",
+      "title": "Vinblastine spindle mechanism",
+      "type": "MECHANISM_PREDICTION",
+      "prerequisite_loci": [
+        "U4-L35",
+        "U4-L36",
+        "U4-L37",
+        "U4-L38",
+        "U4-L45"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-10",
+      "knowledge_id": "U4-K-175",
+      "title": "Cell-cycle phase data interpretation",
+      "type": "DATA_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L29",
+        "U4-L30",
+        "U4-L31",
+        "U4-L32",
+        "U4-L33"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-11",
+      "knowledge_id": "U4-K-176",
+      "title": "Cell-cycle quantitative reasoning",
+      "type": "QUANTITATIVE_DATA",
+      "prerequisite_loci": [
+        "U4-L29",
+        "U4-L31",
+        "U4-L34"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-12",
+      "knowledge_id": "U4-K-177",
+      "title": "Chromosome-count reasoning",
+      "type": "QUANTITATIVE_MODEL_REASONING",
+      "prerequisite_loci": [
+        "U4-L27",
+        "U4-L31",
+        "U4-L38"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-13",
+      "knowledge_id": "U4-K-178",
+      "title": "Checkpoint disruption prediction",
+      "type": "CHECKPOINT_MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U4-L42",
+        "U4-L43",
+        "U4-L44",
+        "U4-L45",
+        "U4-L46"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-14",
+      "knowledge_id": "U4-K-179",
+      "title": "Cyclin-CDK graph interpretation",
+      "type": "GRAPH_INTERPRETATION",
+      "prerequisite_loci": [
+        "U4-L47"
+      ]
+    },
+    {
+      "challenge_id": "U4-CH-15",
+      "knowledge_id": "U4-K-180",
+      "title": "Cancer-control application",
+      "type": "EVIDENCE_MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U4-L48",
+        "U4-L49",
+        "U4-L50",
+        "U4-L51"
+      ]
+    }
+  ],
+  "confusable_sets": [
+    {
+      "set_id": "U4-CF-01",
+      "title": "Communication scale",
+      "terms": [
+        "direct-contact signaling",
+        "local signaling",
+        "long-distance signaling"
+      ],
+      "knowledge_ids": [
+        "U4-K-040",
+        "U4-K-044",
+        "U4-K-053"
+      ]
+    },
+    {
+      "set_id": "U4-CF-02",
+      "title": "Direct intercellular channels",
+      "terms": [
+        "gap junction",
+        "plasmodesmata"
+      ],
+      "knowledge_ids": [
+        "U4-K-041",
+        "U4-K-042"
+      ]
+    },
+    {
+      "set_id": "U4-CF-03",
+      "title": "Local signaling vocabulary",
+      "terms": [
+        "local regulator",
+        "ligand",
+        "target cell"
+      ],
+      "knowledge_ids": [
+        "U4-K-045",
+        "U4-K-046",
+        "U4-K-047"
+      ]
+    },
+    {
+      "set_id": "U4-CF-04",
+      "title": "Named signaling modes",
+      "terms": [
+        "paracrine signaling",
+        "synaptic signaling",
+        "endocrine signaling"
+      ],
+      "knowledge_ids": [
+        "U4-K-048",
+        "U4-K-050",
+        "U4-K-055"
+      ]
+    },
+    {
+      "set_id": "U4-CF-05",
+      "title": "Synaptic vocabulary",
+      "terms": [
+        "neurotransmitter",
+        "synaptic cleft"
+      ],
+      "knowledge_ids": [
+        "U4-K-051",
+        "U4-K-052"
+      ]
+    },
+    {
+      "set_id": "U4-CF-06",
+      "title": "Chemical messenger categories",
+      "terms": [
+        "local regulator",
+        "neurotransmitter",
+        "hormone"
+      ],
+      "knowledge_ids": [
+        "U4-K-045",
+        "U4-K-051",
+        "U4-K-054"
+      ]
+    },
+    {
+      "set_id": "U4-CF-07",
+      "title": "Core signaling stages",
+      "terms": [
+        "reception",
+        "transduction",
+        "cellular response"
+      ],
+      "knowledge_ids": [
+        "U4-K-058",
+        "U4-K-068",
+        "U4-K-077"
+      ]
+    },
+    {
+      "set_id": "U4-CF-08",
+      "title": "Signal recognition roles",
+      "terms": [
+        "ligand",
+        "receptor",
+        "target cell"
+      ],
+      "knowledge_ids": [
+        "U4-K-046",
+        "U4-K-059",
+        "U4-K-047"
+      ]
+    },
+    {
+      "set_id": "U4-CF-09",
+      "title": "Receptor location",
+      "terms": [
+        "cell-surface receptor",
+        "intracellular receptor"
+      ],
+      "knowledge_ids": [
+        "U4-K-062",
+        "U4-K-063"
+      ]
+    },
+    {
+      "set_id": "U4-CF-10",
+      "title": "GPCR machinery",
+      "terms": [
+        "G protein-coupled receptor (GPCR)",
+        "heterotrimeric G protein"
+      ],
+      "knowledge_ids": [
+        "U4-K-081",
+        "U4-K-082"
+      ]
+    },
+    {
+      "set_id": "U4-CF-11",
+      "title": "G-protein switch directions",
+      "terms": [
+        "GDP-to-GTP exchange",
+        "GTP hydrolysis and switch reset"
+      ],
+      "knowledge_ids": [
+        "U4-K-083",
+        "U4-K-084"
+      ]
+    },
+    {
+      "set_id": "U4-CF-12",
+      "title": "Protein phosphorylation control",
+      "terms": [
+        "protein kinase",
+        "protein phosphatase",
+        "dephosphorylation"
+      ],
+      "knowledge_ids": [
+        "U4-K-070",
+        "U4-K-072",
+        "U4-K-073"
+      ]
+    },
+    {
+      "set_id": "U4-CF-13",
+      "title": "Intracellular relay terms",
+      "terms": [
+        "phosphorylation cascade",
+        "second messenger",
+        "signal amplification"
+      ],
+      "knowledge_ids": [
+        "U4-K-071",
+        "U4-K-075",
+        "U4-K-074"
+      ]
+    },
+    {
+      "set_id": "U4-CF-14",
+      "title": "First signal versus intracellular messenger",
+      "terms": [
+        "ligand",
+        "second messenger",
+        "cyclic AMP (cAMP)"
+      ],
+      "knowledge_ids": [
+        "U4-K-046",
+        "U4-K-075",
+        "U4-K-076"
+      ]
+    },
+    {
+      "set_id": "U4-CF-15",
+      "title": "Cellular response branches",
+      "terms": [
+        "membrane-permeability response",
+        "metabolic response",
+        "gene-expression response"
+      ],
+      "knowledge_ids": [
+        "U4-K-078",
+        "U4-K-079",
+        "U4-K-080"
+      ]
+    },
+    {
+      "set_id": "U4-CF-16",
+      "title": "Pathway mutation location",
+      "terms": [
+        "receptor mutation effect",
+        "downstream-component mutation effect"
+      ],
+      "knowledge_ids": [
+        "U4-K-090",
+        "U4-K-091"
+      ]
+    },
+    {
+      "set_id": "U4-CF-17",
+      "title": "Feedback direction",
+      "terms": [
+        "negative feedback",
+        "positive feedback"
+      ],
+      "knowledge_ids": [
+        "U4-K-019",
+        "U4-K-020"
+      ]
+    },
+    {
+      "set_id": "U4-CF-18",
+      "title": "Feedback-loop roles",
+      "terms": [
+        "stimulus",
+        "sensor/receptor",
+        "control/integration function",
+        "effector",
+        "feedback response"
+      ],
+      "knowledge_ids": [
+        "U4-K-097",
+        "U4-K-098",
+        "U4-K-099",
+        "U4-K-100",
+        "U4-K-101"
+      ]
+    },
+    {
+      "set_id": "U4-CF-19",
+      "title": "Homeostatic reference terms",
+      "terms": [
+        "homeostasis",
+        "set point"
+      ],
+      "knowledge_ids": [
+        "U4-K-094",
+        "U4-K-095"
+      ]
+    },
+    {
+      "set_id": "U4-CF-20",
+      "title": "Genome packing hierarchy",
+      "terms": [
+        "histone",
+        "nucleosome",
+        "chromatin",
+        "chromosome"
+      ],
+      "knowledge_ids": [
+        "U4-K-110",
+        "U4-K-111",
+        "U4-K-112",
+        "U4-K-113"
+      ]
+    },
+    {
+      "set_id": "U4-CF-21",
+      "title": "Replicated chromosome relationships",
+      "terms": [
+        "replicated chromosome",
+        "sister chromatid",
+        "homologous chromosomes"
+      ],
+      "knowledge_ids": [
+        "U4-K-114",
+        "U4-K-115",
+        "U4-K-120"
+      ]
+    },
+    {
+      "set_id": "U4-CF-22",
+      "title": "Chromosome attachment structures",
+      "terms": [
+        "centromere",
+        "kinetochore"
+      ],
+      "knowledge_ids": [
+        "U4-K-116",
+        "U4-K-117"
+      ]
+    },
+    {
+      "set_id": "U4-CF-23",
+      "title": "Ploidy and cell type",
+      "terms": [
+        "somatic cell",
+        "diploid",
+        "gamete",
+        "haploid"
+      ],
+      "knowledge_ids": [
+        "U4-K-121",
+        "U4-K-122",
+        "U4-K-123",
+        "U4-K-124"
+      ]
+    },
+    {
+      "set_id": "U4-CF-24",
+      "title": "Cell-cycle intervals",
+      "terms": [
+        "interphase",
+        "M phase"
+      ],
+      "knowledge_ids": [
+        "U4-K-125",
+        "U4-K-126"
+      ]
+    },
+    {
+      "set_id": "U4-CF-25",
+      "title": "Cell-cycle states",
+      "terms": [
+        "G1 phase",
+        "S phase",
+        "G2 phase",
+        "G0"
+      ],
+      "knowledge_ids": [
+        "U4-K-023",
+        "U4-K-024",
+        "U4-K-025",
+        "U4-K-143"
+      ]
+    },
+    {
+      "set_id": "U4-CF-26",
+      "title": "Mitotic stages",
+      "terms": [
+        "prophase",
+        "prometaphase",
+        "metaphase",
+        "anaphase",
+        "telophase"
+      ],
+      "knowledge_ids": [
+        "U4-K-031",
+        "U4-K-129",
+        "U4-K-032",
+        "U4-K-033",
+        "U4-K-034"
+      ]
+    },
+    {
+      "set_id": "U4-CF-27",
+      "title": "Spindle geography",
+      "terms": [
+        "mitotic spindle",
+        "centrosome",
+        "kinetochore",
+        "metaphase plate"
+      ],
+      "knowledge_ids": [
+        "U4-K-127",
+        "U4-K-128",
+        "U4-K-117",
+        "U4-K-130"
+      ]
+    },
+    {
+      "set_id": "U4-CF-28",
+      "title": "Cytokinesis structures",
+      "terms": [
+        "cleavage furrow",
+        "contractile ring",
+        "cell plate"
+      ],
+      "knowledge_ids": [
+        "U4-K-131",
+        "U4-K-132",
+        "U4-K-133"
+      ]
+    },
+    {
+      "set_id": "U4-CF-29",
+      "title": "Cell-cycle checkpoints",
+      "terms": [
+        "G1 checkpoint",
+        "G2 checkpoint",
+        "spindle assembly checkpoint"
+      ],
+      "knowledge_ids": [
+        "U4-K-142",
+        "U4-K-144",
+        "U4-K-145"
+      ]
+    },
+    {
+      "set_id": "U4-CF-30",
+      "title": "Cell-safety outcomes",
+      "terms": [
+        "checkpoint",
+        "cell-cycle arrest",
+        "apoptosis"
+      ],
+      "knowledge_ids": [
+        "U4-K-141",
+        "U4-K-146",
+        "U4-K-148"
+      ]
+    },
+    {
+      "set_id": "U4-CF-31",
+      "title": "Cyclin-CDK vocabulary",
+      "terms": [
+        "cyclin",
+        "cyclin-dependent kinase (CDK)",
+        "cyclin-CDK complex"
+      ],
+      "knowledge_ids": [
+        "U4-K-149",
+        "U4-K-150",
+        "U4-K-151"
+      ]
+    },
+    {
+      "set_id": "U4-CF-32",
+      "title": "External proliferation constraints",
+      "terms": [
+        "growth-factor signaling",
+        "density-dependent inhibition",
+        "anchorage dependence"
+      ],
+      "knowledge_ids": [
+        "U4-K-154",
+        "U4-K-155",
+        "U4-K-156"
+      ]
+    },
+    {
+      "set_id": "U4-CF-33",
+      "title": "Tumor terminology",
+      "terms": [
+        "cancer",
+        "tumor",
+        "benign tumor",
+        "malignant tumor",
+        "metastasis"
+      ],
+      "knowledge_ids": [
+        "U4-K-157",
+        "U4-K-162",
+        "U4-K-163",
+        "U4-K-164",
+        "U4-K-165"
+      ]
+    }
+  ],
+  "scope_guards": [
+    {
+      "knowledge_id": "U4-K-152",
+      "canonical_label": "Specific cyclin-CDK pairs exclusion",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U4-K-153",
+      "canonical_label": "Specific growth-factor names exclusion",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U4-K-168",
+      "canonical_label": "Unsupported cancer-prevention simplification guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY"
+    }
+  ]
+}

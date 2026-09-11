@@ -1,0 +1,683 @@
+{
+  "schema": "memory-palace-v2-unit3-f4e-story-1.0",
+  "unit_id": "unit-3",
+  "palace_id": "U3-J5",
+  "journey_id": "U3-J5",
+  "palace_name": "Carbon Fixation Greenhouse",
+  "story_title": "The Greenhouse That Kept Losing Carbon",
+  "tagline": "Carry ATP and NADPH from the light reactions into the stroma, follow one carbon tracer through fixation and G3P output, then diagnose photorespiration and compare the spatial C4 and temporal CAM solutions.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cellular-energetics investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a chloroplast stroma map, carbon tracer, ATP/NADPH inputs, and a net-carbon-gain gauge",
+    "story_job": "Nia keeps the same carbon tracer visible, separates carbon acceptors from enzymes and products, keeps detailed Calvin-cycle bookkeeping subordinate to cycle logic, and compares photorespiration, C4, and CAM without collapsing their mechanisms."
+  },
+  "premise": "The carbon-fixation greenhouse has ATP and NADPH available but carbon output falls whenever conditions favor photorespiration. The learner reconstructs the Calvin cycle and then compares two carbon-concentrating strategies.",
+  "mission": "Follow carbon from CO2 fixation through G3P output and RuBP regeneration, then diagnose Rubisco oxygenation and compare C4 spatial separation with CAM temporal separation.",
+  "finale": "The greenhouse succeeds when ATP and NADPH are connected to stroma carbon fixation without becoming carbon themselves, CO₂ is fixed through rubisco onto the RuBP acceptor, G3P output is separated from RuBP regeneration, photorespiration is recognized as rubisco oxygenation that lowers net carbon fixation, and C4 spatial separation is kept distinct from CAM temporal separation.",
+  "estimated_minutes": 18,
+  "scene_count": 5,
+  "checkpoint_count": 2,
+  "learner_rule": "Follow the amber carbon tracer and keep each scene’s fixed left, center, and right anchors stable. Detailed Calvin-cycle bookkeeping remains secondary to the causal route. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Carbon Fixation Greenhouse is a five-station stroma-to-adaptation route. Enter where ATP and NADPH arrive from the light reactions, follow one amber carbon tracer through the rubisco fixation bench and the G3P/RuBP loop, then carry the rubisco competition problem into photorespiration and finish in a split conservatory comparing C4 spatial separation with CAM temporal separation.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Calvin Cycle Energy Dock",
+      "short": "Energy Dock",
+      "floor": "Stroma entrance",
+      "symbol": "ATP"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Carbon Fixation Bench",
+      "short": "Fixation Bench",
+      "floor": "Stroma workbench",
+      "symbol": "CO₂"
+    },
+    {
+      "scene_index": 2,
+      "locus": "G3P Output and Regeneration Loop",
+      "short": "G3P Loop",
+      "floor": "Carbon loop",
+      "symbol": "G3P"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Photorespiration Detour",
+      "short": "Detour",
+      "floor": "Rubisco junction",
+      "symbol": "O₂"
+    },
+    {
+      "scene_index": 4,
+      "locus": "C4 and CAM Strategy Conservatory",
+      "short": "C4 / CAM",
+      "floor": "Adaptation conservatory",
+      "symbol": "C₄"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Calvin Cycle Energy Dock",
+      "title": "The Two Packages Waiting in the Stroma",
+      "scene_kicker": "ATP and NADPH have arrived from the light reactions, but neither package becomes carbohydrate until carbon dioxide enters a separate stroma pathway.",
+      "location_description": "Calvin Cycle Energy Dock — the stroma carbon-fixation cycle receiving ATP and NADPH from the light reactions.",
+      "scene_layout": {
+        "orientation": "You enter Calvin Cycle Energy Dock and stop at the stroma carbon-fixation cycle receiving ATP and NADPH from the light reactions. On your left is ATP/NADPH delivery; directly ahead is Calvin-cycle route in stroma; on your right is carbohydrate-building output. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "ATP and NADPH delivery gate",
+            "symbol": "ATP/NADPH",
+            "description": "The same ATP and NADPH produced at the end of the light reactions arrive from the left-side stroma gate and remain chemically separate from the incoming carbon tracer."
+          },
+          {
+            "position": "center",
+            "label": "Calvin-cycle stroma route",
+            "symbol": "cycle",
+            "description": "A broad circular pathway model occupies the center of the chloroplast stroma, showing carbon entering, being processed, and the carbon acceptor being regenerated."
+          },
+          {
+            "position": "right",
+            "label": "Carbohydrate-building exit",
+            "symbol": "organic C",
+            "description": "A fixed right-side output bay receives reduced organic carbon that can later contribute to glucose and other biological molecules rather than depicting glucose as the direct product of one cycle turn."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a chloroplast stroma map, carbon tracer, ATP/NADPH inputs, and a net-carbon-gain gauge",
+          "job": "Nia keeps the same carbon tracer visible, separates carbon acceptors from enzymes and products, keeps detailed Calvin-cycle bookkeeping subordinate to cycle logic, and compares photorespiration, C4, and CAM without collapsing their mechanisms."
+        },
+        {
+          "name": "ATP delivery",
+          "kind": "energy input",
+          "visual": "a blue ATP token arriving from the photophosphorylation turbine through the same stroma-side door used in Journey 4",
+          "job": "supplies usable chemical energy for carbon-reduction and regeneration work in the Calvin cycle"
+        },
+        {
+          "name": "NADPH delivery",
+          "kind": "reducing-power input",
+          "visual": "a purple NADPH carrier arriving beside ATP but never merging with it",
+          "job": "provides reducing power used in the carbon-fixation pathway"
+        },
+        {
+          "name": "carbon tracer",
+          "kind": "continuity marker",
+          "visual": "one carbon atom glowing amber inside an incoming CO₂ molecule at the edge of the stroma model",
+          "job": "lets the learner follow carbon identity from inorganic CO₂ into fixed organic carbon without pretending energy becomes carbon"
+        }
+      ],
+      "story_open": "The door that opened beside the photophosphorylation turbine does not lead outside the chloroplast. You and Dr. Nia Park step through it onto a broad platform in the **stroma**, the fluid region surrounding the thylakoids. The route behind you is still visible through glass: ATP formed on the stroma side of ATP synthase, and NADPH left the photosystem I station through a separate carrier line. Now those two products roll into the greenhouse on your **left**. Directly **ahead**, a circular carbon-processing route is dark. On your **right**, an organic-carbon output gate is empty. Nia fixes all three positions on her tablet. ‘The light reactions solved the energy problem,’ she says. ‘They did not manufacture carbon out of ATP or NADPH. We still need carbon dioxide.’",
+      "story_paragraphs": [
+        "The door that opened beside the photophosphorylation turbine does not lead outside the chloroplast. You and Dr. Nia Park step through it onto a broad platform in the **stroma**, the fluid region surrounding the thylakoids. The route behind you is still visible through glass: ATP formed on the stroma side of ATP synthase, and NADPH left the photosystem I station through a separate carrier line. Now those two products roll into the greenhouse on your **left**. Directly **ahead**, a circular carbon-processing route is dark. On your **right**, an organic-carbon output gate is empty. Nia fixes all three positions on her tablet. ‘The light reactions solved the energy problem,’ she says. ‘They did not manufacture carbon out of ATP or NADPH. We still need carbon dioxide.’",
+        "A blue ATP token and a purple NADPH carrier enter the left delivery gate. Nia calls their relationship to the next process the **Calvin-cycle energy input**: ATP and NADPH generated by the light reactions power carbohydrate production from carbon dioxide in the chloroplast stroma. She separates their jobs visually. ATP feeds energy-requiring steps. NADPH supplies reducing power. Neither token contains the carbon that will become carbohydrate. Above the center route, an amber lamp remains off until an actual CO₂ molecule arrives. The distinction keeps the handoff from Journey 4 honest: light energy has been converted into chemical forms that can support carbon processing, while carbon itself must come from inorganic CO₂.",
+        "The central route begins turning only after Nia opens the CO₂ valve. Carbon enters the pathway, ATP and NADPH are used during carbon reduction and regeneration work, and an organic-carbon indicator appears at the right exit. The route loops back toward its starting acceptor instead of running as a one-way assembly belt. Nia finally names the whole pathway: the **Calvin cycle** is a cyclic carbon-fixation pathway in the chloroplast stroma that uses ATP and NADPH to incorporate CO₂ into carbohydrate. The word *cycle* now belongs to the visible return path in front of you, not to electron flow on the thylakoid membrane. Nia points back through the glass toward the light reactions so the two processes remain physically distinct.",
+        "The right-side output gate begins to glow, but Nia blocks it before a full glucose model can appear. ‘Do not turn one cycle pass into “CO₂ goes in and glucose pops out,”’ she says. The greenhouse will eventually use fixed carbon to build carbohydrates, but we are going to follow one marked carbon first. She activates a single amber carbon tracer inside an incoming CO₂ molecule and sends it along a narrow rail toward the next bench. The ATP and NADPH lines remain behind at the energy dock, feeding the cycle as needed. The question pulling you forward is now precise: **what physically captures that inorganic carbon and gets it into the cycle?**"
+      ],
+      "story_close": "The amber carbon tracer leaves the energy dock still inside CO₂ and follows a floor rail to the Carbon Fixation Bench, where a carbon acceptor and an enzyme wait in different positions.",
+      "object_ids": [
+        "U3-K-039",
+        "U3-K-133"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-039",
+          "term": "Calvin-cycle energy input",
+          "story": "ATP and NADPH arriving separately through the left stroma gate and powering the central carbon-fixation route",
+          "science": "ATP and NADPH generated by the light reactions power carbohydrate production from carbon dioxide in the Calvin cycle in the chloroplast stroma.",
+          "exact_name": true,
+          "hint": "ATP and NADPH arriving separately through the left stroma gate and powering the central carbon-fixation route"
+        },
+        {
+          "object_id": "U3-K-133",
+          "term": "Calvin cycle",
+          "story": "the circular stroma pathway using ATP and NADPH while carbon enters and the acceptor is regenerated",
+          "science": "The Calvin cycle is a cyclic carbon-fixation pathway in the chloroplast stroma that uses ATP and NADPH to incorporate CO2 into carbohydrate.",
+          "exact_name": true,
+          "hint": "the circular stroma pathway using ATP and NADPH while carbon enters and the acceptor is regenerated"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Calvin-cycle energy input",
+          "meaning": "ATP and NADPH generated by the light reactions power carbohydrate production from carbon dioxide in the Calvin cycle in the chloroplast stroma.",
+          "image": "ATP and NADPH arriving separately through the left stroma gate and powering the central carbon-fixation route"
+        },
+        {
+          "term": "Calvin cycle",
+          "meaning": "The Calvin cycle is a cyclic carbon-fixation pathway in the chloroplast stroma that uses ATP and NADPH to incorporate CO2 into carbohydrate.",
+          "image": "the circular stroma pathway using ATP and NADPH while carbon enters and the acceptor is regenerated"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-039",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Carbon Fixation Bench",
+      "misconception_guards": [
+        "The Calvin cycle is a carbon-fixation cycle and is not “cyclic electron flow.”",
+        "Keep these confusable terms physically and verbally distinct: light reactions, Calvin cycle.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-013; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "ENERGY_INPUT_PATHWAY",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "ATP/NADPH delivery",
+          "Calvin-cycle route in stroma",
+          "carbohydrate-building output",
+          "Deliver ATP and NADPH from the light reactions into a stroma-localized Calvin-cycle model and use them to support carbon reduction and cycle regeneration."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Calvin-cycle energy input; Calvin cycle."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Carbon Fixation Bench",
+      "title": "The Enzyme, the Acceptor, and the Carbon They Must Not Be Confused With",
+      "scene_kicker": "Carbon fixation becomes clear only when rubisco, RuBP, and CO₂ stay visibly separate and each performs a different job.",
+      "location_description": "Carbon Fixation Bench — the rubisco station where CO2 is attached to RuBP at the start of carbon fixation.",
+      "scene_layout": {
+        "orientation": "You enter Carbon Fixation Bench and stop at the rubisco station where CO2 is attached to RuBP at the start of carbon fixation. On your left is CO2 input; directly ahead is rubisco fixation station; on your right is RuBP carbon acceptor. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Carbon-dioxide inlet",
+            "symbol": "CO₂",
+            "description": "A single carbon tracer enters from the left as an inorganic carbon atom inside a conventional carbon-dioxide molecule and stays visibly marked throughout fixation."
+          },
+          {
+            "position": "center",
+            "label": "Rubisco fixation station",
+            "symbol": "rubisco",
+            "description": "The central enzyme station brings carbon dioxide together with the carbon acceptor while keeping the enzyme visually separate from both reactants."
+          },
+          {
+            "position": "right",
+            "label": "RuBP carbon-acceptor rack",
+            "symbol": "RuBP",
+            "description": "A fixed right rack holds regenerated ribulose bisphosphate molecules ready to accept incoming carbon dioxide at the start of another cycle turn."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a chloroplast stroma map, carbon tracer, ATP/NADPH inputs, and a net-carbon-gain gauge",
+          "job": "Nia keeps the same carbon tracer visible, separates carbon acceptors from enzymes and products, keeps detailed Calvin-cycle bookkeeping subordinate to cycle logic, and compares photorespiration, C4, and CAM without collapsing their mechanisms."
+        },
+        {
+          "name": "carbon dioxide",
+          "kind": "inorganic carbon input",
+          "visual": "a conventional linear CO₂ molecule whose carbon atom glows amber",
+          "job": "provides the inorganic carbon that is incorporated into an organic molecule during fixation"
+        },
+        {
+          "name": "rubisco",
+          "kind": "enzyme",
+          "visual": "a large enzyme-shaped docking surface fixed at the center bench",
+          "job": "catalyzes the initial CO₂-fixation reaction and can also react with oxygen under competing conditions"
+        },
+        {
+          "name": "RuBP",
+          "kind": "carbon acceptor",
+          "visual": "a five-carbon acceptor model held on the right rack and returned after regeneration",
+          "job": "accepts carbon dioxide at the beginning of the Calvin cycle and must be regenerated for the cycle to continue"
+        }
+      ],
+      "story_open": "The floor rail carries the glowing CO₂ molecule into the **Carbon Fixation Bench**. The room is deliberately sparse. On your **left**, the CO₂ inlet holds the amber carbon tracer. Directly **ahead**, one large enzyme docking surface is labeled only after Nia stops it from moving. On your **right**, a rack holds identical five-carbon acceptor models ready to enter the center station. Nia makes you point to all three before the reaction begins. ‘Carbon dioxide is the incoming carbon. The center structure is the catalyst. The right-hand molecule is the acceptor. If those roles blur, the rest of the cycle becomes impossible to reconstruct.’",
+      "story_paragraphs": [
+        "The floor rail carries the glowing CO₂ molecule into the **Carbon Fixation Bench**. The room is deliberately sparse. On your **left**, the CO₂ inlet holds the amber carbon tracer. Directly **ahead**, one large enzyme docking surface is labeled only after Nia stops it from moving. On your **right**, a rack holds identical five-carbon acceptor models ready to enter the center station. Nia makes you point to all three before the reaction begins. ‘Carbon dioxide is the incoming carbon. The center structure is the catalyst. The right-hand molecule is the acceptor. If those roles blur, the rest of the cycle becomes impossible to reconstruct.’",
+        "Nia releases one right-side molecule toward the center and names it **RuBP**, short for ribulose bisphosphate. RuBP is the CO₂-acceptor molecule regenerated in the Calvin cycle. The phrase *carbon acceptor* is attached to the molecule on the right, not to the enzyme in the middle. Then the central docking surface opens around RuBP and the incoming CO₂. That enzyme is **rubisco**. Rubisco catalyzes the initial CO₂-fixation reaction of the Calvin cycle. It speeds the reaction by bringing the relevant reactants into the appropriate catalytic environment, but rubisco is not itself the carbon acceptor and it is not consumed as the carbon product.",
+        "The amber carbon tracer leaves the CO₂ inlet and becomes incorporated into an organic carbon framework at the center station. Nia freezes the moment and names the event **carbon fixation**: incorporation of inorganic CO₂ into an organic molecule; in the Calvin cycle, CO₂ is added to a carbon acceptor. You can now rebuild the relationship from the geography alone. Left gives CO₂. Right gives RuBP. Center gives rubisco. The enzyme catalyzes the step in which inorganic carbon becomes part of an organic molecule. Nia does not clutter the bench with a parade of every short-lived intermediate because the defining event is already visible.",
+        "Before the bench resets, Nia rotates the rubisco model and reveals a second socket marked O₂. She does not activate it yet. ‘Remember this,’ she says. ‘The same enzyme that catalyzes CO₂ fixation can also react with oxygen.’ For now, the carbon tracer has successfully entered the cycle, and the RuBP rack must eventually be replenished if another CO₂ molecule is to be accepted. The fixed-carbon track therefore carries your amber tracer toward a circular accounting room. A green gate on the left is labeled G3P OUTPUT; a return track on the right is labeled RuBP REGENERATION."
+      ],
+      "story_close": "The fixed carbon leaves the rubisco bench inside the cycle, pulling you toward the G3P Output and Regeneration Loop where carbon must be divided between net output and rebuilding the acceptor.",
+      "object_ids": [
+        "U3-K-134",
+        "U3-K-135",
+        "U3-K-136"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-134",
+          "term": "Carbon fixation",
+          "story": "the amber carbon tracer leaving inorganic CO₂ and becoming part of an organic carbon framework at the central bench",
+          "science": "Carbon fixation is incorporation of inorganic CO2 into an organic molecule; in the Calvin cycle CO2 is added to a carbon acceptor.",
+          "exact_name": true,
+          "hint": "the amber carbon tracer leaving inorganic CO₂ and becoming part of an organic carbon framework at the central bench"
+        },
+        {
+          "object_id": "U3-K-135",
+          "term": "Rubisco",
+          "story": "the large central rubisco enzyme docking CO₂ and RuBP without being consumed as either substrate",
+          "science": "Rubisco is the enzyme that catalyzes the initial CO2-fixation reaction of the Calvin cycle and can also react with O2.",
+          "exact_name": true,
+          "hint": "the large central rubisco enzyme docking CO₂ and RuBP without being consumed as either substrate"
+        },
+        {
+          "object_id": "U3-K-136",
+          "term": "RuBP",
+          "story": "the five-carbon RuBP acceptor waiting on the right rack and returning after regeneration",
+          "science": "Ribulose bisphosphate (RuBP) is the CO2-acceptor molecule regenerated in the Calvin cycle.",
+          "exact_name": true,
+          "hint": "the five-carbon RuBP acceptor waiting on the right rack and returning after regeneration"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Carbon fixation",
+          "meaning": "Carbon fixation is incorporation of inorganic CO2 into an organic molecule; in the Calvin cycle CO2 is added to a carbon acceptor.",
+          "image": "the amber carbon tracer leaving inorganic CO₂ and becoming part of an organic carbon framework at the central bench"
+        },
+        {
+          "term": "Rubisco",
+          "meaning": "Rubisco is the enzyme that catalyzes the initial CO2-fixation reaction of the Calvin cycle and can also react with O2.",
+          "image": "the large central rubisco enzyme docking CO₂ and RuBP without being consumed as either substrate"
+        },
+        {
+          "term": "RuBP",
+          "meaning": "Ribulose bisphosphate (RuBP) is the CO2-acceptor molecule regenerated in the Calvin cycle.",
+          "image": "the five-carbon RuBP acceptor waiting on the right rack and returning after regeneration"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-134",
+      "checkpoint_prompt": "What molecule accepts CO2 at the carbon-fixation bench?",
+      "checkpoint_answer": "RuBP, in a reaction catalyzed by Rubisco.",
+      "checkpoint_hint": "Look to the fixed right-hand rack at the carbon-fixation bench. The molecule there receives incoming CO₂; the large structure in the center is the enzyme that catalyzes the reaction.",
+      "next_locus": "G3P Output and Regeneration Loop",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: rubisco, RuBP, G3P.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-014; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "CARBON_FIXATION_REACTION",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "CO2 input",
+          "rubisco fixation station",
+          "RuBP carbon acceptor",
+          "Bring CO2 and RuBP together at Rubisco, perform the carbon-fixation step, and trace the newly incorporated carbon into the cycle rather than treating Rubisco as a carbon-containing substrate."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Carbon fixation; Rubisco; RuBP."
+    },
+    {
+      "scene_index": 2,
+      "locus": "G3P Output and Regeneration Loop",
+      "title": "The Carbon That Leaves and the Carbon That Must Stay",
+      "scene_kicker": "The cycle succeeds only if some processed carbon can leave as G3P while enough material and energy are used to regenerate RuBP.",
+      "location_description": "G3P Output and Regeneration Loop — the three-turn Calvin-cycle accounting loop with one net G3P leaving and RuBP regenerated.",
+      "scene_layout": {
+        "orientation": "You enter G3P Output and Regeneration Loop and stop at the three-turn Calvin-cycle accounting loop with one net G3P leaving and RuBP regenerated. On your left is G3P production/output; directly ahead is ATP/NADPH accounting loop; on your right is RuBP regeneration return. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "G3P output gate",
+            "symbol": "G3P",
+            "description": "A left-side gate receives the three-carbon sugar product that can leave the cycle and contribute carbon to glucose and other organic molecules."
+          },
+          {
+            "position": "center",
+            "label": "ATP/NADPH accounting loop",
+            "symbol": "3 CO₂",
+            "description": "The center loop shows repeated carbon processing powered by ATP and NADPH, with the detailed three-CO₂ accounting displayed as a small bookkeeping layer rather than the main spatial route."
+          },
+          {
+            "position": "right",
+            "label": "RuBP regeneration return",
+            "symbol": "RuBP↻",
+            "description": "A right-side return track uses part of the processed carbon and energy input to regenerate the RuBP acceptor so the pathway can continue cycling."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a chloroplast stroma map, carbon tracer, ATP/NADPH inputs, and a net-carbon-gain gauge",
+          "job": "Nia keeps the same carbon tracer visible, separates carbon acceptors from enzymes and products, keeps detailed Calvin-cycle bookkeeping subordinate to cycle logic, and compares photorespiration, C4, and CAM without collapsing their mechanisms."
+        },
+        {
+          "name": "G3P",
+          "kind": "three-carbon sugar output",
+          "visual": "a three-carbon organic-carbon card emerging from the left output gate",
+          "job": "can leave the Calvin cycle and supply carbon for glucose and other organic molecules"
+        },
+        {
+          "name": "RuBP return",
+          "kind": "regenerated acceptor",
+          "visual": "a restored RuBP model completing the right-side return track",
+          "job": "allows the cyclic pathway to accept new carbon dioxide again"
+        },
+        {
+          "name": "bookkeeping ring",
+          "kind": "cycle accounting model",
+          "visual": "a small illuminated ring showing three CO₂, nine ATP, six NADPH, one net G3P, and five G3P equivalents routed toward RuBP regeneration",
+          "job": "shows the three-CO₂ accounting without turning every intermediate and molecule count into the primary memory route"
+        }
+      ],
+      "story_open": "The next room is circular enough that you can see its beginning and end at the same time. On your **left**, a small output gate is sized for a three-carbon molecule. In the **center**, ATP and NADPH indicators flash around a repeated carbon-processing loop. On your **right**, a return track reconstructs the RuBP acceptor and sends it back toward the fixation bench. Your amber carbon tracer moves with the processed organic carbon instead of jumping straight into a glucose cube. Nia keeps one hand on the right return rail. ‘A cycle cannot keep fixing carbon if it uses up its acceptor and never rebuilds it.’",
+      "story_paragraphs": [
+        "The next room is circular enough that you can see its beginning and end at the same time. On your **left**, a small output gate is sized for a three-carbon molecule. In the **center**, ATP and NADPH indicators flash around a repeated carbon-processing loop. On your **right**, a return track reconstructs the RuBP acceptor and sends it back toward the fixation bench. Your amber carbon tracer moves with the processed organic carbon instead of jumping straight into a glucose cube. Nia keeps one hand on the right return rail. ‘A cycle cannot keep fixing carbon if it uses up its acceptor and never rebuilds it.’",
+        "A three-carbon sugar reaches the left output gate. Nia names it **G3P**, glyceraldehyde 3-phosphate. G3P is a three-carbon sugar produced by the Calvin cycle and can be used to synthesize glucose and other organic molecules. One G3P model exits toward the carbohydrate-building side of the greenhouse while other processed carbon remains within the loop. That image gives G3P the correct place in the story: it is a product that can contribute carbon to larger organic molecules, not a synonym for glucose and not the RuBP acceptor that begins fixation.",
+        "The center floor then projects a small accounting ring around the larger pathway. Nia labels it **detailed Calvin-cycle stoichiometry**, but she deliberately shrinks the numbers so they cannot replace the mechanism. In the three-CO₂ accounting model used here, three cycle turns consume **9 ATP and 6 NADPH**, produce **one net G3P**, and route five additional G3P equivalents toward regeneration of **three RuBP** molecules. Nia traces the pattern once, then dims the numbers. ‘Keep the logic larger than the bookkeeping: ATP and NADPH are used, carbon is fixed and reduced, some carbon can leave as G3P, and RuBP must be regenerated.’ The greenhouse does not ask you to memorize a procession of every Calvin-cycle intermediate to understand that core architecture.",
+        "The right-side regeneration track completes its work. Three restored RuBP models roll back toward the Carbon Fixation Bench, closing the loop you first saw at the energy dock. At the same moment, your marked G3P exits left and enters a transparent organic-carbon crate. The net-carbon-gain gauge rises. Then the greenhouse climate control abruptly shifts. Hot air dries the leaves in the adjacent chamber. Stomatal openings narrow to reduce water loss, the internal CO₂ indicator begins falling relative to O₂, and an alarm flashes over the rubisco station. Nia looks back at the second socket she showed you earlier. ‘Now we find out what happens when rubisco meets the wrong competitor.’"
+      ],
+      "story_close": "With G3P output understood and RuBP regenerated, the climate shift creates a new failure: falling internal CO₂ makes the oxygen route at rubisco impossible to ignore.",
+      "object_ids": [
+        "U3-K-137",
+        "U3-K-138"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-137",
+          "term": "G3P",
+          "story": "the three-carbon G3P molecule leaving through the left output gate toward organic-molecule synthesis",
+          "science": "Glyceraldehyde 3-phosphate (G3P) is a three-carbon sugar produced by the Calvin cycle and can be used to synthesize glucose and other organic molecules.",
+          "exact_name": true,
+          "hint": "the three-carbon G3P molecule leaving through the left output gate toward organic-molecule synthesis"
+        },
+        {
+          "object_id": "U3-K-138",
+          "term": "Detailed Calvin-cycle stoichiometry",
+          "story": "the small three-CO₂ bookkeeping ring showing 9 ATP, 6 NADPH, one net G3P, and RuBP regeneration as secondary accounting",
+          "science": "For the teacher-taught three-CO2 accounting model, three turns consume 9 ATP and 6 NADPH, produce one net G3P, and use five additional G3P equivalents to regenerate three RuBP.",
+          "exact_name": false,
+          "hint": "the small three-CO₂ bookkeeping ring showing 9 ATP, 6 NADPH, one net G3P, and RuBP regeneration as secondary accounting"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "G3P",
+          "meaning": "Glyceraldehyde 3-phosphate (G3P) is a three-carbon sugar produced by the Calvin cycle and can be used to synthesize glucose and other organic molecules.",
+          "image": "the three-carbon G3P molecule leaving through the left output gate toward organic-molecule synthesis"
+        },
+        {
+          "term": "Detailed Calvin-cycle stoichiometry",
+          "meaning": "In a three-CO₂ accounting model, three turns use 9 ATP and 6 NADPH, produce one net G3P, and route five additional G3P equivalents toward regeneration of three RuBP. Keep this bookkeeping secondary to the cycle logic.",
+          "image": "the small three-CO₂ bookkeeping ring showing 9 ATP, 6 NADPH, one net G3P, and RuBP regeneration as secondary accounting"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-137",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Photorespiration Detour",
+      "misconception_guards": [
+        "Keep exact Calvin-cycle molecule counts as enrichment; the student-facing core should prioritize inputs, carbon fixation, G3P output, and RuBP regeneration.",
+        "Keep these confusable terms physically and verbally distinct: rubisco, RuBP, G3P.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-014; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "PATHWAY_ACCOUNTING_MODEL",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "G3P production/output",
+          "ATP/NADPH accounting loop",
+          "RuBP regeneration return",
+          "Run enough Calvin-cycle turns to show G3P output and RuBP regeneration while keeping detailed stoichiometric bookkeeping visually secondary to the cycle logic."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: G3P; Detailed Calvin-cycle stoichiometry."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Photorespiration Detour",
+      "title": "The Oxygen Door at the Rubisco Junction",
+      "scene_kicker": "Photorespiration is not ordinary cellular respiration; it is the costly consequence of rubisco reacting with O₂ instead of CO₂.",
+      "location_description": "Photorespiration Detour — the rubisco branch point where O2 competes with CO2 and lowers net carbon fixation.",
+      "scene_layout": {
+        "orientation": "You enter Photorespiration Detour and stop at the rubisco branch point where O2 competes with CO2 and lowers net carbon fixation. On your left is CO2 fixation route; directly ahead is rubisco branch point; on your right is O2/photorespiration detour. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "CO₂ fixation route",
+            "symbol": "CO₂",
+            "description": "The normal left path delivers carbon dioxide to rubisco and sends successful fixation back toward net organic-carbon gain."
+          },
+          {
+            "position": "center",
+            "label": "Rubisco branch point",
+            "symbol": "rubisco",
+            "description": "The same central rubisco enzyme can encounter either carbon dioxide or oxygen, turning environmental conditions into a visible branch in carbon-processing outcome."
+          },
+          {
+            "position": "right",
+            "label": "O₂ photorespiration detour",
+            "symbol": "O₂",
+            "description": "The right-side oxygen route diverts rubisco into photorespiration, consumes energy, and lowers net carbon fixation without being confused with mitochondrial cellular respiration."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a chloroplast stroma map, carbon tracer, ATP/NADPH inputs, and a net-carbon-gain gauge",
+          "job": "Nia keeps the same carbon tracer visible, separates carbon acceptors from enzymes and products, keeps detailed Calvin-cycle bookkeeping subordinate to cycle logic, and compares photorespiration, C4, and CAM without collapsing their mechanisms."
+        },
+        {
+          "name": "rubisco",
+          "kind": "branch-point enzyme",
+          "visual": "the same enzyme model from the fixation bench, now positioned between a CO₂ lane and an O₂ lane",
+          "job": "can catalyze CO₂ fixation or react with O₂, producing different consequences for net carbon gain"
+        },
+        {
+          "name": "oxygen",
+          "kind": "competing molecule",
+          "visual": "an O₂ molecule entering the right side when internal CO₂ is low relative to oxygen",
+          "job": "competes at rubisco and sends carbon processing into the photorespiratory detour"
+        },
+        {
+          "name": "net-carbon-gain gauge",
+          "kind": "consequence display",
+          "visual": "a green carbon-gain meter that rises on the CO₂ path and drops when the O₂ detour is used",
+          "job": "makes the cost of photorespiration visible as lower net carbon fixation"
+        }
+      ],
+      "story_open": "You enter a junction built around the same rubisco model from the fixation bench. Its position has not changed. The **left** lane still delivers CO₂ toward successful fixation. The enzyme sits directly **ahead**. A newly illuminated **right** lane delivers O₂ into the alternate socket. Above all three lanes, a net-carbon-gain gauge shows the consequence of each route. Nia turns the climate dial to the hot, dry condition that began in the previous room. Stomata restrict gas exchange to conserve water, internal CO₂ availability can fall, and the relative opportunity for oxygen at rubisco increases. The left CO₂ lane slows while the right oxygen lane brightens.",
+      "story_paragraphs": [
+        "You enter a junction built around the same rubisco model from the fixation bench. Its position has not changed. The **left** lane still delivers CO₂ toward successful fixation. The enzyme sits directly **ahead**. A newly illuminated **right** lane delivers O₂ into the alternate socket. Above all three lanes, a net-carbon-gain gauge shows the consequence of each route. Nia turns the climate dial to the hot, dry condition that began in the previous room. Stomata restrict gas exchange to conserve water, internal CO₂ availability can fall, and the relative opportunity for oxygen at rubisco increases. The left CO₂ lane slows while the right oxygen lane brightens.",
+        "An O₂ molecule reaches rubisco. Instead of the normal carbon-fixation path, the system diverts into the right-hand detour. Nia names the process **photorespiration**. Photorespiration occurs when rubisco reacts with O₂ instead of CO₂, consuming energy and lowering net carbon fixation; it is favored when internal CO₂ is low relative to O₂. The carbon-gain gauge drops immediately. This detour does not represent the mitochondrial process of cellular respiration that will appear later in Unit 3. The shared word *respiration* is not permission to merge the mechanisms. Here the defining event is oxygenation by rubisco and the resulting loss of carbon-fixation efficiency.",
+        "Nia restores CO₂ to the left lane and the fixation route recovers. Then she lowers CO₂ again and the O₂ detour reappears. The comparison makes the evolutionary question visible without turning one interpretation into settled fact. One hypothesis treats photorespiration as an **evolutionary legacy** from conditions in which rubisco evolved under lower atmospheric O₂ and higher CO₂ than many plants face now. Nia places that hypothesis on an old-atmosphere panel rather than engraving it on the enzyme itself. Beside it she adds a second caution: evidence also suggests that photorespiratory metabolism can have protective roles when Calvin-cycle carbon processing is limited. The process can therefore carry costs for net carbon fixation without being described as a purposeless molecular error in every context.",
+        "The greenhouse alarm is not solved by wishing rubisco had perfect specificity. Nia points through the glass at two experimental leaf chambers built to face the same hot, dry pressure. ‘Plants have evolved different ways to raise CO₂ availability around rubisco or reduce the water cost of acquiring it.’ The left chamber contains two spatially distinct cell regions. The right chamber contains one tissue whose behavior changes between night and day. Your amber carbon tracer divides into two duplicate demonstration tracers so you can compare the strategies without pretending the same molecule follows both routes at once."
+      ],
+      "story_close": "The rubisco junction has revealed the failure condition. You carry that exact pressure—low internal CO₂ relative to O₂ under hot, dry conditions—into a split conservatory that tests two different solutions.",
+      "object_ids": [
+        "U3-K-140",
+        "U3-K-141"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-140",
+          "term": "Photorespiration",
+          "story": "rubisco at a branch where O₂ sends the reaction into a right-side detour and the net-carbon-gain gauge falls",
+          "science": "Photorespiration occurs when rubisco reacts with O2 instead of CO2, consuming energy and lowering net carbon fixation; it is favored when internal CO2 is low relative to O2.",
+          "exact_name": true,
+          "hint": "rubisco at a branch where O₂ sends the reaction into a right-side detour and the net-carbon-gain gauge falls"
+        },
+        {
+          "object_id": "U3-K-141",
+          "term": "Photorespiration evolutionary interpretation",
+          "story": "the old-atmosphere hypothesis panel beside the photorespiratory branch, paired with a caution about possible protective roles",
+          "science": "One hypothesis treats photorespiration as an evolutionary legacy from lower-O2, higher-CO2 conditions; evidence also suggests possible protective roles when the Calvin cycle is limited.",
+          "exact_name": false,
+          "hint": "the old-atmosphere hypothesis panel beside the photorespiratory branch, paired with a caution about possible protective roles"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Photorespiration",
+          "meaning": "Photorespiration occurs when rubisco reacts with O2 instead of CO2, consuming energy and lowering net carbon fixation; it is favored when internal CO2 is low relative to O2.",
+          "image": "rubisco at a branch where O₂ sends the reaction into a right-side detour and the net-carbon-gain gauge falls"
+        },
+        {
+          "term": "Photorespiration evolutionary interpretation",
+          "meaning": "One hypothesis treats photorespiration as an evolutionary legacy from lower-O2, higher-CO2 conditions; evidence also suggests possible protective roles when the Calvin cycle is limited.",
+          "image": "the old-atmosphere hypothesis panel beside the photorespiratory branch, paired with a caution about possible protective roles"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-140",
+      "checkpoint_prompt": "What competing molecule sends Rubisco into the photorespiratory detour?",
+      "checkpoint_answer": "O2.",
+      "checkpoint_hint": "Return to the rubisco junction. CO₂ stays on the successful left fixation route, while the competing molecule enters from the right and sends the system into the carbon-losing detour.",
+      "next_locus": "C4 and CAM Strategy Conservatory",
+      "misconception_guards": [
+        "Photorespiration lowers net carbon fixation because Rubisco oxygenates RuBP; do not describe it as normal mitochondrial cellular respiration.",
+        "Keep these confusable terms physically and verbally distinct: photorespiration, C4 photosynthesis, CAM photosynthesis.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-016, RF-U3-017; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "COMPETING_SUBSTRATE_PATHWAY",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "CO2 fixation route",
+          "rubisco branch point",
+          "O2/photorespiration detour",
+          "Present Rubisco with CO2 and O2 alternatives, route oxygenation into a photorespiratory detour, and show the resulting reduction in net carbon fixation."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Photorespiration; Photorespiration evolutionary interpretation."
+    },
+    {
+      "scene_index": 4,
+      "locus": "C4 and CAM Strategy Conservatory",
+      "title": "Two Ways to Keep Carbon Near Rubisco",
+      "scene_kicker": "C4 and CAM both reduce photorespiration, but one separates carbon handling across space and the other separates it across time.",
+      "location_description": "C4 and CAM Strategy Conservatory — the split greenhouse comparing spatial and temporal CO2-concentration strategies.",
+      "scene_layout": {
+        "orientation": "You enter C4 and CAM Strategy Conservatory and stop at the split greenhouse comparing spatial and temporal CO2-concentration strategies. On your left is C4 spatial separation display; directly ahead is photorespiration-pressure reference; on your right is CAM temporal separation display. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "C4 spatial-separation greenhouse",
+            "symbol": "space",
+            "description": "A left greenhouse separates initial carbon fixation in mesophyll cells from Calvin-cycle processing in bundle-sheath cells, creating a spatial CO₂-concentrating strategy."
+          },
+          {
+            "position": "center",
+            "label": "Hot/dry photorespiration-pressure chamber",
+            "symbol": "heat",
+            "description": "The center chamber lowers internal CO₂ availability relative to oxygen as stomatal water-conservation pressure increases, making the rubisco problem from the previous scene visible."
+          },
+          {
+            "position": "right",
+            "label": "CAM temporal-separation greenhouse",
+            "symbol": "time",
+            "description": "A right greenhouse opens stomata mainly at night, stores fixed carbon in organic acids, and releases carbon dioxide during the day so separation occurs across time rather than cell type."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a chloroplast stroma map, carbon tracer, ATP/NADPH inputs, and a net-carbon-gain gauge",
+          "job": "Nia keeps the same carbon tracer visible, separates carbon acceptors from enzymes and products, keeps detailed Calvin-cycle bookkeeping subordinate to cycle logic, and compares photorespiration, C4, and CAM without collapsing their mechanisms."
+        },
+        {
+          "name": "C4 leaf model",
+          "kind": "spatial strategy",
+          "visual": "a leaf cross-section with mesophyll cells on the outside and bundle-sheath cells surrounding vascular tissue deeper inside",
+          "job": "separates initial CO₂ fixation from Calvin-cycle processing across different cell locations and concentrates CO₂ around rubisco"
+        },
+        {
+          "name": "CAM leaf model",
+          "kind": "temporal strategy",
+          "visual": "a succulent-like leaf chamber with a night clock, organic-acid storage tank, and daylight CO₂-release valve",
+          "job": "separates initial carbon fixation from Calvin-cycle use across night and day while reducing water loss"
+        },
+        {
+          "name": "photorespiration-pressure gauge",
+          "kind": "shared environmental challenge",
+          "visual": "a central hot/dry chamber showing stomatal water-loss pressure and a falling internal CO₂-to-O₂ balance",
+          "job": "provides the same challenge against which the C4 spatial and CAM temporal solutions can be compared"
+        }
+      ],
+      "story_open": "The final chamber is split cleanly in two around a shared **center** climate column. The column reproduces the same hot, dry pressure that triggered photorespiration: water-loss risk rises, stomatal opening becomes costly, and the CO₂-to-O₂ balance around rubisco can become unfavorable. On your **left**, a leaf cross-section contains two distinct cell regions connected by a carbon shuttle. On your **right**, a single leaf chamber is paired with a clock that flips from moon to sun. Nia keeps the central pressure constant. ‘Same problem,’ she says. ‘Different architecture. Watch whether the separation is in place or in time.’",
+      "story_paragraphs": [
+        "The final chamber is split cleanly in two around a shared **center** climate column. The column reproduces the same hot, dry pressure that triggered photorespiration: water-loss risk rises, stomatal opening becomes costly, and the CO₂-to-O₂ balance around rubisco can become unfavorable. On your **left**, a leaf cross-section contains two distinct cell regions connected by a carbon shuttle. On your **right**, a single leaf chamber is paired with a clock that flips from moon to sun. Nia keeps the central pressure constant. ‘Same problem,’ she says. ‘Different architecture. Watch whether the separation is in place or in time.’",
+        "The left display activates first. CO₂ enters a **mesophyll cell** and is initially fixed into a **four-carbon compound**. That carbon is then delivered inward toward **bundle-sheath cells**, where concentrated CO₂ is made available for the Calvin cycle. Nia names the strategy **C4 photosynthesis**. C4 plants initially fix CO₂ into four-carbon compounds in mesophyll cells and deliver concentrated CO₂ to bundle-sheath cells, reducing photorespiration through **spatial separation**. She draws one bracket around the mesophyll zone and another around the bundle-sheath zone. The processes are separated across different locations in the leaf, which helps maintain a higher CO₂ environment around rubisco where the Calvin cycle operates.",
+        "The right display remains in the same tissue but the clock turns to night. Stomata open mainly at night, when evaporative water loss can be lower. Incoming carbon is fixed and stored in **organic acids**. The chamber then seals its stomata as the clock shifts to daylight. Stored carbon is released as CO₂ during the day and supplied to the Calvin cycle. Nia names this strategy **CAM photosynthesis**. CAM plants reduce water loss through **temporal separation**: carbon acquisition and storage occur mainly at night, while daytime release of CO₂ supports Calvin-cycle carbon fixation behind more closed stomata.",
+        "Nia places two large labels under the displays and refuses to let them swap. **C4 = spatial separation. CAM = temporal separation.** Both strategies can reduce photorespiration by improving CO₂ availability around rubisco under challenging conditions, but they do not use the same architecture. C4 separates initial fixation and Calvin-cycle processing across different cell locations. CAM separates carbon capture/storage and Calvin-cycle access across different times of day. The center photorespiration-pressure gauge falls in both demonstrations, but the arrows that solve the problem remain visibly different.",
+        "At the far wall, the greenhouse’s net-carbon-gain gauge returns to green. Nia removes the duplication from the carbon tracer and places the original amber marker into the organic-carbon output crate from the G3P room. You can now reconstruct the entire greenhouse without memorizing every Calvin-cycle intermediate: ATP and NADPH arrive in the stroma; CO₂ is fixed by rubisco onto the RuBP acceptor; G3P can leave while RuBP is regenerated; oxygen can divert rubisco into photorespiration; C4 and CAM reduce that pressure using spatial and temporal separation, respectively. A service hatch opens beside the organic-carbon crate. Beyond it, a sign reads RESPIRATION POWER PLANT. The carbon is now stored in organic molecules, and the next question is how cells can extract usable energy from those fuels."
+      ],
+      "story_close": "The Carbon Fixation Greenhouse is stable again. The same carbon that entered as inorganic CO₂ has been traced into organic carbon, while the next unopened route waits to examine how cellular respiration harvests energy from fuel.",
+      "object_ids": [
+        "U3-K-142",
+        "U3-K-143"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-142",
+          "term": "C4 photosynthesis",
+          "story": "the left C4 leaf model separating initial fixation in mesophyll from Calvin-cycle processing in bundle-sheath cells",
+          "science": "C4 plants initially fix CO2 into four-carbon compounds in mesophyll cells and deliver concentrated CO2 to bundle-sheath cells, reducing photorespiration through spatial separation.",
+          "exact_name": true,
+          "hint": "the left C4 leaf model separating initial fixation in mesophyll from Calvin-cycle processing in bundle-sheath cells"
+        },
+        {
+          "object_id": "U3-K-143",
+          "term": "CAM photosynthesis",
+          "story": "the right CAM leaf model opening stomata at night, storing carbon in organic acids, and releasing CO₂ during the day",
+          "science": "CAM plants open stomata mainly at night, store fixed carbon in organic acids, and release CO2 during the day for the Calvin cycle, reducing water loss through temporal separation.",
+          "exact_name": true,
+          "hint": "the right CAM leaf model opening stomata at night, storing carbon in organic acids, and releasing CO₂ during the day"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "C4 photosynthesis",
+          "meaning": "C4 plants initially fix CO2 into four-carbon compounds in mesophyll cells and deliver concentrated CO2 to bundle-sheath cells, reducing photorespiration through spatial separation.",
+          "image": "the left C4 leaf model separating initial fixation in mesophyll from Calvin-cycle processing in bundle-sheath cells"
+        },
+        {
+          "term": "CAM photosynthesis",
+          "meaning": "CAM plants open stomata mainly at night, store fixed carbon in organic acids, and release CO2 during the day for the Calvin cycle, reducing water loss through temporal separation.",
+          "image": "the right CAM leaf model opening stomata at night, storing carbon in organic acids, and releasing CO₂ during the day"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-142",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "misconception_guards": [
+        "C4 uses spatial separation and CAM uses temporal separation; both concentrate CO2 around Rubisco but by different architectures.",
+        "Keep these confusable terms physically and verbally distinct: photorespiration, C4 photosynthesis, CAM photosynthesis.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-018; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "ADAPTATION_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "C4 spatial separation display",
+          "photorespiration-pressure reference",
+          "CAM temporal separation display",
+          "Expose C4 and CAM models to the same hot/dry pressure, then show C4 separating initial fixation and Calvin-cycle processing across space while CAM separates them across time."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: C4 photosynthesis; CAM photosynthesis."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4E",
+  "narrative_standard": "V2-NARRATIVE-3.0-U3-F4E"
+}

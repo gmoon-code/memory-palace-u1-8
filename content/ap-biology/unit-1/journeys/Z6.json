@@ -1,0 +1,886 @@
+{
+  "palace_id": "Z6",
+  "palace_name": "Carbohydrate Greenhouse",
+  "story_title": "The Greenhouse Sugar Trail",
+  "tagline": "A glowing glucose bead disappears into the greenhouse. Follow it as sugars become transport molecules, storage polymers, structural fibers, and food for microbial partners.",
+  "guide": {
+    "name": "Suki Han",
+    "role": "keeper of the carbohydrate greenhouse",
+    "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+    "story_job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+  },
+  "premise": "A rare glowing glucose bead has slipped out of Suki’s lantern and entered the greenhouse irrigation maze. Wherever it travels, the greenhouse builds a different carbohydrate around it.",
+  "mission": "Recover the bead by following its transformations from monosaccharide to disaccharide and polysaccharide, through storage and structural forms, then into the digestive systems of cellulose-eating herbivores.",
+  "finale": "At the Fiber Barn, symbiotic microbes release usable products from cellulose and Suki finally catches the glowing sugar trail. Looking back, the same kind of sugar building block produced radically different functions because its linkages and polymer architecture changed.",
+  "estimated_minutes": 14,
+  "scene_count": 8,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The greenhouse is a long glass conservatory. You enter at the seedling benches, follow a central vine north through storage and structural alcoves, cross the glycosidic arch and alpha/beta path, and finish in the Fiber Barn.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Mono-Sugar Seedling",
+      "short": "Monosugar",
+      "floor": "South bench",
+      "symbol": "◇"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Sucrose Trellis",
+      "short": "Sucrose",
+      "floor": "Trellis",
+      "symbol": "◇◇"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Polysaccharide Vine",
+      "short": "Polymer",
+      "floor": "Central aisle",
+      "symbol": "〰"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Storage Pantry Alcove",
+      "short": "Storage",
+      "floor": "West alcove",
+      "symbol": "▣"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Structural Wall Alcove",
+      "short": "Structure",
+      "floor": "East alcove",
+      "symbol": "▥"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Glycosidic Archway",
+      "short": "Linkage",
+      "floor": "North arch",
+      "symbol": "—"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Alpha/Beta Path",
+      "short": "α / β",
+      "floor": "North path",
+      "symbol": "αβ"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Cellulose Fiber Barn",
+      "short": "Digestion",
+      "floor": "Barn",
+      "symbol": "🌾"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Mono-Sugar Seedling",
+      "title": "The Bead in the Seedling Tray",
+      "scene_kicker": "The sugar trail begins with one simple carbohydrate unit.",
+      "location_description": "You enter the warm south bench of the greenhouse. Rows of seedling trays sit under glass lamps. In the center tray, Suki’s missing glowing sugar bead has embedded itself in a model with several hydroxyl tags and one carbonyl marker.",
+      "scene_layout": {
+        "orientation": "Seedlings fill the left bench, the glowing sugar model sits center, and formula cards marked CH₂O repeat along the right rail.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Carbohydrate bench",
+            "symbol": "C H O",
+            "description": "Shows carbohydrates built primarily from carbon, hydrogen, and oxygen."
+          },
+          {
+            "position": "center",
+            "label": "Monosugar tray",
+            "symbol": "◇",
+            "description": "Holds one simple sugar unit."
+          },
+          {
+            "position": "right",
+            "label": "Formula rail",
+            "symbol": "(CH₂O)n",
+            "description": "Shows a common monosaccharide pattern while leaving room for exceptions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Monosaccharide",
+          "kind": "simple sugar",
+          "visual": "one glowing sugar ring sitting alone in a seed tray",
+          "job": "serves as a simple sugar and as a monomer for larger carbohydrate polymers"
+        },
+        {
+          "name": "Carbohydrate frame",
+          "kind": "chemical pattern",
+          "visual": "a C/H/O framework carrying hydroxyl and carbonyl features",
+          "job": "shows common chemical features of carbohydrates"
+        }
+      ],
+      "story_open": "The greenhouse path bends into **Mono-Sugar Seedling**. You enter the warm south bench of the greenhouse. Rows of seedling trays sit under glass lamps. In the center tray, Suki’s missing glowing sugar bead has embedded itself in a model with several hydroxyl tags and one carbonyl marker. To your left is the Carbohydrate bench; directly ahead, the Monosugar tray; to your right, the Formula rail. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+      "story_paragraphs": [
+        "The greenhouse path bends into **Mono-Sugar Seedling**. You enter the warm south bench of the greenhouse. Rows of seedling trays sit under glass lamps. In the center tray, Suki’s missing glowing sugar bead has embedded itself in a model with several hydroxyl tags and one carbonyl marker. To your left is the Carbohydrate bench; directly ahead, the Monosugar tray; to your right, the Formula rail. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+        "Suki kneels beside the glowing tray. Carbohydrates are built primarily from **carbon, hydrogen, and oxygen**, and many sugars carry several hydroxyl groups along with a carbonyl group or a form derived from one.",
+        "The single glowing unit is a **monosaccharide**—a simple sugar. Monosaccharides can be used directly and can also serve as the monomers from which larger carbohydrate structures are built.",
+        "A row of formula cards repeats CH₂O, CH₂O, CH₂O as n increases. The pattern **(CH₂O)n** is useful for many monosaccharides, but Suki leaves an exception gate open so you do not turn it into an absolute rule.",
+        "The bead rolls out of the seed tray and climbs a trellis where another sugar is waiting to lock beside it."
+      ],
+      "story_close": "The bead rolls out of the seed tray and climbs a trellis where another sugar is waiting to lock beside it.",
+      "object_ids": [
+        "MO-APBIO-U1-CG001",
+        "MO-APBIO-U1-CG002",
+        "MO-APBIO-U1-CG003"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG001",
+          "term": "Carbohydrate composition",
+          "story": "three element tokens feeding one carbohydrate seedling",
+          "science": "Carbohydrates contain carbon, hydrogen, and oxygen and commonly include carbonyl and multiple hydroxyl groups.",
+          "exact_name": false,
+          "hint": "three element tokens feeding one carbohydrate seedling"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG002",
+          "term": "Monosaccharide",
+          "story": "one sugar sack resting alone in a cradle",
+          "science": "Monosaccharides are simple sugars and are the monomers for polysaccharides.",
+          "exact_name": true,
+          "hint": "one sugar sack resting alone in a cradle"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG003",
+          "term": "Monosaccharide CH2O pattern",
+          "story": "a formula card repeating CH₂O units beneath an exception warning",
+          "science": "Many monosaccharides have molecular formulas that are generally multiples of CH2O, making (CH2O)n a useful pattern rather than an exceptionless rule.",
+          "exact_name": false,
+          "hint": "a formula card repeating CH₂O units beneath an exception warning"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Carbohydrate composition",
+          "meaning": "Carbohydrates contain carbon, hydrogen, and oxygen and commonly include carbonyl and multiple hydroxyl groups.",
+          "image": "three element tokens feeding one carbohydrate seedling"
+        },
+        {
+          "term": "Monosaccharide",
+          "meaning": "Monosaccharides are simple sugars and are the monomers for polysaccharides.",
+          "image": "one sugar sack resting alone in a cradle"
+        },
+        {
+          "term": "Monosaccharide CH2O pattern",
+          "meaning": "Many monosaccharides have molecular formulas that are generally multiples of CH2O, making (CH2O)n a useful pattern rather than an exceptionless rule.",
+          "image": "a formula card repeating CH₂O units beneath an exception warning"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-CG002",
+      "checkpoint_prompt": "",
+      "next_locus": "Sucrose Trellis"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Sucrose Trellis",
+      "title": "Two Sugars Meet on the Trellis",
+      "scene_kicker": "One sugar can be fuel; two joined sugars can become a transport molecule.",
+      "location_description": "A wooden trellis rises under the glass roof. A glowing glucose ring climbs from the left while a fructose ring hangs from the right. A clasp in the center can join exactly two sugars.",
+      "scene_layout": {
+        "orientation": "The glucose side is left, the joining clasp is center, and fructose with a plant-transport tag is on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Glucose vine",
+            "symbol": "G",
+            "description": "Carries a common monosaccharide used as cellular fuel."
+          },
+          {
+            "position": "center",
+            "label": "Two-sugar clasp",
+            "symbol": "2",
+            "description": "Joins two monosaccharides into a disaccharide."
+          },
+          {
+            "position": "right",
+            "label": "Sucrose transport basket",
+            "symbol": "G+F",
+            "description": "Carries the glucose–fructose disaccharide through the plant display."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Glucose",
+          "kind": "monosaccharide",
+          "visual": "a bright six-carbon sugar bead pulsing like a small battery",
+          "job": "is a common monosaccharide that cells can use as fuel, including in cellular respiration"
+        },
+        {
+          "name": "Disaccharide clasp",
+          "kind": "two-sugar molecule",
+          "visual": "a clasp holding exactly two sugar rings",
+          "job": "represents a disaccharide: two monosaccharides covalently joined"
+        },
+        {
+          "name": "Sucrose",
+          "kind": "plant transport sugar",
+          "visual": "a paired glucose–fructose ornament placed in a moving plant basket",
+          "job": "is the disaccharide made from glucose and fructose and is an important transport sugar in plants"
+        }
+      ],
+      "story_open": "The greenhouse path bends into **Sucrose Trellis**. A wooden trellis rises under the glass roof. A glowing glucose ring climbs from the left while a fructose ring hangs from the right. A clasp in the center can join exactly two sugars. To your left is the Glucose vine; directly ahead, the Two-sugar clasp; to your right, the Sucrose transport basket. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+      "story_paragraphs": [
+        "The greenhouse path bends into **Sucrose Trellis**. A wooden trellis rises under the glass roof. A glowing glucose ring climbs from the left while a fructose ring hangs from the right. A clasp in the center can join exactly two sugars. To your left is the Glucose vine; directly ahead, the Two-sugar clasp; to your right, the Sucrose transport basket. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+        "The runaway bead is now unmistakably **glucose**, a common monosaccharide that cells can use as fuel. A nearby seedling display flashes CELLULAR RESPIRATION as the glucose battery feeds energy-releasing pathways.",
+        "Suki catches another point before the bead escapes: monosaccharides are also **building blocks**. Their carbon skeletons can contribute to other molecules, and their sugar units can be joined into larger carbohydrates.",
+        "At the center clasp, two monosaccharides lock together. A carbohydrate made from two covalently joined monosaccharides is a **disaccharide**. Here the pair is glucose plus fructose. The plant’s transport basket labels that particular disaccharide **sucrose**.",
+        "The basket tips. The paired sugars fall into a living vine that begins adding one sugar after another until the two-unit structure becomes a long chain."
+      ],
+      "story_close": "The basket tips. The paired sugars fall into a living vine that begins adding one sugar after another until the two-unit structure becomes a long chain.",
+      "object_ids": [
+        "MO-APBIO-U1-CG004",
+        "MO-APBIO-U1-CG005",
+        "MO-APBIO-U1-CG006",
+        "MO-APBIO-U1-CG007"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG004",
+          "term": "Glucose",
+          "story": "a GLUE-coated sugar cube feeding a cellular-respiration fuel meter",
+          "science": "Glucose is a common monosaccharide that cells can use as fuel, including during cellular respiration.",
+          "exact_name": true,
+          "hint": "a GLUE-coated sugar cube feeding a cellular-respiration fuel meter"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG005",
+          "term": "Monosaccharides as building blocks",
+          "story": "one monosaccharide unit entering two labeled destination lanes",
+          "science": "Monosaccharides can be used as building blocks for larger carbohydrates and can also contribute carbon skeletons used to build other molecules.",
+          "exact_name": false,
+          "hint": "one monosaccharide unit entering two labeled destination lanes"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG006",
+          "term": "Disaccharide",
+          "story": "two sugar sacks held by one covalent clasp",
+          "science": "A disaccharide consists of two monosaccharides joined by a covalent bond.",
+          "exact_name": true,
+          "hint": "two sugar sacks held by one covalent clasp"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG007",
+          "term": "Sucrose",
+          "story": "SUE CROW tying one glucose cube to one fruit-marked fructose cube",
+          "science": "Sucrose is a disaccharide made from glucose and fructose and is an important transport sugar in plants.",
+          "exact_name": true,
+          "hint": "SUE CROW tying one glucose cube to one fruit-marked fructose cube"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Glucose",
+          "meaning": "Glucose is a common monosaccharide that cells can use as fuel, including during cellular respiration.",
+          "image": "a GLUE-coated sugar cube feeding a cellular-respiration fuel meter"
+        },
+        {
+          "term": "Monosaccharides as building blocks",
+          "meaning": "Monosaccharides can be used as building blocks for larger carbohydrates and can also contribute carbon skeletons used to build other molecules.",
+          "image": "one monosaccharide unit entering two labeled destination lanes"
+        },
+        {
+          "term": "Disaccharide",
+          "meaning": "A disaccharide consists of two monosaccharides joined by a covalent bond.",
+          "image": "two sugar sacks held by one covalent clasp"
+        },
+        {
+          "term": "Sucrose",
+          "meaning": "Sucrose is a disaccharide made from glucose and fructose and is an important transport sugar in plants.",
+          "image": "SUE CROW tying one glucose cube to one fruit-marked fructose cube"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-CG007",
+      "checkpoint_prompt": "Which disaccharide is made from glucose and fructose and serves as an important transport sugar in plants?",
+      "next_locus": "Polysaccharide Vine"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Polysaccharide Vine",
+      "title": "When the Sugar Chain Keeps Growing",
+      "scene_kicker": "Many sugar monomers can build a carbohydrate polymer with very different possible shapes.",
+      "location_description": "A thick vine runs down the central aisle. Sugar rings click into the stem one after another. Some branches fork sideways while other sections remain straight.",
+      "scene_layout": {
+        "orientation": "Loose sugar units enter from the left, the growing polysaccharide vine is center, and branching/straight forms extend toward the right wall.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Sugar-monomer feed",
+            "symbol": "◇",
+            "description": "Supplies monosaccharides."
+          },
+          {
+            "position": "center",
+            "label": "Polysaccharide vine",
+            "symbol": "◇◇◇",
+            "description": "Builds a carbohydrate polymer from many sugar monomers."
+          },
+          {
+            "position": "right",
+            "label": "Linear / branched growth",
+            "symbol": "Y",
+            "description": "Shows that complex carbohydrate polymers can be linear or branched."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Polysaccharide",
+          "kind": "carbohydrate polymer",
+          "visual": "a vine made from many repeating sugar units",
+          "job": "is a carbohydrate polymer composed of many monosaccharides and may be linear or branched"
+        }
+      ],
+      "story_open": "The greenhouse path bends into **Polysaccharide Vine**. A thick vine runs down the central aisle. Sugar rings click into the stem one after another. Some branches fork sideways while other sections remain straight. To your left is the Sugar-monomer feed; directly ahead, the Polysaccharide vine; to your right, the Linear / branched growth. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+      "story_paragraphs": [
+        "The greenhouse path bends into **Polysaccharide Vine**. A thick vine runs down the central aisle. Sugar rings click into the stem one after another. Some branches fork sideways while other sections remain straight. To your left is the Sugar-monomer feed; directly ahead, the Polysaccharide vine; to your right, the Linear / branched growth. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+        "The vine no longer contains two sugars. It contains dozens. A **polysaccharide** is a carbohydrate polymer made from many sugar monomers. Suki traces the chain with one finger as it runs the length of the aisle.",
+        "One section grows straight; another forks into branches. A polysaccharide is therefore not defined by one fixed overall shape. Complex carbohydrate polymers can be **linear or branched**, and that architecture helps determine what the molecule can do.",
+        "Two doors open beside the vine. The west door is marked STORAGE. The east door is built into the greenhouse wall itself. The runaway sugar trail turns west first."
+      ],
+      "story_close": "Two doors open beside the vine. The west door is marked STORAGE. The east door is built into the greenhouse wall itself. The runaway sugar trail turns west first.",
+      "object_ids": [
+        "MO-APBIO-U1-CG008"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG008",
+          "term": "Polysaccharide",
+          "story": "a POLY vine made of many sugar sacks, with one linear arm and one branched arm",
+          "science": "Polysaccharides are carbohydrate polymers composed of many sugar monomers; complex carbohydrate polymers may be linear or branched.",
+          "exact_name": true,
+          "hint": "a POLY vine made of many sugar sacks, with one linear arm and one branched arm"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Polysaccharide",
+          "meaning": "Polysaccharides are carbohydrate polymers composed of many sugar monomers; complex carbohydrate polymers may be linear or branched.",
+          "image": "a POLY vine made of many sugar sacks, with one linear arm and one branched arm"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-CG008",
+      "checkpoint_prompt": "",
+      "next_locus": "Storage Pantry Alcove"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Storage Pantry Alcove",
+      "title": "Two Ways to Store Glucose",
+      "scene_kicker": "Plants and animals both store glucose in polymers, but they use different storage molecules.",
+      "location_description": "The west alcove is a pantry with two enormous jars. The green jar is packed with plant-labeled glucose chains; the red jar contains dense, highly branched animal-labeled chains.",
+      "scene_layout": {
+        "orientation": "The starch jar stands left, a glucose scoop sits center, and the glycogen jar stands right beside liver and muscle icons.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Plant storage jar",
+            "symbol": "STARCH",
+            "description": "Stores excess glucose in plant tissues."
+          },
+          {
+            "position": "center",
+            "label": "Glucose scoop",
+            "symbol": "◇",
+            "description": "Shows that both storage polymers are built from glucose."
+          },
+          {
+            "position": "right",
+            "label": "Animal storage jar",
+            "symbol": "GLYCOGEN",
+            "description": "Stores glucose in animals, especially liver and muscle cells."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Starch",
+          "kind": "plant storage polysaccharide",
+          "visual": "a green jar of coiled or branched glucose polymer",
+          "job": "stores excess glucose in plants"
+        },
+        {
+          "name": "Glycogen",
+          "kind": "animal storage polysaccharide",
+          "visual": "a red jar packed with densely branched glucose chains",
+          "job": "stores glucose in animals, including liver and muscle cells"
+        }
+      ],
+      "story_open": "The greenhouse path bends into **Storage Pantry Alcove**. The west alcove is a pantry with two enormous jars. The green jar is packed with plant-labeled glucose chains; the red jar contains dense, highly branched animal-labeled chains. To your left is the Plant storage jar; directly ahead, the Glucose scoop; to your right, the Animal storage jar. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+      "story_paragraphs": [
+        "The greenhouse path bends into **Storage Pantry Alcove**. The west alcove is a pantry with two enormous jars. The green jar is packed with plant-labeled glucose chains; the red jar contains dense, highly branched animal-labeled chains. To your left is the Plant storage jar; directly ahead, the Glucose scoop; to your right, the Animal storage jar. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+        "Suki opens the green jar. **Starch** is a glucose polymer used by plants for storage of excess glucose. The plant does not keep every glucose molecule loose; it can package many into a storage polysaccharide.",
+        "The red jar is labeled **glycogen**. Glycogen is also a glucose polymer, but it is the major storage form emphasized for animals, including liver and muscle cells.",
+        "Both jars contain glucose-based polymers, yet neither is the structural wall holding up the greenhouse. The sugar trail slips under the pantry door and heads across the aisle into the wall itself."
+      ],
+      "story_close": "Both jars contain glucose-based polymers, yet neither is the structural wall holding up the greenhouse. The sugar trail slips under the pantry door and heads across the aisle into the wall itself.",
+      "object_ids": [
+        "MO-APBIO-U1-CG009",
+        "MO-APBIO-U1-CG010"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG009",
+          "term": "Starch",
+          "story": "a plant pantry shelf storing bundled glucose units",
+          "science": "Starch is a glucose polymer used by plants for storage of excess glucose.",
+          "exact_name": true,
+          "hint": "a plant pantry shelf storing bundled glucose units"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG010",
+          "term": "Glycogen",
+          "story": "a GLYCO sugar GENIE guarding glucose bundles inside liver and muscle compartments",
+          "science": "Glycogen is a glucose polymer used by animals for storage, including in liver and muscle cells.",
+          "exact_name": true,
+          "hint": "a GLYCO sugar GENIE guarding glucose bundles inside liver and muscle compartments"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Starch",
+          "meaning": "Starch is a glucose polymer used by plants for storage of excess glucose.",
+          "image": "a plant pantry shelf storing bundled glucose units"
+        },
+        {
+          "term": "Glycogen",
+          "meaning": "Glycogen is a glucose polymer used by animals for storage, including in liver and muscle cells.",
+          "image": "a GLYCO sugar GENIE guarding glucose bundles inside liver and muscle compartments"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-CG009",
+      "checkpoint_prompt": "",
+      "next_locus": "Structural Wall Alcove"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Structural Wall Alcove",
+      "title": "Sugar Chains Turn Into Armor",
+      "scene_kicker": "Carbohydrates can hold structures up, not just store fuel.",
+      "location_description": "The east alcove exposes a cutaway of the greenhouse wall. Parallel plant fibers reinforce one panel; beside it hangs a translucent arthropod shell with a tough carbohydrate layer.",
+      "scene_layout": {
+        "orientation": "Cellulose fibers reinforce the left wall, a central support beam separates the examples, and the chitin shell hangs on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Plant cell-wall panel",
+            "symbol": "CELLULOSE",
+            "description": "Uses strong carbohydrate fibers for structural support."
+          },
+          {
+            "position": "center",
+            "label": "Support beam",
+            "symbol": "▥",
+            "description": "Makes the storage-versus-structure contrast visible."
+          },
+          {
+            "position": "right",
+            "label": "Arthropod shell",
+            "symbol": "CHITIN",
+            "description": "Shows another structural polysaccharide."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Cellulose",
+          "kind": "plant structural polysaccharide",
+          "visual": "straight sugar chains bundled into wall fibers",
+          "job": "forms a major structural component of plant cell walls"
+        },
+        {
+          "name": "Chitin",
+          "kind": "structural polysaccharide",
+          "visual": "a tough translucent layer shaped like an insect exoskeleton",
+          "job": "provides structural support in arthropod exoskeletons and fungal cell walls"
+        }
+      ],
+      "story_open": "The greenhouse path bends into **Structural Wall Alcove**. The east alcove exposes a cutaway of the greenhouse wall. Parallel plant fibers reinforce one panel; beside it hangs a translucent arthropod shell with a tough carbohydrate layer. To your left is the Plant cell-wall panel; directly ahead, the Support beam; to your right, the Arthropod shell. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+      "story_paragraphs": [
+        "The greenhouse path bends into **Structural Wall Alcove**. The east alcove exposes a cutaway of the greenhouse wall. Parallel plant fibers reinforce one panel; beside it hangs a translucent arthropod shell with a tough carbohydrate layer. To your left is the Plant cell-wall panel; directly ahead, the Support beam; to your right, the Arthropod shell. Warm glass, hanging vines, and the same sugar cargo keep the scene connected as Suki Han leads you toward the next structure.",
+        "The wall itself is woven from **cellulose**, a structural polysaccharide that forms plant cell walls. The straight fibers resist pulling forces and give the plant material strength.",
+        "Beside it, Suki lifts an arthropod shell. Its structural carbohydrate is **chitin**. Chitin strengthens arthropod exoskeletons and also occurs in fungal cell walls.",
+        "Storage and structure can therefore both use carbohydrate polymers, but the molecules are not interchangeable. The difference becomes clearer at the next archway, where the actual covalent connections between sugar units are magnified."
+      ],
+      "story_close": "Storage and structure can therefore both use carbohydrate polymers, but the molecules are not interchangeable. The difference becomes clearer at the next archway, where the actual covalent connections between sugar units are magnified.",
+      "object_ids": [
+        "MO-APBIO-U1-CG011",
+        "MO-APBIO-U1-CG012"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG011",
+          "term": "Cellulose",
+          "story": "sugar fibers woven directly into a plant CELL wall",
+          "science": "Cellulose is a structural polysaccharide forming plant cell walls.",
+          "exact_name": true,
+          "hint": "sugar fibers woven directly into a plant CELL wall"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG012",
+          "term": "Chitin",
+          "story": "a KITTEN fitted inside a crab-like arthropod shell",
+          "science": "Chitin is a structural polysaccharide found in arthropod exoskeletons and in fungal cell walls.",
+          "exact_name": true,
+          "hint": "a KITTEN fitted inside a crab-like arthropod shell"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cellulose",
+          "meaning": "Cellulose is a structural polysaccharide forming plant cell walls.",
+          "image": "sugar fibers woven directly into a plant CELL wall"
+        },
+        {
+          "term": "Chitin",
+          "meaning": "Chitin is a structural polysaccharide found in arthropod exoskeletons and in fungal cell walls.",
+          "image": "a KITTEN fitted inside a crab-like arthropod shell"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-CG011",
+      "checkpoint_prompt": "Which structural polysaccharide forms a major part of plant cell walls?",
+      "next_locus": "Glycosidic Archway"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Glycosidic Archway",
+      "title": "The Bond Between Sugars",
+      "scene_kicker": "The way glucose units connect helps determine the shape of the larger carbohydrate.",
+      "location_description": "A stone arch spans the north walkway. Every stone is shaped like a glucose ring. Brass connectors link carbon 1 of one ring to carbon 4 of the next, and two rotating rings show alpha and beta orientations.",
+      "scene_layout": {
+        "orientation": "The 1→4 connector is left, the linked sugar arch is center, and the alpha/beta rotating-glucose display is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "1→4 connector",
+            "symbol": "1→4",
+            "description": "Shows one common carbon-to-carbon numbering relationship across the glycosidic connection."
+          },
+          {
+            "position": "center",
+            "label": "Glycosidic arch",
+            "symbol": "—",
+            "description": "Uses covalent links to join monosaccharides into a larger carbohydrate."
+          },
+          {
+            "position": "right",
+            "label": "Alpha / beta rings",
+            "symbol": "α β",
+            "description": "Shows two ring forms differing in the orientation of the hydroxyl group at carbon 1."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Glycosidic linkage",
+          "kind": "covalent sugar connection",
+          "visual": "a brass connector joining one glucose ring to the next",
+          "job": "is the covalent bond joining monosaccharides"
+        },
+        {
+          "name": "Alpha and beta glucose",
+          "kind": "two glucose ring forms",
+          "visual": "two identical glucose rings whose carbon-1 hydroxyl points in different orientations",
+          "job": "differ at carbon 1 and can participate in carbohydrate structures with different geometry"
+        }
+      ],
+      "story_open": "Suki points to the brass connector holding two sugar stones together. A **glycosidic linkage** is the covalent bond that joins monosaccharides. On this model, a common 1→4 connection links carbon 1 of one glucose to carbon 4 of the next.",
+      "story_paragraphs": [
+        "Suki points to the brass connector holding two sugar stones together. A **glycosidic linkage** is the covalent bond that joins monosaccharides. On this model, a common 1→4 connection links carbon 1 of one glucose to carbon 4 of the next.",
+        "At the right display, two glucose rings are chemically the same sugar but differ in how the hydroxyl group at carbon 1 is oriented. These are **alpha glucose** and **beta glucose**. That small orientation difference changes the geometry of the linkages they can form in larger polymers.",
+        "At the arch, the crucial distinction is **alpha and beta glucose**. The two ring forms differ in the orientation of the hydroxyl group attached to carbon 1, a small directional change that can lead to very different carbohydrate structures.",
+        "The arch splits into two paths. One path curls into a loose coil and branches. The other stays ruler-straight and lines up with neighboring chains. Suki points north. “Now watch what that tiny bond orientation does at the scale of an entire structure.”"
+      ],
+      "story_close": "The arch splits into two paths. One path curls into a loose coil and branches. The other stays ruler-straight and lines up with neighboring chains. Suki points north. “Now watch what that tiny bond orientation does at the scale of an entire structure.”",
+      "object_ids": [
+        "MO-APBIO-U1-CG013",
+        "MO-APBIO-U1-CG014"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG013",
+          "term": "Glycosidic linkage",
+          "story": "a GLYCO bridge covalently joining two monosaccharide rings",
+          "science": "A glycosidic linkage is a covalent bond that joins monosaccharides. In common 1→4 linkages, carbon 1 of one glucose connects to carbon 4 of the next.",
+          "exact_name": true,
+          "hint": "a GLYCO bridge covalently joining two monosaccharide rings"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG014",
+          "term": "Alpha and beta glucose",
+          "story": "Greek α and β markers beside glucose rings with opposite carbon-1 hydroxyl orientations",
+          "science": "Alpha and beta glucose differ in the orientation of the hydroxyl group attached to carbon 1 in the ring form, a difference that contributes to different carbohydrate structures.",
+          "exact_name": true,
+          "hint": "Greek α and β markers beside glucose rings with opposite carbon-1 hydroxyl orientations"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Glycosidic linkage",
+          "meaning": "A glycosidic linkage is a covalent bond that joins monosaccharides. In common 1→4 linkages, carbon 1 of one glucose connects to carbon 4 of the next.",
+          "image": "a GLYCO bridge covalently joining two monosaccharide rings"
+        },
+        {
+          "term": "Alpha and beta glucose",
+          "meaning": "Alpha and beta glucose differ in the orientation of the hydroxyl group attached to carbon 1 in the ring form, a difference that contributes to different carbohydrate structures.",
+          "image": "Greek α and β markers beside glucose rings with opposite carbon-1 hydroxyl orientations"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-CG013",
+      "checkpoint_prompt": "What is the covalent bond that joins monosaccharides called?",
+      "next_locus": "Alpha/Beta Path"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Alpha/Beta Path",
+      "title": "One Sugar, Two Architectures",
+      "scene_kicker": "A small difference at each linkage accumulates into a large difference in polymer shape and function.",
+      "location_description": "The north path divides into two glass lanes. The alpha lane bends into coils and branches. The beta lane runs straight, and many straight chains lie parallel like cables.",
+      "scene_layout": {
+        "orientation": "The alpha/starch lane is left, a shared glucose marker stands center, and the beta/cellulose lane is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Alpha lane",
+            "symbol": "α",
+            "description": "Forms starch-like storage architectures that can coil and, in some forms, branch."
+          },
+          {
+            "position": "center",
+            "label": "Glucose marker",
+            "symbol": "◇",
+            "description": "Reminds you that both paths are constructed from glucose units."
+          },
+          {
+            "position": "right",
+            "label": "Beta lane",
+            "symbol": "β",
+            "description": "Forms straight cellulose chains that can align with neighboring chains."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Starch architecture",
+          "kind": "storage structure",
+          "visual": "alpha-linked glucose chain curling into a helix with branches nearby",
+          "job": "shows how alpha-glucose linkages support storage structures"
+        },
+        {
+          "name": "Cellulose microfibrils",
+          "kind": "structural bundle",
+          "visual": "parallel beta-linked chains tied together by many hydrogen bonds",
+          "job": "shows how straight cellulose chains align into strong microfibrils"
+        }
+      ],
+      "story_open": "On the left, alpha-linked glucose chains curl and may branch. These are the structural tendencies associated with **starch**, including coiled regions and branching in amylopectin. On the right, beta-linked glucose chains remain straight and unbranched, the architecture of **cellulose**.",
+      "story_paragraphs": [
+        "On the left, alpha-linked glucose chains curl and may branch. These are the structural tendencies associated with **starch**, including coiled regions and branching in amylopectin. On the right, beta-linked glucose chains remain straight and unbranched, the architecture of **cellulose**.",
+        "Several cellulose chains slide together side by side. Hydrogen bonds form between neighboring chains, bundling them into strong **microfibrils**. A tiny difference repeated at every glucose linkage has become a macroscopic difference between a storage material and a load-bearing fiber.",
+        "Suki does not ask you to reproduce every molecular drawing from memory. The durable idea is the relationship: linkage geometry changes polymer architecture, and architecture changes function.",
+        "The straight cellulose path disappears beneath a barn door. Inside, a cow and a horse are both eating the same fibrous hay—but their digestive maps light up in completely different places."
+      ],
+      "story_close": "The straight cellulose path disappears beneath a barn door. Inside, a cow and a horse are both eating the same fibrous hay—but their digestive maps light up in completely different places.",
+      "object_ids": [
+        "MO-APBIO-U1-CG015",
+        "MO-APBIO-U1-CG016"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG015",
+          "term": "Starch versus cellulose structure",
+          "story": "an α track curling/branching toward storage while a β track runs straight into aligned chains",
+          "science": "Starch uses alpha-glucose linkages and can form coiled or branched storage structures. Cellulose uses beta-glucose linkages, forming straight unbranched chains that align into strong fibers.",
+          "exact_name": false,
+          "hint": "an α track curling/branching toward storage while a β track runs straight into aligned chains"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG016",
+          "term": "Cellulose fiber organization",
+          "story": "parallel cellulose chains held side by side by dashed hydrogen-bond crosslinks",
+          "science": "Parallel cellulose chains can form hydrogen bonds with one another, grouping the chains into strong microfibrils that contribute mechanical strength to plant cell walls.",
+          "exact_name": false,
+          "hint": "parallel cellulose chains held side by side by dashed hydrogen-bond crosslinks"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Starch versus cellulose structure",
+          "meaning": "Starch uses alpha-glucose linkages and can form coiled or branched storage structures. Cellulose uses beta-glucose linkages, forming straight unbranched chains that align into strong fibers.",
+          "image": "an α track curling/branching toward storage while a β track runs straight into aligned chains"
+        },
+        {
+          "term": "Cellulose fiber organization",
+          "meaning": "Parallel cellulose chains can form hydrogen bonds with one another, grouping the chains into strong microfibrils that contribute mechanical strength to plant cell walls.",
+          "image": "parallel cellulose chains held side by side by dashed hydrogen-bond crosslinks"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-CG015",
+      "checkpoint_prompt": "",
+      "next_locus": "Cellulose Fiber Barn"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Cellulose Fiber Barn",
+      "title": "The Animals That Need Microbial Partners",
+      "scene_kicker": "Herbivores gain access to cellulose energy through microorganisms that possess the missing chemistry.",
+      "location_description": "The final barn contains two life-size digestive models. A cow model stands left with four labeled stomach chambers. A horse model stands right with an enlarged cecum and large intestine. A glowing community of microbes occupies the fermentation chambers.",
+      "scene_layout": {
+        "orientation": "The cow digestive model is left, a bale of cellulose-rich hay and microbe projector are center, and the horse hindgut model is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Cow ruminant model",
+            "symbol": "🐄",
+            "description": "Shows rumen, reticulum, omasum, and abomasum in order."
+          },
+          {
+            "position": "center",
+            "label": "Cellulose / microbes",
+            "symbol": "🌾",
+            "description": "Microbial cellulase and fermentation unlock energy from cellulose that the animal cannot hydrolyze by itself."
+          },
+          {
+            "position": "right",
+            "label": "Horse hindgut model",
+            "symbol": "🐎",
+            "description": "Places major cellulose fermentation in the cecum and large intestine rather than a ruminant stomach."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Suki Han",
+          "kind": "guide",
+          "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+          "job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+        },
+        {
+          "name": "Cellulose-digesting microbes",
+          "kind": "mutualistic partners",
+          "visual": "glowing microorganisms clustered around cellulose fibers",
+          "job": "produce enzymes and carry out fermentation that give herbivores access to energy from cellulose"
+        },
+        {
+          "name": "Ruminant stomach",
+          "kind": "cow digestive system",
+          "visual": "four connected chambers: rumen, reticulum, omasum, abomasum",
+          "job": "houses microbial fermentation early in digestion and then passes material through water removal and acid/enzyme digestion"
+        },
+        {
+          "name": "Horse hindgut",
+          "kind": "hindgut-fermentation system",
+          "visual": "an enlarged cecum and large intestine behind a single stomach",
+          "job": "houses much of the horse’s cellulose-digesting microbial community after the small intestine"
+        }
+      ],
+      "story_open": "Suki drops cellulose-rich hay into both models. The animals themselves do not produce the cellulase needed to hydrolyze cellulose. Their solution is ecological: **mutualistic microorganisms** perform cellulose digestion and fermentation, allowing the host to gain access to energy from otherwise resistant plant fiber.",
+      "story_paragraphs": [
+        "Suki drops cellulose-rich hay into both models. The animals themselves do not produce the cellulase needed to hydrolyze cellulose. Their solution is ecological: **mutualistic microorganisms** perform cellulose digestion and fermentation, allowing the host to gain access to energy from otherwise resistant plant fiber.",
+        "The cow is a ruminant. Its four stomach chambers appear in sequence: **rumen, reticulum, omasum, abomasum**. Microbial cellulose digestion occurs especially in the rumen and reticulum. The omasum removes water and other materials, and the abomasum carries out acidic, enzyme-driven digestion using the cow’s own secretions.",
+        "The horse takes a different route. It is **not** a ruminant. It is a hindgut fermenter, with cellulose-digesting microorganisms concentrated mainly in an enlarged **cecum** and large intestine.",
+        "The barn wall opens into a four-room model labeled **ruminant stomach compartments**: rumen, reticulum, omasum, and abomasum. Cellulose-digesting microorganisms work mainly in the rumen and reticulum; water is removed in the omasum; the abomasum carries out digestion with the cow's own enzymes.",
+        "A final glow travels from the cellulose fiber into the microbial chamber, then into the animal’s nutrient stream. Suki catches the original sugar bead as it rolls from the display. “Same class of molecule,” she says, closing the lantern, “but the linkage, architecture, and biological partner decide what that carbohydrate can do.”"
+      ],
+      "story_close": "A final glow travels from the cellulose fiber into the microbial chamber, then into the animal’s nutrient stream. Suki catches the original sugar bead as it rolls from the display. “Same class of molecule,” she says, closing the lantern, “but the linkage, architecture, and biological partner decide what that carbohydrate can do.”",
+      "object_ids": [
+        "MO-APBIO-U1-CG017",
+        "MO-APBIO-U1-CG018"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CG017",
+          "term": "Cellulose digestion by symbiotic microbes",
+          "story": "cellulose fibers stopping at an animal-enzyme gate while mutualistic microbes open a fermentation route",
+          "science": "Animals do not produce cellulase enzymes that hydrolyze cellulose. Cellulose-digesting herbivores obtain access to cellulose energy through mutualistic microorganisms that carry out fermentation in specialized digestive compartments.",
+          "exact_name": false,
+          "hint": "cellulose fibers stopping at an animal-enzyme gate while mutualistic microbes open a fermentation route"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CG018",
+          "term": "Ruminant stomach compartments",
+          "story": "a cow taking a four-room stomach route while a horse is diverted to a separate enlarged-cecum hindgut route",
+          "science": "In a cow, a ruminant, the four stomach chambers are the rumen, reticulum, omasum, and abomasum. Mutualistic microorganisms digest cellulose in the rumen/reticulum; water is removed in the omasum; the abomasum carries out digestion with the cow's enzymes. Horses are not ruminants; they are hindgut fermenters that house cellulose-digesting microorganisms mainly in an enlarged cecum and large intestine.",
+          "exact_name": true,
+          "hint": "a cow taking a four-room stomach route while a horse is diverted to a separate enlarged-cecum hindgut route"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cellulose digestion by symbiotic microbes",
+          "meaning": "Animals do not produce cellulase enzymes that hydrolyze cellulose. Cellulose-digesting herbivores obtain access to cellulose energy through mutualistic microorganisms that carry out fermentation in specialized digestive compartments.",
+          "image": "cellulose fibers stopping at an animal-enzyme gate while mutualistic microbes open a fermentation route"
+        },
+        {
+          "term": "Ruminant stomach compartments",
+          "meaning": "In a cow, a ruminant, the four stomach chambers are the rumen, reticulum, omasum, and abomasum. Mutualistic microorganisms digest cellulose in the rumen/reticulum; water is removed in the omasum; the abomasum carries out digestion with the cow's enzymes. Horses are not ruminants; they are hindgut fermenters that house cellulose-digesting microorganisms mainly in an enlarged cecum and large intestine.",
+          "image": "a cow taking a four-room stomach route while a horse is diverted to a separate enlarged-cecum hindgut route"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-CG018",
+      "checkpoint_prompt": "",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}

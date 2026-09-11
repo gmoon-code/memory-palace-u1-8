@@ -1,0 +1,2691 @@
+{
+  "schema": "memory-palace-v2-unit2-f2-classification-1.0",
+  "generated_utc": "2026-09-02T06:15:00+00:00",
+  "unit_id": "unit-2",
+  "canonical_source_lock": "F1",
+  "counts": {
+    "total": 142,
+    "by_destination": {
+      "PALACE_EMBEDDED": 84,
+      "PALACE_PRIMARY_LOCUS": 49,
+      "CHALLENGE_LAB": 9
+    },
+    "by_name_support": {
+      "SEMANTIC_SCIENCE_CUE_SUFFICIENT": 41,
+      "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED": 30,
+      "NO_EXACT_NAME_GATE": 36,
+      "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE": 35
+    },
+    "exact_name_targets": 106,
+    "mandatory_spelling_targets": 0
+  },
+  "records": [
+    {
+      "knowledge_id": "U2-K-001",
+      "canonical_label": "Ribosome composition",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ASSEMBLY_PROCESS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-002",
+      "canonical_label": "Ribosomes and common ancestry",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ASSEMBLY_PROCESS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-003",
+      "canonical_label": "Ribosome function",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L04",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SPLIT_DESTINATION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-004",
+      "canonical_label": "Endomembrane system membership",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L05",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SYSTEM_MAP",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-005",
+      "canonical_label": "Endomembrane system function",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-006",
+      "canonical_label": "ER support and transport",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYSTEM_MAP",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-007",
+      "canonical_label": "Rough ER",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L06",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_FUNCTION_PROCESS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-008",
+      "canonical_label": "Smooth ER",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L07",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "FUNCTION_LAB",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-009",
+      "canonical_label": "Golgi structure",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L08",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_ORIENTATION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-010",
+      "canonical_label": "Golgi processing",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L09",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROCESS_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-011",
+      "canonical_label": "Golgi trafficking",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L09",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROCESS_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-012",
+      "canonical_label": "Mitochondrial double membrane",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L14",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NESTED_STRUCTURE_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-013",
+      "canonical_label": "Mitochondrial inner folds",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L15",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SURFACE_AREA_STRUCTURE_FUNCTION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-014",
+      "canonical_label": "Lysosome digestion",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L10",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DIGESTION_RECYCLING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-015",
+      "canonical_label": "Lysosome apoptosis",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L10",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DIGESTION_RECYCLING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-016",
+      "canonical_label": "Vacuole general",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L11",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMPARISON_GALLERY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-017",
+      "canonical_label": "Plant central vacuole",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L11",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARISON_GALLERY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-018",
+      "canonical_label": "Animal vacuoles",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L11",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARISON_GALLERY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-019",
+      "canonical_label": "Chloroplast distribution",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-020",
+      "canonical_label": "Chloroplast structure/function",
+      "topic": "2.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L17",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-021",
+      "canonical_label": "SA:V exchange",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-022",
+      "canonical_label": "Membrane area requirement",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-023",
+      "canonical_label": "Cell size limitation",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L19",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-024",
+      "canonical_label": "Scaling with volume",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-025",
+      "canonical_label": "Exchange-surface adaptations",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L20",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_ADAPTATION_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-026",
+      "canonical_label": "Body size and heat exchange",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L21",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SCALE_COMPARISON_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-027",
+      "canonical_label": "Body size and metabolic rate",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SCALE_COMPARISON_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-028",
+      "canonical_label": "Phospholipid amphipathic structure",
+      "topic": "2.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L22",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MOLECULAR_ORIENTATION_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-029",
+      "canonical_label": "Bilayer orientation",
+      "topic": "2.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MOLECULAR_ORIENTATION_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-030",
+      "canonical_label": "Membrane-protein polarity",
+      "topic": "2.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROTEIN_PLACEMENT_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-031",
+      "canonical_label": "Protein orientation",
+      "topic": "2.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROTEIN_PLACEMENT_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-032",
+      "canonical_label": "Fluid mosaic composition",
+      "topic": "2.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L23",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DYNAMIC_MEMBRANE_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-033",
+      "canonical_label": "Fluid mosaic movement",
+      "topic": "2.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DYNAMIC_MEMBRANE_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-034",
+      "canonical_label": "Selective permeability basis",
+      "topic": "2.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L27",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SELECTIVE_BARRIER_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-035",
+      "canonical_label": "Small nonpolar passage",
+      "topic": "2.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L28",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PERMEABILITY_SORT_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-036",
+      "canonical_label": "Hydrophilic transport",
+      "topic": "2.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PERMEABILITY_SORT_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-037",
+      "canonical_label": "Hydrophobic barrier",
+      "topic": "2.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SELECTIVE_BARRIER_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-038",
+      "canonical_label": "Small polar passage",
+      "topic": "2.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PERMEABILITY_SORT_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-039",
+      "canonical_label": "Cell walls",
+      "topic": "2.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L29",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "BOUNDARY_AND_CHANNEL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-040",
+      "canonical_label": "Concentration gradients",
+      "topic": "2.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L30",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PARTICLE_MOTION_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-041",
+      "canonical_label": "Passive transport",
+      "topic": "2.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L30",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PARTICLE_MOTION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-042",
+      "canonical_label": "Active transport",
+      "topic": "2.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L31",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENERGY_COUPLED_TRANSPORT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-043",
+      "canonical_label": "Bulk transport energy",
+      "topic": "2.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L36",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "VESICLE_BEFORE_AFTER_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-044",
+      "canonical_label": "Endocytosis",
+      "topic": "2.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L36",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "VESICLE_BEFORE_AFTER_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-045",
+      "canonical_label": "Exocytosis",
+      "topic": "2.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L36",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "VESICLE_BEFORE_AFTER_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-046",
+      "canonical_label": "Facilitated diffusion proteins",
+      "topic": "2.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L32",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROTEIN_ASSISTED_DOWNHILL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-047",
+      "canonical_label": "Ion channels",
+      "topic": "2.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L33",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GATED_CHANNEL_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-048",
+      "canonical_label": "Membrane polarization",
+      "topic": "2.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L33",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GATED_CHANNEL_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-049",
+      "canonical_label": "Large polar facilitated diffusion",
+      "topic": "2.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L32",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROTEIN_ASSISTED_DOWNHILL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-050",
+      "canonical_label": "Aquaporins",
+      "topic": "2.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L35",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "WATER_CHANNEL_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-051",
+      "canonical_label": "Tonicity relationships",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L40",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RELATIVE_SOLUTION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-052",
+      "canonical_label": "Osmosis and water potential",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "WATER_POTENTIAL_FLOW_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-053",
+      "canonical_label": "Water potential equation",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_CONTROL_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "FORMULA_OR_STOICHIOMETRY_RECALL"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-054",
+      "canonical_label": "Membrane movement and homeostasis",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "WATER_POTENTIAL_FLOW_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-055",
+      "canonical_label": "Osmoregulation",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L45",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "QUANTITATIVE_CONTROL_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-056",
+      "canonical_label": "Osmolarity direction",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "WATER_POTENTIAL_FLOW_SCENE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-057",
+      "canonical_label": "Solute potential equation",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_CONTROL_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "FORMULA_OR_STOICHIOMETRY_RECALL"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-058",
+      "canonical_label": "Energy for active transport",
+      "topic": "2.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L31",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_COUPLED_TRANSPORT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-059",
+      "canonical_label": "Active transport proteins",
+      "topic": "2.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L31",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENERGY_COUPLED_TRANSPORT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-060",
+      "canonical_label": "Na+/K+ pump",
+      "topic": "2.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ELECTROCHEMICAL_PUMP_SEQUENCE",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-061",
+      "canonical_label": "Compartmentalization",
+      "topic": "2.9",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L46",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMPARTMENT_CAUSAL_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-062",
+      "canonical_label": "Minimizing competing interactions",
+      "topic": "2.9",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L46",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARTMENT_CAUSAL_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-063",
+      "canonical_label": "Increasing reaction surface",
+      "topic": "2.9",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L46",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARTMENT_CAUSAL_MODEL",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-064",
+      "canonical_label": "Endosymbiosis",
+      "topic": "2.10",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L48",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ORIGIN_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-065",
+      "canonical_label": "Prokaryotic compartmentalization",
+      "topic": "2.10",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L47",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMPARISON_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-066",
+      "canonical_label": "Eukaryotic compartmentalization",
+      "topic": "2.10",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARISON_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-067",
+      "canonical_label": "Cell",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L01",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMPARISON_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-068",
+      "canonical_label": "Prokaryotic cell",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARISON_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-069",
+      "canonical_label": "Eukaryotic cell",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARISON_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-070",
+      "canonical_label": "Nucleus",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L02",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-071",
+      "canonical_label": "Nuclear pore complex",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-072",
+      "canonical_label": "Nucleolus",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L03",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ASSEMBLY_PROCESS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-073",
+      "canonical_label": "Free ribosomes",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SPLIT_DESTINATION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-003"
+    },
+    {
+      "knowledge_id": "U2-K-074",
+      "canonical_label": "Bound ribosomes",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SPLIT_DESTINATION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-003"
+    },
+    {
+      "knowledge_id": "U2-K-075",
+      "canonical_label": "ER cisternae/lumen",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L06",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_PROCESS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-076",
+      "canonical_label": "Smooth ER additional functions",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "FUNCTION_LAB",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-077",
+      "canonical_label": "Golgi cis face",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_ORIENTATION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-078",
+      "canonical_label": "Golgi trans face",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L09",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROCESS_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-079",
+      "canonical_label": "Cisternae",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_ORIENTATION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-080",
+      "canonical_label": "Autophagy",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L10",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DIGESTION_RECYCLING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-081",
+      "canonical_label": "Peroxisome",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L12",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DISTINCTION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-004"
+    },
+    {
+      "knowledge_id": "U2-K-082",
+      "canonical_label": "Food vacuole",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L11",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARISON_GALLERY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-083",
+      "canonical_label": "Contractile vacuole",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L11",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMPARISON_GALLERY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-084",
+      "canonical_label": "Intermembrane space",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-085",
+      "canonical_label": "Mitochondrial matrix",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-007"
+    },
+    {
+      "knowledge_id": "U2-K-086",
+      "canonical_label": "Cristae",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L15",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SURFACE_AREA_STRUCTURE_FUNCTION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-006"
+    },
+    {
+      "knowledge_id": "U2-K-087",
+      "canonical_label": "Mitochondrial abundance and energy demand",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L16",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMPARATIVE_DEMAND_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-088",
+      "canonical_label": "Thylakoid",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L18",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-089",
+      "canonical_label": "Granum",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-008"
+    },
+    {
+      "knowledge_id": "U2-K-090",
+      "canonical_label": "Stroma",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-091",
+      "canonical_label": "Chlorophyll",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-092",
+      "canonical_label": "Cytoskeleton",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L13",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STRUCTURE_FUNCTION_NETWORK",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-093",
+      "canonical_label": "Microtubule",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_NETWORK",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-094",
+      "canonical_label": "Microtubule-organizing center / centrosome",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_NETWORK",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-009"
+    },
+    {
+      "knowledge_id": "U2-K-095",
+      "canonical_label": "Microfilament / actin filament",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_NETWORK",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-096",
+      "canonical_label": "Intermediate filament",
+      "topic": "2.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STRUCTURE_FUNCTION_NETWORK",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-010"
+    },
+    {
+      "knowledge_id": "U2-K-097",
+      "canonical_label": "Surface area formula for cube",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED_EQUATION",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "FORMULA_OR_STOICHIOMETRY_RECALL"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-098",
+      "canonical_label": "Surface area and volume of sphere",
+      "topic": "2.2",
+      "scope_class": "AP_REQUIRED_EQUATION",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "FORMULA_OR_STOICHIOMETRY_RECALL"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-099",
+      "canonical_label": "Membrane fluidity and unsaturation",
+      "topic": "2.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L24",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TEMPERATURE_PACKING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-100",
+      "canonical_label": "Cholesterol as fluidity buffer",
+      "topic": "2.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TEMPERATURE_PACKING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-101",
+      "canonical_label": "Integral membrane protein",
+      "topic": "2.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L25",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROTEIN_PLACEMENT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-011"
+    },
+    {
+      "knowledge_id": "U2-K-102",
+      "canonical_label": "Peripheral membrane protein",
+      "topic": "2.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROTEIN_PLACEMENT_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-103",
+      "canonical_label": "Glycolipid",
+      "topic": "2.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECOGNITION_INTERACTION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-104",
+      "canonical_label": "Glycoprotein",
+      "topic": "2.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L26",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RECOGNITION_INTERACTION_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-105",
+      "canonical_label": "Plant cell wall composition",
+      "topic": "2.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "BOUNDARY_AND_CHANNEL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-106",
+      "canonical_label": "Plant cell wall function",
+      "topic": "2.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "BOUNDARY_AND_CHANNEL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-012"
+    },
+    {
+      "knowledge_id": "U2-K-107",
+      "canonical_label": "Plasmodesma",
+      "topic": "2.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "BOUNDARY_AND_CHANNEL_SCENE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-108",
+      "canonical_label": "Diffusion",
+      "topic": "2.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L30",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PARTICLE_MOTION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-109",
+      "canonical_label": "Osmosis",
+      "topic": "2.7",
+      "scope_class": "AP_REQUIRED_SUPPORT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L44",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "WATER_POTENTIAL_FLOW_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-013"
+    },
+    {
+      "knowledge_id": "U2-K-110",
+      "canonical_label": "Channel protein",
+      "topic": "2.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L33",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GATED_CHANNEL_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-111",
+      "canonical_label": "Carrier protein",
+      "topic": "2.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L34",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CARRIER_CONFORMATION_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-112",
+      "canonical_label": "Membrane potential",
+      "topic": "2.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L38",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ELECTROCHEMICAL_PUMP_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-014"
+    },
+    {
+      "knowledge_id": "U2-K-113",
+      "canonical_label": "Electrogenic pump",
+      "topic": "2.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ELECTROCHEMICAL_PUMP_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-114",
+      "canonical_label": "Na+/K+ ATPase stoichiometry",
+      "topic": "2.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ELECTROCHEMICAL_PUMP_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "FORMULA_OR_STOICHIOMETRY_RECALL"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-115",
+      "canonical_label": "Proton pump",
+      "topic": "2.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GRADIENT_COUPLING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-116",
+      "canonical_label": "Cotransport",
+      "topic": "2.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L39",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GRADIENT_COUPLING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-117",
+      "canonical_label": "Sucrose-H+ symport",
+      "topic": "2.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GRADIENT_COUPLING_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-118",
+      "canonical_label": "Phagocytosis",
+      "topic": "2.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L37",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENDOCYTOSIS_SUBTYPE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-119",
+      "canonical_label": "Pinocytosis",
+      "topic": "2.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENDOCYTOSIS_SUBTYPE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-016"
+    },
+    {
+      "knowledge_id": "U2-K-120",
+      "canonical_label": "Receptor-mediated endocytosis",
+      "topic": "2.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENDOCYTOSIS_SUBTYPE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-121",
+      "canonical_label": "Tonicity",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L40",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RELATIVE_SOLUTION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-122",
+      "canonical_label": "Isotonic solution",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L41",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DYNAMIC_EQUILIBRIUM_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-123",
+      "canonical_label": "Hypertonic solution",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L42",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SHRINKAGE_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-017"
+    },
+    {
+      "knowledge_id": "U2-K-124",
+      "canonical_label": "Hypotonic solution",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L43",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SWELLING_TURGOR_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-125",
+      "canonical_label": "Plasmolysis",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L43",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SWELLING_TURGOR_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-126",
+      "canonical_label": "Turgor pressure",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L43",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SWELLING_TURGOR_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-127",
+      "canonical_label": "Pressure potential",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_CONTROL_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-128",
+      "canonical_label": "Solute potential",
+      "topic": "2.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "QUANTITATIVE_CONTROL_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-129",
+      "canonical_label": "Endosymbiotic evidence: genomes",
+      "topic": "2.10",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U2-L49",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EVIDENCE_MATRIX",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-130",
+      "canonical_label": "Endosymbiotic evidence: division",
+      "topic": "2.10",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EVIDENCE_MATRIX",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-131",
+      "canonical_label": "Endosymbiotic evidence: ribosomes",
+      "topic": "2.10",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EVIDENCE_MATRIX",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-132",
+      "canonical_label": "Endosymbiotic evidence: membranes",
+      "topic": "2.10",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EVIDENCE_MATRIX",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-133",
+      "canonical_label": "Modern organelle dependence",
+      "topic": "2.10",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U2-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EVIDENCE_MATRIX",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE",
+      "review_flag_id": "RF-U2-005"
+    },
+    {
+      "knowledge_id": "U2-K-134",
+      "canonical_label": "Hepatitis C / albumin organelle FRQ",
+      "topic": "2.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-135",
+      "canonical_label": "Insulin secretory pathway FRQ",
+      "topic": "2.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-136",
+      "canonical_label": "Alcohol-detox/autophagy FRQ",
+      "topic": "2.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-137",
+      "canonical_label": "SA:V calculations",
+      "topic": "2.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-138",
+      "canonical_label": "Cold-water fish membrane FRQ",
+      "topic": "2.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-139",
+      "canonical_label": "Diffusion diagrams",
+      "topic": "2.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-140",
+      "canonical_label": "Sucrose uptake vs pH FRQ",
+      "topic": "2.8",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-141",
+      "canonical_label": "Macrophage phagocytosis FRQ",
+      "topic": "2.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U2-K-142",
+      "canonical_label": "Water-potential calculations",
+      "topic": "2.7",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    }
+  ]
+}

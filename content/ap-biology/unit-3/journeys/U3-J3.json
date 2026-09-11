@@ -1,0 +1,1541 @@
+{
+  "schema": "memory-palace-v2-unit3-f4c-story-1.0",
+  "unit_id": "unit-3",
+  "palace_id": "U3-J3",
+  "journey_id": "U3-J3",
+  "palace_name": "Cellular Energy Exchange Hall",
+  "story_title": "The Energy Ledger That Would Not Balance",
+  "tagline": "Follow one energy-accounting marker from metabolic pathways through thermodynamic constraints, cellular work, ATP hydrolysis, and ATP regeneration until the hall can account for every transformation.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cellular-energetics investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+    "story_job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+  },
+  "premise": "An energy-exchange hall has lost its accounting system. Metabolic routes, energy forms, thermodynamic constraints, cellular work, and ATP cycling must be reconnected into one lawful energy-flow system.",
+  "mission": "Trace how cells transform energy, remain organized while increasing total entropy, couple favorable and unfavorable processes, and continuously regenerate ATP.",
+  "finale": "The hall balances only after metabolism is separated into catabolic and anabolic routes, energy forms are tracked under both thermodynamic laws, exergonic processes are coupled to cellular work, ATP hydrolysis is explained through the full reaction, ATP is regenerated continuously, and conserved metabolic logic is recognized across life.",
+  "estimated_minutes": 30,
+  "scene_count": 10,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen while holding the left, center, and right anchors of each room in mind. Track the visible energy relationship first, then attach the scientific term. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Cellular Energy Exchange Hall is a ten-station route. Enter at the metabolism map, follow the glowing accounting marker through energy forms and the two thermodynamic-law rooms, cross the free-energy terrain into the work dock, then inspect ATP structure, hydrolysis, regeneration, and the final conserved-metabolism archive. Left, center, and right anchors remain fixed within every station.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Metabolism Route Map",
+      "short": "Route Map",
+      "floor": "Energy hall entrance",
+      "symbol": "⇄"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Energy Forms Gallery",
+      "short": "Energy Gallery",
+      "floor": "Conversion gallery",
+      "symbol": "◈"
+    },
+    {
+      "scene_index": 2,
+      "locus": "First-Law Ledger",
+      "short": "First-Law Ledger",
+      "floor": "Accounting corridor",
+      "symbol": "Σ"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Entropy and Living Order Chamber",
+      "short": "Entropy Chamber",
+      "floor": "Order-maintenance room",
+      "symbol": "≈"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Free-Energy Terrain",
+      "short": "Free-Energy Terrain",
+      "floor": "Reaction landscape",
+      "symbol": "⌁"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Cellular Work Dock",
+      "short": "Work Dock",
+      "floor": "Three-bay work station",
+      "symbol": "⚙"
+    },
+    {
+      "scene_index": 6,
+      "locus": "ATP Structure Station",
+      "short": "ATP Station",
+      "floor": "Molecular assembly bay",
+      "symbol": "ATP"
+    },
+    {
+      "scene_index": 7,
+      "locus": "ATP Hydrolysis Forge",
+      "short": "Hydrolysis Forge",
+      "floor": "Coupling forge",
+      "symbol": "Pi"
+    },
+    {
+      "scene_index": 8,
+      "locus": "ATP Regeneration Wheel",
+      "short": "ATP Wheel",
+      "floor": "Regeneration chamber",
+      "symbol": "↻"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Conserved Metabolism Archive",
+      "short": "Metabolism Archive",
+      "floor": "Cross-species archive",
+      "symbol": "∞"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Metabolism Route Map",
+      "title": "The Map With Two Opposite Roads",
+      "scene_kicker": "The hall cannot balance its energy ledger because breakdown and synthesis have been merged into one meaningless arrow.",
+      "location_description": "Metabolism Route Map — the central pathway map splitting degradative routes from biosynthetic routes.",
+      "scene_layout": {
+        "orientation": "You enter Metabolism Route Map and stop at the central pathway map splitting degradative routes from biosynthetic routes. On your left is catabolic breakdown branch; directly ahead is shared metabolic pathway map; on your right is anabolic synthesis branch. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Catabolic breakdown branch",
+            "symbol": "↓",
+            "description": "A fixed left branch accepts a large molecular model and carries it through enzyme-controlled breakdown steps toward smaller products."
+          },
+          {
+            "position": "center",
+            "label": "Shared metabolic pathway map",
+            "symbol": "→",
+            "description": "A wall-sized central pathway map shows sequential enzyme-catalyzed reactions and the intermediate molecules that connect one reaction to the next."
+          },
+          {
+            "position": "right",
+            "label": "Anabolic synthesis branch",
+            "symbol": "↑",
+            "description": "A fixed right branch accepts small precursor molecules and assembles them into a larger product while an energy-input meter remains visible."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "glowing energy tracker",
+          "kind": "continuity object",
+          "visual": "a small luminous disk carried beside the pathway map as a bookkeeping marker, never portrayed as a literal particle of energy",
+          "job": "track where usable energy is released, required, transformed, or transferred as metabolism proceeds"
+        },
+        {
+          "name": "large molecular substrate",
+          "kind": "scientific input",
+          "visual": "a conventional large molecular model entering the left breakdown branch",
+          "job": "be broken into smaller products through sequential enzyme-catalyzed reactions"
+        },
+        {
+          "name": "small precursor set",
+          "kind": "scientific input",
+          "visual": "several small molecular building blocks entering the right synthesis branch",
+          "job": "be assembled into a larger product when energy input is supplied"
+        }
+      ],
+      "story_open": "You leave the enzyme control wing through a wide steel door and enter the **Metabolism Route Map**. The room is circular, but its working wall is simple enough to redraw. On your **left**, a dark-blue branch slopes downward through a series of reaction stations. Directly **ahead**, a wall-sized pathway map shows connected boxes joined by arrows. On your **right**, a green branch climbs upward toward a large molecular product. Nia places a small glowing disk beside the center map. ‘This is only an accounting marker,’ she says. ‘It helps us track energy. Energy itself is not a little object that travels around the cell.’ The hall’s ledger is dark because the two branches have been labeled as if they were the same process.",
+      "story_paragraphs": [
+        "You leave the enzyme control wing through a wide steel door and enter the **Metabolism Route Map**. The room is circular, but its working wall is simple enough to redraw. On your **left**, a dark-blue branch slopes downward through a series of reaction stations. Directly **ahead**, a wall-sized pathway map shows connected boxes joined by arrows. On your **right**, a green branch climbs upward toward a large molecular product. Nia places a small glowing disk beside the center map. ‘This is only an accounting marker,’ she says. ‘It helps us track energy. Energy itself is not a little object that travels around the cell.’ The hall’s ledger is dark because the two branches have been labeled as if they were the same process.",
+        "Nia sends one large molecular model into the **left** branch. An enzyme at the first station changes it into smaller products. One of those products rolls directly into the next station and becomes a reactant there. The sequence continues, step after step. Nia traces the connected reactions on the **center** wall. This is a **metabolic pathway**, a sequence of enzyme-catalyzed reactions in which **pathway intermediates** connect an initial substrate to later products. The product of one reaction can become the reactant for the next. These **sequential metabolic pathways** allow cells to transfer and control energy through a series of manageable chemical steps. The enzymes at each station are the same kind of catalysts you studied in the workshop. Here they are catalyzing reactions inside a larger route.",
+        "The large molecule continues down the left branch and finishes as several smaller products. As that happens, the ledger beside the glowing disk records usable energy becoming available. Nia names this branch a **catabolic pathway**. Catabolic pathways break complex molecules into simpler products and typically release usable energy. She taps the enzyme symbols along the branch. **Enzymes in catabolic reactions** catalyze those breakdown steps. The word catabolic describes the direction of the pathway. It does not mean that the reactions happen without enzymes or without regulation.",
+        "Now Nia activates the **right** branch. Small precursor molecules enter from below. They do not assemble themselves into a larger product. The branch draws energy from the center ledger while enzyme-controlled reactions join and modify the precursors step by step. Nia names this an **anabolic pathway**. Anabolic pathways build complex molecules from simpler components and require energy input. **Enzymes in anabolic reactions** catalyze these biosynthetic steps just as enzymes can catalyze catabolic steps. The two branches therefore point in opposite chemical directions while sharing the same general logic of controlled, enzyme-catalyzed reactions.",
+        "The center wall finally lights as both branches connect into one larger network. Nia labels the complete network **metabolism**, the full set of chemical reactions occurring within a cell or organism. The ledger now makes sense. Breakdown can supply smaller molecules and usable energy. Synthesis can consume precursors and energy. Intermediates can connect one reaction to another. The glowing accounting disk flashes, then rolls through a doorway directly ahead. On the far side you can already see a cart moving, molecules jittering in a glass chamber, a raised weight, and a molecular model. ‘Before we can balance metabolism,’ Nia says, ‘you need to know what we mean when we say energy changes form.’"
+      ],
+      "story_close": "The two metabolic branches remain fixed behind you, and the glowing tracker leads forward into a gallery where the same energy ledger must recognize several different forms.",
+      "object_ids": [
+        "U3-K-019",
+        "U3-K-020",
+        "U3-K-055",
+        "U3-K-056",
+        "U3-K-057",
+        "U3-K-058",
+        "U3-K-089",
+        "U3-K-090"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-019",
+          "term": "Sequential metabolic pathways",
+          "story": "the center pathway map showing enzyme-controlled reactions arranged in a sequence",
+          "science": "Energy-related pathways are sequential, allowing controlled transfer of energy through a series of reactions.",
+          "exact_name": true,
+          "hint": "the center pathway map showing enzyme-controlled reactions arranged in a sequence"
+        },
+        {
+          "object_id": "U3-K-020",
+          "term": "Pathway intermediates",
+          "story": "one intermediate leaving a reaction and entering the next as a reactant",
+          "science": "A product of one reaction in a metabolic pathway commonly serves as a reactant for the next reaction.",
+          "exact_name": true,
+          "hint": "one intermediate leaving a reaction and entering the next as a reactant"
+        },
+        {
+          "object_id": "U3-K-055",
+          "term": "Metabolism",
+          "story": "the full left-center-right reaction network representing all cellular chemical reactions",
+          "science": "Metabolism is the complete set of chemical reactions occurring within an organism or cell.",
+          "exact_name": true,
+          "hint": "the full left-center-right reaction network representing all cellular chemical reactions"
+        },
+        {
+          "object_id": "U3-K-056",
+          "term": "Metabolic pathway",
+          "story": "a connected sequence of enzyme-catalyzed steps from starting substrate to products",
+          "science": "A metabolic pathway is a sequence of enzyme-catalyzed reactions in which intermediates connect an initial substrate to products.",
+          "exact_name": true,
+          "hint": "a connected sequence of enzyme-catalyzed steps from starting substrate to products"
+        },
+        {
+          "object_id": "U3-K-057",
+          "term": "Catabolic pathway",
+          "story": "the left branch breaking a large molecule into smaller products while usable energy becomes available",
+          "science": "Catabolic pathways break complex molecules into simpler products and typically release usable energy.",
+          "exact_name": true,
+          "hint": "the left branch breaking a large molecule into smaller products while usable energy becomes available"
+        },
+        {
+          "object_id": "U3-K-058",
+          "term": "Anabolic pathway",
+          "story": "the right branch building a larger molecule from smaller precursors while requiring energy input",
+          "science": "Anabolic pathways build complex molecules from simpler components and require energy input.",
+          "exact_name": true,
+          "hint": "the right branch building a larger molecule from smaller precursors while requiring energy input"
+        },
+        {
+          "object_id": "U3-K-089",
+          "term": "Enzymes in catabolic reactions",
+          "story": "enzyme stations catalyzing the left-side breakdown sequence",
+          "science": "Enzymes can catalyze reactions involved in catabolic breakdown pathways.",
+          "exact_name": false,
+          "hint": "enzyme stations catalyzing the left-side breakdown sequence"
+        },
+        {
+          "object_id": "U3-K-090",
+          "term": "Enzymes in anabolic reactions",
+          "story": "enzyme stations catalyzing the right-side biosynthetic sequence",
+          "science": "Enzymes can catalyze reactions involved in anabolic biosynthetic pathways.",
+          "exact_name": false,
+          "hint": "enzyme stations catalyzing the right-side biosynthetic sequence"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Sequential metabolic pathways",
+          "meaning": "Energy-related pathways are sequential, allowing controlled transfer of energy through a series of reactions.",
+          "image": "the center pathway map showing enzyme-controlled reactions arranged in a sequence"
+        },
+        {
+          "term": "Pathway intermediates",
+          "meaning": "A product of one reaction in a metabolic pathway commonly serves as a reactant for the next reaction.",
+          "image": "one intermediate leaving a reaction and entering the next as a reactant"
+        },
+        {
+          "term": "Metabolism",
+          "meaning": "Metabolism is the complete set of chemical reactions occurring within an organism or cell.",
+          "image": "the full left-center-right reaction network representing all cellular chemical reactions"
+        },
+        {
+          "term": "Metabolic pathway",
+          "meaning": "A metabolic pathway is a sequence of enzyme-catalyzed reactions in which intermediates connect an initial substrate to products.",
+          "image": "a connected sequence of enzyme-catalyzed steps from starting substrate to products"
+        },
+        {
+          "term": "Catabolic pathway",
+          "meaning": "Catabolic pathways break complex molecules into simpler products and typically release usable energy.",
+          "image": "the left branch breaking a large molecule into smaller products while usable energy becomes available"
+        },
+        {
+          "term": "Anabolic pathway",
+          "meaning": "Anabolic pathways build complex molecules from simpler components and require energy input.",
+          "image": "the right branch building a larger molecule from smaller precursors while requiring energy input"
+        },
+        {
+          "term": "Enzymes in catabolic reactions",
+          "meaning": "Enzymes can catalyze reactions involved in catabolic breakdown pathways.",
+          "image": "enzyme stations catalyzing the left-side breakdown sequence"
+        },
+        {
+          "term": "Enzymes in anabolic reactions",
+          "meaning": "Enzymes can catalyze reactions involved in anabolic biosynthetic pathways.",
+          "image": "enzyme stations catalyzing the right-side biosynthetic sequence"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-055",
+      "checkpoint_prompt": "What distinguishes the two branches on the metabolic route map?",
+      "checkpoint_answer": "Catabolic pathways break molecules down, while anabolic pathways build larger molecules from smaller components.",
+      "checkpoint_hint": "Picture the left branch breaking a large molecule into smaller products and the right branch using small precursors plus energy to build a larger product.",
+      "next_locus": "Energy Forms Gallery",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: catabolic pathway, anabolic pathway."
+      ],
+      "required_visual": {
+        "visual_mode": "SYSTEM_PATHWAY_MAP",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "catabolic breakdown branch",
+          "shared metabolic pathway map",
+          "anabolic synthesis branch",
+          "Feed a large molecule into the catabolic branch and small precursors into the anabolic branch while the center map exposes shared intermediates and enzyme-controlled sequential steps."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Sequential metabolic pathways; Pathway intermediates; Metabolism; Metabolic pathway; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Energy Forms Gallery",
+      "title": "The Gallery Where Energy Changes Its Appearance",
+      "scene_kicker": "The ledger keeps treating motion, heat, position, and chemical arrangement as unrelated currencies.",
+      "location_description": "Energy Forms Gallery — the conversion gallery showing motion, heat, position, and molecular-bond energy.",
+      "scene_layout": {
+        "orientation": "You enter Energy Forms Gallery and stop at the conversion gallery showing motion, heat, position, and molecular-bond energy. On your left is kinetic and thermal displays; directly ahead is energy-conversion turntable; on your right is potential and chemical energy displays. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Kinetic and thermal displays",
+            "symbol": "⇆",
+            "description": "Moving carts and a chamber of randomly moving molecular particles remain fixed on the left as examples of motion-associated energy."
+          },
+          {
+            "position": "center",
+            "label": "Energy-conversion turntable",
+            "symbol": "◈",
+            "description": "A central turntable carries one glowing tracking token through controlled transformations while a ledger records the form being represented."
+          },
+          {
+            "position": "right",
+            "label": "Potential and chemical displays",
+            "symbol": "▲",
+            "description": "A raised mass and a conventional molecular model remain fixed on the right to represent stored energy associated with position, structure, and chemical arrangement."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "glowing energy tracker",
+          "kind": "continuity object",
+          "visual": "the same luminous bookkeeping disk from the metabolism map, now riding the center turntable",
+          "job": "mark the form of energy being represented without implying that energy itself is a material token"
+        },
+        {
+          "name": "moving cart",
+          "kind": "scientific model",
+          "visual": "a small cart whose speed can be measured on the left motion track",
+          "job": "make kinetic energy visible through motion"
+        },
+        {
+          "name": "molecular-motion chamber",
+          "kind": "scientific model",
+          "visual": "a transparent chamber filled with particles moving randomly at measurable speeds",
+          "job": "represent thermal energy as kinetic energy associated with random molecular motion"
+        }
+      ],
+      "story_open": "You follow the glowing tracker into the **Energy Forms Gallery**. The floor narrows into three permanent zones. On your **left**, a small cart circles a track beside a clear chamber filled with rapidly moving particles. Directly **ahead**, a round turntable carries the glowing tracker beneath a ceiling display. On your **right**, a metal weight hangs high above the floor beside a conventional molecular model. Nia keeps the tracker on the center turntable. ‘Remember what it represents,’ she says. ‘We are following the capacity to cause change or perform work. That capacity is **energy**.’",
+      "story_paragraphs": [
+        "You follow the glowing tracker into the **Energy Forms Gallery**. The floor narrows into three permanent zones. On your **left**, a small cart circles a track beside a clear chamber filled with rapidly moving particles. Directly **ahead**, a round turntable carries the glowing tracker beneath a ceiling display. On your **right**, a metal weight hangs high above the floor beside a conventional molecular model. Nia keeps the tracker on the center turntable. ‘Remember what it represents,’ she says. ‘We are following the capacity to cause change or perform work. That capacity is **energy**.’",
+        "She sends the cart across the left track. As its speed increases, the motion meter rises. Nia names this **kinetic energy**, energy associated with motion. She then points to the neighboring particle chamber. The particles move in random directions, continually colliding and changing speed. Their collective microscopic motion is **thermal energy**, kinetic energy associated with the random movement of atoms and molecules. The two displays share motion, yet they are not identical pictures. One makes organized visible motion easy to see. The other makes random molecular motion visible.",
+        "The turntable rotates toward the **right**. Nia raises the metal weight and locks it in place. It is no longer moving, yet the display still records stored capacity to produce change if the weight is released. This is **potential energy**, stored energy associated with position or structure. She then moves the glowing tracker to the molecular model beside it. The molecule is not a container with a yellow packet of energy hidden inside a single bond. Its molecular structure and chemical arrangement contribute to a free-energy state that can change during reactions. Nia names **chemical energy** as potential energy associated with molecular structure that can be transformed through chemical reactions.",
+        "The gallery now runs one continuous conversion. The raised weight falls and turns a wheel. Some organized motion becomes random molecular motion in the machinery and surroundings. A chemical reaction on the right changes molecular structure and drives another moving part. The glowing disk changes its label each time the representation changes. Nothing about the disk is meant to suggest that a material substance called energy is being passed from hand to hand. It is the ledger’s marker for tracking energy transformations.",
+        "At the end of the demonstration, the ceiling display asks a harder question. If energy can appear as motion, thermal motion, stored position, or chemical arrangement, can the total simply disappear when a transformation becomes messy? Nia walks through the center doorway before the gallery can answer. Beyond it is a black wall with two columns marked IN and OUT and a large total sign between them. ‘Now we balance the account,’ she says."
+      ],
+      "story_close": "Motion, thermal motion, stored position, and molecular structure remain distinguishable behind you as the tracker enters the accounting wall that tests whether any energy was created or lost.",
+      "object_ids": [
+        "U3-K-059",
+        "U3-K-060",
+        "U3-K-061",
+        "U3-K-062",
+        "U3-K-063"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-059",
+          "term": "Energy",
+          "story": "the glowing accounting marker tracking the capacity to cause change or perform work",
+          "science": "Energy is the capacity to cause change or perform work in a biological system.",
+          "exact_name": true,
+          "hint": "the glowing accounting marker tracking the capacity to cause change or perform work"
+        },
+        {
+          "object_id": "U3-K-060",
+          "term": "Kinetic energy",
+          "story": "the moving cart whose motion makes kinetic energy visible",
+          "science": "Kinetic energy is energy associated with motion.",
+          "exact_name": true,
+          "hint": "the moving cart whose motion makes kinetic energy visible"
+        },
+        {
+          "object_id": "U3-K-061",
+          "term": "Thermal energy",
+          "story": "the randomly moving particles whose microscopic kinetic energy appears as thermal energy",
+          "science": "Thermal energy is kinetic energy associated with random movement of atoms and molecules.",
+          "exact_name": true,
+          "hint": "the randomly moving particles whose microscopic kinetic energy appears as thermal energy"
+        },
+        {
+          "object_id": "U3-K-062",
+          "term": "Potential energy",
+          "story": "the raised stationary weight retaining stored potential energy",
+          "science": "Potential energy is stored energy associated with position or structure.",
+          "exact_name": true,
+          "hint": "the raised stationary weight retaining stored potential energy"
+        },
+        {
+          "object_id": "U3-K-063",
+          "term": "Chemical energy",
+          "story": "the conventional molecular model whose structure is associated with transformable chemical potential energy",
+          "science": "Chemical energy is potential energy associated with molecular structure that can be transformed during chemical reactions.",
+          "exact_name": true,
+          "hint": "the conventional molecular model whose structure is associated with transformable chemical potential energy"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Energy",
+          "meaning": "Energy is the capacity to cause change or perform work in a biological system.",
+          "image": "the glowing accounting marker tracking the capacity to cause change or perform work"
+        },
+        {
+          "term": "Kinetic energy",
+          "meaning": "Kinetic energy is energy associated with motion.",
+          "image": "the moving cart whose motion makes kinetic energy visible"
+        },
+        {
+          "term": "Thermal energy",
+          "meaning": "Thermal energy is kinetic energy associated with random movement of atoms and molecules.",
+          "image": "the randomly moving particles whose microscopic kinetic energy appears as thermal energy"
+        },
+        {
+          "term": "Potential energy",
+          "meaning": "Potential energy is stored energy associated with position or structure.",
+          "image": "the raised stationary weight retaining stored potential energy"
+        },
+        {
+          "term": "Chemical energy",
+          "meaning": "Chemical energy is potential energy associated with molecular structure that can be transformed during chemical reactions.",
+          "image": "the conventional molecular model whose structure is associated with transformable chemical potential energy"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-059",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "First-Law Ledger",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: kinetic energy, thermal energy, potential energy, chemical energy."
+      ],
+      "required_visual": {
+        "visual_mode": "ENERGY_FORM_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "kinetic and thermal displays",
+          "energy-conversion turntable",
+          "potential and chemical energy displays",
+          "Convert a single energy token among motion, heat, stored position, and chemical-bond arrangements while explicitly tracking which form changes and which does not vanish."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Energy; Kinetic energy; Thermal energy; Potential energy; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 2,
+      "locus": "First-Law Ledger",
+      "title": "The Ledger That Refuses to Lose a Joule",
+      "scene_kicker": "The hall reports missing energy whenever useful output becomes heat.",
+      "location_description": "First-Law Ledger — the closed accounting wall that tracks energy entering, changing form, and leaving.",
+      "scene_layout": {
+        "orientation": "You enter First-Law Ledger and stop at the closed accounting wall that tracks energy entering, changing form, and leaving. On your left is energy input ledger; directly ahead is transformation/accounting panel; on your right is energy output ledger. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Energy input ledger",
+            "symbol": "IN",
+            "description": "A calibrated left-side ledger records a fixed energy input before any transformation begins."
+          },
+          {
+            "position": "center",
+            "label": "Transformation and accounting panel",
+            "symbol": "Σ",
+            "description": "The central accounting wall follows the input through work, stored forms, and heat without allowing any energy to appear or disappear from the total."
+          },
+          {
+            "position": "right",
+            "label": "Energy output ledger",
+            "symbol": "OUT",
+            "description": "A matching right-side ledger records the transformed outputs and heat that leave the modeled system."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "glowing energy tracker",
+          "kind": "continuity object",
+          "visual": "the same bookkeeping marker entering the left ledger with a fixed recorded amount",
+          "job": "follow the accounted energy through transformation and transfer"
+        },
+        {
+          "name": "input counter",
+          "kind": "scientific measurement",
+          "visual": "a fixed calibrated display on the left ledger",
+          "job": "record energy entering the modeled system"
+        },
+        {
+          "name": "output counter",
+          "kind": "scientific measurement",
+          "visual": "a matched display on the right ledger",
+          "job": "record energy leaving as work, stored forms, or heat"
+        }
+      ],
+      "story_open": "The doorway opens into the **First-Law Ledger**. On your **left**, a bright input counter waits at zero. Directly **ahead**, a glass accounting panel branches into several transformation channels. On your **right**, a matching output counter records work, stored energy, and heat leaving the modeled system. Nia places the glowing tracker on the left scale and enters a fixed amount of energy. ‘This room studies energy transformations in matter,’ she says. That field is **thermodynamics**.",
+      "story_paragraphs": [
+        "The doorway opens into the **First-Law Ledger**. On your **left**, a bright input counter waits at zero. Directly **ahead**, a glass accounting panel branches into several transformation channels. On your **right**, a matching output counter records work, stored energy, and heat leaving the modeled system. Nia places the glowing tracker on the left scale and enters a fixed amount of energy. ‘This room studies energy transformations in matter,’ she says. That field is **thermodynamics**.",
+        "The center panel starts. Part of the input drives a molecular motor. Another part changes the chemical state of a molecule. A third part spreads into the surroundings as heat. Each output appears separately on the right, and the total climbs until it matches the input. Nia deliberately covers the labels and makes you watch the numbers. The forms have changed. The locations have changed. The total has not appeared from nowhere and has not vanished. She names the relationship the **first law of thermodynamics**. Energy cannot be created or destroyed. It can be transferred or transformed.",
+        "Nia reruns the model with a living cell displayed in the center panel. Chemical energy enters through metabolism. The cell performs transport, chemical, and mechanical work. Heat spreads outward. The right ledger still closes. ‘A living cell is organized,’ Nia says, ‘but it does not sit outside physics.’ She names the broader relationship **life and thermodynamics**. The high degree of order in living systems is consistent with both thermodynamic laws. The first law tells you that cells cannot manufacture energy from nothing. Every cellular transformation must remain part of an energy account.",
+        "The accounting wall now produces a strange result. The input and output totals match perfectly, yet the second run leaves more of the recorded energy dispersed as heat and less available to power another round of directed work. The first law is satisfied, but the ledger flashes a second warning. Nia points through a narrow opening beside the output column. On the other side, a beautifully organized cell model is being maintained by a glowing supply conduit while heat spreads across the room. ‘Conservation is only half of the story,’ she says.",
+        "You leave the balanced ledger intact. It has answered whether energy disappears. It has not answered why every transformation changes how available that energy is for future work, or how a cell can remain locally organized while the universe still obeys the second law. Those questions wait in the next chamber."
+      ],
+      "story_close": "The first account balances exactly, yet the spreading heat leads you into a chamber where the quality and dispersal of energy become as important as the conserved total.",
+      "object_ids": [
+        "U3-K-015",
+        "U3-K-064",
+        "U3-K-065"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-015",
+          "term": "Life and thermodynamics",
+          "story": "the living-cell energy account obeying the same thermodynamic laws as every other physical system",
+          "science": "The high degree of order in living systems is consistent with the first and second laws of thermodynamics.",
+          "exact_name": true,
+          "hint": "the living-cell energy account obeying the same thermodynamic laws as every other physical system"
+        },
+        {
+          "object_id": "U3-K-064",
+          "term": "Thermodynamics",
+          "story": "the center accounting panel tracking transformations of energy in matter",
+          "science": "Thermodynamics is the study of energy transformations in matter.",
+          "exact_name": true,
+          "hint": "the center accounting panel tracking transformations of energy in matter"
+        },
+        {
+          "object_id": "U3-K-065",
+          "term": "First law of thermodynamics",
+          "story": "equal total input and output despite transfers and transformations",
+          "science": "Energy cannot be created or destroyed; it can be transferred or transformed.",
+          "exact_name": true,
+          "hint": "equal total input and output despite transfers and transformations"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Life and thermodynamics",
+          "meaning": "The high degree of order in living systems is consistent with the first and second laws of thermodynamics.",
+          "image": "the living-cell energy account obeying the same thermodynamic laws as every other physical system"
+        },
+        {
+          "term": "Thermodynamics",
+          "meaning": "Thermodynamics is the study of energy transformations in matter.",
+          "image": "the center accounting panel tracking transformations of energy in matter"
+        },
+        {
+          "term": "First law of thermodynamics",
+          "meaning": "Energy cannot be created or destroyed; it can be transferred or transformed.",
+          "image": "equal total input and output despite transfers and transformations"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-065",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Entropy and Living Order Chamber",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: first law of thermodynamics, second law of thermodynamics."
+      ],
+      "required_visual": {
+        "visual_mode": "THERMODYNAMIC_ACCOUNTING",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "energy input ledger",
+          "transformation/accounting panel",
+          "energy output ledger",
+          "Pass a fixed amount of energy through a closed ledger from input to transformed outputs and heat so conservation is visible even when energy changes form."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Life and thermodynamics; Thermodynamics; First law of thermodynamics."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Entropy and Living Order Chamber",
+      "title": "The Cell That Stays Ordered Only While Energy Flows",
+      "scene_kicker": "The first law balances, but the organized cell still collapses when the energy supply is shut off.",
+      "location_description": "Entropy and Living Order Chamber — the order-maintenance room where local cellular organization is sustained while energy disperses to the surroundings.",
+      "scene_layout": {
+        "orientation": "You enter Entropy and Living Order Chamber and stop at the order-maintenance room where local cellular organization is sustained while energy disperses to the surroundings. On your left is organized cellular system; directly ahead is maintenance-energy input; on your right is dispersed heat and environmental entropy. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Organized cellular system",
+            "symbol": "▦",
+            "description": "A highly ordered cell model with maintained gradients, macromolecular organization, and directed processes remains fixed on the left."
+          },
+          {
+            "position": "center",
+            "label": "Maintenance-energy input",
+            "symbol": "⚡",
+            "description": "A central supply conduit delivers usable energy to the cell model and can be opened, reduced, or shut off."
+          },
+          {
+            "position": "right",
+            "label": "Dispersed heat and environmental entropy",
+            "symbol": "≈",
+            "description": "A right-side thermal display records energy dispersing to the surroundings as heat while the total entropy indicator rises."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "organized cell model",
+          "kind": "scientific system",
+          "visual": "a transparent cell model whose gradients, structures, and directed processes are visibly maintained only while energy flows",
+          "job": "show that local biological order requires continuing energy input"
+        },
+        {
+          "name": "energy supply conduit",
+          "kind": "scientific control",
+          "visual": "a glowing central conduit whose flow can be reduced or stopped",
+          "job": "control the usable-energy input to the organized cell model"
+        },
+        {
+          "name": "heat dispersal display",
+          "kind": "scientific output",
+          "visual": "a broad right-side thermal field that spreads outward into the surroundings",
+          "job": "show that energy transformations disperse energy and increase total entropy"
+        }
+      ],
+      "story_open": "You enter the **Entropy and Living Order Chamber** and stop between three fixed displays. On your **left**, a transparent cell model holds ion gradients, organized membranes, moving vesicles, and carefully maintained molecular arrangements. Directly **ahead**, a bright supply conduit feeds usable energy into the model. On your **right**, a broad thermal field spreads outward into the surroundings. Nothing in the room is hidden. The cell looks highly ordered, and heat is already leaving it.",
+      "story_paragraphs": [
+        "You enter the **Entropy and Living Order Chamber** and stop between three fixed displays. On your **left**, a transparent cell model holds ion gradients, organized membranes, moving vesicles, and carefully maintained molecular arrangements. Directly **ahead**, a bright supply conduit feeds usable energy into the model. On your **right**, a broad thermal field spreads outward into the surroundings. Nothing in the room is hidden. The cell looks highly ordered, and heat is already leaving it.",
+        "Nia opens the center conduit. The cell maintains its gradients, repairs structures, drives reactions, and keeps material moving in controlled directions. At the same time, the right-side heat field continues to expand. Nia names the governing relationship the **second law of thermodynamics**. Every energy transfer or transformation increases the entropy of the universe, and some energy becomes less available to perform work, often dispersing as heat. The cell’s order does not violate that law. The system includes the cell and its surroundings.",
+        "She highlights the cell on the left and the thermal field on the right at the same time. The cell can become or remain more ordered locally while total entropy of the system plus surroundings increases. Nia names this **entropy and living order**. The useful mental image is the whole room. Local organization on the left is sustained through energy flow in the center while dispersed heat expands on the right. The cell does not need the universe to become more ordered around it in order to maintain its own internal organization.",
+        "Nia now narrows the center conduit. Repair slows first. Then transport gradients begin to weaken. When the energy input falls below what the model needs to offset losses and power cellular processes, ordered activity deteriorates. The display labels the requirement **energy input and maintenance**. Energy input must exceed energy loss to maintain biological order and power cellular processes. She closes the conduit completely. The cell’s coordinated processes fail, gradients collapse, and the organized display darkens. A severe **loss of energy flow** or biological order is incompatible with continued life and can result in death.",
+        "The right-side heat field continues to glow after the cell has gone dark. Nia does not call entropy a synonym for messiness. She leaves the second-law statement on the wall and points instead to a reaction landscape opening ahead. Two paths run away from a central reference. One slopes downward. One climbs upward. ‘We have tracked total energy and its dispersal,’ she says. ‘Now we ask which chemical changes can supply usable free energy for work.’"
+      ],
+      "story_close": "The organized cell teaches that life requires continuous energy flow, and the next room asks which reactions can provide that usable energy under cellular conditions.",
+      "object_ids": [
+        "U3-K-016",
+        "U3-K-018",
+        "U3-K-066",
+        "U3-K-067"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-016",
+          "term": "Energy input and maintenance",
+          "story": "the organized cell maintaining gradients and processes only while energy continues to enter",
+          "science": "Energy input must exceed energy loss to maintain biological order and power cellular processes.",
+          "exact_name": true,
+          "hint": "the organized cell maintaining gradients and processes only while energy continues to enter"
+        },
+        {
+          "object_id": "U3-K-018",
+          "term": "Loss of energy flow",
+          "story": "the cell model losing coordinated function after the energy supply is shut off",
+          "science": "A significant loss of biological order or energy flow results in death.",
+          "exact_name": true,
+          "hint": "the cell model losing coordinated function after the energy supply is shut off"
+        },
+        {
+          "object_id": "U3-K-066",
+          "term": "Second law of thermodynamics",
+          "story": "heat spreading into the surroundings while the total entropy indicator rises",
+          "science": "Every energy transfer or transformation increases the entropy of the universe, and some energy becomes less available to perform work, often dispersing as heat.",
+          "exact_name": true,
+          "hint": "heat spreading into the surroundings while the total entropy indicator rises"
+        },
+        {
+          "object_id": "U3-K-067",
+          "term": "Entropy and living order",
+          "story": "local cellular order maintained on the left while the combined system and surroundings obey the second law",
+          "science": "A cell or organism can become more ordered locally while total entropy of the system plus surroundings increases.",
+          "exact_name": false,
+          "hint": "local cellular order maintained on the left while the combined system and surroundings obey the second law"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Energy input and maintenance",
+          "meaning": "Energy input must exceed energy loss to maintain biological order and power cellular processes.",
+          "image": "the organized cell maintaining gradients and processes only while energy continues to enter"
+        },
+        {
+          "term": "Loss of energy flow",
+          "meaning": "A significant loss of biological order or energy flow results in death.",
+          "image": "the cell model losing coordinated function after the energy supply is shut off"
+        },
+        {
+          "term": "Second law of thermodynamics",
+          "meaning": "Every energy transfer or transformation increases the entropy of the universe, and some energy becomes less available to perform work, often dispersing as heat.",
+          "image": "heat spreading into the surroundings while the total entropy indicator rises"
+        },
+        {
+          "term": "Entropy and living order",
+          "meaning": "A cell or organism can become more ordered locally while total entropy of the system plus surroundings increases.",
+          "image": "local cellular order maintained on the left while the combined system and surroundings obey the second law"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-066",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Free-Energy Terrain",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: first law of thermodynamics, second law of thermodynamics."
+      ],
+      "required_visual": {
+        "visual_mode": "THERMODYNAMIC_DIRECTION_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "organized cellular system",
+          "maintenance-energy input",
+          "dispersed heat and environmental entropy",
+          "Maintain a highly ordered cellular model only while energy enters; route some energy outward as dispersed heat and let local order fail when the input is shut off."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Energy input and maintenance; Loss of energy flow; Second law of thermodynamics; Entropy and living order."
+    },
+    {
+      "scene_index": 4,
+      "locus": "Free-Energy Terrain",
+      "title": "The Terrain With a Downhill Path and an Uphill Path",
+      "scene_kicker": "Two reactions can obey both thermodynamic laws while differing completely in whether they can drive cellular work.",
+      "location_description": "Free-Energy Terrain — the reaction landscape with downhill exergonic and uphill endergonic paths relative to cellular equilibrium.",
+      "scene_layout": {
+        "orientation": "You enter Free-Energy Terrain and stop at the reaction landscape with downhill exergonic and uphill endergonic paths relative to cellular equilibrium. On your left is exergonic downhill path; directly ahead is free-energy/equilibrium reference; on your right is endergonic uphill path. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Exergonic downhill path",
+            "symbol": "↘",
+            "description": "A leftward reaction path descends from a higher-free-energy reactant state toward a lower-free-energy product state."
+          },
+          {
+            "position": "center",
+            "label": "Free-energy and equilibrium reference",
+            "symbol": "G",
+            "description": "A central reference plane marks relative Gibbs free energy and the equilibrium basin without requiring the full Gibbs free-energy equation."
+          },
+          {
+            "position": "right",
+            "label": "Endergonic uphill path",
+            "symbol": "↗",
+            "description": "A rightward reaction path rises toward products with higher free energy and remains stalled until coupled energy is supplied."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "reaction pair",
+          "kind": "scientific comparison",
+          "visual": "two conventional reactant-to-product energy diagrams placed on opposite sides of one shared free-energy reference",
+          "job": "compare favorable and unfavorable free-energy changes"
+        },
+        {
+          "name": "equilibrium marker",
+          "kind": "scientific reference",
+          "visual": "a central basin marker showing the equilibrium condition for the modeled reaction system",
+          "job": "separate thermodynamic direction from the living cell state that continually maintains disequilibrium"
+        },
+        {
+          "name": "glowing energy tracker",
+          "kind": "continuity object",
+          "visual": "the same bookkeeping disk resting at the central reference plane",
+          "job": "show whether a process releases usable free energy or requires coupling to another process"
+        }
+      ],
+      "story_open": "The floor opens into the **Free-Energy Terrain**. The geography stays fixed. On your **left**, a reaction path descends from a higher platform to a lower one. Directly **ahead**, a transparent reference plane marks relative free energy and an equilibrium basin. On your **right**, a second reaction path climbs toward a higher product platform. Nia places the glowing tracker at the center reference. ‘This display is a model of chemical free-energy relationships,’ she says. ‘Molecules are not literally rolling down a hill.’",
+      "story_paragraphs": [
+        "The floor opens into the **Free-Energy Terrain**. The geography stays fixed. On your **left**, a reaction path descends from a higher platform to a lower one. Directly **ahead**, a transparent reference plane marks relative free energy and an equilibrium basin. On your **right**, a second reaction path climbs toward a higher product platform. Nia places the glowing tracker at the center reference. ‘This display is a model of chemical free-energy relationships,’ she says. ‘Molecules are not literally rolling down a hill.’",
+        "She activates the left reaction. The product state lies lower in free energy than the reactant state. The sign over the path reads negative change in free energy. Nia names it an **exergonic reaction**. An exergonic reaction has a negative change in free energy and can proceed spontaneously in the thermodynamic sense. She immediately places a small activation barrier near the start, linking the terrain back to the enzyme workshop. Thermodynamic spontaneity does not guarantee a fast reaction. A favorable reaction can still proceed slowly when a substantial activation-energy barrier exists.",
+        "The right path behaves differently. Its products sit at higher free energy than its reactants. The model refuses to proceed unless another process supplies usable energy. Nia names this an **endergonic reaction**. An endergonic reaction has a positive change in free energy and requires coupling to an energy-releasing process to proceed in cells. The left and right paths remain visible together, so the distinction is spatial. One can release free energy as it proceeds toward a lower-free-energy state. The other requires an input or coupling that makes the combined process thermodynamically favorable.",
+        "Nia then labels the vertical reference **Gibbs free energy**. Gibbs free energy describes the portion of a system’s energy that can perform work under specified conditions. The display deliberately withholds the full Gibbs free-energy equation. You need the relationship here, not a memorized formula. The equilibrium basin remains at center as a warning. If every coupled reaction in a living cell simply settled into equilibrium and stayed there, there would be no sustained directional flow left to power cellular work.",
+        "The whole terrain begins to flatten toward the equilibrium basin. Nia stops it before the process finishes. Living cells maintain flows of matter and energy and remain **far from equilibrium**. Reaching equilibrium is incompatible with sustained cellular work. A door on the far side of the left slope unlocks. Through it, you can see a molecular motor, a membrane pump, and a polymer-building station waiting in three separate bays. ‘A favorable process becomes biologically useful when cells connect it to work,’ Nia says."
+      ],
+      "story_close": "The downhill exergonic path and uphill endergonic path remain fixed behind you as the tracker moves to a junction where favorable processes are connected directly to cellular work.",
+      "object_ids": [
+        "U3-K-068",
+        "U3-K-070",
+        "U3-K-071",
+        "U3-K-072"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-068",
+          "term": "Gibbs free energy",
+          "story": "the central free-energy reference locating reaction states by their capacity to perform work under specified conditions",
+          "science": "Gibbs free energy describes the portion of a system’s energy that can perform work under specified conditions.",
+          "exact_name": true,
+          "hint": "the central free-energy reference locating reaction states by their capacity to perform work under specified conditions"
+        },
+        {
+          "object_id": "U3-K-070",
+          "term": "Exergonic reaction",
+          "story": "the left reaction path descending toward lower free energy",
+          "science": "An exergonic reaction has a negative change in free energy and can proceed spontaneously in the thermodynamic sense; spontaneity does not imply a fast rate.",
+          "exact_name": true,
+          "hint": "the left reaction path descending toward lower free energy"
+        },
+        {
+          "object_id": "U3-K-071",
+          "term": "Endergonic reaction",
+          "story": "the right reaction path requiring coupling to reach a higher-free-energy product state",
+          "science": "An endergonic reaction has a positive change in free energy and requires coupling to an energy-releasing process to proceed in cells.",
+          "exact_name": true,
+          "hint": "the right reaction path requiring coupling to reach a higher-free-energy product state"
+        },
+        {
+          "object_id": "U3-K-072",
+          "term": "Cells remain out of equilibrium",
+          "story": "the living-cell model prevented from settling into equilibrium because sustained work requires continuing flows",
+          "science": "Living cells maintain flows of matter and energy and remain far from equilibrium; reaching equilibrium is incompatible with sustained cellular work.",
+          "exact_name": false,
+          "hint": "the living-cell model prevented from settling into equilibrium because sustained work requires continuing flows"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Gibbs free energy",
+          "meaning": "Gibbs free energy describes the portion of a system’s energy that can perform work under specified conditions.",
+          "image": "the central free-energy reference locating reaction states by their capacity to perform work under specified conditions"
+        },
+        {
+          "term": "Exergonic reaction",
+          "meaning": "An exergonic reaction has a negative change in free energy and can proceed spontaneously in the thermodynamic sense; spontaneity does not imply a fast rate.",
+          "image": "the left reaction path descending toward lower free energy"
+        },
+        {
+          "term": "Endergonic reaction",
+          "meaning": "An endergonic reaction has a positive change in free energy and requires coupling to an energy-releasing process to proceed in cells.",
+          "image": "the right reaction path requiring coupling to reach a higher-free-energy product state"
+        },
+        {
+          "term": "Cells remain out of equilibrium",
+          "meaning": "Living cells maintain flows of matter and energy and remain far from equilibrium; reaching equilibrium is incompatible with sustained cellular work.",
+          "image": "the living-cell model prevented from settling into equilibrium because sustained work requires continuing flows"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-068",
+      "checkpoint_prompt": "Which direction on the terrain is thermodynamically favorable without added energy?",
+      "checkpoint_answer": "The downhill exergonic direction, toward lower free energy.",
+      "checkpoint_hint": "Picture the free-energy terrain. The left path ends at a lower free-energy state, while the right path climbs and stalls without coupling.",
+      "next_locus": "Cellular Work Dock",
+      "misconception_guards": [
+        "Keep Gibbs free energy as a conceptual relationship; the AP scope guard prevents requiring memorization of the full ΔG equation.",
+        "Keep these confusable terms physically and verbally distinct: exergonic reaction, endergonic reaction.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-002; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "ENERGY_LANDSCAPE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "exergonic downhill path",
+          "free-energy/equilibrium reference",
+          "endergonic uphill path",
+          "Place paired reactions on a free-energy landscape, let one proceed downhill and another require uphill input, and keep an equilibrium reference visible so direction and cellular disequilibrium are distinct."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Gibbs free energy; Exergonic reaction; Endergonic reaction; Cells remain out of equilibrium."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Cellular Work Dock",
+      "title": "The Dock Where Energy Has to Do Something",
+      "scene_kicker": "The ledger has usable free energy, but the cell gains nothing until that energy is coupled to actual work.",
+      "location_description": "Cellular Work Dock — the three-bay work station where an energy-releasing process powers chemical, transport, and mechanical work.",
+      "scene_layout": {
+        "orientation": "You enter Cellular Work Dock and stop at the three-bay work station where an energy-releasing process powers chemical, transport, and mechanical work. On your left is mechanical-work bay; directly ahead is energy-coupling junction; on your right is transport and chemical-work bays. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Mechanical-work bay",
+            "symbol": "↔",
+            "description": "A molecular motor and a contractile filament model occupy the left bay and move only when the center coupling junction supplies usable energy."
+          },
+          {
+            "position": "center",
+            "label": "Energy-coupling junction",
+            "symbol": "⚙",
+            "description": "The central junction receives energy from a favorable process and routes that energy into work that would otherwise be thermodynamically unfavorable."
+          },
+          {
+            "position": "right",
+            "label": "Transport and chemical-work bays",
+            "symbol": "⇧",
+            "description": "A membrane pump and a polymer-building station occupy two fixed right-side platforms and activate from the same center coupling junction."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "energy-coupling junction",
+          "kind": "scientific mechanism",
+          "visual": "a transparent center coupling module that connects one energy-releasing process to a separate work-requiring process",
+          "job": "make energy coupling visible as a relationship between processes"
+        },
+        {
+          "name": "molecular motor",
+          "kind": "scientific example",
+          "visual": "a motor-protein model in the left bay that changes conformation and moves a load",
+          "job": "represent mechanical cellular work"
+        },
+        {
+          "name": "membrane pump and polymer station",
+          "kind": "scientific examples",
+          "visual": "a membrane transporter and a monomer-assembly bench on the right",
+          "job": "represent transport work and chemical work"
+        }
+      ],
+      "story_open": "You enter the **Cellular Work Dock** and stop at a three-bay station. On your **left**, a molecular motor grips a filament but does not move. Directly **ahead**, a transparent coupling junction waits between an energy-releasing process and the three work bays. On your **right**, a membrane pump faces an unfavorable concentration gradient beside a polymer-building bench. Nia sets the glowing tracker in the center junction. ‘Every living system requires an **energy input**,’ she says. ‘The next question is how cells connect that energy to tasks that need it.’",
+      "story_paragraphs": [
+        "You enter the **Cellular Work Dock** and stop at a three-bay station. On your **left**, a molecular motor grips a filament but does not move. Directly **ahead**, a transparent coupling junction waits between an energy-releasing process and the three work bays. On your **right**, a membrane pump faces an unfavorable concentration gradient beside a polymer-building bench. Nia sets the glowing tracker in the center junction. ‘Every living system requires an **energy input**,’ she says. ‘The next question is how cells connect that energy to tasks that need it.’",
+        "Nia activates an energy-releasing process at the center. The junction does not send an invisible force into the room. It couples a favorable chemical change to another process. The left motor changes conformation and pulls its load along the filament. Nia names this **mechanical cellular work**. Mechanical work includes processes such as ciliary movement, chromosome movement, and muscle contraction. The important feature is a physical change in position driven by molecular machinery.",
+        "She diverts the center coupling to the membrane pump on the **right**. Solute begins moving across the membrane in a direction that is not thermodynamically favored by the existing gradient. This is **transport work**, the movement of substances across membranes against thermodynamically favored directions. Then the polymer station activates beside it. Separate monomers are joined into a larger molecule through an endergonic synthesis process. Nia names this **chemical work**. Chemical work drives endergonic reactions such as polymer synthesis from monomers.",
+        "All three bays stop when Nia disconnects the center junction, even though the machines themselves are intact. She reconnects it and the work resumes. This relationship is **energy coupling**. Cellular processes that release energy can be coupled to processes that require energy. The room therefore turns the free-energy terrain into a working system. A favorable process can help drive an unfavorable one when the processes are chemically or mechanically coupled so the combined change can proceed.",
+        "The dock is operating, but its central junction is too large and cumbersome to carry from one cellular process to another. Nia opens a small molecular cabinet beside the exit. Inside sits one enlarged nucleotide with three phosphates and, beside it, an ADP model plus a separate inorganic phosphate. ‘Cells use several coupling mechanisms,’ she says. ‘One molecule is especially common as an immediate energy-coupling currency.’ You follow her into the assembly station."
+      ],
+      "story_close": "Mechanical, transport, and chemical work are now tied to energy coupling, and the next station introduces the molecular structure cells repeatedly use to make many of those couplings portable.",
+      "object_ids": [
+        "U3-K-014",
+        "U3-K-017",
+        "U3-K-073",
+        "U3-K-074",
+        "U3-K-075"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-014",
+          "term": "Energy input",
+          "story": "the work dock remaining inactive until usable energy enters the coupling junction",
+          "science": "All living systems require an input of energy.",
+          "exact_name": true,
+          "hint": "the work dock remaining inactive until usable energy enters the coupling junction"
+        },
+        {
+          "object_id": "U3-K-017",
+          "term": "Energy coupling",
+          "story": "the center coupling junction connecting an energy-releasing process to an energy-requiring process",
+          "science": "Cellular processes that release energy can be coupled to processes that require energy.",
+          "exact_name": true,
+          "hint": "the center coupling junction connecting an energy-releasing process to an energy-requiring process"
+        },
+        {
+          "object_id": "U3-K-073",
+          "term": "Mechanical cellular work",
+          "story": "the molecular motor moving a load in the left bay",
+          "science": "Mechanical work includes processes such as ciliary movement, chromosome movement, and muscle contraction.",
+          "exact_name": false,
+          "hint": "the molecular motor moving a load in the left bay"
+        },
+        {
+          "object_id": "U3-K-074",
+          "term": "Transport work",
+          "story": "the membrane pump moving solute against a thermodynamically favored direction",
+          "science": "Transport work moves substances across membranes against thermodynamically favored directions.",
+          "exact_name": false,
+          "hint": "the membrane pump moving solute against a thermodynamically favored direction"
+        },
+        {
+          "object_id": "U3-K-075",
+          "term": "Chemical work",
+          "story": "the polymer station using energy to drive biosynthetic chemical work",
+          "science": "Chemical work drives endergonic reactions such as synthesis of polymers from monomers.",
+          "exact_name": false,
+          "hint": "the polymer station using energy to drive biosynthetic chemical work"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Energy input",
+          "meaning": "All living systems require an input of energy.",
+          "image": "the work dock remaining inactive until usable energy enters the coupling junction"
+        },
+        {
+          "term": "Energy coupling",
+          "meaning": "Cellular processes that release energy can be coupled to processes that require energy.",
+          "image": "the center coupling junction connecting an energy-releasing process to an energy-requiring process"
+        },
+        {
+          "term": "Mechanical cellular work",
+          "meaning": "Mechanical work includes processes such as ciliary movement, chromosome movement, and muscle contraction.",
+          "image": "the molecular motor moving a load in the left bay"
+        },
+        {
+          "term": "Transport work",
+          "meaning": "Transport work moves substances across membranes against thermodynamically favored directions.",
+          "image": "the membrane pump moving solute against a thermodynamically favored direction"
+        },
+        {
+          "term": "Chemical work",
+          "meaning": "Chemical work drives endergonic reactions such as synthesis of polymers from monomers.",
+          "image": "the polymer station using energy to drive biosynthetic chemical work"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-017",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "ATP Structure Station",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: mechanical work, transport work, chemical work."
+      ],
+      "required_visual": {
+        "visual_mode": "ENERGY_COUPLING_WORK_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "mechanical-work bay",
+          "energy-coupling junction",
+          "transport and chemical-work bays",
+          "Use energy released at the center junction to drive mechanical movement, membrane transport, and chemical synthesis in three fixed bays."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Energy input; Energy coupling; Mechanical cellular work; Transport work; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 6,
+      "locus": "ATP Structure Station",
+      "title": "The Three-Phosphate Coupling Molecule",
+      "scene_kicker": "Before the hall can explain what ATP does, you have to be able to recognize what ATP actually is.",
+      "location_description": "ATP Structure Station — the enlarged ATP model beside ADP and inorganic phosphate.",
+      "scene_layout": {
+        "orientation": "You enter ATP Structure Station and stop at the enlarged ATP model beside ADP and inorganic phosphate. On your left is adenine-ribose body; directly ahead is triphosphate chain; on your right is ADP plus Pi comparison. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Adenine-ribose body",
+            "symbol": "AR",
+            "description": "A conventional adenine-plus-ribose model remains fixed on the left as the adenosine portion of ATP."
+          },
+          {
+            "position": "center",
+            "label": "Triphosphate chain",
+            "symbol": "P-P-P",
+            "description": "Three phosphate groups extend from the adenosine model at center so ATP structure is recognizable before hydrolysis is discussed."
+          },
+          {
+            "position": "right",
+            "label": "ADP plus inorganic phosphate comparison",
+            "symbol": "ADP + Pi",
+            "description": "A side-by-side ADP and inorganic phosphate model remains fixed on the right for direct structural comparison with ATP."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "ATP model",
+          "kind": "scientific structure",
+          "visual": "an enlarged conventional nucleotide model with adenine, ribose, and three phosphates",
+          "job": "establish ATP structure before any claim about hydrolysis or coupling"
+        },
+        {
+          "name": "ADP model",
+          "kind": "scientific comparison",
+          "visual": "the corresponding adenosine diphosphate model on the right",
+          "job": "make the structural change from ATP to ADP visible"
+        },
+        {
+          "name": "inorganic phosphate",
+          "kind": "scientific comparison",
+          "visual": "a separate Pi model beside ADP",
+          "job": "show the phosphate product or reactant involved in ATP cycling"
+        }
+      ],
+      "story_open": "The **ATP Structure Station** is bright and almost empty. On your **left**, an adenine ring system is attached to a ribose sugar. Directly **ahead**, three phosphate groups extend from that adenosine body in a conventional molecular model. On your **right**, an ADP model sits beside a separate inorganic phosphate labeled Pi. Nia leaves every piece stationary. ‘No metaphors yet,’ she says. ‘First learn the structure you will see in real diagrams.’",
+      "story_paragraphs": [
+        "The **ATP Structure Station** is bright and almost empty. On your **left**, an adenine ring system is attached to a ribose sugar. Directly **ahead**, three phosphate groups extend from that adenosine body in a conventional molecular model. On your **right**, an ADP model sits beside a separate inorganic phosphate labeled Pi. Nia leaves every piece stationary. ‘No metaphors yet,’ she says. ‘First learn the structure you will see in real diagrams.’",
+        "She points from adenine to ribose and then along the three phosphates. Together they form **adenosine triphosphate**, or **ATP**. ATP is a nucleotide used as an immediate energy-coupling molecule for many forms of cellular work. The structure explains the name. Adenosine is adenine plus ribose. Triphosphate indicates the chain of three phosphate groups. Nia rotates the model once so you can recognize the same components from another angle, then returns it to the fixed center position.",
+        "The right-side comparison now slides closer. ADP retains adenine, ribose, and two phosphates. Pi is shown separately. Nia labels the comparison **ATP structure** and leaves the three-part pattern visible. ATP contains adenine, ribose, and three phosphate groups. The station does not label one phosphate bond as a tiny packet of stored energy. The useful chemistry will come from the overall reaction and the different free-energy states of reactants and products.",
+        "Nia places miniature icons from the work dock beneath the ATP model. A motor, a membrane pump, and a synthesis reaction all light when ATP is connected to them. The icons do not claim that ATP is the only energy-coupling molecule in biology. They show why ATP is so useful as an immediate coupling molecule across many cellular processes. The enlarged molecular structure stays visible above the icons, keeping the name attached to a real nucleotide rather than to a vague symbol for energy.",
+        "A water molecule appears beside the center ATP model. The floor beneath the third phosphate opens into a forge where a complete reaction-energy display is waiting. Nia carries the same ATP model forward. ‘Now we can ask what hydrolysis does,’ she says, ‘and we can answer it without the shortcut that breaking a bond somehow releases energy by itself.’"
+      ],
+      "story_close": "ATP remains recognizable as adenine, ribose, and three phosphates while the molecule moves into the forge where its complete hydrolysis reaction and coupling chemistry can be watched.",
+      "object_ids": [
+        "U3-K-076",
+        "U3-K-077"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-076",
+          "term": "ATP",
+          "story": "the complete adenosine triphosphate molecule serving as an immediate energy-coupling molecule",
+          "science": "Adenosine triphosphate (ATP) is a nucleotide used as an immediate energy-coupling molecule for many forms of cellular work.",
+          "exact_name": true,
+          "hint": "the complete adenosine triphosphate molecule serving as an immediate energy-coupling molecule"
+        },
+        {
+          "object_id": "U3-K-077",
+          "term": "ATP structure",
+          "story": "adenine, ribose, and three phosphate groups arranged in conventional ATP structure",
+          "science": "ATP contains adenine, ribose, and three phosphate groups.",
+          "exact_name": false,
+          "hint": "adenine, ribose, and three phosphate groups arranged in conventional ATP structure"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "ATP",
+          "meaning": "Adenosine triphosphate (ATP) is a nucleotide used as an immediate energy-coupling molecule for many forms of cellular work.",
+          "image": "the complete adenosine triphosphate molecule serving as an immediate energy-coupling molecule"
+        },
+        {
+          "term": "ATP structure",
+          "meaning": "ATP contains adenine, ribose, and three phosphate groups.",
+          "image": "adenine, ribose, and three phosphate groups arranged in conventional ATP structure"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-076",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "ATP Hydrolysis Forge",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "MOLECULAR_STRUCTURE_MODEL",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "adenine-ribose body",
+          "triphosphate chain",
+          "ADP plus Pi comparison",
+          "Assemble ATP from adenine, ribose, and three phosphate groups, then place it beside ADP plus inorganic phosphate so structural differences are visible before energy coupling is discussed."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: ATP; ATP structure."
+    },
+    {
+      "scene_index": 7,
+      "locus": "ATP Hydrolysis Forge",
+      "title": "The Forge That Exposes the ATP Shortcut",
+      "scene_kicker": "The hall’s old sign says energy bursts out when a phosphate bond breaks. Nia makes you test the entire reaction instead.",
+      "location_description": "ATP Hydrolysis Forge — the coupling forge where ATP hydrolysis changes reactant free energy through phosphorylation.",
+      "scene_layout": {
+        "orientation": "You enter ATP Hydrolysis Forge and stop at the coupling forge where ATP hydrolysis changes reactant free energy through phosphorylation. On your left is ATP hydrolysis input; directly ahead is coupling/phosphorylation forge; on your right is altered phosphorylated target. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "ATP hydrolysis input",
+            "symbol": "ATP + H₂O",
+            "description": "ATP and water enter from the left while an energy profile records the free-energy state before reaction."
+          },
+          {
+            "position": "center",
+            "label": "Coupling and phosphorylation forge",
+            "symbol": "⇢Pi",
+            "description": "The central forge can either display ATP hydrolysis to ADP plus inorganic phosphate or transfer a phosphate group directly to a target in a coupled reaction."
+          },
+          {
+            "position": "right",
+            "label": "Altered phosphorylated target",
+            "symbol": "P-target",
+            "description": "A target molecule or protein remains fixed on the right so the learner can see how phosphorylation changes its free energy, reactivity, or conformation."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "ATP and water",
+          "kind": "scientific inputs",
+          "visual": "conventional ATP and H₂O molecular models entering the left side of the forge",
+          "job": "undergo the complete hydrolysis reaction whose products have lower free energy"
+        },
+        {
+          "name": "phosphate-transfer arm",
+          "kind": "scientific mechanism",
+          "visual": "a central reaction display that can transfer ATP-derived phosphate to a target molecule",
+          "job": "show phosphorylation as a chemical change that can alter target behavior"
+        },
+        {
+          "name": "target molecule",
+          "kind": "scientific output",
+          "visual": "a conventional molecule or protein model on the right with a visible phosphate-attachment site",
+          "job": "show how ATP-driven phosphorylation can change reactivity, free energy, or conformation"
+        }
+      ],
+      "story_open": "You enter the **ATP Hydrolysis Forge**. On your **left**, a conventional ATP molecule and water wait above an input tray. Directly **ahead**, a transparent reaction chamber shows bond changes and a free-energy trace. On your **right**, a target molecule rests beneath a phosphate-attachment arm. An old sign above the forge flashes ENERGY RELEASED WHEN PHOSPHATE BOND BREAKS. Nia switches the sign off. ‘A bond does not hand you energy merely because you break it,’ she says. ‘Track the complete chemical change.’",
+      "story_paragraphs": [
+        "You enter the **ATP Hydrolysis Forge**. On your **left**, a conventional ATP molecule and water wait above an input tray. Directly **ahead**, a transparent reaction chamber shows bond changes and a free-energy trace. On your **right**, a target molecule rests beneath a phosphate-attachment arm. An old sign above the forge flashes ENERGY RELEASED WHEN PHOSPHATE BOND BREAKS. Nia switches the sign off. ‘A bond does not hand you energy merely because you break it,’ she says. ‘Track the complete chemical change.’",
+        "ATP and water enter the center chamber. The reaction produces ADP and inorganic phosphate. The free-energy trace finishes lower than it began under cellular conditions. Nia names the full process **ATP hydrolysis**. ATP hydrolysis converts ATP and water to ADP and inorganic phosphate and has a negative free-energy change under cellular conditions. She pauses the chamber at the instant a bond is being broken. Energy is required to break chemical bonds. The favorable net result comes from the entire set of bond changes, product stabilization, and interactions that leave the products at lower free energy than ATP plus water.",
+        "Nia labels that correction **ATP hydrolysis energy source**. Energy released by ATP hydrolysis comes from the overall chemical change to lower-free-energy products, not from energy released by breaking a phosphate bond itself. The free-energy terrain from the earlier room appears faintly behind the forge. ATP hydrolysis is an exergonic process in this cellular context. That makes it useful for coupling when the chemistry links it to an endergonic target process.",
+        "The right-side target now enters the reaction. In one coupled demonstration, a phosphate group derived from ATP is transferred directly to the target while ATP becomes ADP. Nia names the chemical change **phosphorylation**, the transfer or addition of a phosphate group to a molecule. The target’s shape and free-energy state change after the phosphate is attached. ATP-driven phosphorylation can alter a molecule’s reactivity, free energy, or protein conformation. A second target uses the changed phosphorylation state to drive a process that would not proceed on its own.",
+        "The forge links the two reactions into one combined process. Nia names this **ATP energy coupling**. Cells couple exergonic ATP hydrolysis to endergonic cellular processes so the combined process can proceed. She leaves ATP, ADP, Pi, and the phosphorylated target all visible at once. The door beyond the forge does not lead to a warehouse of preloaded ATP. It leads to a wheel turning ADP and phosphate back into ATP. ‘A cell cannot spend ATP once and be finished,’ she says. ‘It has to regenerate it continuously.’"
+      ],
+      "story_close": "The old bond-breaking shortcut is gone, and ATP hydrolysis is now connected to lower-free-energy products, phosphorylation, and coupled cellular work before ADP and Pi move into the regeneration wheel.",
+      "object_ids": [
+        "U3-K-078",
+        "U3-K-079",
+        "U3-K-080",
+        "U3-K-081"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-078",
+          "term": "ATP hydrolysis",
+          "story": "ATP plus water becoming ADP plus inorganic phosphate with a negative free-energy change",
+          "science": "ATP hydrolysis converts ATP and water to ADP and inorganic phosphate and has a negative free-energy change under cellular conditions.",
+          "exact_name": true,
+          "hint": "ATP plus water becoming ADP plus inorganic phosphate with a negative free-energy change"
+        },
+        {
+          "object_id": "U3-K-079",
+          "term": "ATP hydrolysis energy source",
+          "story": "the complete hydrolysis reaction ending with lower-free-energy products instead of a fictional burst from one broken bond",
+          "science": "Energy released by ATP hydrolysis comes from the overall chemical change to lower-free-energy products, not from energy released by breaking a phosphate bond itself.",
+          "exact_name": false,
+          "hint": "the complete hydrolysis reaction ending with lower-free-energy products instead of a fictional burst from one broken bond"
+        },
+        {
+          "object_id": "U3-K-080",
+          "term": "ATP energy coupling",
+          "story": "ATP hydrolysis chemically coupled to an endergonic cellular process so the combined process proceeds",
+          "science": "Cells couple exergonic ATP hydrolysis to endergonic cellular processes so the combined process can proceed.",
+          "exact_name": false,
+          "hint": "ATP hydrolysis chemically coupled to an endergonic cellular process so the combined process proceeds"
+        },
+        {
+          "object_id": "U3-K-081",
+          "term": "Phosphorylation",
+          "story": "a phosphate group transferred to a target molecule and altering its chemical state",
+          "science": "Phosphorylation is transfer or addition of a phosphate group to a molecule; ATP-driven phosphorylation can alter a molecule’s reactivity, free energy, or protein conformation.",
+          "exact_name": true,
+          "hint": "a phosphate group transferred to a target molecule and altering its chemical state"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "ATP hydrolysis",
+          "meaning": "ATP hydrolysis converts ATP and water to ADP and inorganic phosphate and has a negative free-energy change under cellular conditions.",
+          "image": "ATP plus water becoming ADP plus inorganic phosphate with a negative free-energy change"
+        },
+        {
+          "term": "ATP hydrolysis energy source",
+          "meaning": "Energy released by ATP hydrolysis comes from the overall chemical change to lower-free-energy products, not from energy released by breaking a phosphate bond itself.",
+          "image": "the complete hydrolysis reaction ending with lower-free-energy products instead of a fictional burst from one broken bond"
+        },
+        {
+          "term": "ATP energy coupling",
+          "meaning": "Cells couple exergonic ATP hydrolysis to endergonic cellular processes so the combined process can proceed.",
+          "image": "ATP hydrolysis chemically coupled to an endergonic cellular process so the combined process proceeds"
+        },
+        {
+          "term": "Phosphorylation",
+          "meaning": "Phosphorylation is transfer or addition of a phosphate group to a molecule; ATP-driven phosphorylation can alter a molecule’s reactivity, free energy, or protein conformation.",
+          "image": "a phosphate group transferred to a target molecule and altering its chemical state"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-078",
+      "checkpoint_prompt": "What actually makes ATP hydrolysis useful for coupling in this forge?",
+      "checkpoint_answer": "The overall hydrolysis reaction leads to lower-free-energy products and can be coupled to phosphorylation or other work.",
+      "checkpoint_hint": "Picture the whole forge reaction. ATP and water enter, lower-free-energy products emerge, and a phosphate can be transferred to a target during coupling.",
+      "next_locus": "ATP Regeneration Wheel",
+      "misconception_guards": [
+        "Do not say ATP releases energy merely because a phosphate bond is broken; net hydrolysis is favorable because the products are at lower free energy than ATP plus water.",
+        "Keep these confusable terms physically and verbally distinct: ATP hydrolysis, phosphorylation, ATP regeneration.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-001; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "COUPLED_REACTION_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "ATP hydrolysis input",
+          "coupling/phosphorylation forge",
+          "altered phosphorylated target",
+          "Hydrolyze ATP while tracking the full reaction to lower-free-energy products, transfer a phosphate to a target when appropriate, and show how phosphorylation changes the target or coupled reaction."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: ATP hydrolysis; ATP hydrolysis energy source; ATP energy coupling; Phosphorylation."
+    },
+    {
+      "scene_index": 8,
+      "locus": "ATP Regeneration Wheel",
+      "title": "The Wheel That Never Gets to Stop",
+      "scene_kicker": "ATP is useful only if the cell can continually rebuild it from the products left after ATP use.",
+      "location_description": "ATP Regeneration Wheel — the continuously turning ATP/ADP cycle driven by energy from catabolic processes and consumed by cellular work.",
+      "scene_layout": {
+        "orientation": "You enter ATP Regeneration Wheel and stop at the continuously turning ATP/ADP cycle driven by energy from catabolic processes and consumed by cellular work. On your left is ADP plus Pi return path; directly ahead is ATP regeneration wheel; on your right is ATP use for cellular work. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "ADP plus Pi return path",
+            "symbol": "ADP + Pi",
+            "description": "ADP and inorganic phosphate return from completed cellular work along a fixed left-side track."
+          },
+          {
+            "position": "center",
+            "label": "ATP regeneration wheel",
+            "symbol": "↻",
+            "description": "A central wheel uses energy released by exergonic processes to reform ATP from ADP and inorganic phosphate."
+          },
+          {
+            "position": "right",
+            "label": "ATP use for cellular work",
+            "symbol": "ATP→work",
+            "description": "Newly regenerated ATP exits on the right toward chemical, transport, and mechanical work before returning as ADP and phosphate."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "ADP and Pi return stream",
+          "kind": "continuity input",
+          "visual": "ADP and inorganic phosphate models returning from the work dock",
+          "job": "provide the substrates for ATP regeneration"
+        },
+        {
+          "name": "catabolic energy feed",
+          "kind": "scientific input",
+          "visual": "a separate center-side conduit carrying usable energy released by exergonic catabolic reactions",
+          "job": "drive ATP regeneration without implying that ATP is created from nothing"
+        },
+        {
+          "name": "ATP output stream",
+          "kind": "scientific output",
+          "visual": "fresh ATP models leaving the wheel toward cellular work",
+          "job": "show continuous ATP turnover and reuse of ADP and phosphate"
+        }
+      ],
+      "story_open": "The **ATP Regeneration Wheel** fills the next chamber. On your **left**, ADP and inorganic phosphate return along a metal track from the work dock and hydrolysis forge. Directly **ahead**, the large regeneration wheel has two input ports. One accepts ADP plus Pi. The other receives usable energy released by exergonic processes such as catabolic reactions. On your **right**, newly formed ATP exits toward cellular work. The wheel is already turning when you arrive.",
+      "story_paragraphs": [
+        "The **ATP Regeneration Wheel** fills the next chamber. On your **left**, ADP and inorganic phosphate return along a metal track from the work dock and hydrolysis forge. Directly **ahead**, the large regeneration wheel has two input ports. One accepts ADP plus Pi. The other receives usable energy released by exergonic processes such as catabolic reactions. On your **right**, newly formed ATP exits toward cellular work. The wheel is already turning when you arrive.",
+        "Nia sends one ATP molecule from the right toward a work station. After ATP is used in a coupled reaction, ADP and phosphate return along the left track. The center wheel then uses energy from an exergonic process to drive the endergonic formation of ATP from ADP and Pi. Fresh ATP leaves on the right and enters another round of work. The same pattern repeats. Nia names it the **ATP regeneration cycle**. ATP is continually regenerated from ADP and inorganic phosphate using energy released by exergonic processes.",
+        "She slows the wheel so you can see the accounting. ATP hydrolysis and ATP regeneration are opposite parts of a cycle, and they are powered in opposite thermodynamic directions. Hydrolysis can help drive cellular work. Regeneration requires an energy input. The cell therefore does not create ATP energy from nothing and does not treat ATP as a permanent storage vault. ATP is continually turned over as an immediate coupling molecule.",
+        "Nia stops one ATP model on the right and traces its short route. It enters a cellular process, becomes ADP plus Pi, returns on the left track, and is rebuilt at the center wheel using energy supplied by another exergonic process. Then she releases it for another cycle. The same molecules do not have to follow one literal circular track inside a cell. The wheel is a bookkeeping model that keeps ATP use and ATP regeneration connected in one repeatable relationship.",
+        "The glowing tracker from the first metabolism map returns to the center wheel. It enters with the energy supplied by catabolic processes, then follows ATP toward cellular work, then reappears in the ledger as energy changes form and disperses. Nia leaves the wheel turning and opens the final archive door. Inside are pathway records from bacteria, archaea, and eukaryotes. ‘This logic is older than any one organelle,’ she says. ‘Now compare how widely it is conserved.’"
+      ],
+      "story_close": "ADP, Pi, exergonic energy input, ATP regeneration, and cellular work now form one continuous cycle, which leads directly into an archive comparing the same core energy logic across life.",
+      "object_ids": [
+        "U3-K-082"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-082",
+          "term": "ATP regeneration cycle",
+          "story": "the wheel repeatedly using exergonic energy to reform ATP from ADP and inorganic phosphate",
+          "science": "ATP is continually regenerated from ADP and inorganic phosphate using energy released by exergonic processes.",
+          "exact_name": false,
+          "hint": "the wheel repeatedly using exergonic energy to reform ATP from ADP and inorganic phosphate"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "ATP regeneration cycle",
+          "meaning": "ATP is continually regenerated from ADP and inorganic phosphate using energy released by exergonic processes.",
+          "image": "the wheel repeatedly using exergonic energy to reform ATP from ADP and inorganic phosphate"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-082",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Conserved Metabolism Archive",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: ATP hydrolysis, phosphorylation, ATP regeneration."
+      ],
+      "required_visual": {
+        "visual_mode": "ENERGY_CYCLE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "ADP plus Pi return path",
+          "ATP regeneration wheel",
+          "ATP use for cellular work",
+          "Cycle ATP to ADP plus phosphate during cellular work, then use energy from catabolic processes to regenerate ATP continuously."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: ATP regeneration cycle."
+    },
+    {
+      "scene_index": 9,
+      "locus": "Conserved Metabolism Archive",
+      "title": "The Archive Where Different Cells Share the Same Old Logic",
+      "scene_kicker": "The final question is whether the energy system you rebuilt is unique to one kind of cell or part of a much older biological inheritance.",
+      "location_description": "Conserved Metabolism Archive — the cross-species pathway archive showing shared core metabolic logic in diverse organisms.",
+      "scene_layout": {
+        "orientation": "You enter Conserved Metabolism Archive and stop at the cross-species pathway archive showing shared core metabolic logic in diverse organisms. On your left is prokaryotic pathway record; directly ahead is conserved core reactions display; on your right is eukaryotic pathway record. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Prokaryotic pathway record",
+            "symbol": "B/A",
+            "description": "Bacterial and archaeal records occupy the fixed left archive and show core energy pathways operating without mitochondria."
+          },
+          {
+            "position": "center",
+            "label": "Conserved core reactions display",
+            "symbol": "∞",
+            "description": "A central overlay highlights shared pathway logic such as glycolysis and chemiosmotic ATP production across deeply separated lineages."
+          },
+          {
+            "position": "right",
+            "label": "Eukaryotic pathway record",
+            "symbol": "E",
+            "description": "A eukaryotic record remains fixed on the right and shows the same core logic organized within eukaryotic cellular compartments."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing energy-flow, reaction, and ATP-coupling models",
+          "job": "Nia keeps the energy hall spatially stable, makes each energy transformation visible, asks you to track where usable energy goes, and names scientific terms only after the relationship is clear."
+        },
+        {
+          "name": "bacterial and archaeal records",
+          "kind": "evolutionary evidence",
+          "visual": "left-side pathway diagrams from bacterial and archaeal cells with conventional membrane and cytosolic locations",
+          "job": "show core metabolic logic in prokaryotic lineages"
+        },
+        {
+          "name": "eukaryotic record",
+          "kind": "evolutionary evidence",
+          "visual": "a right-side pathway diagram with glycolysis in cytosol and oxidative phosphorylation associated with mitochondria",
+          "job": "show comparable core metabolic logic in eukaryotes"
+        },
+        {
+          "name": "conserved overlay",
+          "kind": "scientific comparison",
+          "visual": "a transparent center overlay that aligns homologous pathway logic across all three domains",
+          "job": "highlight conservation consistent with common ancestry"
+        }
+      ],
+      "story_open": "The **Conserved Metabolism Archive** is the quietest room in the hall. On your **left**, pathway records from bacterial and archaeal cells are projected onto a broad screen. Directly **ahead**, a transparent overlay waits to align equivalent pieces of metabolic logic. On your **right**, a eukaryotic record shows cytosolic reactions and mitochondrial energy transformations. Nia places the glowing tracker at the center overlay and removes every decorative symbol from the display. Only the scientific pathway relationships remain.",
+      "story_paragraphs": [
+        "The **Conserved Metabolism Archive** is the quietest room in the hall. On your **left**, pathway records from bacterial and archaeal cells are projected onto a broad screen. Directly **ahead**, a transparent overlay waits to align equivalent pieces of metabolic logic. On your **right**, a eukaryotic record shows cytosolic reactions and mitochondrial energy transformations. Nia places the glowing tracker at the center overlay and removes every decorative symbol from the display. Only the scientific pathway relationships remain.",
+        "She begins with glycolytic logic. The records differ in cellular context and detail, yet central steps of glucose breakdown and energy capture can be aligned across deeply separated lineages. The overlay then shifts to chemiosmotic ATP production. Bacteria can establish proton gradients across their plasma membrane. Eukaryotic cells carry out oxidative phosphorylation across the inner mitochondrial membrane. The membrane locations differ, yet the core logic of electron transport, proton gradients, and ATP synthase can be compared across lineages.",
+        "Nia names the pattern **conserved core metabolism**. Core metabolic pathways such as glycolysis and oxidative phosphorylation are conserved across Archaea, Bacteria, and Eukarya, supporting common ancestry. The archive does not claim that every metabolic detail is identical in every organism. It highlights deeply shared pathway logic that persists despite enormous evolutionary divergence.",
+        "The wall behind you now reconstructs the entire Cellular Energy Exchange Hall. Catabolic and anabolic routes reappear first. Energy changes form. The first law balances the total. The second law remains visible as energy disperses and total entropy increases. Exergonic processes connect to endergonic work. ATP cycles between hydrolysis and regeneration. Finally, the conserved archive places these processes inside evolutionary history. The hall’s dark ledger turns green from end to end.",
+        "Nia picks up her tablet and turns toward a glass corridor filled with green light. At its far end you can see chloroplasts, pigment spectra, thylakoid membranes, and two photosystems waiting in sequence. ‘You now have the accounting rules,’ she says. ‘Next we follow a real biological system that captures incoming light energy and converts it into chemical forms a cell can use.’ The doors to the **Light Capture Conservatory** unlock."
+      ],
+      "story_close": "The energy ledger now connects metabolism, thermodynamics, free energy, work, ATP cycling, and evolutionary conservation, creating the conceptual foundation for photosynthesis and respiration.",
+      "object_ids": [
+        "U3-K-021"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-021",
+          "term": "Conserved core metabolism",
+          "story": "the center overlay aligning conserved metabolic logic across bacterial, archaeal, and eukaryotic records",
+          "science": "Core metabolic pathways such as glycolysis and oxidative phosphorylation are conserved across Archaea, Bacteria, and Eukarya, supporting common ancestry.",
+          "exact_name": true,
+          "hint": "the center overlay aligning conserved metabolic logic across bacterial, archaeal, and eukaryotic records"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Conserved core metabolism",
+          "meaning": "Core metabolic pathways such as glycolysis and oxidative phosphorylation are conserved across Archaea, Bacteria, and Eukarya, supporting common ancestry.",
+          "image": "the center overlay aligning conserved metabolic logic across bacterial, archaeal, and eukaryotic records"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-021",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "EVOLUTIONARY_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "prokaryotic pathway record",
+          "conserved core reactions display",
+          "eukaryotic pathway record",
+          "Overlay core metabolic reactions from prokaryotic and eukaryotic records and highlight the shared logic that persists across deeply separated lineages."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Conserved core metabolism."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4C",
+  "narrative_standard": "V2-NARRATIVE-3.0-U3-F4C"
+}

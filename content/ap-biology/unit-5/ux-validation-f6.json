@@ -1,0 +1,104 @@
+{
+  "schema": "memory-palace-v2-unit5-f6-browser-classroom-validation-1.0",
+  "unit_id": "unit-5",
+  "stage": "F6",
+  "release_status": "STUDENT_READY_F6_VALIDATED",
+  "curriculum_content_changed": false,
+  "canonical_records": 152,
+  "guided_journeys": 8,
+  "scenes_validated": 50,
+  "recall_scenes_validated": 18,
+  "runtime_memory_objects": 131,
+  "challenge_lab_items": 16,
+  "scope_guards": 5,
+  "exact_name_review_targets": 130,
+  "mixed_discrimination_sets": 32,
+  "mixed_discrimination_questions": 79,
+  "target_viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "tablet",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "browser_facing_validation": {
+    "validation_mode": "runtime HTML render + state-machine interaction QA + responsive CSS contract + live FastAPI smoke",
+    "scene_render_checks": 50,
+    "recall_render_checks": 18,
+    "scene_viewport_contract_checks": 150,
+    "recall_viewport_contract_checks": 54,
+    "route_lengths": [
+      5,
+      10,
+      4,
+      7,
+      4,
+      7,
+      6,
+      7
+    ],
+    "scene_geometry_findings": 0,
+    "recall_content_leak_findings": 0,
+    "broken_interpolation_findings": 0,
+    "unit_switch_findings": 0,
+    "refresh_resume_findings": 0,
+    "review_scheduler_findings": 0,
+    "mixed_review_findings": 0,
+    "challenge_lab_findings": 0,
+    "result": "PASS",
+    "pixel_screenshot_validation": "NOT_EXECUTED_IN_THIS_CONTAINER",
+    "pixel_screenshot_note": "The installed Chromium executable times out even on an about:blank headless render in this sandbox. F6 therefore records functional browser-facing and responsive-contract validation without claiming screenshot or pixel validation."
+  },
+  "f6_runtime_fixes": [
+    {
+      "id": "U5-F6-AUDIO-001",
+      "finding": "Browser speech synthesis could read frequent Unit 5 genetics and statistics notation awkwardly or ambiguously.",
+      "resolution": "Speech-only normalization now covers RNA, F1, F2, XX, XY, ABO, IA, IB, UV, HBB, 2n, chi-square notation, and common genotype strings such as AA, Aa, aa, and AaBb without changing visible scientific text."
+    }
+  ],
+  "review_validation": {
+    "exact_name_targets": 130,
+    "mixed_sets": 32,
+    "mixed_questions": 79,
+    "visible_due_limit": 5,
+    "mixed_initial_delay_hours_minimum": 48,
+    "unit_scoped_review_isolation": true,
+    "hinted_review_continuation": true,
+    "non_exact_palace_records": 1
+  },
+  "first_exposure_policy": {
+    "story_first": true,
+    "optional_quick_recall": true,
+    "memory_anchors_collapsed_by_default": true,
+    "recall_hides_story_location_route_cast_and_anchors": true
+  },
+  "resume_validation": {
+    "active_unit_persists": true,
+    "active_journey_persists": true,
+    "scene_index_persists": true,
+    "refresh_returns_to_home_with_continue_action": true
+  },
+  "f5_lock_sha256": "7138a2e755f69c2cdb91c8aacce4e389e97745405cd91a4e04b2fc8654a7b860",
+  "runtime_file_sha256": {
+    "backend/main.py": "fca926f3049f331d247702ac5574b7cf2dc26bce0e032940cd3001b21e441160",
+    "frontend/js/app.js": "acfe768150cacd609e3726dabe44f5cb8b895712113e9ba49e1d4e94faccdd65",
+    "frontend/js/api.js": "7ea249133a6514e49adab56784988954cdea8456f9c40fb5af179e32771f7e44",
+    "frontend/js/audio.js": "985dfa9038036bc9f55cbcda6c7b4b1e6cb24e36098e8dc23d371858de899ca0",
+    "frontend/js/state.js": "35d3828dc39236fa19abe8db71ae6fa32acc331c35a3a8876e925039362549c9",
+    "frontend/js/views/home.js": "eab63293f3aec59fe3843f4f463da82d53a270dcb14674390677eb1f4b9d7006",
+    "frontend/js/views/learn.js": "57489f35dc6fcf021fb639bd05c4cac3f00b37233012c5f1754d5633f0604070",
+    "frontend/js/views/review.js": "dbe4009c72dee6c9e6cf433402a8fc856c8b9612a15be503e6ccd75a59e38c63",
+    "frontend/js/views/practice.js": "9189c8ee87853b0ccf35837531e9c9e25467bd2e97595d2e74dad19737b719a4"
+  },
+  "next_gate": "Begin Unit 6 source inventory, scientific atomization, AP scope mapping, conflict/misconception audit, and canonical scientific lock before any Unit 6 palace or narrative generation."
+}

@@ -1,0 +1,771 @@
+{
+  "schema": "memory-palace-v2-unit2-f5-mixed-discrimination-1.0",
+  "unit_id": "unit-2",
+  "set_count": 17,
+  "question_count": 44,
+  "sets": [
+    {
+      "set_id": "U2-CF-01",
+      "title": "Cell organization",
+      "knowledge_ids": [
+        "U2-K-068",
+        "U2-K-069"
+      ],
+      "terms": [
+        "prokaryotic cell",
+        "eukaryotic cell"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-01-Q01",
+          "prompt": "A cell has DNA in a nucleoid region and lacks a membrane-bound nucleus.",
+          "choices": [
+            "prokaryotic cell",
+            "eukaryotic cell"
+          ],
+          "answer": "prokaryotic cell",
+          "explanation": "A prokaryotic cell lacks a membrane-bound nucleus."
+        },
+        {
+          "question_id": "U2-CF-01-Q02",
+          "prompt": "A cell encloses its DNA in a nucleus and contains membrane-bound organelles.",
+          "choices": [
+            "prokaryotic cell",
+            "eukaryotic cell"
+          ],
+          "answer": "eukaryotic cell",
+          "explanation": "A eukaryotic cell contains a nucleus and membrane-bound organelles."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-02",
+      "title": "Ribosome location and destination",
+      "knowledge_ids": [
+        "U2-K-073",
+        "U2-K-074"
+      ],
+      "terms": [
+        "free ribosomes",
+        "bound ribosomes"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-02-Q01",
+          "prompt": "These ribosomes generally make proteins that function in the cytosol.",
+          "choices": [
+            "free ribosomes",
+            "bound ribosomes"
+          ],
+          "answer": "free ribosomes",
+          "explanation": "Free ribosomes are suspended in the cytosol and commonly make proteins used there."
+        },
+        {
+          "question_id": "U2-CF-02-Q02",
+          "prompt": "These ribosomes are attached to rough ER or the nuclear envelope and commonly make proteins for secretion or membranes.",
+          "choices": [
+            "free ribosomes",
+            "bound ribosomes"
+          ],
+          "answer": "bound ribosomes",
+          "explanation": "Bound ribosomes direct newly made proteins into the endomembrane pathway."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-03",
+      "title": "ER identity",
+      "knowledge_ids": [
+        "U2-K-007",
+        "U2-K-008"
+      ],
+      "terms": [
+        "rough ER",
+        "smooth ER"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-03-Q01",
+          "prompt": "This membrane network has ribosomes attached and handles proteins entering the endomembrane pathway.",
+          "choices": [
+            "rough ER",
+            "smooth ER"
+          ],
+          "answer": "rough ER",
+          "explanation": "Rough ER has bound ribosomes and participates in protein processing and membrane production."
+        },
+        {
+          "question_id": "U2-CF-03-Q02",
+          "prompt": "This membrane network lacks bound ribosomes and is associated with lipid synthesis, detoxification, and carbohydrate metabolism.",
+          "choices": [
+            "rough ER",
+            "smooth ER"
+          ],
+          "answer": "smooth ER",
+          "explanation": "Smooth ER lacks bound ribosomes and performs these metabolic functions."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-04",
+      "title": "Golgi directionality",
+      "knowledge_ids": [
+        "U2-K-077",
+        "U2-K-078"
+      ],
+      "terms": [
+        "cis face",
+        "trans face"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-04-Q01",
+          "prompt": "This side of the Golgi receives incoming transport vesicles from the ER.",
+          "choices": [
+            "cis face",
+            "trans face"
+          ],
+          "answer": "cis face",
+          "explanation": "The cis face is the receiving side."
+        },
+        {
+          "question_id": "U2-CF-04-Q02",
+          "prompt": "This side sorts and dispatches vesicles toward other destinations.",
+          "choices": [
+            "cis face",
+            "trans face"
+          ],
+          "answer": "trans face",
+          "explanation": "The trans face is the shipping side."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-05",
+      "title": "Digestive versus oxidative organelles",
+      "knowledge_ids": [
+        "U2-K-014",
+        "U2-K-081"
+      ],
+      "terms": [
+        "lysosome",
+        "peroxisome"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-05-Q01",
+          "prompt": "This acidic digestive compartment contains hydrolytic enzymes and participates in breakdown and recycling.",
+          "choices": [
+            "lysosome",
+            "peroxisome"
+          ],
+          "answer": "lysosome",
+          "explanation": "Lysosomes digest macromolecules and damaged material with hydrolytic enzymes."
+        },
+        {
+          "question_id": "U2-CF-05-Q02",
+          "prompt": "This organelle carries out oxidative reactions and contains enzymes such as catalase that handle hydrogen peroxide.",
+          "choices": [
+            "lysosome",
+            "peroxisome"
+          ],
+          "answer": "peroxisome",
+          "explanation": "Peroxisomes perform oxidative chemistry and manage hydrogen peroxide."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-06",
+      "title": "Cytoskeletal elements",
+      "knowledge_ids": [
+        "U2-K-093",
+        "U2-K-095",
+        "U2-K-096"
+      ],
+      "terms": [
+        "microtubule",
+        "microfilament / actin filament",
+        "intermediate filament"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-06-Q01",
+          "prompt": "This hollow cytoskeletal element forms tracks for motor proteins and contributes to the mitotic spindle.",
+          "choices": [
+            "microtubule",
+            "microfilament / actin filament",
+            "intermediate filament"
+          ],
+          "answer": "microtubule",
+          "explanation": "Microtubules are hollow tubulin structures used in transport and chromosome movement."
+        },
+        {
+          "question_id": "U2-CF-06-Q02",
+          "prompt": "This thin actin-based element supports cell shape changes, contraction, and cell crawling.",
+          "choices": [
+            "microtubule",
+            "microfilament / actin filament",
+            "intermediate filament"
+          ],
+          "answer": "microfilament / actin filament",
+          "explanation": "Microfilaments are actin filaments involved in shape and movement."
+        },
+        {
+          "question_id": "U2-CF-06-Q03",
+          "prompt": "This rope-like element provides durable mechanical strength and helps stabilize cell structure.",
+          "choices": [
+            "microtubule",
+            "microfilament / actin filament",
+            "intermediate filament"
+          ],
+          "answer": "intermediate filament",
+          "explanation": "Intermediate filaments provide tensile strength and structural stability."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-07",
+      "title": "Chloroplast internal structures",
+      "knowledge_ids": [
+        "U2-K-088",
+        "U2-K-089",
+        "U2-K-090"
+      ],
+      "terms": [
+        "thylakoid",
+        "granum",
+        "stroma"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-07-Q01",
+          "prompt": "This is one flattened membrane sac whose membrane contains chlorophyll and supports light-dependent reactions.",
+          "choices": [
+            "thylakoid",
+            "granum",
+            "stroma"
+          ],
+          "answer": "thylakoid",
+          "explanation": "A thylakoid is an individual membrane sac."
+        },
+        {
+          "question_id": "U2-CF-07-Q02",
+          "prompt": "This is a stack of thylakoids.",
+          "choices": [
+            "thylakoid",
+            "granum",
+            "stroma"
+          ],
+          "answer": "granum",
+          "explanation": "A granum is a stack of thylakoid membrane sacs inside a chloroplast."
+        },
+        {
+          "question_id": "U2-CF-07-Q03",
+          "prompt": "This fluid region surrounds thylakoids and contains enzymes used in the Calvin cycle.",
+          "choices": [
+            "thylakoid",
+            "granum",
+            "stroma"
+          ],
+          "answer": "stroma",
+          "explanation": "The stroma is the chloroplast fluid outside the thylakoids."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-08",
+      "title": "Membrane protein placement",
+      "knowledge_ids": [
+        "U2-K-101",
+        "U2-K-102"
+      ],
+      "terms": [
+        "integral membrane protein",
+        "peripheral membrane protein",
+        "transmembrane protein"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-08-Q01",
+          "prompt": "This protein penetrates the hydrophobic interior of the bilayer but does not necessarily cross the whole membrane.",
+          "choices": [
+            "integral membrane protein",
+            "peripheral membrane protein",
+            "transmembrane protein"
+          ],
+          "answer": "integral membrane protein",
+          "explanation": "Integral proteins penetrate the bilayer; some are transmembrane and some are not."
+        },
+        {
+          "question_id": "U2-CF-08-Q02",
+          "prompt": "This protein is loosely attached to the membrane surface or to exposed portions of another protein.",
+          "choices": [
+            "integral membrane protein",
+            "peripheral membrane protein",
+            "transmembrane protein"
+          ],
+          "answer": "peripheral membrane protein",
+          "explanation": "Peripheral proteins remain associated with the membrane surface."
+        },
+        {
+          "question_id": "U2-CF-08-Q03",
+          "prompt": "This integral protein spans the bilayer from one side to the other.",
+          "choices": [
+            "integral membrane protein",
+            "peripheral membrane protein",
+            "transmembrane protein"
+          ],
+          "answer": "transmembrane protein",
+          "explanation": "A transmembrane protein crosses the entire bilayer."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-09",
+      "title": "Membrane carbohydrate labels",
+      "knowledge_ids": [
+        "U2-K-103",
+        "U2-K-104"
+      ],
+      "terms": [
+        "glycolipid",
+        "glycoprotein"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-09-Q01",
+          "prompt": "A membrane carbohydrate chain is covalently attached to a lipid.",
+          "choices": [
+            "glycolipid",
+            "glycoprotein"
+          ],
+          "answer": "glycolipid",
+          "explanation": "A glycolipid is a lipid with an attached carbohydrate."
+        },
+        {
+          "question_id": "U2-CF-09-Q02",
+          "prompt": "A membrane carbohydrate chain is covalently attached to a protein.",
+          "choices": [
+            "glycolipid",
+            "glycoprotein"
+          ],
+          "answer": "glycoprotein",
+          "explanation": "A glycoprotein is a protein with an attached carbohydrate."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-10",
+      "title": "Transport energy and mechanism",
+      "knowledge_ids": [
+        "U2-K-041",
+        "U2-K-046",
+        "U2-K-042"
+      ],
+      "terms": [
+        "passive transport",
+        "facilitated diffusion",
+        "active transport"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-10-Q01",
+          "prompt": "Net movement occurs down a gradient without direct metabolic-energy input.",
+          "choices": [
+            "passive transport",
+            "facilitated diffusion",
+            "active transport"
+          ],
+          "answer": "passive transport",
+          "explanation": "Passive transport does not directly require metabolic energy."
+        },
+        {
+          "question_id": "U2-CF-10-Q02",
+          "prompt": "A solute moves down its gradient through a channel or carrier without direct energy input.",
+          "choices": [
+            "passive transport",
+            "facilitated diffusion",
+            "active transport"
+          ],
+          "answer": "facilitated diffusion",
+          "explanation": "Facilitated diffusion is passive but uses a membrane protein."
+        },
+        {
+          "question_id": "U2-CF-10-Q03",
+          "prompt": "A membrane transport process requires direct energy input and can build or maintain a gradient.",
+          "choices": [
+            "passive transport",
+            "facilitated diffusion",
+            "active transport"
+          ],
+          "answer": "active transport",
+          "explanation": "Active transport uses energy to move substances in ways that can oppose spontaneous movement."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-11",
+      "title": "Protein-mediated membrane routes",
+      "knowledge_ids": [
+        "U2-K-110",
+        "U2-K-111",
+        "U2-K-050"
+      ],
+      "terms": [
+        "channel protein",
+        "carrier protein",
+        "aquaporin"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-11-Q01",
+          "prompt": "This membrane protein forms a hydrophilic passageway that selected ions or molecules can move through.",
+          "choices": [
+            "channel protein",
+            "carrier protein",
+            "aquaporin"
+          ],
+          "answer": "channel protein",
+          "explanation": "Channel proteins provide hydrophilic pores."
+        },
+        {
+          "question_id": "U2-CF-11-Q02",
+          "prompt": "This membrane protein binds a solute and changes conformation to move it across the membrane.",
+          "choices": [
+            "channel protein",
+            "carrier protein",
+            "aquaporin"
+          ],
+          "answer": "carrier protein",
+          "explanation": "Carrier proteins alternate conformations after binding their solute."
+        },
+        {
+          "question_id": "U2-CF-11-Q03",
+          "prompt": "This specialized channel greatly increases the rate of water movement across a membrane.",
+          "choices": [
+            "channel protein",
+            "carrier protein",
+            "aquaporin"
+          ],
+          "answer": "aquaporin",
+          "explanation": "Aquaporins are specialized membrane channels that greatly increase water permeability."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-12",
+      "title": "Bulk transport direction",
+      "knowledge_ids": [
+        "U2-K-044",
+        "U2-K-045"
+      ],
+      "terms": [
+        "endocytosis",
+        "exocytosis"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-12-Q01",
+          "prompt": "The plasma membrane bends inward and pinches off to bring material into the cell in a vesicle.",
+          "choices": [
+            "endocytosis",
+            "exocytosis"
+          ],
+          "answer": "endocytosis",
+          "explanation": "Endocytosis brings material into the cell."
+        },
+        {
+          "question_id": "U2-CF-12-Q02",
+          "prompt": "An internal vesicle fuses with the plasma membrane and releases material outside the cell.",
+          "choices": [
+            "endocytosis",
+            "exocytosis"
+          ],
+          "answer": "exocytosis",
+          "explanation": "Exocytosis releases vesicle contents outside the cell."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-13",
+      "title": "Endocytosis subtypes",
+      "knowledge_ids": [
+        "U2-K-118",
+        "U2-K-119",
+        "U2-K-120"
+      ],
+      "terms": [
+        "phagocytosis",
+        "pinocytosis",
+        "receptor-mediated endocytosis"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-13-Q01",
+          "prompt": "A cell engulfs a large particle or microorganism.",
+          "choices": [
+            "phagocytosis",
+            "pinocytosis",
+            "receptor-mediated endocytosis"
+          ],
+          "answer": "phagocytosis",
+          "explanation": "Phagocytosis is uptake of large particles."
+        },
+        {
+          "question_id": "U2-CF-13-Q02",
+          "prompt": "A cell nonspecifically takes in extracellular fluid and dissolved substances.",
+          "choices": [
+            "phagocytosis",
+            "pinocytosis",
+            "receptor-mediated endocytosis"
+          ],
+          "answer": "pinocytosis",
+          "explanation": "Pinocytosis samples extracellular fluid."
+        },
+        {
+          "question_id": "U2-CF-13-Q03",
+          "prompt": "Specific ligands bind surface receptors and are concentrated before vesicle uptake.",
+          "choices": [
+            "phagocytosis",
+            "pinocytosis",
+            "receptor-mediated endocytosis"
+          ],
+          "answer": "receptor-mediated endocytosis",
+          "explanation": "Receptor-mediated endocytosis selectively concentrates receptor-bound cargo."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-14",
+      "title": "Tonicity",
+      "knowledge_ids": [
+        "U2-K-124",
+        "U2-K-122",
+        "U2-K-123"
+      ],
+      "terms": [
+        "hypotonic",
+        "isotonic",
+        "hypertonic"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-14-Q01",
+          "prompt": "Relative to the cell, this solution causes net water entry.",
+          "choices": [
+            "hypotonic",
+            "isotonic",
+            "hypertonic"
+          ],
+          "answer": "hypotonic",
+          "explanation": "A hypotonic environment drives net water into the cell."
+        },
+        {
+          "question_id": "U2-CF-14-Q02",
+          "prompt": "Relative to the cell, opposing water movements balance so there is no net change in water amount.",
+          "choices": [
+            "hypotonic",
+            "isotonic",
+            "hypertonic"
+          ],
+          "answer": "isotonic",
+          "explanation": "An isotonic environment has no net water movement even though water still moves both ways."
+        },
+        {
+          "question_id": "U2-CF-14-Q03",
+          "prompt": "Relative to the cell, this solution causes net water loss.",
+          "choices": [
+            "hypotonic",
+            "isotonic",
+            "hypertonic"
+          ],
+          "answer": "hypertonic",
+          "explanation": "A hypertonic environment drives net water out of the cell."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-15",
+      "title": "Water-potential components",
+      "knowledge_ids": [
+        "U2-K-053",
+        "U2-K-127",
+        "U2-K-128"
+      ],
+      "terms": [
+        "water potential",
+        "pressure potential",
+        "solute potential"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-15-Q01",
+          "prompt": "This total predicts the direction of net water movement and equals the sum of pressure and solute components.",
+          "choices": [
+            "water potential",
+            "pressure potential",
+            "solute potential"
+          ],
+          "answer": "water potential",
+          "explanation": "Water potential combines pressure potential and solute potential: Ψ = Ψp + Ψs."
+        },
+        {
+          "question_id": "U2-CF-15-Q02",
+          "prompt": "This component represents physical pressure and can be positive in a turgid plant cell.",
+          "choices": [
+            "water potential",
+            "pressure potential",
+            "solute potential"
+          ],
+          "answer": "pressure potential",
+          "explanation": "Pressure potential is the physical-pressure contribution to total water potential."
+        },
+        {
+          "question_id": "U2-CF-15-Q03",
+          "prompt": "This component becomes more negative as dissolved-solute concentration increases.",
+          "choices": [
+            "water potential",
+            "pressure potential",
+            "solute potential"
+          ],
+          "answer": "solute potential",
+          "explanation": "Solute potential is zero for pure water under the standard convention and negative for solutions."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-16",
+      "title": "Electrochemical transport",
+      "knowledge_ids": [
+        "U2-K-113",
+        "U2-K-114",
+        "U2-K-115",
+        "U2-K-116"
+      ],
+      "terms": [
+        "electrogenic pump",
+        "Na+/K+ ATPase",
+        "proton pump",
+        "cotransport"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-16-Q01",
+          "prompt": "This general type of pump contributes to membrane voltage because its transport cycle moves net charge across the membrane.",
+          "choices": [
+            "electrogenic pump",
+            "Na+/K+ ATPase",
+            "proton pump",
+            "cotransport"
+          ],
+          "answer": "electrogenic pump",
+          "explanation": "Electrogenic pumps create net charge separation."
+        },
+        {
+          "question_id": "U2-CF-16-Q02",
+          "prompt": "In animal cells, this ATP-driven pump moves 3 Na⁺ out and 2 K⁺ in per cycle.",
+          "choices": [
+            "electrogenic pump",
+            "Na+/K+ ATPase",
+            "proton pump",
+            "cotransport"
+          ],
+          "answer": "Na+/K+ ATPase",
+          "explanation": "The sodium-potassium pump has a 3 Na⁺ out / 2 K⁺ in stoichiometry per ATP."
+        },
+        {
+          "question_id": "U2-CF-16-Q03",
+          "prompt": "This ATP-driven transporter builds an H⁺ electrochemical gradient across a membrane.",
+          "choices": [
+            "electrogenic pump",
+            "Na+/K+ ATPase",
+            "proton pump",
+            "cotransport"
+          ],
+          "answer": "proton pump",
+          "explanation": "A proton pump uses energy to move H⁺ and build a gradient."
+        },
+        {
+          "question_id": "U2-CF-16-Q04",
+          "prompt": "This mechanism couples downhill movement of one substance to uphill movement of another.",
+          "choices": [
+            "electrogenic pump",
+            "Na+/K+ ATPase",
+            "proton pump",
+            "cotransport"
+          ],
+          "answer": "cotransport",
+          "explanation": "Cotransport uses energy stored in an existing gradient."
+        }
+      ]
+    },
+    {
+      "set_id": "U2-CF-17",
+      "title": "Energy organelles",
+      "knowledge_ids": [
+        "U2-K-012",
+        "U2-K-020"
+      ],
+      "terms": [
+        "mitochondrion",
+        "chloroplast"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U2-CF-17-Q01",
+          "prompt": "This double-membrane organelle contains an intermembrane space, a matrix, and an inner membrane folded into cristae.",
+          "choices": [
+            "mitochondrion",
+            "chloroplast"
+          ],
+          "answer": "mitochondrion",
+          "explanation": "Mitochondria contain cristae and a matrix and participate in aerobic cellular respiration."
+        },
+        {
+          "question_id": "U2-CF-17-Q02",
+          "prompt": "This double-membrane organelle contains thylakoids, grana, stroma, and chlorophyll and carries out photosynthesis.",
+          "choices": [
+            "mitochondrion",
+            "chloroplast"
+          ],
+          "answer": "chloroplast",
+          "explanation": "Chloroplasts contain thylakoid membranes and stroma and perform photosynthesis."
+        }
+      ]
+    }
+  ]
+}

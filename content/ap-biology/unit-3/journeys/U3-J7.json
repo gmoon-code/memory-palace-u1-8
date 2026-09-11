@@ -1,0 +1,569 @@
+{
+  "schema": "memory-palace-v2-unit3-f4g-story-1.0",
+  "unit_id": "unit-3",
+  "palace_id": "U3-J7",
+  "journey_id": "U3-J7",
+  "palace_name": "Alternative Energy Annex",
+  "story_title": "The NAD⁺ Cards That Would Not Return",
+  "tagline": "Follow one shrinking pool of NAD⁺ through aerobic and anaerobic respiratory comparisons, fermentation redox recycling, alcohol fermentation, and lactate metabolism until glycolysis can run again.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cellular-energetics investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a nearly empty NAD⁺ card rack beside separate ETC and fermentation route indicators",
+    "story_job": "Nia keeps electron-carrier recycling visible across every branch so aerobic respiration, anaerobic respiration, alcohol fermentation, and lactate formation remain mechanistically distinct."
+  },
+  "premise": "The oxygen-terminal emergency door from Journey 6 opens onto an annex where glycolysis is still running but its finite pool of oxidized NAD⁺ is nearly exhausted. The learner must determine which alternative routes use an ETC and which regenerate NAD⁺ through fermentation.",
+  "mission": "Separate aerobic respiration, anaerobic respiration, and fermentation mechanistically, then follow NAD⁺ regeneration through alcohol and lactate pathways while keeping their carbon products and human physiological meaning distinct.",
+  "finale": "The annex closes only after the NAD⁺ rack has been refilled by clearly distinguished mechanisms: respiration reoxidizes carriers through electron-transport chains with different terminal acceptors, while fermentation regenerates NAD⁺ without an ETC and can produce ethanol or lactate. Lactate remains a transportable, reusable metabolite rather than a metabolic poison.",
+  "estimated_minutes": 13,
+  "scene_count": 4,
+  "checkpoint_count": 1,
+  "learner_rule": "Keep the NAD⁺ card rack in view. Ask how NADH is being oxidized back to NAD⁺ in each route, and use ETC presence plus terminal electron acceptor to distinguish respiration from fermentation. Quick Recall is optional on the first pass.",
+  "route_orientation": "The Alternative Energy Annex is a four-station branch-and-return route. Begin at the three-route respiration junction, move into the cytosolic NAD⁺ recycling gate, then compare alcohol and lactate fermentation in neighboring bays. The nearly empty NAD⁺ rack follows you through every station and returns full at the final track.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Respiration Across Life Junction",
+      "short": "Route Junction",
+      "floor": "Annex entrance",
+      "symbol": "3 routes"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Fermentation NAD⁺ Recycling Gate",
+      "short": "NAD⁺ Gate",
+      "floor": "Cytosolic loop",
+      "symbol": "NAD⁺"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Alcohol Fermentation Vat",
+      "short": "Alcohol",
+      "floor": "Fermentation bay A",
+      "symbol": "EtOH"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Lactate Fermentation Track",
+      "short": "Lactate",
+      "floor": "Fermentation bay B",
+      "symbol": "Lac"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Respiration Across Life Junction",
+      "title": "Respiration Across Life Junction",
+      "scene_kicker": "Three pathways can solve energy-harvesting problems under different conditions, but ETC use and terminal electron acceptors keep respiration distinct from fermentation.",
+      "location_description": "Respiration Across Life Junction — the three-route energy-harvesting junction separating aerobic respiration, anaerobic respiration, and fermentation.",
+      "scene_layout": {
+        "orientation": "You enter Respiration Across Life Junction and stop at the three-route energy-harvesting junction separating aerobic respiration, anaerobic respiration, and fermentation. On your left is aerobic oxygen-terminal route; directly ahead is shared energy-harvesting junction; on your right is anaerobic/fermentative alternatives. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Aerobic oxygen-terminal route",
+            "symbol": "O₂ + ETC",
+            "description": "A conventional respiratory ETC runs on the left and ends at oxygen, preserving the aerobic route from Journey 6 as the reference condition."
+          },
+          {
+            "position": "center",
+            "label": "Shared energy-harvesting junction",
+            "symbol": "glycolysis → NADH",
+            "description": "A cytosolic glycolysis platform in the center keeps producing pyruvate, ATP, and NADH while the finite rack of oxidized NAD⁺ cards visibly empties."
+          },
+          {
+            "position": "right",
+            "label": "Anaerobic and fermentative alternatives",
+            "symbol": "ETC / no ETC",
+            "description": "Two clearly separated right-side branches show anaerobic respiration using an ETC with a non-oxygen terminal acceptor and fermentation regenerating NAD⁺ without an ETC."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a nearly empty NAD⁺ card rack beside separate ETC and fermentation route indicators",
+          "job": "Nia keeps electron-carrier recycling visible across every branch so aerobic respiration, anaerobic respiration, alcohol fermentation, and lactate formation remain mechanistically distinct."
+        },
+        {
+          "name": "NAD⁺ card rack",
+          "kind": "redox continuity object",
+          "visual": "a nearly empty rack of white NAD⁺ cards mounted beside the central glycolysis platform",
+          "job": "shows that glycolysis depends on a reusable oxidized electron carrier and creates the problem the annex must solve"
+        },
+        {
+          "name": "aerobic route",
+          "kind": "reference pathway",
+          "visual": "a left-side inner-membrane ETC ending at a clearly labeled O₂ basin",
+          "job": "provides the oxygen-terminal respiratory reference already established in Journey 6"
+        },
+        {
+          "name": "anaerobic-respiration branch",
+          "kind": "alternative respiratory pathway",
+          "visual": "an upper-right ETC ending at a terminal-acceptor socket labeled nitrate / sulfate / other",
+          "job": "shows that respiration can use an ETC even when oxygen is not the terminal electron acceptor"
+        },
+        {
+          "name": "fermentation branch",
+          "kind": "non-ETC redox pathway",
+          "visual": "a lower-right redox loop with an organic molecule accepting electrons directly from NADH",
+          "job": "shows the fundamentally different strategy used to regenerate NAD⁺ without an ETC"
+        }
+      ],
+      "story_open": "The emergency door from the Prokaryotic Respiratory Membrane opens into a low, branching annex. Dr. Nia Park does not let you enter immediately. She points to a rack beside the **center** platform. Only three white **NAD⁺ cards** remain. On the platform, glycolysis is still feeding two ATP tokens, pyruvate, and blue-edged NADH cards onto a conveyor. To your **left**, the aerobic respiratory route from Journey 6 is reconstructed in miniature: an electron-transport chain ends at an oxygen basin. To your **right**, two separate corridors branch from the same problem. The upper corridor contains another ETC but no oxygen basin. The lower corridor contains no ETC at all. Nia locks your feet at the junction. “All three routes can be discussed in low-oxygen contexts,” she says, “but that does not make them the same mechanism.”",
+      "story_paragraphs": [
+        "The emergency door from the Prokaryotic Respiratory Membrane opens into a low, branching annex. Dr. Nia Park does not let you enter immediately. She points to a rack beside the **center** platform. Only three white **NAD⁺ cards** remain. On the platform, glycolysis is still feeding two ATP tokens, pyruvate, and blue-edged NADH cards onto a conveyor. To your **left**, the aerobic respiratory route from Journey 6 is reconstructed in miniature: an electron-transport chain ends at an oxygen basin. To your **right**, two separate corridors branch from the same problem. The upper corridor contains another ETC but no oxygen basin. The lower corridor contains no ETC at all. Nia locks your feet at the junction. “All three routes can be discussed in low-oxygen contexts,” she says, “but that does not make them the same mechanism.”",
+        "She activates the left reference first. NADH donates electrons to the aerobic respiratory ETC, the chain ultimately transfers them to oxygen, and oxidized NAD⁺ is recovered for continued metabolism. Then she darkens the O₂ basin. The upper-right corridor remains capable of running because its ETC ends at a different terminal electron acceptor. Nia inserts a nitrate model into one socket and a sulfate model into another. Some organisms use nitrate, sulfate, or other molecules as **non-oxygen terminal acceptors**. These examples are not an exhaustive list. The defining feature is the continued use of an electron-transport chain with a terminal acceptor other than oxygen. Only after the whole upper route is visible does Nia name it **anaerobic respiration**.",
+        "Now she turns to the lower-right corridor. It has no membrane chain, no series of ETC carriers, and no terminal-acceptor basin. Instead, a reduced organic product waits beside the NADH cards. This is a different solution to the carrier problem. **Respiration and fermentation across life** are characteristic energy-harvesting processes across diverse organisms, but respiration and fermentation are not synonyms. Aerobic respiration uses an ETC and oxygen as terminal electron acceptor. Anaerobic respiration still uses an ETC but finishes with a terminal acceptor other than oxygen. Fermentation takes a different route: it regenerates oxidized carrier without sending the electrons through an ETC.",
+        "The center rack drops to two NAD⁺ cards. That depletion becomes the reason you cannot remain at the comparison junction. Glycolysis needs NAD⁺ to accept electrons during oxidation. If the oxidized carrier is not returned, the pathway cannot simply keep filling an unlimited pile of NADH cards. Nia pulls the last spare NAD⁺ card from the rack and walks through the lower-right corridor. “Journey 6 showed how respiration can reoxidize carriers through an electron-transport chain,” she says. “Now we solve the same redox bookkeeping problem without one.” The next gate is built directly into the cytosol, and a large return arrow points from it back toward glycolysis."
+      ],
+      "story_close": "The center rack drops to two NAD⁺ cards. That depletion becomes the reason you cannot remain at the comparison junction. Glycolysis needs NAD⁺ to accept electrons during oxidation. If the oxidized carrier is not returned, the pathway cannot simply keep filling an unlimited pile of NADH cards. Nia pulls the last spare NAD⁺ card from the rack and walks through the lower-right corridor. “Journey 6 showed how respiration can reoxidize carriers through an electron-transport chain,” she says. “Now we solve the same redox bookkeeping problem without one.” The next gate is built directly into the cytosol, and a large return arrow points from it back toward glycolysis.",
+      "object_ids": [
+        "U3-K-041",
+        "U3-K-167",
+        "U3-K-168"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-041",
+          "term": "Respiration and fermentation across life",
+          "story": "the three-route junction where aerobic respiration, anaerobic respiration, and fermentation remain visibly distinct while sharing the need to harvest energy",
+          "science": "Respiration and fermentation are characteristic energy-harvesting processes across forms of life.",
+          "exact_name": true,
+          "hint": "the three-route junction where aerobic respiration, anaerobic respiration, and fermentation remain visibly distinct while sharing the need to harvest energy"
+        },
+        {
+          "object_id": "U3-K-167",
+          "term": "Anaerobic respiration",
+          "story": "the upper-right ETC route ending at a non-oxygen terminal acceptor rather than the oxygen basin",
+          "science": "Anaerobic respiration uses an electron transport chain with a terminal electron acceptor other than oxygen.",
+          "exact_name": true,
+          "hint": "the upper-right ETC route ending at a non-oxygen terminal acceptor rather than the oxygen basin"
+        },
+        {
+          "object_id": "U3-K-168",
+          "term": "Non-oxygen terminal acceptors",
+          "story": "the nitrate, sulfate, and open “other acceptor” sockets at the end of the anaerobic respiratory ETC",
+          "science": "Different anaerobic organisms can use terminal electron acceptors such as nitrate, sulfate, or other molecules; nitrate and sulfate are examples, not an exhaustive list.",
+          "exact_name": false,
+          "hint": "the nitrate, sulfate, and open “other acceptor” sockets at the end of the anaerobic respiratory ETC"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Respiration and fermentation across life",
+          "meaning": "Respiration and fermentation are characteristic energy-harvesting processes across forms of life.",
+          "image": "the three-route junction where aerobic respiration, anaerobic respiration, and fermentation remain visibly distinct while sharing the need to harvest energy"
+        },
+        {
+          "term": "Anaerobic respiration",
+          "meaning": "Anaerobic respiration uses an electron transport chain with a terminal electron acceptor other than oxygen.",
+          "image": "the upper-right ETC route ending at a non-oxygen terminal acceptor rather than the oxygen basin"
+        },
+        {
+          "term": "Non-oxygen terminal acceptors",
+          "meaning": "Different anaerobic organisms can use terminal electron acceptors such as nitrate, sulfate, or other molecules; nitrate and sulfate are examples, not an exhaustive list.",
+          "image": "the nitrate, sulfate, and open “other acceptor” sockets at the end of the anaerobic respiratory ETC"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Fermentation NAD⁺ Recycling Gate",
+      "misconception_guards": [
+        "Anaerobic respiration uses an electron-transport chain with a terminal electron acceptor other than O2; fermentation does not use an ETC to regenerate NAD+.",
+        "Keep these confusable terms physically and verbally distinct: aerobic respiration, anaerobic respiration, fermentation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-030; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": [
+        "aerobic oxygen-terminal route",
+        "shared energy-harvesting junction",
+        "anaerobic/fermentative alternatives",
+        "Branch from a shared energy-harvesting junction into oxygen-terminal aerobic respiration, non-oxygen-terminal anaerobic respiration, and fermentation so terminal acceptors and ETC use remain explicit."
+      ],
+      "carry_forward": "Carry forward this resolved mental model: Respiration and fermentation across life; Anaerobic respiration; Non-oxygen terminal acceptors."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Fermentation NAD⁺ Recycling Gate",
+      "title": "Fermentation NAD+ Recycling Gate",
+      "scene_kicker": "The emergency is a carrier shortage: fermentation matters because it returns oxidized NAD⁺ to glycolysis without using an electron-transport chain.",
+      "location_description": "Fermentation NAD+ Recycling Gate — the cytosolic redox loop where NADH transfers electrons to an organic molecule so NAD+ returns to glycolysis.",
+      "scene_layout": {
+        "orientation": "You enter Fermentation NAD+ Recycling Gate and stop at the cytosolic redox loop where NADH transfers electrons to an organic molecule so NAD+ returns to glycolysis. On your left is glycolysis NADH output; directly ahead is fermentation redox gate; on your right is regenerated NAD+ return path. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Glycolysis NADH output",
+            "symbol": "NADH",
+            "description": "Reduced NADH cards arrive from glycolysis on the left after NAD⁺ accepted electrons during substrate oxidation."
+          },
+          {
+            "position": "center",
+            "label": "Fermentation redox gate",
+            "symbol": "organic acceptor",
+            "description": "The center gate transfers electrons from NADH to an organic molecule without routing those electrons through an electron-transport chain."
+          },
+          {
+            "position": "right",
+            "label": "Regenerated NAD⁺ return path",
+            "symbol": "NAD⁺ → glycolysis",
+            "description": "Oxidized NAD⁺ cards leave on a return conveyor to glycolysis, restoring the carrier required for continued oxidation and ATP production by substrate-level phosphorylation."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a nearly empty NAD⁺ card rack beside separate ETC and fermentation route indicators",
+          "job": "Nia keeps electron-carrier recycling visible across every branch so aerobic respiration, anaerobic respiration, alcohol fermentation, and lactate formation remain mechanistically distinct."
+        },
+        {
+          "name": "NADH cards",
+          "kind": "reduced electron carriers",
+          "visual": "blue-edged NADH cards arriving from glycolysis with electron markers attached",
+          "job": "carry reducing power away from glycolytic oxidation and must be reoxidized if the NAD⁺ supply is to be restored"
+        },
+        {
+          "name": "organic electron acceptor",
+          "kind": "fermentation reactant",
+          "visual": "an organic carbon molecule positioned inside the central redox gate",
+          "job": "accepts electrons from NADH during fermentation rather than serving as a terminal acceptor at the end of an ETC"
+        },
+        {
+          "name": "NAD⁺ return conveyor",
+          "kind": "carrier-recycling route",
+          "visual": "a right-side conveyor carrying white NAD⁺ cards back toward the glycolysis platform",
+          "job": "makes NAD⁺ regeneration the immediate functional payoff of fermentation"
+        }
+      ],
+      "story_open": "You enter the **Fermentation NAD⁺ Recycling Gate** with the nearly empty carrier rack still in view behind you. The scene stays entirely cytosolic. On your **left**, blue-edged NADH cards arrive from glycolysis. In the **center**, an organic carbon molecule waits inside a redox gate. On your **right**, a white-card conveyor points straight back toward the glycolysis platform. Nia places one NADH card into the gate but leaves the ATP counter untouched. “Watch the carrier,” she says. “If you watch only the carbon product, you will miss why this pathway matters.”",
+      "story_paragraphs": [
+        "You enter the **Fermentation NAD⁺ Recycling Gate** with the nearly empty carrier rack still in view behind you. The scene stays entirely cytosolic. On your **left**, blue-edged NADH cards arrive from glycolysis. In the **center**, an organic carbon molecule waits inside a redox gate. On your **right**, a white-card conveyor points straight back toward the glycolysis platform. Nia places one NADH card into the gate but leaves the ATP counter untouched. “Watch the carrier,” she says. “If you watch only the carbon product, you will miss why this pathway matters.”",
+        "The gate transfers reducing power from NADH to the organic molecule. The blue electron marker leaves the NADH card, and the carrier flips back to its oxidized form, **NAD⁺**. The regenerated card immediately travels right and returns to glycolysis. This process is **fermentation**: a pathway that regenerates NAD⁺ without using an electron-transport chain so glycolysis can continue when oxidative reoxidation of NADH cannot meet demand. Nia runs the gate again. NADH becomes NAD⁺; the organic acceptor becomes more reduced; the NAD⁺ card goes back to glycolysis. She points to the label above the loop: **Fermentation and NAD+ recycling**. The wording ties the pathway to the carrier problem it solves. The loop is the mechanism you are meant to remember.",
+        "She now covers a misleading sign above the ATP counter. Fermentation does not provide a large extra ATP harvest after glycolysis. The ATP that allows this emergency route to support the cell is the ATP glycolysis can keep producing by substrate-level phosphorylation because NAD⁺ has been regenerated. Fermentation’s critical job here is redox recycling. In the broader statement **fermentation and NAD⁺ recycling**, those two ideas belong together: reoxidizing NADH restores NAD⁺, and restored NAD⁺ permits glycolytic oxidation to continue.",
+        "Nia also removes an absolute sign that says FERMENTATION = NO OXYGEN PRESENT. Fermentation does not require oxygen and is especially important when oxygen-dependent oxidative reoxidation cannot meet demand. Yet some cells can run fermentation even when oxygen is present, particularly when glycolytic flux exceeds the rate at which other pathways can reoxidize NADH. Oxygen availability therefore influences pathway use, but the mechanistic definition of fermentation is not “a cell with zero oxygen.” The returned NAD⁺ cards refill the rack, and two exit lights come on. One is marked ETHANOL + CO₂. The other is marked LACTATE. The carrier problem is shared; the carbon products will now diverge."
+      ],
+      "story_close": "Nia also removes an absolute sign that says FERMENTATION = NO OXYGEN PRESENT. Fermentation does not require oxygen and is especially important when oxygen-dependent oxidative reoxidation cannot meet demand. Yet some cells can run fermentation even when oxygen is present, particularly when glycolytic flux exceeds the rate at which other pathways can reoxidize NADH. Oxygen availability therefore influences pathway use, but the mechanistic definition of fermentation is not “a cell with zero oxygen.” The returned NAD⁺ cards refill the rack, and two exit lights come on. One is marked ETHANOL + CO₂. The other is marked LACTATE. The carrier problem is shared; the carbon products will now diverge.",
+      "object_ids": [
+        "U3-K-054",
+        "U3-K-169",
+        "U3-K-170"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-054",
+          "term": "Fermentation and NAD+ recycling",
+          "story": "the nearly empty NAD⁺ rack refilling as white cards return from the fermentation gate to glycolysis",
+          "science": "Fermentation allows glycolysis to continue when oxygen is unavailable by regenerating NAD+ and produces reduced organic products such as ethanol or lactate.",
+          "exact_name": true,
+          "hint": "the nearly empty NAD⁺ rack refilling as white cards return from the fermentation gate to glycolysis"
+        },
+        {
+          "object_id": "U3-K-169",
+          "term": "Fermentation",
+          "story": "the cytosolic redox gate where NADH transfers reducing power to an organic molecule without an ETC",
+          "science": "Fermentation regenerates NAD+ without an electron transport chain so glycolysis can continue when oxidative NADH reoxidation cannot meet demand.",
+          "exact_name": true,
+          "hint": "the cytosolic redox gate where NADH transfers reducing power to an organic molecule without an ETC"
+        },
+        {
+          "object_id": "U3-K-170",
+          "term": "Fermentation and oxygen",
+          "story": "the oxygen sign that Nia removes because fermentation can occur without oxygen yet is not defined simply by total oxygen absence",
+          "science": "Fermentation does not require oxygen and can support ATP production when oxygen is unavailable, but fermentation pathways can also operate in some cells even when oxygen is present.",
+          "exact_name": false,
+          "hint": "the oxygen sign that Nia removes because fermentation can occur without oxygen yet is not defined simply by total oxygen absence"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Fermentation and NAD+ recycling",
+          "meaning": "Fermentation allows glycolysis to continue when oxygen is unavailable by regenerating NAD+ and produces reduced organic products such as ethanol or lactate.",
+          "image": "the nearly empty NAD⁺ rack refilling as white cards return from the fermentation gate to glycolysis"
+        },
+        {
+          "term": "Fermentation",
+          "meaning": "Fermentation regenerates NAD+ without an electron transport chain so glycolysis can continue when oxidative NADH reoxidation cannot meet demand.",
+          "image": "the cytosolic redox gate where NADH transfers reducing power to an organic molecule without an ETC"
+        },
+        {
+          "term": "Fermentation and oxygen",
+          "meaning": "Fermentation does not require oxygen and can support ATP production when oxygen is unavailable, but fermentation pathways can also operate in some cells even when oxygen is present.",
+          "image": "the oxygen sign that Nia removes because fermentation can occur without oxygen yet is not defined simply by total oxygen absence"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-054",
+      "checkpoint_prompt": "Why must fermentation regenerate NAD⁺?",
+      "checkpoint_answer": "So glycolysis can continue oxidizing substrate and producing ATP when the available NAD⁺ pool would otherwise become depleted.",
+      "checkpoint_hint": "Picture the nearly empty NAD⁺ rack. NADH enters the center redox gate, an organic molecule accepts its reducing power, and a white NAD⁺ card returns to the glycolysis platform.",
+      "next_locus": "Alcohol Fermentation Vat",
+      "misconception_guards": [
+        "Fermentation regenerates NAD+ so glycolysis can continue; it does not add substantial ATP beyond glycolysis itself.",
+        "Keep these confusable terms physically and verbally distinct: aerobic respiration, anaerobic respiration, fermentation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-024; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": [
+        "glycolysis NADH output",
+        "fermentation redox gate",
+        "regenerated NAD+ return path",
+        "Use an organic molecule to accept electrons from NADH, regenerate NAD+, and send NAD+ back to glycolysis without adding an electron-transport chain to fermentation."
+      ],
+      "carry_forward": "Carry forward this resolved mental model: Fermentation and NAD+ recycling; Fermentation; Fermentation and oxygen."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Alcohol Fermentation Vat",
+      "title": "Alcohol Fermentation Vat",
+      "scene_kicker": "Alcohol fermentation solves NAD⁺ recycling through a two-step carbon route that releases CO₂, forms acetaldehyde, and ends with ethanol.",
+      "location_description": "Alcohol Fermentation Vat — the two-step pyruvate-to-acetaldehyde-to-ethanol pathway with CO2 release and NAD+ regeneration.",
+      "scene_layout": {
+        "orientation": "You enter Alcohol Fermentation Vat and stop at the two-step pyruvate-to-acetaldehyde-to-ethanol pathway with CO2 release and NAD+ regeneration. On your left is pyruvate decarboxylation; directly ahead is acetaldehyde intermediate; on your right is ethanol plus regenerated NAD+. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Pyruvate decarboxylation station",
+            "symbol": "3C → 2C + CO₂",
+            "description": "Pyruvate enters on the left, loses one carbon as CO₂, and becomes the two-carbon intermediate acetaldehyde."
+          },
+          {
+            "position": "center",
+            "label": "Acetaldehyde intermediate vat",
+            "symbol": "acetaldehyde",
+            "description": "The center vat holds acetaldehyde as a real intermediate between pyruvate and ethanol, preventing the pathway from being remembered as one unexplained jump."
+          },
+          {
+            "position": "right",
+            "label": "Ethanol and NAD⁺ output",
+            "symbol": "ethanol + NAD⁺",
+            "description": "NADH reduces acetaldehyde to ethanol on the right, returning NAD⁺ to the shared carrier rack while the carbon product leaves as ethanol."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a nearly empty NAD⁺ card rack beside separate ETC and fermentation route indicators",
+          "job": "Nia keeps electron-carrier recycling visible across every branch so aerobic respiration, anaerobic respiration, alcohol fermentation, and lactate formation remain mechanistically distinct."
+        },
+        {
+          "name": "pyruvate",
+          "kind": "three-carbon fermentation input",
+          "visual": "a conventional three-carbon pyruvate model entering the left station",
+          "job": "provides the carbon starting material for the alcohol-fermentation sequence"
+        },
+        {
+          "name": "acetaldehyde",
+          "kind": "two-carbon intermediate",
+          "visual": "a two-carbon acetaldehyde model held in the center vat after CO₂ is removed",
+          "job": "serves as the intermediate that receives electrons from NADH before becoming ethanol"
+        },
+        {
+          "name": "NADH / NAD⁺ carrier pair",
+          "kind": "redox carrier",
+          "visual": "a blue-edged NADH card that returns white as NAD⁺ beside the ethanol outlet",
+          "job": "makes the redox purpose of the second step visible separately from the carbon conversion"
+        }
+      ],
+      "story_open": "The first exit opens into the **Alcohol Fermentation Vat**, a warm stainless-steel bay with three fixed stations. On your **left**, three-carbon pyruvate arrives from glycolysis and stops beneath a carbon-counting arch. In the **center**, a smaller two-carbon container is labeled acetaldehyde. On your **right**, an ethanol outlet stands beside a white NAD⁺ return slot. Nia keeps the NAD⁺ rack mounted above all three stations so you never forget why the sequence exists. “This branch changes carbon twice,” she says. “Only the second change directly returns the carrier.”",
+      "story_paragraphs": [
+        "The first exit opens into the **Alcohol Fermentation Vat**, a warm stainless-steel bay with three fixed stations. On your **left**, three-carbon pyruvate arrives from glycolysis and stops beneath a carbon-counting arch. In the **center**, a smaller two-carbon container is labeled acetaldehyde. On your **right**, an ethanol outlet stands beside a white NAD⁺ return slot. Nia keeps the NAD⁺ rack mounted above all three stations so you never forget why the sequence exists. “This branch changes carbon twice,” she says. “Only the second change directly returns the carrier.”",
+        "Pyruvate enters the left station with all three carbons visible. One carbon leaves through a dedicated CO₂ vent. The remaining two-carbon molecule moves into the center vat. That intermediate is **acetaldehyde**. The pathway has therefore not jumped directly from pyruvate to ethanol: pyruvate is first decarboxylated, releasing CO₂ and producing acetaldehyde. Nia freezes the vat long enough for you to count the carbon atoms. The carbon leaving as CO₂ is physically separate from the two carbons continuing toward ethanol.",
+        "A blue-edged NADH card then docks beside acetaldehyde. The electron marker moves from NADH onto the organic intermediate. Acetaldehyde is reduced to ethanol, while NADH is oxidized back to NAD⁺. The white NAD⁺ card immediately rises to the shared return rail. Nia finally names the complete sequence **alcohol fermentation**: pyruvate is converted to ethanol and CO₂ while NADH is oxidized to regenerate NAD⁺. The ethanol product and the returned carrier leave by separate outlets so you cannot mistake the product itself for the regenerated electron carrier. The ATP display still does not jump upward during these two fermentation steps. Their immediate redox payoff is the regenerated NAD⁺ that lets glycolysis continue producing its own substrate-level ATP.",
+        "Nia opens a small observation window showing yeast cells carrying out the same redox logic, then closes it before the example can become the definition. The essential pathway remains on the three stations in front of you: **pyruvate decarboxylation → acetaldehyde → ethanol**, with NAD⁺ regenerated during reduction of acetaldehyde. The NAD⁺ rack is healthy again, but the adjacent branch has no CO₂ vent and no acetaldehyde vat. Nia points through the next door. “Same carrier problem. Different carbon route.”"
+      ],
+      "story_close": "Nia opens a small observation window showing yeast cells carrying out the same redox logic, then closes it before the example can become the definition. The essential pathway remains on the three stations in front of you: **pyruvate decarboxylation → acetaldehyde → ethanol**, with NAD⁺ regenerated during reduction of acetaldehyde. The NAD⁺ rack is healthy again, but the adjacent branch has no CO₂ vent and no acetaldehyde vat. Nia points through the next door. “Same carrier problem. Different carbon route.”",
+      "object_ids": [
+        "U3-K-171",
+        "U3-K-172"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-171",
+          "term": "Alcohol fermentation",
+          "story": "the three-station alcohol route: pyruvate loses CO₂, acetaldehyde forms, then NADH reduction produces ethanol and NAD⁺",
+          "science": "Alcohol fermentation converts pyruvate to ethanol and CO2 while oxidizing NADH to regenerate NAD+.",
+          "exact_name": true,
+          "hint": "the three-station alcohol route: pyruvate loses CO₂, acetaldehyde forms, then NADH reduction produces ethanol and NAD⁺"
+        },
+        {
+          "object_id": "U3-K-172",
+          "term": "Acetaldehyde in alcohol fermentation",
+          "story": "the two-carbon acetaldehyde vat positioned between pyruvate decarboxylation and ethanol formation",
+          "science": "In alcohol fermentation, pyruvate is decarboxylated to acetaldehyde and acetaldehyde is reduced by NADH to ethanol, regenerating NAD+.",
+          "exact_name": false,
+          "hint": "the two-carbon acetaldehyde vat positioned between pyruvate decarboxylation and ethanol formation"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Alcohol fermentation",
+          "meaning": "Alcohol fermentation converts pyruvate to ethanol and CO2 while oxidizing NADH to regenerate NAD+.",
+          "image": "the three-station alcohol route: pyruvate loses CO₂, acetaldehyde forms, then NADH reduction produces ethanol and NAD⁺"
+        },
+        {
+          "term": "Acetaldehyde in alcohol fermentation",
+          "meaning": "In alcohol fermentation, pyruvate is decarboxylated to acetaldehyde and acetaldehyde is reduced by NADH to ethanol, regenerating NAD+.",
+          "image": "the two-carbon acetaldehyde vat positioned between pyruvate decarboxylation and ethanol formation"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Lactate Fermentation Track",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: alcohol fermentation, lactate fermentation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-023; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": [
+        "pyruvate decarboxylation",
+        "acetaldehyde intermediate",
+        "ethanol plus regenerated NAD+",
+        "Convert pyruvate to acetaldehyde with CO2 release, then reduce acetaldehyde to ethanol while oxidizing NADH back to NAD+."
+      ],
+      "carry_forward": "Carry forward this resolved mental model: Alcohol fermentation; Acetaldehyde in alcohol fermentation."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Lactate Fermentation Track",
+      "title": "Lactate Fermentation Track",
+      "scene_kicker": "Lactate formation directly reduces pyruvate, regenerates NAD⁺, and feeds a transportable metabolite into continued physiology rather than a toxic dead end.",
+      "location_description": "Lactate Fermentation Track — the pyruvate-to-lactate route linked to NAD+ regeneration and downstream lactate transport/use.",
+      "scene_layout": {
+        "orientation": "You enter Lactate Fermentation Track and stop at the pyruvate-to-lactate route linked to NAD+ regeneration and downstream lactate transport/use. On your left is pyruvate/NADH input; directly ahead is lactate-forming reaction; on your right is lactate transport and reuse. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Pyruvate and NADH input",
+            "symbol": "pyruvate + NADH",
+            "description": "Pyruvate and reduced NADH enter together from the left with no decarboxylation step and no CO₂-release chute."
+          },
+          {
+            "position": "center",
+            "label": "Lactate-forming reaction",
+            "symbol": "pyruvate → lactate",
+            "description": "The center reaction directly reduces the full three-carbon pyruvate molecule to lactate while NADH is simultaneously oxidized back to reusable NAD⁺."
+          },
+          {
+            "position": "right",
+            "label": "Lactate transport and reuse",
+            "symbol": "lactate shuttle",
+            "description": "Lactate leaves on transport routes toward tissues that can oxidize it or toward liver and kidney pathways where its carbon can contribute to glucose synthesis."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now showing a nearly empty NAD⁺ card rack beside separate ETC and fermentation route indicators",
+          "job": "Nia keeps electron-carrier recycling visible across every branch so aerobic respiration, anaerobic respiration, alcohol fermentation, and lactate formation remain mechanistically distinct."
+        },
+        {
+          "name": "pyruvate",
+          "kind": "three-carbon acceptor",
+          "visual": "a conventional pyruvate model entering from the left beside NADH",
+          "job": "receives electrons directly from NADH during lactate formation"
+        },
+        {
+          "name": "lactate",
+          "kind": "reduced organic product",
+          "visual": "a lactate molecule leaving the center reaction with all three pyruvate carbons still present",
+          "job": "shows the reduced product of the pathway without implying that lactate is a toxic metabolic dead end"
+        },
+        {
+          "name": "transport network",
+          "kind": "lactate reuse routes",
+          "visual": "right-side arrows leading toward oxidative tissues and toward liver/kidney glucose-synthesis pathways",
+          "job": "keeps lactate connected to transport, oxidation, and carbon recycling after it leaves the producing cell"
+        }
+      ],
+      "story_open": "The final door opens onto the **Lactate Fermentation Track**. Its geometry deliberately contrasts with the alcohol vat. On your **left**, pyruvate enters beside NADH. There is no carbon-removal arch and no CO₂ chute. In the **center**, one direct reaction chamber connects pyruvate to lactate. On your **right**, lactate does not fall into a waste bin. Instead, transport arrows split toward oxidative tissues and toward liver and kidney pathways. Nia hangs the same NAD⁺ rack above the center chamber. “If this scene ends with lactate labeled poison,” she says, “we have taught physiology from an obsolete cartoon.”",
+      "story_paragraphs": [
+        "The final door opens onto the **Lactate Fermentation Track**. Its geometry deliberately contrasts with the alcohol vat. On your **left**, pyruvate enters beside NADH. There is no carbon-removal arch and no CO₂ chute. In the **center**, one direct reaction chamber connects pyruvate to lactate. On your **right**, lactate does not fall into a waste bin. Instead, transport arrows split toward oxidative tissues and toward liver and kidney pathways. Nia hangs the same NAD⁺ rack above the center chamber. “If this scene ends with lactate labeled poison,” she says, “we have taught physiology from an obsolete cartoon.”",
+        "The reaction begins. NADH donates reducing power directly to pyruvate. The three-carbon pyruvate becomes three-carbon lactate, and NADH returns to its oxidized form, NAD⁺. This is **lactate formation** in lactate-producing fermentation: pyruvate is reduced by NADH to lactate while NAD⁺ is regenerated. Unlike alcohol fermentation, this step does not first remove a carbon as CO₂ and does not pass through acetaldehyde. The two pathways therefore solve the same NAD⁺-recycling problem with different carbon products and different reaction sequences.",
+        "Nia then sends the scene into a human skeletal-muscle model under high glycolytic demand. Lactate production rises even though a small oxygen indicator is still on. That matters. Human skeletal muscle can produce lactate during high glycolytic flux even when oxygen is present. Lactate itself is not the cause of the acute burning sensation during intense exercise, and it is not the cause of delayed-onset muscle soreness. Nia peels both labels off an old warning poster and leaves the poster blank. The point is not that oxygen never matters; the point is that “lactate means no oxygen” and “lactate poisons muscle” are both too crude to describe the physiology.",
+        "The right-side transport network now activates. Some lactate travels to tissues that can oxidize it and use its carbon as fuel. Another route carries lactate toward liver and kidney, where its carbon can contribute to glucose synthesis. This broader **lactate shuttle and Cori-cycle connection** prevents the product from being remembered as a dead end. Lactate is a transportable metabolic intermediate whose carbon can be reused. The exact tissue traffic depends on physiological conditions, but the molecule remains part of metabolism after it leaves the producing cell.",
+        "Nia returns the final white NAD⁺ card to the rack. All three route lights from the entrance junction are now visible through the annex glass. One route used oxygen at the end of an ETC. Another used an ETC with a different terminal electron acceptor. Fermentation used no ETC for NAD⁺ regeneration and could finish with ethanol or lactate depending on the pathway. The unit’s final accounting board closes around one durable idea: cells are metabolically flexible, but mechanisms still matter. Different pathways can solve a shared redox constraint without becoming the same pathway. Nia shuts her tablet. The NAD⁺ rack is full, glycolysis continues, and the Cellular Energetics unit finally has no unresolved emergency door."
+      ],
+      "story_close": "Nia returns the final white NAD⁺ card to the rack. All three route lights from the entrance junction are now visible through the annex glass. One route used oxygen at the end of an ETC. Another used an ETC with a different terminal electron acceptor. Fermentation used no ETC for NAD⁺ regeneration and could finish with ethanol or lactate depending on the pathway. The unit’s final accounting board closes around one durable idea: cells are metabolically flexible, but mechanisms still matter. Different pathways can solve a shared redox constraint without becoming the same pathway. Nia shuts her tablet. The NAD⁺ rack is full, glycolysis continues, and the Cellular Energetics unit finally has no unresolved emergency door.",
+      "object_ids": [
+        "U3-K-173",
+        "U3-K-174",
+        "U3-K-175"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-173",
+          "term": "Lactate formation",
+          "story": "the direct three-carbon pyruvate-to-lactate reaction returning NADH to NAD⁺ without a CO₂ vent",
+          "science": "In lactate-producing fermentation, pyruvate is reduced by NADH to lactate, regenerating NAD+.",
+          "exact_name": true,
+          "hint": "the direct three-carbon pyruvate-to-lactate reaction returning NADH to NAD⁺ without a CO₂ vent"
+        },
+        {
+          "object_id": "U3-K-174",
+          "term": "Human exercise lactate",
+          "story": "the exercising muscle display producing lactate while its oxygen indicator remains on, beside the removed “burn” and “soreness” labels",
+          "science": "Human skeletal muscle can produce lactate during high glycolytic flux even when oxygen is present; lactate itself is not the cause of the acute burning sensation or delayed-onset muscle soreness.",
+          "exact_name": false,
+          "hint": "the exercising muscle display producing lactate while its oxygen indicator remains on, beside the removed “burn” and “soreness” labels"
+        },
+        {
+          "object_id": "U3-K-175",
+          "term": "Lactate shuttle and Cori-cycle connection",
+          "story": "the lactate transport network splitting toward oxidative tissues and toward liver/kidney carbon recycling into glucose synthesis",
+          "science": "Lactate produced by tissues can be oxidized by other tissues or transported to liver and kidney, where its carbon can contribute to glucose synthesis.",
+          "exact_name": false,
+          "hint": "the lactate transport network splitting toward oxidative tissues and toward liver/kidney carbon recycling into glucose synthesis"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Lactate formation",
+          "meaning": "In lactate-producing fermentation, pyruvate is reduced by NADH to lactate, regenerating NAD+.",
+          "image": "the direct three-carbon pyruvate-to-lactate reaction returning NADH to NAD⁺ without a CO₂ vent"
+        },
+        {
+          "term": "Human exercise lactate",
+          "meaning": "Human skeletal muscle can produce lactate during high glycolytic flux even when oxygen is present; lactate itself is not the cause of the acute burning sensation or delayed-onset muscle soreness.",
+          "image": "the exercising muscle display producing lactate while its oxygen indicator remains on, beside the removed “burn” and “soreness” labels"
+        },
+        {
+          "term": "Lactate shuttle and Cori-cycle connection",
+          "meaning": "Lactate produced by tissues can be oxidized by other tissues or transported to liver and kidney, where its carbon can contribute to glucose synthesis.",
+          "image": "the lactate transport network splitting toward oxidative tissues and toward liver/kidney carbon recycling into glucose synthesis"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "misconception_guards": [
+        "Human lactate can be produced under aerobic conditions and can be transported and oxidized; do not attribute exercise fatigue or delayed soreness simply to lactate accumulation.",
+        "Keep these confusable terms physically and verbally distinct: alcohol fermentation, lactate fermentation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-024, RF-U3-025; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": [
+        "pyruvate/NADH input",
+        "lactate-forming reaction",
+        "lactate transport and reuse",
+        "Reduce pyruvate to lactate while regenerating NAD+, then move lactate into transport/reuse pathways to prevent the scene from ending with an obsolete “lactic acid poison” image."
+      ],
+      "carry_forward": "Carry forward this resolved mental model: Lactate formation; Human exercise lactate; Lactate shuttle and Cori-cycle connection."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4G",
+  "narrative_standard": "V2-NARRATIVE-3.0-U3-F4G"
+}

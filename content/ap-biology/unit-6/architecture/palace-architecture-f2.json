@@ -1,0 +1,2661 @@
+{
+  "schema": "memory-palace-v2-unit6-f2-palace-architecture-1.0",
+  "generated_utc": "2026-09-07T01:00:00+00:00",
+  "unit_id": "unit-6",
+  "architecture_policy": "F2 fixes learning destinations and permanent spatial architecture only. It does not write characters, causal scene actions, mnemonic sound hooks, or polished narrative prose.",
+  "counts": {
+    "canonical_records": 202,
+    "palace_managed_records": 161,
+    "scope_guard_records": 25,
+    "practice_only_records": 16,
+    "journeys": 6,
+    "bundles": 21,
+    "permanent_loci": 53,
+    "confusable_sets": 37
+  },
+  "journeys": [
+    {
+      "journey_id": "U6-J1",
+      "working_title": "Genome Archive and Replication Works",
+      "topics": "6.1–6.2",
+      "content_focus": "DNA/RNA information architecture, chromosome/plasmid organization, replication evidence, fork mechanics, synthesis direction, and chromosome-end maintenance",
+      "setting_logic": "An archive transitions into a copying works: hereditary information is stored first, then duplicated through a physically directional production line without turning extra enzyme names into AP requirements",
+      "bundles": [
+        {
+          "bundle_id": "U6-B01",
+          "title": "Hereditary information, chromosome forms, and plasmids",
+          "loci": [
+            "U6-L01",
+            "U6-L02",
+            "U6-L03"
+          ]
+        },
+        {
+          "bundle_id": "U6-B02",
+          "title": "Base classes and nucleic-acid structural reactivation",
+          "loci": [
+            "U6-L04",
+            "U6-L05"
+          ]
+        },
+        {
+          "bundle_id": "U6-B03",
+          "title": "Replication purpose and evidence",
+          "loci": [
+            "U6-L06",
+            "U6-L07"
+          ]
+        },
+        {
+          "bundle_id": "U6-B04",
+          "title": "Replication fork mechanics and direction",
+          "loci": [
+            "U6-L08",
+            "U6-L09",
+            "U6-L10"
+          ]
+        },
+        {
+          "bundle_id": "U6-B05",
+          "title": "Joining, repair, and chromosome ends",
+          "loci": [
+            "U6-L11",
+            "U6-L12"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U6-J2",
+      "working_title": "RNA Transcript Workshop",
+      "topics": "6.3",
+      "content_focus": "RNA roles, gene expression, transcription, promoter/template logic, directionality, pre-mRNA processing, and alternative splicing",
+      "setting_logic": "A transcript workshop follows information from a selected DNA template through RNA synthesis and eukaryotic processing while keeping prokaryotic transcript use distinct",
+      "bundles": [
+        {
+          "bundle_id": "U6-B06",
+          "title": "RNA identities and tRNA function",
+          "loci": [
+            "U6-L13",
+            "U6-L14"
+          ]
+        },
+        {
+          "bundle_id": "U6-B07",
+          "title": "Gene expression and transcription mechanics",
+          "loci": [
+            "U6-L15",
+            "U6-L16",
+            "U6-L17"
+          ]
+        },
+        {
+          "bundle_id": "U6-B08",
+          "title": "Transcript use and eukaryotic RNA processing",
+          "loci": [
+            "U6-L18",
+            "U6-L19",
+            "U6-L20"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U6-J3",
+      "working_title": "Translation Assembly Hall",
+      "topics": "6.4",
+      "content_focus": "Translation location, reading frames, codons, tRNA charging, ribosome operation, elongation, termination, and reverse transcription",
+      "setting_logic": "A protein-assembly hall turns a readable mRNA message into a polypeptide through ordered ribosome stations, then places retroviral reverse transcription in a clearly separate exception gate",
+      "bundles": [
+        {
+          "bundle_id": "U6-B09",
+          "title": "Translation geography and initiation",
+          "loci": [
+            "U6-L21",
+            "U6-L22"
+          ]
+        },
+        {
+          "bundle_id": "U6-B10",
+          "title": "Genetic code, tRNA, and ribosome organization",
+          "loci": [
+            "U6-L23",
+            "U6-L24",
+            "U6-L25"
+          ]
+        },
+        {
+          "bundle_id": "U6-B11",
+          "title": "Elongation, termination, and reverse information flow",
+          "loci": [
+            "U6-L26",
+            "U6-L27",
+            "U6-L28"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U6-J4",
+      "working_title": "Gene Control and Differentiation Center",
+      "topics": "6.5–6.6",
+      "content_focus": "Prokaryotic operons, eukaryotic regulation, epigenetics, promoters/enhancers, small RNA, gene-expression profiles, specialization, and development",
+      "setting_logic": "A control center compares bacterial switch logic with multi-layer eukaryotic regulation, then follows differential expression into specialized cell identities and developmental sequences",
+      "bundles": [
+        {
+          "bundle_id": "U6-B12",
+          "title": "Gene-expression control and operon architecture",
+          "loci": [
+            "U6-L29",
+            "U6-L30"
+          ]
+        },
+        {
+          "bundle_id": "U6-B13",
+          "title": "Repressible and inducible operon models",
+          "loci": [
+            "U6-L31",
+            "U6-L32"
+          ]
+        },
+        {
+          "bundle_id": "U6-B14",
+          "title": "Eukaryotic regulation and epigenetics",
+          "loci": [
+            "U6-L33",
+            "U6-L34"
+          ]
+        },
+        {
+          "bundle_id": "U6-B15",
+          "title": "Regulatory DNA, transcription factors, and RNA-level control",
+          "loci": [
+            "U6-L35",
+            "U6-L36",
+            "U6-L37"
+          ]
+        },
+        {
+          "bundle_id": "U6-B16",
+          "title": "Expression profiles, specialization, and development",
+          "loci": [
+            "U6-L38",
+            "U6-L39",
+            "U6-L40"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U6-J5",
+      "working_title": "Mutation and Gene Exchange Yard",
+      "topics": "6.7",
+      "content_focus": "Mutation consequences, substitution and frameshift types, mutation sources, chromosome-number and structural changes, HGT, transposition, and viral recombination",
+      "setting_logic": "A diagnostic yard first classifies DNA and chromosome changes by mechanism and consequence, then opens into microbial and viral transfer routes that create new genetic combinations",
+      "bundles": [
+        {
+          "bundle_id": "U6-B17",
+          "title": "Sequence-level mutation consequences",
+          "loci": [
+            "U6-L41",
+            "U6-L42",
+            "U6-L43"
+          ]
+        },
+        {
+          "bundle_id": "U6-B18",
+          "title": "Mutation sources and chromosome-scale change",
+          "loci": [
+            "U6-L44",
+            "U6-L45",
+            "U6-L46"
+          ]
+        },
+        {
+          "bundle_id": "U6-B19",
+          "title": "Horizontal transfer and mobile/recombined DNA",
+          "loci": [
+            "U6-L47",
+            "U6-L48"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U6-J6",
+      "working_title": "Biotechnology Investigation Lab",
+      "topics": "6.8",
+      "content_focus": "Genetic engineering, gel electrophoresis, PCR, bacterial transformation, sequencing, and DNA-profile comparison",
+      "setting_logic": "An investigation laboratory chooses biotechnology tools by function: amplify, separate, transform, sequence, or compare nucleic acids, keeping technique details tied to what the method accomplishes",
+      "bundles": [
+        {
+          "bundle_id": "U6-B20",
+          "title": "Genetic engineering and DNA separation",
+          "loci": [
+            "U6-L49",
+            "U6-L50"
+          ]
+        },
+        {
+          "bundle_id": "U6-B21",
+          "title": "Amplification, transformation, sequencing, and comparison",
+          "loci": [
+            "U6-L51",
+            "U6-L52",
+            "U6-L53"
+          ]
+        }
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B01",
+      "title": "Hereditary information, chromosome forms, and plasmids",
+      "loci": [
+        "U6-L01",
+        "U6-L02",
+        "U6-L03"
+      ]
+    },
+    {
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B02",
+      "title": "Base classes and nucleic-acid structural reactivation",
+      "loci": [
+        "U6-L04",
+        "U6-L05"
+      ]
+    },
+    {
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B03",
+      "title": "Replication purpose and evidence",
+      "loci": [
+        "U6-L06",
+        "U6-L07"
+      ]
+    },
+    {
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B04",
+      "title": "Replication fork mechanics and direction",
+      "loci": [
+        "U6-L08",
+        "U6-L09",
+        "U6-L10"
+      ]
+    },
+    {
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B05",
+      "title": "Joining, repair, and chromosome ends",
+      "loci": [
+        "U6-L11",
+        "U6-L12"
+      ]
+    },
+    {
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B06",
+      "title": "RNA identities and tRNA function",
+      "loci": [
+        "U6-L13",
+        "U6-L14"
+      ]
+    },
+    {
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B07",
+      "title": "Gene expression and transcription mechanics",
+      "loci": [
+        "U6-L15",
+        "U6-L16",
+        "U6-L17"
+      ]
+    },
+    {
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B08",
+      "title": "Transcript use and eukaryotic RNA processing",
+      "loci": [
+        "U6-L18",
+        "U6-L19",
+        "U6-L20"
+      ]
+    },
+    {
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B09",
+      "title": "Translation geography and initiation",
+      "loci": [
+        "U6-L21",
+        "U6-L22"
+      ]
+    },
+    {
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B10",
+      "title": "Genetic code, tRNA, and ribosome organization",
+      "loci": [
+        "U6-L23",
+        "U6-L24",
+        "U6-L25"
+      ]
+    },
+    {
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B11",
+      "title": "Elongation, termination, and reverse information flow",
+      "loci": [
+        "U6-L26",
+        "U6-L27",
+        "U6-L28"
+      ]
+    },
+    {
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B12",
+      "title": "Gene-expression control and operon architecture",
+      "loci": [
+        "U6-L29",
+        "U6-L30"
+      ]
+    },
+    {
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B13",
+      "title": "Repressible and inducible operon models",
+      "loci": [
+        "U6-L31",
+        "U6-L32"
+      ]
+    },
+    {
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B14",
+      "title": "Eukaryotic regulation and epigenetics",
+      "loci": [
+        "U6-L33",
+        "U6-L34"
+      ]
+    },
+    {
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B15",
+      "title": "Regulatory DNA, transcription factors, and RNA-level control",
+      "loci": [
+        "U6-L35",
+        "U6-L36",
+        "U6-L37"
+      ]
+    },
+    {
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B16",
+      "title": "Expression profiles, specialization, and development",
+      "loci": [
+        "U6-L38",
+        "U6-L39",
+        "U6-L40"
+      ]
+    },
+    {
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B17",
+      "title": "Sequence-level mutation consequences",
+      "loci": [
+        "U6-L41",
+        "U6-L42",
+        "U6-L43"
+      ]
+    },
+    {
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B18",
+      "title": "Mutation sources and chromosome-scale change",
+      "loci": [
+        "U6-L44",
+        "U6-L45",
+        "U6-L46"
+      ]
+    },
+    {
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B19",
+      "title": "Horizontal transfer and mobile/recombined DNA",
+      "loci": [
+        "U6-L47",
+        "U6-L48"
+      ]
+    },
+    {
+      "journey_id": "U6-J6",
+      "bundle_id": "U6-B20",
+      "title": "Genetic engineering and DNA separation",
+      "loci": [
+        "U6-L49",
+        "U6-L50"
+      ]
+    },
+    {
+      "journey_id": "U6-J6",
+      "bundle_id": "U6-B21",
+      "title": "Amplification, transformation, sequencing, and comparison",
+      "loci": [
+        "U6-L51",
+        "U6-L52",
+        "U6-L53"
+      ]
+    }
+  ],
+  "loci": [
+    {
+      "locus_id": "U6-L01",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B01",
+      "title": "Hereditary Information Intake",
+      "micro_anchor": "the archive intake where DNA and RNA are filed as hereditary information while the discovery evidence remains contextual rather than becoming the main memorization target",
+      "scene_geometry": {
+        "left": "Franklin / Chargaff evidence panel",
+        "center": "DNA/RNA hereditary-information registry",
+        "right": "historical model-building context"
+      },
+      "primary_knowledge_id": "U6-K-001",
+      "knowledge_ids": [
+        "U6-K-001",
+        "U6-K-090",
+        "U6-K-093"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-090",
+        "U6-K-093"
+      ],
+      "visual_mode": "HEREDITARY_INFORMATION_EVIDENCE_ARCHIVE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L02",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B01",
+      "title": "Chromosome Storage Gallery",
+      "micro_anchor": "the storage gallery separating typical prokaryotic circular chromosomes, eukaryotic linear chromosomes, and condensation states",
+      "scene_geometry": {
+        "left": "prokaryotic circular chromosome bay",
+        "center": "chromosome-form comparison platform",
+        "right": "eukaryotic linear / condensed chromosome bay"
+      },
+      "primary_knowledge_id": "U6-K-002",
+      "knowledge_ids": [
+        "U6-K-002",
+        "U6-K-003",
+        "U6-K-004"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-003",
+        "U6-K-004"
+      ],
+      "visual_mode": "CHROMOSOME_FORM_CONDENSATION_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L03",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B01",
+      "title": "Plasmid Ring Vault",
+      "micro_anchor": "the small-ring vault where plasmids replicate independently, carry conditionally useful genes, and can be engineered or transferred",
+      "scene_geometry": {
+        "left": "independent plasmid replication rack",
+        "center": "plasmid identity / recombinant ring bench",
+        "right": "gene-transfer and conditional-value display"
+      },
+      "primary_knowledge_id": "U6-K-005",
+      "knowledge_ids": [
+        "U6-K-005",
+        "U6-K-096",
+        "U6-K-097",
+        "U6-K-098",
+        "U6-K-099"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-096",
+        "U6-K-097",
+        "U6-K-098",
+        "U6-K-099"
+      ],
+      "visual_mode": "PLASMID_IDENTITY_REPLICATION_TRANSFER",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L04",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B02",
+      "title": "Base-Class Reading Table",
+      "micro_anchor": "the base table sorting purines and pyrimidines while Chargaff relationships constrain complementary pairing",
+      "scene_geometry": {
+        "left": "purine two-ring drawer",
+        "center": "base-class / composition comparison table",
+        "right": "pyrimidine one-ring drawer"
+      },
+      "primary_knowledge_id": "U6-K-006",
+      "knowledge_ids": [
+        "U6-K-006",
+        "U6-K-007",
+        "U6-K-091"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-007",
+        "U6-K-091"
+      ],
+      "visual_mode": "PURINE_PYRIMIDINE_CHARGAFF_TABLE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L05",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B02",
+      "title": "Antiparallel Pairing Bridge",
+      "micro_anchor": "the double-strand bridge reconnecting 5′/3′ directionality, antiparallel geometry, complementary pairing, and typical DNA/RNA architecture",
+      "scene_geometry": {
+        "left": "5′/3′ backbone direction rail",
+        "center": "antiparallel complementary-pair bridge",
+        "right": "DNA-versus-RNA architecture panel"
+      },
+      "primary_knowledge_id": "U6-K-008",
+      "knowledge_ids": [
+        "U6-K-008",
+        "U6-K-092",
+        "U6-K-094",
+        "U6-K-095",
+        "U6-K-100"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-092",
+        "U6-K-094",
+        "U6-K-095",
+        "U6-K-100"
+      ],
+      "visual_mode": "ANTIPARALLEL_BASE_PAIRING_REACTIVATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L06",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B03",
+      "title": "Replication Continuity Gate",
+      "micro_anchor": "the entry gate linking S phase and DNA copying to hereditary continuity before the fork machinery begins",
+      "scene_geometry": {
+        "left": "S-phase reactivation marker",
+        "center": "replication-preserves-information gate",
+        "right": "daughter-DNA destination"
+      },
+      "primary_knowledge_id": "U6-K-009",
+      "knowledge_ids": [
+        "U6-K-009",
+        "U6-K-101"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-101"
+      ],
+      "visual_mode": "REPLICATION_CONTINUITY_S_PHASE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L07",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B03",
+      "title": "Replication Model Test Chamber",
+      "micro_anchor": "the evidence chamber comparing conservative, semiconservative, and dispersive predictions against the Meselson–Stahl result",
+      "scene_geometry": {
+        "left": "conservative / dispersive model panels",
+        "center": "semiconservative model and evidence bench",
+        "right": "Meselson–Stahl isotope outcome display"
+      },
+      "primary_knowledge_id": "U6-K-011",
+      "knowledge_ids": [
+        "U6-K-011",
+        "U6-K-102",
+        "U6-K-103",
+        "U6-K-104"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-102",
+        "U6-K-103",
+        "U6-K-104"
+      ],
+      "visual_mode": "REPLICATION_MODEL_EVIDENCE_DISCRIMINATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L08",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B04",
+      "title": "Origin and Fork Launch",
+      "micro_anchor": "the launch platform where replication begins at origins, helicase opens the duplex, topoisomerase relieves twisting, and the fork becomes visible",
+      "scene_geometry": {
+        "left": "origin / topoisomerase side",
+        "center": "replication-fork opening platform",
+        "right": "helicase and exposed-template side"
+      },
+      "primary_knowledge_id": "U6-K-012",
+      "knowledge_ids": [
+        "U6-K-012",
+        "U6-K-013",
+        "U6-K-105",
+        "U6-K-106"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-013",
+        "U6-K-105",
+        "U6-K-106"
+      ],
+      "visual_mode": "ORIGIN_HELICASE_TOPOISOMERASE_FORK",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L09",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B04",
+      "title": "Primer–Polymerase Dock",
+      "micro_anchor": "the synthesis dock where exposed templates are stabilized, primase supplies RNA primers, and DNA polymerase extends only from a primer in the allowed direction",
+      "scene_geometry": {
+        "left": "single-strand stabilization / primase side",
+        "center": "RNA-primer and DNA-polymerase dock",
+        "right": "template movement / synthesis-direction rail"
+      },
+      "primary_knowledge_id": "U6-K-014",
+      "knowledge_ids": [
+        "U6-K-014",
+        "U6-K-107",
+        "U6-K-108",
+        "U6-K-109"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-107",
+        "U6-K-108",
+        "U6-K-109"
+      ],
+      "visual_mode": "PRIMER_POLYMERASE_SYNTHESIS_DOCK",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L10",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B04",
+      "title": "Leading–Lagging Split Track",
+      "micro_anchor": "the fork track separating continuous leading-strand synthesis from discontinuous lagging-strand synthesis and Okazaki fragments",
+      "scene_geometry": {
+        "left": "continuous leading track",
+        "center": "5′→3′ synthesis-direction divider",
+        "right": "lagging track with Okazaki fragments"
+      },
+      "primary_knowledge_id": "U6-K-015",
+      "knowledge_ids": [
+        "U6-K-010",
+        "U6-K-015",
+        "U6-K-110"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-010",
+        "U6-K-110"
+      ],
+      "visual_mode": "LEADING_LAGGING_DIRECTIONAL_FORK",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L11",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B05",
+      "title": "Fragment Joining and Repair Bench",
+      "micro_anchor": "the post-fork bench where primer replacement is contextual, ligase seals lagging-strand fragments, and proofreading/repair preserve sequence accuracy",
+      "scene_geometry": {
+        "left": "primer-replacement / proofreading side",
+        "center": "ligase fragment-joining bench",
+        "right": "mismatch / excision-repair overview"
+      },
+      "primary_knowledge_id": "U6-K-016",
+      "knowledge_ids": [
+        "U6-K-016",
+        "U6-K-111",
+        "U6-K-114",
+        "U6-K-115"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-111",
+        "U6-K-114",
+        "U6-K-115"
+      ],
+      "visual_mode": "LIGASE_PROOFREADING_REPAIR_BENCH",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L12",
+      "journey_id": "U6-J1",
+      "bundle_id": "U6-B05",
+      "title": "Chromosome-End Dock",
+      "micro_anchor": "the chromosome-end dock distinguishing telomeres from telomerase while keeping the detailed end-replication mechanism as enrichment",
+      "scene_geometry": {
+        "left": "telomere protective end",
+        "center": "chromosome-end maintenance dock",
+        "right": "telomerase extension tool"
+      },
+      "primary_knowledge_id": "U6-K-112",
+      "knowledge_ids": [
+        "U6-K-112",
+        "U6-K-113"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-113"
+      ],
+      "visual_mode": "TELOMERE_TELOMERASE_END_DOCK",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L13",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B06",
+      "title": "RNA Function Desk",
+      "micro_anchor": "the RNA desk where sequence and structure are tied to RNA function and mRNA, tRNA, and rRNA receive distinct jobs",
+      "scene_geometry": {
+        "left": "mRNA message lane",
+        "center": "RNA sequence/structure function desk",
+        "right": "rRNA ribosome-component lane"
+      },
+      "primary_knowledge_id": "U6-K-018",
+      "knowledge_ids": [
+        "U6-K-018",
+        "U6-K-019",
+        "U6-K-023"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-019",
+        "U6-K-023"
+      ],
+      "visual_mode": "RNA_FUNCTION_MRNA_RRNA",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L14",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B06",
+      "title": "tRNA Courier Bay",
+      "micro_anchor": "the courier bay where each tRNA carries a specific amino acid, pairs its anticodon with mRNA, and is recruited during translation",
+      "scene_geometry": {
+        "left": "amino-acid attachment side",
+        "center": "tRNA anticodon courier",
+        "right": "mRNA pairing / recruitment side"
+      },
+      "primary_knowledge_id": "U6-K-020",
+      "knowledge_ids": [
+        "U6-K-020",
+        "U6-K-021",
+        "U6-K-022"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-021",
+        "U6-K-022"
+      ],
+      "visual_mode": "TRNA_AMINO_ACID_ANTICODON_COURIER",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L15",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B07",
+      "title": "Gene Expression Junction",
+      "micro_anchor": "the junction separating transcription from translation while reactivating protein structure as the downstream functional destination",
+      "scene_geometry": {
+        "left": "transcription DNA→RNA lane",
+        "center": "gene-expression junction",
+        "right": "translation RNA→polypeptide lane"
+      },
+      "primary_knowledge_id": "U6-K-117",
+      "knowledge_ids": [
+        "U6-K-116",
+        "U6-K-117",
+        "U6-K-118",
+        "U6-K-119"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-116",
+        "U6-K-118",
+        "U6-K-119"
+      ],
+      "visual_mode": "GENE_EXPRESSION_TRANSCRIPTION_TRANSLATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L16",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B07",
+      "title": "Template–Promoter Entry Gate",
+      "micro_anchor": "the transcription entry gate where one DNA template strand is distinguished from the opposite strand and promoter/TATA context is placed before transcription begins",
+      "scene_geometry": {
+        "left": "template-strand selection side",
+        "center": "promoter entry gate",
+        "right": "TATA-box contextual panel"
+      },
+      "primary_knowledge_id": "U6-K-024",
+      "knowledge_ids": [
+        "U6-K-024",
+        "U6-K-120",
+        "U6-K-123",
+        "U6-K-124"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-120",
+        "U6-K-123",
+        "U6-K-124"
+      ],
+      "visual_mode": "TEMPLATE_PROMOTER_INITIATION_GATE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L17",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B07",
+      "title": "Transcription Direction Rail",
+      "micro_anchor": "the rail that locks RNA synthesis direction to the template orientation and carries initiation, elongation, and termination in sequence",
+      "scene_geometry": {
+        "left": "initiation station",
+        "center": "template 3′→5′ / RNA 5′→3′ rail",
+        "right": "elongation and termination stations"
+      },
+      "primary_knowledge_id": "U6-K-025",
+      "knowledge_ids": [
+        "U6-K-025",
+        "U6-K-122",
+        "U6-K-125"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-122",
+        "U6-K-125"
+      ],
+      "visual_mode": "TRANSCRIPTION_DIRECTION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L18",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B08",
+      "title": "Prokaryotic Transcript Exit",
+      "micro_anchor": "the prokaryotic exit showing why a transcript can become usable without the eukaryotic nucleus-based processing route",
+      "scene_geometry": {
+        "left": "DNA transcription area",
+        "center": "usable prokaryotic transcript exit",
+        "right": "ribosome-access side"
+      },
+      "primary_knowledge_id": "U6-K-126",
+      "knowledge_ids": [
+        "U6-K-126"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "PROKARYOTIC_TRANSCRIPT_USABILITY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L19",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B08",
+      "title": "Pre-mRNA Processing Counter",
+      "micro_anchor": "the eukaryotic processing counter where pre-mRNA receives a 5′ cap and poly-A tail before export",
+      "scene_geometry": {
+        "left": "5′ cap / recognition side",
+        "center": "pre-mRNA processing counter",
+        "right": "poly-A tail / stability side"
+      },
+      "primary_knowledge_id": "U6-K-026",
+      "knowledge_ids": [
+        "U6-K-026",
+        "U6-K-027",
+        "U6-K-028",
+        "U6-K-127",
+        "U6-K-128"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-027",
+        "U6-K-028",
+        "U6-K-127",
+        "U6-K-128"
+      ],
+      "visual_mode": "PREMRNA_CAP_POLYA_PROCESSING",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L20",
+      "journey_id": "U6-J2",
+      "bundle_id": "U6-B08",
+      "title": "Splice and Isoform Chamber",
+      "micro_anchor": "the chamber where introns are removed, exons are joined, alternative splicing changes exon combinations, and mature mRNA exits",
+      "scene_geometry": {
+        "left": "intron excision side",
+        "center": "exon-splicing / alternative-splicing chamber",
+        "right": "mature-mRNA exit"
+      },
+      "primary_knowledge_id": "U6-K-029",
+      "knowledge_ids": [
+        "U6-K-029",
+        "U6-K-030",
+        "U6-K-129"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-030",
+        "U6-K-129"
+      ],
+      "visual_mode": "INTRON_EXON_ALTERNATIVE_SPLICING",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L21",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B09",
+      "title": "Translation Geography Platform",
+      "micro_anchor": "the platform contrasting eukaryotic translation location with coupled transcription–translation in prokaryotes",
+      "scene_geometry": {
+        "left": "eukaryotic cytosolic/rough-ER ribosome side",
+        "center": "translation-location comparison platform",
+        "right": "prokaryotic coupled-transcription/translation side"
+      },
+      "primary_knowledge_id": "U6-K-031",
+      "knowledge_ids": [
+        "U6-K-031",
+        "U6-K-032"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-032"
+      ],
+      "visual_mode": "PROK_EUK_TRANSLATION_LOCATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L22",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B09",
+      "title": "Reading-Frame Start Gate",
+      "micro_anchor": "the start gate that establishes a reading frame at AUG and launches the initiation–elongation–termination sequence",
+      "scene_geometry": {
+        "left": "reading-frame alignment side",
+        "center": "AUG start gate",
+        "right": "translation-stage route"
+      },
+      "primary_knowledge_id": "U6-K-034",
+      "knowledge_ids": [
+        "U6-K-033",
+        "U6-K-034",
+        "U6-K-121"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-033",
+        "U6-K-121"
+      ],
+      "visual_mode": "READING_FRAME_AUG_START",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L23",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B10",
+      "title": "Codon Code Wall",
+      "micro_anchor": "the code wall linking triplet codons to amino acids while showing redundancy and near universality without requiring code-table memorization",
+      "scene_geometry": {
+        "left": "codon triplet examples",
+        "center": "codon-to-amino-acid mapping wall",
+        "right": "redundancy / near-universality display"
+      },
+      "primary_knowledge_id": "U6-K-035",
+      "knowledge_ids": [
+        "U6-K-035",
+        "U6-K-036",
+        "U6-K-037",
+        "U6-K-038"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-036",
+        "U6-K-037",
+        "U6-K-038"
+      ],
+      "visual_mode": "CODON_CODE_REDUNDANCY_UNIVERSALITY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L24",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B10",
+      "title": "tRNA Charging Dock",
+      "micro_anchor": "the dock where aminoacyl-tRNA synthetase links the correct amino acid to tRNA before the charged tRNA delivers that amino acid to the ribosome",
+      "scene_geometry": {
+        "left": "amino acid / synthetase side",
+        "center": "tRNA charging dock",
+        "right": "charged-tRNA delivery route"
+      },
+      "primary_knowledge_id": "U6-K-039",
+      "knowledge_ids": [
+        "U6-K-039",
+        "U6-K-130"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-130"
+      ],
+      "visual_mode": "TRNA_CHARGING_DELIVERY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L25",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B10",
+      "title": "Ribosome A–P–E Platform",
+      "micro_anchor": "the ribosome platform locating tRNAs at A, P, and E sites while corrected subunit-size values remain teacher enrichment",
+      "scene_geometry": {
+        "left": "A-site entry",
+        "center": "P-site peptide / ribosome platform",
+        "right": "E-site exit / subunit-size context"
+      },
+      "primary_knowledge_id": "U6-K-132",
+      "knowledge_ids": [
+        "U6-K-131",
+        "U6-K-132"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-131"
+      ],
+      "visual_mode": "RIBOSOME_APE_SITES",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L26",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B11",
+      "title": "Polypeptide Elongation Conveyor",
+      "micro_anchor": "the conveyor where codon recognition, peptide-bond growth, and translocation repeat to lengthen the polypeptide",
+      "scene_geometry": {
+        "left": "incoming codon–anticodon match",
+        "center": "polypeptide elongation conveyor",
+        "right": "translocation to next codon"
+      },
+      "primary_knowledge_id": "U6-K-040",
+      "knowledge_ids": [
+        "U6-K-040",
+        "U6-K-133"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-133"
+      ],
+      "visual_mode": "TRANSLATION_ELONGATION_TRANSLOCATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L27",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B11",
+      "title": "Stop and Release Dock",
+      "micro_anchor": "the termination dock where a stop codon ends translation, the product is released, and protein folding continues afterward",
+      "scene_geometry": {
+        "left": "stop-codon arrival",
+        "center": "termination / product-release dock",
+        "right": "post-translation folding side"
+      },
+      "primary_knowledge_id": "U6-K-041",
+      "knowledge_ids": [
+        "U6-K-041",
+        "U6-K-042",
+        "U6-K-134",
+        "U6-K-135"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-042",
+        "U6-K-134",
+        "U6-K-135"
+      ],
+      "visual_mode": "STOP_CODON_TERMINATION_RELEASE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L28",
+      "journey_id": "U6-J3",
+      "bundle_id": "U6-B11",
+      "title": "Retroviral Reverse-Flow Gate",
+      "micro_anchor": "the exception gate where reverse transcriptase copies retroviral RNA into DNA before that DNA can integrate into a host genome",
+      "scene_geometry": {
+        "left": "retroviral RNA input",
+        "center": "reverse-transcription gate",
+        "right": "DNA product toward host-genome integration"
+      },
+      "primary_knowledge_id": "U6-K-045",
+      "knowledge_ids": [
+        "U6-K-045"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "RETROVIRAL_REVERSE_TRANSCRIPTION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L29",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B12",
+      "title": "Expression Control Room",
+      "micro_anchor": "the control room where regulatory DNA and proteins determine constitutive versus inducible output instead of treating every gene as always on",
+      "scene_geometry": {
+        "left": "constitutive-expression channel",
+        "center": "regulatory DNA/protein control room",
+        "right": "inducible-expression channel"
+      },
+      "primary_knowledge_id": "U6-K-046",
+      "knowledge_ids": [
+        "U6-K-046",
+        "U6-K-047"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-047"
+      ],
+      "visual_mode": "REGULATORY_DNA_CONSTITUTIVE_INDUCIBLE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L30",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B12",
+      "title": "Operon Architecture Board",
+      "micro_anchor": "the bacterial control board separating promoter, operator, structural genes, and repressor protein while showing coordinated operon regulation",
+      "scene_geometry": {
+        "left": "promoter / operator inputs",
+        "center": "operon architecture board",
+        "right": "structural genes / coordinated output"
+      },
+      "primary_knowledge_id": "U6-K-053",
+      "knowledge_ids": [
+        "U6-K-053",
+        "U6-K-136",
+        "U6-K-137",
+        "U6-K-138"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-136",
+        "U6-K-137",
+        "U6-K-138"
+      ],
+      "visual_mode": "OPERON_PROMOTER_OPERATOR_REPRESSOR",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L31",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B13",
+      "title": "trp Repressible Chamber",
+      "micro_anchor": "the feedback chamber where tryptophan binds the repressor as a corepressor and switches a repressible operon toward lower transcription",
+      "scene_geometry": {
+        "left": "low-tryptophan inactive-repressor side",
+        "center": "trp operon repressible switch",
+        "right": "tryptophan corepressor / active-repressor side"
+      },
+      "primary_knowledge_id": "U6-K-140",
+      "knowledge_ids": [
+        "U6-K-139",
+        "U6-K-140",
+        "U6-K-141"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-139",
+        "U6-K-141"
+      ],
+      "visual_mode": "TRP_REPRESSIBLE_COREPRESSOR",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L32",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B13",
+      "title": "lac Inducible Chamber",
+      "micro_anchor": "the inducible chamber where allolactose changes repressor behavior and permits lac-operon transcription when the substrate signal is present",
+      "scene_geometry": {
+        "left": "repressor-blocked operator side",
+        "center": "lac operon inducible switch",
+        "right": "allolactose inducer / structural-gene output side"
+      },
+      "primary_knowledge_id": "U6-K-142",
+      "knowledge_ids": [
+        "U6-K-142",
+        "U6-K-143",
+        "U6-K-144"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-143",
+        "U6-K-144"
+      ],
+      "visual_mode": "LAC_INDUCIBLE_ALLOLACTOSE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L33",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B14",
+      "title": "Eukaryotic Regulation Layers",
+      "micro_anchor": "the layered control wall showing that eukaryotic gene expression can be coordinated at chromatin, transcriptional, RNA-processing, translational, and post-translational stages",
+      "scene_geometry": {
+        "left": "chromatin / transcription layer",
+        "center": "multi-stage regulation stack",
+        "right": "RNA / translation / post-translation layer"
+      },
+      "primary_knowledge_id": "U6-K-054",
+      "knowledge_ids": [
+        "U6-K-054",
+        "U6-K-145"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-145"
+      ],
+      "visual_mode": "EUKARYOTIC_MULTI_STAGE_REGULATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L34",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B14",
+      "title": "Epigenetic Chromatin Room",
+      "micro_anchor": "the chromatin room connecting reversible DNA/histone modifications with gene-expression state while keeping their effects context dependent",
+      "scene_geometry": {
+        "left": "histone-acetylation side",
+        "center": "reversible epigenetic chromatin state",
+        "right": "DNA-methylation / inherited-state side"
+      },
+      "primary_knowledge_id": "U6-K-048",
+      "knowledge_ids": [
+        "U6-K-048",
+        "U6-K-146",
+        "U6-K-147",
+        "U6-K-148"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-146",
+        "U6-K-147",
+        "U6-K-148"
+      ],
+      "visual_mode": "EPIGENETIC_HISTONE_DNA_METHYLATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L35",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B15",
+      "title": "Promoter–Enhancer Recruitment Hall",
+      "micro_anchor": "the regulatory hall where promoter and enhancer/control elements recruit transcription machinery from positions that may lie upstream, downstream, or within genes",
+      "scene_geometry": {
+        "left": "promoter / nearby control side",
+        "center": "transcription-machinery recruitment hall",
+        "right": "enhancer / distant-position side"
+      },
+      "primary_knowledge_id": "U6-K-055",
+      "knowledge_ids": [
+        "U6-K-055",
+        "U6-K-056",
+        "U6-K-149"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-056",
+        "U6-K-149"
+      ],
+      "visual_mode": "PROMOTER_ENHANCER_RECRUITMENT",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L36",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B15",
+      "title": "Activator–Repressor Balance Gate",
+      "micro_anchor": "the balance gate where positive and negative regulators change transcriptional output rather than simply labeling genes on or off",
+      "scene_geometry": {
+        "left": "activator / positive regulation side",
+        "center": "transcriptional output balance",
+        "right": "repressor / negative regulation side"
+      },
+      "primary_knowledge_id": "U6-K-057",
+      "knowledge_ids": [
+        "U6-K-057"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "ACTIVATOR_REPRESSOR_NEGATIVE_REGULATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L37",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B15",
+      "title": "RNA-Level Regulation Suite",
+      "micro_anchor": "the RNA regulation suite where alternative splicing and small RNAs such as miRNA/siRNA change which messages persist or are used",
+      "scene_geometry": {
+        "left": "alternative-splicing side",
+        "center": "RNA-level regulation suite",
+        "right": "miRNA / siRNA small-RNA side"
+      },
+      "primary_knowledge_id": "U6-K-059",
+      "knowledge_ids": [
+        "U6-K-059",
+        "U6-K-150",
+        "U6-K-151"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-150",
+        "U6-K-151"
+      ],
+      "visual_mode": "SMALL_RNA_ALTERNATIVE_SPLICING_REGULATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L38",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B16",
+      "title": "Expression Profile Console",
+      "micro_anchor": "the console connecting gene-expression profiles and gene-product amount/function to phenotype",
+      "scene_geometry": {
+        "left": "gene-product amount / function input",
+        "center": "expression-profile phenotype console",
+        "right": "phenotypic output"
+      },
+      "primary_knowledge_id": "U6-K-049",
+      "knowledge_ids": [
+        "U6-K-049",
+        "U6-K-052"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-052"
+      ],
+      "visual_mode": "GENE_EXPRESSION_PROFILE_PHENOTYPE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L39",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B16",
+      "title": "Cell Specialization Gallery",
+      "micro_anchor": "the gallery where differential gene expression produces tissue-specific proteins and differentiated cell identities",
+      "scene_geometry": {
+        "left": "shared genome / inactive genes side",
+        "center": "differential-expression specialization gallery",
+        "right": "tissue-specific protein / cell-identity side"
+      },
+      "primary_knowledge_id": "U6-K-058",
+      "knowledge_ids": [
+        "U6-K-050",
+        "U6-K-058",
+        "U6-K-152"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-050",
+        "U6-K-152"
+      ],
+      "visual_mode": "DIFFERENTIAL_EXPRESSION_CELL_DIFFERENTIATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L40",
+      "journey_id": "U6-J4",
+      "bundle_id": "U6-B16",
+      "title": "Developmental Sequence Hall",
+      "micro_anchor": "the developmental hall where sequential gene expression is linked with morphogenesis, cytoplasmic determinants, induction, pattern formation, homeotic genes, and apoptosis as teacher-enrichment mechanisms",
+      "scene_geometry": {
+        "left": "early determinants / induction side",
+        "center": "sequential developmental gene-expression route",
+        "right": "patterning / morphogenesis / apoptosis side"
+      },
+      "primary_knowledge_id": "U6-K-051",
+      "knowledge_ids": [
+        "U6-K-051",
+        "U6-K-153",
+        "U6-K-154",
+        "U6-K-155",
+        "U6-K-156",
+        "U6-K-157"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-153",
+        "U6-K-154",
+        "U6-K-155",
+        "U6-K-156",
+        "U6-K-157"
+      ],
+      "visual_mode": "DEVELOPMENTAL_GENE_EXPRESSION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L41",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B17",
+      "title": "Mutation Consequence Desk",
+      "micro_anchor": "the triage desk where a DNA change is interpreted through its molecular consequence, environmental context, and possible connection from genotype to phenotype and selection",
+      "scene_geometry": {
+        "left": "molecular-change input",
+        "center": "mutation-consequence triage desk",
+        "right": "phenotype / environment / selection output"
+      },
+      "primary_knowledge_id": "U6-K-060",
+      "knowledge_ids": [
+        "U6-K-060",
+        "U6-K-067",
+        "U6-K-074"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-067",
+        "U6-K-074"
+      ],
+      "visual_mode": "MUTATION_CONSEQUENCE_CONTEXT_SELECTION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L42",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B17",
+      "title": "Substitution Sorter",
+      "micro_anchor": "the sorter comparing point substitution outcomes including silent, missense, and nonsense changes without assuming every substitution has the same effect",
+      "scene_geometry": {
+        "left": "silent / missense lanes",
+        "center": "point-substitution sorter",
+        "right": "nonsense / altered-protein lane"
+      },
+      "primary_knowledge_id": "U6-K-061",
+      "knowledge_ids": [
+        "U6-K-061",
+        "U6-K-063",
+        "U6-K-064",
+        "U6-K-158"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-063",
+        "U6-K-064",
+        "U6-K-158"
+      ],
+      "visual_mode": "SUBSTITUTION_SILENT_MISSENSE_NONSENSE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L43",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B17",
+      "title": "Frameshift Reading Track",
+      "micro_anchor": "the reading track where insertion/deletion changes the downstream reading frame when the net change is not a multiple of three",
+      "scene_geometry": {
+        "left": "original reading frame",
+        "center": "insertion/deletion frameshift point",
+        "right": "shifted downstream codons"
+      },
+      "primary_knowledge_id": "U6-K-062",
+      "knowledge_ids": [
+        "U6-K-062"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "FRAMESHIFT_READING_FRAME",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L44",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B18",
+      "title": "Mutation Source and Variation Yard",
+      "micro_anchor": "the yard connecting replication errors and mutagens to random DNA change, then placing mutation alongside conserved reproductive processes as sources of variation",
+      "scene_geometry": {
+        "left": "replication-error / mutagen inputs",
+        "center": "mutation-to-variation yard",
+        "right": "meiosis / recombination / fertilization variation sources"
+      },
+      "primary_knowledge_id": "U6-K-066",
+      "knowledge_ids": [
+        "U6-K-066",
+        "U6-K-068",
+        "U6-K-080"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-068",
+        "U6-K-080"
+      ],
+      "visual_mode": "MUTATION_VARIATION_SOURCES",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L45",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B18",
+      "title": "Chromosome Number Error Bay",
+      "micro_anchor": "the bay where cell-division errors such as nondisjunction alter chromosome number and can disrupt phenotype or development",
+      "scene_geometry": {
+        "left": "normal segregation side",
+        "center": "nondisjunction / chromosome-number error bay",
+        "right": "aneuploid developmental-effect side"
+      },
+      "primary_knowledge_id": "U6-K-070",
+      "knowledge_ids": [
+        "U6-K-069",
+        "U6-K-070",
+        "U6-K-071",
+        "U6-K-163"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-069",
+        "U6-K-071",
+        "U6-K-163"
+      ],
+      "visual_mode": "NONDISJUNCTION_CHROMOSOME_NUMBER_EFFECT",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L46",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B18",
+      "title": "Chromosome Rearrangement Garage",
+      "micro_anchor": "the garage sorting deletion, duplication, inversion, and translocation as structural chromosome alterations",
+      "scene_geometry": {
+        "left": "deletion / duplication bays",
+        "center": "chromosome-structure alteration garage",
+        "right": "inversion / translocation bays"
+      },
+      "primary_knowledge_id": "U6-K-072",
+      "knowledge_ids": [
+        "U6-K-072",
+        "U6-K-159",
+        "U6-K-160",
+        "U6-K-161",
+        "U6-K-162"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-159",
+        "U6-K-160",
+        "U6-K-161",
+        "U6-K-162"
+      ],
+      "visual_mode": "CHROMOSOME_REARRANGEMENT_TYPES",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L47",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B19",
+      "title": "Horizontal Gene Transfer Hub",
+      "micro_anchor": "the microbial transfer hub distinguishing transformation, transduction, and conjugation as routes of horizontal gene transfer",
+      "scene_geometry": {
+        "left": "transformation uptake route",
+        "center": "horizontal-gene-transfer hub",
+        "right": "transduction / conjugation routes"
+      },
+      "primary_knowledge_id": "U6-K-075",
+      "knowledge_ids": [
+        "U6-K-075",
+        "U6-K-076",
+        "U6-K-077",
+        "U6-K-164"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-076",
+        "U6-K-077",
+        "U6-K-164"
+      ],
+      "visual_mode": "HORIZONTAL_GENE_TRANSFER_MODES",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L48",
+      "journey_id": "U6-J5",
+      "bundle_id": "U6-B19",
+      "title": "Mobile DNA and Viral Recombination Yard",
+      "micro_anchor": "the yard where transposable elements move within genomes and coinfecting viruses can recombine genetic material",
+      "scene_geometry": {
+        "left": "transposition / mobile-element side",
+        "center": "genetic-rearrangement yard",
+        "right": "viral coinfection / recombination side"
+      },
+      "primary_knowledge_id": "U6-K-078",
+      "knowledge_ids": [
+        "U6-K-078",
+        "U6-K-079"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-079"
+      ],
+      "visual_mode": "TRANSPOSITION_VIRAL_RECOMBINATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L49",
+      "journey_id": "U6-J6",
+      "bundle_id": "U6-B20",
+      "title": "Genetic Engineering Intake",
+      "micro_anchor": "the laboratory intake defining genetic engineering as purposeful manipulation or analysis of nucleic acids before individual techniques are chosen",
+      "scene_geometry": {
+        "left": "DNA manipulation tools",
+        "center": "genetic-engineering intake bench",
+        "right": "analysis / comparison tools"
+      },
+      "primary_knowledge_id": "U6-K-081",
+      "knowledge_ids": [
+        "U6-K-081"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "GENETIC_ENGINEERING_SCOPE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L50",
+      "journey_id": "U6-J6",
+      "bundle_id": "U6-B20",
+      "title": "Gel Electrophoresis Lane",
+      "micro_anchor": "the gel lane where charged DNA fragments migrate through a matrix and produce band patterns used for comparison",
+      "scene_geometry": {
+        "left": "sample wells / DNA loading side",
+        "center": "gel migration lane",
+        "right": "separated band-pattern side"
+      },
+      "primary_knowledge_id": "U6-K-082",
+      "knowledge_ids": [
+        "U6-K-082",
+        "U6-K-167"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-167"
+      ],
+      "visual_mode": "GEL_ELECTROPHORESIS_MIGRATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L51",
+      "journey_id": "U6-J6",
+      "bundle_id": "U6-B21",
+      "title": "PCR Thermal Cycler",
+      "micro_anchor": "the thermal cycler repeating denaturation, primer annealing, and extension to amplify a selected DNA region",
+      "scene_geometry": {
+        "left": "denaturation high-temperature side",
+        "center": "primer-annealing stage",
+        "right": "extension / amplified-copy output"
+      },
+      "primary_knowledge_id": "U6-K-083",
+      "knowledge_ids": [
+        "U6-K-083",
+        "U6-K-084",
+        "U6-K-085",
+        "U6-K-166"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-084",
+        "U6-K-085",
+        "U6-K-166"
+      ],
+      "visual_mode": "PCR_THREE_STAGE_AMPLIFICATION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L52",
+      "journey_id": "U6-J6",
+      "bundle_id": "U6-B21",
+      "title": "Transformation Expression Bench",
+      "micro_anchor": "the bacterial bench connecting uptake of engineered DNA with recombinant expression while distinguishing laboratory transformation from natural HGT context",
+      "scene_geometry": {
+        "left": "engineered plasmid / bacterial uptake side",
+        "center": "transformation bench",
+        "right": "recombinant gene-expression output"
+      },
+      "primary_knowledge_id": "U6-K-086",
+      "knowledge_ids": [
+        "U6-K-086",
+        "U6-K-165"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-165"
+      ],
+      "visual_mode": "BACTERIAL_TRANSFORMATION_RECOMBINANT_EXPRESSION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U6-L53",
+      "journey_id": "U6-J6",
+      "bundle_id": "U6-B21",
+      "title": "Sequence and Profile Analysis Desk",
+      "micro_anchor": "the analysis desk where DNA sequencing determines nucleotide order and DNA profiles compare patterns among samples",
+      "scene_geometry": {
+        "left": "DNA sequence readout",
+        "center": "sequence/profile analysis desk",
+        "right": "profile/fingerprint comparison panel"
+      },
+      "primary_knowledge_id": "U6-K-087",
+      "knowledge_ids": [
+        "U6-K-087",
+        "U6-K-088"
+      ],
+      "embedded_knowledge_ids": [
+        "U6-K-088"
+      ],
+      "visual_mode": "DNA_SEQUENCING_PROFILE_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    }
+  ],
+  "challenge_lab": [
+    {
+      "knowledge_id": "U6-K-168",
+      "canonical_label": "Chargaff percentage calculation",
+      "topic": "6.1",
+      "retrieval_demand": "QUANTITATIVE",
+      "prerequisite_loci": [
+        "U6-L04",
+        "U6-L05"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-169",
+      "canonical_label": "DNA/RNA structure discrimination",
+      "topic": "6.1",
+      "retrieval_demand": "MIXED_RETRIEVAL",
+      "prerequisite_loci": [
+        "U6-L04",
+        "U6-L05"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-170",
+      "canonical_label": "Plasmid antibiotic-resistance FRQ",
+      "topic": "6.1",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L03"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-171",
+      "canonical_label": "Complementary-strand directionality practice",
+      "topic": "6.2",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L05",
+        "U6-L10"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-172",
+      "canonical_label": "Replication mechanism explanation",
+      "topic": "6.2",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L08",
+        "U6-L09",
+        "U6-L10",
+        "U6-L11"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-173",
+      "canonical_label": "DNA-template to mRNA conversion",
+      "topic": "6.3",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L16",
+        "U6-L17"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-174",
+      "canonical_label": "Codon-chart translation",
+      "topic": "6.4",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L22",
+        "U6-L23",
+        "U6-L24"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-175",
+      "canonical_label": "Transcription synthesis check",
+      "topic": "6.3",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L16",
+        "U6-L17"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-176",
+      "canonical_label": "Translation component check",
+      "topic": "6.4",
+      "retrieval_demand": "MIXED_RETRIEVAL",
+      "prerequisite_loci": [
+        "U6-L21",
+        "U6-L23",
+        "U6-L24",
+        "U6-L25"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-177",
+      "canonical_label": "Gene-to-functional-protein FRQ",
+      "topic": "6.4",
+      "retrieval_demand": "FRQ",
+      "prerequisite_loci": [
+        "U6-L15",
+        "U6-L17",
+        "U6-L20",
+        "U6-L22",
+        "U6-L27"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-178",
+      "canonical_label": "Prokaryotic/eukaryotic translation comparison",
+      "topic": "6.4",
+      "retrieval_demand": "FRQ",
+      "prerequisite_loci": [
+        "U6-L21"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-179",
+      "canonical_label": "lac versus trp operon discrimination",
+      "topic": "6.5",
+      "retrieval_demand": "DISCRIMINATION",
+      "prerequisite_loci": [
+        "U6-L31",
+        "U6-L32"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-180",
+      "canonical_label": "Mutation-type visual analysis",
+      "topic": "6.7",
+      "retrieval_demand": "VISUAL_ANALYSIS",
+      "prerequisite_loci": [
+        "U6-L42",
+        "U6-L43",
+        "U6-L46"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-181",
+      "canonical_label": "Gel electrophoresis pattern interpretation",
+      "topic": "6.8",
+      "retrieval_demand": "VISUAL_ANALYSIS",
+      "prerequisite_loci": [
+        "U6-L50"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-182",
+      "canonical_label": "PCR mechanism application",
+      "topic": "6.8",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L51"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    },
+    {
+      "knowledge_id": "U6-K-183",
+      "canonical_label": "DNA sequence comparison",
+      "topic": "6.8",
+      "retrieval_demand": "APPLICATION",
+      "prerequisite_loci": [
+        "U6-L53"
+      ],
+      "runtime_status": "ARCHITECTURE_ONLY_NO_TASK_PROSE_F2"
+    }
+  ],
+  "scope_guards": [
+    {
+      "knowledge_id": "U6-K-017",
+      "topic": "6.2",
+      "canonical_label": "Replication enzyme-name scope guard",
+      "canonical_statement": "For the AP Exam, names of replication steps and particular enzymes beyond DNA polymerase, ligase, RNA polymerase, helicase, and topoisomerase are outside required scope.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-043",
+      "topic": "6.4",
+      "canonical_label": "Translation factor-name scope guard",
+      "canonical_statement": "Details and names of enzymes and factors involved in translation steps are outside AP Exam scope.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-044",
+      "topic": "6.4",
+      "canonical_label": "Genetic-code memorization scope guard",
+      "canonical_statement": "Memorization of the genetic code is outside AP Exam scope except for the start codon AUG; students should use a supplied code chart.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-065",
+      "topic": "6.7",
+      "canonical_label": "Specific-mutation effect scope guard",
+      "canonical_statement": "Specific named mutations and their detailed effects are beyond AP Exam scope unless provided in a question context.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-073",
+      "topic": "6.7",
+      "canonical_label": "Specific chromosome-disorder scope guard",
+      "canonical_statement": "Specific disorders caused by chromosome-number changes are beyond AP Exam scope unless supplied in context.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-089",
+      "topic": "6.8",
+      "canonical_label": "Biotechnology-detail scope guard",
+      "canonical_statement": "Detailed procedural knowledge of gel electrophoresis, PCR, bacterial transformation, and DNA sequencing is beyond AP Exam scope beyond the required functional principles.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-184",
+      "topic": "6.1",
+      "canonical_label": "Backbone bond versus base-pair bond",
+      "canonical_statement": "Do not answer a generic “bond holding nucleotides together” prompt with hydrogen bonds. Phosphodiester bonds link adjacent nucleotides within a strand; hydrogen bonds stabilize complementary base pairing between strands/regions.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-185",
+      "topic": "6.1",
+      "canonical_label": "Typical DNA/RNA structure is not absolute",
+      "canonical_statement": "Treat double-stranded DNA and single-stranded RNA as typical cellular patterns, not universal rules across all nucleic acids and viruses.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-186",
+      "topic": "6.2",
+      "canonical_label": "Extra replication enzyme names are enrichment",
+      "canonical_statement": "SSBPs, primase, DNA polymerase I/III, and detailed primer-removal machinery are scientifically useful teacher enrichment but are not current AP-required enzyme-name targets.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-187",
+      "topic": "6.2",
+      "canonical_label": "Telomere mechanism is enrichment",
+      "canonical_statement": "Telomeres/telomerase are valid biology but are outside the current Unit 6 AP-required replication content.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-188",
+      "topic": "6.3",
+      "canonical_label": "Transcription location depends on cell type",
+      "canonical_statement": "Do not encode “transcription occurs in the nucleus” as universal; that statement applies to eukaryotic nuclear genes, while prokaryotes transcribe DNA without a nucleus.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-189",
+      "topic": "6.3",
+      "canonical_label": "TATA box is not every eukaryotic promoter",
+      "canonical_statement": "Do not equate “eukaryotic promoter” with “TATA box.” TATA is one promoter element found in some genes.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-190",
+      "topic": "6.3",
+      "canonical_label": "Exon does not mean entirely protein-coding",
+      "canonical_statement": "Do not define exons simply as amino-acid-coding sequence; mature transcripts can retain noncoding exon regions such as UTRs.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-191",
+      "topic": "6.4",
+      "canonical_label": "Genetic code is nearly universal",
+      "canonical_statement": "Use near universality, not absolute universality, when connecting the genetic code to common ancestry.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-192",
+      "topic": "6.4",
+      "canonical_label": "Ribosome size values are enrichment and corrected",
+      "canonical_statement": "Do not use the slide’s 30S/40S prokaryotic pair. If ribosomal S values are retained as enrichment, use bacterial 30S + 50S and eukaryotic cytosolic 40S + 60S.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-193",
+      "topic": "6.4",
+      "canonical_label": "Retroviral DNA integrates into host DNA",
+      "canonical_statement": "Do not encode the slide phrase that reverse-transcribed DNA becomes part of RNA. It can integrate into host genomic DNA.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-194",
+      "topic": "6.5",
+      "canonical_label": "trp repressor is not an enzyme",
+      "canonical_statement": "Do not encode the trp repressor as an allosteric enzyme. It is a regulatory protein activated by the corepressor tryptophan.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-195",
+      "topic": "6.5",
+      "canonical_label": "lac operon is not a human lactase pathway",
+      "canonical_statement": "Do not teach the lac operon as simply producing lactase. Its structural genes encode bacterial proteins including β-galactosidase and lactose permease.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-196",
+      "topic": "6.5",
+      "canonical_label": "Epigenetic effects are context dependent",
+      "canonical_statement": "Avoid universal claims that methylation always condenses DNA or that twin disease discordance is simply “inherited epigenetics.” Preserve reversible gene-regulatory effects with appropriate context.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-197",
+      "topic": "6.6",
+      "canonical_label": "Developmental mechanism names are enrichment",
+      "canonical_statement": "Morphogenesis, cytoplasmic determinants, homeotic genes, and apoptosis are teacher enrichment; the current AP-required core is regulation, transcription-factor effects, differential expression, and specialization.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-198",
+      "topic": "6.7",
+      "canonical_label": "Frameshift effects are not universally catastrophic",
+      "canonical_statement": "Insertion/deletion frameshifts can strongly alter downstream coding sequence, but effects vary and in-frame indels do not shift the frame.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-199",
+      "topic": "6.7",
+      "canonical_label": "Named chromosome disorders are contextual",
+      "canonical_statement": "Named disorders such as trisomy 21 remain contextual enrichment because the current CED excludes specific chromosome-number disorders as required knowledge.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-200",
+      "topic": "6.7",
+      "canonical_label": "Aneuploidy versus polyploidy",
+      "canonical_statement": "Use aneuploidy for gain/loss of individual chromosomes and polyploidy/triploidy for extra whole chromosome sets; do not merge these categories.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-201",
+      "topic": "6.7",
+      "canonical_label": "Selection acts on heritable phenotypic variation",
+      "canonical_statement": "Do not imply every mutation is directly selected. Selection changes frequencies of heritable variants when their phenotypic effects influence reproductive success in context.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U6-K-202",
+      "topic": "6.8",
+      "canonical_label": "Biotechnology functional scope",
+      "canonical_statement": "Teach what gel electrophoresis, PCR, bacterial transformation, and sequencing accomplish and how to interpret results; do not require unnecessary procedural details beyond current CED scope.",
+      "runtime_status": "NON_RUNTIME_SCOPE_BOUNDARY"
+    }
+  ],
+  "confusable_sets": [
+    {
+      "set_id": "U6-D01",
+      "title": "DNA versus RNA architecture",
+      "knowledge_ids": [
+        "U6-K-001",
+        "U6-K-100",
+        "U6-K-094",
+        "U6-K-095"
+      ],
+      "terms": [
+        "DNA/RNA as hereditary information",
+        "Typical RNA versus DNA architecture",
+        "DNA antiparallel structural review",
+        "5′ and 3′ end chemistry review"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D02",
+      "title": "Purines versus pyrimidines",
+      "knowledge_ids": [
+        "U6-K-006",
+        "U6-K-007"
+      ],
+      "terms": [
+        "Purines",
+        "Pyrimidines"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D03",
+      "title": "Chromosome versus plasmid",
+      "knowledge_ids": [
+        "U6-K-002",
+        "U6-K-003",
+        "U6-K-005"
+      ],
+      "terms": [
+        "Typical prokaryotic chromosome form",
+        "Typical eukaryotic chromosome form",
+        "Plasmids"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D04",
+      "title": "Complementary base pairing versus backbone direction",
+      "knowledge_ids": [
+        "U6-K-008",
+        "U6-K-094",
+        "U6-K-095"
+      ],
+      "terms": [
+        "Conserved complementary base pairing",
+        "DNA antiparallel structural review",
+        "5′ and 3′ end chemistry review"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D05",
+      "title": "Conservative versus semiconservative versus dispersive replication",
+      "knowledge_ids": [
+        "U6-K-011",
+        "U6-K-102",
+        "U6-K-103"
+      ],
+      "terms": [
+        "Semiconservative replication",
+        "Conservative replication model",
+        "Dispersive replication model"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D06",
+      "title": "Helicase versus topoisomerase versus ligase",
+      "knowledge_ids": [
+        "U6-K-012",
+        "U6-K-013",
+        "U6-K-016"
+      ],
+      "terms": [
+        "Helicase",
+        "Topoisomerase",
+        "Ligase joins lagging-strand fragments"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D07",
+      "title": "Primase versus DNA polymerase",
+      "knowledge_ids": [
+        "U6-K-014",
+        "U6-K-108"
+      ],
+      "terms": [
+        "DNA polymerase requires RNA primers",
+        "Primase"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D08",
+      "title": "Leading versus lagging strand",
+      "knowledge_ids": [
+        "U6-K-015",
+        "U6-K-110"
+      ],
+      "terms": [
+        "Leading and lagging strand synthesis",
+        "Okazaki fragments"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D09",
+      "title": "Telomere versus telomerase",
+      "knowledge_ids": [
+        "U6-K-112",
+        "U6-K-113"
+      ],
+      "terms": [
+        "Telomeres",
+        "Telomerase"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D10",
+      "title": "Transcription versus translation",
+      "knowledge_ids": [
+        "U6-K-118",
+        "U6-K-119"
+      ],
+      "terms": [
+        "Transcription definition",
+        "Translation definition"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D11",
+      "title": "mRNA versus tRNA versus rRNA",
+      "knowledge_ids": [
+        "U6-K-019",
+        "U6-K-020",
+        "U6-K-023"
+      ],
+      "terms": [
+        "mRNA function",
+        "tRNA amino-acid specificity",
+        "rRNA as ribosome component"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D12",
+      "title": "Template strand versus transcript direction",
+      "knowledge_ids": [
+        "U6-K-024",
+        "U6-K-025",
+        "U6-K-120"
+      ],
+      "terms": [
+        "Transcription uses one DNA template strand",
+        "Transcription directionality",
+        "Template strand terminology"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D13",
+      "title": "Promoter versus TATA box",
+      "knowledge_ids": [
+        "U6-K-123",
+        "U6-K-124"
+      ],
+      "terms": [
+        "Promoter",
+        "TATA box"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D14",
+      "title": "5′ cap versus poly-A tail",
+      "knowledge_ids": [
+        "U6-K-027",
+        "U6-K-028"
+      ],
+      "terms": [
+        "Poly-A tail stability",
+        "5′ GTP cap recognition"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D15",
+      "title": "Intron versus exon/spliced product",
+      "knowledge_ids": [
+        "U6-K-029",
+        "U6-K-030",
+        "U6-K-129"
+      ],
+      "terms": [
+        "Intron excision and exon splicing",
+        "Alternative splicing",
+        "Mature mRNA"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D16",
+      "title": "Codon versus anticodon",
+      "knowledge_ids": [
+        "U6-K-035",
+        "U6-K-021"
+      ],
+      "terms": [
+        "Codons",
+        "tRNA anticodon pairing"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D17",
+      "title": "Start codon versus stop codon",
+      "knowledge_ids": [
+        "U6-K-034",
+        "U6-K-041"
+      ],
+      "terms": [
+        "Start codon AUG",
+        "Translation continues to stop codon"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D18",
+      "title": "Reading frame versus codon",
+      "knowledge_ids": [
+        "U6-K-121",
+        "U6-K-035"
+      ],
+      "terms": [
+        "Reading frame",
+        "Codons"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D19",
+      "title": "Ribosomal A versus P versus E sites",
+      "knowledge_ids": [
+        "U6-K-132",
+        "U6-K-039",
+        "U6-K-040"
+      ],
+      "terms": [
+        "Ribosomal A, P, and E sites",
+        "tRNA delivers amino acid",
+        "Polypeptide elongation"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D20",
+      "title": "Prokaryotic versus eukaryotic expression geography",
+      "knowledge_ids": [
+        "U6-K-031",
+        "U6-K-032",
+        "U6-K-126"
+      ],
+      "terms": [
+        "Translation location",
+        "Coupled transcription and translation in prokaryotes",
+        "Prokaryotic transcript usability"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D21",
+      "title": "Operon promoter versus operator versus structural genes",
+      "knowledge_ids": [
+        "U6-K-136",
+        "U6-K-137",
+        "U6-K-138"
+      ],
+      "terms": [
+        "Operon",
+        "Promoter–operator–structural gene model",
+        "Repressor protein"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D22",
+      "title": "trp repressible versus lac inducible operon",
+      "knowledge_ids": [
+        "U6-K-140",
+        "U6-K-142"
+      ],
+      "terms": [
+        "trp operon as repressible system",
+        "lac operon as inducible system"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D23",
+      "title": "Corepressor versus inducer",
+      "knowledge_ids": [
+        "U6-K-141",
+        "U6-K-143"
+      ],
+      "terms": [
+        "Tryptophan as corepressor",
+        "Allolactose as inducer"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D24",
+      "title": "Histone acetylation versus DNA methylation",
+      "knowledge_ids": [
+        "U6-K-146",
+        "U6-K-147"
+      ],
+      "terms": [
+        "Histone acetylation association",
+        "DNA methylation association"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D25",
+      "title": "Activator versus repressor / positive versus negative regulation",
+      "knowledge_ids": [
+        "U6-K-055",
+        "U6-K-057",
+        "U6-K-149"
+      ],
+      "terms": [
+        "Promoter/enhancer recruitment of transcription machinery",
+        "Negative transcriptional regulation",
+        "Control elements, activators, and repressors"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D26",
+      "title": "microRNA versus siRNA / small-RNA regulation",
+      "knowledge_ids": [
+        "U6-K-059",
+        "U6-K-151"
+      ],
+      "terms": [
+        "Small RNA regulation",
+        "microRNA and siRNA"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D27",
+      "title": "Differentiation versus morphogenesis",
+      "knowledge_ids": [
+        "U6-K-152",
+        "U6-K-153"
+      ],
+      "terms": [
+        "Cell differentiation",
+        "Morphogenesis"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D28",
+      "title": "Point substitution outcomes",
+      "knowledge_ids": [
+        "U6-K-061",
+        "U6-K-063",
+        "U6-K-064",
+        "U6-K-158"
+      ],
+      "terms": [
+        "Point substitution",
+        "Nonsense mutation",
+        "Silent mutation",
+        "Missense mutation"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D29",
+      "title": "Point substitution versus frameshift",
+      "knowledge_ids": [
+        "U6-K-061",
+        "U6-K-062"
+      ],
+      "terms": [
+        "Point substitution",
+        "Frameshift mutation"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D30",
+      "title": "Chromosomal deletion, duplication, inversion, translocation",
+      "knowledge_ids": [
+        "U6-K-159",
+        "U6-K-160",
+        "U6-K-161",
+        "U6-K-162"
+      ],
+      "terms": [
+        "Chromosomal translocation",
+        "Chromosomal inversion",
+        "Chromosomal duplication",
+        "Chromosomal deletion"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D31",
+      "title": "Nondisjunction versus structural chromosome alteration",
+      "knowledge_ids": [
+        "U6-K-070",
+        "U6-K-072"
+      ],
+      "terms": [
+        "Nondisjunction and chromosome number",
+        "Chromosome-structure alterations"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D32",
+      "title": "Transformation versus transduction versus conjugation",
+      "knowledge_ids": [
+        "U6-K-075",
+        "U6-K-076",
+        "U6-K-077"
+      ],
+      "terms": [
+        "Transformation as horizontal gene transfer",
+        "Transduction as horizontal gene transfer",
+        "Conjugation as horizontal gene transfer"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D33",
+      "title": "Transposition versus viral recombination",
+      "knowledge_ids": [
+        "U6-K-078",
+        "U6-K-079"
+      ],
+      "terms": [
+        "Transposition",
+        "Viral recombination"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D34",
+      "title": "Natural transformation versus biotechnology transformation",
+      "knowledge_ids": [
+        "U6-K-075",
+        "U6-K-086"
+      ],
+      "terms": [
+        "Transformation as horizontal gene transfer",
+        "Bacterial transformation as biotechnology"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D35",
+      "title": "PCR stages",
+      "knowledge_ids": [
+        "U6-K-083",
+        "U6-K-084",
+        "U6-K-085"
+      ],
+      "terms": [
+        "PCR denaturation",
+        "PCR primer annealing",
+        "PCR extension"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D36",
+      "title": "PCR versus gel electrophoresis versus sequencing",
+      "knowledge_ids": [
+        "U6-K-082",
+        "U6-K-083",
+        "U6-K-087"
+      ],
+      "terms": [
+        "Gel electrophoresis",
+        "PCR denaturation",
+        "DNA sequencing"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    },
+    {
+      "set_id": "U6-D37",
+      "title": "DNA sequence versus DNA profile",
+      "knowledge_ids": [
+        "U6-K-087",
+        "U6-K-088"
+      ],
+      "terms": [
+        "DNA sequencing",
+        "DNA profiles/fingerprints support comparison"
+      ],
+      "release_policy": "BUILD_MIXED_DISCRIMINATION_AFTER_STORY_EXPOSURE"
+    }
+  ]
+}

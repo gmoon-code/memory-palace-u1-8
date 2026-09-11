@@ -1,0 +1,183 @@
+{
+  "schema_version": "memory-palace-v2-unit1-1.0",
+  "course_id": "ap-biology",
+  "unit_id": "unit-1",
+  "unit_title": "Chemistry of Life",
+  "narrative_standard": "V2-NARRATIVE-2.0",
+  "journey_count": 9,
+  "scene_count": 78,
+  "checkpoint_count": 27,
+  "guided_journeys": [
+    {
+      "palace_id": "Z1",
+      "palace_name": "Scientific Inquiry Lab Annex",
+      "story_title": "The Evidence Lockdown",
+      "tagline": "One glowing result has triggered a lab lockdown. Follow the evidence until you can decide what the experiment actually supports.",
+      "guide": {
+        "name": "Dr. Rowan Lee",
+        "role": "night research director",
+        "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+        "story_job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+      },
+      "premise": "At 11:47 p.m., an automated cell experiment reports an unexpectedly bright signal and seals the research annex. The doors will reopen only after the result has been traced from observation through experimental design and statistical interpretation.",
+      "mission": "Stay with Dr. Rowan Lee and audit one reporter-cell experiment. Decide what changed, what was measured, which comparisons make the result interpretable, how variable the data are, and how much confidence the sample mean deserves.",
+      "finale": "On the Sampling Balcony, the last uncertainty bars settle around the treatment and control means. Rowan closes the orange folder: the annex opens because you can now say exactly what the experiment supports, what it does not prove, and how the data justify that conclusion.",
+      "estimated_minutes": 16,
+      "scene_count": 9,
+      "checkpoint_count": 3,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z2",
+      "palace_name": "Chemistry Foyer",
+      "story_title": "The Midnight Chemistry Museum",
+      "tagline": "A glowing carbon token escapes after closing time. Follow it through the museum and watch atoms become the chemistry of life.",
+      "guide": {
+        "name": "Mina Park",
+        "role": "night curator of the chemistry museum",
+        "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+        "story_job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+      },
+      "premise": "At midnight, a power surge opens the Living Matter exhibit and releases a glowing carbon token. It rolls through eleven locked galleries, activating each chemistry exhibit in sequence.",
+      "mission": "Stay with Mina and recover the token. Along the way, identify what matter is made of, how atoms are organized, why electrons govern bonding, and how a few elements become the raw material of biological molecules.",
+      "finale": "At the Element-Role Workbench, the carbon token clicks back into the Living Matter display beside nitrogen, phosphorus, sulfur, hydrogen, and oxygen. The museum lights return, now showing chemistry as one connected route from atoms to biological molecules.",
+      "estimated_minutes": 17,
+      "scene_count": 11,
+      "checkpoint_count": 3,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z3",
+      "palace_name": "Water Atrium",
+      "story_title": "The Flooded Sky Hotel",
+      "tagline": "Follow one runaway stream of water from the hotel lobby to the roof, and learn why water behaves the way it does.",
+      "guide": {
+        "name": "Mara Vale",
+        "role": "chief systems engineer of the Sky Hotel",
+        "visual": "dark raincoat, brass tool belt, and a palm-sized glass scanner that can magnify molecules",
+        "story_job": "Mara keeps the emergency moving. She opens doors, activates molecular views, and asks you to notice what the water itself is doing."
+      },
+      "premise": "A midnight storm has knocked out the Sky Hotel’s water-control system. One ruptured line now feeds the lobby fountain, rooftop greenhouse, spa, aquarium, and life-support reservoir. The same water is moving through all of them, but at each level a different property of water determines what happens next.",
+      "mission": "Stay with Mara and follow the runaway water line upward through eleven connected locations. At the roof, stabilize the reservoir before its pH swings far enough to shut down the hotel’s living systems.",
+      "finale": "At the Buffer Gate, the pH alarm settles. Water begins flowing normally again to the greenhouse, aquarium, and hotel systems below. Looking down through the glass tower, you can retrace the entire emergency as one chain of water properties rather than eleven isolated facts.",
+      "estimated_minutes": 14,
+      "scene_count": 11,
+      "checkpoint_count": 3,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z4",
+      "palace_name": "Carbon Workshop",
+      "story_title": "The Carbon Shape-Shifter’s Workshop",
+      "tagline": "One carbon frame keeps changing shape. Follow the molecular architect and see why carbon can build so many different molecules.",
+      "guide": {
+        "name": "Caro Venn",
+        "role": "molecular architect",
+        "visual": "charcoal apron, four silver drafting pens clipped to one glove, amber safety glasses",
+        "story_job": "turns one carbon framework through multiple structures while keeping each chemical change visible"
+      },
+      "premise": "A client has delivered a blank molecular blueprint that must be turned into a useful organic molecule before the workshop closes. The only starting piece is carbon.",
+      "mission": "Follow Caro from the organic signboard to the carbon workbench and functional-group wall. Watch carbon’s bonding capacity create diverse skeletons, then see how functional groups change what those skeletons can do.",
+      "finale": "The blank blueprint leaves the workshop as a recognizable organic molecule with a carbon skeleton and functional groups. You can now separate the carbon framework from the chemical groups that give the molecule much of its behavior.",
+      "estimated_minutes": 7,
+      "scene_count": 3,
+      "checkpoint_count": 1,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z5",
+      "palace_name": "Polymer Assembly Hall",
+      "story_title": "The Molecular Assembly Line Jam",
+      "tagline": "A conveyor is clogged with loose building blocks. Help the mechanic join them, cut them apart, and sort the four major biomolecule classes correctly.",
+      "guide": {
+        "name": "Pip Moreno",
+        "role": "assembly-line mechanic",
+        "visual": "green coveralls, red wrench, clear water canister clipped to the belt",
+        "story_job": "keeps one molecular crate moving through joining, cutting, and classification stations"
+      },
+      "premise": "The assembly hall has stopped because loose molecular pieces are piling up at the receiving dock. A half-built chain blocks the conveyor and must be completed, disassembled, and sorted correctly.",
+      "mission": "Follow Pip through four stations to distinguish monomers from polymers, see dehydration synthesis and hydrolysis as opposite covalent-bond processes, and compare the four major classes of biological macromolecules.",
+      "finale": "At the shipping board, every crate is routed correctly. You leave with one simple mechanical picture: small units can be covalently joined into chains, water chemistry can reverse those links, and the four macromolecule classes do not all use the same architecture.",
+      "estimated_minutes": 8,
+      "scene_count": 4,
+      "checkpoint_count": 2,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z6",
+      "palace_name": "Carbohydrate Greenhouse",
+      "story_title": "The Greenhouse Sugar Trail",
+      "tagline": "A glowing glucose bead disappears into the greenhouse. Follow it as sugars become transport molecules, storage polymers, structural fibers, and food for microbial partners.",
+      "guide": {
+        "name": "Suki Han",
+        "role": "keeper of the carbohydrate greenhouse",
+        "visual": "moss-green coat, seed pouch, round lantern containing a single glowing glucose bead",
+        "story_job": "tracks one sugar unit as it is assembled into different carbohydrate structures and follows what those structures do"
+      },
+      "premise": "A rare glowing glucose bead has slipped out of Suki’s lantern and entered the greenhouse irrigation maze. Wherever it travels, the greenhouse builds a different carbohydrate around it.",
+      "mission": "Recover the bead by following its transformations from monosaccharide to disaccharide and polysaccharide, through storage and structural forms, then into the digestive systems of cellulose-eating herbivores.",
+      "finale": "At the Fiber Barn, symbiotic microbes release usable products from cellulose and Suki finally catches the glowing sugar trail. Looking back, the same kind of sugar building block produced radically different functions because its linkages and polymer architecture changed.",
+      "estimated_minutes": 14,
+      "scene_count": 8,
+      "checkpoint_count": 3,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z7",
+      "palace_name": "Protein Factory",
+      "story_title": "The Protein Tailor’s Emergency",
+      "tagline": "A client’s protein has lost its shape minutes before delivery. Follow one polypeptide from amino-acid pieces to a functioning three-dimensional protein.",
+      "guide": {
+        "name": "Milo Arden",
+        "role": "master protein tailor",
+        "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+        "story_job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+      },
+      "premise": "A custom protein arrives unfolded just before the factory’s midnight shipment. Its function lamp stays dark because the chain no longer has the shape required for its job.",
+      "mission": "Rebuild the protein with Milo. Identify amino-acid parts, connect them with peptide bonds, follow chain direction, see how sequence and R-group chemistry drive folding, and distinguish all four structural levels before testing what denaturation does.",
+      "finale": "The rebuilt protein folds, assembles, and switches its function lamp back on. After one final denaturation test, Milo seals the repaired molecule for shipment and you can retrace how sequence became shape and shape became function.",
+      "estimated_minutes": 20,
+      "scene_count": 14,
+      "checkpoint_count": 4,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z8",
+      "palace_name": "Nucleic Acid Archive",
+      "story_title": "The Lost Genetic Manuscript",
+      "tagline": "A damaged genetic manuscript has lost its orientation and pairing marks. Rebuild it from nucleotide parts and restore the information stored in its sequence.",
+      "guide": {
+        "name": "Nia Sol",
+        "role": "keeper of the genetic archive",
+        "visual": "black archivist coat, gold page clips, violet inspection lamp",
+        "story_job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+      },
+      "premise": "A humidity-control failure has torn apart one of the archive’s genetic manuscripts. Bases, sugars, phosphates, strand directions, and pairing marks are scattered across ten rooms.",
+      "mission": "Reconstruct the manuscript with Nia. Distinguish DNA from RNA, nucleotide from nucleoside, purines from pyrimidines, 5′ from 3′ ends, strand direction, antiparallel geometry, base pairing, and what happens when DNA melts apart.",
+      "finale": "At the DNA Melting Room, the restored manuscript separates cleanly into two intact strands and then re-pairs. Nia shelves it again, and the route behind you reads like one structural sentence: units connect directionally, sequence stores information, and complementary antiparallel strands create the DNA double helix.",
+      "estimated_minutes": 18,
+      "scene_count": 10,
+      "checkpoint_count": 4,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    },
+    {
+      "palace_id": "Z9",
+      "palace_name": "Lipid Membrane Wing",
+      "story_title": "The Membrane Rescue Wing",
+      "tagline": "A cell membrane has become unstable as temperature changes. Follow the lipid technician from fat components to phospholipid bilayers and cholesterol’s buffering role.",
+      "guide": {
+        "name": "Lena Ortiz",
+        "role": "membrane systems technician",
+        "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+        "story_job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+      },
+      "premise": "A membrane-testing wing has lost temperature control. The model cell membrane becomes too fluid when warm and packs too tightly when cold. Lena must rebuild the lipid architecture before the chamber cycles again.",
+      "mission": "Follow Lena through eight stations. Distinguish fats, phospholipids, and steroids; build fats from glycerol and fatty acids; compare saturated and unsaturated tails; assemble a phospholipid bilayer; and use cholesterol to buffer membrane fluidity.",
+      "finale": "The repaired bilayer survives both warm and cold tests. Looking back through the wing, you can see why different lipid structures serve storage, membrane, and signaling roles—and why cholesterol does not simply make a membrane rigid.",
+      "estimated_minutes": 14,
+      "scene_count": 8,
+      "checkpoint_count": 4,
+      "narrative_design": "V2-NARRATIVE-2.0"
+    }
+  ]
+}

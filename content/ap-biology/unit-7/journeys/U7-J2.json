@@ -1,0 +1,2134 @@
+{
+  "palace_id": "U7-J2",
+  "unit_id": "unit-7",
+  "palace_name": "Population Genetics Island Network",
+  "story_title": "The Island Network That Could Not Explain Its Missing Alleles",
+  "tagline": "Two island gene pools keep changing for different reasons. Track every colored allele copy through mutation, chance sampling, migration, and the Hardy-Weinberg control tower until the network can finally tell an observed population from a model.",
+  "guide": {
+    "name": "Dr. Imani Vale",
+    "role": "evolutionary-systems curator",
+    "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+    "story_job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+  },
+  "premise": "The Population Genetics Island Network has failed its mechanism audit. Its automated report calls random sampling natural selection, confuses founder events with migration, labels p as dominant and q as recessive, and copies Hardy-Weinberg expectations into observed genotype boxes. Dr. Imani Vale seals two transparent island gene-pool tanks and requires every allele copy to leave a visible history before the network can reopen.",
+  "mission": "Carry the same population identities through fourteen permanent locations. Define population and gene pool, detect microevolution, separate mutation from selection, distinguish drift, bottleneck, founder effect, and gene flow, then freeze one two-allele locus inside the Hardy-Weinberg station while keeping assumptions, allele frequencies, genotype frequencies, observed counts, and expected values physically separate.",
+  "finale": "The network clears its audit only after every allele-frequency change has a reconstructable demographic or genetic event and every Hardy-Weinberg quantity is attached to the correct evidence category. Chance sampling, migration, mutation, selection-related assumptions, observed counts, and model expectations are no longer interchangeable.",
+  "estimated_minutes": 40,
+  "scene_count": 14,
+  "checkpoint_count": 4,
+  "student_release": "DEVELOPER_PREVIEW_F4B",
+  "preview_release": true,
+  "narrative_design": "U7-F4B-NARRATIVE-1.0",
+  "learner_rule": "Read or listen while keeping the two island tanks, allele colors, population-size markers, and generation labels stable in your mind. Exact terms appear only after the defining mechanism or quantity is visible. The equations are shown conceptually here; calculation procedures remain application practice.",
+  "route_orientation": "The network is one continuous indoor archipelago. Begin at the Population Gene-Pool Registry, cross the census bridge, mutation dock, chance turntable, drift chamber, storm bottleneck, founder ferry, and gene-flow bridge, then climb into the Hardy-Weinberg model station, five-condition control tower, p/q board, expected-genotype board, direct allele-count desk, and final observed-versus-expected audit desk.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Population Gene-Pool Registry",
+      "short": "Gene pool",
+      "floor": "Island intake",
+      "symbol": "POOL"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Allele-Frequency Evolution Meter",
+      "short": "Frequency",
+      "floor": "Census bridge",
+      "symbol": "Δf"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Mutation Source Dock",
+      "short": "Mutation",
+      "floor": "Mutation dock",
+      "symbol": "MUT"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Random-Process Turntable",
+      "short": "Randomness",
+      "floor": "Sampling deck",
+      "symbol": "RND"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Genetic Drift Chamber",
+      "short": "Drift",
+      "floor": "Small-population chamber",
+      "symbol": "DRIFT"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Bottleneck Gate",
+      "short": "Bottleneck",
+      "floor": "Storm gate",
+      "symbol": "NARROW"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Founder Ferry",
+      "short": "Founder",
+      "floor": "Colony dock",
+      "symbol": "FERRY"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Gene-Flow Bridge",
+      "short": "Gene flow",
+      "floor": "Migration bridge",
+      "symbol": "FLOW"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Hardy-Weinberg Null-Model Station",
+      "short": "Null model",
+      "floor": "Model station",
+      "symbol": "HWE"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Five-Condition Control Room",
+      "short": "Conditions",
+      "floor": "Control tower",
+      "symbol": "5"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Allele-Frequency p/q Board",
+      "short": "p and q",
+      "floor": "Allele board",
+      "symbol": "p+q"
+    },
+    {
+      "scene_index": 11,
+      "locus": "Genotype-Frequency Equation Board",
+      "short": "Genotypes",
+      "floor": "Expectation board",
+      "symbol": "p²"
+    },
+    {
+      "scene_index": 12,
+      "locus": "Genotype-Count Allele Counter",
+      "short": "Count alleles",
+      "floor": "Counting desk",
+      "symbol": "2N"
+    },
+    {
+      "scene_index": 13,
+      "locus": "Observed–Expected Comparison Desk",
+      "short": "Compare",
+      "floor": "Final audit desk",
+      "symbol": "OBS/EXP"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U7-L11",
+      "locus": "Population Gene-Pool Registry",
+      "title": "Two Islands, Two Populations, and One Gene-Pool Alarm",
+      "scene_kicker": "Population genetics begins by fixing the population boundary and counting the alleles that actually belong to that population.",
+      "location_description": "the registry defining population, gene pool, allele fixation, and within-population genetic diversity",
+      "scene_layout": {
+        "orientation": "Enter Population Gene-Pool Registry and stop at the registry defining population, gene pool, allele fixation, and within-population genetic diversity. Keep population membership counter fixed on the left, gene-pool registry as the working center, and fixed-versus-variable allele shelves fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Population membership counter",
+            "symbol": "50 + 50",
+            "description": "Two glass island enclosures each display exactly fifty reproducing diploid finches, keeping the population boundary visible before any allele tokens are pooled."
+          },
+          {
+            "position": "center",
+            "label": "Gene-pool registry",
+            "symbol": "100 ALLELES",
+            "description": "Two transparent tanks collect one hundred color-coded allele copies from each island at the focal two-allele locus while every token keeps its allele identity."
+          },
+          {
+            "position": "right",
+            "label": "Fixed-versus-variable allele shelves",
+            "symbol": "FIXED / VARIABLE",
+            "description": "One shelf shows a two-allele locus with both blue A and amber a copies, while a second shelf shows a different locus containing only one allele at frequency 1.0."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Population membership counter",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Two glass island enclosures each display exactly fifty reproducing diploid finches, keeping the population boundary visible before any allele tokens are pooled.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Gene-pool registry",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Two transparent tanks collect one hundred color-coded allele copies from each island at the focal two-allele locus while every token keeps its allele identity.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Fixed-versus-variable allele shelves",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "One shelf shows a two-allele locus with both blue A and amber a copies, while a second shelf shows a different locus containing only one allele at frequency 1.0.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "A salt-bright wind seems to cross the room when the doors open onto the **Population Genetics Island Network**. The network is an indoor archipelago built around two enormous transparent tanks. On your **left**, a membership counter faces two glass island enclosures, each containing fifty tagged reproducing finches and a bright population-size marker. Directly **ahead**, the center registry holds two empty gene-pool tanks, each etched with one hundred narrow slots for allele copies. On your **right**, shelves are split into VARIABLE and FIXED sections. Dr. Imani Vale is already beside the center registry. She clips the transparent population ledger to the railing, checks the generation labels, and points to a red alarm flashing above the islands. GENE-POOL AUDIT FAILED. ALLELES ARE BEING COUNTED WITHOUT A POPULATION BOUNDARY.",
+      "story_paragraphs": [
+        "A salt-bright wind seems to cross the room when the doors open onto the **Population Genetics Island Network**. The network is an indoor archipelago built around two enormous transparent tanks. On your **left**, a membership counter faces two glass island enclosures, each containing fifty tagged reproducing finches and a bright population-size marker. Directly **ahead**, the center registry holds two empty gene-pool tanks, each etched with one hundred narrow slots for allele copies. On your **right**, shelves are split into VARIABLE and FIXED sections. Dr. Imani Vale is already beside the center registry. She clips the transparent population ledger to the railing, checks the generation labels, and points to a red alarm flashing above the islands. GENE-POOL AUDIT FAILED. ALLELES ARE BEING COUNTED WITHOUT A POPULATION BOUNDARY.",
+        "Imani does not touch the colored allele tokens yet. She first closes a glass boundary around the fifty reproducing finches on Island A. The birds outside that boundary disappear from the census screen. Only after the membership counter shows the same species, the same island area, and reproducing membership does she name the unit you are actually following. A **Population** is a group of individuals of the same species living in the same area that can contribute to a shared gene pool. The boundary is physical enough to remember. Individuals can enter or leave later, but the network must know which population each allele copy belongs to before a frequency has any meaning.",
+        "The center registry now opens a small port beneath every bird. Two allele copies from the focal locus slide from each diploid individual into the transparent tank. Blue tokens carry allele A and amber tokens carry allele a. Island A begins with sixty blue copies and forty amber copies. Island B begins with the same count. Imani waits until all one hundred slots are filled and only then names the **Gene pool**. A gene pool consists of all alleles at all loci present in the reproducing members of a population. The tank is a representation of those alleles, not a replacement for the organisms. The population remains on the left. Its alleles are being inventoried in the center.",
+        "On the right shelves, Imani pulls down two small locus trays. One tray contains both blue and amber copies. The other contains one hundred green copies and no alternative color at all. She points to the second tray. An allele is **Fixed allele** at a locus when its frequency is 1.0 and no alternative allele is present in that population at that locus. She keeps the word fixed attached to a frequency, not to how common a phenotype looks. The two-color tray beside it carries more allelic variation. A population with more allelic variation has greater genetic diversity than a population in which many loci are fixed. The shelves make fixation and diversity visible without pretending every locus must contain the same number of alleles.",
+        "The alarm above the islands dims from red to amber. Imani writes three lines into the ledger. POPULATION BOUNDARY. GENE POOL. ALLELE INVENTORY. Then she places a transparent cover over both gene-pool tanks so no token can drift, migrate, mutate, or disappear without leaving a recorded event. The main focal locus remains blue A and amber a. A second marked locus will be available later if the network needs to demonstrate the origin of a new allele without destroying the two-allele model required downstream.",
+        "A narrow bridge rises from the registry and points toward two census windows. The left window is stamped GENERATION ONE. The right window is stamped GENERATION TWO. Island A still shows sixty blue copies and forty amber copies in the first window, but the archived descendant census on the far side reads sixty-six blue and thirty-four amber. The network has detected a change and is demanding a verdict. The next station will decide what that change proves before anyone is allowed to guess what caused it."
+      ],
+      "story_close": "A narrow bridge rises from the registry and points toward two census windows. The left window is stamped GENERATION ONE. The right window is stamped GENERATION TWO. Island A still shows sixty blue copies and forty amber copies in the first window, but the archived descendant census on the far side reads sixty-six blue and thirty-four amber. The network has detected a change and is demanding a verdict. The next station will decide what that change proves before anyone is allowed to guess what caused it.",
+      "object_ids": [
+        "U7-K-092",
+        "U7-K-093",
+        "U7-K-094",
+        "U7-K-095"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-092",
+          "term": "Population",
+          "story": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "science": "A population is a group of individuals of the same species living in the same area that can contribute to a shared gene pool.",
+          "exact_name": true,
+          "hint": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-093",
+          "term": "Gene pool",
+          "story": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "science": "A gene pool consists of all alleles at all loci present in the reproducing members of a population.",
+          "exact_name": true,
+          "hint": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-094",
+          "term": "Fixed allele",
+          "story": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "science": "An allele is fixed at a locus when its frequency is 1.0 and no alternative allele is present in that population at that locus.",
+          "exact_name": true,
+          "hint": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-095",
+          "term": "Genetic diversity in a gene pool",
+          "story": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "science": "A population with more allelic variation has greater genetic diversity than a population in which many loci are fixed.",
+          "exact_name": false,
+          "hint": "the left membership boundary, center allele tanks, and right fixed-versus-variable shelves",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U7-D10: keep Population, Gene pool, Allele frequency physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Allele-Frequency Evolution Meter",
+      "f3_scene_brief_id": "F3-U7-L11",
+      "narrative_word_count": 653
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U7-L12",
+      "locus": "Allele-Frequency Evolution Meter",
+      "title": "The Meter Can Detect Evolution Before It Knows the Cause",
+      "scene_kicker": "A change in allele frequency across generations is evidence that a population evolved, even when the mechanism has not yet been identified.",
+      "location_description": "the meter that defines microevolution as allele-frequency change across generations",
+      "scene_layout": {
+        "orientation": "Enter Allele-Frequency Evolution Meter and stop at the meter that defines microevolution as allele-frequency change across generations. Keep generation-one allele counter fixed on the left, allele-frequency change meter as the working center, and generation-two allele counter fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Generation-one allele counter",
+            "symbol": "60 / 40",
+            "description": "A sealed census window shows Island A at generation one with sixty blue A copies and forty amber a copies."
+          },
+          {
+            "position": "center",
+            "label": "Allele-frequency change meter",
+            "symbol": "0.60 → 0.66",
+            "description": "A vertical meter compares the proportion of blue A across two generations without assigning a mechanism yet."
+          },
+          {
+            "position": "right",
+            "label": "Generation-two allele counter",
+            "symbol": "66 / 34",
+            "description": "The second census window shows the descendant generation with sixty-six blue A copies and thirty-four amber a copies."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Generation-one allele counter",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A sealed census window shows Island A at generation one with sixty blue A copies and forty amber a copies.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Allele-frequency change meter",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A vertical meter compares the proportion of blue A across two generations without assigning a mechanism yet.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Generation-two allele counter",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The second census window shows the descendant generation with sixty-six blue A copies and thirty-four amber a copies.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Allele-Frequency Evolution Meter** stands on a glass bridge between two census towers. On your **left**, the generation-one counter freezes Island A at sixty blue A copies and forty amber a copies. Directly **ahead**, a tall center meter has a blue column marked 0.60 and an amber column marked 0.40. On your **right**, the generation-two counter shows the archived descendant population with sixty-six blue copies and thirty-four amber copies. Imani locks both generation labels in place before touching the meter. The birds themselves are not carried from one tower into the other. The two windows represent different generations of the population.",
+      "story_paragraphs": [
+        "The **Allele-Frequency Evolution Meter** stands on a glass bridge between two census towers. On your **left**, the generation-one counter freezes Island A at sixty blue A copies and forty amber a copies. Directly **ahead**, a tall center meter has a blue column marked 0.60 and an amber column marked 0.40. On your **right**, the generation-two counter shows the archived descendant population with sixty-six blue copies and thirty-four amber copies. Imani locks both generation labels in place before touching the meter. The birds themselves are not carried from one tower into the other. The two windows represent different generations of the population.",
+        "Imani converts the token counts into proportions. In generation one, blue A is sixty out of one hundred allele copies, so its frequency is 0.60. In the descendant generation, blue A is sixty-six out of one hundred, so its frequency is 0.66. The center column rises. Amber a falls from 0.40 to 0.34. The meter makes only one claim. **Allele-frequency change as evidence of evolution** means that a change in allele frequencies across generations is evidence that a population is evolving. The evidence is population-level and generational. No single finch has changed from one allele into another merely because time passed.",
+        "Only after the two censuses are visibly different does Imani use the shorter term **Microevolution**. Microevolution is change in allele frequencies within a population across generations. The word is attached to the measurable population change on the meter. The network still has no permission to label the cause. Natural selection could alter allele frequencies under some conditions. Chance sampling could alter them. Gene flow could add or remove copies. Mutation could introduce a new allele. The meter does not decide among those mechanisms simply by noticing that 0.60 became 0.66.",
+        "The broken network tries to flash NATURAL SELECTION above the center column. Imani removes the label and replaces it with MECHANISM UNKNOWN. She points back toward Journey 1 on a distant wall where selection required heritable phenotypic variation and differential reproductive success. None of that evidence has been supplied here. The meter is deliberately modest. It tells you what changed, not why. That separation matters whenever population data are interpreted. Observing evolution and identifying the mechanism are different inferential jobs.",
+        "Imani copies the two frequencies into the transparent ledger and circles the generation numbers. The original sixty-to-forty census remains preserved as a reference. The sixty-six-to-thirty-four descendant census becomes the current Island A state. Island B remains at sixty blue and forty amber, giving the network a second population whose gene pool has not followed the same trajectory. The difference between the islands is now visible but unexplained.",
+        "A metal dock door opens below the bridge. On its left side sits a replication window with a row of ordinary allele copies. One copy is about to acquire a new violet identity at a separate marked locus. On the right, three trays wait under the labels NEUTRAL, DELETERIOUS, and BENEFICIAL, while two clocks tick at different generation speeds. The next room will show how a new allele can enter a population without allowing the environment to order the mutation it needs."
+      ],
+      "story_close": "A metal dock door opens below the bridge. On its left side sits a replication window with a row of ordinary allele copies. One copy is about to acquire a new violet identity at a separate marked locus. On the right, three trays wait under the labels NEUTRAL, DELETERIOUS, and BENEFICIAL, while two clocks tick at different generation speeds. The next room will show how a new allele can enter a population without allowing the environment to order the mutation it needs.",
+      "object_ids": [
+        "U7-K-020",
+        "U7-K-096"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-020",
+          "term": "Allele-frequency change as evidence of evolution",
+          "story": "the generation-one and generation-two allele counters separated by the frequency-change meter",
+          "science": "A change in allele frequencies across generations is evidence that a population is evolving.",
+          "exact_name": false,
+          "hint": "the generation-one and generation-two allele counters separated by the frequency-change meter",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-096",
+          "term": "Microevolution",
+          "story": "the generation-one and generation-two allele counters separated by the frequency-change meter",
+          "science": "Microevolution is change in allele frequencies within a population across generations.",
+          "exact_name": true,
+          "hint": "the generation-one and generation-two allele counters separated by the frequency-change meter",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Mutation Source Dock",
+      "f3_scene_brief_id": "F3-U7-L12",
+      "narrative_word_count": 529
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U7-L13",
+      "locus": "Mutation Source Dock",
+      "title": "The Mutation Dock Makes a New Allele Without Asking Whether It Helps",
+      "scene_kicker": "Mutation introduces new alleles, while the fitness effect of a mutation depends on context and generation time must not be confused with mutation probability per replication.",
+      "location_description": "the dock where mutation supplies new alleles while fitness effects and calendar-time evolutionary rate remain context dependent",
+      "scene_layout": {
+        "orientation": "Enter Mutation Source Dock and stop at the dock where mutation supplies new alleles while fitness effects and calendar-time evolutionary rate remain context dependent. Keep new-mutation input fixed on the left, mutation source dock as the working center, and fitness-effect / generation-time panel fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "New-mutation input",
+            "symbol": "NEW TOKEN",
+            "description": "A separate marked locus feeds one ordinary allele copy through a replication window where a new violet allele identity can arise without reference to whether it will help or harm."
+          },
+          {
+            "position": "center",
+            "label": "Mutation source dock",
+            "symbol": "NEW ALLELE",
+            "description": "The dock records the change in allele identity and inserts the new violet copy into the relevant island gene pool while preserving the focal blue/amber Hardy-Weinberg locus untouched."
+          },
+          {
+            "position": "right",
+            "label": "Fitness-effect and generation-time panel",
+            "symbol": "CONTEXT / CLOCK",
+            "description": "Three context trays compare neutral, deleterious, and beneficial effects while two clocks separate per-replication mutation probability from number of generations per calendar time."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "New-mutation input",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A separate marked locus feeds one ordinary allele copy through a replication window where a new violet allele identity can arise without reference to whether it will help or harm.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Mutation source dock",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The dock records the change in allele identity and inserts the new violet copy into the relevant island gene pool while preserving the focal blue/amber Hardy-Weinberg locus untouched.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Fitness-effect and generation-time panel",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Three context trays compare neutral, deleterious, and beneficial effects while two clocks separate per-replication mutation probability from number of generations per calendar time.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Mutation Source Dock** is built beside the island tanks like a customs station for new genetic variants. On your **left**, a narrow replication window holds a row of ordinary green allele copies from a second marked locus. Directly **ahead**, the center dock has one empty slot glowing violet. On your **right**, three shallow trays are labeled NEUTRAL, DELETERIOUS, and BENEFICIAL, and above them two clocks run at different speeds. Imani keeps the main blue A and amber a Hardy-Weinberg locus sealed behind clear glass. The network can demonstrate mutation here without turning the later two-allele model into a three-allele equation.",
+      "story_paragraphs": [
+        "The **Mutation Source Dock** is built beside the island tanks like a customs station for new genetic variants. On your **left**, a narrow replication window holds a row of ordinary green allele copies from a second marked locus. Directly **ahead**, the center dock has one empty slot glowing violet. On your **right**, three shallow trays are labeled NEUTRAL, DELETERIOUS, and BENEFICIAL, and above them two clocks run at different speeds. Imani keeps the main blue A and amber a Hardy-Weinberg locus sealed behind clear glass. The network can demonstrate mutation here without turning the later two-allele model into a three-allele equation.",
+        "The replication window closes around one green allele copy. No environmental label enters with it. A small copying change occurs and the token emerges violet. Imani slides the violet token into Island B's second-locus gene pool. Only after the new identity is visible does she state the relationship. **Mutation adds genetic variation** because mutation can introduce a genetic variant that was not previously present. The new allele was not produced because the island needed it. The copying event is random with respect to whether the resulting variant will improve fitness in the current environment.",
+        "Imani places the violet copy under the center title **Mutation creates new alleles**. Mutation is the ultimate source of new alleles. Recombination and sexual reproduction can create new combinations of existing alleles, but they do not manufacture a brand-new allele sequence in the same sense. She then moves the token toward the right trays but refuses to let the network choose a tray before an environment and phenotype consequence are specified. Mutations can be neutral, deleterious, or beneficial with respect to fitness, and their effects can depend on genomic context and environment. Many are neutral or nearly neutral, deleterious mutations occur, and beneficial mutations are comparatively rare.",
+        "The dock next displays **Mutation supplies selectable variation**. A new allele can eventually contribute to phenotypic variation on which natural selection can act. The sequence matters. Mutation introduces variation first. Selection can later change the frequency of a heritable variant if that variant affects reproductive success in a given environment. Imani keeps the mutation window on the left and the selection-related consequence trays on the right so the origin of a variant cannot be confused with the later process that may favor or remove it.",
+        "The two clocks above the right panel begin racing. One is labeled GENERATIONS PER YEAR and the other MUTATION PROBABILITY PER REPLICATION. A bacterial example on the fast clock cycles through many generations while the per-replication dial stays unchanged. Imani names the final relationship, **Generation time and evolutionary rate**. Short generation times can allow more generations, and therefore more opportunities for mutation and selection, to occur per unit calendar time. That does not mean every prokaryote has a universally higher mutation probability per nucleotide each time DNA is copied.",
+        "The violet mutation remains on the second-locus tray as a permanent record of where a new allele came from. The focal blue and amber locus is still untouched. Ahead, a circular metal platform is spinning in darkness. Its scoops cannot see allele color, phenotype, or reproductive success. The network has been calling every random outcome natural selection. The next station will separate randomness itself from the nonrandom sorting logic you repaired in Journey 1."
+      ],
+      "story_close": "The violet mutation remains on the second-locus tray as a permanent record of where a new allele came from. The focal blue and amber locus is still untouched. Ahead, a circular metal platform is spinning in darkness. Its scoops cannot see allele color, phenotype, or reproductive success. The network has been calling every random outcome natural selection. The next station will separate randomness itself from the nonrandom sorting logic you repaired in Journey 1.",
+      "object_ids": [
+        "U7-K-011",
+        "U7-K-017",
+        "U7-K-097",
+        "U7-K-098",
+        "U7-K-099"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-011",
+          "term": "Mutation adds genetic variation",
+          "story": "the new violet mutation token appearing before any fitness tray is chosen",
+          "science": "Mutation is a random process with respect to fitness that introduces new genetic variation into populations.",
+          "exact_name": true,
+          "hint": "the new violet mutation token appearing before any fitness tray is chosen",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-017",
+          "term": "Mutation supplies selectable variation",
+          "story": "the new violet mutation token appearing before any fitness tray is chosen",
+          "science": "Mutation creates genetic variation that can generate phenotypic variation on which natural selection can act.",
+          "exact_name": true,
+          "hint": "the new violet mutation token appearing before any fitness tray is chosen",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-097",
+          "term": "Mutation creates new alleles",
+          "story": "the new violet mutation token appearing before any fitness tray is chosen",
+          "science": "Mutation is the ultimate source of new alleles; whether a new allele spreads depends on drift, selection, gene flow, and demographic context.",
+          "exact_name": false,
+          "hint": "the new violet mutation token appearing before any fitness tray is chosen",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-098",
+          "term": "Mutation fitness effects",
+          "story": "the new violet mutation token appearing before any fitness tray is chosen",
+          "science": "Mutations can be neutral, deleterious, or beneficial with respect to fitness, and their effects can depend on environment and genetic context.",
+          "exact_name": false,
+          "hint": "the new violet mutation token appearing before any fitness tray is chosen",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-099",
+          "term": "Generation time and evolutionary rate",
+          "story": "the new violet mutation token appearing before any fitness tray is chosen",
+          "science": "Short generation times can allow more generations, and therefore more opportunities for mutation and selection, to occur per unit calendar time; this does not imply a universally higher per-nucleotide mutation rate.",
+          "exact_name": false,
+          "hint": "the new violet mutation token appearing before any fitness tray is chosen",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U7-K-011",
+          "term": "Mutation adds genetic variation",
+          "dependency": [
+            "Unit 5 alleles, genotypes, meiosis, and variation",
+            "Unit 6 mutation"
+          ],
+          "rule": "Reactivate the prior representation briefly, then extend it into the Unit 7 evolutionary/evidentiary relationship without assigning a new mnemonic identity."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-002: Lock the distinction that mutation is random with respect to fitness and introduces new alleles, while natural selection acts nonrandomly on heritable phenotypic variation. Recombination and sexual reproduction also generate variation from existing alleles.",
+        "Resolved F1 guard RF-U7-008: Distinguish mutation rate per replication from the number of generations per unit time. Short generation times can make evolutionary change appear quickly without implying a universally higher mutation probability per nucleotide per replication.",
+        "Resolved F1 guard RF-U7-009: Use a cautious formulation: many mutations are neutral or nearly neutral with respect to fitness, deleterious mutations occur, and beneficial mutations are comparatively rare; the distribution depends on genomic context and environment.",
+        "Discrimination requirement U7-D06: keep Mutation adds genetic variation, Natural selection as mechanism, Mutation fitness effects physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Random-Process Turntable",
+      "f3_scene_brief_id": "F3-U7-L13",
+      "narrative_word_count": 550
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U7-L14",
+      "locus": "Random-Process Turntable",
+      "title": "The Turntable Is Blind to What Would Be Useful",
+      "scene_kicker": "Random processes can alter genetic composition, but natural selection is not random differential change.",
+      "location_description": "the turntable separating chance-driven allele-frequency change from the nonrandom logic of natural selection",
+      "scene_layout": {
+        "orientation": "Enter Random-Process Turntable and stop at the turntable separating chance-driven allele-frequency change from the nonrandom logic of natural selection. Keep mutation / sampling randomness side fixed on the left, random-process turntable as the working center, and allele-frequency outcome side fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Mutation and sampling randomness side",
+            "symbol": "BLIND",
+            "description": "An opaque mutation window and a blind sampling hopper both operate without reading which allele would be useful in the current environment."
+          },
+          {
+            "position": "center",
+            "label": "Random-process turntable",
+            "symbol": "CHANCE",
+            "description": "A circular turntable mixes color-coded allele copies and draws them without phenotype or fitness labels."
+          },
+          {
+            "position": "right",
+            "label": "Allele-frequency outcome side",
+            "symbol": "NEW COUNTS",
+            "description": "A descendant tank displays whatever allele frequencies result from the chance draw, while the natural-selection comparison remains physically separate."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Mutation and sampling randomness side",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "An opaque mutation window and a blind sampling hopper both operate without reading which allele would be useful in the current environment.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Random-process turntable",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A circular turntable mixes color-coded allele copies and draws them without phenotype or fitness labels.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Allele-frequency outcome side",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A descendant tank displays whatever allele frequencies result from the chance draw, while the natural-selection comparison remains physically separate.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Random-Process Turntable** occupies a round room whose floor rotates slowly beneath a black canopy. On your **left**, two devices sit side by side. One is the mutation window from the previous dock. The other is an opaque sampling hopper connected to Island A's focal blue and amber allele tank. Directly **ahead**, the center turntable has ten covered cups that spin too quickly for anyone to track which color enters which cup. On your **right**, a descendant-frequency panel waits with blank blue and amber columns. Imani fixes the Island A starting count above the room so the reference cannot disappear while chance operates.",
+      "story_paragraphs": [
+        "The **Random-Process Turntable** occupies a round room whose floor rotates slowly beneath a black canopy. On your **left**, two devices sit side by side. One is the mutation window from the previous dock. The other is an opaque sampling hopper connected to Island A's focal blue and amber allele tank. Directly **ahead**, the center turntable has ten covered cups that spin too quickly for anyone to track which color enters which cup. On your **right**, a descendant-frequency panel waits with blank blue and amber columns. Imani fixes the Island A starting count above the room so the reference cannot disappear while chance operates.",
+        "She starts with the conceptual boundary. Some evolutionary changes involve stochastic events. Mutation occurrence is random with respect to fitness. Finite sampling of allele copies from one generation into another can also be random. Imani names the broad relationship **Random processes in evolution** only after both blind devices are visible. Random processes can alter the genetic composition of populations. The word random describes how the relevant event occurs with respect to fitness or which copies happen to be sampled. It does not mean the population has no biological rules or that every mechanism of evolution is random.",
+        "The turntable now receives a set of blue and amber copies from Island A. No phenotype label is attached to any cup. The apparatus does not ask which allele would improve seed handling, mate attraction, or survival. It simply samples. When the cups open on the right, the frequency can differ from the starting value because the sample contains a chance excess of one color. Imani marks the relationship **Random processes change allele frequencies**. Chance processes can change allele frequencies and thereby contribute to population evolution.",
+        "A second screen tries to place NATURAL SELECTION under the same rotating table. Imani shuts it off. Natural selection is different. Selection is nonrandom differential reproductive success among heritable phenotypes under environmental conditions. It does not operate by blindly drawing colored tokens. The origin of mutation can be random with respect to fitness, and genetic drift is a chance sampling process. Gene flow, which you have not reached yet, depends on actual movement of individuals or gametes across population boundaries. Keeping those mechanisms physically separate is more useful than memorizing them as one undifferentiated list.",
+        "Imani runs the turntable twice with the same starting frequencies. The two descendant panels do not match exactly. In one run blue increases. In another amber increases. There is no consistent direction toward an adaptive outcome because the apparatus never measures fitness. That variability is the signature the next room will magnify. If the reproducing population is small, each sampled allele copy represents a larger fraction of the next generation, so chance can push frequencies much farther.",
+        "The canopy lifts and reveals a narrow door marked SMALL POPULATION. Island A's population-size marker, which had shown fifty diploid breeders, begins dropping toward eight. The blue and amber tokens do not know which copies will be included in the small reproductive sample. Imani carries the ledger into the chamber. The next station will give this finite-sampling process its specific name and show why it can erase genetic variation without making the population better adapted."
+      ],
+      "story_close": "The canopy lifts and reveals a narrow door marked SMALL POPULATION. Island A's population-size marker, which had shown fifty diploid breeders, begins dropping toward eight. The blue and amber tokens do not know which copies will be included in the small reproductive sample. Imani carries the ledger into the chamber. The next station will give this finite-sampling process its specific name and show why it can erase genetic variation without making the population better adapted.",
+      "object_ids": [
+        "U7-K-010",
+        "U7-K-016"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-010",
+          "term": "Random processes in evolution",
+          "story": "the opaque chance sampler that cannot read phenotype or usefulness",
+          "science": "Random processes can alter the genetic composition of populations.",
+          "exact_name": false,
+          "hint": "the opaque chance sampler that cannot read phenotype or usefulness",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-016",
+          "term": "Random processes change allele frequencies",
+          "story": "the opaque chance sampler that cannot read phenotype or usefulness",
+          "science": "Chance processes can change allele frequencies and thereby contribute to population evolution.",
+          "exact_name": false,
+          "hint": "the opaque chance sampler that cannot read phenotype or usefulness",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-007: Separate stochastic mechanisms from selection. Mutation occurrence and genetic drift are random with respect to fitness; gene flow depends on movement; natural selection is nonrandom differential reproductive success among heritable phenotypes."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Genetic Drift Chamber",
+      "f3_scene_brief_id": "F3-U7-L14",
+      "narrative_word_count": 533
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U7-L15",
+      "locus": "Genetic Drift Chamber",
+      "title": "Eight Breeders Are Enough for Chance to Move the Whole Population",
+      "scene_kicker": "Genetic drift is chance allele-frequency change, strongest in small populations, capable of reducing diversity and producing divergence without being adaptive.",
+      "location_description": "the small-population chamber where chance sampling changes allele frequencies and can reduce diversity without being adaptive",
+      "scene_layout": {
+        "orientation": "Enter Genetic Drift Chamber and stop at the small-population chamber where chance sampling changes allele frequencies and can reduce diversity without being adaptive. Keep small-population sampling side fixed on the left, genetic-drift chamber as the working center, and variation-loss / nonadaptive outcome side fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Small-population sampling side",
+            "symbol": "SMALL N",
+            "description": "Island A is reduced to a small breeding sample whose allele copies are drawn from the larger gene pool by chance."
+          },
+          {
+            "position": "center",
+            "label": "Genetic-drift chamber",
+            "symbol": "SAMPLE",
+            "description": "A transparent sampling cylinder converts the finite sample into the next generation without sorting by adaptive value."
+          },
+          {
+            "position": "right",
+            "label": "Variation-loss and nonadaptive outcome side",
+            "symbol": "LOSS",
+            "description": "The descendant gene pool can shift in frequency or lose an allele even though the chamber never examines phenotype or environmental advantage."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Small-population sampling side",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Island A is reduced to a small breeding sample whose allele copies are drawn from the larger gene pool by chance.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Genetic-drift chamber",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A transparent sampling cylinder converts the finite sample into the next generation without sorting by adaptive value.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Variation-loss and nonadaptive outcome side",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The descendant gene pool can shift in frequency or lose an allele even though the chamber never examines phenotype or environmental advantage.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Genetic Drift Chamber** is smaller than every room before it. On your **left**, Island A's full reference gene pool remains visible behind glass, but the population-size marker drops from fifty diploid breeders to only eight. Directly **ahead**, a clear sampling cylinder receives allele copies from those few breeders and prepares the descendant generation. On your **right**, two narrow displays wait. One tracks loss of allelic variation and the other compares Island A with Island B. Imani pins the starting frequency above the chamber and turns off every phenotype and fitness label. The chamber is allowed to sample. It is not allowed to select.",
+      "story_paragraphs": [
+        "The **Genetic Drift Chamber** is smaller than every room before it. On your **left**, Island A's full reference gene pool remains visible behind glass, but the population-size marker drops from fifty diploid breeders to only eight. Directly **ahead**, a clear sampling cylinder receives allele copies from those few breeders and prepares the descendant generation. On your **right**, two narrow displays wait. One tracks loss of allelic variation and the other compares Island A with Island B. Imani pins the starting frequency above the chamber and turns off every phenotype and fitness label. The chamber is allowed to sample. It is not allowed to select.",
+        "A blind gate admits the allele copies contributed by the small breeding sample. By chance, the sample contains a higher proportion of blue A than the larger population did. The cylinder amplifies that sample into the displayed next-generation gene pool, and Island A settles at seventy blue copies and thirty amber copies. Only now does Imani name **Genetic drift**. Genetic drift is a nonselective change in allele frequency caused by chance, especially influential in small populations. Nothing in the chamber identified blue as useful or amber as harmful.",
+        "Imani repeats the simulation beside the first result. In a large population, an unusual sample of a few allele copies changes the total frequency only slightly because each copy represents a small fraction of the population. In the eight-breeder run, every sampled copy carries more proportional weight. The chamber therefore demonstrates why **Drift is strongest in small populations**. Random sampling effects have larger proportional impacts on allele frequencies in small populations than in large populations.",
+        "On the right, a third trial starts with a rare violet allele at another locus. The random sample happens to omit it completely. The descendant population contains no violet copy. Imani marks **Drift can reduce genetic variation**. Genetic drift can randomly eliminate alleles and thereby reduce within-population genetic variation. She immediately adds the second guard. **Drift is nonadaptive**. Genetic drift changes allele frequencies by chance and does not consistently increase adaptation. A lost allele might have been useful, harmful, or neutral under a later environment. Drift does not inspect that future.",
+        "The second right-side display compares the two island tanks. Island B did not pass through the small-population chamber and still carries a different focal frequency. Island A now stands at seventy blue and thirty amber. The populations have diverged even though no selective pressure was imposed. This is **Drift can drive population divergence**. Genetic drift can make a small population diverge genetically from other populations of the same species.",
+        "The chamber shutters close for the optional recall. The left reference tank remains visible, the center blind sampler is covered, and the right frequency shift stays on screen. If you can explain why a small population changed without any phenotype being favored, you can retrieve the mechanism. When the cover opens, a storm siren begins outside. Island B's large population is about to be forced through a gate so narrow that only a few survivors will remain. The next room will show how a demographic crash can produce a specific kind of drift without pretending every death in a disaster is automatically random."
+      ],
+      "story_close": "The chamber shutters close for the optional recall. The left reference tank remains visible, the center blind sampler is covered, and the right frequency shift stays on screen. If you can explain why a small population changed without any phenotype being favored, you can retrieve the mechanism. When the cover opens, a storm siren begins outside. Island B's large population is about to be forced through a gate so narrow that only a few survivors will remain. The next room will show how a demographic crash can produce a specific kind of drift without pretending every death in a disaster is automatically random.",
+      "object_ids": [
+        "U7-K-012",
+        "U7-K-100",
+        "U7-K-101",
+        "U7-K-102",
+        "U7-K-018"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-012",
+          "term": "Genetic drift",
+          "story": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "science": "Genetic drift is a nonselective change in allele frequency caused by chance, especially influential in small populations.",
+          "exact_name": true,
+          "hint": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-100",
+          "term": "Drift is strongest in small populations",
+          "story": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "science": "Random sampling effects have larger proportional impacts on allele frequencies in small populations than in large populations.",
+          "exact_name": false,
+          "hint": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-101",
+          "term": "Drift can reduce genetic variation",
+          "story": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "science": "Genetic drift can randomly eliminate alleles and thereby reduce within-population genetic variation.",
+          "exact_name": false,
+          "hint": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-102",
+          "term": "Drift is nonadaptive",
+          "story": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "science": "Genetic drift changes allele frequencies by chance and does not consistently increase adaptation.",
+          "exact_name": false,
+          "hint": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-018",
+          "term": "Drift can drive population divergence",
+          "story": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "science": "Genetic drift can make a small population diverge genetically from other populations of the same species.",
+          "exact_name": false,
+          "hint": "the small breeding sample shifting allele frequency without any fitness sorting",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-010: Lock that both are sampling effects that change allele frequencies by chance, can reduce variation, and do not consistently produce adaptation.",
+        "Discrimination requirement U7-D07: keep Genetic drift, Drift is nonadaptive, Natural selection as mechanism physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U7-D09: keep Genetic drift, Gene flow, Gene flow counteracts divergence physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-012",
+      "checkpoint_prompt": "Without looking back, identify or explain Genetic drift from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Genetic drift is a nonselective change in allele frequency caused by chance, especially influential in small populations.",
+      "next_locus": "Bottleneck Gate",
+      "f3_scene_brief_id": "F3-U7-L15",
+      "narrative_word_count": 530
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U7-L16",
+      "locus": "Bottleneck Gate",
+      "title": "The Storm Shrinks the Population Before the Gene Pool Can Recover",
+      "scene_kicker": "A bottleneck is genetic drift when a severe population reduction leaves a chance, nonrepresentative sample of the previous gene pool.",
+      "location_description": "the narrowing gate where a severe population reduction leaves a chance sample of the prior gene pool",
+      "scene_layout": {
+        "orientation": "Enter Bottleneck Gate and stop at the narrowing gate where a severe population reduction leaves a chance sample of the prior gene pool. Keep large pre-bottleneck population fixed on the left, bottleneck gate as the working center, and survivor gene pool / black-robin and trout examples fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Large pre-bottleneck population",
+            "symbol": "BEFORE STORM",
+            "description": "Island B begins with a visibly large breeding population and a known focal allele distribution."
+          },
+          {
+            "position": "center",
+            "label": "Bottleneck gate",
+            "symbol": "STORM",
+            "description": "A storm shutter narrows passage to a small survivor sample while its blind filter ignores the focal allele identity."
+          },
+          {
+            "position": "right",
+            "label": "Survivor gene pool and examples",
+            "symbol": "AFTER",
+            "description": "The survivor gene pool is displayed beside black-robin and marble-trout evidence panels that emphasize severe demographic reduction and lost variation."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Large pre-bottleneck population",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Island B begins with a visibly large breeding population and a known focal allele distribution.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Bottleneck gate",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A storm shutter narrows passage to a small survivor sample while its blind filter ignores the focal allele identity.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Survivor gene pool and examples",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The survivor gene pool is displayed beside black-robin and marble-trout evidence panels that emphasize severe demographic reduction and lost variation.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Bottleneck Gate** is built into a concrete seawall. On your **left**, Island B appears as a broad enclosure with its large pre-storm population and known allele counts still illuminated. Directly **ahead**, a heavy center gate has narrowed to a slot just wide enough for a handful of survivors. Wind and rain hammer the glass, but the gate's focal-allele sensor is deliberately switched off. On your **right**, the survivor gene pool sits beside two evidence panels showing the Chatham Island black robin and marble trout. Imani records the pre-storm population size before the alarm reaches its peak.",
+      "story_paragraphs": [
+        "The **Bottleneck Gate** is built into a concrete seawall. On your **left**, Island B appears as a broad enclosure with its large pre-storm population and known allele counts still illuminated. Directly **ahead**, a heavy center gate has narrowed to a slot just wide enough for a handful of survivors. Wind and rain hammer the glass, but the gate's focal-allele sensor is deliberately switched off. On your **right**, the survivor gene pool sits beside two evidence panels showing the Chatham Island black robin and marble trout. Imani records the pre-storm population size before the alarm reaches its peak.",
+        "The storm model forces a severe demographic reduction. At the focal blue and amber locus, the gate does not preferentially admit one color. The small survivor group is therefore a chance, nonrepresentative sample of the earlier gene pool. In this run, the survivor-derived display expands back to one hundred visible copies as eighty-five blue and fifteen amber, preserving the survivors' altered frequency while the population-size history stays marked as a crash. Imani names the specific process **Bottleneck effect**. A bottleneck is genetic drift following a severe population-size reduction that leaves a nonrepresentative sample of the original gene pool.",
+        "Imani stops the storm and makes a qualification visible. A real population decline can contain selective and nonselective components. If a disease kills one genotype more often because of a heritable susceptibility, that part of the change can involve selection. The sampling component is genetic drift when survival with respect to the focal alleles is effectively chance. The network is not allowed to label every disaster a bottleneck-driven genetic change simply because many organisms died. The mechanism depends on how the surviving gene pool was sampled.",
+        "On the right, the black-robin panel shows how a population reduced to only a few individuals can lose genetic variation even if later conservation increases census size. The marble-trout panel shows repeated mortality events that can likewise create severe bottlenecks and reduce diversity when the surviving population is a small sample. Imani keeps both examples beside the survivor tank so the important consequence is not the drama of the disaster. It is the altered representation of alleles among the survivors and their descendants.",
+        "The storm clears. Island B's survivor-derived display now differs sharply from its pre-storm state. Imani leaves the original large population frozen on the left for comparison and locks the narrow gate in the center. Then she points toward a calm harbor on the far side of the seawall. A small ferry is boarding individuals from a population that is not collapsing at all.",
+        "That difference is the next diagnostic task. A bottleneck begins with a severe reduction of an existing population. The **Founder effect** begins when a small subset leaves or otherwise establishes a new population. Both are chance sampling and both can make allele frequencies unlike the source, but the physical histories are different. The ferry horn sounds. The source island remains full behind you while a few colonists depart."
+      ],
+      "story_close": "That difference is the next diagnostic task. A bottleneck begins with a severe reduction of an existing population. The **Founder effect** begins when a small subset leaves or otherwise establishes a new population. Both are chance sampling and both can make allele frequencies unlike the source, but the physical histories are different. The ferry horn sounds. The source island remains full behind you while a few colonists depart.",
+      "object_ids": [
+        "U7-K-013",
+        "U7-K-103",
+        "U7-K-105"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-013",
+          "term": "Bottleneck effect",
+          "story": "the storm bottleneck leaving a chance survivor sample of the earlier gene pool",
+          "science": "A bottleneck is genetic drift following a severe population-size reduction that leaves a nonrepresentative sample of the original gene pool.",
+          "exact_name": true,
+          "hint": "the storm bottleneck leaving a chance survivor sample of the earlier gene pool",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-103",
+          "term": "Black robin bottleneck example",
+          "story": "the storm bottleneck leaving a chance survivor sample of the earlier gene pool",
+          "science": "A severe decline of the Chatham Island black robin to a few individuals illustrates how a population bottleneck can sharply reduce genetic variation even if population size later recovers.",
+          "exact_name": false,
+          "hint": "the storm bottleneck leaving a chance survivor sample of the earlier gene pool",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-105",
+          "term": "Marble trout bottleneck example",
+          "story": "the storm bottleneck leaving a chance survivor sample of the earlier gene pool",
+          "science": "Repeated mortality events can produce bottlenecks that reduce genetic diversity when survivors are a small sample of the previous population.",
+          "exact_name": false,
+          "hint": "the storm bottleneck leaving a chance survivor sample of the earlier gene pool",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-010: Lock that both are sampling effects that change allele frequencies by chance, can reduce variation, and do not consistently produce adaptation.",
+        "Resolved F1 guard RF-U7-037: Define a bottleneck as genetic drift following a severe reduction in population size when survivors are a chance, nonrepresentative sample with respect to the focal alleles. A demographic decline can have selective and nonselective components; only the sampling component is genetic drift.",
+        "Discrimination requirement U7-D08: keep Bottleneck effect, Founder effect physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Founder Ferry",
+      "f3_scene_brief_id": "F3-U7-L16",
+      "narrative_word_count": 495
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U7-L17",
+      "locus": "Founder Ferry",
+      "title": "The Source Island Stays Full While a Tiny Colony Carries Away a Chance Sample",
+      "scene_kicker": "Founder effect occurs when a small founding group establishes a new population with allele frequencies that can differ by chance from the source population.",
+      "location_description": "the ferry where a small subset establishes a new population carrying a chance sample of source-population alleles",
+      "scene_layout": {
+        "orientation": "Enter Founder Ferry and stop at the ferry where a small subset establishes a new population carrying a chance sample of source-population alleles. Keep source population dock fixed on the left, founder ferry as the working center, and new-colony gene pool / Amish example fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Source population dock",
+            "symbol": "SOURCE",
+            "description": "The large source island remains standing with its gene pool visible while only a small group prepares to leave."
+          },
+          {
+            "position": "center",
+            "label": "Founder ferry",
+            "symbol": "FEW FOUNDERS",
+            "description": "A small ferry carries a chance subset of reproducing individuals to an empty island without shrinking the source population into a bottleneck."
+          },
+          {
+            "position": "right",
+            "label": "New-colony gene pool and Amish example",
+            "symbol": "COLONY",
+            "description": "The new island begins with the founders’ nonrepresentative allele sample beside an Amish-community example of rare alleles becoming unusually common by chance."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Source population dock",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The large source island remains standing with its gene pool visible while only a small group prepares to leave.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Founder ferry",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A small ferry carries a chance subset of reproducing individuals to an empty island without shrinking the source population into a bottleneck.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "New-colony gene pool and Amish example",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The new island begins with the founders’ nonrepresentative allele sample beside an Amish-community example of rare alleles becoming unusually common by chance.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Founder Ferry** waits at a bright wooden dock. On your **left**, the source population remains large, its finches and allele tank still visible behind the railing. No storm has reduced it. Directly **ahead**, the center ferry has room for only a few reproducing individuals, each carrying the alleles that happen to be present in that small group. On your **right**, an empty island tank is labeled NEW COLONY, and beside it a historical population-genetics panel describes rare alleles in particular Amish communities. Imani makes you look back at the intact source population before anyone boards.",
+      "story_paragraphs": [
+        "The **Founder Ferry** waits at a bright wooden dock. On your **left**, the source population remains large, its finches and allele tank still visible behind the railing. No storm has reduced it. Directly **ahead**, the center ferry has room for only a few reproducing individuals, each carrying the alleles that happen to be present in that small group. On your **right**, an empty island tank is labeled NEW COLONY, and beside it a historical population-genetics panel describes rare alleles in particular Amish communities. Imani makes you look back at the intact source population before anyone boards.",
+        "Five breeding pairs are selected for the ferry without sorting them by the focal allele. Their twenty focal-locus allele copies are a small sample of the source gene pool. By chance, twelve are blue and eight are amber, so the founders begin at 0.60 and 0.40 even though the source display behind them remains at 0.85 and 0.15. When the ferry reaches the right island, those few individuals become the starting gene pool for the colony. Only after the population boundary is established does Imani name the **Founder effect**. The founder effect is genetic drift when a new population is established by a small subset whose allele frequencies differ by chance from the source population.",
+        "The source population on the left remains nearly unchanged because it was not forced through a severe demographic crash. That makes the contrast with the bottleneck gate easy to reconstruct. In a bottleneck, an existing population becomes very small. In a founder event, a small group establishes a new population elsewhere or otherwise becomes reproductively separated. Both involve chance sampling. Neither process consistently makes the new gene pool more adaptive.",
+        "The new colony grows in the display. Because all descendants initially inherit alleles from the small set of founders, an allele that was rare in the source can become relatively common in the colony. Imani points to the Amish-community example on the right. High frequencies of some rare alleles in particular communities can illustrate a founder effect when the original founding population carried a nonrepresentative set of alleles. The explanation is not that the founders had an unusually high number of new mutations. The frequency difference can arise because of which alleles the small founding group happened to carry.",
+        "The ferry returns empty and the two island tanks remain side by side. Their allele frequencies are now more different than the network began with. A warning appears between them. DIVERGENCE INCREASING. Imani does not call this speciation. The populations have different gene pools, but gene flow could still reconnect them if individuals or gametes move across the boundary.",
+        "A steel bridge unfolds from Island A toward Island B. Unlike the blind drift chamber, the bridge has transparent lanes. Every allele copy that crosses will have a visible carrier. A plant panel above the bridge releases a cloud of fluorescent pollen toward a second population. The next station will show a mechanism that changes allele frequencies through movement rather than blind sampling and that often pulls diverging populations back toward one another."
+      ],
+      "story_close": "A steel bridge unfolds from Island A toward Island B. Unlike the blind drift chamber, the bridge has transparent lanes. Every allele copy that crosses will have a visible carrier. A plant panel above the bridge releases a cloud of fluorescent pollen toward a second population. The next station will show a mechanism that changes allele frequencies through movement rather than blind sampling and that often pulls diverging populations back toward one another.",
+      "object_ids": [
+        "U7-K-014",
+        "U7-K-104"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-014",
+          "term": "Founder effect",
+          "story": "the intact source population and the tiny founder ferry establishing a separate colony",
+          "science": "The founder effect is genetic drift when a new population is established by a small subset whose allele frequencies differ by chance from the source population.",
+          "exact_name": true,
+          "hint": "the intact source population and the tiny founder ferry establishing a separate colony",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-104",
+          "term": "Amish founder-effect example",
+          "story": "the intact source population and the tiny founder ferry establishing a separate colony",
+          "science": "High frequencies of some rare alleles in particular Amish communities illustrate how allele frequencies in a small founding group can differ from those in the source population.",
+          "exact_name": false,
+          "hint": "the intact source population and the tiny founder ferry establishing a separate colony",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-010: Lock that both are sampling effects that change allele frequencies by chance, can reduce variation, and do not consistently produce adaptation.",
+        "Resolved F1 guard RF-U7-039: Describe the founder effect as a small founding group carrying a nonrepresentative set of alleles, so some rare alleles can become unusually common in the descendant population. Do not imply the founders necessarily had more mutations overall.",
+        "Discrimination requirement U7-D08: keep Bottleneck effect, Founder effect physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Gene-Flow Bridge",
+      "f3_scene_brief_id": "F3-U7-L17",
+      "narrative_word_count": 516
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U7-L18",
+      "locus": "Gene-Flow Bridge",
+      "title": "This Time the Alleles Cross the Boundary in Plain Sight",
+      "scene_kicker": "Gene flow changes population allele frequencies through movement of fertile individuals or gametes and tends to reduce genetic differences between connected populations.",
+      "location_description": "the bridge where migrants or gametes move alleles between populations and tend to counter divergence",
+      "scene_layout": {
+        "orientation": "Enter Gene-Flow Bridge and stop at the bridge where migrants or gametes move alleles between populations and tend to counter divergence. Keep population A gene pool fixed on the left, gene-flow bridge / pollen transfer as the working center, and population B gene pool fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Population A gene pool",
+            "symbol": "ISLAND A",
+            "description": "The first island displays its blue and amber focal alleles and a population-size marker before any migrant crosses."
+          },
+          {
+            "position": "center",
+            "label": "Gene-flow bridge and pollen transfer",
+            "symbol": "MOVE",
+            "description": "A bridge physically carries migrants or gametes across the population boundary, with a parallel plant panel showing pollen as another route of allele movement."
+          },
+          {
+            "position": "right",
+            "label": "Population B gene pool",
+            "symbol": "ISLAND B",
+            "description": "The second island receives the incoming allele copies and updates its frequency toward the source population when the populations began different."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Population A gene pool",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The first island displays its blue and amber focal alleles and a population-size marker before any migrant crosses.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Gene-flow bridge and pollen transfer",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A bridge physically carries migrants or gametes across the population boundary, with a parallel plant panel showing pollen as another route of allele movement.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Population B gene pool",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The second island receives the incoming allele copies and updates its frequency toward the source population when the populations began different.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Gene-Flow Bridge** spans two illuminated island tanks. On your **left**, Population A displays its current focal allele frequency, with blue and amber copies still individually countable. Directly **ahead**, the center bridge is transparent from end to end. Every migrant that crosses carries visible allele tags, and an upper channel shows fluorescent pollen moving from one plant population toward another. On your **right**, Population B begins with a different allele frequency left by its earlier demographic history. Imani places the drift turntable's opaque scoop on a shelf behind you. Nothing in this room is allowed to move invisibly.",
+      "story_paragraphs": [
+        "The **Gene-Flow Bridge** spans two illuminated island tanks. On your **left**, Population A displays its current focal allele frequency, with blue and amber copies still individually countable. Directly **ahead**, the center bridge is transparent from end to end. Every migrant that crosses carries visible allele tags, and an upper channel shows fluorescent pollen moving from one plant population toward another. On your **right**, Population B begins with a different allele frequency left by its earlier demographic history. Imani places the drift turntable's opaque scoop on a shelf behind you. Nothing in this room is allowed to move invisibly.",
+        "A fertile finch leaves Population A and settles in Population B, later contributing alleles to the recipient population. The corresponding token copies physically cross the bridge. Imani lets the receiving gene-pool tank update and then names **Gene flow**. Migration of fertile individuals or gametes can add or remove alleles from a population through gene flow. The diagnostic evidence is movement across a population boundary. The change is not being produced by a blind sample from within one population.",
+        "The upper channel repeats the idea with plants. Pollen carries alleles from one plant population to another, demonstrating **Pollen-mediated gene flow**. The pollen grain is not a whole migrant plant, yet it can transport genetic material that enters the recipient gene pool through reproduction. Imani keeps the finch lane and pollen lane parallel so the learner remembers that gene flow can occur through fertile individuals or through gametes.",
+        "Population A enters the bridge at 0.70 blue and 0.30 amber, while Population B remains at 0.85 blue and 0.15 amber after its bottleneck history. Several fertile migrants from the larger Population A contribute alleles to B, including amber copies that were rarer there. The B display shifts toward 0.80 blue and 0.20 amber, while A remains 0.70 and 0.30 to the displayed precision because the modeled migrant group is small relative to the source population. Imani marks **Gene flow counteracts divergence**. Gene flow between populations tends to reduce genetic differences and can hinder divergence into separate species. The word *tends* remains visible because the effect depends on movement direction and the allele frequencies of the connected populations.",
+        "The network flashes a false comparison. DRIFT EQUALS GENE FLOW. Imani clears it. Drift changes frequencies through chance sampling within populations and is especially powerful when populations are small. Gene flow requires actual movement across a population boundary. Both can change allele frequencies, but the physical event is different. She has you point first to the opaque drift sampler behind you, then to the transparent bridge in front of you. One is chance sampling. The other is migration.",
+        "The bridge locks after the optional recall. Population A is left with a clean focal two-allele census of seventy blue copies and thirty amber copies. Imani circles that island in the ledger. From this point forward, the network will stop imposing storms, ferries, mutation, and migration on that focal locus. A white control tower rises ahead with the words NULL MODEL illuminated across its center. The next station will ask what genotype distribution would be expected if the focal locus were placed under an idealized set of non-evolving conditions."
+      ],
+      "story_close": "The bridge locks after the optional recall. Population A is left with a clean focal two-allele census of seventy blue copies and thirty amber copies. Imani circles that island in the ledger. From this point forward, the network will stop imposing storms, ferries, mutation, and migration on that focal locus. A white control tower rises ahead with the words NULL MODEL illuminated across its center. The next station will ask what genotype distribution would be expected if the focal locus were placed under an idealized set of non-evolving conditions.",
+      "object_ids": [
+        "U7-K-015",
+        "U7-K-019",
+        "U7-K-106"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-015",
+          "term": "Gene flow",
+          "story": "the visible migrant or pollen crossing the population boundary on the bridge",
+          "science": "Migration of fertile individuals or gametes can add or remove alleles from a population through gene flow.",
+          "exact_name": true,
+          "hint": "the visible migrant or pollen crossing the population boundary on the bridge",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-019",
+          "term": "Gene flow counteracts divergence",
+          "story": "the visible migrant or pollen crossing the population boundary on the bridge",
+          "science": "Gene flow between populations tends to reduce genetic differences and can hinder divergence into separate species.",
+          "exact_name": true,
+          "hint": "the visible migrant or pollen crossing the population boundary on the bridge",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-106",
+          "term": "Pollen-mediated gene flow",
+          "story": "the visible migrant or pollen crossing the population boundary on the bridge",
+          "science": "Pollen movement between plant populations can move alleles between gene pools and produce gene flow.",
+          "exact_name": false,
+          "hint": "the visible migrant or pollen crossing the population boundary on the bridge",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U7-D09: keep Genetic drift, Gene flow, Gene flow counteracts divergence physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-015",
+      "checkpoint_prompt": "Without looking back, identify or explain Gene flow from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Migration of fertile individuals or gametes can add or remove alleles from a population through gene flow.",
+      "next_locus": "Hardy-Weinberg Null-Model Station",
+      "f3_scene_brief_id": "F3-U7-L18",
+      "narrative_word_count": 537
+    },
+    {
+      "scene_index": 8,
+      "locus_id": "U7-L19",
+      "locus": "Hardy-Weinberg Null-Model Station",
+      "title": "The Baseline Is a Question, Not a Claim That Nature Must Obey",
+      "scene_kicker": "Hardy-Weinberg equilibrium is an idealized, locus-specific null model used to generate expectations for a non-evolving population.",
+      "location_description": "the baseline station where a two-allele locus is compared with an idealized non-evolving null model",
+      "scene_layout": {
+        "orientation": "Enter Hardy-Weinberg Null-Model Station and stop at the baseline station where a two-allele locus is compared with an idealized non-evolving null model. Keep observed population input fixed on the left, Hardy-Weinberg equilibrium baseline as the working center, and model-comparison output fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Observed population input",
+            "symbol": "p = 0.70",
+            "description": "Island A freezes one two-allele locus with seventy blue copies and thirty amber copies as the actual observed allele input."
+          },
+          {
+            "position": "center",
+            "label": "Hardy-Weinberg equilibrium baseline",
+            "symbol": "NULL MODEL",
+            "description": "A neutral glass model generates the genotype proportions expected if the locus met the idealized non-evolving assumptions."
+          },
+          {
+            "position": "right",
+            "label": "Model-comparison output",
+            "symbol": "COMPARE",
+            "description": "Observed population data and model expectations remain in separate frames so disagreement triggers investigation rather than automatic claims of a particular mechanism."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Observed population input",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Island A freezes one two-allele locus with seventy blue copies and thirty amber copies as the actual observed allele input.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Hardy-Weinberg equilibrium baseline",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A neutral glass model generates the genotype proportions expected if the locus met the idealized non-evolving assumptions.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Model-comparison output",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Observed population data and model expectations remain in separate frames so disagreement triggers investigation rather than automatic claims of a particular mechanism.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Hardy-Weinberg Null-Model Station** is quiet after the storms and bridges. On your **left**, the observed Island A input is sealed at the focal two-allele locus with seventy blue copies and thirty amber copies. Directly **ahead**, a clear model chamber is labeled HARDY-WEINBERG BASELINE. On your **right**, an empty comparison frame waits for observed and expected genotype distributions. Imani removes the second-locus violet mutation tray from the working table. The model now focuses only on the blue and amber two-allele locus, preserving exactly the condition the later equations require.",
+      "story_paragraphs": [
+        "The **Hardy-Weinberg Null-Model Station** is quiet after the storms and bridges. On your **left**, the observed Island A input is sealed at the focal two-allele locus with seventy blue copies and thirty amber copies. Directly **ahead**, a clear model chamber is labeled HARDY-WEINBERG BASELINE. On your **right**, an empty comparison frame waits for observed and expected genotype distributions. Imani removes the second-locus violet mutation tray from the working table. The model now focuses only on the blue and amber two-allele locus, preserving exactly the condition the later equations require.",
+        "Imani begins with what the model is for. The center chamber does not describe every real population. It creates an idealized baseline. **Hardy-Weinberg equilibrium as null model** provides a null model for allele and genotype frequencies expected at a locus in a non-evolving population. The phrase *at a locus* stays illuminated because the assumptions and evidence apply to the focal locus being modeled, not automatically to an organism's entire genome or every population trait.",
+        "The seventy-to-thirty allele input enters the model without changing. The chamber calculates what genotype frequencies would be expected if the relevant Hardy-Weinberg conditions were satisfied. Imani names the related **Hardy-Weinberg null hypothesis**. Hardy-Weinberg expectations provide a baseline against which observed genotype and allele data can be compared to evaluate whether evolutionary mechanisms may be acting at a locus. The model gives the network something precise to compare against.",
+        "A red detector tries to interpret any observed-versus-expected difference as proof of natural selection. Imani disables it. A deviation from Hardy-Weinberg expectations is a signal to investigate the model assumptions and data. It does not identify one mechanism automatically. The population might be small, migration might occur, mutation might alter alleles, mating might be nonrandom, or reproductive success might differ among genotypes. Some assumption violations can alter genotype proportions without changing allele frequencies.",
+        "Imani leaves the observed seventy blue and thirty amber copies visible on the left. The center model remains transparent rather than prophetic. On the right, two empty slots are labeled OBSERVED and EXPECTED. The separation is permanent. Actual counts come from a population sample. Expected values come from the model under specified assumptions. Mixing those categories would make every later equation meaningless. The baseline is therefore a disciplined comparison question, not a target that real populations are expected to approach on purpose. If the observed pattern fits the model closely, the model remains a useful null description for that locus. If it does not, the next step is to investigate assumptions and evidence rather than invent a mechanism from the difference alone.",
+        "Five locks click open above the station. Two controls slide toward the left wall, one appears in the center, and two move to the right wall. The model cannot be interpreted until every condition is understood separately. Imani carries the unchanged p and q input into the next room, where the network will test what happens when one assumption is changed while the other four remain visible."
+      ],
+      "story_close": "Five locks click open above the station. Two controls slide toward the left wall, one appears in the center, and two move to the right wall. The model cannot be interpreted until every condition is understood separately. Imani carries the unchanged p and q input into the next room, where the network will test what happens when one assumption is changed while the other four remain visible.",
+      "object_ids": [
+        "U7-K-021",
+        "U7-K-109"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-021",
+          "term": "Hardy-Weinberg equilibrium as null model",
+          "story": "the observed two-allele input kept separate from the Hardy-Weinberg baseline model",
+          "science": "Hardy-Weinberg equilibrium is an idealized null model for describing and predicting allele and genotype frequencies at a locus in a non-evolving population; its full set of conditions is not met in real populations.",
+          "exact_name": true,
+          "hint": "the observed two-allele input kept separate from the Hardy-Weinberg baseline model",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-109",
+          "term": "Hardy-Weinberg null hypothesis",
+          "story": "the observed two-allele input kept separate from the Hardy-Weinberg baseline model",
+          "science": "Hardy-Weinberg expectations provide a baseline against which observed genotype and allele data can be compared to evaluate whether evolutionary mechanisms may be acting at a locus.",
+          "exact_name": false,
+          "hint": "the observed two-allele input kept separate from the Hardy-Weinberg baseline model",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-012: Treat Hardy-Weinberg as a locus-specific null model. Nonrandom mating alone can change genotype frequencies without changing allele frequencies. A deviation prompts evaluation of which assumptions are violated and whether allele frequencies changed."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Five-Condition Control Room",
+      "f3_scene_brief_id": "F3-U7-L19",
+      "narrative_word_count": 493
+    },
+    {
+      "scene_index": 9,
+      "locus_id": "U7-L20",
+      "locus": "Five-Condition Control Room",
+      "title": "Five Controls Hold the Null Model Still",
+      "scene_kicker": "Hardy-Weinberg equilibrium depends on five model conditions, and nonrandom mating alone can change genotype frequencies without necessarily changing allele frequencies.",
+      "location_description": "the control room holding all five Hardy-Weinberg assumptions in one stable spatial arrangement",
+      "scene_layout": {
+        "orientation": "Enter Five-Condition Control Room and stop at the control room holding all five Hardy-Weinberg assumptions in one stable spatial arrangement. Keep large-population / no-migration controls fixed on the left, random-mating control console as the working center, and no-mutation / no-selection controls fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Large-population and no-migration controls",
+            "symbol": "N LARGE / NO FLOW",
+            "description": "Two locked controls keep random sampling effects negligible and prevent allele copies from entering or leaving the modeled population."
+          },
+          {
+            "position": "center",
+            "label": "Random-mating control console",
+            "symbol": "MATE RANDOMLY",
+            "description": "A mating carousel mixes individuals with respect to the focal locus and can be switched to nonrandom mating for a controlled contrast."
+          },
+          {
+            "position": "right",
+            "label": "No-mutation and no-selection controls",
+            "symbol": "NO MUT / NO SEL",
+            "description": "Two additional controls keep allele identity fixed and remove genotype-dependent reproductive differences at the focal locus."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Large-population and no-migration controls",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Two locked controls keep random sampling effects negligible and prevent allele copies from entering or leaving the modeled population.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Random-mating control console",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A mating carousel mixes individuals with respect to the focal locus and can be switched to nonrandom mating for a controlled contrast.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "No-mutation and no-selection controls",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Two additional controls keep allele identity fixed and remove genotype-dependent reproductive differences at the focal locus.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Five-Condition Control Room** surrounds the null-model chamber like a control tower. On your **left**, two large switches read LARGE POPULATION and NO MIGRATION. Directly **ahead**, the center console controls mating pattern at the focal locus. On your **right**, two more switches read NO MUTATION and NO NATURAL SELECTION. Imani places Island A's seventy blue and thirty amber allele copies on a locked strip above the room. The aim is not to memorize five phrases as floating rules. Each control must visibly prevent one process from disturbing the model.",
+      "story_paragraphs": [
+        "The **Five-Condition Control Room** surrounds the null-model chamber like a control tower. On your **left**, two large switches read LARGE POPULATION and NO MIGRATION. Directly **ahead**, the center console controls mating pattern at the focal locus. On your **right**, two more switches read NO MUTATION and NO NATURAL SELECTION. Imani places Island A's seventy blue and thirty amber allele copies on a locked strip above the room. The aim is not to memorize five phrases as floating rules. Each control must visibly prevent one process from disturbing the model.",
+        "Imani engages the first left switch. The **Hardy-Weinberg condition large population** means the model assumes a sufficiently large population so random sampling effects are negligible. The drift chamber you visited earlier showed why this matters. A small reproducing population can move allele frequencies by chance. The second left switch establishes the **Hardy-Weinberg condition no migration**. No individuals or gametes cross the population boundary, so gene flow cannot add or remove alleles at the focal locus.",
+        "On the right, the first switch establishes the **Hardy-Weinberg condition no mutation**. No new mutation changes the alleles at the modeled locus. The second right switch establishes the **Hardy-Weinberg condition no natural selection**. Genotypes at that locus do not differ in reproductive success. Imani keeps the mutation dock and fitness scale mentally separate. One control prevents allele identity from changing by mutation. The other prevents differential reproductive contribution from changing the representation of genotypes through selection.",
+        "The center mating console is the subtle one. The **Hardy-Weinberg condition random mating** means mating is random with respect to the locus. Imani first lets the carousel mix genotypes randomly. Then she deliberately switches to assortative mating while keeping the allele-copy totals locked at seventy blue and thirty amber. The genotype pattern changes. More like-with-like matings can change the proportions of homozygotes and heterozygotes, yet the p and q allele frequencies can remain the same. This is why nonrandom mating alone does not automatically prove allele-frequency evolution.",
+        "Imani toggles each control one at a time while the other four remain fixed. The network logs which process was permitted and which population quantity changed. She refuses to let the conditions collapse into a single sentence that says any violation equals microevolution. A violation tells you the null model may not apply as written. You still have to determine whether allele frequencies changed, genotype frequencies changed, or both, and which mechanism can explain the pattern.",
+        "The five controls go dark for the optional recall, but their physical positions remain. Large population and no migration stay on the left, random mating stays in the center, and no mutation plus no natural selection stay on the right. When the labels return, the model chamber sends the same seventy blue and thirty amber copies into a long counting board. The next room will give those two allele frequencies names, but it will not let dominance decide which symbol is p and which is q."
+      ],
+      "story_close": "The five controls go dark for the optional recall, but their physical positions remain. Large population and no migration stay on the left, random mating stays in the center, and no mutation plus no natural selection stay on the right. When the labels return, the model chamber sends the same seventy blue and thirty amber copies into a long counting board. The next room will give those two allele frequencies names, but it will not let dominance decide which symbol is p and which is q.",
+      "object_ids": [
+        "U7-K-022",
+        "U7-K-023",
+        "U7-K-024",
+        "U7-K-025",
+        "U7-K-026"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-022",
+          "term": "Hardy-Weinberg condition large population",
+          "story": "the five spatial controls surrounding the null model",
+          "science": "The Hardy-Weinberg model assumes a sufficiently large population so random sampling effects are negligible.",
+          "exact_name": true,
+          "hint": "the five spatial controls surrounding the null model",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-023",
+          "term": "Hardy-Weinberg condition no migration",
+          "story": "the five spatial controls surrounding the null model",
+          "science": "The Hardy-Weinberg model assumes no migration or gene flow at the locus being modeled.",
+          "exact_name": true,
+          "hint": "the five spatial controls surrounding the null model",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-024",
+          "term": "Hardy-Weinberg condition no mutation",
+          "story": "the five spatial controls surrounding the null model",
+          "science": "The Hardy-Weinberg model assumes no new mutation changing the alleles at the locus.",
+          "exact_name": true,
+          "hint": "the five spatial controls surrounding the null model",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-025",
+          "term": "Hardy-Weinberg condition random mating",
+          "story": "the five spatial controls surrounding the null model",
+          "science": "The Hardy-Weinberg model assumes random mating with respect to the locus.",
+          "exact_name": true,
+          "hint": "the five spatial controls surrounding the null model",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-026",
+          "term": "Hardy-Weinberg condition no natural selection",
+          "story": "the five spatial controls surrounding the null model",
+          "science": "The Hardy-Weinberg model assumes no differential reproductive success among genotypes at the locus.",
+          "exact_name": true,
+          "hint": "the five spatial controls surrounding the null model",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-012: Treat Hardy-Weinberg as a locus-specific null model. Nonrandom mating alone can change genotype frequencies without changing allele frequencies. A deviation prompts evaluation of which assumptions are violated and whether allele frequencies changed.",
+        "Discrimination requirement U7-D15: keep Hardy-Weinberg condition large population, Hardy-Weinberg condition no migration, Hardy-Weinberg condition no mutation, Hardy-Weinberg condition random mating, Hardy-Weinberg condition no natural selection physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-022",
+      "checkpoint_prompt": "Without looking back, identify or explain Hardy-Weinberg condition large population from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "The Hardy-Weinberg model assumes a sufficiently large population so random sampling effects are negligible.",
+      "next_locus": "Allele-Frequency p/q Board",
+      "f3_scene_brief_id": "F3-U7-L20",
+      "narrative_word_count": 489
+    },
+    {
+      "scene_index": 10,
+      "locus_id": "U7-L21",
+      "locus": "Allele-Frequency p/q Board",
+      "title": "p and q Are Labels for Allele Frequencies, Not Dominance Badges",
+      "scene_kicker": "For a two-allele locus, p and q describe allele frequencies that sum to one, while genotype frequency remains a different population quantity.",
+      "location_description": "the board separating allele frequency from genotype frequency and assigning p and q without tying either symbol to dominance",
+      "scene_layout": {
+        "orientation": "Enter Allele-Frequency p/q Board and stop at the board separating allele frequency from genotype frequency and assigning p and q without tying either symbol to dominance. Keep allele-frequency p side fixed on the left, p + q = 1 board as the working center, and allele-frequency q side / genotype-frequency contrast fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Allele-frequency p side",
+            "symbol": "p = 0.70",
+            "description": "Seventy blue allele copies occupy the left panel and are counted as one allele frequency at the focal two-allele locus."
+          },
+          {
+            "position": "center",
+            "label": "p + q = 1 board",
+            "symbol": "TOTAL = 1",
+            "description": "A central board receives the two allele frequencies and verifies that the complete two-allele inventory sums to one."
+          },
+          {
+            "position": "right",
+            "label": "Allele-frequency q side and genotype-frequency contrast",
+            "symbol": "q = 0.30",
+            "description": "Thirty amber allele copies remain distinct from a lower strip that groups whole individuals by AA, Aa, or aa genotype."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Allele-frequency p side",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Seventy blue allele copies occupy the left panel and are counted as one allele frequency at the focal two-allele locus.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "p + q = 1 board",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A central board receives the two allele frequencies and verifies that the complete two-allele inventory sums to one.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Allele-frequency q side and genotype-frequency contrast",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Thirty amber allele copies remain distinct from a lower strip that groups whole individuals by AA, Aa, or aa genotype.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Allele-Frequency p/q Board** stretches across a narrow counting hall. On your **left**, seventy blue A tokens fill a transparent panel. Directly **ahead**, a central equation board waits with two empty boxes joined by a plus sign and an equals-one marker. On your **right**, thirty amber a tokens occupy a second panel, while a lower strip groups whole individuals into AA, Aa, and aa boxes. Imani places the population-size marker at fifty diploid individuals so the one hundred total allele copies remain visible throughout the room.",
+      "story_paragraphs": [
+        "The **Allele-Frequency p/q Board** stretches across a narrow counting hall. On your **left**, seventy blue A tokens fill a transparent panel. Directly **ahead**, a central equation board waits with two empty boxes joined by a plus sign and an equals-one marker. On your **right**, thirty amber a tokens occupy a second panel, while a lower strip groups whole individuals into AA, Aa, and aa boxes. Imani places the population-size marker at fifty diploid individuals so the one hundred total allele copies remain visible throughout the room.",
+        "She begins on the left by dividing seventy blue copies by the one hundred total allele copies. The result is 0.70. That proportion is an **Allele frequency**, the proportion of all allele copies at a locus represented by a particular allele. The population boundary and locus are part of the meaning. The number is not the fraction of individuals that look dominant. It is a count of allele copies within the gene pool.",
+        "On the lower right strip, Imani groups the same fifty individuals by genotype. The proportions of AA, Aa, and aa individuals are **Genotype frequency**, the proportion of individuals in a population with a particular genotype. She keeps the genotype boxes physically below the allele-copy panels. An allele frequency counts copies of an allele. A genotype frequency counts individuals carrying a particular pair of alleles. The two quantities are related, but they are not interchangeable.",
+        "Imani now assigns the blue allele the symbol p. The left label reads **p as allele-1 frequency**. In Hardy-Weinberg notation, p is the frequency of one allele at a two-allele locus. It is not inherently the dominant allele. She assigns amber the symbol q. The right label reads **q as allele-2 frequency**. q is the frequency of the other allele and is not inherently recessive. If you swapped the letters used for the two alleles consistently, the biology would not change.",
+        "The two frequencies slide into the center board. 0.70 plus 0.30 equals 1. The board names the **Allele-frequency equation p + q = 1**. For a two-allele locus, the allele frequencies sum to one because the two categories account for every allele copy at that locus. Imani leaves a bright TWO-ALLELE condition above the equation so the learner does not carry the formula into a locus with three or more alleles without modification.",
+        "The center board now sends p and q forward without doing any genotype counting from the observed sample. Ahead, three expected-frequency panels rise from the floor. The left is labeled p², the center 2pq, and the right q². The next station will show what those expressions mean under Hardy-Weinberg assumptions. The network will be allowed to generate expectations, but it will not be allowed to quietly replace the observed genotype distribution with them."
+      ],
+      "story_close": "The center board now sends p and q forward without doing any genotype counting from the observed sample. Ahead, three expected-frequency panels rise from the floor. The left is labeled p², the center 2pq, and the right q². The next station will show what those expressions mean under Hardy-Weinberg assumptions. The network will be allowed to generate expectations, but it will not be allowed to quietly replace the observed genotype distribution with them.",
+      "object_ids": [
+        "U7-K-108",
+        "U7-K-107",
+        "U7-K-068",
+        "U7-K-070",
+        "U7-K-071"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-108",
+          "term": "Allele frequency",
+          "story": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "science": "Allele frequency is the proportion of all allele copies at a locus represented by a particular allele.",
+          "exact_name": true,
+          "hint": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-107",
+          "term": "Genotype frequency",
+          "story": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "science": "Genotype frequency is the proportion of individuals in a population with a particular genotype.",
+          "exact_name": true,
+          "hint": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-068",
+          "term": "Allele-frequency equation p + q = 1",
+          "story": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "science": "For a two-allele locus, the allele frequencies sum to 1: p + q = 1.",
+          "exact_name": false,
+          "hint": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-070",
+          "term": "p as allele-1 frequency",
+          "story": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "science": "In Hardy-Weinberg notation, p is the frequency of one allele at a two-allele locus; it is not inherently the dominant allele.",
+          "exact_name": true,
+          "hint": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-071",
+          "term": "q as allele-2 frequency",
+          "story": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "science": "In Hardy-Weinberg notation, q is the frequency of the other allele at a two-allele locus; it is not inherently the recessive allele.",
+          "exact_name": true,
+          "hint": "the seventy blue and thirty amber allele copies feeding p + q = 1",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-013: Lock p and q as frequencies of two alleles, with no inherent dominance meaning. Dominance affects phenotype expression, not which symbol must represent an allele.",
+        "Discrimination requirement U7-D10: keep Population, Gene pool, Allele frequency physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U7-D11: keep Allele frequency, Genotype frequency physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U7-D12: keep p as allele-1 frequency, q as allele-2 frequency, Allele-frequency equation p + q = 1 physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U7-D14: keep Allele-frequency equation p + q = 1, Hardy-Weinberg genotype equation physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Genotype-Frequency Equation Board",
+      "f3_scene_brief_id": "F3-U7-L21",
+      "narrative_word_count": 462
+    },
+    {
+      "scene_index": 11,
+      "locus_id": "U7-L22",
+      "locus": "Genotype-Frequency Equation Board",
+      "title": "The Equation Board Builds Expected Genotypes From the Same p and q",
+      "scene_kicker": "Under Hardy-Weinberg equilibrium, p², 2pq, and q² are expected genotype frequencies and must remain distinct from directly observed genotype proportions.",
+      "location_description": "the board mapping p², 2pq, and q² to expected genotype frequencies under Hardy-Weinberg equilibrium",
+      "scene_layout": {
+        "orientation": "Enter Genotype-Frequency Equation Board and stop at the board mapping p², 2pq, and q² to expected genotype frequencies under Hardy-Weinberg equilibrium. Keep p² homozygote panel fixed on the left, 2pq heterozygote panel as the working center, and q² homozygote panel fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "p² homozygote panel",
+            "symbol": "0.49",
+            "description": "The left expected panel represents the homozygous genotype containing two copies of the p-designated allele."
+          },
+          {
+            "position": "center",
+            "label": "2pq heterozygote panel",
+            "symbol": "0.42",
+            "description": "The center expected panel represents heterozygotes formed by the two possible p-by-q mating combinations."
+          },
+          {
+            "position": "right",
+            "label": "q² homozygote panel",
+            "symbol": "0.09",
+            "description": "The right expected panel represents the homozygous genotype containing two copies of the q-designated allele."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "p² homozygote panel",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The left expected panel represents the homozygous genotype containing two copies of the p-designated allele.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "2pq heterozygote panel",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The center expected panel represents heterozygotes formed by the two possible p-by-q mating combinations.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "q² homozygote panel",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The right expected panel represents the homozygous genotype containing two copies of the q-designated allele.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Genotype-Frequency Equation Board** opens into three luminous panels. On your **left**, the p² panel receives the blue allele symbol twice. Directly **ahead**, the center 2pq panel displays one blue and one amber copy in two possible mating-order combinations. On your **right**, the q² panel receives two amber symbols. Imani keeps p equal to 0.70 and q equal to 0.30 along the upper rail. A second rail below remains blank and is labeled OBSERVED GENOTYPE COUNTS. Nothing may enter that lower rail yet.",
+      "story_paragraphs": [
+        "The **Genotype-Frequency Equation Board** opens into three luminous panels. On your **left**, the p² panel receives the blue allele symbol twice. Directly **ahead**, the center 2pq panel displays one blue and one amber copy in two possible mating-order combinations. On your **right**, the q² panel receives two amber symbols. Imani keeps p equal to 0.70 and q equal to 0.30 along the upper rail. A second rail below remains blank and is labeled OBSERVED GENOTYPE COUNTS. Nothing may enter that lower rail yet.",
+        "The model uses the same allele frequencies from the previous room and applies the Hardy-Weinberg assumptions. The left panel computes 0.70 multiplied by 0.70 and displays 0.49. The center combines the two p-by-q orders and displays 2 times 0.70 times 0.30, or 0.42. The right panel displays 0.30 multiplied by 0.30, or 0.09. Only after all three model values are visible does Imani name the **Hardy-Weinberg genotype equation**. Under Hardy-Weinberg equilibrium for a two-allele locus, expected genotype frequencies are p² + 2pq + q² = 1.",
+        "Imani points left. **p² expected homozygote frequency** is the expected frequency of the homozygous genotype containing two copies of the p-designated allele. She points to the center. **2pq expected heterozygote frequency** is the expected heterozygote frequency. Then she points right. **q² expected homozygote frequency** is the expected frequency of the homozygous genotype containing two copies of the q-designated allele. None of those labels contains the words dominant or recessive because p and q themselves do not.",
+        "The three expected proportions sum to one. Imani allows the board to print an expected genotype distribution of 0.49, 0.42, and 0.09. Then she covers it with transparent glass and taps the empty observed rail below. The values came from a model using p and q under Hardy-Weinberg conditions. They were not counted directly from the fifty individuals in the actual island sample.",
+        "The network tries to copy 0.49, 0.42, and 0.09 into the observed boxes. Imani blocks the transfer. If observed genotype counts happen to match those expectations closely, that is an empirical comparison. The equation cannot declare the observed population to have those genotype frequencies before the individuals are counted. That distinction also protects the later recessive-phenotype shortcut. q² can represent a recessive homozygote frequency only under the relevant model assumptions and phenotype-genotype mapping.",
+        "The three panels darken for the optional recall. Their positions remain visible as empty outlines. If you can reconstruct which expected genotype frequency belongs on the left, center, and right and why the three add to one, the relationship is secure. When the values return, a physical counting desk rolls into view. Fifty actual genotype cards are waiting to be sorted. The next room will count allele copies directly and will not use a square root to guess frequencies from an arbitrary observed homozygote count."
+      ],
+      "story_close": "The three panels darken for the optional recall. Their positions remain visible as empty outlines. If you can reconstruct which expected genotype frequency belongs on the left, center, and right and why the three add to one, the relationship is secure. When the values return, a physical counting desk rolls into view. Fifty actual genotype cards are waiting to be sorted. The next room will count allele copies directly and will not use a square root to guess frequencies from an arbitrary observed homozygote count.",
+      "object_ids": [
+        "U7-K-069",
+        "U7-K-072",
+        "U7-K-073",
+        "U7-K-074"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-069",
+          "term": "Hardy-Weinberg genotype equation",
+          "story": "the left p², center 2pq, and right q² expected-genotype panels",
+          "science": "Under Hardy-Weinberg equilibrium for a two-allele locus, expected genotype frequencies are p² + 2pq + q² = 1.",
+          "exact_name": false,
+          "hint": "the left p², center 2pq, and right q² expected-genotype panels",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-072",
+          "term": "p² expected homozygote frequency",
+          "story": "the left p², center 2pq, and right q² expected-genotype panels",
+          "science": "Under Hardy-Weinberg equilibrium, p² is the expected frequency of the homozygous genotype containing two copies of the p-designated allele.",
+          "exact_name": false,
+          "hint": "the left p², center 2pq, and right q² expected-genotype panels",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-073",
+          "term": "2pq expected heterozygote frequency",
+          "story": "the left p², center 2pq, and right q² expected-genotype panels",
+          "science": "Under Hardy-Weinberg equilibrium, 2pq is the expected heterozygote frequency.",
+          "exact_name": false,
+          "hint": "the left p², center 2pq, and right q² expected-genotype panels",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-074",
+          "term": "q² expected homozygote frequency",
+          "story": "the left p², center 2pq, and right q² expected-genotype panels",
+          "science": "Under Hardy-Weinberg equilibrium, q² is the expected frequency of the homozygous genotype containing two copies of the q-designated allele.",
+          "exact_name": false,
+          "hint": "the left p², center 2pq, and right q² expected-genotype panels",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-014: Only equate genotype frequencies with p², 2pq, and q² under Hardy-Weinberg assumptions. Inferring q² from a recessive phenotype also assumes the phenotype reliably identifies the recessive homozygous genotype.",
+        "Discrimination requirement U7-D14: keep Allele-frequency equation p + q = 1, Hardy-Weinberg genotype equation physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U7-D13: keep p² expected homozygote frequency, 2pq expected heterozygote frequency, q² expected homozygote frequency physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-069",
+      "checkpoint_prompt": "Without looking back, identify or explain Hardy-Weinberg genotype equation from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Under Hardy-Weinberg equilibrium for a two-allele locus, expected genotype frequencies are p² + 2pq + q² = 1.",
+      "next_locus": "Genotype-Count Allele Counter",
+      "f3_scene_brief_id": "F3-U7-L22",
+      "narrative_word_count": 480
+    },
+    {
+      "scene_index": 12,
+      "locus_id": "U7-L23",
+      "locus": "Genotype-Count Allele Counter",
+      "title": "Count the Alleles You Actually Observed Before You Touch a Model",
+      "scene_kicker": "Allele frequencies from genotype counts come from direct allele-copy counting across 2N copies in a diploid sample.",
+      "location_description": "the counter that derives allele frequencies directly from diploid genotype counts by counting allele copies",
+      "scene_layout": {
+        "orientation": "Enter Genotype-Count Allele Counter and stop at the counter that derives allele frequencies directly from diploid genotype counts by counting allele copies. Keep AA genotype-count bin fixed on the left, 2N allele-copy counter as the working center, and Aa / aa count bins and allele-frequency output fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "AA genotype-count bin",
+            "symbol": "26 AA",
+            "description": "Twenty-six observed AA individuals enter a bin that exposes both allele copies in every genotype."
+          },
+          {
+            "position": "center",
+            "label": "2N allele-copy counter",
+            "symbol": "100 COPIES",
+            "description": "Fifty diploid individuals are converted into one hundred total allele copies before any frequency is calculated."
+          },
+          {
+            "position": "right",
+            "label": "Aa and aa bins with allele-frequency output",
+            "symbol": "18 Aa / 6 aa",
+            "description": "Observed heterozygotes and aa homozygotes feed the same allele counter, producing seventy A copies and thirty a copies directly."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "AA genotype-count bin",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Twenty-six observed AA individuals enter a bin that exposes both allele copies in every genotype.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "2N allele-copy counter",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Fifty diploid individuals are converted into one hundred total allele copies before any frequency is calculated.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Aa and aa bins with allele-frequency output",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "Observed heterozygotes and aa homozygotes feed the same allele counter, producing seventy A copies and thirty a copies directly.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Genotype-Count Allele Counter** looks more like a sorting desk than an equation room. On your **left**, a bin holds twenty-six observed AA genotype cards. Directly **ahead**, the center counter is marked 2N and has one hundred narrow slots. On your **right**, two bins hold eighteen Aa cards and six aa cards, followed by a blue-and-amber allele-frequency output. Imani places a large N = 50 marker above the desk. These are observed individuals from Island A. No Hardy-Weinberg expectation has been used to create their genotype counts.",
+      "story_paragraphs": [
+        "The **Genotype-Count Allele Counter** looks more like a sorting desk than an equation room. On your **left**, a bin holds twenty-six observed AA genotype cards. Directly **ahead**, the center counter is marked 2N and has one hundred narrow slots. On your **right**, two bins hold eighteen Aa cards and six aa cards, followed by a blue-and-amber allele-frequency output. Imani places a large N = 50 marker above the desk. These are observed individuals from Island A. No Hardy-Weinberg expectation has been used to create their genotype counts.",
+        "Imani opens the twenty-six AA cards first. Each diploid AA individual contributes two A copies, so the left bin releases fifty-two blue tokens. The eighteen Aa cards contribute one blue A and one amber a each, adding eighteen of each color. The six aa cards contribute twelve amber copies. The center counter fills to exactly one hundred allele copies because fifty diploid individuals contain 2N allele copies at an autosomal locus.",
+        "The blue total is seventy. The amber total is thirty. Imani names the relationship **Allele frequencies from genotype data**. Allele frequencies can be calculated from genotype frequencies or genotype counts in a population. The underlying act is direct allele accounting. Count the copies of the chosen allele and divide by the total number of allele copies.",
+        "The counter then displays the more explicit rule **Allele frequency from genotype counts**. From observed diploid genotype counts, an allele frequency is found by counting copies of that allele and dividing by the total number of allele copies, 2N. For A, the numerator is two times the AA count plus the Aa count. For a, the numerator is two times the aa count plus the Aa count. The desk therefore recovers p = 0.70 and q = 0.30 directly from the observed genotype cards.",
+        "A square-root button begins flashing beneath the aa bin. Imani removes its power. You cannot take the square root of an arbitrary observed aa frequency and automatically call the result q. That shortcut works only when the observed recessive phenotype reliably identifies aa and Hardy-Weinberg genotype proportions are justified. Here the allele copies are available directly, so direct counting is the scientifically secure method. She has you physically recount one heterozygote to reinforce the logic. Its A copy belongs in the blue total and its a copy belongs in the amber total. The heterozygote is one individual, yet it contributes two different allele copies to the 2N inventory. That is why genotype counts and allele counts cannot be substituted for one another without conversion.",
+        "The desk sends two packets forward. One contains the observed genotype frequencies from twenty-six AA, eighteen Aa, and six aa individuals. The other contains the allele frequencies recovered directly from those same cards. The Hardy-Weinberg expected distribution from the previous room is carried separately under a transparent cover. The final audit desk ahead will compare the observed and expected genotype patterns without letting a difference identify its own cause."
+      ],
+      "story_close": "The desk sends two packets forward. One contains the observed genotype frequencies from twenty-six AA, eighteen Aa, and six aa individuals. The other contains the allele frequencies recovered directly from those same cards. The Hardy-Weinberg expected distribution from the previous room is carried separately under a transparent cover. The final audit desk ahead will compare the observed and expected genotype patterns without letting a difference identify its own cause.",
+      "object_ids": [
+        "U7-K-027",
+        "U7-K-075"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-027",
+          "term": "Allele frequencies from genotype data",
+          "story": "the observed AA, Aa, and aa cards being converted directly into 2N allele copies",
+          "science": "Allele frequencies can be calculated from genotype frequencies or genotype counts in a population.",
+          "exact_name": false,
+          "hint": "the observed AA, Aa, and aa cards being converted directly into 2N allele copies",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-075",
+          "term": "Allele frequency from genotype counts",
+          "story": "the observed AA, Aa, and aa cards being converted directly into 2N allele copies",
+          "science": "From observed diploid genotype counts, an allele frequency is found by counting copies of that allele and dividing by the total number of allele copies, 2N.",
+          "exact_name": false,
+          "hint": "the observed AA, Aa, and aa cards being converted directly into 2N allele copies",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-014: Only equate genotype frequencies with p², 2pq, and q² under Hardy-Weinberg assumptions. Inferring q² from a recessive phenotype also assumes the phenotype reliably identifies the recessive homozygous genotype.",
+        "Resolved F1 guard RF-U7-015: Calculate allele frequencies directly from genotype counts: p=(2N_AA+N_Aa)/(2N) and q=(2N_aa+N_Aa)/(2N). Square-root shortcuts apply only when Hardy-Weinberg genotype proportions are justified."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Observed–Expected Comparison Desk",
+      "f3_scene_brief_id": "F3-U7-L23",
+      "narrative_word_count": 490
+    },
+    {
+      "scene_index": 13,
+      "locus_id": "U7-L24",
+      "locus": "Observed–Expected Comparison Desk",
+      "title": "Observed and Expected Can Disagree Without Telling You Why",
+      "scene_kicker": "Hardy-Weinberg comparisons are diagnostic, and genotype-frequency departures must be interpreted separately from allele-frequency evolution.",
+      "location_description": "the desk comparing observed and Hardy-Weinberg expected genotype frequencies while keeping recessive-phenotype inference conditional",
+      "scene_layout": {
+        "orientation": "Enter Observed–Expected Comparison Desk and stop at the desk comparing observed and Hardy-Weinberg expected genotype frequencies while keeping recessive-phenotype inference conditional. Keep observed genotype distribution fixed on the left, observed-versus-expected comparison desk as the working center, and recessive-phenotype inference panel fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Observed genotype distribution",
+            "symbol": "0.52 / 0.36 / 0.12",
+            "description": "The actual sample remains visible as AA, Aa, and aa genotype frequencies derived directly from the observed counts."
+          },
+          {
+            "position": "center",
+            "label": "Observed-versus-expected comparison desk",
+            "symbol": "OBS ≠ EXP",
+            "description": "The center desk places observed frequencies beside the Hardy-Weinberg expectations of 0.49, 0.42, and 0.09 without declaring a cause."
+          },
+          {
+            "position": "right",
+            "label": "Recessive-phenotype inference panel",
+            "symbol": "ONLY IF JUSTIFIED",
+            "description": "A conditional panel permits a recessive phenotype to stand in for q² only when phenotype maps reliably to aa and Hardy-Weinberg assumptions are appropriate."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent population ledger clipped to her left forearm",
+          "job": "keeps every population boundary, allele identity, population-size marker, generation, and movement event visible while allowing only the mechanism at the current station to change the gene pool"
+        },
+        {
+          "name": "Observed genotype distribution",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The actual sample remains visible as AA, Aa, and aa genotype frequencies derived directly from the observed counts.",
+          "job": "Remain fixed on the learner's left and carry the left-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Observed-versus-expected comparison desk",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "The center desk places observed frequencies beside the Hardy-Weinberg expectations of 0.49, 0.42, and 0.09 without declaring a cause.",
+          "job": "Remain fixed on the learner's center and carry the center-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Recessive-phenotype inference panel",
+          "kind": "scientific population, allele display, comparison, sampling mechanism, or model control",
+          "visual": "A conditional panel permits a recessive phenotype to stand in for q² only when phenotype maps reliably to aa and Hardy-Weinberg assumptions are appropriate.",
+          "job": "Remain fixed on the learner's right and carry the right-side scientific role required by the locked F3 geometry."
+        },
+        {
+          "name": "Island A gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a clear tank of individually countable blue A and amber a allele copies with a population-size marker and generation label",
+          "job": "keeps the focal two-allele population history reconstructable through sampling, migration, and Hardy-Weinberg modeling"
+        },
+        {
+          "name": "Island B gene-pool tank",
+          "kind": "persistent population genetics object",
+          "visual": "a second clear tank with the same color and label conventions as Island A so divergence and gene flow can be compared directly",
+          "job": "provides a persistent comparison population whose allele copies move only through an explicitly shown mechanism"
+        },
+        {
+          "name": "Transparent population ledger",
+          "kind": "journey continuity recorder",
+          "visual": "a clear floating ledger with population boundary, generation, population size, allele counts, genotype counts, and movement history in separate fields",
+          "job": "records evidence without replacing the real population, allele copies, demographic event, or Hardy-Weinberg model"
+        }
+      ],
+      "continuity_object": "two transparent island gene-pool tanks containing exactly 100 color-coded allele copies each, plus a persistent population-size marker and generation label; tokens move, disappear, or are added only when the specified mechanism permits it. Each token retains its allele identity across every island movement or sampling event so frequency change can always be reconstructed from the actual copies.",
+      "story_open": "The **Observed–Expected Comparison Desk** occupies the highest platform in the island network. On your **left**, the actual sample remains visible as twenty-six AA, eighteen Aa, and six aa individuals, giving observed genotype frequencies of 0.52, 0.36, and 0.12. Directly **ahead**, the center desk displays the Hardy-Weinberg expected frequencies generated from the same p = 0.70 and q = 0.30, which are 0.49, 0.42, and 0.09. On your **right**, a conditional recessive-phenotype panel is locked behind two switches. PHENOTYPE MAPS RELIABLY TO aa and HARDY-WEINBERG ASSUMPTIONS APPROPRIATE.",
+      "story_paragraphs": [
+        "The **Observed–Expected Comparison Desk** occupies the highest platform in the island network. On your **left**, the actual sample remains visible as twenty-six AA, eighteen Aa, and six aa individuals, giving observed genotype frequencies of 0.52, 0.36, and 0.12. Directly **ahead**, the center desk displays the Hardy-Weinberg expected frequencies generated from the same p = 0.70 and q = 0.30, which are 0.49, 0.42, and 0.09. On your **right**, a conditional recessive-phenotype panel is locked behind two switches. PHENOTYPE MAPS RELIABLY TO aa and HARDY-WEINBERG ASSUMPTIONS APPROPRIATE.",
+        "Imani places observed and expected distributions side by side without merging them. The relationship is **Observed versus expected genotype frequencies**. Observed genotype frequencies can be compared with Hardy-Weinberg expected frequencies, but interpretation requires attention to the model assumptions and the locus being tested. The difference tells you to investigate. It does not announce whether selection, migration, mutation, drift, nonrandom mating, sampling error, or another issue is responsible.",
+        "The network tries one last shortcut. GENOTYPE DEVIATION EQUALS EVOLUTION. Imani freezes the focal allele-copy strip above the desk. p remains 0.70 and q remains 0.30 in a controlled projection while the mating console from the Five-Condition Control Room switches from random to assortative mating. The genotype proportions change, with homozygotes becoming more common and heterozygotes less common, yet the allele-copy totals remain fixed. This demonstrates **Nonrandom mating and allele frequency**. Nonrandom mating by itself can change genotype frequencies without changing allele frequencies.",
+        "Imani turns to the right panel. If a phenotype is caused only by the aa genotype and the population is appropriately modeled by Hardy-Weinberg equilibrium, the frequency of that recessive phenotype can be treated as q² and used to estimate q. This is **Recessive phenotype inference under Hardy-Weinberg**. The two switches remain physically required. If phenotype does not uniquely identify aa, or if Hardy-Weinberg assumptions are not justified, the shortcut cannot be used safely.",
+        "The red audit alarm that followed you from the first registry finally changes to green. Imani opens the ledger and traces the whole island route. A population boundary defined whose alleles belonged in the gene pool. Allele-frequency change established microevolution without naming a cause. Mutation introduced new alleles without asking what would be useful. Blind sampling created drift, bottlenecks, and founder effects. Migration created gene flow. The Hardy-Weinberg station then froze one two-allele locus and used p, q, p², 2pq, and q² only as model quantities under explicit conditions.",
+        "Before the network closes, the two island tanks illuminate together. Every remaining blue and amber token still carries a traceable history. Imani does not ask you to calculate another problem here. Those procedures belong in later application practice. The permanent journey ends with a more important distinction. Observed allele copies, observed genotype counts, model assumptions, and expected genotype frequencies are different kinds of information. If you keep those categories separate, the equations stop being tricks and become what they were meant to be, a disciplined way to ask whether a population fits a non-evolving null model and what evidence should be investigated when it does not."
+      ],
+      "story_close": "Before the network closes, the two island tanks illuminate together. Every remaining blue and amber token still carries a traceable history. Imani does not ask you to calculate another problem here. Those procedures belong in later application practice. The permanent journey ends with a more important distinction. Observed allele copies, observed genotype counts, model assumptions, and expected genotype frequencies are different kinds of information. If you keep those categories separate, the equations stop being tricks and become what they were meant to be, a disciplined way to ask whether a population fits a non-evolving null model and what evidence should be investigated when it does not.",
+      "object_ids": [
+        "U7-K-111",
+        "U7-K-110",
+        "U7-K-112"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-111",
+          "term": "Observed versus expected genotype frequencies",
+          "story": "the observed genotype distribution kept separate from expected Hardy-Weinberg values and the conditional q² panel",
+          "science": "Observed genotype frequencies can be compared with Hardy-Weinberg expected frequencies, but interpretation requires attention to the model assumptions and the locus being tested.",
+          "exact_name": false,
+          "hint": "the observed genotype distribution kept separate from expected Hardy-Weinberg values and the conditional q² panel",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-110",
+          "term": "Nonrandom mating and allele frequency",
+          "story": "the observed genotype distribution kept separate from expected Hardy-Weinberg values and the conditional q² panel",
+          "science": "Nonrandom mating by itself can change genotype frequencies without changing allele frequencies; allele frequencies change when mating success is associated with heritable differences in reproductive success or another evolutionary mechanism.",
+          "exact_name": false,
+          "hint": "the observed genotype distribution kept separate from expected Hardy-Weinberg values and the conditional q² panel",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-112",
+          "term": "Recessive phenotype inference under Hardy-Weinberg",
+          "story": "the observed genotype distribution kept separate from expected Hardy-Weinberg values and the conditional q² panel",
+          "science": "If a recessive phenotype uniquely identifies the recessive homozygous genotype and Hardy-Weinberg assumptions are appropriate, the phenotype frequency can be treated as q² to estimate q.",
+          "exact_name": false,
+          "hint": "the observed genotype distribution kept separate from expected Hardy-Weinberg values and the conditional q² panel",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-012: Treat Hardy-Weinberg as a locus-specific null model. Nonrandom mating alone can change genotype frequencies without changing allele frequencies. A deviation prompts evaluation of which assumptions are violated and whether allele frequencies changed.",
+        "Resolved F1 guard RF-U7-014: Only equate genotype frequencies with p², 2pq, and q² under Hardy-Weinberg assumptions. Inferring q² from a recessive phenotype also assumes the phenotype reliably identifies the recessive homozygous genotype."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U7-L24",
+      "narrative_word_count": 514
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "frozen_prior_journey_lock": "LOCKED_F4A_J1"
+}

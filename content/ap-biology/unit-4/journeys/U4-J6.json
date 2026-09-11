@@ -1,0 +1,1094 @@
+{
+  "palace_id": "U4-J6",
+  "palace_name": "Mitosis Transit Hall",
+  "story_title": "The Transit Hall With the Stages Out of Order",
+  "tagline": "The same replicated chromosomes must survive one continuous trip through spindle formation, attachment, alignment, separation, nuclear reassembly, and two contrasting forms of cytokinesis.",
+  "guide": {
+    "name": "Dr. Mira Chen",
+    "role": "cellular-systems investigator",
+    "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+    "story_job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+  },
+  "premise": "The mitosis transit hall has lost the order of its stage signals. Replicated chromosomes are being routed toward daughter nuclei, but attachment, alignment, separation, reassembly, and cytoplasmic division are occurring out of sequence. Mira transfers the same replicated chromosome set from Journey 5 into the hall and refuses to replace it with a new model at any stage.",
+  "mission": "Carry one replicated chromosome set from mitotic entry to daughter cells. Preserve chromosome identity while prophase builds the spindle, prometaphase opens kinetochore access, metaphase establishes equatorial alignment, anaphase separates sister chromatids into daughter chromosomes, telophase rebuilds nuclei, and animal and plant cytokinesis divide cytoplasm through different mechanisms.",
+  "finale": "At the transit exit, the learner can reconstruct the same chromosome identities through the full route and can explain why stage names correspond to different physical chromosome and spindle states. Mitosis segregates replicated chromosomes into equivalent daughter-nucleus sets, chromosome count changes when sister chromatids separate in anaphase, telophase can produce two nuclei inside one shared cytoplasm, and cytokinesis then divides that cytoplasm through an inward cleavage furrow in the animal model or an outward-growing cell plate in the plant model.",
+  "estimated_minutes": 34,
+  "scene_count": 8,
+  "checkpoint_count": 2,
+  "learner_rule": "Read or listen while following the same replicated chromosome set. Reconstruct the fixed left, center, and right geometry at each station before naming the stage. Quick Recall is optional during first exposure.",
+  "route_orientation": "The Mitosis Transit Hall is one continuous eight-location route. Enter at Mission Control, follow the same replicated chromosomes through prophase, prometaphase, metaphase, anaphase, and telophase, then compare animal cytokinesis with plant cytokinesis before handing the daughter-cell record to Cell-Cycle Security Headquarters.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Mitosis Mission Control",
+      "short": "Mission Control",
+      "floor": "Transit entrance",
+      "symbol": "M"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Prophase Spindle Setup",
+      "short": "Prophase",
+      "floor": "Spindle bay",
+      "symbol": "P"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Prometaphase Kinetochore Access",
+      "short": "Prometaphase",
+      "floor": "Attachment zone",
+      "symbol": "PK"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Metaphase Plate Station",
+      "short": "Metaphase",
+      "floor": "Equator station",
+      "symbol": "M"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Anaphase Separation Track",
+      "short": "Anaphase",
+      "floor": "Separation track",
+      "symbol": "A"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Telophase Reassembly Room",
+      "short": "Telophase",
+      "floor": "Reassembly room",
+      "symbol": "T"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Animal Cytokinesis Ring",
+      "short": "Animal cytokinesis",
+      "floor": "Animal exit",
+      "symbol": "◌"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Plant Cell-Plate Works",
+      "short": "Plant cytokinesis",
+      "floor": "Plant exit",
+      "symbol": "▭"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Mitosis Mission Control",
+      "locus_id": "U4-L34",
+      "title": "The Transit Hall With the Stages Out of Order",
+      "scene_kicker": "The same replicated chromosomes must reach two daughter nuclei without losing their identity along the route.",
+      "location_description": "Mitosis Mission Control — the mitosis route overview showing replicated chromosomes segregated into daughter nuclei for growth, repair, or asexual reproduction.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Mitosis Mission Control. Keep replicated genome before mitosis on your left, mitotic sequence control map directly ahead in the central action zone, and equivalent chromosome sets in daughter nuclei on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "replicated genome before mitosis",
+            "description": "A conventional, clearly labeled scientific representation of replicated genome before mitosis fixed on the learner’s left in the mitosis sequence overview display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "mitotic sequence control map",
+            "description": "The largest working scientific model in the room, centered on the mitosis route overview showing replicated chromosomes segregated into daughter nuclei for growth, repair, or asexual reproduction; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Place replicated chromosomes before mitosis on the left and equivalent chromosome sets in two future daughter nuclei on the right, then reveal the prophase-to-telophase route between them."
+          },
+          {
+            "position": "right",
+            "label": "equivalent chromosome sets in daughter nuclei",
+            "description": "A conventional scientific representation of equivalent chromosome sets in daughter nuclei fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "replicated genome before mitosis",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of replicated genome before mitosis fixed on the learner’s left in the mitosis sequence overview display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "mitotic sequence control map",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the mitosis route overview showing replicated chromosomes segregated into daughter nuclei for growth, repair, or asexual reproduction; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Place replicated chromosomes before mitosis on the left and equivalent chromosome sets in two future daughter nuclei on the right, then reveal the prophase-to-telophase route between them."
+        },
+        {
+          "name": "equivalent chromosome sets in daughter nuclei",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of equivalent chromosome sets in daughter nuclei fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "The transparent chromosome case from the Cell-Cycle Preparation Archive clicks into a rail at the entrance to **Mitosis Mission Control**. You are standing in a long hall that runs straight from one giant cell model to two empty daughter-nucleus bays. On your **left**, the replicated chromosome set from Journey 5 sits inside the starting cell, each chromosome still made of two sister chromatids joined together. Directly **ahead**, a floor-sized route map should lead through the mitotic stages, but its stage panels are flashing in the wrong order. On your **right**, two clear nuclear shells wait at opposite ends of the destination platform. Their chromosome trays are empty. Mira taps the case. The challenge is simple to say and difficult to fake. The same replicated genome that entered this hall has to be distributed into two equivalent chromosome sets without inventing or losing chromosomes along the way.",
+      "story_paragraphs": [
+        "The transparent chromosome case from the Cell-Cycle Preparation Archive clicks into a rail at the entrance to **Mitosis Mission Control**. You are standing in a long hall that runs straight from one giant cell model to two empty daughter-nucleus bays. On your **left**, the replicated chromosome set from Journey 5 sits inside the starting cell, each chromosome still made of two sister chromatids joined together. Directly **ahead**, a floor-sized route map should lead through the mitotic stages, but its stage panels are flashing in the wrong order. On your **right**, two clear nuclear shells wait at opposite ends of the destination platform. Their chromosome trays are empty. Mira taps the case. The challenge is simple to say and difficult to fake. The same replicated genome that entered this hall has to be distributed into two equivalent chromosome sets without inventing or losing chromosomes along the way.",
+        "Mira dims every sign except the physical chromosome models. The left-side chromosomes are already replicated before mitosis begins. She slides a duplicate outline of that same set toward each empty nuclear bay on the right, then locks the outlines in place as the destination. This is the core of **mitosis genome transmission**. Mitosis segregates replicated chromosomes so daughter nuclei receive complete, equivalent genome sets when segregation proceeds normally. The blue-and-gold tracing bands let you verify identity from one side of the hall to the other. They are tracking marks on the model, not biological colors. Nothing in this first room says that mitosis creates diploid cells in every organism. The point is faithful distribution of the chromosome set that entered the process.",
+        "The central route map wakes up one panel at a time. A compact chromosome icon appears under **prophase**, then passes through the broader mitotic sequence toward **metaphase**, **anaphase**, and **telophase**. Mira explains the **mitosis sequence** by pointing to physical changes that will occur in the following rooms. Chromosomes condense and a spindle forms. Chromosomes become positioned at the cell equator. Sister chromatids separate and move toward opposite poles. New nuclei form around the separated sets. The map leaves a small attachment interval between prophase and metaphase where the nuclear envelope breaks down and spindle microtubules reach kinetochores. That interval will be named prometaphase when you arrive there, while the larger stage sequence remains easy to reconstruct from the four major stage names.",
+        "Three illuminated panels rise above the destination bays. One shows a growing multicellular organism, another shows repaired tissue filling a wound, and a third shows a single-celled eukaryote producing a new individual. These are **mitosis roles**. The same chromosome-segregation mechanism contributes to growth, tissue repair, and asexual reproduction in eukaryotes. Mira keeps the nuclear destination bays separate from two doors farther down the hall marked CYTOPLASM. Those doors stay locked. **Cytokinesis** will divide cytoplasm near the end of the route, but it is not being smuggled into the definition of mitosis here. Mission Control now knows the starting set, the destination sets, and the stage order. What it still lacks is machinery capable of moving the chromosomes. A low vibration begins under the floor as the next spindle bay powers on."
+      ],
+      "story_close": "The map now preserves one replicated starting genome and two equivalent daughter-nucleus destinations. The unresolved problem is mechanical, so Mira releases the same chromosome case into Prophase Spindle Setup, where the spindle must begin to form.",
+      "object_ids": [
+        "U4-K-028",
+        "U4-K-029",
+        "U4-K-030"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-028",
+          "term": "Mitosis genome transmission",
+          "story": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis genome transmission.",
+          "science": "Mitosis segregates replicated chromosomes so daughter nuclei receive complete, equivalent genome sets, barring mutation or segregation error.",
+          "exact_name": true,
+          "hint": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis genome transmission.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-029",
+          "term": "Mitosis roles",
+          "story": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis roles.",
+          "science": "Mitosis contributes to growth, tissue repair, and asexual reproduction in eukaryotes.",
+          "exact_name": true,
+          "hint": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis roles.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-030",
+          "term": "Mitosis sequence",
+          "story": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis sequence.",
+          "science": "The AP framework organizes mitosis into prophase, metaphase, anaphase, and telophase, alternating with interphase in the cell cycle.",
+          "exact_name": true,
+          "hint": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis sequence.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Mitosis genome transmission",
+          "meaning": "Mitosis segregates replicated chromosomes so daughter nuclei receive complete, equivalent genome sets, barring mutation or segregation error.",
+          "image": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis genome transmission."
+        },
+        {
+          "term": "Mitosis roles",
+          "meaning": "Mitosis contributes to growth, tissue repair, and asexual reproduction in eukaryotes.",
+          "image": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis roles."
+        },
+        {
+          "term": "Mitosis sequence",
+          "meaning": "The AP framework organizes mitosis into prophase, metaphase, anaphase, and telophase, alternating with interphase in the cell cycle.",
+          "image": "At Mitosis Mission Control, use the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei mechanism to retrieve Mitosis sequence."
+        }
+      ],
+      "misconception_guards": [
+        "Mitosis segregates replicated chromosomes; it does not universally mean production of diploid daughter cells.",
+        "Cytokinesis is separate from nuclear chromosome segregation."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Mitosis Mission Control, remember the fixed replicated genome before mitosis → mitotic sequence control map → equivalent chromosome sets in daughter nuclei relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Mitosis genome transmission",
+          "Mitosis roles",
+          "Mitosis sequence"
+        ],
+        "redraw_test": "From memory, place replicated genome before mitosis on the left, mitotic sequence control map in the center, and equivalent chromosome sets in daughter nuclei on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-028",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Prophase Spindle Setup",
+      "causal_transition": "Mission Control establishes the route from one replicated genome to equivalent daughter nuclei; the tracked chromosomes move into the first active stage at Prophase Spindle Setup."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Prophase Spindle Setup",
+      "locus_id": "U4-L35",
+      "title": "The Spindle Wakes Up",
+      "scene_kicker": "Prophase makes the chromosomes easier to move and begins building the machinery that will move them.",
+      "location_description": "Prophase Spindle Setup — the early mitosis bay where chromosomes condense and centrosomes organize the forming spindle.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Prophase Spindle Setup. Keep condensing replicated chromosomes on your left, forming mitotic spindle directly ahead in the central action zone, and separating animal-cell centrosomes on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "condensing replicated chromosomes",
+            "description": "A conventional, clearly labeled scientific representation of condensing replicated chromosomes fixed on the learner’s left in the spindle formation display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "forming mitotic spindle",
+            "description": "The largest working scientific model in the room, centered on the early mitosis bay where chromosomes condense and centrosomes organize the forming spindle; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Condense the tracked replicated chromosomes into visibly compact structures and begin assembling the microtubule-based mitotic spindle."
+          },
+          {
+            "position": "right",
+            "label": "separating animal-cell centrosomes",
+            "description": "A conventional scientific representation of separating animal-cell centrosomes fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "condensing replicated chromosomes",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of condensing replicated chromosomes fixed on the learner’s left in the spindle formation display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "forming mitotic spindle",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the early mitosis bay where chromosomes condense and centrosomes organize the forming spindle; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Condense the tracked replicated chromosomes into visibly compact structures and begin assembling the microtubule-based mitotic spindle."
+        },
+        {
+          "name": "separating animal-cell centrosomes",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of separating animal-cell centrosomes fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "The rail carries the same chromosome set into **Prophase Spindle Setup**, a wide oval bay whose floor is shaped like an animal cell. Your **left** contains the replicated chromosomes, initially shown as long, loose chromatin regions within the nucleus. Directly **ahead**, a dark lattice of unassembled microtubule components fills the spindle construction zone. On your **right**, two centrosomes sit close together beside the nucleus. A display above them shows one pair of poles at opposite ends of the cell, but the real centrosomes have not moved there yet. Mira locks the transparent tracking bands onto the chromosomes so that condensation can change their shape without changing which chromosomes you are following.",
+      "story_paragraphs": [
+        "The rail carries the same chromosome set into **Prophase Spindle Setup**, a wide oval bay whose floor is shaped like an animal cell. Your **left** contains the replicated chromosomes, initially shown as long, loose chromatin regions within the nucleus. Directly **ahead**, a dark lattice of unassembled microtubule components fills the spindle construction zone. On your **right**, two centrosomes sit close together beside the nucleus. A display above them shows one pair of poles at opposite ends of the cell, but the real centrosomes have not moved there yet. Mira locks the transparent tracking bands onto the chromosomes so that condensation can change their shape without changing which chromosomes you are following.",
+        "The left-side chromatin begins to compact. Long diffuse threads shorten and thicken until the replicated chromosomes become distinct, visible structures. Their sister chromatids remain joined. This visible change marks **prophase**. At the same time, the central construction zone assembles a microtubule-based apparatus called the **mitotic spindle**. Mira runs one finger along the growing microtubules. The spindle is the machinery that will organize and segregate chromosomes during mitosis. It is not a chromosome and it is not the same structure as the centrosomes sitting on the right. Keeping those objects in separate places makes the vocabulary match the physical system.",
+        "The right-side pair now begins to separate. In this animal-cell model, each **centrosome** acts as a major microtubule-organizing center. The centrosomes move toward opposite sides of the cell while spindle microtubules extend through the center. Mira places a small animal-cell badge above them. That badge matters. Centrosomes provide a useful animal-cell model for spindle organization, but the story does not turn this arrangement into a universal requirement for plant cells. The movement of the two organizing centers helps establish opposite spindle poles, giving the future chromosomes two directions in which they can be sorted.",
+        "A problem remains. The spindle is forming outside the chromosome region, and the kinetochores on the replicated chromosomes are still shielded by the nuclear boundary. Mira freezes the room before attachment begins. On the left, the chromosomes are condensed. Ahead, the spindle exists but has not yet secured the chromosomes. On the right, the centrosomes are farther apart. Those three visual changes belong together as the prophase setup. Mira does not jump ahead and call this metaphase simply because a spindle is present. She points to the still-intact access barrier around the chromosome region. Until spindle microtubules can physically reach kinetochores, the chromosomes cannot be positioned by the spindle. A section of the nuclear boundary starts to break into fragments, opening the route to the next room."
+      ],
+      "story_close": "Prophase has condensed the tracked replicated chromosomes and begun spindle formation while animal-cell centrosomes separate toward opposite poles. The nuclear boundary now becomes the next obstacle, leading directly into Prometaphase Kinetochore Access.",
+      "object_ids": [
+        "U4-K-031",
+        "U4-K-127",
+        "U4-K-128"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-031",
+          "term": "Prophase",
+          "story": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Prophase.",
+          "science": "In prophase, replicated chromosomes condense, the mitotic spindle begins forming, and centrosomes move toward opposite poles.",
+          "exact_name": true,
+          "hint": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Prophase.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-127",
+          "term": "Mitotic spindle",
+          "story": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Mitotic spindle.",
+          "science": "The mitotic spindle is a microtubule-based apparatus that organizes and segregates chromosomes during mitosis.",
+          "exact_name": true,
+          "hint": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Mitotic spindle.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U4-K-128",
+          "term": "Centrosome",
+          "story": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Centrosome.",
+          "science": "In animal cells, centrosomes organize spindle microtubules and move apart as the mitotic spindle forms.",
+          "exact_name": true,
+          "hint": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Centrosome.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Prophase",
+          "meaning": "In prophase, replicated chromosomes condense, the mitotic spindle begins forming, and centrosomes move toward opposite poles.",
+          "image": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Prophase."
+        },
+        {
+          "term": "Mitotic spindle",
+          "meaning": "The mitotic spindle is a microtubule-based apparatus that organizes and segregates chromosomes during mitosis.",
+          "image": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Mitotic spindle."
+        },
+        {
+          "term": "Centrosome",
+          "meaning": "In animal cells, centrosomes organize spindle microtubules and move apart as the mitotic spindle forms.",
+          "image": "At Prophase Spindle Setup, use the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes mechanism to retrieve Centrosome."
+        }
+      ],
+      "misconception_guards": [
+        "Centrosomes are a useful animal-cell spindle-organizing example; do not imply higher-plant cells require the same centrosome/centriole arrangement.",
+        "Discrimination requirement: keep prophase, prometaphase, metaphase, anaphase, telophase physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Discrimination requirement: keep mitotic spindle, centrosome, kinetochore, metaphase plate physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Prophase Spindle Setup, remember the fixed condensing replicated chromosomes → forming mitotic spindle → separating animal-cell centrosomes relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Prophase",
+          "Mitotic spindle",
+          "Centrosome"
+        ],
+        "redraw_test": "From memory, place condensing replicated chromosomes on the left, forming mitotic spindle in the center, and separating animal-cell centrosomes on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-031",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Prometaphase Kinetochore Access",
+      "causal_transition": "The spindle forms but cannot yet reach kinetochores through the nuclear boundary, creating the mechanical need for the Prometaphase Kinetochore Access station."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Prometaphase Kinetochore Access",
+      "locus_id": "U4-L36",
+      "title": "The Doors Around the Chromosomes Open",
+      "scene_kicker": "Prometaphase gives spindle microtubules physical access to chromosome kinetochores.",
+      "location_description": "Prometaphase Kinetochore Access — the open-nucleus interval where spindle microtubules gain access to chromosome kinetochores.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Prometaphase Kinetochore Access. Keep nuclear-envelope breakdown on your left, prometaphase attachment zone directly ahead in the central action zone, and spindle microtubules engaging kinetochores on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "nuclear-envelope breakdown",
+            "description": "A conventional, clearly labeled scientific representation of nuclear-envelope breakdown fixed on the learner’s left in the kinetochore attachment sequence display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "prometaphase attachment zone",
+            "description": "The largest working scientific model in the room, centered on the open-nucleus interval where spindle microtubules gain access to chromosome kinetochores; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Break down the nuclear envelope and allow spindle microtubules to enter the chromosome region where the kinetochores are exposed."
+          },
+          {
+            "position": "right",
+            "label": "spindle microtubules engaging kinetochores",
+            "description": "A conventional scientific representation of spindle microtubules engaging kinetochores fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "nuclear-envelope breakdown",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of nuclear-envelope breakdown fixed on the learner’s left in the kinetochore attachment sequence display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "prometaphase attachment zone",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the open-nucleus interval where spindle microtubules gain access to chromosome kinetochores; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Break down the nuclear envelope and allow spindle microtubules to enter the chromosome region where the kinetochores are exposed."
+        },
+        {
+          "name": "spindle microtubules engaging kinetochores",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of spindle microtubules engaging kinetochores fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "You follow the chromosomes through a short passage into **Prometaphase Kinetochore Access**. The room is arranged like a security gate around the chromosome region. On your **left**, pieces of the nuclear envelope are separating and moving away. Directly **ahead**, the condensed replicated chromosomes drift inside the newly opened attachment zone. On your **right**, spindle microtubules extend inward from the poles and probe the chromosome region. The kinetochores you learned at the Chromosome Anatomy Workbench remain attached to the centromere region of each chromatid. They are now exposed to the spindle for the first time in this journey.",
+      "story_paragraphs": [
+        "You follow the chromosomes through a short passage into **Prometaphase Kinetochore Access**. The room is arranged like a security gate around the chromosome region. On your **left**, pieces of the nuclear envelope are separating and moving away. Directly **ahead**, the condensed replicated chromosomes drift inside the newly opened attachment zone. On your **right**, spindle microtubules extend inward from the poles and probe the chromosome region. The kinetochores you learned at the Chromosome Anatomy Workbench remain attached to the centromere region of each chromatid. They are now exposed to the spindle for the first time in this journey.",
+        "As nuclear-envelope breakdown proceeds, spindle microtubules gain access to those kinetochores. Mira slows the model so you can watch an individual microtubule end contact a kinetochore and establish an attachment. Another microtubule reaches a kinetochore on a different chromatid. This interval is **prometaphase**. The name is attached to an unmistakable mechanical change. The nuclear barrier is gone enough for spindle microtubules to interact directly with chromosome attachment structures. Prometaphase therefore has its own visible job even though the broader AP stage sequence can be taught without requiring this name as a separate exam-recall item.",
+        "The chromosomes begin moving, but Mira refuses to line them all up yet. Some are closer to one pole, some are being pulled from both sides, and others are still acquiring stable attachments. That disorder is intentional. It prevents the learner from turning any spindle attachment into metaphase. Prometaphase is the access-and-attachment interval. Metaphase will require a different spatial result, the collective positioning of chromosomes around the cell equator. The distinction also keeps the **mitotic spindle**, centrosomes, kinetochores, and the later metaphase plate from collapsing into one object. The spindle is the overall microtubule apparatus. The centrosomes are organizing centers in this animal-cell example. Kinetochores are chromosome-associated protein complexes where spindle microtubules attach.",
+        "A set of tension indicators lights up beside the chromosomes. When opposite spindle poles influence an attached replicated chromosome, the indicator becomes balanced, but the chromosomes are still scattered. Mira turns the entire central floor into a transit track leading forward. At the far end, a thin glowing line appears across the middle of the next room. She warns you that it is only a reference plane, not a biological plate hiding inside the cell. The chromosomes now have spindle access and dynamic attachments. The remaining problem is where those attachments will position the replicated chromosomes before separation is permitted."
+      ],
+      "story_close": "Prometaphase opens the chromosome region and establishes spindle-microtubule attachment to kinetochores without completing equatorial alignment. Those attached chromosomes now move into Metaphase Plate Station.",
+      "object_ids": [
+        "U4-K-129"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-129",
+          "term": "Prometaphase",
+          "story": "At Prometaphase Kinetochore Access, use the fixed nuclear-envelope breakdown → prometaphase attachment zone → spindle microtubules engaging kinetochores mechanism to retrieve Prometaphase.",
+          "science": "Prometaphase is the mitotic interval in which the nuclear envelope breaks down and spindle microtubules gain access to and attach to kinetochores.",
+          "exact_name": true,
+          "hint": "At Prometaphase Kinetochore Access, use the fixed nuclear-envelope breakdown → prometaphase attachment zone → spindle microtubules engaging kinetochores mechanism to retrieve Prometaphase.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Prometaphase",
+          "meaning": "Prometaphase is the mitotic interval in which the nuclear envelope breaks down and spindle microtubules gain access to and attach to kinetochores.",
+          "image": "At Prometaphase Kinetochore Access, use the fixed nuclear-envelope breakdown → prometaphase attachment zone → spindle microtubules engaging kinetochores mechanism to retrieve Prometaphase."
+        }
+      ],
+      "misconception_guards": [
+        "Prometaphase is valid teacher enrichment; current AP framework can treat the broader mitotic sequence without requiring separate prometaphase recall.",
+        "Discrimination requirement: keep prophase, prometaphase, metaphase, anaphase, telophase physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-023: Prometaphase is scientifically valid teacher enrichment. The current CED lists prophase, metaphase, anaphase, and telophase, so separate prometaphase naming is not AP-required recall."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Prometaphase Kinetochore Access, remember the fixed nuclear-envelope breakdown → prometaphase attachment zone → spindle microtubules engaging kinetochores relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Prometaphase"
+        ],
+        "redraw_test": "From memory, place nuclear-envelope breakdown on the left, prometaphase attachment zone in the center, and spindle microtubules engaging kinetochores on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-129",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Metaphase Plate Station",
+      "causal_transition": "Once microtubules attach to kinetochores, the chromosomes remain scattered, so opposing spindle forces carry them toward the Metaphase Plate Station."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Metaphase Plate Station",
+      "locus_id": "U4-L37",
+      "title": "The Invisible Line at the Middle",
+      "scene_kicker": "Metaphase is a position created by spindle forces, and the metaphase plate is an imaginary plane.",
+      "location_description": "Metaphase Plate Station — the equatorial alignment station where spindle forces position chromosomes at the metaphase plate.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Metaphase Plate Station. Keep one spindle pole on your left, chromosomes aligned at metaphase plate directly ahead in the central action zone, and opposite spindle pole on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "one spindle pole",
+            "description": "A conventional, clearly labeled scientific representation of one spindle pole fixed on the learner’s left in the metaphase alignment display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "chromosomes aligned at metaphase plate",
+            "description": "The largest working scientific model in the room, centered on the equatorial alignment station where spindle forces position chromosomes at the metaphase plate; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Use microtubule attachments from opposite poles to position the tracked replicated chromosomes with their centromere regions near the cell equator."
+          },
+          {
+            "position": "right",
+            "label": "opposite spindle pole",
+            "description": "A conventional scientific representation of opposite spindle pole fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "one spindle pole",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of one spindle pole fixed on the learner’s left in the metaphase alignment display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "chromosomes aligned at metaphase plate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the equatorial alignment station where spindle forces position chromosomes at the metaphase plate; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Use microtubule attachments from opposite poles to position the tracked replicated chromosomes with their centromere regions near the cell equator."
+        },
+        {
+          "name": "opposite spindle pole",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of opposite spindle pole fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "The attachment track opens into **Metaphase Plate Station**, the most symmetrical room in the hall. A spindle pole is fixed on your **left**. The opposite spindle pole is fixed on your **right**. Directly **ahead**, the same replicated chromosomes occupy the central cell model. A narrow light projection crosses the equator from floor to ceiling. You can walk your hand through it because there is no material plate there. Mira labels the projection **metaphase plate** and immediately turns the projector off. The line disappears while the cell model remains. The term refers to an imaginary equatorial plane used to describe where chromosomes align during metaphase.",
+      "story_paragraphs": [
+        "The attachment track opens into **Metaphase Plate Station**, the most symmetrical room in the hall. A spindle pole is fixed on your **left**. The opposite spindle pole is fixed on your **right**. Directly **ahead**, the same replicated chromosomes occupy the central cell model. A narrow light projection crosses the equator from floor to ceiling. You can walk your hand through it because there is no material plate there. Mira labels the projection **metaphase plate** and immediately turns the projector off. The line disappears while the cell model remains. The term refers to an imaginary equatorial plane used to describe where chromosomes align during metaphase.",
+        "Microtubules connected to kinetochores exert forces from opposite sides. One chromosome slides slightly left, another shifts right, and a third rotates until its centromere region is positioned near the middle. The whole replicated set gradually forms an ordered row relative to the invisible equatorial plane. That organized condition is **metaphase**. The important event is not the appearance of a physical plate. The spindle has positioned the chromosomes at the cell equator. The left and right poles therefore become useful fixed anchors. If you can redraw the poles and place the chromosomes between them at the equator, you can reconstruct the stage without relying on the name alone.",
+        "Mira briefly scrambles one chromosome so its attachment is inadequate. A warning light appears over the central row and the separation gate stays closed. She restores the attachment and the warning clears. This does not yet teach the full spindle-assembly checkpoint, which belongs in the next security journey, but it gives the alignment room a biological reason to pause before anaphase. The chromosomes cannot simply be flung apart because a stage label changed. Their spindle attachments and positions must support accurate segregation. The sister chromatids themselves remain joined throughout this room, so each replicated chromosome still counts as one chromosome under centromere-based counting.",
+        "The Quick Recall screen can now hide the room and ask one question. **What is the metaphase plate?** The answer is an imaginary equatorial plane where chromosomes align during metaphase. When the room returns, Mira draws the plane once more and then erases it. The physical memory is the pair of opposing spindle poles and the replicated chromosomes positioned between them. A low mechanical click travels through every sister-chromatid pair. Their connecting seams are about to release, which means the next room will change both chromosome movement and chromosome counting at the same moment."
+      ],
+      "story_close": "Metaphase leaves the replicated chromosomes aligned near an imaginary equatorial plane between opposite spindle poles. The separation system now receives permission to release sister chromatids, sending the same tracked set into Anaphase Separation Track.",
+      "object_ids": [
+        "U4-K-032",
+        "U4-K-130"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-032",
+          "term": "Metaphase",
+          "story": "At Metaphase Plate Station, use the fixed one spindle pole → chromosomes aligned at metaphase plate → opposite spindle pole mechanism to retrieve Metaphase.",
+          "science": "In metaphase, spindle microtubules position chromosomes at the cell equator/metaphase plate.",
+          "exact_name": true,
+          "hint": "At Metaphase Plate Station, use the fixed one spindle pole → chromosomes aligned at metaphase plate → opposite spindle pole mechanism to retrieve Metaphase.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-130",
+          "term": "Metaphase plate",
+          "story": "At Metaphase Plate Station, use the fixed one spindle pole → chromosomes aligned at metaphase plate → opposite spindle pole mechanism to retrieve Metaphase plate.",
+          "science": "The metaphase plate is an imaginary plane at the cell equator where chromosomes align during metaphase.",
+          "exact_name": true,
+          "hint": "At Metaphase Plate Station, use the fixed one spindle pole → chromosomes aligned at metaphase plate → opposite spindle pole mechanism to retrieve Metaphase plate.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Metaphase",
+          "meaning": "In metaphase, spindle microtubules position chromosomes at the cell equator/metaphase plate.",
+          "image": "At Metaphase Plate Station, use the fixed one spindle pole → chromosomes aligned at metaphase plate → opposite spindle pole mechanism to retrieve Metaphase."
+        },
+        {
+          "term": "Metaphase plate",
+          "meaning": "The metaphase plate is an imaginary plane at the cell equator where chromosomes align during metaphase.",
+          "image": "At Metaphase Plate Station, use the fixed one spindle pole → chromosomes aligned at metaphase plate → opposite spindle pole mechanism to retrieve Metaphase plate."
+        }
+      ],
+      "misconception_guards": [
+        "The metaphase plate is an imaginary equatorial plane, not a physical plate inside the cell.",
+        "Discrimination requirement: keep prophase, prometaphase, metaphase, anaphase, telophase physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Discrimination requirement: keep mitotic spindle, centrosome, kinetochore, metaphase plate physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Metaphase Plate Station, remember the fixed one spindle pole → chromosomes aligned at metaphase plate → opposite spindle pole relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Metaphase",
+          "Metaphase plate"
+        ],
+        "redraw_test": "From memory, place one spindle pole on the left, chromosomes aligned at metaphase plate in the center, and opposite spindle pole on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-032",
+      "checkpoint_prompt": "What is the metaphase plate?",
+      "checkpoint_answer": "An imaginary equatorial plane where chromosomes align during metaphase.",
+      "checkpoint_hint": "Picture the invisible equatorial plane between the two spindle poles. It is a reference position, not a cellular structure.",
+      "next_locus": "Anaphase Separation Track",
+      "causal_transition": "Alignment is complete and the attachments are adequate; the next unresolved event is sister-chromatid separation, so the transit gate opens onto the Anaphase Separation Track."
+    },
+    {
+      "scene_index": 4,
+      "locus": "Anaphase Separation Track",
+      "locus_id": "U4-L38",
+      "title": "The Count Changes When the Sisters Part",
+      "scene_kicker": "Anaphase changes chromosome identity and position at the instant sister chromatids separate.",
+      "location_description": "Anaphase Separation Track — the chromosome-separation track where sister chromatids become daughter chromosomes and move toward opposite poles.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Anaphase Separation Track. Keep one set of separating daughter chromosomes on your left, anaphase spindle-dynamics zone directly ahead in the central action zone, and opposite daughter-chromosome set on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "one set of separating daughter chromosomes",
+            "description": "A conventional, clearly labeled scientific representation of one set of separating daughter chromosomes fixed on the learner’s left in the anaphase dynamics and count display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "anaphase spindle-dynamics zone",
+            "description": "The largest working scientific model in the room, centered on the chromosome-separation track where sister chromatids become daughter chromosomes and move toward opposite poles; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Release sister-chromatid cohesion and separate each pair so every former sister chromatid now counts as an individual daughter chromosome."
+          },
+          {
+            "position": "right",
+            "label": "opposite daughter-chromosome set",
+            "description": "A conventional scientific representation of opposite daughter-chromosome set fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "one set of separating daughter chromosomes",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of one set of separating daughter chromosomes fixed on the learner’s left in the anaphase dynamics and count display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "anaphase spindle-dynamics zone",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the chromosome-separation track where sister chromatids become daughter chromosomes and move toward opposite poles; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Release sister-chromatid cohesion and separate each pair so every former sister chromatid now counts as an individual daughter chromosome."
+        },
+        {
+          "name": "opposite daughter-chromosome set",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of opposite daughter-chromosome set fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "The center doors open onto **Anaphase Separation Track**, a long straight chamber with one pole on each end. On your **left**, one future daughter-chromosome set is marked by an empty receiving frame. Directly **ahead**, the replicated chromosomes remain momentarily paired at the center of the spindle. On your **right**, a matching receiving frame waits at the opposite pole. Three gauges hover above the chromosome set. One reports DNA amount. One reports chromatid state. The third reports chromosome number by centromere-based counting. Mira places her hand over the release control and asks you to watch the gauges at the exact instant the sister chromatids separate.",
+      "story_paragraphs": [
+        "The center doors open onto **Anaphase Separation Track**, a long straight chamber with one pole on each end. On your **left**, one future daughter-chromosome set is marked by an empty receiving frame. Directly **ahead**, the replicated chromosomes remain momentarily paired at the center of the spindle. On your **right**, a matching receiving frame waits at the opposite pole. Three gauges hover above the chromosome set. One reports DNA amount. One reports chromatid state. The third reports chromosome number by centromere-based counting. Mira places her hand over the release control and asks you to watch the gauges at the exact instant the sister chromatids separate.",
+        "The connecting seams release. Each sister pair splits, and the former sister chromatids begin moving toward opposite poles. This is **anaphase**. The terminology changes with the physical relationship. Before separation, each sister chromatid was one part of a replicated chromosome. After separation, each former chromatid is an individual **daughter chromosome**. The chromosome-count gauge jumps immediately. Within this still-undivided cell, chromosome count transiently doubles because the separated centromere-bearing structures are now counted as individual chromosomes. This is **chromosome counting at anaphase**. The DNA did not replicate again. The counting change comes from sister-chromatid separation.",
+        "The movement itself unfolds through **anaphase spindle dynamics**. Kinetochore-associated microtubule dynamics contribute to movement of daughter chromosomes toward the poles. Spindle forces and motor activity also contribute, while other spindle microtubules can participate in elongating the cell. Mira deliberately disables any caption that says chromosomes move only because microtubules shorten. Shortening is important, but the complete movement is a coordinated spindle process. The left and right receiving frames fill with equivalent chromosome identities as the tracked blue-and-gold bands separate into opposite sets.",
+        "The optional Quick Recall hides the gauges and asks what happens to chromosome counting when sister chromatids separate in anaphase. The correct reconstruction is that each former chromatid becomes a daughter chromosome, so chromosome count transiently doubles within the still-undivided cell. Mira then restores the full model. The count is temporarily high only because the cell still contains both daughter sets. No new DNA synthesis occurred. She places one transparent outline around the entire cell and two smaller future-cell outlines beyond it. The temporary chromosome count belongs to the one undivided cell in front of you. Once cytokinesis later produces two cells, each daughter receives the appropriate chromosome set. By the time the two sets settle at opposite ends, the central spindle is stretched between them and the old nuclear region is empty. The next task is no longer separation. Each daughter chromosome set now needs a nuclear environment restored around it while the chromosomes relax from their compact mitotic state."
+      ],
+      "story_close": "Anaphase has separated sister chromatids into daughter chromosomes and delivered equivalent sets toward opposite poles while the cell is still one cytoplasm. Those separated sets now enter Telophase Reassembly Room.",
+      "object_ids": [
+        "U4-K-033",
+        "U4-K-135",
+        "U4-K-137"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-033",
+          "term": "Anaphase",
+          "story": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Anaphase.",
+          "science": "In anaphase, sister chromatids separate and move toward opposite poles as spindle dynamics redistribute the chromosomes.",
+          "exact_name": true,
+          "hint": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Anaphase.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-135",
+          "term": "Chromosome counting at anaphase",
+          "story": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Chromosome counting at anaphase.",
+          "science": "When sister chromatids separate at anaphase, each former chromatid becomes an individual daughter chromosome; chromosome count transiently doubles within the still-undivided cell.",
+          "exact_name": true,
+          "hint": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Chromosome counting at anaphase.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-137",
+          "term": "Anaphase spindle dynamics",
+          "story": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Anaphase spindle dynamics.",
+          "science": "Chromosome movement during anaphase depends on kinetochore microtubule dynamics and spindle forces; microtubule shortening is an important contributor but not the sole spindle process.",
+          "exact_name": true,
+          "hint": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Anaphase spindle dynamics.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Anaphase",
+          "meaning": "In anaphase, sister chromatids separate and move toward opposite poles as spindle dynamics redistribute the chromosomes.",
+          "image": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Anaphase."
+        },
+        {
+          "term": "Chromosome counting at anaphase",
+          "meaning": "When sister chromatids separate at anaphase, each former chromatid becomes an individual daughter chromosome; chromosome count transiently doubles within the still-undivided cell.",
+          "image": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Chromosome counting at anaphase."
+        },
+        {
+          "term": "Anaphase spindle dynamics",
+          "meaning": "Chromosome movement during anaphase depends on kinetochore microtubule dynamics and spindle forces; microtubule shortening is an important contributor but not the sole spindle process.",
+          "image": "At Anaphase Separation Track, use the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set mechanism to retrieve Anaphase spindle dynamics."
+        }
+      ],
+      "misconception_guards": [
+        "After sister chromatids separate, each former chromatid is an individual daughter chromosome.",
+        "Chromosome movement involves kinetochore-microtubule dynamics and spindle forces; do not reduce all movement to microtubule shortening alone.",
+        "Discrimination requirement: keep prophase, prometaphase, metaphase, anaphase, telophase physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-024: Kinetochore microtubule shortening contributes to chromosome movement, while spindle dynamics and motor proteins also contribute; cell elongation involves nonkinetochore spindle microtubules."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Anaphase Separation Track, remember the fixed one set of separating daughter chromosomes → anaphase spindle-dynamics zone → opposite daughter-chromosome set relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Anaphase",
+          "Chromosome counting at anaphase",
+          "Anaphase spindle dynamics"
+        ],
+        "redraw_test": "From memory, place one set of separating daughter chromosomes on the left, anaphase spindle-dynamics zone in the center, and opposite daughter-chromosome set on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-033",
+      "checkpoint_prompt": "What happens to chromosome counting when sister chromatids separate in anaphase?",
+      "checkpoint_answer": "Each former chromatid becomes a daughter chromosome, so chromosome count transiently doubles within the still-undivided cell.",
+      "checkpoint_hint": "Picture the instant the sister pairs split. The count changes because each former chromatid now has its own chromosome identity.",
+      "next_locus": "Telophase Reassembly Room",
+      "causal_transition": "Daughter chromosomes reach opposite poles, setting the conditions for nuclear reassembly in the Telophase Reassembly Room."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Telophase Reassembly Room",
+      "locus_id": "U4-L39",
+      "title": "Two Nuclei Return Before the Cell Splits",
+      "scene_kicker": "Telophase rebuilds nuclei around already separated chromosome sets while the shared cytoplasm remains intact.",
+      "location_description": "Telophase Reassembly Room — the late-mitosis room where chromosomes decondense as spindle structures disappear and new nuclei form.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Telophase Reassembly Room. Keep one chromosome set / reforming envelope on your left, telophase reassembly zone directly ahead in the central action zone, and second chromosome set / reforming envelope on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "one chromosome set / reforming envelope",
+            "description": "A conventional, clearly labeled scientific representation of one chromosome set / reforming envelope fixed on the learner’s left in the telophase reassembly display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "telophase reassembly zone",
+            "description": "The largest working scientific model in the room, centered on the late-mitosis room where chromosomes decondense as spindle structures disappear and new nuclei form; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Disassemble much of the mitotic spindle as the two separated daughter-chromosome sets arrive at opposite ends of the cell, while keeping the chromosome sets visibly distinct and already separated before nuclear envelopes begin to re-form."
+          },
+          {
+            "position": "right",
+            "label": "second chromosome set / reforming envelope",
+            "description": "A conventional scientific representation of second chromosome set / reforming envelope fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "one chromosome set / reforming envelope",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of one chromosome set / reforming envelope fixed on the learner’s left in the telophase reassembly display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "telophase reassembly zone",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the late-mitosis room where chromosomes decondense as spindle structures disappear and new nuclei form; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Disassemble much of the mitotic spindle as the two separated daughter-chromosome sets arrive at opposite ends of the cell, while keeping the chromosome sets visibly distinct and already separated before nuclear envelopes begin to re-form."
+        },
+        {
+          "name": "second chromosome set / reforming envelope",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of second chromosome set / reforming envelope fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "The separation track widens into **Telophase Reassembly Room**. On your **left**, one complete daughter-chromosome set rests near one end of the cell. On your **right**, the equivalent set rests at the opposite end. Directly **ahead**, the spindle stretches through a shared central cytoplasm. There is still one continuous cell boundary around the entire room. Mira points to that boundary before anything else moves. The chromosomes have already separated during anaphase, but the cell itself has not yet been divided. This arrangement keeps nuclear reassembly and cytoplasmic division as two different events.",
+      "story_paragraphs": [
+        "The separation track widens into **Telophase Reassembly Room**. On your **left**, one complete daughter-chromosome set rests near one end of the cell. On your **right**, the equivalent set rests at the opposite end. Directly **ahead**, the spindle stretches through a shared central cytoplasm. There is still one continuous cell boundary around the entire room. Mira points to that boundary before anything else moves. The chromosomes have already separated during anaphase, but the cell itself has not yet been divided. This arrangement keeps nuclear reassembly and cytoplasmic division as two different events.",
+        "The spindle begins to disassemble. Around the left chromosome set, membrane components organize into a new nuclear envelope. The same process occurs around the right set. Each set was already separate before these envelopes formed. The room now enters **telophase**. As nuclear compartments re-form, the compact daughter chromosomes begin decondensing toward less condensed chromatin. Mira makes the chromosomes fade gradually into a more diffuse state while keeping the artificial identity bands faintly visible. Decondensation changes packaging and visibility. It does not erase the chromosome identities that were tracked through the hall.",
+        "A pair of nuclear outlines becomes complete, one on each side. The central spindle has largely disappeared, and the two future nuclei now contain equivalent chromosome sets. Mira walks a slow circle around the entire room so you can see the outer plasma membrane remains one continuous boundary. Two nuclei can therefore exist temporarily inside one shared cytoplasm. This is the critical picture that keeps **telophase** distinct from **cytokinesis**. Telophase concerns late mitotic reassembly around the separated chromosome sets. Cytokinesis will divide the cytoplasm and complete physical separation of the cell.",
+        "Before leaving, Mira asks you to redraw the room without stage labels. One chromosome set belongs on the left inside a reforming nuclear envelope. The matching set belongs on the right inside a second reforming envelope. A fading spindle occupies the center, and one continuous cell boundary surrounds both. If that picture is correct, the term telophase has a physical meaning instead of becoming another word in a list. The floor then splits into two exit designs. The left-hand corridor displays a flexible animal-cell membrane with a tightening belt beneath it. The right-hand corridor displays a rigid plant cell wall surrounding a central construction zone. Mira chooses the animal corridor first because its mechanics make a useful contrast. She seals the two telophase nuclei inside a transparent model of one animal cell and rolls it forward. Nothing about the nuclei changes as the model moves. The unresolved problem is outside them. One cytoplasm still surrounds both nuclei, so the cell needs a mechanism that can constrict the flexible boundary and separate that shared cytoplasm into two daughter cells."
+      ],
+      "story_close": "Telophase restores nuclear envelopes and begins chromosome decondensation around two already separated chromosome sets while the cytoplasm remains continuous. The animal-cell model now moves into the Animal Cytokinesis Ring.",
+      "object_ids": [
+        "U4-K-034"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-034",
+          "term": "Telophase",
+          "story": "At Telophase Reassembly Room, use the fixed one chromosome set / reforming envelope → telophase reassembly zone → second chromosome set / reforming envelope mechanism to retrieve Telophase.",
+          "science": "In telophase, the mitotic spindle disassembles, new nuclear envelopes form, and chromosomes begin to decondense.",
+          "exact_name": true,
+          "hint": "At Telophase Reassembly Room, use the fixed one chromosome set / reforming envelope → telophase reassembly zone → second chromosome set / reforming envelope mechanism to retrieve Telophase.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Telophase",
+          "meaning": "In telophase, the mitotic spindle disassembles, new nuclear envelopes form, and chromosomes begin to decondense.",
+          "image": "At Telophase Reassembly Room, use the fixed one chromosome set / reforming envelope → telophase reassembly zone → second chromosome set / reforming envelope mechanism to retrieve Telophase."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep prophase, prometaphase, metaphase, anaphase, telophase physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Telophase Reassembly Room, remember the fixed one chromosome set / reforming envelope → telophase reassembly zone → second chromosome set / reforming envelope relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Telophase"
+        ],
+        "redraw_test": "From memory, place one chromosome set / reforming envelope on the left, telophase reassembly zone in the center, and second chromosome set / reforming envelope on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-034",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Animal Cytokinesis Ring",
+      "causal_transition": "Two nuclei reform inside one shared cytoplasm, so the hall must now divide the cell itself; the animal-cell route opens first at the Animal Cytokinesis Ring."
+    },
+    {
+      "scene_index": 6,
+      "locus": "Animal Cytokinesis Ring",
+      "locus_id": "U4-L40",
+      "title": "The Cell Pinches From the Outside In",
+      "scene_kicker": "Animal cytokinesis uses a contractile ring to draw a cleavage furrow inward through a flexible cell boundary.",
+      "location_description": "Animal Cytokinesis Ring — the animal-cell division station where an actin–myosin contractile ring drives a cleavage furrow inward.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Animal Cytokinesis Ring. Keep cell cortex and contractile ring on your left, cleavage furrow constriction directly ahead in the central action zone, and two separating animal daughter cells on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "cell cortex and contractile ring",
+            "description": "A conventional, clearly labeled scientific representation of cell cortex and contractile ring fixed on the learner’s left in the animal cytokinesis display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "cleavage furrow constriction",
+            "description": "The largest working scientific model in the room, centered on the animal-cell division station where an actin–myosin contractile ring drives a cleavage furrow inward; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Assemble an actin–myosin contractile ring beneath the animal-cell cortex at the division plane and begin constricting the ring."
+          },
+          {
+            "position": "right",
+            "label": "two separating animal daughter cells",
+            "description": "A conventional scientific representation of two separating animal daughter cells fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "cell cortex and contractile ring",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of cell cortex and contractile ring fixed on the learner’s left in the animal cytokinesis display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "cleavage furrow constriction",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the animal-cell division station where an actin–myosin contractile ring drives a cleavage furrow inward; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Assemble an actin–myosin contractile ring beneath the animal-cell cortex at the division plane and begin constricting the ring."
+        },
+        {
+          "name": "two separating animal daughter cells",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of two separating animal daughter cells fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "The animal-cell model enters **Animal Cytokinesis Ring**, a circular station built around a flexible plasma membrane. On your **left**, a belt-shaped structure assembles just beneath the cell cortex at the future division plane. Directly **ahead**, the middle of the cell narrows into a shallow indentation. On your **right**, two daughter-cell bays wait for the completed division. The two telophase nuclei remain visible throughout. Mira keeps them behind clear shields so the learner can see that chromosome segregation has already been accomplished. What remains is the division of the cytoplasm.",
+      "story_paragraphs": [
+        "The animal-cell model enters **Animal Cytokinesis Ring**, a circular station built around a flexible plasma membrane. On your **left**, a belt-shaped structure assembles just beneath the cell cortex at the future division plane. Directly **ahead**, the middle of the cell narrows into a shallow indentation. On your **right**, two daughter-cell bays wait for the completed division. The two telophase nuclei remain visible throughout. Mira keeps them behind clear shields so the learner can see that chromosome segregation has already been accomplished. What remains is the division of the cytoplasm.",
+        "The belt on the left is the **contractile ring**. It is composed mainly of actin filaments working with myosin motors. As the ring constricts, the plasma membrane is pulled inward at the division plane. The shallow indentation deepens. Mira names that inward groove the **cleavage furrow**. The furrow is a visible consequence of the contractile machinery beneath the cortex. The ring and the furrow therefore occupy separate places in the room. One is the force-generating structure. The other is the inward deformation of the cell surface that results from that constriction.",
+        "The constriction continues until the shared cytoplasm becomes physically separated into two daughter cells. This cytoplasmic division is **cytokinesis**. Mira marks the term on the outer wall of the station, outside the mitosis-stage track. Cytokinesis can overlap late mitotic events, yet its defining job is division of the cytoplasm. It is not another chromosome-segregation stage. The tracked daughter nuclei end up one in each daughter cell because chromosome segregation has already positioned equivalent sets on opposite sides before the final cytoplasmic separation is completed.",
+        "Mira freezes the two completed animal daughter cells and asks you to point backward through the mechanics. The daughter cells are the outcome on the right. The cleavage furrow was the inward indentation at center. The contractile ring beneath the cortex on the left generated the constricting force. That left-to-center-to-right reconstruction prevents the three terms from becoming interchangeable. Mira then resets the station and replaces the flexible animal-cell boundary with a thick, rigid plant cell wall. She tries to tighten the same contractile belt. Nothing useful happens. A rigid plant wall cannot simply be pinched inward by copying the animal mechanism. The failure is the transition clue. Animal cells commonly use an inward cleavage furrow driven by a contractile ring. Plant cells face a different structural problem, so their cytokinesis must build a new partition from inside the cell. The right wall opens onto a bright construction floor where stacks of Golgi-derived vesicles are already moving toward the center."
+      ],
+      "story_close": "Animal cytokinesis has separated the cytoplasm with an actin-myosin contractile ring that drives a cleavage furrow inward. A rigid plant-cell wall cannot use the same geometry, so the comparison moves directly into Plant Cell-Plate Works.",
+      "object_ids": [
+        "U4-K-035",
+        "U4-K-131",
+        "U4-K-132"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-035",
+          "term": "Cytokinesis",
+          "story": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Cytokinesis.",
+          "science": "Cytokinesis divides the cytoplasm; animal cells typically form a cleavage furrow and plant cells form a cell plate, producing two daughter cells.",
+          "exact_name": true,
+          "hint": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Cytokinesis.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-131",
+          "term": "Cleavage furrow",
+          "story": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Cleavage furrow.",
+          "science": "A cleavage furrow is the inward constriction of an animal cell membrane during cytokinesis, driven by a contractile ring.",
+          "exact_name": true,
+          "hint": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Cleavage furrow.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U4-K-132",
+          "term": "Contractile ring",
+          "story": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Contractile ring.",
+          "science": "The animal-cell contractile ring is composed mainly of actin filaments with myosin motors and constricts the cell during cytokinesis.",
+          "exact_name": true,
+          "hint": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Contractile ring.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cytokinesis",
+          "meaning": "Cytokinesis divides the cytoplasm; animal cells typically form a cleavage furrow and plant cells form a cell plate, producing two daughter cells.",
+          "image": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Cytokinesis."
+        },
+        {
+          "term": "Cleavage furrow",
+          "meaning": "A cleavage furrow is the inward constriction of an animal cell membrane during cytokinesis, driven by a contractile ring.",
+          "image": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Cleavage furrow."
+        },
+        {
+          "term": "Contractile ring",
+          "meaning": "The animal-cell contractile ring is composed mainly of actin filaments with myosin motors and constricts the cell during cytokinesis.",
+          "image": "At Animal Cytokinesis Ring, use the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells mechanism to retrieve Contractile ring."
+        }
+      ],
+      "misconception_guards": [
+        "Cytokinesis divides cytoplasm; cleavage furrow/contractile ring are animal-cell mechanisms and should not be generalized to plants.",
+        "Discrimination requirement: keep cleavage furrow, contractile ring, cell plate physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Animal Cytokinesis Ring, remember the fixed cell cortex and contractile ring → cleavage furrow constriction → two separating animal daughter cells relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Cytokinesis",
+          "Cleavage furrow",
+          "Contractile ring"
+        ],
+        "redraw_test": "From memory, place cell cortex and contractile ring on the left, cleavage furrow constriction in the center, and two separating animal daughter cells on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-035",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Plant Cell-Plate Works",
+      "causal_transition": "The animal mechanism uses an inward cleavage furrow, prompting a direct structural comparison with the rigid-walled plant route at the Plant Cell-Plate Works."
+    },
+    {
+      "scene_index": 7,
+      "locus": "Plant Cell-Plate Works",
+      "locus_id": "U4-L41",
+      "title": "The Wall Grows From the Middle Out",
+      "scene_kicker": "Plant cytokinesis builds a new partition at the cell center and expands it outward toward the existing boundary.",
+      "location_description": "Plant Cell-Plate Works — the plant-cell division station where Golgi-derived vesicles assemble a cell plate between daughter cells.",
+      "scene_layout": {
+        "orientation": "Stand at the entrance to Plant Cell-Plate Works. Keep Golgi-derived vesicles on your left, growing cell plate directly ahead in the central action zone, and new separating wall and membranes on your right. Do not rotate the room while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Golgi-derived vesicles",
+            "description": "A conventional, clearly labeled scientific representation of Golgi-derived vesicles fixed on the learner’s left in the plant cytokinesis display. Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+          },
+          {
+            "position": "center",
+            "label": "growing cell plate",
+            "description": "The largest working scientific model in the room, centered on the plant-cell division station where Golgi-derived vesicles assemble a cell plate between daughter cells; moving parts are confined to this central action zone. Perform the diagnostic mechanism that defines this locus: Deliver Golgi-derived vesicles toward the center of a plant cell, where they fuse into a growing cell plate rather than pulling the existing wall inward."
+          },
+          {
+            "position": "right",
+            "label": "new separating wall and membranes",
+            "description": "A conventional scientific representation of new separating wall and membranes fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome. Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet whose amber cursor now follows the same replicated chromosome set from one end of the transit hall to the other",
+          "job": "Mira keeps the same chromosome identities in view through every mitotic stage. She makes the learner distinguish chromosome position, spindle structures, nuclear boundaries, and cytoplasmic division before naming each stage."
+        },
+        {
+          "name": "Golgi-derived vesicles",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of Golgi-derived vesicles fixed on the learner’s left in the plant cytokinesis display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "growing cell plate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the plant-cell division station where Golgi-derived vesicles assemble a cell plate between daughter cells; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Deliver Golgi-derived vesicles toward the center of a plant cell, where they fuse into a growing cell plate rather than pulling the existing wall inward."
+        },
+        {
+          "name": "new separating wall and membranes",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of new separating wall and membranes fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Tracked mitosis chromosome set",
+          "kind": "continuity model",
+          "visual": "the same small replicated chromosome set carried out of Journey 5, with artificial blue-and-gold tracing bands on homolog identities and a thin white seam joining each pair of sister chromatids until anaphase",
+          "job": "preserves chromosome identity through condensation, attachment, alignment, separation, nuclear reassembly, and cytokinesis so stage names remain attached to visible chromosome states"
+        }
+      ],
+      "continuity_object": "the same small set of replicated chromosomes from Journey 5, with sister chromatids visibly connected until anaphase and then tracked as daughter chromosomes to opposite poles.",
+      "story_open": "The final doors open into **Plant Cell-Plate Works**, a rectangular chamber enclosed by a rigid transparent wall. On your **left**, Golgi-derived vesicles travel along tracks toward the center. Directly **ahead**, the two daughter nuclei occupy opposite halves of one plant-cell model, and a narrow construction zone lies between them. On your **right**, the existing plasma membrane and parent cell wall form a rigid boundary that cannot be pulled inward like the membrane in the previous animal-cell station. Mira places a tiny image of the animal cleavage furrow beside the door and leaves it there as a comparison. The plant mechanism must solve the same cytoplasmic-division problem with a different physical design.",
+      "story_paragraphs": [
+        "The final doors open into **Plant Cell-Plate Works**, a rectangular chamber enclosed by a rigid transparent wall. On your **left**, Golgi-derived vesicles travel along tracks toward the center. Directly **ahead**, the two daughter nuclei occupy opposite halves of one plant-cell model, and a narrow construction zone lies between them. On your **right**, the existing plasma membrane and parent cell wall form a rigid boundary that cannot be pulled inward like the membrane in the previous animal-cell station. Mira places a tiny image of the animal cleavage furrow beside the door and leaves it there as a comparison. The plant mechanism must solve the same cytoplasmic-division problem with a different physical design.",
+        "Vesicles from the left arrive at the center and fuse with one another. Their membranes and contents create a growing partition called the **cell plate**. The plate begins near the middle of the cell and expands outward. More Golgi-derived vesicles arrive and add material. The direction is now the reverse of the animal visual you just saw. The animal furrow moved inward from the cell surface. The plant cell plate grows outward from the center. Mira keeps the rigid parent wall fixed while the new structure expands, making the geometry impossible to confuse.",
+        "The growing cell plate eventually reaches the existing plasma membrane. Its membranes contribute to new plasma-membrane regions for the daughter cells, while deposited material contributes to the new wall separating them. The cytoplasm is now divided even though no contractile ring pinched the original cell wall inward. Mira places the word **cytokinesis** above both the animal and plant models, then places the mechanism names beneath them. Animal cells commonly form a cleavage furrow through contractile-ring constriction. Plant cells form a cell plate through vesicle fusion and outward growth. The shared concept is cytoplasmic division. The structures that accomplish it are different.",
+        "For the final reconstruction, the lights along the whole Mitosis Transit Hall switch off one at a time. Mira asks you to walk the same chromosome identities forward in your mind. Replicated chromosomes condense during prophase as the spindle begins forming. Nuclear-envelope breakdown gives spindle microtubules access to kinetochores during prometaphase. Chromosomes align near the imaginary metaphase plate during metaphase. Sister chromatids separate in anaphase and become daughter chromosomes, changing chromosome counting inside the still-undivided cell. Telophase rebuilds nuclei around the separated sets. Cytokinesis then divides the cytoplasm, through a cleavage furrow in the animal model or a cell plate in the plant model. The daughter chromosome sets are equivalent because the same replicated set was tracked continuously through the route.",
+        "At the far wall, two new doors appear above the completed daughter cells. Both are marked **SECURITY CHECK BEFORE ANOTHER CYCLE**. Mira slides the chromosome-tracking case into her tablet and looks back at the hall. Accurate movement is only half the problem. A cell also needs mechanisms that decide whether division should proceed at all. DNA damage, spindle attachment, growth signals, cyclin and CDK activity, apoptosis, and cancer-control failure are waiting behind those doors. The transit hall has delivered the chromosomes. The next journey will decide whether another trip is allowed to begin."
+      ],
+      "story_close": "Plant cytokinesis completes the comparison by building a cell plate from the center outward. With chromosome segregation and cytoplasmic division now reconstructed as separate but coordinated processes, the daughter-cell record passes to Cell-Cycle Security Headquarters.",
+      "object_ids": [
+        "U4-K-133"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-133",
+          "term": "Cell plate",
+          "story": "At Plant Cell-Plate Works, use the fixed Golgi-derived vesicles → growing cell plate → new separating wall and membranes mechanism to retrieve Cell plate.",
+          "science": "In plant cytokinesis, Golgi-derived vesicles fuse near the center of the cell to form a cell plate that develops into new cell wall and membranes between daughter cells.",
+          "exact_name": true,
+          "hint": "At Plant Cell-Plate Works, use the fixed Golgi-derived vesicles → growing cell plate → new separating wall and membranes mechanism to retrieve Cell plate.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cell plate",
+          "meaning": "In plant cytokinesis, Golgi-derived vesicles fuse near the center of the cell to form a cell plate that develops into new cell wall and membranes between daughter cells.",
+          "image": "At Plant Cell-Plate Works, use the fixed Golgi-derived vesicles → growing cell plate → new separating wall and membranes mechanism to retrieve Cell plate."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep cleavage furrow, contractile ring, cell plate physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Plant Cell-Plate Works, remember the fixed Golgi-derived vesicles → growing cell plate → new separating wall and membranes relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Cell plate"
+        ],
+        "redraw_test": "From memory, place Golgi-derived vesicles on the left, growing cell plate in the center, and new separating wall and membranes on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-133",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "causal_transition": "The transit hall closes with equivalent chromosome sets in daughter nuclei and two distinct cytokinesis mechanisms; the tracked chromosomes can now be handed to the security system that regulates whether future cycles are allowed to begin."
+    }
+  ],
+  "student_release": "DEVELOPER_PREVIEW_F4F",
+  "narrative_standard": "V2-NARRATIVE-4.5-U4-F4F"
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "memory-palace-v2-unit4-f5-scope-guards-1.0",
+  "unit_id": "unit-4",
+  "guard_count": 3,
+  "guards": [
+    {
+      "knowledge_id": "U4-K-152",
+      "canonical_label": "Specific cyclin-CDK pairs exclusion",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY",
+      "canonical_statement": "Students should understand that cyclin-CDK interactions regulate the cell cycle, but memorization of specific cyclin-CDK pairs is beyond current AP Exam scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation or prevent over-teaching, but must not become a required student memorization, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U4-K-153",
+      "canonical_label": "Specific growth-factor names exclusion",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY",
+      "canonical_statement": "Growth-factor signaling can influence cell-cycle progression, but memorization of specific growth factors is beyond current AP Exam scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation or prevent over-teaching, but must not become a required student memorization, exact-name Review target, or Challenge Lab requirement."
+    },
+    {
+      "knowledge_id": "U4-K-168",
+      "canonical_label": "Unsupported cancer-prevention simplification guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY",
+      "canonical_statement": "Do not encode “drink water” or generic avoidance of fatty foods as direct mechanistic cancer-prevention rules; preserve only evidence-supported risk-reduction guidance.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation or prevent over-teaching, but must not become a required student memorization, exact-name Review target, or Challenge Lab requirement."
+    }
+  ]
+}

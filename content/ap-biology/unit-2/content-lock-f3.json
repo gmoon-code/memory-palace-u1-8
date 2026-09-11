@@ -1,0 +1,35 @@
+{
+  "schema": "memory-palace-v2-unit2-f3-content-lock-1.0",
+  "generated_utc": "2026-09-02T06:40:00+00:00",
+  "unit_id": "unit-2",
+  "lock_status": "LOCKED_F3",
+  "student_release": false,
+  "parents": [
+    "LOCKED_F1",
+    "LOCKED_F2"
+  ],
+  "files": {
+    "content/ap-biology/unit-2/source/canonical-unit2-f1.json": {
+      "sha256": "1f5f776016591e58c6b0d8589953d632e1466b557d1af3a0f4888eabb6dde953"
+    },
+    "content/ap-biology/unit-2/architecture/learning-classification-f2.json": {
+      "sha256": "8e644797dcb9fa20970b77928610215fdd1daf084a7e5b4a69135a73c46ea0f4"
+    },
+    "content/ap-biology/unit-2/architecture/palace-architecture-f2.json": {
+      "sha256": "49b962d037bd60beccb99d16b24f5ca46f3fa1d16625f6614284f063ff34987e"
+    },
+    "content/ap-biology/unit-2/briefs/journey-briefs-f3.json": {
+      "sha256": "05a6b8b9c700e111afd40a2fa468ed69cb5f87c7bd269fe78aaf04dea113ac89"
+    },
+    "content/ap-biology/unit-2/briefs/scene-briefs-f3.json": {
+      "sha256": "8ff62cef85c208179ecfbca0446ac79374f35ffdf4728e60badfc2a0d95545f8"
+    },
+    "content/ap-biology/unit-2/f3-release-manifest.json": {
+      "sha256": "aae84b7e789fd718b3665f044abf564205dc27878f1b4aac576fc52a5ebf7b98"
+    },
+    "content/ap-biology/unit-2/status-f3.json": {
+      "sha256": "6f3e7a43a71057679bc13b983c7af9e7814b614061a4cd5d645ec66bd5b25fd0"
+    }
+  },
+  "rule": "F3 locks learning scene briefs and journey continuity. It does not authorize changes to F1 canonical science or F2 record/locus assignment."
+}

@@ -1,0 +1,607 @@
+{
+  "schema": "memory-palace-v2-unit2-f4g-story-1.0",
+  "unit_id": "unit-2",
+  "palace_id": "U2-J7",
+  "journey_id": "U2-J7",
+  "palace_name": "Compartment Origins Archive",
+  "story_title": "The Case of the Cell Within the Cell",
+  "tagline": "Repair a laboratory whose reactions have lost their internal boundaries, compare two forms of cellular organization, then carry an evidence case through a reconstruction of endosymbiosis and a vault of independent clues.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cell-systems investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+    "story_job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+  },
+  "premise": "The final archive asks two linked questions: why eukaryotic cells divide chemistry into internal compartments, and where mitochondria and chloroplasts came from.",
+  "mission": "Demonstrate the advantages of compartmentalization, compare prokaryotic and eukaryotic internal organization, then reconstruct endosymbiosis and examine multiple independent lines of evidence.",
+  "finale": "The archive closes only after compartmentalization is understood as useful cellular organization and the endosymbiosis case is supported by converging genomic, division, ribosomal, membrane, and host-integration evidence rather than by the historical reconstruction alone.",
+  "estimated_minutes": 11,
+  "scene_count": 4,
+  "checkpoint_count": 2,
+  "learner_rule": "Read or listen while keeping the black evidence case with you. First understand why cells organize chemistry in space. Then treat the endosymbiosis theater as a historical reconstruction whose explanation must be tested against several independent observations. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Compartment Origins Archive is a four-room route. Begin in the ground-floor reaction laboratory, pass directly into the side-by-side cell comparison hall, enter the dark historical reconstruction theater, then carry the same black evidence case through the steel doors into the final evidence vault.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Compartmentalization Lab",
+      "short": "Compartment Lab",
+      "floor": "Archive ground floor",
+      "symbol": "▦"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Internal Organization Comparison Room",
+      "short": "Cell Comparison",
+      "floor": "Comparative records hall",
+      "symbol": "◧"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Endosymbiosis Origin Theater",
+      "short": "Origin Theater",
+      "floor": "Historical reconstruction theater",
+      "symbol": "◎"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Endosymbiotic Evidence Vault",
+      "short": "Evidence Vault",
+      "floor": "Sealed evidence chamber",
+      "symbol": "◆"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Compartmentalization Lab",
+      "title": "The room where every reaction is colliding",
+      "scene_kicker": "The archive’s first experiment has been stripped of its internal walls, and two reaction systems are now interfering in the same crowded chamber.",
+      "location_description": "Compartmentalization Lab, the archive’s ground-floor reaction laboratory where reaction chamber A fills the left wall, a transparent folding membrane system occupies the center bench, and reaction chamber B remains fixed against the right wall.",
+      "scene_layout": {
+        "orientation": "The compartmentalization lab contains reaction chamber A on the left, an internal membrane divider with expanded surface in center, and reaction chamber B on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Reaction chamber A",
+            "symbol": "A",
+            "description": "A transparent chamber contains one enzyme system and its substrates, isolated on the left so its reactions can be watched without the second system interfering."
+          },
+          {
+            "position": "center",
+            "label": "Internal membrane divider",
+            "symbol": "FOLDED MEMBRANE",
+            "description": "A flexible internal membrane rises through the center bench, first separating the chambers and then folding repeatedly to create additional membrane surface for reaction machinery."
+          },
+          {
+            "position": "right",
+            "label": "Reaction chamber B",
+            "symbol": "B",
+            "description": "A second transparent chamber contains a different enzyme system on the right, allowing both reaction environments to operate side by side while remaining physically separated."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "internal membrane divider",
+          "kind": "scientific part",
+          "visual": "a transparent membrane sheet that can rise, seal, and fold between two reaction chambers",
+          "job": "separate different reaction environments and then expand the available membrane surface"
+        },
+        {
+          "name": "enzyme system A",
+          "kind": "scientific part",
+          "visual": "blue enzyme complexes operating only in the left reaction chamber",
+          "job": "carry out one modeled reaction sequence without colliding with the second system"
+        },
+        {
+          "name": "enzyme system B",
+          "kind": "scientific part",
+          "visual": "amber enzyme complexes operating only in the right reaction chamber",
+          "job": "carry out a different modeled reaction sequence in its own compartment"
+        },
+        {
+          "name": "folded membrane surface",
+          "kind": "scientific structure",
+          "visual": "the same central membrane folded into a long series of ridges",
+          "job": "provide additional membrane area where membrane-associated reaction machinery can be placed"
+        }
+      ],
+      "story_open": "The final wing of the Cell Operations Complex does not look like an archive at first. It looks like a laboratory after someone removed every interior wall. On your left, blue enzyme complexes race around a transparent chamber marked A. On your right, amber enzyme complexes are supposed to run a different reaction in chamber B. But there is no chamber B anymore. Both systems have spilled into one open space. Blue substrates drift into amber machinery. Amber products wander through the blue reaction line. Warning lights flash whenever one process disrupts the other. In the center of the room, a clear membrane sheet lies collapsed on the floor like a divider that someone deliberately took down.",
+      "story_paragraphs": [
+        "The final wing of the Cell Operations Complex does not look like an archive at first. It looks like a laboratory after someone removed every interior wall. On your left, blue enzyme complexes race around a transparent chamber marked A. On your right, amber enzyme complexes are supposed to run a different reaction in chamber B. But there is no chamber B anymore. Both systems have spilled into one open space. Blue substrates drift into amber machinery. Amber products wander through the blue reaction line. Warning lights flash whenever one process disrupts the other. In the center of the room, a clear membrane sheet lies collapsed on the floor like a divider that someone deliberately took down.",
+        "Dr. Nia Park kneels beside the membrane and raises it with both hands. The sheet rises through the center bench until it seals from floor to ceiling. Blue enzymes and their substrates remain on the left. Amber enzymes and theirs remain on the right. Almost immediately, the interference alarms stop. Nothing magical happened to the enzymes. The change was spatial. The membrane created two different internal environments, allowing different reaction systems to operate without constantly mixing. Nia taps the barrier. “When membranes divide a eukaryotic cell into specialized internal spaces, that organization is **compartmentalization**.” Membranes and membrane-bound organelles compartmentalize intracellular metabolic processes and specific enzymatic reactions in eukaryotic cells.",
+        "She does not leave the divider flat. A motor catches its lower edge and pushes more membrane upward. Instead of expanding the whole room, the membrane folds back and forth into deep transparent ridges. Nia clips rows of reaction complexes onto the new folds. The room’s outside dimensions have barely changed, yet far more membrane-associated machinery now fits inside. The first advantage is therefore separation. Internal membranes can keep potentially competing reactions apart, **minimizing competing interactions**. The second advantage is geometric. Folding internal membranes can provide **increasing reaction surface**, giving membrane-associated cellular processes more surface area on which to occur.",
+        "You step between the two chambers and look through the clear divider. The left reaction is still visible. The right reaction is still visible. Their separation has not made the cell less active; it has made different activities easier to organize. Nia points toward a door that has just unlocked beyond chamber B. Its sign reads INTERNAL ORGANIZATION COMPARISON. “One caution before we leave,” she says. “Membrane-bound organelles are a powerful form of compartmentalization in eukaryotes. They are not the only way a cell can have spatial organization.” The door opens onto two giant cell models waiting side by side."
+      ],
+      "story_close": "The useful image is a divided laboratory whose central membrane does two jobs at once: it separates reaction environments and, when folded, creates more usable membrane surface without requiring a matching increase in cell volume.",
+      "object_ids": [
+        "U2-K-061",
+        "U2-K-062",
+        "U2-K-063"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-061",
+          "term": "Compartmentalization",
+          "story": "the transparent divider rising between the blue and amber reaction systems until the interference alarms stop",
+          "science": "Membranes and membrane-bound organelles compartmentalize intracellular metabolic processes and specific enzymatic reactions in eukaryotic cells.",
+          "exact_name": true,
+          "hint": "the transparent divider rising between the blue and amber reaction systems until the interference alarms stop"
+        },
+        {
+          "object_id": "U2-K-062",
+          "term": "Minimizing competing interactions",
+          "story": "blue and amber enzyme systems continuing separately on opposite sides of the membrane instead of colliding in one chamber",
+          "science": "Internal membranes facilitate cellular processes by separating reactions and minimizing competing interactions.",
+          "exact_name": false,
+          "hint": "blue and amber enzyme systems continuing separately on opposite sides of the membrane instead of colliding in one chamber"
+        },
+        {
+          "object_id": "U2-K-063",
+          "term": "Increasing reaction surface",
+          "story": "the same internal membrane folding into many ridges so additional reaction complexes can attach without enlarging the room",
+          "science": "Internal membranes increase surface area on which cellular reactions can occur.",
+          "exact_name": false,
+          "hint": "the same internal membrane folding into many ridges so additional reaction complexes can attach without enlarging the room"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Compartmentalization",
+          "meaning": "Membranes and membrane-bound organelles compartmentalize intracellular metabolic processes and specific enzymatic reactions in eukaryotic cells.",
+          "image": "the transparent divider rising between the blue and amber reaction systems until the interference alarms stop"
+        },
+        {
+          "term": "Minimizing competing interactions",
+          "meaning": "Internal membranes facilitate cellular processes by separating reactions and minimizing competing interactions.",
+          "image": "blue and amber enzyme systems continuing separately on opposite sides of the membrane instead of colliding in one chamber"
+        },
+        {
+          "term": "Increasing reaction surface",
+          "meaning": "Internal membranes increase surface area on which cellular reactions can occur.",
+          "image": "the same internal membrane folding into many ridges so additional reaction complexes can attach without enlarging the room"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-061",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Internal Organization Comparison Room",
+      "misconception_guards": [
+        "Do not imply prokaryotes have no spatial organization at all."
+      ],
+      "required_visual": {
+        "visual_mode": "COMPARTMENT_CAUSAL_MODEL",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "separated reaction environments",
+          "reduced interference",
+          "folded internal membrane surface"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Internal membranes organize chemistry by separating reactions and increasing usable reaction surface."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Internal Organization Comparison Room",
+      "title": "The cell that was mislabeled empty",
+      "scene_kicker": "One comparison model has been reduced to an empty sack simply because it lacks the extensive membrane-bound organelles of the cell beside it.",
+      "location_description": "Internal Organization Comparison Room, directly beyond the reaction lab, where a magnified prokaryotic cell model occupies the left platform, a comparison table runs through the center, and a eukaryotic cell opened into membrane-bound rooms stands on the right.",
+      "scene_layout": {
+        "orientation": "The comparison room places a prokaryotic model left, a side-by-side organization table center, and a eukaryotic model with membrane-bound compartments right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Prokaryotic cell model",
+            "symbol": "PROKARYOTE",
+            "description": "A magnified prokaryotic cell shows localized internal regions, ribosomes, DNA-containing space, and organized structures without the extensive membrane-bound organelles seen across the room."
+          },
+          {
+            "position": "center",
+            "label": "Organization comparison table",
+            "symbol": "COMPARE",
+            "description": "A lit table connects functions to their locations in each cell type so internal organization can be compared without reducing the prokaryote to an empty bag."
+          },
+          {
+            "position": "right",
+            "label": "Eukaryotic cell model",
+            "symbol": "EUKARYOTE",
+            "description": "A cutaway eukaryotic cell contains numerous membrane-bound compartments whose boundaries partition different cellular processes into distinct internal regions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "prokaryotic model",
+          "kind": "scientific model",
+          "visual": "a large transparent cell lacking typical eukaryotic membrane-bound organelles but showing DNA, ribosomes, localized regions, and organized structures",
+          "job": "show that prokaryotic cells possess internal organization without extensive eukaryotic-style membrane compartments"
+        },
+        {
+          "name": "comparison table",
+          "kind": "scientific instrument",
+          "visual": "a central illuminated table that links cellular jobs to locations in both models",
+          "job": "force a function-by-function comparison instead of an organized-versus-unorganized caricature"
+        },
+        {
+          "name": "eukaryotic model",
+          "kind": "scientific model",
+          "visual": "a cutaway cell divided by internal membranes into visibly distinct organelles",
+          "job": "show extensive membrane-bound compartmentalization of cellular functions"
+        }
+      ],
+      "story_open": "The next room is long and white, with two cell models facing one another across an illuminated comparison table. The right model is unmistakably eukaryotic. Its interior is divided into membrane-bound compartments, each outlined in a different color. The left model is labeled PROKARYOTE, but someone has rendered its inside as a blank gray bag. Nia stops so abruptly that you nearly walk into her. “That picture would make the comparison easy,” she says, “and wrong.” She switches off the blank rendering.",
+      "story_paragraphs": [
+        "The next room is long and white, with two cell models facing one another across an illuminated comparison table. The right model is unmistakably eukaryotic. Its interior is divided into membrane-bound compartments, each outlined in a different color. The left model is labeled PROKARYOTE, but someone has rendered its inside as a blank gray bag. Nia stops so abruptly that you nearly walk into her. “That picture would make the comparison easy,” she says, “and wrong.” She switches off the blank rendering.",
+        "The left cell becomes transparent. DNA occupies a defined region. Ribosomes fill the cytoplasm. Other localized structures and organized regions become visible. There still are no typical eukaryotic membrane-bound organelles dividing the interior into a nucleus, Golgi complex, mitochondria, and the other rooms you have already visited. But the cell is not unorganized. Nia places the first comparison card on the center table: **prokaryotic compartmentalization**. Prokaryotes typically lack internal membrane-bound organelles but have internal regions with specialized structures and functions. The exact form of organization differs from the extensive membrane-bound architecture across the room.",
+        "Now the right model opens wider. Internal membranes partition the eukaryotic cell into specialized spaces. The nucleus encloses genetic material. Other membrane-bound organelles create distinct environments for different processes. Nia places a second card beside the first: **eukaryotic compartmentalization**. Eukaryotic cells maintain internal membranes that partition the cell into specialized regions. The table draws a line between the two models and replaces the labels ORGANIZED and UNORGANIZED with two more accurate questions: “Where is the function localized?” and “Is it enclosed by a membrane-bound compartment?”",
+        "You walk once around the table. From the back, the difference is even clearer. The prokaryotic model uses organized internal regions without the extensive internal membrane system of the eukaryotic model. The eukaryotic model uses membranes again and again to make distinct internal spaces. Nia closes the comparison display, but the two cards stay in the black evidence case you are carrying. A wall ahead darkens and becomes a theater screen. On the left appears a large ancestral host cell. Beside it, outside the host, glows a much smaller independently living prokaryotic cell. “Now we can ask a different question,” Nia says. “Where did some of those eukaryotic compartments come from?”"
+      ],
+      "story_close": "Both models are organized cells. The memorable difference is that eukaryotes extensively partition functions into membrane-bound organelles, while prokaryotes usually lack those typical membrane-bound organelles yet still contain specialized internal regions and structures.",
+      "object_ids": [
+        "U2-K-065",
+        "U2-K-066"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-065",
+          "term": "Prokaryotic compartmentalization",
+          "story": "the supposedly empty prokaryotic model lighting up with DNA, ribosomes, and localized internal regions despite lacking typical eukaryotic membrane-bound organelles",
+          "science": "Prokaryotes typically lack internal membrane-bound organelles but have internal regions with specialized structures and functions.",
+          "exact_name": true,
+          "hint": "the supposedly empty prokaryotic model lighting up with DNA, ribosomes, and localized internal regions despite lacking typical eukaryotic membrane-bound organelles"
+        },
+        {
+          "object_id": "U2-K-066",
+          "term": "Eukaryotic compartmentalization",
+          "story": "the neighboring eukaryotic model opening into many membrane-bound internal rooms that partition different cellular functions",
+          "science": "Eukaryotic cells maintain internal membranes that partition the cell into specialized regions.",
+          "exact_name": true,
+          "hint": "the neighboring eukaryotic model opening into many membrane-bound internal rooms that partition different cellular functions"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Prokaryotic compartmentalization",
+          "meaning": "Prokaryotes typically lack internal membrane-bound organelles but have internal regions with specialized structures and functions.",
+          "image": "the supposedly empty prokaryotic model lighting up with DNA, ribosomes, and localized internal regions despite lacking typical eukaryotic membrane-bound organelles"
+        },
+        {
+          "term": "Eukaryotic compartmentalization",
+          "meaning": "Eukaryotic cells maintain internal membranes that partition the cell into specialized regions.",
+          "image": "the neighboring eukaryotic model opening into many membrane-bound internal rooms that partition different cellular functions"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-065",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Endosymbiosis Origin Theater",
+      "misconception_guards": [
+        "Do not say prokaryotes lack compartmentalization or specialized internal regions entirely."
+      ],
+      "required_visual": {
+        "visual_mode": "COMPARISON_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "organized prokaryotic regions",
+          "membrane-bound eukaryotic organelles",
+          "side-by-side comparison"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Prokaryotes can have specialized internal organization; eukaryotes extensively partition functions with internal membranes."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Endosymbiosis Origin Theater",
+      "title": "The cell inside the cell",
+      "scene_kicker": "A historical reconstruction begins with two separate cells and ends with one partner permanently integrated inside the other, but the reconstruction must still be tested against evidence.",
+      "location_description": "Endosymbiosis Origin Theater, a dark semicircular archive theater where an ancestral host cell is projected on the left, the engulfment-and-retention reconstruction occurs on the center stage, and the descendant organelle condition appears on the illuminated right screen.",
+      "scene_layout": {
+        "orientation": "In the origin theater, an ancestral host cell is left, an engulfment-and-retention stage is center, and an integrated descendant organelle appears right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Ancestral host cell",
+            "symbol": "HOST",
+            "description": "A large ancestral host-cell reconstruction waits on the left side of the theater while a smaller independently living prokaryotic cell remains outside it."
+          },
+          {
+            "position": "center",
+            "label": "Engulfment and retention stage",
+            "symbol": "RETAINED",
+            "description": "The host membrane curves around the smaller cell at center; the engulfed cell remains intact and persists rather than being immediately broken down."
+          },
+          {
+            "position": "right",
+            "label": "Integrated descendant organelle",
+            "symbol": "INTEGRATED",
+            "description": "A sequence of later generations appears on the right, showing the once-independent partner becoming increasingly integrated with the host lineage and its cellular functions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "ancestral host cell",
+          "kind": "historical model",
+          "visual": "a large ancestral cell projected with a flexible outer membrane",
+          "job": "represent the host lineage in the reconstructed evolutionary sequence"
+        },
+        {
+          "name": "free-living prokaryote",
+          "kind": "historical model",
+          "visual": "a smaller bacterium-like cell with its own DNA and ribosomes, initially living independently outside the host",
+          "job": "represent an ancestral endosymbiont before engulfment"
+        },
+        {
+          "name": "retained endosymbiont",
+          "kind": "continuity object",
+          "visual": "the same small cell now enclosed inside the host but still intact",
+          "job": "make persistence after engulfment visible before long-term integration is introduced"
+        },
+        {
+          "name": "evidence case",
+          "kind": "continuity object",
+          "visual": "a black archival case carried by you from the theater to the vault",
+          "job": "collect the evidence needed to judge the historical explanation rather than accepting the reconstruction on appearance alone"
+        }
+      ],
+      "story_open": "The lights drop until the **Endosymbiosis Origin Theater** is almost black. Your evidence case rests on your knees. On the left side of the stage, a large ancestral host cell turns slowly in projection. Several meters away from it, a smaller prokaryotic cell moves independently through the surrounding environment. The two are unmistakably separate organisms in the opening reconstruction. Nia stands beside the projector controls. “What you are about to see is a model of an ancient evolutionary process,” she says. “No one watched the original events happen. The reconstruction is useful only if evidence from living cells supports it.”",
+      "story_paragraphs": [
+        "The lights drop until the **Endosymbiosis Origin Theater** is almost black. Your evidence case rests on your knees. On the left side of the stage, a large ancestral host cell turns slowly in projection. Several meters away from it, a smaller prokaryotic cell moves independently through the surrounding environment. The two are unmistakably separate organisms in the opening reconstruction. Nia stands beside the projector controls. “What you are about to see is a model of an ancient evolutionary process,” she says. “No one watched the original events happen. The reconstruction is useful only if evidence from living cells supports it.”",
+        "The smaller cell approaches the host. At center stage, the host membrane bends inward and surrounds it. For a moment the image resembles ordinary engulfment. Then the expected destruction never comes. The engulfed cell remains intact inside the host. Its own internal machinery continues functioning. The theater advances through many generations rather than jumping directly to a modern organelle. The retained partner is passed along as host cells reproduce. Over evolutionary time, the relationship becomes increasingly integrated. The once-independent cell no longer appears as a visitor that can simply leave. It has become part of the host cell’s internal system.",
+        "Nia freezes the sequence with three images visible at once: independent cell on the left, retained cell inside the host at center, integrated descendant condition on the right. “This evolutionary relationship is **endosymbiosis**,” she says. Mitochondria and chloroplasts evolved from once free-living prokaryotic cells through endosymbiosis. The theater does not portray one modern mitochondrion or chloroplast deciding to move into a cell. It portrays an evolutionary explanation involving ancestral lineages and long-term integration across generations.",
+        "The reconstruction rewinds. This time you watch only the boundaries. The smaller cell begins with its own membrane. The host membrane surrounds it during engulfment. Then the screen goes dark before showing any evidence for the historical claim. A red question appears over the stage: HOW WOULD YOU KNOW? Nia lifts the black case. It still contains only the two organization cards from the previous room. “A plausible story is not enough,” she says. “We need independent observations that converge on the same explanation.” The theater doors open directly into a steel evidence vault. Five empty slots glow inside your case."
+      ],
+      "story_close": "Endosymbiosis is the evolutionary explanation that ancestral free-living prokaryotic cells were retained inside host cells and, across generations, became integrated organelles. The theater is a reconstruction; the next room determines whether multiple lines of evidence support it.",
+      "object_ids": [
+        "U2-K-064"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-064",
+          "term": "Endosymbiosis",
+          "story": "the same smaller prokaryotic cell shown first living independently, then retained inside a host after engulfment, and finally integrated across later generations",
+          "science": "Mitochondria and chloroplasts evolved from once free-living prokaryotic cells through endosymbiosis.",
+          "exact_name": true,
+          "hint": "the same smaller prokaryotic cell shown first living independently, then retained inside a host after engulfment, and finally integrated across later generations"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Endosymbiosis",
+          "meaning": "Mitochondria and chloroplasts evolved from once free-living prokaryotic cells through endosymbiosis.",
+          "image": "the same smaller prokaryotic cell shown first living independently, then retained inside a host after engulfment, and finally integrated across later generations"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U2-K-064",
+      "checkpoint_prompt": "What evolutionary process explains the origins of mitochondria and chloroplasts from once free-living prokaryotes?",
+      "checkpoint_answer": "Endosymbiosis.",
+      "checkpoint_hint": "Return to the theater’s three frozen images: a smaller prokaryotic cell begins outside a host, is surrounded and retained inside the host, and appears in later generations as an increasingly integrated cellular partner.",
+      "next_locus": "Endosymbiotic Evidence Vault",
+      "misconception_guards": [
+        "Do not imply modern mitochondria/chloroplasts are still free-living cells.",
+        "Do not present the cartoon as direct observation of the ancient event."
+      ],
+      "required_visual": {
+        "visual_mode": "ORIGIN_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "host",
+          "free-living prokaryote",
+          "engulfment/retention",
+          "integrated descendant organelle"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Endosymbiosis proposes that ancestral free-living prokaryotes were retained and became integrated organelles."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Endosymbiotic Evidence Vault",
+      "title": "Five locks on one evolutionary case",
+      "scene_kicker": "The vault will not seal the endosymbiosis case until several independent observations fit the same ancestry hypothesis and the final panel explains why modern organelles are no longer free-living cells.",
+      "location_description": "Endosymbiotic Evidence Vault, the final steel-lined archive room where genome and division evidence fill the left case, ribosome and membrane evidence occupy the central wall, and a host-dependence display seals the right side of the room.",
+      "scene_layout": {
+        "orientation": "The evidence vault has genome/division evidence on the left, ribosome/membrane evidence in center, and a modern host-dependence panel on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Genome and division case",
+            "symbol": "DNA + DIVISION",
+            "description": "Circular organelle DNA sits beside a time-lapse sequence of mitochondria and chloroplasts dividing in ways similar to bacterial binary fission."
+          },
+          {
+            "position": "center",
+            "label": "Ribosome and membrane wall",
+            "symbol": "RIBOSOMES + MEMBRANES",
+            "description": "A molecular display compares organelle ribosomes with bacterial-like features and places double organelle membranes beside structural similarities consistent with an engulfment history."
+          },
+          {
+            "position": "right",
+            "label": "Modern host-dependence panel",
+            "symbol": "HOST INTEGRATION",
+            "description": "A final network map shows genes and functions distributed between organelles and the host nucleus, making modern mitochondria and chloroplasts visibly dependent on the cell that contains them."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "evidence case",
+          "kind": "continuity object",
+          "visual": "the black case from the origin theater with five empty illuminated slots",
+          "job": "hold independent evidence cards until the endosymbiotic explanation is supported by converging observations"
+        },
+        {
+          "name": "circular organelle DNA",
+          "kind": "scientific evidence",
+          "visual": "small circular DNA molecules displayed inside mitochondria and chloroplasts",
+          "job": "support ancestry from bacterial endosymbionts"
+        },
+        {
+          "name": "division sequence",
+          "kind": "scientific evidence",
+          "visual": "a time-lapse of an organelle elongating, constricting, and dividing",
+          "job": "show similarities between organelle replication and bacterial binary fission"
+        },
+        {
+          "name": "organelle ribosomes",
+          "kind": "scientific evidence",
+          "visual": "ribosomes whose features are compared directly with bacterial and eukaryotic cytosolic ribosomes",
+          "job": "provide molecular evidence consistent with bacterial ancestry"
+        },
+        {
+          "name": "double membranes",
+          "kind": "scientific evidence",
+          "visual": "outer and inner organelle membranes displayed as nested boundaries",
+          "job": "provide structural evidence consistent with engulfment and later integration"
+        },
+        {
+          "name": "host-dependence network",
+          "kind": "scientific evidence",
+          "visual": "a web connecting organelle genes and functions to genes and products supplied by the host nucleus",
+          "job": "show that modern mitochondria and chloroplasts are deeply integrated organelles, not autonomous free-living cells"
+        }
+      ],
+      "story_open": "The **Endosymbiotic Evidence Vault** closes behind you with a heavy metallic thud. Your black evidence case unfolds on a central pedestal. Five empty slots glow along its lid. The first wall, on your left, contains a mitochondrion and chloroplast enlarged until you can see small DNA molecules inside them. Their DNA is circular. Nia slides the first card into the case: **endosymbiotic evidence from genomes**. Mitochondria and chloroplasts contain their own circular DNA, a feature consistent with descent from bacterial endosymbionts. One slot turns green. The other four remain dark.",
+      "story_paragraphs": [
+        "The **Endosymbiotic Evidence Vault** closes behind you with a heavy metallic thud. Your black evidence case unfolds on a central pedestal. Five empty slots glow along its lid. The first wall, on your left, contains a mitochondrion and chloroplast enlarged until you can see small DNA molecules inside them. Their DNA is circular. Nia slides the first card into the case: **endosymbiotic evidence from genomes**. Mitochondria and chloroplasts contain their own circular DNA, a feature consistent with descent from bacterial endosymbionts. One slot turns green. The other four remain dark.",
+        "Beside the DNA display, a time-lapse begins. An organelle elongates, constricts through the middle, and separates. Another does the same. The sequence is compared with bacterial division. Nia inserts the second card: **endosymbiotic evidence from division**. Mitochondria and chloroplasts replicate by division processes similar to bacterial binary fission. A second lock releases. Nia does not close the case. “Circular DNA plus division is stronger than either observation alone,” she says, “but we are still building a converging argument.”",
+        "You move to the central evidence wall. Three ribosome models appear side by side: a bacterial ribosome, an organelle ribosome, and a eukaryotic cytosolic ribosome. Molecular features align more closely between the bacterial and organelle models. The third card slides into place: **endosymbiotic evidence from ribosomes**. Mitochondrial and chloroplast ribosomes have features more similar to bacterial ribosomes than to eukaryotic cytosolic ribosomes. Below them, a structural model reveals the organelles’ double membranes and inner-membrane characteristics consistent with an engulfment-and-integration history. The fourth card becomes **endosymbiotic evidence from membranes**. The case now holds genomic, reproductive, ribosomal, and membrane evidence that point in the same evolutionary direction.",
+        "Only the right side remains. A final display tries to show a mitochondrion leaving a modern eukaryotic cell and surviving independently. It fails immediately. Nia replaces the animation with a network. Some genes and functions remain in the organelle. Many others are supplied through the host cell and its nucleus. Proteins and regulatory systems cross the network in both directions. The last card reads **modern organelle dependence**. Modern mitochondria and chloroplasts are deeply integrated with their host cells and are not generally capable of independent free-living existence. Their bacterial ancestry does not make them modern free-living bacteria trapped inside a cell.",
+        "All five slots turn green, and the case finally closes. Nia lays the theater reconstruction beside the evidence cards. None of the cards alone is treated as a complete proof. Together, circular organelle DNA, bacterial-like division, bacterial-like ribosome features, membrane evidence, and extensive modern host integration create a coherent explanation for organelle origins. The vault lights change from red to white. Through the glass behind the pedestal you can see fragments of every Unit 2 journey: internal membranes, mitochondria, chloroplasts, cell-size models, membrane travelers, pumps, water-potential chambers. The final archive has connected them. Cells organize space, exchange matter across boundaries, maintain gradients, balance water, and in eukaryotes carry organelles whose evolutionary history is written into their structure and molecular machinery."
+      ],
+      "story_close": "Seal the case with converging evidence, not with a single clue: circular organelle DNA, bacterial-like division, bacterial-like ribosome features, membrane evidence, and modern host dependence together support the endosymbiotic origin of mitochondria and chloroplasts while showing how thoroughly those organelles are now integrated with eukaryotic cells.",
+      "object_ids": [
+        "U2-K-129",
+        "U2-K-130",
+        "U2-K-131",
+        "U2-K-132",
+        "U2-K-133"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-129",
+          "term": "Endosymbiotic evidence: genomes",
+          "story": "the first vault slot turning green when circular DNA is revealed inside mitochondria and chloroplasts",
+          "science": "Mitochondria and chloroplasts contain their own circular DNA, supporting descent from bacterial endosymbionts.",
+          "exact_name": true,
+          "hint": "the first vault slot turning green when circular DNA is revealed inside mitochondria and chloroplasts"
+        },
+        {
+          "object_id": "U2-K-130",
+          "term": "Endosymbiotic evidence: division",
+          "story": "the second slot opening beside a time-lapse of organelles constricting and dividing in a bacteria-like pattern",
+          "science": "Mitochondria and chloroplasts replicate by division processes similar to bacterial binary fission.",
+          "exact_name": true,
+          "hint": "the second slot opening beside a time-lapse of organelles constricting and dividing in a bacteria-like pattern"
+        },
+        {
+          "object_id": "U2-K-131",
+          "term": "Endosymbiotic evidence: ribosomes",
+          "story": "the bacterial and organelle ribosome models aligning more closely than the eukaryotic cytosolic ribosome beside them",
+          "science": "Mitochondrial and chloroplast ribosomes have features more similar to bacterial ribosomes than to eukaryotic cytosolic ribosomes.",
+          "exact_name": true,
+          "hint": "the bacterial and organelle ribosome models aligning more closely than the eukaryotic cytosolic ribosome beside them"
+        },
+        {
+          "object_id": "U2-K-132",
+          "term": "Endosymbiotic evidence: membranes",
+          "story": "the fourth evidence card placed beneath a model of double organelle membranes and inner-membrane similarities consistent with engulfment history",
+          "science": "Mitochondria and chloroplasts have double membranes and inner-membrane systems with bacterial similarities consistent with endosymbiotic origins.",
+          "exact_name": true,
+          "hint": "the fourth evidence card placed beneath a model of double organelle membranes and inner-membrane similarities consistent with engulfment history"
+        },
+        {
+          "object_id": "U2-K-133",
+          "term": "Modern organelle dependence",
+          "story": "the final network showing genes and functions shared between organelles and the host nucleus, preventing the organelle from being pictured as an autonomous free-living cell",
+          "science": "Modern mitochondria and chloroplasts are not generally capable of independent free-living existence; many genes and functions are integrated with the host cell.",
+          "exact_name": true,
+          "hint": "the final network showing genes and functions shared between organelles and the host nucleus, preventing the organelle from being pictured as an autonomous free-living cell"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Endosymbiotic evidence: genomes",
+          "meaning": "Mitochondria and chloroplasts contain their own circular DNA, supporting descent from bacterial endosymbionts.",
+          "image": "the first vault slot turning green when circular DNA is revealed inside mitochondria and chloroplasts"
+        },
+        {
+          "term": "Endosymbiotic evidence: division",
+          "meaning": "Mitochondria and chloroplasts replicate by division processes similar to bacterial binary fission.",
+          "image": "the second slot opening beside a time-lapse of organelles constricting and dividing in a bacteria-like pattern"
+        },
+        {
+          "term": "Endosymbiotic evidence: ribosomes",
+          "meaning": "Mitochondrial and chloroplast ribosomes have features more similar to bacterial ribosomes than to eukaryotic cytosolic ribosomes.",
+          "image": "the bacterial and organelle ribosome models aligning more closely than the eukaryotic cytosolic ribosome beside them"
+        },
+        {
+          "term": "Endosymbiotic evidence: membranes",
+          "meaning": "Mitochondria and chloroplasts have double membranes and inner-membrane systems with bacterial similarities consistent with endosymbiotic origins.",
+          "image": "the fourth evidence card placed beneath a model of double organelle membranes and inner-membrane similarities consistent with engulfment history"
+        },
+        {
+          "term": "Modern organelle dependence",
+          "meaning": "Modern mitochondria and chloroplasts are not generally capable of independent free-living existence; many genes and functions are integrated with the host cell.",
+          "image": "the final network showing genes and functions shared between organelles and the host nucleus, preventing the organelle from being pictured as an autonomous free-living cell"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U2-K-129",
+      "checkpoint_prompt": "Name two independent lines of evidence supporting endosymbiotic origins.",
+      "checkpoint_answer": "Examples include circular organelle DNA, bacterial-like division, bacterial-like ribosome features, and double-membrane/inner-membrane similarities.",
+      "checkpoint_hint": "Picture the black evidence case in the final vault. Separate slots light for circular organelle DNA, bacteria-like division, bacteria-like ribosome features, and double-membrane evidence; no single slot closes the case by itself.",
+      "next_locus": null,
+      "misconception_guards": [
+        "Do not claim any one evidence line alone proves endosymbiosis.",
+        "Do not imply modern organelles are autonomous free-living organisms."
+      ],
+      "required_visual": {
+        "visual_mode": "EVIDENCE_MATRIX",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "circular DNA",
+          "division",
+          "ribosome comparison",
+          "double membrane",
+          "host dependence"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Endosymbiosis is supported by multiple converging evidence lines, and modern organelles are deeply integrated with their host cells."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4G",
+  "narrative_standard": "V2-NARRATIVE-3.0-F4G"
+}

@@ -1,0 +1,1118 @@
+{
+  "schema": "memory-palace-v2-unit2-f4d-story-1.0",
+  "unit_id": "unit-2",
+  "palace_id": "U2-J4",
+  "journey_id": "U2-J4",
+  "palace_name": "Membrane Border Terminal",
+  "story_title": "The Border Terminal Breach",
+  "tagline": "Rebuild a molecular border from phospholipids outward, then follow the same travelers through fluidity, protein placement, recognition, permeability, and the plant-cell exterior.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cell-systems investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+    "story_job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+  },
+  "premise": "A molecular border terminal is admitting the wrong travelers. Nia freezes the terminal so the learner can inspect the membrane fabric, embedded proteins, identity tags, and outer plant-cell wall.",
+  "mission": "Rebuild the bilayer orientation, restore fluidity, place membrane proteins correctly, distinguish recognition markers, and reopen selective passage lanes.",
+  "finale": "The terminal stabilizes only after the membrane is rebuilt as an amphipathic bilayer, restored as a fluid mosaic, temperature-buffered, populated with correctly placed proteins and recognition tags, and tested against one consistent set of molecular travelers. Outside, the plant cell wall, plasma membrane, and plasmodesmata are left as three distinct structures with three distinct jobs.",
+  "estimated_minutes": 15,
+  "scene_count": 8,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen and keep the same membrane cross-section and traveler tray in mind. Let each molecular behavior become visible before attaching the scientific name. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Membrane Border Terminal is one continuous route. Begin at the bilayer entrance with water on both sides, cross the moving Fluid Mosaic Concourse, pass through temperature control, protein placement, and recognition, then use the same traveler tray in the selective barrier and passport lanes before stepping outside to the plant cell wall and plasmodesma.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Phospholipid Bilayer Gate",
+      "short": "Bilayer Gate",
+      "floor": "Terminal entrance",
+      "symbol": "◐"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Fluid Mosaic Concourse",
+      "short": "Mosaic Concourse",
+      "floor": "Main membrane concourse",
+      "symbol": "≈"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Fluidity Climate Control",
+      "short": "Climate Control",
+      "floor": "Temperature chamber",
+      "symbol": "↕"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Membrane Protein Checkpoint",
+      "short": "Protein Checkpoint",
+      "floor": "Placement checkpoint",
+      "symbol": "▥"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Recognition Counter",
+      "short": "Recognition Counter",
+      "floor": "Identity desk",
+      "symbol": "⌁"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Selective Barrier Lane",
+      "short": "Barrier Lane",
+      "floor": "Security lane",
+      "symbol": "║"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Molecule Passport Lanes",
+      "short": "Passport Lanes",
+      "floor": "Traveler sorting hall",
+      "symbol": "⇥"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Plant Wall and Plasmodesmata Exterior",
+      "short": "Plant Exterior",
+      "floor": "Terminal exterior",
+      "symbol": "▦"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Phospholipid Bilayer Gate",
+      "title": "Build the border from the water inward",
+      "scene_kicker": "Loose lipids find their only stable arrangement.",
+      "location_description": "Phospholipid Bilayer Gate — the transparent entrance where extracellular water is on your left, cytosol-like water is on your right, and the hydrophobic membrane interior forms between them.",
+      "scene_layout": {
+        "orientation": "At the membrane terminal entrance, water is visible on both sides. Hydrophilic heads face the left aqueous exterior and right aqueous interior, while paired hydrophobic tails meet in the center.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Outside water",
+            "symbol": "💧",
+            "description": "Clear extracellular water fills the left side. Polar phosphate-containing heads of the outer phospholipid layer face directly into this aqueous space."
+          },
+          {
+            "position": "center",
+            "label": "Hydrophobic membrane core",
+            "symbol": "〰",
+            "description": "Two rows of nonpolar fatty-acid tails point toward one another in the center, forming a dry-looking hydrocarbon interior that separates the two watery sides."
+          },
+          {
+            "position": "right",
+            "label": "Inside water",
+            "symbol": "💧",
+            "description": "Cytosol-like water fills the right side. Polar heads of the inner phospholipid layer face this aqueous environment while their tails point inward."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "phospholipid heads",
+          "kind": "scientific part",
+          "visual": "round polar phosphate-containing heads facing water",
+          "job": "interact favorably with aqueous environments on either side of the membrane"
+        },
+        {
+          "name": "fatty-acid tails",
+          "kind": "scientific part",
+          "visual": "paired nonpolar hydrocarbon tails pointing toward the membrane center",
+          "job": "avoid water and create the hydrophobic interior"
+        },
+        {
+          "name": "test-traveler tray",
+          "kind": "continuity object",
+          "visual": "a clear tray labeled O₂, CO₂, H₂O, NH₃, glucose, Na⁺, and K⁺",
+          "job": "stay with you through the terminal so the same molecules can be tested against each membrane rule"
+        }
+      ],
+      "story_open": "The elevator from the Scaling Observatory opens directly into the entrance of the **Membrane Border Terminal**. You stop before taking a single step. Water fills both sides of the transparent boundary: extracellular fluid glows pale blue on your left, and cytosol-like fluid glows on your right. Between them, however, there is no proper membrane. Hundreds of phospholipids tumble randomly like dropped compass needles. Behind you, Dr. Nia Park places a clear tray on a rail. Seven travelers wait inside it: O₂, CO₂, H₂O, NH₃, glucose, Na⁺, and K⁺. “Keep your eye on that tray,” she says. “We will use the same travelers all the way through this terminal. First, we have to rebuild the border they are trying to cross.”",
+      "story_paragraphs": [
+        "The elevator from the Scaling Observatory opens directly into the entrance of the **Membrane Border Terminal**. You stop before taking a single step. Water fills both sides of the transparent boundary: extracellular fluid glows pale blue on your left, and cytosol-like fluid glows on your right. Between them, however, there is no proper membrane. Hundreds of phospholipids tumble randomly like dropped compass needles. Behind you, Dr. Nia Park places a clear tray on a rail. Seven travelers wait inside it: O₂, CO₂, H₂O, NH₃, glucose, Na⁺, and K⁺. “Keep your eye on that tray,” she says. “We will use the same travelers all the way through this terminal. First, we have to rebuild the border they are trying to cross.”",
+        "Nia enlarges one phospholipid until it is almost as tall as you. At the top is a round phosphate-containing region that turns eagerly toward the surrounding water. Hanging below are two long fatty-acid chains that recoil from the water and swing inward. The contrast is impossible to miss: one molecule carries both a **polar, hydrophilic region** and **nonpolar, hydrophobic regions**. Nia waits until you have watched the two parts behave differently. “That combination is what **amphipathic** means,” she says. “A phospholipid has a water-interacting head and water-avoiding tails.”",
+        "Then the loose phospholipids begin to organize themselves. On the left, heads rotate toward the extracellular water while their tails turn away. On the right, another layer does the same toward the cytosol. The two sets of fatty-acid tails meet in the center, tail against tail, while the phosphate-containing heads remain exposed to water on both surfaces. The result is a **phospholipid bilayer**: hydrophilic surfaces facing the two aqueous environments and a hydrophobic interior buried between them. Nothing in the scene has to “decide” which way to face. The arrangement follows directly from the different chemical properties of the head and tails.",
+        "Nia slides one phospholipid sideways with the tip of her tablet. It moves. The neighboring molecules close the gap. “Remember that,” she says. “This is a stable arrangement, not a cement wall.” The rebuilt bilayer now stretches from floor to ceiling. Its watery faces remain on the left and right, and its hydrocarbon interior remains in the center. The traveler tray rolls forward until it stops beside the newly formed gate. The membrane surface suddenly ripples sideways, carrying several lipids with it. A whole concourse beyond the gate begins to move.",
+        "You look back once before entering. Water on the left. Polar heads facing it. Hydrophobic tails hidden in the center. Polar heads facing water again on the right. That simple three-part picture explains the basic **bilayer orientation**. Nia taps the center of the membrane. “If you can always recover that layout,” she says, “the next questions become easier. The properties of the border come from what is actually here.”"
+      ],
+      "story_close": "The bilayer is rebuilt with its hydrophilic heads facing water and its hydrophobic tails facing one another; the moving surface now pulls you into the next concourse.",
+      "object_ids": [
+        "U2-K-028",
+        "U2-K-029"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-028",
+          "term": "Phospholipid amphipathic structure",
+          "story": "one enlarged phospholipid with a water-facing polar head and two water-avoiding nonpolar tails",
+          "science": "Phospholipids have polar hydrophilic phosphate-containing regions and nonpolar hydrophobic fatty-acid regions.",
+          "exact_name": false,
+          "hint": "one enlarged phospholipid with a water-facing polar head and two water-avoiding nonpolar tails"
+        },
+        {
+          "object_id": "U2-K-029",
+          "term": "Bilayer orientation",
+          "story": "two phospholipid layers arranged tail-to-tail between water on the left and water on the right",
+          "science": "Hydrophilic regions face aqueous internal/external environments while hydrophobic fatty-acid regions face one another in the membrane interior.",
+          "exact_name": false,
+          "hint": "two phospholipid layers arranged tail-to-tail between water on the left and water on the right"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Phospholipid amphipathic structure",
+          "meaning": "Phospholipids have polar hydrophilic phosphate-containing regions and nonpolar hydrophobic fatty-acid regions.",
+          "image": "one enlarged phospholipid with a water-facing polar head and two water-avoiding nonpolar tails"
+        },
+        {
+          "term": "Bilayer orientation",
+          "meaning": "Hydrophilic regions face aqueous internal/external environments while hydrophobic fatty-acid regions face one another in the membrane interior.",
+          "image": "two phospholipid layers arranged tail-to-tail between water on the left and water on the right"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U2-K-028",
+      "checkpoint_prompt": "Which part of a phospholipid faces the membrane interior?",
+      "checkpoint_answer": "The nonpolar hydrophobic fatty-acid tails.",
+      "checkpoint_hint": "Picture the bilayer cross-section: water outside, polar heads facing water, and the long nonpolar tails meeting in the dry-looking center.",
+      "next_locus": "Fluid Mosaic Concourse",
+      "misconception_guards": [
+        "Do not depict phospholipids as fixed in place or tails facing water in a stable bilayer."
+      ],
+      "required_visual": {
+        "visual_mode": "MOLECULAR_ORIENTATION_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "phosphate heads toward water",
+          "fatty-acid tails inward",
+          "two aqueous sides"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Amphipathic phospholipids self-organize into a bilayer with hydrophobic interior and hydrophilic surfaces."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Fluid Mosaic Concourse",
+      "title": "The floor starts moving",
+      "scene_kicker": "A membrane that looked like a wall becomes a moving molecular crowd.",
+      "location_description": "Fluid Mosaic Concourse — a wide walkway built from the bilayer itself, where lipids and proteins can be watched moving sideways through a mixed membrane fabric.",
+      "scene_layout": {
+        "orientation": "The bilayer expands into a broad concourse. Mobile lipids drift on the left, the mixed membrane fabric spans center, and embedded proteins move laterally on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Drifting phospholipids",
+            "symbol": "≈",
+            "description": "Phospholipids slide sideways within their own layer like people moving across a crowded platform while the two-layer boundary remains intact."
+          },
+          {
+            "position": "center",
+            "label": "Mixed membrane fabric",
+            "symbol": "✣",
+            "description": "The center contains the phospholipid framework together with proteins, cholesterol, glycoproteins, and glycolipids distributed through the membrane."
+          },
+          {
+            "position": "right",
+            "label": "Moving membrane proteins",
+            "symbol": "↔",
+            "description": "Several embedded proteins shift laterally along the membrane while keeping their hydrophobic regions aligned with the bilayer interior."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "phospholipids",
+          "kind": "scientific part",
+          "visual": "two mobile layers of head-and-tail molecules",
+          "job": "form the fluid framework and move mainly sideways within each leaflet"
+        },
+        {
+          "name": "membrane proteins",
+          "kind": "scientific part",
+          "visual": "different-sized proteins embedded in or attached to the membrane",
+          "job": "perform transport, signaling, anchoring, recognition, and other membrane functions"
+        },
+        {
+          "name": "membrane mosaic components",
+          "kind": "scientific parts",
+          "visual": "cholesterol, glycoproteins, and glycolipids scattered among phospholipids and proteins",
+          "job": "make the membrane a mixed molecular mosaic instead of a uniform lipid sheet"
+        }
+      ],
+      "story_open": "The bilayer gate opens into a broad horizontal concourse made from the membrane itself. For a moment the scene looks wrong. Every phospholipid is frozen in a perfect grid, every protein is locked in one position, and the whole surface resembles a tiled floor. Nia steps onto it and crouches. “This is the picture that causes trouble,” she says. “A membrane has organization, but it is not normally a rigid sheet of molecules bolted in place.” She releases the freeze control.",
+      "story_paragraphs": [
+        "The bilayer gate opens into a broad horizontal concourse made from the membrane itself. For a moment the scene looks wrong. Every phospholipid is frozen in a perfect grid, every protein is locked in one position, and the whole surface resembles a tiled floor. Nia steps onto it and crouches. “This is the picture that causes trouble,” she says. “A membrane has organization, but it is not normally a rigid sheet of molecules bolted in place.” She releases the freeze control.",
+        "The left side comes alive first. Phospholipids begin sliding laterally within their layer, passing one another without turning their hydrophobic tails out into the surrounding water. The bilayer stays intact even though individual lipids change neighbors. Across the center, a large transport protein drifts several molecular widths to the side. Another protein remains anchored to an internal support structure and moves far less. Nia points out the difference. Many membrane components can move laterally, but their freedom is not identical and the usual motion is not constant flipping from one leaflet to the other.",
+        "Now the lights brighten across the center of the concourse. The membrane is not made of phospholipids alone. Proteins of different shapes interrupt the lipid field. In a vertebrate-animal membrane demonstration, small cholesterol molecules sit among the tails. Branched carbohydrates project from selected lipids and proteins on the outer surface. The mixed composition is why the membrane is described as a **mosaic**. The lateral mobility you just watched is why it is described as **fluid**. Together those ideas form the **fluid mosaic model** of membrane organization.",
+        "The traveler tray glides beside you as you walk. O₂ and CO₂ wobble in their slots; Na⁺ and K⁺ remain brightly charged; glucose takes up far more space than the gases. Nia gestures around the concourse. “Later we will test each one against the membrane,” she says. “For now, notice that the border they meet is a changing molecular fabric. Lipids form the framework. Proteins, cholesterol, glycolipids, and glycoproteins are distributed through that framework. Many lipids and proteins can move sideways while preserving the membrane’s basic orientation.”",
+        "Without warning, frost blooms across the left rail. At the same moment, heat lamps blaze red on the right. The moving membrane begins to behave differently at the two ends of the hall. Some regions stiffen. Others become excessively loose. Nia grabs the traveler tray before it rolls away. “Composition is only half the story,” she says. “Now we have to keep this membrane fluid while temperature changes.”"
+      ],
+      "story_close": "The fluid mosaic is now a moving, mixed membrane rather than a frozen sandwich, and a sudden temperature swing sends you directly into climate control.",
+      "object_ids": [
+        "U2-K-032",
+        "U2-K-033"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-032",
+          "term": "Fluid mosaic composition",
+          "story": "a mixed phospholipid membrane containing proteins, cholesterol, glycolipids, and glycoproteins",
+          "science": "Plasma membranes are phospholipid frameworks containing proteins, steroids such as cholesterol in vertebrate animals, glycoproteins, and glycolipids.",
+          "exact_name": true,
+          "hint": "a mixed phospholipid membrane containing proteins, cholesterol, glycolipids, and glycoproteins"
+        },
+        {
+          "object_id": "U2-K-033",
+          "term": "Fluid mosaic movement",
+          "story": "phospholipids and many proteins sliding laterally while the bilayer remains intact",
+          "science": "Many membrane lipids and proteins can move laterally within the membrane, producing the dynamic fluid-mosaic organization.",
+          "exact_name": true,
+          "hint": "phospholipids and many proteins sliding laterally while the bilayer remains intact"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Fluid mosaic composition",
+          "meaning": "Plasma membranes are phospholipid frameworks containing proteins, steroids such as cholesterol in vertebrate animals, glycoproteins, and glycolipids.",
+          "image": "a mixed phospholipid membrane containing proteins, cholesterol, glycolipids, and glycoproteins"
+        },
+        {
+          "term": "Fluid mosaic movement",
+          "meaning": "Many membrane lipids and proteins can move laterally within the membrane, producing the dynamic fluid-mosaic organization.",
+          "image": "phospholipids and many proteins sliding laterally while the bilayer remains intact"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-032",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Fluidity Climate Control",
+      "misconception_guards": [
+        "Do not imply all membrane components move freely without constraints.",
+        "Do not depict routine flip-flop of phospholipids between leaflets as the main movement."
+      ],
+      "required_visual": {
+        "visual_mode": "DYNAMIC_MEMBRANE_MODEL",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "mixed components",
+          "lateral movement",
+          "bilayer remains intact"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Fluid mosaic = diverse membrane components with substantial lateral mobility."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Fluidity Climate Control",
+      "title": "A cold snap and a heat surge",
+      "scene_kicker": "Kinked tails and cholesterol keep the membrane from becoming either a brick or a spill.",
+      "location_description": "Fluidity Climate Control — one continuous membrane demonstration spanning a frosted cold panel on the left, a temperature slider in the center, and a heated cholesterol panel on the right.",
+      "scene_layout": {
+        "orientation": "The climate chamber has a cold membrane demonstration on the left, a temperature-controlled bilayer in center, and a warm cholesterol demonstration on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Cold unsaturated-tail panel",
+            "symbol": "❄",
+            "description": "In the cold panel, phospholipids with visibly kinked cis-unsaturated tails cannot pack into a rigid, perfectly ordered wall."
+          },
+          {
+            "position": "center",
+            "label": "Temperature slider",
+            "symbol": "↕",
+            "description": "A large control moves the same membrane model from cold to warm so you can watch packing and molecular motion change continuously."
+          },
+          {
+            "position": "right",
+            "label": "Cholesterol buffer panel",
+            "symbol": "◈",
+            "description": "Rigid cholesterol molecules sit between phospholipids and behave differently at the cold and hot ends of the temperature range."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "unsaturated phospholipid tails",
+          "kind": "scientific part",
+          "visual": "fatty-acid tails bent by visible cis double-bond kinks",
+          "job": "reduce tight packing and help preserve membrane fluidity in the cold"
+        },
+        {
+          "name": "cholesterol",
+          "kind": "scientific part",
+          "visual": "small rigid steroid molecules wedged between phospholipids",
+          "job": "buffer membrane fluidity across temperature changes"
+        },
+        {
+          "name": "temperature slider",
+          "kind": "scientific instrument",
+          "visual": "a floor-to-ceiling cold-to-hot control connected to the same membrane model",
+          "job": "show how the same membrane responds at low and high temperature"
+        }
+      ],
+      "story_open": "You enter a narrow climate chamber with one continuous membrane model running from left to right. The left end is cold enough to frost the glass. The center holds a vertical temperature slider. The right end glows under a heat lamp. Nia points to the cold panel first. Straight saturated fatty-acid tails have packed closely together, making the membrane increasingly stiff. Beside them, phospholipids with **unsaturated tails** look different: each cis double bond produces a visible kink, like a bent knee in an otherwise straight chain.",
+      "story_paragraphs": [
+        "You enter a narrow climate chamber with one continuous membrane model running from left to right. The left end is cold enough to frost the glass. The center holds a vertical temperature slider. The right end glows under a heat lamp. Nia points to the cold panel first. Straight saturated fatty-acid tails have packed closely together, making the membrane increasingly stiff. Beside them, phospholipids with **unsaturated tails** look different: each cis double bond produces a visible kink, like a bent knee in an otherwise straight chain.",
+        "As the temperature drops, those kinks prevent neighboring tails from lining up as tightly. The membrane region containing more unsaturated phospholipid tails remains more fluid than the tightly packed straight-tail region. Nia traces one bend with her finger. “The useful image is the kink,” she says. “Unsaturation changes packing. The cis double-bond kink creates space and helps a membrane remain fluid at lower temperatures.” The point is not that unsaturated lipids are magical antifreeze; their shape simply makes close packing harder.",
+        "Nia then moves the central slider upward. The membrane becomes warmer and molecular motion increases. Small rigid steroid molecules appear between the phospholipids. “This is **cholesterol** in a vertebrate-animal membrane,” she says. At the hot end, cholesterol restrains some phospholipid movement, preventing the membrane from becoming excessively fluid. Nia drags the slider sharply back toward cold. The same cholesterol molecules now interfere with the phospholipids packing too tightly. The effect reverses with temperature.",
+        "You watch the slider travel cold to hot and back again. Cholesterol is not an “always more fluid” switch and it is not an “always less fluid” switch. It acts as a **fluidity buffer**: at higher temperatures it restrains phospholipid movement; at lower temperatures it hinders tight packing. Next to it, the kinked unsaturated tails contribute in a different way by reducing how tightly the hydrocarbon chains can pack.",
+        "The chamber stabilizes. On the traveler tray, the molecules are unchanged, but the membrane they will cross is now flexible enough to function. A scanner farther down the corridor lights up and projects silhouettes of membrane proteins—some buried, some spanning the entire bilayer, some sitting only on the surface. Nia pushes the tray toward it. “Before we test the travelers,” she says, “we need to stop pretending every membrane protein is the same kind of tunnel.”"
+      ],
+      "story_close": "Temperature no longer drives the bilayer toward rigidity or excessive motion; kinked unsaturated tails and cholesterol have different, visible roles in preserving useful membrane fluidity.",
+      "object_ids": [
+        "U2-K-099",
+        "U2-K-100"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-099",
+          "term": "Membrane fluidity and unsaturation",
+          "story": "cis-double-bond kinks in unsaturated fatty-acid tails preventing tight packing in the cold",
+          "science": "Unsaturated phospholipid tails contain cis double-bond kinks that reduce tight packing and help membranes remain fluid at lower temperatures.",
+          "exact_name": true,
+          "hint": "cis-double-bond kinks in unsaturated fatty-acid tails preventing tight packing in the cold"
+        },
+        {
+          "object_id": "U2-K-100",
+          "term": "Cholesterol as fluidity buffer",
+          "story": "cholesterol between phospholipids restraining motion when warm and hindering tight packing when cold",
+          "science": "In vertebrate animal membranes, cholesterol restrains phospholipid movement at higher temperatures and hinders tight packing at lower temperatures, buffering membrane fluidity across temperature changes.",
+          "exact_name": true,
+          "hint": "cholesterol between phospholipids restraining motion when warm and hindering tight packing when cold"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Membrane fluidity and unsaturation",
+          "meaning": "Unsaturated phospholipid tails contain cis double-bond kinks that reduce tight packing and help membranes remain fluid at lower temperatures.",
+          "image": "cis-double-bond kinks in unsaturated fatty-acid tails preventing tight packing in the cold"
+        },
+        {
+          "term": "Cholesterol as fluidity buffer",
+          "meaning": "In vertebrate animal membranes, cholesterol restrains phospholipid movement at higher temperatures and hinders tight packing at lower temperatures, buffering membrane fluidity across temperature changes.",
+          "image": "cholesterol between phospholipids restraining motion when warm and hindering tight packing when cold"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-099",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Membrane Protein Checkpoint",
+      "misconception_guards": [
+        "Do not say cholesterol always increases fluidity or always decreases fluidity."
+      ],
+      "required_visual": {
+        "visual_mode": "TEMPERATURE_PACKING_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "cis kink in unsaturated tails",
+          "cholesterol between phospholipids",
+          "different low/high temperature effects"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Unsaturation reduces packing; cholesterol buffers fluidity differently at low versus high temperature."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Membrane Protein Checkpoint",
+      "title": "Not every protein is a tunnel",
+      "scene_kicker": "The scanner separates surface proteins, embedded proteins, and proteins that span the whole membrane.",
+      "location_description": "Membrane Protein Checkpoint — a cross-sectional scanner that keeps surface proteins on the left, embedded protein placement in the center, and water-exposed protein regions on the right.",
+      "scene_layout": {
+        "orientation": "At the protein checkpoint, peripheral proteins sit on the left surface, a scanner through center reveals integral and transmembrane placement, and water-exposed protein regions are visible right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Peripheral-protein ledge",
+            "symbol": "○",
+            "description": "Proteins rest on the membrane surface or attach to exposed parts of other proteins without entering the hydrophobic core."
+          },
+          {
+            "position": "center",
+            "label": "Integral-protein scanner",
+            "symbol": "▥",
+            "description": "A cross-sectional scanner shows one protein penetrating only part of the bilayer and another crossing completely from one aqueous side to the other."
+          },
+          {
+            "position": "right",
+            "label": "Water-facing protein surfaces",
+            "symbol": "◌",
+            "description": "Hydrophilic protein regions face water while hydrophobic surfaces are buried where they can contact the fatty-acid tails."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "integral membrane protein",
+          "kind": "scientific part",
+          "visual": "a protein penetrating the hydrophobic membrane interior",
+          "job": "sit within the bilayer; some integral proteins cross only partway"
+        },
+        {
+          "name": "transmembrane protein",
+          "kind": "scientific part",
+          "visual": "an integral protein spanning the entire bilayer",
+          "job": "cross from one aqueous side of the membrane to the other"
+        },
+        {
+          "name": "peripheral membrane protein",
+          "kind": "scientific part",
+          "visual": "a protein resting on a membrane surface",
+          "job": "associate with the surface without entering the hydrophobic core"
+        },
+        {
+          "name": "polarity scanner",
+          "kind": "scientific instrument",
+          "visual": "a cross-sectional display shading protein regions as hydrophobic or hydrophilic",
+          "job": "show why different protein regions occupy different membrane environments"
+        }
+      ],
+      "story_open": "The next checkpoint is built around a giant cross-section of the bilayer. On the left, several proteins sit loosely against the membrane surface. In the center, a scanner passes a beam through the hydrophobic core. On the right, water surrounds the exposed parts of the proteins. The display begins with a deliberately bad model: every protein is drawn as a full-width pore crossing the membrane from one watery side to the other. Nia shakes her head. “If we keep that picture, several important terms collapse into one.”",
+      "story_paragraphs": [
+        "The next checkpoint is built around a giant cross-section of the bilayer. On the left, several proteins sit loosely against the membrane surface. In the center, a scanner passes a beam through the hydrophobic core. On the right, water surrounds the exposed parts of the proteins. The display begins with a deliberately bad model: every protein is drawn as a full-width pore crossing the membrane from one watery side to the other. Nia shakes her head. “If we keep that picture, several important terms collapse into one.”",
+        "She sends the first protein through the scanner. Part of its surface is shaded dark where it enters the bilayer’s hydrophobic interior, while water-facing regions glow blue. Embedded membrane proteins can contain both **hydrophobic and hydrophilic regions**. Hydrophobic surfaces can interact with the nonpolar membrane interior. Hydrophilic regions can remain exposed to water, and hydrophilic regions can also occur within a protein where appropriate. The protein’s orientation therefore reflects chemistry, just as the phospholipid orientation did at the entrance.",
+        "A second scan shows a protein penetrating the hydrophobic interior but stopping before it crosses the entire bilayer. Nia labels it an **integral membrane protein**. “Integral means it penetrates the hydrophobic interior,” she says. Then a taller protein slides into view and spans all the way from the extracellular water to the cytosolic water. “This is also integral, and because it spans the whole membrane, it is specifically a **transmembrane protein**.” She leaves the two models side by side: partial penetration in the center-left, full span in the center-right. Some integral proteins are transmembrane. Not all integral proteins are.",
+        "Finally, one of the proteins from the left ledge is scanned. It remains on the surface, attached loosely to the membrane or to an exposed portion of an integral protein, but it never enters the hydrophobic core. Nia labels it a **peripheral membrane protein**. The physical distinction is now easy to recover: integral goes into the membrane interior; transmembrane is the integral subset that crosses the entire bilayer; peripheral remains associated with the surface.",
+        "The traveler tray rolls past the scanner, but a new alarm stops it at the next desk. Branched carbohydrate chains are sticking out from selected membrane components like identity badges, and the system cannot tell whether each badge belongs to a lipid or a protein. Nia points ahead. “Placement is fixed,” she says. “Now we need to read the labels on the outside surface.”"
+      ],
+      "story_close": "The protein checkpoint leaves three distinct spatial categories in view: peripheral at the surface, integral penetrating the hydrophobic core, and transmembrane spanning the entire bilayer.",
+      "object_ids": [
+        "U2-K-030",
+        "U2-K-031",
+        "U2-K-101",
+        "U2-K-102"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-030",
+          "term": "Membrane-protein polarity",
+          "story": "a protein with hydrophobic surfaces buried in the lipid core and hydrophilic regions exposed to water",
+          "science": "Embedded membrane proteins may contain hydrophilic regions, hydrophobic regions, or both.",
+          "exact_name": false,
+          "hint": "a protein with hydrophobic surfaces buried in the lipid core and hydrophilic regions exposed to water"
+        },
+        {
+          "object_id": "U2-K-031",
+          "term": "Protein orientation",
+          "story": "water-facing hydrophilic protein regions contrasted with membrane-facing hydrophobic regions",
+          "science": "Hydrophobic protein surfaces interact with the membrane interior; hydrophilic regions are exposed to aqueous environments or can occur within the protein interior.",
+          "exact_name": false,
+          "hint": "water-facing hydrophilic protein regions contrasted with membrane-facing hydrophobic regions"
+        },
+        {
+          "object_id": "U2-K-101",
+          "term": "Integral membrane protein",
+          "story": "one integral protein entering only part of the hydrophobic core beside another integral protein that spans the bilayer",
+          "science": "Integral membrane proteins penetrate the hydrophobic interior of the bilayer; some, but not all, span the entire membrane as transmembrane proteins.",
+          "exact_name": true,
+          "hint": "one integral protein entering only part of the hydrophobic core beside another integral protein that spans the bilayer"
+        },
+        {
+          "object_id": "U2-K-102",
+          "term": "Peripheral membrane protein",
+          "story": "a protein attached to the membrane surface without entering the hydrophobic interior",
+          "science": "Peripheral membrane proteins are loosely associated with the membrane surface or with exposed parts of integral proteins and do not penetrate the bilayer hydrophobic core.",
+          "exact_name": true,
+          "hint": "a protein attached to the membrane surface without entering the hydrophobic interior"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Membrane-protein polarity",
+          "meaning": "Embedded membrane proteins may contain hydrophilic regions, hydrophobic regions, or both.",
+          "image": "a protein with hydrophobic surfaces buried in the lipid core and hydrophilic regions exposed to water"
+        },
+        {
+          "term": "Protein orientation",
+          "meaning": "Hydrophobic protein surfaces interact with the membrane interior; hydrophilic regions are exposed to aqueous environments or can occur within the protein interior.",
+          "image": "water-facing hydrophilic protein regions contrasted with membrane-facing hydrophobic regions"
+        },
+        {
+          "term": "Integral membrane protein",
+          "meaning": "Integral membrane proteins penetrate the hydrophobic interior of the bilayer; some, but not all, span the entire membrane as transmembrane proteins.",
+          "image": "one integral protein entering only part of the hydrophobic core beside another integral protein that spans the bilayer"
+        },
+        {
+          "term": "Peripheral membrane protein",
+          "meaning": "Peripheral membrane proteins are loosely associated with the membrane surface or with exposed parts of integral proteins and do not penetrate the bilayer hydrophobic core.",
+          "image": "a protein attached to the membrane surface without entering the hydrophobic interior"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U2-K-101",
+      "checkpoint_prompt": "Are all integral membrane proteins transmembrane proteins?",
+      "checkpoint_answer": "No. Transmembrane proteins are integral proteins that span the entire membrane; other integral proteins penetrate the bilayer without spanning it.",
+      "checkpoint_hint": "Picture the scanner showing one protein entering only part of the hydrophobic core and a second protein spanning all the way across the bilayer.",
+      "next_locus": "Recognition Counter",
+      "misconception_guards": [
+        "Do not state that all integral proteins are transmembrane.",
+        "Do not place peripheral proteins inside the hydrophobic core."
+      ],
+      "required_visual": {
+        "visual_mode": "PROTEIN_PLACEMENT_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "partial integral protein",
+          "full transmembrane protein",
+          "surface peripheral protein",
+          "hydrophobic/hydrophilic regions"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Integral proteins penetrate the hydrophobic core; peripheral proteins do not; only some integral proteins are transmembrane."
+    },
+    {
+      "scene_index": 4,
+      "locus": "Recognition Counter",
+      "title": "Read the sugar badges",
+      "scene_kicker": "Two similar carbohydrate tags mean different names because they are attached to different anchors.",
+      "location_description": "Recognition Counter — a membrane identity desk with carbohydrate-tagged lipids on the left, the recognition scanner in the center, and carbohydrate-tagged proteins on the right.",
+      "scene_layout": {
+        "orientation": "At the recognition counter, carbohydrate-tagged lipids are displayed left, the identity-scanning desk is center, and carbohydrate-tagged proteins are displayed right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Glycolipid badge rack",
+            "symbol": "♢",
+            "description": "A branched carbohydrate chain projects outward from the membrane and can be traced all the way down to a lipid anchor."
+          },
+          {
+            "position": "center",
+            "label": "Recognition scanner",
+            "symbol": "◎",
+            "description": "The scanner reads outward-facing carbohydrate patterns as molecular identity information during cell-cell recognition."
+          },
+          {
+            "position": "right",
+            "label": "Glycoprotein badge rack",
+            "symbol": "♧",
+            "description": "A second branched carbohydrate chain projects outward, but this one is covalently attached to a membrane protein."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "glycolipid",
+          "kind": "scientific part",
+          "visual": "a membrane lipid carrying an outward-projecting branched carbohydrate",
+          "job": "support recognition and interaction through a carbohydrate attached to lipid"
+        },
+        {
+          "name": "glycoprotein",
+          "kind": "scientific part",
+          "visual": "a membrane protein carrying an outward-projecting branched carbohydrate",
+          "job": "support cell-cell recognition through a carbohydrate attached to protein"
+        },
+        {
+          "name": "recognition scanner",
+          "kind": "scientific instrument",
+          "visual": "a light that reads external carbohydrate patterns",
+          "job": "make the recognition role of membrane carbohydrates visible"
+        }
+      ],
+      "story_open": "The Recognition Counter is quieter than the protein checkpoint. The membrane lies horizontally beneath a bright scanner. On the left, a branched carbohydrate chain projects outward from the membrane like a small tree. On the right, another carbohydrate chain looks almost identical. If you look only at the sugars, there is no obvious reason to give them different names. Nia dims the overhead lights and sends a tracing beam down each chain to its anchor.",
+      "story_paragraphs": [
+        "The Recognition Counter is quieter than the protein checkpoint. The membrane lies horizontally beneath a bright scanner. On the left, a branched carbohydrate chain projects outward from the membrane like a small tree. On the right, another carbohydrate chain looks almost identical. If you look only at the sugars, there is no obvious reason to give them different names. Nia dims the overhead lights and sends a tracing beam down each chain to its anchor.",
+        "The left beam follows its carbohydrate all the way to a membrane lipid. The scanner outlines the lipid anchor in gold. “Carbohydrate covalently attached to a lipid,” Nia says. “That whole structure is a **glycolipid**.” She leaves the word beside the molecule while the carbohydrate continues to project into the extracellular space. Glycolipids can participate in cell recognition and interactions, but the part you must use to identify the term is what the carbohydrate is attached to.",
+        "The right beam descends through the second carbohydrate chain and ends on a membrane protein. The protein flashes blue. “Carbohydrate covalently attached to a protein,” Nia says. “That is a **glycoprotein**.” The two structures now sit on opposite sides of the recognition desk: sugar-on-lipid to the left, sugar-on-protein to the right. The visual difference is small but exact.",
+        "Nia activates the central recognition scanner. It sweeps across the outward-projecting carbohydrate patterns and responds differently to different molecular arrangements. Membrane carbohydrates are important in **cell-cell recognition** because they present recognizable molecular patterns on the cell surface. The story is not that the sugar chain is a decorative flag. Its molecular pattern can participate in how cells identify and interact with one another.",
+        "The scanner clears both badges and releases the traveler tray. This time the tray rolls to a dark security lane where the bilayer’s fatty-acid tails fill the center like a thick nonpolar curtain. Na⁺ glows intensely in its slot. O₂ is almost invisible beside it. Nia turns to you. “Now we stop naming parts and test what this border actually does.”"
+      ],
+      "story_close": "The recognition counter leaves one clean distinction: glycolipid means carbohydrate attached to lipid, while glycoprotein means carbohydrate attached to protein; both can contribute to recognition.",
+      "object_ids": [
+        "U2-K-103",
+        "U2-K-104"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-103",
+          "term": "Glycolipid",
+          "story": "a branched carbohydrate traced directly to a membrane lipid anchor",
+          "science": "A glycolipid is a membrane lipid with a covalently attached carbohydrate that can participate in cell recognition and interactions.",
+          "exact_name": true,
+          "hint": "a branched carbohydrate traced directly to a membrane lipid anchor"
+        },
+        {
+          "object_id": "U2-K-104",
+          "term": "Glycoprotein",
+          "story": "a branched carbohydrate traced directly to a membrane protein anchor",
+          "science": "A glycoprotein is a membrane protein with a covalently attached carbohydrate; membrane carbohydrates are important in cell-cell recognition.",
+          "exact_name": true,
+          "hint": "a branched carbohydrate traced directly to a membrane protein anchor"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Glycolipid",
+          "meaning": "A glycolipid is a membrane lipid with a covalently attached carbohydrate that can participate in cell recognition and interactions.",
+          "image": "a branched carbohydrate traced directly to a membrane lipid anchor"
+        },
+        {
+          "term": "Glycoprotein",
+          "meaning": "A glycoprotein is a membrane protein with a covalently attached carbohydrate; membrane carbohydrates are important in cell-cell recognition.",
+          "image": "a branched carbohydrate traced directly to a membrane protein anchor"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-104",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Selective Barrier Lane",
+      "misconception_guards": [
+        "Do not define glycolipid/glycoprotein only as “sugar on membrane” without identifying the anchor molecule."
+      ],
+      "required_visual": {
+        "visual_mode": "RECOGNITION_INTERACTION_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "carbohydrate attached to lipid",
+          "carbohydrate attached to protein",
+          "external projection"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Glycolipid = carbohydrate on lipid; glycoprotein = carbohydrate on protein; both can support recognition."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Selective Barrier Lane",
+      "title": "The barrier has no guard",
+      "scene_kicker": "Crossing depends on molecular interactions with the hydrophobic core, not on a membrane making choices.",
+      "location_description": "Selective Barrier Lane — a single crossing lane with the traveler tray in water on the left, the hydrophobic fatty-acid core in the center, and aqueous cell interior on the right.",
+      "scene_layout": {
+        "orientation": "The selective barrier lane has an aqueous approach left, the nonpolar membrane interior center, and the aqueous cell side right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Aqueous approach",
+            "symbol": "●",
+            "description": "The test-traveler tray waits in water on the left, carrying O₂, CO₂, H₂O, NH₃, glucose, Na⁺, and K⁺ markers."
+          },
+          {
+            "position": "center",
+            "label": "Hydrophobic security core",
+            "symbol": "║",
+            "description": "The nonpolar fatty-acid interior forms the actual physical barrier. Charged and strongly hydrophilic travelers experience this region very differently from small nonpolar molecules."
+          },
+          {
+            "position": "right",
+            "label": "Aqueous cell side",
+            "symbol": "○",
+            "description": "Travelers that successfully cross emerge into water on the cell side while blocked travelers remain at the boundary or wait for a protein route."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "hydrophobic core",
+          "kind": "scientific part",
+          "visual": "a dense region of nonpolar fatty-acid tails between two watery spaces",
+          "job": "create the main direct-passage barrier to ions and many polar molecules"
+        },
+        {
+          "name": "test travelers",
+          "kind": "continuity object",
+          "visual": "the same O₂, CO₂, H₂O, NH₃, glucose, Na⁺, and K⁺ markers",
+          "job": "reveal that crossing behavior follows molecular properties rather than an intentional gatekeeper"
+        },
+        {
+          "name": "crossing sensor",
+          "kind": "scientific instrument",
+          "visual": "a light that measures how far each traveler enters the bilayer",
+          "job": "show nonpolar passage and hydrophilic exclusion directly"
+        }
+      ],
+      "story_open": "The Selective Barrier Lane is arranged as one simple cross-section. Water and the traveler tray are on the left. The fatty-acid interior of the bilayer fills the center. Water on the cell side is on the right. A cartoon guard icon flashes above the lane with the words APPROVE or DENY, as though the membrane were consciously choosing which molecule it wanted. Nia reaches up and switches the icon off. “That picture has to go,” she says. “Selective permeability comes from molecular properties and structure.”",
+      "story_paragraphs": [
+        "The Selective Barrier Lane is arranged as one simple cross-section. Water and the traveler tray are on the left. The fatty-acid interior of the bilayer fills the center. Water on the cell side is on the right. A cartoon guard icon flashes above the lane with the words APPROVE or DENY, as though the membrane were consciously choosing which molecule it wanted. Nia reaches up and switches the icon off. “That picture has to go,” she says. “Selective permeability comes from molecular properties and structure.”",
+        "She releases the O₂ marker first. The small nonpolar molecule enters the nonpolar interior without encountering the severe energetic problem faced by a charged particle. It moves through and appears in the water on the right. Then Nia releases Na⁺. The charged ion reaches the hydrophobic core and stops. The crossing sensor spikes red. A charged particle is strongly stabilized by interactions with water; moving it directly into a nonpolar hydrocarbon region is unfavorable. The membrane has not rejected the ion on purpose. The **hydrophobic barrier** created by the nonpolar phospholipid tails makes direct passage difficult.",
+        "H₂O is next. It approaches the same center region and crosses far less readily than O₂ in this simplified comparison. Nia does not let the display turn that into “water cannot cross.” Small uncharged polar molecules can cross the bilayer to a limited extent. Rapid water movement in cells is often supported by aquaporins, which you will meet later. Glucose, much larger and polar, remains waiting for a protein-assisted route. Na⁺ and K⁺ remain waiting as charged ions.",
+        "Nia draws a line along the membrane itself. “This is **selective permeability**,” she says after you have watched the three behaviors. The plasma membrane separates internal and external environments, and much of its selective behavior arises from the hydrophobic interior of the bilayer. Small nonpolar molecules interact with that interior very differently from ions and many polar molecules. Selectivity therefore emerges from chemistry, size, polarity, charge, and available transport structures.",
+        "The security lane opens into a bright sorting hall with three enormous passport signs. The same traveler tray rolls into the center. “You have seen the principle,” Nia says. “Now sort the travelers precisely enough that you can predict which route each one needs.”"
+      ],
+      "story_close": "The membrane’s selectivity is now grounded in the nonpolar bilayer interior: it is a physical chemical barrier, not an invisible gatekeeper making intentional decisions.",
+      "object_ids": [
+        "U2-K-034",
+        "U2-K-037"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-034",
+          "term": "Selective permeability basis",
+          "story": "one membrane separating two watery environments while different molecules show different crossing behavior",
+          "science": "Plasma membranes separate internal and external environments; selective permeability results largely from the membrane hydrophobic interior.",
+          "exact_name": false,
+          "hint": "one membrane separating two watery environments while different molecules show different crossing behavior"
+        },
+        {
+          "object_id": "U2-K-037",
+          "term": "Hydrophobic barrier",
+          "story": "Na⁺ stopping at the nonpolar fatty-acid interior while a small nonpolar O₂ marker crosses",
+          "science": "Nonpolar phospholipid tails impede direct passage of ions and many polar molecules.",
+          "exact_name": false,
+          "hint": "Na⁺ stopping at the nonpolar fatty-acid interior while a small nonpolar O₂ marker crosses"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Selective permeability basis",
+          "meaning": "Plasma membranes separate internal and external environments; selective permeability results largely from the membrane hydrophobic interior.",
+          "image": "one membrane separating two watery environments while different molecules show different crossing behavior"
+        },
+        {
+          "term": "Hydrophobic barrier",
+          "meaning": "Nonpolar phospholipid tails impede direct passage of ions and many polar molecules.",
+          "image": "Na⁺ stopping at the nonpolar fatty-acid interior while a small nonpolar O₂ marker crosses"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-034",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Molecule Passport Lanes",
+      "misconception_guards": [
+        "Do not anthropomorphize selective permeability as intentional choice."
+      ],
+      "required_visual": {
+        "visual_mode": "SELECTIVE_BARRIER_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "aqueous sides",
+          "hydrophobic core",
+          "contrasting traveler behavior"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Membrane selectivity largely emerges from the hydrophobic bilayer interior."
+    },
+    {
+      "scene_index": 6,
+      "locus": "Molecule Passport Lanes",
+      "title": "Sort the travelers by chemistry",
+      "scene_kicker": "The same molecule tray finally reveals three distinct crossing classes.",
+      "location_description": "Molecule Passport Lanes — three parallel lanes fixed left-to-right for small nonpolar molecules, small uncharged polar molecules, and ions or large polar molecules that require protein-assisted routes.",
+      "scene_layout": {
+        "orientation": "Three neighboring passport lanes are fixed left-to-right: direct passage for small nonpolar molecules, limited passage for small uncharged polar molecules, and protein-required passage for ions and large polar molecules.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Small nonpolar lane",
+            "symbol": "→",
+            "description": "O₂, CO₂, and N₂-sized nonpolar travelers move directly through the lipid bilayer with comparatively little resistance."
+          },
+          {
+            "position": "center",
+            "label": "Small uncharged polar lane",
+            "symbol": "⇢",
+            "description": "H₂O and NH₃ markers cross directly only to a limited extent; a sign points toward aquaporin routes when rapid water movement is needed."
+          },
+          {
+            "position": "right",
+            "label": "Protein-required lane",
+            "symbol": "⇥",
+            "description": "Na⁺, K⁺, glucose, and other ions or large polar travelers are redirected toward membrane channels or transport proteins."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "small nonpolar travelers",
+          "kind": "scientific parts",
+          "visual": "O₂, CO₂, and N₂-sized uncharged nonpolar markers",
+          "job": "cross the bilayer readily"
+        },
+        {
+          "name": "small uncharged polar travelers",
+          "kind": "scientific parts",
+          "visual": "H₂O and NH₃ markers",
+          "job": "cross directly in small amounts and more slowly than small nonpolar molecules"
+        },
+        {
+          "name": "ions and large polar travelers",
+          "kind": "scientific parts",
+          "visual": "Na⁺, K⁺, glucose, and similar hydrophilic markers",
+          "job": "generally require membrane channels or transport proteins"
+        }
+      ],
+      "story_open": "Three passport lanes run side by side. Nia places the traveler tray at the starting line and refuses to let you memorize the molecules as a random list. “Use three questions,” she says. “How large is it? Is it polar? Is it charged?” The left lane is marked DIRECT THROUGH LIPID. The center lane is marked LIMITED DIRECT PASSAGE. The right lane leads toward membrane transport proteins.",
+      "story_paragraphs": [
+        "Three passport lanes run side by side. Nia places the traveler tray at the starting line and refuses to let you memorize the molecules as a random list. “Use three questions,” she says. “How large is it? Is it polar? Is it charged?” The left lane is marked DIRECT THROUGH LIPID. The center lane is marked LIMITED DIRECT PASSAGE. The right lane leads toward membrane transport proteins.",
+        "O₂ and CO₂ go first, joined by a small N₂ marker from the lane’s demonstration kit. All three are **small nonpolar molecules**. They move readily into the hydrophobic interior and emerge on the other side of the bilayer. The left sign lights green. You can now picture the class rather than just one example: small, nonpolar gases can cross the lipid bilayer readily.",
+        "Nia moves H₂O and NH₃ into the center lane. They are **small uncharged polar molecules**. They can cross directly in small amounts, but their polarity makes direct passage through the nonpolar interior less favorable than it is for the small nonpolar gases. H₂O reaches the far side slowly in the model. A blue arrow points toward an aquaporin station in the next journey, reminding you that cells can support much higher water flux through specialized channels without changing the fact that some direct diffusion of water through the bilayer is possible.",
+        "Now the right lane fills. Na⁺ and K⁺ glow with charge. Glucose is much larger and polar. These travelers do not simply push through the hydrocarbon core. **Ions and large polar molecules generally require embedded channels or transport proteins** to cross plasma membranes efficiently. The right lane therefore does not mean “never crosses.” It means “use a protein-assisted route.” That distinction prepares the entire next transport journey.",
+        "Nia resets the tray so the categories remain visible together: small nonpolar on the left, small uncharged polar in the center, ions and large polar on the right. “Keep the rule tied to molecular properties,” she says. “If you only memorize O₂, water, and sodium as three separate facts, you lose the reason.” The terminal doors open to the outside. Beyond them is a rigid plant-cell wall, and a narrow channel runs through it to a neighboring cell."
+      ],
+      "story_close": "The traveler tray is now sorted by size, polarity, and charge, giving you three crossing classes that will become the starting conditions for the Gradient Transit Hub.",
+      "object_ids": [
+        "U2-K-035",
+        "U2-K-036",
+        "U2-K-038"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-035",
+          "term": "Small nonpolar passage",
+          "story": "O₂, CO₂, and N₂ markers crossing directly through the bilayer in the left passport lane",
+          "science": "Small nonpolar molecules such as N2, O2, and CO2 can pass through the lipid bilayer readily.",
+          "exact_name": false,
+          "hint": "O₂, CO₂, and N₂ markers crossing directly through the bilayer in the left passport lane"
+        },
+        {
+          "object_id": "U2-K-036",
+          "term": "Hydrophilic transport",
+          "story": "Na⁺, K⁺, glucose, and other ions or large polar molecules redirected toward membrane transport proteins",
+          "science": "Large polar molecules and ions generally cross plasma membranes using embedded channels or transport proteins.",
+          "exact_name": false,
+          "hint": "Na⁺, K⁺, glucose, and other ions or large polar molecules redirected toward membrane transport proteins"
+        },
+        {
+          "object_id": "U2-K-038",
+          "term": "Small polar passage",
+          "story": "H₂O and NH₃ markers crossing directly only to a limited extent in the center lane",
+          "science": "Small uncharged polar molecules such as H2O and NH3 can pass through the membrane in small amounts.",
+          "exact_name": false,
+          "hint": "H₂O and NH₃ markers crossing directly only to a limited extent in the center lane"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Small nonpolar passage",
+          "meaning": "Small nonpolar molecules such as N2, O2, and CO2 can pass through the lipid bilayer readily.",
+          "image": "O₂, CO₂, and N₂ markers crossing directly through the bilayer in the left passport lane"
+        },
+        {
+          "term": "Hydrophilic transport",
+          "meaning": "Large polar molecules and ions generally cross plasma membranes using embedded channels or transport proteins.",
+          "image": "Na⁺, K⁺, glucose, and other ions or large polar molecules redirected toward membrane transport proteins"
+        },
+        {
+          "term": "Small polar passage",
+          "meaning": "Small uncharged polar molecules such as H2O and NH3 can pass through the membrane in small amounts.",
+          "image": "H₂O and NH₃ markers crossing directly only to a limited extent in the center lane"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-035",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Plant Wall and Plasmodesmata Exterior",
+      "misconception_guards": [
+        "Do not say water cannot cross the bilayer at all.",
+        "Do not say every polar molecule behaves identically."
+      ],
+      "required_visual": {
+        "visual_mode": "PERMEABILITY_SORT_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "three molecule classes",
+          "relative passage differences",
+          "protein-required redirect"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Small nonpolar molecules cross readily; small uncharged polar molecules cross to a limited extent; ions and large polar molecules generally need proteins."
+    },
+    {
+      "scene_index": 7,
+      "locus": "Plant Wall and Plasmodesmata Exterior",
+      "title": "The wall outside the membrane",
+      "scene_kicker": "Support, selectivity, and cell-to-cell connection occupy three different structures in the same view.",
+      "location_description": "Plant Wall and Plasmodesmata Exterior — the outside of a plant cell where the cellulose-rich wall stands on the left, the plasma membrane lies directly beneath it in the center, and a plasmodesma connects to the neighboring cell on the right.",
+      "scene_layout": {
+        "orientation": "Outside a plant cell, the cellulose-rich wall matrix fills the left, the plasma membrane lies directly beneath it in center, and a membrane-lined plasmodesma passes through the wall to an adjacent cell on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Cellulose-rich wall",
+            "symbol": "▦",
+            "description": "A rigid plant-cell wall fills the left side, its cellulose microfibrils visible as strong crossing fibers embedded in a broader matrix."
+          },
+          {
+            "position": "center",
+            "label": "Plasma membrane beneath wall",
+            "symbol": "≈",
+            "description": "A flexible plasma membrane lies immediately inside the wall and remains the primary selectively permeable boundary controlling entry into cytoplasm."
+          },
+          {
+            "position": "right",
+            "label": "Plasmodesma to neighbor",
+            "symbol": "⊙",
+            "description": "A membrane-lined channel pierces the wall and links the cytoplasm of this plant cell with the adjacent cell on the right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "plant cell wall",
+          "kind": "scientific part",
+          "visual": "a rigid mesh of cellulose microfibrils embedded in polysaccharide and protein matrix",
+          "job": "support shape, resist excessive expansion during water uptake, and protect the cell"
+        },
+        {
+          "name": "plasma membrane",
+          "kind": "scientific part",
+          "visual": "a flexible phospholipid bilayer immediately beneath the wall",
+          "job": "remain the primary selectively permeable boundary controlling entry into cytoplasm"
+        },
+        {
+          "name": "plasmodesma",
+          "kind": "scientific part",
+          "visual": "a membrane-lined channel crossing the wall into the neighboring cell",
+          "job": "connect adjacent plant-cell cytoplasm for transport and communication"
+        }
+      ],
+      "story_open": "You step outside the terminal and immediately face a plant-cell boundary large enough to walk along. The spatial order matters. On the left is a thick **cell wall**. In the center, immediately beneath that wall, lies the flexible plasma membrane. On the right, a narrow channel pierces the wall and continues into a neighboring plant cell. Nia makes you stop at the threshold. “Do not merge these three structures,” she says. “They are adjacent, but they do different jobs.”",
+      "story_paragraphs": [
+        "You step outside the terminal and immediately face a plant-cell boundary large enough to walk along. The spatial order matters. On the left is a thick **cell wall**. In the center, immediately beneath that wall, lies the flexible plasma membrane. On the right, a narrow channel pierces the wall and continues into a neighboring plant cell. Nia makes you stop at the threshold. “Do not merge these three structures,” she says. “They are adjacent, but they do different jobs.”",
+        "The wall on the left resolves into a mesh of **cellulose microfibrils** embedded in a matrix of other polysaccharides and proteins. Water enters the cell and the cell contents press outward. The plasma membrane pushes against the rigid wall, but the wall resists excessive expansion and helps the cell maintain shape. The wall therefore contributes structural support and protection. Nia also broadens the view: plants are not the only organisms with cell walls. Bacteria, Archaea, and Fungi have cell walls as well, though their compositions differ.",
+        "Then she taps the flexible membrane lying just inside the plant wall. The traveler tray is placed against it again. “This is still the primary selective boundary controlling entry into the cytoplasm,” she says. The plant wall can affect movement of some substances and protects against osmotic lysis, but the wall does not replace the selective transport role of the **plasma membrane**. The two layers are physically adjacent yet functionally distinct: rigid support outside, selectively permeable membrane beneath.",
+        "A pulse of green light now travels through the narrow channel on the right. The channel is lined by plasma membrane and links the cytoplasm of this cell with the cytoplasm of its neighbor. Nia names a single channel a **plasmodesma**; the plural is **plasmodesmata**. Through these connections, neighboring plant cells can exchange materials and communicate. The wall is therefore not simply an uninterrupted barrier between every adjacent cell.",
+        "The border-terminal alarms finally go quiet. Bilayer orientation is restored, the membrane moves as a fluid mosaic, fluidity remains workable across temperature changes, proteins are placed correctly, recognition tags are identified, and each traveler has the right crossing category. Then a new alarm appears beyond the neighboring cell. Colored particles are piling up on one side of a membrane while the other side is nearly empty. Nia looks toward the next station. “Now that we know the border,” she says, “we can finally ask why molecules move in one direction, when they need energy, and when they need a protein.” The **Gradient Transit Hub** lights up ahead."
+      ],
+      "story_close": "The repaired terminal ends with three plant-cell boundary structures separated clearly: cell wall for support and protection, plasma membrane for selective entry, and plasmodesmata for communication between neighboring cells.",
+      "object_ids": [
+        "U2-K-039",
+        "U2-K-105",
+        "U2-K-106",
+        "U2-K-107"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-039",
+          "term": "Cell walls",
+          "story": "a rigid outer wall supporting the plant cell while the plasma membrane remains visible immediately beneath it",
+          "science": "Cell walls of Bacteria, Archaea, Fungi, and plants provide structural boundaries and protection from osmotic lysis and can act as permeability barriers for some substances.",
+          "exact_name": true,
+          "hint": "a rigid outer wall supporting the plant cell while the plasma membrane remains visible immediately beneath it"
+        },
+        {
+          "object_id": "U2-K-105",
+          "term": "Plant cell wall composition",
+          "story": "cellulose microfibrils embedded in a broader polysaccharide-and-protein matrix",
+          "science": "Primary plant cell walls contain cellulose microfibrils embedded in a matrix of other polysaccharides and proteins.",
+          "exact_name": true,
+          "hint": "cellulose microfibrils embedded in a broader polysaccharide-and-protein matrix"
+        },
+        {
+          "object_id": "U2-K-106",
+          "term": "Plant cell wall function",
+          "story": "a water-filled plant cell pressing outward while the rigid wall resists excessive expansion and supports shape",
+          "science": "The plant cell wall supports shape, resists excessive expansion during water uptake, and protects the cell; selective transport into the cytoplasm is controlled primarily by the plasma membrane.",
+          "exact_name": true,
+          "hint": "a water-filled plant cell pressing outward while the rigid wall resists excessive expansion and supports shape"
+        },
+        {
+          "object_id": "U2-K-107",
+          "term": "Plasmodesma",
+          "story": "a membrane-lined channel crossing the plant cell wall and linking the cytoplasm of neighboring cells",
+          "science": "Plasmodesmata are membrane-lined channels through plant cell walls that connect the cytoplasm of adjacent cells and support intercellular transport and communication.",
+          "exact_name": true,
+          "hint": "a membrane-lined channel crossing the plant cell wall and linking the cytoplasm of neighboring cells"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cell walls",
+          "meaning": "Cell walls of Bacteria, Archaea, Fungi, and plants provide structural boundaries and protection from osmotic lysis and can act as permeability barriers for some substances.",
+          "image": "a rigid outer wall supporting the plant cell while the plasma membrane remains visible immediately beneath it"
+        },
+        {
+          "term": "Plant cell wall composition",
+          "meaning": "Primary plant cell walls contain cellulose microfibrils embedded in a matrix of other polysaccharides and proteins.",
+          "image": "cellulose microfibrils embedded in a broader polysaccharide-and-protein matrix"
+        },
+        {
+          "term": "Plant cell wall function",
+          "meaning": "The plant cell wall supports shape, resists excessive expansion during water uptake, and protects the cell; selective transport into the cytoplasm is controlled primarily by the plasma membrane.",
+          "image": "a water-filled plant cell pressing outward while the rigid wall resists excessive expansion and supports shape"
+        },
+        {
+          "term": "Plasmodesma",
+          "meaning": "Plasmodesmata are membrane-lined channels through plant cell walls that connect the cytoplasm of adjacent cells and support intercellular transport and communication.",
+          "image": "a membrane-lined channel crossing the plant cell wall and linking the cytoplasm of neighboring cells"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U2-K-039",
+      "checkpoint_prompt": "Which structure is the primary selective barrier controlling entry into a plant cell’s cytoplasm?",
+      "checkpoint_answer": "The plasma membrane.",
+      "checkpoint_hint": "Picture the rigid wall outside and the flexible phospholipid membrane directly beneath it; only one of those is the primary selective boundary into cytoplasm.",
+      "next_locus": null,
+      "misconception_guards": [
+        "Do not say the plant cell wall regulates selective water entry into cytoplasm.",
+        "Do not imply only plants have cell walls; bacteria, archaea, and fungi also have cell walls with different compositions."
+      ],
+      "required_visual": {
+        "visual_mode": "BOUNDARY_AND_CHANNEL_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "cellulose microfibrils",
+          "plasma membrane beneath wall",
+          "plasmodesma connecting adjacent cytoplasm"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Plant cell wall supports and protects; plasma membrane controls selective entry; plasmodesmata connect neighboring cells."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4D",
+  "narrative_standard": "V2-NARRATIVE-3.0-F4D"
+}

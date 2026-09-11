@@ -1,0 +1,55 @@
+{
+  "schema": "memory-palace-v2-unit6-f4d-lock-1.0",
+  "unit_id": "unit-6",
+  "lock_status": "LOCKED_F4D_J1_J4",
+  "student_release": false,
+  "preview_release": true,
+  "protected_prior_locks": [
+    "content-lock-f1.json",
+    "content-lock-f2.json",
+    "content-lock-f3.json",
+    "content-lock-f4a.json",
+    "content-lock-f4b.json",
+    "content-lock-f4c.json"
+  ],
+  "frozen_f4a_journey_sha256": "fe01ed27cd6a8830022f131c22bcce74f9ad094aef189c991effb66f09741b83",
+  "frozen_f4b_journey_sha256": "62745c2fdcf98af10667a7cefa9907b420036952050d59aea7231dbd66de1ec6",
+  "frozen_f4c_journey_sha256": "91995e5f1e8f30072d511701556214fa16ba28b8533b460719bfe5b136722715",
+  "journey_ids": [
+    "U6-J1",
+    "U6-J2",
+    "U6-J3",
+    "U6-J4"
+  ],
+  "scene_count": 40,
+  "new_journey_scene_count": 12,
+  "new_journey_knowledge_record_count": 36,
+  "new_journey_checkpoint_count": 4,
+  "files": {
+    "journeys/U6-J1.json": {
+      "bytes": 162980,
+      "sha256": "fe01ed27cd6a8830022f131c22bcce74f9ad094aef189c991effb66f09741b83"
+    },
+    "journeys/U6-J2.json": {
+      "bytes": 108125,
+      "sha256": "62745c2fdcf98af10667a7cefa9907b420036952050d59aea7231dbd66de1ec6"
+    },
+    "journeys/U6-J3.json": {
+      "bytes": 101086,
+      "sha256": "91995e5f1e8f30072d511701556214fa16ba28b8533b460719bfe5b136722715"
+    },
+    "journeys/U6-J4.json": {
+      "bytes": 158108,
+      "sha256": "e074f28b35de6fe96de2015b1d8732055bc238235fa87367cf1976cb1df30b89"
+    },
+    "journeys-f4d.json": {
+      "bytes": 11911,
+      "sha256": "0d2c0d2413e3a16e3ffba63a90aae16e4e12a4df573c21b3acec0b7917235ef8"
+    },
+    "status-f4d.json": {
+      "bytes": 1208,
+      "sha256": "cd79fdcd42dc3f821a017450bfd57a53f765ad54e0570147d5cd356ef0dbab7a"
+    }
+  },
+  "rule": "Journeys 1–3 remain byte-frozen from F4A/F4B/F4C. Journey 4 polished prose may not change after F4D without a new explicit narrative version. F1 science, F2 classification/geometry, and F3 briefs remain authoritative boundaries."
+}

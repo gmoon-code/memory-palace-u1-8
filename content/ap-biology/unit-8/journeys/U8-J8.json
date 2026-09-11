@@ -1,0 +1,1100 @@
+{
+  "palace_id": "U8-J8",
+  "unit_id": "unit-8",
+  "palace_name": "Environmental Change Response Center",
+  "story_title": "The Center Where Every Change Needed a Cause",
+  "tagline": "Eight fixed rooms, one baseline landscape record, and one rule. Every ecological change must keep its cause, scale, measured variable, and consequence visible long enough to distinguish it from the next mechanism.",
+  "guide": {
+    "name": "Dr. Mira Sen",
+    "role": "ecological-systems field curator who accompanies the learner through all eight Unit 8 journeys",
+    "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+    "story_job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+  },
+  "premise": "The Environmental Change Response Center traces distinct causes of ecological change from genetic variation and biological invasion through habitat alteration, harvesting, pollution, eutrophication, ocean acidification, and large-scale geographic drivers.",
+  "mission": "Use one baseline landscape-and-community record. Each room changes one driver, then traces the mechanism to population or community consequences without substituting a generic “human impact” explanation.",
+  "finale": "The learner can distinguish adaptation from need-directed mutation, introduction from invasion, fragmentation from overharvest, trophic magnification from acid deposition, eutrophication from ocean acidification, and broad biogeographic patterns from single-cause claims.",
+  "estimated_minutes": 31,
+  "scene_count": 8,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4H",
+  "preview_release": true,
+  "narrative_design": "U8-F4H-NARRATIVE-1.0",
+  "learner_rule": "Keep one baseline landscape record visible through all eight rooms. Preserve variation before selection, introduction before invasion, habitat area separate from isolation, replacement separate from removal, biological magnification separate from acid deposition and eutrophication, eutrophication separate from ocean acidification, and broad biogeographic patterns separate from single-cause claims.",
+  "route_orientation": "The response center follows one continuous route in F2 order through Variation-Selection Sequence Lab, Introduction-Invasion Range Gate, Habitat Fragmentation Landscape, Harvest-Replacement Ledger, Persistent Pollutant Food-Web Lab, Eutrophication Water Column, Ocean Carbonate Chemistry Tank, and Regional Change and Biogeography Map Room. Every location fixes left, center, and right before the ecological driver changes.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Variation-Selection Sequence Lab",
+      "short": "Adaptation, heterozygote advantage, and undirected mutation",
+      "floor": "variation-selection lab",
+      "symbol": "VARIATION→SELECTION→FITNESS→ADAPTATION"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Introduction-Invasion Range Gate",
+      "short": "Introduced and invasive species",
+      "floor": "range gate",
+      "symbol": "ARRIVAL→ESTABLISHMENT→SPREAD→HARM"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Habitat Fragmentation Landscape",
+      "short": "Human environmental change and habitat fragmentation",
+      "floor": "fragmentation landscape",
+      "symbol": "CONTINUOUS→AREA LOSS→ISOLATION→RESPONSE"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Harvest-Replacement Ledger",
+      "short": "Overharvesting and extinction risk",
+      "floor": "harvest ledger",
+      "symbol": "REPLACEMENT↔REMOVAL→TREND→RISK"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Persistent Pollutant Food-Web Lab",
+      "short": "Pollution and biological magnification",
+      "floor": "pollutant lab",
+      "symbol": "ENTRY→TROPHIC TRANSFER→CONCENTRATION"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Eutrophication Water Column",
+      "short": "Eutrophication",
+      "floor": "water column",
+      "symbol": "NUTRIENT→PRODUCTION→DECOMPOSITION→LOW O₂"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Ocean Carbonate Chemistry Tank",
+      "short": "Ocean acidification",
+      "floor": "carbonate tank",
+      "symbol": "CO₂→CHEMISTRY→LOWER pH→LOWER CARBONATE"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Regional Change and Biogeography Map Room",
+      "short": "Large-scale environmental and biogeographic drivers",
+      "floor": "regional map room",
+      "symbol": "DRIVER→DISTRIBUTION→PATTERN→CONTEXT"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U8-L51",
+      "locus": "Variation-Selection Sequence Lab",
+      "title": "The Mutation That Arrived Before the Weather Changed",
+      "scene_kicker": "At Variation-Selection Sequence Lab, reconstruct preexisting genetic variation/mutation panel → environmental selection and genotype-fitness comparison → adaptation/heterozygote-advantage outcome and explain Adaptation and environmental advantage from the actual ecological mechanism.",
+      "location_description": "Variation-Selection Sequence Lab",
+      "scene_layout": {
+        "orientation": "Enter Variation-Selection Sequence Lab and stop at the mutation-before-selection timeline. Keep preexisting genetic variation/mutation panel fixed on the left, environmental selection and genotype-fitness comparison as the working center, and adaptation/heterozygote-advantage outcome fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "preexisting genetic variation/mutation panel",
+            "symbol": "L",
+            "description": "A conventional scientific representation of preexisting genetic variation/mutation panel, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "environmental selection and genotype-fitness comparison",
+            "symbol": "C",
+            "description": "The main scientific work model at Variation-Selection Sequence Lab, centered on the mutation-before-selection timeline."
+          },
+          {
+            "position": "right",
+            "label": "adaptation/heterozygote-advantage outcome",
+            "symbol": "R",
+            "description": "A conventional scientific representation of adaptation/heterozygote-advantage outcome, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "preexisting genetic variation/mutation panel",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of preexisting genetic variation/mutation panel, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "environmental selection and genotype-fitness comparison",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Variation-Selection Sequence Lab, centered on the mutation-before-selection timeline.",
+          "job": "Execute the defining action beginning with: Place mutation and genetic variation before the environmental selection step so no variant appears because it is needed."
+        },
+        {
+          "name": "adaptation/heterozygote-advantage outcome",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of adaptation/heterozygote-advantage outcome, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Variation-Selection Sequence Lab through a sealed glass door. On your left, a long illuminated panel holds the population's preexisting genetic variation and a row of mutation markers that are already present before the experiment begins. Ahead at the center, an environmental selection chamber contains three genotype lanes and a reproductive-success counter. On your right, an outcome wall waits to record changes in the population after several generations. Dr. Mira Sen slides one baseline landscape record into a rail beside you. The card carries habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context. Those fields will travel through every room so later changes can be traced to a particular mechanism.",
+      "story_paragraphs": [
+        "You enter the Variation-Selection Sequence Lab through a sealed glass door. On your left, a long illuminated panel holds the population's preexisting genetic variation and a row of mutation markers that are already present before the experiment begins. Ahead at the center, an environmental selection chamber contains three genotype lanes and a reproductive-success counter. On your right, an outcome wall waits to record changes in the population after several generations. Dr. Mira Sen slides one baseline landscape record into a rail beside you. The card carries habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context. Those fields will travel through every room so later changes can be traced to a particular mechanism.",
+        "Mira begins with a beetle population living on pale stone. Most beetles carry one color variant, while a smaller number carry a darker variant. She points to the left panel before anything about the environment changes. The darker allele is already there. A mutation marker sits earlier on the timeline, upstream of the weather control. Mira then darkens the stone in the center chamber. Birds now detect pale beetles more easily, while darker beetles survive and reproduce at a higher rate. The environment changes which existing variants leave more offspring. It does not reach backward in time and manufacture the dark allele because the beetles need it.",
+        "The reproductive-success counter makes that distinction hard to miss. One genotype leaves twelve offspring, another leaves twenty-four, and a third leaves eighteen under the new conditions. Mira asks you to follow the sequence with your finger. Variation comes first. Environmental conditions affect survival and reproduction next. Allele frequencies can change across generations after that. **Mutation is not directed** means mutations do not arise because an organism needs a particular adaptation. Environmental pressure can change which variants become more common, while the origin of the mutation itself is not guided toward what would be useful.",
+        "Mira switches to a second genotype comparison. This time the center chamber displays two homozygotes and one heterozygote. Under the selected environmental condition, the heterozygote leaves more surviving offspring than either homozygote. The right wall labels the pattern **Heterozygote advantage**. Heterozygote advantage occurs when heterozygotes have higher relative fitness than either homozygote in a particular environment. Mira changes the environment and the advantage shrinks. The room refuses to let the word advantage float free of context. Relative fitness belongs to a genotype in a particular set of conditions.",
+        "The outcome wall now shows the population after many generations. The favored heritable variants are more common than they were at the start. Mira waits until the sequence is visible before naming the population-level result. **Adaptation and environmental advantage** describe how adaptations arise from genetic variation acted on by natural selection and confer advantages in particular environments. An individual beetle did not transform because the habitat demanded it. The population changed in the frequency of heritable variants as differential reproductive success accumulated through generations.",
+        "Before you leave, Mira resets only the visual labels while keeping the timeline intact. You reconstruct the room from left to right. Existing variation and mutation markers belong on the left. Environmental selection and genotype-fitness comparison belong in the center. Population-level outcomes belong on the right. She clips the updated genotype and fitness notes onto the baseline landscape record. The next door opens onto a range map. A species marker is about to cross a boundary, and Mira warns that crossing the boundary alone will not tell you what kind of ecological problem, if any, has begun."
+      ],
+      "story_close": "Before you leave, Mira resets only the visual labels while keeping the timeline intact. You reconstruct the room from left to right. Existing variation and mutation markers belong on the left. Environmental selection and genotype-fitness comparison belong in the center. Population-level outcomes belong on the right. She clips the updated genotype and fitness notes onto the baseline landscape record. The next door opens onto a range map. A species marker is about to cross a boundary, and Mira warns that crossing the boundary alone will not tell you what kind of ecological problem, if any, has begun.",
+      "object_ids": [
+        "U8-K-043",
+        "U8-K-044",
+        "U8-K-045"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-043",
+          "term": "Adaptation and environmental advantage",
+          "story": "the the mutation-before-selection timeline where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Adaptations arise from genetic variation acted on by natural selection and confer advantages in particular environments.",
+          "exact_name": false,
+          "hint": "the mutation-before-selection timeline",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-044",
+          "term": "Heterozygote advantage",
+          "story": "the the mutation-before-selection timeline where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Heterozygote advantage occurs when heterozygotes have higher relative fitness than either homozygote in a particular environment.",
+          "exact_name": true,
+          "hint": "the mutation-before-selection timeline",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-045",
+          "term": "Mutation is not directed",
+          "story": "the the mutation-before-selection timeline where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Mutations do not arise because an organism needs a particular adaptation; mutation is not directed by environmental pressure.",
+          "exact_name": false,
+          "hint": "the mutation-before-selection timeline",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-043",
+          "term": "Adaptation and environmental advantage",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-044",
+          "term": "Heterozygote advantage",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-045",
+          "term": "Mutation is not directed",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent.",
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent.",
+        "Discrimination requirement U8-MD40: Variation arises without need-directed mutation; selection changes frequencies of variants under environmental conditions. Keep Adaptation and environmental advantage, Mutation is not directed physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "U8-L52",
+      "f3_scene_brief_id": "F3-U8-L51",
+      "narrative_word_count": 587
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U8-L52",
+      "locus": "Introduction-Invasion Range Gate",
+      "title": "The Traveler That Had Not Earned Its Warning Label",
+      "scene_kicker": "At Introduction-Invasion Range Gate, reconstruct historical range and human-mediated arrival → establishment/spread panel → harmful ecological/economic/health impact panel and explain Invasive species from the actual ecological mechanism.",
+      "location_description": "Introduction-Invasion Range Gate",
+      "scene_layout": {
+        "orientation": "Enter Introduction-Invasion Range Gate and stop at the three-stage range expansion display. Keep historical range and human-mediated arrival fixed on the left, establishment/spread panel as the working center, and harmful ecological/economic/health impact panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "historical range and human-mediated arrival",
+            "symbol": "L",
+            "description": "A conventional scientific representation of historical range and human-mediated arrival, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "establishment/spread panel",
+            "symbol": "C",
+            "description": "The main scientific work model at Introduction-Invasion Range Gate, centered on the three-stage range expansion display."
+          },
+          {
+            "position": "right",
+            "label": "harmful ecological/economic/health impact panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of harmful ecological/economic/health impact panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "historical range and human-mediated arrival",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of historical range and human-mediated arrival, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "establishment/spread panel",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Introduction-Invasion Range Gate, centered on the three-stage range expansion display.",
+          "job": "Execute the defining action beginning with: Move the species outside its historical range and label the event as introduction without calling it invasive."
+        },
+        {
+          "name": "harmful ecological/economic/health impact panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of harmful ecological/economic/health impact panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Introduction-Invasion Range Gate with the baseline landscape record still clipped beside Mira's tablet. On your left, a historical-range map shows the species inside its long-term geographic boundary and a transport arrow crossing into a new region. Ahead at the center, an establishment and spread panel tracks survival, reproduction, and expansion across the new landscape. On your right, a separate impact panel records changes in native populations, resource competition, economic damage, and health effects. The room is built like a three-stage checkpoint. Arrival is left, establishment and spread are center, and harmful consequence is right.",
+      "story_paragraphs": [
+        "You enter the Introduction-Invasion Range Gate with the baseline landscape record still clipped beside Mira's tablet. On your left, a historical-range map shows the species inside its long-term geographic boundary and a transport arrow crossing into a new region. Ahead at the center, an establishment and spread panel tracks survival, reproduction, and expansion across the new landscape. On your right, a separate impact panel records changes in native populations, resource competition, economic damage, and health effects. The room is built like a three-stage checkpoint. Arrival is left, establishment and spread are center, and harmful consequence is right.",
+        "A small plant marker rides a shipping container across the left map and appears outside its historical range. Mira stops the display immediately. Human-mediated movement has placed the organism in a new region. At this point the scientifically justified label is **Introduced species**. An introduced or nonnative species occurs outside its historical range because of human-mediated movement or other dispersal. Introduction alone does not make it invasive. The right impact panel remains dark because no harmful effect has yet been demonstrated.",
+        "The center panel now runs several possible futures. In the first, the introduced plant fails to reproduce and disappears. In the second, a small population persists around one port but does not spread far. In the third, it establishes, reproduces rapidly, and expands through several connected habitats. Mira keeps the words establishment and spread visible as separate steps. Rapid growth can help an introduced species expand, but fast growth itself is not the definition of invasion. Neither is competition by itself. The ecological label depends on what happens after arrival and what consequences follow.",
+        "The third scenario reaches the right panel. The spreading plant monopolizes a limiting resource in several sites, native plant abundance falls, and restoration costs rise. Only now does the warning band illuminate. Mira names the species an **Invasive species** in this ecological context. Introduced species may become invasive when they exploit ecological opportunities or outcompete native species for limiting resources. The impact panel adds the broader rule. An introduced species is considered invasive when it establishes and spreads with harmful ecological, economic, or health effects. Fast growth can contribute, but it is not the definition.",
+        "Mira reverses the exercise with a familiar nonnative garden plant that persists locally without spreading widely or producing documented harmful effects. The room refuses the invasive label. Then she shows a second species that spreads rapidly along disturbed roadsides but has not yet been linked to meaningful harm in the modeled region. Again, the right panel stays unlit. The distinction is not a moral judgment about where an organism came from. It is an ecological classification based on introduction, establishment, spread, and harmful effect.",
+        "The baseline landscape record now receives a new field showing the introduced species' range and its measured effects. Mira carries it toward a wall-sized habitat map visible through the next doorway. The map begins as one continuous green block, then a highway grid flashes across it. She tells you to remember the range gate's rule. One label should never swallow an entire causal sequence. In the next room, total habitat loss and isolation will also have to be separated before their consequences can be explained."
+      ],
+      "story_close": "The baseline landscape record now receives a new field showing the introduced species' range and its measured effects. Mira carries it toward a wall-sized habitat map visible through the next doorway. The map begins as one continuous green block, then a highway grid flashes across it. She tells you to remember the range gate's rule. One label should never swallow an entire causal sequence. In the next room, total habitat loss and isolation will also have to be separated before their consequences can be explained.",
+      "object_ids": [
+        "U8-K-046",
+        "U8-K-193",
+        "U8-K-194"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-046",
+          "term": "Invasive species",
+          "story": "the the three-stage range expansion display where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Introduced species may become invasive when they exploit ecological opportunities or outcompete native species for limiting resources.",
+          "exact_name": true,
+          "hint": "the three-stage range expansion display",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-193",
+          "term": "Introduced species",
+          "story": "the the three-stage range expansion display where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "An introduced or nonnative species occurs outside its historical range because of human-mediated movement or other dispersal; introduction alone does not make it invasive.",
+          "exact_name": true,
+          "hint": "the three-stage range expansion display",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-194",
+          "term": "Invasive-species impact",
+          "story": "the the three-stage range expansion display where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "An introduced species is considered invasive when it establishes and spreads with harmful ecological, economic, or health effects; fast growth can contribute but is not the definition.",
+          "exact_name": false,
+          "hint": "the three-stage range expansion display",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-046",
+          "term": "Invasive species",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-020: Lock separates nonnative introduction from establishment/spread and harmful impact.",
+        "Resolved F1 guard RF-U8-020: Lock separates nonnative introduction from establishment/spread and harmful impact.",
+        "Discrimination requirement U8-MD38: Introduction outside historical range is insufficient by itself for the invasive label. Keep Introduced species, Invasive species, Invasive-species impact physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-046",
+      "checkpoint_prompt": "Without looking back, identify or explain Invasive species from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Introduced species may become invasive when they exploit ecological opportunities or outcompete native species for limiting resources.",
+      "next_locus": "U8-L53",
+      "f3_scene_brief_id": "F3-U8-L52",
+      "narrative_word_count": 536
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U8-L53",
+      "locus": "Habitat Fragmentation Landscape",
+      "title": "The Forest That Lost Area and Neighbors at the Same Time",
+      "scene_kicker": "At Habitat Fragmentation Landscape, reconstruct continuous baseline habitat → fragmentation and area-reduction map → isolation/biodiversity and species-area response panel and explain Human-caused environmental change from the actual ecological mechanism.",
+      "location_description": "Habitat Fragmentation Landscape",
+      "scene_layout": {
+        "orientation": "Enter Habitat Fragmentation Landscape and stop at the intact-to-fragmented habitat map beside the species-area curve. Keep continuous baseline habitat fixed on the left, fragmentation and area-reduction map as the working center, and isolation/biodiversity and species-area response panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "continuous baseline habitat",
+            "symbol": "L",
+            "description": "A conventional scientific representation of continuous baseline habitat, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "fragmentation and area-reduction map",
+            "symbol": "C",
+            "description": "The main scientific work model at Habitat Fragmentation Landscape, centered on the intact-to-fragmented habitat map beside the species-area curve."
+          },
+          {
+            "position": "right",
+            "label": "isolation/biodiversity and species-area response panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of isolation/biodiversity and species-area response panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "continuous baseline habitat",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of continuous baseline habitat, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "fragmentation and area-reduction map",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Habitat Fragmentation Landscape, centered on the intact-to-fragmented habitat map beside the species-area curve.",
+          "job": "Execute the defining action beginning with: Begin with a continuous habitat and baseline focal-population/community record."
+        },
+        {
+          "name": "isolation/biodiversity and species-area response panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of isolation/biodiversity and species-area response panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Habitat Fragmentation Landscape beside the same baseline landscape record. On your left, a broad continuous habitat map shows the original forest as one connected region with the focal population distributed across it. Ahead at the center, movable road, farm, and development panels can remove habitat and split what remains into isolated patches. On your right, a response wall displays patch area, distance among fragments, focal-population connectivity, local species counts, and a species-area curve. Mira fixes the starting values before touching the controls so you can see exactly what changes.",
+      "story_paragraphs": [
+        "You enter the Habitat Fragmentation Landscape beside the same baseline landscape record. On your left, a broad continuous habitat map shows the original forest as one connected region with the focal population distributed across it. Ahead at the center, movable road, farm, and development panels can remove habitat and split what remains into isolated patches. On your right, a response wall displays patch area, distance among fragments, focal-population connectivity, local species counts, and a species-area curve. Mira fixes the starting values before touching the controls so you can see exactly what changes.",
+        "She first removes a strip of habitat along the southern edge without dividing the rest. Total habitat area falls, yet the remaining forest stays connected. The right wall records less habitat and a smaller population capacity. Then Mira restores the edge and instead cuts a highway through the center. This second change creates two fragments with a barrier between them. The total habitat area decreases only modestly, but movement between patches becomes harder. The room makes area loss and isolation visible as related but distinct consequences of **Habitat loss and fragmentation**. Habitat loss and fragmentation are major drivers of biodiversity decline because they reduce available habitat and can isolate populations.",
+        "Mira then combines both changes. Farms replace several sections of forest, roads divide what remains, and the focal population becomes separated into smaller groups. The baseline landscape record updates habitat area, focal population size, and community composition. The right wall shows that smaller fragments can support smaller populations and may lose species through several mechanisms. Isolation can also limit movement and recolonization. Mira emphasizes that the outcome depends on the species, landscape structure, habitat quality, and time scale. Fragmentation is not a single universal effect with one identical result everywhere.",
+        "Next she points to the curve on the right. Larger comparable habitat areas often contain more species than smaller ones. The display names this broad pattern the **Species-area relationship**. Larger habitat areas generally support more species than smaller comparable areas. Habitat heterogeneity and population-size effects can contribute to the pattern. Mira changes habitat type while holding area constant and the species counts shift again. The curve remains useful, but the room will not let area become the only ecological explanation.",
+        "The center controls widen to show several forms of **Human-caused environmental change**. Habitat conversion, species movement, harvesting, pollution, nutrient addition, and global climate change occupy different lanes. Human activities can alter habitats, move species, harvest populations, add pollutants or nutrients, and change global climate, thereby changing population and community dynamics. The display also marks **Human impacts and extinction** as a broader consequence. Human activities can accelerate local and global environmental change and contribute to species extinction. Mira refuses to rank one pressure as universally strongest. The answer depends on the system and the mechanism being examined.",
+        "When you step away, the forest on the left remains visibly fractured. Mira does not reset it. She attaches the updated habitat-area and connectivity values to the baseline landscape record and leads you down a narrow ramp to a counting station. A population of harvested fish appears on two opposing counters. One side records replacement through recruitment. The other records removal. The next question will be simpler in shape and harsher in consequence. Can a population replace itself as quickly as organisms are taken away?"
+      ],
+      "story_close": "When you step away, the forest on the left remains visibly fractured. Mira does not reset it. She attaches the updated habitat-area and connectivity values to the baseline landscape record and leads you down a narrow ramp to a counting station. A population of harvested fish appears on two opposing counters. One side records replacement through recruitment. The other records removal. The next question will be simpler in shape and harsher in consequence. Can a population replace itself as quickly as organisms are taken away?",
+      "object_ids": [
+        "U8-K-203",
+        "U8-K-047",
+        "U8-K-204",
+        "U8-K-209"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-203",
+          "term": "Human-caused environmental change",
+          "story": "the the intact-to-fragmented habitat map beside the species-area curve where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Human activities can alter habitats, move species, harvest populations, add pollutants/nutrients, and change global climate, thereby changing population and community dynamics.",
+          "exact_name": false,
+          "hint": "the intact-to-fragmented habitat map beside the species-area curve",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-047",
+          "term": "Human impacts and extinction",
+          "story": "the the intact-to-fragmented habitat map beside the species-area curve where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Human activities can accelerate local and global environmental change and contribute to species extinction.",
+          "exact_name": false,
+          "hint": "the intact-to-fragmented habitat map beside the species-area curve",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-204",
+          "term": "Habitat loss and fragmentation",
+          "story": "the the intact-to-fragmented habitat map beside the species-area curve where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Habitat loss and fragmentation are major drivers of biodiversity decline because they reduce available habitat and can isolate populations.",
+          "exact_name": false,
+          "hint": "the intact-to-fragmented habitat map beside the species-area curve",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-209",
+          "term": "Species-area relationship",
+          "story": "the the intact-to-fragmented habitat map beside the species-area curve where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Larger habitat areas generally support more species than smaller comparable areas; habitat heterogeneity and population-size effects can contribute to the pattern.",
+          "exact_name": true,
+          "hint": "the intact-to-fragmented habitat map beside the species-area curve",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-047",
+          "term": "Human impacts and extinction",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-023: Lock uses current-CED formulation that human impacts accelerate local/global change.",
+        "Resolved F1 guard RF-U8-024: Lock treats habitat loss/fragmentation as major global drivers without immutable ranking.",
+        "Resolved F1 guard RF-U8-027: Lock treats both as broad patterns with multiple mechanisms."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "U8-L54",
+      "f3_scene_brief_id": "F3-U8-L53",
+      "narrative_word_count": 553
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U8-L54",
+      "locus": "Harvest-Replacement Ledger",
+      "title": "The Population That Could Not Refill the Empty Spaces",
+      "scene_kicker": "At Harvest-Replacement Ledger, reconstruct population replacement/recruitment rate → harvest/removal rate → population trend and extinction-risk panel and explain Overharvesting from the actual ecological mechanism.",
+      "location_description": "Harvest-Replacement Ledger",
+      "scene_layout": {
+        "orientation": "Enter Harvest-Replacement Ledger and stop at the removal-versus-recruitment balance board. Keep population replacement/recruitment rate fixed on the left, harvest/removal rate as the working center, and population trend and extinction-risk panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "population replacement/recruitment rate",
+            "symbol": "L",
+            "description": "A conventional scientific representation of population replacement/recruitment rate, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "harvest/removal rate",
+            "symbol": "C",
+            "description": "The main scientific work model at Harvest-Replacement Ledger, centered on the removal-versus-recruitment balance board."
+          },
+          {
+            "position": "right",
+            "label": "population trend and extinction-risk panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of population trend and extinction-risk panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "population replacement/recruitment rate",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of population replacement/recruitment rate, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "harvest/removal rate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Harvest-Replacement Ledger, centered on the removal-versus-recruitment balance board.",
+          "job": "Execute the defining action beginning with: Record the population’s replacement or recruitment over the same interval as removals."
+        },
+        {
+          "name": "population trend and extinction-risk panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of population trend and extinction-risk panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Harvest-Replacement Ledger with the altered landscape record still in hand. On your left, a replacement and recruitment counter records the number of new individuals entering the focal population during each season. Ahead at the center, a harvest counter records the number removed over the same interval. On your right, a population-trend panel plots population size through time and carries a separate extinction-risk indicator. Mira sets all three displays to the same time scale before the first harvest begins. No removal number will be allowed to float free of the population's ability to replace what was lost.",
+      "story_paragraphs": [
+        "You enter the Harvest-Replacement Ledger with the altered landscape record still in hand. On your left, a replacement and recruitment counter records the number of new individuals entering the focal population during each season. Ahead at the center, a harvest counter records the number removed over the same interval. On your right, a population-trend panel plots population size through time and carries a separate extinction-risk indicator. Mira sets all three displays to the same time scale before the first harvest begins. No removal number will be allowed to float free of the population's ability to replace what was lost.",
+        "The first season is sustainable in the simple demonstration. The population recruits roughly as many individuals as the harvest removes. Population size fluctuates but does not show a sustained decline. Mira then increases the harvest while holding recruitment at its observed level. The center counter climbs above the left counter. Each season more organisms leave than the population replaces. The right graph bends downward. Mira names the mechanism **Overharvesting**. Overharvesting occurs when organisms are removed faster than populations can replace themselves and can cause population collapse or extinction risk.",
+        "The ledger runs for several more seasons. A single high harvest does not automatically prove a long-term collapse, so Mira keeps the time axis visible. Persistent removal above replacement produces the dangerous pattern. Population size falls, breeding adults become rarer, and recovery becomes more difficult. She changes recruitment upward in one simulation and the decline slows. She changes harvest downward in another and the population stabilizes. The causal relationship remains visible because replacement and removal are measured over the same interval.",
+        "Mira then opens the extinction-risk indicator. It does not announce that every declining population is already extinct or that one universal threshold has been crossed. Instead it shows how sustained population decline can raise the probability of local loss or extinction, especially when other pressures are added. She places the pattern inside a broader global record labeled **Elevated extinction rates**. Current human-driven environmental change has elevated extinction rates and created a global biodiversity crisis. Exact classification of the present interval as a completed mass extinction depends on definitions and time scale.",
+        "The wording matters. Mira shows two headlines on a side screen, one claiming that extinction risk does not exist until a population reaches zero and another claiming that every local decline proves a completed mass extinction. Both are rejected. Ecologists can document elevated extinction rates, population collapses, and biodiversity loss without pretending that every scale and definition is interchangeable. The right panel keeps local population trend, extinction risk, and broad global biodiversity patterns on separate rows.",
+        "The baseline landscape record now carries a reduced focal population size caused by the demonstrated removal pressure. Mira seals the harvest counter and guides you into a food-web laboratory where the population appears again as one trophic link. A persistent contaminant is entering at the bottom of the web, while a second lane tracks acidic deposition through water and soil chemistry. She asks you to watch which effect travels through consumers and which effect travels through environmental chemistry. The next room will punish any attempt to merge those mechanisms into one vague idea called pollution."
+      ],
+      "story_close": "The baseline landscape record now carries a reduced focal population size caused by the demonstrated removal pressure. Mira seals the harvest counter and guides you into a food-web laboratory where the population appears again as one trophic link. A persistent contaminant is entering at the bottom of the web, while a second lane tracks acidic deposition through water and soil chemistry. She asks you to watch which effect travels through consumers and which effect travels through environmental chemistry. The next room will punish any attempt to merge those mechanisms into one vague idea called pollution.",
+      "object_ids": [
+        "U8-K-205",
+        "U8-K-208"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-205",
+          "term": "Overharvesting",
+          "story": "the the removal-versus-recruitment balance board where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Overharvesting occurs when organisms are removed faster than populations can replace themselves and can cause population collapse or extinction risk.",
+          "exact_name": true,
+          "hint": "the removal-versus-recruitment balance board",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-208",
+          "term": "Elevated extinction rates",
+          "story": "the the removal-versus-recruitment balance board where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Current human-driven environmental change has elevated extinction rates and created a global biodiversity crisis; exact classification of the present interval as a completed mass extinction depends on definitions and time scale.",
+          "exact_name": false,
+          "hint": "the removal-versus-recruitment balance board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-025: Excluded from permanent scientific memory; overharvesting concept retained.",
+        "Resolved F1 guard RF-U8-026: Lock uses elevated extinction rates/global biodiversity crisis and guards exact formal threshold claims."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "U8-L55",
+      "f3_scene_brief_id": "F3-U8-L54",
+      "narrative_word_count": 531
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U8-L55",
+      "locus": "Persistent Pollutant Food-Web Lab",
+      "title": "The Chemical That Grew More Concentrated Without Growing More Abundant",
+      "scene_kicker": "At Persistent Pollutant Food-Web Lab, reconstruct persistent contaminant entry at lower trophic level → successive trophic transfer concentrations → high-trophic concentration and separate acid-deposition chemistry panel and explain Biological magnification from the actual ecological mechanism.",
+      "location_description": "Persistent Pollutant Food-Web Lab",
+      "scene_layout": {
+        "orientation": "Enter Persistent Pollutant Food-Web Lab and stop at the contaminant concentration ladder beside a separate acid-deposition lane. Keep persistent contaminant entry at lower trophic level fixed on the left, successive trophic transfer concentrations as the working center, and high-trophic concentration and separate acid-deposition chemistry panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "persistent contaminant entry at lower trophic level",
+            "symbol": "L",
+            "description": "A conventional scientific representation of persistent contaminant entry at lower trophic level, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "successive trophic transfer concentrations",
+            "symbol": "C",
+            "description": "The main scientific work model at Persistent Pollutant Food-Web Lab, centered on the contaminant concentration ladder beside a separate acid-deposition lane."
+          },
+          {
+            "position": "right",
+            "label": "high-trophic concentration and separate acid-deposition chemistry panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of high-trophic concentration and separate acid-deposition chemistry panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "persistent contaminant entry at lower trophic level",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of persistent contaminant entry at lower trophic level, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "successive trophic transfer concentrations",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Persistent Pollutant Food-Web Lab, centered on the contaminant concentration ladder beside a separate acid-deposition lane.",
+          "job": "Execute the defining action beginning with: Introduce the same persistent contaminant at a lower trophic level and track concentration through successive consumers."
+        },
+        {
+          "name": "high-trophic concentration and separate acid-deposition chemistry panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of high-trophic concentration and separate acid-deposition chemistry panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Persistent Pollutant Food-Web Lab with the baseline landscape record mounted beside a glass food-web tank. On your left, a lower-trophic-level compartment receives a small amount of a persistent contaminant. Ahead at the center, a sequence of consumers feeds upward through the web while concentration meters follow the contaminant through successive trophic transfers. On your right, a top-consumer meter stands beside a physically separate acid-deposition chemistry lane. Mira keeps the two pathways divided by a clear wall. One traces a persistent substance through trophic levels. The other traces pollutants that alter soil or water chemistry.",
+      "story_paragraphs": [
+        "You enter the Persistent Pollutant Food-Web Lab with the baseline landscape record mounted beside a glass food-web tank. On your left, a lower-trophic-level compartment receives a small amount of a persistent contaminant. Ahead at the center, a sequence of consumers feeds upward through the web while concentration meters follow the contaminant through successive trophic transfers. On your right, a top-consumer meter stands beside a physically separate acid-deposition chemistry lane. Mira keeps the two pathways divided by a clear wall. One traces a persistent substance through trophic levels. The other traces pollutants that alter soil or water chemistry.",
+        "The contaminant enters organisms near the base of the food web. Each concentration meter reports the amount of contaminant relative to the sampled tissue. Small consumers take in contaminated food. Larger consumers eat many of those organisms. Because the compound in this model persists and is transferred through feeding, the concentration rises at successive trophic levels. Mira points to the trophic arrow direction from resource toward consumer so the path of matter is unmistakable. The pattern is **Biological magnification**. Some persistent substances become more concentrated at successive trophic levels through biological magnification.",
+        "Mira changes the compound. The new substance is rapidly broken down and excreted. This time the concentration ladder does not rise in the same way. The room refuses to teach that every pollutant magnifies through a food web. Persistence, storage, exposure, and trophic transfer matter. Biological magnification describes a particular concentration pattern for substances whose properties and movement through organisms support it. The top consumer is not magically creating more contaminant. The pattern reflects how concentration changes across trophic levels as the substance is retained and transferred.",
+        "She then darkens the food-web lane and illuminates the right-side chemistry lane. Airborne pollutants enter precipitation and alter the chemistry of a model watershed. The water becomes more acidic in one basin, while a second basin with greater buffering changes less under the same input. Mira labels the broader mechanism **Pollution and acid deposition**. Pollutants can alter ecosystems directly or through chemical changes such as acid deposition. Effects depend on the pollutant, exposure, and ecosystem buffering.",
+        "To test whether you are still separating causes, Mira runs both lanes at once. The food-web panel shows increasing contaminant concentration at higher trophic levels. The acid-deposition panel shows a chemical change in water and soil with effects shaped by buffering. Both are forms of environmental pollution, yet the causal paths are different. A trophic concentration ladder cannot stand in for acid deposition, and acidified water cannot be used as evidence that a persistent contaminant has magnified through consumers.",
+        "Mira updates the baseline landscape record with contaminant concentration and water-chemistry notes. Then she opens the floor drain into the next room. Nutrient-rich water begins flowing toward a large aquatic tank. At first the tank looks more productive, not less healthy. Green growth spreads across the surface. Mira tells you not to jump from nutrient input directly to fish death. The next room will make you carry the entire causal chain through production, decomposition, oxygen demand, and community change."
+      ],
+      "story_close": "Mira updates the baseline landscape record with contaminant concentration and water-chemistry notes. Then she opens the floor drain into the next room. Nutrient-rich water begins flowing toward a large aquatic tank. At first the tank looks more productive, not less healthy. Green growth spreads across the surface. Mira tells you not to jump from nutrient input directly to fish death. The next room will make you carry the entire causal chain through production, decomposition, oxygen demand, and community change.",
+      "object_ids": [
+        "U8-K-048",
+        "U8-K-206"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-048",
+          "term": "Biological magnification",
+          "story": "the the contaminant concentration ladder beside a separate acid-deposition lane where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Some persistent substances become more concentrated at successive trophic levels through biological magnification.",
+          "exact_name": false,
+          "hint": "the contaminant concentration ladder beside a separate acid-deposition lane",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-206",
+          "term": "Pollution and acid deposition",
+          "story": "the the contaminant concentration ladder beside a separate acid-deposition lane where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Pollutants can alter ecosystems directly or through chemical changes such as acid deposition; effects depend on pollutant, exposure, and ecosystem buffering.",
+          "exact_name": false,
+          "hint": "the contaminant concentration ladder beside a separate acid-deposition lane",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-048",
+          "term": "Biological magnification",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent.",
+        "Discrimination requirement U8-MD39: Separate trophic concentration of persistent substances from nutrient-driven production/decomposition and oxygen decline. Keep Biological magnification, Eutrophication physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "U8-L56",
+      "f3_scene_brief_id": "F3-U8-L55",
+      "narrative_word_count": 510
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U8-L56",
+      "locus": "Eutrophication Water Column",
+      "title": "The Bloom That Stole Oxygen After the Green Explosion",
+      "scene_kicker": "At Eutrophication Water Column, reconstruct excess nutrient input → increased primary production and decomposition → dissolved-oxygen decline and community shift and explain Eutrophication from the actual ecological mechanism.",
+      "location_description": "Eutrophication Water Column",
+      "scene_layout": {
+        "orientation": "Enter Eutrophication Water Column and stop at the nutrient-to-oxygen causal sequence. Keep excess nutrient input fixed on the left, increased primary production and decomposition as the working center, and dissolved-oxygen decline and community shift fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "excess nutrient input",
+            "symbol": "L",
+            "description": "A conventional scientific representation of excess nutrient input, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "increased primary production and decomposition",
+            "symbol": "C",
+            "description": "The main scientific work model at Eutrophication Water Column, centered on the nutrient-to-oxygen causal sequence."
+          },
+          {
+            "position": "right",
+            "label": "dissolved-oxygen decline and community shift",
+            "symbol": "R",
+            "description": "A conventional scientific representation of dissolved-oxygen decline and community shift, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "excess nutrient input",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of excess nutrient input, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "increased primary production and decomposition",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Eutrophication Water Column, centered on the nutrient-to-oxygen causal sequence.",
+          "job": "Execute the defining action beginning with: Add excess limiting nutrients to the aquatic system and track the resulting increase in primary production."
+        },
+        {
+          "name": "dissolved-oxygen decline and community shift",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of dissolved-oxygen decline and community shift, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Eutrophication Water Column beside a tall transparent aquatic tank. On your left, a nutrient inlet controls the amount of limiting nutrients entering the water. Ahead at the center, a primary-production and decomposition chamber tracks algal growth, organic matter, decomposer activity, and microbial oxygen demand. On your right, a dissolved-oxygen probe hangs beside a community panel showing fish, invertebrates, and other aquatic organisms. Mira locks the baseline water chemistry from the previous room into the landscape record before opening the nutrient valve.",
+      "story_paragraphs": [
+        "You enter the Eutrophication Water Column beside a tall transparent aquatic tank. On your left, a nutrient inlet controls the amount of limiting nutrients entering the water. Ahead at the center, a primary-production and decomposition chamber tracks algal growth, organic matter, decomposer activity, and microbial oxygen demand. On your right, a dissolved-oxygen probe hangs beside a community panel showing fish, invertebrates, and other aquatic organisms. Mira locks the baseline water chemistry from the previous room into the landscape record before opening the nutrient valve.",
+        "A moderate nutrient input enters first and the system responds within its ordinary range. Mira then adds a much larger pulse of limiting nutrients. Primary producers grow rapidly, and the center chamber turns green as algal biomass increases. She pauses the sequence here. Extra nutrients can stimulate primary production. That visible increase is only the first step. If you stop the explanation at a green surface or an algal bloom, you have not yet reconstructed the process that threatens oxygen-sensitive organisms.",
+        "As the bloom ages, more organic matter sinks into the center decomposition chamber. Microbes consume the organic material. Their respiration increases oxygen demand in the water. The dissolved-oxygen trace on the right begins to fall. Mira makes you follow the arrows in order. Excess nutrient input increases primary production. Increased organic matter can increase decomposition. Increased microbial respiration consumes dissolved oxygen. Low oxygen can then alter the aquatic community. This chain is **Eutrophication**. Excess nutrient input can stimulate primary production and decomposition, reducing dissolved oxygen and changing aquatic communities.",
+        "The fish panel now shows oxygen-sensitive species leaving or dying in the lowest-oxygen region, while more tolerant organisms persist. Mira adjusts mixing and temperature, and the severity changes. The mechanism remains recognizable even though the outcome varies with environmental conditions. She also reduces the original nutrient pulse and the bloom weakens. The room is teaching a causal chain, not a single photograph of green water.",
+        "Mira briefly projects the concentration ladder from the previous room beside the nutrient sequence. Biological magnification tracks increasing concentration of some persistent substances across trophic levels. Eutrophication follows nutrient enrichment into increased production, decomposition, oxygen demand, and community change. The two can both harm ecosystems, but one cannot be used as the explanation for the other. Their arrows, measured variables, and ecological consequences differ.",
+        "The baseline landscape record receives the new nutrient and dissolved-oxygen measurements. Mira closes the nutrient valve and leads you through a pressure door into a seawater chemistry tank. The water there is clear and contains no algal bloom. A gas line marked carbon dioxide runs into the left side. She asks you to notice how different the starting evidence already looks. The next mechanism will change pH through carbonate chemistry, even if the water never turns green and no nutrient pulse occurs."
+      ],
+      "story_close": "The baseline landscape record receives the new nutrient and dissolved-oxygen measurements. Mira closes the nutrient valve and leads you through a pressure door into a seawater chemistry tank. The water there is clear and contains no algal bloom. A gas line marked carbon dioxide runs into the left side. She asks you to notice how different the starting evidence already looks. The next mechanism will change pH through carbonate chemistry, even if the water never turns green and no nutrient pulse occurs.",
+      "object_ids": [
+        "U8-K-049"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-049",
+          "term": "Eutrophication",
+          "story": "the the nutrient-to-oxygen causal sequence where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Excess nutrient input can stimulate primary production and decomposition, reducing dissolved oxygen and changing aquatic communities.",
+          "exact_name": false,
+          "hint": "the nutrient-to-oxygen causal sequence",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-049",
+          "term": "Eutrophication",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent.",
+        "Discrimination requirement U8-MD39: Separate trophic concentration of persistent substances from nutrient-driven production/decomposition and oxygen decline. Keep Biological magnification, Eutrophication physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "U8-L57",
+      "f3_scene_brief_id": "F3-U8-L56",
+      "narrative_word_count": 465
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U8-L57",
+      "locus": "Ocean Carbonate Chemistry Tank",
+      "title": "The Invisible Gas That Changed the Shell-Building Balance",
+      "scene_kicker": "At Ocean Carbonate Chemistry Tank, reconstruct anthropogenic CO₂ input and dissolution → carbonate-chemistry shift with increased acidity → lower pH and reduced carbonate availability panel and explain Ocean acidification from the actual ecological mechanism.",
+      "location_description": "Ocean Carbonate Chemistry Tank",
+      "scene_layout": {
+        "orientation": "Enter Ocean Carbonate Chemistry Tank and stop at the CO₂-pH-carbonate equilibrium display. Keep anthropogenic CO₂ input and dissolution fixed on the left, carbonate-chemistry shift with increased acidity as the working center, and lower pH and reduced carbonate availability panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "anthropogenic CO₂ input and dissolution",
+            "symbol": "L",
+            "description": "A conventional scientific representation of anthropogenic CO₂ input and dissolution, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "carbonate-chemistry shift with increased acidity",
+            "symbol": "C",
+            "description": "The main scientific work model at Ocean Carbonate Chemistry Tank, centered on the CO₂-pH-carbonate equilibrium display."
+          },
+          {
+            "position": "right",
+            "label": "lower pH and reduced carbonate availability panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of lower pH and reduced carbonate availability panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "anthropogenic CO₂ input and dissolution",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of anthropogenic CO₂ input and dissolution, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "carbonate-chemistry shift with increased acidity",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Ocean Carbonate Chemistry Tank, centered on the CO₂-pH-carbonate equilibrium display.",
+          "job": "Execute the defining action beginning with: Dissolve added CO₂ into seawater and shift carbonate chemistry toward greater acidity."
+        },
+        {
+          "name": "lower pH and reduced carbonate availability panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of lower pH and reduced carbonate availability panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Ocean Carbonate Chemistry Tank with the same baseline landscape record sealed in a waterproof sleeve. On your left, a gas inlet introduces anthropogenic carbon dioxide above a seawater reservoir and a dissolution meter tracks CO₂ entering the water. Ahead at the center, a carbonate-chemistry display shows dissolved carbon dioxide, hydrogen ion, bicarbonate, and carbonate ion relationships changing together. On your right, a pH meter stands beside a carbonate-availability panel and a chamber containing calcifying organisms. Mira fixes the initial chemistry before the gas flow begins.",
+      "story_paragraphs": [
+        "You enter the Ocean Carbonate Chemistry Tank with the same baseline landscape record sealed in a waterproof sleeve. On your left, a gas inlet introduces anthropogenic carbon dioxide above a seawater reservoir and a dissolution meter tracks CO₂ entering the water. Ahead at the center, a carbonate-chemistry display shows dissolved carbon dioxide, hydrogen ion, bicarbonate, and carbonate ion relationships changing together. On your right, a pH meter stands beside a carbonate-availability panel and a chamber containing calcifying organisms. Mira fixes the initial chemistry before the gas flow begins.",
+        "Carbon dioxide enters the seawater and participates in reactions that shift the carbonate system toward greater acidity. The center display shows hydrogen ion concentration increasing as the equilibrium changes. The right pH meter moves downward. Mira keeps the direction explicit. Lower pH means greater acidity. The process is not a nutrient bloom, and it is not simply carbon dioxide sitting in the water without chemical consequence. Dissolved CO₂ changes the acid-base balance of the carbonate system.",
+        "As the chemistry shifts, the right panel also shows carbonate ion availability decreasing. Mira points from that change to the calcifying-organism chamber. Many calcifying organisms use carbonate in building calcium carbonate structures. Reduced carbonate availability can make that process more difficult, though species and habitats do not all respond identically. The room names the complete mechanism **Ocean acidification**. Dissolved anthropogenic CO₂ lowers seawater pH by shifting carbonate chemistry and can reduce carbonate ion availability for calcifying organisms.",
+        "Mira varies the CO₂ input and temperature while keeping the basic chemistry visible. Different biological responses appear, but the defining sequence remains stable. Anthropogenic CO₂ dissolves. Carbonate chemistry shifts. Seawater pH declines. Carbonate ion availability can decline. Calcifying organisms may face altered conditions for building or maintaining structures. The final biological effect depends on physiology, acclimation, habitat, and other environmental factors, so the room never claims one identical outcome for every species.",
+        "She then places the eutrophication sequence beside the carbonate display. Eutrophication begins with excess nutrient input and can reduce dissolved oxygen through increased production and decomposition. Ocean acidification begins with added anthropogenic CO₂ and changes carbonate chemistry and pH. Both can occur in aquatic environments, and they may interact in real systems, but the mechanisms are not interchangeable. Mira makes you point to the nutrient valve for one and the CO₂ dissolution line for the other.",
+        "The baseline landscape record now contains a lower pH and reduced carbonate availability alongside its earlier habitat, population, trophic, and nutrient notes. Mira carries the record up a spiral stairway into the final map room. Below you, local mechanisms have filled the card with evidence. Above you, a layered atlas covers an entire region. Coastlines, mountain barriers, storm tracks, latitude bands, species-richness patterns, and disease records appear on separate transparent sheets. The last task will be to reason across large spatial scales without forcing every pattern into a single cause."
+      ],
+      "story_close": "The baseline landscape record now contains a lower pH and reduced carbonate availability alongside its earlier habitat, population, trophic, and nutrient notes. Mira carries the record up a spiral stairway into the final map room. Below you, local mechanisms have filled the card with evidence. Above you, a layered atlas covers an entire region. Coastlines, mountain barriers, storm tracks, latitude bands, species-richness patterns, and disease records appear on separate transparent sheets. The last task will be to reason across large spatial scales without forcing every pattern into a single cause.",
+      "object_ids": [
+        "U8-K-207"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-207",
+          "term": "Ocean acidification",
+          "story": "the the CO₂-pH-carbonate equilibrium display where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Dissolved anthropogenic CO₂ lowers seawater pH by shifting carbonate chemistry and can reduce carbonate ion availability for calcifying organisms.",
+          "exact_name": true,
+          "hint": "the CO₂-pH-carbonate equilibrium display",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-207",
+      "checkpoint_prompt": "Without looking back, identify or explain Ocean acidification from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Dissolved anthropogenic CO₂ lowers seawater pH by shifting carbonate chemistry and can reduce carbonate ion availability for calcifying organisms.",
+      "next_locus": "U8-L58",
+      "f3_scene_brief_id": "F3-U8-L57",
+      "narrative_word_count": 479
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U8-L58",
+      "locus": "Regional Change and Biogeography Map Room",
+      "title": "The Atlas That Refused a Single Explanation",
+      "scene_kicker": "At Regional Change and Biogeography Map Room, reconstruct geological/meteorological driver layer → latitude/climate/history richness layer → host-pathogen-community context layer and explain Geological and meteorological change from the actual ecological mechanism.",
+      "location_description": "Regional Change and Biogeography Map Room",
+      "scene_layout": {
+        "orientation": "Enter Regional Change and Biogeography Map Room and stop at the layered regional distribution atlas. Keep geological/meteorological driver layer fixed on the left, latitude/climate/history richness layer as the working center, and host-pathogen-community context layer fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "geological/meteorological driver layer",
+            "symbol": "L",
+            "description": "A conventional scientific representation of geological/meteorological driver layer, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "latitude/climate/history richness layer",
+            "symbol": "C",
+            "description": "The main scientific work model at Regional Change and Biogeography Map Room, centered on the layered regional distribution atlas."
+          },
+          {
+            "position": "right",
+            "label": "host-pathogen-community context layer",
+            "symbol": "R",
+            "description": "A conventional scientific representation of host-pathogen-community context layer, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "geological/meteorological driver layer",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of geological/meteorological driver layer, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "latitude/climate/history richness layer",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Regional Change and Biogeography Map Room, centered on the layered regional distribution atlas.",
+          "job": "Execute the defining action beginning with: Apply geological or meteorological change to habitat boundaries and trace resulting changes in ecosystem distribution using biogeographic evidence."
+        },
+        {
+          "name": "host-pathogen-community context layer",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of host-pathogen-community context layer, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "baseline landscape record",
+          "kind": "journey continuity object",
+          "visual": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+          "job": "preserves one ecological baseline while each room changes one driver and records the resulting population, community, chemical, or geographic consequence"
+        }
+      ],
+      "continuity_object": "one baseline landscape record carrying habitat area, focal population size, community composition, trophic structure, water chemistry, and geographic context fields through all eight locations",
+      "story_open": "You enter the Regional Change and Biogeography Map Room at the top of the response center. On your left, a geological and meteorological driver layer shows coastlines, uplift, volcanic events, drought zones, storm tracks, and long-term climate shifts. Ahead at the center, a latitude, climate, and history atlas displays broad species-richness patterns from the tropics toward the poles. On your right, a disease-ecology panel combines host density, immunity, species interactions, environmental conditions, and pathogen traits. Mira lays the completed baseline landscape record across the central table so every local mechanism from the journey remains visible beneath the regional maps.",
+      "story_paragraphs": [
+        "You enter the Regional Change and Biogeography Map Room at the top of the response center. On your left, a geological and meteorological driver layer shows coastlines, uplift, volcanic events, drought zones, storm tracks, and long-term climate shifts. Ahead at the center, a latitude, climate, and history atlas displays broad species-richness patterns from the tropics toward the poles. On your right, a disease-ecology panel combines host density, immunity, species interactions, environmental conditions, and pathogen traits. Mira lays the completed baseline landscape record across the central table so every local mechanism from the journey remains visible beneath the regional maps.",
+        "She begins by moving the coastline after a simulated geological event. A wetland shrinks, a new barrier appears, and the modeled distribution of several species changes. Then she shifts a long-term precipitation pattern and watches a grassland boundary move. Mira names the broad driver category **Geological and meteorological change**. Geological and meteorological events can change habitats and ecosystem distributions. Biogeographic evidence can reveal these effects. The map does not claim that every distribution boundary has one cause. It asks whether the geographic pattern is consistent with the history and environmental change being examined.",
+        "The center atlas then lights a familiar broad pattern. Species richness is often higher at lower latitudes and declines toward the poles in many groups. Mira identifies this as the **Latitudinal diversity gradient**. Species richness often increases toward the tropics, a broad pattern explained by multiple historical, climatic, and ecological mechanisms rather than a single cause. She layers climate stability, productivity, evolutionary history, geographic area, and other hypotheses without allowing any one layer to erase the others. The pattern is real enough to study, while its explanation is multicausal and can differ among taxa and regions.",
+        "Mira also returns to the species-area map from the fragmentation room. Larger comparable areas often support more species, yet habitat heterogeneity, population size, isolation, and history can help produce the observed relationship. She places the two broad patterns side by side. A latitudinal gradient is not a species-area curve, and neither should be memorized as if one universal mechanism generated every case. Biogeography becomes stronger when the learner asks which processes and historical evidence fit the spatial pattern.",
+        "The right disease-ecology panel now activates. One model has high host density but strong immunity. Another has lower density but environmental conditions that favor pathogen persistence. A third has community interactions that alter contact among hosts. Mira labels the conclusion **Disease ecology depends on context**. Pathogen effects depend on host density, immunity, species interactions, environmental conditions, and pathogen traits. Low biodiversity or novel habitat alone does not universally predict the greatest disease impact. She changes one variable at a time and the disease outcome shifts.",
+        "Mira spreads the baseline landscape record across all three panels for the final reconstruction. Existing variation preceded selection. Introduction remained separate from invasion. Habitat loss and isolation were separated during fragmentation. Harvest was compared with replacement. Persistent contaminant magnification remained separate from acid deposition. Nutrient enrichment led through production and decomposition to oxygen decline. Added CO₂ shifted carbonate chemistry and pH. Large-scale geological, meteorological, and biogeographic patterns remained conditional on evidence and context. Each room earned its conclusion through a visible causal chain.",
+        "The exit wall opens into a wide window overlooking the entire Ecology complex. Mira leaves the completed record on the table and asks you to rebuild the route without it. You begin with variation before selection, then trace arrival before invasion, intact habitat before fragmentation, recruitment against harvest, contaminant transfer through trophic levels, nutrient input through oxygen decline, CO₂ through carbonate chemistry, and regional drivers through biogeographic evidence. The response center has one final rule. Environmental change is not one explanation. It is a set of mechanisms whose causes, scales, and consequences must be kept visible long enough to tell them apart."
+      ],
+      "story_close": "The exit wall opens into a wide window overlooking the entire Ecology complex. Mira leaves the completed record on the table and asks you to rebuild the route without it. You begin with variation before selection, then trace arrival before invasion, intact habitat before fragmentation, recruitment against harvest, contaminant transfer through trophic levels, nutrient input through oxygen decline, CO₂ through carbonate chemistry, and regional drivers through biogeographic evidence. The response center has one final rule. Environmental change is not one explanation. It is a set of mechanisms whose causes, scales, and consequences must be kept visible long enough to tell them apart.",
+      "object_ids": [
+        "U8-K-050",
+        "U8-K-210",
+        "U8-K-211"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-050",
+          "term": "Geological and meteorological change",
+          "story": "the the layered regional distribution atlas where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Geological and meteorological events can change habitats and ecosystem distributions; biogeographic evidence can reveal these effects.",
+          "exact_name": false,
+          "hint": "the layered regional distribution atlas",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-210",
+          "term": "Latitudinal diversity gradient",
+          "story": "the the layered regional distribution atlas where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Species richness often increases toward the tropics, a broad pattern explained by multiple historical, climatic, and ecological mechanisms rather than a single cause.",
+          "exact_name": true,
+          "hint": "the layered regional distribution atlas",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-211",
+          "term": "Disease ecology depends on context",
+          "story": "the the layered regional distribution atlas where the environmental driver, ecological comparison, chemical shift, or biogeographic pattern becomes visible before the term is named",
+          "science": "Pathogen effects depend on host density, immunity, species interactions, environmental conditions, and pathogen traits; low biodiversity or novel habitat alone does not universally predict the greatest disease impact.",
+          "exact_name": false,
+          "hint": "the layered regional distribution atlas",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-050",
+          "term": "Geological and meteorological change",
+          "dependency": "Unit 5 heredity; Unit 6 mutation; Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent.",
+        "Resolved F1 guard RF-U8-027: Lock treats both as broad patterns with multiple mechanisms.",
+        "Resolved F1 guard RF-U8-028: Lock removes universal claim and preserves disease ecology as context-dependent."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U8-L58",
+      "narrative_word_count": 636
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "prior_narrative_locks": [
+    "LOCKED_F4A_J1",
+    "LOCKED_F4B_J2",
+    "LOCKED_F4C_J3",
+    "LOCKED_F4D_J4",
+    "LOCKED_F4E_J5",
+    "LOCKED_F4F_J6",
+    "LOCKED_F4G_J7"
+  ]
+}

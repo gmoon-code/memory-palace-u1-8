@@ -1,0 +1,1131 @@
+{
+  "palace_id": "U6-J2",
+  "unit_id": "unit-6",
+  "palace_name": "RNA Transcript Workshop",
+  "story_title": "The Message That Was Not Ready to Leave",
+  "tagline": "One tagged gene has been cleared for expression, but the workshop cannot release its RNA until RNA roles, template choice, promoter entry, transcription direction, cellular context, end processing, and splicing all agree.",
+  "guide": {
+    "name": "Dr. Sora Han",
+    "role": "molecular-information systems director",
+    "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+    "story_job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+  },
+  "premise": "A tagged gene arrives at the RNA Transcript Workshop with its violet template strand marked and a blank red transcript ribbon clipped beside it. The workshop has mixed mRNA, tRNA, and rRNA into one generic RNA category, lost the distinction between transcription and translation, and routed both bacterial and eukaryotic transcripts through the same exit. Dr. Sora Han must follow one gene and its RNA product through eight connected locations, preserving strand direction and cellular context while the message is made and, where appropriate, processed.",
+  "mission": "Follow the tagged gene from RNA-role sorting through transcription entry and directional synthesis, then compare the open prokaryotic exit with the eukaryotic pre-mRNA processing route. Keep the same violet template strand and red RNA transcript identifiable while promoter, 5′→3′ synthesis, cap, poly-A tail, introns, exons, alternative splicing, and mature mRNA are resolved.",
+  "finale": "The workshop releases a mature eukaryotic mRNA only after the same transcript has been synthesized 5′→3′ from one DNA template, distinguished from bacterial transcript handling, capped, polyadenylated, and spliced. The tagged gene remains DNA, transcription remains distinct from translation, and the completed red RNA message exits toward the ribosome with its processing history reconstructable from the route.",
+  "estimated_minutes": 25,
+  "scene_count": 8,
+  "checkpoint_count": 3,
+  "student_release": "DEVELOPER_PREVIEW_F4B",
+  "preview_release": true,
+  "narrative_design": "U6-F4B-NARRATIVE-1.0",
+  "learner_rule": "Read or listen and place yourself in the room before following the molecular action. The same tagged gene and red RNA transcript persist across all eight locations. Exact terms are attached to structures and mechanisms after their defining feature is visible. Optional Quick Recall appears only three times.",
+  "route_orientation": "This is one continuous eight-location route through the RNA Transcript Workshop. Enter at the RNA Function Desk, pass the tRNA Courier Bay and Gene Expression Junction, choose the template and promoter at the entry gate, follow the transcript along the direction rail, compare the open prokaryotic exit, then finish at the eukaryotic processing counter and splice chamber. The same tagged gene, violet template strand, promoter marker, and red RNA transcript remain reconstructable throughout.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "RNA Function Desk",
+      "short": "RNA roles",
+      "floor": "Workshop intake",
+      "symbol": "RNA"
+    },
+    {
+      "scene_index": 1,
+      "locus": "tRNA Courier Bay",
+      "short": "tRNA",
+      "floor": "Courier bay",
+      "symbol": "tRNA"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Gene Expression Junction",
+      "short": "Expression",
+      "floor": "Junction",
+      "symbol": "DNA→RNA→P"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Template–Promoter Entry Gate",
+      "short": "Template",
+      "floor": "Entry gate",
+      "symbol": "PROM"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Transcription Direction Rail",
+      "short": "Transcribe",
+      "floor": "Direction rail",
+      "symbol": "5′→3′"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Prokaryotic Transcript Exit",
+      "short": "Prokaryote",
+      "floor": "Open exit",
+      "symbol": "↔"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Pre-mRNA Processing Counter",
+      "short": "Process",
+      "floor": "Nuclear counter",
+      "symbol": "CAP—Aₙ"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Splice and Isoform Chamber",
+      "short": "Splice",
+      "floor": "Export chamber",
+      "symbol": "✂RNA"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U6-L13",
+      "locus": "RNA Function Desk",
+      "title": "Three RNA Ribbons Arrive With the Same Name and Different Jobs",
+      "scene_kicker": "The workshop cannot route an RNA molecule by the word RNA alone; sequence and folded structure determine what each molecule can do.",
+      "location_description": "the RNA desk where sequence and structure are tied to RNA function and mRNA, tRNA, and rRNA receive distinct jobs",
+      "scene_layout": {
+        "orientation": "Enter RNA Function Desk and stop at the RNA desk where sequence and structure are tied to RNA function and mRNA, tRNA, and rRNA receive distinct jobs. The left side is anchored by mRNA message lane, the working center is RNA sequence/structure function desk, and the right side is anchored by rRNA ribosome-component lane. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "mRNA message lane",
+            "symbol": "mRNA",
+            "description": "A clean RNA ribbon runs leftward toward a message rack labeled for ribosome delivery. It remains physically separate from the structural RNA models elsewhere in the room."
+          },
+          {
+            "position": "center",
+            "label": "RNA sequence/structure function desk",
+            "symbol": "RNA↺",
+            "description": "A broad center desk holds three RNA molecules whose different nucleotide sequences and folded shapes can be compared before their jobs are assigned."
+          },
+          {
+            "position": "right",
+            "label": "rRNA ribosome-component lane",
+            "symbol": "rRNA",
+            "description": "A ribosomal RNA model occupies the right lane and folds into a ribosome-shaped structural/catalytic display rather than carrying a message."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "mRNA message lane",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A clean RNA ribbon runs leftward toward a message rack labeled for ribosome delivery. It remains physically separate from the structural RNA models elsewhere in the room.",
+          "job": "Preserve the F3 left-side anchor (mRNA message lane) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "RNA sequence/structure function desk",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A broad center desk holds three RNA molecules whose different nucleotide sequences and folded shapes can be compared before their jobs are assigned.",
+          "job": "Preserve the F3 center-side anchor (RNA sequence/structure function desk) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "rRNA ribosome-component lane",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A ribosomal RNA model occupies the right lane and folds into a ribosome-shaped structural/catalytic display rather than carrying a message.",
+          "job": "Preserve the F3 right-side anchor (rRNA ribosome-component lane) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "The **RNA Transcript Workshop** begins in a low, rectangular intake room where three RNA molecules have been delivered to the wrong desk. On your **left**, an **mRNA message lane** ends at a rack shaped for a long, readable RNA ribbon. Directly **ahead**, the center **RNA sequence/structure function desk** holds three transparent RNA models under adjustable folding frames. On your **right**, an **rRNA ribosome-component lane** ends at a half-built ribosome shell. Dr. Sora Han places her copper ledger on the center desk. Behind her, a tagged gene waits inside a glass carrier: one DNA strand is violet, the opposite strand gold, and a small promoter marker sits just before the region that will eventually be transcribed. A red RNA ribbon is clipped to the carrier but is still only a short stub. The workshop doors remain shut because every incoming RNA has been stamped simply RNA, as though that label alone explained its function.",
+      "story_paragraphs": [
+        "The **RNA Transcript Workshop** begins in a low, rectangular intake room where three RNA molecules have been delivered to the wrong desk. On your **left**, an **mRNA message lane** ends at a rack shaped for a long, readable RNA ribbon. Directly **ahead**, the center **RNA sequence/structure function desk** holds three transparent RNA models under adjustable folding frames. On your **right**, an **rRNA ribosome-component lane** ends at a half-built ribosome shell. Dr. Sora Han places her copper ledger on the center desk. Behind her, a tagged gene waits inside a glass carrier: one DNA strand is violet, the opposite strand gold, and a small promoter marker sits just before the region that will eventually be transcribed. A red RNA ribbon is clipped to the carrier but is still only a short stub. The workshop doors remain shut because every incoming RNA has been stamped simply RNA, as though that label alone explained its function.",
+        "Sora lifts the first RNA model and changes nothing except its nucleotide sequence and the places where the strand can base-pair with itself. The molecule bends into a new three-dimensional shape. She then does the same with the second model, producing a different fold and a different interaction surface. Only after the physical difference is visible does she write **RNA sequence and structure determine function**. RNA is not one generic cable. Its base sequence helps determine how the molecule folds and what other molecules it can recognize or become part of, so sequence and structure together constrain function. That principle will matter throughout the workshop because the RNA transcript you follow will change in length and processing state while retaining an identifiable nucleotide sequence.",
+        "She slides one long RNA ribbon to the lane on your left. Its job is informational rather than structural. The ribbon carries a nucleotide sequence copied from DNA toward a ribosome, where that sequence can later guide translation. Sora labels this **mRNA function**: messenger RNA carries genetic information from DNA to ribosomes for translation. The label belongs to the molecule because of what it carries and where that information is used. She does not send the mRNA into the ribosome as a structural brick; it remains a readable message that the ribosome will move along.",
+        "On the right, the second RNA model folds into the waiting ribosomal shell. It does not leave as a message. The RNA itself becomes part of the ribosome’s structure and catalytic machinery. Sora names this **rRNA as ribosome component**: ribosomal RNA is a functional building block of ribosomes and participates in protein synthesis. A small size chart appears beside the display, but Sora keeps it secondary. The bacterial ribosome is built from 30S and 50S subunits, while a eukaryotic cytosolic ribosome has 40S and 60S subunits. Those numbers describe ribosome types; they do not change the central relationship that rRNA is a working part of the ribosome.",
+        "The third RNA model remains on the center desk. It is compact, folded, and carries a small docking site at one end and a three-base reading region at the other. Sora does not name its detailed job yet. Instead, she places an amino acid on the left wall and an mRNA codon on the right wall, then lets the third RNA hang between them like a courier waiting for two addresses. The intake problem is now clear. mRNA, rRNA, and the waiting courier are all RNA, yet their sequences, structures, and molecular partners give them different roles. The center desk unlocks a narrow door marked COURIER BAY. The red transcript stub on the tagged gene remains unchanged; before the workshop can make that transcript, you first need to understand the RNA molecule that will later read its codons."
+      ],
+      "story_close": "The third RNA model remains on the center desk. It is compact, folded, and carries a small docking site at one end and a three-base reading region at the other. Sora does not name its detailed job yet. Instead, she places an amino acid on the left wall and an mRNA codon on the right wall, then lets the third RNA hang between them like a courier waiting for two addresses. The intake problem is now clear. mRNA, rRNA, and the waiting courier are all RNA, yet their sequences, structures, and molecular partners give them different roles. The center desk unlocks a narrow door marked COURIER BAY. The red transcript stub on the tagged gene remains unchanged; before the workshop can make that transcript, you first need to understand the RNA molecule that will later read its codons.",
+      "object_ids": [
+        "U6-K-018",
+        "U6-K-019",
+        "U6-K-023"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-018",
+          "term": "RNA sequence and structure determine function",
+          "story": "three RNA ribbons on the center desk folding into different shapes before being routed to different jobs",
+          "science": "The sequence of RNA bases together with RNA molecular structure determines RNA function.",
+          "exact_name": true,
+          "hint": "three RNA ribbons on the center desk folding into different shapes before being routed to different jobs",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-019",
+          "term": "mRNA function",
+          "story": "the long mRNA ribbon moving left toward the ribosome-message rack",
+          "science": "Messenger RNA carries genetic information from DNA to ribosomes for translation.",
+          "exact_name": true,
+          "hint": "the long mRNA ribbon moving left toward the ribosome-message rack",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-023",
+          "term": "rRNA as ribosome component",
+          "story": "the rRNA model becoming part of the right-side ribosome shell",
+          "science": "Ribosomal RNA is a functional building block of ribosomes and participates in protein synthesis.",
+          "exact_name": true,
+          "hint": "the rRNA model becoming part of the right-side ribosome shell",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-012: An anticodon is a three-nucleotide tRNA sequence complementary and antiparallel to an mRNA codon; it is not itself called a codon.",
+        "Resolved F1 guard RF-U6-019: Correct to 30S small + 50S large = 70S prokaryotic ribosome. Eukaryotic cytosolic ribosomes are 40S small + 60S large = 80S. These sizes remain teacher enrichment, not AP-required memorization.",
+        "Discrimination requirement U6-D11: keep mRNA function, tRNA amino-acid specificity, rRNA as ribosome component physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "tRNA Courier Bay",
+      "f3_scene_brief_id": "F3-U6-L13",
+      "narrative_word_count": 618
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U6-L14",
+      "locus": "tRNA Courier Bay",
+      "title": "The Courier Must Carry the Right Cargo and Read the Right Address",
+      "scene_kicker": "A tRNA links one specific amino acid to one complementary mRNA codon, so cargo identity and codon recognition must stay distinct.",
+      "location_description": "the courier bay where each tRNA carries a specific amino acid, pairs its anticodon with mRNA, and is recruited during translation",
+      "scene_layout": {
+        "orientation": "Enter tRNA Courier Bay and stop at the courier bay where each tRNA carries a specific amino acid, pairs its anticodon with mRNA, and is recruited during translation. The left side is anchored by amino-acid attachment side, the working center is tRNA anticodon courier, and the right side is anchored by mRNA pairing / recruitment side. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "amino-acid attachment side",
+            "symbol": "AA",
+            "description": "Amino acids wait on individual attachment pads on the left, each pad aligned with a matching tRNA identity."
+          },
+          {
+            "position": "center",
+            "label": "tRNA anticodon courier",
+            "symbol": "tRNA",
+            "description": "A cloverleaf tRNA model stands at center with its amino-acid attachment end high and its three-base anticodon exposed low on the molecule."
+          },
+          {
+            "position": "right",
+            "label": "mRNA pairing / recruitment side",
+            "symbol": "codon",
+            "description": "A horizontal mRNA ribbon enters from the right so a complementary anticodon can pair antiparallel with one codon before the tRNA moves toward a ribosome marker."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "amino-acid attachment side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Amino acids wait on individual attachment pads on the left, each pad aligned with a matching tRNA identity.",
+          "job": "Preserve the F3 left-side anchor (amino-acid attachment side) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "tRNA anticodon courier",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A cloverleaf tRNA model stands at center with its amino-acid attachment end high and its three-base anticodon exposed low on the molecule.",
+          "job": "Preserve the F3 center-side anchor (tRNA anticodon courier) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "mRNA pairing / recruitment side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A horizontal mRNA ribbon enters from the right so a complementary anticodon can pair antiparallel with one codon before the tRNA moves toward a ribosome marker.",
+          "job": "Preserve the F3 right-side anchor (mRNA pairing / recruitment side) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "The door opens into the **tRNA Courier Bay**, a narrow loading room arranged around a single cloverleaf-shaped molecule. On your **left**, an **amino-acid attachment side** holds twenty small cargo pads, each displaying an amino-acid name. Directly **ahead**, a large **tRNA anticodon courier** is suspended upright at center. Its amino-acid attachment end points upward, while a three-base anticodon hangs at the bottom. On your **right**, an **mRNA pairing / recruitment side** carries a horizontal mRNA ribbon with one codon framed in light. A ribosome marker waits farther down that same right-side track. Sora brings the tagged gene carrier into the room and clips it near the door. The short red RNA transcript is still attached to the carrier, reminding you that this courier system will matter only after a message has been made.",
+      "story_paragraphs": [
+        "The door opens into the **tRNA Courier Bay**, a narrow loading room arranged around a single cloverleaf-shaped molecule. On your **left**, an **amino-acid attachment side** holds twenty small cargo pads, each displaying an amino-acid name. Directly **ahead**, a large **tRNA anticodon courier** is suspended upright at center. Its amino-acid attachment end points upward, while a three-base anticodon hangs at the bottom. On your **right**, an **mRNA pairing / recruitment side** carries a horizontal mRNA ribbon with one codon framed in light. A ribosome marker waits farther down that same right-side track. Sora brings the tagged gene carrier into the room and clips it near the door. The short red RNA transcript is still attached to the carrier, reminding you that this courier system will matter only after a message has been made.",
+        "Sora begins at the left cargo pads. She tries attaching the same amino acid to several differently labeled tRNAs, and the bay rejects the mismatches. Distinct tRNA molecules are associated with specific amino acids. Only when the correct pairing is made does the attachment light turn green. Sora records **tRNA amino-acid specificity**: distinct tRNA molecules bind specific amino acids. The important image is the cargo end of the tRNA. The amino acid does not attach to the anticodon, and the anticodon does not decide by itself which amino acid is chemically attached. Cargo identity and message recognition are two features of the same tRNA molecule that must remain mentally separate.",
+        "She then lowers the charged tRNA toward the mRNA track on your right. The three bases on the tRNA rotate until they face a three-base sequence on the mRNA. The two sequences align in opposite directions and pair complementarily. Sora names **tRNA anticodon pairing**: each tRNA has an anticodon that base-pairs with a complementary mRNA codon. She traces the three bases with her compass tablet. The tRNA sequence is an **anticodon**; the corresponding three-base sequence on mRNA is a **codon**. Calling both of them codons would erase the directional relationship that lets the courier recognize the message.",
+        "Only after the cargo and the anticodon are both correct does the right-side track move. The tRNA slides toward the ribosome marker with its amino acid still attached. This is **tRNA recruitment during translation**: tRNA is recruited to the ribosome so the mRNA sequence can direct the primary amino-acid sequence. Sora leaves the ribosome itself unopened because the detailed translation machinery belongs to the next journey. Here the goal is to make one bridge unmistakable. A nucleotide sequence in mRNA can influence the order of amino acids only because tRNAs bring specific amino-acid cargo while recognizing codons through complementary anticodons.",
+        "The bay freezes with three positions easy to reconstruct: amino-acid cargo on the left, tRNA in the center, mRNA codon and future ribosome on the right. Sora closes her ledger and points back to the tagged gene. The workshop now has three RNA roles on record, but it still has not answered the larger question of how information in that DNA becomes either a functional RNA product or a polypeptide. A circular floor junction ahead lights two arrows at once: DNA→RNA to the left, RNA→POLYPEPTIDE to the right. The courier track feeds directly into it.",
+        "**Optional Quick Recall.** Without looking back, picture the tRNA suspended in the middle of the bay. What does **tRNA amino-acid specificity** mean? The answer should come from the left-side cargo test: distinct tRNA molecules bind specific amino acids."
+      ],
+      "story_close": "**Optional Quick Recall.** Without looking back, picture the tRNA suspended in the middle of the bay. What does **tRNA amino-acid specificity** mean? The answer should come from the left-side cargo test: distinct tRNA molecules bind specific amino acids.",
+      "object_ids": [
+        "U6-K-020",
+        "U6-K-021",
+        "U6-K-022"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-020",
+          "term": "tRNA amino-acid specificity",
+          "story": "the center tRNA accepting only its matching amino-acid cargo on the left",
+          "science": "Distinct tRNA molecules bind specific amino acids.",
+          "exact_name": true,
+          "hint": "the center tRNA accepting only its matching amino-acid cargo on the left",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-021",
+          "term": "tRNA anticodon pairing",
+          "story": "the tRNA anticodon pairing antiparallel with a complementary mRNA codon on the right",
+          "science": "Each tRNA has an anticodon that base-pairs with a complementary mRNA codon.",
+          "exact_name": true,
+          "hint": "the tRNA anticodon pairing antiparallel with a complementary mRNA codon on the right",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-022",
+          "term": "tRNA recruitment during translation",
+          "story": "the correctly charged, correctly paired tRNA moving toward the ribosome marker",
+          "science": "tRNA is recruited to the ribosome so the mRNA sequence can direct the primary amino-acid sequence.",
+          "exact_name": true,
+          "hint": "the correctly charged, correctly paired tRNA moving toward the ribosome marker",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-012: An anticodon is a three-nucleotide tRNA sequence complementary and antiparallel to an mRNA codon; it is not itself called a codon.",
+        "Resolved F1 guard RF-U6-018: Preserve as teacher enrichment; current CED excludes memorization of translation enzymes/factors beyond the salient mechanistic features.",
+        "Discrimination requirement U6-D11: keep mRNA function, tRNA amino-acid specificity, rRNA as ribosome component physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U6-D16: keep Codons, tRNA anticodon pairing physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-020",
+      "checkpoint_prompt": "Without looking back, identify or explain tRNA amino-acid specificity from the scientific action you just watched.",
+      "checkpoint_answer": "Distinct tRNA molecules bind specific amino acids.",
+      "next_locus": "Gene Expression Junction",
+      "f3_scene_brief_id": "F3-U6-L14",
+      "narrative_word_count": 573
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U6-L15",
+      "locus": "Gene Expression Junction",
+      "title": "One Junction Separates Copying a Message From Reading It",
+      "scene_kicker": "Gene expression contains distinct information-transfer processes, and a protein-coding route does not begin with translation.",
+      "location_description": "the junction separating transcription from translation while reactivating protein structure as the downstream functional destination",
+      "scene_layout": {
+        "orientation": "Enter Gene Expression Junction and stop at the junction separating transcription from translation while reactivating protein structure as the downstream functional destination. The left side is anchored by transcription DNA→RNA lane, the working center is gene-expression junction, and the right side is anchored by translation RNA→polypeptide lane. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "transcription DNA→RNA lane",
+            "symbol": "DNA→RNA",
+            "description": "A tagged gene and a growing RNA ribbon occupy the left lane, showing information copied from DNA into RNA."
+          },
+          {
+            "position": "center",
+            "label": "gene-expression junction",
+            "symbol": "GENE",
+            "description": "A circular junction at center receives information from the gene and routes it either to a functional RNA destination or onward toward a protein-coding route."
+          },
+          {
+            "position": "right",
+            "label": "translation RNA→polypeptide lane",
+            "symbol": "RNA→protein",
+            "description": "A ribosome and growing amino-acid chain occupy the right lane, physically separated from the DNA-to-RNA process on the left."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "transcription DNA→RNA lane",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A tagged gene and a growing RNA ribbon occupy the left lane, showing information copied from DNA into RNA.",
+          "job": "Preserve the F3 left-side anchor (transcription DNA→RNA lane) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "gene-expression junction",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A circular junction at center receives information from the gene and routes it either to a functional RNA destination or onward toward a protein-coding route.",
+          "job": "Preserve the F3 center-side anchor (gene-expression junction) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "translation RNA→polypeptide lane",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A ribosome and growing amino-acid chain occupy the right lane, physically separated from the DNA-to-RNA process on the left.",
+          "job": "Preserve the F3 right-side anchor (translation RNA→polypeptide lane) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "You enter the **Gene Expression Junction** at the point where the workshop divides into two visibly different operations. On your **left**, the **transcription DNA→RNA lane** holds the same tagged gene and the short red RNA ribbon beside it. Directly **ahead**, a circular **gene-expression junction** has two destination gates: FUNCTIONAL RNA and PROTEIN-CODING OUTPUT. On your **right**, the **translation RNA→polypeptide lane** contains a ribosome model and a chain of amino-acid beads beginning to emerge from it. Sora stands in the center and turns off every arrow except the one from the DNA gene to the RNA ribbon. The spatial separation matters. If the left and right lanes are collapsed together, transcription and translation become a single vague event, and every directional rule that follows becomes harder to understand.",
+      "story_paragraphs": [
+        "You enter the **Gene Expression Junction** at the point where the workshop divides into two visibly different operations. On your **left**, the **transcription DNA→RNA lane** holds the same tagged gene and the short red RNA ribbon beside it. Directly **ahead**, a circular **gene-expression junction** has two destination gates: FUNCTIONAL RNA and PROTEIN-CODING OUTPUT. On your **right**, the **translation RNA→polypeptide lane** contains a ribosome model and a chain of amino-acid beads beginning to emerge from it. Sora stands in the center and turns off every arrow except the one from the DNA gene to the RNA ribbon. The spatial separation matters. If the left and right lanes are collapsed together, transcription and translation become a single vague event, and every directional rule that follows becomes harder to understand.",
+        "Before either gate opens, Sora briefly places a folded protein model beside the right lane. You have already seen that a protein is built from one or more polypeptide chains whose amino-acid sequence contributes to higher-order structure and function. That **Protein structure prerequisite** stays exactly what it was; the workshop does not create a second mnemonic for it. Sora uses it only as the downstream reason a protein-coding gene matters. If the amino-acid sequence changes, the structure and function of the protein may change. The journey here is about how nucleotide information reaches that downstream sequence.",
+        "She places the tagged gene at the center junction and opens both destination gates. Some genes produce functional RNA products that work as RNA. Protein-coding genes continue farther and ultimately produce polypeptides. Sora names the larger process **Gene expression**: gene expression is the use of information in a gene to produce a functional RNA or polypeptide product; for protein-coding genes it includes transcription and translation. This definition prevents a common shortcut. Gene expression is broader than translation, and not every gene must end as a protein to count as expressed.",
+        "Sora now activates only the left lane. RNA polymerase appears beside the DNA, and the red RNA ribbon begins extending from information in one DNA strand. Only after the DNA-to-RNA direction is physically visible does she name the process. **Transcription definition**: transcription is DNA-directed synthesis of RNA by RNA polymerase. The DNA remains DNA. The RNA is a new nucleic-acid product whose sequence is directed by the DNA template. No ribosome is needed to perform this step.",
+        "Then the left lane stops and the right lane activates. A mature mRNA ribbon enters a ribosome. Amino acids are added to a growing polypeptide in an order specified by the mRNA nucleotide sequence. Sora names **Translation definition**: translation is synthesis of a polypeptide using the nucleotide sequence of mRNA as information at a ribosome. The two lanes now make a clean distinction: transcription converts information from DNA into RNA; translation uses an mRNA sequence to specify a polypeptide. In a eukaryotic cell, transcription of nuclear genes occurs in the nucleus and translation occurs in the cytoplasm. Prokaryotes have no nucleus, so that spatial separation does not apply in the same way.",
+        "The junction lights only the DNA→RNA lane again. The red RNA ribbon retracts to its short starting stub, because you are about to follow transcription rather than skip ahead to translation. The tagged gene moves through a gate where its two strands separate just enough to reveal that only one will be read. A large promoter marker waits before the gene, and a much smaller TATA panel hangs off to the right. The workshop cannot begin transcription until those structures are distinguished."
+      ],
+      "story_close": "The junction lights only the DNA→RNA lane again. The red RNA ribbon retracts to its short starting stub, because you are about to follow transcription rather than skip ahead to translation. The tagged gene moves through a gate where its two strands separate just enough to reveal that only one will be read. A large promoter marker waits before the gene, and a much smaller TATA panel hangs off to the right. The workshop cannot begin transcription until those structures are distinguished.",
+      "object_ids": [
+        "U6-K-116",
+        "U6-K-117",
+        "U6-K-118",
+        "U6-K-119"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-116",
+          "term": "Protein structure prerequisite",
+          "story": "the already-known folded protein model placed only at the downstream end of the gene-expression route",
+          "science": "Proteins are polypeptide chains of amino acids joined by peptide bonds; amino-acid sequence contributes to higher-order structure and function.",
+          "exact_name": false,
+          "hint": "the already-known folded protein model placed only at the downstream end of the gene-expression route",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-117",
+          "term": "Gene expression",
+          "story": "the center gene-expression junction routing gene information toward a functional RNA or polypeptide product",
+          "science": "Gene expression is the use of information in a gene to produce a functional RNA or polypeptide product; for protein-coding genes it includes transcription and translation.",
+          "exact_name": true,
+          "hint": "the center gene-expression junction routing gene information toward a functional RNA or polypeptide product",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-118",
+          "term": "Transcription definition",
+          "story": "the left DNA→RNA lane where RNA polymerase makes an RNA copy from DNA information",
+          "science": "Transcription is DNA-directed synthesis of RNA by RNA polymerase.",
+          "exact_name": true,
+          "hint": "the left DNA→RNA lane where RNA polymerase makes an RNA copy from DNA information",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-119",
+          "term": "Translation definition",
+          "story": "the right RNA→polypeptide lane where a ribosome uses mRNA sequence to build a polypeptide",
+          "science": "Translation is synthesis of a polypeptide using the nucleotide sequence of mRNA as information at a ribosome.",
+          "exact_name": true,
+          "hint": "the right RNA→polypeptide lane where a ribosome uses mRNA sequence to build a polypeptide",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U6-K-116",
+          "term": "Protein structure prerequisite",
+          "dependency": [],
+          "rule": "Reactivate the prior representation briefly; extend it into the Unit 6 mechanism without assigning a new mnemonic identity."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-011: Qualify by cell type: eukaryotic nuclear genes are transcribed in the nucleus; prokaryotes have no nucleus, so transcription occurs in the cytoplasmic/nucleoid region.",
+        "Discrimination requirement U6-D10: keep Transcription definition, Translation definition physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Template–Promoter Entry Gate",
+      "f3_scene_brief_id": "F3-U6-L15",
+      "narrative_word_count": 587
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U6-L16",
+      "locus": "Template–Promoter Entry Gate",
+      "title": "The Gate Opens Only for the Correct Strand and the Correct Starting Region",
+      "scene_kicker": "Transcription requires one DNA template strand and a promoter, while a TATA box is only one possible promoter element in some eukaryotic genes.",
+      "location_description": "the transcription entry gate where one DNA template strand is distinguished from the opposite strand and promoter/TATA context is placed before transcription begins",
+      "scene_layout": {
+        "orientation": "Enter Template–Promoter Entry Gate and stop at the transcription entry gate where one DNA template strand is distinguished from the opposite strand and promoter/TATA context is placed before transcription begins. The left side is anchored by template-strand selection side, the working center is promoter entry gate, and the right side is anchored by TATA-box contextual panel. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "template-strand selection side",
+            "symbol": "template",
+            "description": "The same tagged gene is opened just enough to expose both DNA strands; the violet strand is marked as the strand that will be read."
+          },
+          {
+            "position": "center",
+            "label": "promoter entry gate",
+            "symbol": "PROM",
+            "description": "A promoter region sits before the transcribed region at center, where transcription machinery can assemble without being confused with the RNA-coding region itself."
+          },
+          {
+            "position": "right",
+            "label": "TATA-box contextual panel",
+            "symbol": "TATA",
+            "description": "A small TATA sequence panel is mounted on the right as one possible promoter element in some eukaryotic genes, visibly smaller than the larger promoter gate."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "template-strand selection side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The same tagged gene is opened just enough to expose both DNA strands; the violet strand is marked as the strand that will be read.",
+          "job": "Preserve the F3 left-side anchor (template-strand selection side) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "promoter entry gate",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A promoter region sits before the transcribed region at center, where transcription machinery can assemble without being confused with the RNA-coding region itself.",
+          "job": "Preserve the F3 center-side anchor (promoter entry gate) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "TATA-box contextual panel",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A small TATA sequence panel is mounted on the right as one possible promoter element in some eukaryotic genes, visibly smaller than the larger promoter gate.",
+          "job": "Preserve the F3 right-side anchor (TATA-box contextual panel) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "The **Template–Promoter Entry Gate** is built like a checkpoint around the same tagged gene. On your **left**, the **template-strand selection side** holds the two DNA strands apart. The violet strand faces you with 3′ and 5′ labels exposed; the gold strand remains paired beside it but is kept visibly separate. Directly **ahead**, the center **promoter entry gate** sits before the transcribed region of the gene. On your **right**, a smaller **TATA-box contextual panel** displays a short TATA-rich DNA element under a sign that says SOME EUKARYOTIC PROMOTERS. Sora places the copper ledger beneath the promoter and leaves the red RNA ribbon at zero length. Nothing is allowed to move until the workshop knows what DNA will be read and where transcription machinery assembles.",
+      "story_paragraphs": [
+        "The **Template–Promoter Entry Gate** is built like a checkpoint around the same tagged gene. On your **left**, the **template-strand selection side** holds the two DNA strands apart. The violet strand faces you with 3′ and 5′ labels exposed; the gold strand remains paired beside it but is kept visibly separate. Directly **ahead**, the center **promoter entry gate** sits before the transcribed region of the gene. On your **right**, a smaller **TATA-box contextual panel** displays a short TATA-rich DNA element under a sign that says SOME EUKARYOTIC PROMOTERS. Sora places the copper ledger beneath the promoter and leaves the red RNA ribbon at zero length. Nothing is allowed to move until the workshop knows what DNA will be read and where transcription machinery assembles.",
+        "Sora first tests the two DNA strands. RNA polymerase is placed against the gold strand, then the violet strand. Only one strand is designated to direct complementary RNA synthesis for this gene. Sora locks the violet strand into the reading rail and names **Transcription uses one DNA template strand**: RNA polymerase uses a single DNA template strand to direct complementary RNA synthesis; this process is transcription. The opposite DNA strand is still biologically real and still part of the gene’s double-stranded DNA; it simply is not the template read by RNA polymerase for this transcription event.",
+        "She adds a permanent violet TEMPLATE label to that strand. This is **Template strand terminology**. For a transcribed gene, RNA polymerase reads one DNA template strand. Historical aliases can create confusion, so Sora keeps the physically read strand marked simply template strand. That term tells you its functional relationship to the RNA product. It does not mean the other strand is biologically useless, and it does not create a new kind of DNA molecule.",
+        "The center gate still remains closed. Sora slides the gene until a regulatory DNA region before the transcribed sequence aligns with the gate sensors. Proteins representing transcription machinery gather there. Only after the assembly site is visible does she label **Promoter**: a promoter is a DNA region where transcription machinery assembles to initiate transcription of a gene. The promoter is DNA. It is not RNA polymerase, not a transcription factor, and not merely the first codon of the future mRNA. Its job in this room is to establish where the transcription machinery can assemble and initiate the transcription process.",
+        "Finally she points to the small panel on your right. A TATA-rich element clicks into one example promoter and helps organize transcription machinery. Sora names **TATA box** only after showing its limited place: a TATA box is a promoter DNA element found in some eukaryotic genes and can participate in assembly of transcription machinery; it is not present in every eukaryotic promoter. The physical size of the display makes the relationship memorable: the promoter gate is the larger category, and the TATA box is one possible element within some promoter architectures. The two terms must not collapse into synonyms.",
+        "The promoter gate unlocks. RNA polymerase grips the DNA at the correct starting region while the violet template strand feeds into a long direction rail beyond the door. The red RNA ribbon attaches to the polymerase but cannot yet grow because two opposing arrows are flashing above the track. One arrow marks the DNA template 3′→5′. The other marks RNA growth 5′→3′. Sora moves the same tagged gene forward without flipping it."
+      ],
+      "story_close": "The promoter gate unlocks. RNA polymerase grips the DNA at the correct starting region while the violet template strand feeds into a long direction rail beyond the door. The red RNA ribbon attaches to the polymerase but cannot yet grow because two opposing arrows are flashing above the track. One arrow marks the DNA template 3′→5′. The other marks RNA growth 5′→3′. Sora moves the same tagged gene forward without flipping it.",
+      "object_ids": [
+        "U6-K-024",
+        "U6-K-120",
+        "U6-K-123",
+        "U6-K-124"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-024",
+          "term": "Transcription uses one DNA template strand",
+          "story": "the violet DNA strand selected as the one RNA polymerase will read",
+          "science": "RNA polymerase uses a single DNA template strand to direct complementary RNA synthesis; this process is transcription.",
+          "exact_name": true,
+          "hint": "the violet DNA strand selected as the one RNA polymerase will read",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-120",
+          "term": "Template strand terminology",
+          "story": "the permanent TEMPLATE label placed on the violet strand",
+          "science": "For a transcribed gene, RNA polymerase reads one DNA template strand; “template” or “noncoding” strand is preferred over treating alternate historical aliases as separate concepts.",
+          "exact_name": true,
+          "hint": "the permanent TEMPLATE label placed on the violet strand",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-123",
+          "term": "Promoter",
+          "story": "the large promoter gate where transcription machinery assembles before the transcribed region",
+          "science": "A promoter is a DNA region where transcription machinery assembles to initiate transcription of a gene.",
+          "exact_name": true,
+          "hint": "the large promoter gate where transcription machinery assembles before the transcribed region",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-124",
+          "term": "TATA box",
+          "story": "the smaller TATA panel shown as one possible promoter element in some eukaryotic genes",
+          "science": "A TATA box is a promoter DNA element found in some eukaryotic genes and can participate in assembly of transcription machinery; it is not present in every eukaryotic promoter.",
+          "exact_name": true,
+          "hint": "the smaller TATA panel shown as one possible promoter element in some eukaryotic genes",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-013: Genes can encode polypeptides or functional RNAs, and much DNA is noncoding/regulatory. Use protein-coding genes when describing codon-based translation.",
+        "Resolved F1 guard RF-U6-015: A TATA box is one promoter element present in some eukaryotic genes, not the universal name for eukaryotic promoters. Regulatory sequences can have more varied architecture; current CED explicitly allows promoter/enhancer sequences upstream or downstream of the transcription start site.",
+        "Discrimination requirement U6-D12: keep Transcription uses one DNA template strand, Transcription directionality, Template strand terminology physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U6-D13: keep Promoter, TATA box physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Transcription Direction Rail",
+      "f3_scene_brief_id": "F3-U6-L16",
+      "narrative_word_count": 566
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U6-L17",
+      "locus": "Transcription Direction Rail",
+      "title": "The Transcript Can Grow in Only One Chemical Direction",
+      "scene_kicker": "RNA polymerase reads the DNA template 3′→5′ while synthesizing RNA 5′→3′, and that direction stays constant through transcription.",
+      "location_description": "the rail that locks RNA synthesis direction to the template orientation and carries initiation, elongation, and termination in sequence",
+      "scene_layout": {
+        "orientation": "Enter Transcription Direction Rail and stop at the rail that locks RNA synthesis direction to the template orientation and carries initiation, elongation, and termination in sequence. The left side is anchored by initiation station, the working center is template 3′→5′ / RNA 5′→3′ rail, and the right side is anchored by elongation and termination stations. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "initiation station",
+            "symbol": "START",
+            "description": "RNA polymerase waits at the left initiation station beside the selected promoter and the violet template strand."
+          },
+          {
+            "position": "center",
+            "label": "template 3′→5′ / RNA 5′→3′ rail",
+            "symbol": "⇄",
+            "description": "A long center rail carries the violet DNA template in the 3′→5′ reading direction while the red RNA ribbon grows alongside it 5′→3′."
+          },
+          {
+            "position": "right",
+            "label": "elongation and termination stations",
+            "symbol": "END",
+            "description": "The rail passes through elongation markers and ends at a termination station where the completed RNA transcript can be released."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "initiation station",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "RNA polymerase waits at the left initiation station beside the selected promoter and the violet template strand.",
+          "job": "Preserve the F3 left-side anchor (initiation station) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "template 3′→5′ / RNA 5′→3′ rail",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A long center rail carries the violet DNA template in the 3′→5′ reading direction while the red RNA ribbon grows alongside it 5′→3′.",
+          "job": "Preserve the F3 center-side anchor (template 3′→5′ / RNA 5′→3′ rail) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "elongation and termination stations",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The rail passes through elongation markers and ends at a termination station where the completed RNA transcript can be released.",
+          "job": "Preserve the F3 right-side anchor (elongation and termination stations) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "The **Transcription Direction Rail** is the longest room in the workshop, and its geometry forces you to choose a direction before you can walk it. On your **left**, the **initiation station** holds RNA polymerase at the promoter of the same tagged gene. Directly **ahead**, the center **template 3′→5′ / RNA 5′→3′ rail** stretches across the floor. The violet template DNA runs along one side with its 3′ end nearest the initiation station and its 5′ end farther down the room. Beside it, the red RNA ribbon begins with its 5′ end at the left and an exposed growing 3′ end facing forward. On your **right**, the rail passes through labeled elongation markers and reaches a termination station. Sora lays her compass tablet flat between the two molecules so both directional arrows can be seen at once.",
+      "story_paragraphs": [
+        "The **Transcription Direction Rail** is the longest room in the workshop, and its geometry forces you to choose a direction before you can walk it. On your **left**, the **initiation station** holds RNA polymerase at the promoter of the same tagged gene. Directly **ahead**, the center **template 3′→5′ / RNA 5′→3′ rail** stretches across the floor. The violet template DNA runs along one side with its 3′ end nearest the initiation station and its 5′ end farther down the room. Beside it, the red RNA ribbon begins with its 5′ end at the left and an exposed growing 3′ end facing forward. On your **right**, the rail passes through labeled elongation markers and reaches a termination station. Sora lays her compass tablet flat between the two molecules so both directional arrows can be seen at once.",
+        "RNA polymerase leaves the promoter and begins moving along the violet DNA template. Each time a template base enters the polymerase, a complementary RNA nucleotide is added to the growing RNA’s 3′ end. The red ribbon lengthens toward the right, but its chemical direction is 5′→3′. At the same time, the polymerase is reading the DNA template in the opposite direction, 3′→5′. Sora names **Transcription directionality** only after several nucleotides have been added: RNA polymerase synthesizes RNA 5′→3′ while reading the DNA template 3′→5′. The relation is not a decorative arrow rule. It follows from where new nucleotides can be added to a nucleic-acid strand.",
+        "The rail is divided into three large physical sections. At the left, transcription machinery assembles and RNA synthesis begins. Across the long center span, RNA polymerase moves along the gene and the RNA transcript elongates. At the right, transcription reaches a termination process and the transcript is released. Sora labels this useful process organization **Transcription initiation, elongation, termination**. The three names describe stages of one transcription process, not three different information-transfer pathways. She keeps the detailed termination machinery out of the main display so the route does not turn into a list of factor names.",
+        "Halfway down the rail, Sora opens a second starting platform behind the first RNA polymerase. A second polymerase begins transcribing the same active gene before the first has finished, then a third starts behind it. All three move along the same template orientation and all three synthesize separate RNA molecules 5′→3′. This demonstrates **Multiple RNA polymerases increase transcript output**. Several polymerases can transcribe the same gene at the same time, increasing RNA production without changing the gene sequence or the direction of RNA synthesis. More transcripts arise because more polymerases are working along the same gene, not because any one polymerase suddenly moves in the reverse chemical direction.",
+        "At the far end, the first red RNA ribbon is released and carried to an exit fork. Sora leaves its 5′ end marked at the front and its 3′ end marked at the back so direction remains visible after release. One doorway on the right is completely open and has ribosomes nearby. Another doorway is surrounded by a nuclear-envelope frame and leads toward RNA-processing counters. The transcript must take different routes depending on cellular context. Before choosing, Sora pauses beside the rail.",
+        "**Optional Quick Recall.** Without looking back at the arrows, state **Transcription directionality**. RNA polymerase synthesizes RNA 5′→3′ while reading the DNA template 3′→5′."
+      ],
+      "story_close": "**Optional Quick Recall.** Without looking back at the arrows, state **Transcription directionality**. RNA polymerase synthesizes RNA 5′→3′ while reading the DNA template 3′→5′.",
+      "object_ids": [
+        "U6-K-025",
+        "U6-K-122",
+        "U6-K-125"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-025",
+          "term": "Transcription directionality",
+          "story": "the center rail showing DNA template read 3′→5′ while RNA grows 5′→3′",
+          "science": "RNA polymerase synthesizes RNA 5′→3′ while reading the DNA template 3′→5′.",
+          "exact_name": true,
+          "hint": "the center rail showing DNA template read 3′→5′ while RNA grows 5′→3′",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-122",
+          "term": "Transcription initiation, elongation, termination",
+          "story": "the initiation, elongation, and termination stations arranged in sequence on one transcription rail",
+          "science": "The teacher sequence organizes transcription into initiation, elongation, and termination as a useful process model.",
+          "exact_name": true,
+          "hint": "the initiation, elongation, and termination stations arranged in sequence on one transcription rail",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-125",
+          "term": "Multiple RNA polymerases increase transcript output",
+          "story": "several RNA polymerases following one another along the same active gene to make more transcripts",
+          "science": "Multiple RNA polymerase molecules can transcribe the same gene at the same time, increasing RNA output from an active gene.",
+          "exact_name": false,
+          "hint": "several RNA polymerases following one another along the same active gene to make more transcripts",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-016: Retain as teacher enrichment. Current AP scope centers on transcription directionality and eukaryotic RNA processing, not memorization of detailed termination sequences.",
+        "Discrimination requirement U6-D12: keep Transcription uses one DNA template strand, Transcription directionality, Template strand terminology physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-025",
+      "checkpoint_prompt": "Without looking back, identify or explain Transcription directionality from the scientific action you just watched.",
+      "checkpoint_answer": "RNA polymerase synthesizes RNA 5′→3′ while reading the DNA template 3′→5′.",
+      "next_locus": "Prokaryotic Transcript Exit",
+      "f3_scene_brief_id": "F3-U6-L17",
+      "narrative_word_count": 557
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U6-L18",
+      "locus": "Prokaryotic Transcript Exit",
+      "title": "One Transcript Reaches a Ribosome Before a Nuclear Processing Counter Exists",
+      "scene_kicker": "In many bacteria, transcription and translation occupy the same cellular space, so mRNA can become usable without the eukaryotic cap–tail–splicing route.",
+      "location_description": "the prokaryotic exit showing why a transcript can become usable without the eukaryotic nucleus-based processing route",
+      "scene_layout": {
+        "orientation": "Enter Prokaryotic Transcript Exit and stop at the prokaryotic exit showing why a transcript can become usable without the eukaryotic nucleus-based processing route. The left side is anchored by DNA transcription area, the working center is usable prokaryotic transcript exit, and the right side is anchored by ribosome-access side. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "DNA transcription area",
+            "symbol": "DNA",
+            "description": "A bacterial chromosome region remains exposed on the left in the same open cellular space as the new transcript."
+          },
+          {
+            "position": "center",
+            "label": "usable prokaryotic transcript exit",
+            "symbol": "RNA",
+            "description": "The newly synthesized bacterial mRNA exits directly through the center without passing through a nucleus-based cap, poly-A-tail, and splice counter."
+          },
+          {
+            "position": "right",
+            "label": "ribosome-access side",
+            "symbol": "RIBO",
+            "description": "Ribosomes stand immediately on the right, close enough that a transcript can be engaged for translation while transcription is still occurring."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "DNA transcription area",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A bacterial chromosome region remains exposed on the left in the same open cellular space as the new transcript.",
+          "job": "Preserve the F3 left-side anchor (DNA transcription area) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "usable prokaryotic transcript exit",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The newly synthesized bacterial mRNA exits directly through the center without passing through a nucleus-based cap, poly-A-tail, and splice counter.",
+          "job": "Preserve the F3 center-side anchor (usable prokaryotic transcript exit) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "ribosome-access side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Ribosomes stand immediately on the right, close enough that a transcript can be engaged for translation while transcription is still occurring.",
+          "job": "Preserve the F3 right-side anchor (ribosome-access side) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "The first branch leads to the **Prokaryotic Transcript Exit**, an open room with no nuclear envelope around the DNA. On your **left**, the **DNA transcription area** contains a bacterial chromosome region with RNA polymerase still moving along it. Directly **ahead**, the center **usable prokaryotic transcript exit** receives the growing red mRNA as it emerges from the polymerase. On your **right**, the **ribosome-access side** holds several ribosomes only a short distance away. There is no cap station, no poly-A-tail counter, and no splice chamber between the transcript and those ribosomes. Sora keeps the bacterial DNA, polymerase, transcript, and ribosome all inside the same cellular space so the consequence of lacking a nucleus is visible rather than merely stated.",
+      "story_paragraphs": [
+        "The first branch leads to the **Prokaryotic Transcript Exit**, an open room with no nuclear envelope around the DNA. On your **left**, the **DNA transcription area** contains a bacterial chromosome region with RNA polymerase still moving along it. Directly **ahead**, the center **usable prokaryotic transcript exit** receives the growing red mRNA as it emerges from the polymerase. On your **right**, the **ribosome-access side** holds several ribosomes only a short distance away. There is no cap station, no poly-A-tail counter, and no splice chamber between the transcript and those ribosomes. Sora keeps the bacterial DNA, polymerase, transcript, and ribosome all inside the same cellular space so the consequence of lacking a nucleus is visible rather than merely stated.",
+        "As the 5′ portion of the bacterial mRNA emerges, a ribosome attaches to the accessible transcript even though RNA polymerase is still extending the 3′ end farther along the gene. The two processes remain distinct—one polymerase is synthesizing RNA from DNA, while one ribosome is reading mRNA to synthesize a polypeptide—but they can occur in the same cellular compartment and can overlap in time. This is why prokaryotic gene expression can couple transcription and translation in a way that nuclear transcription and cytoplasmic translation cannot be coupled in the same physical manner in eukaryotic cells.",
+        "Sora now points to the empty center exit. The absence of a eukaryotic processing counter does not mean bacterial RNA never undergoes any processing. The narrower relationship is **Prokaryotic transcript usability**: many bacterial mRNAs can be translated without the eukaryotic cap/poly-A/splicing processing sequence and can be translated while transcription continues. The phrase many bacterial mRNAs matters. It describes a common prokaryotic route without pretending that all RNA molecules in all prokaryotes experience no processing of any kind.",
+        "She places a transparent outline of a eukaryotic nucleus beside the bacterial room. In that comparison, a eukaryotic nuclear transcript cannot simply reach a cytoplasmic ribosome while RNA polymerase is still transcribing the same nuclear gene; the nuclear envelope separates those locations. A primary transcript intended to become eukaryotic mRNA must first be handled inside the nucleus before export. The contrast makes the next problem unavoidable. The red ribbon in this bacterial room is already accessible to ribosomes, but the identical tagged-gene simulation in the eukaryotic route has produced a longer pre-mRNA whose ends and internal segments are still unfinished and visibly awaiting nuclear processing.",
+        "Sora leaves the bacterial transcript at the open exit and carries the eukaryotic version of the red RNA ribbon into the nucleus-framed doorway. Its 5′ end is bare, its 3′ end has just passed a recognizable polyadenylation signal, and dark internal segments interrupt lighter retained regions. The next counter has three stations waiting for those features."
+      ],
+      "story_close": "Sora leaves the bacterial transcript at the open exit and carries the eukaryotic version of the red RNA ribbon into the nucleus-framed doorway. Its 5′ end is bare, its 3′ end has just passed a recognizable polyadenylation signal, and dark internal segments interrupt lighter retained regions. The next counter has three stations waiting for those features.",
+      "object_ids": [
+        "U6-K-126"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-126",
+          "term": "Prokaryotic transcript usability",
+          "story": "the bacterial mRNA reaching a ribosome in the same open cellular space without the eukaryotic cap-tail-splice route",
+          "science": "Many bacterial mRNAs can be translated without the eukaryotic cap/poly-A/splicing processing sequence and can be translated while transcription continues.",
+          "exact_name": false,
+          "hint": "the bacterial mRNA reaching a ribosome in the same open cellular space without the eukaryotic cap-tail-splice route",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-016: Retain as teacher enrichment. Current AP scope centers on transcription directionality and eukaryotic RNA processing, not memorization of detailed termination sequences.",
+        "Discrimination requirement U6-D20: keep Translation location, Coupled transcription and translation in prokaryotes, Prokaryotic transcript usability physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Pre-mRNA Processing Counter",
+      "f3_scene_brief_id": "F3-U6-L18",
+      "narrative_word_count": 454
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U6-L19",
+      "locus": "Pre-mRNA Processing Counter",
+      "title": "The Eukaryotic Message Receives Protective End Marks Before Export",
+      "scene_kicker": "A eukaryotic primary transcript becomes mature mRNA only after context-appropriate processing changes its ends and internal RNA sequence.",
+      "location_description": "the eukaryotic processing counter where pre-mRNA receives a 5′ cap and poly-A tail before export",
+      "scene_layout": {
+        "orientation": "Enter Pre-mRNA Processing Counter and stop at the eukaryotic processing counter where pre-mRNA receives a 5′ cap and poly-A tail before export. The left side is anchored by 5′ cap / recognition side, the working center is pre-mRNA processing counter, and the right side is anchored by poly-A tail / stability side. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "5′ cap / recognition side",
+            "symbol": "CAP",
+            "description": "The 5′ end of a eukaryotic pre-mRNA enters from the left beside a cap station that can add a modified guanine nucleotide."
+          },
+          {
+            "position": "center",
+            "label": "pre-mRNA processing counter",
+            "symbol": "pre-mRNA",
+            "description": "A long pre-mRNA ribbon lies across the center counter with its 5′ and 3′ ends kept visible and its internal intron/exon pattern still intact."
+          },
+          {
+            "position": "right",
+            "label": "poly-A tail / stability side",
+            "symbol": "Aₙ",
+            "description": "At the right end, a transcribed polyadenylation signal precedes cleavage and the addition of a long poly-A tail."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "5′ cap / recognition side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The 5′ end of a eukaryotic pre-mRNA enters from the left beside a cap station that can add a modified guanine nucleotide.",
+          "job": "Preserve the F3 left-side anchor (5′ cap / recognition side) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "pre-mRNA processing counter",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A long pre-mRNA ribbon lies across the center counter with its 5′ and 3′ ends kept visible and its internal intron/exon pattern still intact.",
+          "job": "Preserve the F3 center-side anchor (pre-mRNA processing counter) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "poly-A tail / stability side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "At the right end, a transcribed polyadenylation signal precedes cleavage and the addition of a long poly-A tail.",
+          "job": "Preserve the F3 right-side anchor (poly-A tail / stability side) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "The nuclear doorway opens onto the **Pre-mRNA Processing Counter**. On your **left**, the **5′ cap / recognition side** holds the front end of the red transcript beneath a cap dispenser. Directly **ahead**, the center **pre-mRNA processing counter** supports the entire primary RNA transcript, with its 5′ end, internal segments, and 3′ end all visible at once. On your **right**, the **poly-A tail / stability side** displays a transcribed polyadenylation signal near the transcript’s 3′ end, followed by a cleavage marker and an empty track where a long adenine-rich tail can be added. Sora keeps the tagged DNA gene behind glass at the rear of the room. The DNA sequence is not being rewritten here; the RNA product is being processed after transcription.",
+      "story_paragraphs": [
+        "The nuclear doorway opens onto the **Pre-mRNA Processing Counter**. On your **left**, the **5′ cap / recognition side** holds the front end of the red transcript beneath a cap dispenser. Directly **ahead**, the center **pre-mRNA processing counter** supports the entire primary RNA transcript, with its 5′ end, internal segments, and 3′ end all visible at once. On your **right**, the **poly-A tail / stability side** displays a transcribed polyadenylation signal near the transcript’s 3′ end, followed by a cleavage marker and an empty track where a long adenine-rich tail can be added. Sora keeps the tagged DNA gene behind glass at the rear of the room. The DNA sequence is not being rewritten here; the RNA product is being processed after transcription.",
+        "Sora first names the larger event **Eukaryotic pre-mRNA processing**: in eukaryotic cells, a primary RNA transcript is modified before it functions as mature mRNA. The center ribbon makes the timing visible. Transcription produced the RNA; now the RNA itself is modified. These processing steps occur in the context of eukaryotic nuclear gene expression and must not be projected backward onto every bacterial mRNA route you just saw.",
+        "At the left station, a modified guanine cap is attached to the 5′ end. Sora waits until the cap is physically fixed before naming **5′ GTP cap recognition**. Addition of a 5′ GTP cap supports ribosomal recognition and also contributes to mRNA protection and handling. The cap is not a codon that will be translated into the first amino acid. It is a processing feature attached to the RNA end that helps the transcript survive, move through cellular handling steps, and be efficiently recognized for translation later.",
+        "On the right, the transcribed RNA contains a sequence that helps specify where the transcript will be cleaved and where polyadenylation will occur. Sora marks **Polyadenylation signal sequence** and shows AAUAAA as a common RNA signal sequence without turning it into the tail itself. The transcript is cleaved downstream, then a long run of adenines is added to the new 3′ end. This added stretch is the poly-A tail. The distinction is visual: the signal was transcribed from DNA as part of the RNA; the long poly-A tail is added afterward.",
+        "As the adenine-rich tail lengthens, Sora labels **Poly-A tail stability**: addition of a poly-A tail increases mRNA stability. She then places the cap and tail under one bracket labeled **Functions of cap and poly-A tail**. Together, the 5′ cap and poly-A tail contribute to mRNA stability, export and handling, and efficient translation initiation in eukaryotic cells. Neither feature is being treated as protein-coding sequence. They help the RNA function as a durable, properly handled message.",
+        "The ends are now marked and protected, but the center of the RNA is still interrupted by dark segments. Sora tries to send the transcript toward the nuclear export door, and the door refuses it. An internal inspection light marks retained and removable RNA regions. The transcript slides into the final chamber, where the internal sequence—not the DNA gene—will be cut and rejoined."
+      ],
+      "story_close": "The ends are now marked and protected, but the center of the RNA is still interrupted by dark segments. Sora tries to send the transcript toward the nuclear export door, and the door refuses it. An internal inspection light marks retained and removable RNA regions. The transcript slides into the final chamber, where the internal sequence—not the DNA gene—will be cut and rejoined.",
+      "object_ids": [
+        "U6-K-026",
+        "U6-K-027",
+        "U6-K-028",
+        "U6-K-127",
+        "U6-K-128"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-026",
+          "term": "Eukaryotic pre-mRNA processing",
+          "story": "the eukaryotic primary RNA transcript lying on the processing counter before it becomes mature mRNA",
+          "science": "In eukaryotic cells, a primary RNA transcript is modified before it functions as mature mRNA.",
+          "exact_name": true,
+          "hint": "the eukaryotic primary RNA transcript lying on the processing counter before it becomes mature mRNA",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-027",
+          "term": "Poly-A tail stability",
+          "story": "the long poly-A tail being added at the processed RNA 3′ end",
+          "science": "Addition of a poly-A tail increases mRNA stability.",
+          "exact_name": true,
+          "hint": "the long poly-A tail being added at the processed RNA 3′ end",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-028",
+          "term": "5′ GTP cap recognition",
+          "story": "the modified guanine cap attached to the processed RNA 5′ end",
+          "science": "Addition of a 5′ GTP cap supports ribosomal recognition and also contributes to mRNA protection and handling.",
+          "exact_name": true,
+          "hint": "the modified guanine cap attached to the processed RNA 5′ end",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-127",
+          "term": "Polyadenylation signal sequence",
+          "story": "the transcribed polyadenylation signal marked before cleavage and poly-A-tail addition",
+          "science": "In eukaryotic pre-mRNA processing, a transcribed polyadenylation signal helps specify cleavage and subsequent poly-A-tail addition; AAUAAA is a common signal sequence in the RNA.",
+          "exact_name": false,
+          "hint": "the transcribed polyadenylation signal marked before cleavage and poly-A-tail addition",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-128",
+          "term": "Functions of cap and poly-A tail",
+          "story": "the 5′ cap and poly-A tail bracketed together as stability, handling/export, and translation-initiation features",
+          "science": "The 5′ cap and poly-A tail contribute to mRNA stability, export/handling, and efficient translation initiation in eukaryotic cells.",
+          "exact_name": false,
+          "hint": "the 5′ cap and poly-A tail bracketed together as stability, handling/export, and translation-initiation features",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-016: Retain as teacher enrichment. Current AP scope centers on transcription directionality and eukaryotic RNA processing, not memorization of detailed termination sequences.",
+        "Resolved F1 guard RF-U6-017: Use removed intron / retained exon definitions. Exons can include untranslated regions, so retained exon does not universally mean amino-acid-coding sequence.",
+        "Discrimination requirement U6-D14: keep Poly-A tail stability, 5′ GTP cap recognition physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Splice and Isoform Chamber",
+      "f3_scene_brief_id": "F3-U6-L19",
+      "narrative_word_count": 505
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U6-L20",
+      "locus": "Splice and Isoform Chamber",
+      "title": "The Same Pre-mRNA Can Be Cut Into More Than One Finished Message",
+      "scene_kicker": "Splicing removes introns and joins retained exons, while alternative splicing can produce different mature mRNAs from the same underlying gene.",
+      "location_description": "the chamber where introns are removed, exons are joined, alternative splicing changes exon combinations, and mature mRNA exits",
+      "scene_layout": {
+        "orientation": "Enter Splice and Isoform Chamber and stop at the chamber where introns are removed, exons are joined, alternative splicing changes exon combinations, and mature mRNA exits. The left side is anchored by intron excision side, the working center is exon-splicing / alternative-splicing chamber, and the right side is anchored by mature-mRNA exit. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "intron excision side",
+            "symbol": "INTRON",
+            "description": "Dark intron segments are lifted from the left side of the same pre-mRNA, leaving clean boundaries that show exactly what was removed."
+          },
+          {
+            "position": "center",
+            "label": "exon-splicing / alternative-splicing chamber",
+            "symbol": "EXONS",
+            "description": "Retained exon segments are joined in the center; a second pass can select a different exon combination while the underlying gene DNA remains unchanged."
+          },
+          {
+            "position": "right",
+            "label": "mature-mRNA exit",
+            "symbol": "mRNA✓",
+            "description": "A finished, directionally intact mature mRNA exits on the right with cap, poly-A tail, and one resolved exon arrangement ready for export and translation."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same tagged gene, violet template strand, promoter marker, and growing RNA transcript visible from the first RNA desk through transcription and RNA processing. She points to real molecules, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "intron excision side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Dark intron segments are lifted from the left side of the same pre-mRNA, leaving clean boundaries that show exactly what was removed.",
+          "job": "Preserve the F3 left-side anchor (intron excision side) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "exon-splicing / alternative-splicing chamber",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Retained exon segments are joined in the center; a second pass can select a different exon combination while the underlying gene DNA remains unchanged.",
+          "job": "Preserve the F3 center-side anchor (exon-splicing / alternative-splicing chamber) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "mature-mRNA exit",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A finished, directionally intact mature mRNA exits on the right with cap, poly-A tail, and one resolved exon arrangement ready for export and translation.",
+          "job": "Preserve the F3 right-side anchor (mature-mRNA exit) and perform only the scene-specific scientific role."
+        },
+        {
+          "name": "Persistent tagged gene and red RNA transcript",
+          "kind": "journey continuity object",
+          "visual": "the same tagged DNA gene with a violet template strand and promoter marker, accompanied by one red RNA transcript ribbon whose 5′ and 3′ ends remain identifiable as it is synthesized and processed",
+          "job": "keeps gene identity, template orientation, transcript direction, and processing state traceable across all eight scenes; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one tagged gene with its template strand marked in violet and a single RNA transcript ribbon that lengthens 5′→3′ and then receives only the processing steps appropriate to its cellular context.",
+      "story_open": "The final room, the **Splice and Isoform Chamber**, is shaped around the same processed red RNA ribbon. On your **left**, the **intron excision side** holds the transcript under a scanner that marks dark internal segments for removal. Directly **ahead**, the center **exon-splicing / alternative-splicing chamber** aligns the lighter retained segments on a single 5′→3′ rail. On your **right**, the **mature-mRNA exit** leads through a nuclear-export gate toward a cytoplasmic ribosome symbol. The 5′ cap from the previous room remains fixed at the front of the ribbon, and the poly-A tail remains at the 3′ end. Sora places the unaltered tagged DNA gene above the chamber so you can compare the DNA with each RNA product without imagining that splicing changes the gene itself.",
+      "story_paragraphs": [
+        "The final room, the **Splice and Isoform Chamber**, is shaped around the same processed red RNA ribbon. On your **left**, the **intron excision side** holds the transcript under a scanner that marks dark internal segments for removal. Directly **ahead**, the center **exon-splicing / alternative-splicing chamber** aligns the lighter retained segments on a single 5′→3′ rail. On your **right**, the **mature-mRNA exit** leads through a nuclear-export gate toward a cytoplasmic ribosome symbol. The 5′ cap from the previous room remains fixed at the front of the ribbon, and the poly-A tail remains at the 3′ end. Sora places the unaltered tagged DNA gene above the chamber so you can compare the DNA with each RNA product without imagining that splicing changes the gene itself.",
+        "The scanner first identifies introns and exons on the pre-mRNA. Sora avoids the shortcut that calls every exon an amino-acid-coding segment, because retained exons can include untranslated regions. The useful distinction is processing fate: intron regions are removed from this pre-mRNA, while exon regions are retained in the mature RNA. The dark introns lift out of the ribbon one by one. The remaining exon ends move together and are covalently joined. Sora names **Intron excision and exon splicing**: RNA processing removes introns and splices retained exons to produce mature mRNA.",
+        "The chamber then resets to the same original pre-mRNA. This time, the splicing controls retain a different permitted combination of exon segments. The DNA gene above the machine never changes. The newly assembled RNA has a different exon composition from the first product. Only after the two processed RNAs are placed side by side does Sora name **Alternative splicing**: alternative splicing retains different combinations of exons, allowing one pre-mRNA to generate different mature mRNA versions. The mechanism increases possible RNA—and often protein—diversity while the **underlying gene DNA remains unchanged**; a different gene sequence is not required for every isoform.",
+        "Sora returns the first processed RNA to the exit rail. It now carries a 5′ cap, a resolved exon arrangement, and a poly-A tail, and its orientation is still 5′→3′. She labels the finished molecule **Mature mRNA**: after appropriate processing, eukaryotic mature mRNA can be exported from the nucleus and used for translation in the cytoplasm. The word mature refers to the processed RNA state in this pathway. It does not mean the RNA is permanently unchanged or that every RNA molecule in a cell undergoes exactly these same processing steps.",
+        "The export gate opens. The mature mRNA moves out of the nucleus and toward the cytoplasmic ribosome symbol, but Sora stops it before translation begins. Journey 2 has one job: make the message correctly. Looking backward through the open doors, you can reconstruct the entire route. RNA function depended on sequence and structure. mRNA, tRNA, and rRNA had distinct jobs. Gene expression separated transcription from translation. One DNA template strand and a promoter established transcription entry. RNA polymerase read the template 3′→5′ while synthesizing RNA 5′→3′. A bacterial transcript could become ribosome-accessible without the eukaryotic cap/poly-A/splicing sequence. A eukaryotic pre-mRNA received end modifications, then introns were removed and exons joined, with alternative splicing able to generate different mature messages from the same pre-mRNA.",
+        "The mature red ribbon is clipped to Sora’s copper ledger beside the original tagged gene. The gene has not become RNA; its information has been transcribed into an RNA product. The RNA has not yet become protein; translation is still ahead. Sora points to the ribosome icon at the far end of the export corridor. The workshop has finished editing the message. The next journey will have to read it.",
+        "**Optional Quick Recall.** Without looking back, picture the dark pieces leaving on the left and the retained pieces joining in the center. What is **Intron excision and exon splicing**? RNA processing removes introns and splices retained exons to produce mature mRNA."
+      ],
+      "story_close": "**Optional Quick Recall.** Without looking back, picture the dark pieces leaving on the left and the retained pieces joining in the center. What is **Intron excision and exon splicing**? RNA processing removes introns and splices retained exons to produce mature mRNA.",
+      "object_ids": [
+        "U6-K-029",
+        "U6-K-030",
+        "U6-K-129"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-029",
+          "term": "Intron excision and exon splicing",
+          "story": "dark intron segments removed on the left while retained exons are joined in the center",
+          "science": "RNA processing removes introns and splices retained exons to produce mature mRNA.",
+          "exact_name": true,
+          "hint": "dark intron segments removed on the left while retained exons are joined in the center",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-030",
+          "term": "Alternative splicing",
+          "story": "the same pre-mRNA spliced a second time with a different exon combination while DNA remains unchanged",
+          "science": "Alternative splicing retains different combinations of exons, allowing one pre-mRNA to generate different mature mRNA versions.",
+          "exact_name": true,
+          "hint": "the same pre-mRNA spliced a second time with a different exon combination while DNA remains unchanged",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-129",
+          "term": "Mature mRNA",
+          "story": "the capped, spliced, polyadenylated mature mRNA passing through the nuclear-export gate",
+          "science": "After appropriate processing, eukaryotic mature mRNA can be exported from the nucleus and used for translation in the cytoplasm.",
+          "exact_name": true,
+          "hint": "the capped, spliced, polyadenylated mature mRNA passing through the nuclear-export gate",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-017: Use removed intron / retained exon definitions. Exons can include untranslated regions, so retained exon does not universally mean amino-acid-coding sequence.",
+        "Discrimination requirement U6-D15: keep Intron excision and exon splicing, Alternative splicing, Mature mRNA physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-029",
+      "checkpoint_prompt": "Without looking back, identify or explain Intron excision and exon splicing from the scientific action you just watched.",
+      "checkpoint_answer": "RNA processing removes introns and splices retained exons to produce mature mRNA.",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U6-L20",
+      "narrative_word_count": 644
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2"
+}

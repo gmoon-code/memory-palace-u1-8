@@ -1,0 +1,30 @@
+{
+  "schema_version": "v2-content-lock-1.0",
+  "authoritative_source": "Memory Palace F6.9",
+  "files": {
+    "content/ap-biology/unit-1/source/canonical-unit1.json": {
+      "sha256": "0bcd6e2fb61e9e31bf47ba7ef4f5d7bfd647d68a9d77b3b22bc6e6e044e71e49",
+      "bytes": 1127491
+    },
+    "content/ap-biology/unit-1/source/guided-journeys.json": {
+      "sha256": "c4e1079f8eeba4b3f28304ad52e77dcddcab0c9d08dce4e1bc7c2efbc94fe034",
+      "bytes": 232277
+    },
+    "content/ap-biology/unit-1/source/coverage-manifest.json": {
+      "sha256": "54b7e8d314609dd7b4d0691ace07df35a62561f2f1561cdfe9106d8d0e009fdb",
+      "bytes": 2498
+    },
+    "content/ap-biology/unit-1/migration/f6_9-runtime-snapshot.json": {
+      "sha256": "d6184bcae6f78ac6f402c057d7e3599ba87d2eb68dc9d186d7ee729894b943c4",
+      "bytes": 1306715
+    }
+  },
+  "expected_counts": {
+    "canonical_records": 229,
+    "memory_objects": 207,
+    "guided_journeys": 9,
+    "permanent_loci": 78,
+    "water_reference_scenes": 11,
+    "water_reference_checkpoints": 3
+  }
+}

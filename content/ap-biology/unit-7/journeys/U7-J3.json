@@ -1,0 +1,1441 @@
+{
+  "palace_id": "U7-J3",
+  "unit_id": "unit-7",
+  "palace_name": "Evolution Evidence Museum",
+  "story_title": "The Museum That Had Evidence Everywhere and an Argument Nowhere",
+  "tagline": "A museum has filled one giant case with fossils, skeletons, DNA, cell features, resistance records, and population histories, then labeled all of it proof. Sort every observation into the evidence job it can actually perform until independent lines finally converge on a defensible evolutionary explanation.",
+  "guide": {
+    "name": "Dr. Imani Vale",
+    "role": "evolutionary-systems curator",
+    "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+    "story_job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+  },
+  "premise": "The Evolution Evidence Museum has collapsed every exhibit into one vague category called proof of evolution. Fossil ages are being inferred without appropriate clocks, homologous and analogous structures are mixed together, sequence similarity is being overinterpreted, vestigial structures are labeled functionless, contemporary resistance is treated as intentional adaptation, and population diversity is treated as universally beneficial. Dr. Imani Vale seals the museum and opens one evidence dossier with fixed tabs and separate observation and inference columns.",
+  "mission": "Carry the same dossier through nine permanent locations. Add fossil, morphological, molecular, conserved-cellular, contemporary, and population-diversity evidence only after the observation and the inference it supports are both visible. Keep time evidence separate from ancestry evidence, homology separate from analogy, present-day evolution population-level, and genetic diversity probabilistic and environment dependent.",
+  "finale": "The museum clears its audit when every dossier tab contains a specific observation, an appropriately limited inference, and a record of which independent evidence streams converge. The completed case file can support evolutionary explanations without pretending that every line of evidence answers the same question.",
+  "estimated_minutes": 30,
+  "scene_count": 9,
+  "checkpoint_count": 3,
+  "student_release": "DEVELOPER_PREVIEW_F4C",
+  "preview_release": true,
+  "narrative_design": "U7-F4C-NARRATIVE-1.0",
+  "learner_rule": "Read or listen while keeping the museum route and the six evidence-dossier tabs stable in your mind. Each exact term appears after its diagnostic observation or comparison is visible. The dossier records observation and inference separately so evidence types remain distinct even when several converge.",
+  "route_orientation": "The museum is one continuous clockwise evidence route. Begin at the convergence atrium, descend into fossil time, cross morphology and developmental evidence, separate analogy from homology, enter the molecular scanner and eukaryotic archive, then finish at the live-evolution monitor and genetic-diversity conservatory before returning the completed dossier to the atrium.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Evidence Convergence Atrium",
+      "short": "Convergence",
+      "floor": "Atrium",
+      "symbol": "EVIDENCE"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Fossil Timeline and Dating Vault",
+      "short": "Fossil time",
+      "floor": "Time vault",
+      "symbol": "TIME"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Homology Morphology Hall",
+      "short": "Homology",
+      "floor": "Morphology hall",
+      "symbol": "HOMOLOGY"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Vestigial and Embryology Alcove",
+      "short": "Vestigial",
+      "floor": "Development alcove",
+      "symbol": "REMNANT"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Analogous Structure Wing",
+      "short": "Analogy",
+      "floor": "Flight wing",
+      "symbol": "ANALOGY"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Molecular Evidence Scanner",
+      "short": "Molecules",
+      "floor": "Sequence lab",
+      "symbol": "DNA"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Eukaryotic Common-Ancestry Archive",
+      "short": "Cell features",
+      "floor": "Cell archive",
+      "symbol": "EUK"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Continuing Evolution Monitor",
+      "short": "Evolution now",
+      "floor": "Live monitor",
+      "symbol": "NOW"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Genetic-Diversity Resilience Conservatory",
+      "short": "Resilience",
+      "floor": "Conservatory",
+      "symbol": "VARIATION"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U7-L25",
+      "locus": "Evidence Convergence Atrium",
+      "title": "The Museum Has Evidence Everywhere and an Argument Nowhere",
+      "scene_kicker": "Evolutionary evidence becomes useful only when each observation is connected to the specific inference it can support.",
+      "location_description": "the atrium where independent fossil, geographic, morphological, molecular, and quantitative evidence converges on evolutionary explanations",
+      "scene_layout": {
+        "orientation": "Enter Evidence Convergence Atrium and stop at the atrium where independent fossil, geographic, morphological, molecular, and quantitative evidence converges on evolutionary explanations. Keep extinct / fossil evidence wing fixed on the left, multiple-evidence convergence table as the working center, and extant geographic / molecular evidence wing fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Extinct and fossil evidence wing",
+            "symbol": "PAST",
+            "description": "A dark stone gallery holds fossils, strata diagrams, and extinct-lineage evidence whose job is to document organisms and change through geological time."
+          },
+          {
+            "position": "center",
+            "label": "Multiple-evidence convergence table",
+            "symbol": "INFERENCE",
+            "description": "A circular glass table has six dossier slots so observations remain separated until several independent lines support the same evolutionary explanation."
+          },
+          {
+            "position": "right",
+            "label": "Extant geographic and molecular evidence wing",
+            "symbol": "LIVING",
+            "description": "Living populations, island-mainland maps, anatomical specimens, and sequence strips provide evidence from organisms that still exist."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Extinct and fossil evidence wing",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A dark stone gallery holds fossils, strata diagrams, and extinct-lineage evidence whose job is to document organisms and change through geological time.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Multiple-evidence convergence table",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A circular glass table has six dossier slots so observations remain separated until several independent lines support the same evolutionary explanation.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Extant geographic and molecular evidence wing",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Living populations, island-mainland maps, anatomical specimens, and sequence strips provide evidence from organisms that still exist.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The doors of the **Evolution Evidence Museum** open into a circular stone atrium where a storm of labels has gone wrong. On your **left**, the extinct and fossil wing is stacked with fossil casts, layer diagrams, and cards from organisms that no longer exist. Directly **ahead**, a circular glass convergence table has six empty slots arranged around one blank inference column. On your **right**, the living-evidence wing contains island maps, anatomical models, DNA strips, and specimens from extant populations. Dr. Imani Vale stands at the center with a thick transparent dossier whose tabs read TIME, MORPHOLOGY, MOLECULES, CONSERVED CELL FEATURES, CONTEMPORARY CHANGE, and POPULATION DIVERSITY. A red museum warning flashes above her. EVERY OBJECT HAS BEEN FILED UNDER PROOF OF EVOLUTION.",
+      "story_paragraphs": [
+        "The doors of the **Evolution Evidence Museum** open into a circular stone atrium where a storm of labels has gone wrong. On your **left**, the extinct and fossil wing is stacked with fossil casts, layer diagrams, and cards from organisms that no longer exist. Directly **ahead**, a circular glass convergence table has six empty slots arranged around one blank inference column. On your **right**, the living-evidence wing contains island maps, anatomical models, DNA strips, and specimens from extant populations. Dr. Imani Vale stands at the center with a thick transparent dossier whose tabs read TIME, MORPHOLOGY, MOLECULES, CONSERVED CELL FEATURES, CONTEMPORARY CHANGE, and POPULATION DIVERSITY. A red museum warning flashes above her. EVERY OBJECT HAS BEEN FILED UNDER PROOF OF EVOLUTION.",
+        "Imani lifts the first fossil card from the left wing and refuses to place it on the center table until its job is stated. A fossil can tell you that an organism or trace existed in the past and can contribute to a record of change through geological time. It cannot, by itself, tell you everything about how closely two living species are related. She places the fossil under the TIME tab. Then she takes a DNA strip from the right wing. Sequence similarity can support common ancestry when homologous sequences are compared appropriately. She files that under MOLECULES. The physical separation makes a basic rule visible. Different evidence types answer different evolutionary questions.",
+        "The center table now lights the relationship **Extant and extinct evidence**. Molecular, morphological, genetic, and fossil evidence from living and extinct organisms informs evolutionary history. The word *informs* matters. Each specimen contributes an observation that has to be interpreted. An extinct organism can contribute fossil and morphological evidence. A living organism can contribute morphology, geography, DNA, proteins, and present-day population data. Imani writes the observation on the left side of each dossier card and the inference on the right side so the two can never merge into one vague statement.",
+        "She then opens an island map from the right wing. A lineage on an island resembles a lineage from a nearby mainland more closely than distant alternatives in the display. The geography supports a colonization-and-divergence hypothesis. Imani places it under a geographic evidence tab and names the **Biogeographic island-mainland pattern**. Similarity between island organisms and nearby mainland lineages can support hypotheses of colonization followed by divergence. The map does not claim that geography alone reconstructs every branch. It contributes one line of evidence whose strength grows when independent evidence agrees.",
+        "That agreement is what the center table is built to show. Imani places geological, geographic, morphological, molecular, biochemical, and quantitative evidence into separate illuminated slots. When several independent lines point toward the same history of ancestry or change, the center ring brightens. This is **Multiple independent evidence streams**. Evolution is supported by converging geographical, geological, physical, biochemical, and mathematical evidence. Convergence strengthens an explanation because independent observations reach compatible conclusions through different routes.",
+        "The museum warning drops from red to amber, yet the TIME slot begins pulsing. A fossil card has been stamped 92 MILLION YEARS OLD even though no dating method or geological context is attached to it. Imani closes the convergence table and slides the fossil into the dossier without accepting the number. The next corridor descends into a vault where fossils remain inside their rock context and every numerical age must earn its place through an appropriate clock."
+      ],
+      "story_close": "The museum warning drops from red to amber, yet the TIME slot begins pulsing. A fossil card has been stamped 92 MILLION YEARS OLD even though no dating method or geological context is attached to it. Imani closes the convergence table and slides the fossil into the dossier without accepting the number. The next corridor descends into a vault where fossils remain inside their rock context and every numerical age must earn its place through an appropriate clock.",
+      "object_ids": [
+        "U7-K-028",
+        "U7-K-029",
+        "U7-K-124"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-028",
+          "term": "Multiple independent evidence streams",
+          "story": "the dossier tabs separating fossil, geographic, morphological, molecular, and quantitative observations before the convergence table combines compatible inferences",
+          "science": "Evolution is supported by converging geographical, geological, physical, biochemical, and mathematical evidence.",
+          "exact_name": false,
+          "hint": "the dossier tabs separating fossil, geographic, morphological, molecular, and quantitative observations before the convergence table combines compatible inferences",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-029",
+          "term": "Extant and extinct evidence",
+          "story": "the dossier tabs separating fossil, geographic, morphological, molecular, and quantitative observations before the convergence table combines compatible inferences",
+          "science": "Molecular, morphological, genetic, and fossil evidence from living and extinct organisms informs evolutionary history.",
+          "exact_name": false,
+          "hint": "the dossier tabs separating fossil, geographic, morphological, molecular, and quantitative observations before the convergence table combines compatible inferences",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-124",
+          "term": "Biogeographic island-mainland pattern",
+          "story": "the dossier tabs separating fossil, geographic, morphological, molecular, and quantitative observations before the convergence table combines compatible inferences",
+          "science": "Similarity between island organisms and nearby mainland lineages can support hypotheses of colonization followed by divergence.",
+          "exact_name": false,
+          "hint": "the dossier tabs separating fossil, geographic, morphological, molecular, and quantitative observations before the convergence table combines compatible inferences",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Fossil Timeline and Dating Vault",
+      "f3_scene_brief_id": "F3-U7-L25",
+      "narrative_word_count": 566
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U7-L26",
+      "locus": "Fossil Timeline and Dating Vault",
+      "title": "The Fossil Vault Refuses to Put One Clock on All of Deep Time",
+      "scene_kicker": "Fossil ages depend on geological context and timescale-appropriate radiometric evidence, with carbon-14 restricted to relatively recent organic remains.",
+      "location_description": "the geological timeline where fossils and isotope-appropriate radiometric methods are kept distinct from universal carbon-14 shortcuts",
+      "scene_layout": {
+        "orientation": "Enter Fossil Timeline and Dating Vault and stop at the geological timeline where fossils and isotope-appropriate radiometric methods are kept distinct from universal carbon-14 shortcuts. Keep fossil-record timeline fixed on the left, radiometric-dating vault as the working center, and carbon-14 range boundary fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Fossil-record timeline",
+            "symbol": "OLDER → YOUNGER",
+            "description": "A floor-to-ceiling stratigraphic wall keeps fossils embedded within visibly ordered geological layers before numerical ages are assigned."
+          },
+          {
+            "position": "center",
+            "label": "Radiometric-dating vault",
+            "symbol": "ISOTOPE CLOCK",
+            "description": "A shielded glass vault pairs datable material or surrounding rock with isotope clocks chosen for appropriate timescales."
+          },
+          {
+            "position": "right",
+            "label": "Carbon-14 range boundary",
+            "symbol": "RECENT ONLY",
+            "description": "A short illuminated timeline ends far before the deep-time fossil wall and prevents carbon-14 from being used as a universal fossil clock."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Fossil-record timeline",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A floor-to-ceiling stratigraphic wall keeps fossils embedded within visibly ordered geological layers before numerical ages are assigned.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Radiometric-dating vault",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A shielded glass vault pairs datable material or surrounding rock with isotope clocks chosen for appropriate timescales.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Carbon-14 range boundary",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A short illuminated timeline ends far before the deep-time fossil wall and prevents carbon-14 from being used as a universal fossil clock.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Fossil Timeline and Dating Vault** runs downward like a canyon cut through stone. On your **left**, a floor-to-ceiling wall preserves older and younger layers around a fossil specimen so its stratigraphic position remains visible. Directly **ahead**, the center radiometric vault contains sealed isotope clocks beside samples of datable material and surrounding rock. On your **right**, a short illuminated timeline marked CARBON-14 stops far before the deep-time wall continues. Imani clips the TIME tab of the dossier to the railing and places the unverified fossil card beneath the rock-layer display.",
+      "story_paragraphs": [
+        "The **Fossil Timeline and Dating Vault** runs downward like a canyon cut through stone. On your **left**, a floor-to-ceiling wall preserves older and younger layers around a fossil specimen so its stratigraphic position remains visible. Directly **ahead**, the center radiometric vault contains sealed isotope clocks beside samples of datable material and surrounding rock. On your **right**, a short illuminated timeline marked CARBON-14 stops far before the deep-time wall continues. Imani clips the TIME tab of the dossier to the railing and places the unverified fossil card beneath the rock-layer display.",
+        "She first removes the false numerical age and leaves the specimen inside its geological context. The museum now recognizes the object itself as a **Fossil**. A fossil is preserved evidence of a past organism, including body remains, mineralized structures, impressions, or traces of activity. The important point is wider than bones. A preserved trace can count as fossil evidence when it records past biological activity. Imani keeps the fossil physically embedded in context so the object never floats free of the rock history that helps constrain its age.",
+        "The left wall scrolls through many such specimens and traces. Together they form the **Fossil record**. The fossil record documents changes in organisms through geologic time while remaining incomplete and biased toward conditions favorable to fossilization. Gaps therefore do not mean that no organisms existed during every missing interval. Fossilization is selective in the ordinary physical sense that some environments, tissues, and events preserve evidence more readily than others. The dossier receives an observation about change through time and a limitation about incompleteness on the same card.",
+        "Imani then turns to the center vault. A sample is paired with an isotope whose decay behavior matches the relevant timescale. Only after that match is visible does she name **Radiometric dating**. Radiometric dating estimates ages from predictable radioactive decay, and isotope choice must match the age range being studied. The vault refuses to accept a clock simply because it is radioactive. The method has to fit the material, the geological setting, and the timescale. Relative rock context and numerical radiometric evidence remain separate forms of age information that can support one another.",
+        "The right-hand carbon-14 strip flashes as the system tries to date a very old fossil with the same clock used for recent organic remains. Imani stops it at the boundary. Carbon-14 has a short geologic half-life and is useful for relatively recent organic remains. It is not the standard isotope for very old fossils. Older fossils are commonly constrained using surrounding rock layers and longer-lived radioisotopes. The broader process is **Dating fossils**. Fossil ages can be inferred using rock context, radiometric methods appropriate to the timescale, and geographic or geologic information.",
+        "The dossier TIME tab now contains four separate entries. FOSSIL OBSERVATION. FOSSIL-RECORD PATTERN. GEOLOGICAL CONTEXT. APPROPRIATE RADIOMETRIC ESTIMATE. The original age stamp is replaced by a supported age range, and the warning disappears from the vault. As the door opens, a row of forelimb models rises in the next hall. They perform different jobs, yet the same bones keep appearing in the same underlying order. The next evidence question is no longer when an organism lived. It is what a repeated structural pattern can reveal about ancestry."
+      ],
+      "story_close": "The dossier TIME tab now contains four separate entries. FOSSIL OBSERVATION. FOSSIL-RECORD PATTERN. GEOLOGICAL CONTEXT. APPROPRIATE RADIOMETRIC ESTIMATE. The original age stamp is replaced by a supported age range, and the warning disappears from the vault. As the door opens, a row of forelimb models rises in the next hall. They perform different jobs, yet the same bones keep appearing in the same underlying order. The next evidence question is no longer when an organism lived. It is what a repeated structural pattern can reveal about ancestry.",
+      "object_ids": [
+        "U7-K-030",
+        "U7-K-113",
+        "U7-K-114",
+        "U7-K-115",
+        "U7-K-116"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-030",
+          "term": "Dating fossils",
+          "story": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "science": "Fossil ages can be inferred using rock context, radiometric methods appropriate to the timescale, and geographic/geologic information.",
+          "exact_name": false,
+          "hint": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-113",
+          "term": "Fossil",
+          "story": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "science": "A fossil is preserved evidence of a past organism, including body remains, mineralized structures, impressions, or traces of activity.",
+          "exact_name": true,
+          "hint": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-114",
+          "term": "Fossil record",
+          "story": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "science": "The fossil record documents changes in organisms through geologic time while remaining incomplete and biased toward conditions favorable to fossilization.",
+          "exact_name": true,
+          "hint": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-115",
+          "term": "Radiometric dating",
+          "story": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "science": "Radiometric dating estimates ages from predictable radioactive decay; isotope choice must match the age range being studied.",
+          "exact_name": true,
+          "hint": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-116",
+          "term": "Carbon-14 dating limit",
+          "story": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "science": "Carbon-14, with a short geologic half-life, is useful for relatively recent organic remains and is not the standard isotope for very old fossils.",
+          "exact_name": false,
+          "hint": "the fossil remaining inside older and younger strata while an isotope-appropriate clock is chosen and the carbon-14 timeline stops at recent organic remains",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-017: Lock radiometric dating to isotope-appropriate timescales. Carbon-14 is useful only for relatively recent organic remains; older fossils are commonly constrained using older surrounding rock layers and longer-lived radioisotopes.",
+        "Discrimination requirement U7-D17: keep Fossil record, Radiometric dating, Dating fossils physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Homology Morphology Hall",
+      "f3_scene_brief_id": "F3-U7-L26",
+      "narrative_word_count": 536
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U7-L27",
+      "locus": "Homology Morphology Hall",
+      "title": "Different Limbs Keep Hiding the Same Structural Blueprint",
+      "scene_kicker": "Homology is similarity from shared ancestry, and comparative morphology makes that inherited structural correspondence visible even when present-day functions differ.",
+      "location_description": "the hall linking comparative morphology and homologous structures to common ancestry despite functional divergence",
+      "scene_layout": {
+        "orientation": "Enter Homology Morphology Hall and stop at the hall linking comparative morphology and homologous structures to common ancestry despite functional divergence. Keep comparative-morphology specimens fixed on the left, homology framework as the working center, and homologous-structure comparison fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Comparative-morphology specimens",
+            "symbol": "FORM",
+            "description": "A row of forelimb models preserves the same underlying bone positions while current shapes and functions differ."
+          },
+          {
+            "position": "center",
+            "label": "Homology framework",
+            "symbol": "SHARED PATTERN",
+            "description": "A transparent overlay aligns corresponding structural elements and traces the inherited pattern through a common-ancestry diagram."
+          },
+          {
+            "position": "right",
+            "label": "Homologous-structure comparison",
+            "symbol": "DIFFERENT JOBS",
+            "description": "Matched structures remain side by side with different present-day functions so shared ancestry is not confused with identical use."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Comparative-morphology specimens",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A row of forelimb models preserves the same underlying bone positions while current shapes and functions differ.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Homology framework",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A transparent overlay aligns corresponding structural elements and traces the inherited pattern through a common-ancestry diagram.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Homologous-structure comparison",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Matched structures remain side by side with different present-day functions so shared ancestry is not confused with identical use.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Homology Morphology Hall** is long, bright, and almost empty except for three suspended forelimb models. On your **left**, comparative specimens display the forelimbs of different tetrapod lineages with corresponding bones tagged by position. Directly **ahead**, a transparent center framework can slide the models over one another until matching structural elements align. On your **right**, the same limbs remain separated again under labels for different present-day functions. Imani lays the MORPHOLOGY tab of the dossier flat beneath the display and asks you to ignore function long enough to compare structure.",
+      "story_paragraphs": [
+        "The **Homology Morphology Hall** is long, bright, and almost empty except for three suspended forelimb models. On your **left**, comparative specimens display the forelimbs of different tetrapod lineages with corresponding bones tagged by position. Directly **ahead**, a transparent center framework can slide the models over one another until matching structural elements align. On your **right**, the same limbs remain separated again under labels for different present-day functions. Imani lays the MORPHOLOGY tab of the dossier flat beneath the display and asks you to ignore function long enough to compare structure.",
+        "The left specimens do not have identical proportions. One limb is lengthened in one region, another is shortened, and another carries a different current function. Imani aligns the corresponding elements in the center framework. The same underlying relationship among major bones remains recognizable. This comparison is **Comparative morphology**. Comparative morphology uses structural similarities and differences among organisms to infer functional and evolutionary relationships. The task begins with correspondence among structures, not with a judgment that two organisms look generally alike. She has you follow each matched element from proximal to distal position so the inference comes from an organized structural pattern. A single superficial resemblance would carry much less weight than multiple corresponding elements arranged in the same inherited relationship.",
+        "Once the shared structural pattern is visible, Imani names **Homology**. Homology is similarity caused by shared ancestry, even when descendant structures or sequences have different functions. The center overlay traces the corresponding bones back toward a common ancestral pattern. The right-side function labels are allowed to differ because inherited structure can be modified over evolutionary time. A shared ancestral origin does not require every descendant structure to perform the same job.",
+        "The right display now names the anatomical case more specifically. **Homologous structures** share an underlying inherited structural pattern because of common ancestry, even when they perform different functions. Imani rotates the models slowly while the correspondence lines remain attached. Changing orientation cannot erase the shared arrangement. The relationship is structural and historical, not a trick of viewing angle.",
+        "She files the result under **Morphological homology**. Homologous and vestigial structures provide evidence of common ancestry. The wording deliberately leaves a second kind of structural evidence waiting. A structure can be inherited from an ancestor even after much of its ancestral function has been reduced or altered. The museum had previously labeled such structures USELESS, which erased both their evolutionary history and any present-day role they still retain.",
+        "The optional recall shutter lowers across the hall, leaving only the aligned bone pattern visible through a narrow window. When the shutter rises, a side door opens into a quieter alcove. Embryo models glow on the left. A reduced inherited structure sits in the center beside a larger ancestral counterpart. On the right, a function panel has been crossed out by the broken museum system. The next scene will repair the idea that evolutionary remnants must have no function at all."
+      ],
+      "story_close": "The optional recall shutter lowers across the hall, leaving only the aligned bone pattern visible through a narrow window. When the shutter rises, a side door opens into a quieter alcove. Embryo models glow on the left. A reduced inherited structure sits in the center beside a larger ancestral counterpart. On the right, a function panel has been crossed out by the broken museum system. The next scene will repair the idea that evolutionary remnants must have no function at all.",
+      "object_ids": [
+        "U7-K-031",
+        "U7-K-117",
+        "U7-K-118",
+        "U7-K-122"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-031",
+          "term": "Morphological homology",
+          "story": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "science": "Homologous and vestigial structures provide evidence of common ancestry.",
+          "exact_name": true,
+          "hint": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-117",
+          "term": "Comparative morphology",
+          "story": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "science": "Comparative morphology uses structural similarities and differences among organisms to infer functional and evolutionary relationships.",
+          "exact_name": true,
+          "hint": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-118",
+          "term": "Homology",
+          "story": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "science": "Homology is similarity caused by shared ancestry, even when descendant structures or sequences have different functions.",
+          "exact_name": true,
+          "hint": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-122",
+          "term": "Homologous structures",
+          "story": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "science": "Homologous anatomical structures share an underlying inherited structural pattern because of common ancestry, even when they perform different functions.",
+          "exact_name": true,
+          "hint": "the aligned forelimb structures preserving the same underlying inherited pattern while current functions differ",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-018: Define vestigial structures as inherited remnants that have lost much or all of an ancestral function and may retain reduced or modified functions. Do not teach the appendix or coccyx as functionless.",
+        "Resolved F1 guard RF-U7-019: When discussing flight structures, distinguish analogous wing function from homologous tetrapod forelimb ancestry. Bird and bat forelimbs share homologous skeletal elements even though powered flight evolved independently.",
+        "Discrimination requirement U7-D18: keep Morphological homology, Molecular homology, Sequence similarity as evidence physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U7-D16: keep Homology, Homologous structures, Analogous structures physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-031",
+      "checkpoint_prompt": "Without looking back, identify or explain Morphological homology from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Homologous and vestigial structures provide evidence of common ancestry.",
+      "next_locus": "Vestigial and Embryology Alcove",
+      "f3_scene_brief_id": "F3-U7-L27",
+      "narrative_word_count": 488
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U7-L28",
+      "locus": "Vestigial and Embryology Alcove",
+      "title": "A Reduced Structure Can Carry History Without Being Useless",
+      "scene_kicker": "Embryological homology and vestigial structures are distinct ancestry evidence, and vestigial structures may retain reduced or modified functions.",
+      "location_description": "the alcove where inherited developmental and reduced structures support common ancestry without being labeled functionless",
+      "scene_layout": {
+        "orientation": "Enter Vestigial and Embryology Alcove and stop at the alcove where inherited developmental and reduced structures support common ancestry without being labeled functionless. Keep embryological-homology display fixed on the left, vestigial-structure alcove as the working center, and reduced / modified present-day functions fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Embryological-homology display",
+            "symbol": "DEVELOPMENT",
+            "description": "Related-lineage embryo models illuminate shared developmental structures before their adult forms diverge."
+          },
+          {
+            "position": "center",
+            "label": "Vestigial-structure alcove",
+            "symbol": "ANCESTRAL REMNANT",
+            "description": "A reduced inherited structure is shown beside its larger ancestral counterpart so loss or modification of ancestral function remains visible."
+          },
+          {
+            "position": "right",
+            "label": "Reduced or modified present-day functions",
+            "symbol": "STILL HAS ROLES",
+            "description": "A function panel records any retained or modified role and blocks the museum from labeling vestigial structures simply useless."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Embryological-homology display",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Related-lineage embryo models illuminate shared developmental structures before their adult forms diverge.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Vestigial-structure alcove",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A reduced inherited structure is shown beside its larger ancestral counterpart so loss or modification of ancestral function remains visible.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Reduced or modified present-day functions",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A function panel records any retained or modified role and blocks the museum from labeling vestigial structures simply useless.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Vestigial and Embryology Alcove** is smaller and darker than the morphology hall. On your **left**, related-lineage embryo models illuminate comparable developmental structures before their adult forms diverge. Directly **ahead**, a reduced adult structure is displayed beside a larger ancestral version so the inherited relationship can be seen. On your **right**, a present-day function panel lists reduced or modified roles instead of an empty box. Imani opens the MORPHOLOGY tab to a fresh page and keeps the three zones separate before any inference is entered.",
+      "story_paragraphs": [
+        "The **Vestigial and Embryology Alcove** is smaller and darker than the morphology hall. On your **left**, related-lineage embryo models illuminate comparable developmental structures before their adult forms diverge. Directly **ahead**, a reduced adult structure is displayed beside a larger ancestral version so the inherited relationship can be seen. On your **right**, a present-day function panel lists reduced or modified roles instead of an empty box. Imani opens the MORPHOLOGY tab to a fresh page and keeps the three zones separate before any inference is entered.",
+        "The embryo display activates first. Comparable structures appear during development across related lineages, then contribute to different adult outcomes. Imani records **Embryological homology**. Shared developmental structures can provide evidence of common ancestry when homologous embryonic features develop into different adult structures. The evidence comes from a conserved developmental relationship. It does not require the adult structures to remain identical.",
+        "The center alcove then compares an inherited remnant with the larger ancestral feature from which it descended. Much of the ancestral function has been reduced or altered over evolutionary time, yet the structure itself remains part of the descendant organism. Imani names a **Vestigial structure** only after that ancestry relationship is visible. A vestigial structure is an inherited remnant of an ancestral feature that has lost much or all of its original function and may retain reduced or modified functions.",
+        "The museum system tries to replace the right panel with the word FUNCTIONLESS. Imani blocks the change. Vestigial does not mean that every present-day role has disappeared. A structure can retain a reduced function, a modified function, or another biological role while still being vestigial with respect to an ancestral function. The dossier records ANCESTRAL FUNCTION REDUCED OR MODIFIED and PRESENT-DAY ROLE MAY REMAIN on separate lines. She then covers the ancestral comparison and asks whether the present-day structure alone would justify calling it vestigial. The answer remains incomplete until ancestry and the reduction or modification of ancestral function are part of the evidence. The label is historical as well as structural.",
+        "Imani places the embryology card and vestigial card side by side without merging them. Both can support common ancestry, yet they do so through different observations. Embryological homology uses shared developmental structures. Vestigial evidence uses an inherited remnant whose ancestral role has been reduced or modified. The distinction keeps the evidence specific and prevents the museum from turning every anatomical similarity into the same argument.",
+        "A moving shadow crosses the alcove wall as three wing models begin circling in the next room. Bird, bat, and insect all fly, and the broken museum has stamped their wings HOMOLOGOUS because the function looks similar. Imani closes the vestigial case and carries the dossier forward. The next exhibit will force function and ancestry apart before the word analogous can be earned."
+      ],
+      "story_close": "A moving shadow crosses the alcove wall as three wing models begin circling in the next room. Bird, bat, and insect all fly, and the broken museum has stamped their wings HOMOLOGOUS because the function looks similar. Imani closes the vestigial case and carries the dossier forward. The next exhibit will force function and ancestry apart before the word analogous can be earned.",
+      "object_ids": [
+        "U7-K-119",
+        "U7-K-120"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-119",
+          "term": "Embryological homology",
+          "story": "the embryo-development display beside a reduced inherited structure whose present-day role can remain modified rather than absent",
+          "science": "Shared developmental structures can provide evidence of common ancestry when homologous embryonic features develop into different adult structures.",
+          "exact_name": false,
+          "hint": "the embryo-development display beside a reduced inherited structure whose present-day role can remain modified rather than absent",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-120",
+          "term": "Vestigial structure",
+          "story": "the embryo-development display beside a reduced inherited structure whose present-day role can remain modified rather than absent",
+          "science": "A vestigial structure is an inherited remnant of an ancestral feature that has lost much or all of its original function and may retain reduced or modified functions.",
+          "exact_name": true,
+          "hint": "the embryo-development display beside a reduced inherited structure whose present-day role can remain modified rather than absent",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-018: Define vestigial structures as inherited remnants that have lost much or all of an ancestral function and may retain reduced or modified functions. Do not teach the appendix or coccyx as functionless."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Analogous Structure Wing",
+      "f3_scene_brief_id": "F3-U7-L28",
+      "narrative_word_count": 464
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U7-L29",
+      "locus": "Analogous Structure Wing",
+      "title": "Three Animals Fly, Yet Flight Does Not Give Their Wings One History",
+      "scene_kicker": "Analogous structures share function or form through independent evolution, while homologous components can still exist within a broader analogous comparison.",
+      "location_description": "the wing contrasting similar function from independent evolution with homology from shared ancestry",
+      "scene_layout": {
+        "orientation": "Enter Analogous Structure Wing and stop at the wing contrasting similar function from independent evolution with homology from shared ancestry. Keep bird / bat / insect flight comparison fixed on the left, analogous-structure wing as the working center, and homology-versus-analogy discriminator fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Bird, bat, and insect flight comparison",
+            "symbol": "FLIGHT",
+            "description": "Three suspended flight models share the same broad function while their structural histories remain visibly different."
+          },
+          {
+            "position": "center",
+            "label": "Analogous-structure wing",
+            "symbol": "INDEPENDENT ORIGIN",
+            "description": "The flight surfaces align by function while separate lineage paths show that similar flight structures can arise independently."
+          },
+          {
+            "position": "right",
+            "label": "Homology-versus-analogy discriminator",
+            "symbol": "ANCESTRY / FUNCTION",
+            "description": "A split panel keeps the homologous tetrapod forelimb skeleton of bird and bat separate from independently evolved flight function."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Bird, bat, and insect flight comparison",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Three suspended flight models share the same broad function while their structural histories remain visibly different.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Analogous-structure wing",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "The flight surfaces align by function while separate lineage paths show that similar flight structures can arise independently.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Homology-versus-analogy discriminator",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A split panel keeps the homologous tetrapod forelimb skeleton of bird and bat separate from independently evolved flight function.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Analogous Structure Wing** is built around three suspended flight models. On your **left**, a bird wing, a bat wing, and an insect wing sweep through the same arc above a wind tunnel. Directly **ahead**, the center display aligns the broad flight surfaces by function while separate lineage paths remain visible behind them. On your **right**, a split discriminator has one side labeled SHARED ANCESTRY OF STRUCTURE and the other INDEPENDENT EVOLUTION OF SIMILAR FUNCTION. Imani keeps the MORPHOLOGY tab open and removes the museum's old HOMOLOGOUS label from the center.",
+      "story_paragraphs": [
+        "The **Analogous Structure Wing** is built around three suspended flight models. On your **left**, a bird wing, a bat wing, and an insect wing sweep through the same arc above a wind tunnel. Directly **ahead**, the center display aligns the broad flight surfaces by function while separate lineage paths remain visible behind them. On your **right**, a split discriminator has one side labeled SHARED ANCESTRY OF STRUCTURE and the other INDEPENDENT EVOLUTION OF SIMILAR FUNCTION. Imani keeps the MORPHOLOGY tab open and removes the museum's old HOMOLOGOUS label from the center.",
+        "The left display makes the temptation obvious. All three structures contribute to flight. Similar function alone, however, does not establish that the flight structure was inherited from a recent common ancestor. The lineage paths show that similar selective pressures can produce similar functional solutions in distantly related groups. Only after that independent history is visible does Imani name **Analogous structures**. Analogous structures perform similar functions or have similar forms because of independent evolution under similar selective pressures, not because the feature was inherited from a recent common ancestor.",
+        "The bird and bat models then rotate to expose their internal forelimb skeletons. Corresponding tetrapod bones align in the familiar pattern from the Homology Morphology Hall. Imani leaves those correspondence lines intact. Bird and bat forelimbs share homologous skeletal elements because of common ancestry, even though powered flight evolved independently. The same organisms can therefore participate in different comparisons at different structural levels. She traces the comparison boundary with her pointer. The skeletal framework answers an ancestry question. The broad flight surface answers a functional convergence question. Keeping the level of comparison visible prevents one correct statement from being used to erase another.",
+        "The insect model remains on the left side of the functional comparison without being forced into a tetrapod bone pattern it does not possess. Imani has you trace the evidence claim carefully. Broad flight function across bird, bat, and insect can illustrate analogy. The bird and bat forelimb skeletons can simultaneously illustrate homology. The inference depends on exactly which feature is being compared.",
+        "The right discriminator now accepts the dossier card. FUNCTIONAL SIMILARITY THROUGH INDEPENDENT EVOLUTION goes under ANALOGY. SHARED UNDERLYING FORELIMB PATTERN THROUGH COMMON ANCESTRY remains under HOMOLOGY. The two claims stand beside each other, which makes them easier to remember than a vocabulary rule detached from the structures themselves.",
+        "A thin blue light appears along the floor and leads toward a laboratory. The museum has another comparison problem waiting there. Two organisms have sequences that look similar, yet the scanner has been matching unrelated stretches simply because some letters happen to repeat. Imani closes the morphology tab. The next room will compare DNA and proteins only after homologous regions and positions are aligned."
+      ],
+      "story_close": "A thin blue light appears along the floor and leads toward a laboratory. The museum has another comparison problem waiting there. Two organisms have sequences that look similar, yet the scanner has been matching unrelated stretches simply because some letters happen to repeat. Imani closes the morphology tab. The next room will compare DNA and proteins only after homologous regions and positions are aligned.",
+      "object_ids": [
+        "U7-K-123"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-123",
+          "term": "Analogous structures",
+          "story": "the bird, bat, and insect flight comparison separated into independent flight function and homologous bird-bat forelimb ancestry",
+          "science": "Analogous structures perform similar functions or have similar forms because of independent evolution under similar selective pressures, not because the feature was inherited from a recent common ancestor.",
+          "exact_name": true,
+          "hint": "the bird, bat, and insect flight comparison separated into independent flight function and homologous bird-bat forelimb ancestry",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-019: When discussing flight structures, distinguish analogous wing function from homologous tetrapod forelimb ancestry. Bird and bat forelimbs share homologous skeletal elements even though powered flight evolved independently.",
+        "Discrimination requirement U7-D16: keep Homology, Homologous structures, Analogous structures physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Molecular Evidence Scanner",
+      "f3_scene_brief_id": "F3-U7-L29",
+      "narrative_word_count": 457
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U7-L30",
+      "locus": "Molecular Evidence Scanner",
+      "title": "The Sequence Scanner Will Not Compare Letters Until the Molecules Are Aligned",
+      "scene_kicker": "Molecular similarity supports common ancestry when homologous DNA or protein sequences are compared appropriately.",
+      "location_description": "the scanner using DNA and protein sequence similarity as evidence of common ancestry",
+      "scene_layout": {
+        "orientation": "Enter Molecular Evidence Scanner and stop at the scanner using DNA and protein sequence similarity as evidence of common ancestry. Keep DNA sequence comparison fixed on the left, molecular-homology scanner as the working center, and protein sequence comparison fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "DNA sequence comparison",
+            "symbol": "DNA",
+            "description": "Aligned homologous DNA regions preserve taxon names and nucleotide positions so similarities and differences are compared position by position."
+          },
+          {
+            "position": "center",
+            "label": "Molecular-homology scanner",
+            "symbol": "MATCH",
+            "description": "A scanner highlights shared sequence positions only after homologous regions are aligned across the same comparison set."
+          },
+          {
+            "position": "right",
+            "label": "Protein sequence comparison",
+            "symbol": "PROTEIN",
+            "description": "Aligned amino-acid sequences provide a second molecular comparison using the same taxa and labeled homologous molecules."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "DNA sequence comparison",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Aligned homologous DNA regions preserve taxon names and nucleotide positions so similarities and differences are compared position by position.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Molecular-homology scanner",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A scanner highlights shared sequence positions only after homologous regions are aligned across the same comparison set.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Protein sequence comparison",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Aligned amino-acid sequences provide a second molecular comparison using the same taxa and labeled homologous molecules.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Molecular Evidence Scanner** glows blue behind a glass laboratory wall. On your **left**, aligned DNA sequences from several labeled taxa run horizontally with nucleotide positions marked above them. Directly **ahead**, the center scanner highlights matching and differing positions only within homologous regions. On your **right**, corresponding protein sequences from the same comparison set are aligned by amino-acid position. Imani opens the MOLECULES tab of the dossier and deletes a previous museum score that had compared unrelated sequence fragments simply because they shared a few letters.",
+      "story_paragraphs": [
+        "The **Molecular Evidence Scanner** glows blue behind a glass laboratory wall. On your **left**, aligned DNA sequences from several labeled taxa run horizontally with nucleotide positions marked above them. Directly **ahead**, the center scanner highlights matching and differing positions only within homologous regions. On your **right**, corresponding protein sequences from the same comparison set are aligned by amino-acid position. Imani opens the MOLECULES tab of the dossier and deletes a previous museum score that had compared unrelated sequence fragments simply because they shared a few letters.",
+        "The left sequences enter the scanner without losing their taxon labels or positional alignment. Shared nucleotides light up one color and differences another. Imani then repeats the process with homologous protein sequences on the right. This establishes **Sequence similarity as evidence**. Comparisons of DNA nucleotide sequences and protein amino-acid sequences provide evidence for evolution and common ancestry. The comparison is meaningful because the sequences represent corresponding molecules or regions.",
+        "The scanner next calculates relative similarity across the same set of lineages. A pair with more sequence similarity often supports a more recent common ancestor than a pair with substantially more differences when the comparison is appropriate. Imani names **Molecular homology**. Similarity in DNA or protein sequences can indicate common ancestry, with greater sequence similarity often supporting a more recent common ancestor when compared appropriately.",
+        "She pauses the machine before it prints an exact divergence date. Sequence similarity alone does not automatically provide a precise time since divergence. Molecular-clock reasoning requires additional assumptions, calibration, and model choices that are outside this simple evidence comparison. The dossier therefore records RELATIVE RELATEDNESS SUPPORT and COMMON ANCESTRY SUPPORT without inventing a numerical date. Imani also prevents the scanner from comparing one gene in one taxon with an unrelated gene in another. Homology of the sequence region has to be established first. Only then can counts of similarities and differences contribute meaningfully to the evolutionary inference.",
+        "Imani places the molecular card beside the earlier morphology card on the convergence table preview. Morphological homology and molecular homology are separate evidence streams. When they support compatible relationships, the evolutionary inference becomes stronger. The museum is finally beginning to behave like an argument built from independent evidence rather than a collection of objects that all receive the same label.",
+        "The optional recall light fades, leaving only the aligned sequence positions visible. When the lab door opens again, the floor path leads into a cell archive. Membrane-bound organelles glow on the left. Linear chromosomes and intron-containing genes are displayed on the right. These features were learned in earlier units for their cellular roles. Here they will be reactivated for a different evidentiary question, what conserved cellular architecture can support about common ancestry among eukaryotes."
+      ],
+      "story_close": "The optional recall light fades, leaving only the aligned sequence positions visible. When the lab door opens again, the floor path leads into a cell archive. Membrane-bound organelles glow on the left. Linear chromosomes and intron-containing genes are displayed on the right. These features were learned in earlier units for their cellular roles. Here they will be reactivated for a different evidentiary question, what conserved cellular architecture can support about common ancestry among eukaryotes.",
+      "object_ids": [
+        "U7-K-032",
+        "U7-K-121"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-032",
+          "term": "Sequence similarity as evidence",
+          "story": "the homologous DNA and protein sequences aligned by taxon and position before molecular similarity is interpreted",
+          "science": "Comparisons of DNA nucleotide sequences and protein amino-acid sequences provide evidence for evolution and common ancestry.",
+          "exact_name": false,
+          "hint": "the homologous DNA and protein sequences aligned by taxon and position before molecular similarity is interpreted",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-121",
+          "term": "Molecular homology",
+          "story": "the homologous DNA and protein sequences aligned by taxon and position before molecular similarity is interpreted",
+          "science": "Similarity in DNA or protein sequences can indicate common ancestry, with greater sequence similarity often supporting a more recent common ancestor when compared appropriately.",
+          "exact_name": true,
+          "hint": "the homologous DNA and protein sequences aligned by taxon and position before molecular similarity is interpreted",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U7-K-032",
+          "term": "Sequence similarity as evidence",
+          "dependency": [
+            "Unit 1 protein/nucleic-acid structure",
+            "Unit 6 DNA/protein sequence comparison"
+          ],
+          "rule": "Reactivate the prior representation briefly, then extend it into the Unit 7 evolutionary/evidentiary relationship without assigning a new mnemonic identity."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U7-D18: keep Morphological homology, Molecular homology, Sequence similarity as evidence physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-032",
+      "checkpoint_prompt": "Without looking back, identify or explain Sequence similarity as evidence from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Comparisons of DNA nucleotide sequences and protein amino-acid sequences provide evidence for evolution and common ancestry.",
+      "next_locus": "Eukaryotic Common-Ancestry Archive",
+      "f3_scene_brief_id": "F3-U7-L30",
+      "narrative_word_count": 451
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U7-L31",
+      "locus": "Eukaryotic Common-Ancestry Archive",
+      "title": "The Cell Archive Turns Familiar Features Into Ancestry Evidence",
+      "scene_kicker": "Shared eukaryotic cellular and molecular features can support common ancestry when their conservation across lineages is made explicit.",
+      "location_description": "the archive reactivating shared eukaryotic cellular features as evidence of common ancestry",
+      "scene_layout": {
+        "orientation": "Enter Eukaryotic Common-Ancestry Archive and stop at the archive reactivating shared eukaryotic cellular features as evidence of common ancestry. Keep membrane-bound organelle archive fixed on the left, eukaryotic common-ancestry registry as the working center, and linear chromosome / intron archive fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Membrane-bound organelle archive",
+            "symbol": "ORGANELLES",
+            "description": "Cell models from multiple eukaryotic lineages display conserved membrane-bound organelles in the same evidence case."
+          },
+          {
+            "position": "center",
+            "label": "Eukaryotic common-ancestry registry",
+            "symbol": "SHARED CELL PLAN",
+            "description": "A central registry overlays conserved structural and molecular features across eukaryotic lineages."
+          },
+          {
+            "position": "right",
+            "label": "Linear chromosome and intron archive",
+            "symbol": "CHROMOSOMES / INTRONS",
+            "description": "Linear chromosome models and intron-containing gene diagrams remain beside the cell architecture as conserved molecular features."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Membrane-bound organelle archive",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Cell models from multiple eukaryotic lineages display conserved membrane-bound organelles in the same evidence case.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Eukaryotic common-ancestry registry",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A central registry overlays conserved structural and molecular features across eukaryotic lineages.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Linear chromosome and intron archive",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Linear chromosome models and intron-containing gene diagrams remain beside the cell architecture as conserved molecular features.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Eukaryotic Common-Ancestry Archive** resembles a circular library built from giant transparent cell models. On your **left**, membrane-bound organelles glow inside cells from several eukaryotic lineages. Directly **ahead**, the center registry overlays a shared cellular plan across the specimens. On your **right**, long linear chromosome models hang beside gene diagrams containing introns. Imani opens the CONSERVED CELL FEATURES tab and keeps the familiar structures exactly what they were in earlier units. Their biological identities do not change simply because the question now concerns ancestry.",
+      "story_paragraphs": [
+        "The **Eukaryotic Common-Ancestry Archive** resembles a circular library built from giant transparent cell models. On your **left**, membrane-bound organelles glow inside cells from several eukaryotic lineages. Directly **ahead**, the center registry overlays a shared cellular plan across the specimens. On your **right**, long linear chromosome models hang beside gene diagrams containing introns. Imani opens the CONSERVED CELL FEATURES tab and keeps the familiar structures exactly what they were in earlier units. Their biological identities do not change simply because the question now concerns ancestry.",
+        "She begins with the left archive. Multiple eukaryotic lineages contain membrane-bound organelles. The dossier records **Membrane-bound organelles as common-ancestry evidence**. Shared membrane-bound organelles contribute structural evidence for common ancestry of eukaryotes. The organelles still carry their normal cellular functions. The new step is evidentiary interpretation across lineages.",
+        "On the right, Imani lowers the chromosome models. **Linear chromosomes as common-ancestry evidence** records that linear chromosomes are a conserved feature supporting common ancestry of eukaryotes. Beside them, gene diagrams open to show introns within transcribed regions. **Introns as common-ancestry evidence** identifies genes containing introns as a conserved molecular feature that contributes evidence for common ancestry of eukaryotes.",
+        "The center registry now places those features across multiple eukaryotic lineages rather than assigning them to a single derived group. Imani records **Conserved eukaryotic cellular features**. Membrane-bound organelles, linear chromosomes, and intron-containing genes are among conserved features used as evidence for common ancestry of eukaryotes. The word *among* remains visible because these are examples of conserved features, not an exhaustive list of everything eukaryotes share. She then reopens one cell model and one gene diagram from earlier units. Their original functions remain unchanged. What changes here is the comparison across lineages. A familiar cellular feature becomes evolutionary evidence only when its conserved distribution is placed into an ancestry argument.",
+        "With the three evidence cards aligned, the center registry states the broader inference **Common ancestry of eukaryotes**. Shared structural and functional features support common ancestry among eukaryotes. Imani places the statement under an ancestry heading, not under a time estimate. These features support a historical relationship. They do not by themselves tell the museum an exact date for the common ancestor. The dossier therefore preserves two separate fields, one for the conserved feature that was observed and one for the ancestry inference supported by its distribution across lineages.",
+        "A wall of the archive turns transparent. Beyond it, screens are updating in real time. A bacterial population changes under antibiotic exposure. A pest population responds across generations to pesticide treatment. Pathogen sequence data shift over time. The museum had treated evolution as something belonging only to fossils and deep history. Imani closes the cell archive and opens the CONTEMPORARY CHANGE tab. The next room will show that evolutionary mechanisms continue to operate in populations now."
+      ],
+      "story_close": "A wall of the archive turns transparent. Beyond it, screens are updating in real time. A bacterial population changes under antibiotic exposure. A pest population responds across generations to pesticide treatment. Pathogen sequence data shift over time. The museum had treated evolution as something belonging only to fossils and deep history. Imani closes the cell archive and opens the CONTEMPORARY CHANGE tab. The next room will show that evolutionary mechanisms continue to operate in populations now.",
+      "object_ids": [
+        "U7-K-033",
+        "U7-K-034",
+        "U7-K-035",
+        "U7-K-036",
+        "U7-K-125"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-033",
+          "term": "Common ancestry of eukaryotes",
+          "story": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "science": "Shared structural and functional features support common ancestry among eukaryotes.",
+          "exact_name": false,
+          "hint": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-034",
+          "term": "Membrane-bound organelles as common-ancestry evidence",
+          "story": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "science": "Shared membrane-bound organelles contribute structural evidence for common ancestry of eukaryotes.",
+          "exact_name": false,
+          "hint": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-035",
+          "term": "Linear chromosomes as common-ancestry evidence",
+          "story": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "science": "Linear chromosomes are a conserved feature supporting common ancestry of eukaryotes.",
+          "exact_name": false,
+          "hint": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-036",
+          "term": "Introns as common-ancestry evidence",
+          "story": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "science": "Genes containing introns are a conserved molecular feature that contributes evidence for common ancestry of eukaryotes.",
+          "exact_name": false,
+          "hint": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-125",
+          "term": "Conserved eukaryotic cellular features",
+          "story": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "science": "Membrane-bound organelles, linear chromosomes, and intron-containing genes are among conserved features used as evidence for common ancestry of eukaryotes.",
+          "exact_name": false,
+          "hint": "the conserved membrane-bound organelles, linear chromosomes, and intron-containing genes displayed across multiple eukaryotic lineages",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U7-K-125",
+          "term": "Conserved eukaryotic cellular features",
+          "dependency": [
+            "Unit 2 eukaryotic cell structure",
+            "Unit 6 introns and chromosomes"
+          ],
+          "rule": "Reactivate the prior representation briefly, then extend it into the Unit 7 evolutionary/evidentiary relationship without assigning a new mnemonic identity."
+        }
+      ],
+      "misconception_guards": [],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Continuing Evolution Monitor",
+      "f3_scene_brief_id": "F3-U7-L31",
+      "narrative_word_count": 462
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U7-L32",
+      "locus": "Continuing Evolution Monitor",
+      "title": "The Museum’s Live Feed Shows Evolution Still Running",
+      "scene_kicker": "Genomic change, fossil change, resistance, and pathogen evolution connect historical evidence with evolutionary mechanisms acting in contemporary populations.",
+      "location_description": "the monitor tracking genomic, fossil, resistance, and pathogen evidence that evolution continues in contemporary populations",
+      "scene_layout": {
+        "orientation": "Enter Continuing Evolution Monitor and stop at the monitor tracking genomic, fossil, resistance, and pathogen evidence that evolution continues in contemporary populations. Keep genomic / fossil change feed fixed on the left, continuing-evolution monitor as the working center, and resistance / pathogen evolution feed fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Genomic and fossil change feed",
+            "symbol": "THROUGH TIME",
+            "description": "A scrolling record combines dated fossil change with genomic differences measured across generations and lineages."
+          },
+          {
+            "position": "center",
+            "label": "Continuing-evolution monitor",
+            "symbol": "EVOLUTION CONTINUES",
+            "description": "A central population monitor updates only when evolutionary mechanisms produce heritable population change across generations."
+          },
+          {
+            "position": "right",
+            "label": "Resistance and pathogen evolution feed",
+            "symbol": "SELECTION NOW",
+            "description": "Bacterial, pest, and pathogen population panels track heritable variants and changing frequencies under antibiotics, pesticides, or changing host environments."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Genomic and fossil change feed",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A scrolling record combines dated fossil change with genomic differences measured across generations and lineages.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Continuing-evolution monitor",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A central population monitor updates only when evolutionary mechanisms produce heritable population change across generations.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Resistance and pathogen evolution feed",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "Bacterial, pest, and pathogen population panels track heritable variants and changing frequencies under antibiotics, pesticides, or changing host environments.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Continuing Evolution Monitor** fills an entire dark room with moving timelines. On your **left**, a genomic and fossil feed scrolls from deep time toward the present, keeping dated fossil changes and genomic changes in separate tracks. Directly **ahead**, the center population monitor updates only when heritable population change is documented across generations. On your **right**, three live panels follow bacterial resistance, pesticide resistance, and pathogen change. Imani opens the CONTEMPORARY CHANGE tab and disables the museum's old message that evolution ended once modern species appeared.",
+      "story_paragraphs": [
+        "The **Continuing Evolution Monitor** fills an entire dark room with moving timelines. On your **left**, a genomic and fossil feed scrolls from deep time toward the present, keeping dated fossil changes and genomic changes in separate tracks. Directly **ahead**, the center population monitor updates only when heritable population change is documented across generations. On your **right**, three live panels follow bacterial resistance, pesticide resistance, and pathogen change. Imani opens the CONTEMPORARY CHANGE tab and disables the museum's old message that evolution ended once modern species appeared.",
+        "The left feed first connects old and new records. Change observed through the fossil record provides **Continuity of fossil change**, evidence that evolution has continued through time. Alongside it, measured changes in genomes over generations establish **Genomic change over time**. Changes in genomes over generations provide evidence of continuing evolution. The two tracks differ in material and timescale, yet both document change through time.",
+        "The center monitor names the broad relationship **Evolution continues**. All living lineages have evolutionary histories and populations continue to evolve when evolutionary mechanisms change allele frequencies. The screen uses populations and generations, never an individual transforming itself because conditions changed. Historical evolution and contemporary evolution belong to one continuing process.",
+        "On the right, an antibiotic panel begins with both susceptible and heritable resistant bacterial variants already present or arising by mutation. Antibiotic exposure changes reproductive success. Resistant variants leave more descendants under treatment, and resistance-associated alleles increase across generations. Imani records **Evolution of resistance** and the specific case **Antibiotic resistance evolution**. Resistance can evolve when heritable variants differ in reproductive success under treatment. The bacteria do not decide to become resistant because the drug appears. The monitor keeps generation labels visible so a surviving individual is not confused with an evolving population. The evidence of evolution is the changing representation of heritable variants across descendant generations under the treatment environment.",
+        "The pesticide panel repeats the causal logic with a pest population. Pesticides can impose selection that increases frequencies of heritable resistance variants. The dossier records **Pesticide resistance evolution** without treating the chemical as a creator of needed mutations. The pathogen panel then tracks heritable changes that alter transmissibility, host interactions, drug resistance, or other traits. **Pathogen evolution and emerging disease** and **Emerging-disease evolution** connect population evolution to changing disease patterns without implying that every new outbreak has one evolutionary cause.",
+        "The monitor stabilizes, yet the final museum alarm remains yellow. One case file shows a population that has recovered in number after a severe decline while its genetic variation remains low. Another population contains many more inherited variants. Both are about to face the same novel environmental pressure. Imani carries the evidence dossier into a glass conservatory. The final question is whether genetic diversity changes the probability that a population contains variants capable of tolerating a new pressure."
+      ],
+      "story_close": "The monitor stabilizes, yet the final museum alarm remains yellow. One case file shows a population that has recovered in number after a severe decline while its genetic variation remains low. Another population contains many more inherited variants. Both are about to face the same novel environmental pressure. Imani carries the evidence dossier into a glass conservatory. The final question is whether genetic diversity changes the probability that a population contains variants capable of tolerating a new pressure.",
+      "object_ids": [
+        "U7-K-037",
+        "U7-K-038",
+        "U7-K-039",
+        "U7-K-040",
+        "U7-K-041",
+        "U7-K-126",
+        "U7-K-127",
+        "U7-K-128"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-037",
+          "term": "Evolution continues",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "All living lineages have evolutionary histories and populations continue to evolve when evolutionary mechanisms change allele frequencies.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-038",
+          "term": "Genomic change over time",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "Changes in genomes over generations provide evidence of continuing evolution.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-039",
+          "term": "Continuity of fossil change",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "Change observed through the fossil record provides evidence that evolution has continued through time.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-040",
+          "term": "Evolution of resistance",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "Resistance to antibiotics, pesticides, herbicides, or chemotherapy drugs can evolve when heritable variants differ in reproductive success under treatment.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-041",
+          "term": "Pathogen evolution and emerging disease",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "Pathogen populations can evolve, contributing to the emergence or changing behavior of diseases.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-126",
+          "term": "Antibiotic resistance evolution",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "When heritable resistance variants are present or arise, antibiotic exposure can favor resistant bacteria, increasing resistance-allele frequencies across generations.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-127",
+          "term": "Pesticide resistance evolution",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "Pesticides can impose selection that increases frequencies of heritable resistance variants in pest populations.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-128",
+          "term": "Emerging-disease evolution",
+          "story": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "science": "Pathogen evolution can alter transmissibility, host interactions, drug resistance, or other traits and contribute to emerging disease patterns.",
+          "exact_name": false,
+          "hint": "the population-level live feeds showing genomic change, resistance, and pathogen evolution across generations",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Genetic-Diversity Resilience Conservatory",
+      "f3_scene_brief_id": "F3-U7-L32",
+      "narrative_word_count": 468
+    },
+    {
+      "scene_index": 8,
+      "locus_id": "U7-L33",
+      "locus": "Genetic-Diversity Resilience Conservatory",
+      "title": "Two Populations Face the Same New Pressure With Different Genetic Options",
+      "scene_kicker": "Genetic diversity influences population resilience by changing the probability that some individuals already carry phenotypes that tolerate a new environmental pressure.",
+      "location_description": "the conservatory where diversity changes the probability that a population contains variants able to tolerate new pressures",
+      "scene_layout": {
+        "orientation": "Enter Genetic-Diversity Resilience Conservatory and stop at the conservatory where diversity changes the probability that a population contains variants able to tolerate new pressures. Keep low-diversity vulnerability enclosure fixed on the left, genetic-variation resilience conservatory as the working center, and tolerant-variant / changing-fitness enclosure fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Low-diversity vulnerability enclosure",
+            "symbol": "LOW VARIATION",
+            "description": "A population with very few heritable variants faces the same new environmental pressure as the comparison population."
+          },
+          {
+            "position": "center",
+            "label": "Genetic-variation resilience conservatory",
+            "symbol": "VARIATION",
+            "description": "A larger set of inherited variants is displayed across one population without labeling every variant beneficial."
+          },
+          {
+            "position": "right",
+            "label": "Tolerant-variant and changing-fitness enclosure",
+            "symbol": "CONTEXT",
+            "description": "A novel pressure changes which variants confer higher reproductive success, while a condor case records diversity lost during a bottleneck."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, a slim brass pointer, and a transparent evidence dossier tucked beneath her left arm",
+          "job": "keeps each specimen physically attached to the observation it provides and records the specific evolutionary inference on the correct dossier tab without allowing one evidence type to inherit the job of another"
+        },
+        {
+          "name": "Low-diversity vulnerability enclosure",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A population with very few heritable variants faces the same new environmental pressure as the comparison population.",
+          "job": "Remain fixed on the learner's left and carry the left-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Genetic-variation resilience conservatory",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A larger set of inherited variants is displayed across one population without labeling every variant beneficial.",
+          "job": "Remain fixed on the learner's center and carry the center-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Tolerant-variant and changing-fitness enclosure",
+          "kind": "scientific evidence zone or comparison apparatus",
+          "visual": "A novel pressure changes which variants confer higher reproductive success, while a condor case records diversity lost during a bottleneck.",
+          "job": "Remain fixed on the learner's right and carry the right-side evidentiary role required by the locked F3 geometry."
+        },
+        {
+          "name": "Expanding evidence dossier",
+          "kind": "journey continuity object",
+          "visual": "a transparent case file with fixed tabs for time, morphology, molecules, conserved cell features, contemporary change, and population diversity; every card has an observation field and an inference field",
+          "job": "keeps evidence types separate until independent lines legitimately converge on the same evolutionary explanation"
+        },
+        {
+          "name": "Observation column",
+          "kind": "evidence recorder",
+          "visual": "the left half of every dossier card, reserved for what was actually measured, seen, dated, aligned, or compared",
+          "job": "prevents an inference from being mistaken for a raw observation"
+        },
+        {
+          "name": "Inference column",
+          "kind": "evidence recorder",
+          "visual": "the right half of every dossier card, reserved for the specific evolutionary claim supported by the observation",
+          "job": "forces every specimen to state what it can support and what it cannot establish by itself"
+        }
+      ],
+      "continuity_object": "one expanding evidence dossier with separate tabs for time, morphology, molecules, conserved cellular features, contemporary change, and population diversity; evidence is never moved between tabs unless the inference truly applies. The tab structure prevents fossil age, common ancestry, convergence, and contemporary evolution from being collapsed into one undifferentiated “evidence” category.",
+      "story_open": "The **Genetic-Diversity Resilience Conservatory** is divided into three connected glass enclosures. On your **left**, a low-diversity population contains many individuals yet only a narrow range of inherited variants. Directly **ahead**, the center conservatory holds a comparison population with a broader distribution of genetic variation. On your **right**, a novel environmental-pressure chamber contains several phenotype response lanes and a California condor case file. Imani opens the final POPULATION DIVERSITY tab and applies the same pressure to both populations at the same time.",
+      "story_paragraphs": [
+        "The **Genetic-Diversity Resilience Conservatory** is divided into three connected glass enclosures. On your **left**, a low-diversity population contains many individuals yet only a narrow range of inherited variants. Directly **ahead**, the center conservatory holds a comparison population with a broader distribution of genetic variation. On your **right**, a novel environmental-pressure chamber contains several phenotype response lanes and a California condor case file. Imani opens the final POPULATION DIVERSITY tab and applies the same pressure to both populations at the same time.",
+        "The left population has few heritable alternatives. When the environment changes, a large fraction of individuals perform poorly because the population contains few variants that tolerate the new condition. Imani records **Low diversity increases vulnerability**. Populations with little genetic diversity are more vulnerable to decline or extinction when environments change. The claim concerns probability and population capacity. A low-diversity population is not guaranteed to disappear under every environmental change.",
+        "The center population contains more genetic variation before the pressure arrives. Some variants confer no special advantage under the old conditions. Under the new pressure, at least one inherited phenotype performs better and leaves more descendants. Imani records **Diversity increases probability of tolerant variants**. Genetically diverse populations are more likely to include individuals whose phenotypes tolerate a novel environmental pressure. Greater variation increases the chance that useful variants are already present.",
+        "The right chamber then changes the environment again. The variant that performed best under the first pressure loses its advantage and another phenotype performs better. This makes **Fitness effects depend on environment** visible. An allele that is advantageous under one set of conditions can be neutral or harmful under another because selective pressures differ. The conservatory therefore refuses the idea that more genetic variation means every allele is beneficial. Variation supplies alternatives whose fitness effects depend on context.",
+        "Imani places the California condor case file beneath the low-diversity enclosure. The severe historical decline of California condors illustrates a demographic bottleneck that reduced genetic diversity. Even after conservation increased population numbers, lost variation could not be restored simply by counting more individuals. The case is filed as **California condor genetic bottleneck** and supports the broader relationship **Genetic variation affects population resilience**. The amount and distribution of genetic variation influence population dynamics and the capacity to respond to environmental change.",
+        "The final optional recall light turns off every label except the two population enclosures and the changing environmental-pressure chamber. When the labels return, Imani carries the completed dossier back to the center convergence table. TIME contains fossils and dating evidence. MORPHOLOGY contains homology, vestigial evidence, embryology, and analogy. MOLECULES contains sequence comparisons. CONSERVED CELL FEATURES contains eukaryotic architecture. CONTEMPORARY CHANGE contains genomic, resistance, and pathogen records. POPULATION DIVERSITY contains resilience evidence. The museum alarm finally turns green because each line of evidence now has a specific job and several independent lines can converge on the same evolutionary explanation without becoming interchangeable."
+      ],
+      "story_close": "The final optional recall light turns off every label except the two population enclosures and the changing environmental-pressure chamber. When the labels return, Imani carries the completed dossier back to the center convergence table. TIME contains fossils and dating evidence. MORPHOLOGY contains homology, vestigial evidence, embryology, and analogy. MOLECULES contains sequence comparisons. CONSERVED CELL FEATURES contains eukaryotic architecture. CONTEMPORARY CHANGE contains genomic, resistance, and pathogen records. POPULATION DIVERSITY contains resilience evidence. The museum alarm finally turns green because each line of evidence now has a specific job and several independent lines can converge on the same evolutionary explanation without becoming interchangeable.",
+      "object_ids": [
+        "U7-K-057",
+        "U7-K-058",
+        "U7-K-059",
+        "U7-K-060",
+        "U7-K-164"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-057",
+          "term": "Genetic variation affects population resilience",
+          "story": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "science": "The amount and distribution of genetic variation influence population dynamics and the capacity to respond to environmental change.",
+          "exact_name": false,
+          "hint": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-058",
+          "term": "Low diversity increases vulnerability",
+          "story": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "science": "Populations with little genetic diversity are more vulnerable to decline or extinction when environments change.",
+          "exact_name": false,
+          "hint": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-059",
+          "term": "Diversity increases probability of tolerant variants",
+          "story": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "science": "Genetically diverse populations are more likely to include individuals whose phenotypes tolerate a novel environmental pressure.",
+          "exact_name": false,
+          "hint": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-060",
+          "term": "Fitness effects depend on environment",
+          "story": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "science": "An allele that is advantageous under one set of conditions can be neutral or harmful under another because selective pressures differ.",
+          "exact_name": true,
+          "hint": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-164",
+          "term": "California condor genetic bottleneck",
+          "story": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "science": "The severe historical decline of California condors illustrates how demographic collapse can reduce genetic diversity, leaving a restored population numerically larger but genetically constrained.",
+          "exact_name": false,
+          "hint": "the low-diversity and high-diversity populations facing the same new pressure while fitness changes with environmental context",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-057",
+      "checkpoint_prompt": "Without looking back, identify or explain Genetic variation affects population resilience from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "The amount and distribution of genetic variation influence population dynamics and the capacity to respond to environmental change.",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U7-L33",
+      "narrative_word_count": 480
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "frozen_prior_journey_lock": "LOCKED_F4B_J1_J2"
+}

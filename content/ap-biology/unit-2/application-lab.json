@@ -1,0 +1,129 @@
+{
+  "schema": "memory-palace-v2-unit2-f5-challenge-lab-1.0",
+  "unit_id": "unit-2",
+  "title": "Unit 2 Challenge Lab",
+  "student_intro": "Use these after the related journeys. One challenge appears at a time so calculation and application practice stays manageable.",
+  "challenge_count": 9,
+  "practice_only_runtime_count": 9,
+  "practice_only_runtime_object_ids": [
+    "U2-K-134",
+    "U2-K-135",
+    "U2-K-136",
+    "U2-K-137",
+    "U2-K-138",
+    "U2-K-139",
+    "U2-K-140",
+    "U2-K-141",
+    "U2-K-142"
+  ],
+  "items": [
+    {
+      "challenge_id": "U2-APP-01",
+      "knowledge_id": "U2-K-134",
+      "domain": "Cell structure and secretion",
+      "title": "Albumin production under organelle disruption",
+      "prompt": "A liver cell continues transcribing an albumin gene normally, but extensive damage disrupts rough endoplasmic reticulum and Golgi function. Predict how secretion of albumin into the blood would change and explain the cellular pathway responsible.",
+      "answer_guide": "Albumin secretion should decrease. A secreted protein is translated by ribosomes associated with the rough ER, enters the endomembrane trafficking pathway, is transported to and processed/sorted by the Golgi, and is ultimately delivered in secretory vesicles for exocytosis. Disruption of rough ER and Golgi function therefore interferes with production/processing/trafficking even if transcription remains normal.",
+      "story_hint": "Picture the red protein-cargo case moving from bound ribosomes into rough ER, then through receiving and dispatch sides of the Golgi before a secretory vesicle can leave the cell.",
+      "canonical_statement": "Use organelle function to infer how liver-cell disruption could lower production/processing/secretion of a blood protein; evaluate the specific prompt with appropriate ER/Golgi reasoning.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-02",
+      "knowledge_id": "U2-K-135",
+      "domain": "Cell structure and secretion",
+      "title": "Trace a newly made insulin molecule",
+      "prompt": "A pancreatic cell has just begun producing a molecule of insulin for secretion. Trace the major cellular structures the protein uses from translation to release outside the cell.",
+      "answer_guide": "Translation occurs on ribosomes bound to the rough ER. The protein enters the ER for folding/processing, moves in transport vesicles to the Golgi, is further processed and sorted there, is packaged into secretory vesicles, and is released when those vesicles fuse with the plasma membrane by exocytosis.",
+      "story_hint": "Follow one secreted protein through the same route as the red-tracked cargo in Cell Operations Complex: bound ribosome → rough ER → vesicle → Golgi → secretory vesicle → plasma membrane.",
+      "canonical_statement": "Trace a secreted protein through translation on rough-ER-bound ribosomes, ER processing/transport, Golgi processing/sorting, secretory vesicles, and exocytosis.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-03",
+      "knowledge_id": "U2-K-136",
+      "domain": "Organelle function",
+      "title": "Detoxification and damaged-organelle cleanup",
+      "prompt": "A liver cell is exposed repeatedly to a chemical that requires detoxification, and some of its organelles become damaged. Identify the organelle system expected to increase detoxification activity and the cellular process that can deliver damaged organelles for degradation.",
+      "answer_guide": "Smooth ER is associated with detoxification of drugs and poisons in liver cells. Damaged organelles can be enclosed and delivered to lysosomes through autophagy, where lysosomal hydrolytic enzymes break down the material for recycling.",
+      "story_hint": "Return to the smooth ER detoxification bench, then picture the recycling bay receiving a membrane-wrapped damaged organelle through autophagy.",
+      "canonical_statement": "Use smooth-ER detoxification and lysosome/autophagy reasoning in a liver-cell scenario.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-04",
+      "knowledge_id": "U2-K-137",
+      "domain": "Cell size and geometry",
+      "title": "Surface area-to-volume calculation",
+      "prompt": "Compare two cube-shaped cells. Cell A has side length 1 μm and Cell B has side length 4 μm. Calculate surface area, volume, and surface-area-to-volume ratio for each. Which has more membrane surface available relative to the amount of cytoplasm it must support?",
+      "answer_guide": "For a cube, SA = 6s² and V = s³. Cell A: SA = 6 μm², V = 1 μm³, SA:V = 6:1. Cell B: SA = 96 μm², V = 64 μm³, SA:V = 1.5:1. Cell B has more total surface area, but Cell A has much more surface area relative to its volume and therefore a more favorable exchange ratio.",
+      "story_hint": "Picture the small bright cube beside the enlarged cube whose center darkens even though its total outside surface is larger.",
+      "canonical_statement": "Calculate and compare surface area, volume, and SA:V for cubes or spheres and connect the ratio to exchange efficiency.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-05",
+      "knowledge_id": "U2-K-138",
+      "domain": "Membrane fluidity",
+      "title": "Cold-water membrane adaptation",
+      "prompt": "Two closely related fish populations live at different temperatures. The cold-water population has a greater proportion of unsaturated fatty-acid tails in its membrane phospholipids. Explain how this difference can help membrane function in the colder environment.",
+      "answer_guide": "Cis double bonds in unsaturated fatty-acid tails introduce kinks that prevent phospholipids from packing as tightly. In cold conditions, this helps preserve membrane fluidity when lower temperature would otherwise reduce molecular movement and promote tighter packing.",
+      "story_hint": "Picture the cold end of Fluidity Climate Control, where kinked unsaturated tails keep neighboring phospholipids from packing into a rigid wall.",
+      "canonical_statement": "Predict how greater unsaturated lipid content can help preserve membrane fluidity in cold conditions and justify through tail packing.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-06",
+      "knowledge_id": "U2-K-139",
+      "domain": "Diffusion",
+      "title": "Read a diffusion diagram",
+      "prompt": "A membrane is permeable to molecule X. At time 0, the left side contains 90 X molecules and the right side contains 10. Predict the initial net direction of diffusion. Later both sides contain equal concentrations. Describe molecular movement at that later time.",
+      "answer_guide": "Initially there is net diffusion from left to right, down the concentration gradient. At equal concentrations, X molecules still move randomly across the membrane in both directions, but the opposing rates are equal so there is no net movement in either direction.",
+      "story_hint": "Return to the Concentration Ramp: particles never stop moving, but the crowd difference determines the net direction until dynamic equilibrium is reached.",
+      "canonical_statement": "Predict net movement from concentration differences across a selectively permeable membrane and distinguish dynamic molecular movement from net movement.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-07",
+      "knowledge_id": "U2-K-140",
+      "domain": "Cotransport",
+      "title": "Sucrose uptake and external pH",
+      "prompt": "A plant cell uses an H⁺/sucrose symporter to import sucrose. An ATP-driven proton pump maintains a higher H⁺ concentration outside the cell. Predict what would happen to sucrose uptake if the external solution becomes less acidic while the other conditions remain similar, and justify the prediction.",
+      "answer_guide": "Sucrose uptake would generally decrease because a less acidic external solution has a lower H⁺ concentration, weakening the H⁺ electrochemical gradient that supplies the immediate energy for H⁺/sucrose cotransport. The symporter itself does not directly hydrolyze ATP in this mechanism; ATP was used by the proton pump to establish the gradient.",
+      "story_hint": "Picture the final transit platform: ATP powers the proton pump first, the stored H⁺ gradient forms, and downhill H⁺ movement then carries sucrose uphill through the symporter.",
+      "canonical_statement": "Interpret pH-dependent sucrose uptake using a proton gradient and H+/sucrose cotransport mechanism.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-08",
+      "knowledge_id": "U2-K-141",
+      "domain": "Cell recognition and bulk transport",
+      "title": "Macrophage recognition and engulfment",
+      "prompt": "A macrophage recognizes molecular features on the surface of a bacterium, extends its membrane around the bacterium, and encloses it in an internal vesicle. Name the transport process and explain how cell-surface recognition contributes to the response.",
+      "answer_guide": "The uptake process is phagocytosis, a form of endocytosis for large particles. Cell-surface recognition molecules and receptors help the macrophage distinguish and bind relevant external targets; membrane remodeling then engulfs the bacterium into a vesicle for intracellular processing.",
+      "story_hint": "Picture the recognition counter identifying an external surface pattern, followed by the phagocytosis bay wrapping membrane around one large particle.",
+      "canonical_statement": "Describe phagocytosis and connect cell-recognition molecules to pathogen recognition.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U2-APP-09",
+      "knowledge_id": "U2-K-142",
+      "domain": "Water potential",
+      "title": "Calculate water potential and predict movement",
+      "prompt": "A plant cell has a 0.20 M sucrose solution at 300 K and pressure potential Ψp = +2.0 bar. Use i = 1 and R = 0.0831 L·bar·mol⁻¹·K⁻¹. Calculate Ψs using Ψs = −iCRT, calculate total Ψ, and predict the net direction of water movement if the cell is placed in pure water at Ψ = 0 bar.",
+      "answer_guide": "Ψs = −(1)(0.20)(0.0831)(300) = −4.986 bar. Total Ψ = Ψp + Ψs = +2.0 + (−4.986) = −2.986 bar, approximately −3.0 bar. Water moves net from the higher water potential outside (0 bar) toward the lower water potential inside the cell (about −3.0 bar).",
+      "story_hint": "Picture the final conservatory control panel: calculate the negative solute component first, add the pressure component, then move water from the chamber with higher total Ψ toward the chamber with lower total Ψ.",
+      "canonical_statement": "Calculate Ψs and Ψ, compare water potentials, and predict net water movement using the current CED equations.",
+      "success_criterion": "Solve the fresh problem and justify the mechanism using ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    }
+  ]
+}

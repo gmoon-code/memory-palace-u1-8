@@ -1,0 +1,68 @@
+{
+  "schema": "memory-palace-u6-f1-coverage-1.0",
+  "unit_id": "unit-6",
+  "ppt_coverage": {
+    "expected_pages": 121,
+    "ingested": 121,
+    "mapped_or_preserved": 121,
+    "unmapped": 0,
+    "metadata_only_slides": [
+      1,
+      19,
+      28,
+      40,
+      41,
+      46,
+      58,
+      72,
+      85,
+      89,
+      109,
+      117
+    ]
+  },
+  "ced_coverage": {
+    "topics_expected": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "6.5",
+      "6.6",
+      "6.7",
+      "6.8"
+    ],
+    "topics_present": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "6.5",
+      "6.6",
+      "6.7",
+      "6.8"
+    ],
+    "atoms": 89,
+    "ap_required_atoms": 83,
+    "exclusion_atoms": 6
+  },
+  "canonical_coverage": {
+    "records": 202,
+    "scope_counts": {
+      "AP_REQUIRED": 83,
+      "SCOPE_GUARD": 25,
+      "TEACHER_REQUIRED_ENRICHMENT": 78,
+      "PRACTICE_ONLY": 16
+    },
+    "review_flags_resolved": 39,
+    "assessment_crosswalks": 12,
+    "cross_unit_dependencies": 5
+  },
+  "student_runtime": {
+    "journeys": 0,
+    "scenes": 0,
+    "memory_objects": 0,
+    "application_challenges": 0,
+    "student_release": false
+  }
+}

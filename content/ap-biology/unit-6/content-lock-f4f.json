@@ -1,0 +1,69 @@
+{
+  "schema": "memory-palace-v2-unit6-f4f-lock-1.0",
+  "unit_id": "unit-6",
+  "lock_status": "LOCKED_F4F_J1_J6",
+  "student_release": false,
+  "preview_release": true,
+  "protected_prior_locks": [
+    "content-lock-f1.json",
+    "content-lock-f2.json",
+    "content-lock-f3.json",
+    "content-lock-f4a.json",
+    "content-lock-f4b.json",
+    "content-lock-f4c.json",
+    "content-lock-f4d.json",
+    "content-lock-f4e.json"
+  ],
+  "frozen_f4a_journey_sha256": "fe01ed27cd6a8830022f131c22bcce74f9ad094aef189c991effb66f09741b83",
+  "frozen_f4b_journey_sha256": "62745c2fdcf98af10667a7cefa9907b420036952050d59aea7231dbd66de1ec6",
+  "frozen_f4c_journey_sha256": "91995e5f1e8f30072d511701556214fa16ba28b8533b460719bfe5b136722715",
+  "frozen_f4d_journey_sha256": "e074f28b35de6fe96de2015b1d8732055bc238235fa87367cf1976cb1df30b89",
+  "frozen_f4e_journey_sha256": "23b21efa45badeaef8db794af47f6fed87a623758e3c87487de2dcd68326aac1",
+  "journey_ids": [
+    "U6-J1",
+    "U6-J2",
+    "U6-J3",
+    "U6-J4",
+    "U6-J5",
+    "U6-J6"
+  ],
+  "scene_count": 53,
+  "new_journey_scene_count": 5,
+  "new_journey_knowledge_record_count": 11,
+  "new_journey_checkpoint_count": 2,
+  "files": {
+    "journeys/U6-J1.json": {
+      "bytes": 162980,
+      "sha256": "fe01ed27cd6a8830022f131c22bcce74f9ad094aef189c991effb66f09741b83"
+    },
+    "journeys/U6-J2.json": {
+      "bytes": 108125,
+      "sha256": "62745c2fdcf98af10667a7cefa9907b420036952050d59aea7231dbd66de1ec6"
+    },
+    "journeys/U6-J3.json": {
+      "bytes": 101086,
+      "sha256": "91995e5f1e8f30072d511701556214fa16ba28b8533b460719bfe5b136722715"
+    },
+    "journeys/U6-J4.json": {
+      "bytes": 158108,
+      "sha256": "e074f28b35de6fe96de2015b1d8732055bc238235fa87367cf1976cb1df30b89"
+    },
+    "journeys/U6-J5.json": {
+      "bytes": 102578,
+      "sha256": "23b21efa45badeaef8db794af47f6fed87a623758e3c87487de2dcd68326aac1"
+    },
+    "journeys/U6-J6.json": {
+      "bytes": 65826,
+      "sha256": "cbb16bdd2ca5e9f386150860c5b802c93fadae25ff918db7bc366190f1f6c95c"
+    },
+    "journeys-f4f.json": {
+      "bytes": 18154,
+      "sha256": "84a2433c5e0ea5b01afbde2fa771ca84523e5d5aa562a78e567538e66bebc4bb"
+    },
+    "status-f4f.json": {
+      "bytes": 1412,
+      "sha256": "3cbdd7f45adb0a258959d06aa9e78d3eb5cf697c0761396d07ef75e07e105a04"
+    }
+  },
+  "rule": "Journeys 1–5 remain byte-frozen from F4A–F4E. Journey 6 polished prose may not change after F4F without a new explicit narrative version. F1 science, F2 classification/geometry, and F3 briefs remain authoritative boundaries."
+}

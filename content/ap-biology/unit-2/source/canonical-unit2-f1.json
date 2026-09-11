@@ -1,0 +1,3505 @@
+{
+  "schema": "memory-palace-u2-f1-source-lock-1.0",
+  "generated_utc": "2026-09-02T05:47:15.406986+00:00",
+  "unit": {
+    "number": 2,
+    "title": "Cells / Cell Structure and Function",
+    "current_ced_exam_weight": "10–13%",
+    "current_ced_class_periods": "~14–16"
+  },
+  "authority_policy": {
+    "ap_scope": "AP Biology CED Effective Fall 2025",
+    "teacher_exposure": "APBIO-U2-PPT + APBIO-U2-Packet",
+    "scientific_verification": "Campbell Biology 13th edition",
+    "rule": "Source text is preserved separately. Canonical records may correct or qualify teacher-source wording; current CED determines AP-required scope."
+  },
+  "source_inventory": [
+    {
+      "source_id": "SRC-U2-PPT",
+      "name": "APBIO-U2-PPT(1).pdf",
+      "role": "PRIMARY_TEACHER_INSTRUCTION",
+      "pages": 109,
+      "availability": "FULL_LOCAL",
+      "sha256": "ca1042ce1a8b8998672b7e260bc056b6e3cc548be939421ef7d5246ff646327c",
+      "policy": "Preserve classroom wording/examples exactly in source layer. Canonical science may correct/qualify source wording without rewriting the source record."
+    },
+    {
+      "source_id": "SRC-U2-PACKET",
+      "name": "APBIO-U2-Packet.pdf",
+      "role": "PRIMARY_TEACHER_GUIDED_NOTES_AND_PRACTICE",
+      "pages": 45,
+      "availability": "FILE_LIBRARY_FULL_MULTIMODAL; topic-level semantic ingestion completed",
+      "sha256": null,
+      "policy": "Packet topic summaries, vocabulary, review questions, guided-note content, and practice are teacher-course evidence. Current CED controls AP scope."
+    },
+    {
+      "source_id": "SRC-CED-2025",
+      "name": "AP Biology Course and Exam Description, Effective Fall 2025",
+      "role": "AP_SCOPE_AUTHORITY",
+      "pages": 240,
+      "availability": "FULL_LOCAL",
+      "sha256": "30db56cdd81a231b17d48aeda420364794b285beedfd1f1a1c256de0939b793c",
+      "policy": "Current CED controls AP-required content, equations, illustrative examples, and topic numbering."
+    },
+    {
+      "source_id": "SRC-CAMP13",
+      "name": "Campbell Biology, 13th edition",
+      "role": "SCIENTIFIC_VERIFIER",
+      "pages": 1505,
+      "availability": "FULL_LOCAL",
+      "sha256": "f918b65468142a17826c360a303497a1fe00a9f5e14f14c7c5a139402a1cc0cc",
+      "policy": "Use to verify mechanisms, terminology, structure-function relationships, and teacher-source oversimplifications. It does not expand AP-required scope by itself."
+    }
+  ],
+  "ppt_raw_slides": [
+    {
+      "slide_id": "PPT-S001",
+      "slide": 1,
+      "section": "Title",
+      "raw_text": "",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S002",
+      "slide": 2,
+      "section": "Cell foundations and compartmentalization",
+      "raw_text": "Cells\n● Cells: the basic structural and functional units of\n  every organism\n  ○ All cells:\n     1. Are bound by a plasma membrane\n     2. Contain cytosol\n     3. Contain chromosomes\n     4. Contain ribosomes",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S003",
+      "slide": 3,
+      "section": "Cell foundations and compartmentalization",
+      "raw_text": "Cells\nThere are two types of cells: prokaryotes and\neukaryotes\n     Prokaryotes                   Eukaryotes\n● Domains Bacteria and       ● Protists, fungi,\n  Archaea                      animals, and plants\n● DNA is in the nucleoid     ● DNA is in the nucleus\n  region                     ● Contain membrane\n● Generally smaller in         bound organelles\n  size than eukaryotes",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S004",
+      "slide": 4,
+      "section": "Cell foundations and compartmentalization",
+      "raw_text": "Organelles",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S005",
+      "slide": 5,
+      "section": "Cell foundations and compartmentalization",
+      "raw_text": "Organelles\nOrganelles: membrane bound structures in eukaryotes\nTwo classifications:\nEndomembrane organelles\n  1. Nuclear envelope\n  2. Endoplasmic reticulum\n  3. Golgi complex\n  4. Lysosomes\n  5. Vesicles/Vacuoles\n  6. Plasma membrane\nEnergy organelles\n  1. Mitochondria\n  2. Chloroplasts",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S006",
+      "slide": 6,
+      "section": "Cell foundations and compartmentalization",
+      "raw_text": "Compartmentalization\n● Compartmentalization in organelles allows for\n  different metabolic reactions to occur in different\n  locations\n   ○ Increases surface area for reactions to occur\n   ○ Prevents interfering reactions from occuring in\n      the same location\n\n\n\n\n                                              Topic 2.10",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S007",
+      "slide": 7,
+      "section": "Cell foundations and compartmentalization",
+      "raw_text": "Unique Cell Components\n         Plants            Animals\n● Chloroplasts      ● Lysosomes\n● Central vacuole   ● Centrosomes\n● Cell wall         ● Flagella\n● Plasmodesmata",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S008",
+      "slide": 8,
+      "section": "Endomembrane system",
+      "raw_text": "Endomembrane\n  Organelles",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S009",
+      "slide": 9,
+      "section": "Endomembrane system",
+      "raw_text": "Nucleus\n● Contains chromosomes (genetic\n  information)\n   ○ Enclosed by the nuclear\n     envelope\n      ■ Double membrane\n   ○ Has pores\n      ■ Pores regulate entry and\n        exit of materials from the\n        cell",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S010",
+      "slide": 10,
+      "section": "Endomembrane system",
+      "raw_text": "Nucleus\nContains a nucleolus\n ● Dense region of the nucleus\n   where ribosomal RNA (rRNA) is\n   synthesized\n   ○ rRNA is combined with proteins\n      to form large and small\n      subunits of ribosomes\n   ○ Subunits exit via nuclear pores\n        ■ Assemble into ribosomes\n          ● Ribosomes translate messages found on\n             mRNA into the primary structure of\n             polypeptides",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S011",
+      "slide": 11,
+      "section": "Endomembrane system",
+      "raw_text": "Review\nIn order for DNA to leave the nucleus, it must first be\ntranscribed by RNA polymerase into messenger\nRNA (mRNA). The mRNA transcript must then be\nmodified before leaving the nucleus to the\ncytoplasm. In the cytoplasm, the ribosomes decode\nthe information in mRNA and form continuous\nchains of amino acids, thus forming a protein. This\nprocess of DNA → RNA → protein is known as\ntranscription and translation and will be the main\nconcepts covered in Unit 6. Answer questions 1-3.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S012",
+      "slide": 12,
+      "section": "Endomembrane system",
+      "raw_text": "Ribosomes\n● Comprised of ribosomal RNA and protein\n  ○ Function: synthesize proteins\n\n      Note: some texts do not classify\n      ribosomes as organelles because they\n      are not bound by a membrane",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S013",
+      "slide": 13,
+      "section": "Endomembrane system",
+      "raw_text": "Ribosomes\n● Can be found in two locations:\n   1. Cytosol\n       ○ Proteins produced here generally\n         function only within the cytosol\n         (i.e. enzymes)\n       ○ Known as “free ribosomes”\n   2. Bound to the endoplasmic reticulum\n      or nuclear envelope\n       ○ Proteins produced here can be\n         secreted from the cell\n           ■ Leave via transport vesicles",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S014",
+      "slide": 14,
+      "section": "Endomembrane system",
+      "raw_text": "Endoplasmic Reticulum\n● A network of membranous sacs and tubes\n  ○ Functions:\n     ■ Synthesizes membranes\n     ■ Compartmentalize the cell to keep proteins\n        formed in the rough ER separate from those of\n        free ribosomes",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S015",
+      "slide": 15,
+      "section": "Endomembrane system",
+      "raw_text": "Endoplasmic Reticulum\n● Two types: rough and smooth",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S016",
+      "slide": 16,
+      "section": "Endomembrane system",
+      "raw_text": "Endoplasmic Reticulum\n1. Rough ER\n  ○   Contains ribosomes bound to the ER membrane\n\n\n\n\n2. Smooth ER\n ● Contains no ribosomes\n ● Synthesizes lipids,\n   metabolizes carbohydrates,\n   and detoxifies the cell",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S017",
+      "slide": 17,
+      "section": "Endomembrane system",
+      "raw_text": "Golgi Complex\nContains flattened membranous sacs called\ncisternae\n  ● Separate the sacs from the cytosol\n  ● Each cisternae is not connected\n  ● Has directionality\n     ○ Cis face:\n        ■ Receives vesicles from the ER\n     ○ Trans face:\n        ■ Sends vesicles back out into cytosol to other\n           locations or to the plasma membrane for\n           secretion",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S018",
+      "slide": 18,
+      "section": "Endomembrane system",
+      "raw_text": "Golgi Complex\nFunctions:\n● Receives transport vesicles with materials\n  from the ER\n                             Ensures newly\n● Modifies the materials     formed proteins are\n● Sorts the materials        folded correctly or\n● Adds molecular tags        modified correctly\n\n● Packages materials into new transport\n  vesicles that exit the membrane via\n  exocytosis",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S019",
+      "slide": 19,
+      "section": "Endomembrane system",
+      "raw_text": "Lysosomes\nMembranous sac with hydrolytic enzymes\n ● Function:\n   ○ Hydrolyzes macromolecules in animal cells\n   ○ Autophagy: lysosomes can recycle their own cell’s\n     organic materials\n      ■ Allows the cell to renew itself\nPeroxisomes\n● Similar to lysosomes\n● Membrane bound metabolic\n  compartment\n   ○ Catalyze reactions that produce H2O2\n     ■ Enzymes in peroxisomes then\n        break down H2O2 to water",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S020",
+      "slide": 20,
+      "section": "Endomembrane system",
+      "raw_text": "Vacuoles\nLarge vesicles that stem from the ER and Golgi\n● Selective in transport\nTypes:\nFood vacuole\n● Form via phagocytosis (cell eating) and then are\n   digested by lysosomes\nContractile vacuole\n● Maintain water levels in cells\nCentral vacuole\n● Found in plants\n   ○ Contains inorganic ions and water\n   ○ Important for turgor pressure",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S021",
+      "slide": 21,
+      "section": "Endomembrane system",
+      "raw_text": "Practice FRQ\n1. Hepatitis C is a virus that attacks the liver and can\n   cause liver disease. Liver disease has been linked to\n   a reduction in albumin levels in patients analyzed.\n   Albumin is an important protein in humans. It\n   functions primarily to regulate oncotic pressure of\n   blood, which is important for the regulation of fluids in\n   vessels of the body and tissue repair. On average,\n   patients with liver disease show a 10-30% decrease\n   in blood-albumin levels. (a) Identify the organelle in\n   liver cells that is most likely being affected by\n   hepatitis C and (b) justify your reasoning.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S022",
+      "slide": 22,
+      "section": "Endomembrane system",
+      "raw_text": "Practice FRQ\n2. In humans, pancreatic cells synthesize the protein\n  insulin in the endoplasmic reticulum (ER).\n  Patients diagnosed with type 1 diabetes have\n  immune systems that mistakenly attack their\n  pancreatic cells. Therefore, these patients cannot\n  produce the hormone insulin and have to take\n  medications to introduce insulin into their bodies.\n  (a) Describe how insulin would be produced in a\n  normal functioning (non-type 1 diabetes)\n  pancreatic cell.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S023",
+      "slide": 23,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Energy Organelles",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S024",
+      "slide": 24,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Endosymbiont Theory\n● Endosymbiont Theory: the theory that explains\n  the similarities mitochondria and chloroplasts have\n  to a prokaryote\n   ○ Theory states that an early eukaryotic cell\n     engulfed a prokaryotic cell\n      ■ Prokaryotic cell became an endosymbiont\n        (cell that lives in another cell)\n         ● Became one functional organism\n\n\n\n\n                                                Topic 2.11",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S025",
+      "slide": 25,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Endosymbiont Theory\n● Evidence:\n  ● Double membrane\n  ● Ribosomes\n  ● Circular DNA\n  ● Capable of functioning on their own\n\n\n\n\n                                          Topic 2.11",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S026",
+      "slide": 26,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Mitochondria\nSite of cellular respiration\n● Structure of the double membrane:\n   ○ Outer membrane is smooth\n   ○ Inner membrane has folds called cristae\n       ■ Divides the mitochondria into two internal\n         compartments and increases the surface\n         area",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S027",
+      "slide": 27,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Mitochondria\n1. Intermembrane: space between inner and\n   outer membrane\n2. Mitochondrial matrix: enclosed by inner\n   membrane\n         ● Location for the Krebs cycle\n         ● Contains:\n           ○ Enzymes that catalyze cellular\n              respiration and produce ATP\n           ○ Mitochondrial DNA\n           ○ Ribosomes",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S028",
+      "slide": 28,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Mitochondria\nThe number of mitochondria in a cell correlates with\nmetabolic activity\n● Cells with high metabolic activity have more\n  mitochondria\n   ○ Example: cells that move/contract",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S029",
+      "slide": 29,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Chloroplast\n● Specialized organelles in\n  photosynthetic organisms\n   ○ Site of photosynthesis\n   ○ Contains the green pigment\n     chlorophyll\n● Inside of its double membrane:\n   ○ Thylakoids\n      ■ Membranous sacs that can\n        organize into stacks called\n        grana\n         ● Light dependent reactions\n            occur in grana",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S030",
+      "slide": 30,
+      "section": "Energy organelles and endosymbiosis",
+      "raw_text": "Chloroplast\n● Stroma: fluid around thylakoids\n  ○ Location for the Calvin cycle\n  ○ Contains\n     ■ Chloroplast DNA\n     ■ Ribosomes\n     ■ Enzymes",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S031",
+      "slide": 31,
+      "section": "Cytoskeleton",
+      "raw_text": "The Cytoskeleton",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S032",
+      "slide": 32,
+      "section": "Cytoskeleton",
+      "raw_text": "Cytoskeleton\n● A network of fibers throughout the cytoplasm\n  ○ Give structural support (especially for animal\n     cells) and mechanical support:\n     ■ Anchor organelles\n     ■ Allow for movement of vesicles and\n        organelles and/or the whole cell\n         ● Movement occurs when the cytoskeleton\n            interacts with motor proteins",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S033",
+      "slide": 33,
+      "section": "Cytoskeleton",
+      "raw_text": "Cytoskeleton\nThere are 3 types of fibers in the cytoskeleton:\n   1. Microtubules\n   2. Microfilaments\n   3. Intermediate filaments",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S034",
+      "slide": 34,
+      "section": "Cytoskeleton",
+      "raw_text": "Microtubules\nHollow rod-like structures made of the protein tubulin\n● Grow from the centrosome\n   ○ Assist in microtubule assembly",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S035",
+      "slide": 35,
+      "section": "Cytoskeleton",
+      "raw_text": "Microtubules\nFunctions:\n● Serve as structural support (think: tracks) for the\n  movement of organelles that are interacting with\n  motor proteins\n● Assist in the separation of chromosomes during cell\n  division\n● Cell motility (i.e., cilia and flagella)",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S036",
+      "slide": 36,
+      "section": "Cytoskeleton",
+      "raw_text": "Microfilaments\nThin solid rods made of the protein actin\nFunctions:\n● Maintain cell shape\n   ○ Bear tension\n● Assist in muscle contraction and cell motility\n   ○ Actin works with another protein called myosin\n      to cause a contraction\n● Division of animal cells\n   ○ Contractile ring of the cleavage furrow",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S037",
+      "slide": 37,
+      "section": "Cytoskeleton",
+      "raw_text": "Intermediate Filaments\n● Fibrous proteins made up of varying subunits\n● Permanent structural elements of cells\nFunctions:\n● Maintain cell shape\n● Anchor nucleus and organelles\n● Form the nuclear lamina\n   ○ Lines the nuclear envelope",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S038",
+      "slide": 38,
+      "section": "Cytoskeleton",
+      "raw_text": "Practice FRQ\n1. You are working in a research lab and your goal is to determine the\n   effect that alcohol has on the liver. You design an experiment where you\n   expose samples of liver tissues to varying concentrations of alcohol as\n   follows:\n              Sample         Concentration of alcohol    Duration of exposure\n\n       Sample 1              0.25 mg/mL                 20 minutes\n\n       Sample 2              0.35 mg/mL                 20 minutes\n\n       Sample 3              0.45 mg/mL                 20 minutes\n\nAfter exposure to the alcohol, you analyze the liver samples. In all samples\nyou find that the alcohol has been broken down (detoxified). However, in\nsample 3 you find damage to organelles has occured due to the high\nconcentration of alcohol. (a) Identify one organelle in the liver that could be\nresponsible for the detoxification of the alcohol in all three samples. (b) In\nsample 3 identify the organelle that would most likely be responsible for\nremoving the damaged parts of organelles and (c) describe the steps it\nwould take to do so.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S039",
+      "slide": 39,
+      "section": "Cell size",
+      "raw_text": "",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S040",
+      "slide": 40,
+      "section": "Cell size",
+      "raw_text": "Cell Size\nCellular metabolism depends on cell size\n\n\n                          Cellular waste must leave\n                          Dissipate thermal energy\n                          Nutrients and other\n                          resources/chemical materials\n                          must enter\n\nAt a certain size, it begins to be too difficult for a cell\nto regulate what comes in and what goes out of the\nplasma membrane",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S041",
+      "slide": 41,
+      "section": "Cell size",
+      "raw_text": "Surface Area and Volume\nThe size of a cell will dictate the function\n● Cells need a high surface area-to-volume ratio to\n  optimize the exchange of material through the\n  plasma membrane",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S042",
+      "slide": 42,
+      "section": "Cell size",
+      "raw_text": "Formulas\n● Formulas for cuboidal cells\n  ○ Total SA= height x width x number of sides x\n    number of boxes (or SA = 6S2 if only 1 box)\n  ○ Total V= height x width x length x number of\n    boxes (or V = S3 if only one box)\n  ○ SA to V ratio = SA/V\n● Formulas for spherical cells\n  ○ SA = 4πr2\n                                 Remember: all\n  ○ V = 4/3πr3                   formulas are given\n  ○ SA:V ratio = SA/V            to you on the AP\n                                 exam",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S043",
+      "slide": 43,
+      "section": "Cell size",
+      "raw_text": "Practice\nExample: cuboidal cell\n\n#1                                    #2\n\n\nSA = 3 x 3 x 6 x 1 = 54 units2   SA = 1 x 1 x 6 x 27 = 162 units2\nV= 3 x 3 x 3 x 1 = 27 units3     V= 1 x 1 x 1 x 27 = 27 units3\nSA:V = 54/27 = 2                 SA:V = 162/27 = 6\n\n\nWhich would have the best exchange of material\nthrough the plasma membrane?\nOption 2: SA:V ratio is higher",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S044",
+      "slide": 44,
+      "section": "Cell size",
+      "raw_text": "Practice\nHow does the radius affect the SA:V ratio in spherical\ncells?\n\n SA = 4πr2\n V =4/3πr3\n SA:V ratio = SA/V\n                              r\n         SA          1 4πr2        3\n                     1   4\n                                   r      As r\n         V                   πr3\n                     3   3                increases, the\n                                          ratio of SA:V\n                                          decreases",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S045",
+      "slide": 45,
+      "section": "Cell size",
+      "raw_text": "Try it\nExample: spherical cell\n  #1                               #2\n   r=5                               r=8\nSA = 4 x π x 52 = 314 units2     SA = 4 x π x 82 = 803.8 units2\nV= 4/3 x π x 53 = 523.3 units3   V= 4/3 x π x 83 = 2143.6 units3\nSA:V = 314/523.3 = 0.6           SA:V = 803.8/ 2143.6 = 0.37\n\nWhich would have the best exchange of material\nthrough the plasma membrane?\nOption 1: SA:V ratio is higher",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S046",
+      "slide": 46,
+      "section": "Cell size",
+      "raw_text": "Practice Problems\nWork on practice problems 1-11",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S047",
+      "slide": 47,
+      "section": "Cell size",
+      "raw_text": "What Does This Mean for a Cell?\nCells tend to be small\n● Small cells have a high SA:V ratio\n   ○ Optimizes exchange of materials at the plasma\n      membrane\n● Larger cells have a lower SA:V ratio\n   ○ Lose efficiency exchanging materials\n       ■ The cellular demand for resources\n         increases\n       ■ Rate of heat exchange decreases",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S048",
+      "slide": 48,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S049",
+      "slide": 49,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Plasma Membrane\nTake a few minutes to review your unit 1 notes on\nphospholipids\n\nExamine the phospholipid to\nthe right and identify the\nstructures\nA: Phosphate group\nB: Glycerol\nC: Hydrophilic head\nD: Hydrophobic tails",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S050",
+      "slide": 50,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Plasma Membrane\nAnswer review questions 2-4",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S051",
+      "slide": 51,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Plasma Membrane\nSeparates internal cell\nenvironment from external\nenvironment\n● Comprised primarily of\n  phospholipids\n● Phospholipids are amphipathic\n   ○ Hydrophilic head and\n     hydrophobic tails\n   ○ Forms a bilayer",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S052",
+      "slide": 52,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Plasma Membrane\nSelective permeability: The ability\nof membranes to regulate the\nsubstances that enter and exit\n Hydrophilic heads oriented\n TOWARD aqueous\n environments\n Hydrophobic tails are facing\n inwards AWAY from\n aqueous environments",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S053",
+      "slide": 53,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Fluid Mosaic Model\nA model to describe the structure of\ncell membranes\n● Fluid: membrane is held\n   together by weak hydrophobic\n   interactions and can therefore\n   move and shift\n    ○ Temperature affects fluidity\n    ○ Unsaturated hydrocarbon\n       tails help maintain fluidity at\n       low temps\n        ■ Kinked tails prevent tight\n           packing of phospholipids",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S054",
+      "slide": 54,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Fluid Mosaic Model\n  ○ Cholesterol helps maintain\n    fluidity at high and low\n    temps\n     ■ High temp: reduces\n        movement\n     ■ Low temp: reduces tight\n        packing of\n        phospholipids\n● Mosaic: comprised of many\n  macromolecules",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S055",
+      "slide": 55,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Membrane Proteins\nThere are two major\ncategories of proteins in the\nmembrane\n1. Integral proteins\n    ○ Proteins that are\n       embedded into the lipid\n       bilayer\n       ■ aka transmembrane\n           proteins\n       ■ Amphipathic\n 2. Peripheral proteins\n     ○ Proteins that are not embedded into the lipid bilayer\n        ■ Loosely bonded to the surface",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S056",
+      "slide": 56,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Membrane Carbohydrates\nImportant for cell-to-cell recognition\n ● Glycolipids\n   ○ Carbohydrates bonded to lipids\n● Glycoproteins\n   ○ Carbohydrates bonded to proteins\n   ○ Most abundant",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S057",
+      "slide": 57,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Plant Cells",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S058",
+      "slide": 58,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Plants\nPlants have a cell wall that cover their plasma\nmembranes\n● Extracellular structure (not found in animal cells)\n   ○ Provides:\n      ■ Shape/structure\n      ■ Protection\n      ■ Regulation of water intake",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S059",
+      "slide": 59,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Plants\n● The cell wall is composed of\n  cellulose\n● Thicker than plasma membranes\n● Contain plasmodesmata\n  ○ Hole-like structures in the cell\n     wall filled with cytosol that\n     connect adjacent cells",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S060",
+      "slide": 60,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Practice FRQ\nThe Channichthyidae fish, also known as the crocodile\nice fish, lives in the Southern Ocean around Antarctica.\nThese waters are known to maintain extremely low\ntemperatures all year, ranging from approximately 28℉\nto 35℉. These fish have adaptations that allow them to\nlive in cold, low oxygen waters. (a) Describe the\nexpected membrane lipid composition of the cells from\nthe Channichthyidae fish. (b) Explain how the\nmembrane lipid composition you described in part (a)\nis advantageous for the fish's survival in its\nenvironment.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S061",
+      "slide": 61,
+      "section": "Plasma membrane and cell wall",
+      "raw_text": "Practice Problems\nWork on the practice problems.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S062",
+      "slide": 62,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S063",
+      "slide": 63,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Selective Permeability\nSome substances can cross the membrane more\neasily than others\nEasy passage across the membrane:\n● Small nonpolar, hydrophobic molecules\n     ○ Examples:\n        ■ Hydrocarbons\n        ■ CO2, O2, N2\nDifficult passage or protein assisted passage:\n● Hydrophilic, polar molecules, large molecules, ions\n     ○ Examples:\n        ■ Sugars, water",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S064",
+      "slide": 64,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Transport Across a Membrane\nThere are two main types of transport across a\nmembrane: passive and active",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S065",
+      "slide": 65,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\n● Passive transport: transport of a molecule that\n  does not require energy from the cell because a\n  solute is moving with its concentration or\n  electrochemical gradient\n  ○ Involved in the import of materials and export\n     of waste\n  ○ Examples:\n     ■ Diffusion\n     ■ Osmosis\n     ■ Facilitated diffusion",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S066",
+      "slide": 66,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\n● Diffusion: spontaneous process resulting from\n  the constant motion of molecules\n   ○ Substances move from a high to low\n     concentration\n     ■ Move DOWN the concentration gradient",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S067",
+      "slide": 67,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\nMolecules diffuse directly across membrane\n● Different rates of diffusion for different molecules\n\n\n\n                                          Remember:\n                                          even with\n                                          diffusion the\n                                          membrane is\n                                          still selectively\n                                          permeable",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S068",
+      "slide": 68,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\nOsmosis: the diffusion of water down its concentration\ngradient across a selectively permeable membrane\n● Can also be thought of as the diffusion of water\n   from areas of low solute concentration to areas of\n   high solute concentration",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S069",
+      "slide": 69,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\n● Facilitated diffusion: diffusion of molecules\n  through the membrane via transport proteins\n   ○ Increases rate of diffusion for:\n      ■ Small ions, water, carbohydrates\n   ○ Two categories of transport proteins: channel\n     and carrier\n      ■ Each transport protein is specific for\n         substances it can facilitate movement for",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S070",
+      "slide": 70,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\n● Why is facilitated diffusion passive transport and\n  not active transport?\n  ○ Facilitated diffusion is still passive transport\n     because the substances the proteins are\n     helping to move are moving DOWN their\n     concentration gradient and NO energy is\n     required",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S071",
+      "slide": 71,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\n● Channel proteins: provide a channel for molecules and\n  ions to pass\n   ○ Channel is hydrophilic\n         ● Many are gated channels\n            ○ Only allow passage when there is a\n               stimulus\n         ● Aquaporins: specific channel protein for water",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S072",
+      "slide": 72,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Passive Transport\nCarrier proteins: undergo conformational changes\nfor substances to pass",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S073",
+      "slide": 73,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Practice\n1. In terms of diffusion, describe what is most likely to\n   happen to the particles in the image below? (The\n   dashed lines represent a plasma membrane)",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S074",
+      "slide": 74,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Practice: Concept Check\n2. Explain why energy is NOT required for facilitated\n   diffusion.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S075",
+      "slide": 75,
+      "section": "Selective permeability and passive transport",
+      "raw_text": "Practice Problems\nWork on the practice problems.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S076",
+      "slide": 76,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\n● Active transport: transport of a molecule that\n  requires energy because it moves a solute\n  against its concentration gradient\n     ■ Pumps\n     ■ Cotransport\n     ■ Exocytosis\n     ■ Endocytosis",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S077",
+      "slide": 77,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\n● Active transport requires energy\n  ○ Adenosine Triphosphate (ATP): Energy source\n    used by cells\n    ○ ATP can transfer the terminal phosphate group to\n       the transport protein, which changes the shape\n       of the transport protein to better move a\n       substance\n\n                                        Also known as\n                                        conformational\n                                        change",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S078",
+      "slide": 78,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nPumps: maintain membrane potential\n● Membrane potential: unequal concentrations of\n  ions across the membrane results in an electrical\n  charge (electrochemical gradient)\n   ○ The cytoplasm is relatively negative in\n     comparison to the extracellular fluid\n   ○ Energy is stored in electrochemical gradients",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S079",
+      "slide": 79,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nExamples of pumps:\nElectrogenic pumps: proteins that generate voltage\nacross membranes, which can be used later as an\nenergy source for cellular processes\n● Sodium potassium pump\n  ○ Animal cells will regulate their relative concentrations\n     of Na+ and K+\n     ■ 3 Na+ get pumped out of the cell\n     ■ 2 K+ get pumped into the cell\n         ● Results in a +1 net charge to the extracellular\n           fluid",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S080",
+      "slide": 80,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Sodium Potassium Pumps\n                           In this shape, the\n                           protein has an affinity\n                           towards Na+\n\n                                   ATP\n                                   phosphorylates\n                                   the protein,\n                                   which causes a\n                                   conformational\nAnimal cells have                  change\na relatively high\n                     Animal cells have a relatively\nconcentration of\n                     low concentration of Na+ inside\nK+ inside the cell\n                     the cell in comparison to\nin comparison to\n                     outside the cell\noutside the cell",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S081",
+      "slide": 81,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Sodium Potassium Pumps\n  The new shape causes the affinity of\n  the protein to be towards K+\n\n\n\n\n                When K+ binds to the protein, this\n                phosphate group will be released",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S082",
+      "slide": 82,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Sodium Potassium Pumps\n\n\n\n\n               Loss of the\n               phosphate group\n               causes the protein\n               to return to its\n               original shape",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S083",
+      "slide": 83,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nExamples of pumps:\n● Proton pump: integral membrane protein that builds\n  up a proton gradient across the membrane\n   ○ Used by plants, fungi, and bacteria\n   ○ Pumps H+ out of the cell",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S084",
+      "slide": 84,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\n● Cotransport: the coupling of a favorable\n  movement of one substance with an unfavorable\n  movement of another substance\n  ○ Uses the energy stored in electrochemical\n    gradients (generated by pumps) to move\n    substances against their concentration\n    gradient",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S085",
+      "slide": 85,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\n● Favorable movement: downhill diffusion\n● Unfavorable movement: uphill transport",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S086",
+      "slide": 86,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\n● Plants use cotransport for sugars and amino acids\n● Example: sucrose-H+ cotransporter\n  ○ Sucrose can travel into a plant cell against its\n     concentration gradient ONLY if it is coupled with\n     H+ that is diffusing down its electrochemical\n     gradient",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S087",
+      "slide": 87,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Cotransport",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S088",
+      "slide": 88,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nTransport of large molecules is done through\nexocytosis and endocytosis\nExocytosis: the secretion of molecules via vesicles\nthat fuse to the plasma membrane\n ● Vesicles can fuse to the membrane by forming a\n   bilayer\n      ○ Once fused, the contents of the vesicle are\n        released to the extracellular fluid\n      ○ Example: nerve cells releasing\n        neurotransmitters",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S089",
+      "slide": 89,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nEndocytosis: the uptake of molecules from vesicles\nfused from the plasma membrane (think: opposite of\nexocytosis)\n ● Phagocytosis\n ● Pinocytosis\n ● Receptor-mediated",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S090",
+      "slide": 90,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nPhagocytosis: when a cell engulfs particles to be\nlater digested by lysosomes\n\n● Cell surrounds particle\n  with pseudopodia\n● Packages particles\n  into a food vacuole\n   ○ Food vacuole fuses\n     with a lysosome to\n     be digested",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S091",
+      "slide": 91,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nPinocytosis: nonspecific uptake of extracellular fluid\ncontaining dissolved molecules\n\n● Cell takes in\n  dissolved molecules\n  in a protein coated\n  vesicle\n   ○ Protein coat helps\n     to mediate the\n     transport of\n     molecules",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S092",
+      "slide": 92,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Active Transport\nReceptor mediated endocytosis: specific uptake of\nmolecules via solute binding to receptors on the\nplasma membrane\n\n● Allows the cell to take\n  up large quantities of a\n  specific substance\n● When solutes bind to\n  the receptors, they\n  cluster in a coated\n  vesicle to be taken into\n  the cell",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S093",
+      "slide": 93,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Practice FRQ\n1. You want to determine the effect of pH on the uptake of\n   sucrose in tomato plant cells. You expose the cells to a\n   sucrose solution at varying pH levels and record the\n   data seen in the chart below.     a. Identify the optimal\n                                        pH for sucrose\n                                        uptake.\n                                     b. Describe why the\n                                        pH identified in part\n                                        (a) would lead to an\n                                        increase in sucrose\n                                        uptake.\n                                     c. Predict how a pH of\n                                        2 would affect\n                                        sucrose uptake.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S094",
+      "slide": 94,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Practice FRQ\n2. When a pathogen, such as a bacteria, invades\n   the human body, the immune system is alerted.\n   Once alerted, white blood cells such as\n   macrophages locate the pathogen and engulf it\n   through phagocytosis. (a) Describe the process of\n   phagocytosis. (b) Identify the most likely\n   component of the plasma membrane that the\n   immune system uses to recognize the pathogen.",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S095",
+      "slide": 95,
+      "section": "Active transport and bulk transport",
+      "raw_text": "Practice\nWork on pages 47-48",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S096",
+      "slide": 96,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S097",
+      "slide": 97,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Osmosis Review\n1. What is osmosis?\n2. What is happening in the picture below?",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S098",
+      "slide": 98,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Water Balance\nTonicity: the ability of an extracellular solution to cause a\ncell to gain or lose water\n ● Depends on the concentration of solutes that cannot\n     pass through the cell membrane\n ● Cells can be in three types of solutions:\n        ○ Isotonic\n        ○ Hypertonic\n        ○ Hypotonic\n ● Osmoregulation: cells must be able to regulate their\n     solute concentrations and maintain water balance\n        ○ Animal cells will react differently than cells with\n           cell walls, like plants, fungi, and some protists",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S099",
+      "slide": 99,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Tonicity: Isotonic Solutions\nCells immersed in an isotonic solution have no net\nmovement of water\n● The concentration of nonpenetrating solutes inside the\n  cell is equal to that outside the cell.\n    ○ Water diffuses into the cell at the same rate water\n       moves out of the cell                Plant Cell\n          Animal Cell",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S100",
+      "slide": 100,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Tonicity: Hypertonic Solutions\nCells immersed in a hypertonic solution lose water to their\nextracellular surroundings\n● The concentration of nonpenetrating solutes is higher\n   outside of the cell\n    ○ Water will move to the extracellular fluid\n       ■ Cells shrivel and die                 Plant Cell\n\n\n      Animal Cell     Plasmolysis:\n                      vacuole shrinks\n                      and the plasma\n                      membrane pulls\n                      away from the\n                      cell wall",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S101",
+      "slide": 101,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Tonicity: Hypotonic Solutions\nCells immersed in a hypotonic solution gain water\n● The concentration of nonpenetrating solutes is lower\n  outside of the cell\n    ○ The cell will gain water\n       ■ Animal cells swell and lyse        Plant Cell\n       ■ Plant cells work optimally\n\n      Animal Cell\n\n                          Maintain\n                          turgor\n                          pressure",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S102",
+      "slide": 102,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Water Potential\nWater potential: a physical property that predicts the\ndirection water will flow\n● Includes the effects of solute concentration and\n   physical pressure\n      ○ Water will flow from areas of:\n         ■ High water potential to areas of low water\n           potential\n         ■ Low solute to areas of high solute\n           concentration\n         ■ High pressure to areas of low pressure",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S103",
+      "slide": 103,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Water Potential\nWater potential formula:                 Pressure potential\n                                         ● The physical pressure\n\nGreek letter “psi”                         on a solution\nrepresents water             𝚿 = 𝚿s + 𝚿p ● Can be + or - relative\npotential                                  to atmospheric\n● Measured in\n                                           pressure\n                                         ● “Open air” means 𝚿p=\n  megapascals\n  (MPa) or bars                            0 MPa\n● 1MPa = 10\n  bars          Solute potential (osmotic potential)\n                 ● An increase in solutes causes\n                   binding to more free water\n                    ○   This reduces water potential\n                ● Expressed as a negative number\n                ● Pure water is 0 MPa",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S104",
+      "slide": 104,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Calculating Solute Potential\nSolute potential formula:\n\n                                               Temperature in K\n                         𝚿s = -iCRT\nSolute potential                                ● K = 273 + ℃\n● Measured\n  MPa or bars                          Pressure constant\n                                        ●   0.0831 liter bars/mol-K\n    Ionization constant                 ●   0.00831 liter MPA/mol K\n     ● Number of particles\n        formed\n      ○ If no ions are formed\n         the ionization constant   Molar concentration\n         is 1 (ie sucrose)",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S105",
+      "slide": 105,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Practice Problems\n1. If the concentration of NaCl inside a plant cell is\n   0.15M, which way will water diffuse if the cell is\n   placed in a 0.3M NaCl solution?\n\n  Answer: Water will leave the cell.\n  Water will move from the low solute\n  concentration to the high solute concentration",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S106",
+      "slide": 106,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Practice Problems\n2. The molar concentration of a sugar solution is\n   0.3M. This beaker is sitting on your desk in the\n   open air. Calculate the solute potential at 27℃.\n   Find your answer in bars\n\n𝚿s = -iCRT                   𝚿s = - (1) (0.3) (0.0831) (300)\n-i= -1                       𝚿s = -7.48 bars\nC = 0.3 mol/L\nR = 0.0831 liter bar/mol K\nT = 27 + 273 = 300 K",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S107",
+      "slide": 107,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Practice Problems\n3. Using the information from practice problem #2,\n   now solve for the water potential of this beaker of\n   liquid.\n\n𝚿 = 𝚿s + 𝚿p\n𝚿s = -7.48 bars        𝚿 = (-7.48) + 0\n𝚿p = 0 bars            𝚿 = -7.48 bars",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S108",
+      "slide": 108,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Practice Problems\n 4. Calculate the solute potential of a 0.2M NaCl\n    solution at 30℃. Find your answers in bars.\n\n𝚿s = -iCRT\n                             𝚿s = - (2) (0.2) (0.0831) (303)\n-i= -2\nC = 0.2 mol/L                𝚿s = -10.07 bars\nR = 0.0831 liter bar/mol K\nT = 30 + 273 = 303 K",
+      "status": "PRESERVED_RAW"
+    },
+    {
+      "slide_id": "PPT-S109",
+      "slide": 109,
+      "section": "Tonicity, osmoregulation, and water potential",
+      "raw_text": "Practice Problems\n   5. The value for 𝚿 in root tissue of a plant has found to be -\n      4.6 bars. If you place this root tissue in a 0.2M sucrose\n      solution at 20℃ in an open beaker, what is the 𝚿 of the\n      solution? Which direction will the net flow of water be?\n\n\n 𝚿s = -iCRT                 𝚿s = - (1)(0.2)(0.0831)(293) 𝚿 = 𝚿s + 𝚿p\n                            𝚿s = -4.87 bars              𝚿= -4.87 + 0\n-i= -1\nC = 0.2 mol/L                                           𝚿= -4.87 bars\nR = 0.0831liter bar/mol K\nT = 20 + 273 = 293K\n\n  𝚿 of root = -4.6 bars                         Water will move\n  𝚿 of solution = -4.87 bars                    into the solution",
+      "status": "PRESERVED_RAW"
+    }
+  ],
+  "packet_current_ced_crosswalk": [
+    {
+      "packet_topic": 1,
+      "packet_title": "Cell Structure - Subcellular Components",
+      "legacy_code": "SYI-1.D",
+      "current_ced_topic": "2.1",
+      "current_title": "Cell Structure and Function",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 2,
+      "packet_title": "Cell Structure and Function",
+      "legacy_code": "SYI-1.E / SYI-1.F",
+      "current_ced_topic": "2.1",
+      "current_title": "Cell Structure and Function",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 3,
+      "packet_title": "Cell Size",
+      "legacy_code": "ENE-1.B / ENE-1.C",
+      "current_ced_topic": "2.2",
+      "current_title": "Cell Size",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 4,
+      "packet_title": "Plasma Membranes",
+      "legacy_code": "ENE-2.A / ENE-2.B",
+      "current_ced_topic": "2.3",
+      "current_title": "Plasma Membrane",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 5,
+      "packet_title": "Membrane Permeability",
+      "legacy_code": "ENE-2.C / ENE-2.D",
+      "current_ced_topic": "2.4",
+      "current_title": "Membrane Permeability",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 6,
+      "packet_title": "Membrane Transport",
+      "legacy_code": "ENE-2.E / ENE-2.F",
+      "current_ced_topic": "2.5",
+      "current_title": "Membrane Transport",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 7,
+      "packet_title": "Facilitated Diffusion",
+      "legacy_code": "ENE-2.G",
+      "current_ced_topic": "2.6 + 2.8",
+      "current_title": "Facilitated Diffusion + active-transport details now split",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 8,
+      "packet_title": "Tonicity and Osmoregulation",
+      "legacy_code": "ENE-2.H / ENE-2.I",
+      "current_ced_topic": "2.7",
+      "current_title": "Tonicity and Osmoregulation",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 9,
+      "packet_title": "Mechanisms of Transport",
+      "legacy_code": "ENE-2.J",
+      "current_ced_topic": "2.8",
+      "current_title": "Mechanisms of Transport",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 10,
+      "packet_title": "Compartmentalization",
+      "legacy_code": "ENE-2.K / ENE-2.L",
+      "current_ced_topic": "2.9",
+      "current_title": "Cell Compartmentalization",
+      "status": "MAPPED_TO_CURRENT_CED"
+    },
+    {
+      "packet_topic": 11,
+      "packet_title": "Origins of Cell Compartmentalization",
+      "legacy_code": "EVO-1.A / EVO-1.B",
+      "current_ced_topic": "2.10",
+      "current_title": "Origins of Cell Compartmentalization",
+      "status": "MAPPED_TO_CURRENT_CED"
+    }
+  ],
+  "ced_current_atoms": [
+    {
+      "ced_id": "2.1.A.1a",
+      "topic": "2.1",
+      "label": "Ribosome composition",
+      "statement": "Ribosomes are composed of ribosomal RNA (rRNA) and protein.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.1b",
+      "topic": "2.1",
+      "label": "Ribosomes and common ancestry",
+      "statement": "Ribosomes are non-membrane subcellular structures found in cells in all forms of life and reflect common ancestry of all known life.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.1c",
+      "topic": "2.1",
+      "label": "Ribosome function",
+      "statement": "Ribosomes synthesize proteins according to messenger RNA (mRNA) sequences.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.2a",
+      "topic": "2.1",
+      "label": "Endomembrane system membership",
+      "statement": "The endomembrane system includes the endoplasmic reticulum, Golgi complex, lysosomes, vacuoles and transport vesicles, nuclear envelope, and plasma membrane.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.2b",
+      "topic": "2.1",
+      "label": "Endomembrane system function",
+      "statement": "Endomembrane-system components work together to modify, package, and transport polysaccharides, lipids, and proteins within and from cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.3a",
+      "topic": "2.1",
+      "label": "ER support and transport",
+      "statement": "The endoplasmic reticulum helps cells maintain shape and participates in intracellular transport.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.3b",
+      "topic": "2.1",
+      "label": "Rough ER",
+      "statement": "Rough ER is associated with membrane-bound ribosomes, contributes to compartmentalization, and helps carry out protein synthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.3c",
+      "topic": "2.1",
+      "label": "Smooth ER",
+      "statement": "Smooth ER functions include cellular detoxification and lipid synthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.4a",
+      "topic": "2.1",
+      "label": "Golgi structure",
+      "statement": "The Golgi complex is a membrane-bound structure consisting of a series of flattened membrane sacs.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.4b",
+      "topic": "2.1",
+      "label": "Golgi processing",
+      "statement": "Golgi functions include folding and chemically modifying newly synthesized cellular products.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.4c",
+      "topic": "2.1",
+      "label": "Golgi trafficking",
+      "statement": "Golgi functions include packaging proteins for trafficking.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.5a",
+      "topic": "2.1",
+      "label": "Mitochondrial double membrane",
+      "statement": "Mitochondria have a double membrane that creates compartments for different metabolic reactions involved in aerobic cellular respiration.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.5b",
+      "topic": "2.1",
+      "label": "Mitochondrial inner folds",
+      "statement": "The mitochondrial outer membrane is smooth and the inner membrane is highly folded; the folds increase membrane surface that supports efficient ATP synthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.6a",
+      "topic": "2.1",
+      "label": "Lysosome digestion",
+      "statement": "Lysosomes are membrane-enclosed sacs containing hydrolytic enzymes that digest material.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.6b",
+      "topic": "2.1",
+      "label": "Lysosome apoptosis",
+      "statement": "Lysosomes also play a role in programmed cell death (apoptosis).",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.7a",
+      "topic": "2.1",
+      "label": "Vacuole general",
+      "statement": "Vacuoles are membrane-bound sacs with diverse roles.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.7b",
+      "topic": "2.1",
+      "label": "Plant central vacuole",
+      "statement": "A specialized large plant-cell vacuole supports turgor pressure through nutrient and water storage.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.7c",
+      "topic": "2.1",
+      "label": "Animal vacuoles",
+      "statement": "Animal-cell vacuoles are smaller and more numerous than the large central vacuole typical of plant cells and can store cellular materials.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.8a",
+      "topic": "2.1",
+      "label": "Chloroplast distribution",
+      "statement": "Chloroplasts are specialized organelles found in plants and photosynthetic algae.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.1.A.8b",
+      "topic": "2.1",
+      "label": "Chloroplast structure/function",
+      "statement": "Chloroplasts have a double membrane and are the location of photosynthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1"
+    },
+    {
+      "ced_id": "2.2.A.1",
+      "topic": "2.2",
+      "label": "SA:V exchange",
+      "statement": "Surface-area-to-volume ratio affects acquisition of nutrients, elimination of wastes, exchange of chemicals/energy, and acquisition or dissipation of thermal energy.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2"
+    },
+    {
+      "ced_id": "2.2.A.2a",
+      "topic": "2.2",
+      "label": "Membrane area requirement",
+      "statement": "Plasma-membrane surface area must be sufficient to exchange materials for the volume it serves.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2"
+    },
+    {
+      "ced_id": "2.2.A.2b",
+      "topic": "2.2",
+      "label": "Cell size limitation",
+      "statement": "Surface-area-to-volume ratio can restrict cell size and shape; smaller cells typically have a higher ratio and more efficient exchange with the environment than larger cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2"
+    },
+    {
+      "ced_id": "2.2.A.2c",
+      "topic": "2.2",
+      "label": "Scaling with volume",
+      "statement": "As cell volume increases, surface-area-to-volume ratio decreases while internal resource demand increases.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2"
+    },
+    {
+      "ced_id": "2.2.A.2d",
+      "topic": "2.2",
+      "label": "Exchange-surface adaptations",
+      "statement": "Membrane folds and other complex structures increase exchange surface area relative to volume.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2"
+    },
+    {
+      "ced_id": "2.2.A.2e",
+      "topic": "2.2",
+      "label": "Body size and heat exchange",
+      "statement": "As organism size increases, surface-area-to-volume ratio and proportional heat exchange with the environment generally decrease.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2"
+    },
+    {
+      "ced_id": "2.2.A.2f",
+      "topic": "2.2",
+      "label": "Body size and metabolic rate",
+      "statement": "Metabolic rate per unit body mass is generally higher in smaller multicellular organisms than in larger ones.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2"
+    },
+    {
+      "ced_id": "2.3.A.1a",
+      "topic": "2.3",
+      "label": "Phospholipid amphipathic structure",
+      "statement": "Phospholipids have polar hydrophilic phosphate-containing regions and nonpolar hydrophobic fatty-acid regions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3"
+    },
+    {
+      "ced_id": "2.3.A.1b",
+      "topic": "2.3",
+      "label": "Bilayer orientation",
+      "statement": "Hydrophilic regions face aqueous internal/external environments while hydrophobic fatty-acid regions face one another in the membrane interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3"
+    },
+    {
+      "ced_id": "2.3.A.2a",
+      "topic": "2.3",
+      "label": "Membrane-protein polarity",
+      "statement": "Embedded membrane proteins may contain hydrophilic regions, hydrophobic regions, or both.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3"
+    },
+    {
+      "ced_id": "2.3.A.2b",
+      "topic": "2.3",
+      "label": "Protein orientation",
+      "statement": "Hydrophobic protein surfaces interact with the membrane interior; hydrophilic regions are exposed to aqueous environments or can occur within the protein interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3"
+    },
+    {
+      "ced_id": "2.3.B.1a",
+      "topic": "2.3",
+      "label": "Fluid mosaic composition",
+      "statement": "Plasma membranes are phospholipid frameworks containing proteins, steroids such as cholesterol in vertebrate animals, glycoproteins, and glycolipids.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3"
+    },
+    {
+      "ced_id": "2.3.B.1b",
+      "topic": "2.3",
+      "label": "Fluid mosaic movement",
+      "statement": "Many membrane lipids and proteins can move laterally within the membrane, producing the dynamic fluid-mosaic organization.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3"
+    },
+    {
+      "ced_id": "2.4.A.1",
+      "topic": "2.4",
+      "label": "Selective permeability basis",
+      "statement": "Plasma membranes separate internal and external environments; selective permeability results largely from the membrane hydrophobic interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4"
+    },
+    {
+      "ced_id": "2.4.A.2a",
+      "topic": "2.4",
+      "label": "Small nonpolar passage",
+      "statement": "Small nonpolar molecules such as N2, O2, and CO2 can pass through the lipid bilayer readily.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4"
+    },
+    {
+      "ced_id": "2.4.A.2b",
+      "topic": "2.4",
+      "label": "Hydrophilic transport",
+      "statement": "Large polar molecules and ions generally cross plasma membranes using embedded channels or transport proteins.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4"
+    },
+    {
+      "ced_id": "2.4.A.3a",
+      "topic": "2.4",
+      "label": "Hydrophobic barrier",
+      "statement": "Nonpolar phospholipid tails impede direct passage of ions and many polar molecules.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4"
+    },
+    {
+      "ced_id": "2.4.A.3b",
+      "topic": "2.4",
+      "label": "Small polar passage",
+      "statement": "Small uncharged polar molecules such as H2O and NH3 can pass through the membrane in small amounts.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4"
+    },
+    {
+      "ced_id": "2.4.B.1",
+      "topic": "2.4",
+      "label": "Cell walls",
+      "statement": "Cell walls of Bacteria, Archaea, Fungi, and plants provide structural boundaries and protection from osmotic lysis and can act as permeability barriers for some substances.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4"
+    },
+    {
+      "ced_id": "2.5.A.1",
+      "topic": "2.5",
+      "label": "Concentration gradients",
+      "statement": "Selective permeability permits concentration gradients of solutes to form across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5"
+    },
+    {
+      "ced_id": "2.5.A.2",
+      "topic": "2.5",
+      "label": "Passive transport",
+      "statement": "Passive transport is net movement from higher to lower concentration without direct input of metabolic energy.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5"
+    },
+    {
+      "ced_id": "2.5.A.3",
+      "topic": "2.5",
+      "label": "Active transport",
+      "statement": "Active transport requires direct energy input; in some cases it moves molecules from lower to higher concentration.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5"
+    },
+    {
+      "ced_id": "2.5.B.1a",
+      "topic": "2.5",
+      "label": "Bulk transport energy",
+      "statement": "Endocytosis and exocytosis require energy to move large substances or large quantities of substances into and out of cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5"
+    },
+    {
+      "ced_id": "2.5.B.1b",
+      "topic": "2.5",
+      "label": "Endocytosis",
+      "statement": "In endocytosis, the plasma membrane folds inward and forms vesicles that engulf material from the external environment.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5"
+    },
+    {
+      "ced_id": "2.5.B.1c",
+      "topic": "2.5",
+      "label": "Exocytosis",
+      "statement": "In exocytosis, internal vesicles fuse with the plasma membrane and release material from the cell.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5"
+    },
+    {
+      "ced_id": "2.6.A.1a",
+      "topic": "2.6",
+      "label": "Facilitated diffusion proteins",
+      "statement": "Facilitated diffusion uses channel or transport proteins to enable movement of substances that cannot readily cross the lipid bilayer.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6"
+    },
+    {
+      "ced_id": "2.6.A.1b",
+      "topic": "2.6",
+      "label": "Ion channels",
+      "statement": "Charged ions such as Na+ and K+ require channel proteins to cross the membrane by facilitated diffusion.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6"
+    },
+    {
+      "ced_id": "2.6.A.1c",
+      "topic": "2.6",
+      "label": "Membrane polarization",
+      "statement": "Ion movement across membranes can contribute to membrane polarization.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6"
+    },
+    {
+      "ced_id": "2.6.A.2",
+      "topic": "2.6",
+      "label": "Large polar facilitated diffusion",
+      "statement": "Large polar molecules can cross using facilitated diffusion without energy input when moving down their concentration gradient.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6"
+    },
+    {
+      "ced_id": "2.6.A.3",
+      "topic": "2.6",
+      "label": "Aquaporins",
+      "statement": "Aquaporins facilitate movement of large quantities of water across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6"
+    },
+    {
+      "ced_id": "2.7.A.1a",
+      "topic": "2.7",
+      "label": "Tonicity relationships",
+      "statement": "An external solution may be hypotonic, hypertonic, or isotonic relative to a cell interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7"
+    },
+    {
+      "ced_id": "2.7.A.1b",
+      "topic": "2.7",
+      "label": "Osmosis and water potential",
+      "statement": "Water moves by osmosis from regions of higher water potential to regions of lower water potential; this often corresponds to movement from hypotonic toward hypertonic regions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7"
+    },
+    {
+      "ced_id": "2.7.A.eq",
+      "topic": "2.7",
+      "label": "Water potential equation",
+      "statement": "Water potential is the sum of pressure potential and solute potential: Ψ = Ψp + Ψs.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7"
+    },
+    {
+      "ced_id": "2.7.B.1",
+      "topic": "2.7",
+      "label": "Membrane movement and homeostasis",
+      "statement": "Growth and homeostasis depend on continual movement of molecules across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7"
+    },
+    {
+      "ced_id": "2.7.B.2a",
+      "topic": "2.7",
+      "label": "Osmoregulation",
+      "statement": "Osmoregulation maintains water balance and permits control of internal solute composition and water potential.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7"
+    },
+    {
+      "ced_id": "2.7.B.2b",
+      "topic": "2.7",
+      "label": "Osmolarity direction",
+      "statement": "When other components are equal, water tends to move from lower osmolarity/solute concentration toward higher osmolarity/solute concentration.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7"
+    },
+    {
+      "ced_id": "2.7.B.eq",
+      "topic": "2.7",
+      "label": "Solute potential equation",
+      "statement": "Solute potential can be calculated as Ψs = −iCRT, with i as ionization/van’t Hoff factor, C molar concentration, R pressure constant, and T Kelvin temperature.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7"
+    },
+    {
+      "ced_id": "2.8.A.1a",
+      "topic": "2.8",
+      "label": "Energy for active transport",
+      "statement": "Metabolic energy such as ATP is required for active transport and for establishing/maintaining electrochemical gradients.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.8"
+    },
+    {
+      "ced_id": "2.8.A.1b",
+      "topic": "2.8",
+      "label": "Active transport proteins",
+      "statement": "Membrane proteins are necessary for active transport across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.8"
+    },
+    {
+      "ced_id": "2.8.A.1c",
+      "topic": "2.8",
+      "label": "Na+/K+ pump",
+      "statement": "The Na+/K+ pump is an ATPase that contributes to maintenance of membrane potential.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.8"
+    },
+    {
+      "ced_id": "2.9.A.1",
+      "topic": "2.9",
+      "label": "Compartmentalization",
+      "statement": "Membranes and membrane-bound organelles compartmentalize intracellular metabolic processes and specific enzymatic reactions in eukaryotic cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.9"
+    },
+    {
+      "ced_id": "2.9.B.1a",
+      "topic": "2.9",
+      "label": "Minimizing competing interactions",
+      "statement": "Internal membranes facilitate cellular processes by separating reactions and minimizing competing interactions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.9"
+    },
+    {
+      "ced_id": "2.9.B.1b",
+      "topic": "2.9",
+      "label": "Increasing reaction surface",
+      "statement": "Internal membranes increase surface area on which cellular reactions can occur.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.9"
+    },
+    {
+      "ced_id": "2.10.A.1",
+      "topic": "2.10",
+      "label": "Endosymbiosis",
+      "statement": "Mitochondria and chloroplasts evolved from once free-living prokaryotic cells through endosymbiosis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.10"
+    },
+    {
+      "ced_id": "2.10.A.2",
+      "topic": "2.10",
+      "label": "Prokaryotic compartmentalization",
+      "statement": "Prokaryotes typically lack internal membrane-bound organelles but have internal regions with specialized structures and functions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.10"
+    },
+    {
+      "ced_id": "2.10.A.3",
+      "topic": "2.10",
+      "label": "Eukaryotic compartmentalization",
+      "statement": "Eukaryotic cells maintain internal membranes that partition the cell into specialized regions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.10"
+    }
+  ],
+  "review_flags": [
+    {
+      "flag_id": "RF-U2-001",
+      "severity": "High",
+      "source": "PPT-S005",
+      "source_claim": "“Organelles: membrane bound structures in eukaryotes.”",
+      "why_flagged": "This treats membrane-boundedness as the universal definition of organelle, while the PPT itself later notes that ribosomes are sometimes classified differently.",
+      "resolution": "Use “membrane-bound organelles” for the relevant compartments; call ribosomes non-membrane subcellular structures as in the current CED.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-002",
+      "severity": "High",
+      "source": "PPT-S007",
+      "source_claim": "“Unique Cell Components”: plants—chloroplasts, central vacuole, cell wall, plasmodesmata; animals—lysosomes, centrosomes, flagella.",
+      "why_flagged": "Several entries are not uniquely restricted to the listed kingdom; flagella occur in many eukaryotic lineages, centrosomes are not universal to animal cells, and plant lytic vacuoles perform lysosome-like functions.",
+      "resolution": "Teach these as common/characteristic examples in the course diagrams, not taxonomically unique universal traits.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-003",
+      "severity": "High",
+      "source": "PPT-S009 / PPT-S011 / PPT-S013",
+      "source_claim": "Nuclear pores regulate entry/exit “from the cell”; DNA must leave the nucleus by first being transcribed; free-ribosome proteins function only in cytosol.",
+      "why_flagged": "The boundary is the nucleus, DNA generally remains nuclear, and free-ribosome products can be targeted to multiple non-endomembrane destinations.",
+      "resolution": "Canonical statements corrected using Campbell Ch.6; preserve source wording only in raw slide ledger.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-004",
+      "severity": "Medium",
+      "source": "PPT-S019",
+      "source_claim": "“Peroxisomes: similar to lysosomes.”",
+      "why_flagged": "Peroxisomes and lysosomes are distinct organelles with different enzyme systems and primary functions.",
+      "resolution": "Teach peroxisomes as oxidative compartments; distinguish from lysosomal hydrolysis.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-005",
+      "severity": "High",
+      "source": "PPT-S025",
+      "source_claim": "Mitochondria/chloroplasts are “capable of functioning on their own.”",
+      "why_flagged": "Modern mitochondria and chloroplasts are highly host-dependent and are not free-living cells.",
+      "resolution": "Use own DNA/ribosomes/division and bacterial similarities as evidence; explicitly reject modern independent-living claim.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-006",
+      "severity": "High",
+      "source": "PPT-S026",
+      "source_claim": "Cristae “divide the mitochondria into two internal compartments.”",
+      "why_flagged": "The inner mitochondrial membrane separates matrix from intermembrane space; cristae are folds of that membrane that increase area.",
+      "resolution": "Canonical cristae statement corrected.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-007",
+      "severity": "High",
+      "source": "PPT-S027",
+      "source_claim": "Matrix contains enzymes that “catalyze cellular respiration and produce ATP.”",
+      "why_flagged": "The matrix contains citric-acid-cycle and other enzymes, but most oxidative-phosphorylation ATP synthesis occurs via ATP synthase in the inner membrane.",
+      "resolution": "Separate matrix reactions from inner-membrane electron transport/ATP synthesis.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-008",
+      "severity": "Medium",
+      "source": "PPT-S029",
+      "source_claim": "“Light dependent reactions occur in grana.”",
+      "why_flagged": "Light reactions occur in thylakoid membranes; grana are stacks of thylakoids.",
+      "resolution": "Use thylakoid membrane as the reaction location; grana remains structural vocabulary.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-009",
+      "severity": "Medium",
+      "source": "PPT-S034",
+      "source_claim": "Microtubules grow from the centrosome.",
+      "why_flagged": "Centrosomes are major microtubule-organizing centers in many animal cells, but not a universal eukaryotic rule.",
+      "resolution": "Qualify to animal cells/microtubule-organizing centers.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-010",
+      "severity": "Low",
+      "source": "PPT-S037",
+      "source_claim": "Intermediate filaments are “permanent structural elements.”",
+      "why_flagged": "Intermediate filaments are comparatively stable but still dynamic and remodelable.",
+      "resolution": "Use “relatively stable structural elements.”",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-011",
+      "severity": "High",
+      "source": "PPT-S055",
+      "source_claim": "Integral proteins are “aka transmembrane proteins.”",
+      "why_flagged": "Transmembrane proteins are a subset of integral proteins; some integral proteins do not span the entire bilayer.",
+      "resolution": "Distinguish integral from transmembrane.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-012",
+      "severity": "High",
+      "source": "PPT-S058",
+      "source_claim": "Plant cell wall provides “regulation of water intake.”",
+      "why_flagged": "The wall mechanically resists expansion and contributes to water relations, while selective membrane transport is governed primarily by the plasma membrane.",
+      "resolution": "Canonical cell-wall function corrected.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-013",
+      "severity": "Medium",
+      "source": "PPT-S068 / PPT-S102",
+      "source_claim": "Osmosis described as water moving from low solute to high solute, and water-potential slide lists separate low-solute/high-solute and high-pressure/low-pressure rules.",
+      "why_flagged": "These are useful under restricted conditions, but net water movement is governed by total water potential when both solute and pressure differ.",
+      "resolution": "Use Ψ high→low as the governing rule; low-solute→high-solute only when other water-potential components are equal.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-014",
+      "severity": "Medium",
+      "source": "PPT-S078",
+      "source_claim": "Unequal ion concentrations “result in an electrical charge.”",
+      "why_flagged": "Membrane potential is a voltage from charge separation across a membrane; bulk solutions remain nearly electrically neutral.",
+      "resolution": "Canonical membrane-potential statement corrected.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-015",
+      "severity": "Medium",
+      "source": "PPT-S077",
+      "source_claim": "ATP transfers a terminal phosphate to “the transport protein” as the general active-transport mechanism.",
+      "why_flagged": "Direct phosphorylation occurs in some pumps, including P-type ATPases, but is not universal to all active transport.",
+      "resolution": "Use this mechanism for the Na+/K+ ATPase example, not as the definition of all active transport.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-016",
+      "severity": "Medium",
+      "source": "PPT-S089 / PPT-S091",
+      "source_claim": "Endocytosis described as uptake “from vesicles fused from the plasma membrane”; pinocytosis defined as uptake in a protein-coated vesicle.",
+      "why_flagged": "Endocytic vesicles form by membrane invagination/pinching off; pinocytosis is not defined by a single coating mechanism.",
+      "resolution": "Canonical bulk-transport statements corrected.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-017",
+      "severity": "Medium",
+      "source": "PPT-S100",
+      "source_claim": "Hypertonic conditions cause cells to “shrivel and die.”",
+      "why_flagged": "Cells lose water and shrink; death depends on severity, duration, and cell type.",
+      "resolution": "Teach shrinkage/plasmolysis as direct effects; do not make death inevitable.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-018",
+      "severity": "High",
+      "source": "APBIO-U2-Packet pp.1–5",
+      "source_claim": "Packet uses legacy AP codes SYI-1.D through EVO-1.B and eleven topic numbers.",
+      "why_flagged": "The current Fall 2025 CED uses Unit 2 Topics 2.1–2.10 with revised learning-objective/essential-knowledge codes and some scope redistribution.",
+      "resolution": "Preserve legacy packet codes as historical teacher-source metadata; map all canonical records to current 2025 CED topics/codes.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-019",
+      "severity": "Scope",
+      "source": "PPT-S031–037; packet vocabulary",
+      "source_claim": "Cytoskeleton, centrosome, actin, intermediate filaments, detailed chloroplast/mitochondrial subcompartments and several transport subtypes receive extensive teacher coverage.",
+      "why_flagged": "Much of this detail is not explicitly required in the current 2025 CED Unit 2 essential knowledge.",
+      "resolution": "Keep as TEACHER_REQUIRED_ENRICHMENT where classroom responsibility is clear; do not label it AP-required solely because it appears in teacher materials.",
+      "status": "RESOLVED"
+    },
+    {
+      "flag_id": "RF-U2-020",
+      "severity": "Scope",
+      "source": "PPT-S042 statement",
+      "source_claim": "“Remember: all formulas are given to you on the AP exam.”",
+      "why_flagged": "The current CED lists relevant equations, but a blanket promise that every formula will always be supplied should not become a scientific/curricular memory target.",
+      "resolution": "Retain formulas and calculation fluency; omit the blanket guarantee from canonical student science.",
+      "status": "RESOLVED"
+    }
+  ],
+  "canonical_catalog": [
+    {
+      "knowledge_id": "U2-K-001",
+      "topic": "2.1",
+      "canonical_label": "Ribosome composition",
+      "canonical_verified_statement": "Ribosomes are composed of ribosomal RNA (rRNA) and protein.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-002",
+      "topic": "2.1",
+      "canonical_label": "Ribosomes and common ancestry",
+      "canonical_verified_statement": "Ribosomes are non-membrane subcellular structures found in cells in all forms of life and reflect common ancestry of all known life.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-003",
+      "topic": "2.1",
+      "canonical_label": "Ribosome function",
+      "canonical_verified_statement": "Ribosomes synthesize proteins according to messenger RNA (mRNA) sequences.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-004",
+      "topic": "2.1",
+      "canonical_label": "Endomembrane system membership",
+      "canonical_verified_statement": "The endomembrane system includes the endoplasmic reticulum, Golgi complex, lysosomes, vacuoles and transport vesicles, nuclear envelope, and plasma membrane.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-005",
+      "topic": "2.1",
+      "canonical_label": "Endomembrane system function",
+      "canonical_verified_statement": "Endomembrane-system components work together to modify, package, and transport polysaccharides, lipids, and proteins within and from cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-006",
+      "topic": "2.1",
+      "canonical_label": "ER support and transport",
+      "canonical_verified_statement": "The endoplasmic reticulum helps cells maintain shape and participates in intracellular transport.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-007",
+      "topic": "2.1",
+      "canonical_label": "Rough ER",
+      "canonical_verified_statement": "Rough ER is associated with membrane-bound ribosomes, contributes to compartmentalization, and helps carry out protein synthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-008",
+      "topic": "2.1",
+      "canonical_label": "Smooth ER",
+      "canonical_verified_statement": "Smooth ER functions include cellular detoxification and lipid synthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-009",
+      "topic": "2.1",
+      "canonical_label": "Golgi structure",
+      "canonical_verified_statement": "The Golgi complex is a membrane-bound structure consisting of a series of flattened membrane sacs.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-010",
+      "topic": "2.1",
+      "canonical_label": "Golgi processing",
+      "canonical_verified_statement": "Golgi functions include folding and chemically modifying newly synthesized cellular products.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-011",
+      "topic": "2.1",
+      "canonical_label": "Golgi trafficking",
+      "canonical_verified_statement": "Golgi functions include packaging proteins for trafficking.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-012",
+      "topic": "2.1",
+      "canonical_label": "Mitochondrial double membrane",
+      "canonical_verified_statement": "Mitochondria have a double membrane that creates compartments for different metabolic reactions involved in aerobic cellular respiration.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-013",
+      "topic": "2.1",
+      "canonical_label": "Mitochondrial inner folds",
+      "canonical_verified_statement": "The mitochondrial outer membrane is smooth and the inner membrane is highly folded; the folds increase membrane surface that supports efficient ATP synthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-014",
+      "topic": "2.1",
+      "canonical_label": "Lysosome digestion",
+      "canonical_verified_statement": "Lysosomes are membrane-enclosed sacs containing hydrolytic enzymes that digest material.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-015",
+      "topic": "2.1",
+      "canonical_label": "Lysosome apoptosis",
+      "canonical_verified_statement": "Lysosomes also play a role in programmed cell death (apoptosis).",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-016",
+      "topic": "2.1",
+      "canonical_label": "Vacuole general",
+      "canonical_verified_statement": "Vacuoles are membrane-bound sacs with diverse roles.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-017",
+      "topic": "2.1",
+      "canonical_label": "Plant central vacuole",
+      "canonical_verified_statement": "A specialized large plant-cell vacuole supports turgor pressure through nutrient and water storage.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-018",
+      "topic": "2.1",
+      "canonical_label": "Animal vacuoles",
+      "canonical_verified_statement": "Animal-cell vacuoles are smaller and more numerous than the large central vacuole typical of plant cells and can store cellular materials.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-019",
+      "topic": "2.1",
+      "canonical_label": "Chloroplast distribution",
+      "canonical_verified_statement": "Chloroplasts are specialized organelles found in plants and photosynthetic algae.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-020",
+      "topic": "2.1",
+      "canonical_label": "Chloroplast structure/function",
+      "canonical_verified_statement": "Chloroplasts have a double membrane and are the location of photosynthesis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.1",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-021",
+      "topic": "2.2",
+      "canonical_label": "SA:V exchange",
+      "canonical_verified_statement": "Surface-area-to-volume ratio affects acquisition of nutrients, elimination of wastes, exchange of chemicals/energy, and acquisition or dissipation of thermal energy.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-022",
+      "topic": "2.2",
+      "canonical_label": "Membrane area requirement",
+      "canonical_verified_statement": "Plasma-membrane surface area must be sufficient to exchange materials for the volume it serves.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-023",
+      "topic": "2.2",
+      "canonical_label": "Cell size limitation",
+      "canonical_verified_statement": "Surface-area-to-volume ratio can restrict cell size and shape; smaller cells typically have a higher ratio and more efficient exchange with the environment than larger cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-024",
+      "topic": "2.2",
+      "canonical_label": "Scaling with volume",
+      "canonical_verified_statement": "As cell volume increases, surface-area-to-volume ratio decreases while internal resource demand increases.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-025",
+      "topic": "2.2",
+      "canonical_label": "Exchange-surface adaptations",
+      "canonical_verified_statement": "Membrane folds and other complex structures increase exchange surface area relative to volume.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-026",
+      "topic": "2.2",
+      "canonical_label": "Body size and heat exchange",
+      "canonical_verified_statement": "As organism size increases, surface-area-to-volume ratio and proportional heat exchange with the environment generally decrease.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-027",
+      "topic": "2.2",
+      "canonical_label": "Body size and metabolic rate",
+      "canonical_verified_statement": "Metabolic rate per unit body mass is generally higher in smaller multicellular organisms than in larger ones.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.2",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-028",
+      "topic": "2.3",
+      "canonical_label": "Phospholipid amphipathic structure",
+      "canonical_verified_statement": "Phospholipids have polar hydrophilic phosphate-containing regions and nonpolar hydrophobic fatty-acid regions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-029",
+      "topic": "2.3",
+      "canonical_label": "Bilayer orientation",
+      "canonical_verified_statement": "Hydrophilic regions face aqueous internal/external environments while hydrophobic fatty-acid regions face one another in the membrane interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-030",
+      "topic": "2.3",
+      "canonical_label": "Membrane-protein polarity",
+      "canonical_verified_statement": "Embedded membrane proteins may contain hydrophilic regions, hydrophobic regions, or both.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-031",
+      "topic": "2.3",
+      "canonical_label": "Protein orientation",
+      "canonical_verified_statement": "Hydrophobic protein surfaces interact with the membrane interior; hydrophilic regions are exposed to aqueous environments or can occur within the protein interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-032",
+      "topic": "2.3",
+      "canonical_label": "Fluid mosaic composition",
+      "canonical_verified_statement": "Plasma membranes are phospholipid frameworks containing proteins, steroids such as cholesterol in vertebrate animals, glycoproteins, and glycolipids.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-033",
+      "topic": "2.3",
+      "canonical_label": "Fluid mosaic movement",
+      "canonical_verified_statement": "Many membrane lipids and proteins can move laterally within the membrane, producing the dynamic fluid-mosaic organization.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.3",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-034",
+      "topic": "2.4",
+      "canonical_label": "Selective permeability basis",
+      "canonical_verified_statement": "Plasma membranes separate internal and external environments; selective permeability results largely from the membrane hydrophobic interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-035",
+      "topic": "2.4",
+      "canonical_label": "Small nonpolar passage",
+      "canonical_verified_statement": "Small nonpolar molecules such as N2, O2, and CO2 can pass through the lipid bilayer readily.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-036",
+      "topic": "2.4",
+      "canonical_label": "Hydrophilic transport",
+      "canonical_verified_statement": "Large polar molecules and ions generally cross plasma membranes using embedded channels or transport proteins.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-037",
+      "topic": "2.4",
+      "canonical_label": "Hydrophobic barrier",
+      "canonical_verified_statement": "Nonpolar phospholipid tails impede direct passage of ions and many polar molecules.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-038",
+      "topic": "2.4",
+      "canonical_label": "Small polar passage",
+      "canonical_verified_statement": "Small uncharged polar molecules such as H2O and NH3 can pass through the membrane in small amounts.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-039",
+      "topic": "2.4",
+      "canonical_label": "Cell walls",
+      "canonical_verified_statement": "Cell walls of Bacteria, Archaea, Fungi, and plants provide structural boundaries and protection from osmotic lysis and can act as permeability barriers for some substances.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.4",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-040",
+      "topic": "2.5",
+      "canonical_label": "Concentration gradients",
+      "canonical_verified_statement": "Selective permeability permits concentration gradients of solutes to form across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-041",
+      "topic": "2.5",
+      "canonical_label": "Passive transport",
+      "canonical_verified_statement": "Passive transport is net movement from higher to lower concentration without direct input of metabolic energy.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-042",
+      "topic": "2.5",
+      "canonical_label": "Active transport",
+      "canonical_verified_statement": "Active transport requires direct energy input; in some cases it moves molecules from lower to higher concentration.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-043",
+      "topic": "2.5",
+      "canonical_label": "Bulk transport energy",
+      "canonical_verified_statement": "Endocytosis and exocytosis require energy to move large substances or large quantities of substances into and out of cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-044",
+      "topic": "2.5",
+      "canonical_label": "Endocytosis",
+      "canonical_verified_statement": "In endocytosis, the plasma membrane folds inward and forms vesicles that engulf material from the external environment.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-045",
+      "topic": "2.5",
+      "canonical_label": "Exocytosis",
+      "canonical_verified_statement": "In exocytosis, internal vesicles fuse with the plasma membrane and release material from the cell.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.5",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-046",
+      "topic": "2.6",
+      "canonical_label": "Facilitated diffusion proteins",
+      "canonical_verified_statement": "Facilitated diffusion uses channel or transport proteins to enable movement of substances that cannot readily cross the lipid bilayer.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-047",
+      "topic": "2.6",
+      "canonical_label": "Ion channels",
+      "canonical_verified_statement": "Charged ions such as Na+ and K+ require channel proteins to cross the membrane by facilitated diffusion.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-048",
+      "topic": "2.6",
+      "canonical_label": "Membrane polarization",
+      "canonical_verified_statement": "Ion movement across membranes can contribute to membrane polarization.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-049",
+      "topic": "2.6",
+      "canonical_label": "Large polar facilitated diffusion",
+      "canonical_verified_statement": "Large polar molecules can cross using facilitated diffusion without energy input when moving down their concentration gradient.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-050",
+      "topic": "2.6",
+      "canonical_label": "Aquaporins",
+      "canonical_verified_statement": "Aquaporins facilitate movement of large quantities of water across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-051",
+      "topic": "2.7",
+      "canonical_label": "Tonicity relationships",
+      "canonical_verified_statement": "An external solution may be hypotonic, hypertonic, or isotonic relative to a cell interior.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-052",
+      "topic": "2.7",
+      "canonical_label": "Osmosis and water potential",
+      "canonical_verified_statement": "Water moves by osmosis from regions of higher water potential to regions of lower water potential; this often corresponds to movement from hypotonic toward hypertonic regions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-053",
+      "topic": "2.7",
+      "canonical_label": "Water potential equation",
+      "canonical_verified_statement": "Water potential is the sum of pressure potential and solute potential: Ψ = Ψp + Ψs.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-054",
+      "topic": "2.7",
+      "canonical_label": "Membrane movement and homeostasis",
+      "canonical_verified_statement": "Growth and homeostasis depend on continual movement of molecules across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-055",
+      "topic": "2.7",
+      "canonical_label": "Osmoregulation",
+      "canonical_verified_statement": "Osmoregulation maintains water balance and permits control of internal solute composition and water potential.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-056",
+      "topic": "2.7",
+      "canonical_label": "Osmolarity direction",
+      "canonical_verified_statement": "When other components are equal, water tends to move from lower osmolarity/solute concentration toward higher osmolarity/solute concentration.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-057",
+      "topic": "2.7",
+      "canonical_label": "Solute potential equation",
+      "canonical_verified_statement": "Solute potential can be calculated as Ψs = −iCRT, with i as ionization/van’t Hoff factor, C molar concentration, R pressure constant, and T Kelvin temperature.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-058",
+      "topic": "2.8",
+      "canonical_label": "Energy for active transport",
+      "canonical_verified_statement": "Metabolic energy such as ATP is required for active transport and for establishing/maintaining electrochemical gradients.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.8",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-059",
+      "topic": "2.8",
+      "canonical_label": "Active transport proteins",
+      "canonical_verified_statement": "Membrane proteins are necessary for active transport across membranes.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.8",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-060",
+      "topic": "2.8",
+      "canonical_label": "Na+/K+ pump",
+      "canonical_verified_statement": "The Na+/K+ pump is an ATPase that contributes to maintenance of membrane potential.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.8",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-061",
+      "topic": "2.9",
+      "canonical_label": "Compartmentalization",
+      "canonical_verified_statement": "Membranes and membrane-bound organelles compartmentalize intracellular metabolic processes and specific enzymatic reactions in eukaryotic cells.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.9",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-062",
+      "topic": "2.9",
+      "canonical_label": "Minimizing competing interactions",
+      "canonical_verified_statement": "Internal membranes facilitate cellular processes by separating reactions and minimizing competing interactions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.9",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-063",
+      "topic": "2.9",
+      "canonical_label": "Increasing reaction surface",
+      "canonical_verified_statement": "Internal membranes increase surface area on which cellular reactions can occur.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.9",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-064",
+      "topic": "2.10",
+      "canonical_label": "Endosymbiosis",
+      "canonical_verified_statement": "Mitochondria and chloroplasts evolved from once free-living prokaryotic cells through endosymbiosis.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.10",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-065",
+      "topic": "2.10",
+      "canonical_label": "Prokaryotic compartmentalization",
+      "canonical_verified_statement": "Prokaryotes typically lack internal membrane-bound organelles but have internal regions with specialized structures and functions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.10",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-066",
+      "topic": "2.10",
+      "canonical_label": "Eukaryotic compartmentalization",
+      "canonical_verified_statement": "Eukaryotic cells maintain internal membranes that partition the cell into specialized regions.",
+      "scope_class": "AP_REQUIRED",
+      "source_reference": "AP Biology CED 2025, Topic 2.10",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-067",
+      "topic": "2.1",
+      "canonical_label": "Cell",
+      "canonical_verified_statement": "Cells are the basic structural and functional units of organisms; all cells have a plasma membrane, cytosol, genetic material, and ribosomes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S002; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-068",
+      "topic": "2.1",
+      "canonical_label": "Prokaryotic cell",
+      "canonical_verified_statement": "Prokaryotic cells lack a membrane-bound nucleus; DNA is located in a nucleoid region. Bacteria and Archaea are prokaryotes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S003; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-069",
+      "topic": "2.1",
+      "canonical_label": "Eukaryotic cell",
+      "canonical_verified_statement": "Eukaryotic cells have DNA enclosed in a nucleus and contain membrane-bound organelles.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S003; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-070",
+      "topic": "2.1",
+      "canonical_label": "Nucleus",
+      "canonical_verified_statement": "The nucleus contains most of a eukaryotic cell’s genetic material and is enclosed by a double-membrane nuclear envelope.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S009; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-071",
+      "topic": "2.1",
+      "canonical_label": "Nuclear pore complex",
+      "canonical_verified_statement": "Nuclear pore complexes regulate movement of macromolecules between the nucleus and cytoplasm.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S009 corrected; Campbell 13e Ch.6 pp.101–103",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-072",
+      "topic": "2.1",
+      "canonical_label": "Nucleolus",
+      "canonical_verified_statement": "The nucleolus is a nuclear region where rRNA is transcribed and ribosomal subunits are assembled with imported proteins before export through nuclear pores.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S010; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-073",
+      "topic": "2.1",
+      "canonical_label": "Free ribosomes",
+      "canonical_verified_statement": "Free ribosomes synthesize proteins that mainly function in the cytosol, while some free-ribosome products are targeted after translation to organelles such as the nucleus, mitochondria, chloroplasts, and peroxisomes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S013 corrected; Campbell 13e Ch.6 p.105",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-003",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-074",
+      "topic": "2.1",
+      "canonical_label": "Bound ribosomes",
+      "canonical_verified_statement": "Ribosomes bound to rough ER or the nuclear envelope generally synthesize proteins destined for secretion, membranes, or compartments of the endomembrane system.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S013 corrected; Campbell 13e Ch.6 p.105",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-003",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-075",
+      "topic": "2.1",
+      "canonical_label": "ER cisternae/lumen",
+      "canonical_verified_statement": "The ER is a network of membranous tubules and sacs called cisternae; its membrane separates the ER lumen from the cytosol.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S014; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-076",
+      "topic": "2.1",
+      "canonical_label": "Smooth ER additional functions",
+      "canonical_verified_statement": "Depending on cell type, smooth ER can participate in carbohydrate metabolism, detoxification, calcium storage, and lipid synthesis.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S016; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-077",
+      "topic": "2.1",
+      "canonical_label": "Golgi cis face",
+      "canonical_verified_statement": "The cis face of the Golgi receives vesicles arriving from the ER.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S017; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-078",
+      "topic": "2.1",
+      "canonical_label": "Golgi trans face",
+      "canonical_verified_statement": "The trans face of the Golgi sorts and dispatches vesicles toward cellular destinations or the plasma membrane.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S017–018; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-079",
+      "topic": "2.1",
+      "canonical_label": "Cisternae",
+      "canonical_verified_statement": "Golgi cisternae are distinct flattened membranous sacs arranged in stacks.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S017; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-080",
+      "topic": "2.1",
+      "canonical_label": "Autophagy",
+      "canonical_verified_statement": "During autophagy, damaged cellular material is enclosed and delivered to lysosomes for enzymatic breakdown and recycling.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S019; Campbell 13e Ch.6 p.110",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-081",
+      "topic": "2.1",
+      "canonical_label": "Peroxisome",
+      "canonical_verified_statement": "Peroxisomes are oxidative metabolic compartments containing enzymes that transfer hydrogen to oxygen and enzymes such as catalase that break down hydrogen peroxide; they are functionally distinct from lysosomes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S019 corrected; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-004",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-082",
+      "topic": "2.1",
+      "canonical_label": "Food vacuole",
+      "canonical_verified_statement": "Food vacuoles can form by phagocytosis and later fuse with digestive compartments such as lysosomes in animal cells.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S020; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-083",
+      "topic": "2.1",
+      "canonical_label": "Contractile vacuole",
+      "canonical_verified_statement": "Contractile vacuoles in many freshwater protists expel excess water and support osmotic balance.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S020; Campbell 13e Ch.6/7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-084",
+      "topic": "2.1",
+      "canonical_label": "Intermembrane space",
+      "canonical_verified_statement": "The mitochondrial intermembrane space lies between the outer and inner mitochondrial membranes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S027; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-085",
+      "topic": "2.1",
+      "canonical_label": "Mitochondrial matrix",
+      "canonical_verified_statement": "The mitochondrial matrix is enclosed by the inner membrane and contains enzymes for pyruvate oxidation and the citric acid cycle, along with mitochondrial DNA and ribosomes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S027 corrected; Campbell 13e Ch.6/9",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-007",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-086",
+      "topic": "2.1",
+      "canonical_label": "Cristae",
+      "canonical_verified_statement": "Cristae are folds of the mitochondrial inner membrane that increase membrane surface area; the inner membrane, not the folds alone, separates the matrix from the intermembrane space.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S026 corrected; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-006",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-087",
+      "topic": "2.1",
+      "canonical_label": "Mitochondrial abundance and energy demand",
+      "canonical_verified_statement": "Cells with high sustained energy demand often contain many mitochondria, although mitochondrial abundance and morphology vary with cell type and physiological state.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S028; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-088",
+      "topic": "2.1",
+      "canonical_label": "Thylakoid",
+      "canonical_verified_statement": "Thylakoids are membranous sacs within chloroplasts whose membranes contain photosynthetic electron-transfer components.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S029; Campbell 13e Ch.6/10",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-089",
+      "topic": "2.1",
+      "canonical_label": "Granum",
+      "canonical_verified_statement": "A granum is a stack of thylakoids. Light reactions occur in thylakoid membranes, including those organized into grana.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S029 corrected; Campbell 13e Ch.6/10",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-008",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-090",
+      "topic": "2.1",
+      "canonical_label": "Stroma",
+      "canonical_verified_statement": "The chloroplast stroma is the fluid outside the thylakoids and inside the inner chloroplast membrane; the Calvin cycle occurs in the stroma.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S030; Campbell 13e Ch.6/10",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-091",
+      "topic": "2.1",
+      "canonical_label": "Chlorophyll",
+      "canonical_verified_statement": "Chlorophyll pigments in thylakoid membranes absorb light used in photosynthesis.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S029; Campbell 13e Ch.10",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-092",
+      "topic": "2.1",
+      "canonical_label": "Cytoskeleton",
+      "canonical_verified_statement": "The cytoskeleton is a dynamic network of protein fibers that supports cell shape, organizes cell contents, and contributes to intracellular and whole-cell movement.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S032; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-093",
+      "topic": "2.1",
+      "canonical_label": "Microtubule",
+      "canonical_verified_statement": "Microtubules are hollow tubulin polymers that help maintain cell shape, serve as tracks for motor proteins, form the mitotic spindle, and form the core of eukaryotic cilia and flagella.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S034–035; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-094",
+      "topic": "2.1",
+      "canonical_label": "Microtubule-organizing center / centrosome",
+      "canonical_verified_statement": "In many animal cells, microtubules are nucleated from a centrosome; other eukaryotic cells use other microtubule-organizing centers.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S034 corrected; Campbell 13e Ch.6 p.115",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-009",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-095",
+      "topic": "2.1",
+      "canonical_label": "Microfilament / actin filament",
+      "canonical_verified_statement": "Microfilaments are thin actin filaments that bear tension, support cell shape, participate in cell motility and muscle contraction, and form the contractile ring during animal-cell cytokinesis.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S036; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-096",
+      "topic": "2.1",
+      "canonical_label": "Intermediate filament",
+      "canonical_verified_statement": "Intermediate filaments are rope-like cytoskeletal elements that reinforce cell shape, anchor organelles, and form structures such as the nuclear lamina; they are relatively stable compared with many microtubules and actin filaments.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S037 corrected; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-010",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-097",
+      "topic": "2.2",
+      "canonical_label": "Surface area formula for cube",
+      "canonical_verified_statement": "For a cube with side length s, surface area is 6s² and volume is s³; SA:V is surface area divided by volume.",
+      "scope_class": "AP_REQUIRED_EQUATION",
+      "source_reference": "PPT-S042; CED 2.2 relevant equations",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-098",
+      "topic": "2.2",
+      "canonical_label": "Surface area and volume of sphere",
+      "canonical_verified_statement": "For a sphere, surface area is 4πr² and volume is 4/3πr³; therefore SA:V decreases as radius increases.",
+      "scope_class": "AP_REQUIRED_EQUATION",
+      "source_reference": "PPT-S042–045; CED 2.2 relevant equations",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-099",
+      "topic": "2.3",
+      "canonical_label": "Membrane fluidity and unsaturation",
+      "canonical_verified_statement": "Unsaturated phospholipid tails contain cis double-bond kinks that reduce tight packing and help membranes remain fluid at lower temperatures.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S053; Campbell 13e Ch.7 pp.129–130",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-100",
+      "topic": "2.3",
+      "canonical_label": "Cholesterol as fluidity buffer",
+      "canonical_verified_statement": "In vertebrate animal membranes, cholesterol restrains phospholipid movement at higher temperatures and hinders tight packing at lower temperatures, buffering membrane fluidity across temperature changes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S054; Campbell 13e Ch.7 p.130",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-101",
+      "topic": "2.3",
+      "canonical_label": "Integral membrane protein",
+      "canonical_verified_statement": "Integral membrane proteins penetrate the hydrophobic interior of the bilayer; some, but not all, span the entire membrane as transmembrane proteins.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S055 corrected; Campbell 13e Ch.7 p.131",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-011",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-102",
+      "topic": "2.3",
+      "canonical_label": "Peripheral membrane protein",
+      "canonical_verified_statement": "Peripheral membrane proteins are loosely associated with the membrane surface or with exposed parts of integral proteins and do not penetrate the bilayer hydrophobic core.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S055; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-103",
+      "topic": "2.3",
+      "canonical_label": "Glycolipid",
+      "canonical_verified_statement": "A glycolipid is a membrane lipid with a covalently attached carbohydrate that can participate in cell recognition and interactions.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S056; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-104",
+      "topic": "2.3",
+      "canonical_label": "Glycoprotein",
+      "canonical_verified_statement": "A glycoprotein is a membrane protein with a covalently attached carbohydrate; membrane carbohydrates are important in cell-cell recognition.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S056; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-105",
+      "topic": "2.4",
+      "canonical_label": "Plant cell wall composition",
+      "canonical_verified_statement": "Primary plant cell walls contain cellulose microfibrils embedded in a matrix of other polysaccharides and proteins.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S059; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-106",
+      "topic": "2.4",
+      "canonical_label": "Plant cell wall function",
+      "canonical_verified_statement": "The plant cell wall supports shape, resists excessive expansion during water uptake, and protects the cell; selective transport into the cytoplasm is controlled primarily by the plasma membrane.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S058 corrected; Campbell 13e Ch.6/7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-012",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-107",
+      "topic": "2.4",
+      "canonical_label": "Plasmodesma",
+      "canonical_verified_statement": "Plasmodesmata are membrane-lined channels through plant cell walls that connect the cytoplasm of adjacent cells and support intercellular transport and communication.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S059; Campbell 13e Ch.6",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-108",
+      "topic": "2.5",
+      "canonical_label": "Diffusion",
+      "canonical_verified_statement": "Diffusion is net movement resulting from random molecular motion, with net movement down a concentration gradient until dynamic equilibrium is approached.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S066; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-109",
+      "topic": "2.7",
+      "canonical_label": "Osmosis",
+      "canonical_verified_statement": "Osmosis is net diffusion of free water across a selectively permeable membrane from higher water potential toward lower water potential.",
+      "scope_class": "AP_REQUIRED_SUPPORT",
+      "source_reference": "PPT-S068 corrected; CED 2.7; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-013",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-110",
+      "topic": "2.6",
+      "canonical_label": "Channel protein",
+      "canonical_verified_statement": "Channel proteins provide hydrophilic passageways for specific ions or molecules; many are gated by chemical or physical stimuli.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S071; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-111",
+      "topic": "2.6",
+      "canonical_label": "Carrier protein",
+      "canonical_verified_statement": "Carrier proteins bind specific solutes and change conformation to move them across the membrane.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S072; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-112",
+      "topic": "2.8",
+      "canonical_label": "Membrane potential",
+      "canonical_verified_statement": "Membrane potential is the voltage across a membrane created by separation of charge associated with unequal ion distributions across the membrane.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S078 corrected; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-014",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-113",
+      "topic": "2.8",
+      "canonical_label": "Electrogenic pump",
+      "canonical_verified_statement": "An electrogenic pump generates voltage across a membrane by moving net charge and can create electrochemical gradients used by other cellular processes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S079; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-114",
+      "topic": "2.8",
+      "canonical_label": "Na+/K+ ATPase stoichiometry",
+      "canonical_verified_statement": "For each ATP hydrolyzed, the animal-cell Na+/K+ ATPase exports 3 Na+ and imports 2 K+, producing a net outward movement of one positive charge and maintaining ion gradients.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S079–082; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-115",
+      "topic": "2.8",
+      "canonical_label": "Proton pump",
+      "canonical_verified_statement": "Proton pumps use energy to move H+ across membranes and establish electrochemical proton gradients.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S083; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-116",
+      "topic": "2.8",
+      "canonical_label": "Cotransport",
+      "canonical_verified_statement": "Cotransport couples downhill movement of one solute to uphill movement of another by using energy stored in an electrochemical gradient.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S084–086; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-117",
+      "topic": "2.8",
+      "canonical_label": "Sucrose-H+ symport",
+      "canonical_verified_statement": "Plant cells can import sucrose against its concentration gradient by coupling sucrose uptake to H+ moving down a proton electrochemical gradient through a symporter.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S086; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-118",
+      "topic": "2.5",
+      "canonical_label": "Phagocytosis",
+      "canonical_verified_statement": "Phagocytosis is a form of endocytosis in which a cell engulfs large particles; in many animal cells the resulting vesicle can fuse with a lysosome for digestion.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S090; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-119",
+      "topic": "2.5",
+      "canonical_label": "Pinocytosis",
+      "canonical_verified_statement": "Pinocytosis is nonspecific uptake of extracellular fluid and dissolved solutes into small vesicles; it can occur through several molecular mechanisms and is not defined by a single protein coat.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S091 corrected; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-016",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-120",
+      "topic": "2.5",
+      "canonical_label": "Receptor-mediated endocytosis",
+      "canonical_verified_statement": "Receptor-mediated endocytosis concentrates specific extracellular ligands after they bind membrane receptors, followed by membrane invagination and vesicle formation.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S092; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-121",
+      "topic": "2.7",
+      "canonical_label": "Tonicity",
+      "canonical_verified_statement": "Tonicity describes how a solution containing nonpenetrating solutes causes a cell to gain or lose water.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S098; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-122",
+      "topic": "2.7",
+      "canonical_label": "Isotonic solution",
+      "canonical_verified_statement": "In an isotonic environment, there is no net water movement across the membrane, although water continues moving in both directions.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S099; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-123",
+      "topic": "2.7",
+      "canonical_label": "Hypertonic solution",
+      "canonical_verified_statement": "A cell in a hypertonic environment loses water; animal cells shrink and plant cells may plasmolyze. Water loss does not necessarily mean immediate cell death.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S100 corrected; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-017",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-124",
+      "topic": "2.7",
+      "canonical_label": "Hypotonic solution",
+      "canonical_verified_statement": "A cell in a hypotonic environment gains water; animal cells can swell and lyse, while a healthy plant cell becomes turgid as the cell wall resists expansion.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S101; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-125",
+      "topic": "2.7",
+      "canonical_label": "Plasmolysis",
+      "canonical_verified_statement": "Plasmolysis occurs when a plant cell loses water and the plasma membrane pulls away from the cell wall.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S100; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-126",
+      "topic": "2.7",
+      "canonical_label": "Turgor pressure",
+      "canonical_verified_statement": "Turgor pressure is the pressure generated as water enters a plant cell and the cell contents press against the cell wall; it helps support nonwoody plant tissues.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S101; Campbell 13e Ch.7",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-127",
+      "topic": "2.7",
+      "canonical_label": "Pressure potential",
+      "canonical_verified_statement": "Pressure potential is the physical pressure component of water potential; in an open beaker at atmospheric pressure it is conventionally treated as zero relative pressure.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S103; CED 2.7 equation",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-128",
+      "topic": "2.7",
+      "canonical_label": "Solute potential",
+      "canonical_verified_statement": "Adding dissolved solute lowers solute potential; solute potential is zero for pure water under the standard convention and is negative for solutions.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S103–104; CED 2.7 equation",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-129",
+      "topic": "2.10",
+      "canonical_label": "Endosymbiotic evidence: genomes",
+      "canonical_verified_statement": "Mitochondria and chloroplasts contain their own circular DNA, supporting descent from bacterial endosymbionts.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S025; Campbell 13e Ch.25 pp.543–545",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-130",
+      "topic": "2.10",
+      "canonical_label": "Endosymbiotic evidence: division",
+      "canonical_verified_statement": "Mitochondria and chloroplasts replicate by division processes similar to bacterial binary fission.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "Campbell 13e Ch.25 pp.543–545",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-131",
+      "topic": "2.10",
+      "canonical_label": "Endosymbiotic evidence: ribosomes",
+      "canonical_verified_statement": "Mitochondrial and chloroplast ribosomes have features more similar to bacterial ribosomes than to eukaryotic cytosolic ribosomes.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S025; Campbell 13e Ch.25 pp.543–545",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-132",
+      "topic": "2.10",
+      "canonical_label": "Endosymbiotic evidence: membranes",
+      "canonical_verified_statement": "Mitochondria and chloroplasts have double membranes and inner-membrane systems with bacterial similarities consistent with endosymbiotic origins.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S025; Campbell 13e Ch.6/25",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-133",
+      "topic": "2.10",
+      "canonical_label": "Modern organelle dependence",
+      "canonical_verified_statement": "Modern mitochondria and chloroplasts are not generally capable of independent free-living existence; many genes and functions are integrated with the host cell.",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "source_reference": "PPT-S025 corrected; Campbell 13e Ch.25",
+      "retrieval_demand": "CONCEPT_RELATIONSHIP",
+      "exact_name_recall": true,
+      "review_flag_id": "RF-U2-005",
+      "notes": "",
+      "canonical_lock": "LOCKED_WITH_CORRECTION_OR_SCOPE_NOTE"
+    },
+    {
+      "knowledge_id": "U2-K-134",
+      "topic": "2.1",
+      "canonical_label": "Hepatitis C / albumin organelle FRQ",
+      "canonical_verified_statement": "Use organelle function to infer how liver-cell disruption could lower production/processing/secretion of a blood protein; evaluate the specific prompt with appropriate ER/Golgi reasoning.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S021",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-135",
+      "topic": "2.1",
+      "canonical_label": "Insulin secretory pathway FRQ",
+      "canonical_verified_statement": "Trace a secreted protein through translation on rough-ER-bound ribosomes, ER processing/transport, Golgi processing/sorting, secretory vesicles, and exocytosis.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S022",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-136",
+      "topic": "2.1",
+      "canonical_label": "Alcohol-detox/autophagy FRQ",
+      "canonical_verified_statement": "Use smooth-ER detoxification and lysosome/autophagy reasoning in a liver-cell scenario.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S038",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-137",
+      "topic": "2.2",
+      "canonical_label": "SA:V calculations",
+      "canonical_verified_statement": "Calculate and compare surface area, volume, and SA:V for cubes or spheres and connect the ratio to exchange efficiency.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S042–046",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-138",
+      "topic": "2.3",
+      "canonical_label": "Cold-water fish membrane FRQ",
+      "canonical_verified_statement": "Predict how greater unsaturated lipid content can help preserve membrane fluidity in cold conditions and justify through tail packing.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S060",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-139",
+      "topic": "2.5",
+      "canonical_label": "Diffusion diagrams",
+      "canonical_verified_statement": "Predict net movement from concentration differences across a selectively permeable membrane and distinguish dynamic molecular movement from net movement.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S073–075",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-140",
+      "topic": "2.8",
+      "canonical_label": "Sucrose uptake vs pH FRQ",
+      "canonical_verified_statement": "Interpret pH-dependent sucrose uptake using a proton gradient and H+/sucrose cotransport mechanism.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S093",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-141",
+      "topic": "2.5",
+      "canonical_label": "Macrophage phagocytosis FRQ",
+      "canonical_verified_statement": "Describe phagocytosis and connect cell-recognition molecules to pathogen recognition.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S094",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    },
+    {
+      "knowledge_id": "U2-K-142",
+      "topic": "2.7",
+      "canonical_label": "Water-potential calculations",
+      "canonical_verified_statement": "Calculate Ψs and Ψ, compare water potentials, and predict net water movement using the current CED equations.",
+      "scope_class": "PRACTICE_ONLY",
+      "source_reference": "PPT-S102–109",
+      "retrieval_demand": "APPLIED_TRANSFER",
+      "exact_name_recall": false,
+      "review_flag_id": null,
+      "notes": "",
+      "canonical_lock": "LOCKED_F1"
+    }
+  ],
+  "qa": {
+    "ppt_pages_expected": 109,
+    "ppt_pages_ingested": 109,
+    "ced_topics_expected": 10,
+    "ced_topics_ingested": 10,
+    "ced_atoms": 66,
+    "packet_topics_expected_legacy": 11,
+    "packet_topics_crosswalked": 11,
+    "canonical_records": 142,
+    "review_flags": 20,
+    "scope_counts": {
+      "AP_REQUIRED": 66,
+      "TEACHER_REQUIRED_ENRICHMENT": 64,
+      "AP_REQUIRED_EQUATION": 2,
+      "AP_REQUIRED_SUPPORT": 1,
+      "PRACTICE_ONLY": 9
+    },
+    "topic_counts": {
+      "2.1": 53,
+      "2.10": 8,
+      "2.2": 10,
+      "2.3": 13,
+      "2.4": 9,
+      "2.5": 12,
+      "2.6": 7,
+      "2.7": 17,
+      "2.8": 10,
+      "2.9": 3
+    },
+    "stage_status": "F1_CANONICAL_SOURCE_LOCK_COMPLETE_WITH_PACKET_BINARY_NOT_COPIED_TO_SANDBOX",
+    "blocking_missing_resources": [],
+    "nonblocking_followups": [
+      "If additional Unit 2 labs/worksheets/assessment keys are considered required course content, ingest them before final student release.",
+      "Packet PDF remains available through File Library and was crosswalked semantically; the binary was not copied into the generated local folder."
+    ]
+  }
+}

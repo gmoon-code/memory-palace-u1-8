@@ -1,0 +1,1480 @@
+{
+  "palace_id": "Z7",
+  "palace_name": "Protein Factory",
+  "story_title": "The Protein Tailor’s Emergency",
+  "tagline": "A client’s protein has lost its shape minutes before delivery. Follow one polypeptide from amino-acid pieces to a functioning three-dimensional protein.",
+  "guide": {
+    "name": "Milo Arden",
+    "role": "master protein tailor",
+    "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+    "story_job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+  },
+  "premise": "A custom protein arrives unfolded just before the factory’s midnight shipment. Its function lamp stays dark because the chain no longer has the shape required for its job.",
+  "mission": "Rebuild the protein with Milo. Identify amino-acid parts, connect them with peptide bonds, follow chain direction, see how sequence and R-group chemistry drive folding, and distinguish all four structural levels before testing what denaturation does.",
+  "finale": "The rebuilt protein folds, assembles, and switches its function lamp back on. After one final denaturation test, Milo seals the repaired molecule for shipment and you can retrace how sequence became shape and shape became function.",
+  "estimated_minutes": 20,
+  "scene_count": 14,
+  "checkpoint_count": 4,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The factory is a single production line that winds upward through fourteen stations. One polypeptide remains with you the entire time, so every new room changes the same chain instead of introducing an unrelated example.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Protein Entrance",
+      "short": "Protein",
+      "floor": "Receiving",
+      "symbol": "◆"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Amino-Acid Workbench",
+      "short": "Amino acid",
+      "floor": "Bench 1",
+      "symbol": "◇"
+    },
+    {
+      "scene_index": 2,
+      "locus": "R-Group Sorting Tank",
+      "short": "R groups",
+      "floor": "Bench 2",
+      "symbol": "R"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Peptide-Tie Station",
+      "short": "Peptide",
+      "floor": "Line 1",
+      "symbol": "—"
+    },
+    {
+      "scene_index": 4,
+      "locus": "N/C Conveyor",
+      "short": "Direction",
+      "floor": "Line 2",
+      "symbol": "N→C"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Sequence Folding Machine",
+      "short": "Sequence",
+      "floor": "Fold 1",
+      "symbol": "123"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Function Showroom",
+      "short": "Functions",
+      "floor": "Showroom",
+      "symbol": "⚙"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Four-Level Elevator",
+      "short": "Levels",
+      "floor": "Elevator",
+      "symbol": "1–4"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Secondary Folding Room",
+      "short": "Secondary",
+      "floor": "Level 2",
+      "symbol": "αβ"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Tertiary Interaction Chamber",
+      "short": "Tertiary",
+      "floor": "Level 3",
+      "symbol": "◉"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Quaternary Assembly Bay",
+      "short": "Quaternary",
+      "floor": "Level 4",
+      "symbol": "◆◆"
+    },
+    {
+      "scene_index": 11,
+      "locus": "Raw Chain Inspection",
+      "short": "Chain vs protein",
+      "floor": "QA",
+      "symbol": "?"
+    },
+    {
+      "scene_index": 12,
+      "locus": "Soluble-Protein Water Tank",
+      "short": "Water",
+      "floor": "QA tank",
+      "symbol": "💧"
+    },
+    {
+      "scene_index": 13,
+      "locus": "Denaturation Furnace",
+      "short": "Denature",
+      "floor": "Exit test",
+      "symbol": "♨"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Protein Entrance",
+      "title": "The Protein That Forgot Its Shape",
+      "scene_kicker": "A protein is more than a chain; it is a chain organized into a working three-dimensional structure.",
+      "location_description": "Receiving doors open onto a circular inspection table. A long molecular chain lies collapsed across it like loose ribbon. A function lamp above the table stays dark. Twenty amino-acid drawers line the back wall.",
+      "scene_layout": {
+        "orientation": "The unfolded chain is centered, the CHON element scanner stands left, and the wall of twenty amino-acid drawers is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Element scanner",
+            "symbol": "CHON",
+            "description": "Checks the common amino-acid backbone for carbon, hydrogen, oxygen, and nitrogen; sulfur appears only in selected side chains."
+          },
+          {
+            "position": "center",
+            "label": "Unfolded protein table",
+            "symbol": "◆",
+            "description": "Shows that a chain without its native three-dimensional organization may lose function."
+          },
+          {
+            "position": "right",
+            "label": "Twenty-drawer wall",
+            "symbol": "20",
+            "description": "Contains the standard set of twenty amino acids used to build proteins."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Damaged protein",
+          "kind": "central object",
+          "visual": "one long polypeptide collapsed into an unstructured coil",
+          "job": "must regain the appropriate three-dimensional organization before its function lamp will turn on"
+        },
+        {
+          "name": "Amino-acid drawers",
+          "kind": "building-unit library",
+          "visual": "twenty distinct drawers with the same backbone stencil but different side-chain symbols",
+          "job": "represent the standard set of 20 amino acids used in proteins"
+        }
+      ],
+      "story_open": "Milo Arden lifts the collapsed chain with both hands. “This is still a polypeptide chain, but the client ordered a working **protein**.” A protein consists of one or more polypeptide chains organized into a specific three-dimensional shape, and that shape is intimately connected with what the protein can do.",
+      "story_paragraphs": [
+        "Milo Arden lifts the collapsed chain with both hands. “This is still a polypeptide chain, but the client ordered a working **protein**.” A protein consists of one or more polypeptide chains organized into a specific three-dimensional shape, and that shape is intimately connected with what the protein can do.",
+        "The scanner flashes C, H, O, and N across the common amino-acid backbone. Those elements are necessarily present in the standard amino-acid framework. A sulfur light appears only on selected side chains, reminding you that sulfur occurs in some amino acids and some proteins, not every protein.",
+        "Milo opens the wall of **20 amino-acid** drawers. Each drawer contains a different standard amino acid. “Same basic frame,” he says, “different side piece. We rebuild from here.” He rolls the chain to the first workbench."
+      ],
+      "story_close": "Milo opens the wall of **20 amino-acid** drawers. Each drawer contains a different standard amino acid. “Same basic frame,” he says, “different side piece. We rebuild from here.” He rolls the chain to the first workbench.",
+      "object_ids": [
+        "MO-APBIO-U1-PF001",
+        "MO-APBIO-U1-PF002",
+        "MO-APBIO-U1-PF004"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF001",
+          "term": "Protein",
+          "story": "a folded-chain machine that powers a function lamp only after it takes a stable 3D shape",
+          "science": "A protein consists of one or more polypeptide chains folded into a three-dimensional shape; protein shape determines function.",
+          "exact_name": true,
+          "hint": "a folded-chain machine that powers a function lamp only after it takes a stable 3D shape"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF002",
+          "term": "Protein elements",
+          "story": "C, H, O, and N badges lock onto the common amino-acid frame while a sulfur badge appears only in a selected side-bin",
+          "science": "The common amino-acid backbone contains carbon, hydrogen, oxygen, and nitrogen. Sulfur occurs in some amino acids and therefore in some proteins.",
+          "exact_name": false,
+          "hint": "C, H, O, and N badges lock onto the common amino-acid frame while a sulfur badge appears only in a selected side-bin"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF004",
+          "term": "Twenty amino acids",
+          "story": "a rack with exactly twenty distinct amino-acid slots",
+          "science": "Proteins are built from a standard set of 20 amino acids.",
+          "exact_name": false,
+          "hint": "a rack with exactly twenty distinct amino-acid slots"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Protein",
+          "meaning": "A protein consists of one or more polypeptide chains folded into a three-dimensional shape; protein shape determines function.",
+          "image": "a folded-chain machine that powers a function lamp only after it takes a stable 3D shape"
+        },
+        {
+          "term": "Protein elements",
+          "meaning": "The common amino-acid backbone contains carbon, hydrogen, oxygen, and nitrogen. Sulfur occurs in some amino acids and therefore in some proteins.",
+          "image": "C, H, O, and N badges lock onto the common amino-acid frame while a sulfur badge appears only in a selected side-bin"
+        },
+        {
+          "term": "Twenty amino acids",
+          "meaning": "Proteins are built from a standard set of 20 amino acids.",
+          "image": "a rack with exactly twenty distinct amino-acid slots"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF001",
+      "checkpoint_prompt": "",
+      "next_locus": "Amino-Acid Workbench"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Amino-Acid Workbench",
+      "title": "One Backbone, One Variable Side",
+      "scene_kicker": "Every amino acid shares a core architecture, while the R group changes.",
+      "location_description": "A bright workbench holds one oversized amino-acid model. A central carbon sits in the middle with four attachments: hydrogen above, amino group left, carboxyl group right, and an interchangeable R-group socket below.",
+      "scene_layout": {
+        "orientation": "The amino group is left of the central carbon, the central carbon/hydrogen is center, the carboxyl group is right, and the R-group socket hangs below.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Amino group",
+            "symbol": "NH₂/NH₃⁺",
+            "description": "Contributes the nitrogen-containing amino end of the amino-acid framework."
+          },
+          {
+            "position": "center",
+            "label": "Central carbon",
+            "symbol": "Cα",
+            "description": "Connects hydrogen, amino group, carboxyl group, and the variable R group."
+          },
+          {
+            "position": "right",
+            "label": "Carboxyl group",
+            "symbol": "COOH/COO⁻",
+            "description": "Provides the carboxyl end used when peptide bonds form."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Amino acid",
+          "kind": "protein building block",
+          "visual": "a central carbon carrying hydrogen, amino group, carboxyl group, and one variable R group",
+          "job": "serves as the building unit from which polypeptide chains are assembled"
+        },
+        {
+          "name": "R-group socket",
+          "kind": "variable position",
+          "visual": "an empty socket below the central carbon",
+          "job": "accepts a side chain whose chemical properties distinguish one amino acid from another"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Amino-Acid Workbench**. A bright workbench holds one oversized amino-acid model. A central carbon sits in the middle with four attachments: hydrogen above, amino group left, carboxyl group right, and an interchangeable R-group socket below. The Amino group stays on your left, the Central carbon is the main work area straight ahead, and the Carboxyl group fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Amino-Acid Workbench**. A bright workbench holds one oversized amino-acid model. A central carbon sits in the middle with four attachments: hydrogen above, amino group left, carboxyl group right, and an interchangeable R-group socket below. The Amino group stays on your left, the Central carbon is the main work area straight ahead, and the Carboxyl group fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "Milo fixes the model under a spotlight. An **amino acid** has a central carbon attached to a hydrogen, a carboxyl group, an amino group, and a variable **R group**. You can picture the first four pieces as the shared chassis and the R group as the replaceable attachment.",
+        "He rotates the model until the amino group is always on your left and the carboxyl group on your right. The arrangement becomes a stable visual reference for the next station, where R groups are sorted by how they behave.",
+        "The R-group socket clicks open. Three colored side chains drop into a sorting tank ahead."
+      ],
+      "story_close": "The R-group socket clicks open. Three colored side chains drop into a sorting tank ahead.",
+      "object_ids": [
+        "MO-APBIO-U1-PF003"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF003",
+          "term": "Amino acid",
+          "story": "a central hub holding H, a carboxyl arm, an amine arm, and one changeable R backpack",
+          "science": "An amino acid has a central carbon bonded to a hydrogen atom, an amino group, a carboxyl group, and a variable R group. The R group differs among amino acids and helps determine their chemical properties.",
+          "exact_name": true,
+          "hint": "a central hub holding H, a carboxyl arm, an amine arm, and one changeable R backpack"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Amino acid",
+          "meaning": "An amino acid has a central carbon bonded to a hydrogen atom, an amino group, a carboxyl group, and a variable R group. The R group differs among amino acids and helps determine their chemical properties.",
+          "image": "a central hub holding H, a carboxyl arm, an amine arm, and one changeable R backpack"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-PF003",
+      "checkpoint_prompt": "What are the protein building blocks that contain a central carbon, hydrogen, amino group, carboxyl group, and variable R group?",
+      "next_locus": "R-Group Sorting Tank"
+    },
+    {
+      "scene_index": 2,
+      "locus": "R-Group Sorting Tank",
+      "title": "The Side Chains Choose Their Company",
+      "scene_kicker": "R groups change amino-acid chemistry, so they strongly influence how a chain will fold.",
+      "location_description": "Three transparent tanks stand beneath the workbench. One is filled with oil, one with water, and one with charged magnetic beads. Different R-group models are released above them and sort according to their chemical properties.",
+      "scene_layout": {
+        "orientation": "The nonpolar/oil tank is left, polar/water tank center, and charged-ion tank right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Nonpolar tank",
+            "symbol": "油",
+            "description": "Hydrophobic side chains avoid the surrounding water display."
+          },
+          {
+            "position": "center",
+            "label": "Polar tank",
+            "symbol": "💧",
+            "description": "Polar side chains interact favorably with water."
+          },
+          {
+            "position": "right",
+            "label": "Charged tank",
+            "symbol": "+/−",
+            "description": "Ionic side chains carry positive or negative charge and interact strongly with water and opposite charges."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "R group",
+          "kind": "variable side chain",
+          "visual": "the replaceable attachment on each amino acid",
+          "job": "determines many of the amino acid’s distinctive chemical properties"
+        },
+        {
+          "name": "Nonpolar R group",
+          "kind": "hydrophobic side chain",
+          "visual": "an oily side chain that withdraws from water",
+          "job": "tends to avoid aqueous surroundings"
+        },
+        {
+          "name": "Polar R group",
+          "kind": "hydrophilic side chain",
+          "visual": "a side chain that forms favorable interactions with water",
+          "job": "tends to interact with aqueous surroundings"
+        },
+        {
+          "name": "Ionic R group",
+          "kind": "charged side chain",
+          "visual": "a side chain carrying a + or − badge",
+          "job": "is generally hydrophilic and can form electrostatic interactions"
+        }
+      ],
+      "story_open": "Milo drops three side chains at once. The oily one avoids the water region: a **nonpolar R group**, usually hydrophobic. The second mixes comfortably with water: a **polar R group**, usually hydrophilic. The third carries a full charge: an **ionic R group**, also generally hydrophilic because charged groups interact strongly with water.",
+      "story_paragraphs": [
+        "Milo drops three side chains at once. The oily one avoids the water region: a **nonpolar R group**, usually hydrophobic. The second mixes comfortably with water: a **polar R group**, usually hydrophilic. The third carries a full charge: an **ionic R group**, also generally hydrophilic because charged groups interact strongly with water.",
+        "Acidic side chains commonly carry negative charge at cellular pH, while basic side chains commonly carry positive charge. Milo does not ask you to memorize every side chain here. He wants you to see the consequence: changing the **R group** changes what an amino acid can attract, repel, avoid, or bond with.",
+        "The sorted amino acids drop onto a rail in a precise order. A silver needle waits to connect the carboxyl end of one to the amino end of the next."
+      ],
+      "story_close": "The sorted amino acids drop onto a rail in a precise order. A silver needle waits to connect the carboxyl end of one to the amino end of the next.",
+      "object_ids": [
+        "MO-APBIO-U1-PF005",
+        "MO-APBIO-U1-PF006",
+        "MO-APBIO-U1-PF007",
+        "MO-APBIO-U1-PF008"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF005",
+          "term": "R group",
+          "story": "one detachable backpack marked R that changes what happens when it is swapped",
+          "science": "Each amino acid has a variable side chain (R group) whose chemical properties differ among amino acids.",
+          "exact_name": true,
+          "hint": "one detachable backpack marked R that changes what happens when it is swapped"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF006",
+          "term": "Nonpolar R group",
+          "story": "an oily R backpack that turns away from surrounding water",
+          "science": "R groups may be nonpolar/hydrophobic.",
+          "exact_name": false,
+          "hint": "an oily R backpack that turns away from surrounding water"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF007",
+          "term": "Polar R group",
+          "story": "an R backpack that reaches toward surrounding water droplets",
+          "science": "R groups may be polar/hydrophilic.",
+          "exact_name": false,
+          "hint": "an R backpack that reaches toward surrounding water droplets"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF008",
+          "term": "Ionic R group",
+          "story": "an R backpack carrying either a plus or minus magnet while remaining water-facing",
+          "science": "Charged amino-acid side chains are generally hydrophilic. Acidic side chains are usually negatively charged at cellular pH, while basic side chains are usually positively charged.",
+          "exact_name": false,
+          "hint": "an R backpack carrying either a plus or minus magnet while remaining water-facing"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "R group",
+          "meaning": "Each amino acid has a variable side chain (R group) whose chemical properties differ among amino acids.",
+          "image": "one detachable backpack marked R that changes what happens when it is swapped"
+        },
+        {
+          "term": "Nonpolar R group",
+          "meaning": "R groups may be nonpolar/hydrophobic.",
+          "image": "an oily R backpack that turns away from surrounding water"
+        },
+        {
+          "term": "Polar R group",
+          "meaning": "R groups may be polar/hydrophilic.",
+          "image": "an R backpack that reaches toward surrounding water droplets"
+        },
+        {
+          "term": "Ionic R group",
+          "meaning": "Charged amino-acid side chains are generally hydrophilic. Acidic side chains are usually negatively charged at cellular pH, while basic side chains are usually positively charged.",
+          "image": "an R backpack carrying either a plus or minus magnet while remaining water-facing"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF005",
+      "checkpoint_prompt": "",
+      "next_locus": "Peptide-Tie Station"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Peptide-Tie Station",
+      "title": "The Stitch That Builds the Chain",
+      "scene_kicker": "Amino acids become a polypeptide when peptide bonds connect them in sequence.",
+      "location_description": "A tailoring machine lines amino acids from left to right. The carboxyl group of one faces the amino group of the next. A silver needle removes H and OH components as it closes a covalent stitch between them.",
+      "scene_layout": {
+        "orientation": "Separate amino acids enter left, the peptide needle operates center, and the growing polypeptide exits right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Amino-acid feed",
+            "symbol": "◇◇",
+            "description": "Supplies ordered amino acids."
+          },
+          {
+            "position": "center",
+            "label": "Peptide needle",
+            "symbol": "H₂O out",
+            "description": "Forms the covalent peptide connection through a dehydration reaction."
+          },
+          {
+            "position": "right",
+            "label": "Polypeptide roll",
+            "symbol": "◇—◇—◇",
+            "description": "Collects the growing amino-acid chain."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Peptide bond",
+          "kind": "covalent connection",
+          "visual": "a silver stitch between the carboxyl group of one amino acid and amino group of the next",
+          "job": "links amino acids into a chain"
+        },
+        {
+          "name": "Dehydration reaction",
+          "kind": "bond-forming chemistry",
+          "visual": "H and OH components leave as the stitch closes",
+          "job": "forms the peptide connection while components equivalent to water are removed"
+        },
+        {
+          "name": "Polypeptide",
+          "kind": "amino-acid chain",
+          "visual": "many amino acids joined in one continuous covalent chain",
+          "job": "is the linear chain produced by repeated peptide-bond formation"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Peptide-Tie Station**. A tailoring machine lines amino acids from left to right. The carboxyl group of one faces the amino group of the next. A silver needle removes H and OH components as it closes a covalent stitch between them. The Amino-acid feed stays on your left, the Peptide needle is the main work area straight ahead, and the Polypeptide roll fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Peptide-Tie Station**. A tailoring machine lines amino acids from left to right. The carboxyl group of one faces the amino group of the next. A silver needle removes H and OH components as it closes a covalent stitch between them. The Amino-acid feed stays on your left, the Peptide needle is the main work area straight ahead, and the Polypeptide roll fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The needle aligns the carboxyl group of one amino acid with the amino group of the next. The covalent connection that forms is a **peptide bond**. Repeating that connection produces a **polypeptide**, a chain of many amino acids.",
+        "As each stitch closes, components equivalent to water are removed. Peptide-bond formation is therefore a **dehydration reaction**. The water is not the bond; the new covalent peptide connection is.",
+        "Milo winds the growing polypeptide onto a conveyor. One end receives a blue N tag and the opposite end a red C tag before the chain moves on."
+      ],
+      "story_close": "Milo winds the growing polypeptide onto a conveyor. One end receives a blue N tag and the opposite end a red C tag before the chain moves on.",
+      "object_ids": [
+        "MO-APBIO-U1-PF009",
+        "MO-APBIO-U1-PF010",
+        "MO-APBIO-U1-PF011"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF009",
+          "term": "Peptide bond",
+          "story": "a bright PEP-TIE clamp joining one carboxyl side to the next amino/amine side",
+          "science": "A peptide bond is the covalent bond that links amino acids, forming between the carboxyl group of one amino acid and the amino group of the next.",
+          "exact_name": true,
+          "hint": "a bright PEP-TIE clamp joining one carboxyl side to the next amino/amine side"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF010",
+          "term": "Peptide-bond dehydration",
+          "story": "a joining clamp that sends one water droplet down the drain as the amino acids connect",
+          "science": "Peptide-bond formation is a dehydration reaction: the covalent link forms while components equivalent to water are removed.",
+          "exact_name": false,
+          "hint": "a joining clamp that sends one water droplet down the drain as the amino acids connect"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF011",
+          "term": "Polypeptide",
+          "story": "a long chain spool built from many amino-acid units connected by repeated PEP-TIES",
+          "science": "A polypeptide is a chain of many amino acids linked by peptide bonds.",
+          "exact_name": true,
+          "hint": "a long chain spool built from many amino-acid units connected by repeated PEP-TIES"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Peptide bond",
+          "meaning": "A peptide bond is the covalent bond that links amino acids, forming between the carboxyl group of one amino acid and the amino group of the next.",
+          "image": "a bright PEP-TIE clamp joining one carboxyl side to the next amino/amine side"
+        },
+        {
+          "term": "Peptide-bond dehydration",
+          "meaning": "Peptide-bond formation is a dehydration reaction: the covalent link forms while components equivalent to water are removed.",
+          "image": "a joining clamp that sends one water droplet down the drain as the amino acids connect"
+        },
+        {
+          "term": "Polypeptide",
+          "meaning": "A polypeptide is a chain of many amino acids linked by peptide bonds.",
+          "image": "a long chain spool built from many amino-acid units connected by repeated PEP-TIES"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-PF009",
+      "checkpoint_prompt": "What covalent bond connects amino acids in a polypeptide?",
+      "next_locus": "N/C Conveyor"
+    },
+    {
+      "scene_index": 4,
+      "locus": "N/C Conveyor",
+      "title": "The Chain Has a Direction",
+      "scene_kicker": "A polypeptide is chemically different at its two ends.",
+      "location_description": "A long conveyor carries the new polypeptide through a scanner. The first end is marked N in blue; the far end is marked C in red. The belt moves only from the N-tagged entrance toward the C-tagged exit.",
+      "scene_layout": {
+        "orientation": "N-terminus gate is left, the polypeptide lies across center, and C-terminus gate is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "N-terminus",
+            "symbol": "N",
+            "description": "Marks the amino end of the chain."
+          },
+          {
+            "position": "center",
+            "label": "Polypeptide conveyor",
+            "symbol": "N→C",
+            "description": "Keeps sequence order visible from one chemically distinct end to the other."
+          },
+          {
+            "position": "right",
+            "label": "C-terminus",
+            "symbol": "C",
+            "description": "Marks the carboxyl end of the chain."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "N-terminus",
+          "kind": "polypeptide end",
+          "visual": "blue N tag on the amino end",
+          "job": "marks one chemically distinct end of the chain"
+        },
+        {
+          "name": "C-terminus",
+          "kind": "polypeptide end",
+          "visual": "red C tag on the carboxyl end",
+          "job": "marks the opposite chemically distinct end"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **N/C Conveyor**. A long conveyor carries the new polypeptide through a scanner. The first end is marked N in blue; the far end is marked C in red. The belt moves only from the N-tagged entrance toward the C-tagged exit. The N-terminus stays on your left, the Polypeptide conveyor is the main work area straight ahead, and the C-terminus fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **N/C Conveyor**. A long conveyor carries the new polypeptide through a scanner. The first end is marked N in blue; the far end is marked C in red. The belt moves only from the N-tagged entrance toward the C-tagged exit. The N-terminus stays on your left, the Polypeptide conveyor is the main work area straight ahead, and the C-terminus fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The scanner gives the chain a direction. A polypeptide has two chemically distinct ends: the **N-terminus**, associated with the amino end, and the **C-terminus**, associated with the carboxyl end.",
+        "Milo keeps the tags attached as the belt moves. Sequence is therefore not just a bag of amino acids; order has direction. Changing which amino acid occurs at a particular position changes the primary structure of the chain.",
+        "At the end of the conveyor, a coded ribbon marked GENE lowers from the ceiling and begins feeding instructions into the folding machine."
+      ],
+      "story_close": "At the end of the conveyor, a coded ribbon marked GENE lowers from the ceiling and begins feeding instructions into the folding machine.",
+      "object_ids": [
+        "MO-APBIO-U1-PF012"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF012",
+          "term": "Polypeptide directionality",
+          "story": "one chain conveyor with an N-marked entrance and a chemically different C-marked exit",
+          "science": "A polypeptide has directionality, with a chemically distinct N-terminus and C-terminus.",
+          "exact_name": false,
+          "hint": "one chain conveyor with an N-marked entrance and a chemically different C-marked exit"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Polypeptide directionality",
+          "meaning": "A polypeptide has directionality, with a chemically distinct N-terminus and C-terminus.",
+          "image": "one chain conveyor with an N-marked entrance and a chemically different C-marked exit"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF012",
+      "checkpoint_prompt": "",
+      "next_locus": "Sequence Folding Machine"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Sequence Folding Machine",
+      "title": "The Order Becomes a Shape",
+      "scene_kicker": "The amino-acid sequence constrains which interactions can form and therefore how the chain folds.",
+      "location_description": "A large machine reads a gene-coded tape above the conveyor and arranges amino-acid tiles below it. The resulting chain enters a transparent folding chamber where its R groups begin attracting, repelling, and avoiding water.",
+      "scene_layout": {
+        "orientation": "Gene tape reader is left, ordered amino-acid sequence runs through center, and the transparent folding chamber is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Gene tape",
+            "symbol": "DNA",
+            "description": "Specifies the order of amino acids in the polypeptide."
+          },
+          {
+            "position": "center",
+            "label": "Sequence rail",
+            "symbol": "1-2-3",
+            "description": "Displays the exact linear amino-acid sequence."
+          },
+          {
+            "position": "right",
+            "label": "Folding chamber",
+            "symbol": "↺",
+            "description": "Allows R-group chemistry to turn sequence into higher-order shape."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Gene instructions",
+          "kind": "information source",
+          "visual": "a coded nucleotide tape feeding an amino-acid selector",
+          "job": "specify the amino-acid sequence of the polypeptide"
+        },
+        {
+          "name": "Amino-acid sequence",
+          "kind": "primary information",
+          "visual": "a fixed order of colored amino-acid tiles",
+          "job": "determines primary structure and strongly influences the possible folding of the chain"
+        },
+        {
+          "name": "R-group interactions",
+          "kind": "folding forces",
+          "visual": "side chains reaching toward or away from one another",
+          "job": "help drive and stabilize the three-dimensional folding pattern"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Sequence Folding Machine**. A large machine reads a gene-coded tape above the conveyor and arranges amino-acid tiles below it. The resulting chain enters a transparent folding chamber where its R groups begin attracting, repelling, and avoiding water. The Gene tape stays on your left, the Sequence rail is the main work area straight ahead, and the Folding chamber fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Sequence Folding Machine**. A large machine reads a gene-coded tape above the conveyor and arranges amino-acid tiles below it. The resulting chain enters a transparent folding chamber where its R groups begin attracting, repelling, and avoiding water. The Gene tape stays on your left, the Sequence rail is the main work area straight ahead, and the Folding chamber fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The gene-coded ribbon controls which amino-acid drawer opens next. **Gene information determines the amino-acid sequence** of the polypeptide. The machine does not choose the sequence after folding; the order comes first.",
+        "That **sequence determines primary structure** and strongly influences the eventual shape. As the chain enters the chamber, its R groups begin interacting according to their chemistry—hydrophobic groups withdraw from water, charged groups attract or repel, polar groups form favorable interactions.",
+        "Milo watches the same chain bend. **R-group interactions** help drive and stabilize folding, so changing the sequence can relocate those side chains and alter the final shape.",
+        "The partly folded chain emerges into a bright showroom filled with protein machines doing different jobs."
+      ],
+      "story_close": "The partly folded chain emerges into a bright showroom filled with protein machines doing different jobs.",
+      "object_ids": [
+        "MO-APBIO-U1-PF013",
+        "MO-APBIO-U1-PF014",
+        "MO-APBIO-U1-PF015"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF013",
+          "term": "Sequence determines shape",
+          "story": "a fixed-order bead strip entering a folding machine and producing a corresponding overall shape",
+          "science": "A protein’s amino-acid sequence determines its primary structure and strongly influences how the chain folds into its final shape.",
+          "exact_name": false,
+          "hint": "a fixed-order bead strip entering a folding machine and producing a corresponding overall shape"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF014",
+          "term": "R-group interactions determine folding",
+          "story": "R side-chain contact points pulling one chain into a particular fold and switching a function indicator",
+          "science": "Interactions among amino-acid R groups help drive and stabilize protein folding.",
+          "exact_name": false,
+          "hint": "R side-chain contact points pulling one chain into a particular fold and switching a function indicator"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF015",
+          "term": "Genes determine amino-acid sequence",
+          "story": "a gene instruction strip selecting one ordered series of amino-acid beads",
+          "science": "Gene information specifies the amino-acid sequence of a polypeptide.",
+          "exact_name": false,
+          "hint": "a gene instruction strip selecting one ordered series of amino-acid beads"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Sequence determines shape",
+          "meaning": "A protein’s amino-acid sequence determines its primary structure and strongly influences how the chain folds into its final shape.",
+          "image": "a fixed-order bead strip entering a folding machine and producing a corresponding overall shape"
+        },
+        {
+          "term": "R-group interactions determine folding",
+          "meaning": "Interactions among amino-acid R groups help drive and stabilize protein folding.",
+          "image": "R side-chain contact points pulling one chain into a particular fold and switching a function indicator"
+        },
+        {
+          "term": "Genes determine amino-acid sequence",
+          "meaning": "Gene information specifies the amino-acid sequence of a polypeptide.",
+          "image": "a gene instruction strip selecting one ordered series of amino-acid beads"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF013",
+      "checkpoint_prompt": "",
+      "next_locus": "Function Showroom"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Function Showroom",
+      "title": "Shape Becomes Work",
+      "scene_kicker": "Proteins do many jobs, and their shapes allow them to interact with the right partners.",
+      "location_description": "A showroom displays six working protein models: an enzyme press, antibody shield, receptor signal bell, structural cable, transport carrier, and storage capsule. The developing protein moves past each station.",
+      "scene_layout": {
+        "orientation": "The catalysis and defense displays line your left, signaling and structural proteins fill the center, and transport and storage proteins occupy your right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Catalysis and defense",
+            "symbol": "⚙/🛡",
+            "description": "Shows enzymes and defensive proteins."
+          },
+          {
+            "position": "center",
+            "label": "Signaling and structure",
+            "symbol": "🔔/▥",
+            "description": "Shows receptor or hormone-related signaling and structural support."
+          },
+          {
+            "position": "right",
+            "label": "Transport and storage",
+            "symbol": "⇢/▣",
+            "description": "Shows proteins that carry or store substances."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Protein function gallery",
+          "kind": "functional diversity",
+          "visual": "six differently shaped molecular machines",
+          "job": "demonstrates that proteins can catalyze reactions, defend, signal, support structure, transport, and store; some hormones are proteins"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Function Showroom**. A showroom displays six working protein models: an enzyme press, antibody shield, receptor signal bell, structural cable, transport carrier, and storage capsule. The developing protein moves past each station. The Catalysis and defense stays on your left, the Signaling and structure is the main work area straight ahead, and the Transport and storage fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Function Showroom**. A showroom displays six working protein models: an enzyme press, antibody shield, receptor signal bell, structural cable, transport carrier, and storage capsule. The developing protein moves past each station. The Catalysis and defense stays on your left, the Signaling and structure is the main work area straight ahead, and the Transport and storage fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The showroom turns “protein function” into a set of visible jobs. One folded protein acts as an **enzyme**, accelerating a reaction. Another forms an **antibody-like defense** shape. Others participate in signaling, structural support, transport, and storage. Some hormones are proteins as well.",
+        "The common lesson is not that every protein performs all of these jobs. It is that proteins are an extraordinarily diverse functional class because different sequences can produce different three-dimensional structures and interaction surfaces.",
+        "Milo guides your chain into an elevator with four numbered floors. “Now we separate the levels of structure that built that function.”"
+      ],
+      "story_close": "Milo guides your chain into an elevator with four numbered floors. “Now we separate the levels of structure that built that function.”",
+      "object_ids": [
+        "MO-APBIO-U1-PF016"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF016",
+          "term": "Protein functions",
+          "story": "one folded-machine display rotating through catalyst, shield, signal, support beam, transport cart, and storage locker roles",
+          "science": "Proteins perform diverse functions, including enzymatic catalysis, defense, signaling, structural support, transport, and storage; some hormones are proteins.",
+          "exact_name": false,
+          "hint": "one folded-machine display rotating through catalyst, shield, signal, support beam, transport cart, and storage locker roles"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Protein functions",
+          "meaning": "Proteins perform diverse functions, including enzymatic catalysis, defense, signaling, structural support, transport, and storage; some hormones are proteins.",
+          "image": "one folded-machine display rotating through catalyst, shield, signal, support beam, transport cart, and storage locker roles"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF016",
+      "checkpoint_prompt": "",
+      "next_locus": "Four-Level Elevator"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Four-Level Elevator",
+      "title": "The Four Floors of Protein Structure",
+      "scene_kicker": "The levels are nested: sequence first, then local folding, whole-chain folding, and sometimes multi-chain assembly.",
+      "location_description": "A glass elevator has four illuminated floor buttons. Floor 1 displays a straight amino-acid sequence, floor 2 local coils and sheets, floor 3 one fully folded chain, and floor 4 several chains assembled together.",
+      "scene_layout": {
+        "orientation": "Buttons 1 and 2 are left, the developing protein travels in the center elevator, and buttons 3 and 4 are right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Levels 1–2",
+            "symbol": "1/2",
+            "description": "Primary sequence and local backbone folding."
+          },
+          {
+            "position": "center",
+            "label": "Protein elevator",
+            "symbol": "↑",
+            "description": "Carries the same chain upward through increasingly organized structures."
+          },
+          {
+            "position": "right",
+            "label": "Levels 3–4",
+            "symbol": "3/4",
+            "description": "Whole-chain tertiary folding and, where present, multi-chain quaternary assembly."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Primary structure",
+          "kind": "level 1",
+          "visual": "the linear amino-acid sequence laid out as colored beads",
+          "job": "is the exact order of amino acids in the polypeptide"
+        },
+        {
+          "name": "Four structural levels",
+          "kind": "organization hierarchy",
+          "visual": "four elevator floors from sequence to multi-subunit assembly",
+          "job": "together contribute to the shape and function of proteins"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Four-Level Elevator**. A glass elevator has four illuminated floor buttons. Floor 1 displays a straight amino-acid sequence, floor 2 local coils and sheets, floor 3 one fully folded chain, and floor 4 several chains assembled together. The Levels 1–2 stays on your left, the Protein elevator is the main work area straight ahead, and the Levels 3–4 fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Four-Level Elevator**. A glass elevator has four illuminated floor buttons. Floor 1 displays a straight amino-acid sequence, floor 2 local coils and sheets, floor 3 one fully folded chain, and floor 4 several chains assembled together. The Levels 1–2 stays on your left, the Protein elevator is the main work area straight ahead, and the Levels 3–4 fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "At floor 1, the chain lies straight so its order is easy to read. **Primary structure** is the linear amino-acid sequence. Because the sequence positions every R group, it influences all higher levels of structure.",
+        "Milo points up: floor 2 will show local backbone folding, floor 3 the overall three-dimensional shape of one polypeptide, and floor 4 assembly among multiple polypeptide chains when the protein has multiple subunits.",
+        "All four structural levels contribute to protein function when those levels are present. The elevator opens at floor 2, where the chain is already curling into a spring and folding into a sheet."
+      ],
+      "story_close": "All four structural levels contribute to protein function when those levels are present. The elevator opens at floor 2, where the chain is already curling into a spring and folding into a sheet.",
+      "object_ids": [
+        "MO-APBIO-U1-PF017",
+        "MO-APBIO-U1-PF025"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF017",
+          "term": "Primary structure",
+          "story": "Floor 1 displaying only one linear ordered amino-acid chain",
+          "science": "Primary structure is the linear order of amino acids in a polypeptide. That sequence influences every higher level of folding.",
+          "exact_name": true,
+          "hint": "Floor 1 displaying only one linear ordered amino-acid chain"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF025",
+          "term": "All levels determine function",
+          "story": "one function console wired to Floors 1, 2, 3, and 4",
+          "science": "All four levels of protein structure contribute to protein function.",
+          "exact_name": false,
+          "hint": "one function console wired to Floors 1, 2, 3, and 4"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Primary structure",
+          "meaning": "Primary structure is the linear order of amino acids in a polypeptide. That sequence influences every higher level of folding.",
+          "image": "Floor 1 displaying only one linear ordered amino-acid chain"
+        },
+        {
+          "term": "All levels determine function",
+          "meaning": "All four levels of protein structure contribute to protein function.",
+          "image": "one function console wired to Floors 1, 2, 3, and 4"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF017",
+      "checkpoint_prompt": "",
+      "next_locus": "Secondary Folding Room"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Secondary Folding Room",
+      "title": "Springs and Pleated Sheets",
+      "scene_kicker": "Hydrogen bonds in the backbone create local recurring folds.",
+      "location_description": "The second floor contains two shaping rigs. On the left, the polypeptide backbone winds around a cylinder into a coil. On the right, neighboring stretches fold back and forth into a pleated sheet. Dotted hydrogen bonds hold both patterns.",
+      "scene_layout": {
+        "orientation": "Alpha-helix rig is left, a backbone-only diagram is center, and beta-sheet rig is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Alpha-helix rig",
+            "symbol": "α",
+            "description": "Coils one stretch of backbone and stabilizes it with backbone hydrogen bonds."
+          },
+          {
+            "position": "center",
+            "label": "Backbone map",
+            "symbol": "···",
+            "description": "Shows that secondary-structure hydrogen bonds involve the polypeptide backbone."
+          },
+          {
+            "position": "right",
+            "label": "Beta-sheet rig",
+            "symbol": "β",
+            "description": "Aligns neighboring stretches of chain into a pleated sheet stabilized by backbone hydrogen bonds."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Secondary structure",
+          "kind": "local folding level",
+          "visual": "localized coils and sheets forming along the backbone",
+          "job": "consists of local backbone folds stabilized largely by hydrogen bonds"
+        },
+        {
+          "name": "Alpha helix",
+          "kind": "secondary structure",
+          "visual": "a spring-like coil with repeated hydrogen bonds",
+          "job": "is a coiled secondary structure stabilized by backbone hydrogen bonds"
+        },
+        {
+          "name": "Beta-pleated sheet",
+          "kind": "secondary structure",
+          "visual": "a folded sheet with hydrogen bonds between adjacent stretches",
+          "job": "is a sheet-like secondary structure stabilized by backbone hydrogen bonds; it does not require separate polypeptide chains"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Secondary Folding Room**. The second floor contains two shaping rigs. On the left, the polypeptide backbone winds around a cylinder into a coil. On the right, neighboring stretches fold back and forth into a pleated sheet. Dotted hydrogen bonds hold both patterns. The Alpha-helix rig stays on your left, the Backbone map is the main work area straight ahead, and the Beta-sheet rig fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Secondary Folding Room**. The second floor contains two shaping rigs. On the left, the polypeptide backbone winds around a cylinder into a coil. On the right, neighboring stretches fold back and forth into a pleated sheet. Dotted hydrogen bonds hold both patterns. The Alpha-helix rig stays on your left, the Backbone map is the main work area straight ahead, and the Beta-sheet rig fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The chain enters the coil rig. Hydrogen bonds form repeatedly along the polypeptide backbone, stabilizing a spring-like **alpha helix**. This is one form of **secondary structure**.",
+        "On the other side, a different stretch folds back and forth. Hydrogen bonds form between nearby stretches of the backbone, creating a **beta-pleated sheet**. The stretches can belong to the same polypeptide; separate chains are not required.",
+        "Secondary structure is therefore local. Milo highlights the backbone and turns down the R-group colors so you can see that the recurring hydrogen-bond pattern here belongs primarily to the backbone. The elevator opens to floor 3, where every side chain lights up again."
+      ],
+      "story_close": "Secondary structure is therefore local. Milo highlights the backbone and turns down the R-group colors so you can see that the recurring hydrogen-bond pattern here belongs primarily to the backbone. The elevator opens to floor 3, where every side chain lights up again.",
+      "object_ids": [
+        "MO-APBIO-U1-PF018",
+        "MO-APBIO-U1-PF019",
+        "MO-APBIO-U1-PF020"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF018",
+          "term": "Secondary structure",
+          "story": "local stretches of the backbone being pinned into coils and sheets by hydrogen bonds",
+          "science": "Secondary structure consists of local folds of the polypeptide backbone stabilized by hydrogen bonds, especially alpha helices and beta-pleated sheets.",
+          "exact_name": true,
+          "hint": "local stretches of the backbone being pinned into coils and sheets by hydrogen bonds"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF019",
+          "term": "Alpha helix",
+          "story": "a large α-shaped guide coiling one backbone segment into a spring while hydrogen-bond pins hold the coil",
+          "science": "Alpha helix is a secondary structure stabilized by hydrogen bonding within the polypeptide backbone.",
+          "exact_name": true,
+          "hint": "a large α-shaped guide coiling one backbone segment into a spring while hydrogen-bond pins hold the coil"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF020",
+          "term": "Beta-pleated sheet",
+          "story": "a β marker laying neighboring backbone stretches across one pleated platform while hydrogen-bond pins connect them",
+          "science": "A beta-pleated sheet is a secondary structure stabilized by hydrogen bonds between atoms of the polypeptide backbone in neighboring stretches of chain; separate polypeptide chains are not required.",
+          "exact_name": true,
+          "hint": "a β marker laying neighboring backbone stretches across one pleated platform while hydrogen-bond pins connect them"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Secondary structure",
+          "meaning": "Secondary structure consists of local folds of the polypeptide backbone stabilized by hydrogen bonds, especially alpha helices and beta-pleated sheets.",
+          "image": "local stretches of the backbone being pinned into coils and sheets by hydrogen bonds"
+        },
+        {
+          "term": "Alpha helix",
+          "meaning": "Alpha helix is a secondary structure stabilized by hydrogen bonding within the polypeptide backbone.",
+          "image": "a large α-shaped guide coiling one backbone segment into a spring while hydrogen-bond pins hold the coil"
+        },
+        {
+          "term": "Beta-pleated sheet",
+          "meaning": "A beta-pleated sheet is a secondary structure stabilized by hydrogen bonds between atoms of the polypeptide backbone in neighboring stretches of chain; separate polypeptide chains are not required.",
+          "image": "a β marker laying neighboring backbone stretches across one pleated platform while hydrogen-bond pins connect them"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-PF018",
+      "checkpoint_prompt": "What level of protein structure consists of local backbone folds such as alpha helices and beta-pleated sheets?",
+      "next_locus": "Tertiary Interaction Chamber"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Tertiary Interaction Chamber",
+      "title": "The Whole Chain Folds Into One Shape",
+      "scene_kicker": "Side-chain chemistry now pulls distant parts of the same polypeptide together.",
+      "location_description": "The third floor is a spherical chamber filled with water. The entire polypeptide floats at center while side chains reach across long distances. Hydrophobic groups tuck inward; charged and polar groups interact; two sulfur-containing cysteines can lock together.",
+      "scene_layout": {
+        "orientation": "Hydrophobic collapse display is left, the one-chain folded protein is center, and side-chain interaction controls including a sulfur bridge are right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Hydrophobic interior",
+            "symbol": "oil",
+            "description": "Nonpolar side chains often cluster away from surrounding water."
+          },
+          {
+            "position": "center",
+            "label": "One folded polypeptide",
+            "symbol": "3D",
+            "description": "Shows tertiary structure as the overall shape of one chain."
+          },
+          {
+            "position": "right",
+            "label": "Interaction panel",
+            "symbol": "+/− ··· S—S",
+            "description": "Shows ionic interactions, hydrogen bonds, van der Waals contacts, and disulfide bridges among side chains."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Tertiary structure",
+          "kind": "whole-chain fold",
+          "visual": "one polypeptide folded into a compact three-dimensional form",
+          "job": "is the overall 3D structure of one polypeptide produced and stabilized by side-chain interactions"
+        },
+        {
+          "name": "Disulfide bridge",
+          "kind": "covalent stabilizer",
+          "visual": "a strong S—S clasp between two cysteine side chains",
+          "job": "is a covalent bond between sulfur atoms of two cysteines that can stabilize tertiary structure"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Tertiary Interaction Chamber**. The third floor is a spherical chamber filled with water. The entire polypeptide floats at center while side chains reach across long distances. Hydrophobic groups tuck inward; charged and polar groups interact; two sulfur-containing cysteines can lock together. The Hydrophobic interior stays on your left, the One folded polypeptide is the main work area straight ahead, and the Interaction panel fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Tertiary Interaction Chamber**. The third floor is a spherical chamber filled with water. The entire polypeptide floats at center while side chains reach across long distances. Hydrophobic groups tuck inward; charged and polar groups interact; two sulfur-containing cysteines can lock together. The Hydrophobic interior stays on your left, the One folded polypeptide is the main work area straight ahead, and the Interaction panel fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "Now the entire chain folds. This overall three-dimensional shape of one polypeptide is **tertiary structure**. Parts that were far apart in the linear sequence can become neighbors in space.",
+        "Milo turns on the interaction panel. Hydrophobic side chains cluster away from water; polar groups can form hydrogen bonds; oppositely charged side chains can form ionic attractions; close atoms can contribute van der Waals interactions. These side-chain interactions collectively help stabilize the tertiary fold.",
+        "Two cysteine side chains approach. Their sulfur atoms form a covalent **disulfide bridge**, a particularly strong clasp that can help stabilize the folded structure.",
+        "The compact chain now fits perfectly into a docking socket—but the shipment order calls for a protein with multiple subunits. The floor opens into the Quaternary Assembly Bay."
+      ],
+      "story_close": "The compact chain now fits perfectly into a docking socket—but the shipment order calls for a protein with multiple subunits. The floor opens into the Quaternary Assembly Bay.",
+      "object_ids": [
+        "MO-APBIO-U1-PF021",
+        "MO-APBIO-U1-PF022",
+        "MO-APBIO-U1-PF023"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF021",
+          "term": "Tertiary structure",
+          "story": "one entire polypeptide folding into one overall three-dimensional shape inside a single-chain cradle",
+          "science": "Tertiary structure is the overall three-dimensional folding of one polypeptide produced by side-chain interactions.",
+          "exact_name": true,
+          "hint": "one entire polypeptide folding into one overall three-dimensional shape inside a single-chain cradle"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF022",
+          "term": "Tertiary interactions",
+          "story": "four required interaction stations plus one clearly optional close-contact station acting on side chains",
+          "science": "Tertiary structure is stabilized by side-chain interactions including hydrophobic interactions, van der Waals interactions, hydrogen bonds, ionic interactions, and covalent disulfide bridges.",
+          "exact_name": false,
+          "hint": "four required interaction stations plus one clearly optional close-contact station acting on side chains"
+        },
+        {
+          "object_id": "MO-APBIO-U1-PF023",
+          "term": "Disulfide bridge",
+          "story": "two sulfur ends snapping together into one bright S—S bridge clamp",
+          "science": "A disulfide bridge is a covalent bond formed between the sulfur atoms of two cysteine side chains and can help stabilize protein tertiary structure.",
+          "exact_name": true,
+          "hint": "two sulfur ends snapping together into one bright S—S bridge clamp"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Tertiary structure",
+          "meaning": "Tertiary structure is the overall three-dimensional folding of one polypeptide produced by side-chain interactions.",
+          "image": "one entire polypeptide folding into one overall three-dimensional shape inside a single-chain cradle"
+        },
+        {
+          "term": "Tertiary interactions",
+          "meaning": "Tertiary structure is stabilized by side-chain interactions including hydrophobic interactions, van der Waals interactions, hydrogen bonds, ionic interactions, and covalent disulfide bridges.",
+          "image": "four required interaction stations plus one clearly optional close-contact station acting on side chains"
+        },
+        {
+          "term": "Disulfide bridge",
+          "meaning": "A disulfide bridge is a covalent bond formed between the sulfur atoms of two cysteine side chains and can help stabilize protein tertiary structure.",
+          "image": "two sulfur ends snapping together into one bright S—S bridge clamp"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF021",
+      "checkpoint_prompt": "",
+      "next_locus": "Quaternary Assembly Bay"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Quaternary Assembly Bay",
+      "title": "Several Chains Become One Protein Complex",
+      "scene_kicker": "Quaternary structure exists only when multiple polypeptide subunits associate.",
+      "location_description": "Four folded polypeptide subunits arrive on separate rails and dock around a central ring. Each subunit keeps its own tertiary structure while making new contacts with the others.",
+      "scene_layout": {
+        "orientation": "Individual folded chains wait left, the assembly dock is center, and the completed multi-subunit protein exits right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Folded subunits",
+            "symbol": "◆ ◆",
+            "description": "Each polypeptide arrives already folded."
+          },
+          {
+            "position": "center",
+            "label": "Assembly dock",
+            "symbol": "◆◆",
+            "description": "Subunits associate through compatible surfaces."
+          },
+          {
+            "position": "right",
+            "label": "Protein complex",
+            "symbol": "◉",
+            "description": "The multi-chain assembly functions as one protein complex."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Quaternary structure",
+          "kind": "multi-subunit organization",
+          "visual": "several folded polypeptide chains docking together",
+          "job": "arises from interactions among multiple polypeptide subunits and exists only in proteins that contain more than one polypeptide chain"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Quaternary Assembly Bay**. Four folded polypeptide subunits arrive on separate rails and dock around a central ring. Each subunit keeps its own tertiary structure while making new contacts with the others. The Folded subunits stays on your left, the Assembly dock is the main work area straight ahead, and the Protein complex fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Quaternary Assembly Bay**. Four folded polypeptide subunits arrive on separate rails and dock around a central ring. Each subunit keeps its own tertiary structure while making new contacts with the others. The Folded subunits stays on your left, the Assembly dock is the main work area straight ahead, and the Protein complex fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The first folded chain docks beside a second, then a third and fourth. The organization created by association among multiple polypeptide chains is **quaternary structure**.",
+        "Milo leaves one empty single-chain model beside the dock as a reminder: a protein made from only one polypeptide has no quaternary level. Quaternary structure exists only when multiple subunits associate.",
+        "The completed complex passes the assembly test. But before it can leave, quality control asks a deceptively simple question: when is a polypeptide merely a chain, and when is it a functional protein?"
+      ],
+      "story_close": "The completed complex passes the assembly test. But before it can leave, quality control asks a deceptively simple question: when is a polypeptide merely a chain, and when is it a functional protein?",
+      "object_ids": [
+        "MO-APBIO-U1-PF024"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF024",
+          "term": "Quaternary structure",
+          "story": "several folded subunits docking around a QUARTET sound-sign while a large MULTIPLE, NOT FOUR counter stays lit",
+          "science": "Quaternary structure arises from association/interactions among multiple polypeptide chains and occurs only in proteins with multiple subunits.",
+          "exact_name": true,
+          "hint": "several folded subunits docking around a QUARTET sound-sign while a large MULTIPLE, NOT FOUR counter stays lit"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Quaternary structure",
+          "meaning": "Quaternary structure arises from association/interactions among multiple polypeptide chains and occurs only in proteins with multiple subunits.",
+          "image": "several folded subunits docking around a QUARTET sound-sign while a large MULTIPLE, NOT FOUR counter stays lit"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF024",
+      "checkpoint_prompt": "",
+      "next_locus": "Raw Chain Inspection"
+    },
+    {
+      "scene_index": 11,
+      "locus": "Raw Chain Inspection",
+      "title": "Chain Is Not the Same as Finished Protein",
+      "scene_kicker": "The covalent chain is necessary, but functional organization is the finished product.",
+      "location_description": "Quality control places two samples under identical lights. The left sample is an extended amino-acid chain. The right sample is one or more chains folded into a stable working structure with an active function lamp.",
+      "scene_layout": {
+        "orientation": "Raw polypeptide is left, inspection scanner center, and functional protein is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Raw chain",
+            "symbol": "~~~~",
+            "description": "A linear amino-acid chain held together by peptide bonds."
+          },
+          {
+            "position": "center",
+            "label": "Inspection scanner",
+            "symbol": "?",
+            "description": "Checks whether appropriate higher-order organization has formed."
+          },
+          {
+            "position": "right",
+            "label": "Functional protein",
+            "symbol": "◆",
+            "description": "One or more polypeptides folded and organized into a specific 3D structure."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Polypeptide",
+          "kind": "covalent chain",
+          "visual": "a long amino-acid ribbon connected by peptide bonds",
+          "job": "is the linear amino-acid chain"
+        },
+        {
+          "name": "Protein",
+          "kind": "organized functional molecule",
+          "visual": "the folded structure whose function lamp is active",
+          "job": "consists of one or more polypeptide chains organized into a specific three-dimensional structure"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Raw Chain Inspection**. Quality control places two samples under identical lights. The left sample is an extended amino-acid chain. The right sample is one or more chains folded into a stable working structure with an active function lamp. The Raw chain stays on your left, the Inspection scanner is the main work area straight ahead, and the Functional protein fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Raw Chain Inspection**. Quality control places two samples under identical lights. The left sample is an extended amino-acid chain. The right sample is one or more chains folded into a stable working structure with an active function lamp. The Raw chain stays on your left, the Inspection scanner is the main work area straight ahead, and the Functional protein fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The left sample is a **polypeptide**: a linear chain of amino acids connected by peptide bonds. That word tells you about the chain itself.",
+        "The right sample is a **protein**: one or more polypeptide chains folded and organized into a specific three-dimensional structure. Many proteins require that higher-order organization to perform their biological function.",
+        "Milo holds the raw chain beside the finished folded machine to make **polypeptide versus protein** unmistakable. A polypeptide is the amino-acid chain itself; a functional protein contains one or more polypeptide chains organized into a specific three-dimensional structure.",
+        "Quality control passes the distinction. The protein is then lowered into a water tank to test whether the side chains are arranged sensibly for an aqueous environment."
+      ],
+      "story_close": "Quality control passes the distinction. The protein is then lowered into a water tank to test whether the side chains are arranged sensibly for an aqueous environment.",
+      "object_ids": [
+        "MO-APBIO-U1-PF026"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF026",
+          "term": "Polypeptide versus protein",
+          "story": "a raw amino-acid chain on one side of an inspection gate and a folded working assembly on the other",
+          "science": "A polypeptide is a linear chain of amino acids linked by peptide bonds. A functional protein consists of one or more polypeptide chains folded and organized into a specific three-dimensional structure.",
+          "exact_name": true,
+          "hint": "a raw amino-acid chain on one side of an inspection gate and a folded working assembly on the other"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Polypeptide versus protein",
+          "meaning": "A polypeptide is a linear chain of amino acids linked by peptide bonds. A functional protein consists of one or more polypeptide chains folded and organized into a specific three-dimensional structure.",
+          "image": "a raw amino-acid chain on one side of an inspection gate and a folded working assembly on the other"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF026",
+      "checkpoint_prompt": "",
+      "next_locus": "Soluble-Protein Water Tank"
+    },
+    {
+      "scene_index": 12,
+      "locus": "Soluble-Protein Water Tank",
+      "title": "Which Side Chains Face the Water?",
+      "scene_kicker": "For many soluble proteins, the watery environment helps sort hydrophobic and hydrophilic side chains.",
+      "location_description": "A clear tank fills with water around the folded protein. Nonpolar side chains disappear toward the interior while polar and charged groups remain more exposed at the surface. A membrane-protein warning sign hangs above the tank.",
+      "scene_layout": {
+        "orientation": "Water surrounds the protein on all sides, the hydrophobic core is visible at center, and exposed polar/charged groups cover the outer surface.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Aqueous environment",
+            "symbol": "💧",
+            "description": "Surrounds the soluble protein."
+          },
+          {
+            "position": "center",
+            "label": "Hydrophobic core",
+            "symbol": "oil",
+            "description": "Often buries nonpolar side chains away from water."
+          },
+          {
+            "position": "right",
+            "label": "Hydrophilic surface",
+            "symbol": "+/−",
+            "description": "Often exposes polar and charged side chains to water."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Soluble protein",
+          "kind": "aqueous protein",
+          "visual": "a compact globular protein suspended in water",
+          "job": "often folds with hydrophobic side chains buried and polar or charged side chains exposed"
+        },
+        {
+          "name": "Membrane-protein warning",
+          "kind": "context guard",
+          "visual": "a membrane icon with DO NOT GENERALIZE stamped beside it",
+          "job": "reminds you that membrane proteins experience a different chemical environment and may orient side chains differently"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Soluble-Protein Water Tank**. A clear tank fills with water around the folded protein. Nonpolar side chains disappear toward the interior while polar and charged groups remain more exposed at the surface. A membrane-protein warning sign hangs above the tank. The Aqueous environment stays on your left, the Hydrophobic core is the main work area straight ahead, and the Hydrophilic surface fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Soluble-Protein Water Tank**. A clear tank fills with water around the folded protein. Nonpolar side chains disappear toward the interior while polar and charged groups remain more exposed at the surface. A membrane-protein warning sign hangs above the tank. The Aqueous environment stays on your left, the Hydrophobic core is the main work area straight ahead, and the Hydrophilic surface fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "As the protein settles into water, many **nonpolar hydrophobic R groups** become buried in the interior, away from the aqueous environment. Many **polar and charged R groups** remain exposed, where they can interact favorably with water.",
+        "Milo points to the warning sign. This is a common pattern for **soluble proteins**, not a universal rule for every protein. Membrane proteins live partly in a hydrophobic lipid environment and can organize their side chains differently.",
+        "The protein survives the water test. One final door opens: a furnace designed to disturb the interactions that keep the protein folded."
+      ],
+      "story_close": "The protein survives the water test. One final door opens: a furnace designed to disturb the interactions that keep the protein folded.",
+      "object_ids": [
+        "MO-APBIO-U1-PF027"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF027",
+          "term": "R-group orientation in aqueous environments",
+          "story": "hydrophobic side chains moving inward while polar and charged side chains face the surrounding water",
+          "science": "For soluble proteins in an aqueous environment, nonpolar/hydrophobic side chains often become buried in the protein interior, while polar and charged side chains are often exposed to water. This pattern is context-dependent and should not be overgeneralized to membrane proteins.",
+          "exact_name": false,
+          "hint": "hydrophobic side chains moving inward while polar and charged side chains face the surrounding water"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "R-group orientation in aqueous environments",
+          "meaning": "For soluble proteins in an aqueous environment, nonpolar/hydrophobic side chains often become buried in the protein interior, while polar and charged side chains are often exposed to water. This pattern is context-dependent and should not be overgeneralized to membrane proteins.",
+          "image": "hydrophobic side chains moving inward while polar and charged side chains face the surrounding water"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-PF027",
+      "checkpoint_prompt": "",
+      "next_locus": "Denaturation Furnace"
+    },
+    {
+      "scene_index": 13,
+      "locus": "Denaturation Furnace",
+      "title": "When Shape Comes Apart",
+      "scene_kicker": "Destroy the stabilizing interactions and function can disappear even if the covalent backbone is not cut apart.",
+      "location_description": "A red testing chamber surrounds the protein. Heat and chemical-condition controls rise on the left. The protein’s carefully folded shape begins loosening while the peptide-bond backbone remains visibly connected.",
+      "scene_layout": {
+        "orientation": "Stress controls are left, the unfolding protein is center, and the darkening function lamp is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Stress controls",
+            "symbol": "♨",
+            "description": "Alter temperature or chemical conditions that stabilize the native structure."
+          },
+          {
+            "position": "center",
+            "label": "Unfolding protein",
+            "symbol": "~",
+            "description": "Higher-order shape is disrupted without automatically hydrolyzing peptide bonds."
+          },
+          {
+            "position": "right",
+            "label": "Function lamp",
+            "symbol": "OFF",
+            "description": "Shows that loss of native shape often causes loss of function."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Milo Arden",
+          "kind": "guide",
+          "visual": "burgundy waistcoat, measuring tape around his neck, silver peptide needle",
+          "job": "keeps one developing polypeptide visible from its amino-acid sequence through every level of folding"
+        },
+        {
+          "name": "Denaturation",
+          "kind": "loss of native structure",
+          "visual": "a folded protein opening into a disordered chain while peptide bonds remain intact",
+          "job": "occurs when conditions disrupt interactions that stabilize the native 3D structure, often causing loss of function"
+        }
+      ],
+      "story_open": "Milo Arden wheels the same developing polypeptide into **Denaturation Furnace**. A red testing chamber surrounds the protein. Heat and chemical-condition controls rise on the left. The protein’s carefully folded shape begins loosening while the peptide-bond backbone remains visibly connected. The Stress controls stays on your left, the Unfolding protein is the main work area straight ahead, and the Function lamp fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+      "story_paragraphs": [
+        "Milo Arden wheels the same developing polypeptide into **Denaturation Furnace**. A red testing chamber surrounds the protein. Heat and chemical-condition controls rise on the left. The protein’s carefully folded shape begins loosening while the peptide-bond backbone remains visibly connected. The Stress controls stays on your left, the Unfolding protein is the main work area straight ahead, and the Function lamp fixes your right side. Because the chain never disappears between rooms, every new fold or bond has a visible before-and-after state.",
+        "The furnace warms. Hydrogen bonds, ionic interactions, hydrophobic organization, and other stabilizing interactions are disturbed. The protein loses its native three-dimensional shape. That loss of native structure is **denaturation**.",
+        "The function lamp goes dark. Denaturation often causes loss of function because the protein no longer has the shape required for its interactions. Milo highlights the peptide-bond backbone: ordinary denaturation does not mean the chain has been hydrolyzed into individual amino acids.",
+        "He lowers the stress and closes the chamber. The repaired shipment sits beside the damaged original, and the whole route is visible through the factory glass: amino-acid structure → R-group chemistry → peptide-bonded polypeptide → directed sequence → local folding → whole-chain folding → multi-chain assembly → function."
+      ],
+      "story_close": "He lowers the stress and closes the chamber. The repaired shipment sits beside the damaged original, and the whole route is visible through the factory glass: amino-acid structure → R-group chemistry → peptide-bonded polypeptide → directed sequence → local folding → whole-chain folding → multi-chain assembly → function.",
+      "object_ids": [
+        "MO-APBIO-U1-PF028"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-PF028",
+          "term": "Denaturation",
+          "story": "heat or extreme conditions unfolding a working protein while an unbroken peptide-chain rail remains continuous",
+          "science": "Protein denaturation is the loss of a protein’s native three-dimensional structure when conditions disrupt the interactions that stabilize it, often causing loss of function.",
+          "exact_name": true,
+          "hint": "heat or extreme conditions unfolding a working protein while an unbroken peptide-chain rail remains continuous"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Denaturation",
+          "meaning": "Protein denaturation is the loss of a protein’s native three-dimensional structure when conditions disrupt the interactions that stabilize it, often causing loss of function.",
+          "image": "heat or extreme conditions unfolding a working protein while an unbroken peptide-chain rail remains continuous"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-PF028",
+      "checkpoint_prompt": "What term describes loss of a protein’s native three-dimensional structure when stabilizing interactions are disrupted?",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}

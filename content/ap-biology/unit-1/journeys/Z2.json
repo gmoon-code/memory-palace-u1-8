@@ -1,0 +1,1267 @@
+{
+  "palace_id": "Z2",
+  "palace_name": "Chemistry Foyer",
+  "story_title": "The Midnight Chemistry Museum",
+  "tagline": "A glowing carbon token escapes after closing time. Follow it through the museum and watch atoms become the chemistry of life.",
+  "guide": {
+    "name": "Mina Park",
+    "role": "night curator of the chemistry museum",
+    "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+    "story_job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+  },
+  "premise": "At midnight, a power surge opens the Living Matter exhibit and releases a glowing carbon token. It rolls through eleven locked galleries, activating each chemistry exhibit in sequence.",
+  "mission": "Stay with Mina and recover the token. Along the way, identify what matter is made of, how atoms are organized, why electrons govern bonding, and how a few elements become the raw material of biological molecules.",
+  "finale": "At the Element-Role Workbench, the carbon token clicks back into the Living Matter display beside nitrogen, phosphorus, sulfur, hydrogen, and oxygen. The museum lights return, now showing chemistry as one connected route from atoms to biological molecules.",
+  "estimated_minutes": 17,
+  "scene_count": 11,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The museum foyer forms a horseshoe around a central atrium. You enter at the Matter Statue, follow the escaped token clockwise through the atomic galleries, cross the bonding bridge, and finish at the biological-element workbench beside the exit.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Matter Statue",
+      "short": "Matter",
+      "floor": "Entrance hall",
+      "symbol": "⬢"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Element–Compound Counter",
+      "short": "Elements",
+      "floor": "Gallery 1",
+      "symbol": "▦"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Isotope Scale",
+      "short": "Isotopes",
+      "floor": "Gallery 2",
+      "symbol": "⚖"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Periodic Elevator",
+      "short": "Periodic",
+      "floor": "Gallery 3",
+      "symbol": "▤"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Octopus Valence Chandelier",
+      "short": "Valence",
+      "floor": "Atrium",
+      "symbol": "✳"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Electronegativity Magnet Wall",
+      "short": "Attraction",
+      "floor": "Gallery 4",
+      "symbol": "🧲"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Covalent Tug-of-War Table",
+      "short": "Covalent",
+      "floor": "Gallery 5",
+      "symbol": "↔"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Ion Coat Check",
+      "short": "Ions",
+      "floor": "Gallery 6",
+      "symbol": "+/−"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Hydrogen-Bond Bridge",
+      "short": "H bonds",
+      "floor": "Bridge",
+      "symbol": "···"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Macromolecule Element Crates",
+      "short": "Raw atoms",
+      "floor": "Bio wing",
+      "symbol": "▣"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Element-Role Workbench",
+      "short": "Roles",
+      "floor": "Exit lab",
+      "symbol": "⚙"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Matter Statue",
+      "title": "The Token Breaks Free",
+      "scene_kicker": "Before atoms can matter to life, you need to know what kind of substance you are looking at.",
+      "location_description": "You are inside the museum entrance hall. A waist-high bronze statue occupies the center beneath a glass dome. Three labeled pedestals surround it: MATTER, ELEMENT, and COMPOUND.",
+      "scene_layout": {
+        "orientation": "The entrance is behind you. The Matter pedestal is centered, the Element pedestal stands left, and the Compound pedestal stands right. A glowing carbon token has just rolled out from under the dome toward Gallery 1.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Element pedestal",
+            "symbol": "C",
+            "description": "Holds one pure kind of atom."
+          },
+          {
+            "position": "center",
+            "label": "Matter statue",
+            "symbol": "⬢",
+            "description": "A heavy bronze form demonstrates that matter occupies space and has mass."
+          },
+          {
+            "position": "right",
+            "label": "Compound pedestal",
+            "symbol": "H₂O",
+            "description": "Locks different elements together in a fixed ratio."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Matter statue",
+          "kind": "physical substance",
+          "visual": "a bronze sphere so heavy it dents its velvet cushion",
+          "job": "demonstrates that matter occupies space and has mass"
+        },
+        {
+          "name": "Element block",
+          "kind": "pure substance",
+          "visual": "a single carbon tile that cannot be chemically broken into a simpler substance",
+          "job": "represents an element"
+        },
+        {
+          "name": "Compound model",
+          "kind": "combined substance",
+          "visual": "one oxygen-colored sphere fixed to two hydrogen-colored spheres",
+          "job": "represents different elements combined in a fixed ratio"
+        }
+      ],
+      "story_open": "The power drops. The bronze statue shudders, and a coin-sized carbon token slips from its case and skitters across the marble floor. Mina Park catches up beside you, flashlight in hand. “Follow it. Every exhibit it touches wakes up.”",
+      "story_paragraphs": [
+        "The power drops. The bronze statue shudders, and a coin-sized carbon token slips from its case and skitters across the marble floor. Mina Park catches up beside you, flashlight in hand. “Follow it. Every exhibit it touches wakes up.”",
+        "The first pedestal is labeled **matter**. The statue physically occupies space and has measurable mass, which is exactly what matter means. The token ricochets left into a single carbon block. Mina taps it: an **element** is a substance that cannot be broken into other substances by ordinary chemical reactions.",
+        "The token then hits a model built from two white spheres and one red sphere locked together. Different elements joined in a fixed ratio form a **compound**. The model is still matter, but now its composition depends on more than one element.",
+        "The carbon token shoots beneath the Gallery 1 counter, where the museum keeps track of which elements living organisms need most and which are required only in tiny amounts."
+      ],
+      "story_close": "The carbon token shoots beneath the Gallery 1 counter, where the museum keeps track of which elements living organisms need most and which are required only in tiny amounts.",
+      "object_ids": [
+        "MO-APBIO-U1-C001",
+        "MO-APBIO-U1-C002",
+        "MO-APBIO-U1-C003"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C001",
+          "term": "Matter",
+          "story": "a heavy crate that depresses a scale and blocks a marked patch of floor",
+          "science": "Matter is anything that takes up space and has mass.",
+          "exact_name": true,
+          "hint": "a heavy crate that depresses a scale and blocks a marked patch of floor"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C002",
+          "term": "Element",
+          "story": "one pure tile that a chemical-reaction beam cannot turn into simpler chemical substances",
+          "science": "An element is a substance that cannot be broken down into other substances by chemical reactions.",
+          "exact_name": true,
+          "hint": "one pure tile that a chemical-reaction beam cannot turn into simpler chemical substances"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C003",
+          "term": "Compound",
+          "story": "two different element tiles locked into one fixed-proportion connector",
+          "science": "A compound consists of two or more different elements combined in a fixed ratio.",
+          "exact_name": true,
+          "hint": "two different element tiles locked into one fixed-proportion connector"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Matter",
+          "meaning": "Matter is anything that takes up space and has mass.",
+          "image": "a heavy crate that depresses a scale and blocks a marked patch of floor"
+        },
+        {
+          "term": "Element",
+          "meaning": "An element is a substance that cannot be broken down into other substances by chemical reactions.",
+          "image": "one pure tile that a chemical-reaction beam cannot turn into simpler chemical substances"
+        },
+        {
+          "term": "Compound",
+          "meaning": "A compound consists of two or more different elements combined in a fixed ratio.",
+          "image": "two different element tiles locked into one fixed-proportion connector"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C001",
+      "checkpoint_prompt": "",
+      "next_locus": "Element–Compound Counter"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Element–Compound Counter",
+      "title": "The Living-Matter Inventory",
+      "scene_kicker": "Life uses many elements, but not all in the same amounts.",
+      "location_description": "Gallery 1 resembles an old apothecary counter. Large glass bins of oxygen, carbon, hydrogen, and nitrogen dominate the center shelves; tiny locked drawers of zinc, copper, iodine, and other elements line the wall.",
+      "scene_layout": {
+        "orientation": "Four enormous CHON bins fill the center. Smaller essential-element bins sit on the left. The trace-element drawers are stacked on the right, one drawer cracked open by the rolling carbon token.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Essential-element shelves",
+            "symbol": "★",
+            "description": "Hold elements organisms require for normal life."
+          },
+          {
+            "position": "center",
+            "label": "CHON bins",
+            "symbol": "96%",
+            "description": "Four huge bins visually dominate the living-matter inventory."
+          },
+          {
+            "position": "right",
+            "label": "Trace drawers",
+            "symbol": "·",
+            "description": "Contain elements needed in very small quantities."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "CHON bins",
+          "kind": "major biological elements",
+          "visual": "four oversized bins labeled C, H, O, N",
+          "job": "show that oxygen, carbon, hydrogen, and nitrogen together make up about 96% of living matter"
+        },
+        {
+          "name": "Trace drawers",
+          "kind": "small-quantity requirements",
+          "visual": "tiny drawers containing elements such as iron, iodine, zinc, and copper",
+          "job": "represent trace elements that organisms require in very small amounts"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Element–Compound Counter**. Gallery 1 resembles an old apothecary counter. Large glass bins of oxygen, carbon, hydrogen, and nitrogen dominate the center shelves; tiny locked drawers of zinc, copper, iodine, and other elements line the wall. Your left is anchored by the Essential-element shelves, the CHON bins sits directly in front of you, and the Trace drawers fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Element–Compound Counter**. Gallery 1 resembles an old apothecary counter. Large glass bins of oxygen, carbon, hydrogen, and nitrogen dominate the center shelves; tiny locked drawers of zinc, copper, iodine, and other elements line the wall. Your left is anchored by the Essential-element shelves, the CHON bins sits directly in front of you, and the Trace drawers fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "Mina sweeps her flashlight across the shelves. Only a fraction of naturally occurring elements are **essential elements** for a given organism, meaning the organism needs them to live and function normally. The four giant bins make the main pattern impossible to miss: oxygen, carbon, hydrogen, and nitrogen together account for about 96% of living matter.",
+        "The carbon token wedges itself into a tiny drawer. Mina pulls it open with one fingernail. These are **trace elements**: still required, but in very small quantities. “Small amount does not mean unimportant,” she says, returning the token to the counter.",
+        "The token escapes again and rolls onto a brass balance in Gallery 2. One side of the scale lights up with protons; the other begins loading neutrons."
+      ],
+      "story_close": "The token escapes again and rolls onto a brass balance in Gallery 2. One side of the scale lights up with protons; the other begins loading neutrons.",
+      "object_ids": [
+        "MO-APBIO-U1-C004",
+        "MO-APBIO-U1-C005"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C004",
+          "term": "Essential elements",
+          "story": "a wall of 92 drawers with only about one quarter illuminated, while four oversized C, H, O, and N bins dominate a living-matter scale",
+          "science": "Of the 92 naturally occurring elements, roughly 20–25% are essential to organisms. Oxygen, carbon, hydrogen, and nitrogen together make up about 96% of living matter; phosphorus, sulfur, calcium, potassium, and other elements account for much of the remainder.",
+          "exact_name": false,
+          "hint": "a wall of 92 drawers with only about one quarter illuminated, while four oversized C, H, O, and N bins dominate a living-matter scale"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C005",
+          "term": "Trace elements",
+          "story": "pinhead-sized required spice jars beside much larger ingredient bins",
+          "science": "Trace elements are required by an organism in very small quantities.",
+          "exact_name": true,
+          "hint": "pinhead-sized required spice jars beside much larger ingredient bins"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Essential elements",
+          "meaning": "Of the 92 naturally occurring elements, roughly 20–25% are essential to organisms. Oxygen, carbon, hydrogen, and nitrogen together make up about 96% of living matter; phosphorus, sulfur, calcium, potassium, and other elements account for much of the remainder.",
+          "image": "a wall of 92 drawers with only about one quarter illuminated, while four oversized C, H, O, and N bins dominate a living-matter scale"
+        },
+        {
+          "term": "Trace elements",
+          "meaning": "Trace elements are required by an organism in very small quantities.",
+          "image": "pinhead-sized required spice jars beside much larger ingredient bins"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C005",
+      "checkpoint_prompt": "",
+      "next_locus": "Isotope Scale"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Isotope Scale",
+      "title": "The Number That Names an Element",
+      "scene_kicker": "Protons identify the element; neutrons can change the isotope and its mass.",
+      "location_description": "A brass scale stands beneath a wall-sized atom. Red proton weights click into the nucleus from the left. Gray neutron weights slide in from the right. An electronic label above the scale changes as the nucleus changes.",
+      "scene_layout": {
+        "orientation": "Proton weights are stacked left, the nucleus and balance occupy center, and neutron/isotope samples sit right. The carbon token rests on the central pan.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Proton rack",
+            "symbol": "+",
+            "description": "The proton count determines atomic number and therefore elemental identity."
+          },
+          {
+            "position": "center",
+            "label": "Isotope scale",
+            "symbol": "⚖",
+            "description": "Compares nuclei with the same proton count but different neutron counts."
+          },
+          {
+            "position": "right",
+            "label": "Mass display",
+            "symbol": "amu",
+            "description": "Shows isotope mass and the abundance-weighted atomic mass for a naturally occurring mixture."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Atomic-number display",
+          "kind": "identity counter",
+          "visual": "a red digital counter connected only to proton weights",
+          "job": "shows that atomic number equals the number of protons"
+        },
+        {
+          "name": "Atomic-mass display",
+          "kind": "mass readout",
+          "visual": "a scale that can average several isotope masses according to abundance",
+          "job": "distinguishes a particular isotope’s mass number from an element’s abundance-weighted atomic mass"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Isotope Scale**. A brass scale stands beneath a wall-sized atom. Red proton weights click into the nucleus from the left. Gray neutron weights slide in from the right. An electronic label above the scale changes as the nucleus changes. Your left is anchored by the Proton rack, the Isotope scale sits directly in front of you, and the Mass display fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Isotope Scale**. A brass scale stands beneath a wall-sized atom. Red proton weights click into the nucleus from the left. Gray neutron weights slide in from the right. An electronic label above the scale changes as the nucleus changes. Your left is anchored by the Proton rack, the Isotope scale sits directly in front of you, and the Mass display fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "Mina adds six proton weights to the nucleus. The display reads 6. **Atomic number** is the number of protons, and that proton count identifies the element. With six protons, the token remains carbon no matter which common carbon isotope you build.",
+        "She leaves the six protons untouched and changes only the number of neutrons. The element is still carbon, but the isotope changes. For one particular isotope, the **mass number** is protons plus neutrons. The **atomic mass** listed for an element with multiple naturally occurring isotopes is different: it is an abundance-weighted average of the isotopic masses.",
+        "The scale ejects the carbon token upward into a glass elevator patterned like the periodic table."
+      ],
+      "story_close": "The scale ejects the carbon token upward into a glass elevator patterned like the periodic table.",
+      "object_ids": [
+        "MO-APBIO-U1-C006",
+        "MO-APBIO-U1-C007"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C006",
+          "term": "Atomic number",
+          "story": "an atom jersey whose number exactly matches the proton tokens in the nucleus",
+          "science": "Atomic number is the number of protons.",
+          "exact_name": true,
+          "hint": "an atom jersey whose number exactly matches the proton tokens in the nucleus"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C007",
+          "term": "Atomic mass",
+          "story": "several isotope marbles contributing unequally to a weighted balance",
+          "science": "Mass number is the number of protons plus neutrons in a particular isotope. The atomic mass reported for an element with multiple naturally occurring isotopes is an abundance-weighted average of the isotopic masses.",
+          "exact_name": true,
+          "hint": "several isotope marbles contributing unequally to a weighted balance"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Atomic number",
+          "meaning": "Atomic number is the number of protons.",
+          "image": "an atom jersey whose number exactly matches the proton tokens in the nucleus"
+        },
+        {
+          "term": "Atomic mass",
+          "meaning": "Mass number is the number of protons plus neutrons in a particular isotope. The atomic mass reported for an element with multiple naturally occurring isotopes is an abundance-weighted average of the isotopic masses.",
+          "image": "several isotope marbles contributing unequally to a weighted balance"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-C006",
+      "checkpoint_prompt": "Which atomic property is simply the number of protons and determines an element’s identity?",
+      "next_locus": "Periodic Elevator"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Periodic Elevator",
+      "title": "Rows, Columns, and Electron Shells",
+      "scene_kicker": "The elevator turns the periodic table into a building you can move through.",
+      "location_description": "You stand inside a glass elevator whose walls form a periodic table grid. Vertical columns glow as elevator shafts; horizontal rows become floors. Electron shells appear around each element tile as you travel.",
+      "scene_layout": {
+        "orientation": "Vertical group shafts run along the left and right walls, the elevator car is center, and horizontal period floors extend ahead at each stop.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Group shafts",
+            "symbol": "↓",
+            "description": "Elements stacked in a vertical group often share the same number of valence electrons in the simplified main-group model."
+          },
+          {
+            "position": "center",
+            "label": "Periodic elevator",
+            "symbol": "▤",
+            "description": "Carries the carbon token through the grid."
+          },
+          {
+            "position": "right",
+            "label": "Period floors",
+            "symbol": "→",
+            "description": "Elements across the same period have the same number of occupied principal electron shells in the simplified shell model."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Vertical group",
+          "kind": "periodic-table relationship",
+          "visual": "a glowing column of element tiles with matching outer-electron counts",
+          "job": "connects similar valence-electron patterns with similar chemical behavior for the main-group elements emphasized here"
+        },
+        {
+          "name": "Horizontal period",
+          "kind": "periodic-table relationship",
+          "visual": "a floor of tiles with the same number of occupied shell rings",
+          "job": "connects period number with occupied principal electron shells in the simplified model"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Periodic Elevator**. You stand inside a glass elevator whose walls form a periodic table grid. Vertical columns glow as elevator shafts; horizontal rows become floors. Electron shells appear around each element tile as you travel. Your left is anchored by the Group shafts, the Periodic elevator sits directly in front of you, and the Period floors fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Periodic Elevator**. You stand inside a glass elevator whose walls form a periodic table grid. Vertical columns glow as elevator shafts; horizontal rows become floors. Electron shells appear around each element tile as you travel. Your left is anchored by the Group shafts, the Periodic elevator sits directly in front of you, and the Period floors fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "As the elevator rises, Mina points to a vertical shaft. For the main-group elements emphasized in introductory biology, elements in the same **group** generally share the same number of valence electrons and therefore often show similar chemical behavior. The matching outer electrons glow around each tile in the column.",
+        "The elevator stops on a horizontal floor. Every tile across that **period** shows the same number of occupied principal electron shells in the simplified shell model, even though the outer electrons differ as you move across the row.",
+        "The escaped token bounces off carbon’s tile and drops through the elevator ceiling into the atrium, where an eight-armed chandelier is opening above you."
+      ],
+      "story_close": "The escaped token bounces off carbon’s tile and drops through the elevator ceiling into the atrium, where an eight-armed chandelier is opening above you.",
+      "object_ids": [
+        "MO-APBIO-U1-C008",
+        "MO-APBIO-U1-C009"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C008",
+          "term": "Group / valence-electron relationship",
+          "story": "a vertical elevator column in which each main-group passenger carries the same number of outer-seat tickets",
+          "science": "For the main-group elements emphasized in introductory biology, elements in the same vertical group generally have the same number of valence electrons and therefore often show similar chemical behavior.",
+          "exact_name": false,
+          "hint": "a vertical elevator column in which each main-group passenger carries the same number of outer-seat tickets"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C009",
+          "term": "Period / electron-shell relationship",
+          "story": "a horizontal floor where every atom model displays the same number of occupied shell rings",
+          "science": "Elements in the same horizontal period have the same number of occupied principal electron shells in the simplified shell model used in introductory biology.",
+          "exact_name": false,
+          "hint": "a horizontal floor where every atom model displays the same number of occupied shell rings"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Group / valence-electron relationship",
+          "meaning": "For the main-group elements emphasized in introductory biology, elements in the same vertical group generally have the same number of valence electrons and therefore often show similar chemical behavior.",
+          "image": "a vertical elevator column in which each main-group passenger carries the same number of outer-seat tickets"
+        },
+        {
+          "term": "Period / electron-shell relationship",
+          "meaning": "Elements in the same horizontal period have the same number of occupied principal electron shells in the simplified shell model used in introductory biology.",
+          "image": "a horizontal floor where every atom model displays the same number of occupied shell rings"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C008",
+      "checkpoint_prompt": "",
+      "next_locus": "Octopus Valence Chandelier"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Octopus Valence Chandelier",
+      "title": "The Outer Shell Takes Control",
+      "scene_kicker": "The electrons farthest from the nucleus are the ones that usually decide how atoms interact.",
+      "location_description": "In the central atrium hangs a kinetic chandelier shaped like an eight-armed octopus. Transparent electron shells circle its body. Only the outermost ring connects to the moving arms.",
+      "scene_layout": {
+        "orientation": "The chandelier hangs overhead at center. A shell projector stands left, and eight empty or occupied arm sockets form a bright ring on the right side of the display.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Shell projector",
+            "symbol": "◎",
+            "description": "Shows inner shells as stable rings and highlights the outermost occupied shell."
+          },
+          {
+            "position": "center",
+            "label": "Valence chandelier",
+            "symbol": "✳",
+            "description": "The outer shell controls the bonding arms."
+          },
+          {
+            "position": "right",
+            "label": "Eight-arm frame",
+            "symbol": "8",
+            "description": "Demonstrates the octet heuristic without pretending it is a universal law."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Valence shell",
+          "kind": "outer electron shell",
+          "visual": "the outermost glowing ring around the chandelier",
+          "job": "contains the electrons most directly involved in many chemical interactions"
+        },
+        {
+          "name": "Octet frame",
+          "kind": "stability heuristic",
+          "visual": "an eight-socket ring that becomes especially stable when filled for many main-group atoms",
+          "job": "represents the useful octet rule heuristic while reminding learners that chemistry has exceptions"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Octopus Valence Chandelier**. In the central atrium hangs a kinetic chandelier shaped like an eight-armed octopus. Transparent electron shells circle its body. Only the outermost ring connects to the moving arms. Your left is anchored by the Shell projector, the Valence chandelier sits directly in front of you, and the Eight-arm frame fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Octopus Valence Chandelier**. In the central atrium hangs a kinetic chandelier shaped like an eight-armed octopus. Transparent electron shells circle its body. Only the outermost ring connects to the moving arms. Your left is anchored by the Shell projector, the Valence chandelier sits directly in front of you, and the Eight-arm frame fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "Mina dims every inner ring and leaves only the outermost occupied shell glowing. That is the **valence shell**. Its electrons are the ones most directly involved when many atoms form chemical bonds.",
+        "The chandelier’s eight sockets illuminate. For many main-group atoms, bonding can produce a more stable arrangement with eight electrons in the valence shell. This is the **octet rule**, a useful heuristic, not a universal command. Atoms do not “want” electrons; the rule summarizes common stable electron arrangements.",
+        "The carbon token grabs four of the chandelier arms, then tears loose and flies toward a wall covered in giant magnetic element tiles."
+      ],
+      "story_close": "The carbon token grabs four of the chandelier arms, then tears loose and flies toward a wall covered in giant magnetic element tiles.",
+      "object_ids": [
+        "MO-APBIO-U1-C010",
+        "MO-APBIO-U1-C011"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C010",
+          "term": "Valence shell",
+          "story": "only the atom model’s outermost electron balcony illuminated",
+          "science": "The valence shell is the outermost electron shell of an atom.",
+          "exact_name": true,
+          "hint": "only the atom model’s outermost electron balcony illuminated"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C011",
+          "term": "Octet rule",
+          "story": "an octopus arranging eight seats beneath a large exceptions-exist tag",
+          "science": "Atoms with incomplete valence shells often form bonds that produce more stable valence-shell arrangements. The octet rule is a useful heuristic for many main-group atoms, but it is not a universal rule and atoms do not literally 'want' electrons.",
+          "exact_name": true,
+          "hint": "an octopus arranging eight seats beneath a large exceptions-exist tag"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Valence shell",
+          "meaning": "The valence shell is the outermost electron shell of an atom.",
+          "image": "only the atom model’s outermost electron balcony illuminated"
+        },
+        {
+          "term": "Octet rule",
+          "meaning": "Atoms with incomplete valence shells often form bonds that produce more stable valence-shell arrangements. The octet rule is a useful heuristic for many main-group atoms, but it is not a universal rule and atoms do not literally 'want' electrons.",
+          "image": "an octopus arranging eight seats beneath a large exceptions-exist tag"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C010",
+      "checkpoint_prompt": "",
+      "next_locus": "Electronegativity Magnet Wall"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Electronegativity Magnet Wall",
+      "title": "Who Pulls the Electrons Harder?",
+      "scene_kicker": "A bond can be shared while the electrons still spend more time near one atom.",
+      "location_description": "Gallery 4 is dominated by a magnetic wall. Two atom tiles can clamp together while a glowing electron cloud stretches between them. Some tiles tug the shared cloud much harder than others.",
+      "scene_layout": {
+        "orientation": "A periodic-table gradient runs left to right across the back wall, the shared-electron display sits center, and a bond clamp is mounted to the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Electronegativity gradient",
+            "symbol": "↗",
+            "description": "The pull generally strengthens across a period and weakens down a group in the main-group region emphasized here."
+          },
+          {
+            "position": "center",
+            "label": "Electron cloud",
+            "symbol": "☁",
+            "description": "Shows where shared electrons spend more time."
+          },
+          {
+            "position": "right",
+            "label": "Bond clamp",
+            "symbol": "—",
+            "description": "Holds atoms or ions together through attraction."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Electronegativity",
+          "kind": "electron-pulling tendency",
+          "visual": "a magnet-strength meter attached to each atom tile",
+          "job": "measures an atom’s ability to attract electrons toward itself"
+        },
+        {
+          "name": "Chemical bond",
+          "kind": "attractive connection",
+          "visual": "a clamp that can hold atoms or ions together",
+          "job": "represents attraction that holds atoms or ions together, including covalent and ionic bonding"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Electronegativity Magnet Wall**. Gallery 4 is dominated by a magnetic wall. Two atom tiles can clamp together while a glowing electron cloud stretches between them. Some tiles tug the shared cloud much harder than others. Your left is anchored by the Electronegativity gradient, the Electron cloud sits directly in front of you, and the Bond clamp fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Electronegativity Magnet Wall**. Gallery 4 is dominated by a magnetic wall. Two atom tiles can clamp together while a glowing electron cloud stretches between them. Some tiles tug the shared cloud much harder than others. Your left is anchored by the Electronegativity gradient, the Electron cloud sits directly in front of you, and the Bond clamp fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "Mina locks hydrogen and oxygen tiles into the bond clamp. A **chemical bond** is an attraction that holds atoms or ions together. Here the glowing electron cloud is shared, but it shifts toward oxygen because the two atoms do not pull equally.",
+        "The strength of that pull is **electronegativity**: an atom’s ability to attract electrons toward itself. On the wall, the general trend climbs from left to right across a period and falls as you move down a group in the main-group region you are using.",
+        "The carbon token hits the cloud and sends it sliding into the next gallery, where two mechanical arms are already gripping the same glowing rope."
+      ],
+      "story_close": "The carbon token hits the cloud and sends it sliding into the next gallery, where two mechanical arms are already gripping the same glowing rope.",
+      "object_ids": [
+        "MO-APBIO-U1-C012",
+        "MO-APBIO-U1-C013",
+        "MO-APBIO-U1-C014"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C012",
+          "term": "Chemical bond",
+          "story": "a connector that holds two particles together even when the connector style changes",
+          "science": "A chemical bond is an attraction that holds atoms or ions together. Covalent bonds involve shared electron pairs; ionic bonds are electrostatic attractions between oppositely charged ions.",
+          "exact_name": true,
+          "hint": "a connector that holds two particles together even when the connector style changes"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C013",
+          "term": "Electronegativity",
+          "story": "a magnet that pulls a shared negative electron token toward one atom model",
+          "science": "Electronegativity is the measure of an atom's ability to attract electrons to itself.",
+          "exact_name": true,
+          "hint": "a magnet that pulls a shared negative electron token toward one atom model"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C014",
+          "term": "Electronegativity trend",
+          "story": "a magnet-strength arrow that grows generally stronger moving right across a row and upward in a column",
+          "science": "Across the main-group region commonly emphasized in introductory biology, electronegativity generally increases from left to right across a period and decreases down a group.",
+          "exact_name": false,
+          "hint": "a magnet-strength arrow that grows generally stronger moving right across a row and upward in a column"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Chemical bond",
+          "meaning": "A chemical bond is an attraction that holds atoms or ions together. Covalent bonds involve shared electron pairs; ionic bonds are electrostatic attractions between oppositely charged ions.",
+          "image": "a connector that holds two particles together even when the connector style changes"
+        },
+        {
+          "term": "Electronegativity",
+          "meaning": "Electronegativity is the measure of an atom's ability to attract electrons to itself.",
+          "image": "a magnet that pulls a shared negative electron token toward one atom model"
+        },
+        {
+          "term": "Electronegativity trend",
+          "meaning": "Across the main-group region commonly emphasized in introductory biology, electronegativity generally increases from left to right across a period and decreases down a group.",
+          "image": "a magnet-strength arrow that grows generally stronger moving right across a row and upward in a column"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C012",
+      "checkpoint_prompt": "",
+      "next_locus": "Covalent Tug-of-War Table"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Covalent Tug-of-War Table",
+      "title": "Shared Does Not Always Mean Equal",
+      "scene_kicker": "Covalent bonds are shared electron pairs; polarity depends on how evenly they are shared.",
+      "location_description": "A long table is painted like a tug-of-war court. Atom models stand at opposite ends gripping glowing electron-pair ropes. A balance meter above each rope shows whether the sharing is equal or unequal.",
+      "scene_layout": {
+        "orientation": "Equal-pull atoms occupy the left lane, the main tug-of-war table is center, and an unequal-pull oxygen–hydrogen pair occupies the right lane.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Equal-pull lane",
+            "symbol": "↔",
+            "description": "The shared electron pair stays centered."
+          },
+          {
+            "position": "center",
+            "label": "Covalent table",
+            "symbol": "—",
+            "description": "Single, double, and triple ropes represent one, two, or three shared electron pairs."
+          },
+          {
+            "position": "right",
+            "label": "Unequal-pull lane",
+            "symbol": "δ",
+            "description": "The shared electron cloud shifts toward the more electronegative atom, creating partial charges."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Covalent bond",
+          "kind": "shared-electron bond",
+          "visual": "one or more glowing ropes shared between two atoms",
+          "job": "forms when atoms share electron pairs"
+        },
+        {
+          "name": "Nonpolar covalent bond",
+          "kind": "equal sharing",
+          "visual": "a rope centered evenly between equal pullers",
+          "job": "shares electrons approximately equally"
+        },
+        {
+          "name": "Polar covalent bond",
+          "kind": "unequal sharing",
+          "visual": "a rope pulled off-center toward the stronger atom",
+          "job": "shares electrons unequally and produces partial charges"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Covalent Tug-of-War Table**. A long table is painted like a tug-of-war court. Atom models stand at opposite ends gripping glowing electron-pair ropes. A balance meter above each rope shows whether the sharing is equal or unequal. Your left is anchored by the Equal-pull lane, the Covalent table sits directly in front of you, and the Unequal-pull lane fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Covalent Tug-of-War Table**. A long table is painted like a tug-of-war court. Atom models stand at opposite ends gripping glowing electron-pair ropes. A balance meter above each rope shows whether the sharing is equal or unequal. Your left is anchored by the Equal-pull lane, the Covalent table sits directly in front of you, and the Unequal-pull lane fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "At the center table, two atoms grip the same electron-pair rope. A **covalent bond** forms when atoms share electron pairs. One rope represents a single bond, two shared pairs a double bond, and three shared pairs a triple bond.",
+        "In the left lane, the pull is balanced. The shared electrons remain centered: a **nonpolar covalent bond**. In the right lane, oxygen pulls the shared cloud toward itself. The electrons are still shared, but unequally. That is a **polar covalent bond**, and the unequal sharing creates partial charges rather than full ionic charges.",
+        "The carbon token slices the rope loose. One atom model loses an electron prop while another gains it, and both are sucked through the doors of the Ion Coat Check."
+      ],
+      "story_close": "The carbon token slices the rope loose. One atom model loses an electron prop while another gains it, and both are sucked through the doors of the Ion Coat Check.",
+      "object_ids": [
+        "MO-APBIO-U1-C015",
+        "MO-APBIO-U1-C016",
+        "MO-APBIO-U1-C017"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C015",
+          "term": "Covalent bond",
+          "story": "two atoms jointly holding electron-pair tokens between them",
+          "science": "Covalent bonds involve sharing electrons; single, double, and triple bonds share one, two, and three electron pairs respectively.",
+          "exact_name": true,
+          "hint": "two atoms jointly holding electron-pair tokens between them"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C016",
+          "term": "Nonpolar covalent bond",
+          "story": "two atoms pulling a shared electron rope equally from opposite sides",
+          "science": "In a nonpolar covalent bond, electrons are shared equally between atoms.",
+          "exact_name": true,
+          "hint": "two atoms pulling a shared electron rope equally from opposite sides"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C017",
+          "term": "Polar covalent bond",
+          "story": "one atom pulling the shared electron rope farther toward itself while small partial-charge markers appear",
+          "science": "In a polar covalent bond, electrons are shared unequally, producing partial charges.",
+          "exact_name": true,
+          "hint": "one atom pulling the shared electron rope farther toward itself while small partial-charge markers appear"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Covalent bond",
+          "meaning": "Covalent bonds involve sharing electrons; single, double, and triple bonds share one, two, and three electron pairs respectively.",
+          "image": "two atoms jointly holding electron-pair tokens between them"
+        },
+        {
+          "term": "Nonpolar covalent bond",
+          "meaning": "In a nonpolar covalent bond, electrons are shared equally between atoms.",
+          "image": "two atoms pulling a shared electron rope equally from opposite sides"
+        },
+        {
+          "term": "Polar covalent bond",
+          "meaning": "In a polar covalent bond, electrons are shared unequally, producing partial charges.",
+          "image": "one atom pulling the shared electron rope farther toward itself while small partial-charge markers appear"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-C017",
+      "checkpoint_prompt": "What kind of covalent bond shares electrons unequally and produces partial charges?",
+      "next_locus": "Ion Coat Check"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Ion Coat Check",
+      "title": "Full Charges at the Coat Check",
+      "scene_kicker": "Electron transfer can create ions; the ionic bond is the attraction between the resulting opposite charges.",
+      "location_description": "Gallery 6 resembles a coat check with two counters. Electron-shaped coat tokens are handed from one atom model to another. Large + and − badges light up only after the transfer.",
+      "scene_layout": {
+        "orientation": "The electron-return counter is left, the ion badge gate is center, and the opposite-charge attraction rail is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Electron transfer counter",
+            "symbol": "e⁻",
+            "description": "Creates charged particles when atoms gain or lose electrons."
+          },
+          {
+            "position": "center",
+            "label": "Charge badge gate",
+            "symbol": "+/−",
+            "description": "Assigns full positive or negative ionic charge."
+          },
+          {
+            "position": "right",
+            "label": "Attraction rail",
+            "symbol": "⇆",
+            "description": "Pulls oppositely charged ions together."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Cation",
+          "kind": "positive ion",
+          "visual": "an atom model wearing a bright + badge after losing electron density",
+          "job": "is a positively charged ion"
+        },
+        {
+          "name": "Anion",
+          "kind": "negative ion",
+          "visual": "an atom model wearing a bright − badge after gaining electron density",
+          "job": "is a negatively charged ion"
+        },
+        {
+          "name": "Ionic bond",
+          "kind": "electrostatic attraction",
+          "visual": "a rail that snaps the + and − ions toward one another",
+          "job": "is the electrostatic attraction between oppositely charged ions, not the electron-transfer event itself"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Ion Coat Check**. Gallery 6 resembles a coat check with two counters. Electron-shaped coat tokens are handed from one atom model to another. Large + and − badges light up only after the transfer. Your left is anchored by the Electron transfer counter, the Charge badge gate sits directly in front of you, and the Attraction rail fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Ion Coat Check**. Gallery 6 resembles a coat check with two counters. Electron-shaped coat tokens are handed from one atom model to another. Large + and − badges light up only after the transfer. Your left is anchored by the Electron transfer counter, the Charge badge gate sits directly in front of you, and the Attraction rail fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "One atom leaves an electron token behind and exits with a full positive badge. A positively charged ion is a **cation**. Another atom picks up the electron and receives a full negative badge. A negatively charged ion is an **anion**.",
+        "The important event comes next. The + and − models are pulled toward one another by electrostatic attraction. That attraction is the **ionic bond**. Electron transfer can create the ions, but the transfer itself is not the bond.",
+        "The opposite charges snap together hard enough to launch the carbon token onto a narrow bridge where partial charges, not full ionic charges, are reaching across dotted lines."
+      ],
+      "story_close": "The opposite charges snap together hard enough to launch the carbon token onto a narrow bridge where partial charges, not full ionic charges, are reaching across dotted lines.",
+      "object_ids": [
+        "MO-APBIO-U1-C018",
+        "MO-APBIO-U1-C019",
+        "MO-APBIO-U1-C020"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C018",
+          "term": "Ionic bond",
+          "story": "oppositely charged ion models snapping together only after an electron-transfer arrow has disappeared",
+          "science": "An ionic bond is the electrostatic attraction between oppositely charged ions. Electron transfer may create the ions, but the electron transfer itself is not the ionic bond.",
+          "exact_name": true,
+          "hint": "oppositely charged ion models snapping together only after an electron-transfer arrow has disappeared"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C019",
+          "term": "Cation",
+          "story": "a cat wearing a large plus badge",
+          "science": "A cation is a positively charged ion.",
+          "exact_name": true,
+          "hint": "a cat wearing a large plus badge"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C020",
+          "term": "Anion",
+          "story": "an onion wearing a large minus badge",
+          "science": "An anion is a negatively charged ion.",
+          "exact_name": true,
+          "hint": "an onion wearing a large minus badge"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Ionic bond",
+          "meaning": "An ionic bond is the electrostatic attraction between oppositely charged ions. Electron transfer may create the ions, but the electron transfer itself is not the ionic bond.",
+          "image": "oppositely charged ion models snapping together only after an electron-transfer arrow has disappeared"
+        },
+        {
+          "term": "Cation",
+          "meaning": "A cation is a positively charged ion.",
+          "image": "a cat wearing a large plus badge"
+        },
+        {
+          "term": "Anion",
+          "meaning": "An anion is a negatively charged ion.",
+          "image": "an onion wearing a large minus badge"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C018",
+      "checkpoint_prompt": "",
+      "next_locus": "Hydrogen-Bond Bridge"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Hydrogen-Bond Bridge",
+      "title": "The Dotted Bridges That Never Stay Still",
+      "scene_kicker": "A hydrogen bond is weaker than a covalent bond but powerful when many act together.",
+      "location_description": "A suspended glass bridge crosses the museum atrium. Water molecules drift beneath its floor. Solid O–H links hold each molecule together while dotted lines appear and disappear between neighboring molecules.",
+      "scene_layout": {
+        "orientation": "One enlarged water molecule floats left, the bridge itself crosses center, and a moving crowd of water molecules fills the right-side projection.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Covalent O–H bonds",
+            "symbol": "—",
+            "description": "Solid links hold oxygen and hydrogen together inside each water molecule."
+          },
+          {
+            "position": "center",
+            "label": "Hydrogen-bond span",
+            "symbol": "···",
+            "description": "A dotted attraction forms between a partially positive hydrogen and an electronegative atom on a nearby partner."
+          },
+          {
+            "position": "right",
+            "label": "Liquid-water crowd",
+            "symbol": "≈",
+            "description": "Dotted hydrogen bonds continually form, break, and reform as molecules move."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Hydrogen bond",
+          "kind": "noncovalent attraction",
+          "visual": "a dotted bridge from a partially positive H toward an electronegative atom",
+          "job": "links suitable partial charges between molecules or within large molecules without becoming the covalent bond inside the molecule"
+        },
+        {
+          "name": "Moving water molecules",
+          "kind": "dynamic network",
+          "visual": "a crowd whose dotted connections flicker on and off",
+          "job": "shows that liquid-water hydrogen bonds continually form, break, and reform"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Hydrogen-Bond Bridge**. A suspended glass bridge crosses the museum atrium. Water molecules drift beneath its floor. Solid O–H links hold each molecule together while dotted lines appear and disappear between neighboring molecules. Your left is anchored by the Covalent O–H bonds, the Hydrogen-bond span sits directly in front of you, and the Liquid-water crowd fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Hydrogen-Bond Bridge**. A suspended glass bridge crosses the museum atrium. Water molecules drift beneath its floor. Solid O–H links hold each molecule together while dotted lines appear and disappear between neighboring molecules. Your left is anchored by the Covalent O–H bonds, the Hydrogen-bond span sits directly in front of you, and the Liquid-water crowd fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "Mina freezes one enlarged water molecule in the air. Its O–H links are solid covalent bonds. A neighboring molecule approaches, and a dotted line appears between a partially positive hydrogen and the electronegative oxygen of the neighbor. That dotted attraction is a **hydrogen bond**.",
+        "Hydrogen bonds are noncovalent attractions. They can form between separate molecules or between suitable groups within large biological molecules. In liquid water they are not permanent struts: the dotted connections continually **form, break, and reform** as the molecules move.",
+        "The carbon token runs across the flickering dotted bridge and lands inside a shipping crate stamped FROM ENVIRONMENT. Mina follows it into the biological-materials wing."
+      ],
+      "story_close": "The carbon token runs across the flickering dotted bridge and lands inside a shipping crate stamped FROM ENVIRONMENT. Mina follows it into the biological-materials wing.",
+      "object_ids": [
+        "MO-APBIO-U1-C021",
+        "MO-APBIO-U1-C022"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C021",
+          "term": "Hydrogen bond",
+          "story": "a partially positive H, still covalently attached to its own electronegative atom, reaching by a dashed handshake toward another electronegative atom",
+          "science": "A hydrogen bond is a noncovalent attraction involving a partially positive hydrogen atom covalently bonded to an electronegative atom and another electronegative atom. Hydrogen bonds can occur between molecules or within large biological molecules.",
+          "exact_name": true,
+          "hint": "a partially positive H, still covalently attached to its own electronegative atom, reaching by a dashed handshake toward another electronegative atom"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C022",
+          "term": "Dynamic water hydrogen bonds",
+          "story": "water partners repeatedly joining by dashed contacts, separating, and joining new partners",
+          "science": "In liquid water, hydrogen bonds continually form, break, and reform as water molecules move.",
+          "exact_name": false,
+          "hint": "water partners repeatedly joining by dashed contacts, separating, and joining new partners"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Hydrogen bond",
+          "meaning": "A hydrogen bond is a noncovalent attraction involving a partially positive hydrogen atom covalently bonded to an electronegative atom and another electronegative atom. Hydrogen bonds can occur between molecules or within large biological molecules.",
+          "image": "a partially positive H, still covalently attached to its own electronegative atom, reaching by a dashed handshake toward another electronegative atom"
+        },
+        {
+          "term": "Dynamic water hydrogen bonds",
+          "meaning": "In liquid water, hydrogen bonds continually form, break, and reform as water molecules move.",
+          "image": "water partners repeatedly joining by dashed contacts, separating, and joining new partners"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-C021",
+      "checkpoint_prompt": "What noncovalent attraction forms between a partially positive hydrogen and another electronegative atom?",
+      "next_locus": "Macromolecule Element Crates"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Macromolecule Element Crates",
+      "title": "The Atoms Life Has to Import",
+      "scene_kicker": "Cells cannot build biological molecules without matter from the environment.",
+      "location_description": "The bio wing looks like a loading dock. Crates of carbon dioxide, water, minerals, and nutrients arrive through a rolling door. Conveyor belts feed their atoms toward models of carbohydrates, proteins, lipids, and nucleic acids.",
+      "scene_layout": {
+        "orientation": "Incoming environmental crates line the left wall, sorting conveyors fill center, and four macromolecule assembly bins wait on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Environmental deliveries",
+            "symbol": "↓",
+            "description": "Bring atoms and molecules into the system."
+          },
+          {
+            "position": "center",
+            "label": "Atom-sorting conveyor",
+            "symbol": "C H O",
+            "description": "Separates useful atoms from incoming substances."
+          },
+          {
+            "position": "right",
+            "label": "Biomolecule bins",
+            "symbol": "4",
+            "description": "Receive atoms used to build carbohydrates, proteins, lipids, and nucleic acids."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Environmental matter",
+          "kind": "raw material",
+          "visual": "crates of gases, water, ions, and nutrients",
+          "job": "supplies the atoms and molecules organisms need to build new biological material"
+        },
+        {
+          "name": "C/H/O stream",
+          "kind": "common building atoms",
+          "visual": "three brightly labeled conveyor lanes",
+          "job": "shows the widespread use of carbon, hydrogen, and oxygen across major biological molecules"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Macromolecule Element Crates**. The bio wing looks like a loading dock. Crates of carbon dioxide, water, minerals, and nutrients arrive through a rolling door. Conveyor belts feed their atoms toward models of carbohydrates, proteins, lipids, and nucleic acids. Your left is anchored by the Environmental deliveries, the Atom-sorting conveyor sits directly in front of you, and the Biomolecule bins fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Macromolecule Element Crates**. The bio wing looks like a loading dock. Crates of carbon dioxide, water, minerals, and nutrients arrive through a rolling door. Conveyor belts feed their atoms toward models of carbohydrates, proteins, lipids, and nucleic acids. Your left is anchored by the Environmental deliveries, the Atom-sorting conveyor sits directly in front of you, and the Biomolecule bins fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "A cell cannot manufacture carbon atoms from nothing. The loading dock makes that limitation concrete: **atoms and molecules from the environment** provide the matter organisms use to grow, repair, reproduce, and build new molecules.",
+        "Three conveyor lanes—carbon, hydrogen, and oxygen—feed repeatedly into models of carbohydrates, proteins, lipids, and nucleic acids. Those elements are especially prevalent across the biological molecules you will study.",
+        "The carbon token finally slows beside a workbench where nitrogen, phosphorus, and sulfur tools are waiting for more specialized jobs."
+      ],
+      "story_close": "The carbon token finally slows beside a workbench where nitrogen, phosphorus, and sulfur tools are waiting for more specialized jobs.",
+      "object_ids": [
+        "MO-APBIO-U1-C023",
+        "MO-APBIO-U1-C024"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C023",
+          "term": "Environmental atoms and molecules",
+          "story": "a conveyor carrying atoms and molecules in from outside the building to a biomolecule assembly area",
+          "science": "Atoms and molecules from the environment are necessary to build new biological molecules.",
+          "exact_name": false,
+          "hint": "a conveyor carrying atoms and molecules in from outside the building to a biomolecule assembly area"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C024",
+          "term": "Carbon, hydrogen, oxygen",
+          "story": "three oversized C, H, and O blocks being delivered to carbohydrate, protein, lipid, and nucleic-acid crates",
+          "science": "Carbon, hydrogen, and oxygen are the most prevalent elements used to build carbohydrates, proteins, lipids, and nucleic acids.",
+          "exact_name": false,
+          "hint": "three oversized C, H, and O blocks being delivered to carbohydrate, protein, lipid, and nucleic-acid crates"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Environmental atoms and molecules",
+          "meaning": "Atoms and molecules from the environment are necessary to build new biological molecules.",
+          "image": "a conveyor carrying atoms and molecules in from outside the building to a biomolecule assembly area"
+        },
+        {
+          "term": "Carbon, hydrogen, oxygen",
+          "meaning": "Carbon, hydrogen, and oxygen are the most prevalent elements used to build carbohydrates, proteins, lipids, and nucleic acids.",
+          "image": "three oversized C, H, and O blocks being delivered to carbohydrate, protein, lipid, and nucleic-acid crates"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C023",
+      "checkpoint_prompt": "",
+      "next_locus": "Element-Role Workbench"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Element-Role Workbench",
+      "title": "Different Elements, Different Jobs",
+      "scene_kicker": "The final workbench ties elemental identity to the structures cells actually build.",
+      "location_description": "At the exit lab, a large molecular workbench is divided into three stations: sulfur tools on the left, phosphorus tools in the middle, and nitrogen tools on the right. The escaped carbon token rests in an empty slot at the front.",
+      "scene_layout": {
+        "orientation": "Sulfur is left, phosphorus center, nitrogen right, and the carbon-token slot sits directly in front of you.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Sulfur station",
+            "symbol": "S",
+            "description": "Shows sulfur entering selected amino-acid side chains and some proteins."
+          },
+          {
+            "position": "center",
+            "label": "Phosphorus station",
+            "symbol": "P",
+            "description": "Feeds phosphate groups into nucleic acids and phospholipid heads."
+          },
+          {
+            "position": "right",
+            "label": "Nitrogen station",
+            "symbol": "N",
+            "description": "Feeds nitrogen into amino acids/proteins and nitrogenous bases in nucleic acids."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Mina Park",
+          "kind": "guide",
+          "visual": "midnight-blue curator jacket, silver key ring, flashlight that projects electron shells",
+          "job": "keeps the escaped carbon token in sight and turns each exhibit into a close-up view of how atoms behave"
+        },
+        {
+          "name": "Sulfur",
+          "kind": "biological element",
+          "visual": "yellow atom tags clipped to selected amino-acid side chains",
+          "job": "occurs in some amino acids and therefore some proteins, but not every protein"
+        },
+        {
+          "name": "Phosphorus",
+          "kind": "biological element",
+          "visual": "phosphate tags moving toward DNA backbones and phospholipid heads",
+          "job": "contributes to nucleic acids and phospholipids through phosphate groups"
+        },
+        {
+          "name": "Nitrogen",
+          "kind": "biological element",
+          "visual": "blue atom tags entering amino groups and nitrogenous bases",
+          "job": "is part of amino acids/proteins and nucleic-acid bases"
+        }
+      ],
+      "story_open": "The next museum door clicks open and Mina Park ushers you into **Element-Role Workbench**. At the exit lab, a large molecular workbench is divided into three stations: sulfur tools on the left, phosphorus tools in the middle, and nitrogen tools on the right. The escaped carbon token rests in an empty slot at the front. Your left is anchored by the Sulfur station, the Phosphorus station sits directly in front of you, and the Nitrogen station fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+      "story_paragraphs": [
+        "The next museum door clicks open and Mina Park ushers you into **Element-Role Workbench**. At the exit lab, a large molecular workbench is divided into three stations: sulfur tools on the left, phosphorus tools in the middle, and nitrogen tools on the right. The escaped carbon token rests in an empty slot at the front. Your left is anchored by the Sulfur station, the Phosphorus station sits directly in front of you, and the Nitrogen station fixes the far side of the gallery. The escaped carbon token is already moving through that layout, so your eyes have a route to follow before the exhibit wakes up.",
+        "Mina picks up the sulfur tool first. **Sulfur** occurs in some amino acids, including cysteine and methionine, so it appears in some proteins but is not an invariant ingredient of every protein.",
+        "**Phosphorus** moves down the center track as phosphate groups. You see it enter nucleic-acid sugar-phosphate backbones and the phosphate-containing head region of phospholipids.",
+        "On the right, **nitrogen** enters amino-acid amino groups and protein backbones, then appears again in the nitrogenous bases of nucleic acids. The same element can therefore support different structures in different molecules.",
+        "Mina presses the escaped carbon token into the empty slot. The museum lights climb back on gallery by gallery: matter, elements, atomic structure, electron shells, bonding, and biological element roles now form one continuous route."
+      ],
+      "story_close": "Mina presses the escaped carbon token into the empty slot. The museum lights climb back on gallery by gallery: matter, elements, atomic structure, electron shells, bonding, and biological element roles now form one continuous route.",
+      "object_ids": [
+        "MO-APBIO-U1-C025",
+        "MO-APBIO-U1-C026",
+        "MO-APBIO-U1-C027",
+        "MO-APBIO-U1-C028"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-C025",
+          "term": "Sulfur in proteins",
+          "story": "a yellow S clasp attaching to selected protein parts while an EVERY PROTEIN stamp stays crossed out",
+          "science": "Sulfur occurs in some amino acids, including cysteine and methionine, so sulfur is present in some proteins but not every protein.",
+          "exact_name": false,
+          "hint": "a yellow S clasp attaching to selected protein parts while an EVERY PROTEIN stamp stays crossed out"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C026",
+          "term": "Phosphorus in phospholipids and nucleic acids",
+          "story": "a glowing P piece plugging into a phospholipid head and a nucleic-acid phosphate backbone",
+          "science": "Phosphorus is part of the phosphate groups in nucleic acids and the phosphate-containing head regions of phospholipids.",
+          "exact_name": false,
+          "hint": "a glowing P piece plugging into a phospholipid head and a nucleic-acid phosphate backbone"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C027",
+          "term": "Nitrogen in nucleic acids",
+          "story": "blue N pieces being placed into nucleic-acid components",
+          "science": "Nitrogen occurs in the nitrogenous bases of nucleic acids.",
+          "exact_name": false,
+          "hint": "blue N pieces being placed into nucleic-acid components"
+        },
+        {
+          "object_id": "MO-APBIO-U1-C028",
+          "term": "Nitrogen in proteins",
+          "story": "a second blue N piece being clamped into a protein-building station",
+          "science": "Nitrogen is present in the amino groups and peptide backbones of proteins because amino acids contain nitrogen.",
+          "exact_name": false,
+          "hint": "a second blue N piece being clamped into a protein-building station"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Sulfur in proteins",
+          "meaning": "Sulfur occurs in some amino acids, including cysteine and methionine, so sulfur is present in some proteins but not every protein.",
+          "image": "a yellow S clasp attaching to selected protein parts while an EVERY PROTEIN stamp stays crossed out"
+        },
+        {
+          "term": "Phosphorus in phospholipids and nucleic acids",
+          "meaning": "Phosphorus is part of the phosphate groups in nucleic acids and the phosphate-containing head regions of phospholipids.",
+          "image": "a glowing P piece plugging into a phospholipid head and a nucleic-acid phosphate backbone"
+        },
+        {
+          "term": "Nitrogen in nucleic acids",
+          "meaning": "Nitrogen occurs in the nitrogenous bases of nucleic acids.",
+          "image": "blue N pieces being placed into nucleic-acid components"
+        },
+        {
+          "term": "Nitrogen in proteins",
+          "meaning": "Nitrogen is present in the amino groups and peptide backbones of proteins because amino acids contain nitrogen.",
+          "image": "a second blue N piece being clamped into a protein-building station"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-C025",
+      "checkpoint_prompt": "",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}

@@ -1,0 +1,1192 @@
+{
+  "palace_id": "U8-J6",
+  "unit_id": "unit-8",
+  "palace_name": "Community Interaction District",
+  "story_title": "The District Where Every Relationship Left a Mark",
+  "tagline": "Eight fixed ecological stations, one shared community map, and one rule. Every relationship must leave a visible effect before it receives a name.",
+  "guide": {
+    "name": "Dr. Mira Sen",
+    "role": "ecological-systems field curator who accompanies the learner through all eight Unit 8 journeys",
+    "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+    "story_job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+  },
+  "premise": "A living district map keeps changing as species use habitat, overlap in niche, compete, consume, form close associations, and recover after disturbance. Dr. Mira Sen carries the same community map through eight locations so every label can be reconstructed from a visible ecological effect.",
+  "mission": "Travel the locked F2 route in order. Keep Species A, Species B, Species C, habitat layers, resource-use layers, abundance markers, and sign badges visible while separating habitat from niche, potential from realized niche, interaction effects from labels, competition from partitioning, consumer interactions from defenses, symbioses by sign, and succession by starting conditions.",
+  "finale": "The district becomes readable as one connected community system after the learner can explain why each map boundary, sign badge, abundance shift, resource-use band, disturbance mark, and succession path changed.",
+  "estimated_minutes": 31,
+  "scene_count": 8,
+  "checkpoint_count": 3,
+  "student_release": "DEVELOPER_PREVIEW_F4F",
+  "preview_release": true,
+  "narrative_design": "U8-F4F-NARRATIVE-1.0",
+  "learner_rule": "Keep one shared community map visible while changing one ecological relationship at a time. Habitat, niche, community, interaction signs, resource overlap, consumer effects, symbiosis signs, disturbance, and succession starting conditions remain physically distinct. Optional Quick Recall appears only three times.",
+  "route_orientation": "The district follows one continuous route through eight permanent locations in F2 order. Enter at Community Map Plaza and continue through Niche Envelope Chamber, Interaction Sign Network, Competition Resource Axis, Consumer-Defense Gallery, Symbiosis Sign Court, Disturbance-Succession Timeline, and Primary-Secondary Succession Fork. Every location fixes left, center, and right before the ecological state changes.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Community Map Plaza",
+      "short": "Community, habitat, and niche",
+      "floor": "three-layer plaza",
+      "symbol": "WHERE→HOW→WHO INTERACTS"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Niche Envelope Chamber",
+      "short": "Fundamental and realized niches",
+      "floor": "nested niche chamber",
+      "symbol": "POTENTIAL→FILTERS→REALIZED"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Interaction Sign Network",
+      "short": "Interspecific interactions",
+      "floor": "sign network",
+      "symbol": "EFFECT A + EFFECT B→NETWORK"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Competition Resource Axis",
+      "short": "Competition and partitioning",
+      "floor": "resource axis",
+      "symbol": "OVERLAP→COMPETITION→PARTITION"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Consumer-Defense Gallery",
+      "short": "Predation, herbivory, and defenses",
+      "floor": "consumer-defense corridor",
+      "symbol": "CONSUMPTION→DETECTION→DEFENSE"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Symbiosis Sign Court",
+      "short": "Symbiosis and facilitation",
+      "floor": "relationship court",
+      "symbol": "CLOSE ASSOCIATION→SIGNS→CLASSIFY"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Disturbance-Succession Timeline",
+      "short": "Disturbance and succession",
+      "floor": "timeline corridor",
+      "symbol": "DISTURBANCE→SEQUENCE→ABIOTIC FEEDBACK"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Primary-Secondary Succession Fork",
+      "short": "Primary and secondary succession",
+      "floor": "succession fork",
+      "symbol": "SOIL LEGACY→SUCCESSION TYPE"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U8-L39",
+      "locus": "Community Map Plaza",
+      "title": "The Map with Three Different Answers",
+      "scene_kicker": "At Community Map Plaza, reconstruct physical habitat layer → species resource-use/condition layer → interacting-population community layer and explain Community from the actual ecological mechanism.",
+      "location_description": "Community Map Plaza",
+      "scene_layout": {
+        "orientation": "Enter Community Map Plaza and stop at the shared landscape with species and resource layers. Keep physical habitat layer fixed on the left, species resource-use/condition layer as the working center, and interacting-population community layer fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "physical habitat layer",
+            "symbol": "L",
+            "description": "A conventional scientific representation of physical habitat layer, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "species resource-use/condition layer",
+            "symbol": "C",
+            "description": "The main scientific work model at Community Map Plaza, centered on the shared landscape with species and resource layers."
+          },
+          {
+            "position": "right",
+            "label": "interacting-population community layer",
+            "symbol": "R",
+            "description": "A conventional scientific representation of interacting-population community layer, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "physical habitat layer",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of physical habitat layer, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "species resource-use/condition layer",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Community Map Plaza, centered on the shared landscape with species and resource layers.",
+          "job": "Execute the defining action beginning with: Locate where a focal population lives to define habitat as its physical and biological environment."
+        },
+        {
+          "name": "interacting-population community layer",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of interacting-population community layer, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You enter Community Map Plaza beneath a broad glass roof that makes the whole district visible at once. On your left, a physical habitat layer shows a patch of woodland with trunks, canopy, shaded ground, water, temperature markers, and nesting sites. Ahead at the center, a transparent resource-use layer can slide over that same woodland and reveal where insects, seeds, shelter, light, moisture, and temperature ranges are used. On your right, a community layer holds three persistent population markers, Species A, an insect-eating warbler population, Species B, a second insect-eating warbler population, and Species C, a hawk population. Dr. Mira Sen places the shared community map on a waist-high rail. The species identities, habitat layers, resource layers, abundance markers, and interaction-sign badges will travel with you through every district room.",
+      "story_paragraphs": [
+        "You enter Community Map Plaza beneath a broad glass roof that makes the whole district visible at once. On your left, a physical habitat layer shows a patch of woodland with trunks, canopy, shaded ground, water, temperature markers, and nesting sites. Ahead at the center, a transparent resource-use layer can slide over that same woodland and reveal where insects, seeds, shelter, light, moisture, and temperature ranges are used. On your right, a community layer holds three persistent population markers, Species A, an insect-eating warbler population, Species B, a second insect-eating warbler population, and Species C, a hawk population. Dr. Mira Sen places the shared community map on a waist-high rail. The species identities, habitat layers, resource layers, abundance markers, and interaction-sign badges will travel with you through every district room.",
+        "Mira asks a deceptively simple question. Where does Species A live. You point to the woodland on the left. The bird population uses trees, air, water, prey, shelter, temperature conditions, and the presence of other organisms. The whole physical and biological environment in which an organism or population lives is its **Habitat**. Mira outlines the occupied woodland in green, then leaves the outline fixed. Nothing on the center layer has moved yet. The green boundary tells you where the population lives. It does not yet tell you how the species uses the place.",
+        "Now the center layer descends. It shows that Species A searches mainly among particular canopy branches, feeds on certain available insects, nests within a narrower height range, and persists only across a limited range of temperature and moisture conditions in this model landscape. These patterns do a different job from the green habitat boundary. They describe the species' use of biotic and abiotic resources and the conditions under which it can persist. Mira labels that ecological role and set of requirements the **Ecological niche**. The habitat answers where the population lives. The niche answers how it uses resources, tolerates conditions, and participates in the ecological system.",
+        "The right wall then wakes. Species B and Species C appear beside Species A, each with its own population marker. The display does not count them as one population. They belong to different species. Because these populations live close enough to interact, the right panel names the set a **Community**. Mira draws thin connection lines among them where their lives overlap. A community is made of populations of different species, and the interactions among those populations can alter access to food, space, shelter, and other resources.",
+        "A second readout appears above the right panel. It records which species are present and how their abundances are distributed. Mira explains that community structure includes species composition and diversity. Those properties can later be quantified with measures such as Simpson's diversity index, although the index itself belongs to another part of the district. For now, the important point is that community structure describes the interacting set on the right. It does not erase the habitat boundary on the left or the niche pattern in the center.",
+        "Mira taps the tablet and hides every label. The green habitat outline remains on the left, the resource-use pattern remains in the center, and the three interacting populations remain on the right. She asks you to reconstruct the three meanings from position alone. Where lives on the left. How resources and conditions are used in the center. Which populations interact on the right. Only when those three answers stay separate does a door open at the far side of the plaza. Through it you can see two nested envelopes, one large and one much smaller. The same Species A marker moves with you. The next room will ask why the space a species could use can be larger than the space it actually occupies."
+      ],
+      "story_close": "Mira taps the tablet and hides every label. The green habitat outline remains on the left, the resource-use pattern remains in the center, and the three interacting populations remain on the right. She asks you to reconstruct the three meanings from position alone. Where lives on the left. How resources and conditions are used in the center. Which populations interact on the right. Only when those three answers stay separate does a door open at the far side of the plaza. Through it you can see two nested envelopes, one large and one much smaller. The same Species A marker moves with you. The next room will ask why the space a species could use can be larger than the space it actually occupies.",
+      "object_ids": [
+        "U8-K-169",
+        "U8-K-035",
+        "U8-K-170",
+        "U8-K-171"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-169",
+          "term": "Community",
+          "story": "the the shared landscape with species and resource layers where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "A biological community is the set of populations of different species living close enough to interact.",
+          "exact_name": true,
+          "hint": "the shared landscape with species and resource layers",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-035",
+          "term": "Community structure and diversity",
+          "story": "the the shared landscape with species and resource layers where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Community structure includes species composition and diversity and can be quantified with measures such as Simpson’s diversity index.",
+          "exact_name": false,
+          "hint": "the shared landscape with species and resource layers",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-170",
+          "term": "Habitat",
+          "story": "the the shared landscape with species and resource layers where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "A habitat is the physical and biological environment in which an organism or population lives.",
+          "exact_name": true,
+          "hint": "the shared landscape with species and resource layers",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-171",
+          "term": "Ecological niche",
+          "story": "the the shared landscape with species and resource layers where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "An ecological niche describes how a species uses biotic and abiotic resources and the conditions under which it persists.",
+          "exact_name": true,
+          "hint": "the shared landscape with species and resource layers",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-035",
+          "term": "Community structure and diversity",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD20: Keep ecological levels nested and do not collapse population/community/ecosystem. Keep Ecological levels, Population ecology, Community, Ecosystem physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD29: Separate where an organism lives from how it uses resources/conditions and interacts. Keep Habitat, Ecological niche physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "Niche Envelope Chamber",
+      "f3_scene_brief_id": "F3-U8-L39",
+      "narrative_word_count": 626
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U8-L40",
+      "locus": "Niche Envelope Chamber",
+      "title": "The Room That Shrinks Without Moving a Wall",
+      "scene_kicker": "At Niche Envelope Chamber, reconstruct fundamental-condition/resource envelope → biotic-constraint filters → realized occupied envelope and explain Fundamental niche from the actual ecological mechanism.",
+      "location_description": "Niche Envelope Chamber",
+      "scene_layout": {
+        "orientation": "Enter Niche Envelope Chamber and stop at the nested potential-versus-occupied envelope. Keep fundamental-condition/resource envelope fixed on the left, biotic-constraint filters as the working center, and realized occupied envelope fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "fundamental-condition/resource envelope",
+            "symbol": "L",
+            "description": "A conventional scientific representation of fundamental-condition/resource envelope, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "biotic-constraint filters",
+            "symbol": "C",
+            "description": "The main scientific work model at Niche Envelope Chamber, centered on the nested potential-versus-occupied envelope."
+          },
+          {
+            "position": "right",
+            "label": "realized occupied envelope",
+            "symbol": "R",
+            "description": "A conventional scientific representation of realized occupied envelope, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "fundamental-condition/resource envelope",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of fundamental-condition/resource envelope, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "biotic-constraint filters",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Niche Envelope Chamber, centered on the nested potential-versus-occupied envelope.",
+          "job": "Execute the defining action beginning with: Map the full potential range of conditions/resources the species could use without constraining biotic interactions."
+        },
+        {
+          "name": "realized occupied envelope",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of realized occupied envelope, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You enter the Niche Envelope Chamber with the shared community map still lit. On your left, a large transparent envelope surrounds a grid of temperature, moisture, nesting height, and food conditions that Species A could potentially use. Ahead at the center, three movable biotic filters labeled competitor, predator, and interacting species stand on tracks. On your right, a second envelope waits inside the first, empty until the filters are applied. Mira locks the outer envelope in place before anyone touches the filters. The room is designed so the potential conditions remain visible even after the occupied conditions become smaller.",
+      "story_paragraphs": [
+        "You enter the Niche Envelope Chamber with the shared community map still lit. On your left, a large transparent envelope surrounds a grid of temperature, moisture, nesting height, and food conditions that Species A could potentially use. Ahead at the center, three movable biotic filters labeled competitor, predator, and interacting species stand on tracks. On your right, a second envelope waits inside the first, empty until the filters are applied. Mira locks the outer envelope in place before anyone touches the filters. The room is designed so the potential conditions remain visible even after the occupied conditions become smaller.",
+        "The left envelope is tested first with the other species removed from the model. Species A survives and reproduces across a broad combination of conditions and resources. Mira does not claim that the bird actually occupies every one of those conditions in nature. The room is asking a controlled question about potential use when constraining biotic interactions are absent. That potential range is the species' **Fundamental niche**. The outer envelope therefore represents what the species could use under the stated conditions if competition, predation, and other restricting interactions were taken away.",
+        "Mira slides the competitor filter into the center track. Some resource combinations turn dark because Species B reduces access to the same insects in those places. She adds the predator filter, and another portion of the envelope becomes costly to occupy because exposure to Species C is higher there. The potential range on the left does not disappear. The biotic filters have changed which portion is actually occupied in the model.",
+        "The right envelope now fills only within the surviving portion of the outer shape. Mira gives that occupied subset its name. The **Realized niche** is the portion of the fundamental niche actually occupied after effects of competition, predation, and other interactions. You can see the relationship immediately. The realized envelope sits inside the fundamental envelope. The room is not saying that one species has two unrelated niches. It shows one potential range and the portion expressed under the current web of interactions.",
+        "Mira briefly removes the competitor filter while leaving the predator filter in place. The right envelope expands in one direction but not another. When the competitor returns, it contracts again. The demonstration prevents a common mistake. A realized niche is not simply a preferred location painted on a map. Its boundaries can reflect interactions as well as physical conditions and resource availability. Change the interaction pattern and the occupied portion can change even when the outer physical chamber has not moved.",
+        "Before the exit opens, Mira asks you to place one hand on the large left envelope and the other on the smaller right envelope. Potential without constraining biotic interactions on the left. Occupied after those interactions on the right. The competitor and predator filters stay between them. When you can explain why the smaller shape is nested inside the larger one, the next door unlocks. Beyond it, the district map has been converted into a glowing sign board covered with plus signs, minus signs, zeros, and population arrows. The next problem is no longer where a species can live. It is what one species does to another."
+      ],
+      "story_close": "Before the exit opens, Mira asks you to place one hand on the large left envelope and the other on the smaller right envelope. Potential without constraining biotic interactions on the left. Occupied after those interactions on the right. The competitor and predator filters stay between them. When you can explain why the smaller shape is nested inside the larger one, the next door unlocks. Beyond it, the district map has been converted into a glowing sign board covered with plus signs, minus signs, zeros, and population arrows. The next problem is no longer where a species can live. It is what one species does to another.",
+      "object_ids": [
+        "U8-K-172",
+        "U8-K-173"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-172",
+          "term": "Fundamental niche",
+          "story": "the the nested potential-versus-occupied envelope where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "A fundamental niche is the potential range of conditions and resources a species could use in the absence of constraining biotic interactions.",
+          "exact_name": true,
+          "hint": "the nested potential-versus-occupied envelope",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-173",
+          "term": "Realized niche",
+          "story": "the the nested potential-versus-occupied envelope where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "A realized niche is the portion of the fundamental niche actually occupied after effects of competition, predation, and other interactions.",
+          "exact_name": true,
+          "hint": "the nested potential-versus-occupied envelope",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD30: Separate potential niche from the portion occupied under biotic constraints. Keep Fundamental niche, Realized niche physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-172",
+      "checkpoint_prompt": "Without looking back, identify or explain Fundamental niche from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "A fundamental niche is the potential range of conditions and resources a species could use in the absence of constraining biotic interactions.",
+      "next_locus": "Interaction Sign Network",
+      "f3_scene_brief_id": "F3-U8-L40",
+      "narrative_word_count": 531
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U8-L41",
+      "locus": "Interaction Sign Network",
+      "title": "The Board That Refused to Name the Relationship First",
+      "scene_kicker": "At Interaction Sign Network, reconstruct species A effect column → species B effect column → network and population/resource consequence panel and explain Interspecific interaction from the actual ecological mechanism.",
+      "location_description": "Interaction Sign Network",
+      "scene_layout": {
+        "orientation": "Enter Interaction Sign Network and stop at the +/−/0 sign matrix linked to the food-web map. Keep species A effect column fixed on the left, species B effect column as the working center, and network and population/resource consequence panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "species A effect column",
+            "symbol": "L",
+            "description": "A conventional scientific representation of species A effect column, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "species B effect column",
+            "symbol": "C",
+            "description": "The main scientific work model at Interaction Sign Network, centered on the +/−/0 sign matrix linked to the food-web map."
+          },
+          {
+            "position": "right",
+            "label": "network and population/resource consequence panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of network and population/resource consequence panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "species A effect column",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of species A effect column, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "species B effect column",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Interaction Sign Network, centered on the +/−/0 sign matrix linked to the food-web map.",
+          "job": "Execute the defining action beginning with: Assign effects on each species separately using positive, negative, or approximately neutral signs."
+        },
+        {
+          "name": "network and population/resource consequence panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of network and population/resource consequence panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You step into the Interaction Sign Network and the shared community map expands across the floor. On your left, a tall column records the effect of an encounter on Species A. Ahead at the center, a matching column records the effect on Species B. On your right, a network panel shows changes in resource access, abundance, and indirect effects through connected populations. Above the floor map, empty badges wait for plus, minus, or approximately zero signs. Mira keeps every relationship name covered. The room will not let you call an interaction competition, predation, or mutualism until you have described what happens to each species.",
+      "story_paragraphs": [
+        "You step into the Interaction Sign Network and the shared community map expands across the floor. On your left, a tall column records the effect of an encounter on Species A. Ahead at the center, a matching column records the effect on Species B. On your right, a network panel shows changes in resource access, abundance, and indirect effects through connected populations. Above the floor map, empty badges wait for plus, minus, or approximately zero signs. Mira keeps every relationship name covered. The room will not let you call an interaction competition, predation, or mutualism until you have described what happens to each species.",
+        "The first pair shares a limiting insect resource. Species A gains less food when Species B is present, and Species B also gains less food when Species A is present. A minus sign appears in the left column and another minus sign appears in the center. The right panel shows both populations losing access to part of the available resource. The board is recording effects, not intentions. When individuals of different species interact in ways that can affect fitness or abundance, the relationship is an **Interspecific interaction**.",
+        "Mira switches to a consumer-resource pair. One population gains energy and matter by consuming another, while the consumed population experiences a negative effect. The left and center columns now carry opposite signs. The right panel traces the transfer of energy and matter and shows how the interaction can change population abundance. The signs alone still do not explain the mechanism. They summarize the direction of the effects once the mechanism has been observed.",
+        "A third display reveals why the right network panel matters. A predator reduces the abundance of an herbivore population. With fewer herbivores consuming vegetation, plant biomass increases. The predator has a direct effect on the herbivore and an indirect effect on the plants. Mira highlights the multi-step change as an example of a trophic cascade. Ecological interactions can produce positive or negative effects, and their consequences can propagate through a network. Cooperation and niche partitioning can also alter access to resources without fitting a simple predator-prey sequence.",
+        "The board then arranges several broad relationship models along the floor. Competition, predation, and symbioses such as parasitism, mutualism, and commensalism can all influence population dynamics. Mira points back to the sign columns. The labels are useful only after you know what each species gains, loses, or does not measurably change. Two relationships can share a sign pattern while differing in mechanism. A predator-prey interaction and a parasite-host interaction can both have a positive effect on one species and a negative effect on the other, yet one involves killing and consuming prey while the other can involve a close association that reduces host fitness.",
+        "Mira stores the sign badges on the community map rather than leaving them in the room. Species A and Species B keep their identities. Their resource layers remain visible. The next door opens into a long hall with a single food track running down the middle. Two species markers are already standing on the same section of that track. The sign board gives you the outcome pattern. The next room will make you explain what happens when both species depend on the same limiting resource and whether coexistence requires their resource use to remain identical."
+      ],
+      "story_close": "Mira stores the sign badges on the community map rather than leaving them in the room. Species A and Species B keep their identities. Their resource layers remain visible. The next door opens into a long hall with a single food track running down the middle. Two species markers are already standing on the same section of that track. The sign board gives you the outcome pattern. The next room will make you explain what happens when both species depend on the same limiting resource and whether coexistence requires their resource use to remain identical.",
+      "object_ids": [
+        "U8-K-174",
+        "U8-K-037",
+        "U8-K-038",
+        "U8-K-039"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-174",
+          "term": "Interspecific interaction",
+          "story": "the the +/−/0 sign matrix linked to the food-web map where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "An interspecific interaction is an interaction between individuals of different species that can affect the fitness or abundance of one or both species.",
+          "exact_name": true,
+          "hint": "the +/−/0 sign matrix linked to the food-web map",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-037",
+          "term": "Interactions affect resource access",
+          "story": "the the +/−/0 sign matrix linked to the food-web map where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Interactions among species influence access to energy and matter.",
+          "exact_name": false,
+          "hint": "the +/−/0 sign matrix linked to the food-web map",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-038",
+          "term": "Interaction models",
+          "story": "the the +/−/0 sign matrix linked to the food-web map where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Ecological interactions can have positive or negative effects and include predator-prey relationships, cooperation, trophic cascades, and niche partitioning.",
+          "exact_name": false,
+          "hint": "the +/−/0 sign matrix linked to the food-web map",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-039",
+          "term": "Competition, predation, symbiosis",
+          "story": "the the +/−/0 sign matrix linked to the food-web map where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Competition, predation, and symbioses such as parasitism, mutualism, and commensalism can drive population dynamics.",
+          "exact_name": false,
+          "hint": "the +/−/0 sign matrix linked to the food-web map",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-037",
+          "term": "Interactions affect resource access",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-038",
+          "term": "Interaction models",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-039",
+          "term": "Competition, predation, symbiosis",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "Competition Resource Axis",
+      "f3_scene_brief_id": "F3-U8-L41",
+      "narrative_word_count": 550
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U8-L42",
+      "locus": "Competition Resource Axis",
+      "title": "The Track with Too Little Room for Two Identical Claims",
+      "scene_kicker": "At Competition Resource Axis, reconstruct species A resource-use range → species B resource-use range → exclusion or partitioned-use outcome and explain Competition from the actual ecological mechanism.",
+      "location_description": "Competition Resource Axis",
+      "scene_layout": {
+        "orientation": "Enter Competition Resource Axis and stop at the shared limiting-resource track. Keep species A resource-use range fixed on the left, species B resource-use range as the working center, and exclusion or partitioned-use outcome fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "species A resource-use range",
+            "symbol": "L",
+            "description": "A conventional scientific representation of species A resource-use range, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "species B resource-use range",
+            "symbol": "C",
+            "description": "The main scientific work model at Competition Resource Axis, centered on the shared limiting-resource track."
+          },
+          {
+            "position": "right",
+            "label": "exclusion or partitioned-use outcome",
+            "symbol": "R",
+            "description": "A conventional scientific representation of exclusion or partitioned-use outcome, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "species A resource-use range",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of species A resource-use range, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "species B resource-use range",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Competition Resource Axis, centered on the shared limiting-resource track.",
+          "job": "Execute the defining action beginning with: Place two species on the same limiting-resource axis and show the −/− consequence of reduced access for both."
+        },
+        {
+          "name": "exclusion or partitioned-use outcome",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of exclusion or partitioned-use outcome, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You enter the Competition Resource Axis beside the same community map. On your left, Species A occupies a marked range along a track representing a limiting insect resource. Ahead at the center, Species B occupies an overlapping range on that same track. On your right, two outcome lanes wait behind glass, one labeled exclusion under the modeled conditions and the other labeled partitioned resource use. Mira freezes the total resource supply. The problem is now deliberately narrow. Two species are using the same limiting resource, and the room will change only the degree and pattern of overlap.",
+      "story_paragraphs": [
+        "You enter the Competition Resource Axis beside the same community map. On your left, Species A occupies a marked range along a track representing a limiting insect resource. Ahead at the center, Species B occupies an overlapping range on that same track. On your right, two outcome lanes wait behind glass, one labeled exclusion under the modeled conditions and the other labeled partitioned resource use. Mira freezes the total resource supply. The problem is now deliberately narrow. Two species are using the same limiting resource, and the room will change only the degree and pattern of overlap.",
+        "When the two resource-use ranges overlap strongly, every feeding interval shows the same basic consequence. Species A removes some resource that Species B could have used, and Species B removes some resource that Species A could have used. Both experience reduced access relative to what they would have obtained alone. The sign badge reads minus and minus. Only after that pattern is visible does Mira name the interaction **Competition**. Competition is a negative effect on both participants when species or individuals use a shared limiting resource and each can reduce the other's access to it.",
+        "The room next holds the niches effectively identical and keeps the environmental conditions stable within the model. The resource track remains limiting. One population gradually loses access until its abundance drops out of the modeled site. Mira places a caution strip across the outcome window before naming the principle. Under stable conditions, species with effectively identical niches that compete for the same limiting resource cannot indefinitely coexist in that same way. One may be excluded or the niches may diverge. That conditional principle is **Competitive exclusion**. The room never says that any two competitors inevitably drive one another extinct. The conclusion depends on strong niche overlap, a limiting resource, and the ecological conditions being considered.",
+        "Mira resets the populations to their starting abundances and unlocks the second outcome lane. This time Species A feeds mostly in the upper canopy while Species B feeds mostly lower down. In a second trial, their feeding times differ. In a third, they use different prey sizes. The total overlap falls, so direct competition for the same resource decreases. This differentiation in resource use is **Resource partitioning**, also called niche partitioning. The map shows coexistence with less direct competition because the species use space, time, or resource type differently.",
+        "Mira refuses to add an evolutionary-history badge to the display. The present pattern alone does not prove exactly how it arose. Observed resource partitioning can reflect ecological processes, evolutionary processes, or both. The room lets you describe the current pattern with confidence while keeping historical explanation tied to evidence. Species A and Species B now leave the track with different resource-use bands drawn onto the shared community map.",
+        "The far wall slides open to reveal a darker gallery where a hawk silhouette passes over prey, a caterpillar cuts a leaf, and warning-pattern panels flash beside a tree-bark wall. Mira keeps the minus-minus competition badge on the map as you walk forward. The next room changes the mechanism. One participant will benefit while a prey organism or plant tissue experiences a cost, and the community will answer with defenses that alter detection or predator learning."
+      ],
+      "story_close": "The far wall slides open to reveal a darker gallery where a hawk silhouette passes over prey, a caterpillar cuts a leaf, and warning-pattern panels flash beside a tree-bark wall. Mira keeps the minus-minus competition badge on the map as you walk forward. The next room changes the mechanism. One participant will benefit while a prey organism or plant tissue experiences a cost, and the community will answer with defenses that alter detection or predator learning.",
+      "object_ids": [
+        "U8-K-175",
+        "U8-K-176",
+        "U8-K-177"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-175",
+          "term": "Competition",
+          "story": "the the shared limiting-resource track where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Competition is a −/− interaction in which species or individuals use a shared limiting resource and each can reduce the other’s access to that resource.",
+          "exact_name": true,
+          "hint": "the shared limiting-resource track",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-176",
+          "term": "Competitive exclusion",
+          "story": "the the shared limiting-resource track where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Under stable conditions, species with effectively identical niches competing for the same limiting resource cannot indefinitely coexist; one may be excluded or niches may diverge.",
+          "exact_name": true,
+          "hint": "the shared limiting-resource track",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-177",
+          "term": "Resource partitioning / niche partitioning",
+          "story": "the the shared limiting-resource track where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Resource partitioning is differentiation in resource use that reduces direct competition among coexisting species; observed partitioning can reflect ecological and evolutionary processes.",
+          "exact_name": true,
+          "hint": "the shared limiting-resource track",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-016: Canonical lock includes same limiting resource/niche and stable-condition qualifications.",
+        "Resolved F1 guard RF-U8-017: Lock defines the ecological pattern and allows ecological/evolutionary origins.",
+        "Discrimination requirement U8-MD31: Discriminate interaction mechanism and fitness signs. Keep Competition, Predation, Symbiosis physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-175",
+      "checkpoint_prompt": "Without looking back, identify or explain Competition from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Competition is a −/− interaction in which species or individuals use a shared limiting resource and each can reduce the other’s access to that resource.",
+      "next_locus": "Consumer-Defense Gallery",
+      "f3_scene_brief_id": "F3-U8-L42",
+      "narrative_word_count": 540
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U8-L43",
+      "locus": "Consumer-Defense Gallery",
+      "title": "The Corridor Where Being Seen Changed the Outcome",
+      "scene_kicker": "At Consumer-Defense Gallery, reconstruct consumer-resource encounter → capture/consumption and detection pathway → cryptic/Batesian/Müllerian defense comparison and explain Predation from the actual ecological mechanism.",
+      "location_description": "Consumer-Defense Gallery",
+      "scene_layout": {
+        "orientation": "Enter Consumer-Defense Gallery and stop at the prey/plant and warning-signal comparison corridor. Keep consumer-resource encounter fixed on the left, capture/consumption and detection pathway as the working center, and cryptic/Batesian/Müllerian defense comparison fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "consumer-resource encounter",
+            "symbol": "L",
+            "description": "A conventional scientific representation of consumer-resource encounter, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "capture/consumption and detection pathway",
+            "symbol": "C",
+            "description": "The main scientific work model at Consumer-Defense Gallery, centered on the prey/plant and warning-signal comparison corridor."
+          },
+          {
+            "position": "right",
+            "label": "cryptic/Batesian/Müllerian defense comparison",
+            "symbol": "R",
+            "description": "A conventional scientific representation of cryptic/Batesian/Müllerian defense comparison, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "consumer-resource encounter",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of consumer-resource encounter, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "capture/consumption and detection pathway",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Consumer-Defense Gallery, centered on the prey/plant and warning-signal comparison corridor.",
+          "job": "Execute the defining action beginning with: Separate predation, where prey are killed and consumed, from herbivory, where plant or algal tissue is consumed."
+        },
+        {
+          "name": "cryptic/Batesian/Müllerian defense comparison",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of cryptic/Batesian/Müllerian defense comparison, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You enter the Consumer-Defense Gallery as the shared community map locks into a side rail. On your left, a consumer-resource encounter display shows a hawk approaching a small prey animal and a caterpillar approaching a leaf. Ahead at the center, a detection and consumption pathway follows what happens after the consumer finds its resource. On your right, three comparison panels show a bark-matching organism, a harmless mimic beside a defended model, and two defended species sharing a warning pattern. Mira turns off every label so the difference between killing prey, eating plant tissue, avoiding detection, and manipulating predator recognition has to be visible first.",
+      "story_paragraphs": [
+        "You enter the Consumer-Defense Gallery as the shared community map locks into a side rail. On your left, a consumer-resource encounter display shows a hawk approaching a small prey animal and a caterpillar approaching a leaf. Ahead at the center, a detection and consumption pathway follows what happens after the consumer finds its resource. On your right, three comparison panels show a bark-matching organism, a harmless mimic beside a defended model, and two defended species sharing a warning pattern. Mira turns off every label so the difference between killing prey, eating plant tissue, avoiding detection, and manipulating predator recognition has to be visible first.",
+        "The hawk display activates. The predator captures, kills, and consumes the prey. The consumer gains food while the prey experiences the lethal cost. Mira names this **Predation**, a positive-negative interaction in which a predator kills and consumes prey. She then activates the caterpillar display. The caterpillar removes part of a leaf, gaining food while the plant loses tissue. The plant is not treated as prey that must be killed. This is **Herbivory**, a positive-negative interaction in which an animal consumes plant or algal tissue. Both interactions involve consumption, yet the biological relationship to the resource differs.",
+        "At the first right-hand panel, a moth-like model nearly disappears against bark because its colors and pattern match the background. The predator's detection rate drops before any chase begins. Mira names the mechanism **Cryptic coloration**. It reduces detection by causing an organism to blend with its background. The defense acts at the detection step. It does not make the organism poisonous, and it does not require another species to serve as a model.",
+        "The second panel shows a harmless, palatable insect next to a defended insect with a conspicuous warning pattern. A predator that has learned to avoid the defended model also hesitates when it encounters the harmless look-alike. Mira labels the relationship **Batesian mimicry**. A harmless or palatable species resembles a harmful or unpalatable species and gains protection from predators. The protection depends on resemblance to a defended model. The mimic itself does not become defended merely by looking similar.",
+        "The third panel looks similar at first, but Mira asks you to inspect the defense badges. Both species are harmful or unpalatable. Their warning patterns converge, so predator learning about one can reinforce avoidance of the other. This is **Müllerian mimicry**. Multiple harmful or unpalatable species converge on similar warning signals. Mira places the Batesian and Müllerian panels side by side. Harmless mimic plus defended model on one side. Multiple defended species on the other. The bright warning colors may look alike, but the ecological roles are different.",
+        "The gallery lights return to the shared community map. Competition from the previous room carried a minus-minus pattern. Predation and herbivory here carry a positive-negative pattern tied to consumption. The defense panels alter whether an encounter proceeds to capture or consumption. Mira stores all five mechanisms as separate icons, then opens a courtyard beyond the gallery. There, pairs of species remain close together long enough that one interaction cannot be understood as a single chase or feeding event. Plus, minus, and zero signs are already engraved into the floor. The next task is to classify close relationships by what happens to each partner without assuming every close association benefits both."
+      ],
+      "story_close": "The gallery lights return to the shared community map. Competition from the previous room carried a minus-minus pattern. Predation and herbivory here carry a positive-negative pattern tied to consumption. The defense panels alter whether an encounter proceeds to capture or consumption. Mira stores all five mechanisms as separate icons, then opens a courtyard beyond the gallery. There, pairs of species remain close together long enough that one interaction cannot be understood as a single chase or feeding event. Plus, minus, and zero signs are already engraved into the floor. The next task is to classify close relationships by what happens to each partner without assuming every close association benefits both.",
+      "object_ids": [
+        "U8-K-178",
+        "U8-K-179",
+        "U8-K-180",
+        "U8-K-181",
+        "U8-K-182"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-178",
+          "term": "Predation",
+          "story": "the the prey/plant and warning-signal comparison corridor where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Predation is a +/− interaction in which a predator kills and consumes prey.",
+          "exact_name": true,
+          "hint": "the prey/plant and warning-signal comparison corridor",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-179",
+          "term": "Cryptic coloration",
+          "story": "the the prey/plant and warning-signal comparison corridor where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Cryptic coloration reduces detection by causing an organism to blend with its background.",
+          "exact_name": true,
+          "hint": "the prey/plant and warning-signal comparison corridor",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-180",
+          "term": "Batesian mimicry",
+          "story": "the the prey/plant and warning-signal comparison corridor where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Batesian mimicry occurs when a harmless or palatable species resembles a harmful or unpalatable species and gains protection from predators.",
+          "exact_name": true,
+          "hint": "the prey/plant and warning-signal comparison corridor",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-181",
+          "term": "Müllerian mimicry",
+          "story": "the the prey/plant and warning-signal comparison corridor where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Müllerian mimicry occurs when multiple harmful or unpalatable species converge on similar warning signals.",
+          "exact_name": true,
+          "hint": "the prey/plant and warning-signal comparison corridor",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-182",
+          "term": "Herbivory",
+          "story": "the the prey/plant and warning-signal comparison corridor where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Herbivory is a +/− interaction in which an animal consumes plant or algal tissue.",
+          "exact_name": true,
+          "hint": "the prey/plant and warning-signal comparison corridor",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD31: Discriminate interaction mechanism and fitness signs. Keep Competition, Predation, Symbiosis physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD32: Separate a harmless/palatable mimic of a defended model from convergence among defended species. Keep Batesian mimicry, Müllerian mimicry physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "Symbiosis Sign Court",
+      "f3_scene_brief_id": "F3-U8-L43",
+      "narrative_word_count": 549
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U8-L44",
+      "locus": "Symbiosis Sign Court",
+      "title": "The Court Where Close Did Not Mean Friendly",
+      "scene_kicker": "At Symbiosis Sign Court, reconstruct species 1 effect → species 2 effect → relationship classification and facilitation panel and explain Symbiosis from the actual ecological mechanism.",
+      "location_description": "Symbiosis Sign Court",
+      "scene_layout": {
+        "orientation": "Enter Symbiosis Sign Court and stop at the +/−/0 relationship board. Keep species 1 effect fixed on the left, species 2 effect as the working center, and relationship classification and facilitation panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "species 1 effect",
+            "symbol": "L",
+            "description": "A conventional scientific representation of species 1 effect, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "species 2 effect",
+            "symbol": "C",
+            "description": "The main scientific work model at Symbiosis Sign Court, centered on the +/−/0 relationship board."
+          },
+          {
+            "position": "right",
+            "label": "relationship classification and facilitation panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of relationship classification and facilitation panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "species 1 effect",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of species 1 effect, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "species 2 effect",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Symbiosis Sign Court, centered on the +/−/0 relationship board.",
+          "job": "Execute the defining action beginning with: Define symbiosis first as a close, often long-term interspecific interaction without assigning benefit signs yet."
+        },
+        {
+          "name": "relationship classification and facilitation panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of relationship classification and facilitation panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You enter Symbiosis Sign Court with the shared community map hanging above the floor. On your left, a column records the effect on Species 1. Ahead at the center, a second column records the effect on Species 2. On your right, three relationship chambers and a separate facilitation lane wait for classification. A tick and host model, a plant root with fungal partners, and an epiphytic plant resting on a tree branch stand behind transparent screens. Mira asks you to ignore their familiar names at first. The court cares about closeness, duration, and measured effects before it cares about labels.",
+      "story_paragraphs": [
+        "You enter Symbiosis Sign Court with the shared community map hanging above the floor. On your left, a column records the effect on Species 1. Ahead at the center, a second column records the effect on Species 2. On your right, three relationship chambers and a separate facilitation lane wait for classification. A tick and host model, a plant root with fungal partners, and an epiphytic plant resting on a tree branch stand behind transparent screens. Mira asks you to ignore their familiar names at first. The court cares about closeness, duration, and measured effects before it cares about labels.",
+        "Mira begins with the general relationship. When two species live in a close, often long-term ecological association, the court calls the relationship **Symbiosis**. That word alone does not tell you whether either partner benefits or is harmed. Mira leaves the sign columns blank to make that point visible. Close association is the starting description. The effects still have to be measured.",
+        "The tick model activates. The parasite gains access to resources from the host while the host's fitness is reduced. A plus appears on the parasite side and a minus on the host side. The right chamber lights **Parasitism**. Parasitism is a positive-negative symbiosis in which a parasite benefits while reducing host fitness. The host does not need to die immediately for the interaction to count, and the positive-negative pattern does not by itself make the relationship predation.",
+        "At the plant-root display, both partners receive a measurable benefit in the model. The plant gains improved access to mineral nutrients while the fungal partner receives organic carbon compounds from the plant. Plus appears in both columns. Mira labels the interaction **Mutualism**, a positive-positive interaction in which both species benefit. At the epiphyte display, one species gains support and access to light while the supporting tree in the model shows no measurable benefit or harm. The columns read plus and approximately zero. This is **Commensalism**, a positive-zero interaction in which one species benefits while the other is not measurably helped or harmed.",
+        "Mira then points to the separate lane. A nurse plant shades a young seedling, reducing heat and water stress without the relationship fitting a simple feeding exchange. The recipient experiences a positive effect. The court labels this broader positive influence **Facilitation**. Facilitation occurs when one species has a positive effect on another without the interaction fitting a simple feeding relationship. The label does not require the two species to share the same close, long-term association used to define symbiosis.",
+        "The floor now displays all three paired sign patterns at once. Positive-negative for parasitism. Positive-positive for mutualism. Positive-zero for commensalism. Mira asks you to explain the effects before saying the names. When you can do that, she folds the sign board back into the community map. The courtyard gate opens onto a long timeline corridor. The woodland from the first plaza appears intact on the left end of the corridor, damaged in the middle, and different again farther down. The next room will stop treating the community as a static picture and ask how community composition and environmental conditions change after disturbance."
+      ],
+      "story_close": "The floor now displays all three paired sign patterns at once. Positive-negative for parasitism. Positive-positive for mutualism. Positive-zero for commensalism. Mira asks you to explain the effects before saying the names. When you can do that, she folds the sign board back into the community map. The courtyard gate opens onto a long timeline corridor. The woodland from the first plaza appears intact on the left end of the corridor, damaged in the middle, and different again farther down. The next room will stop treating the community as a static picture and ask how community composition and environmental conditions change after disturbance.",
+      "object_ids": [
+        "U8-K-183",
+        "U8-K-184",
+        "U8-K-185",
+        "U8-K-186",
+        "U8-K-187"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-183",
+          "term": "Symbiosis",
+          "story": "the the +/−/0 relationship board where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Symbiosis is a close, often long-term ecological interaction between species.",
+          "exact_name": true,
+          "hint": "the +/−/0 relationship board",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-184",
+          "term": "Parasitism",
+          "story": "the the +/−/0 relationship board where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Parasitism is a +/− symbiosis in which a parasite benefits while reducing host fitness.",
+          "exact_name": true,
+          "hint": "the +/−/0 relationship board",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-185",
+          "term": "Mutualism",
+          "story": "the the +/−/0 relationship board where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Mutualism is a +/+ interaction in which both species benefit.",
+          "exact_name": true,
+          "hint": "the +/−/0 relationship board",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-186",
+          "term": "Commensalism",
+          "story": "the the +/−/0 relationship board where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Commensalism is a +/0 interaction in which one species benefits while the other is not measurably helped or harmed.",
+          "exact_name": true,
+          "hint": "the +/−/0 relationship board",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-187",
+          "term": "Facilitation",
+          "story": "the the +/−/0 relationship board where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Facilitation occurs when one species has a positive effect on another without the interaction fitting a simple feeding relationship.",
+          "exact_name": true,
+          "hint": "the +/−/0 relationship board",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD31: Discriminate interaction mechanism and fitness signs. Keep Competition, Predation, Symbiosis physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD33: Use +/−, +/+, and +/0 effects without assuming every close association is mutualism. Keep Parasitism, Mutualism, Commensalism physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-183",
+      "checkpoint_prompt": "Without looking back, identify or explain Symbiosis from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Symbiosis is a close, often long-term ecological interaction between species.",
+      "next_locus": "Disturbance-Succession Timeline",
+      "f3_scene_brief_id": "F3-U8-L44",
+      "narrative_word_count": 521
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U8-L45",
+      "locus": "Disturbance-Succession Timeline",
+      "title": "The Corridor That Would Not Return to Frame One",
+      "scene_kicker": "At Disturbance-Succession Timeline, reconstruct pre-disturbance community → disturbance and sequential community-change timeline → abiotic-condition feedback panel and explain Ecological succession from the actual ecological mechanism.",
+      "location_description": "Disturbance-Succession Timeline",
+      "scene_layout": {
+        "orientation": "Enter Disturbance-Succession Timeline and stop at the before-disturbance-after community strip. Keep pre-disturbance community fixed on the left, disturbance and sequential community-change timeline as the working center, and abiotic-condition feedback panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "pre-disturbance community",
+            "symbol": "L",
+            "description": "A conventional scientific representation of pre-disturbance community, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "disturbance and sequential community-change timeline",
+            "symbol": "C",
+            "description": "The main scientific work model at Disturbance-Succession Timeline, centered on the before-disturbance-after community strip."
+          },
+          {
+            "position": "right",
+            "label": "abiotic-condition feedback panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of abiotic-condition feedback panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "pre-disturbance community",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of pre-disturbance community, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "disturbance and sequential community-change timeline",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Disturbance-Succession Timeline, centered on the before-disturbance-after community strip.",
+          "job": "Execute the defining action beginning with: Record community composition before the disturbance, then apply one event that changes structure, resources, or the physical environment."
+        },
+        {
+          "name": "abiotic-condition feedback panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of abiotic-condition feedback panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You enter the Disturbance-Succession Timeline and immediately recognize the woodland from the original community map. On your left, the pre-disturbance community stands intact with its canopy, understory, soil, species markers, and resource layers. Ahead at the center, a long illuminated strip shows a windstorm crossing the site and then a sequence of later community states. On your right, an abiotic-condition panel tracks light at ground level, soil development, moisture, and nutrient conditions. Mira pins the original map to the left wall so the starting composition can never be confused with what comes later.",
+      "story_paragraphs": [
+        "You enter the Disturbance-Succession Timeline and immediately recognize the woodland from the original community map. On your left, the pre-disturbance community stands intact with its canopy, understory, soil, species markers, and resource layers. Ahead at the center, a long illuminated strip shows a windstorm crossing the site and then a sequence of later community states. On your right, an abiotic-condition panel tracks light at ground level, soil development, moisture, and nutrient conditions. Mira pins the original map to the left wall so the starting composition can never be confused with what comes later.",
+        "The windstorm strikes the center display. Several canopy trees fall. Light reaches the ground more strongly, nesting structures change, and some resources become more available while others decline. Mira gives the event its ecological name only after the changes are visible. A **Disturbance** is an event that changes community structure, resource availability, or the physical environment. The word says nothing about whether the event is natural or human-caused, large or small, beneficial or harmful to every species. It identifies a change that alters the community or its setting.",
+        "The timeline begins moving. Early after the disturbance, species that tolerate the new high-light conditions increase in some patches. Later, taller vegetation changes shade and resource patterns. Other populations establish, decline, or shift in abundance. Mira does not let the display jump from damage directly to one final community. The sequence itself is the process. **Ecological succession** is a sequence of community changes after creation of new habitat or disturbance. Communities are interacting populations whose composition and relationships can change over time.",
+        "The right abiotic panel changes along with the organisms. New vegetation shades the ground. Roots and decomposers contribute to soil development and nutrient movement. Litter can alter moisture retention. Organisms can therefore modify the conditions in which later organisms live. Mira highlights one warning line on the panel. Effects on soil pH and mineral availability depend on the organisms, substrate, climate, and other local conditions. The room does not turn succession into a universal rule that soil must move in one chemical direction.",
+        "Mira pauses the timeline at three different dates and asks you to compare community composition. The species markers are different each time. Some interactions have disappeared and others have formed. The process is not a fixed march toward one inevitable endpoint. Disturbance history, colonization, species interactions, ongoing environmental change, and chance can all influence what follows. The locked lesson is the sequence of change and the mechanisms that alter community and abiotic conditions, not a promise that every site arrives at the same final picture.",
+        "At the end of the corridor, the timeline splits into two illuminated paths. The left path shows a fresh surface with no established soil community. The center path shows a disturbed site where soil remains along with roots, seeds, microbes, and other biological legacies. On the right, a comparison board refuses to label either path until you inspect the starting conditions. Mira carries the same community map to the fork. The final room will classify succession from what remains after the event, not from how dramatic the disturbance looked."
+      ],
+      "story_close": "At the end of the corridor, the timeline splits into two illuminated paths. The left path shows a fresh surface with no established soil community. The center path shows a disturbed site where soil remains along with roots, seeds, microbes, and other biological legacies. On the right, a comparison board refuses to label either path until you inspect the starting conditions. Mira carries the same community map to the fork. The final room will classify succession from what remains after the event, not from how dramatic the disturbance looked.",
+      "object_ids": [
+        "U8-K-199",
+        "U8-K-036",
+        "U8-K-198",
+        "U8-K-202"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-199",
+          "term": "Ecological succession",
+          "story": "the the before-disturbance-after community strip where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Ecological succession is a sequence of community changes after creation of new habitat or disturbance.",
+          "exact_name": true,
+          "hint": "the before-disturbance-after community strip",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-036",
+          "term": "Communities change over time",
+          "story": "the the before-disturbance-after community strip where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Communities are interacting populations whose composition and relationships change over time.",
+          "exact_name": false,
+          "hint": "the before-disturbance-after community strip",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-198",
+          "term": "Disturbance",
+          "story": "the the before-disturbance-after community strip where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "An ecological disturbance is an event that changes community structure, resource availability, or the physical environment.",
+          "exact_name": true,
+          "hint": "the before-disturbance-after community strip",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-202",
+          "term": "Succession changes abiotic conditions",
+          "story": "the the before-disturbance-after community strip where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "During succession, organisms can change light, soil development, nutrients, moisture, and other abiotic conditions; effects on pH and mineral availability are context-dependent.",
+          "exact_name": false,
+          "hint": "the before-disturbance-after community strip",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-036",
+          "term": "Communities change over time",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-022: Lock says succession changes soil chemistry context-dependently."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "Primary-Secondary Succession Fork",
+      "f3_scene_brief_id": "F3-U8-L45",
+      "narrative_word_count": 520
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U8-L46",
+      "locus": "Primary-Secondary Succession Fork",
+      "title": "The Fork Decided by What Was Left Behind",
+      "scene_kicker": "At Primary-Secondary Succession Fork, reconstruct bare/no-established-soil-community site → soil-and-biological-legacies-remain site → contrasting succession starting conditions and explain Primary succession from the actual ecological mechanism.",
+      "location_description": "Primary-Secondary Succession Fork",
+      "scene_layout": {
+        "orientation": "Enter Primary-Secondary Succession Fork and stop at the matched post-disturbance sites. Keep bare/no-established-soil-community site fixed on the left, soil-and-biological-legacies-remain site as the working center, and contrasting succession starting conditions fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "bare/no-established-soil-community site",
+            "symbol": "L",
+            "description": "A conventional scientific representation of bare/no-established-soil-community site, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "soil-and-biological-legacies-remain site",
+            "symbol": "C",
+            "description": "The main scientific work model at Primary-Secondary Succession Fork, centered on the matched post-disturbance sites."
+          },
+          {
+            "position": "right",
+            "label": "contrasting succession starting conditions",
+            "symbol": "R",
+            "description": "A conventional scientific representation of contrasting succession starting conditions, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "bare/no-established-soil-community site",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of bare/no-established-soil-community site, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "soil-and-biological-legacies-remain site",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Primary-Secondary Succession Fork, centered on the matched post-disturbance sites.",
+          "job": "Execute the defining action beginning with: Inspect whether an established soil community remains after the event before naming the succession type."
+        },
+        {
+          "name": "contrasting succession starting conditions",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of contrasting succession starting conditions, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "shared community map",
+          "kind": "journey continuity object",
+          "visual": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+          "job": "preserves the same ecological identities and spatial evidence while each room changes only one relationship, filter, interaction, disturbance, or starting condition"
+        }
+      ],
+      "continuity_object": "one transparent district map that keeps Species A, Species B, and Species C identities, habitat layers, resource-use bands, abundance markers, interaction-sign badges, disturbance marks, and succession starting-condition symbols visible across all eight locations",
+      "story_open": "You enter the Primary-Secondary Succession Fork where the floor divides into two matched ecological starting sites. On your left, a bare surface represents new rock or another surface without an established soil community. Ahead at the center, a second site represents a disturbed landscape where soil remains along with some roots, seeds, microbes, organic matter, or other biological legacies. On your right, a comparison board shows both starting conditions side by side. Mira places the shared community map between them and covers the labels. The only question that matters first is what remains at the starting line.",
+      "story_paragraphs": [
+        "You enter the Primary-Secondary Succession Fork where the floor divides into two matched ecological starting sites. On your left, a bare surface represents new rock or another surface without an established soil community. Ahead at the center, a second site represents a disturbed landscape where soil remains along with some roots, seeds, microbes, organic matter, or other biological legacies. On your right, a comparison board shows both starting conditions side by side. Mira places the shared community map between them and covers the labels. The only question that matters first is what remains at the starting line.",
+        "At the left site, there is no established soil community to inherit. Colonizing organisms face a surface where soil development and biological accumulation must begin from a much earlier condition. Mira uncovers the term **Primary succession**. Primary succession begins where a disturbance or geological process leaves a surface without an established soil community. The classification is tied to the absence of established soil community at the start. It is not simply a synonym for a very severe disturbance.",
+        "At the center site, the aboveground community has been strongly altered, yet the soil profile remains. Seeds, roots, microbes, organic matter, and other biological legacies may persist. Mira reveals the second term. **Secondary succession** follows disturbance where soil and some biological legacies remain. Because the starting material differs from the left site, the subsequent sequence can begin from a different ecological state.",
+        "Mira deliberately makes the center disturbance look visually more dramatic than the left geological surface. Charred stems, fallen trunks, and broken branches fill the display. Then she asks which site is primary and which is secondary. The answer does not depend on which scene looks more destructive. You inspect the ground. No established soil community on the left. Soil and biological legacies on the center path. Starting conditions decide the classification.",
+        "The right comparison board now reconnects both paths to the timeline from the previous room. Each site can undergo sequences of community change. Organisms can alter light, soil development, nutrients, moisture, and other conditions as succession proceeds. The paths need not move at the same rate or produce the same sequence. Their labels identify how succession begins, not a guaranteed endpoint.",
+        "Mira finally unfolds the community map you have carried since the plaza. The green habitat boundary is still visible. The niche layers are still nested. Competition marks remain on the resource track. Predator-prey, symbiosis, and sign badges still show how interactions changed access and abundance. A jagged line records the disturbance, and two different starting-condition symbols mark the succession fork. The district now reads as one connected system. A community is not just a list of species. Where species live, how they use resources, how they affect one another, and what remains after change all alter the map. The exit opens when you can begin at any mark and explain the ecological mechanism that put it there."
+      ],
+      "story_close": "Mira finally unfolds the community map you have carried since the plaza. The green habitat boundary is still visible. The niche layers are still nested. Competition marks remain on the resource track. Predator-prey, symbiosis, and sign badges still show how interactions changed access and abundance. A jagged line records the disturbance, and two different starting-condition symbols mark the succession fork. The district now reads as one connected system. A community is not just a list of species. Where species live, how they use resources, how they affect one another, and what remains after change all alter the map. The exit opens when you can begin at any mark and explain the ecological mechanism that put it there.",
+      "object_ids": [
+        "U8-K-200",
+        "U8-K-201"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-200",
+          "term": "Primary succession",
+          "story": "the the matched post-disturbance sites where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Primary succession begins where a disturbance or geological process leaves a surface without an established soil community.",
+          "exact_name": true,
+          "hint": "the matched post-disturbance sites",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-201",
+          "term": "Secondary succession",
+          "story": "the the matched post-disturbance sites where the ecological relationship, resource-use pattern, interaction effect, or succession state becomes visible before the term is named",
+          "science": "Secondary succession follows disturbance where soil and some biological legacies remain.",
+          "exact_name": true,
+          "hint": "the matched post-disturbance sites",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD34: Use soil and biological legacy status as the key distinction. Keep Primary succession, Secondary succession physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U8-L46",
+      "narrative_word_count": 486
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "prior_narrative_locks": [
+    "LOCKED_F4A_J1",
+    "LOCKED_F4B_J2",
+    "LOCKED_F4C_J3",
+    "LOCKED_F4D_J4",
+    "LOCKED_F4E_J5"
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "schema": "memory-palace-v2-unit7-f5-challenge-lab-1.0",
+  "unit_id": "unit-7",
+  "title": "Unit 7 Challenge Lab",
+  "student_intro": "Use these after the related journeys. One challenge appears at a time so natural selection, population genetics, Hardy-Weinberg reasoning, evolutionary evidence, phylogeny, speciation, and origins-of-life evidence are practiced without depending on the mnemonic story.",
+  "challenge_count": 16,
+  "practice_only_runtime_count": 16,
+  "practice_only_runtime_object_ids": [
+    "U7-K-173",
+    "U7-K-174",
+    "U7-K-175",
+    "U7-K-176",
+    "U7-K-177",
+    "U7-K-178",
+    "U7-K-179",
+    "U7-K-180",
+    "U7-K-181",
+    "U7-K-182",
+    "U7-K-183",
+    "U7-K-184",
+    "U7-K-185",
+    "U7-K-186",
+    "U7-K-187",
+    "U7-K-213"
+  ],
+  "items": [
+    {
+      "challenge_id": "U7-CL-01",
+      "knowledge_id": "U7-K-173",
+      "domain": "Natural selection",
+      "title": "Diagnose natural-selection misconceptions",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L02",
+        "U7-L04",
+        "U7-L05"
+      ],
+      "prerequisite_scene_titles": [
+        "Population Change Platform",
+        "Competition and Offspring Gate",
+        "Fitness Scale"
+      ],
+      "prompt": "Four students explain why a finch population developed deeper beaks after several generations of drought. Student A says the birds needed deeper beaks, so their bodies produced them. Student B says the strongest individual birds survived and therefore the species improved. Student C says heritable beak-depth variation already existed, drought changed which phenotypes left more offspring, and descendant phenotype frequencies changed. Student D says every surviving bird became genetically better adapted during its lifetime. Identify the scientifically defensible explanation and correct the specific errors in the other three claims.",
+      "answer_guide": "Student C gives the defensible explanation. Natural selection acts on existing heritable phenotypic variation, and the environment changes relative reproductive success among variants. Student A is teleological because need does not cause a directed adaptive variant to appear. Student B confuses fitness with physical strength and treats species improvement as a goal; evolutionary fitness is relative reproductive success in the relevant environment. Student D incorrectly assigns population-level genetic evolution to individuals within one lifetime. Individuals can survive, develop, or acclimate, while evolutionary genetic change is tracked across generations in populations.",
+      "story_hint": "Return to the Population Change Platform, Competition and Offspring Gate, and Fitness Scale. Reconstruct heredity, differential reproduction, and population change before judging any claim about need or strength.",
+      "canonical_statement": "Evaluate claims about need, intention, adaptation, and 'fittest' organisms and justify why natural selection is nonteleological and based on differential reproductive success.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-02",
+      "knowledge_id": "U7-K-174",
+      "domain": "Natural selection",
+      "title": "Separate paca body-mass response from evolutionary change",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L06"
+      ],
+      "prerequisite_scene_titles": [
+        "Changing Pressure Chamber"
+      ],
+      "prompt": "A wildfire sharply reduces fruit availability in a paca population. During the following dry season, many surviving pacas lose body mass because food is scarce. Researchers later compare offspring born after food supplies recover and find no inherited shift in adult body mass relative to the prefire population. A student says the fire caused the population to evolve smaller bodies. Evaluate that claim. State what evidence would be needed to support a heritable evolutionary interpretation and distinguish it from an environmentally induced within-lifetime response.",
+      "answer_guide": "The observed body-mass loss alone does not demonstrate evolution. Reduced food availability can cause individuals to lose mass within their lifetimes, which is an environmentally induced phenotypic response. To support evolutionary change, researchers would need evidence that heritable variants related to body mass differed in reproductive success and that the frequencies of those heritable variants or associated phenotypes changed across generations. The later absence of an inherited shift after food recovery supports a temporary environmental response rather than a demonstrated genetic evolutionary change in the population.",
+      "story_hint": "Use the Changing Pressure Chamber. Keep the environmental change, an individual body response, heritable variation, and descendant-generation frequencies in separate places before deciding whether evolution occurred.",
+      "canonical_statement": "Distinguish environmentally induced body-mass change from heritable evolutionary change in the paca fire/food-supply scenario.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-03",
+      "knowledge_id": "U7-K-175",
+      "domain": "Population genetics",
+      "title": "Classify drift and gene-flow scenarios",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L15",
+        "U7-L16",
+        "U7-L17",
+        "U7-L18"
+      ],
+      "prerequisite_scene_titles": [
+        "Genetic Drift Chamber",
+        "Bottleneck Gate",
+        "Founder Ferry",
+        "Gene-Flow Bridge"
+      ],
+      "prompt": "Classify each scenario as bottleneck effect, founder effect, or gene flow and justify the mechanism. Scenario 1. A hurricane reduces an island lizard population from 8,000 individuals to 35 survivors whose allele frequencies differ by chance from the original population. Scenario 2. Twelve birds from a large mainland population colonize a previously unoccupied island, and a rare source-population allele is unusually common among their descendants. Scenario 3. Pollen from a mainland plant population repeatedly fertilizes plants on a nearby island, causing the two populations to become more similar at several loci. For each case, identify the diagnostic evidence that rules out the other two mechanisms.",
+      "answer_guide": "Scenario 1 is a bottleneck effect because an existing population undergoes a severe demographic reduction and the survivors are a chance, nonrepresentative sample of the original gene pool. Scenario 2 is a founder effect because a small subset establishes a new population while the source population need not collapse. Scenario 3 is gene flow because alleles physically move between existing populations through gametes, here pollen, and the exchange tends to reduce genetic differences. Bottleneck and founder effects are forms of genetic drift driven by sampling; gene flow requires migration of individuals or gametes across a population boundary.",
+      "story_hint": "Reconstruct the Genetic Drift Chamber, Bottleneck Gate, Founder Ferry, and Gene-Flow Bridge. Ask first whether the event is chance sampling within a demographic history or actual movement across a population boundary.",
+      "canonical_statement": "Classify population scenarios as bottleneck effect, founder effect, or gene flow and justify the mechanism using sampling or migration.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-04",
+      "knowledge_id": "U7-K-176",
+      "domain": "Natural selection",
+      "title": "Interpret selection-mode distributions",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L08"
+      ],
+      "prerequisite_scene_titles": [
+        "Selection Distribution Gallery"
+      ],
+      "prompt": "A trait is measured in three separate populations before and after selection. In population A, the postselection distribution shifts toward larger trait values. In population B, intermediate values increase while both extremes become less common. In population C, both extremes increase while intermediate values decline. Identify the selection pattern for A, B, and C. For each population, describe the implied relative-fitness pattern without assuming that the same phenotype would be favored in every environment.",
+      "answer_guide": "Population A shows directional selection because one end of the phenotypic distribution has higher relative fitness and the distribution shifts toward that extreme. Population B shows stabilizing selection because intermediate phenotypes have higher relative fitness than the extremes, narrowing the distribution around the middle. Population C shows disruptive selection because both extremes have higher relative fitness than intermediate phenotypes, increasing representation at both ends. These patterns are environment dependent; the phenotype with higher reproductive success in one environment is not universally the fittest phenotype.",
+      "story_hint": "Return to the Selection Distribution Gallery. Rebuild the before-and-after distributions first, then identify where relative reproductive success was highest rather than relying on the graph shape alone.",
+      "canonical_statement": "Identify directional, stabilizing, or disruptive selection from changes in a phenotypic distribution and explain the relative-fitness pattern.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-05",
+      "knowledge_id": "U7-K-177",
+      "domain": "Hardy-Weinberg",
+      "title": "Reason from Hardy-Weinberg assumptions",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L19",
+        "U7-L20"
+      ],
+      "prerequisite_scene_titles": [
+        "Hardy-Weinberg Null-Model Station",
+        "Five-Condition Control Room"
+      ],
+      "prompt": "A diploid population is very large, has no migration or mutation at locus A, and genotypes have equal reproductive success. Individuals mate assortatively by genotype at locus A. Over one generation, homozygotes become more common and heterozygotes become less common, while the measured frequencies of the two alleles remain 0.60 and 0.40. Explain why this population can deviate from Hardy-Weinberg genotype expectations without demonstrating allele-frequency evolution. Then predict how your conclusion would change if one genotype also produced more surviving offspring.",
+      "answer_guide": "Random mating is a Hardy-Weinberg condition, so assortative mating can alter genotype frequencies and produce a departure from p², 2pq, and q² expectations. Nonrandom mating by itself does not necessarily change allele frequencies, which is consistent with p remaining 0.60 and q remaining 0.40 in the scenario. Therefore genotype-frequency deviation alone is not proof of microevolution defined as allele-frequency change. If one genotype also had higher reproductive success, natural selection could change allele frequencies across generations, and the population would then show evolutionary allele-frequency change as well as genotype-frequency differences.",
+      "story_hint": "Use the Hardy-Weinberg Null-Model Station and Five-Condition Control Room. Keep allele frequencies on one strip and genotype frequencies on another, then ask which assumption was violated and which quantity actually changed.",
+      "canonical_statement": "Explain how mutation, migration, selection, population size, and mating pattern affect Hardy-Weinberg expectations and distinguish genotype-frequency deviation from allele-frequency evolution.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-06",
+      "knowledge_id": "U7-K-178",
+      "domain": "Hardy-Weinberg",
+      "title": "Translate Hardy-Weinberg symbols correctly",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L21",
+        "U7-L22"
+      ],
+      "prerequisite_scene_titles": [
+        "Allele-Frequency p/q Board",
+        "Genotype-Frequency Equation Board"
+      ],
+      "prompt": "At a two-allele locus that meets Hardy-Weinberg assumptions, allele R has frequency 0.65 and allele r has frequency 0.35. Without treating R as dominant merely because it is assigned to p, identify p, q, p², 2pq, and q² and state what biological quantity each symbol represents. Then explain why the same symbols could be reassigned if the investigator chose the other allele as p, provided the notation was used consistently.",
+      "answer_guide": "One consistent assignment is p = 0.65 for allele R and q = 0.35 for allele r. p² = 0.4225 is the expected frequency of RR, 2pq = 0.455 is the expected frequency of Rr, and q² = 0.1225 is the expected frequency of rr under Hardy-Weinberg equilibrium. p and q are labels for allele frequencies, not universal dominance and recessiveness labels. The investigator could instead designate r as p and R as q, which would swap the symbol assignments while leaving the underlying allele and genotype frequencies unchanged.",
+      "story_hint": "Return to the p/q Board and Genotype-Frequency Equation Board. Keep allele-copy frequencies above the board and expected whole-genotype frequencies below it, with no dominance labels attached to p or q.",
+      "canonical_statement": "Translate verbal information into p, q, p², 2pq, or q² only when the relevant Hardy-Weinberg assumptions and genotype relationships are justified.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-07",
+      "knowledge_id": "U7-K-179",
+      "domain": "Hardy-Weinberg",
+      "title": "Solve a recessive-phenotype Hardy-Weinberg problem",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L21",
+        "U7-L22",
+        "U7-L24"
+      ],
+      "prerequisite_scene_titles": [
+        "Allele-Frequency p/q Board",
+        "Genotype-Frequency Equation Board",
+        "Observed–Expected Comparison Desk"
+      ],
+      "prompt": "In a large randomly mating population with no migration, mutation, or selection at a two-allele locus, 9% of individuals express a recessive phenotype known to occur only in genotype aa. Use Hardy-Weinberg reasoning to calculate q², q, p, p², and 2pq. State the assumption that permits the recessive phenotype frequency to be treated as q², and give the expected percentages of AA, Aa, and aa individuals.",
+      "answer_guide": "Because the phenotype is known to correspond uniquely to aa and Hardy-Weinberg assumptions are stated, q² = 0.09. Therefore q = sqrt(0.09) = 0.30. Since p + q = 1, p = 0.70. The expected AA frequency is p² = 0.49, or 49%. The expected heterozygote frequency is 2pq = 2(0.70)(0.30) = 0.42, or 42%. The expected aa frequency remains q² = 0.09, or 9%. The square-root step is justified here only because the observed recessive phenotype reliably identifies aa and Hardy-Weinberg genotype proportions are appropriate.",
+      "story_hint": "Use the p/q Board, Genotype-Frequency Equation Board, and conditional recessive-phenotype panel. Do not take a square root until the phenotype-to-aa mapping and Hardy-Weinberg assumptions are explicitly satisfied.",
+      "canonical_statement": "Use q² from a recessive-homozygote phenotype frequency under stated Hardy-Weinberg assumptions, then solve q, p, p², and 2pq.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-08",
+      "knowledge_id": "U7-K-180",
+      "domain": "Hardy-Weinberg",
+      "title": "Calculate allele frequencies directly from genotype counts",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L23"
+      ],
+      "prerequisite_scene_titles": [
+        "Genotype-Count Allele Counter"
+      ],
+      "prompt": "A sample contains 100 diploid individuals with genotypes 45 AA, 40 Aa, and 15 aa. Calculate the frequencies of alleles A and a directly from genotype counts by counting allele copies. Then calculate the observed genotype frequencies. Do not assume Hardy-Weinberg equilibrium during the direct allele count. Finally state what additional step would be needed if you wanted to compare the observed genotype frequencies with Hardy-Weinberg expectations.",
+      "answer_guide": "There are 200 total allele copies because 100 diploid individuals contribute 2N copies. A copies equal 2(45) + 40 = 130, so f(A) = 130/200 = 0.65. a copies equal 2(15) + 40 = 70, so f(a) = 70/200 = 0.35. The observed genotype frequencies are 0.45 AA, 0.40 Aa, and 0.15 aa. These values come directly from the sample. To compare with Hardy-Weinberg expectations, separately use p = 0.65 and q = 0.35 to compute p², 2pq, and q², then compare expected and observed genotype frequencies.",
+      "story_hint": "Return to the Genotype-Count Allele Counter. Open every genotype card into its two allele copies, fill the 2N counter, and only afterward move to a separate expected-frequency model if the question asks for it.",
+      "canonical_statement": "Calculate allele frequencies directly from genotype counts by counting allele copies, and compare them with any Hardy-Weinberg expected genotype frequencies only as a separate step.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-09",
+      "knowledge_id": "U7-K-181",
+      "domain": "Hardy-Weinberg",
+      "title": "Distinguish allele and genotype frequencies",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L21",
+        "U7-L24"
+      ],
+      "prerequisite_scene_titles": [
+        "Allele-Frequency p/q Board",
+        "Observed–Expected Comparison Desk"
+      ],
+      "prompt": "A population sample has allele frequencies A = 0.70 and a = 0.30. Its observed genotype frequencies are AA = 0.60, Aa = 0.20, and aa = 0.20. Explain why the allele-frequency statement and genotype-frequency statement describe different population quantities. Calculate the Hardy-Weinberg expected genotype frequencies from the given allele frequencies and compare them with the observed values. Explain what the mismatch does and does not allow you to conclude.",
+      "answer_guide": "Allele frequencies count the proportions of allele copies in the gene pool, while genotype frequencies count the proportions of individuals with particular allele pairs. From p = 0.70 and q = 0.30, Hardy-Weinberg expectations are AA = p² = 0.49, Aa = 2pq = 0.42, and aa = q² = 0.09. The observed genotype distribution differs substantially from those expectations. That mismatch indicates that the locus or sample does not fit the stated Hardy-Weinberg null expectation and prompts investigation of assumptions or sampling. It does not, by itself, identify which evolutionary mechanism is responsible or prove that allele frequencies changed.",
+      "story_hint": "Use the p/q Board and Observed-Expected Comparison Desk. Keep allele-copy proportions, observed genotype proportions, and model-generated expected genotype proportions in three separate visual layers.",
+      "canonical_statement": "Explain the difference between allele frequencies and genotype frequencies and interpret Hardy-Weinberg as a locus-specific null model.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-10",
+      "knowledge_id": "U7-K-182",
+      "domain": "Evidence of evolution",
+      "title": "Synthesize independent evidence for evolution",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L25",
+        "U7-L26",
+        "U7-L27",
+        "U7-L30"
+      ],
+      "prerequisite_scene_titles": [
+        "Evidence Convergence Atrium",
+        "Fossil Timeline and Dating Vault",
+        "Homology Morphology Hall",
+        "Molecular Evidence Scanner"
+      ],
+      "prompt": "Researchers investigate whether two island bird populations share a recent common ancestor. They have four data sets. Fossils from dated rock layers show related ancestral forms through time. The island birds resemble a nearby mainland lineage in skeletal structure. Homologous forelimb elements occur in the same underlying arrangement despite different functions. Aligned mitochondrial DNA sequences are highly similar between the island and nearby mainland populations. Identify the evidence category represented by each data set and explain how the lines can converge on a common-ancestry hypothesis without treating any single observation as complete proof.",
+      "answer_guide": "The dated fossils provide geological and fossil-record evidence of organisms and change through time. The island-mainland relationship provides biogeographic evidence. The corresponding skeletal pattern is morphological homology and supports shared ancestry. The aligned DNA similarity provides molecular evidence and can support closer relationship when homologous sequences are compared appropriately. These independent evidence streams answer somewhat different questions, but their compatible inferences strengthen a common-ancestry hypothesis. None of the individual observations alone is a complete reconstruction of evolutionary history, and dating evidence should not be confused with relationship evidence.",
+      "story_hint": "Return to the Evidence Convergence Atrium, Fossil Timeline and Dating Vault, Homology Morphology Hall, and Molecular Evidence Scanner. Put each observation on its own evidence card before combining the inferences.",
+      "canonical_statement": "Identify fossil, biogeographic, morphological, molecular, and genetic evidence and explain how each can support evolutionary relationships or change over time.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-11",
+      "knowledge_id": "U7-K-183",
+      "domain": "Phylogeny",
+      "title": "Read a phylogenetic tree from nodes",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L36",
+        "U7-L37"
+      ],
+      "prerequisite_scene_titles": [
+        "Tree Anatomy Board",
+        "Sister and Early-Branching Fork"
+      ],
+      "prompt": "A rooted tree has topology (Lancelet,(Shark,(Salamander,(Mouse,(Lizard,Pigeon))))). Identify the sister taxa in the most recent pair, identify an early-branching vertebrate lineage relative to the sampled tetrapods, and identify the most recent common ancestor shared by Mouse, Lizard, and Pigeon as an internal node rather than a living taxon. Then explain why rotating the Lizard-Pigeon branch would not change any of those ancestry relationships.",
+      "answer_guide": "Lizard and Pigeon are sister taxa because they descend immediately from the same most recent internal node. Shark is an early-branching sampled vertebrate lineage relative to the sampled tetrapod clade because its lineage splits before the node uniting Salamander, Mouse, Lizard, and Pigeon. The most recent common ancestor of Mouse, Lizard, and Pigeon is the internal node that gives rise to Mouse and to the Lizard-Pigeon lineage, not Mouse or any other living tip. Rotating a branch around an internal node changes display order only; the connections among nodes and descendants remain the same.",
+      "story_hint": "Use the Tree Anatomy Board and Sister and Early-Branching Fork. Trace every relationship backward to the first shared internal node and ignore the left-to-right or top-to-bottom order of living tips.",
+      "canonical_statement": "Use nodes and branching order to identify a common ancestor, an early-branching lineage, and sister clades without treating living taxa as ancestors of one another.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-12",
+      "knowledge_id": "U7-K-184",
+      "domain": "Phylogeny",
+      "title": "Construct a cladogram from a character matrix",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L38",
+        "U7-L39",
+        "U7-L40"
+      ],
+      "prerequisite_scene_titles": [
+        "Character Mapping Wall",
+        "Outgroup Reference Gate",
+        "Phylogeny Evidence Construction Lab"
+      ],
+      "prompt": "An outgroup O lacks all four listed derived characters. Taxon A has character 1 only. Taxon B has characters 1 and 2. Taxon C has characters 1, 2, and 3. Taxon D has characters 1, 2, 3, and 4. Construct or choose the rooted cladogram that places each shared derived character on the fewest supported branches. State where characters 1 through 4 would be mapped, identify which taxa form nested clades, and explain how the outgroup helps infer character-state polarity.",
+      "answer_guide": "A parsimonious arrangement is (O,(A,(B,(C,D)))) if the matrix is interpreted as nested acquisition of characters. Character 1 maps on the branch leading to A, B, C, and D; character 2 maps on the branch leading to B, C, and D; character 3 maps on the branch leading to C and D; character 4 maps on the branch leading to D. O serves as an outgroup because it lies outside the focal ingroup and lacks the listed derived states, helping identify the absent state as ancestral for this comparison. The matrix supports nested clades because shared derived characters are inherited by descendants of the branch on which the change is mapped.",
+      "story_hint": "Return to the Character Mapping Wall, Outgroup Reference Gate, and Phylogeny Evidence Construction Lab. Map one state change at a time and keep the outgroup outside the ingroup rather than making it an ancestor.",
+      "canonical_statement": "Use presence/absence data for shared derived characters to construct or choose a cladogram consistent with the fewest supported character changes.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-13",
+      "knowledge_id": "U7-K-185",
+      "domain": "Speciation",
+      "title": "Discriminate prezygotic barriers",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L45",
+        "U7-L46",
+        "U7-L47"
+      ],
+      "prerequisite_scene_titles": [
+        "Prezygotic Barrier Entry",
+        "Habitat and Temporal Isolation Gates",
+        "Behavioral–Mechanical–Gametic Gates"
+      ],
+      "prompt": "Classify five reproductive-isolation scenarios and justify each classification. A. Two frog populations breed in different ponds and rarely encounter one another. B. Two plant populations flower in different months. C. Two bird populations overlap, but females respond only to their own population-specific courtship song. D. Closely related snail populations attempt to mate, but reproductive structures do not align effectively. E. Two sea-urchin species release gametes into the same water, but sperm cannot bind successfully to eggs of the other species. Name the barrier in each case and identify the reproductive step that is blocked.",
+      "answer_guide": "A is habitat isolation because the populations use different breeding habitats and therefore rarely encounter one another. B is temporal isolation because reproduction occurs at different times. C is behavioral isolation because courtship recognition prevents mating. D is mechanical isolation because structural incompatibility prevents effective mating or gamete transfer. E is gametic isolation because gametes are released into the same environment but recognition, survival, or fusion fails before zygote formation. All five are prezygotic barriers because they act before a zygote is successfully formed.",
+      "story_hint": "Use the Prezygotic Barrier Entry, Habitat and Temporal Isolation Gates, and Behavioral-Mechanical-Gametic Gates. Place each scenario on the encounter-to-fertilization sequence and ask exactly which step fails.",
+      "canonical_statement": "Classify reproductive-isolation scenarios as habitat, temporal, behavioral, mechanical, or gametic isolation and justify the choice.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-14",
+      "knowledge_id": "U7-K-186",
+      "domain": "Speciation",
+      "title": "Apply gene flow and reproductive isolation in an FRQ",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L42",
+        "U7-L43",
+        "U7-L44",
+        "U7-L48"
+      ],
+      "prerequisite_scene_titles": [
+        "Species Boundary Desk",
+        "Allopatric Barrier Island",
+        "Sympatric Overlap Island",
+        "Postzygotic Outcome Ward"
+      ],
+      "prompt": "A river changes course and divides one lizard population into eastern and western populations for 20,000 generations. Genetic differences accumulate. When the river later dries, the populations come back into contact. They occupy the same habitat, but eastern females rarely respond to western courtship displays, and crosses that do occur produce viable F1 offspring with very low fertility. Explain the likely geographic mode of divergence, identify the reproductive barriers now present, and justify whether the evidence supports speciation more strongly than geographic separation alone would.",
+      "answer_guide": "The initial divergence is consistent with an allopatric history because a geographic barrier separated the populations and reduced gene flow. After secondary contact, behavioral isolation acts prezygotically because courtship differences reduce mating between the populations. Reduced hybrid fertility acts postzygotically because viable hybrids form but reproduce poorly. These reproductive barriers provide evidence of reproductive isolation after the geographic barrier disappears, so the evidence supports speciation more strongly than mere geographic separation would. Geographic isolation can initiate divergence, but speciation additionally requires sufficient reproductive isolation to maintain independent gene pools.",
+      "story_hint": "Reconstruct the Species Boundary Desk, Allopatric Barrier Island, Sympatric Overlap Island, and Postzygotic Outcome Ward. Keep geographic separation, current overlap, prezygotic behavior, and hybrid fertility as separate evidence.",
+      "canonical_statement": "Apply reproductive isolation, gene flow, and speciation mechanisms to a novel free-response scenario from the class packet.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-15",
+      "knowledge_id": "U7-K-187",
+      "domain": "Origins of life",
+      "title": "Separate prebiotic evidence from later endosymbiosis",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L51",
+        "U7-L52",
+        "U7-L54",
+        "U7-L55"
+      ],
+      "prerequisite_scene_titles": [
+        "Early Earth Timeline Deck",
+        "Prebiotic Chemistry Chamber",
+        "Miller–Urey Simulation Rig",
+        "RNA World and Later Endosymbiosis Archive"
+      ],
+      "prompt": "Evaluate three claims. Claim 1. Miller and Urey showed that early-Earth conditions could produce small organic molecules abiotically, so their apparatus created the first living cells. Claim 2. An RNA-world model is scientifically interesting because RNA can store sequence information through complementary base pairing and some RNA molecules can catalyze reactions. Claim 3. Endosymbiosis explains how the first life arose when one nonliving chemical droplet engulfed another. For each claim, identify what evidence or model is actually supported and correct any chronological or mechanistic error.",
+      "answer_guide": "Claim 1 begins with a supported point but overstates the result. Miller-Urey-type experiments demonstrated abiotic production of small organic molecules under simulated conditions; they did not create cells, life, proteins, or nucleic acids. Claim 2 captures the logic of the RNA-world hypothesis because RNA can support information storage or copying through complementary base pairing and catalytic RNA molecules exist, making a combined informational and catalytic role plausible in early systems. Claim 3 is chronologically wrong. Endosymbiosis concerns later evolution of mitochondria and chloroplasts through interactions among already-living cells, not the initial origin of the first life from nonliving chemistry.",
+      "story_hint": "Use the Early Earth Timeline Deck, Prebiotic Chemistry Chamber, Miller-Urey Simulation Rig, and RNA World and Later Endosymbiosis Archive. Keep small-molecule synthesis, RNA-based hypotheses, first cellular life, and later organelle evolution on different chronology slots.",
+      "canonical_statement": "Interpret Miller-Urey/RNA-world evidence and distinguish models for the origin of the first life from later endosymbiotic evolution of eukaryotic organelles.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U7-CL-16",
+      "knowledge_id": "U7-K-213",
+      "domain": "Speciation",
+      "title": "Discriminate postzygotic barriers",
+      "type": "APPLICATION_TRANSFER",
+      "prerequisite_loci": [
+        "U7-L48"
+      ],
+      "prerequisite_scene_titles": [
+        "Postzygotic Outcome Ward"
+      ],
+      "prompt": "Classify each hybrid outcome as reduced hybrid viability, reduced hybrid fertility, or hybrid breakdown. Scenario A. Fertilization succeeds, but most hybrid embryos fail to develop to adulthood. Scenario B. F1 hybrids survive normally but produce very few functional gametes and rarely reproduce. Scenario C. F1 hybrids are viable and fertile, but when F1 individuals reproduce, many F2 offspring show severe developmental defects or greatly reduced fertility. Explain why all three are postzygotic barriers and identify the generation or life-history stage where each barrier becomes visible.",
+      "answer_guide": "Scenario A is reduced hybrid viability because a zygote forms but hybrid development or survival is impaired before normal reproductive adulthood. Scenario B is reduced hybrid fertility because viable F1 hybrids form yet fertility is low or absent. Scenario C is hybrid breakdown because F1 hybrids can be viable and fertile, while reduced viability or fertility appears in later hybrid generations such as F2. All three are postzygotic barriers because fertilization and zygote formation occur before the reproductive isolation becomes evident.",
+      "story_hint": "Return to the Postzygotic Outcome Ward. Start at the zygote box and follow the same sequence through development, adult fertility, and later generations; classify the barrier by the first stage where failure appears.",
+      "canonical_statement": "Distinguish reduced hybrid viability, reduced hybrid fertility, and hybrid breakdown by identifying when the reproductive barrier appears and how it affects later generations.",
+      "success_criterion": "Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "memory-palace-v2-unit3-f5-scope-guards-1.0",
+  "unit_id": "unit-3",
+  "guard_count": 4,
+  "guards": [
+    {
+      "knowledge_id": "U3-K-069",
+      "canonical_label": "Gibbs free-energy equation scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY",
+      "canonical_statement": "The equation ΔG = ΔH − TΔS may be used as teacher enrichment, but memorization or use of this equation is beyond the current AP Biology Exam scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation/context, but must not become a required memorization or retrieval target in the student runtime."
+    },
+    {
+      "knowledge_id": "U3-K-129",
+      "canonical_label": "Photosynthetic electron-carrier names scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY",
+      "canonical_statement": "Specific carrier names such as plastoquinone, cytochrome complexes, plastocyanin, ferredoxin, and NADP+ reductase may be used as teacher context but are beyond required AP Exam memorization.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation/context, but must not become a required memorization or retrieval target in the student runtime."
+    },
+    {
+      "knowledge_id": "U3-K-139",
+      "canonical_label": "Calvin-cycle memorization scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY",
+      "canonical_statement": "Memorization of Calvin-cycle steps, intermediate structures, and enzyme names other than ATP synthase is beyond the current AP Exam scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation/context, but must not become a required memorization or retrieval target in the student runtime."
+    },
+    {
+      "knowledge_id": "U3-K-166",
+      "canonical_label": "Respiration-detail memorization scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY",
+      "canonical_statement": "Memorization of detailed glycolysis/Krebs steps, molecular structures, enzyme names, and exact intermediate sequences is beyond the current AP Exam scope.",
+      "student_runtime": false,
+      "permanent_palace": false,
+      "challenge_lab": false,
+      "enforcement": "May support teacher explanation/context, but must not become a required memorization or retrieval target in the student runtime."
+    }
+  ]
+}

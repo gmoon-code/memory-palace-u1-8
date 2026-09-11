@@ -1,0 +1,913 @@
+{
+  "palace_id": "Z9",
+  "palace_name": "Lipid Membrane Wing",
+  "story_title": "The Membrane Rescue Wing",
+  "tagline": "A cell membrane has become unstable as temperature changes. Follow the lipid technician from fat components to phospholipid bilayers and cholesterol’s buffering role.",
+  "guide": {
+    "name": "Lena Ortiz",
+    "role": "membrane systems technician",
+    "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+    "story_job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+  },
+  "premise": "A membrane-testing wing has lost temperature control. The model cell membrane becomes too fluid when warm and packs too tightly when cold. Lena must rebuild the lipid architecture before the chamber cycles again.",
+  "mission": "Follow Lena through eight stations. Distinguish fats, phospholipids, and steroids; build fats from glycerol and fatty acids; compare saturated and unsaturated tails; assemble a phospholipid bilayer; and use cholesterol to buffer membrane fluidity.",
+  "finale": "The repaired bilayer survives both warm and cold tests. Looking back through the wing, you can see why different lipid structures serve storage, membrane, and signaling roles—and why cholesterol does not simply make a membrane rigid.",
+  "estimated_minutes": 14,
+  "scene_count": 8,
+  "checkpoint_count": 4,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The wing runs as one semicircular membrane-repair lab. You enter through the Lipid Lobby, move through fat-building and fatty-acid stations, cross the membrane pool, visit the steroid gallery, and finish at the temperature gate.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Lipid Lobby",
+      "short": "Lipids",
+      "floor": "Lobby",
+      "symbol": "◐"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Glycerol Hook Rack",
+      "short": "Fat parts",
+      "floor": "Build bay",
+      "symbol": "Y"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Ester-Linkage Bench",
+      "short": "Ester",
+      "floor": "Build bay",
+      "symbol": "—"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Fatty-Acid Tail Runway",
+      "short": "Tails",
+      "floor": "Runway",
+      "symbol": "〰"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Fat Storage Vault",
+      "short": "Fat roles",
+      "floor": "Vault",
+      "symbol": "▣"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Phospholipid Pool Wall",
+      "short": "Bilayer",
+      "floor": "Membrane pool",
+      "symbol": "◉"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Steroid Ring Gallery",
+      "short": "Steroids",
+      "floor": "Gallery",
+      "symbol": "⬡"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Cholesterol Thermostat Gate",
+      "short": "Cholesterol",
+      "floor": "Test gate",
+      "symbol": "🌡"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Lipid Lobby",
+      "title": "The Molecules That Refuse the Fountain",
+      "scene_kicker": "Lipids share substantial hydrophobic character, but the class contains several very different structures.",
+      "location_description": "The lobby floor surrounds a circular water fountain. Oily droplets bead away from the water. Three illuminated doors lead to FAT, PHOSPHOLIPID, and STEROID sections. Lena’s membrane tablet flashes red.",
+      "scene_layout": {
+        "orientation": "The water fountain is left, oily lipid samples and Lena’s tablet are center, and the three lipid-class doors are right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Water fountain",
+            "symbol": "💧",
+            "description": "Makes hydrophobic behavior visible."
+          },
+          {
+            "position": "center",
+            "label": "Lipid samples",
+            "symbol": "◐",
+            "description": "Shows molecules with substantial hydrocarbon-rich hydrophobic regions."
+          },
+          {
+            "position": "right",
+            "label": "Three class doors",
+            "symbol": "F/P/S",
+            "description": "Lead to fats, phospholipids, and steroids; cholesterol belongs in the steroid family."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Lipid",
+          "kind": "molecular class",
+          "visual": "oily molecules that bead away from water, plus an amphipathic phospholipid model",
+          "job": "is a diverse class with substantial hydrophobic character; phospholipids also contain a hydrophilic region"
+        },
+        {
+          "name": "Lipid directory",
+          "kind": "class map",
+          "visual": "three doors labeled fat, phospholipid, steroid",
+          "job": "organizes the major lipid types emphasized here without pretending lipids are true polymers"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Lipid Lobby**. The lobby floor surrounds a circular water fountain. Oily droplets bead away from the water. Three illuminated doors lead to FAT, PHOSPHOLIPID, and STEROID sections. Lena’s membrane tablet flashes red. The Water fountain is on your left, the Lipid samples is straight ahead, and the Three class doors is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Lipid Lobby**. The lobby floor surrounds a circular water fountain. Oily droplets bead away from the water. Three illuminated doors lead to FAT, PHOSPHOLIPID, and STEROID sections. Lena’s membrane tablet flashes red. The Water fountain is on your left, the Lipid samples is straight ahead, and the Three class doors is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "A droplet rolls into the fountain and immediately beads away. **Lipids** are diverse molecules with substantial hydrophobic character because much of their structure is hydrocarbon-rich. Many are largely nonpolar, although phospholipids are amphipathic rather than simply “nonpolar.”",
+        "Lena points to the three doors: **fats, phospholipids, and steroids**. Cholesterol will appear later as a steroid lipid. None of these should be forced into a true repeating-unit polymer model.",
+        "Her membrane tablet flashes again. “We need the building logic first.” She pushes open the fat door, where a three-hook glycerol rack is waiting."
+      ],
+      "story_close": "Her membrane tablet flashes again. “We need the building logic first.” She pushes open the fat door, where a three-hook glycerol rack is waiting.",
+      "object_ids": [
+        "MO-APBIO-U1-LIP001",
+        "MO-APBIO-U1-LIP002"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP001",
+          "term": "Lipid",
+          "story": "an oil-rich molecular guest reaches the water fountain and beads away from it",
+          "science": "Lipids are a diverse group of molecules with substantial hydrophobic character because of their hydrocarbon-rich regions. Many are largely nonpolar, while phospholipids are amphipathic, with a hydrophilic head and hydrophobic tails. Lipids do not include true polymers.",
+          "exact_name": true,
+          "hint": "an oil-rich molecular guest reaches the water fountain and beads away from it"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP002",
+          "term": "Major lipid types",
+          "story": "three doors marked by a fat droplet, a membrane-forming head-and-tail icon, and a four-ring frame, with a cholesterol card displayed inside the ring section",
+          "science": "Major lipid types emphasized here include fats, phospholipids, and steroids; cholesterol is a steroid lipid.",
+          "exact_name": false,
+          "hint": "three doors marked by a fat droplet, a membrane-forming head-and-tail icon, and a four-ring frame, with a cholesterol card displayed inside the ring section"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Lipid",
+          "meaning": "Lipids are a diverse group of molecules with substantial hydrophobic character because of their hydrocarbon-rich regions. Many are largely nonpolar, while phospholipids are amphipathic, with a hydrophilic head and hydrophobic tails. Lipids do not include true polymers.",
+          "image": "an oil-rich molecular guest reaches the water fountain and beads away from it"
+        },
+        {
+          "term": "Major lipid types",
+          "meaning": "Major lipid types emphasized here include fats, phospholipids, and steroids; cholesterol is a steroid lipid.",
+          "image": "three doors marked by a fat droplet, a membrane-forming head-and-tail icon, and a four-ring frame, with a cholesterol card displayed inside the ring section"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP001",
+      "checkpoint_prompt": "",
+      "next_locus": "Glycerol Hook Rack"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Glycerol Hook Rack",
+      "title": "One Glycerol, Three Fatty-Acid Tails",
+      "scene_kicker": "A fat has a three-carbon alcohol framework joined to three fatty acids.",
+      "location_description": "A rack shaped like a three-pronged Y stands under bright lights. The central glycerol model has three hydroxyl-bearing positions. Three long fatty-acid tails hang beside it, each ending in a carboxyl group.",
+      "scene_layout": {
+        "orientation": "Glycerol rack is center, fatty-acid tails hang right, and a completed three-tail fat model is displayed left.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Completed fat",
+            "symbol": "3 tails",
+            "description": "Shows glycerol joined to three fatty acids."
+          },
+          {
+            "position": "center",
+            "label": "Glycerol rack",
+            "symbol": "Y",
+            "description": "Provides the three-carbon alcohol framework."
+          },
+          {
+            "position": "right",
+            "label": "Fatty-acid hooks",
+            "symbol": "~~~~COOH",
+            "description": "Show long hydrocarbon chains ending in a carboxyl group."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Glycerol",
+          "kind": "fat framework",
+          "visual": "a three-carbon alcohol with three hydroxyl-bearing positions",
+          "job": "provides the central framework that can be joined to three fatty acids in a fat"
+        },
+        {
+          "name": "Fatty acid",
+          "kind": "lipid component",
+          "visual": "a long hydrocarbon chain ending in a carboxyl group",
+          "job": "provides the hydrophobic tail component of fats and phospholipids"
+        },
+        {
+          "name": "Fat",
+          "kind": "storage lipid",
+          "visual": "one glycerol framework carrying three fatty-acid tails",
+          "job": "is composed of glycerol joined to three fatty acids"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Glycerol Hook Rack**. A rack shaped like a three-pronged Y stands under bright lights. The central glycerol model has three hydroxyl-bearing positions. Three long fatty-acid tails hang beside it, each ending in a carboxyl group. The Completed fat is on your left, the Glycerol rack is straight ahead, and the Fatty-acid hooks is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Glycerol Hook Rack**. A rack shaped like a three-pronged Y stands under bright lights. The central glycerol model has three hydroxyl-bearing positions. Three long fatty-acid tails hang beside it, each ending in a carboxyl group. The Completed fat is on your left, the Glycerol rack is straight ahead, and the Fatty-acid hooks is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "Lena lifts the central frame. **Glycerol** is a three-carbon alcohol with hydroxyl groups that provide attachment positions. Beside it hang three **fatty acids**, each with a long hydrocarbon chain and a carboxyl group at one end.",
+        "When one glycerol is joined to three fatty acids, the result is a **fat**. The model already hints at why the molecule has strong hydrophobic character: most of its structure consists of long hydrocarbon tails.",
+        "The pieces are still separate. Lena carries them to an orange clamp where the actual covalent connections will be formed."
+      ],
+      "story_close": "The pieces are still separate. Lena carries them to an orange clamp where the actual covalent connections will be formed.",
+      "object_ids": [
+        "MO-APBIO-U1-LIP003",
+        "MO-APBIO-U1-LIP004",
+        "MO-APBIO-U1-LIP005"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP003",
+          "term": "Fat composition",
+          "story": "one central rack holds exactly three long fatty-acid tails",
+          "science": "A fat consists of glycerol joined to three fatty acids.",
+          "exact_name": false,
+          "hint": "one central rack holds exactly three long fatty-acid tails"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP004",
+          "term": "Glycerol",
+          "story": "a GLITTER-ROLL spindle carries several alcohol-like OH hooks",
+          "science": "Glycerol is a three-carbon alcohol with hydroxyl groups that can connect to fatty acids.",
+          "exact_name": true,
+          "hint": "a GLITTER-ROLL spindle carries several alcohol-like OH hooks"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP005",
+          "term": "Fatty acid",
+          "story": "a long oily carbon-chain tail ends at one acidic carboxyl head",
+          "science": "A fatty acid has a long hydrocarbon chain with a carboxyl group at one end.",
+          "exact_name": true,
+          "hint": "a long oily carbon-chain tail ends at one acidic carboxyl head"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Fat composition",
+          "meaning": "A fat consists of glycerol joined to three fatty acids.",
+          "image": "one central rack holds exactly three long fatty-acid tails"
+        },
+        {
+          "term": "Glycerol",
+          "meaning": "Glycerol is a three-carbon alcohol with hydroxyl groups that can connect to fatty acids.",
+          "image": "a GLITTER-ROLL spindle carries several alcohol-like OH hooks"
+        },
+        {
+          "term": "Fatty acid",
+          "meaning": "A fatty acid has a long hydrocarbon chain with a carboxyl group at one end.",
+          "image": "a long oily carbon-chain tail ends at one acidic carboxyl head"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP004",
+      "checkpoint_prompt": "",
+      "next_locus": "Ester-Linkage Bench"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Ester-Linkage Bench",
+      "title": "The Covalent Clasp in a Fat",
+      "scene_kicker": "Dehydration reactions join fatty acids to glycerol through ester linkages.",
+      "location_description": "An orange molecular clamp aligns one fatty-acid carboxyl end with a glycerol hydroxyl position. A water indicator flashes as the new covalent connection closes.",
+      "scene_layout": {
+        "orientation": "Glycerol is left, the ester-forming clamp is center, and the attached fatty-acid tail extends right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Glycerol hydroxyl",
+            "symbol": "OH",
+            "description": "Provides one side of the joining reaction."
+          },
+          {
+            "position": "center",
+            "label": "Ester clamp",
+            "symbol": "—",
+            "description": "Forms the covalent ester linkage through dehydration chemistry."
+          },
+          {
+            "position": "right",
+            "label": "Fatty-acid carboxyl",
+            "symbol": "COOH",
+            "description": "Provides the fatty-acid side of the linkage."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Ester linkage",
+          "kind": "fat covalent connection",
+          "visual": "a bright clasp between glycerol and a fatty acid",
+          "job": "covalently joins fatty acids to glycerol in fats through dehydration reactions"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Ester-Linkage Bench**. An orange molecular clamp aligns one fatty-acid carboxyl end with a glycerol hydroxyl position. A water indicator flashes as the new covalent connection closes. The Glycerol hydroxyl is on your left, the Ester clamp is straight ahead, and the Fatty-acid carboxyl is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Ester-Linkage Bench**. An orange molecular clamp aligns one fatty-acid carboxyl end with a glycerol hydroxyl position. A water indicator flashes as the new covalent connection closes. The Glycerol hydroxyl is on your left, the Ester clamp is straight ahead, and the Fatty-acid carboxyl is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "The clamp closes. The covalent connection between the fatty acid and glycerol is an **ester linkage**. In fat synthesis, ester linkages form through dehydration reactions.",
+        "Lena repeats the connection until all three fatty-acid tails are attached. She does not ask you to memorize an exact structural drawing; the durable relationship is glycerol + fatty acids connected by ester linkages.",
+        "The finished tails drag across the floor toward a runway where some lie straight and others bend sharply."
+      ],
+      "story_close": "The finished tails drag across the floor toward a runway where some lie straight and others bend sharply.",
+      "object_ids": [
+        "MO-APBIO-U1-LIP006"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP006",
+          "term": "Ester linkage",
+          "story": "ESTHER closes a covalent clasp between the glycerol scaffold and a fatty-acid tail as a water droplet leaves",
+          "science": "In fats, fatty acids are covalently joined to glycerol by ester linkages formed through dehydration reactions.",
+          "exact_name": true,
+          "hint": "ESTHER closes a covalent clasp between the glycerol scaffold and a fatty-acid tail as a water droplet leaves"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Ester linkage",
+          "meaning": "In fats, fatty acids are covalently joined to glycerol by ester linkages formed through dehydration reactions.",
+          "image": "ESTHER closes a covalent clasp between the glycerol scaffold and a fatty-acid tail as a water droplet leaves"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP006",
+      "checkpoint_prompt": "What covalent linkage joins fatty acids to glycerol in a fat?",
+      "next_locus": "Fatty-Acid Tail Runway"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Fatty-Acid Tail Runway",
+      "title": "Straight Tails and Kinked Tails",
+      "scene_kicker": "Carbon-carbon double bonds change tail shape, unsaturation, and packing behavior.",
+      "location_description": "A long runway displays fatty-acid tails side by side. Straight tails contain only carbon-carbon single bonds. Other tails kink at glowing C=C double-bond hinges. A packing tray compares how tightly each group can stack.",
+      "scene_layout": {
+        "orientation": "Straight saturated tails line the left lane, C=C hinge display is center, and kinked unsaturated tails with a fluidity tray occupy the right lane.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Saturated lane",
+            "symbol": "────",
+            "description": "Contains no C=C double bonds and packs relatively tightly."
+          },
+          {
+            "position": "center",
+            "label": "Double-bond hinge",
+            "symbol": "C=C",
+            "description": "Introduces a rigid bend in common cis-unsaturated tails."
+          },
+          {
+            "position": "right",
+            "label": "Unsaturated lane",
+            "symbol": "──⌁─",
+            "description": "Contains one or more C=C double bonds and packs less tightly as kinks accumulate."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Saturated fatty acid",
+          "kind": "fatty-acid type",
+          "visual": "a straight hydrocarbon tail with only carbon-carbon single bonds",
+          "job": "contains no C=C double bonds"
+        },
+        {
+          "name": "Unsaturated fatty acid",
+          "kind": "fatty-acid type",
+          "visual": "a tail containing at least one C=C double bond",
+          "job": "contains one or more carbon-carbon double bonds"
+        },
+        {
+          "name": "Double-bond kink",
+          "kind": "shape change",
+          "visual": "a visible bend at a C=C hinge",
+          "job": "makes the tail less straight and interferes with tight packing"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Fatty-Acid Tail Runway**. A long runway displays fatty-acid tails side by side. Straight tails contain only carbon-carbon single bonds. Other tails kink at glowing C=C double-bond hinges. A packing tray compares how tightly each group can stack. The Saturated lane is on your left, the Double-bond hinge is straight ahead, and the Unsaturated lane is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Fatty-Acid Tail Runway**. A long runway displays fatty-acid tails side by side. Straight tails contain only carbon-carbon single bonds. Other tails kink at glowing C=C double-bond hinges. A packing tray compares how tightly each group can stack. The Saturated lane is on your left, the Double-bond hinge is straight ahead, and the Unsaturated lane is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "The left tails are **saturated fatty acids**: their carbon chains contain only carbon-carbon single bonds and no C=C double bonds. They can line up relatively straight.",
+        "The right tails are **unsaturated fatty acids** because each contains at least one C=C double bond. In the common cis configuration emphasized here, that double bond creates a **kink** in the hydrocarbon chain.",
+        "Lena adds more double-bond hinges. More double bonds mean greater **unsaturation**, and more kinks interfere with close packing. As a result, greater unsaturation is generally associated with greater **liquidity at room temperature**.",
+        "The runway sends the completed fats into a heavy vault labeled LONG-TERM STORAGE."
+      ],
+      "story_close": "The runway sends the completed fats into a heavy vault labeled LONG-TERM STORAGE.",
+      "object_ids": [
+        "MO-APBIO-U1-LIP007",
+        "MO-APBIO-U1-LIP008",
+        "MO-APBIO-U1-LIP009",
+        "MO-APBIO-U1-LIP010",
+        "MO-APBIO-U1-LIP011"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP007",
+          "term": "Saturated fatty acid",
+          "story": "a straight fatty-acid tail has only single carbon-carbon bonds and is filled with hydrogen markers",
+          "science": "A saturated fatty acid has no carbon-carbon double bonds in its hydrocarbon chain.",
+          "exact_name": true,
+          "hint": "a straight fatty-acid tail has only single carbon-carbon bonds and is filled with hydrogen markers"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP008",
+          "term": "Unsaturated fatty acid",
+          "story": "a neighboring fatty-acid tail contains a C=C hinge and bends at the hinge",
+          "science": "Unsaturated fatty acids contain at least one C=C double bond.",
+          "exact_name": true,
+          "hint": "a neighboring fatty-acid tail contains a C=C hinge and bends at the hinge"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP009",
+          "term": "Double-bond kink",
+          "story": "one C=C hinge forces the tail to bend at that location",
+          "science": "A carbon-carbon double bond in an unsaturated fatty acid causes the carbon chain to kink.",
+          "exact_name": false,
+          "hint": "one C=C hinge forces the tail to bend at that location"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP010",
+          "term": "Unsaturation increases with double bonds",
+          "story": "a counter adds C=C hinges one by one and the unsaturation meter rises with each added hinge",
+          "science": "More double bonds in a fatty-acid tail mean greater unsaturation.",
+          "exact_name": false,
+          "hint": "a counter adds C=C hinges one by one and the unsaturation meter rises with each added hinge"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP011",
+          "term": "Unsaturation and liquidity",
+          "story": "tails with more C=C hinges pack less tightly and the lipid sample flows more easily at room temperature",
+          "science": "Greater lipid unsaturation is associated with greater liquidity at room temperature.",
+          "exact_name": false,
+          "hint": "tails with more C=C hinges pack less tightly and the lipid sample flows more easily at room temperature"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Saturated fatty acid",
+          "meaning": "A saturated fatty acid has no carbon-carbon double bonds in its hydrocarbon chain.",
+          "image": "a straight fatty-acid tail has only single carbon-carbon bonds and is filled with hydrogen markers"
+        },
+        {
+          "term": "Unsaturated fatty acid",
+          "meaning": "Unsaturated fatty acids contain at least one C=C double bond.",
+          "image": "a neighboring fatty-acid tail contains a C=C hinge and bends at the hinge"
+        },
+        {
+          "term": "Double-bond kink",
+          "meaning": "A carbon-carbon double bond in an unsaturated fatty acid causes the carbon chain to kink.",
+          "image": "one C=C hinge forces the tail to bend at that location"
+        },
+        {
+          "term": "Unsaturation increases with double bonds",
+          "meaning": "More double bonds in a fatty-acid tail mean greater unsaturation.",
+          "image": "a counter adds C=C hinges one by one and the unsaturation meter rises with each added hinge"
+        },
+        {
+          "term": "Unsaturation and liquidity",
+          "meaning": "Greater lipid unsaturation is associated with greater liquidity at room temperature.",
+          "image": "tails with more C=C hinges pack less tightly and the lipid sample flows more easily at room temperature"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP008",
+      "checkpoint_prompt": "What type of fatty acid contains at least one carbon-carbon double bond?",
+      "next_locus": "Fat Storage Vault"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Fat Storage Vault",
+      "title": "Dense Energy for Later",
+      "scene_kicker": "Fats are built for long-term energy storage and can also support cushioning and insulation.",
+      "location_description": "The vault contains compact energy barrels stacked behind thick padded walls. A body silhouette shows adipose tissue around organs and a subcutaneous layer under the skin.",
+      "scene_layout": {
+        "orientation": "Energy barrels fill left, an organ-cushion model sits center, and the subcutaneous insulation layer is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Energy storage",
+            "symbol": "⚡",
+            "description": "Stores large amounts of chemical energy for long-term use."
+          },
+          {
+            "position": "center",
+            "label": "Organ cushion",
+            "symbol": "◉",
+            "description": "Adipose tissue can physically cushion organs."
+          },
+          {
+            "position": "right",
+            "label": "Insulation layer",
+            "symbol": "▱",
+            "description": "Subcutaneous fat can reduce heat transfer."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Stored fat",
+          "kind": "long-term reserve",
+          "visual": "dense lipid barrels marked FOR LATER",
+          "job": "serves as an important long-term energy store"
+        },
+        {
+          "name": "Adipose tissue",
+          "kind": "fat-containing tissue",
+          "visual": "padded tissue surrounding organs and under skin",
+          "job": "can cushion organs and contribute to thermal insulation"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Fat Storage Vault**. The vault contains compact energy barrels stacked behind thick padded walls. A body silhouette shows adipose tissue around organs and a subcutaneous layer under the skin. The Energy storage is on your left, the Organ cushion is straight ahead, and the Insulation layer is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Fat Storage Vault**. The vault contains compact energy barrels stacked behind thick padded walls. A body silhouette shows adipose tissue around organs and a subcutaneous layer under the skin. The Energy storage is on your left, the Organ cushion is straight ahead, and the Insulation layer is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "Inside the vault, **fat** is treated as long-term storage. Energy-rich hydrocarbon chains make fats effective reservoirs of chemical energy for later use.",
+        "The body model adds two additional roles. **Adipose tissue** can cushion organs, and subcutaneous fat can provide **thermal insulation**. Fats therefore participate in cellular and organismal function beyond serving as an immediate fuel molecule.",
+        "Lena leaves the storage vault and returns to the membrane emergency. A round pool ahead is filling with phospholipids whose heads and tails are orienting themselves without being told where to go."
+      ],
+      "story_close": "Lena leaves the storage vault and returns to the membrane emergency. A round pool ahead is filling with phospholipids whose heads and tails are orienting themselves without being told where to go.",
+      "object_ids": [
+        "MO-APBIO-U1-LIP012"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP012",
+          "term": "Fat functions",
+          "story": "a dense long-term energy vault sits beside a soft organ cushion and a subcutaneous insulating layer",
+          "science": "Fats provide long-term energy storage. Adipose tissue can also cushion organs and subcutaneous fat can provide thermal insulation.",
+          "exact_name": false,
+          "hint": "a dense long-term energy vault sits beside a soft organ cushion and a subcutaneous insulating layer"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Fat functions",
+          "meaning": "Fats provide long-term energy storage. Adipose tissue can also cushion organs and subcutaneous fat can provide thermal insulation.",
+          "image": "a dense long-term energy vault sits beside a soft organ cushion and a subcutaneous insulating layer"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP012",
+      "checkpoint_prompt": "",
+      "next_locus": "Phospholipid Pool Wall"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Phospholipid Pool Wall",
+      "title": "The Molecules That Build a Wall in Water",
+      "scene_kicker": "A phospholipid carries two chemical personalities, so many of them self-organize into a bilayer.",
+      "location_description": "A clear pool fills the center of the room. Each phospholipid model has a round phosphate-containing head and two hydrocarbon tails. As the models enter water, heads face the water while tails hide together inside a growing double layer.",
+      "scene_layout": {
+        "orientation": "Individual phospholipid parts are left, the assembling bilayer is center, and the completed membrane wall spans the right side.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Phospholipid model",
+            "symbol": "○〰〰",
+            "description": "Shows glycerol, two fatty-acid tails, and a phosphate-containing head region."
+          },
+          {
+            "position": "center",
+            "label": "Bilayer assembly",
+            "symbol": "○〰〰|〰〰○",
+            "description": "Heads face water on both sides while tails gather inward."
+          },
+          {
+            "position": "right",
+            "label": "Membrane wall",
+            "symbol": "║",
+            "description": "The completed phospholipid bilayer forms the basic lipid barrier of the membrane."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Phospholipid",
+          "kind": "amphipathic lipid",
+          "visual": "a molecule with a hydrophilic phosphate-containing head and two hydrophobic fatty-acid tails",
+          "job": "forms the major structural lipid pattern of cell membranes"
+        },
+        {
+          "name": "Hydrophilic head",
+          "kind": "water-interacting region",
+          "visual": "a charged/polar round head facing the surrounding water",
+          "job": "interacts favorably with aqueous environments"
+        },
+        {
+          "name": "Hydrophobic tails",
+          "kind": "water-avoiding region",
+          "visual": "two hydrocarbon tails tucked into the membrane interior",
+          "job": "avoid water and cluster with other hydrophobic tails"
+        },
+        {
+          "name": "Phospholipid bilayer",
+          "kind": "membrane structure",
+          "visual": "two sheets of phospholipids tail-to-tail",
+          "job": "forms a stable membrane barrier in water"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Phospholipid Pool Wall**. A clear pool fills the center of the room. Each phospholipid model has a round phosphate-containing head and two hydrocarbon tails. As the models enter water, heads face the water while tails hide together inside a growing double layer. The Phospholipid model is on your left, the Bilayer assembly is straight ahead, and the Membrane wall is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Phospholipid Pool Wall**. A clear pool fills the center of the room. Each phospholipid model has a round phosphate-containing head and two hydrocarbon tails. As the models enter water, heads face the water while tails hide together inside a growing double layer. The Phospholipid model is on your left, the Bilayer assembly is straight ahead, and the Membrane wall is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "Lena holds up one **phospholipid**: glycerol connected to two fatty acids and a phosphate-containing head region. Unlike a fat, it has only two fatty-acid tails and a strongly polar/charged head region.",
+        "The head is **hydrophilic** and interacts with water. The fatty-acid tails are **hydrophobic**. When many phospholipids enter water, those two tendencies drive organization: heads remain exposed to water while tails cluster away from it.",
+        "Two layers meet tail-to-tail. The result is a **phospholipid bilayer**, the basic lipid architecture of plasma and other cell membranes. The membrane repair on Lena’s tablet finally has a wall—but it still fails the temperature test.",
+        "She points to a gallery of four-ring molecules. “The final adjustment comes from a different kind of lipid.”"
+      ],
+      "story_close": "She points to a gallery of four-ring molecules. “The final adjustment comes from a different kind of lipid.”",
+      "object_ids": [
+        "MO-APBIO-U1-LIP013",
+        "MO-APBIO-U1-LIP014",
+        "MO-APBIO-U1-LIP015"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP013",
+          "term": "Phospholipid",
+          "story": "one glycerol scaffold holds two fatty-acid tails and a phosphate-containing head region",
+          "science": "A phospholipid has glycerol connected to two fatty acids and a phosphate-containing head region.",
+          "exact_name": true,
+          "hint": "one glycerol scaffold holds two fatty-acid tails and a phosphate-containing head region"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP014",
+          "term": "Hydrophilic head and hydrophobic tails",
+          "story": "the phospholipid head faces the surrounding water while its two oily tails turn away from the water",
+          "science": "A phospholipid has a hydrophilic head that interacts with water and hydrophobic fatty-acid tails that avoid water.",
+          "exact_name": false,
+          "hint": "the phospholipid head faces the surrounding water while its two oily tails turn away from the water"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP015",
+          "term": "Phospholipid bilayer",
+          "story": "many head-and-tail molecules arrange into two opposing rows with heads facing water on both sides and tails meeting in the middle",
+          "science": "Phospholipids assemble into bilayers in water and form lipid bilayers of plasma and cell membranes.",
+          "exact_name": false,
+          "hint": "many head-and-tail molecules arrange into two opposing rows with heads facing water on both sides and tails meeting in the middle"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Phospholipid",
+          "meaning": "A phospholipid has glycerol connected to two fatty acids and a phosphate-containing head region.",
+          "image": "one glycerol scaffold holds two fatty-acid tails and a phosphate-containing head region"
+        },
+        {
+          "term": "Hydrophilic head and hydrophobic tails",
+          "meaning": "A phospholipid has a hydrophilic head that interacts with water and hydrophobic fatty-acid tails that avoid water.",
+          "image": "the phospholipid head faces the surrounding water while its two oily tails turn away from the water"
+        },
+        {
+          "term": "Phospholipid bilayer",
+          "meaning": "Phospholipids assemble into bilayers in water and form lipid bilayers of plasma and cell membranes.",
+          "image": "many head-and-tail molecules arrange into two opposing rows with heads facing water on both sides and tails meeting in the middle"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP013",
+      "checkpoint_prompt": "What amphipathic lipid has a phosphate-containing hydrophilic head and two hydrophobic fatty-acid tails?",
+      "next_locus": "Steroid Ring Gallery"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Steroid Ring Gallery",
+      "title": "Four Fused Rings, Different Signals",
+      "scene_kicker": "Steroids share a ring framework even when their attached groups and biological roles differ.",
+      "location_description": "A gallery displays molecular sculptures built around four fused carbon rings. Different side groups decorate each sculpture. One case is labeled TESTOSTERONE; several others are labeled hormone or membrane precursor.",
+      "scene_layout": {
+        "orientation": "The four-ring framework is left, testosterone display is center, and diverse steroid derivatives fill the right wall.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Four-ring skeleton",
+            "symbol": "⬡⬡",
+            "description": "Shows the characteristic fused-ring framework of steroids."
+          },
+          {
+            "position": "center",
+            "label": "Testosterone case",
+            "symbol": "T",
+            "description": "Displays one specific steroid hormone."
+          },
+          {
+            "position": "right",
+            "label": "Steroid variants",
+            "symbol": "R",
+            "description": "Shows that attached groups create different steroid molecules and functions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Steroid",
+          "kind": "lipid class",
+          "visual": "a rigid framework of four fused carbon rings",
+          "job": "is defined by the characteristic four-ring carbon framework"
+        },
+        {
+          "name": "Testosterone",
+          "kind": "steroid hormone",
+          "visual": "one four-ring molecule in a labeled display case",
+          "job": "is an example of a steroid that functions as a hormone"
+        },
+        {
+          "name": "Steroid hormones",
+          "kind": "signaling molecules",
+          "visual": "selected steroid models carrying signal badges",
+          "job": "can regulate growth, development, metabolism, and homeostasis; not every steroid is a hormone"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Steroid Ring Gallery**. A gallery displays molecular sculptures built around four fused carbon rings. Different side groups decorate each sculpture. One case is labeled TESTOSTERONE; several others are labeled hormone or membrane precursor. The Four-ring skeleton is on your left, the Testosterone case is straight ahead, and the Steroid variants is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Steroid Ring Gallery**. A gallery displays molecular sculptures built around four fused carbon rings. Different side groups decorate each sculpture. One case is labeled TESTOSTERONE; several others are labeled hormone or membrane precursor. The Four-ring skeleton is on your left, the Testosterone case is straight ahead, and the Steroid variants is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "The common feature across the gallery is the rigid framework of **four fused carbon rings**. Lipids built on this framework are **steroids**. Different attached groups distinguish one steroid molecule from another.",
+        "The center case contains **testosterone**, one example of a steroid hormone. Some steroids function as hormones that regulate processes such as growth, development, metabolism, and homeostasis.",
+        "Lena leaves several four-ring models without hormone badges. “Do not turn the example into the definition,” she says. Not every steroid is a hormone.",
+        "At the far end, one steroid is already embedded between phospholipid tails on the membrane tablet. Its name is cholesterol, and the temperature chamber is waiting."
+      ],
+      "story_close": "At the far end, one steroid is already embedded between phospholipid tails on the membrane tablet. Its name is cholesterol, and the temperature chamber is waiting.",
+      "object_ids": [
+        "MO-APBIO-U1-LIP016",
+        "MO-APBIO-U1-LIP017",
+        "MO-APBIO-U1-LIP018"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP016",
+          "term": "Steroid",
+          "story": "a rigid frame is built from four fused carbon rings, with interchangeable side-group tags clipped around the frame",
+          "science": "A steroid has a characteristic framework of four fused carbon rings; different attached groups produce different steroid molecules.",
+          "exact_name": true,
+          "hint": "a rigid frame is built from four fused carbon rings, with interchangeable side-group tags clipped around the frame"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP017",
+          "term": "Testosterone",
+          "story": "a TEST paper strikes a TONE bell mounted inside one four-ring steroid frame",
+          "science": "Testosterone is one example of a steroid hormone.",
+          "exact_name": true,
+          "hint": "a TEST paper strikes a TONE bell mounted inside one four-ring steroid frame"
+        },
+        {
+          "object_id": "MO-APBIO-U1-LIP018",
+          "term": "Steroid hormone functions",
+          "story": "only some four-ring frames enter a control panel with growth, development, metabolism, and homeostasis dials",
+          "science": "Steroids are lipids characterized by four fused carbon rings. Some steroids function as hormones that regulate processes such as growth, development, metabolism, and homeostasis; not every steroid is a hormone.",
+          "exact_name": false,
+          "hint": "only some four-ring frames enter a control panel with growth, development, metabolism, and homeostasis dials"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Steroid",
+          "meaning": "A steroid has a characteristic framework of four fused carbon rings; different attached groups produce different steroid molecules.",
+          "image": "a rigid frame is built from four fused carbon rings, with interchangeable side-group tags clipped around the frame"
+        },
+        {
+          "term": "Testosterone",
+          "meaning": "Testosterone is one example of a steroid hormone.",
+          "image": "a TEST paper strikes a TONE bell mounted inside one four-ring steroid frame"
+        },
+        {
+          "term": "Steroid hormone functions",
+          "meaning": "Steroids are lipids characterized by four fused carbon rings. Some steroids function as hormones that regulate processes such as growth, development, metabolism, and homeostasis; not every steroid is a hormone.",
+          "image": "only some four-ring frames enter a control panel with growth, development, metabolism, and homeostasis dials"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP016",
+      "checkpoint_prompt": "",
+      "next_locus": "Cholesterol Thermostat Gate"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Cholesterol Thermostat Gate",
+      "title": "The Membrane Fluidity Buffer",
+      "scene_kicker": "Cholesterol restrains excessive movement when warm and interferes with tight packing when cold.",
+      "location_description": "The final gate is a temperature tunnel containing the repaired bilayer. Cholesterol molecules sit between phospholipid tails. The tunnel alternates between warm red light and cold blue light while a fluidity meter records membrane behavior.",
+      "scene_layout": {
+        "orientation": "Warm test is left, cholesterol-filled bilayer is center, and cold test is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Warm chamber",
+            "symbol": "HOT",
+            "description": "Phospholipid motion increases; cholesterol restrains excessive movement."
+          },
+          {
+            "position": "center",
+            "label": "Cholesterol in bilayer",
+            "symbol": "CHOL",
+            "description": "Sits among phospholipid tails as a membrane component."
+          },
+          {
+            "position": "right",
+            "label": "Cold chamber",
+            "symbol": "COLD",
+            "description": "Cholesterol interferes with tight phospholipid packing as temperature falls."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Lena Ortiz",
+          "kind": "guide",
+          "visual": "slate-gray jumpsuit, transparent tablet showing a live bilayer, orange molecular clamp",
+          "job": "keeps one damaged membrane model on screen while each station contributes a lipid feature needed to repair it"
+        },
+        {
+          "name": "Cholesterol",
+          "kind": "steroid membrane lipid",
+          "visual": "a small four-ring molecule wedged between phospholipid tails",
+          "job": "acts as a membrane-fluidity buffer in animal cell membranes across changing temperatures"
+        }
+      ],
+      "story_open": "Lena Ortiz's membrane tablet flashes and guides you into **Cholesterol Thermostat Gate**. The final gate is a temperature tunnel containing the repaired bilayer. Cholesterol molecules sit between phospholipid tails. The tunnel alternates between warm red light and cold blue light while a fluidity meter records membrane behavior. The Warm chamber is on your left, the Cholesterol in bilayer is straight ahead, and the Cold chamber is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+      "story_paragraphs": [
+        "Lena Ortiz's membrane tablet flashes and guides you into **Cholesterol Thermostat Gate**. The final gate is a temperature tunnel containing the repaired bilayer. Cholesterol molecules sit between phospholipid tails. The tunnel alternates between warm red light and cold blue light while a fluidity meter records membrane behavior. The Warm chamber is on your left, the Cholesterol in bilayer is straight ahead, and the Cold chamber is on your right. The repair problem stays visible on the tablet while the room isolates one lipid feature at a time.",
+        "Lena inserts **cholesterol** between the phospholipid tails. Cholesterol is a steroid and a common component of animal cell membranes.",
+        "The tunnel warms. Phospholipid motion increases, but cholesterol restrains some of that movement. The tunnel then turns cold. As phospholipids tend to pack more tightly, cholesterol interferes with that close packing.",
+        "That two-direction effect is why cholesterol is best remembered as a **membrane-fluidity buffer**, not as a molecule that simply “makes membranes rigid.” It helps maintain membrane properties across temperature changes.",
+        "The fluidity meter settles in the safe range. Lena rotates the tablet toward you: fat storage, fatty-acid saturation, phospholipid amphipathic structure, bilayer assembly, steroid rings, and cholesterol now belong to one connected membrane story."
+      ],
+      "story_close": "The fluidity meter settles in the safe range. Lena rotates the tablet toward you: fat storage, fatty-acid saturation, phospholipid amphipathic structure, bilayer assembly, steroid rings, and cholesterol now belong to one connected membrane story.",
+      "object_ids": [
+        "MO-APBIO-U1-LIP019"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-LIP019",
+          "term": "Cholesterol",
+          "story": "a COAL-colored ESTHER ROLL wedges among animal-membrane phospholipids beside a thermostat",
+          "science": "Cholesterol is a steroid and common component of animal cell membranes. It acts as a membrane-fluidity buffer, restraining phospholipid movement at higher temperatures and hindering tight packing at lower temperatures, thereby helping maintain membrane properties across temperature changes.",
+          "exact_name": true,
+          "hint": "a COAL-colored ESTHER ROLL wedges among animal-membrane phospholipids beside a thermostat"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cholesterol",
+          "meaning": "Cholesterol is a steroid and common component of animal cell membranes. It acts as a membrane-fluidity buffer, restraining phospholipid movement at higher temperatures and hindering tight packing at lower temperatures, thereby helping maintain membrane properties across temperature changes.",
+          "image": "a COAL-colored ESTHER ROLL wedges among animal-membrane phospholipids beside a thermostat"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-LIP019",
+      "checkpoint_prompt": "Which steroid lipid in animal membranes buffers fluidity by restraining movement when warm and interfering with tight packing when cold?",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}

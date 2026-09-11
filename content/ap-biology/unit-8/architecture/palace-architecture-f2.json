@@ -1,0 +1,2520 @@
+{
+  "schema": "memory-palace-v2-unit8-f2-architecture-1.0",
+  "generated_utc": "2026-09-09T02:45:00+00:00",
+  "unit": {
+    "unit_id": "unit-8",
+    "number": 8,
+    "title": "Ecology"
+  },
+  "design_rules": [
+    "F2 defines learning destinations and spatial architecture only; it contains no polished story prose and does not release Unit 8 to students.",
+    "All 255 F1 canonical records remain unchanged; F2 assigns learning function without editing scientific content.",
+    "Behavior loci keep proximate/ultimate, innate/learned, sign-stimulus/response, kinesis/taxis, and fitness explanations explicitly discriminable.",
+    "Energy flows one way through ecosystems while matter cycles; no locus may imply that organisms create energy or that energy is recycled.",
+    "Biogeochemical-cycle loci must encode reservoirs and process direction, especially the distinct nitrogen transformations.",
+    "Population equations must keep dN/dt, N, B, D, rmax, and K distinct; equation symbols remain visually attached to their biological meanings.",
+    "Exponential and logistic models remain idealized models with explicit assumptions; carrying capacity is environment-dependent and not permanently fixed.",
+    "r- and K-selection remain ends of a life-history continuum, not rigid organism types.",
+    "Community loci must keep habitat/niche, fundamental/realized niche, and interaction-sign distinctions visible.",
+    "Simpson diversity index must use the AP equation 1 − Σ(n/N)² with n and N visibly distinguished and larger values interpreted as greater diversity for this form.",
+    "Keystone and foundation species remain distinct and context-dependent.",
+    "Introduced does not automatically mean invasive, and mutation is never represented as directed by environmental need.",
+    "Biological magnification, eutrophication, ocean acidification, habitat fragmentation, and overharvesting remain distinct mechanisms rather than a generic human-impact category.",
+    "Every permanent locus requires a scientific visual in addition to any later mnemonic or narrative imagery."
+  ],
+  "counts": {
+    "canonical_records": 255,
+    "palace_managed_records": 211,
+    "scope_guard_records": 31,
+    "practice_only_records": 13,
+    "journeys": 8,
+    "bundles": 22,
+    "permanent_loci": 58,
+    "embedded_palace_records": 153,
+    "mixed_discrimination_sets": 40,
+    "exact_name_targets": 135
+  },
+  "journeys": [
+    {
+      "journey_id": "U8-J1",
+      "order": 1,
+      "working_title": "Behavioral Response Institute",
+      "content_focus": "Behavioral and physiological response, communication, learning, movement, reproductive/social behavior, and plant environmental response",
+      "setting_logic": "A research institute uses stable analysis stations so cause, cue, response, learning mode, movement direction, communication, and fitness consequences remain physically distinguishable.",
+      "locus_count": 12,
+      "route": [
+        "U8-L01",
+        "U8-L02",
+        "U8-L03",
+        "U8-L04",
+        "U8-L05",
+        "U8-L06",
+        "U8-L07",
+        "U8-L08",
+        "U8-L09",
+        "U8-L10",
+        "U8-L11",
+        "U8-L12"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B01",
+          "title": "Behavior foundations and causal questions",
+          "loci": [
+            "U8-L01",
+            "U8-L02",
+            "U8-L03"
+          ]
+        },
+        {
+          "bundle_id": "U8-B02",
+          "title": "Innate patterns and movement",
+          "loci": [
+            "U8-L04",
+            "U8-L05",
+            "U8-L06"
+          ]
+        },
+        {
+          "bundle_id": "U8-B03",
+          "title": "Communication and learning",
+          "loci": [
+            "U8-L07",
+            "U8-L08",
+            "U8-L09"
+          ]
+        },
+        {
+          "bundle_id": "U8-B04",
+          "title": "Fitness strategies and plant response",
+          "loci": [
+            "U8-L10",
+            "U8-L11",
+            "U8-L12"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U8-J2",
+      "order": 2,
+      "working_title": "Ecosystem Energy Exchange Hall",
+      "content_focus": "Organism energy budgets, thermoregulation, ecological levels, trophic roles, production, and energy transfer",
+      "setting_logic": "A power-and-transfer hall follows energy from organism budgets through primary capture, trophic transfer, and ecosystem-level consequences while matter conservation remains separately visible.",
+      "locus_count": 9,
+      "route": [
+        "U8-L13",
+        "U8-L14",
+        "U8-L15",
+        "U8-L16",
+        "U8-L17",
+        "U8-L18",
+        "U8-L19",
+        "U8-L20",
+        "U8-L21"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B05",
+          "title": "Energy budgets, thermoregulation, and ecosystem frame",
+          "loci": [
+            "U8-L13",
+            "U8-L14",
+            "U8-L15",
+            "U8-L16"
+          ]
+        },
+        {
+          "bundle_id": "U8-B06",
+          "title": "Energy acquisition and trophic identities",
+          "loci": [
+            "U8-L17",
+            "U8-L18",
+            "U8-L19"
+          ]
+        },
+        {
+          "bundle_id": "U8-B07",
+          "title": "Production and trophic transfer",
+          "loci": [
+            "U8-L20",
+            "U8-L21"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U8-J3",
+      "order": 3,
+      "working_title": "Biogeochemical Cycle Watershed",
+      "content_focus": "Matter reservoirs, transfer processes, and the water, carbon, nitrogen, and phosphorus cycles",
+      "setting_logic": "A watershed-scale map gives each major cycle a distinct route while a common reservoir-transfer station preserves the shared logic of matter cycling.",
+      "locus_count": 5,
+      "route": [
+        "U8-L22",
+        "U8-L23",
+        "U8-L24",
+        "U8-L25",
+        "U8-L26"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B08",
+          "title": "Cycle architecture and reservoirs",
+          "loci": [
+            "U8-L22"
+          ]
+        },
+        {
+          "bundle_id": "U8-B09",
+          "title": "Major biogeochemical cycles",
+          "loci": [
+            "U8-L23",
+            "U8-L24",
+            "U8-L25",
+            "U8-L26"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U8-J4",
+      "order": 4,
+      "working_title": "Population Survey and Demography Reserve",
+      "content_focus": "Population density and dispersion, demographic records, survivorship, population change accounting, and life-history trade-offs",
+      "setting_logic": "A field reserve moves from counting where organisms are, through age-specific survival records, to population-change accounting and lifetime allocation patterns.",
+      "locus_count": 7,
+      "route": [
+        "U8-L27",
+        "U8-L28",
+        "U8-L29",
+        "U8-L30",
+        "U8-L31",
+        "U8-L32",
+        "U8-L33"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B10",
+          "title": "Population measurement and spatial pattern",
+          "loci": [
+            "U8-L27",
+            "U8-L28"
+          ]
+        },
+        {
+          "bundle_id": "U8-B11",
+          "title": "Demography, survivorship, and population accounting",
+          "loci": [
+            "U8-L29",
+            "U8-L30",
+            "U8-L31"
+          ]
+        },
+        {
+          "bundle_id": "U8-B12",
+          "title": "Life-history trade-offs and selection continuum",
+          "loci": [
+            "U8-L32",
+            "U8-L33"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U8-J5",
+      "order": 5,
+      "working_title": "Population Growth Control Center",
+      "content_focus": "Exponential and logistic growth models, carrying capacity, and density-dependent versus density-independent regulation",
+      "setting_logic": "A model-control center places each growth equation beside its graph and assumptions, then routes populations through separate density-dependent and density-independent regulation panels.",
+      "locus_count": 5,
+      "route": [
+        "U8-L34",
+        "U8-L35",
+        "U8-L36",
+        "U8-L37",
+        "U8-L38"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B13",
+          "title": "Growth models and carrying capacity",
+          "loci": [
+            "U8-L34",
+            "U8-L35",
+            "U8-L36"
+          ]
+        },
+        {
+          "bundle_id": "U8-B14",
+          "title": "Population regulation",
+          "loci": [
+            "U8-L37",
+            "U8-L38"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U8-J6",
+      "order": 6,
+      "working_title": "Community Interaction District",
+      "content_focus": "Community, habitat and niche, interspecific interactions, competition, predation, symbiosis, disturbance, and succession",
+      "setting_logic": "A shared ecological district separates spatial habitat from functional niche, then uses interaction zones and post-disturbance sites to make species effects and succession physically traceable.",
+      "locus_count": 8,
+      "route": [
+        "U8-L39",
+        "U8-L40",
+        "U8-L41",
+        "U8-L42",
+        "U8-L43",
+        "U8-L44",
+        "U8-L45",
+        "U8-L46"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B15",
+          "title": "Community structure, niches, and interaction signs",
+          "loci": [
+            "U8-L39",
+            "U8-L40",
+            "U8-L41"
+          ]
+        },
+        {
+          "bundle_id": "U8-B16",
+          "title": "Competition, consumer interactions, and symbioses",
+          "loci": [
+            "U8-L42",
+            "U8-L43",
+            "U8-L44"
+          ]
+        },
+        {
+          "bundle_id": "U8-B17",
+          "title": "Disturbance and succession",
+          "loci": [
+            "U8-L45",
+            "U8-L46"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U8-J7",
+      "order": 7,
+      "working_title": "Diversity and Resilience Observatory",
+      "content_focus": "Species diversity measurement, Simpson diversity index, biodiversity, resilience, keystone effects, and foundation species",
+      "setting_logic": "An observatory first measures composition quantitatively, then tests how different forms of diversity and disproportionately influential species affect community response.",
+      "locus_count": 4,
+      "route": [
+        "U8-L47",
+        "U8-L48",
+        "U8-L49",
+        "U8-L50"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B18",
+          "title": "Diversity components and quantitative measurement",
+          "loci": [
+            "U8-L47",
+            "U8-L48"
+          ]
+        },
+        {
+          "bundle_id": "U8-B19",
+          "title": "Biodiversity, resilience, and high-impact species",
+          "loci": [
+            "U8-L49",
+            "U8-L50"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U8-J8",
+      "order": 8,
+      "working_title": "Environmental Change Response Center",
+      "content_focus": "Adaptation, biological invasions, habitat change, overharvesting, pollution, eutrophication, ocean acidification, and large-scale environmental drivers",
+      "setting_logic": "A response center traces distinct environmental-change mechanisms to population/community consequences and prevents separate mechanisms from collapsing into a generic human-impact story.",
+      "locus_count": 8,
+      "route": [
+        "U8-L51",
+        "U8-L52",
+        "U8-L53",
+        "U8-L54",
+        "U8-L55",
+        "U8-L56",
+        "U8-L57",
+        "U8-L58"
+      ],
+      "bundles": [
+        {
+          "bundle_id": "U8-B20",
+          "title": "Adaptation and biological invasions",
+          "loci": [
+            "U8-L51",
+            "U8-L52"
+          ]
+        },
+        {
+          "bundle_id": "U8-B21",
+          "title": "Habitat loss, exploitation, and pollution mechanisms",
+          "loci": [
+            "U8-L53",
+            "U8-L54",
+            "U8-L55",
+            "U8-L56",
+            "U8-L57"
+          ]
+        },
+        {
+          "bundle_id": "U8-B22",
+          "title": "Large-scale environmental and biogeographic drivers",
+          "loci": [
+            "U8-L58"
+          ]
+        }
+      ]
+    }
+  ],
+  "loci": [
+    {
+      "locus_id": "U8-L01",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B01",
+      "global_order": 1,
+      "title": "Behavior and environmental response",
+      "primary_knowledge_id": "U8-K-063",
+      "primary_label": "Behavior",
+      "embedded_knowledge_ids": [
+        "U8-K-001",
+        "U8-K-062",
+        "U8-K-064"
+      ],
+      "record_count": 4,
+      "content_focus": "Behavior; Environmental response; Ethology; Genetic and environmental influences on behavior",
+      "spatial_anchor": "A stimulus-response station with separate environmental cue, organism response, and inherited/experienced influence panels.",
+      "scientific_visual": "BEHAVIOR_STIMULUS_RESPONSE_SYSTEM",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L02",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B01",
+      "global_order": 2,
+      "title": "Proximate and ultimate questions",
+      "primary_knowledge_id": "U8-K-065",
+      "primary_label": "Proximate causation",
+      "embedded_knowledge_ids": [
+        "U8-K-066"
+      ],
+      "record_count": 2,
+      "content_focus": "Proximate causation; Ultimate causation",
+      "spatial_anchor": "A two-level analysis desk that keeps immediate mechanism/development separate from evolutionary function/history.",
+      "scientific_visual": "PROXIMATE_ULTIMATE_TWO_LEVEL_CAUSATION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L03",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B01",
+      "global_order": 3,
+      "title": "Innate and learned behavior",
+      "primary_knowledge_id": "U8-K-067",
+      "primary_label": "Innate behavior",
+      "embedded_knowledge_ids": [
+        "U8-K-068",
+        "U8-K-007"
+      ],
+      "record_count": 3,
+      "content_focus": "Innate behavior; Learned behavior; Innate and learned behavior fitness",
+      "spatial_anchor": "A paired behavior comparison panel showing genetically/developmentally specified responses and experience-modified responses without treating them as mutually exclusive for every behavior.",
+      "scientific_visual": "INNATE_LEARNED_CONTINUUM",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L04",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B02",
+      "global_order": 4,
+      "title": "Fixed action pattern and sign stimulus",
+      "primary_knowledge_id": "U8-K-069",
+      "primary_label": "Fixed action pattern",
+      "embedded_knowledge_ids": [
+        "U8-K-070",
+        "U8-K-071"
+      ],
+      "record_count": 3,
+      "content_focus": "Fixed action pattern; Sign stimulus; Stickleback aggression example",
+      "spatial_anchor": "A trigger-and-sequence apparatus that visibly separates the external sign stimulus from the resulting patterned response.",
+      "scientific_visual": "FAP_SIGN_STIMULUS_SEQUENCE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L05",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B02",
+      "global_order": 5,
+      "title": "Migration and environmental orientation",
+      "primary_knowledge_id": "U8-K-072",
+      "primary_label": "Migration",
+      "embedded_knowledge_ids": [],
+      "record_count": 1,
+      "content_focus": "Migration",
+      "spatial_anchor": "A long-distance route board with solar, celestial, and magnetic directional cues shown as possible navigation information.",
+      "scientific_visual": "MIGRATION_NAVIGATION_CUES",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L06",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B02",
+      "global_order": 6,
+      "title": "Kinesis and taxis",
+      "primary_knowledge_id": "U8-K-077",
+      "primary_label": "Kinesis",
+      "embedded_knowledge_ids": [
+        "U8-K-078",
+        "U8-K-079",
+        "U8-K-080",
+        "U8-K-081"
+      ],
+      "record_count": 5,
+      "content_focus": "Kinesis; Taxis; Phototaxis; Chemotaxis; Gravitaxis / geotaxis",
+      "spatial_anchor": "A movement arena where non-directional rate/turn changes are physically separated from directional movement toward or away from a cue.",
+      "scientific_visual": "KINESIS_TAXIS_DIRECTION_COMPARISON",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L07",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B03",
+      "global_order": 7,
+      "title": "Signals and communication",
+      "primary_knowledge_id": "U8-K-073",
+      "primary_label": "Animal signal",
+      "embedded_knowledge_ids": [
+        "U8-K-002",
+        "U8-K-003",
+        "U8-K-004",
+        "U8-K-005",
+        "U8-K-006",
+        "U8-K-074",
+        "U8-K-075",
+        "U8-K-076"
+      ],
+      "record_count": 9,
+      "content_focus": "Animal signal; Information exchange and behavior; Communication modalities; Signals can affect fitness; Behavioral functions of signals; Response and communication in evolution; Pheromone; Stimulus-response chain; Waggle dance",
+      "spatial_anchor": "A sender-channel-receiver display with modality lanes and a receiver-response endpoint, including chemical and patterned-body-movement examples.",
+      "scientific_visual": "SIGNAL_SENDER_RECEIVER_CHANNEL",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L08",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B03",
+      "global_order": 8,
+      "title": "Imprinting and sensitive periods",
+      "primary_knowledge_id": "U8-K-083",
+      "primary_label": "Imprinting",
+      "embedded_knowledge_ids": [
+        "U8-K-082",
+        "U8-K-084"
+      ],
+      "record_count": 3,
+      "content_focus": "Imprinting; Learning; Sensitive period",
+      "spatial_anchor": "A developmental timeline with a highlighted sensitive interval and a persistent later behavioral outcome.",
+      "scientific_visual": "IMPRINTING_SENSITIVE_PERIOD_TIMELINE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L09",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B03",
+      "global_order": 9,
+      "title": "Spatial, associative, and social learning",
+      "primary_knowledge_id": "U8-K-085",
+      "primary_label": "Spatial learning",
+      "embedded_knowledge_ids": [
+        "U8-K-086",
+        "U8-K-087",
+        "U8-K-088"
+      ],
+      "record_count": 4,
+      "content_focus": "Spatial learning; Cognitive map; Associative learning; Social learning",
+      "spatial_anchor": "Three adjacent learning panels distinguish spatial representation, learned associations, and learning from other individuals.",
+      "scientific_visual": "LEARNING_MODE_COMPARISON",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L10",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B04",
+      "global_order": 10,
+      "title": "Foraging and mating strategies",
+      "primary_knowledge_id": "U8-K-089",
+      "primary_label": "Foraging",
+      "embedded_knowledge_ids": [
+        "U8-K-090",
+        "U8-K-091",
+        "U8-K-092",
+        "U8-K-093"
+      ],
+      "record_count": 5,
+      "content_focus": "Foraging; Mating system; Polygyny; Polyandry; Sexual dimorphism",
+      "spatial_anchor": "A fitness-allocation board showing food-acquisition trade-offs beside mating-system patterns and sexually dimorphic traits.",
+      "scientific_visual": "BEHAVIOR_FITNESS_TRADEOFFS",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L11",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B04",
+      "global_order": 11,
+      "title": "Cooperation, altruism, and inclusive fitness",
+      "primary_knowledge_id": "U8-K-095",
+      "primary_label": "Altruism",
+      "embedded_knowledge_ids": [
+        "U8-K-008",
+        "U8-K-094",
+        "U8-K-096",
+        "U8-K-097"
+      ],
+      "record_count": 5,
+      "content_focus": "Altruism; Cooperation; Cooperative behavior; Kin selection; Inclusive fitness",
+      "spatial_anchor": "A direct-versus-indirect fitness ledger connecting cooperative outcomes, altruistic cost, relatedness, kin selection, and inclusive fitness.",
+      "scientific_visual": "COOPERATION_DIRECT_INDIRECT_FITNESS",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L12",
+      "journey_id": "U8-J1",
+      "bundle_id": "U8-B04",
+      "global_order": 12,
+      "title": "Plant environmental responses and defenses",
+      "primary_knowledge_id": "U8-K-098",
+      "primary_label": "Phototropism",
+      "embedded_knowledge_ids": [
+        "U8-K-099",
+        "U8-K-100",
+        "U8-K-101",
+        "U8-K-102",
+        "U8-K-103"
+      ],
+      "record_count": 6,
+      "content_focus": "Phototropism; Photoperiodism; Plant structural defenses; Plant chemical defenses; Plant volatile signaling; Hydrangea soil-pH example",
+      "spatial_anchor": "A plant response bench separating directional growth, seasonal timing, structural/chemical defense, volatile signaling, and environmentally influenced phenotype.",
+      "scientific_visual": "PLANT_RESPONSE_DEFENSE_ENVIRONMENT",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L13",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B05",
+      "global_order": 13,
+      "title": "Organism energy budget",
+      "primary_knowledge_id": "U8-K-009",
+      "primary_label": "Energy use by organisms",
+      "embedded_knowledge_ids": [
+        "U8-K-011",
+        "U8-K-012",
+        "U8-K-013",
+        "U8-K-110",
+        "U8-K-112"
+      ],
+      "record_count": 6,
+      "content_focus": "Energy use by organisms; Net energy gain; Net energy loss; Energy and reproductive strategy; Net energy balance; Calorie and kilocalorie context",
+      "spatial_anchor": "An energy budget board partitions intake, expenditure, storage/growth, reproduction, and sustained deficit.",
+      "scientific_visual": "ENERGY_BUDGET_INPUT_OUTPUT_STORAGE",
+      "retrieval_jobs": [
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L14",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B05",
+      "global_order": 14,
+      "title": "Endothermy, ectothermy, and metabolic rate",
+      "primary_knowledge_id": "U8-K-114",
+      "primary_label": "Endotherm",
+      "embedded_knowledge_ids": [
+        "U8-K-010",
+        "U8-K-111",
+        "U8-K-113",
+        "U8-K-115"
+      ],
+      "record_count": 5,
+      "content_focus": "Endotherm; Endothermy and ectothermy; Metabolic rate; Body size and metabolic rate; Ectotherm",
+      "spatial_anchor": "A temperature-regulation comparison station distinguishes metabolically generated heat from greater reliance on external heat and links both to metabolic demand.",
+      "scientific_visual": "ENDOTHERM_ECTOTHERM_HEAT_SOURCE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L15",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B05",
+      "global_order": 15,
+      "title": "Ecosystems, biotic factors, and abiotic factors",
+      "primary_knowledge_id": "U8-K-104",
+      "primary_label": "Ecosystem",
+      "embedded_knowledge_ids": [
+        "U8-K-014",
+        "U8-K-105",
+        "U8-K-106"
+      ],
+      "record_count": 4,
+      "content_focus": "Ecosystem; Ecological levels; Biotic factor; Abiotic factor",
+      "spatial_anchor": "A nested ecological-scale display places organisms/populations/communities inside ecosystems and biomes while separating living and nonliving components.",
+      "scientific_visual": "ECOLOGICAL_LEVELS_BIOTIC_ABIOTIC",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L16",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B05",
+      "global_order": 16,
+      "title": "Energy laws and matter conservation",
+      "primary_knowledge_id": "U8-K-107",
+      "primary_label": "First law of thermodynamics",
+      "embedded_knowledge_ids": [
+        "U8-K-015",
+        "U8-K-108",
+        "U8-K-109",
+        "U8-K-122"
+      ],
+      "record_count": 5,
+      "content_focus": "First law of thermodynamics; Energy flow and matter cycling; Second law of thermodynamics; Conservation of matter; Energy flow is one-way",
+      "spatial_anchor": "A paired flow diagram shows energy transformation and dissipation beside conserved matter cycling through reservoirs.",
+      "scientific_visual": "ENERGY_TRANSFORM_MATTER_CYCLE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L17",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B06",
+      "global_order": 17,
+      "title": "Autotrophs, heterotrophs, and chemosynthesis",
+      "primary_knowledge_id": "U8-K-123",
+      "primary_label": "Autotroph",
+      "embedded_knowledge_ids": [
+        "U8-K-025",
+        "U8-K-027",
+        "U8-K-028",
+        "U8-K-124",
+        "U8-K-125"
+      ],
+      "record_count": 6,
+      "content_focus": "Autotroph; Autotrophic energy capture; Chemosynthesis; Heterotrophic energy capture; Chemosynthetic energy capture; Heterotroph",
+      "spatial_anchor": "A carbon-and-energy acquisition station separates autotrophic carbon fixation from heterotrophic consumption and gives chemosynthesis its own chemical-energy input.",
+      "scientific_visual": "AUTOTROPH_HETEROTROPH_ENERGY_CARBON",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L18",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B06",
+      "global_order": 18,
+      "title": "Trophic levels and decomposers",
+      "primary_knowledge_id": "U8-K-116",
+      "primary_label": "Trophic level",
+      "embedded_knowledge_ids": [
+        "U8-K-117",
+        "U8-K-118",
+        "U8-K-119",
+        "U8-K-120",
+        "U8-K-121",
+        "U8-K-126"
+      ],
+      "record_count": 7,
+      "content_focus": "Trophic level; Producer; Primary consumer; Secondary consumer; Tertiary and higher consumers; Decomposer; Detritus",
+      "spatial_anchor": "A trophic-position ladder anchors producers, consumers at multiple levels, detritus, and decomposers while allowing omnivory.",
+      "scientific_visual": "TROPHIC_LEVEL_ROLE_LADDER",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L19",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B06",
+      "global_order": 19,
+      "title": "Food chains and food webs",
+      "primary_knowledge_id": "U8-K-128",
+      "primary_label": "Food web",
+      "embedded_knowledge_ids": [
+        "U8-K-127",
+        "U8-K-129"
+      ],
+      "record_count": 3,
+      "content_focus": "Food web; Food chain; Food-web arrow direction",
+      "spatial_anchor": "A linear chain expands into an interconnected web with every arrow pointing from resource/prey toward the consumer receiving energy and matter.",
+      "scientific_visual": "FOOD_CHAIN_WEB_ARROW_DIRECTION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L20",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B07",
+      "global_order": 20,
+      "title": "Primary and secondary production",
+      "primary_knowledge_id": "U8-K-132",
+      "primary_label": "Net primary production",
+      "embedded_knowledge_ids": [
+        "U8-K-026",
+        "U8-K-130",
+        "U8-K-131",
+        "U8-K-133",
+        "U8-K-134"
+      ],
+      "record_count": 6,
+      "content_focus": "Net primary production; Photosynthesis and primary productivity; Primary production; Gross primary production; NPP equation; Secondary production",
+      "spatial_anchor": "A production accounting board makes GPP the total producer capture, subtracts producer respiration to yield NPP, and separates heterotroph secondary production.",
+      "scientific_visual": "GPP_NPP_RESPIRATION_PRODUCTION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "QUANTITATIVE_MODEL_INTERPRETATION",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L21",
+      "journey_id": "U8-J2",
+      "bundle_id": "U8-B07",
+      "global_order": 21,
+      "title": "Trophic transfer and ecosystem energy propagation",
+      "primary_knowledge_id": "U8-K-135",
+      "primary_label": "Trophic transfer efficiency",
+      "embedded_knowledge_ids": [
+        "U8-K-021",
+        "U8-K-022",
+        "U8-K-023",
+        "U8-K-024"
+      ],
+      "record_count": 5,
+      "content_focus": "Trophic transfer efficiency; Energy and population size; Energy disruption of ecosystems; Energy and trophic structure; Producer changes propagate",
+      "spatial_anchor": "An energy pyramid and producer-change propagation diagram show variable transfer efficiency and consequences of changing energy supply or producer biomass.",
+      "scientific_visual": "TROPHIC_TRANSFER_ENERGY_PROPAGATION",
+      "retrieval_jobs": [
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L22",
+      "journey_id": "U8-J3",
+      "bundle_id": "U8-B08",
+      "global_order": 22,
+      "title": "Biogeochemical cycles and reservoirs",
+      "primary_knowledge_id": "U8-K-136",
+      "primary_label": "Biogeochemical cycle",
+      "embedded_knowledge_ids": [
+        "U8-K-016",
+        "U8-K-137"
+      ],
+      "record_count": 3,
+      "content_focus": "Biogeochemical cycle; Cycle reservoirs and transfers; Reservoir",
+      "spatial_anchor": "A reservoir-transfer map distinguishes pools from processes that move matter among biotic and abiotic compartments.",
+      "scientific_visual": "BIOGEOCHEMICAL_RESERVOIR_TRANSFER",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L23",
+      "journey_id": "U8-J3",
+      "bundle_id": "U8-B09",
+      "global_order": 23,
+      "title": "Water cycle",
+      "primary_knowledge_id": "U8-K-017",
+      "primary_label": "Water cycle",
+      "embedded_knowledge_ids": [
+        "U8-K-138"
+      ],
+      "record_count": 2,
+      "content_focus": "Water cycle; Water-cycle runoff and groundwater",
+      "spatial_anchor": "A watershed-atmosphere cycle map shows evaporation, condensation, precipitation, transpiration, runoff, infiltration, groundwater, and streams.",
+      "scientific_visual": "WATER_CYCLE_PROCESS_MAP",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L24",
+      "journey_id": "U8-J3",
+      "bundle_id": "U8-B09",
+      "global_order": 24,
+      "title": "Carbon cycle",
+      "primary_knowledge_id": "U8-K-018",
+      "primary_label": "Carbon cycle",
+      "embedded_knowledge_ids": [
+        "U8-K-139"
+      ],
+      "record_count": 2,
+      "content_focus": "Carbon cycle; Carbon-cycle biological exchange",
+      "spatial_anchor": "A carbon-reservoir map links photosynthesis, respiration, decomposition, and combustion with atmospheric and organic carbon pools.",
+      "scientific_visual": "CARBON_CYCLE_PROCESS_MAP",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L25",
+      "journey_id": "U8-J3",
+      "bundle_id": "U8-B09",
+      "global_order": 25,
+      "title": "Nitrogen cycle",
+      "primary_knowledge_id": "U8-K-019",
+      "primary_label": "Nitrogen cycle",
+      "embedded_knowledge_ids": [
+        "U8-K-140",
+        "U8-K-141",
+        "U8-K-142",
+        "U8-K-143",
+        "U8-K-144"
+      ],
+      "record_count": 6,
+      "content_focus": "Nitrogen cycle; Nitrogen fixation; Ammonification; Nitrification; Denitrification; Nitrogen assimilation",
+      "spatial_anchor": "A chemically directional nitrogen map separates fixation, assimilation, ammonification, nitrification, and denitrification.",
+      "scientific_visual": "NITROGEN_TRANSFORMATION_SEQUENCE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L26",
+      "journey_id": "U8-J3",
+      "bundle_id": "U8-B09",
+      "global_order": 26,
+      "title": "Phosphorus cycle",
+      "primary_knowledge_id": "U8-K-020",
+      "primary_label": "Phosphorus cycle",
+      "embedded_knowledge_ids": [
+        "U8-K-145"
+      ],
+      "record_count": 2,
+      "content_focus": "Phosphorus cycle; Phosphorus-cycle sedimentary character",
+      "spatial_anchor": "A rock-soil-water-food-web-sediment map emphasizes weathering and the lack of a large atmospheric phosphorus reservoir.",
+      "scientific_visual": "PHOSPHORUS_SEDIMENTARY_CYCLE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L27",
+      "journey_id": "U8-J4",
+      "bundle_id": "U8-B10",
+      "global_order": 27,
+      "title": "Population ecology, density, and sampling",
+      "primary_knowledge_id": "U8-K-146",
+      "primary_label": "Population ecology",
+      "embedded_knowledge_ids": [
+        "U8-K-029",
+        "U8-K-147",
+        "U8-K-148"
+      ],
+      "record_count": 4,
+      "content_focus": "Population ecology; Population interactions; Population density; Population sampling",
+      "spatial_anchor": "A field-survey grid links population definition, density, representative sampling, and population-level interaction questions.",
+      "scientific_visual": "POPULATION_DENSITY_SAMPLING",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L28",
+      "journey_id": "U8-J4",
+      "bundle_id": "U8-B10",
+      "global_order": 28,
+      "title": "Population dispersion patterns",
+      "primary_knowledge_id": "U8-K-149",
+      "primary_label": "Dispersion pattern",
+      "embedded_knowledge_ids": [
+        "U8-K-150",
+        "U8-K-151",
+        "U8-K-152"
+      ],
+      "record_count": 4,
+      "content_focus": "Dispersion pattern; Clumped dispersion; Uniform dispersion; Random dispersion",
+      "spatial_anchor": "Three matched plots hold density constant while changing spatial arrangement to distinguish clumped, uniform, and random dispersion.",
+      "scientific_visual": "DISPERSION_CLUMPED_UNIFORM_RANDOM",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L29",
+      "journey_id": "U8-J4",
+      "bundle_id": "U8-B11",
+      "global_order": 29,
+      "title": "Demography and life tables",
+      "primary_knowledge_id": "U8-K-153",
+      "primary_label": "Demography",
+      "embedded_knowledge_ids": [
+        "U8-K-155"
+      ],
+      "record_count": 2,
+      "content_focus": "Demography; Life table",
+      "spatial_anchor": "An age-class census table connects birth, death, age structure, survival, and reproduction to demographic analysis.",
+      "scientific_visual": "DEMOGRAPHY_LIFE_TABLE_AGE_CLASS",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L30",
+      "journey_id": "U8-J4",
+      "bundle_id": "U8-B11",
+      "global_order": 30,
+      "title": "Survivorship curves",
+      "primary_knowledge_id": "U8-K-156",
+      "primary_label": "Survivorship curve",
+      "embedded_knowledge_ids": [
+        "U8-K-157",
+        "U8-K-158",
+        "U8-K-159"
+      ],
+      "record_count": 4,
+      "content_focus": "Survivorship curve; Type I survivorship; Type II survivorship; Type III survivorship",
+      "spatial_anchor": "A common survivorship graph overlays Type I, II, and III patterns so age-specific mortality shape remains visually comparable.",
+      "scientific_visual": "SURVIVORSHIP_TYPE_I_II_III",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L31",
+      "journey_id": "U8-J4",
+      "bundle_id": "U8-B11",
+      "global_order": 31,
+      "title": "Population change accounting",
+      "primary_knowledge_id": "U8-K-051",
+      "primary_label": "Population growth equation dN/dt = B − D",
+      "embedded_knowledge_ids": [
+        "U8-K-031",
+        "U8-K-052",
+        "U8-K-053",
+        "U8-K-154",
+        "U8-K-160"
+      ],
+      "record_count": 6,
+      "content_focus": "Population growth equation dN/dt = B − D; Population growth inputs; N in population models; B and D in population growth; Immigration and emigration; Population growth rate versus per-capita rate",
+      "spatial_anchor": "A population ledger shows dN/dt as absolute change, B and D in the AP equation, and a separate migration lane for immigration/emigration.",
+      "scientific_visual": "POPULATION_CHANGE_BIRTH_DEATH_MIGRATION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "QUANTITATIVE_MODEL_INTERPRETATION",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L32",
+      "journey_id": "U8-J4",
+      "bundle_id": "U8-B12",
+      "global_order": 32,
+      "title": "Life history and energetic trade-offs",
+      "primary_knowledge_id": "U8-K-163",
+      "primary_label": "Life history",
+      "embedded_knowledge_ids": [
+        "U8-K-030",
+        "U8-K-164"
+      ],
+      "record_count": 3,
+      "content_focus": "Life history; Energy/matter adaptations; Life-history traits",
+      "spatial_anchor": "A lifetime schedule aligns growth, age at first reproduction, offspring number/size, reproductive frequency, survival, and energetic trade-offs.",
+      "scientific_visual": "LIFE_HISTORY_ENERGY_TRADEOFF",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L33",
+      "journey_id": "U8-J4",
+      "bundle_id": "U8-B12",
+      "global_order": 33,
+      "title": "r- and K-selection continuum",
+      "primary_knowledge_id": "U8-K-165",
+      "primary_label": "K-selection",
+      "embedded_knowledge_ids": [
+        "U8-K-166"
+      ],
+      "record_count": 2,
+      "content_focus": "K-selection; r-selection",
+      "spatial_anchor": "A continuum, not two organism boxes, places traits favored under low-density versus high-density conditions near carrying capacity.",
+      "scientific_visual": "R_K_SELECTION_CONTINUUM",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L34",
+      "journey_id": "U8-J5",
+      "bundle_id": "U8-B13",
+      "global_order": 34,
+      "title": "Exponential growth",
+      "primary_knowledge_id": "U8-K-032",
+      "primary_label": "Unconstrained exponential growth",
+      "embedded_knowledge_ids": [
+        "U8-K-054",
+        "U8-K-055",
+        "U8-K-161",
+        "U8-K-162"
+      ],
+      "record_count": 5,
+      "content_focus": "Unconstrained exponential growth; Exponential-growth equation; rmax; Exponential growth shape; Idealized unlimited environment",
+      "spatial_anchor": "A J-shaped growth graph is tied directly to dN/dt = rmaxN and an explicitly idealized interval of weak resource limitation.",
+      "scientific_visual": "EXPONENTIAL_GROWTH_EQUATION_J_CURVE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "QUANTITATIVE_MODEL_INTERPRETATION",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L35",
+      "journey_id": "U8-J5",
+      "bundle_id": "U8-B13",
+      "global_order": 35,
+      "title": "Carrying capacity",
+      "primary_knowledge_id": "U8-K-033",
+      "primary_label": "Carrying capacity",
+      "embedded_knowledge_ids": [
+        "U8-K-057"
+      ],
+      "record_count": 2,
+      "content_focus": "Carrying capacity; K in logistic growth",
+      "spatial_anchor": "A resource ceiling labeled K is shown as environment-dependent and capable of changing when conditions change.",
+      "scientific_visual": "CARRYING_CAPACITY_DYNAMIC_K",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "QUANTITATIVE_MODEL_INTERPRETATION"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L36",
+      "journey_id": "U8-J5",
+      "bundle_id": "U8-B13",
+      "global_order": 36,
+      "title": "Logistic growth",
+      "primary_knowledge_id": "U8-K-056",
+      "primary_label": "Logistic-growth equation",
+      "embedded_knowledge_ids": [
+        "U8-K-034"
+      ],
+      "record_count": 2,
+      "content_focus": "Logistic-growth equation; Population regulation and logistic growth",
+      "spatial_anchor": "An S-shaped growth graph connects the logistic equation to declining per-capita growth as N approaches K without presenting the model as exact reality.",
+      "scientific_visual": "LOGISTIC_GROWTH_EQUATION_S_CURVE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "QUANTITATIVE_MODEL_INTERPRETATION",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L37",
+      "journey_id": "U8-J5",
+      "bundle_id": "U8-B14",
+      "global_order": 37,
+      "title": "Density-dependent regulation",
+      "primary_knowledge_id": "U8-K-167",
+      "primary_label": "Density-dependent regulation",
+      "embedded_knowledge_ids": [],
+      "record_count": 1,
+      "content_focus": "Density-dependent regulation",
+      "spatial_anchor": "A matched-density experiment display shows a per-capita birth or death effect changing systematically with population density.",
+      "scientific_visual": "DENSITY_DEPENDENT_RATE_RESPONSE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L38",
+      "journey_id": "U8-J5",
+      "bundle_id": "U8-B14",
+      "global_order": 38,
+      "title": "Density-independent effects",
+      "primary_knowledge_id": "U8-K-168",
+      "primary_label": "Density-independent effects",
+      "embedded_knowledge_ids": [],
+      "record_count": 1,
+      "content_focus": "Density-independent effects",
+      "spatial_anchor": "A matched-density disturbance display shows an effect whose per-capita impact is not systematically determined by population density.",
+      "scientific_visual": "DENSITY_INDEPENDENT_EFFECT",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L39",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B15",
+      "global_order": 39,
+      "title": "Community, habitat, and niche",
+      "primary_knowledge_id": "U8-K-169",
+      "primary_label": "Community",
+      "embedded_knowledge_ids": [
+        "U8-K-035",
+        "U8-K-170",
+        "U8-K-171"
+      ],
+      "record_count": 4,
+      "content_focus": "Community; Community structure and diversity; Habitat; Ecological niche",
+      "spatial_anchor": "A shared landscape separates where a species lives from how it uses resources and conditions, within a community of interacting populations.",
+      "scientific_visual": "COMMUNITY_HABITAT_NICHE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L40",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B15",
+      "global_order": 40,
+      "title": "Fundamental and realized niches",
+      "primary_knowledge_id": "U8-K-172",
+      "primary_label": "Fundamental niche",
+      "embedded_knowledge_ids": [
+        "U8-K-173"
+      ],
+      "record_count": 2,
+      "content_focus": "Fundamental niche; Realized niche",
+      "spatial_anchor": "A potential-condition envelope contains a smaller occupied envelope after biotic constraints are applied.",
+      "scientific_visual": "FUNDAMENTAL_REALIZED_NICHE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L41",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B15",
+      "global_order": 41,
+      "title": "Interspecific interaction models",
+      "primary_knowledge_id": "U8-K-174",
+      "primary_label": "Interspecific interaction",
+      "embedded_knowledge_ids": [
+        "U8-K-037",
+        "U8-K-038",
+        "U8-K-039"
+      ],
+      "record_count": 4,
+      "content_focus": "Interspecific interaction; Interactions affect resource access; Interaction models; Competition, predation, symbiosis",
+      "spatial_anchor": "An interaction-sign matrix (+, −, 0) is linked to a small network that can express predator-prey effects, cooperation, trophic cascades, and niche partitioning.",
+      "scientific_visual": "INTERACTION_SIGN_NETWORK_TROPHIC_CASCADE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L42",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B16",
+      "global_order": 42,
+      "title": "Competition, exclusion, and resource partitioning",
+      "primary_knowledge_id": "U8-K-175",
+      "primary_label": "Competition",
+      "embedded_knowledge_ids": [
+        "U8-K-176",
+        "U8-K-177"
+      ],
+      "record_count": 3,
+      "content_focus": "Competition; Competitive exclusion; Resource partitioning / niche partitioning",
+      "spatial_anchor": "Two consumers share a limiting-resource axis, followed by either exclusion under effectively identical use or differentiated resource use that reduces direct competition.",
+      "scientific_visual": "COMPETITION_RESOURCE_PARTITION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L43",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B16",
+      "global_order": 43,
+      "title": "Predation, herbivory, camouflage, and mimicry",
+      "primary_knowledge_id": "U8-K-178",
+      "primary_label": "Predation",
+      "embedded_knowledge_ids": [
+        "U8-K-179",
+        "U8-K-180",
+        "U8-K-181",
+        "U8-K-182"
+      ],
+      "record_count": 5,
+      "content_focus": "Predation; Cryptic coloration; Batesian mimicry; Müllerian mimicry; Herbivory",
+      "spatial_anchor": "A consumer-resource display distinguishes killing prey from consuming plant/algal tissue and places crypsis, Batesian mimicry, and Müllerian mimicry as anti-predator strategies.",
+      "scientific_visual": "PREDATION_HERBIVORY_DEFENSE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L44",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B16",
+      "global_order": 44,
+      "title": "Symbiosis and facilitation",
+      "primary_knowledge_id": "U8-K-183",
+      "primary_label": "Symbiosis",
+      "embedded_knowledge_ids": [
+        "U8-K-184",
+        "U8-K-185",
+        "U8-K-186",
+        "U8-K-187"
+      ],
+      "record_count": 5,
+      "content_focus": "Symbiosis; Parasitism; Mutualism; Commensalism; Facilitation",
+      "spatial_anchor": "A sign-coded interaction board distinguishes parasitism (+/−), mutualism (+/+), commensalism (+/0), and broader positive facilitation.",
+      "scientific_visual": "SYMBIOSIS_SIGN_COMPARISON",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L45",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B17",
+      "global_order": 45,
+      "title": "Disturbance and ecological succession",
+      "primary_knowledge_id": "U8-K-199",
+      "primary_label": "Ecological succession",
+      "embedded_knowledge_ids": [
+        "U8-K-036",
+        "U8-K-198",
+        "U8-K-202"
+      ],
+      "record_count": 4,
+      "content_focus": "Ecological succession; Communities change over time; Disturbance; Succession changes abiotic conditions",
+      "spatial_anchor": "A before-after community timeline shows disturbance, changing community composition, and organism-driven changes in abiotic conditions.",
+      "scientific_visual": "DISTURBANCE_SUCCESSION_CHANGE",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L46",
+      "journey_id": "U8-J6",
+      "bundle_id": "U8-B17",
+      "global_order": 46,
+      "title": "Primary and secondary succession",
+      "primary_knowledge_id": "U8-K-200",
+      "primary_label": "Primary succession",
+      "embedded_knowledge_ids": [
+        "U8-K-201"
+      ],
+      "record_count": 2,
+      "content_focus": "Primary succession; Secondary succession",
+      "spatial_anchor": "Two matched post-disturbance sites differ first by whether an established soil community and biological legacies remain.",
+      "scientific_visual": "PRIMARY_SECONDARY_SUCCESSION_SOIL",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L47",
+      "journey_id": "U8-J7",
+      "bundle_id": "U8-B18",
+      "global_order": 47,
+      "title": "Species richness, relative abundance, and diversity",
+      "primary_knowledge_id": "U8-K-190",
+      "primary_label": "Species diversity",
+      "embedded_knowledge_ids": [
+        "U8-K-188",
+        "U8-K-189"
+      ],
+      "record_count": 3,
+      "content_focus": "Species diversity; Species richness; Relative abundance",
+      "spatial_anchor": "Matched community samples separate number of species from the proportional distribution of individuals and then combine both into species-diversity reasoning.",
+      "scientific_visual": "RICHNESS_EVENNESS_DIVERSITY",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L48",
+      "journey_id": "U8-J7",
+      "bundle_id": "U8-B18",
+      "global_order": 48,
+      "title": "Simpson diversity index",
+      "primary_knowledge_id": "U8-K-058",
+      "primary_label": "Simpson diversity index",
+      "embedded_knowledge_ids": [
+        "U8-K-059",
+        "U8-K-060",
+        "U8-K-061"
+      ],
+      "record_count": 4,
+      "content_focus": "Simpson diversity index; n in Simpson diversity index; N in Simpson diversity index; Interpreting Simpson diversity index",
+      "spatial_anchor": "A community count table feeds n and N into 1 − Σ(n/N)², with a scale showing higher values for less dominance and greater diversity.",
+      "scientific_visual": "SIMPSON_INDEX_SYMBOL_INTERPRETATION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "QUANTITATIVE_MODEL_INTERPRETATION"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L49",
+      "journey_id": "U8-J7",
+      "bundle_id": "U8-B19",
+      "global_order": 49,
+      "title": "Biodiversity and resilience",
+      "primary_knowledge_id": "U8-K-191",
+      "primary_label": "Biodiversity",
+      "embedded_knowledge_ids": [
+        "U8-K-040",
+        "U8-K-041",
+        "U8-K-192"
+      ],
+      "record_count": 4,
+      "content_focus": "Biodiversity; Diversity and resilience; Components that maintain diversity; Diversity-resilience tendency",
+      "spatial_anchor": "Genetic, species, and ecosystem diversity are displayed separately, then connected conditionally to resilience and ecosystem function.",
+      "scientific_visual": "BIODIVERSITY_RESILIENCE_COMPONENTS",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L50",
+      "journey_id": "U8-J7",
+      "bundle_id": "U8-B19",
+      "global_order": 50,
+      "title": "Keystone and foundation species",
+      "primary_knowledge_id": "U8-K-195",
+      "primary_label": "Keystone species",
+      "embedded_knowledge_ids": [
+        "U8-K-042",
+        "U8-K-196",
+        "U8-K-197"
+      ],
+      "record_count": 4,
+      "content_focus": "Keystone species; Keystone species effect; Foundation species distinction; Keystone examples are context-dependent",
+      "spatial_anchor": "A community-impact comparison distinguishes disproportionate keystone effects from abundance/habitat-forming foundation effects and marks both as context-dependent.",
+      "scientific_visual": "KEYSTONE_FOUNDATION_EFFECT",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L51",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B20",
+      "global_order": 51,
+      "title": "Adaptation, heterozygote advantage, and undirected mutation",
+      "primary_knowledge_id": "U8-K-043",
+      "primary_label": "Adaptation and environmental advantage",
+      "embedded_knowledge_ids": [
+        "U8-K-044",
+        "U8-K-045"
+      ],
+      "record_count": 3,
+      "content_focus": "Adaptation and environmental advantage; Heterozygote advantage; Mutation is not directed",
+      "spatial_anchor": "A variation-selection-outcome sequence shows mutation preceding selection and a context-specific heterozygote fitness advantage without need-directed mutation.",
+      "scientific_visual": "ADAPTATION_VARIATION_SELECTION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L52",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B20",
+      "global_order": 52,
+      "title": "Introduced and invasive species",
+      "primary_knowledge_id": "U8-K-046",
+      "primary_label": "Invasive species",
+      "embedded_knowledge_ids": [
+        "U8-K-193",
+        "U8-K-194"
+      ],
+      "record_count": 3,
+      "content_focus": "Invasive species; Introduced species; Invasive-species impact",
+      "spatial_anchor": "A range-expansion display separates human-mediated introduction from establishment/spread with harmful effects required for the invasive label.",
+      "scientific_visual": "INTRODUCED_INVASIVE_DISTINCTION",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L53",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B21",
+      "global_order": 53,
+      "title": "Human environmental change and habitat fragmentation",
+      "primary_knowledge_id": "U8-K-203",
+      "primary_label": "Human-caused environmental change",
+      "embedded_knowledge_ids": [
+        "U8-K-047",
+        "U8-K-204",
+        "U8-K-209"
+      ],
+      "record_count": 4,
+      "content_focus": "Human-caused environmental change; Human impacts and extinction; Habitat loss and fragmentation; Species-area relationship",
+      "spatial_anchor": "A continuous habitat is divided into smaller fragments while a species-area curve shows the general association between habitat area and supported species richness.",
+      "scientific_visual": "HABITAT_FRAGMENTATION_SPECIES_AREA",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L54",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B21",
+      "global_order": 54,
+      "title": "Overharvesting and extinction risk",
+      "primary_knowledge_id": "U8-K-205",
+      "primary_label": "Overharvesting",
+      "embedded_knowledge_ids": [
+        "U8-K-208"
+      ],
+      "record_count": 2,
+      "content_focus": "Overharvesting; Elevated extinction rates",
+      "spatial_anchor": "A removal-versus-replacement ledger links sustained overharvest to population decline and increased extinction risk.",
+      "scientific_visual": "OVERHARVEST_POPULATION_REPLACEMENT",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L55",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B21",
+      "global_order": 55,
+      "title": "Pollution and biological magnification",
+      "primary_knowledge_id": "U8-K-048",
+      "primary_label": "Biological magnification",
+      "embedded_knowledge_ids": [
+        "U8-K-206"
+      ],
+      "record_count": 2,
+      "content_focus": "Biological magnification; Pollution and acid deposition",
+      "spatial_anchor": "A trophic sequence shows a persistent contaminant increasing in concentration at higher trophic levels while keeping acid-deposition chemistry as a separate pollution pathway.",
+      "scientific_visual": "PERSISTENT_POLLUTANT_TROPHIC_MAGNIFICATION",
+      "retrieval_jobs": [
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L56",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B21",
+      "global_order": 56,
+      "title": "Eutrophication",
+      "primary_knowledge_id": "U8-K-049",
+      "primary_label": "Eutrophication",
+      "embedded_knowledge_ids": [],
+      "record_count": 1,
+      "content_focus": "Eutrophication",
+      "spatial_anchor": "A nutrient-input sequence runs through increased primary production, decomposition, oxygen decline, and altered aquatic community structure.",
+      "scientific_visual": "EUTROPHICATION_NUTRIENT_OXYGEN_CHAIN",
+      "retrieval_jobs": [
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L57",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B21",
+      "global_order": 57,
+      "title": "Ocean acidification",
+      "primary_knowledge_id": "U8-K-207",
+      "primary_label": "Ocean acidification",
+      "embedded_knowledge_ids": [],
+      "record_count": 1,
+      "content_focus": "Ocean acidification",
+      "spatial_anchor": "A seawater carbonate-chemistry diagram links added CO₂ to lower pH and reduced carbonate availability for calcifying organisms.",
+      "scientific_visual": "OCEAN_ACIDIFICATION_CARBONATE_CHEMISTRY",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    },
+    {
+      "locus_id": "U8-L58",
+      "journey_id": "U8-J8",
+      "bundle_id": "U8-B22",
+      "global_order": 58,
+      "title": "Large-scale environmental and biogeographic drivers",
+      "primary_knowledge_id": "U8-K-050",
+      "primary_label": "Geological and meteorological change",
+      "embedded_knowledge_ids": [
+        "U8-K-210",
+        "U8-K-211"
+      ],
+      "record_count": 3,
+      "content_focus": "Geological and meteorological change; Latitudinal diversity gradient; Disease ecology depends on context",
+      "spatial_anchor": "A regional distribution map overlays geological/meteorological change, latitudinal richness patterns, and context-dependent disease-ecology drivers without assigning a single universal cause.",
+      "scientific_visual": "GEO_METEOROLOGICAL_BIOGEOGRAPHY_CONTEXT",
+      "retrieval_jobs": [
+        "EXACT_NAME_RETRIEVAL",
+        "MEANING_AND_MECHANISM",
+        "CAUSAL_OR_RELATIONAL_REASONING"
+      ],
+      "f3_constraints": [
+        "Preserve every F1 canonical statement and scope boundary represented at this locus.",
+        "Introduce the scientific visual before mnemonic embellishment.",
+        "Keep spatial positions stable and causally interpretable.",
+        "Do not add polished narrative prose until the F3 brief passes QA."
+      ],
+      "canonical_lock": "LOCKED_F2_ARCHITECTURE"
+    }
+  ],
+  "mixed_discrimination_sets": [
+    {
+      "set_id": "U8-MD01",
+      "title": "Proximate versus ultimate causation",
+      "knowledge_ids": [
+        "U8-K-065",
+        "U8-K-066"
+      ],
+      "purpose": "Distinguish immediate mechanism/development from evolutionary function/history.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD02",
+      "title": "Innate versus learned behavior",
+      "knowledge_ids": [
+        "U8-K-067",
+        "U8-K-068"
+      ],
+      "purpose": "Classify how prior experience contributes to the basic response without assuming all behavior is purely one or the other.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD03",
+      "title": "Fixed action pattern versus sign stimulus",
+      "knowledge_ids": [
+        "U8-K-069",
+        "U8-K-070"
+      ],
+      "purpose": "Separate the patterned response from the cue that triggers it.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD04",
+      "title": "Kinesis versus taxis",
+      "knowledge_ids": [
+        "U8-K-077",
+        "U8-K-078"
+      ],
+      "purpose": "Separate non-directional change in activity/turning from directed movement relative to a stimulus.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD05",
+      "title": "Phototaxis versus phototropism",
+      "knowledge_ids": [
+        "U8-K-079",
+        "U8-K-098"
+      ],
+      "purpose": "Separate whole-organism directed movement from directional plant growth.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD06",
+      "title": "Signal versus pheromone",
+      "knowledge_ids": [
+        "U8-K-073",
+        "U8-K-074"
+      ],
+      "purpose": "Treat pheromone as one chemical signal type, not as a synonym for every signal.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD07",
+      "title": "Imprinting versus other learned behavior",
+      "knowledge_ids": [
+        "U8-K-083",
+        "U8-K-084",
+        "U8-K-087",
+        "U8-K-088"
+      ],
+      "purpose": "Identify sensitive-period learning without applying imprinting to every persistent learned response.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD08",
+      "title": "Polygyny versus polyandry",
+      "knowledge_ids": [
+        "U8-K-091",
+        "U8-K-092"
+      ],
+      "purpose": "Keep the sex of the individual with multiple mates explicit.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD09",
+      "title": "Cooperation versus altruism",
+      "knowledge_ids": [
+        "U8-K-094",
+        "U8-K-095"
+      ],
+      "purpose": "Separate broadly cooperative outcomes from the direct-fitness cost required by the behavioral-ecology definition of altruism.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD10",
+      "title": "Kin selection versus inclusive fitness",
+      "knowledge_ids": [
+        "U8-K-096",
+        "U8-K-097"
+      ],
+      "purpose": "Separate the selection process from the fitness accounting that includes effects on relatives.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD11",
+      "title": "Endotherm versus ectotherm",
+      "knowledge_ids": [
+        "U8-K-114",
+        "U8-K-115"
+      ],
+      "purpose": "Distinguish predominant heat source without claiming either group has constant versus variable body temperature by definition.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD12",
+      "title": "Biotic versus abiotic factor",
+      "knowledge_ids": [
+        "U8-K-105",
+        "U8-K-106"
+      ],
+      "purpose": "Separate living/biological components from nonliving physical and chemical components.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD13",
+      "title": "Energy flow versus matter cycling",
+      "knowledge_ids": [
+        "U8-K-015",
+        "U8-K-109",
+        "U8-K-122"
+      ],
+      "purpose": "Energy ultimately leaves as heat while matter is conserved and cycles among reservoirs.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD14",
+      "title": "Autotroph versus heterotroph",
+      "knowledge_ids": [
+        "U8-K-123",
+        "U8-K-125"
+      ],
+      "purpose": "Distinguish carbon/energy acquisition modes.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD15",
+      "title": "Producer, consumer, decomposer roles",
+      "knowledge_ids": [
+        "U8-K-117",
+        "U8-K-118",
+        "U8-K-119",
+        "U8-K-121"
+      ],
+      "purpose": "Discriminate trophic roles from trophic-level numbering alone.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD16",
+      "title": "Food chain versus food web",
+      "knowledge_ids": [
+        "U8-K-127",
+        "U8-K-128",
+        "U8-K-129"
+      ],
+      "purpose": "Separate a simplified linear pathway from interconnected feeding relationships and retain arrow direction.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD17",
+      "title": "GPP, NPP, and secondary production",
+      "knowledge_ids": [
+        "U8-K-131",
+        "U8-K-132",
+        "U8-K-133",
+        "U8-K-134"
+      ],
+      "purpose": "Keep total producer production, producer production after respiration, and new heterotroph biomass distinct.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD18",
+      "title": "Major biogeochemical cycles",
+      "knowledge_ids": [
+        "U8-K-017",
+        "U8-K-018",
+        "U8-K-019",
+        "U8-K-020"
+      ],
+      "purpose": "Identify the dominant reservoirs and transformations for water, carbon, nitrogen, and phosphorus.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD19",
+      "title": "Nitrogen-cycle transformations",
+      "knowledge_ids": [
+        "U8-K-140",
+        "U8-K-141",
+        "U8-K-142",
+        "U8-K-143",
+        "U8-K-144"
+      ],
+      "purpose": "Discriminate chemical direction and biological role of fixation, ammonification, nitrification, denitrification, and assimilation.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD20",
+      "title": "Population, community, ecosystem, biome",
+      "knowledge_ids": [
+        "U8-K-014",
+        "U8-K-146",
+        "U8-K-169",
+        "U8-K-104"
+      ],
+      "purpose": "Keep ecological levels nested and do not collapse population/community/ecosystem.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD21",
+      "title": "Population density versus dispersion",
+      "knowledge_ids": [
+        "U8-K-147",
+        "U8-K-149"
+      ],
+      "purpose": "Separate number per area/volume from spatial arrangement.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD22",
+      "title": "Clumped, uniform, and random dispersion",
+      "knowledge_ids": [
+        "U8-K-150",
+        "U8-K-151",
+        "U8-K-152"
+      ],
+      "purpose": "Classify spatial pattern while holding density conceptually separate.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD23",
+      "title": "Life table versus survivorship curve",
+      "knowledge_ids": [
+        "U8-K-155",
+        "U8-K-156"
+      ],
+      "purpose": "Separate tabulated age/stage survival data from its graphical survivorship representation.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD24",
+      "title": "Type I, II, and III survivorship",
+      "knowledge_ids": [
+        "U8-K-157",
+        "U8-K-158",
+        "U8-K-159"
+      ],
+      "purpose": "Distinguish the age-specific mortality shapes rather than memorizing example species.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD25",
+      "title": "Absolute population growth versus per-capita rate",
+      "knowledge_ids": [
+        "U8-K-051",
+        "U8-K-055",
+        "U8-K-160"
+      ],
+      "purpose": "Keep dN/dt distinct from a rate scaled to N and interpret rmax as a per-capita parameter in the exponential model.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD26",
+      "title": "Exponential versus logistic growth",
+      "knowledge_ids": [
+        "U8-K-032",
+        "U8-K-054",
+        "U8-K-056",
+        "U8-K-034"
+      ],
+      "purpose": "Select the model from assumptions and resource limitation, then connect equation to graph.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD27",
+      "title": "rmax versus K",
+      "knowledge_ids": [
+        "U8-K-055",
+        "U8-K-057"
+      ],
+      "purpose": "Separate intrinsic maximum per-capita growth parameter from carrying capacity.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD28",
+      "title": "Density-dependent versus density-independent",
+      "knowledge_ids": [
+        "U8-K-167",
+        "U8-K-168"
+      ],
+      "purpose": "Determine whether per-capita effect changes systematically with density.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD29",
+      "title": "Habitat versus ecological niche",
+      "knowledge_ids": [
+        "U8-K-170",
+        "U8-K-171"
+      ],
+      "purpose": "Separate where an organism lives from how it uses resources/conditions and interacts.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD30",
+      "title": "Fundamental versus realized niche",
+      "knowledge_ids": [
+        "U8-K-172",
+        "U8-K-173"
+      ],
+      "purpose": "Separate potential niche from the portion occupied under biotic constraints.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD31",
+      "title": "Competition, predation, and symbiosis",
+      "knowledge_ids": [
+        "U8-K-175",
+        "U8-K-178",
+        "U8-K-183"
+      ],
+      "purpose": "Discriminate interaction mechanism and fitness signs.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD32",
+      "title": "Batesian versus Müllerian mimicry",
+      "knowledge_ids": [
+        "U8-K-180",
+        "U8-K-181"
+      ],
+      "purpose": "Separate a harmless/palatable mimic of a defended model from convergence among defended species.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD33",
+      "title": "Parasitism, mutualism, and commensalism",
+      "knowledge_ids": [
+        "U8-K-184",
+        "U8-K-185",
+        "U8-K-186"
+      ],
+      "purpose": "Use +/−, +/+, and +/0 effects without assuming every close association is mutualism.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD34",
+      "title": "Primary versus secondary succession",
+      "knowledge_ids": [
+        "U8-K-200",
+        "U8-K-201"
+      ],
+      "purpose": "Use soil and biological legacy status as the key distinction.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD35",
+      "title": "Species richness, relative abundance, and species diversity",
+      "knowledge_ids": [
+        "U8-K-188",
+        "U8-K-189",
+        "U8-K-190"
+      ],
+      "purpose": "Separate number of species, proportional composition, and the combined diversity concept.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD36",
+      "title": "Simpson n versus N",
+      "knowledge_ids": [
+        "U8-K-059",
+        "U8-K-060"
+      ],
+      "purpose": "Keep species-specific count n distinct from total community-sample count N.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD37",
+      "title": "Keystone versus foundation species",
+      "knowledge_ids": [
+        "U8-K-195",
+        "U8-K-196"
+      ],
+      "purpose": "Separate disproportionate effect relative to abundance from habitat-forming/high-abundance influence.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD38",
+      "title": "Introduced versus invasive species",
+      "knowledge_ids": [
+        "U8-K-193",
+        "U8-K-046",
+        "U8-K-194"
+      ],
+      "purpose": "Introduction outside historical range is insufficient by itself for the invasive label.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD39",
+      "title": "Biological magnification versus eutrophication",
+      "knowledge_ids": [
+        "U8-K-048",
+        "U8-K-049"
+      ],
+      "purpose": "Separate trophic concentration of persistent substances from nutrient-driven production/decomposition and oxygen decline.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    },
+    {
+      "set_id": "U8-MD40",
+      "title": "Mutation and adaptation causal order",
+      "knowledge_ids": [
+        "U8-K-043",
+        "U8-K-045"
+      ],
+      "purpose": "Variation arises without need-directed mutation; selection changes frequencies of variants under environmental conditions.",
+      "later_review_policy": "MIX_ACROSS_CHOICES_AND_REQUIRE_MEANING_BASED_DISCRIMINATION"
+    }
+  ],
+  "f3_gate": {
+    "next_gate": "F3_SCIENCE_BEARING_SCENE_BRIEFS",
+    "required_brief_count": 58,
+    "polished_story_prose_allowed": false,
+    "brief_requirements": [
+      "physical setting",
+      "scientific actors/parts",
+      "stable spatial layout",
+      "causal action",
+      "exact-name introductions where required",
+      "misconception guards",
+      "scientific visual",
+      "transition to next locus"
+    ]
+  }
+}

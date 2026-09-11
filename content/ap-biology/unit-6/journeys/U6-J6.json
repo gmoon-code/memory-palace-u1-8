@@ -1,0 +1,645 @@
+{
+  "palace_id": "U6-J6",
+  "unit_id": "unit-6",
+  "palace_name": "Biotechnology Investigation Lab",
+  "story_title": "The Lab That Kept Using the Wrong Tool",
+  "tagline": "A coded DNA sample enters a lab whose automation wants to run every technique at once. Keep U6-X identifiable while you choose each operation from the question, separate fragments, amplify a target, transform bacteria with a separate engineered plasmid, read nucleotide order, and compare DNA evidence without confusing one output for another.",
+  "guide": {
+    "name": "Dr. Sora Han",
+    "role": "molecular-information systems director",
+    "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+    "story_job": "Sora keeps one coded DNA sample tube labeled U6-X identifiable through the investigation and forces every laboratory technique to answer a specific question. When recombinant expression is needed, she opens a separate clearly labeled plasmid so the original sample and the engineered construct can never be confused."
+  },
+  "premise": "The biotechnology laboratory has lost the rule that connects a scientific question to the technique capable of answering it. A tiny coded DNA sample, U6-X, arrives while the automation simultaneously requests gel electrophoresis, PCR, bacterial transformation, sequencing, and profile analysis. Dr. Sora Han stops the system and locks U6-X into a blue sample ledger. The investigation can continue only if every technique is justified by its physical input, mechanism, and output, and if derived aliquots remain distinguishable from a separately engineered plasmid used for bacterial expression.",
+  "mission": "Carry U6-X through a five-location investigation without treating biotechnology as a list of interchangeable tools. Use gel electrophoresis to separate DNA fragments under an electric field, PCR to amplify a selected target through denaturation, primer annealing, and extension, a separate engineered plasmid for bacterial transformation and recombinant expression, DNA sequencing to determine nucleotide order, and profile analysis to compare labeled DNA evidence. At every station, state what material entered, what physical process occurred, and what evidence or product left.",
+  "finale": "The laboratory replaces RUN ALL PROCEDURES with a question-first investigation board. The learner can reconstruct why gel electrophoresis produces fragment patterns, why PCR increases copies of a selected region, how laboratory transformation introduces engineered DNA into bacteria, why sequencing provides nucleotide order, and how DNA profiles support comparison without being mistaken for a full sequence. All 53 permanent Unit 6 loci now have polished narrative coverage, while final Memory Objects and Challenge Lab tasks remain unreleased until F5.",
+  "estimated_minutes": 18,
+  "scene_count": 5,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4F",
+  "preview_release": true,
+  "narrative_design": "U6-F4F-NARRATIVE-1.0",
+  "learner_rule": "Read or listen and reconstruct the fixed left/center/right evidence layout before each procedure begins. Keep the blue U6-X sample identity traceable, keep the engineered plasmid separate, and ask what the technique physically changes or measures before interpreting its output. Use the two optional Quick Recalls only after the defining mechanism has already been encountered.",
+  "route_orientation": "This is one continuous five-location investigation through the Biotechnology Investigation Lab. Begin by choosing a technique from the scientific question, separate prepared fragments by gel electrophoresis, amplify one selected U6-X region by PCR, branch to a separate engineered plasmid for bacterial transformation and expression, then finish by distinguishing nucleotide sequencing from DNA profile comparison. U6-X remains the blue continuity sample; the recombinant plasmid is a separate amber construct.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Genetic Engineering Intake",
+      "short": "Choose Tool",
+      "floor": "Investigation intake",
+      "symbol": "QUESTION→TOOL"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Gel Electrophoresis Lane",
+      "short": "Separate",
+      "floor": "Electrophoresis corridor",
+      "symbol": "−DNA→+"
+    },
+    {
+      "scene_index": 2,
+      "locus": "PCR Thermal Cycler",
+      "short": "Amplify",
+      "floor": "Thermal cycling room",
+      "symbol": "DEN→ANN→EXT"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Transformation Expression Bench",
+      "short": "Transform",
+      "floor": "Recombinant expression bay",
+      "symbol": "PLASMID→CELL"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Sequence and Profile Analysis Desk",
+      "short": "Read/Compare",
+      "floor": "Evidence analysis desk",
+      "symbol": "ORDER≠PROFILE"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U6-L49",
+      "locus": "Genetic Engineering Intake",
+      "title": "The Lab That Kept Choosing a Tool Before Asking a Question",
+      "scene_kicker": "The tiny tube is not the mystery. The real problem is a laboratory that wants to run every technique before anyone decides what evidence is needed.",
+      "location_description": "the laboratory intake defining genetic engineering as purposeful manipulation or analysis of nucleic acids before individual techniques are chosen",
+      "scene_layout": {
+        "orientation": "Enter Genetic Engineering Intake and stop at the laboratory intake defining genetic engineering as purposeful manipulation or analysis of nucleic acids before individual techniques are chosen. The left side is anchored by DNA manipulation tools, the working center is genetic-engineering intake bench, and the right side is anchored by analysis / comparison tools. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "DNA manipulation tools",
+            "symbol": "MANIPULATE",
+            "description": "Dna manipulation tools · fixed input/reference/prerequisite/comparison zone"
+          },
+          {
+            "position": "center",
+            "label": "genetic-engineering intake bench",
+            "symbol": "QUESTION",
+            "description": "Genetic-engineering intake bench · primary science-bearing action zone"
+          },
+          {
+            "position": "right",
+            "label": "analysis / comparison tools",
+            "symbol": "ANALYZE",
+            "description": "Analysis / comparison tools · fixed consequence/output/evidence/comparison zone"
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps one coded DNA sample tube labeled U6-X identifiable through the investigation and forces every laboratory technique to answer a specific question. When recombinant expression is needed, she opens a separate clearly labeled plasmid so the original sample and the engineered construct can never be confused."
+        },
+        {
+          "name": "DNA manipulation tools",
+          "kind": "scientific anchor",
+          "visual": "MANIPULATE · Dna manipulation tools · fixed input/reference/prerequisite/comparison zone",
+          "job": "fixed input/reference/prerequisite/comparison zone"
+        },
+        {
+          "name": "genetic-engineering intake bench",
+          "kind": "scientific anchor",
+          "visual": "QUESTION · Genetic-engineering intake bench · primary science-bearing action zone",
+          "job": "primary science-bearing action zone"
+        },
+        {
+          "name": "analysis / comparison tools",
+          "kind": "scientific anchor",
+          "visual": "ANALYZE · Analysis / comparison tools · fixed consequence/output/evidence/comparison zone",
+          "job": "fixed consequence/output/evidence/comparison zone"
+        },
+        {
+          "name": "U6-X coded sample and branch ledger",
+          "kind": "continuity object",
+          "visual": "one blue sample tube labeled U6-X with derived aliquots that retain the U6-X code; a separate amber engineered plasmid appears only at the transformation branch",
+          "job": "keeps sample identity, derived analytical material, and engineered construct separate while each laboratory technique produces a different kind of output"
+        }
+      ],
+      "continuity_object": "one coded DNA sample tube labeled U6-X that is amplified or analyzed without changing identity; when recombinant expression is required, a separate clearly labeled plasmid receives the intended insert.",
+      "story_open": "The doors of the **Genetic Engineering Intake** slide apart and you enter a bright rectangular laboratory with three fixed work zones. On your **left**, the **DNA manipulation tools** sit in a glass-fronted cabinet beside holders for DNA and RNA samples. Straight **ahead at center**, the **genetic-engineering intake bench** is empty except for a single clear tube labeled **U6-X** and a stack of investigation cards. On your **right**, the **analysis / comparison tools** glow behind another glass partition: a gel box, a sequencing display, and a profile screen, each dark until selected. Dr. Sora Han sets her copper information ledger beside U6-X and immediately shuts off a flashing ceiling instruction that says RUN ALL PROCEDURES. ‘A laboratory technique is useful only when it matches the question,’ she says. The tube stays sealed in the center while the left and right walls wait for a reason to move.",
+      "story_paragraphs": [
+        "The doors of the **Genetic Engineering Intake** slide apart and you enter a bright rectangular laboratory with three fixed work zones. On your **left**, the **DNA manipulation tools** sit in a glass-fronted cabinet beside holders for DNA and RNA samples. Straight **ahead at center**, the **genetic-engineering intake bench** is empty except for a single clear tube labeled **U6-X** and a stack of investigation cards. On your **right**, the **analysis / comparison tools** glow behind another glass partition: a gel box, a sequencing display, and a profile screen, each dark until selected. Dr. Sora Han sets her copper information ledger beside U6-X and immediately shuts off a flashing ceiling instruction that says RUN ALL PROCEDURES. ‘A laboratory technique is useful only when it matches the question,’ she says. The tube stays sealed in the center while the left and right walls wait for a reason to move.",
+        "Sora flips the first investigation card faceup. It asks whether prepared DNA fragments from the sample differ in size. The second asks for many copies of one selected DNA region. A third asks whether an engineered version of a gene can be maintained and expressed in bacterial cells. A fourth asks for the nucleotide order of a DNA region. The questions sound related because every one involves nucleic acids, yet their evidence requirements are different. Sora writes a sentence across the top of the ledger exactly as the lab’s organizing rule: **Genetic engineering manipulates/analyzes nucleic acids**. She then makes the meaning precise. Genetic engineering techniques can be used to analyze and manipulate **DNA and RNA**. Some operations change or propagate nucleic-acid material; others measure, separate, read, or compare it. The phrase does not mean that every technique performs every job.",
+        "To make the distinction physical, Sora takes one laminated copy of the U6-X label and places it against the left cabinet. ‘If the question requires changing, copying, or introducing nucleic-acid material, we may need a manipulation step.’ She places a second U6-X label on the right partition. ‘If the question asks what is present, how fragments differ, what the nucleotide order is, or how samples compare, we need an analytical output.’ Then she returns the real tube to the center. The sample’s identity never changes merely because the laboratory changes tools. The technique must be chosen from the question, and the evidence it produces must be interpreted according to the physical process that generated it.",
+        "The intake bench now divides U6-X into clearly tracked work paths without pretending they are interchangeable. A prepared fragment aliquot marked **U6-X-G** is released for the fragment-size question. The untouched master tube remains locked in a blue holder for later amplification and sequencing. At a separate side drawer, an empty plasmid ring is labeled **ENGINEERED CONSTRUCT ONLY** for the later expression question; it is not called U6-X and it is not allowed to replace the original sample. Sora taps the three labels in sequence. ‘Sample, derived aliquot, engineered construct. Keep those identities separate and the biology stays interpretable.’ The route is beginning to feel less like a list of vocabulary and more like an investigation with evidence moving from one station to the next.",
+        "A narrow conveyor opens behind the center bench. The first card still asks only whether the prepared DNA fragments differ in size, so Sora sends U6-X-G down the conveyor while the master U6-X tube stays locked behind glass. Through the doorway ahead you can already see a transparent slab with wells cut into one end and electrodes at opposite sides. ‘The next station will not read the nucleotide sequence,’ Sora says. ‘It will separate fragments according to how they move through a gel.’ The gel room lights up, giving the investigation its first specific tool and its first testable output."
+      ],
+      "story_close": "A narrow conveyor opens behind the center bench. The first card still asks only whether the prepared DNA fragments differ in size, so Sora sends U6-X-G down the conveyor while the master U6-X tube stays locked behind glass. Through the doorway ahead you can already see a transparent slab with wells cut into one end and electrodes at opposite sides. ‘The next station will not read the nucleotide sequence,’ Sora says. ‘It will separate fragments according to how they move through a gel.’ The gel room lights up, giving the investigation its first specific tool and its first testable output.",
+      "object_ids": [
+        "U6-K-081"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-081",
+          "term": "Genetic engineering manipulates/analyzes nucleic acids",
+          "story": "the U6-X intake bench separating nucleic-acid manipulation tools from analysis tools according to the question being asked",
+          "science": "Genetic engineering techniques can be used to analyze and manipulate DNA and RNA.",
+          "exact_name": true,
+          "hint": "the U6-X intake bench separating nucleic-acid manipulation tools from analysis tools according to the question being asked",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Gel Electrophoresis Lane",
+      "f3_scene_brief_id": "F3-U6-L49",
+      "narrative_word_count": 625
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U6-L50",
+      "locus": "Gel Electrophoresis Lane",
+      "title": "The Gel That Could Separate Fragments but Could Not Read Their Letters",
+      "scene_kicker": "The fragment pattern can answer a size-comparison question only if you remember what is physically moving, which direction it moves, and what the resulting bands actually represent.",
+      "location_description": "the gel lane where charged DNA fragments migrate through a matrix and produce band patterns used for comparison",
+      "scene_layout": {
+        "orientation": "Enter Gel Electrophoresis Lane and stop at the gel lane where charged DNA fragments migrate through a matrix and produce band patterns used for comparison. The left side is anchored by sample wells / DNA loading side, the working center is gel migration lane, and the right side is anchored by separated band-pattern side. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "sample wells / DNA loading side",
+            "symbol": "WELLS/−",
+            "description": "Sample wells / dna loading side · fixed input/reference/prerequisite/comparison zone"
+          },
+          {
+            "position": "center",
+            "label": "gel migration lane",
+            "symbol": "GEL FIELD",
+            "description": "Gel migration lane · primary science-bearing action zone"
+          },
+          {
+            "position": "right",
+            "label": "separated band-pattern side",
+            "symbol": "BANDS/+",
+            "description": "Separated band-pattern side · fixed consequence/output/evidence/comparison zone"
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps one coded DNA sample tube labeled U6-X identifiable through the investigation and forces every laboratory technique to answer a specific question. When recombinant expression is needed, she opens a separate clearly labeled plasmid so the original sample and the engineered construct can never be confused."
+        },
+        {
+          "name": "sample wells / DNA loading side",
+          "kind": "scientific anchor",
+          "visual": "WELLS/− · Sample wells / dna loading side · fixed input/reference/prerequisite/comparison zone",
+          "job": "fixed input/reference/prerequisite/comparison zone"
+        },
+        {
+          "name": "gel migration lane",
+          "kind": "scientific anchor",
+          "visual": "GEL FIELD · Gel migration lane · primary science-bearing action zone",
+          "job": "primary science-bearing action zone"
+        },
+        {
+          "name": "separated band-pattern side",
+          "kind": "scientific anchor",
+          "visual": "BANDS/+ · Separated band-pattern side · fixed consequence/output/evidence/comparison zone",
+          "job": "fixed consequence/output/evidence/comparison zone"
+        },
+        {
+          "name": "U6-X coded sample and branch ledger",
+          "kind": "continuity object",
+          "visual": "one blue sample tube labeled U6-X with derived aliquots that retain the U6-X code; a separate amber engineered plasmid appears only at the transformation branch",
+          "job": "keeps sample identity, derived analytical material, and engineered construct separate while each laboratory technique produces a different kind of output"
+        }
+      ],
+      "continuity_object": "one coded DNA sample tube labeled U6-X that is amplified or analyzed without changing identity; when recombinant expression is required, a separate clearly labeled plasmid receives the intended insert.",
+      "story_open": "The **Gel Electrophoresis Lane** is a long room built around one transparent gel slab. On your **left**, the **sample wells / DNA loading side** sit beside the negative end of the electrical setup, and Sora loads the prepared U6-X-G fragment mixture into one well beside a labeled reference. Straight **ahead at center**, the **gel migration lane** stretches through a porous matrix beneath a clear lid. On your **right**, the **separated band-pattern side** waits near the positive electrode, its imaging screen completely blank. Sora points from left to right before switching anything on. ‘Fix this geography in your head. DNA begins in the wells, crosses the gel, and forms a pattern only because an electric field makes the fragments move.’",
+      "story_paragraphs": [
+        "The **Gel Electrophoresis Lane** is a long room built around one transparent gel slab. On your **left**, the **sample wells / DNA loading side** sit beside the negative end of the electrical setup, and Sora loads the prepared U6-X-G fragment mixture into one well beside a labeled reference. Straight **ahead at center**, the **gel migration lane** stretches through a porous matrix beneath a clear lid. On your **right**, the **separated band-pattern side** waits near the positive electrode, its imaging screen completely blank. Sora points from left to right before switching anything on. ‘Fix this geography in your head. DNA begins in the wells, crosses the gel, and forms a pattern only because an electric field makes the fragments move.’",
+        "She closes the lid and activates the field. The DNA fragments begin leaving the wells. Sora introduces the technique by its exact name: **Gel electrophoresis** separates DNA fragments by their movement through a gel under an electric field, with fragment size strongly affecting migration under standard DNA-gel conditions. The fragments do not swim because they are trying to reach a preferred location. DNA carries a net negative charge from its phosphate backbone, so the electric field pulls the molecules toward the **positive electrode** on the right. The center lane now shows dozens of tiny blue DNA fragments moving in the same general direction through the gel matrix.",
+        "Movement through the matrix is not equal. Small fragments weave through the pores with less obstruction and travel farther during the same run, while larger fragments lag closer to the wells. Sora writes **DNA migration in electrophoresis** beside the moving field and keeps the relationship visible: negatively charged DNA moves toward the positive electrode; in a common agarose DNA gel, smaller fragments generally move farther or faster through the matrix. She also prevents a tempting overstatement. DNA fragments have broadly similar charge-to-mass behavior, so for standard agarose DNA gels **size** is usually the dominant reason fragments separate by distance. The field provides direction; the gel matrix makes fragment length diagnostically important.",
+        "The power shuts off and the right-hand imaging screen reveals several horizontal bands. Sora compares the U6-X-G lane with the reference lane. Some bands align; another U6-X-G band sits farther from the wells, consistent with a smaller fragment under these conditions. But when the screen tries to print nucleotide letters beneath the bands, Sora cancels the command. ‘This pattern does not tell us the complete base order of each fragment,’ she says. Gel electrophoresis produces spatial separation and a band pattern. It is therefore useful for fragment-size comparisons and for profile evidence, but it is not **DNA sequencing**. Nor did the gel make many new copies of the target region; that would require a different mechanism.",
+        "Sora removes the master U6-X tube from the locked holder and places it beside a target-region map. The gel answered the fragment-separation question, but the investigation still needs enough copies of one particular region for downstream analyses. She points to a circular doorway marked three times around its rim: SEPARATE, BIND, BUILD. ‘We do not keep running the gel harder to make DNA copies,’ she says. ‘We amplify the selected region by cycling the chemistry.’ The gel image remains pinned on the wall as evidence while you carry the untouched U6-X master tube into the **PCR Thermal Cycler**."
+      ],
+      "story_close": "Sora removes the master U6-X tube from the locked holder and places it beside a target-region map. The gel answered the fragment-separation question, but the investigation still needs enough copies of one particular region for downstream analyses. She points to a circular doorway marked three times around its rim: SEPARATE, BIND, BUILD. ‘We do not keep running the gel harder to make DNA copies,’ she says. ‘We amplify the selected region by cycling the chemistry.’ The gel image remains pinned on the wall as evidence while you carry the untouched U6-X master tube into the **PCR Thermal Cycler**.",
+      "object_ids": [
+        "U6-K-082",
+        "U6-K-167"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-082",
+          "term": "Gel electrophoresis",
+          "story": "a DNA fragment mixture moving through a gel under an electric field until distinct bands separate",
+          "science": "Gel electrophoresis separates DNA fragments by their movement through a gel under an electric field, with fragment size strongly affecting migration under standard DNA-gel conditions.",
+          "exact_name": true,
+          "hint": "a DNA fragment mixture moving through a gel under an electric field until distinct bands separate",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-167",
+          "term": "DNA migration in electrophoresis",
+          "story": "negatively charged DNA leaving the well side toward the positive electrode while smaller fragments move farther through the gel matrix",
+          "science": "DNA is negatively charged and migrates toward the positive electrode in an electric field; in common agarose gels, smaller DNA fragments generally move farther/faster through the matrix.",
+          "exact_name": false,
+          "hint": "negatively charged DNA leaving the well side toward the positive electrode while smaller fragments move farther through the gel matrix",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-033: For standard agarose DNA gels, DNA has similar charge-to-mass ratio so size is the dominant determinant of migration; preserve the CED’s broader “size and charge” wording while teaching the usual DNA-gel mechanism accurately.",
+        "Discrimination requirement U6-D36: keep Gel electrophoresis, PCR denaturation, DNA sequencing physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-082",
+      "checkpoint_prompt": "Without looking back, identify or explain Gel electrophoresis from the scientific action you just watched.",
+      "checkpoint_answer": "Gel electrophoresis separates DNA fragments by their movement through a gel under an electric field, with fragment size strongly affecting migration under standard DNA-gel conditions.",
+      "next_locus": "PCR Thermal Cycler",
+      "f3_scene_brief_id": "F3-U6-L50",
+      "narrative_word_count": 550
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U6-L51",
+      "locus": "PCR Thermal Cycler",
+      "title": "The Cycler That Made Copies Only Between Two Molecular Bookmarks",
+      "scene_kicker": "The machine does not copy “DNA in general.” It repeats three ordered molecular events around a selected region until that region becomes abundant enough to analyze.",
+      "location_description": "the thermal cycler repeating denaturation, primer annealing, and extension to amplify a selected DNA region",
+      "scene_layout": {
+        "orientation": "Enter PCR Thermal Cycler and stop at the thermal cycler repeating denaturation, primer annealing, and extension to amplify a selected DNA region. The left side is anchored by denaturation high-temperature side, the working center is primer-annealing stage, and the right side is anchored by extension / amplified-copy output. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "denaturation high-temperature side",
+            "symbol": "DENATURE",
+            "description": "Denaturation high-temperature side · fixed input/reference/prerequisite/comparison zone"
+          },
+          {
+            "position": "center",
+            "label": "primer-annealing stage",
+            "symbol": "ANNEAL",
+            "description": "Primer-annealing stage · primary science-bearing action zone"
+          },
+          {
+            "position": "right",
+            "label": "extension / amplified-copy output",
+            "symbol": "EXTEND/COPY",
+            "description": "Extension / amplified-copy output · fixed consequence/output/evidence/comparison zone"
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps one coded DNA sample tube labeled U6-X identifiable through the investigation and forces every laboratory technique to answer a specific question. When recombinant expression is needed, she opens a separate clearly labeled plasmid so the original sample and the engineered construct can never be confused."
+        },
+        {
+          "name": "denaturation high-temperature side",
+          "kind": "scientific anchor",
+          "visual": "DENATURE · Denaturation high-temperature side · fixed input/reference/prerequisite/comparison zone",
+          "job": "fixed input/reference/prerequisite/comparison zone"
+        },
+        {
+          "name": "primer-annealing stage",
+          "kind": "scientific anchor",
+          "visual": "ANNEAL · Primer-annealing stage · primary science-bearing action zone",
+          "job": "primary science-bearing action zone"
+        },
+        {
+          "name": "extension / amplified-copy output",
+          "kind": "scientific anchor",
+          "visual": "EXTEND/COPY · Extension / amplified-copy output · fixed consequence/output/evidence/comparison zone",
+          "job": "fixed consequence/output/evidence/comparison zone"
+        },
+        {
+          "name": "U6-X coded sample and branch ledger",
+          "kind": "continuity object",
+          "visual": "one blue sample tube labeled U6-X with derived aliquots that retain the U6-X code; a separate amber engineered plasmid appears only at the transformation branch",
+          "job": "keeps sample identity, derived analytical material, and engineered construct separate while each laboratory technique produces a different kind of output"
+        }
+      ],
+      "continuity_object": "one coded DNA sample tube labeled U6-X that is amplified or analyzed without changing identity; when recombinant expression is required, a separate clearly labeled plasmid receives the intended insert.",
+      "story_open": "The **PCR Thermal Cycler** is a circular chamber divided into three fixed stations around the same reaction tube. On your **left**, the **denaturation high-temperature side** glows behind a heat shield. Straight **ahead at center**, the **primer-annealing stage** contains two short primer markers positioned beside the copper-tagged boundaries of the U6-X target region. On your **right**, the **extension / amplified-copy output** holds a DNA-polymerase track and a counter currently reading 1 TARGET TEMPLATE. Sora locks the U6-X master identity into her ledger and places a derived reaction tube in the center. ‘Watch the same target region through all three stations,’ she says. ‘If you lose which molecules are templates, which pieces are primers, or which direction new DNA is being extended, the cycle turns into three disconnected words.’",
+      "story_paragraphs": [
+        "The **PCR Thermal Cycler** is a circular chamber divided into three fixed stations around the same reaction tube. On your **left**, the **denaturation high-temperature side** glows behind a heat shield. Straight **ahead at center**, the **primer-annealing stage** contains two short primer markers positioned beside the copper-tagged boundaries of the U6-X target region. On your **right**, the **extension / amplified-copy output** holds a DNA-polymerase track and a counter currently reading 1 TARGET TEMPLATE. Sora locks the U6-X master identity into her ledger and places a derived reaction tube in the center. ‘Watch the same target region through all three stations,’ she says. ‘If you lose which molecules are templates, which pieces are primers, or which direction new DNA is being extended, the cycle turns into three disconnected words.’",
+        "The chamber rotates left and the temperature rises. The paired DNA strands separate so each can serve as a template. Sora names this first event **PCR denaturation**. PCR amplification cycles include **denaturation** to separate template DNA strands. The purpose here is strand separation, not nucleotide sequencing and not gel separation. No band pattern appears, and no letters are read from the molecule. The heat simply disrupts the interactions holding the two strands together so complementary template sequences become accessible for the next step. When the display tries to keep the primers attached during this hot phase, Sora removes them from the animation. ‘The stages must remain mechanistically distinct.’",
+        "The reaction moves to the center stage and cools. Two short primers approach complementary sequences on opposite template strands at the boundaries chosen for the target. They bind only where their sequences can base-pair appropriately. Sora labels the event **PCR primer annealing**. PCR amplification cycles include **annealing primers to complementary target sequences**. The primers do more than decorate the DNA: their locations help define which region will be copied, and they provide starting points from which DNA polymerase can extend. Sora taps the copper target bracket between them. ‘The investigation question selected this region first. The primers make that choice molecularly actionable.’",
+        "The tube slides right. DNA polymerase binds at the primed templates and extends from the primers, synthesizing new DNA strands complementary to the templates. Sora names the third event **PCR extension**. PCR amplification cycles include **polymerase-mediated extension** to synthesize new DNA strands. The copy counter climbs after the first cycle, then the chamber repeats the same three-step order. Newly synthesized DNA can serve as template in later cycles, so the selected region increases rapidly over repeated cycles. Sora writes the full relationship beside the counter: the **PCR amplification principle** is repeated strand separation, primer binding, and DNA synthesis used to amplify a target DNA region exponentially in principle.",
+        "After many cycles, the right-hand rack holds a dense set of U6-X-derived target copies while the original master identity remains traceable in the ledger. Sora circles the three stations in order: **PCR denaturation → PCR primer annealing → PCR extension**. ‘PCR answers a copy-number problem,’ she says. ‘It does not by itself tell us the nucleotide order, and it does not create a gel band pattern until we use another analytical method.’ A side request now appears from the intake bench: researchers want to test whether an engineered version of the target gene can be propagated or expressed in bacteria. Sora takes a copy of the intended insert but keeps the master U6-X tube separate, then unlocks the drawer containing the clearly labeled engineered plasmid. The next room is not another PCR cycle. It is a controlled bacterial uptake experiment."
+      ],
+      "story_close": "After many cycles, the right-hand rack holds a dense set of U6-X-derived target copies while the original master identity remains traceable in the ledger. Sora circles the three stations in order: **PCR denaturation → PCR primer annealing → PCR extension**. ‘PCR answers a copy-number problem,’ she says. ‘It does not by itself tell us the nucleotide order, and it does not create a gel band pattern until we use another analytical method.’ A side request now appears from the intake bench: researchers want to test whether an engineered version of the target gene can be propagated or expressed in bacteria. Sora takes a copy of the intended insert but keeps the master U6-X tube separate, then unlocks the drawer containing the clearly labeled engineered plasmid. The next room is not another PCR cycle. It is a controlled bacterial uptake experiment.",
+      "object_ids": [
+        "U6-K-083",
+        "U6-K-084",
+        "U6-K-085",
+        "U6-K-166"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-083",
+          "term": "PCR denaturation",
+          "story": "the U6-X target DNA strands separating during the high-temperature phase of a PCR cycle",
+          "science": "PCR amplification cycles include denaturation to separate template DNA strands.",
+          "exact_name": true,
+          "hint": "the U6-X target DNA strands separating during the high-temperature phase of a PCR cycle",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-084",
+          "term": "PCR primer annealing",
+          "story": "short primers binding complementary sequences that flank the selected U6-X target region",
+          "science": "PCR amplification cycles include annealing primers to complementary target sequences.",
+          "exact_name": true,
+          "hint": "short primers binding complementary sequences that flank the selected U6-X target region",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-085",
+          "term": "PCR extension",
+          "story": "DNA polymerase extending from bound primers to synthesize new DNA strands",
+          "science": "PCR amplification cycles include polymerase-mediated extension to synthesize new DNA strands.",
+          "exact_name": true,
+          "hint": "DNA polymerase extending from bound primers to synthesize new DNA strands",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-166",
+          "term": "PCR amplification principle",
+          "story": "repeated denaturation, primer annealing, and extension cycles producing many copies of the selected target region",
+          "science": "PCR uses repeated cycles of strand separation, primer binding, and DNA synthesis to amplify a target DNA region exponentially.",
+          "exact_name": true,
+          "hint": "repeated denaturation, primer annealing, and extension cycles producing many copies of the selected target region",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-034: Add explicit AP-required canonical records for the three functional PCR stages from the current CED, verified against Campbell.",
+        "Resolved F1 guard RF-U6-039: Lock these AP requirements explicitly and map earlier plasmid/transformation context where available; keep detailed procedures outside required scope.",
+        "Discrimination requirement U6-D35: keep PCR denaturation, PCR primer annealing, PCR extension physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U6-D36: keep Gel electrophoresis, PCR denaturation, DNA sequencing physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-083",
+      "checkpoint_prompt": "Without looking back, identify or explain PCR denaturation from the scientific action you just watched.",
+      "checkpoint_answer": "PCR amplification cycles include denaturation to separate template DNA strands.",
+      "next_locus": "Transformation Expression Bench",
+      "f3_scene_brief_id": "F3-U6-L51",
+      "narrative_word_count": 582
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U6-L52",
+      "locus": "Transformation Expression Bench",
+      "title": "The Plasmid That Entered a Cell Without Becoming the Original Sample",
+      "scene_kicker": "The engineered construct can enter bacteria and be propagated or expressed, but only if the plasmid, the recipient cell, and the original U6-X sample remain separate identities.",
+      "location_description": "the bacterial bench connecting uptake of engineered DNA with recombinant expression while distinguishing laboratory transformation from natural HGT context",
+      "scene_layout": {
+        "orientation": "Enter Transformation Expression Bench and stop at the bacterial bench connecting uptake of engineered DNA with recombinant expression while distinguishing laboratory transformation from natural HGT context. The left side is anchored by engineered plasmid / bacterial uptake side, the working center is transformation bench, and the right side is anchored by recombinant gene-expression output. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "engineered plasmid / bacterial uptake side",
+            "symbol": "PLASMID",
+            "description": "Engineered plasmid / bacterial uptake side · fixed input/reference/prerequisite/comparison zone"
+          },
+          {
+            "position": "center",
+            "label": "transformation bench",
+            "symbol": "BACTERIA",
+            "description": "Transformation bench · primary science-bearing action zone"
+          },
+          {
+            "position": "right",
+            "label": "recombinant gene-expression output",
+            "symbol": "EXPRESSION",
+            "description": "Recombinant gene-expression output · fixed consequence/output/evidence/comparison zone"
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps one coded DNA sample tube labeled U6-X identifiable through the investigation and forces every laboratory technique to answer a specific question. When recombinant expression is needed, she opens a separate clearly labeled plasmid so the original sample and the engineered construct can never be confused."
+        },
+        {
+          "name": "engineered plasmid / bacterial uptake side",
+          "kind": "scientific anchor",
+          "visual": "PLASMID · Engineered plasmid / bacterial uptake side · fixed input/reference/prerequisite/comparison zone",
+          "job": "fixed input/reference/prerequisite/comparison zone"
+        },
+        {
+          "name": "transformation bench",
+          "kind": "scientific anchor",
+          "visual": "BACTERIA · Transformation bench · primary science-bearing action zone",
+          "job": "primary science-bearing action zone"
+        },
+        {
+          "name": "recombinant gene-expression output",
+          "kind": "scientific anchor",
+          "visual": "EXPRESSION · Recombinant gene-expression output · fixed consequence/output/evidence/comparison zone",
+          "job": "fixed consequence/output/evidence/comparison zone"
+        },
+        {
+          "name": "U6-X coded sample and branch ledger",
+          "kind": "continuity object",
+          "visual": "one blue sample tube labeled U6-X with derived aliquots that retain the U6-X code; a separate amber engineered plasmid appears only at the transformation branch",
+          "job": "keeps sample identity, derived analytical material, and engineered construct separate while each laboratory technique produces a different kind of output"
+        }
+      ],
+      "continuity_object": "one coded DNA sample tube labeled U6-X that is amplified or analyzed without changing identity; when recombinant expression is required, a separate clearly labeled plasmid receives the intended insert.",
+      "story_open": "The **Transformation Expression Bench** is arranged like a small three-part factory. On your **left**, the **engineered plasmid / bacterial uptake side** holds a circular plasmid with the chosen insert marked in amber; beside it, the original U6-X master tube remains sealed in a blue rack so nobody can mistake the construct for the source sample. Straight **ahead at center**, the **transformation bench** contains a tray of recipient bacterial cells and a controlled uptake chamber. On your **right**, the **recombinant gene-expression output** has two readouts: one for cells maintaining the plasmid and another for production from the inserted gene when the required regulatory context is present. Sora sets her ledger between the original sample and engineered ring. ‘This room changes which DNA a cell carries. It does not redefine where the DNA originally came from.’",
+      "story_paragraphs": [
+        "The **Transformation Expression Bench** is arranged like a small three-part factory. On your **left**, the **engineered plasmid / bacterial uptake side** holds a circular plasmid with the chosen insert marked in amber; beside it, the original U6-X master tube remains sealed in a blue rack so nobody can mistake the construct for the source sample. Straight **ahead at center**, the **transformation bench** contains a tray of recipient bacterial cells and a controlled uptake chamber. On your **right**, the **recombinant gene-expression output** has two readouts: one for cells maintaining the plasmid and another for production from the inserted gene when the required regulatory context is present. Sora sets her ledger between the original sample and engineered ring. ‘This room changes which DNA a cell carries. It does not redefine where the DNA originally came from.’",
+        "Sora opens the uptake chamber and introduces the engineered plasmid to the prepared bacterial cells. Some cells take up the foreign DNA. She writes the exact laboratory concept across the center display: **Bacterial transformation as biotechnology**. Bacterial transformation introduces foreign DNA into bacterial cells and can be used to propagate or express engineered DNA. The center screen deliberately shows DNA entering the cells; it does not show a virus delivering the DNA and it does not show two bacteria connected for conjugation. Those mechanisms belonged to the earlier horizontal-gene-transfer yard and are physically different routes. Here transformation is being used deliberately as a laboratory technique with an engineered construct.",
+        "The transformed cells divide, and the plasmid can be maintained and copied along with the bacterial population under suitable experimental conditions. The right-hand maintenance readout rises. Sora then opens the expression branch. The inserted gene produces a detectable product only in cells where the construct includes **appropriate regulatory sequences** that allow the bacterial machinery to express it. This is the locked relationship behind **Recombinant DNA expression in bacteria**: engineered plasmids can be introduced into bacterial cells so inserted genes can be propagated and, when appropriate regulatory sequences are present, expressed. Uptake of DNA and expression of a gene are related events, yet they are not identical. A cell can receive DNA without every inserted sequence automatically producing a functional product.",
+        "To keep the comparison sharp, Sora projects a memory from the Mutation and Gene Exchange Yard onto the left wall. In natural horizontal gene transfer, **transformation** describes uptake of environmental DNA by a recipient bacterium. In this room, the same broad cellular capacity for DNA uptake is being harnessed intentionally in a biotechnology workflow. Sora draws a boundary around the laboratory apparatus and labels it USE CONTEXT. ‘The mechanism of DNA entry matters, and the experimental purpose matters. Do not turn every transformation question into the same story.’ The engineered plasmid continues to glow amber while U6-X remains blue and untouched in the reference rack.",
+        "The output panel confirms that the experimental bacteria now carry the engineered construct and, under the shown conditions, produce the expected gene product. Yet two questions from the intake bench remain unanswered. What is the exact nucleotide order of the U6-X-derived DNA region? And how closely does the evidence from U6-X match another coded sample? Neither a transformed bacterial colony nor a protein-output meter can answer those questions by itself. Sora collects the amplified U6-X target copies from the PCR room, leaves the engineered bacteria behind, and carries the DNA to the final desk. ‘Now we read and compare,’ she says, opening the door to the **Sequence and Profile Analysis Desk**."
+      ],
+      "story_close": "The output panel confirms that the experimental bacteria now carry the engineered construct and, under the shown conditions, produce the expected gene product. Yet two questions from the intake bench remain unanswered. What is the exact nucleotide order of the U6-X-derived DNA region? And how closely does the evidence from U6-X match another coded sample? Neither a transformed bacterial colony nor a protein-output meter can answer those questions by itself. Sora collects the amplified U6-X target copies from the PCR room, leaves the engineered bacteria behind, and carries the DNA to the final desk. ‘Now we read and compare,’ she says, opening the door to the **Sequence and Profile Analysis Desk**.",
+      "object_ids": [
+        "U6-K-086",
+        "U6-K-165"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-086",
+          "term": "Bacterial transformation as biotechnology",
+          "story": "a separately engineered plasmid entering bacterial cells during a controlled laboratory transformation",
+          "science": "Bacterial transformation introduces foreign DNA into bacterial cells and can be used to propagate or express engineered DNA.",
+          "exact_name": true,
+          "hint": "a separately engineered plasmid entering bacterial cells during a controlled laboratory transformation",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-165",
+          "term": "Recombinant DNA expression in bacteria",
+          "story": "transformed bacteria maintaining the engineered plasmid and expressing its inserted gene when appropriate regulatory sequences are present",
+          "science": "Engineered plasmids can be introduced into bacterial cells so inserted genes can be propagated and, when appropriate regulatory sequences are present, expressed.",
+          "exact_name": false,
+          "hint": "transformed bacteria maintaining the engineered plasmid and expressing its inserted gene when appropriate regulatory sequences are present",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-037: Add the missing current CED viral-recombination record as an AP-required coverage repair.",
+        "Resolved F1 guard RF-U6-038: Carry the requirement into Unit 6 as a cross-unit prerequisite/reapplication record instead of inventing duplicate mnemonic content.",
+        "Discrimination requirement U6-D34: keep Transformation as horizontal gene transfer, Bacterial transformation as biotechnology physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Sequence and Profile Analysis Desk",
+      "f3_scene_brief_id": "F3-U6-L52",
+      "narrative_word_count": 578
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U6-L53",
+      "locus": "Sequence and Profile Analysis Desk",
+      "title": "The Final Desk That Refused to Call Every Pattern a Sequence",
+      "scene_kicker": "The investigation ends only when the lab distinguishes reading nucleotide order from comparing evidence patterns and connects each conclusion to the technique that actually produced it.",
+      "location_description": "the analysis desk where DNA sequencing determines nucleotide order and DNA profiles compare patterns among samples",
+      "scene_layout": {
+        "orientation": "Enter Sequence and Profile Analysis Desk and stop at the analysis desk where DNA sequencing determines nucleotide order and DNA profiles compare patterns among samples. The left side is anchored by DNA sequence readout, the working center is sequence/profile analysis desk, and the right side is anchored by profile/fingerprint comparison panel. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "DNA sequence readout",
+            "symbol": "SEQUENCE",
+            "description": "Dna sequence readout · fixed input/reference/prerequisite/comparison zone"
+          },
+          {
+            "position": "center",
+            "label": "sequence/profile analysis desk",
+            "symbol": "ANALYZE",
+            "description": "Sequence/profile analysis desk · primary science-bearing action zone"
+          },
+          {
+            "position": "right",
+            "label": "profile/fingerprint comparison panel",
+            "symbol": "PROFILE",
+            "description": "Profile/fingerprint comparison panel · fixed consequence/output/evidence/comparison zone"
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps one coded DNA sample tube labeled U6-X identifiable through the investigation and forces every laboratory technique to answer a specific question. When recombinant expression is needed, she opens a separate clearly labeled plasmid so the original sample and the engineered construct can never be confused."
+        },
+        {
+          "name": "DNA sequence readout",
+          "kind": "scientific anchor",
+          "visual": "SEQUENCE · Dna sequence readout · fixed input/reference/prerequisite/comparison zone",
+          "job": "fixed input/reference/prerequisite/comparison zone"
+        },
+        {
+          "name": "sequence/profile analysis desk",
+          "kind": "scientific anchor",
+          "visual": "ANALYZE · Sequence/profile analysis desk · primary science-bearing action zone",
+          "job": "primary science-bearing action zone"
+        },
+        {
+          "name": "profile/fingerprint comparison panel",
+          "kind": "scientific anchor",
+          "visual": "PROFILE · Profile/fingerprint comparison panel · fixed consequence/output/evidence/comparison zone",
+          "job": "fixed consequence/output/evidence/comparison zone"
+        },
+        {
+          "name": "U6-X coded sample and branch ledger",
+          "kind": "continuity object",
+          "visual": "one blue sample tube labeled U6-X with derived aliquots that retain the U6-X code; a separate amber engineered plasmid appears only at the transformation branch",
+          "job": "keeps sample identity, derived analytical material, and engineered construct separate while each laboratory technique produces a different kind of output"
+        }
+      ],
+      "continuity_object": "one coded DNA sample tube labeled U6-X that is amplified or analyzed without changing identity; when recombinant expression is required, a separate clearly labeled plasmid receives the intended insert.",
+      "story_open": "The **Sequence and Profile Analysis Desk** is the quietest room in the lab, with three fixed evidence zones. On your **left**, the **DNA sequence readout** displays a blank row of numbered positions waiting for nucleotide letters from the amplified U6-X target. Straight **ahead at center**, the **sequence/profile analysis desk** holds the copper ledger, the earlier gel image, and labeled data files from the investigation. On your **right**, the **profile/fingerprint comparison panel** contains columns for U6-X, a reference sample, and an unknown comparison sample. Sora places the U6-X-derived DNA at the left instrument and the gel band image at center. ‘Two kinds of evidence can both compare DNA,’ she says, ‘but they are not the same measurement.’",
+      "story_paragraphs": [
+        "The **Sequence and Profile Analysis Desk** is the quietest room in the lab, with three fixed evidence zones. On your **left**, the **DNA sequence readout** displays a blank row of numbered positions waiting for nucleotide letters from the amplified U6-X target. Straight **ahead at center**, the **sequence/profile analysis desk** holds the copper ledger, the earlier gel image, and labeled data files from the investigation. On your **right**, the **profile/fingerprint comparison panel** contains columns for U6-X, a reference sample, and an unknown comparison sample. Sora places the U6-X-derived DNA at the left instrument and the gel band image at center. ‘Two kinds of evidence can both compare DNA,’ she says, ‘but they are not the same measurement.’",
+        "The left instrument begins producing an ordered nucleotide readout. A, T, G, and C positions appear one after another along the display. Sora names the operation **DNA sequencing**. DNA sequencing determines the **order of nucleotides in a DNA molecule**. That is the defining output. Unlike gel electrophoresis, which spatially separates DNA fragments and produces bands, sequencing provides base-order information for the region being read. Sora places the sequence beside the U6-X label and prevents the software from calling the earlier gel lanes ‘sequences.’ ‘A band position is not a nucleotide letter. A fragment pattern is not automatically a complete base-by-base readout.’",
+        "At center, Sora now builds a comparison record from the evidence appropriate to the question. One comparison uses nucleotide sequence data from the same region in two samples. Another uses fragment patterns generated under matching conditions. She writes the second exact relationship across the desk: **DNA profiles/fingerprints support comparison**. Genetic-analysis techniques can produce sequence data or fragment patterns that allow comparisons among DNA samples. The word profile does not guarantee that every nucleotide in the genome has been determined. A profile can be an evidentiary pattern used to ask whether samples are consistent with, different from, or more similar to one another based on the measured markers or fragments.",
+        "The right-hand panel overlays the labeled samples. Some features match and others do not. Sora makes you trace each feature back to its source before interpreting it: this row came from the gel’s fragment-separation pattern; this row came from a sequence readout; this signal came from the engineered-expression branch and therefore answers a different question. She will not allow one method to inherit the conclusion of another. Gel electrophoresis tells you how DNA fragments moved and separated under the field. PCR made many copies of a selected region. Bacterial transformation introduced an engineered construct into cells. DNA sequencing read nucleotide order. Profile analysis compared evidence generated from labeled samples. The same DNA investigation can use several techniques, but each technique changes or measures something specific.",
+        "Sora carries the U6-X tube back to the center desk and closes the copper ledger. The laboratory’s opening command, RUN ALL PROCEDURES, has been replaced by a five-step question board: **What do you need to know? What material enters the technique? What physical process occurs? What evidence or product exits? What conclusion does that output support?** You can now walk the route from memory. The intake chose a technique from the question. The gel separated fragments. PCR amplified a chosen target. A separate engineered plasmid entered bacteria for propagation or expression. Sequencing determined nucleotide order, and profiles supported comparison among samples. U6-X never became a different sample merely because it passed through different analyses. The lab finally stops treating biotechnology as a vocabulary shelf and starts behaving like an investigation."
+      ],
+      "story_close": "Sora carries the U6-X tube back to the center desk and closes the copper ledger. The laboratory’s opening command, RUN ALL PROCEDURES, has been replaced by a five-step question board: **What do you need to know? What material enters the technique? What physical process occurs? What evidence or product exits? What conclusion does that output support?** You can now walk the route from memory. The intake chose a technique from the question. The gel separated fragments. PCR amplified a chosen target. A separate engineered plasmid entered bacteria for propagation or expression. Sequencing determined nucleotide order, and profiles supported comparison among samples. U6-X never became a different sample merely because it passed through different analyses. The lab finally stops treating biotechnology as a vocabulary shelf and starts behaving like an investigation.",
+      "object_ids": [
+        "U6-K-087",
+        "U6-K-088"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-087",
+          "term": "DNA sequencing",
+          "story": "a nucleotide-order readout generated from U6-X-derived DNA at the sequencing station",
+          "science": "DNA sequencing determines the order of nucleotides in a DNA molecule.",
+          "exact_name": true,
+          "hint": "a nucleotide-order readout generated from U6-X-derived DNA at the sequencing station",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-088",
+          "term": "DNA profiles/fingerprints support comparison",
+          "story": "sequence data and DNA fragment-pattern evidence being compared among labeled samples without treating every profile as a complete nucleotide sequence",
+          "science": "Genetic-analysis techniques can produce sequence data or fragment patterns that allow comparisons among DNA samples.",
+          "exact_name": true,
+          "hint": "sequence data and DNA fragment-pattern evidence being compared among labeled samples without treating every profile as a complete nucleotide sequence",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-039: Lock these AP requirements explicitly and map earlier plasmid/transformation context where available; keep detailed procedures outside required scope.",
+        "Resolved F1 guard RF-U6-033: For standard agarose DNA gels, DNA has similar charge-to-mass ratio so size is the dominant determinant of migration; preserve the CED’s broader “size and charge” wording while teaching the usual DNA-gel mechanism accurately.",
+        "Discrimination requirement U6-D36: keep Gel electrophoresis, PCR denaturation, DNA sequencing physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U6-D37: keep DNA sequencing, DNA profiles/fingerprints support comparison physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U6-L53",
+      "narrative_word_count": 584
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2"
+}

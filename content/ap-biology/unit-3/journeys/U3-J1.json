@@ -1,0 +1,482 @@
+{
+  "schema": "memory-palace-v2-unit3-f4a-story-1.0",
+  "unit_id": "unit-3",
+  "palace_id": "U3-J1",
+  "journey_id": "U3-J1",
+  "palace_name": "Enzyme Catalysis Workshop",
+  "story_title": "The Reaction That Would Not Start",
+  "tagline": "Follow one amber substrate across an energy barrier, into an active site, and through repeated catalytic cycles until enzyme action becomes a visible mechanism.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cellular-energetics investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet showing reaction-energy and molecular models",
+    "story_job": "Nia keeps the workshop geography fixed, asks you to predict the molecular consequence, and names scientific terms only after the defining action is visible."
+  },
+  "premise": "A reaction workshop is wasting energy because its molecular jobs have been reduced to labels. The learner must rebuild catalysis by comparing reaction barriers, docking a real substrate at an active site, and watching the same enzyme return to service after product release.",
+  "mission": "Follow one reaction from activation-energy barrier to enzyme-substrate binding and catalytic turnover so enzyme action is understood as a reusable molecular mechanism.",
+  "finale": "The workshop runs again after the same reaction receives a lower activation-energy pathway, the amber substrate binds a compatible active site through induced fit, products leave, and the unchanged enzyme returns to service. The restored catalyst then unlocks the control wing where enzyme activity can be regulated.",
+  "estimated_minutes": 9,
+  "scene_count": 3,
+  "checkpoint_count": 2,
+  "learner_rule": "Read or listen and hold the three fixed zones of each room in mind. Watch the molecular event first, then attach the scientific term. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Enzyme Catalysis Workshop is a three-room route. Enter at the reaction-energy ramp, carry the same amber substrate through the door into the active-site docking bay, then follow the bound enzyme-substrate complex straight into the catalytic turnover bench. Left, center, and right anchors stay fixed within every room.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Catalyst Energy Ramp",
+      "short": "Energy Ramp",
+      "floor": "Workshop entrance",
+      "symbol": "∩"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Active-Site Dock",
+      "short": "Active-Site Dock",
+      "floor": "Molecular docking bay",
+      "symbol": "⊂"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Catalytic Turnover Bench",
+      "short": "Turnover Bench",
+      "floor": "Reaction floor",
+      "symbol": "↻"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Catalyst Energy Ramp",
+      "title": "The Reaction That Would Not Climb",
+      "scene_kicker": "The reactants and products are already in place. The problem is the energy barrier between them.",
+      "location_description": "Catalyst Energy Ramp — the reaction-energy track with an uncatalyzed hill beside a lower enzyme-catalyzed route.",
+      "scene_layout": {
+        "orientation": "You enter Catalyst Energy Ramp and stop at the reaction-energy track with an uncatalyzed hill beside a lower enzyme-catalyzed route. On your left is uncatalyzed activation-energy hill; directly ahead is enzyme-catalyzed lower barrier; on your right is product-side exit. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Uncatalyzed energy hill",
+            "symbol": "∩",
+            "description": "A conventional reaction-energy profile rises to a tall activation barrier while the amber substrate remains at the same reactant starting level."
+          },
+          {
+            "position": "center",
+            "label": "Enzyme-catalyzed route",
+            "symbol": "⌒",
+            "description": "A second energy profile begins at the same reactant level and ends at the same product level, but its activation barrier is visibly lower."
+          },
+          {
+            "position": "right",
+            "label": "Product-side exit",
+            "symbol": "→",
+            "description": "The same product state waits at the right end of both profiles, making it clear that catalysis changes the barrier rather than the reaction endpoints."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing reaction-energy and molecular models",
+          "job": "Nia keeps the workshop geography fixed, asks you to predict the molecular consequence, and names scientific terms only after the defining action is visible."
+        },
+        {
+          "name": "reaction-energy profiles",
+          "kind": "scientific model",
+          "visual": "two side-by-side energy-versus-reaction-progress curves with identical reactant and product levels",
+          "job": "compare the activation barrier for the same reaction with and without enzyme catalysis"
+        },
+        {
+          "name": "amber substrate",
+          "kind": "continuity object",
+          "visual": "one amber molecular model held at the reactant side of both energy profiles",
+          "job": "keep the reactant identity constant while the reaction pathway is compared"
+        },
+        {
+          "name": "enzyme station",
+          "kind": "scientific part",
+          "visual": "a folded protein catalyst shown beside the lower central energy route",
+          "job": "provide the biological catalyst whose presence lowers the activation-energy barrier"
+        }
+      ],
+      "story_open": "The doors of the **Enzyme Catalysis Workshop** open onto a narrow platform with two reaction tracks running from left to right. You stop at a brass rail bolted to the floor. On your **left**, the first track rises into a steep black hill before dropping toward a product platform on the far right. Directly **ahead**, a second track starts at exactly the same height and ends at exactly the same product platform, yet its hill is much lower. A single amber molecular model rests at the reactant end. Nia places a second identical amber model beside it. ‘Same reactants. Same products,’ she says. ‘Watch the barrier.’",
+      "story_paragraphs": [
+        "The doors of the **Enzyme Catalysis Workshop** open onto a narrow platform with two reaction tracks running from left to right. You stop at a brass rail bolted to the floor. On your **left**, the first track rises into a steep black hill before dropping toward a product platform on the far right. Directly **ahead**, a second track starts at exactly the same height and ends at exactly the same product platform, yet its hill is much lower. A single amber molecular model rests at the reactant end. Nia places a second identical amber model beside it. ‘Same reactants. Same products,’ she says. ‘Watch the barrier.’",
+        "She releases the model on the left track. A meter above the hill climbs sharply as the reaction model approaches the crest, then flashes red before the model can pass. Nia freezes it near the top. ‘A reaction can be thermodynamically possible and still require an initial input before its reactants reach a transition state.’ She taps the tall crest. That initial barrier is the **activation energy**. The hill is an energy-profile model, so you are not meant to picture a molecule literally hiking over a physical mountain. Its height represents how much energy the reacting system must acquire to reach the transition state.",
+        "Nia resets the amber model and activates the center track. A folded protein appears beside the lower route. The second model now reaches a much smaller crest and continues toward the same product platform. Nothing about the reactant label changes. Nothing about the product platform changes. The visible difference is the lower barrier. ‘This protein is an **enzyme**, a biological catalyst,’ Nia says. ‘Enzymes facilitate reactions by lowering **activation energy**.’ The center display overlays the two curves so the tall uncatalyzed peak and the lower enzyme-catalyzed peak can be compared without moving the starting or ending levels.",
+        "A bank of workshop machines begins to wake as more amber models pass through the lower route. Nia turns the enzyme station down and the downstream machines slow. She restores activity and the pathway accelerates again. The workshop is showing a broader biological consequence. Enzyme structure and function help regulate biological processes because changing enzyme activity changes the rates at which many cellular reactions proceed. The enzyme does not supply a new set of products. It changes how readily the existing reaction pathway can proceed by lowering the barrier that must be crossed.",
+        "The first amber substrate reaches the product-side exit, but Nia catches the second before it follows. ‘You have seen what the catalyst changes,’ she says. ‘Now we need to see how a protein can act on one reactant at molecular scale.’ A door opens beside the center track. Through it, you can see a large protein model with a pocket cut into its surface. You carry the amber molecule into the **Active-Site Dock**."
+      ],
+      "story_close": "You leave the energy profiles fixed behind you and carry the same amber reactant toward the enzyme pocket that must recognize and bind it.",
+      "object_ids": [
+        "U3-K-001",
+        "U3-K-002",
+        "U3-K-003",
+        "U3-K-083"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-001",
+          "term": "Enzyme regulation role",
+          "story": "a pathway-rate panel slowing when enzyme activity is reduced and accelerating when activity is restored",
+          "science": "Enzyme structure and function contribute to regulation of biological processes.",
+          "exact_name": true,
+          "hint": "a pathway-rate panel slowing when enzyme activity is reduced and accelerating when activity is restored"
+        },
+        {
+          "object_id": "U3-K-002",
+          "term": "Enzyme",
+          "story": "a folded protein positioned beside the lower reaction-energy route",
+          "science": "Enzymes are proteins that function as biological catalysts in cells.",
+          "exact_name": true,
+          "hint": "a folded protein positioned beside the lower reaction-energy route"
+        },
+        {
+          "object_id": "U3-K-003",
+          "term": "Activation-energy reduction",
+          "story": "two identical reaction endpoints connected by a tall uncatalyzed peak and a lower enzyme-catalyzed peak",
+          "science": "Enzymes facilitate chemical reactions by lowering activation energy.",
+          "exact_name": true,
+          "hint": "two identical reaction endpoints connected by a tall uncatalyzed peak and a lower enzyme-catalyzed peak"
+        },
+        {
+          "object_id": "U3-K-083",
+          "term": "Activation energy",
+          "story": "the height from the reactant energy level to the crest of the reaction-energy barrier",
+          "science": "Activation energy is the initial energy barrier that reactants must overcome to reach the transition state of a reaction.",
+          "exact_name": true,
+          "hint": "the height from the reactant energy level to the crest of the reaction-energy barrier"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Enzyme regulation role",
+          "meaning": "Enzyme structure and function contribute to regulation of biological processes.",
+          "image": "a pathway-rate panel slowing when enzyme activity is reduced and accelerating when activity is restored"
+        },
+        {
+          "term": "Enzyme",
+          "meaning": "Enzymes are proteins that function as biological catalysts in cells.",
+          "image": "a folded protein positioned beside the lower reaction-energy route"
+        },
+        {
+          "term": "Activation-energy reduction",
+          "meaning": "Enzymes facilitate chemical reactions by lowering activation energy.",
+          "image": "two identical reaction endpoints connected by a tall uncatalyzed peak and a lower enzyme-catalyzed peak"
+        },
+        {
+          "term": "Activation energy",
+          "meaning": "Activation energy is the initial energy barrier that reactants must overcome to reach the transition state of a reaction.",
+          "image": "the height from the reactant energy level to the crest of the reaction-energy barrier"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-003",
+      "checkpoint_prompt": "What changes when an enzyme catalyzes the same reaction route?",
+      "checkpoint_answer": "The activation-energy barrier is lowered; the enzyme does not change the overall reactants or products of the comparison.",
+      "checkpoint_hint": "Picture the two reaction-energy profiles. Their reactant and product levels match, while the center enzyme-controlled route has the lower peak.",
+      "next_locus": "Active-Site Dock",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: activation energy, enzyme, substrate, active site, enzyme-substrate complex."
+      ],
+      "required_visual": {
+        "visual_mode": "ENERGY_PROFILE_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "uncatalyzed activation-energy hill",
+          "enzyme-catalyzed lower barrier",
+          "product-side exit",
+          "Run identical reactants over the high uncatalyzed energy hill and the lower enzyme-catalyzed route; keep reactants and products fixed so the only changed feature is the activation-energy barrier."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Enzyme regulation role; Enzymes are protein catalysts; Activation-energy reduction; Activation energy."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Active-Site Dock",
+      "title": "The Pocket That Adjusts Around Its Substrate",
+      "scene_kicker": "A substrate has reached the enzyme, yet binding still depends on the geometry and chemistry of one precise region.",
+      "location_description": "Active-Site Dock — the molecular docking bay where substrate shape and charge are tested against an enzyme pocket.",
+      "scene_layout": {
+        "orientation": "You enter Active-Site Dock and stop at the molecular docking bay where substrate shape and charge are tested against an enzyme pocket. On your left is free substrate approach lane; directly ahead is enzyme active-site docking pocket; on your right is enzyme-substrate complex display. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Free-substrate approach lane",
+            "symbol": "◆",
+            "description": "The same amber substrate approaches beside several decoy molecules whose shapes or chemical patches do not match the enzyme pocket."
+          },
+          {
+            "position": "center",
+            "label": "Active-site docking pocket",
+            "symbol": "⊂",
+            "description": "A conventional globular enzyme model presents one active-site pocket with matching shape and chemical properties, then shifts slightly around the bound substrate."
+          },
+          {
+            "position": "right",
+            "label": "Enzyme-substrate complex display",
+            "symbol": "◎",
+            "description": "The substrate is held temporarily inside the adjusted active site as one bound enzyme-substrate complex before product chemistry proceeds."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing reaction-energy and molecular models",
+          "job": "Nia keeps the workshop geography fixed, asks you to predict the molecular consequence, and names scientific terms only after the defining action is visible."
+        },
+        {
+          "name": "amber substrate",
+          "kind": "continuity object",
+          "visual": "the same amber molecular model with a distinctive outline and visible polar and charged surface patches",
+          "job": "serve as the reactant whose compatibility with the active site is tested"
+        },
+        {
+          "name": "enzyme active site",
+          "kind": "scientific part",
+          "visual": "a pocket in a conventional folded protein model with complementary geometry and chemical groups",
+          "job": "bind a compatible substrate and create the local environment for catalysis"
+        },
+        {
+          "name": "decoy molecules",
+          "kind": "comparison models",
+          "visual": "nearby molecular models with mismatched shapes or chemical surface properties",
+          "job": "show that binding depends on more than a vague idea of molecules simply touching"
+        }
+      ],
+      "story_open": "You enter the **Active-Site Dock** and stop at a yellow floor line. The room is much smaller than the energy ramp. On your **left**, the amber molecule sits in an approach lane beside three decoys. One is too bulky for the pocket ahead. Another has the right general outline but carries mismatched charged and polar patches. Directly **ahead**, the enzyme fills the center bay as a folded protein with one recessed pocket on its surface. On your **right**, an empty glass display is labeled BOUND STATE. The three zones stay fixed while Nia lifts the amber molecule with a magnetic molecular arm.",
+      "story_paragraphs": [
+        "You enter the **Active-Site Dock** and stop at a yellow floor line. The room is much smaller than the energy ramp. On your **left**, the amber molecule sits in an approach lane beside three decoys. One is too bulky for the pocket ahead. Another has the right general outline but carries mismatched charged and polar patches. Directly **ahead**, the enzyme fills the center bay as a folded protein with one recessed pocket on its surface. On your **right**, an empty glass display is labeled BOUND STATE. The three zones stay fixed while Nia lifts the amber molecule with a magnetic molecular arm.",
+        "‘The amber molecule is the **substrate**,’ Nia says after you have seen it positioned as the reactant the enzyme will act on. She first guides the bulky decoy toward the pocket. It cannot settle into the site. The second decoy approaches more closely, but mismatched chemical groups prevent a stable interaction. Then the amber substrate moves forward. Its overall shape can enter the pocket, and its chemical features meet compatible groups inside. For an enzyme-mediated reaction to proceed, substrate shape and charge, along with other chemical properties, must be compatible with this local region of the enzyme.",
+        "Nia touches the rim of the pocket. ‘This region is the **active site**.’ It is the part of the enzyme where a compatible substrate binds and catalysis occurs. The name refers to a region of the folded protein, not a separate object attached to it. As the amber substrate settles, the display zooms in on temporary interactions between the substrate and amino acid side chains lining the site. The fit is specific, yet the enzyme has not remained perfectly rigid.",
+        "The pocket closes slightly around the substrate. One side chain rotates inward, another shifts position, and the catalytic groups become better aligned with bonds in the substrate. Nia freezes the movement halfway. This binding-triggered conformational adjustment is **induced fit**. The substrate does not force the enzyme into an unrelated shape. Binding stabilizes a conformation that improves catalytic interactions within the active site. The center model now makes specificity and flexibility visible at the same time.",
+        "When the adjustment is complete, the entire bound pair is copied into the glass case on your **right**. The enzyme remains the large protein. The amber substrate is still identifiable inside its active site. Together, this temporary bound state is the **enzyme-substrate complex**. Nia leaves the complex frozen before any product appears. ‘Keep these pieces separate in your mind,’ she says. ‘The substrate is the reactant. The active site is a region of the enzyme. The enzyme-substrate complex exists when the compatible substrate is bound there.’ The right-hand case then slides open into the next room, carrying the bound complex intact."
+      ],
+      "story_close": "The bound enzyme-substrate complex moves forward exactly as you last saw it, ready for chemistry, product release, and one final test of whether the enzyme itself survives the cycle.",
+      "object_ids": [
+        "U3-K-004",
+        "U3-K-005",
+        "U3-K-084",
+        "U3-K-085",
+        "U3-K-086"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-004",
+          "term": "Active-site compatibility",
+          "story": "a compatible amber substrate settling into a pocket while mismatched decoys fail because of shape or chemical properties",
+          "science": "For an enzyme-mediated reaction to occur, substrate shape and charge must be compatible with the enzyme active site.",
+          "exact_name": true,
+          "hint": "a compatible amber substrate settling into a pocket while mismatched decoys fail because of shape or chemical properties"
+        },
+        {
+          "object_id": "U3-K-005",
+          "term": "Enzyme-substrate complex",
+          "story": "the folded enzyme and amber substrate frozen together as one temporary bound complex",
+          "science": "The enzyme-substrate complex model represents substrate binding at the active site.",
+          "exact_name": true,
+          "hint": "the folded enzyme and amber substrate frozen together as one temporary bound complex"
+        },
+        {
+          "object_id": "U3-K-084",
+          "term": "Substrate",
+          "story": "the amber reactant molecule approaching the enzyme before binding",
+          "science": "A substrate is a reactant molecule on which an enzyme acts.",
+          "exact_name": true,
+          "hint": "the amber reactant molecule approaching the enzyme before binding"
+        },
+        {
+          "object_id": "U3-K-085",
+          "term": "Active site",
+          "story": "the specific recessed region of the folded enzyme where compatible substrate binds and catalysis occurs",
+          "science": "The active site is the region of an enzyme where compatible substrate binds and catalysis occurs.",
+          "exact_name": true,
+          "hint": "the specific recessed region of the folded enzyme where compatible substrate binds and catalysis occurs"
+        },
+        {
+          "object_id": "U3-K-086",
+          "term": "Induced fit",
+          "story": "the enzyme pocket changing conformation around the bound substrate to improve catalytic interactions",
+          "science": "Induced fit is a change in enzyme conformation triggered by substrate binding that improves catalytic interactions in the active site.",
+          "exact_name": true,
+          "hint": "the enzyme pocket changing conformation around the bound substrate to improve catalytic interactions"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Active-site compatibility",
+          "meaning": "For an enzyme-mediated reaction to occur, substrate shape and charge must be compatible with the enzyme active site.",
+          "image": "a compatible amber substrate settling into a pocket while mismatched decoys fail because of shape or chemical properties"
+        },
+        {
+          "term": "Enzyme-substrate complex",
+          "meaning": "The enzyme-substrate complex model represents substrate binding at the active site.",
+          "image": "the folded enzyme and amber substrate frozen together as one temporary bound complex"
+        },
+        {
+          "term": "Substrate",
+          "meaning": "A substrate is a reactant molecule on which an enzyme acts.",
+          "image": "the amber reactant molecule approaching the enzyme before binding"
+        },
+        {
+          "term": "Active site",
+          "meaning": "The active site is the region of an enzyme where compatible substrate binds and catalysis occurs.",
+          "image": "the specific recessed region of the folded enzyme where compatible substrate binds and catalysis occurs"
+        },
+        {
+          "term": "Induced fit",
+          "meaning": "Induced fit is a change in enzyme conformation triggered by substrate binding that improves catalytic interactions in the active site.",
+          "image": "the enzyme pocket changing conformation around the bound substrate to improve catalytic interactions"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-004",
+      "checkpoint_prompt": "What must be compatible for the docking event in the center pocket to occur?",
+      "checkpoint_answer": "The substrate must be compatible with the enzyme active site in shape and chemical properties.",
+      "checkpoint_hint": "Picture the amber substrate entering the center pocket. Its shape and chemical surface features must match the active-site environment well enough to bind.",
+      "next_locus": "Catalytic Turnover Bench",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: active-site compatibility, induced fit.",
+        "Keep these confusable terms physically and verbally distinct: activation energy, enzyme, substrate, active site, enzyme-substrate complex."
+      ],
+      "required_visual": {
+        "visual_mode": "MOLECULAR_DOCKING_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "free substrate approach lane",
+          "enzyme active-site docking pocket",
+          "enzyme-substrate complex display",
+          "Move the same substrate into the enzyme pocket, test shape and chemical compatibility, allow local conformational adjustment, and freeze the bound enzyme-substrate complex before chemistry proceeds."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Active-site compatibility; Enzyme-substrate complex; Substrate; Active site; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Catalytic Turnover Bench",
+      "title": "The Enzyme That Returns to Work",
+      "scene_kicker": "The products can leave only if the catalyst finishes the cycle without being used up.",
+      "location_description": "Catalytic Turnover Bench — the reusable enzyme station that releases product and returns the catalyst to service.",
+      "scene_layout": {
+        "orientation": "You enter Catalytic Turnover Bench and stop at the reusable enzyme station that releases product and returns the catalyst to service. On your left is substrate arrival; directly ahead is catalytic turnover bench; on your right is product release and enzyme reset. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Fresh substrate queue",
+            "symbol": "◆",
+            "description": "A new amber substrate waits at the left while the previous reaction products have already moved toward the release side."
+          },
+          {
+            "position": "center",
+            "label": "Catalytic turnover bench",
+            "symbol": "↻",
+            "description": "The same enzyme completes catalysis, releases products, and returns its active site to a usable state without being consumed by the reaction."
+          },
+          {
+            "position": "right",
+            "label": "Product release and enzyme reset",
+            "symbol": "⇢",
+            "description": "Products separate to the right while the enzyme remains available for another catalytic cycle, beside enzyme-name examples that show the -ase pattern and its exceptions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing reaction-energy and molecular models",
+          "job": "Nia keeps the workshop geography fixed, asks you to predict the molecular consequence, and names scientific terms only after the defining action is visible."
+        },
+        {
+          "name": "reusable enzyme",
+          "kind": "scientific part",
+          "visual": "the same folded protein and active-site pocket seen in the docking bay",
+          "job": "complete a catalytic cycle and remain available for repeated use"
+        },
+        {
+          "name": "reaction products",
+          "kind": "scientific output",
+          "visual": "separated product molecules leaving the right side of the bench",
+          "job": "show the products leaving after catalysis"
+        },
+        {
+          "name": "fresh substrate",
+          "kind": "continuity object",
+          "visual": "a second amber substrate arriving from the left immediately after product release",
+          "job": "demonstrate that the enzyme can enter another catalytic cycle"
+        }
+      ],
+      "story_open": "The glass case rolls into the **Catalytic Turnover Bench** and locks into the center of a long reaction table. On your **left**, a fresh amber substrate waits in a short queue. Directly **ahead**, the enzyme-substrate complex from the docking bay sits enlarged under white light. On your **right**, two product channels lead away from an empty release platform. Nia closes the door behind you so the three positions cannot be confused. ‘We have watched binding,’ she says. ‘Now keep your eyes on the enzyme through the entire catalytic cycle.’",
+      "story_paragraphs": [
+        "The glass case rolls into the **Catalytic Turnover Bench** and locks into the center of a long reaction table. On your **left**, a fresh amber substrate waits in a short queue. Directly **ahead**, the enzyme-substrate complex from the docking bay sits enlarged under white light. On your **right**, two product channels lead away from an empty release platform. Nia closes the door behind you so the three positions cannot be confused. ‘We have watched binding,’ she says. ‘Now keep your eyes on the enzyme through the entire catalytic cycle.’",
+        "The reaction resumes. Within the active site, bonds in the substrate are rearranged and the chemical state changes. The amber substrate is no longer the same reactant that entered the pocket. Two product models separate within the site, then leave through the right-hand channels. As the products move away, the enzyme relaxes from its bound conformation. The protein remains at the center bench. It has participated in the reaction without becoming one of the products and without being consumed as a reactant.",
+        "Nia immediately sends the fresh amber substrate from the **left** toward the same enzyme. The active site accepts it, adjusts again, and begins a second cycle. A counter above the bench changes from 1 to 2, then 3 as the demonstration repeats. This is why enzymes can function as **reusable catalysts**. A single enzyme molecule can participate in repeated reaction cycles as substrates bind, chemistry occurs, products leave, and the enzyme becomes available again. The workshop would be impossible to sustain if every catalytic event destroyed its enzyme.",
+        "A small naming board lights beside the release platform. Several common enzyme names appear, including lactase and amylase, with **-ase** highlighted. Then two additional names, pepsin and trypsin, appear beneath them. Nia leaves all four visible. ‘Many enzyme names end in **-ase**,’ she says. ‘That is a useful naming convention, not a universal rule.’ The examples stay side by side so the pattern is memorable without turning it into an absolute shortcut.",
+        "The workshop finally runs smoothly. On the wall behind you, the three rooms compress into one route map. First, the same reaction gained a lower activation-energy pathway. Next, a compatible substrate bound at an active site and induced a conformational adjustment. Finally, products left and the enzyme returned to service. Nia points to a bank of control dials beyond the exit. Temperature, pH, substrate concentration, inhibitors, and regulatory molecules are all waiting there. ‘Now that you know what an enzyme actually does,’ she says, ‘we can investigate what changes its activity.’ The doors to the **Enzyme Regulation Control Wing** unlock."
+      ],
+      "story_close": "The catalyst is still intact, the substrate-to-product cycle is complete, and the next journey can now ask how cells and environments change the rate of that same mechanism.",
+      "object_ids": [
+        "U3-K-087",
+        "U3-K-088"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-087",
+          "term": "Reusable enzyme catalyst",
+          "story": "products leave while the same enzyme resets and accepts a fresh substrate for another cycle",
+          "science": "Enzymes are not consumed by the reactions they catalyze and can participate in repeated reaction cycles.",
+          "exact_name": false,
+          "hint": "products leave while the same enzyme resets and accepts a fresh substrate for another cycle"
+        },
+        {
+          "object_id": "U3-K-088",
+          "term": "Enzyme naming convention",
+          "story": "enzyme names ending in -ase displayed beside pepsin and trypsin as visible exceptions to the naming pattern",
+          "science": "Many, but not all, enzyme names end in “-ase.”",
+          "exact_name": false,
+          "hint": "enzyme names ending in -ase displayed beside pepsin and trypsin as visible exceptions to the naming pattern"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Reusable enzyme catalyst",
+          "meaning": "Enzymes are not consumed by the reactions they catalyze and can participate in repeated reaction cycles.",
+          "image": "products leave while the same enzyme resets and accepts a fresh substrate for another cycle"
+        },
+        {
+          "term": "Enzyme naming convention",
+          "meaning": "Many, but not all, enzyme names end in “-ase.”",
+          "image": "enzyme names ending in -ase displayed beside pepsin and trypsin as visible exceptions to the naming pattern"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-087",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-003; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "CATALYTIC_CYCLE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "substrate arrival",
+          "catalytic turnover bench",
+          "product release and enzyme reset",
+          "Complete one catalytic cycle, release product, and immediately feed a fresh substrate to the unchanged enzyme so catalyst reuse is physically undeniable."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Enzymes are reusable catalysts; Enzyme naming convention."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4A",
+  "narrative_standard": "V2-NARRATIVE-3.0-U3-F4A"
+}

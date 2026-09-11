@@ -1,0 +1,398 @@
+{
+  "palace_id": "Z4",
+  "palace_name": "Carbon Workshop",
+  "story_title": "The Carbon Shape-Shifter’s Workshop",
+  "tagline": "One carbon frame keeps changing shape. Follow the molecular architect and see why carbon can build so many different molecules.",
+  "guide": {
+    "name": "Caro Venn",
+    "role": "molecular architect",
+    "visual": "charcoal apron, four silver drafting pens clipped to one glove, amber safety glasses",
+    "story_job": "turns one carbon framework through multiple structures while keeping each chemical change visible"
+  },
+  "premise": "A client has delivered a blank molecular blueprint that must be turned into a useful organic molecule before the workshop closes. The only starting piece is carbon.",
+  "mission": "Follow Caro from the organic signboard to the carbon workbench and functional-group wall. Watch carbon’s bonding capacity create diverse skeletons, then see how functional groups change what those skeletons can do.",
+  "finale": "The blank blueprint leaves the workshop as a recognizable organic molecule with a carbon skeleton and functional groups. You can now separate the carbon framework from the chemical groups that give the molecule much of its behavior.",
+  "estimated_minutes": 7,
+  "scene_count": 3,
+  "checkpoint_count": 1,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The workshop is one rectangular room divided into three stations from front to back: the entrance signboard, the central carbon workbench, and the illuminated functional-group pegboard on the rear wall.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Organic Signboard",
+      "short": "Organic",
+      "floor": "Entrance",
+      "symbol": "C"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Carbon Workbench",
+      "short": "Carbon",
+      "floor": "Center bay",
+      "symbol": "✣"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Functional-Group Pegboard",
+      "short": "Groups",
+      "floor": "Rear wall",
+      "symbol": "⚙"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Organic Signboard",
+      "title": "The Blueprint With a Carbon Spine",
+      "scene_kicker": "The workshop begins by deciding what kind of chemistry this molecule belongs to.",
+      "location_description": "You enter through a steel door into a warm workshop that smells faintly of machine oil. A black signboard stands directly ahead, divided into a carbon-compound side and a general-chemistry side.",
+      "scene_layout": {
+        "orientation": "The entrance is behind you. The carbon-compound sign fills the center. Caro stands to its right with the blank blueprint, and the main workbench is visible beyond it.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "General chemistry shelf",
+            "symbol": "⚗",
+            "description": "Holds substances that are not classified simply by being carbon compounds."
+          },
+          {
+            "position": "center",
+            "label": "Organic signboard",
+            "symbol": "C",
+            "description": "Directs carbon-compound work toward the organic chemistry bay."
+          },
+          {
+            "position": "right",
+            "label": "Blueprint stand",
+            "symbol": "▱",
+            "description": "Holds the unfinished molecule that will move through the workshop."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Caro Venn",
+          "kind": "guide",
+          "visual": "charcoal apron, four silver drafting pens clipped to one glove, amber safety glasses",
+          "job": "turns one carbon framework through multiple structures while keeping each chemical change visible"
+        },
+        {
+          "name": "Organic chemistry sign",
+          "kind": "field marker",
+          "visual": "a black sign with a glowing carbon skeleton",
+          "job": "identifies organic chemistry as the study of carbon compounds"
+        },
+        {
+          "name": "Organic compound blueprint",
+          "kind": "molecular plan",
+          "visual": "a page containing a carbon framework with open attachment points",
+          "job": "represents a carbon-containing compound without imposing the overly narrow rule that every organic compound must contain both carbon and hydrogen"
+        }
+      ],
+      "story_open": "You enter **Organic Signboard** with the same carbon frame still in view. You enter through a steel door into a warm workshop that smells faintly of machine oil. A black signboard stands directly ahead, divided into a carbon-compound side and a general-chemistry side. The General chemistry shelf is on your left, the Organic signboard is directly ahead, and the Blueprint stand holds the opposite side of the room. The workshop is arranged so every change to carbon happens in a place you can mentally return to.",
+      "story_paragraphs": [
+        "You enter **Organic Signboard** with the same carbon frame still in view. You enter through a steel door into a warm workshop that smells faintly of machine oil. A black signboard stands directly ahead, divided into a carbon-compound side and a general-chemistry side. The General chemistry shelf is on your left, the Organic signboard is directly ahead, and the Blueprint stand holds the opposite side of the room. The workshop is arranged so every change to carbon happens in a place you can mentally return to.",
+        "Caro Venn lays a blank molecular blueprint on the stand. A single black carbon atom is printed in the center, with empty lines waiting to become bonds. “This bench handles **organic chemistry**,” she says, tapping the sign. Organic chemistry is the study of carbon compounds.",
+        "The sign does not say CARBON + HYDROGEN ONLY. **Organic compounds** are carbon-containing compounds, and defining the entire category by requiring both carbon and hydrogen would be too narrow. Hydrocarbons will appear in the next bay, but they are one important subset, not the definition of all organic molecules.",
+        "Caro clips the blueprint to a rolling frame and pushes it toward the central workbench. Four silver bond arms unfold around the carbon atom."
+      ],
+      "story_close": "Caro clips the blueprint to a rolling frame and pushes it toward the central workbench. Four silver bond arms unfold around the carbon atom.",
+      "object_ids": [
+        "MO-APBIO-U1-CA001",
+        "MO-APBIO-U1-CA002"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CA001",
+          "term": "Organic chemistry",
+          "story": "a brass field plaque above a carbon-compound workbench",
+          "science": "Organic chemistry is the study of carbon compounds.",
+          "exact_name": true,
+          "hint": "a brass field plaque above a carbon-compound workbench"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CA002",
+          "term": "Organic compounds",
+          "story": "a gate scanner that detects the presence of carbon",
+          "science": "Organic compounds are carbon-containing compounds. Defining all organic compounds as requiring both carbon and hydrogen is too narrow as a general rule.",
+          "exact_name": true,
+          "hint": "a gate scanner that detects the presence of carbon"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Organic chemistry",
+          "meaning": "Organic chemistry is the study of carbon compounds.",
+          "image": "a brass field plaque above a carbon-compound workbench"
+        },
+        {
+          "term": "Organic compounds",
+          "meaning": "Organic compounds are carbon-containing compounds. Defining all organic compounds as requiring both carbon and hydrogen is too narrow as a general rule.",
+          "image": "a gate scanner that detects the presence of carbon"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-CA001",
+      "checkpoint_prompt": "",
+      "next_locus": "Carbon Workbench"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Carbon Workbench",
+      "title": "Four Hands, Endless Skeletons",
+      "scene_kicker": "Carbon becomes versatile because four bonding positions can be used in many combinations.",
+      "location_description": "The center bay contains a circular workbench with a large carbon model fixed at its center. Four mechanical bond arms extend from it. Rails around the table can turn into straight chains, branches, double-bond sections, or closed rings.",
+      "scene_layout": {
+        "orientation": "The four-arm carbon model is centered. A chain-building rail is left, a bond-multiplicity control is in front, and a branching/ring former is on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Chain rail",
+            "symbol": "C–C–C",
+            "description": "Links carbon atoms into long covalent skeletons."
+          },
+          {
+            "position": "center",
+            "label": "Four-arm carbon hub",
+            "symbol": "4",
+            "description": "Shows carbon’s four valence electrons and capacity for up to four covalent bonds."
+          },
+          {
+            "position": "right",
+            "label": "Shape former",
+            "symbol": "⌬",
+            "description": "Bends and branches carbon skeletons and closes them into rings."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Caro Venn",
+          "kind": "guide",
+          "visual": "charcoal apron, four silver drafting pens clipped to one glove, amber safety glasses",
+          "job": "turns one carbon framework through multiple structures while keeping each chemical change visible"
+        },
+        {
+          "name": "Carbon hub",
+          "kind": "central atom",
+          "visual": "black sphere with four silver bonding arms",
+          "job": "uses four valence electrons to form as many as four covalent bonds"
+        },
+        {
+          "name": "Hydrocarbon strip",
+          "kind": "carbon-hydrogen framework",
+          "visual": "a flexible chain made only of black carbon and white hydrogen pieces",
+          "job": "represents a hydrocarbon, a molecule consisting only of carbon and hydrogen"
+        },
+        {
+          "name": "Skeleton former",
+          "kind": "diversity machine",
+          "visual": "rails that lengthen, branch, shift double bonds, and close into rings",
+          "job": "demonstrates the structural diversity possible in carbon skeletons"
+        }
+      ],
+      "story_open": "Caro locks one carbon atom into the center hub. Its **four valence electrons** give it the capacity to form as many as four covalent bonds. Four bonding positions are enough to connect carbon to hydrogen, oxygen, nitrogen, other carbons, and many other partners in different arrangements.",
+      "story_paragraphs": [
+        "Caro locks one carbon atom into the center hub. Its **four valence electrons** give it the capacity to form as many as four covalent bonds. Four bonding positions are enough to connect carbon to hydrogen, oxygen, nitrogen, other carbons, and many other partners in different arrangements.",
+        "She changes the bond control. One carbon pair can share a single bond, double bond, or triple bond. Then the chain rail starts feeding carbon into carbon: C–C–C–C. Carbon atoms can covalently bond to one another to form **carbon chains**, creating the skeletons of many organic molecules.",
+        "Caro snaps white hydrogen pieces onto every open position. Now the framework contains only carbon and hydrogen. That is a **hydrocarbon**. She bends the same skeleton into a branch, slides a double bond to a new position, lengthens the chain, then closes the end into a ring.",
+        "This is **carbon versatility** made visible. Four bonding positions plus carbon–carbon bonding allow skeletons to differ in length, branching, multiple-bond location, and ring formation. The blueprint can therefore support an enormous variety of molecules without changing the identity of carbon itself.",
+        "Caro removes the hydrocarbon from the table. “The skeleton gives us shape. The next wall gives it chemistry.” She carries the frame to seven glowing hooks on the rear pegboard."
+      ],
+      "story_close": "Caro removes the hydrocarbon from the table. “The skeleton gives us shape. The next wall gives it chemistry.” She carries the frame to seven glowing hooks on the rear pegboard.",
+      "object_ids": [
+        "MO-APBIO-U1-CA003",
+        "MO-APBIO-U1-CA004",
+        "MO-APBIO-U1-CA005",
+        "MO-APBIO-U1-CA006",
+        "MO-APBIO-U1-CA007",
+        "MO-APBIO-U1-CA008"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CA003",
+          "term": "Four valence electrons",
+          "story": "a carbon model with four active bonding ports",
+          "science": "Carbon has four valence electrons and can form up to four covalent bonds.",
+          "exact_name": false,
+          "hint": "a carbon model with four active bonding ports"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CA004",
+          "term": "Bond multiplicity",
+          "story": "a rail with one, two, and three parallel bond clamps",
+          "science": "Carbon can form single, double, or triple covalent bonds.",
+          "exact_name": false,
+          "hint": "a rail with one, two, and three parallel bond clamps"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CA005",
+          "term": "Carbon chains",
+          "story": "carbon units linking to one another on a narrow conveyor",
+          "science": "Carbon atoms covalently bond to one another to form chains that serve as skeletons of many organic molecules.",
+          "exact_name": false,
+          "hint": "carbon units linking to one another on a narrow conveyor"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CA006",
+          "term": "Hydrocarbon",
+          "story": "a carbon skeleton covered only with hydrogen balloons",
+          "science": "Hydrocarbons consist only of carbon and hydrogen and can serve as frameworks for more complex organic molecules.",
+          "exact_name": true,
+          "hint": "a carbon skeleton covered only with hydrogen balloons"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CA007",
+          "term": "Carbon-skeleton diversity",
+          "story": "a carbon skeleton placed into a shape-changing jig",
+          "science": "Carbon skeletons can vary in length, branching, double-bond position, and ring formation, producing molecular diversity.",
+          "exact_name": false,
+          "hint": "a carbon skeleton placed into a shape-changing jig"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CA008",
+          "term": "Carbon versatility",
+          "story": "a four-port carbon builder feeding several construction routes",
+          "science": "Carbon's four valence electrons allow up to four covalent bonds. Carbon can bond to itself and other elements in chains, branches, double-bonded arrangements, and rings, producing extensive molecular diversity.",
+          "exact_name": false,
+          "hint": "a four-port carbon builder feeding several construction routes"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Four valence electrons",
+          "meaning": "Carbon has four valence electrons and can form up to four covalent bonds.",
+          "image": "a carbon model with four active bonding ports"
+        },
+        {
+          "term": "Bond multiplicity",
+          "meaning": "Carbon can form single, double, or triple covalent bonds.",
+          "image": "a rail with one, two, and three parallel bond clamps"
+        },
+        {
+          "term": "Carbon chains",
+          "meaning": "Carbon atoms covalently bond to one another to form chains that serve as skeletons of many organic molecules.",
+          "image": "carbon units linking to one another on a narrow conveyor"
+        },
+        {
+          "term": "Hydrocarbon",
+          "meaning": "Hydrocarbons consist only of carbon and hydrogen and can serve as frameworks for more complex organic molecules.",
+          "image": "a carbon skeleton covered only with hydrogen balloons"
+        },
+        {
+          "term": "Carbon-skeleton diversity",
+          "meaning": "Carbon skeletons can vary in length, branching, double-bond position, and ring formation, producing molecular diversity.",
+          "image": "a carbon skeleton placed into a shape-changing jig"
+        },
+        {
+          "term": "Carbon versatility",
+          "meaning": "Carbon's four valence electrons allow up to four covalent bonds. Carbon can bond to itself and other elements in chains, branches, double-bonded arrangements, and rings, producing extensive molecular diversity.",
+          "image": "a four-port carbon builder feeding several construction routes"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-CA006",
+      "checkpoint_prompt": "What term describes a molecule made only of carbon and hydrogen?",
+      "next_locus": "Functional-Group Pegboard"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Functional-Group Pegboard",
+      "title": "The Attachments That Change Behavior",
+      "scene_kicker": "A carbon skeleton is only the frame; attached chemical groups change how the whole molecule behaves.",
+      "location_description": "The rear wall is covered by seven illuminated hooks. Each hook holds a different attachment: hydroxyl, carbonyl, carboxyl, amino, phosphate, sulfhydryl, or methyl. A carbon skeleton lies on the bench below them.",
+      "scene_layout": {
+        "orientation": "Reactive oxygen-containing groups occupy the left hooks, nitrogen/phosphate/sulfur groups fill the center, methyl is on the right, and the carbon skeleton waits below the row.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Oxygen-group hooks",
+            "symbol": "O",
+            "description": "Hold hydroxyl, carbonyl, and carboxyl groups."
+          },
+          {
+            "position": "center",
+            "label": "N/P/S hooks",
+            "symbol": "N/P/S",
+            "description": "Hold amino, phosphate, and sulfhydryl groups."
+          },
+          {
+            "position": "right",
+            "label": "Methyl hook",
+            "symbol": "CH₃",
+            "description": "Holds a nonpolar carbon-hydrogen attachment that can alter molecular shape and behavior."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Caro Venn",
+          "kind": "guide",
+          "visual": "charcoal apron, four silver drafting pens clipped to one glove, amber safety glasses",
+          "job": "turns one carbon framework through multiple structures while keeping each chemical change visible"
+        },
+        {
+          "name": "Functional groups",
+          "kind": "chemical attachments",
+          "visual": "seven distinct molecular attachments hanging from labeled hooks",
+          "job": "participate in characteristic reactions and alter properties of the carbon skeleton they are attached to"
+        },
+        {
+          "name": "Carbon skeleton",
+          "kind": "molecular framework",
+          "visual": "the same black carbon framework from the previous bench",
+          "job": "provides the backbone onto which functional groups are attached"
+        }
+      ],
+      "story_open": "Caro hangs the carbon skeleton beneath the pegboard. “The frame is not the whole molecule.” She takes down a hydroxyl group and clips it to the skeleton. The new attachment changes how that region can interact with water and other molecules.",
+      "story_paragraphs": [
+        "Caro hangs the carbon skeleton beneath the pegboard. “The frame is not the whole molecule.” She takes down a hydroxyl group and clips it to the skeleton. The new attachment changes how that region can interact with water and other molecules.",
+        "A **functional group** is a chemical group attached to a carbon skeleton that participates in chemical reactions and influences the behavior of the molecule. Caro lines up the seven groups you should be able to recognize here: **hydroxyl, carbonyl, carboxyl, amino, phosphate, sulfhydryl, and methyl**.",
+        "She never asks you to memorize them as floating decorations. Each attachment belongs on a real molecular frame. The useful habit is to see the group, name it, and ask what chemical possibilities it adds to the larger molecule.",
+        "The pegboard now becomes a **functional-group recognition** test. Hydroxyl, carbonyl, carboxyl, amino, phosphate, sulfhydryl, and methyl groups keep their recognizable chemical patterns, and each can change how the larger molecule behaves.",
+        "The completed blueprint glows on the bench: carbon built the versatile skeleton; the functional groups changed its chemistry. Caro rolls the finished plan through the rear doors toward the neighboring Polymer Assembly Hall."
+      ],
+      "story_close": "The completed blueprint glows on the bench: carbon built the versatile skeleton; the functional groups changed its chemistry. Caro rolls the finished plan through the rear doors toward the neighboring Polymer Assembly Hall.",
+      "object_ids": [
+        "MO-APBIO-U1-CA009",
+        "MO-APBIO-U1-CA010"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-CA009",
+          "term": "Functional group",
+          "story": "a carbon skeleton accepting a detachable chemical tool",
+          "science": "Functional groups are chemical groups attached to a carbon skeleton that participate in chemical reactions.",
+          "exact_name": true,
+          "hint": "a carbon skeleton accepting a detachable chemical tool"
+        },
+        {
+          "object_id": "MO-APBIO-U1-CA010",
+          "term": "Functional-group recognition",
+          "story": "a seven-position recognition arc around the pegboard",
+          "science": "Recognize hydroxyl, carbonyl, carboxyl, amino, phosphate, sulfhydryl, and methyl groups and connect each group with how it changes the molecule that carries it.",
+          "exact_name": true,
+          "hint": "a seven-position recognition arc around the pegboard"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Functional group",
+          "meaning": "Functional groups are chemical groups attached to a carbon skeleton that participate in chemical reactions.",
+          "image": "a carbon skeleton accepting a detachable chemical tool"
+        },
+        {
+          "term": "Functional-group recognition",
+          "meaning": "Recognize hydroxyl, carbonyl, carboxyl, amino, phosphate, sulfhydryl, and methyl groups and connect each group with how it changes the molecule that carries it.",
+          "image": "a seven-position recognition arc around the pegboard"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-CA009",
+      "checkpoint_prompt": "",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}

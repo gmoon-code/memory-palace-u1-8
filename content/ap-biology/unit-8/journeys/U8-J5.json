@@ -1,0 +1,703 @@
+{
+  "palace_id": "U8-J5",
+  "unit_id": "unit-8",
+  "palace_name": "Population Growth Control Center",
+  "story_title": "The Curve That Would Not Hold Still",
+  "tagline": "Five fixed control rooms, one population-growth dashboard, and one rule. Read the assumptions before trusting the curve.",
+  "guide": {
+    "name": "Dr. Mira Sen",
+    "role": "ecological-systems field curator who accompanies the learner through all eight Unit 8 journeys",
+    "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+    "story_job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+  },
+  "premise": "A population-growth control system keeps producing different curves and regulation labels from the same dashboard. Dr. Mira Sen carries N, time, rmax, K, per-capita effects, and graph axes through five rooms so each model or classification can be explained from its assumptions and mechanism.",
+  "mission": "Travel the locked F2 route in order. Keep one population-growth dashboard visible while moving from exponential growth to environment-dependent carrying capacity, logistic slowing, density-dependent regulation, and density-independent effects. Preserve dN/dt, rmax, N, and K as distinct quantities and diagnose regulation from per-capita effects rather than total counts.",
+  "finale": "The control center stabilizes after the learner reconstructs why a J curve follows exponential assumptions, why K moves with environmental conditions, why the logistic term slows growth as N approaches K, and why density dependence is diagnosed from how per-capita effects change with density.",
+  "estimated_minutes": 19,
+  "scene_count": 5,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4E",
+  "preview_release": true,
+  "narrative_design": "U8-F4E-NARRATIVE-1.0",
+  "learner_rule": "Keep one population-growth dashboard visible and change one assumption or tested relationship at a time. dN/dt, N, rmax, and K remain distinct. Exponential and logistic curves must be justified from model assumptions, and density dependence must be diagnosed from per-capita effects. Optional Quick Recall appears only twice.",
+  "route_orientation": "The control center follows one continuous route through five permanent locations in F2 order. Enter at Exponential Growth Console and continue through Carrying Capacity Resource Ceiling, Logistic Growth Console, Density-Dependent Regulation Test Bay, and Density-Independent Disturbance Test Bay. Every location fixes left, center, and right before the population model or regulation test changes.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Exponential Growth Console",
+      "short": "Exponential growth",
+      "floor": "J-curve console",
+      "symbol": "dN/dt=rmaxN→J"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Carrying Capacity Resource Ceiling",
+      "short": "Carrying capacity",
+      "floor": "K ceiling",
+      "symbol": "ENVIRONMENT→K"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Logistic Growth Console",
+      "short": "Logistic growth",
+      "floor": "S-curve console",
+      "symbol": "(K−N)/K→S"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Density-Dependent Regulation Test Bay",
+      "short": "Density-dependent regulation",
+      "floor": "Matched-density bay",
+      "symbol": "DENSITY→PER-CAPITA EFFECT"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Density-Independent Disturbance Test Bay",
+      "short": "Density-independent effects",
+      "floor": "Disturbance bay",
+      "symbol": "DISTURBANCE⊥DENSITY"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U8-L34",
+      "locus": "Exponential Growth Console",
+      "title": "The Curve That Starts to Run",
+      "scene_kicker": "At Exponential Growth Console, reconstruct initial N and abundant-resource assumption panel → dN/dt = rmaxN engine → J-shaped N-versus-time graph and explain Unconstrained exponential growth from the actual ecological mechanism.",
+      "location_description": "Exponential Growth Console",
+      "scene_layout": {
+        "orientation": "Enter Exponential Growth Console and stop at the J-curve equation screen. Keep initial N and abundant-resource assumption panel fixed on the left, dN/dt = rmaxN engine as the working center, and J-shaped N-versus-time graph fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "initial N and abundant-resource assumption panel",
+            "symbol": "L",
+            "description": "A conventional scientific representation of initial N and abundant-resource assumption panel, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "dN/dt = rmaxN engine",
+            "symbol": "C",
+            "description": "The main scientific work model at Exponential Growth Console, centered on the J-curve equation screen."
+          },
+          {
+            "position": "right",
+            "label": "J-shaped N-versus-time graph",
+            "symbol": "R",
+            "description": "A conventional scientific representation of J-shaped N-versus-time graph, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "initial N and abundant-resource assumption panel",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of initial N and abundant-resource assumption panel, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "dN/dt = rmaxN engine",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Exponential Growth Console, centered on the J-curve equation screen.",
+          "job": "Execute the defining action beginning with: State the idealized conditions: constant positive per-capita growth and weak resource limitation over the interval."
+        },
+        {
+          "name": "J-shaped N-versus-time graph",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of J-shaped N-versus-time graph, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "population-growth dashboard",
+          "kind": "journey continuity object",
+          "visual": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+          "job": "preserves the same population-growth variables and graph axes while each room changes only the model assumption, environmental ceiling, or regulation test needed for the next distinction"
+        }
+      ],
+      "continuity_object": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+      "story_open": "You enter the Exponential Growth Console through a round steel door that seals behind you with a soft click. On your left, a wide glass panel shows a small starting population labeled N beside shelves of food, water, and open habitat marked abundant for the interval. Ahead at the center, a black equation engine waits beneath a bright display reading dN/dt = rmaxN. On your right, an empty graph stretches from floor to ceiling with population size N on the vertical axis and time on the horizontal axis. Dr. Mira Sen sets one transparent population-growth dashboard on the rail between you. Its N counter, time line, rmax dial, resource readout, per-capita panel, and graph axes will stay with you through every room.",
+      "story_paragraphs": [
+        "You enter the Exponential Growth Console through a round steel door that seals behind you with a soft click. On your left, a wide glass panel shows a small starting population labeled N beside shelves of food, water, and open habitat marked abundant for the interval. Ahead at the center, a black equation engine waits beneath a bright display reading dN/dt = rmaxN. On your right, an empty graph stretches from floor to ceiling with population size N on the vertical axis and time on the horizontal axis. Dr. Mira Sen sets one transparent population-growth dashboard on the rail between you. Its N counter, time line, rmax dial, resource readout, per-capita panel, and graph axes will stay with you through every room.",
+        "Mira does not start the engine. She first points to the left panel. The model is allowed to run only under a particular assumption. Resources are abundant enough during the interval that strong limitation is not yet slowing the population, and the population maintains a constant positive per-capita growth rate. The starting population is small enough that the room is not asking what happens near a resource ceiling. Mira covers the right graph with a shutter. You have to understand the assumption before seeing the curve. When reproduction proceeds without the constraints that later limit population growth, the resulting model is **unconstrained exponential growth**.",
+        "The center engine begins to pulse. Each time the N counter rises, the engine receives a larger N while the rmax dial stays fixed. Mira taps the dial. **rmax** is the maximum per-capita population growth rate used in the exponential and logistic models. It is a rate scaled to individuals in the population. The display dN/dt is doing a different job. It represents the population's change in size per unit time. The room therefore refuses to treat dN/dt as the per-capita rate itself. The equation links the two. Under the idealized exponential model, the **Exponential-growth equation** is dN/dt = rmaxN.",
+        "The consequence becomes visible before the graph shutter opens. With the same positive per-capita rate applied to a larger N, the absolute amount of population growth over a comparable interval becomes larger. The console does not add the same fixed number each time. The increase accelerates as N increases. Mira slides the shutter aside. A line rises slowly at first, then bends upward more sharply until it forms the familiar J shape. The display labels this pattern **Exponential growth shape**. A constant positive per-capita rate with weak resource limitation can produce accelerating absolute growth and a J-shaped population curve.",
+        "A warning strip lights across the top of the graph. MODEL INTERVAL ONLY. Mira points back to the food shelves on the left. They are part of the assumption, not a promise about the real world. The phrase **Idealized unlimited environment** appears beneath them. Exponential growth is most useful as an idealized model when resources are abundant and limiting factors are weak over the interval being considered. Real populations do not receive an eternal supply room. The value of the model is that it tells you what population growth looks like when the density-limiting part of the problem is temporarily weak enough to set aside.",
+        "Mira freezes the dashboard at one point on the J curve. Nothing is erased. N remains visible, rmax remains visible, and the resource panel still says abundant. A second door unlocks only when you can point to the model assumption on the left, the equation in the center, and the accelerating graph on the right without mixing their jobs. Through the doorway you can already see a movable ceiling hanging over another habitat model. The next room will keep the same population-growth dashboard and ask what happens when the environment can no longer be treated as effectively unlimited."
+      ],
+      "story_close": "Mira freezes the dashboard at one point on the J curve. Nothing is erased. N remains visible, rmax remains visible, and the resource panel still says abundant. A second door unlocks only when you can point to the model assumption on the left, the equation in the center, and the accelerating graph on the right without mixing their jobs. Through the doorway you can already see a movable ceiling hanging over another habitat model. The next room will keep the same population-growth dashboard and ask what happens when the environment can no longer be treated as effectively unlimited.",
+      "object_ids": [
+        "U8-K-032",
+        "U8-K-054",
+        "U8-K-055",
+        "U8-K-161",
+        "U8-K-162"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-032",
+          "term": "Unconstrained exponential growth",
+          "story": "the the J-curve equation screen where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "Reproduction without constraints can produce exponential population growth.",
+          "exact_name": true,
+          "hint": "the J-curve equation screen",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-054",
+          "term": "Exponential-growth equation",
+          "story": "the the J-curve equation screen where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "Under the idealized exponential model, dN/dt = rmaxN, where rmax is the maximum per-capita growth rate.",
+          "exact_name": true,
+          "hint": "the J-curve equation screen",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-055",
+          "term": "rmax",
+          "story": "the the J-curve equation screen where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "rmax is the maximum per-capita population growth rate used in the AP exponential and logistic growth models.",
+          "exact_name": true,
+          "hint": "the J-curve equation screen",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-161",
+          "term": "Exponential growth shape",
+          "story": "the the J-curve equation screen where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "With a constant positive per-capita growth rate and no resource limitation, absolute population growth accelerates as N increases, producing a J-shaped curve.",
+          "exact_name": false,
+          "hint": "the J-curve equation screen",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-162",
+          "term": "Idealized unlimited environment",
+          "story": "the the J-curve equation screen where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "Exponential growth is an idealized model most applicable when resources are abundant and limiting factors are weak over the interval considered.",
+          "exact_name": false,
+          "hint": "the J-curve equation screen",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-032",
+          "term": "Unconstrained exponential growth",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-054",
+          "term": "Exponential-growth equation",
+          "dependency": "Unit 5 quantitative reasoning; Unit 7 population genetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-055",
+          "term": "rmax",
+          "dependency": "Unit 5 quantitative reasoning; Unit 7 population genetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-012: Lock specifies constant positive per-capita rate and accelerating absolute growth as N rises.",
+        "Resolved F1 guard RF-U8-012: Lock specifies constant positive per-capita rate and accelerating absolute growth as N rises.",
+        "Resolved F1 guard RF-U8-012: Lock specifies constant positive per-capita rate and accelerating absolute growth as N rises.",
+        "Discrimination requirement U8-MD26: Select the model from assumptions and resource limitation, then connect equation to graph. Keep Unconstrained exponential growth, Exponential-growth equation, Logistic-growth equation, Population regulation and logistic growth physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD25: Keep dN/dt distinct from a rate scaled to N and interpret rmax as a per-capita parameter in the exponential model. Keep Population growth equation dN/dt = B − D, rmax, Population growth rate versus per-capita rate physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD27: Separate intrinsic maximum per-capita growth parameter from carrying capacity. Keep rmax, K in logistic growth physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-032",
+      "checkpoint_prompt": "Without looking back, identify or explain Unconstrained exponential growth from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Reproduction without constraints can produce exponential population growth.",
+      "next_locus": "Carrying Capacity Resource Ceiling",
+      "f3_scene_brief_id": "F3-U8-L34",
+      "narrative_word_count": 630
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U8-L35",
+      "locus": "Carrying Capacity Resource Ceiling",
+      "title": "The Ceiling That Moves",
+      "scene_kicker": "At Carrying Capacity Resource Ceiling, reconstruct resource and environmental-condition panel → K ceiling control → sustainable abundance readout and explain Carrying capacity from the actual ecological mechanism.",
+      "location_description": "Carrying Capacity Resource Ceiling",
+      "scene_layout": {
+        "orientation": "Enter Carrying Capacity Resource Ceiling and stop at the adjustable K ceiling over the habitat model. Keep resource and environmental-condition panel fixed on the left, K ceiling control as the working center, and sustainable abundance readout fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "resource and environmental-condition panel",
+            "symbol": "L",
+            "description": "A conventional scientific representation of resource and environmental-condition panel, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "K ceiling control",
+            "symbol": "C",
+            "description": "The main scientific work model at Carrying Capacity Resource Ceiling, centered on the adjustable K ceiling over the habitat model."
+          },
+          {
+            "position": "right",
+            "label": "sustainable abundance readout",
+            "symbol": "R",
+            "description": "A conventional scientific representation of sustainable abundance readout, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "resource and environmental-condition panel",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of resource and environmental-condition panel, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "K ceiling control",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Carrying Capacity Resource Ceiling, centered on the adjustable K ceiling over the habitat model.",
+          "job": "Execute the defining action beginning with: Set resource supply and environmental conditions first, then determine the abundance that can be sustained under those conditions."
+        },
+        {
+          "name": "sustainable abundance readout",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of sustainable abundance readout, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "population-growth dashboard",
+          "kind": "journey continuity object",
+          "visual": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+          "job": "preserves the same population-growth variables and graph axes while each room changes only the model assumption, environmental ceiling, or regulation test needed for the next distinction"
+        }
+      ],
+      "continuity_object": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+      "story_open": "You step into the Carrying Capacity Resource Ceiling with the population-growth dashboard still glowing in your hands. On your left, a resource and environmental-condition panel shows food supply, nesting space, water, temperature, and other conditions that can affect how many individuals the habitat can support. Ahead at the center, a heavy horizontal ceiling hangs above a transparent habitat model, and a control lever can raise or lower it. On your right, a sustainable abundance readout waits beneath the same N scale you carried from the previous room. Mira leaves the rmax dial untouched. This room is about the environmental ceiling, not the population's intrinsic maximum per-capita rate.",
+      "story_paragraphs": [
+        "You step into the Carrying Capacity Resource Ceiling with the population-growth dashboard still glowing in your hands. On your left, a resource and environmental-condition panel shows food supply, nesting space, water, temperature, and other conditions that can affect how many individuals the habitat can support. Ahead at the center, a heavy horizontal ceiling hangs above a transparent habitat model, and a control lever can raise or lower it. On your right, a sustainable abundance readout waits beneath the same N scale you carried from the previous room. Mira leaves the rmax dial untouched. This room is about the environmental ceiling, not the population's intrinsic maximum per-capita rate.",
+        "Mira fills the left panel with one set of current conditions. The habitat model then marks an abundance that can be sustained under those conditions. The center ceiling settles at that level. Only after the level is visible does the room name it. **Carrying capacity** is the maximum abundance an environment can sustain given available resources and environmental conditions. The ceiling belongs to the relationship between the population and its current environment. It is not stamped permanently onto the species.",
+        "A large letter K appears on the ceiling. Mira points to the K, then to the N counter on your dashboard. They are not interchangeable. N is the current population size. K is the carrying capacity represented in the logistic model. The phrase **K in logistic growth** appears on the control rail. K represents the population size the environment can sustain under current conditions. The ceiling can sit above N, near N, or below N depending on what the environment can support and how large the population currently is.",
+        "Mira now changes only one part of the left panel. A water source is reduced and the available habitat shrinks. The K ceiling descends. The organisms in the display do not suddenly acquire a different species identity, and rmax does not have to change for K to move. The environment's capacity to sustain the population has changed. Mira restores the water and habitat. The ceiling rises again. The room makes the message physically unavoidable. Carrying capacity can change when resource availability or environmental conditions change.",
+        "The right readout now compares N with K without drawing a growth curve yet. When N is well below K, there is room within the model for continued positive growth under suitable conditions. As N approaches K, resource limitation becomes increasingly relevant to the growth model. Mira adds a caution marker beside the ceiling. K is an idealized representation of a changing environmental limit. Real populations can fluctuate, environmental conditions can change, and abundance need not sit perfectly at K.",
+        "A narrow bridge opens toward the Logistic Growth Console. Mira locks the K control at its current setting and carries the same dashboard forward. The J-shaped graph from the first room remains stored in a small side window, while the new K ceiling now appears as a horizontal reference line. Your task in the next room is to combine what you already know. You will keep N, rmax, K, and the graph axes visible at the same time and watch the model change as N moves closer to the environmental ceiling."
+      ],
+      "story_close": "A narrow bridge opens toward the Logistic Growth Console. Mira locks the K control at its current setting and carries the same dashboard forward. The J-shaped graph from the first room remains stored in a small side window, while the new K ceiling now appears as a horizontal reference line. Your task in the next room is to combine what you already know. You will keep N, rmax, K, and the graph axes visible at the same time and watch the model change as N moves closer to the environmental ceiling.",
+      "object_ids": [
+        "U8-K-033",
+        "U8-K-057"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-033",
+          "term": "Carrying capacity",
+          "story": "the the adjustable K ceiling over the habitat model where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "Carrying capacity is the maximum abundance an environment can sustain given available resources and environmental conditions.",
+          "exact_name": true,
+          "hint": "the adjustable K ceiling over the habitat model",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-057",
+          "term": "K in logistic growth",
+          "story": "the the adjustable K ceiling over the habitat model where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "K represents carrying capacity, the population size the environment can sustain under current conditions.",
+          "exact_name": true,
+          "hint": "the adjustable K ceiling over the habitat model",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-033",
+          "term": "Carrying capacity",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-057",
+          "term": "K in logistic growth",
+          "dependency": "Unit 5 quantitative reasoning; Unit 7 population genetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-013: Lock states growth approaches zero as N approaches K and becomes negative under the model when N>K.",
+        "Discrimination requirement U8-MD27: Separate intrinsic maximum per-capita growth parameter from carrying capacity. Keep rmax, K in logistic growth physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "Logistic Growth Console",
+      "f3_scene_brief_id": "F3-U8-L35",
+      "narrative_word_count": 532
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U8-L36",
+      "locus": "Logistic Growth Console",
+      "title": "The Fraction That Squeezes the Curve",
+      "scene_kicker": "At Logistic Growth Console, reconstruct current N and K resource ceiling → dN/dt = rmaxN((K−N)/K) engine → S-shaped graph and slowing per-capita growth panel and explain Logistic-growth equation from the actual ecological mechanism.",
+      "location_description": "Logistic Growth Console",
+      "scene_layout": {
+        "orientation": "Enter Logistic Growth Console and stop at the S-curve equation screen. Keep current N and K resource ceiling fixed on the left, dN/dt = rmaxN((K−N)/K) engine as the working center, and S-shaped graph and slowing per-capita growth panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "current N and K resource ceiling",
+            "symbol": "L",
+            "description": "A conventional scientific representation of current N and K resource ceiling, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "dN/dt = rmaxN((K−N)/K) engine",
+            "symbol": "C",
+            "description": "The main scientific work model at Logistic Growth Console, centered on the S-curve equation screen."
+          },
+          {
+            "position": "right",
+            "label": "S-shaped graph and slowing per-capita growth panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of S-shaped graph and slowing per-capita growth panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "current N and K resource ceiling",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of current N and K resource ceiling, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "dN/dt = rmaxN((K−N)/K) engine",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Logistic Growth Console, centered on the S-curve equation screen.",
+          "job": "Execute the defining action beginning with: Begin with N well below K so the density-limitation term permits relatively rapid growth."
+        },
+        {
+          "name": "S-shaped graph and slowing per-capita growth panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of S-shaped graph and slowing per-capita growth panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "population-growth dashboard",
+          "kind": "journey continuity object",
+          "visual": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+          "job": "preserves the same population-growth variables and graph axes while each room changes only the model assumption, environmental ceiling, or regulation test needed for the next distinction"
+        }
+      ],
+      "continuity_object": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+      "story_open": "The Logistic Growth Console is arranged like the first room, but the ceiling from the second room has followed you inside. On your left, the current N counter sits below a bright horizontal K resource ceiling. Ahead at the center, a larger equation engine displays dN/dt = rmaxN((K−N)/K), with the fraction (K−N)/K mounted on a sliding track. On your right, an empty population-versus-time graph stands beside a per-capita growth panel. Mira places the population-growth dashboard into a central dock so every value can be seen without changing the axes or the identity of the population.",
+      "story_paragraphs": [
+        "The Logistic Growth Console is arranged like the first room, but the ceiling from the second room has followed you inside. On your left, the current N counter sits below a bright horizontal K resource ceiling. Ahead at the center, a larger equation engine displays dN/dt = rmaxN((K−N)/K), with the fraction (K−N)/K mounted on a sliding track. On your right, an empty population-versus-time graph stands beside a per-capita growth panel. Mira places the population-growth dashboard into a central dock so every value can be seen without changing the axes or the identity of the population.",
+        "Mira begins with N well below K. The gap between K and N is large, so the fraction (K−N)/K remains relatively large. The engine permits relatively rapid population growth under the model. The first part of the graph rises in a way that resembles the early phase of exponential growth. rmax is still present as the maximum per-capita growth parameter, but the new fraction now modifies how much of that potential is expressed as population size approaches the environmental limit.",
+        "Mira slowly raises N toward K while leaving the current K ceiling fixed. The numerator K−N visibly shrinks. The entire fraction (K−N)/K therefore shrinks as well. The right panel responds by showing slower per-capita growth, and the graph begins to bend away from the runaway J shape. Only now does the equation display its formal name. The **Logistic-growth equation** is dN/dt = rmaxN((K − N)/K), so growth slows as N approaches carrying capacity K.",
+        "The curve on the right continues upward, then flattens into an S shape as N approaches K. Mira traces the graph with her pointer from left to right. The early section can rise rapidly when N is far below K. The middle section bends as density-related limitation becomes stronger in the model. Near K, the growth term approaches zero. If the model is extended to N above K, the term can become negative. The room therefore does not tell you that a population must stop forever at one exact number. It shows the behavior of an idealized model under its assumptions.",
+        "A second label appears beside the graph reading **Population regulation and logistic growth**. Resource limitation can contribute to logistic slowing, while density-dependent and density-independent factors can influence real population growth. Mira keeps a separate disturbance icon outside the equation engine so you do not mistake every real-world event for part of the logistic formula. A drought, storm, disease outbreak, or change in food supply can push an actual population away from the smooth S-shaped trajectory. The model organizes one relationship. It does not guarantee a perfect curve in nature.",
+        "Mira places the old J-shaped curve and the new S-shaped curve side by side for only a moment. She covers their labels and asks you to identify which assumptions would justify each one. The exponential model belongs to an interval with weak resource limitation and constant positive per-capita growth. The logistic model adds the influence represented by the K-dependent fraction, so the growth rate slows as N approaches K. The next door opens toward two matched test bays. The equations will stay on the dashboard, but now you must diagnose regulation by looking at how a factor affects individuals at different population densities."
+      ],
+      "story_close": "Mira places the old J-shaped curve and the new S-shaped curve side by side for only a moment. She covers their labels and asks you to identify which assumptions would justify each one. The exponential model belongs to an interval with weak resource limitation and constant positive per-capita growth. The logistic model adds the influence represented by the K-dependent fraction, so the growth rate slows as N approaches K. The next door opens toward two matched test bays. The equations will stay on the dashboard, but now you must diagnose regulation by looking at how a factor affects individuals at different population densities.",
+      "object_ids": [
+        "U8-K-056",
+        "U8-K-034"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-056",
+          "term": "Logistic-growth equation",
+          "story": "the the S-curve equation screen where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "The AP logistic model is dN/dt = rmaxN((K − N)/K), so growth slows as N approaches carrying capacity K.",
+          "exact_name": true,
+          "hint": "the S-curve equation screen",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-034",
+          "term": "Population regulation and logistic growth",
+          "story": "the the S-curve equation screen where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "Density-dependent and density-independent factors influence population growth, and resource limitation can produce logistic growth.",
+          "exact_name": false,
+          "hint": "the S-curve equation screen",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-056",
+          "term": "Logistic-growth equation",
+          "dependency": "Unit 5 quantitative reasoning; Unit 7 population genetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-034",
+          "term": "Population regulation and logistic growth",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-013: Lock states growth approaches zero as N approaches K and becomes negative under the model when N>K.",
+        "Discrimination requirement U8-MD26: Select the model from assumptions and resource limitation, then connect equation to graph. Keep Unconstrained exponential growth, Exponential-growth equation, Logistic-growth equation, Population regulation and logistic growth physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-056",
+      "checkpoint_prompt": "Without looking back, identify or explain Logistic-growth equation from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "The AP logistic model is dN/dt = rmaxN((K − N)/K), so growth slows as N approaches carrying capacity K.",
+      "next_locus": "Density-Dependent Regulation Test Bay",
+      "f3_scene_brief_id": "F3-U8-L36",
+      "narrative_word_count": 553
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U8-L37",
+      "locus": "Density-Dependent Regulation Test Bay",
+      "title": "When Crowding Changes the Effect",
+      "scene_kicker": "At Density-Dependent Regulation Test Bay, reconstruct low-density population replicate → high-density population replicate → per-capita birth/death response comparison and explain Density-dependent regulation from the actual ecological mechanism.",
+      "location_description": "Density-Dependent Regulation Test Bay",
+      "scene_layout": {
+        "orientation": "Enter Density-Dependent Regulation Test Bay and stop at the matched-density vital-rate experiment. Keep low-density population replicate fixed on the left, high-density population replicate as the working center, and per-capita birth/death response comparison fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "low-density population replicate",
+            "symbol": "L",
+            "description": "A conventional scientific representation of low-density population replicate, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "high-density population replicate",
+            "symbol": "C",
+            "description": "The main scientific work model at Density-Dependent Regulation Test Bay, centered on the matched-density vital-rate experiment."
+          },
+          {
+            "position": "right",
+            "label": "per-capita birth/death response comparison",
+            "symbol": "R",
+            "description": "A conventional scientific representation of per-capita birth/death response comparison, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "low-density population replicate",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of low-density population replicate, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "high-density population replicate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Density-Dependent Regulation Test Bay, centered on the matched-density vital-rate experiment.",
+          "job": "Execute the defining action beginning with: Expose low- and high-density populations to the same type of interaction or limiting factor."
+        },
+        {
+          "name": "per-capita birth/death response comparison",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of per-capita birth/death response comparison, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "population-growth dashboard",
+          "kind": "journey continuity object",
+          "visual": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+          "job": "preserves the same population-growth variables and graph axes while each room changes only the model assumption, environmental ceiling, or regulation test needed for the next distinction"
+        }
+      ],
+      "continuity_object": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+      "story_open": "You enter the Density-Dependent Regulation Test Bay through a glass divider that splits the room into matched experimental spaces. On your left, a low-density population replicate occupies a large enclosure with individuals spread far apart. Ahead at the center, a high-density replicate contains the same type of population in the same-sized enclosure, with many more individuals sharing the space. On your right, a comparison board is divided into per-capita birth effects and per-capita death effects. Mira parks the population-growth dashboard beneath the board. N is still visible, but the key measurement has shifted from total population change to the effect experienced per individual at different densities.",
+      "story_paragraphs": [
+        "You enter the Density-Dependent Regulation Test Bay through a glass divider that splits the room into matched experimental spaces. On your left, a low-density population replicate occupies a large enclosure with individuals spread far apart. Ahead at the center, a high-density replicate contains the same type of population in the same-sized enclosure, with many more individuals sharing the space. On your right, a comparison board is divided into per-capita birth effects and per-capita death effects. Mira parks the population-growth dashboard beneath the board. N is still visible, but the key measurement has shifted from total population change to the effect experienced per individual at different densities.",
+        "Mira selects one limiting interaction and applies the same type of ecological pressure to both replicates. The room can model competition for a resource, disease transmission, or predation, but it treats these as possible examples rather than universal rules. Today the screen uses a transmissible disease. The disease is introduced under matched conditions, and the room records the consequence for each population. Mira stops you before you compare only the total number of affected individuals. A larger population can produce a larger total count simply because more individuals were present at the start.",
+        "The right board therefore rescales the outcome to a per-capita effect. In the high-density replicate, close contact makes transmission more frequent, and the per-capita disease effect rises compared with the low-density replicate under this demonstration. The defining feature is the systematic relationship with density. **Density-dependent regulation** occurs when a birth or death rate changes as population density changes. Competition, disease, and predation can act in density-dependent ways when their per-capita effects vary with density.",
+        "Mira resets the bay and switches the example to a shared food resource. At low density, each individual has greater access to the resource. At high density, more individuals compete for the same limited supply, so the per-capita consequence can become stronger. Again, the room measures the effect per individual. It does not classify a factor by whether it sounds biological or whether it causes a large total loss. The classification comes from how the per-capita birth or death effect changes as population density changes.",
+        "The old logistic graph glows faintly on your dashboard. Mira links it to the test bay without claiming that every density-dependent factor produces a perfect logistic curve. As N rises, some density-dependent processes can strengthen and contribute to population regulation. The details depend on the ecological system. The central lesson is diagnostic. If changing density systematically changes the per-capita effect, the factor fits the density-dependent category under the observed conditions.",
+        "A sliding wall opens into the final test bay. The low-density and high-density replicates remain in their same left and center positions, and the right board keeps the same per-capita scale. Mira leaves everything else unchanged on purpose. The next room will apply an event whose severity is set independently of how crowded the populations are. You will have to resist a common shortcut. A factor does not become density-independent merely because it is dramatic, physical, or weather related. You still have to inspect whether the per-capita effect depends systematically on population density."
+      ],
+      "story_close": "A sliding wall opens into the final test bay. The low-density and high-density replicates remain in their same left and center positions, and the right board keeps the same per-capita scale. Mira leaves everything else unchanged on purpose. The next room will apply an event whose severity is set independently of how crowded the populations are. You will have to resist a common shortcut. A factor does not become density-independent merely because it is dramatic, physical, or weather related. You still have to inspect whether the per-capita effect depends systematically on population density.",
+      "object_ids": [
+        "U8-K-167"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-167",
+          "term": "Density-dependent regulation",
+          "story": "the the matched-density vital-rate experiment where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "A density-dependent birth or death rate changes as population density changes; examples can include competition, disease, and predation.",
+          "exact_name": true,
+          "hint": "the matched-density vital-rate experiment",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-015: Lock defines independence by lack of systematic dependence of per-capita effect on density.",
+        "Discrimination requirement U8-MD28: Determine whether per-capita effect changes systematically with density. Keep Density-dependent regulation, Density-independent effects physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": "Density-Independent Disturbance Test Bay",
+      "f3_scene_brief_id": "F3-U8-L37",
+      "narrative_word_count": 521
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U8-L38",
+      "locus": "Density-Independent Disturbance Test Bay",
+      "title": "The Storm That Does Not Read the Census",
+      "scene_kicker": "At Density-Independent Disturbance Test Bay, reconstruct low-density population replicate → high-density population replicate → per-capita impact comparison and explain Density-independent effects from the actual ecological mechanism.",
+      "location_description": "Density-Independent Disturbance Test Bay",
+      "scene_layout": {
+        "orientation": "Enter Density-Independent Disturbance Test Bay and stop at the matched-density weather/disturbance experiment. Keep low-density population replicate fixed on the left, high-density population replicate as the working center, and per-capita impact comparison fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "low-density population replicate",
+            "symbol": "L",
+            "description": "A conventional scientific representation of low-density population replicate, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "high-density population replicate",
+            "symbol": "C",
+            "description": "The main scientific work model at Density-Independent Disturbance Test Bay, centered on the matched-density weather/disturbance experiment."
+          },
+          {
+            "position": "right",
+            "label": "per-capita impact comparison",
+            "symbol": "R",
+            "description": "A conventional scientific representation of per-capita impact comparison, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "low-density population replicate",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of low-density population replicate, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "high-density population replicate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Density-Independent Disturbance Test Bay, centered on the matched-density weather/disturbance experiment.",
+          "job": "Execute the defining action beginning with: Apply the same weather event or disturbance to populations of different density."
+        },
+        {
+          "name": "per-capita impact comparison",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of per-capita impact comparison, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "population-growth dashboard",
+          "kind": "journey continuity object",
+          "visual": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+          "job": "preserves the same population-growth variables and graph axes while each room changes only the model assumption, environmental ceiling, or regulation test needed for the next distinction"
+        }
+      ],
+      "continuity_object": "one transparent control dashboard that keeps population size N, time, rmax, an environment-dependent K and resource readout, a per-capita effect panel, and fixed population-versus-time graph axes visible across all five control rooms",
+      "story_open": "The Density-Independent Disturbance Test Bay looks almost identical to the previous room so that the comparison cannot hide behind new scenery. On your left, the low-density replicate stands within its marked enclosure. Ahead at the center, the high-density replicate occupies a matching enclosure. On your right, the same per-capita impact board waits for data. Above both enclosures, a weather simulator displays one storm intensity and one duration. Mira places the population-growth dashboard beneath the controls, with N, time, rmax, K, and the earlier growth curves still available for reference.",
+      "story_paragraphs": [
+        "The Density-Independent Disturbance Test Bay looks almost identical to the previous room so that the comparison cannot hide behind new scenery. On your left, the low-density replicate stands within its marked enclosure. Ahead at the center, the high-density replicate occupies a matching enclosure. On your right, the same per-capita impact board waits for data. Above both enclosures, a weather simulator displays one storm intensity and one duration. Mira places the population-growth dashboard beneath the controls, with N, time, rmax, K, and the earlier growth curves still available for reference.",
+        "The simulator releases the same severe weather event across both replicates. The wind speed, temperature shift, and exposure time are set by the event, not by the number of individuals in either enclosure. When the storm ends, the board records both total losses and losses scaled per individual. Mira points to the per-capita columns. Total losses can differ when starting population sizes differ. That alone does not tell you whether the effect depends on density.",
+        "The room repeats the test across matched conditions and asks a narrower question. Does the per-capita effect change systematically as population density changes? In this demonstration, it does not. The event acts with a severity that is not systematically determined by crowding. The board names the pattern **Density-independent effects**. A density-independent effect changes population vital rates without its per-capita effect depending systematically on population density. Weather or disturbance can act this way.",
+        "Mira darkens the weather icon and places the density-dependent disease result beside it. The contrast is now spatially simple. In the previous bay, changing density changed the per-capita effect under the demonstrated interaction. In this bay, density does not systematically determine the per-capita impact of the disturbance. The distinction is about the relationship between density and per-capita effect. It is not a claim that density-independent events leave birth and death rates unchanged. Such events can change population vital rates substantially.",
+        "The population-growth dashboard now replays the entire route. The first screen shows the abundant-resource assumption, dN/dt = rmaxN, and the J-shaped curve. The second raises and lowers the environment-dependent K ceiling. The third inserts (K−N)/K and bends the trajectory toward an S shape as N approaches K. The fourth compares per-capita effects across low and high density and reveals density-dependent regulation. The fifth repeats the matched-density comparison with a disturbance whose per-capita effect is not systematically determined by density.",
+        "Mira locks the five-room sequence onto the dashboard without adding another formula. The control center has done its job when you can reconstruct why each curve or classification appears. Exponential and logistic growth remain models tied to assumptions. K remains a feature of current environmental conditions, not a permanent species constant. rmax remains a maximum per-capita growth parameter, while dN/dt remains population change per unit time. Density-dependent and density-independent effects remain classifications based on how per-capita impact relates to density. The exit doors open only after those relationships can be rebuilt from the rooms themselves."
+      ],
+      "story_close": "Mira locks the five-room sequence onto the dashboard without adding another formula. The control center has done its job when you can reconstruct why each curve or classification appears. Exponential and logistic growth remain models tied to assumptions. K remains a feature of current environmental conditions, not a permanent species constant. rmax remains a maximum per-capita growth parameter, while dN/dt remains population change per unit time. Density-dependent and density-independent effects remain classifications based on how per-capita impact relates to density. The exit doors open only after those relationships can be rebuilt from the rooms themselves.",
+      "object_ids": [
+        "U8-K-168"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-168",
+          "term": "Density-independent effects",
+          "story": "the the matched-density weather/disturbance experiment where the population model, resource ceiling, graph relation, or regulation comparison becomes visible before the term is named",
+          "science": "A density-independent effect changes population vital rates without its per-capita effect depending systematically on population density; weather or disturbance can act this way.",
+          "exact_name": true,
+          "hint": "the matched-density weather/disturbance experiment",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-015: Lock defines independence by lack of systematic dependence of per-capita effect on density.",
+        "Discrimination requirement U8-MD28: Determine whether per-capita effect changes systematically with density. Keep Density-dependent regulation, Density-independent effects physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": null,
+      "checkpoint_answer": null,
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U8-L38",
+      "narrative_word_count": 493
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "prior_narrative_locks": [
+    "LOCKED_F4A_J1",
+    "LOCKED_F4B_J2",
+    "LOCKED_F4C_J3",
+    "LOCKED_F4D_J4"
+  ]
+}

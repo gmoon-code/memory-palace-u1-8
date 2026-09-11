@@ -1,0 +1,50 @@
+{
+  "schema": "memory-palace-v2-unit8-f4c-lock-1.0",
+  "unit_id": "unit-8",
+  "lock_status": "LOCKED_F4C_J3",
+  "student_release": false,
+  "preview_release": true,
+  "protected_prior_locks": [
+    "f1-source-lock.json",
+    "content-lock-f2.json",
+    "content-lock-f3.json",
+    "content-lock-f4a.json",
+    "content-lock-f4b.json"
+  ],
+  "journey_id": "U8-J3",
+  "scene_count": 5,
+  "knowledge_record_count": 15,
+  "exact_name_target_count": 11,
+  "checkpoint_count": 2,
+  "files": {
+    "narrative-source-f4c.md": {
+      "bytes": 20824,
+      "sha256": "c0f7a075e6dea20a8bc325370314fa6ea328a50171dd8498feaac8a43878fa9c"
+    },
+    "journeys/U8-J3.json": {
+      "bytes": 69735,
+      "sha256": "60fc915ba1832e6df96f429ec43dd2c642f7deac904cfff8b149bc7d2d2bd1dc"
+    },
+    "journeys-f4c.json": {
+      "bytes": 7899,
+      "sha256": "30f0497d32a2d5951f627c70b6f6b2bdea9f93eb028a8bb377f956bd59e2ff34"
+    },
+    "status-f4c.json": {
+      "bytes": 1759,
+      "sha256": "da73c6652db6f557968197241f59ccbadf3d76357fcf528262915523f1a53a65"
+    },
+    "f4c-release-manifest.json": {
+      "bytes": 1008,
+      "sha256": "13bb345dffe5c5c774b079ed644467e0b8009a12030dee49a32b04ffb2cc4eb2"
+    },
+    "docs/UNIT8_F4C_JOURNEY3_STORY.md": {
+      "bytes": 20824,
+      "sha256": "c0f7a075e6dea20a8bc325370314fa6ea328a50171dd8498feaac8a43878fa9c"
+    },
+    "docs/UNIT8_F4C_STORY_MATRIX.md": {
+      "bytes": 3865,
+      "sha256": "dc79a21f37a348e3ddef09631a0babdd6646aac2ef9cedb51039a0ef09adbe6a"
+    }
+  },
+  "rule": "Journey 3 polished prose may not change after F4C without a new explicit narrative version. Journeys 1 and 2 remain frozen. F1 science, F2 classification and geometry, and F3 scene briefs remain authoritative boundaries."
+}

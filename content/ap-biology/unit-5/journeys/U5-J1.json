@@ -1,0 +1,870 @@
+{
+  "palace_id": "U5-J1",
+  "unit_id": "unit-5",
+  "palace_name": "Heredity and Chromosome Registry",
+  "story_title": "The Registry That Lost Its Generations",
+  "tagline": "A damaged inheritance registry has mixed genes, chromosomes, cell types, ploidy, and reproductive routes into one record. Rebuild the identities before the chromosomes enter meiosis.",
+  "guide": {
+    "name": "Dr. Imani Reyes",
+    "role": "inheritance-systems geneticist",
+    "visual": "deep-green field coat, clear gloves, compact chromosome tablet showing one blue homolog and one amber homolog, and a narrow gold generation ledger",
+    "story_job": "Imani keeps chromosome identity, cell type, chromosome-set number, reproductive transition, and generation visible. She changes the biological model first and names the term only after its defining relationship can be seen."
+  },
+  "premise": "A power failure has scrambled the Heredity and Chromosome Registry just before a new generation of records is due to be certified. Gene cards have been separated from chromosome addresses, homologous chromosomes are being confused with replicated sister chromatids, cell entries have lost their chromosome-set labels, and the two reproductive routes feed into the same unlabeled corridor. Dr. Imani Reyes cannot open the inner meiosis hall until the registry can account for exactly what is inherited, what biological structure carries it, how many chromosome sets each cell contains, and how those sets move from one generation to the next.",
+  "mission": "Follow Dr. Imani Reyes through five physically connected registry stations. Keep the same blue and amber chromosome identities visible while you restore gene-to-chromosome filing, homolog and sister-chromatid identity, diploid and haploid bookkeeping, reproductive-route differences, and the fertilization step that combines haploid chromosome sets in a diploid zygote.",
+  "finale": "The gold generation ledger closes only after every field can be reconstructed from the five rooms. Genes remain fixed to chromosome loci, homologs remain distinct from sister chromatids, chromosome-set number is separated from cell type, asexual and sexual reproductive mechanisms occupy different routes, and fertilization combines haploid gametes to produce a diploid zygote. The same tracked blue and amber homologs then pass through the unlocked inner doors toward Meiosis Transit Hall.",
+  "estimated_minutes": 15,
+  "scene_count": 5,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4A",
+  "learner_rule": "Read or listen and picture the room before following the biological action. The important terms are named only after the structure or process that defines them becomes visible. Optional Quick Recall appears only twice.",
+  "route_orientation": "This is a five-location route through one inheritance-registry building. Enter at the Heredity Record Desk, move straight into the Homolog Pair Vault, pass through the Ploidy Counter, follow the hall to the Reproduction Fork, and finish in the circular Life-Cycle Fusion Loop. The gold generation ledger and the same blue and amber chromosome identities persist across all five locations.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Heredity Record Desk",
+      "short": "Records",
+      "floor": "Registry intake",
+      "symbol": "▤"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Homolog Pair Vault",
+      "short": "Homologs",
+      "floor": "Chromosome vault",
+      "symbol": "Ⅱ"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Ploidy Counter",
+      "short": "Ploidy",
+      "floor": "Cell registry",
+      "symbol": "2n/n"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Reproduction Fork",
+      "short": "Routes",
+      "floor": "Transit fork",
+      "symbol": "Y"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Life-Cycle Fusion Loop",
+      "short": "Fusion",
+      "floor": "Generation rotunda",
+      "symbol": "○"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U5-L01",
+      "locus": "Heredity Record Desk",
+      "title": "The Registry With Everything Filed Under One Name",
+      "scene_kicker": "The first repair is identity. A gene, a chromosome, heredity, and genetics cannot all mean the same thing.",
+      "location_description": "the intake desk where heredity, genetics, genes, chromosomes, and conserved information are filed into one inheritance record",
+      "scene_layout": {
+        "orientation": "Enter Heredity Record Desk and stop at the intake desk where heredity, genetics, genes, chromosomes, and conserved information are filed into one inheritance record. The left side is anchored by heredity / genetics record cards, the working center is gene-to-chromosome filing rail, and the right side is anchored by conserved DNA/RNA code archive. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Heredity and genetics record wall",
+            "symbol": "▤",
+            "description": "Two vertical files remain fixed on the learner’s left. One tracks what biological information passes across generations, while the other tracks the scientific study of that inheritance and variation."
+          },
+          {
+            "position": "center",
+            "label": "Gene-to-chromosome filing rail",
+            "symbol": "━",
+            "description": "A full chromosome model crosses the center desk with marked loci. Individual gene records can be clipped to real positions on the chromosome and carried forward with it."
+          },
+          {
+            "position": "right",
+            "label": "Conserved information archive",
+            "symbol": "DNA",
+            "description": "A glass archive on the right holds DNA/RNA information-system records and a genetic-code display whose shared logic becomes visible only after gene and chromosome identity are settled."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "kind": "guide",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet showing one blue homolog and one amber homolog, and a narrow gold generation ledger",
+          "job": "Imani keeps chromosome identity, cell type, chromosome-set number, reproductive transition, and generation visible. She changes the biological model first and names the term only after its defining relationship can be seen."
+        },
+        {
+          "name": "Heredity and genetics record wall",
+          "kind": "scientific part or process",
+          "visual": "Two vertical files remain fixed on the learner’s left. One tracks what biological information passes across generations, while the other tracks the scientific study of that inheritance and variation.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "Gene-to-chromosome filing rail",
+          "kind": "scientific part or process",
+          "visual": "A full chromosome model crosses the center desk with marked loci. Individual gene records can be clipped to real positions on the chromosome and carried forward with it.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Place heredity and genetics cards on the left, then route one gene card to a specific locus on a chromosome model so “gene,” “chromosome,” “genetics,” and “heredity” cannot collapse into one interchangeable label."
+        },
+        {
+          "name": "Conserved information archive",
+          "kind": "scientific part or process",
+          "visual": "A glass archive on the right holds DNA/RNA information-system records and a genetic-code display whose shared logic becomes visible only after gene and chromosome identity are settled.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity tool",
+          "visual": "a narrow gold-edged ledger with four persistent fields labeled chromosome set, cell type, reproductive transition, and generation",
+          "job": "records only real biological state changes as the same chromosome information passes through the five registry locations; it never replaces a chromosome, gene, cell, or reproductive process"
+        }
+      ],
+      "continuity_object": "Imani’s gold generation ledger, which keeps four fields visible—chromosome set, cell type, reproductive transition, and generation—and is updated only when the actual biological state changes.",
+      "story_open": "The brass doors of the **Heredity and Chromosome Registry** open onto a long intake hall where thousands of family records should move in orderly lines. Tonight, the hall is jammed. On your **left**, two tall cabinets labeled HEREDITY and GENETICS have spilled gold-edged record cards across the floor. Directly **ahead**, a black chromosome model lies across a waist-high filing rail, its numbered loci glowing like precise addresses. On your **right**, a sealed glass archive holds DNA and RNA information records from many kinds of organisms. Nothing is moving. Every loose card on the floor has been stamped with the same word, INHERITANCE, so the registry can no longer tell a field of study from a biological process, or a gene from the chromosome that carries it.",
+      "story_paragraphs": [
+        "The brass doors of the **Heredity and Chromosome Registry** open onto a long intake hall where thousands of family records should move in orderly lines. Tonight, the hall is jammed. On your **left**, two tall cabinets labeled HEREDITY and GENETICS have spilled gold-edged record cards across the floor. Directly **ahead**, a black chromosome model lies across a waist-high filing rail, its numbered loci glowing like precise addresses. On your **right**, a sealed glass archive holds DNA and RNA information records from many kinds of organisms. Nothing is moving. Every loose card on the floor has been stamped with the same word, INHERITANCE, so the registry can no longer tell a field of study from a biological process, or a gene from the chromosome that carries it.",
+        "Dr. Imani Reyes kneels beside the center rail in a deep-green field coat. Her compact tablet shows the same blue and amber homologs that will accompany you through the unit. Beside it she opens a narrow gold generation ledger with four columns labeled chromosome set, cell type, reproductive transition, and generation. She refuses to write anything in the ledger yet. First she hands you two different cards from the left cabinet. **Heredity** belongs to the biological transmission of traits and genetic information across generations. **Genetics** belongs to the scientific study of heredity and hereditary variation. She places the heredity card on a gold thread that runs toward a descendant record and leaves the genetics card at the investigation desk. Two words that had occupied the same pile now have different jobs and different places.",
+        "A smaller card still lies loose between them. It reads GENE. Imani clips it onto one glowing address on the chromosome rail. The card fits only at that locus. A **gene** is a DNA sequence at a chromosomal locus whose expression or regulatory function can contribute to a functional product or phenotype. Some genes encode proteins, while others function through RNA products or regulation. The rail makes the relationship concrete. The gene is a defined sequence located on the chromosome. It is not another name for the entire chromosome, and protein coding is not the only way a gene can have biological function.",
+        "Imani now slides the whole chromosome along the rail into a reproductive-cell record and then into a descendant file. The gene card never detaches from its chromosomal address. A small allele tab clipped to the gene travels with it. This is the physical basis of the statement that **genes are inherited on chromosomes**. Offspring receive alleles as parts of chromosomes transmitted through reproductive cells, and the later behavior of those chromosomes during meiosis will explain Mendelian segregation. The gold heredity thread advances one generation only when the chromosome itself reaches the descendant file.",
+        "Only then does the glass archive on the right unlock. Inside, branches from bacteria, plants, fungi, and animals converge on the same basic DNA/RNA information system. A genetic-code panel lights with the same broad codon logic repeated across distant lineages, with a small marker indicating known variants rather than pretending every code is literally identical. Imani labels the pattern **genetic code conservation and common ancestry**. Deep conservation of DNA/RNA information systems and the nearly universal genetic code supports the inference that living organisms share deep common ancestry. The archive is evidence of shared history, not a claim that every organism carries the same DNA sequence.",
+        "The intake hall begins moving again. Heredity cards travel between generations, genetics records stay at the investigation desk, genes remain fixed to chromosome loci, and the conserved-information archive glows at the far right. One problem remains. The rail has delivered two similarly shaped chromosomes to the next security door, and the scanner cannot decide whether they are homologous partners or duplicated copies of one chromosome. Imani closes the first line of the gold ledger and follows the blue and amber chromosomes through the vault door before the registry misfiles them again."
+      ],
+      "story_close": "With gene and chromosome identity restored, the blue and amber chromosomes trigger an identity alarm in the next room. Imani carries the gold ledger into the Homolog Pair Vault to separate homologous partners from replicated sister chromatids.",
+      "object_ids": [
+        "U5-K-035",
+        "U5-K-036",
+        "U5-K-037",
+        "U5-K-038",
+        "U5-K-064"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-035",
+          "term": "Genetics",
+          "story": "the left-hand genetics file that records the scientific investigation of heredity and hereditary variation",
+          "science": "Genetics is the study of heredity and hereditary variation.",
+          "exact_name": true,
+          "hint": "the left-hand genetics file that records the scientific investigation of heredity and hereditary variation",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-036",
+          "term": "Heredity",
+          "story": "the heredity file whose gold thread visibly continues from one generation record to the next",
+          "science": "Heredity is the transmission of biological traits and genetic information across generations.",
+          "exact_name": true,
+          "hint": "the heredity file whose gold thread visibly continues from one generation record to the next",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-037",
+          "term": "Gene",
+          "story": "the gene card clipped to one exact locus on the center chromosome rail",
+          "science": "A gene is a DNA sequence at a chromosomal locus whose expression or regulatory function contributes to a functional product or phenotype; genes are units of heredity.",
+          "exact_name": true,
+          "hint": "the gene card clipped to one exact locus on the center chromosome rail",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-038",
+          "term": "Genes are inherited on chromosomes",
+          "story": "the gene card remaining physically attached to its chromosome as that chromosome passes into a descendant record",
+          "science": "Offspring inherit alleles as parts of chromosomes transmitted through reproductive cells; chromosome behavior during meiosis underlies Mendelian segregation.",
+          "exact_name": true,
+          "hint": "the gene card remaining physically attached to its chromosome as that chromosome passes into a descendant record",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-064",
+          "term": "Genetic code conservation and common ancestry",
+          "story": "the right-side archive lighting the shared DNA/RNA information system and nearly universal genetic-code pattern across many branches of life",
+          "science": "DNA/RNA information systems and the nearly universal genetic code are deeply conserved across life and support common ancestry.",
+          "exact_name": true,
+          "hint": "the right-side archive lighting the shared DNA/RNA information system and nearly universal genetic-code pattern across many branches of life",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Genetics",
+          "meaning": "Genetics is the study of heredity and hereditary variation.",
+          "image": "the left-hand genetics file that records the scientific investigation of heredity and hereditary variation"
+        },
+        {
+          "term": "Heredity",
+          "meaning": "Heredity is the transmission of biological traits and genetic information across generations.",
+          "image": "the heredity file whose gold thread visibly continues from one generation record to the next"
+        },
+        {
+          "term": "Gene",
+          "meaning": "A gene is a DNA sequence at a chromosomal locus whose expression or regulatory function contributes to a functional product or phenotype; genes are units of heredity.",
+          "image": "the gene card clipped to one exact locus on the center chromosome rail"
+        },
+        {
+          "term": "Genes are inherited on chromosomes",
+          "meaning": "Offspring inherit alleles as parts of chromosomes transmitted through reproductive cells; chromosome behavior during meiosis underlies Mendelian segregation.",
+          "image": "the gene card remaining physically attached to its chromosome as that chromosome passes into a descendant record"
+        },
+        {
+          "term": "Genetic code conservation and common ancestry",
+          "meaning": "DNA/RNA information systems and the nearly universal genetic code are deeply conserved across life and support common ancestry.",
+          "image": "the right-side archive lighting the shared DNA/RNA information system and nearly universal genetic-code pattern across many branches of life"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep gene, allele physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Resolved science guard RF-U5-001: Use gene as a DNA sequence at a locus whose expression or regulatory function contributes to a functional product/trait; not all genes encode proteins.",
+        "Resolved science guard RF-U5-015: The genetic code is nearly universal, with known variants such as some organelle genetic codes. Use conserved/nearly universal language as evidence of common ancestry."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Heredity Record Desk, reconstruct the fixed heredity / genetics record cards → gene-to-chromosome filing rail → conserved DNA/RNA code archive relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Genetics",
+          "Heredity",
+          "Gene",
+          "Genes are inherited on chromosomes",
+          "Genetic code conservation and common ancestry"
+        ],
+        "redraw_test": "From memory, place heredity / genetics record cards on the left, gene-to-chromosome filing rail in the center, and conserved DNA/RNA code archive on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Homolog Pair Vault",
+      "causal_transition": "Once genes are physically filed on chromosomes, the next unresolved identity problem is whether two similar-looking chromosome structures are homologous partners or replicated sister chromatids, so the ledger moves into the Homolog Pair Vault."
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U5-L02",
+      "locus": "Homolog Pair Vault",
+      "title": "The Vault of Look-Alike Chromosomes",
+      "scene_kicker": "Two chromosomes can resemble each other for two very different reasons, and the vault will not open until those relationships are separated.",
+      "location_description": "the chromosome vault contrasting homologous partners, replicated sister chromatids, and their organized karyotype display",
+      "scene_layout": {
+        "orientation": "Enter Homolog Pair Vault and stop at the chromosome vault contrasting homologous partners, replicated sister chromatids, and their organized karyotype display. The left side is anchored by homologous chromosome pair, the working center is homolog-versus-sister comparison bench, and the right side is anchored by karyotype display wall. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Homologous chromosome rack",
+            "symbol": "Ⅱ",
+            "description": "A blue chromosome and an amber chromosome stand side by side with matching locus positions. Their corresponding genes line up even when the allele labels at those loci differ."
+          },
+          {
+            "position": "center",
+            "label": "Homolog-versus-sister comparison bench",
+            "symbol": "X",
+            "description": "A replication cradle can copy one chromosome into two joined sister chromatids, making the sister relationship physically different from the homologous pair on the left."
+          },
+          {
+            "position": "right",
+            "label": "Karyotype display wall",
+            "symbol": "▦",
+            "description": "A conventional chromosome display arranges chromosome images into matched groups using visible features such as size, centromere position, and banding pattern."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "kind": "guide",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet showing one blue homolog and one amber homolog, and a narrow gold generation ledger",
+          "job": "Imani keeps chromosome identity, cell type, chromosome-set number, reproductive transition, and generation visible. She changes the biological model first and names the term only after its defining relationship can be seen."
+        },
+        {
+          "name": "Homologous chromosome rack",
+          "kind": "scientific part or process",
+          "visual": "A blue chromosome and an amber chromosome stand side by side with matching locus positions. Their corresponding genes line up even when the allele labels at those loci differ.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "Homolog-versus-sister comparison bench",
+          "kind": "scientific part or process",
+          "visual": "A replication cradle can copy one chromosome into two joined sister chromatids, making the sister relationship physically different from the homologous pair on the left.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Place two homologous chromosomes side by side with the same gene loci aligned but allow different allele labels at corresponding loci; preserve them as chromosome partners rather than replicated copies of one chromosome."
+        },
+        {
+          "name": "Karyotype display wall",
+          "kind": "scientific part or process",
+          "visual": "A conventional chromosome display arranges chromosome images into matched groups using visible features such as size, centromere position, and banding pattern.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity tool",
+          "visual": "a narrow gold-edged ledger with four persistent fields labeled chromosome set, cell type, reproductive transition, and generation",
+          "job": "records only real biological state changes as the same chromosome information passes through the five registry locations; it never replaces a chromosome, gene, cell, or reproductive process"
+        }
+      ],
+      "continuity_object": "Imani’s gold generation ledger, which keeps four fields visible—chromosome set, cell type, reproductive transition, and generation—and is updated only when the actual biological state changes.",
+      "story_open": "The **Homolog Pair Vault** is colder and narrower than the intake hall. Its three stations are fixed in a single line. On your **left**, the blue chromosome and the amber chromosome stand upright in separate clamps, their gene loci aligned at matching heights. Directly **ahead**, a replication bench holds an empty X-shaped cradle. On your **right**, a wall-sized chromosome display waits in numbered rows. Imani places the gold generation ledger on the center bench and keeps the two chromosome colors unchanged. The security alarm above the vault door flashes SAME, SAME, SAME, even though the three displays represent different relationships.",
+      "story_paragraphs": [
+        "The **Homolog Pair Vault** is colder and narrower than the intake hall. Its three stations are fixed in a single line. On your **left**, the blue chromosome and the amber chromosome stand upright in separate clamps, their gene loci aligned at matching heights. Directly **ahead**, a replication bench holds an empty X-shaped cradle. On your **right**, a wall-sized chromosome display waits in numbered rows. Imani places the gold generation ledger on the center bench and keeps the two chromosome colors unchanged. The security alarm above the vault door flashes SAME, SAME, SAME, even though the three displays represent different relationships.",
+        "She begins with the pair on the left. The blue chromosome carries genes at the same corresponding loci as the amber chromosome. At one locus, however, the blue chromosome carries allele A while the amber chromosome carries allele a. Their structural organization is similar and their corresponding genes line up, yet they can carry **different alleles** at corresponding loci. These are **homologous chromosomes**. Homologs are chromosome partners with corresponding genes at the same loci. They are related by chromosome set and ancestry, not by being fresh copies of each other. Imani leaves the A and a tabs visible so the homolog relationship cannot be mistaken for genetic identity.",
+        "At the center bench she removes only the blue homolog and activates the replication cradle. The chromosome is copied, producing two blue chromatids joined together. They share the same chromosome origin and initially contain replicated copies of the same DNA sequence. These joined copies are **sister chromatids**. Imani places the replicated blue chromosome beside the original blue-and-amber homolog pair. The comparison is now impossible to miss. Homologous chromosomes are two corresponding chromosome partners. Sister chromatids are the replicated copies of one chromosome held together after DNA replication. Later crossing over can exchange segments between nonsister chromatids of homologs, so even sister chromatids need not remain sequence-identical across every exchanged region.",
+        "The right wall still shows a chaotic pile of chromosome images. Imani sorts them using visible properties such as size, centromere position, and banding pattern, placing corresponding chromosomes together in an organized display. The finished wall is a **karyotype**. It is a chromosome display used for analysis. The display can help compare chromosome number and visible structure, while the word karyotype does not mean homologous pair and does not mean sister chromatids. Those chromosome relationships existed before anyone arranged their images on the wall.",
+        "The alarm finally changes from SAME to IDENTITIES VERIFIED. Imani draws three symbols in the gold ledger. Two parallel chromosomes mean homologs. One duplicated chromosome means sisters. An arranged wall of chromosome images means karyotype. She then points through the vault’s exit window. The blue and amber homologs are being loaded into a body-cell model, while a second lane contains a reproductive cell with only one chromosome from each pair. The next registry station is already asking a different question. How many chromosome sets does each cell carry?"
+      ],
+      "story_close": "The vault stops confusing chromosome relationships, but the exit scanner still cannot distinguish two chromosome sets from one. Imani follows the tracked homologs to the Ploidy Counter.",
+      "object_ids": [
+        "U5-K-042",
+        "U5-K-043",
+        "U5-K-044"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-042",
+          "term": "Homologous chromosomes",
+          "story": "the blue and amber homologous chromosomes aligned by the same gene loci while carrying different allele labels",
+          "science": "Homologous chromosomes are chromosome partners with corresponding genes at the same loci and similar structural organization; they can carry different alleles and are distinct from sister chromatids.",
+          "exact_name": true,
+          "hint": "the blue and amber homologous chromosomes aligned by the same gene loci while carrying different allele labels",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U5-K-043",
+          "term": "Sister chromatids",
+          "story": "one blue chromosome replicated into two joined sister chromatids on the center bench",
+          "science": "Sister chromatids are replicated copies of one chromosome held together after DNA replication; crossing over can make sister chromatids no longer genetically identical.",
+          "exact_name": true,
+          "hint": "one blue chromosome replicated into two joined sister chromatids on the center bench",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-044",
+          "term": "Karyotype",
+          "story": "the right-side organized chromosome display arranged by chromosome features into a karyotype",
+          "science": "A karyotype is an organized display of chromosomes, commonly paired and arranged by features such as size, centromere position, and banding pattern.",
+          "exact_name": true,
+          "hint": "the right-side organized chromosome display arranged by chromosome features into a karyotype",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Homologous chromosomes",
+          "meaning": "Homologous chromosomes are chromosome partners with corresponding genes at the same loci and similar structural organization; they can carry different alleles and are distinct from sister chromatids.",
+          "image": "the blue and amber homologous chromosomes aligned by the same gene loci while carrying different allele labels"
+        },
+        {
+          "term": "Sister chromatids",
+          "meaning": "Sister chromatids are replicated copies of one chromosome held together after DNA replication; crossing over can make sister chromatids no longer genetically identical.",
+          "image": "one blue chromosome replicated into two joined sister chromatids on the center bench"
+        },
+        {
+          "term": "Karyotype",
+          "meaning": "A karyotype is an organized display of chromosomes, commonly paired and arranged by features such as size, centromere position, and banding pattern.",
+          "image": "the right-side organized chromosome display arranged by chromosome features into a karyotype"
+        }
+      ],
+      "misconception_guards": [
+        "Homologous chromosomes carry corresponding genes at the same loci but may carry different alleles; sister chromatids are replicated copies of one chromosome, not homologs.",
+        "Discrimination requirement: keep homologous chromosomes, sister chromatids physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Resolved science guard RF-U5-004: Homologous chromosomes carry corresponding genes/loci in similar order but can contain different alleles; distinguish homologs from sister chromatids.",
+        "Resolved science guard RF-U5-005: A karyotype is an organized display of chromosomes typically paired and arranged using size, centromere position, and banding/morphology; the exact arrangement is an analytical convention."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Homolog Pair Vault, reconstruct the fixed homologous chromosome pair → homolog-versus-sister comparison bench → karyotype display wall relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Homologous chromosomes",
+          "Sister chromatids",
+          "Karyotype"
+        ],
+        "redraw_test": "From memory, place homologous chromosome pair on the left, homolog-versus-sister comparison bench in the center, and karyotype display wall on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U5-K-042",
+      "checkpoint_prompt": "What relationship distinguishes homologous chromosomes from sister chromatids?",
+      "checkpoint_answer": "Homologs carry corresponding genes at the same loci and may carry different alleles; sister chromatids are replicated copies of one chromosome.",
+      "checkpoint_hint": "Picture the fixed left, center, and right chromosome structures and recall the relationship that changed at the center before naming it.",
+      "next_locus": "Ploidy Counter",
+      "causal_transition": "With homologs, sisters, and karyotype display separated, the registry can now count chromosome sets correctly; the tracked cells move to the Ploidy Counter."
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U5-L03",
+      "locus": "Ploidy Counter",
+      "title": "The Counter That Counts Sets, Not Shapes",
+      "scene_kicker": "Ploidy depends on chromosome sets. A duplicated chromosome can still belong to one set, so the counter must track the right quantity.",
+      "location_description": "the cell-entry counter sorting somatic cells, gametes, diploid sets, haploid sets, and typical human chromosome counts",
+      "scene_layout": {
+        "orientation": "Enter Ploidy Counter and stop at the cell-entry counter sorting somatic cells, gametes, diploid sets, haploid sets, and typical human chromosome counts. The left side is anchored by diploid somatic-cell lane, the working center is 2n ↔ n chromosome-set counter, and the right side is anchored by haploid gamete lane. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Diploid somatic-cell lane",
+            "symbol": "2n",
+            "description": "A body-cell model enters on the left carrying two chromosome sets. The blue and amber homologs remain visible as members of those two sets."
+          },
+          {
+            "position": "center",
+            "label": "Chromosome-set counter",
+            "symbol": "2n↔n",
+            "description": "A large mechanical counter changes the number of chromosome sets being tracked while preserving the meaning of a chromosome set and the identity of the chromosomes themselves."
+          },
+          {
+            "position": "right",
+            "label": "Haploid gamete lane",
+            "symbol": "n",
+            "description": "A reproductive-cell model exits on the right carrying one chromosome set and a clear marker showing that it can participate in fertilization."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "kind": "guide",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet showing one blue homolog and one amber homolog, and a narrow gold generation ledger",
+          "job": "Imani keeps chromosome identity, cell type, chromosome-set number, reproductive transition, and generation visible. She changes the biological model first and names the term only after its defining relationship can be seen."
+        },
+        {
+          "name": "Diploid somatic-cell lane",
+          "kind": "scientific part or process",
+          "visual": "A body-cell model enters on the left carrying two chromosome sets. The blue and amber homologs remain visible as members of those two sets.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "Chromosome-set counter",
+          "kind": "scientific part or process",
+          "visual": "A large mechanical counter changes the number of chromosome sets being tracked while preserving the meaning of a chromosome set and the identity of the chromosomes themselves.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Send a typical diploid somatic-cell model into the left lane with two chromosome sets and mark it 2n; keep homologous partners visible as the basis of the two-set designation."
+        },
+        {
+          "name": "Haploid gamete lane",
+          "kind": "scientific part or process",
+          "visual": "A reproductive-cell model exits on the right carrying one chromosome set and a clear marker showing that it can participate in fertilization.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity tool",
+          "visual": "a narrow gold-edged ledger with four persistent fields labeled chromosome set, cell type, reproductive transition, and generation",
+          "job": "records only real biological state changes as the same chromosome information passes through the five registry locations; it never replaces a chromosome, gene, cell, or reproductive process"
+        }
+      ],
+      "continuity_object": "Imani’s gold generation ledger, which keeps four fields visible—chromosome set, cell type, reproductive transition, and generation—and is updated only when the actual biological state changes.",
+      "story_open": "The corridor opens into the bright **Ploidy Counter**, built like a three-lane customs station for cells. On your **left**, a large body-cell model rolls into the diploid lane carrying the familiar blue and amber homologs together. Directly **ahead**, a mechanical display can flip between 2n and n while two trays beneath it hold chromosome sets. On your **right**, a smaller reproductive-cell model waits in the haploid lane with only one member from each homologous pair. The gold generation ledger lies across the counter, and Imani circles one field in the ledger. CHROMOSOME SET is the quantity that matters here.",
+      "story_paragraphs": [
+        "The corridor opens into the bright **Ploidy Counter**, built like a three-lane customs station for cells. On your **left**, a large body-cell model rolls into the diploid lane carrying the familiar blue and amber homologs together. Directly **ahead**, a mechanical display can flip between 2n and n while two trays beneath it hold chromosome sets. On your **right**, a smaller reproductive-cell model waits in the haploid lane with only one member from each homologous pair. The gold generation ledger lies across the counter, and Imani circles one field in the ledger. CHROMOSOME SET is the quantity that matters here.",
+        "The left cell passes under the scanner. It is a **somatic cell**, a non-gamete body cell. In a diploid organism, most somatic cells carry homologous chromosome pairs, so the blue chromosome and the amber homolog appear together. The counter clicks to **2n**. Imani reads the full label aloud as **diploid (2n)**. A cell or nucleus with two chromosome sets is diploid. Imani places one set marker beneath the blue-origin chromosomes and another beneath the amber-origin homologs. The designation describes sets, not whether each chromosome has been replicated into one chromatid or two. Ploidy and DNA amount are related in cell cycles, but they are not the same measurement.",
+        "She now moves the counter from 2n to n and transfers one chromosome from each homologous pair into the cell on the right. One complete chromosome set remains. Imani flips the center label to **haploid (n)**. A cell or nucleus with one chromosome set is haploid. The right-hand cell is also a **gamete**, a haploid reproductive cell capable of fusing with another gamete during fertilization. Imani keeps the two labels separate. Haploid describes chromosome-set number. Gamete describes a reproductive cell type. In the life cycles emphasized here, gametes are haploid, yet the concepts answer different questions.",
+        "A small panel titled **human diploid and haploid chromosome numbers** rises from the center counter. It shows a typical human somatic cell with **46 chromosomes**, written 2n = 46, and typical human sperm or egg cells with **23 chromosomes**, written n = 23. Imani uses the panel as a count check and then lowers it again. Forty-six and twenty-three are human chromosome numbers. Diploid and haploid are general biological concepts that apply according to chromosome sets in many organisms. The example also keeps sperm and egg in their proper role as common human gametes, without turning those particular gamete types into the definition of gamete.",
+        "The scanner runs one final test. It duplicates every chromosome in the left somatic-cell model without adding another homologous set. The chromosome models now look like joined sister chromatids, but the ploidy display remains 2n. Imani taps the unchanged set markers. Replication changes DNA content and chromatid structure; it does not automatically change the number of chromosome sets. That distinction will become essential when meiosis begins later in the unit.",
+        "The gate beyond the counter opens onto a forked transit hall. The diploid and haploid records are now correctly labeled, so the registry can finally ask how inheritance moves from one generation to another. One path begins from a single genetic source without gamete fusion. The other passes toward meiotic processes and a future fusion chamber. Imani closes the chromosome-set field in the ledger and walks to the split."
+      ],
+      "story_close": "With somatic cell, gamete, diploid, and haploid separated by their actual biological meanings, the registry can compare how genetic information travels through asexual and sexual reproduction. The route divides at the Reproduction Fork.",
+      "object_ids": [
+        "U5-K-045",
+        "U5-K-046",
+        "U5-K-047",
+        "U5-K-048",
+        "U5-K-049"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-045",
+          "term": "Somatic cell",
+          "story": "the left-lane non-gamete body cell carrying two homologous chromosome sets",
+          "science": "A somatic cell is a non-gamete body cell; in diploid organisms, most somatic cells contain homologous chromosome pairs.",
+          "exact_name": true,
+          "hint": "the left-lane non-gamete body cell carrying two homologous chromosome sets",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-046",
+          "term": "Diploid (2n)",
+          "story": "the center counter reading 2n while two chromosome sets remain visible",
+          "science": "Diploid describes a cell or nucleus with two chromosome sets.",
+          "exact_name": true,
+          "hint": "the center counter reading 2n while two chromosome sets remain visible",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U5-K-047",
+          "term": "Haploid (n)",
+          "story": "the center counter reading n while one chromosome set remains visible",
+          "science": "Haploid describes a cell or nucleus with one chromosome set.",
+          "exact_name": true,
+          "hint": "the center counter reading n while one chromosome set remains visible",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U5-K-048",
+          "term": "Gamete",
+          "story": "the right-lane haploid reproductive cell approaching the later fertilization chamber",
+          "science": "A gamete is a haploid reproductive cell that can fuse with another gamete during fertilization.",
+          "exact_name": true,
+          "hint": "the right-lane haploid reproductive cell approaching the later fertilization chamber",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-049",
+          "term": "Human diploid and haploid chromosome numbers",
+          "story": "the human count-check panel pairing 46 with a typical somatic cell and 23 with a typical sperm or egg cell",
+          "science": "Typical human somatic cells have 46 chromosomes (2n=46), and typical human sperm or egg cells have 23 chromosomes (n=23).",
+          "exact_name": true,
+          "hint": "the human count-check panel pairing 46 with a typical somatic cell and 23 with a typical sperm or egg cell",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Somatic cell",
+          "meaning": "A somatic cell is a non-gamete body cell; in diploid organisms, most somatic cells contain homologous chromosome pairs.",
+          "image": "the left-lane non-gamete body cell carrying two homologous chromosome sets"
+        },
+        {
+          "term": "Diploid (2n)",
+          "meaning": "Diploid describes a cell or nucleus with two chromosome sets.",
+          "image": "the center counter reading 2n while two chromosome sets remain visible"
+        },
+        {
+          "term": "Haploid (n)",
+          "meaning": "Haploid describes a cell or nucleus with one chromosome set.",
+          "image": "the center counter reading n while one chromosome set remains visible"
+        },
+        {
+          "term": "Gamete",
+          "meaning": "A gamete is a haploid reproductive cell that can fuse with another gamete during fertilization.",
+          "image": "the right-lane haploid reproductive cell approaching the later fertilization chamber"
+        },
+        {
+          "term": "Human diploid and haploid chromosome numbers",
+          "meaning": "Typical human somatic cells have 46 chromosomes (2n=46), and typical human sperm or egg cells have 23 chromosomes (n=23).",
+          "image": "the human count-check panel pairing 46 with a typical somatic cell and 23 with a typical sperm or egg cell"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep somatic cell, gamete physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Discrimination requirement: keep diploid, haploid physically and verbally distinct; do not let one label stand in for the full contrast set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Ploidy Counter, reconstruct the fixed diploid somatic-cell lane → 2n ↔ n chromosome-set counter → haploid gamete lane relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Somatic cell",
+          "Diploid (2n)",
+          "Haploid (n)",
+          "Gamete",
+          "Human diploid and haploid chromosome numbers"
+        ],
+        "redraw_test": "From memory, place diploid somatic-cell lane on the left, 2n ↔ n chromosome-set counter in the center, and haploid gamete lane on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Reproduction Fork",
+      "causal_transition": "Ploidy and cell type are now stable, which makes it possible to compare how chromosome information is transmitted with or without gamete fusion at the Reproduction Fork."
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U5-L04",
+      "locus": "Reproduction Fork",
+      "title": "The Fork With Two Routes Into the Future",
+      "scene_kicker": "Both paths transmit biological information, but they use different reproductive mechanisms and create different patterns of genetic similarity.",
+      "location_description": "the fork separating asexual clonal descent from sexual reproduction involving meiosis and gamete fusion",
+      "scene_layout": {
+        "orientation": "Enter Reproduction Fork and stop at the fork separating asexual clonal descent from sexual reproduction involving meiosis and gamete fusion. The left side is anchored by asexual route and clone line, the working center is reproduction comparison fork, and the right side is anchored by sexual reproduction route. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Asexual route and clone line",
+            "symbol": "↘",
+            "description": "A single genetic source enters the left route without gamete fusion and produces a line of very similar descendants whose records can still accumulate genetic changes over time."
+          },
+          {
+            "position": "center",
+            "label": "Reproduction comparison fork",
+            "symbol": "Y",
+            "description": "The center floor splits one inheritance ledger into two routes so the presence or absence of meiotic processes and gamete fusion can be compared without changing the meaning of heredity."
+          },
+          {
+            "position": "right",
+            "label": "Sexual reproduction route",
+            "symbol": "↗",
+            "description": "The right route passes chromosome records through meiotic processes and gamete fusion, generating new combinations of parental alleles without requiring two separate parent organisms in every biological system."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "kind": "guide",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet showing one blue homolog and one amber homolog, and a narrow gold generation ledger",
+          "job": "Imani keeps chromosome identity, cell type, chromosome-set number, reproductive transition, and generation visible. She changes the biological model first and names the term only after its defining relationship can be seen."
+        },
+        {
+          "name": "Asexual route and clone line",
+          "kind": "scientific part or process",
+          "visual": "A single genetic source enters the left route without gamete fusion and produces a line of very similar descendants whose records can still accumulate genetic changes over time.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "Reproduction comparison fork",
+          "kind": "scientific part or process",
+          "visual": "The center floor splits one inheritance ledger into two routes so the presence or absence of meiotic processes and gamete fusion can be compared without changing the meaning of heredity.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Run an asexual route from one genetic source without gamete fusion and produce a clone line whose members are genetically very similar while still allowing mutation or other genetic change to introduce differences over time."
+        },
+        {
+          "name": "Sexual reproduction route",
+          "kind": "scientific part or process",
+          "visual": "The right route passes chromosome records through meiotic processes and gamete fusion, generating new combinations of parental alleles without requiring two separate parent organisms in every biological system.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity tool",
+          "visual": "a narrow gold-edged ledger with four persistent fields labeled chromosome set, cell type, reproductive transition, and generation",
+          "job": "records only real biological state changes as the same chromosome information passes through the five registry locations; it never replaces a chromosome, gene, cell, or reproductive process"
+        }
+      ],
+      "continuity_object": "Imani’s gold generation ledger, which keeps four fields visible—chromosome set, cell type, reproductive transition, and generation—and is updated only when the actual biological state changes.",
+      "story_open": "The **Reproduction Fork** is a broad hall shaped like a Y. On your **left**, a single parent record feeds into a quiet conveyor that branches into a line of descendant files. Directly **ahead**, a raised comparison platform keeps both routes visible at once. On your **right**, chromosome records pass toward a sign marked MEIOTIC PROCESSES and then toward a distant gamete-fusion chamber. The gold generation ledger hangs from the center railing. Imani keeps the same tracked chromosome information on both sides so the comparison concerns reproductive mechanism rather than a change in what heredity means.",
+      "story_paragraphs": [
+        "The **Reproduction Fork** is a broad hall shaped like a Y. On your **left**, a single parent record feeds into a quiet conveyor that branches into a line of descendant files. Directly **ahead**, a raised comparison platform keeps both routes visible at once. On your **right**, chromosome records pass toward a sign marked MEIOTIC PROCESSES and then toward a distant gamete-fusion chamber. The gold generation ledger hangs from the center railing. Imani keeps the same tracked chromosome information on both sides so the comparison concerns reproductive mechanism rather than a change in what heredity means.",
+        "She starts the left conveyor from one genetic source. No gamete fusion occurs. A descendant record appears, then another, then another, each carrying a chromosome record very similar to the original. This route is **asexual reproduction**. It involves one genetic source without gamete fusion and commonly produces clonal descendants that are genetically very similar to the parent. Imani leaves a small change window open on every descendant file. Mutation and other genetic changes can arise over time, and environmental conditions can also make genetically similar organisms look or function differently. The route therefore never receives a stamp that says PERFECTLY IDENTICAL FOREVER.",
+        "The descendants on the left are labeled a **clone** line because they derive from one ancestral cell or organism through asexual processes and are genetically very similar. Imani pulls one record from the line and adds a newly arisen genetic variant. It remains part of the clonal lineage even though its genome is no longer literally identical to the founding record. The word clone describes descent and strong genetic similarity in this context. It does not require permanent molecular identity across every descendant and every generation.",
+        "She activates the right route next. Chromosome records move toward meiotic processes, generating haploid gametes that can later fuse. When gametes combine, alleles from the contributing chromosome sets enter a new combination. This is **sexual reproduction**. Sexual reproduction includes meiosis or meiotic processes and fusion of gametes, producing new combinations of parental alleles. Imani deliberately opens a side gate labeled SELF-FERTILIZATION. A single organism can contribute gametes in some sexual life cycles. The defining biological mechanism therefore cannot be reduced to a rule that two separate parent organisms are always required.",
+        "From the center platform, the contrast becomes stable enough to redraw. The left route begins with one genetic source and proceeds without gamete fusion, often producing highly similar clonal descendants. The right route uses meiotic processes and gamete fusion, creating new combinations of alleles. Both transmit inherited information. Their mechanisms differ, and those mechanisms influence the genetic relationships among descendants.",
+        "A warning light appears at the end of the sexual route. The gametes have reached the next chamber, but their ledger entries still read n and n. The registry cannot close the generation until it knows what happens when those haploid cells fuse. Imani follows their chromosome markers through the right-hand door, and the two arms of the Y curve toward a circular room beyond."
+      ],
+      "story_close": "The sexual route ends with two haploid gametes still separated. Their chromosome sets must be combined before the next generation can begin, so Imani leads you into the Life-Cycle Fusion Loop.",
+      "object_ids": [
+        "U5-K-039",
+        "U5-K-040",
+        "U5-K-041"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-039",
+          "term": "Asexual reproduction",
+          "story": "the left reproduction route beginning from one genetic source and proceeding without gamete fusion",
+          "science": "Asexual reproduction involves one genetic source without gamete fusion and usually produces clonal descendants that are genetically very similar to the parent, barring genetic change.",
+          "exact_name": true,
+          "hint": "the left reproduction route beginning from one genetic source and proceeding without gamete fusion",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-040",
+          "term": "Clone",
+          "story": "the line of genetically very similar descendants whose records remain open to later genetic change",
+          "science": "A clone is a group of genetically very similar cells or organisms derived from one ancestral cell or organism by asexual processes; mutation can create genetic differences among clone members.",
+          "exact_name": true,
+          "hint": "the line of genetically very similar descendants whose records remain open to later genetic change",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-041",
+          "term": "Sexual reproduction",
+          "story": "the right reproduction route passing through meiotic processes and gamete fusion to produce new allele combinations",
+          "science": "Sexual reproduction includes meiosis or meiotic processes and fusion of gametes, producing new combinations of parental alleles; it does not universally require two separate parents.",
+          "exact_name": true,
+          "hint": "the right reproduction route passing through meiotic processes and gamete fusion to produce new allele combinations",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Asexual reproduction",
+          "meaning": "Asexual reproduction involves one genetic source without gamete fusion and usually produces clonal descendants that are genetically very similar to the parent, barring genetic change.",
+          "image": "the left reproduction route beginning from one genetic source and proceeding without gamete fusion"
+        },
+        {
+          "term": "Clone",
+          "meaning": "A clone is a group of genetically very similar cells or organisms derived from one ancestral cell or organism by asexual processes; mutation can create genetic differences among clone members.",
+          "image": "the line of genetically very similar descendants whose records remain open to later genetic change"
+        },
+        {
+          "term": "Sexual reproduction",
+          "meaning": "Sexual reproduction includes meiosis or meiotic processes and fusion of gametes, producing new combinations of parental alleles; it does not universally require two separate parents.",
+          "image": "the right reproduction route passing through meiotic processes and gamete fusion to produce new allele combinations"
+        }
+      ],
+      "misconception_guards": [
+        "Do not encode asexual descendants as literally identical forever or sexual reproduction as requiring two separate parents.",
+        "Discrimination requirement: keep asexual reproduction, sexual reproduction physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Resolved science guard RF-U5-002: Asexual reproduction often yields genetically very similar clonal descendants, but mutation, mitotic recombination, genome rearrangements, and environmental effects can create genetic or phenotypic variation. Do not encode “exact” or mutation-only as universal."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Reproduction Fork, reconstruct the fixed asexual route and clone line → reproduction comparison fork → sexual reproduction route relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Asexual reproduction",
+          "Clone",
+          "Sexual reproduction"
+        ],
+        "redraw_test": "From memory, place asexual route and clone line on the left, reproduction comparison fork in the center, and sexual reproduction route on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Life-Cycle Fusion Loop",
+      "causal_transition": "The reproduction routes are distinct, but the sexual route still needs a chromosome-set transition that joins gametes and begins a new generation, leading directly to the Life-Cycle Fusion Loop."
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U5-L05",
+      "locus": "Life-Cycle Fusion Loop",
+      "title": "The Loop That Restores the Chromosome Set",
+      "scene_kicker": "The generation closes when haploid gametes fuse, their chromosome sets combine, and a diploid zygote begins the next developmental sequence.",
+      "location_description": "the circular life-cycle display where haploid gametes fuse at fertilization to form a diploid zygote and continue the next generation",
+      "scene_layout": {
+        "orientation": "Enter Life-Cycle Fusion Loop and stop at the circular life-cycle display where haploid gametes fuse at fertilization to form a diploid zygote and continue the next generation. The left side is anchored by haploid gamete entry, the working center is fertilization / zygote fusion point, and the right side is anchored by diploid life-cycle continuation. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Haploid gamete entry",
+            "symbol": "n+n",
+            "description": "Two haploid gamete models enter from the left with one chromosome set each. Their chromosome identities remain visible as they approach the center chamber."
+          },
+          {
+            "position": "center",
+            "label": "Fertilization and zygote fusion chamber",
+            "symbol": "●",
+            "description": "The two gamete membranes meet at the center. Their chromosome sets are brought into the same new cell, and the gold ledger changes from two haploid entries to one diploid zygote entry."
+          },
+          {
+            "position": "right",
+            "label": "Diploid life-cycle continuation",
+            "symbol": "2n→",
+            "description": "The diploid zygote exits toward development and the next generation, while a circular return path keeps the broader life cycle visible without imposing one universal organismal life-cycle pattern."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "kind": "guide",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet showing one blue homolog and one amber homolog, and a narrow gold generation ledger",
+          "job": "Imani keeps chromosome identity, cell type, chromosome-set number, reproductive transition, and generation visible. She changes the biological model first and names the term only after its defining relationship can be seen."
+        },
+        {
+          "name": "Haploid gamete entry",
+          "kind": "scientific part or process",
+          "visual": "Two haploid gamete models enter from the left with one chromosome set each. Their chromosome identities remain visible as they approach the center chamber.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "Fertilization and zygote fusion chamber",
+          "kind": "scientific part or process",
+          "visual": "The two gamete membranes meet at the center. Their chromosome sets are brought into the same new cell, and the gold ledger changes from two haploid entries to one diploid zygote entry.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Bring two haploid gametes into the fusion point and combine their chromosome sets during fertilization, showing restoration of diploidy in the standard diploid sexual life-cycle model."
+        },
+        {
+          "name": "Diploid life-cycle continuation",
+          "kind": "scientific part or process",
+          "visual": "The diploid zygote exits toward development and the next generation, while a circular return path keeps the broader life cycle visible without imposing one universal organismal life-cycle pattern.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity tool",
+          "visual": "a narrow gold-edged ledger with four persistent fields labeled chromosome set, cell type, reproductive transition, and generation",
+          "job": "records only real biological state changes as the same chromosome information passes through the five registry locations; it never replaces a chromosome, gene, cell, or reproductive process"
+        }
+      ],
+      "continuity_object": "Imani’s gold generation ledger, which keeps four fields visible—chromosome set, cell type, reproductive transition, and generation—and is updated only when the actual biological state changes.",
+      "story_open": "The final doors open into the circular **Life-Cycle Fusion Loop**. The room is arranged like a ring so you can see where one generation hands its chromosome information to the next. On your **left**, two haploid gamete models enter on separate rails, each marked n and each carrying one chromosome set. Directly **ahead**, the rails meet inside a transparent fusion chamber. On your **right**, a new cell exits onto a broad 2n developmental track that curves around the room and eventually points toward the reproductive stages of another generation. Imani clips the gold generation ledger beside the chamber so the chromosome-set change can be watched as it happens.",
+      "story_paragraphs": [
+        "The final doors open into the circular **Life-Cycle Fusion Loop**. The room is arranged like a ring so you can see where one generation hands its chromosome information to the next. On your **left**, two haploid gamete models enter on separate rails, each marked n and each carrying one chromosome set. Directly **ahead**, the rails meet inside a transparent fusion chamber. On your **right**, a new cell exits onto a broad 2n developmental track that curves around the room and eventually points toward the reproductive stages of another generation. Imani clips the gold generation ledger beside the chamber so the chromosome-set change can be watched as it happens.",
+        "The two gametes enter the center chamber. Their membranes meet and the chromosome sets that had been separated between the two cells are brought into one new cell. The ledger changes from n + n to 2n. This process is **fertilization**, the fusion of haploid gametes. Sperm and egg are one common example of gametes that fuse in anisogamous organisms, including humans, while the general biological concept is gamete fusion. The chamber summarizes the relationship in one line, **fertilization restores diploidy and creates allele combinations**. In the standard diploid sexual life-cycle model, fertilization restores the diploid chromosome number and creates new allele combinations because the new cell contains chromosome contributions from the two gametes.",
+        "A gold light appears around the immediate product of fusion. Imani labels that cell a **zygote**. A zygote is the cell produced by gamete fusion, and in the standard diploid sexual life cycle shown here it is diploid. She moves the zygote onto the right-hand track before anything else is allowed to happen. The distinction matters. Fertilization is the fusion event. Zygote names the cell produced by that event. Sexual reproduction includes a broader sequence of biological processes and cannot be reduced to the instant of fertilization alone.",
+        "The right-hand track now carries the zygote toward development. As the circular wall display advances, it shows reproductive and developmental stages leading from one generation toward the next. This sequence is a **life cycle**. Imani leaves several side routes visible beyond the main ring to show that sexual life cycles vary widely among organisms. Some life cycles emphasize different multicellular stages, and the registry does not force them into one universal diagram. The relationship you need to preserve here is narrower and more durable. Haploid gametes can fuse, their chromosome sets combine, and the resulting cell can continue the next generation’s developmental sequence.",
+        "Imani turns the ledger back toward the left entrance and traces the completed journey with one gloved finger. Heredity carried information across generations. Genes occupied loci on chromosomes and traveled with those chromosomes. Homologous chromosomes were separated from sister chromatids. Diploid and haploid described chromosome-set number, while somatic cell and gamete described cell types. Asexual and sexual reproduction followed different routes. Finally, fertilization joined haploid gametes and produced a diploid zygote. The five rooms now form one continuous bookkeeping system rather than five disconnected vocabulary displays.",
+        "Two chromosome icons appear on Imani’s tablet, one blue and one amber. They are now properly labeled homologs, their loci are stable, and the ledger can account for 2n and n without confusion. The registry’s inner doors unlock. Beyond them lies a much larger transit hall where those same chromosomes will replicate, pair, exchange segments, and separate. Imani does not replace them with a fresh diagram. She carries the same blue and amber identities forward, ready for the next journey through meiosis."
+      ],
+      "story_close": "Journey 1 closes with one reconstructable inheritance loop. Genes ride on chromosomes, chromosome relationships and ploidy are distinct, reproductive routes are separated, and fertilization combines haploid chromosome sets in a diploid zygote. The same blue and amber homologs are now ready to enter Meiosis Transit Hall.",
+      "object_ids": [
+        "U5-K-015",
+        "U5-K-052",
+        "U5-K-053",
+        "U5-K-054"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-015",
+          "term": "Fertilization restores diploidy and creates allele combinations",
+          "story": "the two haploid chromosome sets entering one zygote and restoring the diploid state while combining alleles",
+          "science": "In most cases, fertilization fuses two haploid gametes, restores the diploid chromosome number, and creates new combinations of alleles in the zygote.",
+          "exact_name": true,
+          "hint": "the two haploid chromosome sets entering one zygote and restoring the diploid state while combining alleles",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-052",
+          "term": "Life cycle",
+          "story": "the circular generation route carrying reproductive and developmental stages from one generation toward the next",
+          "science": "A life cycle is the sequence of reproductive and developmental stages from one generation to the next; sexual life cycles vary widely among organisms.",
+          "exact_name": true,
+          "hint": "the circular generation route carrying reproductive and developmental stages from one generation toward the next",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-053",
+          "term": "Fertilization",
+          "story": "the central fusion event where two haploid gametes combine chromosome sets",
+          "science": "Fertilization is the fusion of haploid gametes, forming a cell with a combined chromosome set; sperm and egg are one common biological example.",
+          "exact_name": true,
+          "hint": "the central fusion event where two haploid gametes combine chromosome sets",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-054",
+          "term": "Zygote",
+          "story": "the new diploid cell that leaves the fusion chamber immediately after gamete fusion",
+          "science": "A zygote is the cell produced by gamete fusion; in the standard diploid sexual life cycle it is diploid.",
+          "exact_name": true,
+          "hint": "the new diploid cell that leaves the fusion chamber immediately after gamete fusion",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Fertilization restores diploidy and creates allele combinations",
+          "meaning": "In most cases, fertilization fuses two haploid gametes, restores the diploid chromosome number, and creates new combinations of alleles in the zygote.",
+          "image": "the two haploid chromosome sets entering one zygote and restoring the diploid state while combining alleles"
+        },
+        {
+          "term": "Life cycle",
+          "meaning": "A life cycle is the sequence of reproductive and developmental stages from one generation to the next; sexual life cycles vary widely among organisms.",
+          "image": "the circular generation route carrying reproductive and developmental stages from one generation toward the next"
+        },
+        {
+          "term": "Fertilization",
+          "meaning": "Fertilization is the fusion of haploid gametes, forming a cell with a combined chromosome set; sperm and egg are one common biological example.",
+          "image": "the central fusion event where two haploid gametes combine chromosome sets"
+        },
+        {
+          "term": "Zygote",
+          "meaning": "A zygote is the cell produced by gamete fusion; in the standard diploid sexual life cycle it is diploid.",
+          "image": "the new diploid cell that leaves the fusion chamber immediately after gamete fusion"
+        }
+      ],
+      "misconception_guards": [
+        "Resolved science guard RF-U5-007: Sexual life cycles vary. AP requires chromosome transmission and excludes memorization of detailed plant/animal life cycles; do not encode a universal diploid-dominant life cycle.",
+        "Resolved science guard RF-U5-008: Use fusion of haploid gametes as the general process; sperm and egg are appropriate examples for anisogamous organisms, including humans."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Life-Cycle Fusion Loop, reconstruct the fixed haploid gamete entry → fertilization / zygote fusion point → diploid life-cycle continuation relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Fertilization restores diploidy and creates allele combinations",
+          "Life cycle",
+          "Fertilization",
+          "Zygote"
+        ],
+        "redraw_test": "From memory, place haploid gamete entry on the left, fertilization / zygote fusion point in the center, and diploid life-cycle continuation on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U5-K-053",
+      "checkpoint_prompt": "What process fuses haploid gametes and usually restores diploidy in the standard diploid life cycle?",
+      "checkpoint_answer": "Fertilization.",
+      "checkpoint_hint": "Picture the fixed left, center, and right chromosome structures and recall the relationship that changed at the center before naming it.",
+      "next_locus": null,
+      "causal_transition": "Journey 1 closes after the learner can reconstruct genes on chromosomes, homolog/sister identity, ploidy, reproductive routes, and fertilization as one coherent inheritance registry."
+    }
+  ],
+  "narrative_design": "U5-F4A-NARRATIVE-1.0"
+}

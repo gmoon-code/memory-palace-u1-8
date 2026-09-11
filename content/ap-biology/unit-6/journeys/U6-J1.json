@@ -1,0 +1,1722 @@
+{
+  "palace_id": "U6-J1",
+  "unit_id": "unit-6",
+  "palace_name": "Genome Archive and Replication Works",
+  "story_title": "The Archive That Could Not Make a Copy",
+  "tagline": "One tagged DNA molecule has been cleared as hereditary information, but the replication works will not certify a copy until its chromosome form, base geometry, replication model, directional machinery, repair, and chromosome ends all agree.",
+  "guide": {
+    "name": "Dr. Sora Han",
+    "role": "molecular-information systems director",
+    "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+    "story_job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+  },
+  "premise": "The Genome Archive has received a blue-and-gold DNA molecule for long-term hereditary storage, yet the attached replication works refuse to copy it. The archive records disagree about chromosome form, extra-chromosomal plasmids are mixed with the main chromosome, base classes are being confused with pairing partners, and the copying machinery has lost the strand directions that determine how replication can proceed. Dr. Sora Han must carry the same tagged duplex through the archive and replication works, resolving each physical inconsistency before the next machine can activate.",
+  "mission": "Follow Dr. Sora Han through twelve connected locations. Keep the same parental DNA strands, 5′/3′ arrows, and copper origin tag visible from the hereditary-information registry through semiconservative replication, fork opening, primer-dependent synthesis, leading/lagging geometry, fragment joining, repair, and chromosome-end maintenance.",
+  "finale": "The archive certifies two semiconservative daughter DNA molecules only after every step remains physically consistent with the original molecule. One parental strand persists in each daughter duplex, all new DNA was synthesized 5′→3′, the lagging strand was completed and repaired, and telomeres remain chromosome-end DNA distinct from telomerase. The same DNA information can now leave the copying works and enter the later RNA-expression route without losing its molecular history.",
+  "estimated_minutes": 34,
+  "scene_count": 12,
+  "checkpoint_count": 3,
+  "student_release": "DEVELOPER_PREVIEW_F4A",
+  "preview_release": true,
+  "narrative_design": "U6-F4A-NARRATIVE-1.0",
+  "learner_rule": "Read or listen and place yourself in the room before following the biological action. The same DNA molecule persists across all twelve locations. Exact terms are attached to structures and mechanisms after their defining feature is visible. Optional Quick Recall appears only three times.",
+  "route_orientation": "This is one continuous twelve-location route through the Genome Archive and Replication Works. Enter at Hereditary Information Intake, move through chromosome and plasmid storage, cross the base-class table and antiparallel bridge, pass the hereditary-continuity and replication-model gates, then follow the tagged origin through the fork, primer dock, leading/lagging split, repair bench, and final chromosome-end dock. The same blue-and-gold parental strands, 5′/3′ arrowheads, and copper origin tag remain reconstructable throughout.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Hereditary Information Intake",
+      "short": "Information",
+      "floor": "Archive entrance",
+      "symbol": "DNA"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Chromosome Storage Gallery",
+      "short": "Chromosomes",
+      "floor": "Storage gallery",
+      "symbol": "○│"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Plasmid Ring Vault",
+      "short": "Plasmids",
+      "floor": "Ring vault",
+      "symbol": "◯"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Base-Class Reading Table",
+      "short": "Bases",
+      "floor": "Reading room",
+      "symbol": "1/2"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Antiparallel Pairing Bridge",
+      "short": "Pairing",
+      "floor": "Bridge",
+      "symbol": "5′⇅3′"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Replication Continuity Gate",
+      "short": "Purpose",
+      "floor": "Copying gate",
+      "symbol": "→→"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Replication Model Test Chamber",
+      "short": "Evidence",
+      "floor": "Model chamber",
+      "symbol": "½"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Origin and Fork Launch",
+      "short": "Fork",
+      "floor": "Launch deck",
+      "symbol": "Y"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Primer–Polymerase Dock",
+      "short": "Primer",
+      "floor": "Synthesis dock",
+      "symbol": "3′+"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Leading–Lagging Split Track",
+      "short": "Strands",
+      "floor": "Split track",
+      "symbol": "⇉"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Fragment Joining and Repair Bench",
+      "short": "Repair",
+      "floor": "Repair bench",
+      "symbol": "⌁"
+    },
+    {
+      "scene_index": 11,
+      "locus": "Chromosome-End Dock",
+      "short": "Ends",
+      "floor": "End dock",
+      "symbol": "▥"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U6-L01",
+      "locus": "Hereditary Information Intake",
+      "title": "The Archive Refuses to Copy an Unverified Molecule",
+      "scene_kicker": "Before the copying works can start, the archive must establish what molecule carries hereditary information and what evidence constrains its structure.",
+      "location_description": "the archive intake where DNA and RNA are filed as hereditary information while the discovery evidence remains contextual rather than becoming the main memorization target",
+      "scene_layout": {
+        "orientation": "Enter Hereditary Information Intake and stop at the archive intake where DNA and RNA are filed as hereditary information while the discovery evidence remains contextual rather than becoming the main memorization target. The left side is anchored by Franklin / Chargaff evidence panel, the working center is DNA/RNA hereditary-information registry, and the right side is anchored by historical model-building context. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Franklin and Chargaff evidence wall",
+            "symbol": "✧",
+            "description": "A black diffraction panel and a base-composition table occupy the left wall. They remain evidence about DNA structure rather than becoming substitutes for the DNA molecule itself."
+          },
+          {
+            "position": "center",
+            "label": "Hereditary-information registry",
+            "symbol": "DNA/RNA",
+            "description": "A blue-and-gold DNA duplex rests in a transparent registry cradle beside a smaller RNA record. The tagged duplex will remain the journey’s continuity object."
+          },
+          {
+            "position": "right",
+            "label": "Model-building case",
+            "symbol": "⌬",
+            "description": "A glass case on the right contains a double-helix model assembled from structural constraints. It records how evidence can constrain a molecular model without turning the history into the main mnemonic target."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Franklin and Chargaff evidence wall",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A black diffraction panel and a base-composition table occupy the left wall. They remain evidence about DNA structure rather than becoming substitutes for the DNA molecule itself.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Hereditary-information registry",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A blue-and-gold DNA duplex rests in a transparent registry cradle beside a smaller RNA record. The tagged duplex will remain the journey’s continuity object.",
+          "job": "Execute the defining action sequence: File DNA and RNA under hereditary information only after showing that genetic information can be carried by DNA and, in some cases, RNA."
+        },
+        {
+          "name": "Model-building case",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A glass case on the right contains a double-helix model assembled from structural constraints. It records how evidence can constrain a molecular model without turning the history into the main mnemonic target.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The entrance to the **Genome Archive and Replication Works** feels less like a museum than a secure records facility built around one molecular object. The room is long and rectangular. On your **left**, a black diffraction panel hangs above a base-composition table, its pale X-shaped pattern and columns of A, T, G, and C values lit from below. Directly **ahead**, in the center of the room, a transparent cradle holds a blue-and-gold DNA double helix. Small arrowheads mark every 5′ and 3′ end, and one copper tag marks a single future replication origin. On your **right**, a glass model-building case contains a double-helix framework assembled from measured constraints. Dr. Sora Han stands beside the center cradle in a dark-cobalt coat, one hand on a transparent 5′→3′ compass tablet and the other on a narrow copper ledger. The copying doors behind the cradle are locked. A red line across them reads: INFORMATION CARRIER NOT VERIFIED.",
+      "story_paragraphs": [
+        "The entrance to the **Genome Archive and Replication Works** feels less like a museum than a secure records facility built around one molecular object. The room is long and rectangular. On your **left**, a black diffraction panel hangs above a base-composition table, its pale X-shaped pattern and columns of A, T, G, and C values lit from below. Directly **ahead**, in the center of the room, a transparent cradle holds a blue-and-gold DNA double helix. Small arrowheads mark every 5′ and 3′ end, and one copper tag marks a single future replication origin. On your **right**, a glass model-building case contains a double-helix framework assembled from measured constraints. Dr. Sora Han stands beside the center cradle in a dark-cobalt coat, one hand on a transparent 5′→3′ compass tablet and the other on a narrow copper ledger. The copying doors behind the cradle are locked. A red line across them reads: INFORMATION CARRIER NOT VERIFIED.",
+        "Sora does not begin with a name. She places a second, smaller nucleic-acid record beside the DNA cradle and asks what the archive must actually preserve from one biological generation to the next. The answer is information encoded in nucleic-acid sequence. In cells, that hereditary information is stored in DNA; in some biological systems, including some viruses, RNA can serve as the hereditary material. Only after the two records are physically filed under the same function does Sora write **DNA/RNA as hereditary information** in the copper ledger: genetic information is stored in and passed to subsequent generations through DNA molecules and, in some cases, RNA molecules. The wording matters. DNA is the usual cellular hereditary material, while the existence of RNA genomes prevents the broader statement from being made absolute.",
+        "The left wall now brightens. Sora points first to the diffraction panel. The image is not treated as a magic photograph that contains a finished double helix. **Rosalind Franklin and X-ray diffraction** belong here as evidence: Franklin’s diffraction work supplied critical structural constraints about DNA, including its helical organization and dimensions. The panel gives the model-building case on the right something it must obey. Beside it, the composition table shows another constraint: the measured amounts of particular bases in double-stranded DNA follow relationships that the final model will have to explain. Sora keeps the names on a small brass plaque rather than turning the people into cartoon stand-ins for DNA. Their role in this room is evidentiary.",
+        "She crosses to the right-hand case and rotates the physical model. The base pairs fit inside; the sugar-phosphate backbones remain outside. The model is a synthesis of constraints, not the product of one isolated clue. Sora labels this contextual panel **Watson–Crick model-building history**. Watson and Crick constructed a double-helix model by integrating multiple lines of evidence, including base-composition relationships and X-ray diffraction evidence. The case lights only when the model is compatible with what the left wall already showed. That makes the historical sequence useful without confusing the act of model building with the molecule’s biological function.",
+        "Now Sora returns to the center cradle. She closes the glass around the blue-and-gold duplex and slides its registry card into the copying system. The red lock changes to amber. The archive has established that a physical nucleic-acid molecule can store hereditary information, but the machine still refuses to copy it. A message appears beneath the duplex: STORAGE FORM UNKNOWN. The same DNA sequence could be packaged as different chromosome architectures, and a copier that cannot distinguish a large chromosome from a small extra-chromosomal circle will misroute the material before replication even begins.",
+        "The floor rail activates under the cradle. The blue-and-gold DNA molecule remains tagged and visible as it glides through a wide door into the next gallery. Sora walks beside it, leaving the diffraction and model-building panels behind. Nothing historical follows you. What follows is the molecule itself, still carrying the same 5′/3′ arrows and copper origin tag. The next room is built to answer a more physical question: what form does this hereditary DNA take when a cell stores it as a chromosome?"
+      ],
+      "story_close": "The floor rail activates under the cradle. The blue-and-gold DNA molecule remains tagged and visible as it glides through a wide door into the next gallery. Sora walks beside it, leaving the diffraction and model-building panels behind. Nothing historical follows you. What follows is the molecule itself, still carrying the same 5′/3′ arrows and copper origin tag. The next room is built to answer a more physical question: what form does this hereditary DNA take when a cell stores it as a chromosome?",
+      "object_ids": [
+        "U6-K-001",
+        "U6-K-090",
+        "U6-K-093"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-001",
+          "term": "DNA/RNA as hereditary information",
+          "story": "the center registry filing both the tagged DNA duplex and an RNA record under hereditary information",
+          "science": "Genetic information is stored in and passed to subsequent generations through DNA molecules and, in some cases, RNA molecules.",
+          "exact_name": true,
+          "hint": "the center registry filing both the tagged DNA duplex and an RNA record under hereditary information",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-090",
+          "term": "Rosalind Franklin and X-ray diffraction",
+          "story": "the left diffraction panel constraining the shape and dimensions of the DNA model",
+          "science": "Rosalind Franklin’s X-ray diffraction work provided critical structural evidence about DNA, including its helical organization and dimensions.",
+          "exact_name": false,
+          "hint": "the left diffraction panel constraining the shape and dimensions of the DNA model",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-093",
+          "term": "Watson–Crick model-building history",
+          "story": "the right model case integrating diffraction and base-composition constraints into a double helix",
+          "science": "Watson and Crick constructed a double-helix model by integrating multiple lines of evidence, including base-composition rules and X-ray diffraction evidence.",
+          "exact_name": false,
+          "hint": "the right model case integrating diffraction and base-composition constraints into a double helix",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-004: Use “typically” for cellular RNA/DNA structure. RNA often folds into paired regions, and some viral genomes depart from the usual cellular patterns.",
+        "Resolved F1 guard RF-U6-001: Preserve the classroom wording in the raw ledger. Canonically describe Franklin’s X-ray diffraction work as providing critical evidence for DNA’s helical structure and dimensions; do not imply she merely supplied a picture used by others.",
+        "Resolved F1 guard RF-U6-002: Retain the historical example as teacher enrichment, while avoiding an oversimplified discovery narrative. Their model-building incorporated multiple lines of evidence, including Franklin’s diffraction data and Chargaff’s composition rules.",
+        "Discrimination requirement U6-D01: keep DNA/RNA as hereditary information, Typical RNA versus DNA architecture, DNA antiparallel structural review, 5′ and 3′ end chemistry review physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Chromosome Storage Gallery",
+      "f3_scene_brief_id": "F3-U6-L01",
+      "narrative_word_count": 678
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U6-L02",
+      "locus": "Chromosome Storage Gallery",
+      "title": "The Gallery of Two Very Different Storage Shapes",
+      "scene_kicker": "Chromosome architecture changes across cellular contexts, and packaging must be separated from the DNA sequence being stored.",
+      "location_description": "the storage gallery separating typical prokaryotic circular chromosomes, eukaryotic linear chromosomes, and condensation states",
+      "scene_layout": {
+        "orientation": "Enter Chromosome Storage Gallery and stop at the storage gallery separating typical prokaryotic circular chromosomes, eukaryotic linear chromosomes, and condensation states. The left side is anchored by prokaryotic circular chromosome bay, the working center is chromosome-form comparison platform, and the right side is anchored by eukaryotic linear / condensed chromosome bay. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Circular chromosome bay",
+            "symbol": "○",
+            "description": "A large circular DNA chromosome occupies the left bay as the typical prokaryotic comparison."
+          },
+          {
+            "position": "center",
+            "label": "Chromosome-form platform",
+            "symbol": "↕",
+            "description": "The tagged DNA molecule crosses a central platform where chromosome form and packaging can be compared without changing the underlying DNA information."
+          },
+          {
+            "position": "right",
+            "label": "Linear chromosome and condensation bay",
+            "symbol": "│→X",
+            "description": "Several linear eukaryotic chromosome models occupy the right bay. One can compact around histone-associated packaging into a visibly condensed chromosome form."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Circular chromosome bay",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A large circular DNA chromosome occupies the left bay as the typical prokaryotic comparison.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Chromosome-form platform",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The tagged DNA molecule crosses a central platform where chromosome form and packaging can be compared without changing the underlying DNA information.",
+          "job": "Execute the defining action sequence: Place a typical prokaryotic circular chromosome on the left and a typical eukaryotic linear chromosome on the right."
+        },
+        {
+          "name": "Linear chromosome and condensation bay",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Several linear eukaryotic chromosome models occupy the right bay. One can compact around histone-associated packaging into a visibly condensed chromosome form.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The sliding cradle enters the **Chromosome Storage Gallery** and stops on a circular floor platform. The geometry is immediate. On your **left**, a large circular DNA chromosome hangs inside a clear cylindrical bay like a closed loop of cable. Directly **ahead**, the center platform holds the same blue-and-gold DNA sequence from the intake room, now projected as a comparison model whose shape can be changed without changing its sequence. On your **right**, several long linear DNA molecules extend vertically from floor to ceiling; one of them can be compacted around histone-associated packaging until it becomes a dense chromosome form. Sora plants the copper ledger at the edge of the center platform. “Same information problem,” she says. “Different storage architecture.”",
+      "story_paragraphs": [
+        "The sliding cradle enters the **Chromosome Storage Gallery** and stops on a circular floor platform. The geometry is immediate. On your **left**, a large circular DNA chromosome hangs inside a clear cylindrical bay like a closed loop of cable. Directly **ahead**, the center platform holds the same blue-and-gold DNA sequence from the intake room, now projected as a comparison model whose shape can be changed without changing its sequence. On your **right**, several long linear DNA molecules extend vertically from floor to ceiling; one of them can be compacted around histone-associated packaging until it becomes a dense chromosome form. Sora plants the copper ledger at the edge of the center platform. “Same information problem,” she says. “Different storage architecture.”",
+        "She opens the left bay first. The circular chromosome is large and unmistakably separate from the small plasmid rings visible through a locked side window farther down the hall. Sora labels this the **typical prokaryotic chromosome form**. Prokaryotic organisms typically have circular chromosomes. The word *typically* remains on the bay in bright white letters. It prevents the learner from turning a common cellular architecture into a universal rule for every prokaryotic chromosome, viral genome, organelle, or exceptional case. The important image is the scale and role: this is the main chromosome bay, not a tiny accessory ring.",
+        "On the right, Sora releases the tall linear models. They do not close into circles. Instead, several distinct linear DNA molecules remain separated from one another, each representing a chromosome. She names the contrast **typical eukaryotic chromosome form**: eukaryotic organisms typically have multiple linear chromosomes composed of DNA. Again, *typically* matters. The point is to recognize the common eukaryotic architecture and its contrast with the left bay, not to memorize an exceptionless slogan.",
+        "Then the right-side mechanism changes only one feature. The linear DNA stays linear, but the long molecule progressively associates with histones and other proteins and compacts into a much denser chromosome form. Sora calls the process **eukaryotic chromosome condensation**. Eukaryotic chromosomes are condensed using histones and associated proteins. She keeps a thin uncondensed section visible beside the compacted form so “linear DNA molecule” and “highly condensed chromosome” do not become separate substances in your mind. The DNA information is continuous; the level of packaging changes.",
+        "The center platform now freezes a three-part comparison. Left: a typical large circular prokaryotic chromosome. Center: the tracked hereditary DNA sequence whose information has not changed. Right: typical multiple linear eukaryotic chromosomes, one shown in a condensed state. Sora draws a line through the ledger entry labeled STORAGE FORM and checks it off. The copier can now recognize major chromosome architectures without confusing packaging state with sequence identity.",
+        "A metallic click comes from the side window. Several small circular rings have begun replicating on their own rack. They are too small to be the main chromosome displayed on the left, yet they are unquestionably DNA. One carries a bright resistance-gene tag; another contains an inserted fluorescent-gene segment. The storage scanner flashes a new warning: EXTRA-CHROMOSOMAL RINGS UNCLASSIFIED. Sora releases the center cradle and follows the smallest ring through the narrow vault door. The next problem is to identify what those circles are and why a cell might keep them at all."
+      ],
+      "story_close": "A metallic click comes from the side window. Several small circular rings have begun replicating on their own rack. They are too small to be the main chromosome displayed on the left, yet they are unquestionably DNA. One carries a bright resistance-gene tag; another contains an inserted fluorescent-gene segment. The storage scanner flashes a new warning: EXTRA-CHROMOSOMAL RINGS UNCLASSIFIED. Sora releases the center cradle and follows the smallest ring through the narrow vault door. The next problem is to identify what those circles are and why a cell might keep them at all.",
+      "object_ids": [
+        "U6-K-002",
+        "U6-K-003",
+        "U6-K-004"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-002",
+          "term": "Typical prokaryotic chromosome form",
+          "story": "the large circular chromosome in the left storage bay",
+          "science": "Prokaryotic organisms typically have circular chromosomes.",
+          "exact_name": true,
+          "hint": "the large circular chromosome in the left storage bay",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-003",
+          "term": "Typical eukaryotic chromosome form",
+          "story": "the multiple linear chromosome models in the right storage bay",
+          "science": "Eukaryotic organisms typically have multiple linear chromosomes composed of DNA.",
+          "exact_name": true,
+          "hint": "the multiple linear chromosome models in the right storage bay",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-004",
+          "term": "Eukaryotic chromosome condensation",
+          "story": "the right-side linear eukaryotic DNA compacting with histones and associated proteins",
+          "science": "Eukaryotic chromosomes are condensed using histones and associated proteins.",
+          "exact_name": true,
+          "hint": "the right-side linear eukaryotic DNA compacting with histones and associated proteins",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U6-D03: keep Typical prokaryotic chromosome form, Typical eukaryotic chromosome form, Plasmids physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Plasmid Ring Vault",
+      "f3_scene_brief_id": "F3-U6-L02",
+      "narrative_word_count": 535
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U6-L03",
+      "locus": "Plasmid Ring Vault",
+      "title": "The Small Rings That Refuse to Stay With the Chromosome",
+      "scene_kicker": "A plasmid is extra-chromosomal DNA with its own replication logic, and the genes it carries can matter differently in different environments.",
+      "location_description": "the small-ring vault where plasmids replicate independently, carry conditionally useful genes, and can be engineered or transferred",
+      "scene_layout": {
+        "orientation": "Enter Plasmid Ring Vault and stop at the small-ring vault where plasmids replicate independently, carry conditionally useful genes, and can be engineered or transferred. The left side is anchored by independent plasmid replication rack, the working center is plasmid identity / recombinant ring bench, and the right side is anchored by gene-transfer and conditional-value display. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Independent plasmid rack",
+            "symbol": "◯◯",
+            "description": "Small circular plasmids sit on a rack separate from the main chromosome, each with its own replication-origin marker."
+          },
+          {
+            "position": "center",
+            "label": "Recombinant plasmid bench",
+            "symbol": "✂◯",
+            "description": "A circular plasmid lies open on a center bench where a defined DNA segment can be inserted while the molecule remains recognizable as a plasmid."
+          },
+          {
+            "position": "right",
+            "label": "Transfer and conditional-value channel",
+            "symbol": "→",
+            "description": "A transfer channel carries plasmid DNA toward a recipient bacterial cell beside an environment panel showing that the usefulness of plasmid-carried genes depends on conditions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Independent plasmid rack",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Small circular plasmids sit on a rack separate from the main chromosome, each with its own replication-origin marker.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Recombinant plasmid bench",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A circular plasmid lies open on a center bench where a defined DNA segment can be inserted while the molecule remains recognizable as a plasmid.",
+          "job": "Execute the defining action sequence: Track a small circular plasmid independently of the main chromosome and show independent replication."
+        },
+        {
+          "name": "Transfer and conditional-value channel",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A transfer channel carries plasmid DNA toward a recipient bacterial cell beside an environment panel showing that the usefulness of plasmid-carried genes depends on conditions.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The **Plasmid Ring Vault** is lower and narrower than the chromosome gallery. On your **left**, a steel rack holds several small circular DNA molecules, each clearly separated from the main chromosome and each marked with a tiny origin symbol. Directly **ahead**, a round glass bench holds one plasmid opened at a defined site, its circular map still visible even while the ring is temporarily cut for engineering. On your **right**, a transparent transfer channel connects a donor bacterial cell to a recipient cell beside an environment display that can change from ordinary medium to antibiotic-containing medium. The blue-and-gold chromosomal duplex remains parked behind you in the gallery doorway. Sora carries only one small ring to the center bench so its identity cannot be mistaken for the chromosome you just left.",
+      "story_paragraphs": [
+        "The **Plasmid Ring Vault** is lower and narrower than the chromosome gallery. On your **left**, a steel rack holds several small circular DNA molecules, each clearly separated from the main chromosome and each marked with a tiny origin symbol. Directly **ahead**, a round glass bench holds one plasmid opened at a defined site, its circular map still visible even while the ring is temporarily cut for engineering. On your **right**, a transparent transfer channel connects a donor bacterial cell to a recipient cell beside an environment display that can change from ordinary medium to antibiotic-containing medium. The blue-and-gold chromosomal duplex remains parked behind you in the gallery doorway. Sora carries only one small ring to the center bench so its identity cannot be mistaken for the chromosome you just left.",
+        "She lifts the ring from the left rack. It is DNA, but it is extra-chromosomal and circular. Only after that spatial separation is obvious does she name **plasmids**: prokaryotes and eukaryotes can contain plasmids, extra-chromosomal circular DNA molecules. The vault emphasizes what defines the object here. A plasmid is not simply “small bacterial DNA,” and it is not the bacterial chromosome. Its extra-chromosomal location and circular form are visible before the word appears.",
+        "A light pulses at the origin marker on the plasmid. The ring duplicates on the left rack even though the main chromosome is not being copied on this machine. Sora writes **plasmid independent replication** beside the origin symbol. Plasmids are extra-chromosomal DNA molecules with their own origins that can replicate independently of the main chromosome. The phrase *independently* does not mean the plasmid is metabolically independent of the cell; it means its DNA replication is organized from its own origin rather than simply being a segment of the chromosome’s replication program.",
+        "The right-side environment panel now changes. One plasmid carries a gene that makes little visible difference in ordinary medium. When the environment switches, that gene becomes useful to the cell. Sora calls this the **conditional value of plasmid genes**. Plasmids can carry genes that provide context-dependent advantages, such as traits useful in particular environments, without being universally required for cell survival. The gene is not painted with a permanent GOOD label. Its value depends on the conditions in which the cell lives.",
+        "At the center bench, Sora inserts a defined DNA segment into the open ring and closes it again. The plasmid remains a plasmid, but its sequence now contains an engineered gene of interest. She names the product **recombinant plasmid DNA**: a plasmid can be engineered to contain a gene of interest, creating recombinant plasmid DNA that can be introduced into cells for propagation or expression. This is the first time in the journey that the DNA sequence itself is deliberately altered, and the change is visible as an inserted colored segment rather than as an abstract label.",
+        "Finally, the right transfer channel activates. A plasmid copy moves from one bacterial cell into another. The recipient cell now possesses plasmid-borne genetic information it did not previously carry. Sora marks this as **plasmid-mediated gene exchange**: bacteria can acquire plasmid-borne genes from other bacteria, changing the recipient genotype and potentially its phenotype. The words *potentially* and *context-dependent* remain visible on the environment panel so gene acquisition does not automatically become a guaranteed phenotypic advantage.",
+        "The ring vault clears its warning. Sora returns the engineered plasmid to its rack and turns back toward the persistent chromosome. Before any DNA molecule can be copied accurately, however, the copying works must know how the nitrogenous bases are classified and what numerical relationships paired DNA produces. A door at the far end opens onto a reading table split into a two-ring drawer on the left and a one-ring drawer on the right."
+      ],
+      "story_close": "The ring vault clears its warning. Sora returns the engineered plasmid to its rack and turns back toward the persistent chromosome. Before any DNA molecule can be copied accurately, however, the copying works must know how the nitrogenous bases are classified and what numerical relationships paired DNA produces. A door at the far end opens onto a reading table split into a two-ring drawer on the left and a one-ring drawer on the right.",
+      "object_ids": [
+        "U6-K-005",
+        "U6-K-096",
+        "U6-K-097",
+        "U6-K-098",
+        "U6-K-099"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-005",
+          "term": "Plasmids",
+          "story": "the small extra-chromosomal circular DNA ring kept separate from the main chromosome",
+          "science": "Prokaryotes and eukaryotes can contain plasmids, extra-chromosomal circular DNA molecules.",
+          "exact_name": true,
+          "hint": "the small extra-chromosomal circular DNA ring kept separate from the main chromosome",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-096",
+          "term": "Plasmid independent replication",
+          "story": "the plasmid origin flashing as the ring replicates independently of the main chromosome",
+          "science": "Plasmids are extra-chromosomal DNA molecules with their own origins that can replicate independently of the main chromosome.",
+          "exact_name": true,
+          "hint": "the plasmid origin flashing as the ring replicates independently of the main chromosome",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-097",
+          "term": "Conditional value of plasmid genes",
+          "story": "the environment panel changing whether a plasmid-carried gene provides an advantage",
+          "science": "Plasmids can carry genes that provide context-dependent advantages, such as traits useful in particular environments, without being universally required for cell survival.",
+          "exact_name": false,
+          "hint": "the environment panel changing whether a plasmid-carried gene provides an advantage",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-098",
+          "term": "Recombinant plasmid DNA",
+          "story": "the center plasmid ring receiving a defined inserted DNA segment and closing again",
+          "science": "A plasmid can be engineered to contain a gene of interest, creating recombinant plasmid DNA that can be introduced into cells for propagation or expression.",
+          "exact_name": true,
+          "hint": "the center plasmid ring receiving a defined inserted DNA segment and closing again",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-099",
+          "term": "Plasmid-mediated gene exchange",
+          "story": "the right transfer channel moving plasmid-borne DNA into a recipient bacterium",
+          "science": "Bacteria can acquire plasmid-borne genes from other bacteria, changing the recipient genotype and potentially its phenotype.",
+          "exact_name": false,
+          "hint": "the right transfer channel moving plasmid-borne DNA into a recipient bacterium",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U6-D03: keep Typical prokaryotic chromosome form, Typical eukaryotic chromosome form, Plasmids physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Base-Class Reading Table",
+      "f3_scene_brief_id": "F3-U6-L03",
+      "narrative_word_count": 621
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U6-L04",
+      "locus": "Base-Class Reading Table",
+      "title": "The Table That Separates Shape From Pairing",
+      "scene_kicker": "Purine and pyrimidine describe base structure; Chargaff’s relationships describe composition in double-stranded DNA.",
+      "location_description": "the base table sorting purines and pyrimidines while Chargaff relationships constrain complementary pairing",
+      "scene_layout": {
+        "orientation": "Enter Base-Class Reading Table and stop at the base table sorting purines and pyrimidines while Chargaff relationships constrain complementary pairing. The left side is anchored by purine two-ring drawer, the working center is base-class / composition comparison table, and the right side is anchored by pyrimidine one-ring drawer. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Purine drawer",
+            "symbol": "2 rings",
+            "description": "Adenine and guanine cards sit in a left drawer, each drawn with a two-ring nitrogenous-base framework."
+          },
+          {
+            "position": "center",
+            "label": "Composition table",
+            "symbol": "A≈T; G≈C",
+            "description": "A center table compares base percentages in double-stranded DNA samples and keeps composition relationships separate from base-class identity."
+          },
+          {
+            "position": "right",
+            "label": "Pyrimidine drawer",
+            "symbol": "1 ring",
+            "description": "Cytosine, thymine, and uracil cards sit in a right drawer, each drawn with a single-ring framework."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Purine drawer",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Adenine and guanine cards sit in a left drawer, each drawn with a two-ring nitrogenous-base framework.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Composition table",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A center table compares base percentages in double-stranded DNA samples and keeps composition relationships separate from base-class identity.",
+          "job": "Execute the defining action sequence: Sort adenine/guanine into a two-ring purine drawer and cytosine/thymine/uracil into a one-ring pyrimidine drawer."
+        },
+        {
+          "name": "Pyrimidine drawer",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Cytosine, thymine, and uracil cards sit in a right drawer, each drawn with a single-ring framework.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The **Base-Class Reading Table** is arranged like a quiet archive study room. On your **left**, a deep drawer is labeled TWO RINGS and contains enlarged adenine and guanine cards, each with its fused double-ring nitrogenous-base framework drawn in black. Directly **ahead**, a broad composition table displays base percentages from several double-stranded DNA samples. On your **right**, a shallow drawer labeled ONE RING contains cytosine, thymine, and uracil cards, each with a single-ring framework. The blue-and-gold DNA duplex rests along the front edge of the center table, still closed. Sora keeps the drawers separated because this room must answer two different questions: what structural class is each base, and which bases are present in matching amounts when double-stranded DNA is measured?",
+      "story_paragraphs": [
+        "The **Base-Class Reading Table** is arranged like a quiet archive study room. On your **left**, a deep drawer is labeled TWO RINGS and contains enlarged adenine and guanine cards, each with its fused double-ring nitrogenous-base framework drawn in black. Directly **ahead**, a broad composition table displays base percentages from several double-stranded DNA samples. On your **right**, a shallow drawer labeled ONE RING contains cytosine, thymine, and uracil cards, each with a single-ring framework. The blue-and-gold DNA duplex rests along the front edge of the center table, still closed. Sora keeps the drawers separated because this room must answer two different questions: what structural class is each base, and which bases are present in matching amounts when double-stranded DNA is measured?",
+        "Sora begins with structure alone. She places adenine and guanine into the left drawer and traces the two fused rings on each model. Only then does she write **purines** above them. Adenine and guanine are purines with double-ring structures. She crosses the room and places cytosine, thymine, and uracil into the right drawer. Each has a single-ring framework, so she labels them **pyrimidines**. Cytosine, thymine, and uracil are pyrimidines with single-ring structures. Nothing has paired yet. The classification depends on molecular ring structure, not on which letter a base happens to face across a DNA helix.",
+        "Now the center table matters. Sora loads one double-stranded DNA sample. The screen reports that adenine is approximately matched by thymine and guanine by cytosine. A second organism has different overall percentages, yet the same within-sample relationships appear. Sora labels the pattern **Chargaff’s composition observations**: across double-stranded DNA samples, the amount of adenine approximates thymine and guanine approximates cytosine, a relationship explained by complementary base pairing. The table does not claim that every organism has the same percentage of adenine or the same GC content. It shows relationships within paired double-stranded DNA.",
+        "She deliberately moves an adenine card toward a thymine card but stops before they touch. “Do not confuse the two systems,” she says. Purine versus pyrimidine classifies molecular structure. A versus T or G versus C will describe complementary pairing. Adenine is a purine and thymine is a pyrimidine, yet the fact that they pair is a separate relationship. The same is true for guanine and cytosine. The drawers stay fixed on opposite sides of the room while the composition table sits between them as evidence.",
+        "Sora closes the drawers. The center table now projects the blue-and-gold duplex onto a narrow bridge beyond the reading room. The percentages can be explained only if the bases pair in a specific geometry, and that geometry depends on the direction of the sugar-phosphate backbones. The next door opens. Two floor rails run through it in opposite directions, one marked 5′→3′ and the other 3′→5′. Before the replication works can copy a strand, you must be able to walk the molecule in the same direction the polymerase will later read it."
+      ],
+      "story_close": "Sora closes the drawers. The center table now projects the blue-and-gold duplex onto a narrow bridge beyond the reading room. The percentages can be explained only if the bases pair in a specific geometry, and that geometry depends on the direction of the sugar-phosphate backbones. The next door opens. Two floor rails run through it in opposite directions, one marked 5′→3′ and the other 3′→5′. Before the replication works can copy a strand, you must be able to walk the molecule in the same direction the polymerase will later read it.",
+      "object_ids": [
+        "U6-K-006",
+        "U6-K-007",
+        "U6-K-091"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-006",
+          "term": "Purines",
+          "story": "the left drawer containing adenine and guanine as two-ring bases",
+          "science": "Adenine and guanine are purines with double-ring structures.",
+          "exact_name": true,
+          "hint": "the left drawer containing adenine and guanine as two-ring bases",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-007",
+          "term": "Pyrimidines",
+          "story": "the right drawer containing cytosine, thymine, and uracil as single-ring bases",
+          "science": "Cytosine, thymine, and uracil are pyrimidines with single-ring structures.",
+          "exact_name": true,
+          "hint": "the right drawer containing cytosine, thymine, and uracil as single-ring bases",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-091",
+          "term": "Chargaff’s composition observations",
+          "story": "the center dsDNA composition table showing A approximately T and G approximately C within samples",
+          "science": "Across double-stranded DNA samples, Chargaff observed that the amount of adenine approximates thymine and guanine approximates cytosine, a relationship explained by complementary base pairing.",
+          "exact_name": true,
+          "hint": "the center dsDNA composition table showing A approximately T and G approximately C within samples",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U6-D02: keep Purines, Pyrimidines physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-006",
+      "checkpoint_prompt": "Without looking back, identify or explain Purines from the scientific action you just watched.",
+      "checkpoint_answer": "Adenine and guanine are purines with double-ring structures.",
+      "next_locus": "Antiparallel Pairing Bridge",
+      "f3_scene_brief_id": "F3-U6-L04",
+      "narrative_word_count": 487
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U6-L05",
+      "locus": "Antiparallel Pairing Bridge",
+      "title": "The Bridge Where the Two Strands Run Opposite Ways",
+      "scene_kicker": "Complementary base pairing only makes sense when base identity, hydrogen bonds, backbone bonds, and strand direction remain physically distinct.",
+      "location_description": "the double-strand bridge reconnecting 5′/3′ directionality, antiparallel geometry, complementary pairing, and typical DNA/RNA architecture",
+      "scene_layout": {
+        "orientation": "Enter Antiparallel Pairing Bridge and stop at the double-strand bridge reconnecting 5′/3′ directionality, antiparallel geometry, complementary pairing, and typical DNA/RNA architecture. The left side is anchored by 5′/3′ backbone direction rail, the working center is antiparallel complementary-pair bridge, and the right side is anchored by DNA-versus-RNA architecture panel. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "5′/3′ direction rail",
+            "symbol": "5′→3′",
+            "description": "A floor rail shows sugar-phosphate backbones with explicit 5′ phosphate-associated and 3′ hydroxyl ends."
+          },
+          {
+            "position": "center",
+            "label": "Antiparallel pairing bridge",
+            "symbol": "⇅",
+            "description": "The same blue and gold DNA strands span a central bridge in opposite directions, with complementary bases facing inward and hydrogen bonds crossing the gap."
+          },
+          {
+            "position": "right",
+            "label": "DNA/RNA architecture panel",
+            "symbol": "DNA | RNA",
+            "description": "A right-side panel contrasts typical cellular double-stranded DNA with typically single-stranded RNA that can fold into internally base-paired regions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "5′/3′ direction rail",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A floor rail shows sugar-phosphate backbones with explicit 5′ phosphate-associated and 3′ hydroxyl ends.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Antiparallel pairing bridge",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The same blue and gold DNA strands span a central bridge in opposite directions, with complementary bases facing inward and hydrogen bonds crossing the gap.",
+          "job": "Execute the defining action sequence: Lay the two DNA backbones in opposite 5′→3′ directions and pair complementary bases across them."
+        },
+        {
+          "name": "DNA/RNA architecture panel",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A right-side panel contrasts typical cellular double-stranded DNA with typically single-stranded RNA that can fold into internally base-paired regions.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The **Antiparallel Pairing Bridge** spans a dark open shaft between the archive and the copying works. On your **left**, a metal direction rail carries explicit 5′ and 3′ labels beside a sugar-phosphate backbone model. Directly **ahead**, the blue-and-gold DNA strands cross the shaft as two parallel bridge rails, but their arrowheads point in opposite directions. On your **right**, a large comparison panel shows typical cellular DNA beside typical cellular RNA. Sora clips the copper origin tag to the center of the DNA bridge so the exact same molecule can later enter the replication machinery. Nothing else in the route will matter if the directions here become vague.",
+      "story_paragraphs": [
+        "The **Antiparallel Pairing Bridge** spans a dark open shaft between the archive and the copying works. On your **left**, a metal direction rail carries explicit 5′ and 3′ labels beside a sugar-phosphate backbone model. Directly **ahead**, the blue-and-gold DNA strands cross the shaft as two parallel bridge rails, but their arrowheads point in opposite directions. On your **right**, a large comparison panel shows typical cellular DNA beside typical cellular RNA. Sora clips the copper origin tag to the center of the DNA bridge so the exact same molecule can later enter the replication machinery. Nothing else in the route will matter if the directions here become vague.",
+        "She begins with the left rail, briefly reactivating chemistry you have already seen. A nucleic-acid strand has chemically distinct ends, conventionally described by a 5′ phosphate-associated end and a 3′ hydroxyl end. Sora writes **5′ and 3′ end chemistry review** beside the rail, then refuses to build a new mnemonic character for it. The chemistry is the same prerequisite. What changes in Unit 6 is what that directionality allows enzymes to do.",
+        "The two center rails now light. One DNA strand runs 5′→3′ from left to right; its partner runs 5′→3′ from right to left. Sora names this **DNA antiparallel structural review**. The two DNA strands run antiparallel; each strand has a sugar-phosphate backbone, with paired bases oriented toward the helix interior. The blue and gold colors identify the original strands, and the arrowheads remain attached to them for the rest of the journey.",
+        "Sora brings bases toward the middle. Adenine pairs with thymine in DNA, or with uracil when RNA is the partner; guanine pairs with cytosine. She calls the relationship **conserved complementary base pairing**: purines pair with pyrimidines, with A–T in DNA or A–U in RNA, and G–C. The purine and pyrimidine drawers from the previous room stay mentally separate from this rule. Structural class tells you how many rings the base has. Complementary pairing tells you which base fits across from it.",
+        "The bridge magnifies its bonds. Solid covalent connections run continuously along each sugar-phosphate backbone. Across the gap, dotted hydrogen bonds link paired bases. A–T shows two dotted lines; G–C shows three. Sora labels the comparison **base-pair hydrogen-bond counts**. In standard Watson–Crick base pairing, A–T forms two hydrogen bonds and G–C forms three. The dotted connections do not become phosphodiester bonds, and the strong backbone bonds do not jump across the helix. The two bond systems have different positions and jobs.",
+        "Finally, the right panel animates. Cellular DNA is shown in its typical double-stranded form using thymine. Cellular RNA is shown as typically single-stranded using uracil, then the RNA bends so complementary regions within the same molecule form paired secondary structure. Sora writes **typical RNA versus DNA architecture** and keeps the qualifier visible. Cellular DNA is typically double-stranded and uses thymine; cellular RNA is typically single-stranded, uses uracil, and can fold into base-paired secondary structures. Typical architecture is a pattern, not an exceptionless law for every biological genome.",
+        "When the bridge locks into place, the copying works finally recognize the molecule’s geometry. The blue and gold strands remain antiparallel, their 5′/3′ arrows fixed, their complementary bases facing inward. Across the shaft, a heavy gate marked HEREDITARY CONTINUITY begins to open. On its left edge a eukaryotic cell-cycle dial has stopped at S phase. On the right, two empty daughter-DNA cradles wait. Sora slides the same tagged duplex forward. Now the question is no longer what DNA looks like. It is why the cell must copy it at all."
+      ],
+      "story_close": "When the bridge locks into place, the copying works finally recognize the molecule’s geometry. The blue and gold strands remain antiparallel, their 5′/3′ arrows fixed, their complementary bases facing inward. Across the shaft, a heavy gate marked HEREDITARY CONTINUITY begins to open. On its left edge a eukaryotic cell-cycle dial has stopped at S phase. On the right, two empty daughter-DNA cradles wait. Sora slides the same tagged duplex forward. Now the question is no longer what DNA looks like. It is why the cell must copy it at all.",
+      "object_ids": [
+        "U6-K-008",
+        "U6-K-092",
+        "U6-K-094",
+        "U6-K-095",
+        "U6-K-100"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-008",
+          "term": "Conserved complementary base pairing",
+          "story": "complementary bases pairing across the center antiparallel bridge",
+          "science": "Purines pair with pyrimidines: adenine pairs with thymine in DNA or uracil in RNA, and guanine pairs with cytosine.",
+          "exact_name": true,
+          "hint": "complementary bases pairing across the center antiparallel bridge",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-092",
+          "term": "Base-pair hydrogen-bond counts",
+          "story": "two dotted hydrogen bonds across A–T and three across G–C",
+          "science": "In standard Watson–Crick base pairing, A–T forms two hydrogen bonds and G–C forms three hydrogen bonds.",
+          "exact_name": true,
+          "hint": "two dotted hydrogen bonds across A–T and three across G–C",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-094",
+          "term": "DNA antiparallel structural review",
+          "story": "the blue and gold DNA backbones running in opposite 5′→3′ directions across the bridge",
+          "science": "The two DNA strands run antiparallel; each strand has a sugar-phosphate backbone, with paired bases oriented toward the helix interior.",
+          "exact_name": true,
+          "hint": "the blue and gold DNA backbones running in opposite 5′→3′ directions across the bridge",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-095",
+          "term": "5′ and 3′ end chemistry review",
+          "story": "the left rail marking a 5′ phosphate-associated end and a 3′ hydroxyl end",
+          "science": "A nucleic-acid strand has chemically distinct ends, conventionally described by a 5′ phosphate-associated end and a 3′ hydroxyl end.",
+          "exact_name": true,
+          "hint": "the left rail marking a 5′ phosphate-associated end and a 3′ hydroxyl end",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-100",
+          "term": "Typical RNA versus DNA architecture",
+          "story": "the right panel showing typical cellular double-stranded DNA beside typically single-stranded, foldable RNA",
+          "science": "Cellular DNA is typically double-stranded and uses thymine; cellular RNA is typically single-stranded, uses uracil, and can fold into base-paired secondary structures.",
+          "exact_name": true,
+          "hint": "the right panel showing typical cellular double-stranded DNA beside typically single-stranded, foldable RNA",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U6-K-094",
+          "term": "DNA antiparallel structural review",
+          "dependency": [],
+          "rule": "Reactivate the prior representation briefly; extend it into the Unit 6 mechanism without assigning a new mnemonic identity."
+        },
+        {
+          "knowledge_id": "U6-K-095",
+          "term": "5′ and 3′ end chemistry review",
+          "dependency": [],
+          "rule": "Reactivate the prior representation briefly; extend it into the Unit 6 mechanism without assigning a new mnemonic identity."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-004: Use “typically” for cellular RNA/DNA structure. RNA often folds into paired regions, and some viral genomes depart from the usual cellular patterns.",
+        "Discrimination requirement U6-D04: keep Conserved complementary base pairing, DNA antiparallel structural review, 5′ and 3′ end chemistry review physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U6-D01: keep DNA/RNA as hereditary information, Typical RNA versus DNA architecture, DNA antiparallel structural review, 5′ and 3′ end chemistry review physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Replication Continuity Gate",
+      "f3_scene_brief_id": "F3-U6-L05",
+      "narrative_word_count": 600
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U6-L06",
+      "locus": "Replication Continuity Gate",
+      "title": "The Gate That Opens Only for a Faithful Copy",
+      "scene_kicker": "Replication serves continuity of hereditary information, and S phase is specifically the eukaryotic cell-cycle context for nuclear DNA replication.",
+      "location_description": "the entry gate linking S phase and DNA copying to hereditary continuity before the fork machinery begins",
+      "scene_layout": {
+        "orientation": "Enter Replication Continuity Gate and stop at the entry gate linking S phase and DNA copying to hereditary continuity before the fork machinery begins. The left side is anchored by S-phase reactivation marker, the working center is replication-preserves-information gate, and the right side is anchored by daughter-DNA destination. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Eukaryotic S-phase marker",
+            "symbol": "S",
+            "description": "A eukaryotic-cell timeline lights S phase on the left, while a separate prokaryotic marker prevents that cell-cycle label from being imposed on bacterial chromosome replication."
+          },
+          {
+            "position": "center",
+            "label": "Hereditary-continuity gate",
+            "symbol": "COPY",
+            "description": "The tagged DNA duplex enters a gate that opens only when its sequence can be copied accurately before transmission to daughter cells or later generations."
+          },
+          {
+            "position": "right",
+            "label": "Daughter-DNA destination",
+            "symbol": "2 copies",
+            "description": "Two destination cradles wait on the right for copied DNA, making replication a preservation-and-transmission problem rather than a gene-expression process."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Eukaryotic S-phase marker",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A eukaryotic-cell timeline lights S phase on the left, while a separate prokaryotic marker prevents that cell-cycle label from being imposed on bacterial chromosome replication.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Hereditary-continuity gate",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The tagged DNA duplex enters a gate that opens only when its sequence can be copied accurately before transmission to daughter cells or later generations.",
+          "job": "Execute the defining action sequence: Reactivate the eukaryotic S-phase context only for eukaryotic cells, keeping prokaryotic chromosome replication outside a falsely imposed eukaryotic cell-cycle phase structure."
+        },
+        {
+          "name": "Daughter-DNA destination",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Two destination cradles wait on the right for copied DNA, making replication a preservation-and-transmission problem rather than a gene-expression process.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "Beyond the bridge stands the **Replication Continuity Gate**, a tall chamber with three unmistakable stations. On your **left**, a eukaryotic cell-cycle dial highlights S phase between the surrounding cycle stages; beside it, a separate bacterial chromosome icon sits outside that dial. Directly **ahead**, the tagged blue-and-gold DNA duplex enters a scanner labeled HEREDITARY CONTINUITY. On your **right**, two empty daughter-DNA cradles wait beyond the gate. The 5′ and 3′ arrows remain attached to the parental strands. Sora places the copper ledger beneath the scanner and leaves the page for gene expression closed. This machine has a different purpose: preserve genetic information so it can be transmitted.",
+      "story_paragraphs": [
+        "Beyond the bridge stands the **Replication Continuity Gate**, a tall chamber with three unmistakable stations. On your **left**, a eukaryotic cell-cycle dial highlights S phase between the surrounding cycle stages; beside it, a separate bacterial chromosome icon sits outside that dial. Directly **ahead**, the tagged blue-and-gold DNA duplex enters a scanner labeled HEREDITARY CONTINUITY. On your **right**, two empty daughter-DNA cradles wait beyond the gate. The 5′ and 3′ arrows remain attached to the parental strands. Sora places the copper ledger beneath the scanner and leaves the page for gene expression closed. This machine has a different purpose: preserve genetic information so it can be transmitted.",
+        "The left timeline lights first. In a eukaryotic cell, nuclear DNA replication occurs during S phase before cell division. Sora labels this **eukaryotic S-phase replication context**. She immediately points to the bacterial icon beside the dial. The S-phase label belongs to the eukaryotic cell-cycle framework; prokaryotic chromosome replication is not organized into a eukaryotic S phase. The distinction prevents a useful eukaryotic timing cue from being turned into a universal description of all DNA replication.",
+        "At center, the gate reads the tagged duplex and projects its sequence toward the two empty cradles. If the sequence cannot be copied, a daughter cell or later organismal generation cannot receive an equivalent set of hereditary information. Sora names the core relationship **replication preserves hereditary continuity**. DNA replication copies genetic information so it can be transmitted between cell and organismal generations. The gate therefore treats replication as an information-preservation process, not as the process by which a gene is expressed into RNA or protein. The molecule’s role here is duplication for continuity: its sequence must be reproduced before the genetic record can be distributed onward.",
+        "The scanner briefly separates the blue and gold strands without allowing new DNA to appear. Each parental strand exposes a sequence that could direct a complementary partner. Sora keeps the word *template* on the display. The future copy will be built by complementary synthesis on each parental strand. This is the causal idea needed for the next rooms: the old strands are not merely duplicated as whole objects by a photocopier; their sequences guide construction of new complementary strands.",
+        "The continuity gate remains locked because it still does not know how parental and newly synthesized DNA should be distributed in the products. Three model symbols appear over the door: one keeps the entire parental duplex together, one places old and new segments in mixed patches, and one separates the two parental strands so each can guide a new partner. Sora moves the tagged duplex into a test chamber where those three predictions can be compared against actual evidence. The question now is not whether DNA is copied. It is which replication model matches what real DNA does."
+      ],
+      "story_close": "The continuity gate remains locked because it still does not know how parental and newly synthesized DNA should be distributed in the products. Three model symbols appear over the door: one keeps the entire parental duplex together, one places old and new segments in mixed patches, and one separates the two parental strands so each can guide a new partner. Sora moves the tagged duplex into a test chamber where those three predictions can be compared against actual evidence. The question now is not whether DNA is copied. It is which replication model matches what real DNA does.",
+      "object_ids": [
+        "U6-K-009",
+        "U6-K-101"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-009",
+          "term": "Replication preserves hereditary continuity",
+          "story": "the continuity gate requiring copied DNA before hereditary information can move to daughter destinations",
+          "science": "DNA replication copies genetic information so it can be transmitted between cell and organismal generations.",
+          "exact_name": true,
+          "hint": "the continuity gate requiring copied DNA before hereditary information can move to daughter destinations",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-101",
+          "term": "Eukaryotic S-phase replication context",
+          "story": "the left eukaryotic cell-cycle dial highlighting S phase while the bacterial icon remains outside that framework",
+          "science": "In the eukaryotic cell cycle, nuclear DNA replication occurs during S phase before cell division.",
+          "exact_name": true,
+          "hint": "the left eukaryotic cell-cycle dial highlighting S phase while the bacterial icon remains outside that framework",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U6-K-101",
+          "term": "Eukaryotic S-phase replication context",
+          "dependency": [],
+          "rule": "Reactivate the prior representation briefly; extend it into the Unit 6 mechanism without assigning a new mnemonic identity."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-005: Treat S phase as the eukaryotic cell-cycle context. Prokaryotic chromosome replication is not organized into a eukaryotic S phase.",
+        "Resolved F1 guard RF-U6-006: Use template language: each parental strand directs synthesis of a complementary new strand."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Replication Model Test Chamber",
+      "f3_scene_brief_id": "F3-U6-L06",
+      "narrative_word_count": 464
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U6-L07",
+      "locus": "Replication Model Test Chamber",
+      "title": "Three Replication Models Enter the Test Chamber",
+      "scene_kicker": "The correct replication model must survive evidence across generations, not merely look plausible on paper.",
+      "location_description": "the evidence chamber comparing conservative, semiconservative, and dispersive predictions against the Meselson–Stahl result",
+      "scene_layout": {
+        "orientation": "Enter Replication Model Test Chamber and stop at the evidence chamber comparing conservative, semiconservative, and dispersive predictions against the Meselson–Stahl result. The left side is anchored by conservative / dispersive model panels, the working center is semiconservative model and evidence bench, and the right side is anchored by Meselson–Stahl isotope outcome display. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Conservative and dispersive model panels",
+            "symbol": "C/D",
+            "description": "Two transparent model boxes on the left predict different ways parental and newly synthesized DNA could be distributed after copying."
+          },
+          {
+            "position": "center",
+            "label": "Semiconservative evidence bench",
+            "symbol": "½+½",
+            "description": "A center bench keeps the original blue and gold parental strands identifiable while new complementary strands are added beside them."
+          },
+          {
+            "position": "right",
+            "label": "Meselson–Stahl density display",
+            "symbol": "15N/14N",
+            "description": "A density-gradient display on the right tracks labeled bacterial DNA through generations after transfer from heavy nitrogen to light nitrogen."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Conservative and dispersive model panels",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Two transparent model boxes on the left predict different ways parental and newly synthesized DNA could be distributed after copying.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Semiconservative evidence bench",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A center bench keeps the original blue and gold parental strands identifiable while new complementary strands are added beside them.",
+          "job": "Execute the defining action sequence: Build conservative, semiconservative, and dispersive model outputs from visibly different strand-distribution predictions."
+        },
+        {
+          "name": "Meselson–Stahl density display",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A density-gradient display on the right tracks labeled bacterial DNA through generations after transfer from heavy nitrogen to light nitrogen.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The **Replication Model Test Chamber** has the shape of a triangular courtroom. On your **left**, two transparent panels display competing predictions. The upper panel keeps the entire parental blue-and-gold duplex intact and builds a second duplex entirely from new material. The lower panel produces daughter strands that are patchworks of old and new segments. Directly **ahead**, the center bench separates the original blue and gold strands and gives each one a newly synthesized complementary partner. On your **right**, a tall density-gradient display is labeled ¹⁵N at the bottom and ¹⁴N at the top. Sora lays the copper ledger between the models and the data. The chamber will accept only the model whose predicted DNA distribution matches the evidence.",
+      "story_paragraphs": [
+        "The **Replication Model Test Chamber** has the shape of a triangular courtroom. On your **left**, two transparent panels display competing predictions. The upper panel keeps the entire parental blue-and-gold duplex intact and builds a second duplex entirely from new material. The lower panel produces daughter strands that are patchworks of old and new segments. Directly **ahead**, the center bench separates the original blue and gold strands and gives each one a newly synthesized complementary partner. On your **right**, a tall density-gradient display is labeled ¹⁵N at the bottom and ¹⁴N at the top. Sora lays the copper ledger between the models and the data. The chamber will accept only the model whose predicted DNA distribution matches the evidence.",
+        "She starts with the upper-left panel. In the **conservative replication model**, the rejected prediction is that the parental double helix remains together while a wholly new double helix is synthesized. The blue-and-gold parental duplex stays intact as one product; the other product contains two new strands. The model is easy to picture, which is exactly why Sora insists that plausibility is not enough.",
+        "The lower-left panel shows the **dispersive replication model**. Here the predicted daughter DNA strands contain interspersed segments of parental and newly synthesized DNA. Blue or gold parental material is chopped conceptually into segments and mixed through each daughter strand. Sora keeps this panel physically separated from the center so “pieces of old DNA mixed with new DNA” cannot be mistaken for “one intact old strand paired with one new strand.”",
+        "At center, Sora opens the tracked duplex. The blue parental strand remains intact and receives one new complementary strand. The gold parental strand does the same. Only now does she name **semiconservative replication**: each parental strand serves as a template for a complementary new strand, so each daughter DNA duplex contains one parental strand and one new strand. The parental duplex as a whole is not conserved, but each daughter conserves one of its two parental strands.",
+        "The right-side evidence display begins the **Meselson–Stahl experiment**. Bacterial cells first contain DNA labeled with heavy ¹⁵N. They are then moved to ¹⁴N medium, and DNA density is analyzed across generations. After one round of replication, the DNA appears at an intermediate density. That observation rejects the conservative model’s prediction of separate heavy parental and light new duplex populations after the first generation. The dispersive and semiconservative models can both still produce intermediate-density DNA at that point, so the chamber advances to another generation.",
+        "After the second round, the display separates into a lighter DNA population and an intermediate population. The semiconservative model predicts exactly this: some daughter duplexes contain one original heavy strand paired with a light strand, while others contain two light strands descended from templates made in the first generation. A purely dispersive model instead predicts DNA molecules that remain mixed within strands and shift progressively in density. The observed generational pattern therefore supports semiconservative replication. Sora writes **Meselson–Stahl experiment** beside the density column: density labeling with ¹⁵N and ¹⁴N in bacteria, followed across generations, distinguishes the models and supports semiconservative replication.",
+        "The left panels go dark. The center model remains lit, with one parental strand in each daughter duplex. The continuity gate behind you finally unlocks, but a new mechanical problem appears immediately. A chromosome cannot copy itself everywhere at once without a place to begin and a region where the strands are actively opening. The copper origin tag on the blue-and-gold duplex starts flashing. Ahead, a circular mark on the DNA expands into a bubble with two Y-shaped edges. Sora follows it onto the fork-launch deck."
+      ],
+      "story_close": "The left panels go dark. The center model remains lit, with one parental strand in each daughter duplex. The continuity gate behind you finally unlocks, but a new mechanical problem appears immediately. A chromosome cannot copy itself everywhere at once without a place to begin and a region where the strands are actively opening. The copper origin tag on the blue-and-gold duplex starts flashing. Ahead, a circular mark on the DNA expands into a bubble with two Y-shaped edges. Sora follows it onto the fork-launch deck.",
+      "object_ids": [
+        "U6-K-011",
+        "U6-K-102",
+        "U6-K-103",
+        "U6-K-104"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-011",
+          "term": "Semiconservative replication",
+          "story": "each intact parental strand ending in a daughter duplex paired with one new complementary strand",
+          "science": "DNA replication is semiconservative: each parental strand serves as a template for a complementary new strand, so each daughter DNA duplex contains one parental strand and one new strand.",
+          "exact_name": true,
+          "hint": "each intact parental strand ending in a daughter duplex paired with one new complementary strand",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-102",
+          "term": "Conservative replication model",
+          "story": "the upper-left model keeping the whole parental duplex together and building a wholly new duplex",
+          "science": "The rejected conservative model predicts that the parental double helix remains together while a wholly new double helix is synthesized.",
+          "exact_name": true,
+          "hint": "the upper-left model keeping the whole parental duplex together and building a wholly new duplex",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-103",
+          "term": "Dispersive replication model",
+          "story": "the lower-left model mixing parental and new segments within daughter strands",
+          "science": "The rejected dispersive model predicts daughter DNA strands containing interspersed segments of parental and newly synthesized DNA.",
+          "exact_name": true,
+          "hint": "the lower-left model mixing parental and new segments within daughter strands",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-104",
+          "term": "Meselson–Stahl experiment",
+          "story": "the 15N/14N density-gradient display across successive bacterial generations",
+          "science": "Meselson and Stahl used density labeling with 15N and 14N in bacteria and density-gradient analysis across generations to distinguish replication models and support semiconservative replication.",
+          "exact_name": true,
+          "hint": "the 15N/14N density-gradient display across successive bacterial generations",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-006: Use template language: each parental strand directs synthesis of a complementary new strand.",
+        "Discrimination requirement U6-D05: keep Semiconservative replication, Conservative replication model, Dispersive replication model physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-011",
+      "checkpoint_prompt": "Without looking back, identify or explain Semiconservative replication from the scientific action you just watched.",
+      "checkpoint_answer": "DNA replication is semiconservative: each parental strand serves as a template for a complementary new strand, so each daughter DNA duplex contains one parental strand and one new strand.",
+      "next_locus": "Origin and Fork Launch",
+      "f3_scene_brief_id": "F3-U6-L07",
+      "narrative_word_count": 601
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U6-L08",
+      "locus": "Origin and Fork Launch",
+      "title": "The Origin Opens and the Forks Begin to Move",
+      "scene_kicker": "Origin, replication fork, helicase, and topoisomerase occupy different positions because they perform different jobs.",
+      "location_description": "the launch platform where replication begins at origins, helicase opens the duplex, topoisomerase relieves twisting, and the fork becomes visible",
+      "scene_layout": {
+        "orientation": "Enter Origin and Fork Launch and stop at the launch platform where replication begins at origins, helicase opens the duplex, topoisomerase relieves twisting, and the fork becomes visible. The left side is anchored by origin / topoisomerase side, the working center is replication-fork opening platform, and the right side is anchored by helicase and exposed-template side. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Origin and topoisomerase side",
+            "symbol": "◎ / swivel",
+            "description": "The tagged origin sits on the left side of the duplex while a topoisomerase model acts ahead of an opening fork where torsional strain accumulates."
+          },
+          {
+            "position": "center",
+            "label": "Replication-fork launch platform",
+            "symbol": "Y",
+            "description": "A replication bubble opens at center, exposing two Y-shaped fork boundaries whose positions can move away from the origin."
+          },
+          {
+            "position": "right",
+            "label": "Helicase and exposed-template side",
+            "symbol": "unzipped",
+            "description": "A helicase complex sits directly at the right-side fork where it separates the parental strands and exposes template DNA."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Origin and topoisomerase side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The tagged origin sits on the left side of the duplex while a topoisomerase model acts ahead of an opening fork where torsional strain accumulates.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Replication-fork launch platform",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A replication bubble opens at center, exposing two Y-shaped fork boundaries whose positions can move away from the origin.",
+          "job": "Execute the defining action sequence: Mark a specific origin of replication on the tagged duplex and open a replication bubble with two fork boundaries so the origin and the moving forks cannot be treated as the same structure."
+        },
+        {
+          "name": "Helicase and exposed-template side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A helicase complex sits directly at the right-side fork where it separates the parental strands and exposes template DNA.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The floor drops into the **Origin and Fork Launch** deck, where the tracked duplex is stretched horizontally across three work zones. On your **left**, the copper origin tag sits on intact DNA beside a swivel-like topoisomerase model positioned farther ahead where twisting strain can build. Directly **ahead**, a replication bubble opens around the tagged origin, creating two Y-shaped boundaries. On your **right**, a helicase complex sits directly at one Y-shaped boundary, where the parental strands are being separated and exposed as templates. Sora keeps the origin marker fixed even as the forks begin moving away from it. That single choice prevents four closely related ideas from collapsing into one flashing “replication starts here” image.",
+      "story_paragraphs": [
+        "The floor drops into the **Origin and Fork Launch** deck, where the tracked duplex is stretched horizontally across three work zones. On your **left**, the copper origin tag sits on intact DNA beside a swivel-like topoisomerase model positioned farther ahead where twisting strain can build. Directly **ahead**, a replication bubble opens around the tagged origin, creating two Y-shaped boundaries. On your **right**, a helicase complex sits directly at one Y-shaped boundary, where the parental strands are being separated and exposed as templates. Sora keeps the origin marker fixed even as the forks begin moving away from it. That single choice prevents four closely related ideas from collapsing into one flashing “replication starts here” image.",
+        "Sora points to the copper tag. **Origins of replication** are positions where chromosomal DNA replication begins; opening at an origin produces replication forks where parental DNA is exposed and copied. The origin is a starting region, not the moving Y-shaped structure itself. As the bubble expands, the two edges travel away from the starting point while the origin remains where it was on the chromosome.",
+        "At the right edge of the bubble, Sora zooms in on the Y shape and names the **replication fork**. A replication fork is the Y-shaped region where parental DNA strands are separated and new complementary strands are synthesized. The fork is a region of active replication, not an enzyme. The helicase protein is one actor located at that region.",
+        "The helicase complex begins moving with the fork. It disrupts the interactions holding the paired parental strands together so the templates can separate. Sora names **helicase** only after the two blue-and-gold strands visibly part. Helicase unwinds the DNA strands at replication forks. The enzyme’s job is therefore physically located at the fork, where the double-stranded DNA becomes two exposed templates.",
+        "But opening one region creates strain elsewhere. Ahead of the moving fork, the still-double-stranded DNA twists more tightly. On the left-side comparison, the swivel-like enzyme acts before that strain can accumulate excessively. Sora names **topoisomerase**. Topoisomerase relaxes supercoiling ahead of the replication fork. She freezes helicase and topoisomerase at the same moment: helicase at the Y-shaped opening, topoisomerase ahead of it on still-double-stranded DNA. Their positions make their different jobs visible.",
+        "The fork is now open, but the exposed strands are not yet being copied. The blue and gold templates flex apart, and the polymerase dock ahead remains inactive. A display beside it reads NO FREE 3′ STARTING END. Sora follows the exposed DNA to the next station. There, single-strand support proteins hold the templates apart, a primase model waits beside a tray of RNA nucleotides, and DNA polymerase is locked behind a gate that will not open until a primer appears."
+      ],
+      "story_close": "The fork is now open, but the exposed strands are not yet being copied. The blue and gold templates flex apart, and the polymerase dock ahead remains inactive. A display beside it reads NO FREE 3′ STARTING END. Sora follows the exposed DNA to the next station. There, single-strand support proteins hold the templates apart, a primase model waits beside a tray of RNA nucleotides, and DNA polymerase is locked behind a gate that will not open until a primer appears.",
+      "object_ids": [
+        "U6-K-012",
+        "U6-K-013",
+        "U6-K-105",
+        "U6-K-106"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-012",
+          "term": "Helicase",
+          "story": "helicase sitting at the Y-shaped fork where the parental strands separate",
+          "science": "Helicase unwinds the DNA strands at replication forks.",
+          "exact_name": true,
+          "hint": "helicase sitting at the Y-shaped fork where the parental strands separate",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-013",
+          "term": "Topoisomerase",
+          "story": "topoisomerase acting ahead of the fork on overwound double-stranded DNA",
+          "science": "Topoisomerase relaxes supercoiling ahead of the replication fork.",
+          "exact_name": true,
+          "hint": "topoisomerase acting ahead of the fork on overwound double-stranded DNA",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-105",
+          "term": "Origins of replication",
+          "story": "the copper-tagged origin remaining fixed while a replication bubble opens around it",
+          "science": "Chromosomal DNA replication begins at origins of replication and produces replication forks where parental DNA is opened and copied.",
+          "exact_name": true,
+          "hint": "the copper-tagged origin remaining fixed while a replication bubble opens around it",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-106",
+          "term": "Replication fork",
+          "story": "the Y-shaped replication fork moving away from the origin",
+          "science": "A replication fork is the Y-shaped region where parental DNA strands are separated and new complementary strands are synthesized.",
+          "exact_name": true,
+          "hint": "the Y-shaped replication fork moving away from the origin",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-007: Preserve these as teacher enrichment. Current AP scope requires DNA polymerase, ligase, RNA polymerase, helicase, and topoisomerase by name; additional replication enzyme names are not required.",
+        "Discrimination requirement U6-D06: keep Helicase, Topoisomerase, Ligase joins lagging-strand fragments physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Primer–Polymerase Dock",
+      "f3_scene_brief_id": "F3-U6-L08",
+      "narrative_word_count": 450
+    },
+    {
+      "scene_index": 8,
+      "locus_id": "U6-L09",
+      "locus": "Primer–Polymerase Dock",
+      "title": "The Polymerase Dock Has No Place to Start",
+      "scene_kicker": "DNA polymerase can extend DNA only from an existing primer 3′ end, so primase and synthesis direction must be visible together.",
+      "location_description": "the synthesis dock where exposed templates are stabilized, primase supplies RNA primers, and DNA polymerase extends only from a primer in the allowed direction",
+      "scene_layout": {
+        "orientation": "Enter Primer–Polymerase Dock and stop at the synthesis dock where exposed templates are stabilized, primase supplies RNA primers, and DNA polymerase extends only from a primer in the allowed direction. The left side is anchored by single-strand stabilization / primase side, the working center is RNA-primer and DNA-polymerase dock, and the right side is anchored by template movement / synthesis-direction rail. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Single-strand support and primase side",
+            "symbol": "SSB / RNA",
+            "description": "Exposed template DNA is held apart on the left while a primase model lays a short RNA primer with a free 3′ end."
+          },
+          {
+            "position": "center",
+            "label": "DNA-polymerase dock",
+            "symbol": "Pol III",
+            "description": "A DNA polymerase model locks onto the primer-template junction at center and can add DNA nucleotides only to the primer’s 3′ end."
+          },
+          {
+            "position": "right",
+            "label": "Template and synthesis-direction rail",
+            "symbol": "3′→5′ / 5′→3′",
+            "description": "Arrows on the right connect polymerase movement along the template with growth of the new DNA strand in the opposite directional sense."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Single-strand support and primase side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Exposed template DNA is held apart on the left while a primase model lays a short RNA primer with a free 3′ end.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "DNA-polymerase dock",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A DNA polymerase model locks onto the primer-template junction at center and can add DNA nucleotides only to the primer’s 3′ end.",
+          "job": "Execute the defining action sequence: Stabilize exposed single-stranded DNA with single-strand binding proteins as contextual support."
+        },
+        {
+          "name": "Template and synthesis-direction rail",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Arrows on the right connect polymerase movement along the template with growth of the new DNA strand in the opposite directional sense.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The **Primer–Polymerase Dock** sits immediately beside the moving fork. On your **left**, the exposed single-stranded templates are held apart by small stabilizing proteins while a primase model faces a tray of RNA nucleotides. Directly **ahead**, a large DNA polymerase model is aligned with the template but cannot yet move because the starting junction is empty. On your **right**, two illuminated arrows run in opposite directions: TEMPLATE 3′→5′ and NEW DNA 5′→3′. The original blue and gold strands remain color-coded from the pairing bridge, so the direction rail refers to real strands rather than floating arrows.",
+      "story_paragraphs": [
+        "The **Primer–Polymerase Dock** sits immediately beside the moving fork. On your **left**, the exposed single-stranded templates are held apart by small stabilizing proteins while a primase model faces a tray of RNA nucleotides. Directly **ahead**, a large DNA polymerase model is aligned with the template but cannot yet move because the starting junction is empty. On your **right**, two illuminated arrows run in opposite directions: TEMPLATE 3′→5′ and NEW DNA 5′→3′. The original blue and gold strands remain color-coded from the pairing bridge, so the direction rail refers to real strands rather than floating arrows.",
+        "The first problem is physical stability. Once helicase separates the strands, **single-strand binding proteins** can bind the exposed templates and help keep them separated. Sora keeps these proteins small and contextual. Their role is support after the helix opens; they are not the central directional enzyme that synthesizes new DNA.",
+        "Primase now moves to the exposed template and synthesizes a short RNA segment. Sora names **primase** after the RNA piece appears. Primase synthesizes short RNA primers that provide a 3′ end from which DNA polymerase can extend. The RNA segment is visibly different from the DNA that will follow, and the free 3′ end is highlighted at its terminus.",
+        "Only then does the center gate release DNA polymerase. The enzyme docks at the primer-template junction and begins adding DNA nucleotides to the free 3′ end. Sora writes **DNA polymerase requires RNA primers**: DNA polymerase requires an RNA primer with an available 3′ end to initiate new DNA synthesis. The wording is deliberately mechanistic. The primer does not “tell polymerase where the gene is”; it provides the chemical starting end that DNA polymerase needs for extension.",
+        "As polymerase moves, the right-side arrows illuminate. New DNA grows by nucleotide addition at its 3′ end, so the new strand extends **5′→3′**. To accomplish that, polymerase progresses along the antiparallel template in the **3′→5′ direction**. Sora labels this relationship **DNA polymerase movement on template**. Because new DNA grows 5′→3′, DNA polymerase progresses along the template 3′→5′. The two arrows are linked: polymerase movement and product growth are opposite directional descriptions of the same local process. Sora traces one template nucleotide at a time so the direction is anchored to a real polymerase-template junction rather than memorized as two unrelated arrow rules.",
+        "The polymerase dock begins copying both parental templates, but the fork geometry immediately produces a contradiction. On one template, synthesis can follow the opening fork continuously. On the other, the requirement for 5′→3′ synthesis points away from the fork, forcing repeated starts instead of one uninterrupted run. Sora rolls the entire fork assembly onto a split track. The next room is designed so both strands obey the same chemistry even though they cannot be synthesized in the same pattern."
+      ],
+      "story_close": "The polymerase dock begins copying both parental templates, but the fork geometry immediately produces a contradiction. On one template, synthesis can follow the opening fork continuously. On the other, the requirement for 5′→3′ synthesis points away from the fork, forcing repeated starts instead of one uninterrupted run. Sora rolls the entire fork assembly onto a split track. The next room is designed so both strands obey the same chemistry even though they cannot be synthesized in the same pattern.",
+      "object_ids": [
+        "U6-K-014",
+        "U6-K-107",
+        "U6-K-108",
+        "U6-K-109"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-014",
+          "term": "DNA polymerase requires RNA primers",
+          "story": "DNA polymerase remaining locked until an RNA primer exposes a free 3′ end",
+          "science": "DNA polymerase requires an RNA primer with an available 3′ end to initiate new DNA synthesis.",
+          "exact_name": true,
+          "hint": "DNA polymerase remaining locked until an RNA primer exposes a free 3′ end",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-107",
+          "term": "Single-strand binding proteins",
+          "story": "small proteins stabilizing the exposed single-stranded DNA templates",
+          "science": "Single-strand binding proteins stabilize separated template strands after helicase opens the DNA.",
+          "exact_name": true,
+          "hint": "small proteins stabilizing the exposed single-stranded DNA templates",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-108",
+          "term": "Primase",
+          "story": "primase synthesizing a short RNA primer on exposed template DNA",
+          "science": "Primase synthesizes short RNA primers that provide a 3′ end from which DNA polymerase can extend.",
+          "exact_name": true,
+          "hint": "primase synthesizing a short RNA primer on exposed template DNA",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-109",
+          "term": "DNA polymerase movement on template",
+          "story": "DNA polymerase moving 3′→5′ along template while new DNA grows 5′→3′",
+          "science": "Because new DNA grows 5′→3′, DNA polymerase progresses along the template in the 3′→5′ direction.",
+          "exact_name": false,
+          "hint": "DNA polymerase moving 3′→5′ along template while new DNA grows 5′→3′",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-007: Preserve these as teacher enrichment. Current AP scope requires DNA polymerase, ligase, RNA polymerase, helicase, and topoisomerase by name; additional replication enzyme names are not required.",
+        "Discrimination requirement U6-D07: keep DNA polymerase requires RNA primers, Primase physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Leading–Lagging Split Track",
+      "f3_scene_brief_id": "F3-U6-L09",
+      "narrative_word_count": 469
+    },
+    {
+      "scene_index": 9,
+      "locus_id": "U6-L10",
+      "locus": "Leading–Lagging Split Track",
+      "title": "The Fork Splits Into a Smooth Track and a Fragment Track",
+      "scene_kicker": "Both daughter strands are synthesized 5′→3′, yet antiparallel templates force continuous leading synthesis and discontinuous lagging synthesis.",
+      "location_description": "the fork track separating continuous leading-strand synthesis from discontinuous lagging-strand synthesis and Okazaki fragments",
+      "scene_layout": {
+        "orientation": "Enter Leading–Lagging Split Track and stop at the fork track separating continuous leading-strand synthesis from discontinuous lagging-strand synthesis and Okazaki fragments. The left side is anchored by continuous leading track, the working center is 5′→3′ synthesis-direction divider, and the right side is anchored by lagging track with Okazaki fragments. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Leading-strand track",
+            "symbol": "continuous",
+            "description": "One branch runs smoothly alongside the opening fork, allowing continuous synthesis of new DNA."
+          },
+          {
+            "position": "center",
+            "label": "5′→3′ direction divider",
+            "symbol": "5′→3′",
+            "description": "A central direction board forces both new strands to obey 5′→3′ synthesis even though the parental templates are antiparallel."
+          },
+          {
+            "position": "right",
+            "label": "Lagging-strand track",
+            "symbol": "fragments",
+            "description": "The other branch contains repeated primer starts and short newly synthesized DNA pieces that remain separated as Okazaki fragments."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Leading-strand track",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "One branch runs smoothly alongside the opening fork, allowing continuous synthesis of new DNA.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "5′→3′ direction divider",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A central direction board forces both new strands to obey 5′→3′ synthesis even though the parental templates are antiparallel.",
+          "job": "Execute the defining action sequence: Keep new DNA synthesis 5′→3′ on both branches while fork geometry forces different synthesis patterns."
+        },
+        {
+          "name": "Lagging-strand track",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The other branch contains repeated primer starts and short newly synthesized DNA pieces that remain separated as Okazaki fragments.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The **Leading–Lagging Split Track** opens like a rail junction around the same replication fork. On your **left**, one track runs smoothly beside the advancing fork, with DNA polymerase moving continuously as new DNA lengthens. Directly **ahead**, a large direction board displays 5′→3′ for *both* new strands. On your **right**, the second track is broken into repeated work sections. New primers appear near the fork, and short DNA pieces extend away from it before another primer must be started closer to the newly opened region. The blue and gold parental templates remain visible under both tracks, preserving the antiparallel geometry that created the difference.",
+      "story_paragraphs": [
+        "The **Leading–Lagging Split Track** opens like a rail junction around the same replication fork. On your **left**, one track runs smoothly beside the advancing fork, with DNA polymerase moving continuously as new DNA lengthens. Directly **ahead**, a large direction board displays 5′→3′ for *both* new strands. On your **right**, the second track is broken into repeated work sections. New primers appear near the fork, and short DNA pieces extend away from it before another primer must be started closer to the newly opened region. The blue and gold parental templates remain visible under both tracks, preserving the antiparallel geometry that created the difference.",
+        "Sora begins at the center divider because the rule is common to both branches. **DNA synthesis direction** is 5′→3′: new DNA is synthesized in the 5′→3′ direction. No branch is allowed to reverse this chemistry merely to make the fork diagram look symmetrical. The central sign remains fixed while the two tracks solve the directional problem differently.",
+        "On the left, the template orientation allows DNA polymerase to synthesize in the same overall direction that the fork is opening. The new strand can therefore grow continuously. On the right, the template orientation makes 5′→3′ synthesis proceed away from the fork. New template DNA becomes exposed as the fork opens, so synthesis must restart repeatedly from new primers. Sora labels the complete comparison **leading and lagging strand synthesis**. DNA polymerase synthesizes the leading strand continuously and the lagging strand discontinuously because both new strands must be synthesized 5′→3′ on antiparallel templates.",
+        "The terms attach to patterns, not to arbitrary left and right positions. The **leading strand** is the continuously synthesized new strand in this fork geometry. The **lagging strand** is the discontinuously synthesized new strand. If the diagram were rotated, the names would follow the synthesis pattern and template orientation, not the page side. Sora turns the compass tablet ninety degrees to prove it; the chemical arrows remain correct even though the visual left-right orientation changes.",
+        "On the lagging track, each short DNA section is allowed to finish. Sora highlights the separate pieces and names **Okazaki fragments**: short DNA segments synthesized discontinuously on the lagging strand before being joined into a continuous strand. The name identifies these short pieces, while the crucial mechanism remains the discontinuous fragment pattern and the later need to join those fragments. Each piece is DNA, and each was itself synthesized 5′→3′.",
+        "The fork advances. The leading track produces a continuous daughter strand, but the right track leaves a row of fragments separated by primer-associated interruptions. The copier cannot certify the daughter DNA in that state. A repair light turns red over the next bench. Sora sends the unfinished lagging strand forward while the continuous leading strand runs beside it as a comparison. The next task is to replace temporary primer material, seal the remaining breaks, and catch sequence errors before the copy leaves the replication works."
+      ],
+      "story_close": "The fork advances. The leading track produces a continuous daughter strand, but the right track leaves a row of fragments separated by primer-associated interruptions. The copier cannot certify the daughter DNA in that state. A repair light turns red over the next bench. Sora sends the unfinished lagging strand forward while the continuous leading strand runs beside it as a comparison. The next task is to replace temporary primer material, seal the remaining breaks, and catch sequence errors before the copy leaves the replication works.",
+      "object_ids": [
+        "U6-K-010",
+        "U6-K-015",
+        "U6-K-110"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-010",
+          "term": "DNA synthesis direction",
+          "story": "the central 5′→3′ sign applying to both newly synthesized strands",
+          "science": "New DNA is synthesized in the 5′→3′ direction.",
+          "exact_name": true,
+          "hint": "the central 5′→3′ sign applying to both newly synthesized strands",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-015",
+          "term": "Leading and lagging strand synthesis",
+          "story": "the left continuous leading track beside the right discontinuous lagging track",
+          "science": "DNA polymerase synthesizes the leading strand continuously and the lagging strand discontinuously because both new strands must be synthesized 5′→3′ on antiparallel templates.",
+          "exact_name": true,
+          "hint": "the left continuous leading track beside the right discontinuous lagging track",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-110",
+          "term": "Okazaki fragments",
+          "story": "short DNA pieces accumulating on the lagging track before joining",
+          "science": "Okazaki fragments are short DNA segments synthesized discontinuously on the lagging strand before being joined into a continuous strand.",
+          "exact_name": true,
+          "hint": "short DNA pieces accumulating on the lagging track before joining",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-007: Preserve these as teacher enrichment. Current AP scope requires DNA polymerase, ligase, RNA polymerase, helicase, and topoisomerase by name; additional replication enzyme names are not required.",
+        "Resolved F1 guard RF-U6-008: Keep the term as teacher enrichment. Current CED requires understanding discontinuous lagging-strand fragments and ligase joining them but does not require “Okazaki fragment” by name.",
+        "Discrimination requirement U6-D08: keep Leading and lagging strand synthesis, Okazaki fragments physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U6-K-015",
+      "checkpoint_prompt": "Without looking back, identify or explain Leading and lagging strand synthesis from the scientific action you just watched.",
+      "checkpoint_answer": "DNA polymerase synthesizes the leading strand continuously and the lagging strand discontinuously because both new strands must be synthesized 5′→3′ on antiparallel templates.",
+      "next_locus": "Fragment Joining and Repair Bench",
+      "f3_scene_brief_id": "F3-U6-L10",
+      "narrative_word_count": 489
+    },
+    {
+      "scene_index": 10,
+      "locus_id": "U6-L11",
+      "locus": "Fragment Joining and Repair Bench",
+      "title": "The Copy Cannot Leave With Gaps or Unchecked Errors",
+      "scene_kicker": "Post-synthesis processing turns discontinuous lagging-strand pieces into a continuous DNA backbone and protects sequence accuracy.",
+      "location_description": "the post-fork bench where primer replacement is contextual, ligase seals lagging-strand fragments, and proofreading/repair preserve sequence accuracy",
+      "scene_layout": {
+        "orientation": "Enter Fragment Joining and Repair Bench and stop at the post-fork bench where primer replacement is contextual, ligase seals lagging-strand fragments, and proofreading/repair preserve sequence accuracy. The left side is anchored by primer-replacement / proofreading side, the working center is ligase fragment-joining bench, and the right side is anchored by mismatch / excision-repair overview. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Primer replacement and proofreading side",
+            "symbol": "check",
+            "description": "RNA-primer positions and a polymerase proofreading window occupy the left, showing cleanup and error checking without expanding into a list of extra enzyme names."
+          },
+          {
+            "position": "center",
+            "label": "Ligase joining bench",
+            "symbol": "seal",
+            "description": "Lagging-strand DNA fragments meet at a center bench where ligase seals remaining backbone interruptions after primer replacement."
+          },
+          {
+            "position": "right",
+            "label": "Mismatch and excision-repair overview",
+            "symbol": "repair",
+            "description": "A right-side repair panel shows a mismatched or damaged segment being recognized, removed, and restored using intact sequence information as a guide."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Primer replacement and proofreading side",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "RNA-primer positions and a polymerase proofreading window occupy the left, showing cleanup and error checking without expanding into a list of extra enzyme names.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Ligase joining bench",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "Lagging-strand DNA fragments meet at a center bench where ligase seals remaining backbone interruptions after primer replacement.",
+          "job": "Execute the defining action sequence: Show RNA-primer removal/replacement only as contextual mechanism, not as an extra AP enzyme-name memorization list."
+        },
+        {
+          "name": "Mismatch and excision-repair overview",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A right-side repair panel shows a mismatched or damaged segment being recognized, removed, and restored using intact sequence information as a guide.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The unfinished daughter DNA reaches the **Fragment Joining and Repair Bench**. On your **left**, RNA-primer positions are marked along the lagging strand beside a proofreading window that enlarges the newest nucleotide pair. Directly **ahead**, the separated DNA fragments are aligned end to end across a bench marked LIGASE. On your **right**, a broad repair panel displays a mismatched or damaged DNA segment being identified, removed, and restored using intact sequence information. The continuous leading strand runs along the back wall as a completed comparison. Sora keeps the central question simple: how does the cell turn the fragmented copy into continuous, more accurate DNA without turning this room into a memorization list of every repair enzyme?",
+      "story_paragraphs": [
+        "The unfinished daughter DNA reaches the **Fragment Joining and Repair Bench**. On your **left**, RNA-primer positions are marked along the lagging strand beside a proofreading window that enlarges the newest nucleotide pair. Directly **ahead**, the separated DNA fragments are aligned end to end across a bench marked LIGASE. On your **right**, a broad repair panel displays a mismatched or damaged DNA segment being identified, removed, and restored using intact sequence information. The continuous leading strand runs along the back wall as a completed comparison. Sora keeps the central question simple: how does the cell turn the fragmented copy into continuous, more accurate DNA without turning this room into a memorization list of every repair enzyme?",
+        "She begins on the left with **primer replacement detail**. The temporary RNA-primer material cannot simply remain as the final DNA sequence in the textbook bacterial replication model. RNA primer nucleotides are removed and replaced with DNA before the remaining backbone interruptions are sealed. Sora deliberately keeps the extra enzyme identities off the wall. The mechanism matters here; named proteins beyond the required set are not needed to understand why a temporary primer must be replaced before the strand becomes continuous DNA.",
+        "At center, the fragments now consist of DNA but still contain breaks in the sugar-phosphate backbone between adjacent sections. A ligase model closes those remaining nicks. Sora names the core relationship **ligase joins lagging-strand fragments**: DNA ligase joins DNA fragments on the lagging strand into a continuous strand. She briefly overlays the earlier fork scene. Helicase separated parental strands at the fork; topoisomerase relieved twisting ahead of the fork; ligase acts later on the newly synthesized lagging strand. Their different locations prevent the three enzyme names from becoming interchangeable “replication helpers.”",
+        "The left proofreading window catches a mispaired newly added nucleotide. Sora labels **DNA polymerase proofreading**: many DNA polymerases proofread newly added nucleotides, reducing replication errors. The phrase *many DNA polymerases* stays on the display. Proofreading is an accuracy mechanism associated with polymerase activity, but it does not make replication error-free.",
+        "On the right, the repair panel demonstrates a broader second line of protection. A mismatched or damaged section is recognized, erroneous or damaged nucleotides are removed, and intact sequence information guides restoration. Sora labels this **mismatch and excision repair overview**. DNA repair systems can recognize damaged or mismatched DNA, remove erroneous or damaged nucleotides, and use intact sequence information to restore DNA. The panel deliberately avoids exploding into a dozen named pathways. What you need to see is the logic of recognition, removal, and restoration.",
+        "The red repair light turns green. The lagging strand is now continuous, and both daughter DNA products can be traced back to the semiconservative model: one parental strand paired with one newly synthesized strand. But the right-side quality scanner stops at the physical end of a linear chromosome. There is no DNA beyond that end to continue into. Sora closes the repair ledger and rolls the copied chromosome to the final dock, where repetitive end DNA and an RNA-containing enzyme are kept on opposite sides of the room so their names cannot be confused."
+      ],
+      "story_close": "The red repair light turns green. The lagging strand is now continuous, and both daughter DNA products can be traced back to the semiconservative model: one parental strand paired with one newly synthesized strand. But the right-side quality scanner stops at the physical end of a linear chromosome. There is no DNA beyond that end to continue into. Sora closes the repair ledger and rolls the copied chromosome to the final dock, where repetitive end DNA and an RNA-containing enzyme are kept on opposite sides of the room so their names cannot be confused.",
+      "object_ids": [
+        "U6-K-016",
+        "U6-K-111",
+        "U6-K-114",
+        "U6-K-115"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-016",
+          "term": "Ligase joins lagging-strand fragments",
+          "story": "ligase sealing remaining backbone nicks between lagging-strand DNA fragments",
+          "science": "DNA ligase joins DNA fragments on the lagging strand into a continuous strand.",
+          "exact_name": true,
+          "hint": "ligase sealing remaining backbone nicks between lagging-strand DNA fragments",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U6-K-111",
+          "term": "Primer replacement detail",
+          "story": "temporary RNA-primer positions being replaced with DNA before final sealing",
+          "science": "In bacterial textbook models, RNA primer nucleotides are removed/replaced with DNA before ligase seals remaining backbone interruptions; enzyme identities beyond the AP-required set are enrichment.",
+          "exact_name": false,
+          "hint": "temporary RNA-primer positions being replaced with DNA before final sealing",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-114",
+          "term": "DNA polymerase proofreading",
+          "story": "the proofreading window catching an incorrect newly added nucleotide",
+          "science": "Many DNA polymerases proofread newly added nucleotides, reducing replication errors.",
+          "exact_name": false,
+          "hint": "the proofreading window catching an incorrect newly added nucleotide",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-115",
+          "term": "Mismatch and excision repair overview",
+          "story": "the repair panel recognizing, removing, and restoring mismatched or damaged DNA",
+          "science": "DNA repair systems can recognize damaged or mismatched DNA, remove erroneous/damaged nucleotides, and use intact sequence information to restore DNA.",
+          "exact_name": false,
+          "hint": "the repair panel recognizing, removing, and restoring mismatched or damaged DNA",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-007: Preserve these as teacher enrichment. Current AP scope requires DNA polymerase, ligase, RNA polymerase, helicase, and topoisomerase by name; additional replication enzyme names are not required.",
+        "Resolved F1 guard RF-U6-010: Retain as enrichment and as conceptual support for mutation/repair. Current Unit 6 requires that replication/repair errors can cause mutations, without requiring detailed repair pathway names.",
+        "Discrimination requirement U6-D06: keep Helicase, Topoisomerase, Ligase joins lagging-strand fragments physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Chromosome-End Dock",
+      "f3_scene_brief_id": "F3-U6-L11",
+      "narrative_word_count": 516
+    },
+    {
+      "scene_index": 11,
+      "locus_id": "U6-L12",
+      "locus": "Chromosome-End Dock",
+      "title": "The Final Dock Separates the Chromosome End From the Enzyme That Extends It",
+      "scene_kicker": "Telomeres are chromosome-end DNA and associated structures; telomerase is an enzyme that can extend telomeric DNA in cells where it is active.",
+      "location_description": "the chromosome-end dock distinguishing telomeres from telomerase while keeping the detailed end-replication mechanism as enrichment",
+      "scene_layout": {
+        "orientation": "Enter Chromosome-End Dock and stop at the chromosome-end dock distinguishing telomeres from telomerase while keeping the detailed end-replication mechanism as enrichment. The left side is anchored by telomere protective end, the working center is chromosome-end maintenance dock, and the right side is anchored by telomerase extension tool. Those three anchors remain in fixed positions while only the diagnostic Unit 6 mechanism changes their scientific state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Telomere chromosome end",
+            "symbol": "repeat",
+            "description": "A linear chromosome end on the left terminates in repetitive telomeric DNA and associated protective structure."
+          },
+          {
+            "position": "center",
+            "label": "Chromosome-end maintenance dock",
+            "symbol": "END",
+            "description": "The copied chromosome is placed at center so the physical DNA end can be distinguished from any enzyme that acts on it."
+          },
+          {
+            "position": "right",
+            "label": "Telomerase extension tool",
+            "symbol": "RNA+RT",
+            "description": "A telomerase complex sits on the right as an RNA-containing reverse-transcriptase enzyme capable of extending telomeric DNA in cells where it is active."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Sora Han",
+          "kind": "guide",
+          "visual": "dark-cobalt lab coat, clear gloves, transparent 5′→3′ compass tablet, and a narrow copper information ledger",
+          "job": "Sora keeps the same blue-and-gold DNA duplex, its original strand identities, and every 5′/3′ direction marker visible as the molecule moves from storage into replication. She points to real biological structures, changes only the feature needed for the mechanism, and names terms after their defining action is visible."
+        },
+        {
+          "name": "Telomere chromosome end",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A linear chromosome end on the left terminates in repetitive telomeric DNA and associated protective structure.",
+          "job": "Establish the input, reference state, prerequisite, or comparison that must remain visible before the central mechanism acts."
+        },
+        {
+          "name": "Chromosome-end maintenance dock",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "The copied chromosome is placed at center so the physical DNA end can be distinguished from any enzyme that acts on it.",
+          "job": "Execute the defining action sequence: Place repetitive telomere DNA at the physical ends of a linear chromosome."
+        },
+        {
+          "name": "Telomerase extension tool",
+          "kind": "scientific structure, process, evidence display, or comparison",
+          "visual": "A telomerase complex sits on the right as an RNA-containing reverse-transcriptase enzyme capable of extending telomeric DNA in cells where it is active.",
+          "job": "Display the product, consequence, alternative model, evidence state, or destination that confirms what the center mechanism did."
+        },
+        {
+          "name": "Persistent blue-and-gold DNA duplex",
+          "kind": "journey continuity object",
+          "visual": "the same blue-and-gold DNA molecule with permanent 5′/3′ arrowheads and a copper origin tag carried from the archive entrance through the replication works",
+          "job": "keeps original strand identity, directionality, and replication origin traceable across the entire journey; it never substitutes for a biological term"
+        }
+      ],
+      "continuity_object": "one persistent blue-and-gold DNA duplex with arrowheads marking 5′ and 3′ ends and a single tagged replication origin; the original strands remain identifiable as the molecule moves through the archive and copying works.",
+      "story_open": "The journey ends at the **Chromosome-End Dock**, a quiet bay built around the end of a linear chromosome. On your **left**, the chromosome terminates in a visibly repetitive stretch of telomeric DNA, shown as repeated sequence blocks with associated protective structure. Directly **ahead**, the fully copied chromosome lies in a center maintenance cradle, its internal genes safely separated from the physical end. On your **right**, a distinct protein-RNA complex is parked in its own tool station. Its label is covered for the moment. Sora places the blue-and-gold daughter DNA records beside the dock and points to the spatial separation: the end region is part of the chromosome; the tool that can extend it is a different biological entity.",
+      "story_paragraphs": [
+        "The journey ends at the **Chromosome-End Dock**, a quiet bay built around the end of a linear chromosome. On your **left**, the chromosome terminates in a visibly repetitive stretch of telomeric DNA, shown as repeated sequence blocks with associated protective structure. Directly **ahead**, the fully copied chromosome lies in a center maintenance cradle, its internal genes safely separated from the physical end. On your **right**, a distinct protein-RNA complex is parked in its own tool station. Its label is covered for the moment. Sora places the blue-and-gold daughter DNA records beside the dock and points to the spatial separation: the end region is part of the chromosome; the tool that can extend it is a different biological entity.",
+        "She begins on the left. The repeated DNA sequence and associated end structure are **telomeres**. Telomeres are repetitive DNA sequences and associated structures at chromosome ends that buffer loss of coding sequence and help maintain chromosome-end integrity. Sora keeps the repeats physically attached to the chromosome model. A telomere is not an enzyme, not a free-floating cap, and not a signal that all chromosome DNA is repetitive. It is a specialized chromosome-end region.",
+        "Only after the end region is fixed does Sora uncover the right-side complex. **Telomerase** is an enzyme capable of extending telomeric DNA in cells where it is active. More specifically, telomerase can extend telomeric DNA using an RNA-containing reverse-transcriptase mechanism. The tool station shows both components: an internal RNA template and reverse-transcriptase activity. Sora moves the enzyme toward the chromosome end, but she never swaps their identities. Telomere stays on the chromosome; telomerase is the enzyme that can act on telomeric DNA.",
+        "The maintenance cradle deliberately avoids turning the room into a full molecular derivation of the end-replication problem. What matters for this journey is the diagnostic distinction and its biological consequence. Linear chromosome ends require specialized maintenance logic, and telomerase provides a mechanism for extending telomeric repeats in cell types where the enzyme is active. The presence and activity of telomerase vary among cell types and biological contexts; the right-side tool is therefore shown as available in some cells, not permanently active in every cell.",
+        "Sora now opens the copper ledger to its first page and walks backward through the route without moving the objects. Hereditary information entered as a real nucleic-acid molecule. Chromosome forms established how DNA can be stored. Plasmids were separated from main chromosomes. Purines and pyrimidines were classified before complementary pairing rebuilt the antiparallel duplex. Replication was tied to hereditary continuity, the semiconservative model survived density evidence, origins launched forks, helicase and topoisomerase took distinct positions, primase supplied a starting 3′ end, DNA polymerase extended 5′→3′, the fork split into leading and lagging synthesis, ligase and repair systems finished the copy, and chromosome ends remained a distinct maintenance problem.",
+        "The final display shows two semiconservative daughter DNA molecules. The original blue parental strand is paired with a new strand in one daughter; the original gold parental strand is paired with a new strand in the other. Their direction arrows still point correctly, and the copper origin tag can be traced back to the place where the fork first opened. The copying works certify both molecules. Sora closes the ledger, but she does not file the DNA away. A new conveyor beyond the dock leads toward an RNA workshop. The next Unit 6 problem will no longer be how hereditary DNA is copied. It will be how selected information in that DNA is transcribed into RNA."
+      ],
+      "story_close": "The final display shows two semiconservative daughter DNA molecules. The original blue parental strand is paired with a new strand in one daughter; the original gold parental strand is paired with a new strand in the other. Their direction arrows still point correctly, and the copper origin tag can be traced back to the place where the fork first opened. The copying works certify both molecules. Sora closes the ledger, but she does not file the DNA away. A new conveyor beyond the dock leads toward an RNA workshop. The next Unit 6 problem will no longer be how hereditary DNA is copied. It will be how selected information in that DNA is transcribed into RNA.",
+      "object_ids": [
+        "U6-K-112",
+        "U6-K-113"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U6-K-112",
+          "term": "Telomeres",
+          "story": "the repetitive chromosome-end DNA and associated protective structure fixed on the left",
+          "science": "Telomeres are repetitive DNA sequences and associated structures at chromosome ends that buffer loss of coding sequence and help maintain chromosome-end integrity.",
+          "exact_name": true,
+          "hint": "the repetitive chromosome-end DNA and associated protective structure fixed on the left",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U6-K-113",
+          "term": "Telomerase",
+          "story": "the distinct RNA-containing reverse-transcriptase enzyme acting at telomeric DNA",
+          "science": "Telomerase can extend telomeric DNA using an RNA-containing reverse-transcriptase mechanism in cells where it is active.",
+          "exact_name": true,
+          "hint": "the distinct RNA-containing reverse-transcriptase enzyme acting at telomeric DNA",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U6-009: Scientifically retain as teacher enrichment; they are not current Unit 6 AP-required content.",
+        "Discrimination requirement U6-D09: keep Telomeres, Telomerase physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U6-L12",
+      "narrative_word_count": 582
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2"
+}

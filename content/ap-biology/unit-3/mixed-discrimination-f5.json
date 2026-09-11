@@ -1,0 +1,1434 @@
+{
+  "schema": "memory-palace-v2-unit3-f5-mixed-discrimination-1.0",
+  "unit_id": "unit-3",
+  "set_count": 28,
+  "question_count": 78,
+  "sets": [
+    {
+      "set_id": "U3-CF-01",
+      "title": "Catalysis vocabulary",
+      "knowledge_ids": [
+        "U3-K-083",
+        "U3-K-002",
+        "U3-K-084",
+        "U3-K-085",
+        "U3-K-005"
+      ],
+      "terms": [
+        "activation energy",
+        "enzyme",
+        "substrate",
+        "active site",
+        "enzyme-substrate complex"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-01-Q01",
+          "prompt": "This is the initial energy barrier reactants must overcome to reach the transition state.",
+          "choices": [
+            "activation energy",
+            "enzyme",
+            "substrate",
+            "active site",
+            "enzyme-substrate complex"
+          ],
+          "answer": "activation energy",
+          "explanation": "Activation energy is the initial energy barrier that reactants must overcome to reach the transition state of a reaction.",
+          "knowledge_id": "U3-K-083"
+        },
+        {
+          "question_id": "U3-CF-01-Q02",
+          "prompt": "This protein functions as a biological catalyst in cells.",
+          "choices": [
+            "activation energy",
+            "enzyme",
+            "substrate",
+            "active site",
+            "enzyme-substrate complex"
+          ],
+          "answer": "enzyme",
+          "explanation": "Enzymes are proteins that function as biological catalysts in cells.",
+          "knowledge_id": "U3-K-002"
+        },
+        {
+          "question_id": "U3-CF-01-Q03",
+          "prompt": "This is the reactant molecule on which a catalyst acts.",
+          "choices": [
+            "activation energy",
+            "enzyme",
+            "substrate",
+            "active site",
+            "enzyme-substrate complex"
+          ],
+          "answer": "substrate",
+          "explanation": "A substrate is a reactant molecule on which an enzyme acts.",
+          "knowledge_id": "U3-K-084"
+        },
+        {
+          "question_id": "U3-CF-01-Q04",
+          "prompt": "This is the region of a catalyst where a compatible reactant binds and catalysis occurs.",
+          "choices": [
+            "activation energy",
+            "enzyme",
+            "substrate",
+            "active site",
+            "enzyme-substrate complex"
+          ],
+          "answer": "active site",
+          "explanation": "The active site is the region of an enzyme where compatible substrate binds and catalysis occurs.",
+          "knowledge_id": "U3-K-085"
+        },
+        {
+          "question_id": "U3-CF-01-Q05",
+          "prompt": "This temporary bound state exists after the reactant has docked at the catalyst before products are released.",
+          "choices": [
+            "activation energy",
+            "enzyme",
+            "substrate",
+            "active site",
+            "enzyme-substrate complex"
+          ],
+          "answer": "enzyme-substrate complex",
+          "explanation": "The enzyme-substrate complex model represents substrate binding at the active site.",
+          "knowledge_id": "U3-K-005"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-02",
+      "title": "Active-site models",
+      "knowledge_ids": [
+        "U3-K-004",
+        "U3-K-086"
+      ],
+      "terms": [
+        "active-site compatibility",
+        "induced fit"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-02-Q01",
+          "prompt": "This describes the requirement that reactant shape and charge fit the catalytic binding region.",
+          "choices": [
+            "active-site compatibility",
+            "induced fit"
+          ],
+          "answer": "active-site compatibility",
+          "explanation": "For an enzyme-mediated reaction to occur, substrate shape and charge must be compatible with the enzyme active site.",
+          "knowledge_id": "U3-K-004"
+        },
+        {
+          "question_id": "U3-CF-02-Q02",
+          "prompt": "This is the conformational change triggered by binding that improves catalytic interactions.",
+          "choices": [
+            "active-site compatibility",
+            "induced fit"
+          ],
+          "answer": "induced fit",
+          "explanation": "Induced fit is a change in enzyme conformation triggered by substrate binding that improves catalytic interactions in the active site.",
+          "knowledge_id": "U3-K-086"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-03",
+      "title": "Enzyme disruption mechanisms",
+      "knowledge_ids": [
+        "U3-K-007",
+        "U3-K-009",
+        "U3-K-096"
+      ],
+      "terms": [
+        "denaturation",
+        "reversible denaturation",
+        "irreversible inhibition"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-03-Q01",
+          "prompt": "This is loss of functional protein structure caused by disruptive temperature, pH, or chemical conditions.",
+          "choices": [
+            "denaturation",
+            "reversible denaturation",
+            "irreversible inhibition"
+          ],
+          "answer": "denaturation",
+          "explanation": "Temperature, pH, or chemical-environment changes can disrupt enzyme protein structure and eliminate catalytic ability.",
+          "knowledge_id": "U3-K-007"
+        },
+        {
+          "question_id": "U3-CF-03-Q02",
+          "prompt": "This describes structural disruption from which catalytic activity can return when conditions are restored.",
+          "choices": [
+            "denaturation",
+            "reversible denaturation",
+            "irreversible inhibition"
+          ],
+          "answer": "reversible denaturation",
+          "explanation": "In some cases enzyme denaturation is reversible and activity can return when conditions are restored.",
+          "knowledge_id": "U3-K-009"
+        },
+        {
+          "question_id": "U3-CF-03-Q03",
+          "prompt": "This occurs when an inhibitor forms a persistent, often covalent interaction that inactivates the catalyst.",
+          "choices": [
+            "denaturation",
+            "reversible denaturation",
+            "irreversible inhibition"
+          ],
+          "answer": "irreversible inhibition",
+          "explanation": "Irreversible inhibitors form very stable interactions, often covalent, that persistently inactivate an enzyme; this is distinct from the standard reversible competitive-inhibition model.",
+          "knowledge_id": "U3-K-096"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-04",
+      "title": "Inhibition mechanisms",
+      "knowledge_ids": [
+        "U3-K-012",
+        "U3-K-013",
+        "U3-K-096"
+      ],
+      "terms": [
+        "competitive inhibition",
+        "noncompetitive inhibition",
+        "irreversible inhibition"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-04-Q01",
+          "prompt": "This inhibition occurs when a reversible inhibitor occupies the catalytic binding region and reduces reactant access.",
+          "choices": [
+            "competitive inhibition",
+            "noncompetitive inhibition",
+            "irreversible inhibition"
+          ],
+          "answer": "competitive inhibition",
+          "explanation": "Competitive inhibitors can bind reversibly to an enzyme active site and reduce substrate access.",
+          "knowledge_id": "U3-K-012"
+        },
+        {
+          "question_id": "U3-CF-04-Q02",
+          "prompt": "This inhibition occurs when binding at a regulatory site away from the catalytic site decreases activity.",
+          "choices": [
+            "competitive inhibition",
+            "noncompetitive inhibition",
+            "irreversible inhibition"
+          ],
+          "answer": "noncompetitive inhibition",
+          "explanation": "Noncompetitive inhibitors can bind allosteric sites and change enzyme activity.",
+          "knowledge_id": "U3-K-013"
+        },
+        {
+          "question_id": "U3-CF-04-Q03",
+          "prompt": "This occurs when an inhibitor forms a persistent, often covalent interaction that inactivates the catalyst.",
+          "choices": [
+            "competitive inhibition",
+            "noncompetitive inhibition",
+            "irreversible inhibition"
+          ],
+          "answer": "irreversible inhibition",
+          "explanation": "Irreversible inhibitors form very stable interactions, often covalent, that persistently inactivate an enzyme; this is distinct from the standard reversible competitive-inhibition model.",
+          "knowledge_id": "U3-K-096"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-05",
+      "title": "Enzyme helpers",
+      "knowledge_ids": [
+        "U3-K-093",
+        "U3-K-094",
+        "U3-K-095"
+      ],
+      "terms": [
+        "cofactor",
+        "coenzyme",
+        "holoenzyme"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-05-Q01",
+          "prompt": "This is a nonprotein helper required by some catalysts and can include an inorganic metal ion.",
+          "choices": [
+            "cofactor",
+            "coenzyme",
+            "holoenzyme"
+          ],
+          "answer": "cofactor",
+          "explanation": "A cofactor is a nonprotein helper required for the function of some enzymes; inorganic cofactors can include metal ions.",
+          "knowledge_id": "U3-K-093"
+        },
+        {
+          "question_id": "U3-CF-05-Q02",
+          "prompt": "This is an organic helper, often derived from a vitamin.",
+          "choices": [
+            "cofactor",
+            "coenzyme",
+            "holoenzyme"
+          ],
+          "answer": "coenzyme",
+          "explanation": "A coenzyme is an organic cofactor; many coenzymes are derived from vitamins.",
+          "knowledge_id": "U3-K-094"
+        },
+        {
+          "question_id": "U3-CF-05-Q03",
+          "prompt": "This is the catalytically active enzyme complex with its required helper or helpers associated.",
+          "choices": [
+            "cofactor",
+            "coenzyme",
+            "holoenzyme"
+          ],
+          "answer": "holoenzyme",
+          "explanation": "A holoenzyme is the catalytically active enzyme complex with its required cofactor or cofactors associated.",
+          "knowledge_id": "U3-K-095"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-06",
+      "title": "Allosteric control",
+      "knowledge_ids": [
+        "U3-K-098",
+        "U3-K-100",
+        "U3-K-101"
+      ],
+      "terms": [
+        "allosteric site",
+        "allosteric activator",
+        "allosteric inhibitor"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-06-Q01",
+          "prompt": "This is a regulatory binding location distinct from the catalytic binding region.",
+          "choices": [
+            "allosteric site",
+            "allosteric activator",
+            "allosteric inhibitor"
+          ],
+          "answer": "allosteric site",
+          "explanation": "An allosteric site is a regulatory binding site distinct from an enzyme’s active site.",
+          "knowledge_id": "U3-K-098"
+        },
+        {
+          "question_id": "U3-CF-06-Q02",
+          "prompt": "This regulatory molecule binds away from the catalytic site and stabilizes a more active conformation.",
+          "choices": [
+            "allosteric site",
+            "allosteric activator",
+            "allosteric inhibitor"
+          ],
+          "answer": "allosteric activator",
+          "explanation": "An allosteric activator is a regulatory molecule that binds an allosteric site and stabilizes a more active enzyme conformation.",
+          "knowledge_id": "U3-K-100"
+        },
+        {
+          "question_id": "U3-CF-06-Q03",
+          "prompt": "This regulatory molecule binds away from the catalytic site and stabilizes a less active conformation.",
+          "choices": [
+            "allosteric site",
+            "allosteric activator",
+            "allosteric inhibitor"
+          ],
+          "answer": "allosteric inhibitor",
+          "explanation": "An allosteric inhibitor is a regulatory molecule that binds an allosteric site and stabilizes a less active enzyme conformation.",
+          "knowledge_id": "U3-K-101"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-07",
+      "title": "Pathway regulation",
+      "knowledge_ids": [
+        "U3-K-102",
+        "U3-K-103",
+        "U3-K-099"
+      ],
+      "terms": [
+        "cooperativity",
+        "feedback inhibition",
+        "allosteric regulation"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-07-Q01",
+          "prompt": "This occurs when binding at one site of a multisubunit enzyme increases activity at additional sites.",
+          "choices": [
+            "cooperativity",
+            "feedback inhibition",
+            "allosteric regulation"
+          ],
+          "answer": "cooperativity",
+          "explanation": "Cooperativity occurs in some multisubunit enzymes when substrate binding at one active site promotes a conformation that increases activity at other active sites.",
+          "knowledge_id": "U3-K-102"
+        },
+        {
+          "question_id": "U3-CF-07-Q02",
+          "prompt": "This occurs when a downstream product inhibits an earlier enzyme in the same pathway.",
+          "choices": [
+            "cooperativity",
+            "feedback inhibition",
+            "allosteric regulation"
+          ],
+          "answer": "feedback inhibition",
+          "explanation": "Feedback inhibition occurs when a downstream product inhibits an enzyme acting earlier in the same metabolic pathway, reducing further product formation.",
+          "knowledge_id": "U3-K-103"
+        },
+        {
+          "question_id": "U3-CF-07-Q03",
+          "prompt": "This general control mechanism changes enzyme activity through noncovalent regulatory binding away from the active site.",
+          "choices": [
+            "cooperativity",
+            "feedback inhibition",
+            "allosteric regulation"
+          ],
+          "answer": "allosteric regulation",
+          "explanation": "Allosteric regulation occurs when a regulatory molecule binds noncovalently at a site other than the active site and changes enzyme activity through a conformational change.",
+          "knowledge_id": "U3-K-099"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-08",
+      "title": "Metabolic direction",
+      "knowledge_ids": [
+        "U3-K-057",
+        "U3-K-058"
+      ],
+      "terms": [
+        "catabolic pathway",
+        "anabolic pathway"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-08-Q01",
+          "prompt": "This pathway breaks complex molecules into simpler products and typically releases usable energy.",
+          "choices": [
+            "catabolic pathway",
+            "anabolic pathway"
+          ],
+          "answer": "catabolic pathway",
+          "explanation": "Catabolic pathways break complex molecules into simpler products and typically release usable energy.",
+          "knowledge_id": "U3-K-057"
+        },
+        {
+          "question_id": "U3-CF-08-Q02",
+          "prompt": "This pathway builds complex molecules from simpler components and requires energy input.",
+          "choices": [
+            "catabolic pathway",
+            "anabolic pathway"
+          ],
+          "answer": "anabolic pathway",
+          "explanation": "Anabolic pathways build complex molecules from simpler components and require energy input.",
+          "knowledge_id": "U3-K-058"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-09",
+      "title": "Energy forms",
+      "knowledge_ids": [
+        "U3-K-060",
+        "U3-K-061",
+        "U3-K-062",
+        "U3-K-063"
+      ],
+      "terms": [
+        "kinetic energy",
+        "thermal energy",
+        "potential energy",
+        "chemical energy"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-09-Q01",
+          "prompt": "This is energy associated with directed or observable motion.",
+          "choices": [
+            "kinetic energy",
+            "thermal energy",
+            "potential energy",
+            "chemical energy"
+          ],
+          "answer": "kinetic energy",
+          "explanation": "Kinetic energy is energy associated with motion.",
+          "knowledge_id": "U3-K-060"
+        },
+        {
+          "question_id": "U3-CF-09-Q02",
+          "prompt": "This is kinetic energy associated with random molecular motion.",
+          "choices": [
+            "kinetic energy",
+            "thermal energy",
+            "potential energy",
+            "chemical energy"
+          ],
+          "answer": "thermal energy",
+          "explanation": "Thermal energy is kinetic energy associated with random movement of atoms and molecules.",
+          "knowledge_id": "U3-K-061"
+        },
+        {
+          "question_id": "U3-CF-09-Q03",
+          "prompt": "This is stored energy associated with position or structure.",
+          "choices": [
+            "kinetic energy",
+            "thermal energy",
+            "potential energy",
+            "chemical energy"
+          ],
+          "answer": "potential energy",
+          "explanation": "Potential energy is stored energy associated with position or structure.",
+          "knowledge_id": "U3-K-062"
+        },
+        {
+          "question_id": "U3-CF-09-Q04",
+          "prompt": "This is stored molecular energy that can be transformed during reactions.",
+          "choices": [
+            "kinetic energy",
+            "thermal energy",
+            "potential energy",
+            "chemical energy"
+          ],
+          "answer": "chemical energy",
+          "explanation": "Chemical energy is potential energy associated with molecular structure that can be transformed during chemical reactions.",
+          "knowledge_id": "U3-K-063"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-10",
+      "title": "Thermodynamic laws",
+      "knowledge_ids": [
+        "U3-K-065",
+        "U3-K-066"
+      ],
+      "terms": [
+        "first law of thermodynamics",
+        "second law of thermodynamics"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-10-Q01",
+          "prompt": "This law states that energy is transferred or transformed but is not created or destroyed.",
+          "choices": [
+            "first law of thermodynamics",
+            "second law of thermodynamics"
+          ],
+          "answer": "first law of thermodynamics",
+          "explanation": "Energy cannot be created or destroyed; it can be transferred or transformed.",
+          "knowledge_id": "U3-K-065"
+        },
+        {
+          "question_id": "U3-CF-10-Q02",
+          "prompt": "This law states that energy transformations increase total entropy and disperse some energy as less-useful heat.",
+          "choices": [
+            "first law of thermodynamics",
+            "second law of thermodynamics"
+          ],
+          "answer": "second law of thermodynamics",
+          "explanation": "Every energy transfer or transformation increases the entropy of the universe, and some energy becomes less available to perform work, often dispersing as heat.",
+          "knowledge_id": "U3-K-066"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-11",
+      "title": "Reaction energetics",
+      "knowledge_ids": [
+        "U3-K-070",
+        "U3-K-071"
+      ],
+      "terms": [
+        "exergonic reaction",
+        "endergonic reaction"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-11-Q01",
+          "prompt": "This reaction has a negative free-energy change and is thermodynamically spontaneous even if it may proceed slowly.",
+          "choices": [
+            "exergonic reaction",
+            "endergonic reaction"
+          ],
+          "answer": "exergonic reaction",
+          "explanation": "An exergonic reaction has a negative change in free energy and can proceed spontaneously in the thermodynamic sense; spontaneity does not imply a fast rate.",
+          "knowledge_id": "U3-K-070"
+        },
+        {
+          "question_id": "U3-CF-11-Q02",
+          "prompt": "This reaction has a positive free-energy change and must be coupled to an energy-releasing process in cells.",
+          "choices": [
+            "exergonic reaction",
+            "endergonic reaction"
+          ],
+          "answer": "endergonic reaction",
+          "explanation": "An endergonic reaction has a positive change in free energy and requires coupling to an energy-releasing process to proceed in cells.",
+          "knowledge_id": "U3-K-071"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-12",
+      "title": "Cellular work",
+      "knowledge_ids": [
+        "U3-K-073",
+        "U3-K-074",
+        "U3-K-075"
+      ],
+      "terms": [
+        "mechanical work",
+        "transport work",
+        "chemical work"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-12-Q01",
+          "prompt": "This category includes muscle contraction, ciliary movement, and chromosome movement.",
+          "choices": [
+            "mechanical work",
+            "transport work",
+            "chemical work"
+          ],
+          "answer": "mechanical work",
+          "explanation": "Mechanical work includes processes such as ciliary movement, chromosome movement, and muscle contraction.",
+          "knowledge_id": "U3-K-073"
+        },
+        {
+          "question_id": "U3-CF-12-Q02",
+          "prompt": "This category moves substances across membranes against thermodynamically favored directions.",
+          "choices": [
+            "mechanical work",
+            "transport work",
+            "chemical work"
+          ],
+          "answer": "transport work",
+          "explanation": "Transport work moves substances across membranes against thermodynamically favored directions.",
+          "knowledge_id": "U3-K-074"
+        },
+        {
+          "question_id": "U3-CF-12-Q03",
+          "prompt": "This category drives endergonic synthesis such as building polymers from monomers.",
+          "choices": [
+            "mechanical work",
+            "transport work",
+            "chemical work"
+          ],
+          "answer": "chemical work",
+          "explanation": "Chemical work drives endergonic reactions such as synthesis of polymers from monomers.",
+          "knowledge_id": "U3-K-075"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-13",
+      "title": "ATP coupling",
+      "knowledge_ids": [
+        "U3-K-078",
+        "U3-K-081",
+        "U3-K-082"
+      ],
+      "terms": [
+        "ATP hydrolysis",
+        "phosphorylation",
+        "ATP regeneration"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-13-Q01",
+          "prompt": "This reaction converts ATP and water to ADP and inorganic phosphate with a negative free-energy change under cellular conditions.",
+          "choices": [
+            "ATP hydrolysis",
+            "phosphorylation",
+            "ATP regeneration"
+          ],
+          "answer": "ATP hydrolysis",
+          "explanation": "ATP hydrolysis converts ATP and water to ADP and inorganic phosphate and has a negative free-energy change under cellular conditions.",
+          "knowledge_id": "U3-K-078"
+        },
+        {
+          "question_id": "U3-CF-13-Q02",
+          "prompt": "This is transfer or addition of a phosphate group to a molecule, often changing its reactivity or conformation.",
+          "choices": [
+            "ATP hydrolysis",
+            "phosphorylation",
+            "ATP regeneration"
+          ],
+          "answer": "phosphorylation",
+          "explanation": "Phosphorylation is transfer or addition of a phosphate group to a molecule; ATP-driven phosphorylation can alter a molecule’s reactivity, free energy, or protein conformation.",
+          "knowledge_id": "U3-K-081"
+        },
+        {
+          "question_id": "U3-CF-13-Q03",
+          "prompt": "This continuously reforms ATP from ADP and inorganic phosphate using energy from exergonic processes.",
+          "choices": [
+            "ATP hydrolysis",
+            "phosphorylation",
+            "ATP regeneration"
+          ],
+          "answer": "ATP regeneration",
+          "explanation": "ATP is continually regenerated from ADP and inorganic phosphate using energy released by exergonic processes.",
+          "knowledge_id": "U3-K-082"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-14",
+      "title": "Carbon acquisition",
+      "knowledge_ids": [
+        "U3-K-105",
+        "U3-K-106",
+        "U3-K-107"
+      ],
+      "terms": [
+        "autotroph",
+        "photoautotroph",
+        "heterotroph"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-14-Q01",
+          "prompt": "This organismal strategy builds organic molecules from inorganic carbon using light or chemical energy.",
+          "choices": [
+            "autotroph",
+            "photoautotroph",
+            "heterotroph"
+          ],
+          "answer": "autotroph",
+          "explanation": "An autotroph builds organic molecules from inorganic carbon such as CO2 using energy from light or chemical reactions.",
+          "knowledge_id": "U3-K-105"
+        },
+        {
+          "question_id": "U3-CF-14-Q02",
+          "prompt": "This carbon-acquisition strategy uses light energy to build organic molecules from inorganic carbon.",
+          "choices": [
+            "autotroph",
+            "photoautotroph",
+            "heterotroph"
+          ],
+          "answer": "photoautotroph",
+          "explanation": "A photoautotroph uses light energy to build organic molecules from inorganic carbon.",
+          "knowledge_id": "U3-K-106"
+        },
+        {
+          "question_id": "U3-CF-14-Q03",
+          "prompt": "This strategy obtains organic carbon from preexisting organic molecules made by other organisms.",
+          "choices": [
+            "autotroph",
+            "photoautotroph",
+            "heterotroph"
+          ],
+          "answer": "heterotroph",
+          "explanation": "A heterotroph obtains organic carbon from preexisting organic molecules made by other organisms.",
+          "knowledge_id": "U3-K-107"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-15",
+      "title": "Chloroplast locations",
+      "knowledge_ids": [
+        "U3-K-028",
+        "U3-K-029",
+        "U3-K-030"
+      ],
+      "terms": [
+        "stroma",
+        "thylakoid membrane",
+        "granum"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-15-Q01",
+          "prompt": "This chloroplast fluid compartment lies outside the thylakoids and contains Calvin-cycle reactions.",
+          "choices": [
+            "stroma",
+            "thylakoid membrane",
+            "granum"
+          ],
+          "answer": "stroma",
+          "explanation": "The stroma is the fluid inside the inner chloroplast membrane and outside the thylakoids; Calvin-cycle carbon-fixation reactions occur there.",
+          "knowledge_id": "U3-K-028"
+        },
+        {
+          "question_id": "U3-CF-15-Q02",
+          "prompt": "This chloroplast membrane contains photosystems, pigments, electron-transfer components, and ATP synthase.",
+          "choices": [
+            "stroma",
+            "thylakoid membrane",
+            "granum"
+          ],
+          "answer": "thylakoid membrane",
+          "explanation": "Thylakoid membranes contain chlorophyll organized into photosystems together with electron-transport proteins.",
+          "knowledge_id": "U3-K-029"
+        },
+        {
+          "question_id": "U3-CF-15-Q03",
+          "prompt": "This is a stack of thylakoids.",
+          "choices": [
+            "stroma",
+            "thylakoid membrane",
+            "granum"
+          ],
+          "answer": "granum",
+          "explanation": "Thylakoids form stacks called grana, and the light reactions occur on thylakoid membranes in these stacks.",
+          "knowledge_id": "U3-K-030"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-16",
+      "title": "Photosynthetic pigments",
+      "knowledge_ids": [
+        "U3-K-120",
+        "U3-K-121",
+        "U3-K-122"
+      ],
+      "terms": [
+        "chlorophyll a",
+        "chlorophyll b",
+        "carotenoids"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-16-Q01",
+          "prompt": "This is the primary reaction-center pigment in oxygenic photosynthesis.",
+          "choices": [
+            "chlorophyll a",
+            "chlorophyll b",
+            "carotenoids"
+          ],
+          "answer": "chlorophyll a",
+          "explanation": "Chlorophyll a is the primary reaction-center pigment in oxygenic photosynthesis.",
+          "knowledge_id": "U3-K-120"
+        },
+        {
+          "question_id": "U3-CF-16-Q02",
+          "prompt": "This accessory pigment broadens the wavelengths usable for photosynthesis in plants and green algae.",
+          "choices": [
+            "chlorophyll a",
+            "chlorophyll b",
+            "carotenoids"
+          ],
+          "answer": "chlorophyll b",
+          "explanation": "Chlorophyll b is an accessory chlorophyll that broadens the wavelengths usable for photosynthesis in plants and green algae.",
+          "knowledge_id": "U3-K-121"
+        },
+        {
+          "question_id": "U3-CF-16-Q03",
+          "prompt": "These accessory pigments broaden absorption and help dissipate excess excitation energy.",
+          "choices": [
+            "chlorophyll a",
+            "chlorophyll b",
+            "carotenoids"
+          ],
+          "answer": "carotenoids",
+          "explanation": "Carotenoids are accessory pigments that broaden light absorption and can dissipate excess light energy, helping protect the photosynthetic apparatus.",
+          "knowledge_id": "U3-K-122"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-17",
+      "title": "Photosystem components",
+      "knowledge_ids": [
+        "U3-K-123",
+        "U3-K-125",
+        "U3-K-124"
+      ],
+      "terms": [
+        "photosystem",
+        "light-harvesting complex",
+        "reaction center"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-17-Q01",
+          "prompt": "This thylakoid complex contains both a reaction center and surrounding light-harvesting pigments/proteins.",
+          "choices": [
+            "photosystem",
+            "light-harvesting complex",
+            "reaction center"
+          ],
+          "answer": "photosystem",
+          "explanation": "A photosystem is a thylakoid-membrane complex containing a reaction center and surrounding light-harvesting pigments and proteins.",
+          "knowledge_id": "U3-K-123"
+        },
+        {
+          "question_id": "U3-CF-17-Q02",
+          "prompt": "This pigment-protein assembly transfers excitation energy toward a reaction center.",
+          "choices": [
+            "photosystem",
+            "light-harvesting complex",
+            "reaction center"
+          ],
+          "answer": "light-harvesting complex",
+          "explanation": "Light-harvesting complexes contain pigment molecules bound to proteins and transfer excitation energy toward the reaction center.",
+          "knowledge_id": "U3-K-125"
+        },
+        {
+          "question_id": "U3-CF-17-Q03",
+          "prompt": "This part contains a special chlorophyll pair and primary electron acceptor where excitation becomes electron transfer.",
+          "choices": [
+            "photosystem",
+            "light-harvesting complex",
+            "reaction center"
+          ],
+          "answer": "reaction center",
+          "explanation": "A photosystem reaction center contains a special chlorophyll pair and primary electron acceptor where excitation leads to electron transfer.",
+          "knowledge_id": "U3-K-124"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-18",
+      "title": "Photosystems",
+      "knowledge_ids": [
+        "U3-K-126",
+        "U3-K-127"
+      ],
+      "terms": [
+        "photosystem II",
+        "photosystem I"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-18-Q01",
+          "prompt": "This light-driven complex receives replacement electrons from water oxidation after transferring an excited electron.",
+          "choices": [
+            "photosystem II",
+            "photosystem I"
+          ],
+          "answer": "photosystem II",
+          "explanation": "Photosystem II absorbs light, transfers an excited electron to an acceptor, and receives replacement electrons from water oxidation.",
+          "knowledge_id": "U3-K-126"
+        },
+        {
+          "question_id": "U3-CF-18-Q02",
+          "prompt": "This light-driven complex re-excites arriving electrons and supports reduction of NADP+.",
+          "choices": [
+            "photosystem II",
+            "photosystem I"
+          ],
+          "answer": "photosystem I",
+          "explanation": "Photosystem I re-excites electrons arriving from the thylakoid electron transport chain and supports reduction of NADP+ to NADPH.",
+          "knowledge_id": "U3-K-127"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-19",
+      "title": "Light-reaction energy products",
+      "knowledge_ids": [
+        "U3-K-031",
+        "U3-K-033"
+      ],
+      "terms": [
+        "ATP",
+        "NADPH"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-19-Q01",
+          "prompt": "This light-reaction product supplies chemical energy for Calvin-cycle work.",
+          "choices": [
+            "ATP",
+            "NADPH"
+          ],
+          "answer": "ATP",
+          "explanation": "The light reactions capture light energy to produce ATP and NADPH, which provide energy and reducing power for carbohydrate production in the Calvin cycle.",
+          "knowledge_id": "U3-K-031"
+        },
+        {
+          "question_id": "U3-CF-19-Q02",
+          "prompt": "This reduced electron carrier supplies reducing power for Calvin-cycle carbon reduction.",
+          "choices": [
+            "ATP",
+            "NADPH"
+          ],
+          "answer": "NADPH",
+          "explanation": "In photosynthesis, electrons passing through the thylakoid electron transport system ultimately reduce NADP+ to NADPH in association with photosystem I.",
+          "knowledge_id": "U3-K-033"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-20",
+      "title": "Photosynthetic phases",
+      "knowledge_ids": [
+        "U3-K-116",
+        "U3-K-133"
+      ],
+      "terms": [
+        "light reactions",
+        "Calvin cycle"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-20-Q01",
+          "prompt": "This photosynthetic phase captures light energy and produces ATP and reducing power on thylakoid membranes.",
+          "choices": [
+            "light reactions",
+            "Calvin cycle"
+          ],
+          "answer": "light reactions",
+          "explanation": "Photosynthesis can be organized into light reactions that capture light energy and a Calvin cycle that uses ATP and NADPH to reduce carbon dioxide to carbohydrate.",
+          "knowledge_id": "U3-K-116"
+        },
+        {
+          "question_id": "U3-CF-20-Q02",
+          "prompt": "This cyclic stromal pathway uses ATP and reducing power to incorporate CO2 into carbohydrate.",
+          "choices": [
+            "light reactions",
+            "Calvin cycle"
+          ],
+          "answer": "Calvin cycle",
+          "explanation": "The Calvin cycle is a cyclic carbon-fixation pathway in the chloroplast stroma that uses ATP and NADPH to incorporate CO2 into carbohydrate.",
+          "knowledge_id": "U3-K-133"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-21",
+      "title": "Calvin-cycle roles",
+      "knowledge_ids": [
+        "U3-K-135",
+        "U3-K-136",
+        "U3-K-137"
+      ],
+      "terms": [
+        "rubisco",
+        "RuBP",
+        "G3P"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-21-Q01",
+          "prompt": "This enzyme catalyzes initial CO2 fixation and can also react with O2.",
+          "choices": [
+            "rubisco",
+            "RuBP",
+            "G3P"
+          ],
+          "answer": "rubisco",
+          "explanation": "Rubisco is the enzyme that catalyzes the initial CO2-fixation reaction of the Calvin cycle and can also react with O2.",
+          "knowledge_id": "U3-K-135"
+        },
+        {
+          "question_id": "U3-CF-21-Q02",
+          "prompt": "This five-carbon CO2 acceptor is regenerated so the carbon-fixation cycle can continue.",
+          "choices": [
+            "rubisco",
+            "RuBP",
+            "G3P"
+          ],
+          "answer": "RuBP",
+          "explanation": "Ribulose bisphosphate (RuBP) is the CO2-acceptor molecule regenerated in the Calvin cycle.",
+          "knowledge_id": "U3-K-136"
+        },
+        {
+          "question_id": "U3-CF-21-Q03",
+          "prompt": "This three-carbon sugar product can leave the cycle and contribute to glucose and other organic molecules.",
+          "choices": [
+            "rubisco",
+            "RuBP",
+            "G3P"
+          ],
+          "answer": "G3P",
+          "explanation": "Glyceraldehyde 3-phosphate (G3P) is a three-carbon sugar produced by the Calvin cycle and can be used to synthesize glucose and other organic molecules.",
+          "knowledge_id": "U3-K-137"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-22",
+      "title": "Carbon-conservation strategies",
+      "knowledge_ids": [
+        "U3-K-140",
+        "U3-K-142",
+        "U3-K-143"
+      ],
+      "terms": [
+        "photorespiration",
+        "C4 photosynthesis",
+        "CAM photosynthesis"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-22-Q01",
+          "prompt": "This process begins when the carbon-fixing enzyme reacts with O2, lowering net carbon fixation.",
+          "choices": [
+            "photorespiration",
+            "C4 photosynthesis",
+            "CAM photosynthesis"
+          ],
+          "answer": "photorespiration",
+          "explanation": "Photorespiration occurs when rubisco reacts with O2 instead of CO2, consuming energy and lowering net carbon fixation; it is favored when internal CO2 is low relative to O2.",
+          "knowledge_id": "U3-K-140"
+        },
+        {
+          "question_id": "U3-CF-22-Q02",
+          "prompt": "This adaptation reduces photorespiration by initially fixing carbon in mesophyll cells and delivering CO2 to bundle-sheath cells.",
+          "choices": [
+            "photorespiration",
+            "C4 photosynthesis",
+            "CAM photosynthesis"
+          ],
+          "answer": "C4 photosynthesis",
+          "explanation": "C4 plants initially fix CO2 into four-carbon compounds in mesophyll cells and deliver concentrated CO2 to bundle-sheath cells, reducing photorespiration through spatial separation.",
+          "knowledge_id": "U3-K-142"
+        },
+        {
+          "question_id": "U3-CF-22-Q03",
+          "prompt": "This adaptation reduces water loss by taking in CO2 mainly at night and releasing stored CO2 during the day.",
+          "choices": [
+            "photorespiration",
+            "C4 photosynthesis",
+            "CAM photosynthesis"
+          ],
+          "answer": "CAM photosynthesis",
+          "explanation": "CAM plants open stomata mainly at night, store fixed carbon in organic acids, and release CO2 during the day for the Calvin cycle, reducing water loss through temporal separation.",
+          "knowledge_id": "U3-K-143"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-23",
+      "title": "Respiratory electron carriers",
+      "knowledge_ids": [
+        "U3-K-148",
+        "U3-K-149"
+      ],
+      "terms": [
+        "NAD+ / NADH",
+        "FAD / FADH2"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-23-Q01",
+          "prompt": "This oxidized/reduced carrier pair accepts electrons during fuel oxidation and delivers them to the respiratory ETC.",
+          "choices": [
+            "NAD+ / NADH",
+            "FAD / FADH2"
+          ],
+          "answer": "NAD+ / NADH",
+          "explanation": "NAD+ accepts electrons and a proton to become NADH; NADH carries high-energy electrons to other reactions including the respiratory electron transport chain.",
+          "knowledge_id": "U3-K-148"
+        },
+        {
+          "question_id": "U3-CF-23-Q02",
+          "prompt": "This carrier pair is reduced during the citric acid cycle and feeds electrons into the respiratory ETC at a different entry point.",
+          "choices": [
+            "NAD+ / NADH",
+            "FAD / FADH2"
+          ],
+          "answer": "FAD / FADH2",
+          "explanation": "FAD accepts electrons and protons during the citric acid cycle to become FADH2, which can deliver electrons to the respiratory electron transport chain.",
+          "knowledge_id": "U3-K-149"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-24",
+      "title": "Phosphorylation mechanisms",
+      "knowledge_ids": [
+        "U3-K-153",
+        "U3-K-047",
+        "U3-K-038"
+      ],
+      "terms": [
+        "substrate-level phosphorylation",
+        "oxidative phosphorylation",
+        "photophosphorylation"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-24-Q01",
+          "prompt": "This ATP-forming mechanism directly transfers a phosphate from an organic substrate to ADP.",
+          "choices": [
+            "substrate-level phosphorylation",
+            "oxidative phosphorylation",
+            "photophosphorylation"
+          ],
+          "answer": "substrate-level phosphorylation",
+          "explanation": "Substrate-level phosphorylation forms ATP by direct enzymatic transfer of a phosphate group from an organic substrate to ADP.",
+          "knowledge_id": "U3-K-153"
+        },
+        {
+          "question_id": "U3-CF-24-Q02",
+          "prompt": "This respiratory ATP-forming mechanism couples electron transport, a proton gradient, chemiosmosis, and ATP synthase.",
+          "choices": [
+            "substrate-level phosphorylation",
+            "oxidative phosphorylation",
+            "photophosphorylation"
+          ],
+          "answer": "oxidative phosphorylation",
+          "explanation": "Protons flow through ATP synthase by chemiosmosis to drive ATP formation; in aerobic respiration this process is oxidative phosphorylation.",
+          "knowledge_id": "U3-K-047"
+        },
+        {
+          "question_id": "U3-CF-24-Q03",
+          "prompt": "This photosynthetic ATP-forming mechanism uses a light-generated proton gradient and ATP synthase.",
+          "choices": [
+            "substrate-level phosphorylation",
+            "oxidative phosphorylation",
+            "photophosphorylation"
+          ],
+          "answer": "photophosphorylation",
+          "explanation": "Protons flow through membrane-bound ATP synthase by chemiosmosis, driving ATP formation from ADP and inorganic phosphate; in photosynthesis this is photophosphorylation.",
+          "knowledge_id": "U3-K-038"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-25",
+      "title": "Respiration stages",
+      "knowledge_ids": [
+        "U3-K-151",
+        "U3-K-154",
+        "U3-K-156",
+        "U3-K-158"
+      ],
+      "terms": [
+        "glycolysis",
+        "pyruvate oxidation",
+        "citric acid cycle",
+        "oxidative phosphorylation"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-25-Q01",
+          "prompt": "This cytosolic stage splits one six-carbon glucose into two three-carbon pyruvate molecules.",
+          "choices": [
+            "glycolysis",
+            "pyruvate oxidation",
+            "citric acid cycle",
+            "oxidative phosphorylation"
+          ],
+          "answer": "glycolysis",
+          "explanation": "Glycolysis occurs in the cytosol and splits one six-carbon glucose into two three-carbon pyruvate molecules.",
+          "knowledge_id": "U3-K-151"
+        },
+        {
+          "question_id": "U3-CF-25-Q02",
+          "prompt": "This stage converts mitochondrial pyruvate to an acetyl group carried by coenzyme A while producing CO2 and NADH.",
+          "choices": [
+            "glycolysis",
+            "pyruvate oxidation",
+            "citric acid cycle",
+            "oxidative phosphorylation"
+          ],
+          "answer": "pyruvate oxidation",
+          "explanation": "During standard aerobic eukaryotic respiration, pyruvate is transported into mitochondria and oxidized to an acetyl group carried by coenzyme A, producing CO2 and NADH.",
+          "knowledge_id": "U3-K-154"
+        },
+        {
+          "question_id": "U3-CF-25-Q03",
+          "prompt": "This cyclic matrix pathway oxidizes acetyl groups, releases CO2, and reduces NAD+ and FAD.",
+          "choices": [
+            "glycolysis",
+            "pyruvate oxidation",
+            "citric acid cycle",
+            "oxidative phosphorylation"
+          ],
+          "answer": "citric acid cycle",
+          "explanation": "The citric acid cycle, also called the Krebs cycle, oxidizes acetyl groups in the mitochondrial matrix and transfers energy to ATP, NADH, and FADH2 while releasing CO2.",
+          "knowledge_id": "U3-K-156"
+        },
+        {
+          "question_id": "U3-CF-25-Q04",
+          "prompt": "This stage combines respiratory electron transport that builds a proton gradient with chemiosmosis through ATP synthase.",
+          "choices": [
+            "glycolysis",
+            "pyruvate oxidation",
+            "citric acid cycle",
+            "oxidative phosphorylation"
+          ],
+          "answer": "oxidative phosphorylation",
+          "explanation": "Oxidative phosphorylation includes electron transport that establishes a proton gradient and chemiosmosis through ATP synthase.",
+          "knowledge_id": "U3-K-158"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-26",
+      "title": "Respiratory gradient locations",
+      "knowledge_ids": [
+        "U3-K-144",
+        "U3-K-044"
+      ],
+      "terms": [
+        "mitochondrial matrix",
+        "intermembrane space"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-26-Q01",
+          "prompt": "This mitochondrial compartment lies inside the inner membrane and contains pyruvate-oxidation and citric-cycle machinery.",
+          "choices": [
+            "mitochondrial matrix",
+            "intermembrane space"
+          ],
+          "answer": "mitochondrial matrix",
+          "explanation": "Eukaryotic aerobic respiration uses mitochondrial compartments including the matrix, inner membrane, cristae, and intermembrane space.",
+          "knowledge_id": "U3-K-144"
+        },
+        {
+          "question_id": "U3-CF-26-Q02",
+          "prompt": "This mitochondrial compartment accumulates a higher proton concentration than the matrix during respiratory electron transport.",
+          "choices": [
+            "mitochondrial matrix",
+            "intermembrane space"
+          ],
+          "answer": "intermembrane space",
+          "explanation": "Electron transfer through the respiratory electron transport chain is coupled to formation of a proton gradient across the inner mitochondrial membrane, with higher proton concentration in the intermembrane space than in the matrix.",
+          "knowledge_id": "U3-K-044"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-27",
+      "title": "Energy-harvesting alternatives",
+      "knowledge_ids": [
+        "U3-K-042",
+        "U3-K-167",
+        "U3-K-169"
+      ],
+      "terms": [
+        "aerobic respiration",
+        "anaerobic respiration",
+        "fermentation"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-27-Q01",
+          "prompt": "This energy-harvesting route uses an ETC and oxygen as terminal electron acceptor in its standard oxygen-dependent form.",
+          "choices": [
+            "aerobic respiration",
+            "anaerobic respiration",
+            "fermentation"
+          ],
+          "answer": "aerobic respiration",
+          "explanation": "Aerobic cellular respiration in eukaryotes uses coordinated enzyme-catalyzed reactions to capture energy from biological macromolecules.",
+          "knowledge_id": "U3-K-042"
+        },
+        {
+          "question_id": "U3-CF-27-Q02",
+          "prompt": "This energy-harvesting route still uses an ETC but ends with a terminal electron acceptor other than oxygen.",
+          "choices": [
+            "aerobic respiration",
+            "anaerobic respiration",
+            "fermentation"
+          ],
+          "answer": "anaerobic respiration",
+          "explanation": "Anaerobic respiration uses an electron transport chain with a terminal electron acceptor other than oxygen.",
+          "knowledge_id": "U3-K-167"
+        },
+        {
+          "question_id": "U3-CF-27-Q03",
+          "prompt": "This route regenerates NAD+ without an ETC so glycolysis can continue when oxidative reoxidation is limited.",
+          "choices": [
+            "aerobic respiration",
+            "anaerobic respiration",
+            "fermentation"
+          ],
+          "answer": "fermentation",
+          "explanation": "Fermentation regenerates NAD+ without an electron transport chain so glycolysis can continue when oxidative NADH reoxidation cannot meet demand.",
+          "knowledge_id": "U3-K-169"
+        }
+      ]
+    },
+    {
+      "set_id": "U3-CF-28",
+      "title": "Fermentation products",
+      "knowledge_ids": [
+        "U3-K-171",
+        "U3-K-173"
+      ],
+      "terms": [
+        "alcohol fermentation",
+        "lactate fermentation"
+      ],
+      "unlock_rule": "Schedule only after every associated knowledge record has been encountered in a completed or in-progress Unit 3 story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U3-CF-28-Q01",
+          "prompt": "This pathway converts pyruvate to acetaldehyde, releases CO2, then produces ethanol while regenerating NAD+.",
+          "choices": [
+            "alcohol fermentation",
+            "lactate fermentation"
+          ],
+          "answer": "alcohol fermentation",
+          "explanation": "Alcohol fermentation converts pyruvate to ethanol and CO2 while oxidizing NADH to regenerate NAD+.",
+          "knowledge_id": "U3-K-171"
+        },
+        {
+          "question_id": "U3-CF-28-Q02",
+          "prompt": "This pathway reduces pyruvate directly to lactate while regenerating NAD+ and releasing no CO2 in the conversion.",
+          "choices": [
+            "alcohol fermentation",
+            "lactate fermentation"
+          ],
+          "answer": "lactate fermentation",
+          "explanation": "In lactate-producing fermentation, pyruvate is reduced by NADH to lactate, regenerating NAD+.",
+          "knowledge_id": "U3-K-173"
+        }
+      ]
+    }
+  ]
+}

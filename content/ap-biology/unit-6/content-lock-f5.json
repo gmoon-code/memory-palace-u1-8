@@ -1,0 +1,48 @@
+{
+  "schema": "memory-palace-v2-unit6-f5-content-lock-1.0",
+  "unit_id": "unit-6",
+  "stage": "F5",
+  "student_release": true,
+  "files": {
+    "memory-objects-f5.json": "a3b196866eb1a462fcaeeaca4322f3c643287ed8515e57b16dc7dacf563b7ee0",
+    "application-lab.json": "554380e64ee047f3a5265c98baf17f9b06a5ae076ccb6371607ff9e809f40dfe",
+    "review-manifest-f5.json": "86cd5d31857d435b45a9e03d7822a5dbcdf55b3b77a6e6d4a334918c2b239c66",
+    "mixed-discrimination-f5.json": "880362334a1de477846f5c5f32453a0bfb192f2db1eb60c6254190222340f7e2",
+    "scope-guards-f5.json": "e0924471c7f250f325c3a60d33af79879ea9c325ae58834594341b2e076f3e61",
+    "finalization-f5.json": "044927edd06209537636be40abedd84a2cf47fd88b03c06b030fa4a9201db4d6",
+    "journeys-f5.json": "de2059b2b2caf4b97ad5254c0f04fa9ced491e2f8c811647989e69df1edc3a3d",
+    "status-f5.json": "62f2ddbfa4af6c3ee1505d5a8de73a9623539999cead221fd32c58177cbba768"
+  },
+  "protected_narratives": {
+    "journeys/U6-J1.json": "fe01ed27cd6a8830022f131c22bcce74f9ad094aef189c991effb66f09741b83",
+    "journeys/U6-J2.json": "62745c2fdcf98af10667a7cefa9907b420036952050d59aea7231dbd66de1ec6",
+    "journeys/U6-J3.json": "91995e5f1e8f30072d511701556214fa16ba28b8533b460719bfe5b136722715",
+    "journeys/U6-J4.json": "e074f28b35de6fe96de2015b1d8732055bc238235fa87367cf1976cb1df30b89",
+    "journeys/U6-J5.json": "23b21efa45badeaef8db794af47f6fed87a623758e3c87487de2dcd68326aac1",
+    "journeys/U6-J6.json": "cbb16bdd2ca5e9f386150860c5b802c93fadae25ff918db7bc366190f1f6c95c"
+  },
+  "protected_upstream_locks": {
+    "content-lock-f1.json": "3ea932f70c02efacfe80493731f92113c53b0fd93e8d770ba2141c9b0764d888",
+    "content-lock-f2.json": "ebfdbe6a0d2f8a7f3d1baea2331abbf40cd99f6cf512ad556581ad0042316da6",
+    "content-lock-f3.json": "31254e70d111782f8e7f0e43931cb0ef41ea5cc7c9489288a03b1193f3f74f97",
+    "content-lock-f4a.json": "ddfb97784c6727847f200ef1f20d264b9ca07c598d3ac7c1749b1ddf48aca0b6",
+    "content-lock-f4b.json": "449b4cae57d89b82fb3e50766968f7f6a2ef92728b4ce2b8d77a4fc5b2a5403f",
+    "content-lock-f4c.json": "3bbd4f241c06d7aaa29e57fadfd67f70f9682501ecbeb2345c54712b6c357c08",
+    "content-lock-f4d.json": "12e41eeea482bb4d6e1fee67b1b3423e6a6a9ddd54c62315c28fae0b791dcafa",
+    "content-lock-f4e.json": "f59490181f3ebca5fd701cba2412b357ecf38b4a7cdb4260a82f01afa3d585ed",
+    "content-lock-f4f.json": "8905669352ab2efd62398e241f25e689e5ef9b7763c7d3d8020a11c2cc57205f"
+  },
+  "runtime_file_sha256": {
+    "backend/main.py": "37be4e4dde21ce89dc9fe7a53817d12ae522e056e2fd0ef8bf546fce909ae632",
+    "backend/content.py": "1cd86fecf2920805554016468fa33fb280c328c034bac1f095e182b2f5d98a28",
+    "backend/settings.py": "5fa9ebefbc9f8613ac1ab13315a5dabb8cde9b2bbfced835c82434c05e72a59d",
+    "frontend/js/app.js": "acfe768150cacd609e3726dabe44f5cb8b895712113e9ba49e1d4e94faccdd65",
+    "frontend/js/api.js": "7ea249133a6514e49adab56784988954cdea8456f9c40fb5af179e32771f7e44",
+    "frontend/js/audio.js": "985dfa9038036bc9f55cbcda6c7b4b1e6cb24e36098e8dc23d371858de899ca0",
+    "frontend/js/state.js": "35d3828dc39236fa19abe8db71ae6fa32acc331c35a3a8876e925039362549c9",
+    "frontend/js/views/home.js": "eab63293f3aec59fe3843f4f463da82d53a270dcb14674390677eb1f4b9d7006",
+    "frontend/js/views/learn.js": "57489f35dc6fcf021fb639bd05c4cac3f00b37233012c5f1754d5633f0604070",
+    "frontend/js/views/review.js": "dbe4009c72dee6c9e6cf433402a8fc856c8b9612a15be503e6ccd75a59e38c63",
+    "frontend/js/views/practice.js": "9189c8ee87853b0ccf35837531e9c9e25467bd2e97595d2e74dad19737b719a4"
+  }
+}

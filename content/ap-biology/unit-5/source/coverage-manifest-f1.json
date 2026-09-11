@@ -1,0 +1,2025 @@
+{
+  "schema": "memory-palace-u5-f1-coverage-1.0",
+  "generated_utc": "2026-09-04T05:17:00+00:00",
+  "unit_id": "unit-5",
+  "current_ced": {
+    "topics": [
+      "5.1 Meiosis",
+      "5.2 Meiosis and Genetic Diversity",
+      "5.3 Mendelian Genetics",
+      "5.4 Non-Mendelian Genetics",
+      "5.5 Environmental Effects on Phenotype"
+    ],
+    "topic_count": 5,
+    "ced_atom_count": 34,
+    "ced_atom_ids": [
+      "5.1.A.1",
+      "5.1.A.2i",
+      "5.1.A.2ii",
+      "5.1.A.2iii",
+      "5.1.A.2iv",
+      "5.1.A.3i",
+      "5.1.A.3ii",
+      "5.1.A.3iii",
+      "5.1.A.3iv",
+      "5.1.B.1",
+      "5.2.A.1",
+      "5.2.A.2",
+      "5.2.A.3",
+      "5.3.A.1",
+      "5.3.A.2",
+      "5.3.A.2i",
+      "5.3.A.2ii",
+      "5.3.A.2iii",
+      "5.3.A.2iv",
+      "5.3.A.2v",
+      "5.3.EQ.1",
+      "5.3.EQ.2",
+      "5.4.A.1",
+      "5.4.A.1i",
+      "5.4.A.1ii",
+      "5.4.A.1iii",
+      "5.4.A.2",
+      "5.4.A.3",
+      "5.4.A.4",
+      "5.4.A.4i",
+      "5.4.A.4ii",
+      "5.4.A.4iii",
+      "5.C.CHI",
+      "5.5.A.1"
+    ]
+  },
+  "legacy_crosswalk": [
+    {
+      "legacy_teacher_group": "Meiosis and Genetic Diversity",
+      "teacher_slides": "1–25",
+      "teacher_content": "Heredity foundations, chromosome terminology, meiosis, crossing over, independent assortment, random fertilization",
+      "current_ced_topics": [
+        "5.1",
+        "5.2"
+      ],
+      "notes": "Maps directly to current Meiosis and Meiosis and Genetic Diversity topics."
+    },
+    {
+      "legacy_teacher_group": "Mendelian Genetics",
+      "teacher_slides": "26–60",
+      "teacher_content": "Mendel, alleles, dominance, segregation, independent assortment, Punnett squares, probability",
+      "current_ced_topics": [
+        "5.3"
+      ],
+      "notes": "Maps to current Mendelian Genetics, including quantitative probability skills."
+    },
+    {
+      "legacy_teacher_group": "Non-Mendelian Genetics",
+      "teacher_slides": "61–88",
+      "teacher_content": "Incomplete dominance, codominance, multiple alleles, pedigrees, linked genes, recombination and gene mapping, sex-linked inheritance, organelle inheritance",
+      "current_ced_topics": [
+        "5.4"
+      ],
+      "notes": "Maps primarily to Non-Mendelian Genetics. Pleiotropy is repaired from the current CED because it is not explicitly taught by name in the deck."
+    },
+    {
+      "legacy_teacher_group": "Chi-square / statistical analysis",
+      "teacher_slides": "89–106",
+      "teacher_content": "Observed versus expected values, chi-square calculation, degrees of freedom, p-value/table interpretation, null-hypothesis decisions",
+      "current_ced_topics": [
+        "5.4"
+      ],
+      "notes": "Current Unit 5 requires chi-square hypothesis testing for inheritance data; source wording is preserved with corrected reject/fail-to-reject and p-value interpretation."
+    },
+    {
+      "legacy_teacher_group": "Environmental Effects on Phenotype",
+      "teacher_slides": "107–108",
+      "teacher_content": "Environmental effects and genotype-by-environment relationships",
+      "current_ced_topics": [
+        "5.5"
+      ],
+      "notes": "Maps to current Environmental Effects on Phenotype."
+    },
+    {
+      "legacy_teacher_group": "Chromosomal Inheritance and Disorders",
+      "teacher_slides": "109–112",
+      "teacher_content": "Nondisjunction, aneuploidy/karyotype examples, chromosome-number abnormalities",
+      "current_ced_topics": [
+        "5.2",
+        "5.4"
+      ],
+      "notes": "Supports chromosome segregation/nondisjunction and chromosomal inheritance concepts; named human examples remain contextual rather than universal phenotype rules."
+    }
+  ],
+  "ppt_coverage": {
+    "pages": 112,
+    "mapped_or_preserved": 112,
+    "unmapped": 0,
+    "slides": [
+      {
+        "slide": 1,
+        "slide_id": "PPT-S001",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "PRESERVED_METADATA",
+        "mapped_knowledge_ids": [],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 2,
+        "slide_id": "PPT-S002",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-035",
+          "U5-K-036",
+          "U5-K-037",
+          "U5-K-038"
+        ],
+        "review_flag_ids": [
+          "RF-U5-001"
+        ]
+      },
+      {
+        "slide": 3,
+        "slide_id": "PPT-S003",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "PRESERVED_METADATA",
+        "mapped_knowledge_ids": [],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 4,
+        "slide_id": "PPT-S004",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-039",
+          "U5-K-040",
+          "U5-K-041"
+        ],
+        "review_flag_ids": [
+          "RF-U5-002",
+          "RF-U5-003",
+          "RF-U5-014"
+        ]
+      },
+      {
+        "slide": 5,
+        "slide_id": "PPT-S005",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-038",
+          "U5-K-042",
+          "U5-K-043"
+        ],
+        "review_flag_ids": [
+          "RF-U5-004"
+        ]
+      },
+      {
+        "slide": 6,
+        "slide_id": "PPT-S006",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-044"
+        ],
+        "review_flag_ids": [
+          "RF-U5-005"
+        ]
+      },
+      {
+        "slide": 7,
+        "slide_id": "PPT-S007",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-042",
+          "U5-K-043",
+          "U5-K-044"
+        ],
+        "review_flag_ids": [
+          "RF-U5-004",
+          "RF-U5-005"
+        ]
+      },
+      {
+        "slide": 8,
+        "slide_id": "PPT-S008",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-045",
+          "U5-K-046",
+          "U5-K-047",
+          "U5-K-048",
+          "U5-K-049"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 9,
+        "slide_id": "PPT-S009",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-050",
+          "U5-K-051",
+          "U5-K-148",
+          "U5-K-149"
+        ],
+        "review_flag_ids": [
+          "RF-U5-006",
+          "RF-U5-025",
+          "RF-U5-007",
+          "RF-U5-026",
+          "RF-U5-027"
+        ]
+      },
+      {
+        "slide": 10,
+        "slide_id": "PPT-S010",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-015",
+          "U5-K-046",
+          "U5-K-047",
+          "U5-K-048",
+          "U5-K-052",
+          "U5-K-053",
+          "U5-K-054",
+          "U5-K-148"
+        ],
+        "review_flag_ids": [
+          "RF-U5-007",
+          "RF-U5-008"
+        ]
+      },
+      {
+        "slide": 11,
+        "slide_id": "PPT-S011",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-001"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 12,
+        "slide_id": "PPT-S012",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-001",
+          "U5-K-046",
+          "U5-K-047",
+          "U5-K-048",
+          "U5-K-049"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 13,
+        "slide_id": "PPT-S013",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-010",
+          "U5-K-045",
+          "U5-K-048"
+        ],
+        "review_flag_ids": [
+          "RF-U5-009"
+        ]
+      },
+      {
+        "slide": 14,
+        "slide_id": "PPT-S014",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-002",
+          "U5-K-003",
+          "U5-K-004",
+          "U5-K-042",
+          "U5-K-056",
+          "U5-K-057",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-004"
+        ]
+      },
+      {
+        "slide": 15,
+        "slide_id": "PPT-S015",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-055"
+        ],
+        "review_flag_ids": [
+          "RF-U5-012"
+        ]
+      },
+      {
+        "slide": 16,
+        "slide_id": "PPT-S016",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-002",
+          "U5-K-012",
+          "U5-K-042",
+          "U5-K-056",
+          "U5-K-057",
+          "U5-K-058",
+          "U5-K-059",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-004",
+          "RF-U5-010"
+        ]
+      },
+      {
+        "slide": 17,
+        "slide_id": "PPT-S017",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-003",
+          "U5-K-004",
+          "U5-K-011",
+          "U5-K-042",
+          "U5-K-043",
+          "U5-K-057",
+          "U5-K-060",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-004"
+        ]
+      },
+      {
+        "slide": 18,
+        "slide_id": "PPT-S018",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-005",
+          "U5-K-047",
+          "U5-K-063",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-011"
+        ]
+      },
+      {
+        "slide": 19,
+        "slide_id": "PPT-S019",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-006",
+          "U5-K-055",
+          "U5-K-062",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-012"
+        ]
+      },
+      {
+        "slide": 20,
+        "slide_id": "PPT-S020",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-007",
+          "U5-K-043",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-010"
+        ]
+      },
+      {
+        "slide": 21,
+        "slide_id": "PPT-S021",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-008",
+          "U5-K-011",
+          "U5-K-043",
+          "U5-K-132"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 22,
+        "slide_id": "PPT-S022",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-001",
+          "U5-K-009",
+          "U5-K-047",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-013"
+        ]
+      },
+      {
+        "slide": 23,
+        "slide_id": "PPT-S023",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-001",
+          "U5-K-009",
+          "U5-K-011",
+          "U5-K-046",
+          "U5-K-047",
+          "U5-K-062",
+          "U5-K-063",
+          "U5-K-132"
+        ],
+        "review_flag_ids": [
+          "RF-U5-012",
+          "RF-U5-011"
+        ]
+      },
+      {
+        "slide": 24,
+        "slide_id": "PPT-S024",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-012",
+          "U5-K-013",
+          "U5-K-015",
+          "U5-K-041",
+          "U5-K-048",
+          "U5-K-053",
+          "U5-K-059",
+          "U5-K-060",
+          "U5-K-061",
+          "U5-K-133"
+        ],
+        "review_flag_ids": [
+          "RF-U5-003",
+          "RF-U5-014",
+          "RF-U5-008"
+        ]
+      },
+      {
+        "slide": 25,
+        "slide_id": "PPT-S025",
+        "section": "Meiosis and Genetic Diversity",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-013",
+          "U5-K-015",
+          "U5-K-041",
+          "U5-K-133"
+        ],
+        "review_flag_ids": [
+          "RF-U5-003",
+          "RF-U5-014"
+        ]
+      },
+      {
+        "slide": 26,
+        "slide_id": "PPT-S026",
+        "section": "Mendelian Genetics",
+        "coverage_status": "PRESERVED_METADATA",
+        "mapped_knowledge_ids": [],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 27,
+        "slide_id": "PPT-S027",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-064",
+          "U5-K-065"
+        ],
+        "review_flag_ids": [
+          "RF-U5-015",
+          "RF-U5-037"
+        ]
+      },
+      {
+        "slide": 28,
+        "slide_id": "PPT-S028",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-065"
+        ],
+        "review_flag_ids": [
+          "RF-U5-037"
+        ]
+      },
+      {
+        "slide": 29,
+        "slide_id": "PPT-S029",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-066"
+        ],
+        "review_flag_ids": [
+          "RF-U5-037"
+        ]
+      },
+      {
+        "slide": 30,
+        "slide_id": "PPT-S030",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-066",
+          "U5-K-067",
+          "U5-K-068",
+          "U5-K-069"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 31,
+        "slide_id": "PPT-S031",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-020",
+          "U5-K-070",
+          "U5-K-072"
+        ],
+        "review_flag_ids": [
+          "RF-U5-016"
+        ]
+      },
+      {
+        "slide": 32,
+        "slide_id": "PPT-S032",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-018",
+          "U5-K-019",
+          "U5-K-071",
+          "U5-K-073",
+          "U5-K-074"
+        ],
+        "review_flag_ids": [
+          "RF-U5-017"
+        ]
+      },
+      {
+        "slide": 33,
+        "slide_id": "PPT-S033",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-070",
+          "U5-K-073",
+          "U5-K-074",
+          "U5-K-075"
+        ],
+        "review_flag_ids": [
+          "RF-U5-018"
+        ]
+      },
+      {
+        "slide": 34,
+        "slide_id": "PPT-S034",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-014",
+          "U5-K-065",
+          "U5-K-079",
+          "U5-K-081"
+        ],
+        "review_flag_ids": [
+          "RF-U5-037",
+          "RF-U5-021"
+        ]
+      },
+      {
+        "slide": 35,
+        "slide_id": "PPT-S035",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-065",
+          "U5-K-066",
+          "U5-K-067",
+          "U5-K-068",
+          "U5-K-069",
+          "U5-K-083"
+        ],
+        "review_flag_ids": [
+          "RF-U5-037",
+          "RF-U5-019"
+        ]
+      },
+      {
+        "slide": 36,
+        "slide_id": "PPT-S036",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-072",
+          "U5-K-076",
+          "U5-K-077",
+          "U5-K-078"
+        ],
+        "review_flag_ids": [
+          "RF-U5-016",
+          "RF-U5-019",
+          "RF-U5-020"
+        ]
+      },
+      {
+        "slide": 37,
+        "slide_id": "PPT-S037",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-065",
+          "U5-K-069",
+          "U5-K-078",
+          "U5-K-083",
+          "U5-K-150"
+        ],
+        "review_flag_ids": [
+          "RF-U5-037",
+          "RF-U5-019",
+          "RF-U5-022"
+        ]
+      },
+      {
+        "slide": 38,
+        "slide_id": "PPT-S038",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-065",
+          "U5-K-071",
+          "U5-K-076",
+          "U5-K-077",
+          "U5-K-078",
+          "U5-K-079"
+        ],
+        "review_flag_ids": [
+          "RF-U5-037",
+          "RF-U5-019",
+          "RF-U5-020"
+        ]
+      },
+      {
+        "slide": 39,
+        "slide_id": "PPT-S039",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-038",
+          "U5-K-071"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 40,
+        "slide_id": "PPT-S040",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-014",
+          "U5-K-038",
+          "U5-K-067",
+          "U5-K-068",
+          "U5-K-069",
+          "U5-K-070",
+          "U5-K-071",
+          "U5-K-079",
+          "U5-K-083",
+          "U5-K-085"
+        ],
+        "review_flag_ids": [
+          "RF-U5-019",
+          "RF-U5-037"
+        ]
+      },
+      {
+        "slide": 41,
+        "slide_id": "PPT-S041",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-066",
+          "U5-K-068",
+          "U5-K-070",
+          "U5-K-079",
+          "U5-K-080"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 42,
+        "slide_id": "PPT-S042",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-014",
+          "U5-K-081"
+        ],
+        "review_flag_ids": [
+          "RF-U5-021"
+        ]
+      },
+      {
+        "slide": 43,
+        "slide_id": "PPT-S043",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-066",
+          "U5-K-068",
+          "U5-K-070",
+          "U5-K-081",
+          "U5-K-082",
+          "U5-K-084",
+          "U5-K-150"
+        ],
+        "review_flag_ids": [
+          "RF-U5-021",
+          "RF-U5-022",
+          "RF-U5-019",
+          "RF-U5-037"
+        ]
+      },
+      {
+        "slide": 44,
+        "slide_id": "PPT-S044",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-134"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 45,
+        "slide_id": "PPT-S045",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-018",
+          "U5-K-070",
+          "U5-K-072",
+          "U5-K-134"
+        ],
+        "review_flag_ids": [
+          "RF-U5-016"
+        ]
+      },
+      {
+        "slide": 46,
+        "slide_id": "PPT-S046",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-018",
+          "U5-K-070",
+          "U5-K-072",
+          "U5-K-073",
+          "U5-K-134"
+        ],
+        "review_flag_ids": [
+          "RF-U5-016"
+        ]
+      },
+      {
+        "slide": 47,
+        "slide_id": "PPT-S047",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-018",
+          "U5-K-070",
+          "U5-K-072",
+          "U5-K-134"
+        ],
+        "review_flag_ids": [
+          "RF-U5-016"
+        ]
+      },
+      {
+        "slide": 48,
+        "slide_id": "PPT-S048",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-072",
+          "U5-K-073",
+          "U5-K-085",
+          "U5-K-135"
+        ],
+        "review_flag_ids": [
+          "RF-U5-016"
+        ]
+      },
+      {
+        "slide": 49,
+        "slide_id": "PPT-S049",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-072",
+          "U5-K-082",
+          "U5-K-085",
+          "U5-K-135",
+          "U5-K-136"
+        ],
+        "review_flag_ids": [
+          "RF-U5-016"
+        ]
+      },
+      {
+        "slide": 50,
+        "slide_id": "PPT-S050",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-070",
+          "U5-K-082",
+          "U5-K-085",
+          "U5-K-135",
+          "U5-K-136"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 51,
+        "slide_id": "PPT-S051",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-070",
+          "U5-K-082",
+          "U5-K-136"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 52,
+        "slide_id": "PPT-S052",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-019",
+          "U5-K-070",
+          "U5-K-082",
+          "U5-K-084",
+          "U5-K-136",
+          "U5-K-150"
+        ],
+        "review_flag_ids": [
+          "RF-U5-017",
+          "RF-U5-022",
+          "RF-U5-019",
+          "RF-U5-037"
+        ]
+      },
+      {
+        "slide": 53,
+        "slide_id": "PPT-S053",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-016",
+          "U5-K-022",
+          "U5-K-081",
+          "U5-K-137"
+        ],
+        "review_flag_ids": [
+          "RF-U5-021"
+        ]
+      },
+      {
+        "slide": 54,
+        "slide_id": "PPT-S054",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-016",
+          "U5-K-022",
+          "U5-K-070",
+          "U5-K-137"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 55,
+        "slide_id": "PPT-S055",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-016",
+          "U5-K-022",
+          "U5-K-070",
+          "U5-K-137"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 56,
+        "slide_id": "PPT-S056",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-016",
+          "U5-K-021",
+          "U5-K-138"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 57,
+        "slide_id": "PPT-S057",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-016",
+          "U5-K-021",
+          "U5-K-022",
+          "U5-K-070",
+          "U5-K-138"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 58,
+        "slide_id": "PPT-S058",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-019",
+          "U5-K-020",
+          "U5-K-086",
+          "U5-K-139"
+        ],
+        "review_flag_ids": [
+          "RF-U5-017"
+        ]
+      },
+      {
+        "slide": 59,
+        "slide_id": "PPT-S059",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-020",
+          "U5-K-086",
+          "U5-K-087",
+          "U5-K-139"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 60,
+        "slide_id": "PPT-S060",
+        "section": "Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-019",
+          "U5-K-020",
+          "U5-K-027",
+          "U5-K-086",
+          "U5-K-088",
+          "U5-K-139"
+        ],
+        "review_flag_ids": [
+          "RF-U5-017",
+          "RF-U5-025",
+          "RF-U5-023"
+        ]
+      },
+      {
+        "slide": 61,
+        "slide_id": "PPT-S061",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-089"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 62,
+        "slide_id": "PPT-S062",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-023",
+          "U5-K-089"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 63,
+        "slide_id": "PPT-S063",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "PRESERVED_METADATA",
+        "mapped_knowledge_ids": [],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 64,
+        "slide_id": "PPT-S064",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-026",
+          "U5-K-078",
+          "U5-K-140"
+        ],
+        "review_flag_ids": [
+          "RF-U5-024"
+        ]
+      },
+      {
+        "slide": 65,
+        "slide_id": "PPT-S065",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-025",
+          "U5-K-090",
+          "U5-K-091",
+          "U5-K-140",
+          "U5-K-141"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 66,
+        "slide_id": "PPT-S066",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-026",
+          "U5-K-140"
+        ],
+        "review_flag_ids": [
+          "RF-U5-024"
+        ]
+      },
+      {
+        "slide": 67,
+        "slide_id": "PPT-S067",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-025",
+          "U5-K-070",
+          "U5-K-140"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 68,
+        "slide_id": "PPT-S068",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-090",
+          "U5-K-091",
+          "U5-K-141"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 69,
+        "slide_id": "PPT-S069",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-092",
+          "U5-K-093"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 70,
+        "slide_id": "PPT-S070",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-092",
+          "U5-K-093"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 71,
+        "slide_id": "PPT-S071",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-092"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 72,
+        "slide_id": "PPT-S072",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-093"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 73,
+        "slide_id": "PPT-S073",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-027"
+        ],
+        "review_flag_ids": [
+          "RF-U5-025"
+        ]
+      },
+      {
+        "slide": 74,
+        "slide_id": "PPT-S074",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-027",
+          "U5-K-051",
+          "U5-K-094",
+          "U5-K-095",
+          "U5-K-149"
+        ],
+        "review_flag_ids": [
+          "RF-U5-025",
+          "RF-U5-006",
+          "RF-U5-026",
+          "RF-U5-027"
+        ]
+      },
+      {
+        "slide": 75,
+        "slide_id": "PPT-S075",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-027",
+          "U5-K-051",
+          "U5-K-070",
+          "U5-K-094",
+          "U5-K-097",
+          "U5-K-142",
+          "U5-K-149"
+        ],
+        "review_flag_ids": [
+          "RF-U5-025",
+          "RF-U5-006",
+          "RF-U5-026",
+          "RF-U5-027"
+        ]
+      },
+      {
+        "slide": 76,
+        "slide_id": "PPT-S076",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-027",
+          "U5-K-051",
+          "U5-K-094",
+          "U5-K-096",
+          "U5-K-097",
+          "U5-K-142",
+          "U5-K-149"
+        ],
+        "review_flag_ids": [
+          "RF-U5-025",
+          "RF-U5-006",
+          "RF-U5-026",
+          "RF-U5-027"
+        ]
+      },
+      {
+        "slide": 77,
+        "slide_id": "PPT-S077",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-027",
+          "U5-K-094",
+          "U5-K-100",
+          "U5-K-142",
+          "U5-K-151"
+        ],
+        "review_flag_ids": [
+          "RF-U5-025",
+          "RF-U5-036"
+        ]
+      },
+      {
+        "slide": 78,
+        "slide_id": "PPT-S078",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-051",
+          "U5-K-098",
+          "U5-K-099",
+          "U5-K-149"
+        ],
+        "review_flag_ids": [
+          "RF-U5-006",
+          "RF-U5-025",
+          "RF-U5-027",
+          "RF-U5-026"
+        ]
+      },
+      {
+        "slide": 79,
+        "slide_id": "PPT-S079",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-024"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 80,
+        "slide_id": "PPT-S080",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-101",
+          "U5-K-102",
+          "U5-K-103",
+          "U5-K-143"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 81,
+        "slide_id": "PPT-S081",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-070",
+          "U5-K-101",
+          "U5-K-102",
+          "U5-K-103",
+          "U5-K-106",
+          "U5-K-109",
+          "U5-K-143"
+        ],
+        "review_flag_ids": [
+          "RF-U5-028"
+        ]
+      },
+      {
+        "slide": 82,
+        "slide_id": "PPT-S082",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-013",
+          "U5-K-024",
+          "U5-K-101",
+          "U5-K-104",
+          "U5-K-143"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 83,
+        "slide_id": "PPT-S083",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-012",
+          "U5-K-024",
+          "U5-K-059",
+          "U5-K-101",
+          "U5-K-104",
+          "U5-K-105",
+          "U5-K-143"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 84,
+        "slide_id": "PPT-S084",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-012",
+          "U5-K-024",
+          "U5-K-059",
+          "U5-K-101",
+          "U5-K-104",
+          "U5-K-105",
+          "U5-K-106",
+          "U5-K-143",
+          "U5-K-144"
+        ],
+        "review_flag_ids": [
+          "RF-U5-028"
+        ]
+      },
+      {
+        "slide": 85,
+        "slide_id": "PPT-S085",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-024",
+          "U5-K-106",
+          "U5-K-107",
+          "U5-K-108",
+          "U5-K-109",
+          "U5-K-144"
+        ],
+        "review_flag_ids": [
+          "RF-U5-028"
+        ]
+      },
+      {
+        "slide": 86,
+        "slide_id": "PPT-S086",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-024",
+          "U5-K-106",
+          "U5-K-107",
+          "U5-K-108",
+          "U5-K-144"
+        ],
+        "review_flag_ids": [
+          "RF-U5-028"
+        ]
+      },
+      {
+        "slide": 87,
+        "slide_id": "PPT-S087",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-029",
+          "U5-K-030"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 88,
+        "slide_id": "PPT-S088",
+        "section": "Non-Mendelian Genetics",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-029",
+          "U5-K-030",
+          "U5-K-031",
+          "U5-K-032",
+          "U5-K-110"
+        ],
+        "review_flag_ids": [
+          "RF-U5-029"
+        ]
+      },
+      {
+        "slide": 89,
+        "slide_id": "PPT-S089",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-023",
+          "U5-K-033",
+          "U5-K-111"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 90,
+        "slide_id": "PPT-S090",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-023",
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-114"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 91,
+        "slide_id": "PPT-S091",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-115"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 92,
+        "slide_id": "PPT-S092",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-145"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 93,
+        "slide_id": "PPT-S093",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-145"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 94,
+        "slide_id": "PPT-S094",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-115",
+          "U5-K-145"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 95,
+        "slide_id": "PPT-S095",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-115",
+          "U5-K-145"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 96,
+        "slide_id": "PPT-S096",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-115",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 97,
+        "slide_id": "PPT-S097",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-115",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 98,
+        "slide_id": "PPT-S098",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-116",
+          "U5-K-117",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 99,
+        "slide_id": "PPT-S099",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-116",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 100,
+        "slide_id": "PPT-S100",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-116",
+          "U5-K-117",
+          "U5-K-118",
+          "U5-K-146",
+          "U5-K-152"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 101,
+        "slide_id": "PPT-S101",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-116",
+          "U5-K-117",
+          "U5-K-118",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 102,
+        "slide_id": "PPT-S102",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-116",
+          "U5-K-117",
+          "U5-K-118",
+          "U5-K-119",
+          "U5-K-146",
+          "U5-K-152"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 103,
+        "slide_id": "PPT-S103",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-116",
+          "U5-K-117",
+          "U5-K-118",
+          "U5-K-119",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 104,
+        "slide_id": "PPT-S104",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-023",
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-115",
+          "U5-K-145",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 105,
+        "slide_id": "PPT-S105",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-115",
+          "U5-K-145",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 106,
+        "slide_id": "PPT-S106",
+        "section": "Chi-square / statistical analysis",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-023",
+          "U5-K-033",
+          "U5-K-111",
+          "U5-K-112",
+          "U5-K-113",
+          "U5-K-115",
+          "U5-K-119",
+          "U5-K-146"
+        ],
+        "review_flag_ids": [
+          "RF-U5-030",
+          "RF-U5-031",
+          "RF-U5-032"
+        ]
+      },
+      {
+        "slide": 107,
+        "slide_id": "PPT-S107",
+        "section": "Environmental Effects on Phenotype",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-034"
+        ],
+        "review_flag_ids": []
+      },
+      {
+        "slide": 108,
+        "slide_id": "PPT-S108",
+        "section": "Environmental Effects on Phenotype",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-019",
+          "U5-K-034",
+          "U5-K-120",
+          "U5-K-121",
+          "U5-K-122",
+          "U5-K-123",
+          "U5-K-147"
+        ],
+        "review_flag_ids": [
+          "RF-U5-017"
+        ]
+      },
+      {
+        "slide": 109,
+        "slide_id": "PPT-S109",
+        "section": "Chromosomal Inheritance and Disorders",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-124"
+        ],
+        "review_flag_ids": [
+          "RF-U5-033",
+          "RF-U5-036"
+        ]
+      },
+      {
+        "slide": 110,
+        "slide_id": "PPT-S110",
+        "section": "Chromosomal Inheritance and Disorders",
+        "coverage_status": "MAPPED",
+        "mapped_knowledge_ids": [
+          "U5-K-124",
+          "U5-K-125",
+          "U5-K-151"
+        ],
+        "review_flag_ids": [
+          "RF-U5-033",
+          "RF-U5-036"
+        ]
+      },
+      {
+        "slide": 111,
+        "slide_id": "PPT-S111",
+        "section": "Chromosomal Inheritance and Disorders",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-124",
+          "U5-K-125",
+          "U5-K-126",
+          "U5-K-127",
+          "U5-K-151"
+        ],
+        "review_flag_ids": [
+          "RF-U5-033",
+          "RF-U5-036",
+          "RF-U5-034"
+        ]
+      },
+      {
+        "slide": 112,
+        "slide_id": "PPT-S112",
+        "section": "Chromosomal Inheritance and Disorders",
+        "coverage_status": "MAPPED_VISUAL",
+        "mapped_knowledge_ids": [
+          "U5-K-011",
+          "U5-K-044",
+          "U5-K-124",
+          "U5-K-128",
+          "U5-K-129",
+          "U5-K-130",
+          "U5-K-131",
+          "U5-K-151"
+        ],
+        "review_flag_ids": [
+          "RF-U5-005",
+          "RF-U5-033",
+          "RF-U5-036",
+          "RF-U5-035"
+        ]
+      }
+    ]
+  },
+  "assessment_coverage": {
+    "source": "APBIO-U5-PPT.pdf",
+    "crosswalk_mode": "REPRESENTATIVE_SEMANTIC_EVIDENCE",
+    "pages": 112,
+    "crosswalk_items": 10,
+    "current_topics_covered": [
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5"
+    ],
+    "items": [
+      {
+        "assessment_id": "PPT-U5-MEI-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "23–25",
+        "current_topics": [
+          "5.1",
+          "5.2"
+        ],
+        "evidence": "Meiosis review plus explanation of crossing over, independent assortment, random fertilization, and synthesis of meiosis/fertilization as sources of variation.",
+        "mapped_knowledge_ids": [
+          "U5-K-010",
+          "U5-K-011",
+          "U5-K-012",
+          "U5-K-013"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-MEN-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "45–52",
+        "current_topics": [
+          "5.3"
+        ],
+        "evidence": "Worked monohybrid and dihybrid crosses, gamete generation, genotype/phenotype probabilities, and 9:3:3:1 interpretation.",
+        "mapped_knowledge_ids": [
+          "U5-K-017",
+          "U5-K-018",
+          "U5-K-020"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-PROB-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "53–57",
+        "current_topics": [
+          "5.3"
+        ],
+        "evidence": "Multiplication and addition rules are applied to genetics probabilities and multilocus outcomes.",
+        "mapped_knowledge_ids": [
+          "U5-K-016",
+          "U5-K-021",
+          "U5-K-022"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-PED-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "58–60",
+        "current_topics": [
+          "5.3",
+          "5.4"
+        ],
+        "evidence": "Pedigree symbols and qualitative inheritance-pattern clues are used to infer dominant and X-linked models.",
+        "mapped_knowledge_ids": [
+          "U5-K-020",
+          "U5-K-027"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-NM-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "66–68",
+        "current_topics": [
+          "5.4"
+        ],
+        "evidence": "Students distinguish incomplete dominance from codominance and solve cattle/ABO inheritance questions.",
+        "mapped_knowledge_ids": [
+          "U5-K-025",
+          "U5-K-026"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-XLINK-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "75–77",
+        "current_topics": [
+          "5.4"
+        ],
+        "evidence": "XX/XY X-linked crosses and disorder examples require tracking allele transmission by chromosome.",
+        "mapped_knowledge_ids": [
+          "U5-K-027"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-LINK-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "80–86",
+        "current_topics": [
+          "5.4"
+        ],
+        "evidence": "Parental/recombinant classification, linkage, crossing over, recombination frequency, map units, and the 50% limit are interpreted.",
+        "mapped_knowledge_ids": [
+          "U5-K-024",
+          "U5-K-025"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-CHI-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "90–106",
+        "current_topics": [
+          "5.3",
+          "5.4"
+        ],
+        "evidence": "A complete chi-square goodness-of-fit workflow derives expected counts, calculates χ², obtains df, uses a critical-value table, and makes a hypothesis decision.",
+        "mapped_knowledge_ids": [
+          "U5-K-023",
+          "U5-K-032"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-ENV-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "108",
+        "current_topics": [
+          "5.5"
+        ],
+        "evidence": "Environmental examples require explaining how one genotype can produce different phenotypes under different conditions.",
+        "mapped_knowledge_ids": [
+          "U5-K-034"
+        ]
+      },
+      {
+        "assessment_id": "PPT-U5-NDJ-01",
+        "source": "APBIO-U5-PPT.pdf",
+        "pages": "112",
+        "current_topics": [
+          "5.2",
+          "5.4"
+        ],
+        "evidence": "Nondisjunction and trisomy-21 karyotype imagery connect segregation error with altered chromosome number.",
+        "mapped_knowledge_ids": [
+          "U5-K-011"
+        ]
+      }
+    ]
+  },
+  "canonical_coverage": {
+    "canonical_records": 152,
+    "scope_counts": {
+      "AP_REQUIRED": 34,
+      "TEACHER_REQUIRED_ENRICHMENT": 97,
+      "PRACTICE_ONLY": 16,
+      "SCOPE_GUARD": 5
+    },
+    "review_flags_resolved": 37,
+    "ced_required_records": 34,
+    "pleiotropy_coverage_repair": true
+  },
+  "student_runtime": {
+    "journeys": 0,
+    "scenes": 0,
+    "memory_objects": 0,
+    "application_challenges": 0,
+    "student_release": false
+  },
+  "next_required_output": "F2 learning-function classification and palace architecture; do not write Unit 5 narrative prose before F2."
+}

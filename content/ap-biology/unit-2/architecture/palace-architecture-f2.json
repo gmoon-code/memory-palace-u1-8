@@ -1,0 +1,1745 @@
+{
+  "schema": "memory-palace-v2-unit2-f2-architecture-1.0",
+  "generated_utc": "2026-09-02T06:15:00+00:00",
+  "unit": {
+    "unit_id": "unit-2",
+    "title": "Cells",
+    "canonical_source_lock": "F1",
+    "student_release": false,
+    "narrative_generation_allowed": false
+  },
+  "design_rules": {
+    "student_simplicity": "The learner will eventually see guided journeys and short review, not classification machinery.",
+    "locus_rule": "A permanent locus is used for a distinct spatial or causal concept cluster, not for every canonical record.",
+    "embedded_rule": "Closely related structure/function details share the locus that makes their relationship visible.",
+    "practice_rule": "Applied-transfer records remain in Challenge Lab and do not consume palace loci.",
+    "narrative_gate": "No story prose may be written until this F2 architecture passes QA and is explicitly locked.",
+    "visual_rule": "Conventional scientific geometry must remain recognizable even when narrative imagery is added later.",
+    "spelling_rule": "No mandatory spelling gauntlet; spelling support is adaptive and only appears when useful."
+  },
+  "counts": {
+    "canonical_records": 142,
+    "palace_managed_records": 133,
+    "practice_only_records": 9,
+    "journeys": 7,
+    "bundles": 16,
+    "permanent_loci": 49,
+    "confusable_sets": 17
+  },
+  "journeys": [
+    {
+      "journey_id": "U2-J1",
+      "working_title": "Cell Operations Complex",
+      "content_focus": "Cell identity, nucleus, ribosomes, endomembrane flow, recycling/storage, and cytoskeleton",
+      "setting_logic": "A coherent operations complex supports physical movement from information control to protein production, processing, recycling, storage, and internal structural support.",
+      "bundles": [
+        {
+          "bundle_id": "U2-B01",
+          "title": "Cell identity and information control",
+          "loci": [
+            "U2-L01",
+            "U2-L02",
+            "U2-L03"
+          ]
+        },
+        {
+          "bundle_id": "U2-B02",
+          "title": "Protein production and endomembrane flow",
+          "loci": [
+            "U2-L04",
+            "U2-L05",
+            "U2-L06",
+            "U2-L07",
+            "U2-L08",
+            "U2-L09"
+          ]
+        },
+        {
+          "bundle_id": "U2-B03",
+          "title": "Recycling, storage, and internal support",
+          "loci": [
+            "U2-L10",
+            "U2-L11",
+            "U2-L12",
+            "U2-L13"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U2-J2",
+      "working_title": "Energy Conversion Annex",
+      "content_focus": "Mitochondrial and chloroplast structure-function relationships",
+      "setting_logic": "A power-conversion annex makes nested membranes, compartments, surface area, and energy-conversion structures spatially explicit without mixing them into the already dense endomembrane route.",
+      "bundles": [
+        {
+          "bundle_id": "U2-B04",
+          "title": "Mitochondrial architecture",
+          "loci": [
+            "U2-L14",
+            "U2-L15",
+            "U2-L16"
+          ]
+        },
+        {
+          "bundle_id": "U2-B05",
+          "title": "Chloroplast architecture",
+          "loci": [
+            "U2-L17",
+            "U2-L18"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U2-J3",
+      "working_title": "Scaling Observatory",
+      "content_focus": "Surface-area-to-volume relationships, cell-size constraints, exchange surfaces, and organism scaling",
+      "setting_logic": "A modeling observatory lets learners compare geometrically similar objects at different scales and watch exchange and thermal consequences change with size.",
+      "bundles": [
+        {
+          "bundle_id": "U2-B06",
+          "title": "Scale, exchange, and geometry",
+          "loci": [
+            "U2-L19",
+            "U2-L20",
+            "U2-L21"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U2-J4",
+      "working_title": "Membrane Border Terminal",
+      "content_focus": "Membrane structure, fluidity, proteins, recognition, selective permeability, cell walls, and plasmodesmata",
+      "setting_logic": "A border terminal gives the membrane one stable spatial metaphor: a dynamic boundary with a molecular fabric, embedded workers, recognition markers, selective lanes, and an external plant-cell wall.",
+      "bundles": [
+        {
+          "bundle_id": "U2-B07",
+          "title": "Bilayer organization and fluidity",
+          "loci": [
+            "U2-L22",
+            "U2-L23",
+            "U2-L24"
+          ]
+        },
+        {
+          "bundle_id": "U2-B08",
+          "title": "Membrane proteins and recognition",
+          "loci": [
+            "U2-L25",
+            "U2-L26"
+          ]
+        },
+        {
+          "bundle_id": "U2-B09",
+          "title": "Selectivity and outer boundaries",
+          "loci": [
+            "U2-L27",
+            "U2-L28",
+            "U2-L29"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U2-J5",
+      "working_title": "Gradient Transit Hub",
+      "content_focus": "Diffusion, passive/active transport, facilitated diffusion, channels/carriers, bulk transport, electrochemical gradients, pumps, and cotransport",
+      "setting_logic": "A multilevel transit hub makes direction, gradients, energy use, transport proteins, vesicles, and coupled movement visible as different ways of crossing the same boundary.",
+      "bundles": [
+        {
+          "bundle_id": "U2-B10",
+          "title": "Downhill and protein-assisted transport",
+          "loci": [
+            "U2-L30",
+            "U2-L31",
+            "U2-L32",
+            "U2-L33",
+            "U2-L34",
+            "U2-L35"
+          ]
+        },
+        {
+          "bundle_id": "U2-B11",
+          "title": "Vesicle transport",
+          "loci": [
+            "U2-L36",
+            "U2-L37"
+          ]
+        },
+        {
+          "bundle_id": "U2-B12",
+          "title": "Electrochemical active transport",
+          "loci": [
+            "U2-L38",
+            "U2-L39"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U2-J6",
+      "working_title": "Osmosis Conservatory",
+      "content_focus": "Tonicity, osmosis, water potential, plant-cell water responses, and osmoregulation",
+      "setting_logic": "A glass conservatory with controlled solution chambers makes water movement and plant-cell responses visible while separating conceptual tonicity from quantitative water-potential work.",
+      "bundles": [
+        {
+          "bundle_id": "U2-B13",
+          "title": "Tonicity outcomes",
+          "loci": [
+            "U2-L40",
+            "U2-L41",
+            "U2-L42",
+            "U2-L43"
+          ]
+        },
+        {
+          "bundle_id": "U2-B14",
+          "title": "Water potential and osmoregulation",
+          "loci": [
+            "U2-L44",
+            "U2-L45"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U2-J7",
+      "working_title": "Compartment Origins Archive",
+      "content_focus": "Compartmentalization and endosymbiotic origins",
+      "setting_logic": "An origins archive lets learners first compare internal organization, then examine endosymbiosis as an evidence-supported historical explanation rather than a decorative fantasy event.",
+      "bundles": [
+        {
+          "bundle_id": "U2-B15",
+          "title": "Why cells compartmentalize",
+          "loci": [
+            "U2-L46",
+            "U2-L47"
+          ]
+        },
+        {
+          "bundle_id": "U2-B16",
+          "title": "Endosymbiotic origins and evidence",
+          "loci": [
+            "U2-L48",
+            "U2-L49"
+          ]
+        }
+      ]
+    }
+  ],
+  "loci": [
+    {
+      "locus_id": "U2-L01",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B01",
+      "title": "Cell Entry Atrium",
+      "micro_anchor": "the three-way identity gate immediately inside the entrance",
+      "scene_geometry": {
+        "left": "prokaryote inspection bay",
+        "center": "shared-cell essentials turntable",
+        "right": "eukaryote inspection bay"
+      },
+      "primary_knowledge_id": "U2-K-067",
+      "knowledge_ids": [
+        "U2-K-067",
+        "U2-K-068",
+        "U2-K-069"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-068",
+        "U2-K-069"
+      ],
+      "visual_mode": "COMPARISON_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L02",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B01",
+      "title": "Nuclear Archive",
+      "micro_anchor": "the sealed archive door with a pore-controlled checkpoint",
+      "scene_geometry": {
+        "left": "double nuclear-envelope wall",
+        "center": "chromosome archive chamber",
+        "right": "nuclear pore checkpoint"
+      },
+      "primary_knowledge_id": "U2-K-070",
+      "knowledge_ids": [
+        "U2-K-070",
+        "U2-K-071"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-071"
+      ],
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L03",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B01",
+      "title": "Nucleolus Assembly Room",
+      "micro_anchor": "the dense circular assembly bench at the center of the archive",
+      "scene_geometry": {
+        "left": "rRNA transcription desk",
+        "center": "ribosomal-subunit assembly bench",
+        "right": "subunit exit lane"
+      },
+      "primary_knowledge_id": "U2-K-072",
+      "knowledge_ids": [
+        "U2-K-072",
+        "U2-K-001",
+        "U2-K-002"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-001",
+        "U2-K-002"
+      ],
+      "visual_mode": "ASSEMBLY_PROCESS",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L04",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B02",
+      "title": "Ribosome Platforms",
+      "micro_anchor": "the paired free and membrane-bound translation platforms",
+      "scene_geometry": {
+        "left": "free-ribosome platform",
+        "center": "mRNA translation stage",
+        "right": "bound-ribosome platform"
+      },
+      "primary_knowledge_id": "U2-K-003",
+      "knowledge_ids": [
+        "U2-K-003",
+        "U2-K-073",
+        "U2-K-074"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-073",
+        "U2-K-074"
+      ],
+      "visual_mode": "SPLIT_DESTINATION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L05",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B02",
+      "title": "Endomembrane Map Room",
+      "micro_anchor": "the wall-sized route map connecting the nuclear envelope, ER, Golgi, vesicles, lysosomes, vacuoles, and plasma membrane",
+      "scene_geometry": {
+        "left": "incoming synthesis routes",
+        "center": "endomembrane route map",
+        "right": "outgoing transport routes"
+      },
+      "primary_knowledge_id": "U2-K-004",
+      "knowledge_ids": [
+        "U2-K-004",
+        "U2-K-005",
+        "U2-K-006"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-005",
+        "U2-K-006"
+      ],
+      "visual_mode": "SYSTEM_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L06",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B02",
+      "title": "Rough ER Assembly Hall",
+      "micro_anchor": "the ribosome-studded cisterna beside the map room",
+      "scene_geometry": {
+        "left": "cytosolic ribosome surface",
+        "center": "rough-ER cisterna and lumen",
+        "right": "transport-vesicle exit"
+      },
+      "primary_knowledge_id": "U2-K-007",
+      "knowledge_ids": [
+        "U2-K-007",
+        "U2-K-075"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-075"
+      ],
+      "visual_mode": "STRUCTURE_FUNCTION_PROCESS",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L07",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B02",
+      "title": "Smooth ER Detox Lab",
+      "micro_anchor": "the smooth tubular bench with no attached ribosomes",
+      "scene_geometry": {
+        "left": "lipid-synthesis station",
+        "center": "smooth-ER tubule network",
+        "right": "detoxification/calcium/carbohydrate stations"
+      },
+      "primary_knowledge_id": "U2-K-008",
+      "knowledge_ids": [
+        "U2-K-008",
+        "U2-K-076"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-076"
+      ],
+      "visual_mode": "FUNCTION_LAB",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L08",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B02",
+      "title": "Golgi Receiving Stack",
+      "micro_anchor": "the cis-facing side of a stack of flattened cisternae",
+      "scene_geometry": {
+        "left": "ER transport-vesicle arrival",
+        "center": "stacked Golgi cisternae",
+        "right": "cis-face receiving dock"
+      },
+      "primary_knowledge_id": "U2-K-009",
+      "knowledge_ids": [
+        "U2-K-009",
+        "U2-K-079",
+        "U2-K-077"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-079",
+        "U2-K-077"
+      ],
+      "visual_mode": "STRUCTURE_ORIENTATION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L09",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B02",
+      "title": "Golgi Dispatch Floor",
+      "micro_anchor": "the trans-facing sorting and shipping side of the Golgi stack",
+      "scene_geometry": {
+        "left": "modification/sorting tables",
+        "center": "tagged cargo staging area",
+        "right": "trans-face dispatch dock"
+      },
+      "primary_knowledge_id": "U2-K-011",
+      "knowledge_ids": [
+        "U2-K-010",
+        "U2-K-011",
+        "U2-K-078"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-010",
+        "U2-K-078"
+      ],
+      "visual_mode": "PROCESS_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L10",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B03",
+      "title": "Lysosome Recycling Bay",
+      "micro_anchor": "the enzyme-filled digestion chamber beside the Golgi shipping floor",
+      "scene_geometry": {
+        "left": "incoming damaged/captured material",
+        "center": "lysosomal digestion chamber",
+        "right": "recycled products and apoptosis control"
+      },
+      "primary_knowledge_id": "U2-K-014",
+      "knowledge_ids": [
+        "U2-K-014",
+        "U2-K-015",
+        "U2-K-080"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-015",
+        "U2-K-080"
+      ],
+      "visual_mode": "DIGESTION_RECYCLING_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L11",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B03",
+      "title": "Vacuole Reservoir Gallery",
+      "micro_anchor": "the row of differently sized membrane-bound reservoirs",
+      "scene_geometry": {
+        "left": "food/animal vacuole cases",
+        "center": "large plant central reservoir",
+        "right": "contractile-vacuole pump"
+      },
+      "primary_knowledge_id": "U2-K-016",
+      "knowledge_ids": [
+        "U2-K-016",
+        "U2-K-017",
+        "U2-K-018",
+        "U2-K-082",
+        "U2-K-083"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-017",
+        "U2-K-018",
+        "U2-K-082",
+        "U2-K-083"
+      ],
+      "visual_mode": "COMPARISON_GALLERY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L12",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B03",
+      "title": "Peroxisome Oxidation Booth",
+      "micro_anchor": "the small isolated oxidation chamber marked with a peroxide hazard symbol",
+      "scene_geometry": {
+        "left": "oxidation enzyme station",
+        "center": "peroxisome chamber",
+        "right": "catalase/peroxide safety station"
+      },
+      "primary_knowledge_id": "U2-K-081",
+      "knowledge_ids": [
+        "U2-K-081"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "DISTINCTION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L13",
+      "journey_id": "U2-J1",
+      "bundle_id": "U2-B03",
+      "title": "Cytoskeleton Framework",
+      "micro_anchor": "the exposed structural framework spanning the final hall",
+      "scene_geometry": {
+        "left": "actin tension network",
+        "center": "microtubule rail network and organizing center",
+        "right": "intermediate-filament support cables"
+      },
+      "primary_knowledge_id": "U2-K-092",
+      "knowledge_ids": [
+        "U2-K-092",
+        "U2-K-093",
+        "U2-K-094",
+        "U2-K-095",
+        "U2-K-096"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-093",
+        "U2-K-094",
+        "U2-K-095",
+        "U2-K-096"
+      ],
+      "visual_mode": "STRUCTURE_FUNCTION_NETWORK",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L14",
+      "journey_id": "U2-J2",
+      "bundle_id": "U2-B04",
+      "title": "Mitochondrial Membrane Airlock",
+      "micro_anchor": "the cutaway double-membrane entrance to the mitochondrial chamber",
+      "scene_geometry": {
+        "left": "outer membrane",
+        "center": "intermembrane space",
+        "right": "inner membrane enclosing matrix"
+      },
+      "primary_knowledge_id": "U2-K-012",
+      "knowledge_ids": [
+        "U2-K-012",
+        "U2-K-084",
+        "U2-K-085"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-084",
+        "U2-K-085"
+      ],
+      "visual_mode": "NESTED_STRUCTURE_CUTAWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L15",
+      "journey_id": "U2-J2",
+      "bundle_id": "U2-B04",
+      "title": "Cristae Generator Deck",
+      "micro_anchor": "the deeply folded inner-membrane generator surface",
+      "scene_geometry": {
+        "left": "smooth outer boundary",
+        "center": "cristae-rich inner membrane",
+        "right": "matrix-facing reaction side"
+      },
+      "primary_knowledge_id": "U2-K-086",
+      "knowledge_ids": [
+        "U2-K-013",
+        "U2-K-086"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-013"
+      ],
+      "visual_mode": "SURFACE_AREA_STRUCTURE_FUNCTION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L16",
+      "journey_id": "U2-J2",
+      "bundle_id": "U2-B04",
+      "title": "Energy-Demand Control Bay",
+      "micro_anchor": "the cell-demand dashboard overlooking several mitochondria",
+      "scene_geometry": {
+        "left": "low-demand cell display",
+        "center": "mitochondrial abundance dashboard",
+        "right": "high-demand cell display"
+      },
+      "primary_knowledge_id": "U2-K-087",
+      "knowledge_ids": [
+        "U2-K-087"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "COMPARATIVE_DEMAND_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L17",
+      "journey_id": "U2-J2",
+      "bundle_id": "U2-B05",
+      "title": "Chloroplast Entry Chamber",
+      "micro_anchor": "the double-membrane chloroplast cutaway at the annex greenhouse entrance",
+      "scene_geometry": {
+        "left": "outer/inner chloroplast membranes",
+        "center": "chloroplast interior",
+        "right": "plant/algal cell context display"
+      },
+      "primary_knowledge_id": "U2-K-020",
+      "knowledge_ids": [
+        "U2-K-019",
+        "U2-K-020"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-019"
+      ],
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L18",
+      "journey_id": "U2-J2",
+      "bundle_id": "U2-B05",
+      "title": "Thylakoid and Stroma Gallery",
+      "micro_anchor": "the transparent chloroplast interior showing stacked thylakoids surrounded by stroma",
+      "scene_geometry": {
+        "left": "granum/thylakoid stacks",
+        "center": "chlorophyll-bearing thylakoid membranes",
+        "right": "stroma space"
+      },
+      "primary_knowledge_id": "U2-K-088",
+      "knowledge_ids": [
+        "U2-K-088",
+        "U2-K-089",
+        "U2-K-090",
+        "U2-K-091"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-089",
+        "U2-K-090",
+        "U2-K-091"
+      ],
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L19",
+      "journey_id": "U2-J3",
+      "bundle_id": "U2-B06",
+      "title": "Cell Size Cube Gallery",
+      "micro_anchor": "the side-by-side cube-and-sphere modeling table",
+      "scene_geometry": {
+        "left": "small-cell models",
+        "center": "SA:V calculation/display table",
+        "right": "large-cell models"
+      },
+      "primary_knowledge_id": "U2-K-023",
+      "knowledge_ids": [
+        "U2-K-021",
+        "U2-K-022",
+        "U2-K-023",
+        "U2-K-024",
+        "U2-K-097",
+        "U2-K-098"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-021",
+        "U2-K-022",
+        "U2-K-024",
+        "U2-K-097",
+        "U2-K-098"
+      ],
+      "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L20",
+      "journey_id": "U2-J3",
+      "bundle_id": "U2-B06",
+      "title": "Exchange-Surface Fold Deck",
+      "micro_anchor": "the foldable membrane model mounted beside the scaling table",
+      "scene_geometry": {
+        "left": "flat membrane panel",
+        "center": "folded high-area membrane panel",
+        "right": "exchange-flow indicators"
+      },
+      "primary_knowledge_id": "U2-K-025",
+      "knowledge_ids": [
+        "U2-K-025"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "STRUCTURE_ADAPTATION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L21",
+      "journey_id": "U2-J3",
+      "bundle_id": "U2-B06",
+      "title": "Organism Scaling Terrace",
+      "micro_anchor": "the outdoor thermal terrace with small and large organism models",
+      "scene_geometry": {
+        "left": "small-organism heat/metabolism display",
+        "center": "size-comparison scale",
+        "right": "large-organism heat/metabolism display"
+      },
+      "primary_knowledge_id": "U2-K-026",
+      "knowledge_ids": [
+        "U2-K-026",
+        "U2-K-027"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-027"
+      ],
+      "visual_mode": "SCALE_COMPARISON_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L22",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B07",
+      "title": "Phospholipid Bilayer Gate",
+      "micro_anchor": "the magnified bilayer turnstile at the terminal entrance",
+      "scene_geometry": {
+        "left": "aqueous exterior with hydrophilic heads",
+        "center": "hydrophobic tail-to-tail membrane interior",
+        "right": "aqueous interior with hydrophilic heads"
+      },
+      "primary_knowledge_id": "U2-K-028",
+      "knowledge_ids": [
+        "U2-K-028",
+        "U2-K-029"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-029"
+      ],
+      "visual_mode": "MOLECULAR_ORIENTATION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L23",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B07",
+      "title": "Fluid Mosaic Concourse",
+      "micro_anchor": "the broad moving membrane floor containing lipids, proteins, and carbohydrate-bearing components",
+      "scene_geometry": {
+        "left": "mobile lipid region",
+        "center": "fluid-mosaic membrane concourse",
+        "right": "mobile embedded proteins/components"
+      },
+      "primary_knowledge_id": "U2-K-032",
+      "knowledge_ids": [
+        "U2-K-032",
+        "U2-K-033"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-033"
+      ],
+      "visual_mode": "DYNAMIC_MEMBRANE_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L24",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B07",
+      "title": "Fluidity Climate Control",
+      "micro_anchor": "the hot/cold membrane-packing demonstration chamber",
+      "scene_geometry": {
+        "left": "cold unsaturated-tail demonstration",
+        "center": "temperature-controlled bilayer model",
+        "right": "warm cholesterol-buffer demonstration"
+      },
+      "primary_knowledge_id": "U2-K-099",
+      "knowledge_ids": [
+        "U2-K-099",
+        "U2-K-100"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-100"
+      ],
+      "visual_mode": "TEMPERATURE_PACKING_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L25",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B08",
+      "title": "Membrane Protein Checkpoint",
+      "micro_anchor": "the protein-placement scanner crossing the membrane floor",
+      "scene_geometry": {
+        "left": "peripheral surface proteins",
+        "center": "integral/transmembrane placement scanner",
+        "right": "aqueous-exposed protein regions"
+      },
+      "primary_knowledge_id": "U2-K-101",
+      "knowledge_ids": [
+        "U2-K-030",
+        "U2-K-031",
+        "U2-K-101",
+        "U2-K-102"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-030",
+        "U2-K-031",
+        "U2-K-102"
+      ],
+      "visual_mode": "PROTEIN_PLACEMENT_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L26",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B08",
+      "title": "Recognition Counter",
+      "micro_anchor": "the membrane-carbohydrate identification desk",
+      "scene_geometry": {
+        "left": "glycolipid badge rack",
+        "center": "cell-recognition counter",
+        "right": "glycoprotein badge rack"
+      },
+      "primary_knowledge_id": "U2-K-104",
+      "knowledge_ids": [
+        "U2-K-103",
+        "U2-K-104"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-103"
+      ],
+      "visual_mode": "RECOGNITION_INTERACTION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L27",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B09",
+      "title": "Selective Barrier Lane",
+      "micro_anchor": "the hydrophobic-core security lane through the bilayer",
+      "scene_geometry": {
+        "left": "aqueous approach",
+        "center": "hydrophobic membrane interior",
+        "right": "aqueous exit"
+      },
+      "primary_knowledge_id": "U2-K-034",
+      "knowledge_ids": [
+        "U2-K-034",
+        "U2-K-037"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-037"
+      ],
+      "visual_mode": "SELECTIVE_BARRIER_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L28",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B09",
+      "title": "Molecule Passport Lanes",
+      "micro_anchor": "the three neighboring lanes for nonpolar, small polar, and charged/large polar travelers",
+      "scene_geometry": {
+        "left": "small nonpolar direct-pass lane",
+        "center": "small uncharged polar limited-pass lane",
+        "right": "protein-required ion/large-polar lane"
+      },
+      "primary_knowledge_id": "U2-K-035",
+      "knowledge_ids": [
+        "U2-K-035",
+        "U2-K-036",
+        "U2-K-038"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-036",
+        "U2-K-038"
+      ],
+      "visual_mode": "PERMEABILITY_SORT_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L29",
+      "journey_id": "U2-J4",
+      "bundle_id": "U2-B09",
+      "title": "Plant Wall and Plasmodesmata Exterior",
+      "micro_anchor": "the rigid plant-cell wall outside the plasma membrane with a channel linking the neighboring cell",
+      "scene_geometry": {
+        "left": "cellulose-rich wall matrix",
+        "center": "plasma membrane beneath wall",
+        "right": "plasmodesma channel to adjacent cell"
+      },
+      "primary_knowledge_id": "U2-K-039",
+      "knowledge_ids": [
+        "U2-K-039",
+        "U2-K-105",
+        "U2-K-106",
+        "U2-K-107"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-105",
+        "U2-K-106",
+        "U2-K-107"
+      ],
+      "visual_mode": "BOUNDARY_AND_CHANNEL_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L30",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B10",
+      "title": "Concentration Ramp",
+      "micro_anchor": "the sloped particle platform running from crowded to sparse regions",
+      "scene_geometry": {
+        "left": "high-concentration platform",
+        "center": "random molecular motion ramp",
+        "right": "low-concentration platform"
+      },
+      "primary_knowledge_id": "U2-K-108",
+      "knowledge_ids": [
+        "U2-K-040",
+        "U2-K-108",
+        "U2-K-041"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-040",
+        "U2-K-041"
+      ],
+      "visual_mode": "PARTICLE_MOTION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L31",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B10",
+      "title": "Active Transport Lift",
+      "micro_anchor": "the powered lift carrying cargo against the concentration slope",
+      "scene_geometry": {
+        "left": "low-concentration loading bay",
+        "center": "ATP-powered transport-protein lift",
+        "right": "high-concentration unloading bay"
+      },
+      "primary_knowledge_id": "U2-K-042",
+      "knowledge_ids": [
+        "U2-K-042",
+        "U2-K-058",
+        "U2-K-059"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-058",
+        "U2-K-059"
+      ],
+      "visual_mode": "ENERGY_COUPLED_TRANSPORT_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L32",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B10",
+      "title": "Facilitated Diffusion Corridor",
+      "micro_anchor": "the no-ATP protein-assisted downhill corridor",
+      "scene_geometry": {
+        "left": "high-concentration cargo",
+        "center": "transport-protein corridor",
+        "right": "low-concentration destination"
+      },
+      "primary_knowledge_id": "U2-K-046",
+      "knowledge_ids": [
+        "U2-K-046",
+        "U2-K-049"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-049"
+      ],
+      "visual_mode": "PROTEIN_ASSISTED_DOWNHILL_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L33",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B10",
+      "title": "Channel Turnstiles",
+      "micro_anchor": "the gated hydrophilic pores crossing the membrane wall",
+      "scene_geometry": {
+        "left": "ions waiting outside",
+        "center": "channel-protein pore/gate",
+        "right": "charge-separation indicator"
+      },
+      "primary_knowledge_id": "U2-K-110",
+      "knowledge_ids": [
+        "U2-K-047",
+        "U2-K-110",
+        "U2-K-048"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-047",
+        "U2-K-048"
+      ],
+      "visual_mode": "GATED_CHANNEL_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L34",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B10",
+      "title": "Carrier Shuttle",
+      "micro_anchor": "the binding-and-conformation shuttle in the membrane wall",
+      "scene_geometry": {
+        "left": "solute binding site",
+        "center": "carrier conformation chamber",
+        "right": "solute release side"
+      },
+      "primary_knowledge_id": "U2-K-111",
+      "knowledge_ids": [
+        "U2-K-111"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "CARRIER_CONFORMATION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L35",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B10",
+      "title": "Aquaporin Floodgate",
+      "micro_anchor": "the water-only channel bank beside the carrier shuttle",
+      "scene_geometry": {
+        "left": "bulk water reservoir",
+        "center": "aquaporin channel bank",
+        "right": "receiving water reservoir"
+      },
+      "primary_knowledge_id": "U2-K-050",
+      "knowledge_ids": [
+        "U2-K-050"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "WATER_CHANNEL_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L36",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B11",
+      "title": "Bulk Cargo Dock",
+      "micro_anchor": "the membrane-remodeling loading dock for vesicles",
+      "scene_geometry": {
+        "left": "membrane invagination area",
+        "center": "vesicle cargo dock",
+        "right": "vesicle-fusion release area"
+      },
+      "primary_knowledge_id": "U2-K-044",
+      "knowledge_ids": [
+        "U2-K-043",
+        "U2-K-044",
+        "U2-K-045"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-043",
+        "U2-K-045"
+      ],
+      "visual_mode": "VESICLE_BEFORE_AFTER_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L37",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B11",
+      "title": "Endocytosis Intake Bays",
+      "micro_anchor": "the three adjacent intake bays for particles, fluid, and receptor-selected cargo",
+      "scene_geometry": {
+        "left": "phagocytosis bay",
+        "center": "pinocytosis bay",
+        "right": "receptor-mediated endocytosis bay"
+      },
+      "primary_knowledge_id": "U2-K-118",
+      "knowledge_ids": [
+        "U2-K-118",
+        "U2-K-119",
+        "U2-K-120"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-119",
+        "U2-K-120"
+      ],
+      "visual_mode": "ENDOCYTOSIS_SUBTYPE_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L38",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B12",
+      "title": "Electrical Pump Control",
+      "micro_anchor": "the charged-membrane control board centered on the Na+/K+ ATPase",
+      "scene_geometry": {
+        "left": "Na+ export side",
+        "center": "ATPase/electrogenic pump and voltage meter",
+        "right": "K+ import side"
+      },
+      "primary_knowledge_id": "U2-K-112",
+      "knowledge_ids": [
+        "U2-K-060",
+        "U2-K-112",
+        "U2-K-113",
+        "U2-K-114"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-060",
+        "U2-K-113",
+        "U2-K-114"
+      ],
+      "visual_mode": "ELECTROCHEMICAL_PUMP_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L39",
+      "journey_id": "U2-J5",
+      "bundle_id": "U2-B12",
+      "title": "Proton Cotransport Platform",
+      "micro_anchor": "the H+ gradient platform feeding a coupled sucrose transporter",
+      "scene_geometry": {
+        "left": "ATP-powered proton pump",
+        "center": "H+ electrochemical-gradient reservoir",
+        "right": "H+/sucrose cotransporter"
+      },
+      "primary_knowledge_id": "U2-K-116",
+      "knowledge_ids": [
+        "U2-K-115",
+        "U2-K-116",
+        "U2-K-117"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-115",
+        "U2-K-117"
+      ],
+      "visual_mode": "GRADIENT_COUPLING_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L40",
+      "journey_id": "U2-J6",
+      "bundle_id": "U2-B13",
+      "title": "Tonicity Orientation Hall",
+      "micro_anchor": "the central comparison tank with three external-solution doors",
+      "scene_geometry": {
+        "left": "hypotonic door",
+        "center": "cell reference tank",
+        "right": "hypertonic/isotonic comparison doors"
+      },
+      "primary_knowledge_id": "U2-K-121",
+      "knowledge_ids": [
+        "U2-K-051",
+        "U2-K-121"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-051"
+      ],
+      "visual_mode": "RELATIVE_SOLUTION_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L41",
+      "journey_id": "U2-J6",
+      "bundle_id": "U2-B13",
+      "title": "Isotonic Balance Pool",
+      "micro_anchor": "the transparent cell chamber showing equal opposing water movement",
+      "scene_geometry": {
+        "left": "water entering",
+        "center": "cell in isotonic solution",
+        "right": "water leaving"
+      },
+      "primary_knowledge_id": "U2-K-122",
+      "knowledge_ids": [
+        "U2-K-122"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "DYNAMIC_EQUILIBRIUM_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L42",
+      "journey_id": "U2-J6",
+      "bundle_id": "U2-B13",
+      "title": "Hypertonic Withdrawal Chamber",
+      "micro_anchor": "the high-solute external chamber that draws water from cells",
+      "scene_geometry": {
+        "left": "hypertonic external solution",
+        "center": "shrinking animal-cell model",
+        "right": "water-flow path outward"
+      },
+      "primary_knowledge_id": "U2-K-123",
+      "knowledge_ids": [
+        "U2-K-123"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "SHRINKAGE_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L43",
+      "journey_id": "U2-J6",
+      "bundle_id": "U2-B13",
+      "title": "Hypotonic Plant Greenhouse",
+      "micro_anchor": "the low-solute chamber containing paired animal and plant cells",
+      "scene_geometry": {
+        "left": "swelling animal-cell model",
+        "center": "turgid plant-cell model against wall",
+        "right": "plasmolyzed-versus-turgid comparison panel"
+      },
+      "primary_knowledge_id": "U2-K-124",
+      "knowledge_ids": [
+        "U2-K-124",
+        "U2-K-125",
+        "U2-K-126"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-125",
+        "U2-K-126"
+      ],
+      "visual_mode": "SWELLING_TURGOR_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L44",
+      "journey_id": "U2-J6",
+      "bundle_id": "U2-B14",
+      "title": "Osmosis and Water-Potential River",
+      "micro_anchor": "the channel connecting two compartments with a selectively permeable divider",
+      "scene_geometry": {
+        "left": "higher-water-potential compartment",
+        "center": "selectively permeable divider/osmosis path",
+        "right": "lower-water-potential compartment"
+      },
+      "primary_knowledge_id": "U2-K-109",
+      "knowledge_ids": [
+        "U2-K-052",
+        "U2-K-056",
+        "U2-K-109",
+        "U2-K-054"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-052",
+        "U2-K-056",
+        "U2-K-054"
+      ],
+      "visual_mode": "WATER_POTENTIAL_FLOW_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L45",
+      "journey_id": "U2-J6",
+      "bundle_id": "U2-B14",
+      "title": "Water-Potential Control Room",
+      "micro_anchor": "the pressure-and-solute control console above the river",
+      "scene_geometry": {
+        "left": "pressure-potential control",
+        "center": "Ψ = Ψp + Ψs and Ψs = −iCRT console",
+        "right": "solute-potential/osmoregulation control"
+      },
+      "primary_knowledge_id": "U2-K-055",
+      "knowledge_ids": [
+        "U2-K-053",
+        "U2-K-057",
+        "U2-K-127",
+        "U2-K-128",
+        "U2-K-055"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-053",
+        "U2-K-057",
+        "U2-K-127",
+        "U2-K-128"
+      ],
+      "visual_mode": "QUANTITATIVE_CONTROL_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L46",
+      "journey_id": "U2-J7",
+      "bundle_id": "U2-B15",
+      "title": "Compartmentalization Lab",
+      "micro_anchor": "the divided reaction chamber with separate enzyme stations and expanded internal membranes",
+      "scene_geometry": {
+        "left": "reaction compartment A",
+        "center": "internal membrane/surface-area divider",
+        "right": "reaction compartment B"
+      },
+      "primary_knowledge_id": "U2-K-061",
+      "knowledge_ids": [
+        "U2-K-061",
+        "U2-K-062",
+        "U2-K-063"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-062",
+        "U2-K-063"
+      ],
+      "visual_mode": "COMPARTMENT_CAUSAL_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L47",
+      "journey_id": "U2-J7",
+      "bundle_id": "U2-B15",
+      "title": "Internal Organization Comparison Room",
+      "micro_anchor": "the side-by-side prokaryotic and eukaryotic organization models",
+      "scene_geometry": {
+        "left": "prokaryotic specialized regions",
+        "center": "comparison table",
+        "right": "eukaryotic membrane-bound compartments"
+      },
+      "primary_knowledge_id": "U2-K-065",
+      "knowledge_ids": [
+        "U2-K-065",
+        "U2-K-066"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-066"
+      ],
+      "visual_mode": "COMPARISON_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L48",
+      "journey_id": "U2-J7",
+      "bundle_id": "U2-B16",
+      "title": "Endosymbiosis Origin Theater",
+      "micro_anchor": "the staged engulfment model showing a host cell retaining a formerly free-living prokaryote",
+      "scene_geometry": {
+        "left": "ancestral host cell",
+        "center": "engulfment/retention stage",
+        "right": "integrated descendant organelle"
+      },
+      "primary_knowledge_id": "U2-K-064",
+      "knowledge_ids": [
+        "U2-K-064"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "ORIGIN_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U2-L49",
+      "journey_id": "U2-J7",
+      "bundle_id": "U2-B16",
+      "title": "Endosymbiotic Evidence Vault",
+      "micro_anchor": "the four-panel evidence wall with a modern-dependence exit panel",
+      "scene_geometry": {
+        "left": "genome/division evidence",
+        "center": "ribosome/membrane evidence",
+        "right": "modern host-dependence panel"
+      },
+      "primary_knowledge_id": "U2-K-129",
+      "knowledge_ids": [
+        "U2-K-129",
+        "U2-K-130",
+        "U2-K-131",
+        "U2-K-132",
+        "U2-K-133"
+      ],
+      "embedded_knowledge_ids": [
+        "U2-K-130",
+        "U2-K-131",
+        "U2-K-132",
+        "U2-K-133"
+      ],
+      "visual_mode": "EVIDENCE_MATRIX",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    }
+  ],
+  "challenge_lab": [
+    {
+      "challenge_id": "U2-CH-01",
+      "knowledge_id": "U2-K-134",
+      "title": "Albumin organelle inference",
+      "type": "STRUCTURE_FUNCTION_FRQ",
+      "prerequisite_loci": [
+        "U2-L06",
+        "U2-L08",
+        "U2-L09"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-02",
+      "knowledge_id": "U2-K-135",
+      "title": "Insulin secretory pathway",
+      "type": "PATHWAY_FRQ",
+      "prerequisite_loci": [
+        "U2-L04",
+        "U2-L06",
+        "U2-L08",
+        "U2-L09",
+        "U2-L36"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-03",
+      "knowledge_id": "U2-K-136",
+      "title": "Alcohol detoxification and autophagy",
+      "type": "STRUCTURE_FUNCTION_FRQ",
+      "prerequisite_loci": [
+        "U2-L07",
+        "U2-L10"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-04",
+      "knowledge_id": "U2-K-137",
+      "title": "Surface-area-to-volume calculations",
+      "type": "QUANTITATIVE",
+      "prerequisite_loci": [
+        "U2-L19",
+        "U2-L20"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-05",
+      "knowledge_id": "U2-K-138",
+      "title": "Cold-water fish membrane fluidity",
+      "type": "MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U2-L23",
+        "U2-L24"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-06",
+      "knowledge_id": "U2-K-139",
+      "title": "Diffusion diagrams",
+      "type": "MODEL_INTERPRETATION",
+      "prerequisite_loci": [
+        "U2-L27",
+        "U2-L28",
+        "U2-L30"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-07",
+      "knowledge_id": "U2-K-140",
+      "title": "Sucrose uptake versus pH",
+      "type": "DATA_MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U2-L38",
+        "U2-L39"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-08",
+      "knowledge_id": "U2-K-141",
+      "title": "Macrophage phagocytosis",
+      "type": "PROCESS_FRQ",
+      "prerequisite_loci": [
+        "U2-L26",
+        "U2-L37"
+      ]
+    },
+    {
+      "challenge_id": "U2-CH-09",
+      "knowledge_id": "U2-K-142",
+      "title": "Water-potential calculations",
+      "type": "QUANTITATIVE",
+      "prerequisite_loci": [
+        "U2-L44",
+        "U2-L45"
+      ]
+    }
+  ],
+  "confusable_sets": [
+    {
+      "set_id": "U2-CF-01",
+      "title": "Cell organization",
+      "terms": [
+        "prokaryotic cell",
+        "eukaryotic cell"
+      ],
+      "knowledge_ids": [
+        "U2-K-068",
+        "U2-K-069"
+      ]
+    },
+    {
+      "set_id": "U2-CF-02",
+      "title": "Ribosome location and destination",
+      "terms": [
+        "free ribosomes",
+        "bound ribosomes"
+      ],
+      "knowledge_ids": [
+        "U2-K-073",
+        "U2-K-074"
+      ]
+    },
+    {
+      "set_id": "U2-CF-03",
+      "title": "ER identity",
+      "terms": [
+        "rough ER",
+        "smooth ER"
+      ],
+      "knowledge_ids": [
+        "U2-K-007",
+        "U2-K-008"
+      ]
+    },
+    {
+      "set_id": "U2-CF-04",
+      "title": "Golgi directionality",
+      "terms": [
+        "cis face",
+        "trans face"
+      ],
+      "knowledge_ids": [
+        "U2-K-077",
+        "U2-K-078"
+      ]
+    },
+    {
+      "set_id": "U2-CF-05",
+      "title": "Digestive versus oxidative organelles",
+      "terms": [
+        "lysosome",
+        "peroxisome"
+      ],
+      "knowledge_ids": [
+        "U2-K-014",
+        "U2-K-081"
+      ]
+    },
+    {
+      "set_id": "U2-CF-06",
+      "title": "Cytoskeletal elements",
+      "terms": [
+        "microtubule",
+        "microfilament / actin filament",
+        "intermediate filament"
+      ],
+      "knowledge_ids": [
+        "U2-K-093",
+        "U2-K-095",
+        "U2-K-096"
+      ]
+    },
+    {
+      "set_id": "U2-CF-07",
+      "title": "Chloroplast internal structures",
+      "terms": [
+        "thylakoid",
+        "granum",
+        "stroma"
+      ],
+      "knowledge_ids": [
+        "U2-K-088",
+        "U2-K-089",
+        "U2-K-090"
+      ]
+    },
+    {
+      "set_id": "U2-CF-08",
+      "title": "Membrane protein placement",
+      "terms": [
+        "integral membrane protein",
+        "peripheral membrane protein",
+        "transmembrane protein"
+      ],
+      "knowledge_ids": [
+        "U2-K-101",
+        "U2-K-102"
+      ]
+    },
+    {
+      "set_id": "U2-CF-09",
+      "title": "Membrane carbohydrate labels",
+      "terms": [
+        "glycolipid",
+        "glycoprotein"
+      ],
+      "knowledge_ids": [
+        "U2-K-103",
+        "U2-K-104"
+      ]
+    },
+    {
+      "set_id": "U2-CF-10",
+      "title": "Transport energy and mechanism",
+      "terms": [
+        "passive transport",
+        "facilitated diffusion",
+        "active transport"
+      ],
+      "knowledge_ids": [
+        "U2-K-041",
+        "U2-K-046",
+        "U2-K-042"
+      ]
+    },
+    {
+      "set_id": "U2-CF-11",
+      "title": "Protein-mediated membrane routes",
+      "terms": [
+        "channel protein",
+        "carrier protein",
+        "aquaporin"
+      ],
+      "knowledge_ids": [
+        "U2-K-110",
+        "U2-K-111",
+        "U2-K-050"
+      ]
+    },
+    {
+      "set_id": "U2-CF-12",
+      "title": "Bulk transport direction",
+      "terms": [
+        "endocytosis",
+        "exocytosis"
+      ],
+      "knowledge_ids": [
+        "U2-K-044",
+        "U2-K-045"
+      ]
+    },
+    {
+      "set_id": "U2-CF-13",
+      "title": "Endocytosis subtypes",
+      "terms": [
+        "phagocytosis",
+        "pinocytosis",
+        "receptor-mediated endocytosis"
+      ],
+      "knowledge_ids": [
+        "U2-K-118",
+        "U2-K-119",
+        "U2-K-120"
+      ]
+    },
+    {
+      "set_id": "U2-CF-14",
+      "title": "Tonicity",
+      "terms": [
+        "hypotonic",
+        "isotonic",
+        "hypertonic"
+      ],
+      "knowledge_ids": [
+        "U2-K-124",
+        "U2-K-122",
+        "U2-K-123"
+      ]
+    },
+    {
+      "set_id": "U2-CF-15",
+      "title": "Water-potential components",
+      "terms": [
+        "water potential",
+        "pressure potential",
+        "solute potential"
+      ],
+      "knowledge_ids": [
+        "U2-K-053",
+        "U2-K-127",
+        "U2-K-128"
+      ]
+    },
+    {
+      "set_id": "U2-CF-16",
+      "title": "Electrochemical transport",
+      "terms": [
+        "electrogenic pump",
+        "Na+/K+ ATPase",
+        "proton pump",
+        "cotransport"
+      ],
+      "knowledge_ids": [
+        "U2-K-113",
+        "U2-K-114",
+        "U2-K-115",
+        "U2-K-116"
+      ]
+    },
+    {
+      "set_id": "U2-CF-17",
+      "title": "Energy organelles",
+      "terms": [
+        "mitochondrion",
+        "chloroplast"
+      ],
+      "knowledge_ids": [
+        "U2-K-012",
+        "U2-K-020"
+      ]
+    }
+  ]
+}

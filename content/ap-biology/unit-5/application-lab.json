@@ -1,0 +1,314 @@
+{
+  "schema": "memory-palace-v2-unit5-f5-challenge-lab-1.0",
+  "unit_id": "unit-5",
+  "title": "Unit 5 Challenge Lab",
+  "student_intro": "Use these after the related journeys. One challenge appears at a time so meiosis, inheritance, probability, pedigree, linkage, chi-square, and genotype-environment reasoning are practiced without depending on the mnemonic story.",
+  "challenge_count": 16,
+  "practice_only_runtime_count": 16,
+  "practice_only_runtime_object_ids": [
+    "U5-K-132",
+    "U5-K-133",
+    "U5-K-134",
+    "U5-K-135",
+    "U5-K-136",
+    "U5-K-137",
+    "U5-K-138",
+    "U5-K-139",
+    "U5-K-140",
+    "U5-K-141",
+    "U5-K-142",
+    "U5-K-143",
+    "U5-K-144",
+    "U5-K-145",
+    "U5-K-146",
+    "U5-K-147"
+  ],
+  "items": [
+    {
+      "challenge_id": "U5-CH-01",
+      "knowledge_id": "U5-K-132",
+      "domain": "Meiosis",
+      "title": "Identify a meiotic phase from chromosome behavior",
+      "type": "MODEL_PHASE_IDENTIFICATION",
+      "prerequisite_loci": [
+        "U5-L06",
+        "U5-L07",
+        "U5-L08",
+        "U5-L09",
+        "U5-L10",
+        "U5-L11",
+        "U5-L12",
+        "U5-L13",
+        "U5-L14",
+        "U5-L15"
+      ],
+      "prompt": "An unfamiliar cell model shows homologous chromosome pairs aligned side by side at the equator. Each chromosome is still duplicated, and sister chromatids remain joined. Spindle fibers from opposite poles are attached so the two homologs of each pair can move toward different poles. Identify the meiotic phase and justify the choice using the chromosome relationship that is aligned and what has not yet separated.",
+      "answer_guide": "The model is metaphase I. The decisive evidence is that homologous chromosome pairs, not individual duplicated chromosomes, are aligned at the metaphase plate. Sister chromatids are still joined. In anaphase I the homologs would be moving apart, while in metaphase II individual duplicated chromosomes align in each haploid cell with sister kinetochores oriented toward opposite poles.",
+      "story_hint": "Return to Meiosis Transit Hall and ask what occupies the metaphase plate in division I compared with division II.",
+      "canonical_statement": "Given a chromosome/spindle model, identify the meiotic phase and justify the choice using homolog pairing, alignment, or separation behavior.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-02",
+      "knowledge_id": "U5-K-133",
+      "domain": "Genetic diversity",
+      "title": "Distinguish three sources of sexual variation",
+      "type": "MECHANISM_DISCRIMINATION",
+      "prerequisite_loci": [
+        "U5-L07",
+        "U5-L08",
+        "U5-L16"
+      ],
+      "prompt": "Three diagrams show different events. Diagram A shows nonsister chromatids of homologous chromosomes exchanging corresponding DNA segments during prophase I. Diagram B shows two homologous pairs oriented in different possible directions at metaphase I. Diagram C shows one sperm randomly fusing with one egg from a large pool of gametes. Name the variation mechanism represented by each diagram and explain when it occurs.",
+      "answer_guide": "A is crossing over, which occurs during prophase I and can produce recombinant chromatids. B represents independent orientation and the resulting independent assortment of unlinked chromosome pairs during meiosis I. C is random fertilization, which occurs after meiosis and combines one of many possible sperm with one of many possible eggs. These mechanisms contribute to variation through different physical events.",
+      "story_hint": "Use the three directions of the Variation Sources Compass and identify whether the change happens during chromosome pairing, homolog orientation, or gamete fusion.",
+      "canonical_statement": "Given an unfamiliar meiotic model or offspring pattern, distinguish crossing over, independent assortment, and random fertilization as sources of variation.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-03",
+      "knowledge_id": "U5-K-134",
+      "domain": "Mendelian genetics",
+      "title": "Solve a one-gene cross from genotype to probability",
+      "type": "GENETIC_CROSS",
+      "prerequisite_loci": [
+        "U5-L21",
+        "U5-L22",
+        "U5-L23",
+        "U5-L24",
+        "U5-L25"
+      ],
+      "prompt": "In a plant species, allele P produces purple flowers and is completely dominant to allele p, which produces white flowers. Cross a heterozygous purple plant with a white plant. Determine the parental genotypes, list the gametes each parent can produce, and calculate the expected genotype and phenotype probabilities among offspring.",
+      "answer_guide": "The cross is Pp × pp. The heterozygous parent produces P and p gametes with probability one-half each, while the pp parent produces only p gametes. Offspring are expected to be one-half Pp and one-half pp. Under complete dominance, the predicted phenotype probabilities are one-half purple and one-half white. These are probabilities for each fertilization event, not guaranteed counts in a small family.",
+      "story_hint": "Return to the Gamete–Punnett Board. Generate biologically possible gametes before placing anything into the grid.",
+      "canonical_statement": "Solve one-gene crosses by identifying alleles and parent genotypes, generating gametes, predicting genotype/phenotype probabilities, and interpreting the result.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-04",
+      "knowledge_id": "U5-K-135",
+      "domain": "Mendelian genetics",
+      "title": "Generate gametes from a multilocus genotype",
+      "type": "GAMETE_GENERATION",
+      "prerequisite_loci": [
+        "U5-L23",
+        "U5-L25"
+      ],
+      "prompt": "Assume genes A and B are on different chromosomes and assort independently. An individual has genotype AaBb. List every possible allele combination that can appear in its gametes and state the expected probability of each combination under the independent-assortment assumption. Then explain what would have to be reconsidered if A and B were tightly linked on the same chromosome.",
+      "answer_guide": "For AaBb with independent assortment, the possible gametes are AB, Ab, aB, and ab, each with expected probability one-fourth. Each gamete receives one allele from the A locus and one from the B locus. If the genes were tightly linked, the parental allele arrangement on the homologs and recombination frequency would matter, so the four gamete types would not necessarily occur in equal proportions.",
+      "story_hint": "Use the Mendelian Laws Gate first, then the Gamete–Punnett Board. Independent assortment is an assumption that must be stated, not silently imposed.",
+      "canonical_statement": "Given homozygous, heterozygous, or multilocus genotypes, enumerate possible gamete allele combinations while respecting linkage assumptions stated in the problem.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-05",
+      "knowledge_id": "U5-K-136",
+      "domain": "Mendelian genetics",
+      "title": "Interpret a dihybrid cross and its assumptions",
+      "type": "GENETIC_CROSS",
+      "prerequisite_loci": [
+        "U5-L23",
+        "U5-L24",
+        "U5-L25"
+      ],
+      "prompt": "Two organisms with genotype AaBb are crossed. Assume complete dominance at both loci, no viability differences, and independent assortment of the two genes. Determine the possible gametes for each parent and the expected four phenotype classes. State the classic phenotype ratio and explain why that ratio would not be a universal prediction if the genes were linked or the dominance relationships differed.",
+      "answer_guide": "Each AaBb parent produces AB, Ab, aB, and ab gametes at equal expected frequencies under independent assortment. Combining these gametes produces the classic 9:3:3:1 phenotype ratio for A_B_, A_bb, aaB_, and aabb when complete dominance applies at both loci. The ratio is conditional on this specific cross and its assumptions. Linkage, different allele interactions, selection, or other mechanisms can change the expected proportions.",
+      "story_hint": "Use the assumption banner on the Classic Ratio Balcony. The ratio is an outcome of a defined model, not a definition of Mendelian inheritance.",
+      "canonical_statement": "Solve dihybrid crosses under independent assortment, including construction/interpretation of a 4×4 Punnett square and conditional use of the 9:3:3:1 ratio.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-06",
+      "knowledge_id": "U5-K-137",
+      "domain": "Probability",
+      "title": "Use the multiplication rule for an AND event",
+      "type": "PROBABILITY_CALCULATION",
+      "prerequisite_loci": [
+        "U5-L27",
+        "U5-L28"
+      ],
+      "prompt": "For an Aa × Aa cross, the probability that one offspring is aa is one-fourth. Assume successive offspring outcomes are independent. What is the probability that the first two offspring are both aa? Show the event structure that justifies the calculation, and explain why the multiplication rule is appropriate.",
+      "answer_guide": "The event is aa in the first offspring AND aa in the second offspring. Because the two fertilization outcomes are treated as independent, multiply the probabilities: one-fourth × one-fourth = one-sixteenth. The multiplication rule applies because both independent events must occur. The calculation does not mean a family of sixteen offspring is guaranteed to contain exactly one such pair.",
+      "story_hint": "Return to the Addition–Multiplication Junction and choose the AND lane only after confirming that both required events are independent.",
+      "canonical_statement": "Use P(A and B)=P(A)×P(B) for independent inheritance events to calculate multilocus genotype or sequential-offspring probabilities.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-07",
+      "knowledge_id": "U5-K-138",
+      "domain": "Probability",
+      "title": "Use addition and multiplication in one genetics problem",
+      "type": "PROBABILITY_CALCULATION",
+      "prerequisite_loci": [
+        "U5-L27",
+        "U5-L28"
+      ],
+      "prompt": "In an Aa × Aa cross, what is the probability that an offspring is homozygous, meaning either AA or aa? Then determine the probability that two successive offspring are both homozygous. Show where the addition rule and multiplication rule enter the reasoning.",
+      "answer_guide": "For one offspring, AA and aa are mutually exclusive outcomes. P(AA or aa) = one-fourth + one-fourth = one-half. For two successive offspring to both be homozygous, treat the two offspring outcomes as independent and multiply: one-half × one-half = one-fourth. Addition combines mutually exclusive alternatives within one event, while multiplication combines independent events that must both occur.",
+      "story_hint": "Use both lanes of the Addition–Multiplication Junction. First identify OR within one offspring, then AND across two independent offspring.",
+      "canonical_statement": "Use P(A or B)=P(A)+P(B) for mutually exclusive inheritance outcomes, combining with multiplication as needed.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-08",
+      "knowledge_id": "U5-K-139",
+      "domain": "Pedigrees",
+      "title": "Infer plausible inheritance from a pedigree pattern",
+      "type": "PEDIGREE_INFERENCE",
+      "prerequisite_loci": [
+        "U5-L29",
+        "U5-L30"
+      ],
+      "prompt": "A rare trait appears in two siblings whose parents are both unaffected. The trait occurs in individuals with different stated sex-chromosome complements, and the pedigree is too small to establish a definitive pattern from frequency alone. Identify one plausible simple inheritance model, state genotypes that could explain the affected siblings, and name at least one reason the pedigree should be treated as evidence rather than an absolute rule.",
+      "answer_guide": "A simple autosomal-recessive model is plausible. Both unaffected parents could be heterozygous carriers, and affected siblings could be homozygous recessive. The pedigree alone does not prove that model. Small family size, incomplete penetrance, new variants, phenotype uncertainty, or other inheritance mechanisms can produce patterns that resemble simple textbook expectations. The inference should compare candidate models with all observed evidence.",
+      "story_hint": "Return to the Inheritance Pattern Verdict Room. Keep observed family relationships and phenotypes separate from inferred genotypes and mechanisms.",
+      "canonical_statement": "Use pedigree structure and phenotype data to infer plausible inheritance modes and genotypes while treating simple pedigree rules as evidence rather than absolutes.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-09",
+      "knowledge_id": "U5-K-140",
+      "domain": "Non-Mendelian genetics",
+      "title": "Solve incomplete-dominance and codominance crosses",
+      "type": "NON_MENDELIAN_CROSS",
+      "prerequisite_loci": [
+        "U5-L31",
+        "U5-L32"
+      ],
+      "prompt": "Two loci illustrate different allele interactions. At locus R, RR is red, rr is white, and Rr is pink. At locus C, C1C1 shows antigen 1, C2C2 shows antigen 2, and C1C2 shows both antigens distinctly. For each locus, identify the inheritance pattern and predict the phenotype proportions from a heterozygote × heterozygote cross.",
+      "answer_guide": "The R locus shows incomplete dominance because the heterozygote has an intermediate phenotype. Rr × Rr gives one-fourth red, one-half pink, and one-fourth white. The C locus shows codominance because both allelic effects are separately expressed in the heterozygote. C1C2 × C1C2 gives one-fourth antigen 1 only, one-half both antigens, and one-fourth antigen 2 only. Neither pattern requires alleles to blend or disappear.",
+      "story_hint": "Use the Dominance Spectrum Studio and focus on what the heterozygote visibly expresses. Intermediate and jointly visible are different mechanisms.",
+      "canonical_statement": "Distinguish incomplete dominance from codominance and solve crosses whose heterozygotes have intermediate or jointly expressed phenotypes.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-10",
+      "knowledge_id": "U5-K-141",
+      "domain": "Non-Mendelian genetics",
+      "title": "Infer ABO genotypes and offspring possibilities",
+      "type": "MULTIPLE_ALLELE_CROSS",
+      "prerequisite_loci": [
+        "U5-L32"
+      ],
+      "prompt": "A parent with blood type A and a parent with blood type B have a child with blood type O. Infer the possible genotypes of both parents under the ABO model. Then list the blood-type phenotypes that could occur in another child from the same parents and explain how codominance and multiple alleles are both involved.",
+      "answer_guide": "A type O child has genotype ii, so each parent must contribute an i allele. The type A parent must therefore be IAi and the type B parent IBi. Their possible offspring genotypes are IAIB, IAi, IBi, and ii, producing type AB, type A, type B, and type O phenotypes. The population has three common alleles, IA, IB, and i, while IA and IB are codominant when together.",
+      "story_hint": "Return to the Dominance Spectrum Studio. Keep population-level multiple alleles separate from the two allele copies carried by one typical diploid individual.",
+      "canonical_statement": "Infer possible IA, IB, and i genotypes from ABO phenotypes and use them in genetic-cross predictions.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-11",
+      "knowledge_id": "U5-K-142",
+      "domain": "Chromosome-linked inheritance",
+      "title": "Track an X-linked allele through an explicit XX/XY model",
+      "type": "CHROMOSOME_LINKED_CROSS",
+      "prerequisite_loci": [
+        "U5-L34",
+        "U5-L35"
+      ],
+      "prompt": "In an explicitly stated XX/XY inheritance model, a person with chromosome complement XX is heterozygous for an X-linked recessive allele Xr and a person with chromosome complement XY carries the non-recessive allele XR on the X chromosome. Determine the possible offspring chromosome-and-allele combinations and the probability that an XY offspring carries Xr. Use chromosome-complement language only for this inheritance model.",
+      "answer_guide": "The XX parent can produce XR or Xr gametes. The XY parent can produce XR or Y gametes. The four equally likely combinations under the simplified assumptions are XRXR, XRXr, XRY, and XrY. Half of the XY offspring possibilities carry Xr, so the conditional probability among XY offspring is one-half. This chromosome model describes allele transmission and should not be used as a synonym for gender or as a complete account of sex development.",
+      "story_hint": "Use the Chromosome-Linked Inheritance Comparator and Hemizygous Transmission Rail. Track the allele on an actual X chromosome before applying any pedigree shortcut.",
+      "canonical_statement": "Track X-linked alleles through explicitly stated XX/XY crosses or pedigrees and predict genotype/phenotype probabilities without treating chromosome complement as a synonym for gender.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-12",
+      "knowledge_id": "U5-K-143",
+      "domain": "Genetic linkage",
+      "title": "Classify parental and recombinant classes from offspring data",
+      "type": "RECOMBINANT_CLASSIFICATION",
+      "prerequisite_loci": [
+        "U5-L38",
+        "U5-L39",
+        "U5-L40"
+      ],
+      "prompt": "A testcross begins with a heterozygote whose homologs carry AB on one chromosome and ab on the other. Offspring counts are AB 420, ab 400, Ab 90, and aB 90. Classify the parental and recombinant classes, calculate recombination frequency, and justify the classification from the known starting arrangement.",
+      "answer_guide": "The parental combinations are AB and ab because those match the allele arrangements present on the heterozygote’s original homologs. The recombinant combinations are Ab and aB because they are new relative to that starting arrangement. Recombinants total 180 out of 1000 offspring, giving a recombination frequency of 18%. The larger class sizes are consistent with linkage here, but size alone does not define parental status.",
+      "story_hint": "Return to the Parental–Recombinant Sorting Yard. Classify outcomes from the original homolog arrangement before looking at which bins are largest.",
+      "canonical_statement": "Classify parental and recombinant offspring classes and calculate recombination frequency from cross data.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-13",
+      "knowledge_id": "U5-K-144",
+      "domain": "Genetic linkage",
+      "title": "Estimate short genetic map distance and explain the ceiling",
+      "type": "LINKAGE_MAP_CALCULATION",
+      "prerequisite_loci": [
+        "U5-L41",
+        "U5-L42",
+        "U5-L43"
+      ],
+      "prompt": "A two-point testcross gives 84 recombinant offspring among 800 total offspring. Estimate the short-interval genetic map distance between the loci. Then explain why a different pair of loci with an observed recombination frequency near 50% cannot be assigned a reliable long two-point map distance from that percentage alone.",
+      "answer_guide": "The recombination frequency is 84/800 = 0.105, or 10.5%, so the short-interval estimate is about 10.5 centimorgans. For long intervals, multiple crossovers can restore parental marker combinations and go uncounted in a simple two-marker analysis. Observed recombination therefore approaches a ceiling near 50%, where ordinary two-locus data cannot distinguish very distant same-chromosome loci from effectively unlinked genes.",
+      "story_hint": "Use the Recombination Frequency Meter, then the Linkage Map Board, then the Fifty-Percent Ceiling Gate. A genetic map unit is not a literal base-pair ruler.",
+      "canonical_statement": "Use recombination frequency to estimate short-interval map distance and explain why values near 50% do not provide reliable long-distance linkage information.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-14",
+      "knowledge_id": "U5-K-145",
+      "domain": "Chi-square",
+      "title": "Convert an inheritance model into expected counts",
+      "type": "CHI_SQUARE_SETUP",
+      "prerequisite_loci": [
+        "U5-L48",
+        "U5-L49"
+      ],
+      "prompt": "A genetic model predicts a 3:1 phenotype ratio in a sample of 200 offspring. Before calculating chi-square, determine the expected count in each of the two categories. Explain how the model proportions and total sample size produce expected counts and why the observed counts must remain in a separate column.",
+      "answer_guide": "A 3:1 model predicts proportions of three-fourths and one-fourth. Multiplying by 200 gives expected counts of 150 and 50. These are model-predicted categorical counts, not measurements. The observed counts are the actual recorded data. Chi-square compares the observed counts with expected counts derived from the stated null model, so their different origins must remain explicit.",
+      "story_hint": "Return to the Chi-Square Model Bench. The null model sets proportions first, and the Expected-count column is calculated before any chi-square contribution.",
+      "canonical_statement": "Derive expected categorical counts from a genetic model before calculating chi-square.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-15",
+      "knowledge_id": "U5-K-146",
+      "domain": "Chi-square",
+      "title": "Complete a chi-square goodness-of-fit decision",
+      "type": "CHI_SQUARE_CALCULATION_DECISION",
+      "prerequisite_loci": [
+        "U5-L48",
+        "U5-L49",
+        "U5-L50"
+      ],
+      "prompt": "A null model predicts a 3:1 ratio for 160 offspring. The observed counts are 112 in category A and 48 in category B. Calculate the expected counts, compute χ² using the sum of (O−E)²/E, determine degrees of freedom for this fixed-proportion goodness-of-fit test, and compare with the 0.05 critical value 3.84. State the correct hypothesis decision.",
+      "answer_guide": "Expected counts are 120 and 40. The contributions are (112−120)²/120 = 64/120 ≈ 0.533 and (48−40)²/40 = 64/40 = 1.600. Thus χ² ≈ 2.133. With two categories, degrees of freedom are 2−1 = 1 in this AP goodness-of-fit context. Because 2.133 is below the 0.05 critical value 3.84, fail to reject the null hypothesis. This result does not prove or accept the null model.",
+      "story_hint": "Use the Observed–Expected Calculation Station and Chi-Square Decision Console. Keep O, E, χ², degrees of freedom, threshold, and decision as separate steps.",
+      "canonical_statement": "Calculate χ², determine degrees of freedom, compare with a critical value or p-value criterion, and reject or fail to reject the null with a biologically appropriate conclusion.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    },
+    {
+      "challenge_id": "U5-CH-16",
+      "knowledge_id": "U5-K-147",
+      "domain": "Environment and phenotype",
+      "title": "Explain phenotypic plasticity without allele change",
+      "type": "GENOTYPE_ENVIRONMENT_REASONING",
+      "prerequisite_loci": [
+        "U5-L37"
+      ],
+      "prompt": "Genetically identical plant cuttings are grown under two temperature regimes. Plants in the warmer treatment develop shorter stems and thicker leaves, while plants in the cooler treatment develop taller stems and thinner leaves. No DNA-sequence difference is detected between treatments. Explain a plausible biological mechanism for the phenotypic difference and distinguish this result from inherited allele change.",
+      "answer_guide": "The same genotype can produce different phenotypes when environmental conditions alter gene expression, enzyme activity, hormone signaling, membrane properties, or other physiological processes. Temperature could therefore change developmental regulation and produce the observed morphology without changing inherited alleles. This is an environmental effect on phenotype and an example of genotype-by-environment context or phenotypic plasticity, not evidence that the treatment created a heritable allele difference.",
+      "story_hint": "Return to the Phenotypic Plasticity Conservatory. Hold genotype constant on the left while changing environmental context and following the physiological mechanism to the phenotype on the right.",
+      "canonical_statement": "Given the same genotype under different environmental conditions, explain a plausible gene-expression/physiological mechanism for phenotypic plasticity and distinguish it from inherited allele change.",
+      "success_criterion": "Solve the novel problem and justify the mechanism from ordinary scientific information. Recognition of a palace image alone is not sufficient.",
+      "practice_only_runtime": true
+    }
+  ]
+}

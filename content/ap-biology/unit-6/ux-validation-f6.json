@@ -1,0 +1,104 @@
+{
+  "schema": "memory-palace-v2-unit6-f6-browser-classroom-validation-1.0",
+  "unit_id": "unit-6",
+  "stage": "F6",
+  "release_status": "STUDENT_READY_F6_VALIDATED",
+  "curriculum_content_changed": false,
+  "canonical_records": 202,
+  "guided_journeys": 6,
+  "scenes_validated": 53,
+  "recall_scenes_validated": 18,
+  "runtime_memory_objects": 161,
+  "challenge_lab_items": 16,
+  "scope_guards": 25,
+  "exact_name_review_targets": 134,
+  "mixed_discrimination_sets": 37,
+  "mixed_discrimination_questions": 94,
+  "target_viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "tablet",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "browser_facing_validation": {
+    "validation_mode": "runtime HTML render + state-machine interaction QA + responsive CSS contract + live FastAPI smoke",
+    "scene_render_checks": 53,
+    "recall_render_checks": 18,
+    "scene_viewport_contract_checks": 159,
+    "recall_viewport_contract_checks": 54,
+    "route_lengths": [
+      12,
+      8,
+      8,
+      12,
+      8,
+      5
+    ],
+    "scene_geometry_findings": 0,
+    "recall_content_leak_findings": 0,
+    "broken_interpolation_findings": 0,
+    "unit_switch_findings": 0,
+    "refresh_resume_findings": 0,
+    "review_scheduler_findings": 0,
+    "mixed_review_findings": 0,
+    "challenge_lab_findings": 0,
+    "result": "PASS",
+    "pixel_screenshot_validation": "NOT_EXECUTED_IN_THIS_CONTAINER",
+    "pixel_screenshot_note": "Chromium was directly probed with an 8-second headless about:blank render and timed out without DOM output in this sandbox. F6 therefore records functional browser-facing and responsive-contract validation without claiming screenshot or pixel validation."
+  },
+  "f6_runtime_fixes": [
+    {
+      "id": "U6-F6-AUDIO-001",
+      "finding": "Browser speech synthesis could read frequent Unit 6 molecular-biology notation awkwardly or ambiguously.",
+      "resolution": "Speech-only normalization now covers pre-mRNA, mRNA, tRNA, rRNA, siRNA, miRNA/microRNA, PCR, AUG and stop-codon abbreviations, TATA, AAUAAA, HGT, SSB, dsDNA, trp, A/P/E-site labels, and 5-prime/3-prime notation without changing visible scientific text or frozen narrative bytes."
+    }
+  ],
+  "review_validation": {
+    "exact_name_targets": 134,
+    "mixed_sets": 37,
+    "mixed_questions": 94,
+    "visible_due_limit": 5,
+    "mixed_initial_delay_hours_minimum": 48,
+    "unit_scoped_review_isolation": true,
+    "hinted_review_continuation": true,
+    "non_exact_palace_records": 27
+  },
+  "first_exposure_policy": {
+    "story_first": true,
+    "optional_quick_recall": true,
+    "memory_anchors_collapsed_by_default": true,
+    "recall_hides_story_location_route_cast_and_anchors": true
+  },
+  "resume_validation": {
+    "active_unit_persists": true,
+    "active_journey_persists": true,
+    "scene_index_persists": true,
+    "refresh_returns_to_home_with_continue_action": true
+  },
+  "f5_lock_sha256": "b42559edc92dc28d33092603c6a4da06746fdcf0c5fc265e9f0d5b3b9aee0b63",
+  "runtime_file_sha256": {
+    "backend/main.py": "e79df0d52052794134044cc4de9ec2a84221e3bad1da9065bb4c3f7a1be91b56",
+    "backend/content.py": "1cd86fecf2920805554016468fa33fb280c328c034bac1f095e182b2f5d98a28",
+    "backend/settings.py": "5fa9ebefbc9f8613ac1ab13315a5dabb8cde9b2bbfced835c82434c05e72a59d",
+    "frontend/js/app.js": "acfe768150cacd609e3726dabe44f5cb8b895712113e9ba49e1d4e94faccdd65",
+    "frontend/js/api.js": "7ea249133a6514e49adab56784988954cdea8456f9c40fb5af179e32771f7e44",
+    "frontend/js/audio.js": "1907d172b5ae9b45d73ac496f164f125bb29f612af07f8cac9bef29176dff371",
+    "frontend/js/state.js": "35d3828dc39236fa19abe8db71ae6fa32acc331c35a3a8876e925039362549c9",
+    "frontend/js/views/home.js": "eab63293f3aec59fe3843f4f463da82d53a270dcb14674390677eb1f4b9d7006",
+    "frontend/js/views/learn.js": "57489f35dc6fcf021fb639bd05c4cac3f00b37233012c5f1754d5633f0604070",
+    "frontend/js/views/review.js": "dbe4009c72dee6c9e6cf433402a8fc856c8b9612a15be503e6ccd75a59e38c63",
+    "frontend/js/views/practice.js": "9189c8ee87853b0ccf35837531e9c9e25467bd2e97595d2e74dad19737b719a4"
+  },
+  "next_gate": "Begin Unit 7 source inventory, scientific atomization, AP scope mapping, conflict/misconception audit, and canonical scientific lock before any Unit 7 palace or narrative generation."
+}

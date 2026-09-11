@@ -1,0 +1,1034 @@
+{
+  "palace_id": "U4-J2",
+  "palace_name": "Signal Reception Gateway",
+  "story_title": "The Gate That Answered Every Knock",
+  "tagline": "The membrane gateway is activating for the wrong signals. Repair recognition, receptor location, and receptor mechanism before any intracellular relay can be trusted.",
+  "guide": {
+    "name": "Dr. Mira Chen",
+    "role": "cellular-systems investigator",
+    "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet clipped beside a three-state receptor monitor",
+    "story_job": "Mira keeps ligand, receptor, receptor location, and receptor state separate while the gateway is repaired. She names the biology only after the defining molecular event is visible."
+  },
+  "premise": "Messages from Journey 1 are reaching the correct cellular destinations, yet the Signal Reception Gateway has developed a new failure: receptors activate for incompatible ligands, every receptor is being placed at the membrane, and distinct receptor mechanisms have been collapsed into one generic switch. Mira brings a three-state receptor monitor that can show only unbound/inactive, ligand-bound, and activated/changed, forcing every room to prove exactly when and where reception occurs.",
+  "mission": "Repair the gateway from recognition to receptor mechanism. Use ligand-receptor specificity to stop false activation, separate cell-surface from intracellular receptors through membrane permeability, examine three intracellular-signaling examples, then keep the GPCR, heterotrimeric G protein, GDP/GTP switch, and ligand-gated ion channel physically and causally distinct.",
+  "finale": "At the final channel gate, the receptor monitor advances cleanly only when a compatible ligand reaches the correct receptor and that receptor undergoes its actual mechanism of activation. Intracellular receptors, GPCR signaling, and ligand-gated channels remain visibly different. With reception repaired, a violet downstream route illuminates beyond the membrane and leads directly into Journey 3, where signal transduction must be traced without allowing the original extracellular ligand to masquerade as the intracellular relay.",
+  "estimated_minutes": 20,
+  "scene_count": 6,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen and place yourself in the room before anything moves. Keep left, center, and right fixed. Watch the ligand, receptor, and downstream structure as separate parts, then attach the exact terminology after the mechanism is visible. Quick Recall is optional during first exposure.",
+  "route_orientation": "The Signal Reception Gateway is one continuous six-location route built along a plasma-membrane boundary. Begin at the Reception Checkpoint, pass through the Receptor Location Split, move inside to the Intracellular Signal Suite, return to the membrane at the GPCR Receptor Door, follow its cytoplasmic interface into the G-Protein Switchboard, and finish at the Ligand-Gated Channel Gate. The same three-state receptor monitor travels through all six locations while each room preserves its own fixed left, center, and right anchors.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Reception Checkpoint",
+      "short": "Reception",
+      "floor": "Gateway entrance",
+      "symbol": "◇"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Receptor Location Split",
+      "short": "Location",
+      "floor": "Membrane divide",
+      "symbol": "║"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Intracellular Signal Suite",
+      "short": "Inside",
+      "floor": "Interior suite",
+      "symbol": "◉"
+    },
+    {
+      "scene_index": 3,
+      "locus": "GPCR Receptor Door",
+      "short": "GPCR",
+      "floor": "Membrane door",
+      "symbol": "7"
+    },
+    {
+      "scene_index": 4,
+      "locus": "G-Protein Switchboard",
+      "short": "G switch",
+      "floor": "Cytoplasmic board",
+      "symbol": "GDP↔GTP"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Ligand-Gated Channel Gate",
+      "short": "Ion gate",
+      "floor": "Channel exit",
+      "symbol": "⇅"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Reception Checkpoint",
+      "locus_id": "U4-L07",
+      "title": "The Gate That Answered Every Knock",
+      "scene_kicker": "The gateway is treating every arriving signal as a match, so the first repair is to make recognition selective again.",
+      "location_description": "Reception Checkpoint — the molecular checkpoint where only a chemically compatible ligand activates its receptor and changes receptor state.",
+      "scene_layout": {
+        "orientation": "Enter Reception Checkpoint and stop at the molecular checkpoint where only a chemically compatible ligand activates its receptor and changes receptor state. The approaching ligand candidates is fixed on the left, the receptor binding and state-change gate is directly ahead at the working center, and the activated receptor interior face is fixed on the right. Those anchors stay in place while the scientific action unfolds.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Ligand candidate rail",
+            "symbol": "◇",
+            "description": "Several differently shaped signaling molecules approach from the extracellular side. Only one has the chemical and structural compatibility needed for the receptor displayed at center."
+          },
+          {
+            "position": "center",
+            "label": "Receptor binding gate",
+            "symbol": "▥",
+            "description": "A membrane receptor with a clearly defined ligand-binding region can move from unbound to ligand-bound and then into an activated conformational or functional state."
+          },
+          {
+            "position": "right",
+            "label": "Intracellular receptor face",
+            "symbol": "●",
+            "description": "The receptor’s cytoplasmic side changes state only after compatible binding. The downstream pathway remains physically separate so reception is not confused with transduction or response."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet clipped beside a three-state receptor monitor",
+          "job": "Mira keeps ligand, receptor, receptor location, and receptor state separate while the gateway is repaired. She names the biology only after the defining molecular event is visible."
+        },
+        {
+          "name": "approaching ligand candidates",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of approaching ligand candidates fixed on the learner’s left in the reception specificity gate display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "receptor binding and state-change gate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the molecular checkpoint where only a chemically compatible ligand activates its receptor and changes receptor state; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Present several ligand candidates to one receptor binding domain and allow only the chemically and structurally compatible ligand to bind, establishing specificity before any intracellular event occurs."
+        },
+        {
+          "name": "activated receptor interior face",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of activated receptor interior face fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Three-state receptor monitor",
+          "kind": "journey continuity object",
+          "visual": "a narrow vertical display with exactly three lights labeled UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED; it travels beside the membrane from room to room",
+          "job": "records receptor state without becoming a biological molecule, keeping signal arrival, binding, and receptor activation in causal order across all six locations"
+        }
+      ],
+      "continuity_object": "one receptor-state monitor that remains beside the membrane and records only three states—unbound/inactive, ligand-bound, and activated/changed—while different receptor mechanisms are tested.",
+      "story_open": "The route from the Cellular Communications Exchange ends at a second building whose entire front wall resembles an enlarged plasma membrane. You enter the **Signal Reception Gateway** through a narrow observation bay and stop at three fixed stations. On your **left**, a silver rail carries several differently shaped ligand candidates toward the membrane. Directly **ahead**, one receptor stands in the center of the membrane like a molecular gate, its binding pocket facing the incoming signals. On your **right**, the receptor's intracellular face projects into a dark cytoplasmic chamber. Nothing downstream is moving yet. Beside the center gate, a vertical monitor has only three lights: UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED. All three are flashing at once.",
+      "story_paragraphs": [
+        "The route from the Cellular Communications Exchange ends at a second building whose entire front wall resembles an enlarged plasma membrane. You enter the **Signal Reception Gateway** through a narrow observation bay and stop at three fixed stations. On your **left**, a silver rail carries several differently shaped ligand candidates toward the membrane. Directly **ahead**, one receptor stands in the center of the membrane like a molecular gate, its binding pocket facing the incoming signals. On your **right**, the receptor's intracellular face projects into a dark cytoplasmic chamber. Nothing downstream is moving yet. Beside the center gate, a vertical monitor has only three lights: UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED. All three are flashing at once.",
+        "Dr. Mira Chen steps in behind you and taps the monitor with the edge of her white tablet. The failure is obvious but dangerous: the gateway has been reporting activation whenever any signal arrives. She clears the display until only UNBOUND/INACTIVE remains. Then she sends the first ligand candidate from the left rail toward the receptor. It bumps against the binding pocket and falls away. A second candidate touches the same site and is also rejected. The monitor does not move. A third candidate reaches the receptor, fits the binding region, and remains attached. Only now does the middle light turn on. Mira points from the matching ligand to the protein. The signaling molecule is the **ligand**; the macromolecule that recognizes it is the **receptor**. Signaling begins when an appropriate ligand is recognized by a receptor in a target cell.",
+        "She freezes the matched pair so you can compare it with the rejected candidates still lying on the left rail. The difference is **ligand-binding specificity**. Binding depends on complementary chemical and structural properties, so a receptor does not respond equally to every molecule that happens to collide with it. That relationship also explains **ligand-receptor specificity** at the level of whole cells. Two nearby cells can encounter the same signaling molecule, but only a cell carrying a suitable receptor and the necessary intracellular machinery responds directly to it. That responsive cell is the target cell. The signal is not meaningful merely because it exists outside a membrane; recognition makes it relevant to a particular cell.",
+        "Mira releases the matched ligand again. Binding changes the receptor's conformation or functional state. The outside ligand remains where it bound, while the receptor's intracellular face changes shape on your right and the ACTIVATED/CHANGED light turns on. This is **reception**: the target cell detects the signal when the ligand binds its receptor. The visible change is a **ligand-induced receptor shape change**, or more generally a **receptor conformational or state change**. Mira keeps the dark downstream chamber closed. “Reception is the detection step,” she says. “It is not the whole pathway.” A signal transduction pathway can link **reception to a later cellular response**, but the extracellular ligand usually does not physically travel down that intracellular relay.",
+        "The three lights finally behave in order: unbound, then ligand-bound, then activated. Yet the monitor immediately displays a new question under the receptor diagram: WHERE IS THE RECEPTOR? The gateway has learned which ligand belongs, but it is still placing every receptor in the membrane. A vertical seam opens through the wall ahead. The left side of the next room remains outside the cell, the right side lies inside the cytoplasm, and the plasma membrane itself forms a bright divider between them. Mira unclips the three-state monitor and carries it through the opening."
+      ],
+      "story_close": "The compatibility gate now rejects the wrong ligands, but the monitor cannot complete the diagnosis until receptor location is repaired. You follow the membrane seam into the Receptor Location Split.",
+      "object_ids": [
+        "U4-K-004",
+        "U4-K-006",
+        "U4-K-007",
+        "U4-K-011",
+        "U4-K-058",
+        "U4-K-059",
+        "U4-K-060",
+        "U4-K-061"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-004",
+          "term": "Signal pathway links reception to response",
+          "story": "the dark downstream corridor that lights only after receptor activation, linking reception toward a later response",
+          "science": "Signal transduction pathways link signal reception with cellular responses.",
+          "exact_name": true,
+          "hint": "the dark downstream corridor that lights only after receptor activation, linking reception toward a later response",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-006",
+          "term": "Ligand recognition by receptor",
+          "story": "the compatible ligand that remains attached to the receptor while rejected candidates fall away",
+          "science": "Signaling begins when a chemical messenger, a ligand, is recognized by a receptor protein in a target cell.",
+          "exact_name": true,
+          "hint": "the compatible ligand that remains attached to the receptor while rejected candidates fall away",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-007",
+          "term": "Ligand-binding specificity",
+          "story": "the receptor binding pocket accepting only the chemically and structurally compatible ligand",
+          "science": "A receptor ligand-binding domain recognizes a specific chemical messenger, which may be a peptide/protein or a small molecule.",
+          "exact_name": true,
+          "hint": "the receptor binding pocket accepting only the chemically and structurally compatible ligand",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-011",
+          "term": "Ligand-induced receptor shape change",
+          "story": "the receptor changing shape at its intracellular face after ligand binding",
+          "science": "After ligand binding, the intracellular domain or state of a receptor changes, initiating signal transduction.",
+          "exact_name": true,
+          "hint": "the receptor changing shape at its intracellular face after ligand binding",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-058",
+          "term": "Reception",
+          "story": "the three-state monitor moving from unbound to ligand-bound when the target cell detects the signal",
+          "science": "Reception is a target cell’s detection of a signaling molecule when the ligand binds its receptor.",
+          "exact_name": true,
+          "hint": "the three-state monitor moving from unbound to ligand-bound when the target cell detects the signal",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-059",
+          "term": "Receptor",
+          "story": "the receptor protein fixed in the membrane with a distinct ligand-binding region",
+          "science": "A receptor is a macromolecule, usually a protein, whose ligand-binding site recognizes particular signaling molecules and whose activation produces an intracellular effect.",
+          "exact_name": true,
+          "hint": "the receptor protein fixed in the membrane with a distinct ligand-binding region",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-060",
+          "term": "Ligand-receptor specificity",
+          "story": "wrong ligands rejected on the left while only the compatible ligand activates the target receptor",
+          "science": "Ligand-receptor binding depends on complementary chemical and structural properties, so only cells with suitable receptors respond directly to a given ligand.",
+          "exact_name": true,
+          "hint": "wrong ligands rejected on the left while only the compatible ligand activates the target receptor",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-061",
+          "term": "Receptor conformational/state change",
+          "story": "the activated receptor interior face visibly changing state while the ligand remains outside",
+          "science": "Ligand binding changes receptor conformation or functional state, enabling the receptor to initiate downstream signaling.",
+          "exact_name": true,
+          "hint": "the activated receptor interior face visibly changing state while the ligand remains outside",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Signal pathway links reception to response",
+          "meaning": "Signal transduction pathways link signal reception with cellular responses.",
+          "image": "the dark downstream corridor that lights only after receptor activation, linking reception toward a later response"
+        },
+        {
+          "term": "Ligand recognition by receptor",
+          "meaning": "Signaling begins when a chemical messenger, a ligand, is recognized by a receptor protein in a target cell.",
+          "image": "the compatible ligand that remains attached to the receptor while rejected candidates fall away"
+        },
+        {
+          "term": "Ligand-binding specificity",
+          "meaning": "A receptor ligand-binding domain recognizes a specific chemical messenger, which may be a peptide/protein or a small molecule.",
+          "image": "the receptor binding pocket accepting only the chemically and structurally compatible ligand"
+        },
+        {
+          "term": "Ligand-induced receptor shape change",
+          "meaning": "After ligand binding, the intracellular domain or state of a receptor changes, initiating signal transduction.",
+          "image": "the receptor changing shape at its intracellular face after ligand binding"
+        },
+        {
+          "term": "Reception",
+          "meaning": "Reception is a target cell’s detection of a signaling molecule when the ligand binds its receptor.",
+          "image": "the three-state monitor moving from unbound to ligand-bound when the target cell detects the signal"
+        },
+        {
+          "term": "Receptor",
+          "meaning": "A receptor is a macromolecule, usually a protein, whose ligand-binding site recognizes particular signaling molecules and whose activation produces an intracellular effect.",
+          "image": "the receptor protein fixed in the membrane with a distinct ligand-binding region"
+        },
+        {
+          "term": "Ligand-receptor specificity",
+          "meaning": "Ligand-receptor binding depends on complementary chemical and structural properties, so only cells with suitable receptors respond directly to a given ligand.",
+          "image": "wrong ligands rejected on the left while only the compatible ligand activates the target receptor"
+        },
+        {
+          "term": "Receptor conformational/state change",
+          "meaning": "Ligand binding changes receptor conformation or functional state, enabling the receptor to initiate downstream signaling.",
+          "image": "the activated receptor interior face visibly changing state while the ligand remains outside"
+        }
+      ],
+      "misconception_guards": [
+        "The ligand carries extracellular information but usually does not itself travel through the intracellular transduction cascade.",
+        "Reception, transduction, and cellular response must remain three distinguishable stages.",
+        "Discrimination requirement: keep reception, transduction, cellular response physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Discrimination requirement: keep ligand, receptor, target cell physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-004: Receptors have ligand-binding regions and produce intracellular effects, but not every receptor signals by handing a signal to another protein; ligand-gated channels and intracellular receptors work differently."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Reception Checkpoint, remember the fixed approaching ligand candidates → receptor binding and state-change gate → activated receptor interior face relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Signal pathway links reception to response",
+          "Ligand recognition by receptor",
+          "Ligand-binding specificity",
+          "Ligand-induced receptor shape change",
+          "Reception",
+          "Receptor",
+          "Ligand-receptor specificity",
+          "Receptor conformational/state change"
+        ],
+        "redraw_test": "From memory, place approaching ligand candidates on the left, receptor binding and state-change gate in the center, and activated receptor interior face on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-058",
+      "checkpoint_prompt": "What event is reception?",
+      "checkpoint_answer": "A target cell detects a signal when a compatible ligand binds its receptor and changes the receptor’s state.",
+      "checkpoint_hint": "Return to the three-state monitor. The matching ligand binds the center receptor before the receptor changes on its intracellular side.",
+      "next_locus": "Receptor Location Split",
+      "causal_transition": "The receptor gate activates correctly, but the monitor now asks where receptors can physically reside; the membrane divider opens into the Receptor Location Split."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Receptor Location Split",
+      "locus_id": "U4-L08",
+      "title": "Which Side of the Membrane Holds the Receptor?",
+      "scene_kicker": "A receptor can sit in the membrane or inside the cell, and membrane permeability helps determine which arrangement a signal can use.",
+      "location_description": "Receptor Location Split — the plasma-membrane divide comparing cell-surface reception with signals that cross the bilayer to intracellular receptors.",
+      "scene_layout": {
+        "orientation": "Enter Receptor Location Split and stop at the plasma-membrane divide comparing cell-surface reception with signals that cross the bilayer to intracellular receptors. The extracellular ligand / surface receptor is fixed on the left, the plasma-membrane permeability boundary is directly ahead at the working center, and the cytoplasmic or nuclear receptor is fixed on the right. Those anchors stay in place while the scientific action unfolds.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Surface-receptor route",
+            "symbol": "▥",
+            "description": "A signaling molecule that does not readily cross the lipid bilayer remains outside and meets a receptor located at the plasma membrane."
+          },
+          {
+            "position": "center",
+            "label": "Plasma-membrane divide",
+            "symbol": "║",
+            "description": "A large bilayer wall acts as the permeability boundary. One comparison signal is stopped outside while another suitable small or hydrophobic signal can enter."
+          },
+          {
+            "position": "right",
+            "label": "Intracellular-receptor route",
+            "symbol": "◉",
+            "description": "A receptor in the cytoplasm or nucleus binds a signaling molecule that has crossed the membrane, making receptor location visibly different from the surface route."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet clipped beside a three-state receptor monitor",
+          "job": "Mira keeps ligand, receptor, receptor location, and receptor state separate while the gateway is repaired. She names the biology only after the defining molecular event is visible."
+        },
+        {
+          "name": "extracellular ligand / surface receptor",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of extracellular ligand / surface receptor fixed on the learner’s left in the receptor location comparison display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "plasma-membrane permeability boundary",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the plasma-membrane divide comparing cell-surface reception with signals that cross the bilayer to intracellular receptors; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Place a hydrophilic/large signal at the left surface-receptor route and prevent it from freely crossing the lipid bilayer, while a sufficiently small or hydrophobic signal is allowed to enter the cell in the comparison route."
+        },
+        {
+          "name": "cytoplasmic or nuclear receptor",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of cytoplasmic or nuclear receptor fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Three-state receptor monitor",
+          "kind": "journey continuity object",
+          "visual": "a narrow vertical display with exactly three lights labeled UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED; it travels beside the membrane from room to room",
+          "job": "records receptor state without becoming a biological molecule, keeping signal arrival, binding, and receptor activation in causal order across all six locations"
+        }
+      ],
+      "continuity_object": "one receptor-state monitor that remains beside the membrane and records only three states—unbound/inactive, ligand-bound, and activated/changed—while different receptor mechanisms are tested.",
+      "story_open": "The **Receptor Location Split** is built around one enormous cross-section of a plasma membrane. Its geography is impossible to miss. On your **left**, outside the cell, a large water-soluble signal waits beside a receptor embedded in the membrane. Directly **ahead**, the lipid bilayer rises from floor to ceiling as a translucent two-layer wall. On your **right**, inside the cell, a second receptor sits free in the cytoplasm near a nuclear doorway. Mira clips the three-state receptor monitor to the center membrane so both routes can be compared without moving their positions.",
+      "story_paragraphs": [
+        "The **Receptor Location Split** is built around one enormous cross-section of a plasma membrane. Its geography is impossible to miss. On your **left**, outside the cell, a large water-soluble signal waits beside a receptor embedded in the membrane. Directly **ahead**, the lipid bilayer rises from floor to ceiling as a translucent two-layer wall. On your **right**, inside the cell, a second receptor sits free in the cytoplasm near a nuclear doorway. Mira clips the three-state receptor monitor to the center membrane so both routes can be compared without moving their positions.",
+        "She sends the large hydrophilic signal toward the bilayer first. It reaches the membrane but does not simply pass through the hydrophobic interior. The receptor on the left-facing surface binds it, and the monitor records ligand-bound and then activated. Mira labels that structure a **cell-surface receptor**. Cell-surface receptors span or associate with the plasma membrane and provide a way for signals that do not readily cross the lipid bilayer to be detected without entering the cell. The signal can remain outside while receptor activation produces an intracellular effect. This keeps receptor location and signal movement as separate questions.",
+        "Now Mira releases a different comparison signal at the same membrane. This one is sufficiently small or hydrophobic to cross the bilayer. It passes through the center wall and reaches the receptor on the right, inside the cell. That receptor is an **intracellular receptor**, located in the cytoplasm or nucleus and capable of binding a signaling molecule that can cross the plasma membrane. The monitor again records the three states, but this time the binding event occurs on the interior side. The larger principle is **receptor location**: receptors may be located on the cell surface or within the cytoplasm or nucleus of the target cell.",
+        "Mira then removes a simplistic sign that has appeared over the membrane: HYDROPHOBIC = ALWAYS ENTERS; HYDROPHILIC = NEVER ENTERS. She replaces it with a permeability meter. The useful **hydrophobic ligand principle** is that hydrophobic or sufficiently small signaling molecules can cross the lipid bilayer and may bind intracellular receptors, while many hydrophilic or sufficiently large signals rely on surface receptors because they do not readily cross. Membrane permeability is a governing principle, not a rigid classification shortcut for every possible signaling molecule. Transport mechanisms, molecular size, charge, and specific cellular context can matter.",
+        "With the split repaired, the monitor now displays two legitimate receptor addresses: SURFACE and INTRACELLULAR. The right-hand intracellular door unlocks. Behind it, three illuminated examples are already waiting: a steroid-hormone route on the left, a nuclear receptor station in the middle, and separate thyroid-hormone and nitric-oxide routes on the right. Mira lifts the monitor from the membrane. “We only need these examples to make the location principle concrete,” she says as you step inside. “The principle comes first; the examples show how it can work.”"
+      ],
+      "story_close": "The membrane split now places receptors on the correct side of the boundary. The unanswered intracellular examples draw you through the right-hand door into the Intracellular Signal Suite.",
+      "object_ids": [
+        "U4-K-009",
+        "U4-K-062",
+        "U4-K-063",
+        "U4-K-064"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-009",
+          "term": "Receptor location",
+          "story": "the split view showing one receptor in the membrane and another in the cytoplasm or nucleus",
+          "science": "Receptors may be located on the surface of a target cell or in the cytoplasm or nucleus of the target cell.",
+          "exact_name": true,
+          "hint": "the split view showing one receptor in the membrane and another in the cytoplasm or nucleus",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-062",
+          "term": "Cell-surface receptor",
+          "story": "the membrane-embedded receptor binding a signal that does not readily cross the bilayer",
+          "science": "Cell-surface receptors span or associate with the plasma membrane and are used by signaling molecules that do not readily cross the lipid bilayer.",
+          "exact_name": true,
+          "hint": "the membrane-embedded receptor binding a signal that does not readily cross the bilayer",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-063",
+          "term": "Intracellular receptor",
+          "story": "the cytoplasmic or nuclear receptor meeting a ligand after the ligand crosses the membrane",
+          "science": "Intracellular receptors are located in the cytoplasm or nucleus and bind signaling molecules able to cross the plasma membrane.",
+          "exact_name": true,
+          "hint": "the cytoplasmic or nuclear receptor meeting a ligand after the ligand crosses the membrane",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-064",
+          "term": "Hydrophobic ligand principle",
+          "story": "the permeability wall stopping one signal while allowing a suitable small or hydrophobic signal to cross",
+          "science": "Hydrophobic or sufficiently small signaling molecules can cross the lipid bilayer and may bind intracellular receptors; this is a permeability principle, not an AP memorization rule for arbitrary molecules.",
+          "exact_name": true,
+          "hint": "the permeability wall stopping one signal while allowing a suitable small or hydrophobic signal to cross",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Receptor location",
+          "meaning": "Receptors may be located on the surface of a target cell or in the cytoplasm or nucleus of the target cell.",
+          "image": "the split view showing one receptor in the membrane and another in the cytoplasm or nucleus"
+        },
+        {
+          "term": "Cell-surface receptor",
+          "meaning": "Cell-surface receptors span or associate with the plasma membrane and are used by signaling molecules that do not readily cross the lipid bilayer.",
+          "image": "the membrane-embedded receptor binding a signal that does not readily cross the bilayer"
+        },
+        {
+          "term": "Intracellular receptor",
+          "meaning": "Intracellular receptors are located in the cytoplasm or nucleus and bind signaling molecules able to cross the plasma membrane.",
+          "image": "the cytoplasmic or nuclear receptor meeting a ligand after the ligand crosses the membrane"
+        },
+        {
+          "term": "Hydrophobic ligand principle",
+          "meaning": "Hydrophobic or sufficiently small signaling molecules can cross the lipid bilayer and may bind intracellular receptors; this is a permeability principle, not an AP memorization rule for arbitrary molecules.",
+          "image": "the permeability wall stopping one signal while allowing a suitable small or hydrophobic signal to cross"
+        }
+      ],
+      "misconception_guards": [
+        "Use membrane permeability as a principle, not a rigid rule that every hydrophobic molecule enters and every hydrophilic molecule never does.",
+        "Discrimination requirement: keep cell-surface receptor, intracellular receptor physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-006: Hydrophilic or sufficiently large ligands generally require cell-surface receptors because they do not readily cross the lipid bilayer; treat this as a membrane-permeability principle, not an absolute classification shortcut."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Receptor Location Split, remember the fixed extracellular ligand / surface receptor → plasma-membrane permeability boundary → cytoplasmic or nuclear receptor relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Receptor location",
+          "Cell-surface receptor",
+          "Intracellular receptor",
+          "Hydrophobic ligand principle"
+        ],
+        "redraw_test": "From memory, place extracellular ligand / surface receptor on the left, plasma-membrane permeability boundary in the center, and cytoplasmic or nuclear receptor on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-009",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Intracellular Signal Suite",
+      "causal_transition": "The location comparison leaves three intracellular examples waiting beyond the membrane; the receptor-state monitor moves through the right-hand door into the Intracellular Signal Suite."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Intracellular Signal Suite",
+      "locus_id": "U4-L09",
+      "title": "Signals That Cross the Boundary",
+      "scene_kicker": "Some signals enter the cell before they meet their receptor, but the receptor still performs the recognition and regulatory work.",
+      "location_description": "Intracellular Signal Suite — the interior receptor suite comparing steroid, thyroid-hormone, and nitric-oxide signaling routes.",
+      "scene_layout": {
+        "orientation": "Enter Intracellular Signal Suite and stop at the interior receptor suite comparing steroid, thyroid-hormone, and nitric-oxide signaling routes. The steroid-hormone receptor route is fixed on the left, the intracellular/nuclear target area is directly ahead at the working center, and the thyroid-hormone and nitric-oxide routes is fixed on the right. Those anchors stay in place while the scientific action unfolds.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Steroid-hormone route",
+            "symbol": "S",
+            "description": "A steroid-hormone example crosses the membrane and binds an intracellular receptor before the receptor complex can influence gene expression."
+          },
+          {
+            "position": "center",
+            "label": "Nuclear target suite",
+            "symbol": "◎",
+            "description": "The central interior of the cell contains nuclear and intracellular receptor destinations so the receptor, not the free hormone alone, remains the signaling target."
+          },
+          {
+            "position": "right",
+            "label": "Thyroid and nitric-oxide routes",
+            "symbol": "T/NO",
+            "description": "Thyroid hormone reaches a nuclear receptor while nitric oxide diffuses across membranes and activates an intracellular target such as soluble guanylyl cyclase."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet clipped beside a three-state receptor monitor",
+          "job": "Mira keeps ligand, receptor, receptor location, and receptor state separate while the gateway is repaired. She names the biology only after the defining molecular event is visible."
+        },
+        {
+          "name": "steroid-hormone receptor route",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of steroid-hormone receptor route fixed on the learner’s left in the intracellular signaling comparison display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "intracellular/nuclear target area",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the interior receptor suite comparing steroid, thyroid-hormone, and nitric-oxide signaling routes; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Let a steroid-hormone example cross the membrane and bind an intracellular receptor that can influence gene expression, preserving the receptor as the signaling target rather than the hormone acting directly on DNA by itself."
+        },
+        {
+          "name": "thyroid-hormone and nitric-oxide routes",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of thyroid-hormone and nitric-oxide routes fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Three-state receptor monitor",
+          "kind": "journey continuity object",
+          "visual": "a narrow vertical display with exactly three lights labeled UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED; it travels beside the membrane from room to room",
+          "job": "records receptor state without becoming a biological molecule, keeping signal arrival, binding, and receptor activation in causal order across all six locations"
+        }
+      ],
+      "continuity_object": "one receptor-state monitor that remains beside the membrane and records only three states—unbound/inactive, ligand-bound, and activated/changed—while different receptor mechanisms are tested.",
+      "story_open": "The **Intracellular Signal Suite** feels like the interior of the target cell made architectural. On your **left**, a steroid-hormone route begins outside a small membrane panel and continues into the cytoplasm. Directly **ahead**, a large nuclear target area occupies the center of the room, its DNA shown behind a protective glass partition. On your **right**, two narrower lanes are marked THYROID HORMONE and NITRIC OXIDE. Mira places the three-state receptor monitor at the edge of the central nuclear station so every example must still pass through receptor recognition rather than jumping directly from signal to response.",
+      "story_paragraphs": [
+        "The **Intracellular Signal Suite** feels like the interior of the target cell made architectural. On your **left**, a steroid-hormone route begins outside a small membrane panel and continues into the cytoplasm. Directly **ahead**, a large nuclear target area occupies the center of the room, its DNA shown behind a protective glass partition. On your **right**, two narrower lanes are marked THYROID HORMONE and NITRIC OXIDE. Mira places the three-state receptor monitor at the edge of the central nuclear station so every example must still pass through receptor recognition rather than jumping directly from signal to response.",
+        "She begins with the steroid route. A steroid-hormone example crosses the lipid bilayer and enters the cell. It does not march directly to DNA and issue an instruction by itself. It binds an intracellular receptor first. The monitor moves from unbound to ligand-bound to activated, and only the activated receptor system is then allowed to influence gene expression at the central nuclear area. This is **steroid-hormone intracellular signaling**: many steroid hormones diffuse through the plasma membrane and bind intracellular receptors that can influence gene expression. Keeping the receptor visible prevents the seductive but incorrect picture of a free hormone simply attaching to DNA and acting alone.",
+        "On the right, Mira opens the thyroid-hormone lane. Thyroid hormone is lipid-soluble and can enter cells to bind an intracellular **nuclear receptor**. The receptor and ligand are placed together at the nucleus, demonstrating **thyroid-hormone intracellular signaling**. The neighboring lane uses a very different molecule. A small cloud labeled NO diffuses across a membrane with no receptor embedded at the crossing point. Once inside, nitric oxide activates an intracellular target, illustrated here by soluble guanylyl cyclase. This is **nitric-oxide intracellular signaling**. Nitric oxide is a small gaseous signaling molecule, so its route is visually different from the hormone-receptor examples even though all three belong on the intracellular side of the receptor-location comparison.",
+        "Mira steps back and lets the three paths remain visible together. Steroid hormone, thyroid hormone, and nitric oxide are useful examples, yet they are not a list every signaling problem must reproduce. The larger model from the previous room still governs the gateway: signal properties affect whether the ligand can cross the membrane, and receptor location determines where recognition occurs. Some intracellular receptors can directly influence gene expression after activation; other intracellular targets can regulate enzymes or other processes. The gateway therefore needs a location rule and a mechanism, not a memorized slogan that every intracellular signal behaves identically.",
+        "The receptor monitor clears all three examples and flashes SURFACE RECEPTOR TEST REQUIRED. Across the far wall, a circular membrane door lights up with seven vertical passes through the bilayer. A ligand waits outside that door, while a separate three-part G protein rests on the cytoplasmic side. Mira points to the seven-pass structure. “Now we return to the membrane,” she says. “This receptor does not carry the ligand through. Its shape change controls a separate switch inside.” The seven-pass door opens into the next chamber."
+      ],
+      "story_close": "The intracellular examples make receptor location concrete, but a seven-pass surface receptor is now demanding a mechanism test. You follow the monitor back to the membrane and enter the GPCR Receptor Door.",
+      "object_ids": [
+        "U4-K-065",
+        "U4-K-066",
+        "U4-K-067"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-065",
+          "term": "Steroid-hormone intracellular signaling",
+          "story": "the steroid hormone crossing the membrane and binding an intracellular receptor before gene regulation",
+          "science": "Many steroid hormones diffuse through the plasma membrane and bind intracellular receptors that can influence gene expression.",
+          "exact_name": true,
+          "hint": "the steroid hormone crossing the membrane and binding an intracellular receptor before gene regulation",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-066",
+          "term": "Thyroid-hormone intracellular signaling",
+          "story": "the thyroid-hormone lane ending at an intracellular nuclear receptor",
+          "science": "Thyroid hormones are lipid-soluble signaling molecules that bind intracellular nuclear receptors.",
+          "exact_name": true,
+          "hint": "the thyroid-hormone lane ending at an intracellular nuclear receptor",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-067",
+          "term": "Nitric-oxide intracellular signaling",
+          "story": "the NO cloud diffusing across the membrane and activating soluble guanylyl cyclase inside",
+          "science": "Nitric oxide is a small gaseous signaling molecule that can diffuse across membranes and activate intracellular targets such as soluble guanylyl cyclase.",
+          "exact_name": true,
+          "hint": "the NO cloud diffusing across the membrane and activating soluble guanylyl cyclase inside",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Steroid-hormone intracellular signaling",
+          "meaning": "Many steroid hormones diffuse through the plasma membrane and bind intracellular receptors that can influence gene expression.",
+          "image": "the steroid hormone crossing the membrane and binding an intracellular receptor before gene regulation"
+        },
+        {
+          "term": "Thyroid-hormone intracellular signaling",
+          "meaning": "Thyroid hormones are lipid-soluble signaling molecules that bind intracellular nuclear receptors.",
+          "image": "the thyroid-hormone lane ending at an intracellular nuclear receptor"
+        },
+        {
+          "term": "Nitric-oxide intracellular signaling",
+          "meaning": "Nitric oxide is a small gaseous signaling molecule that can diffuse across membranes and activate intracellular targets such as soluble guanylyl cyclase.",
+          "image": "the NO cloud diffusing across the membrane and activating soluble guanylyl cyclase inside"
+        }
+      ],
+      "misconception_guards": [
+        "Resolved science guard RF-U4-007: Scientifically retain as teacher enrichment. The CED requires receptor location but does not require memorizing these example classes."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Intracellular Signal Suite, remember the fixed steroid-hormone receptor route → intracellular/nuclear target area → thyroid-hormone and nitric-oxide routes relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Steroid-hormone intracellular signaling",
+          "Thyroid-hormone intracellular signaling",
+          "Nitric-oxide intracellular signaling"
+        ],
+        "redraw_test": "From memory, place steroid-hormone receptor route on the left, intracellular/nuclear target area in the center, and thyroid-hormone and nitric-oxide routes on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-065",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "GPCR Receptor Door",
+      "causal_transition": "Intracellular routes are resolved, but the gateway still needs a membrane receptor that controls a cytoplasmic switch; the seven-pass GPCR model illuminates the next door."
+    },
+    {
+      "scene_index": 3,
+      "locus": "GPCR Receptor Door",
+      "locus_id": "U4-L10",
+      "title": "The Seven-Pass Door That Never Lets the Ligand Through",
+      "scene_kicker": "A GPCR changes its own conformation and regulates a separate G protein on the cytoplasmic side.",
+      "location_description": "GPCR Receptor Door — the seven-pass membrane receptor door that changes conformation when ligand binds.",
+      "scene_layout": {
+        "orientation": "Enter GPCR Receptor Door and stop at the seven-pass membrane receptor door that changes conformation when ligand binds. The extracellular ligand-binding face is fixed on the left, the seven-pass GPCR body is directly ahead at the working center, and the cytoplasmic G-protein interface is fixed on the right. Those anchors stay in place while the scientific action unfolds.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Extracellular ligand face",
+            "symbol": "◇",
+            "description": "A ligand approaches the outside-facing portion of a conventional seven-transmembrane receptor and never passes through the receptor into the cytoplasm."
+          },
+          {
+            "position": "center",
+            "label": "Seven-pass GPCR body",
+            "symbol": "7",
+            "description": "The G protein-coupled receptor crosses the membrane seven times and changes conformation when ligand binds."
+          },
+          {
+            "position": "right",
+            "label": "G-protein interface",
+            "symbol": "G",
+            "description": "A heterotrimeric G protein waits on the cytoplasmic side as a separate molecular structure that can be regulated by the activated GPCR."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet clipped beside a three-state receptor monitor",
+          "job": "Mira keeps ligand, receptor, receptor location, and receptor state separate while the gateway is repaired. She names the biology only after the defining molecular event is visible."
+        },
+        {
+          "name": "extracellular ligand-binding face",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of extracellular ligand-binding face fixed on the learner’s left in the gpcr membrane model display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "seven-pass GPCR body",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the seven-pass membrane receptor door that changes conformation when ligand binds; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Embed a conventional seven-transmembrane GPCR in the membrane, bind ligand to the extracellular-facing region, and visibly change receptor conformation without allowing the ligand to cross through the receptor."
+        },
+        {
+          "name": "cytoplasmic G-protein interface",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of cytoplasmic G-protein interface fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Three-state receptor monitor",
+          "kind": "journey continuity object",
+          "visual": "a narrow vertical display with exactly three lights labeled UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED; it travels beside the membrane from room to room",
+          "job": "records receptor state without becoming a biological molecule, keeping signal arrival, binding, and receptor activation in causal order across all six locations"
+        }
+      ],
+      "continuity_object": "one receptor-state monitor that remains beside the membrane and records only three states—unbound/inactive, ligand-bound, and activated/changed—while different receptor mechanisms are tested.",
+      "story_open": "The **GPCR Receptor Door** is a tall membrane chamber organized around one unmistakable structure. On your **left**, outside the cell, a ligand waits at the receptor's extracellular-facing binding region. Directly **ahead**, the receptor body winds back and forth through the membrane seven times like a seven-pass ribbon embedded in the bilayer. On your **right**, inside the cytoplasm, a separate heterotrimeric G protein waits near the receptor's intracellular face. Mira sets the three-state monitor beside the center structure and leaves a clear gap between the receptor and the G protein so they cannot visually collapse into one object.",
+      "story_paragraphs": [
+        "The **GPCR Receptor Door** is a tall membrane chamber organized around one unmistakable structure. On your **left**, outside the cell, a ligand waits at the receptor's extracellular-facing binding region. Directly **ahead**, the receptor body winds back and forth through the membrane seven times like a seven-pass ribbon embedded in the bilayer. On your **right**, inside the cytoplasm, a separate heterotrimeric G protein waits near the receptor's intracellular face. Mira sets the three-state monitor beside the center structure and leaves a clear gap between the receptor and the G protein so they cannot visually collapse into one object.",
+        "The ligand binds on the left. The receptor changes conformation across its membrane-spanning structure, and the monitor advances from ligand-bound to activated. The ligand never crosses through the receptor. What crosses the boundary is not the ligand molecule but the consequence of the receptor's changed state. Mira names the structure a **G protein-coupled receptor**, or **GPCR**. A GPCR is a cell-surface receptor that changes conformation when a ligand binds and then regulates a heterotrimeric G protein on the cytoplasmic side. **GPCRs are an important example of receptor proteins in eukaryotes**, which is why this seven-pass model earns its own door.",
+        "She then points to the right-hand structure. It is not the GPCR. The G protein is a separate membrane-associated molecular complex waiting to be regulated by the receptor. The receptor remains in the membrane; the G protein remains on the cytoplasmic side. Mira activates the GPCR once more, and only the interface between them lights. The image fixes the causal order: extracellular ligand binds GPCR → GPCR changes conformation → activated GPCR regulates the separate G protein. This is receptor activation leading toward transduction without turning the ligand into the intracellular relay molecule.",
+        "Several dim receptor silhouettes appear along the back wall. One resembles an enzyme-linked receptor; another has a different membrane architecture. Mira leaves them unlabelled but visible. “Do not make this door into the whole building,” she says. GPCRs and ligand-gated channels are two important receptor examples, but they are not an exhaustive two-family taxonomy of membrane receptors. The lesson in this room is the specific GPCR mechanism and the physical distinction between receptor and G protein.",
+        "The receptor monitor now behaves correctly at the seven-pass door, but the right-hand G protein remains gray. Its GDP label is visible, and a nearby socket holds a GTP token. The next room's switchboard begins flashing GDP RELEASE REQUIRED. Mira follows the cytoplasmic side of the membrane instead of returning outside. The GPCR has done its part; the unresolved problem has moved one molecular step inward."
+      ],
+      "story_close": "The GPCR has changed state without carrying the ligand through the membrane. The remaining inactive G protein pulls you directly into the G-Protein Switchboard.",
+      "object_ids": [
+        "U4-K-008",
+        "U4-K-081"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-008",
+          "term": "GPCR example",
+          "story": "the seven-pass membrane receptor shown as one important eukaryotic receptor example",
+          "science": "G protein-coupled receptors are an example of receptor proteins in eukaryotes.",
+          "exact_name": true,
+          "hint": "the seven-pass membrane receptor shown as one important eukaryotic receptor example",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-081",
+          "term": "G protein-coupled receptor (GPCR)",
+          "story": "the seven-pass GPCR changing conformation and contacting a separate cytoplasmic G protein",
+          "science": "A GPCR is a cell-surface receptor that changes conformation upon ligand binding and regulates a heterotrimeric G protein on the cytoplasmic side of the membrane.",
+          "exact_name": true,
+          "hint": "the seven-pass GPCR changing conformation and contacting a separate cytoplasmic G protein",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "GPCR example",
+          "meaning": "G protein-coupled receptors are an example of receptor proteins in eukaryotes.",
+          "image": "the seven-pass membrane receptor shown as one important eukaryotic receptor example"
+        },
+        {
+          "term": "G protein-coupled receptor (GPCR)",
+          "meaning": "A GPCR is a cell-surface receptor that changes conformation upon ligand binding and regulates a heterotrimeric G protein on the cytoplasmic side of the membrane.",
+          "image": "the seven-pass GPCR changing conformation and contacting a separate cytoplasmic G protein"
+        }
+      ],
+      "misconception_guards": [
+        "GPCR is one important membrane-receptor family, not half of an exhaustive two-family receptor taxonomy.",
+        "GPCR and heterotrimeric G protein are separate structures with separate jobs.",
+        "Discrimination requirement: keep G protein-coupled receptor (GPCR), heterotrimeric G protein physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-011: Those are two important receptor types, not an exhaustive pair; receptor tyrosine kinases and other membrane receptors also exist. Preserve GPCR and ligand-gated channels as teacher/CED examples without encoding a false exhaustive taxonomy."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At GPCR Receptor Door, remember the fixed extracellular ligand-binding face → seven-pass GPCR body → cytoplasmic G-protein interface relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "GPCR example",
+          "G protein-coupled receptor (GPCR)"
+        ],
+        "redraw_test": "From memory, place extracellular ligand-binding face on the left, seven-pass GPCR body in the center, and cytoplasmic G-protein interface on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-081",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "G-Protein Switchboard",
+      "causal_transition": "Ligand changes the GPCR, yet the cytoplasmic interface has not switched state; the learner follows that interface directly to the G-Protein Switchboard."
+    },
+    {
+      "scene_index": 4,
+      "locus": "G-Protein Switchboard",
+      "locus_id": "U4-L11",
+      "title": "The Switch That Runs on State, Not Fuel",
+      "scene_kicker": "GDP and GTP mark different states of the G-protein switch, and hydrolysis resets the system after signaling.",
+      "location_description": "G-Protein Switchboard — the membrane switchboard where GDP/GTP state changes control effector interaction and reset.",
+      "scene_layout": {
+        "orientation": "Enter G-Protein Switchboard and stop at the membrane switchboard where GDP/GTP state changes control effector interaction and reset. The inactive GDP-bound G protein is fixed on the left, the GPCR-triggered GDP-to-GTP switch is directly ahead at the working center, and the effector activation and GTP-hydrolysis reset is fixed on the right. Those anchors stay in place while the scientific action unfolds.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "GDP-bound G protein",
+            "symbol": "GDP",
+            "description": "The heterotrimeric G protein begins in an inactive GDP-bound state beside the activated receptor."
+          },
+          {
+            "position": "center",
+            "label": "Nucleotide switch",
+            "symbol": "GDP→GTP",
+            "description": "The activated GPCR promotes GDP release and GTP binding, changing the G protein into an active signaling state."
+          },
+          {
+            "position": "right",
+            "label": "Effector and reset bay",
+            "symbol": "GTP→GDP",
+            "description": "The active G-protein component regulates an effector and then intrinsic GTPase activity hydrolyzes GTP to GDP, helping reset the molecular switch."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet clipped beside a three-state receptor monitor",
+          "job": "Mira keeps ligand, receptor, receptor location, and receptor state separate while the gateway is repaired. She names the biology only after the defining molecular event is visible."
+        },
+        {
+          "name": "inactive GDP-bound G protein",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of inactive GDP-bound G protein fixed on the learner’s left in the g protein molecular switch display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "GPCR-triggered GDP-to-GTP switch",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the membrane switchboard where GDP/GTP state changes control effector interaction and reset; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Start the heterotrimeric G protein in the inactive GDP-bound state beside an activated GPCR, then use receptor activation to promote GDP release and GTP binding."
+        },
+        {
+          "name": "effector activation and GTP-hydrolysis reset",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of effector activation and GTP-hydrolysis reset fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Three-state receptor monitor",
+          "kind": "journey continuity object",
+          "visual": "a narrow vertical display with exactly three lights labeled UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED; it travels beside the membrane from room to room",
+          "job": "records receptor state without becoming a biological molecule, keeping signal arrival, binding, and receptor activation in causal order across all six locations"
+        }
+      ],
+      "continuity_object": "one receptor-state monitor that remains beside the membrane and records only three states—unbound/inactive, ligand-bound, and activated/changed—while different receptor mechanisms are tested.",
+      "story_open": "The **G-Protein Switchboard** sits immediately behind the GPCR door, still on the cytoplasmic side of the membrane. On your **left**, the heterotrimeric G protein rests beside the activated receptor with GDP bound and its indicator dark. Directly **ahead**, a central exchange mechanism holds one GDP slot and one GTP slot. On your **right**, an effector enzyme or channel waits beside a reset dial labeled GTP → GDP. Mira clips the three-state receptor monitor to the wall behind you; its receptor light stays ACTIVATED so the switchboard can show what happens after receptor activation without pretending the receptor and G protein are the same molecule.",
+      "story_paragraphs": [
+        "The **G-Protein Switchboard** sits immediately behind the GPCR door, still on the cytoplasmic side of the membrane. On your **left**, the heterotrimeric G protein rests beside the activated receptor with GDP bound and its indicator dark. Directly **ahead**, a central exchange mechanism holds one GDP slot and one GTP slot. On your **right**, an effector enzyme or channel waits beside a reset dial labeled GTP → GDP. Mira clips the three-state receptor monitor to the wall behind you; its receptor light stays ACTIVATED so the switchboard can show what happens after receptor activation without pretending the receptor and G protein are the same molecule.",
+        "Mira first identifies the left-hand complex as a **heterotrimeric G protein**. It is membrane-associated and functions as a molecular switch regulated by GDP and GTP binding as well as by interaction with an activated GPCR. In the inactive state, GDP is bound. The activated GPCR engages the G protein and promotes GDP release. The empty nucleotide site does not stay empty for long; GTP binds in its place. The center indicator turns on. This **GDP-to-GTP exchange** changes the G protein into an active signaling state that can regulate downstream effectors.",
+        "The active component moves to the right-hand station and interacts with the waiting effector. Mira uses an enzyme silhouette first, then briefly swaps in a channel silhouette to emphasize the general relationship. An activated G-protein component can interact with an **effector enzyme or channel**, altering downstream signaling and potentially amplifying the response. The key is the order: receptor activation changes the G protein's nucleotide state; the GTP-bound state enables effector regulation. The G protein is not a fragment of the receptor, and the effector is another downstream partner.",
+        "Then Mira reaches for the reset dial. The G protein has intrinsic GTPase activity, so GTP is hydrolyzed to GDP. The active indicator fades and the switch returns toward its inactive state. This is **GTP hydrolysis and switch reset**. Mira covers a misleading ENERGY TANK label that has appeared under GTP. In this mechanism, GDP/GTP binding functions primarily as a molecular switch. GTP hydrolysis helps terminate the active state. Although GTP is a high-energy nucleotide in biochemical terms, the memorable job here is state control, not an ATP-like picture of GTP being burned simply to power motion.",
+        "The switchboard now cycles cleanly: GDP-bound inactive → GDP release and GTP binding → effector regulation → GTP hydrolysis → GDP-bound reset. The receptor monitor marks the GPCR step complete. A second alert appears at the far end of the membrane: RECEPTOR IS THE CHANNEL. The wall opens onto a gate whose central protein contains its own ion pore. Mira leaves the G-protein machinery behind. “Different receptor, different mechanism,” she says. “This time the binding event changes ion flow directly through the receptor-channel itself.”"
+      ],
+      "story_close": "The GDP/GTP switch has reset, but a different membrane receptor now demands attention. You leave the separate G protein behind and enter the Ligand-Gated Channel Gate.",
+      "object_ids": [
+        "U4-K-082",
+        "U4-K-083",
+        "U4-K-084",
+        "U4-K-085"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-082",
+          "term": "Heterotrimeric G protein",
+          "story": "the separate three-part G protein resting beside the membrane with GDP bound",
+          "science": "A heterotrimeric G protein is a membrane-associated molecular switch regulated by GDP/GTP binding and interaction with an activated GPCR.",
+          "exact_name": true,
+          "hint": "the separate three-part G protein resting beside the membrane with GDP bound",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U4-K-083",
+          "term": "GDP-to-GTP exchange",
+          "story": "GDP leaving and GTP entering the G-protein nucleotide switch",
+          "science": "Activated GPCR promotes release of GDP from the G protein and binding of GTP; the GTP-bound form can regulate downstream effector proteins.",
+          "exact_name": true,
+          "hint": "GDP leaving and GTP entering the G-protein nucleotide switch",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U4-K-084",
+          "term": "GTP hydrolysis and switch reset",
+          "story": "GTP being hydrolyzed to GDP as the G-protein switch resets",
+          "science": "Intrinsic GTPase activity converts GTP to GDP and helps return the G protein to its inactive state; GTP functions here primarily as part of a molecular switch.",
+          "exact_name": true,
+          "hint": "GTP being hydrolyzed to GDP as the G-protein switch resets",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U4-K-085",
+          "term": "GPCR effector enzyme",
+          "story": "the GTP-bound G-protein component regulating an effector enzyme or channel",
+          "science": "An activated G-protein subunit can interact with an effector enzyme or channel, altering downstream signaling and potentially amplifying the response.",
+          "exact_name": true,
+          "hint": "the GTP-bound G-protein component regulating an effector enzyme or channel",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Heterotrimeric G protein",
+          "meaning": "A heterotrimeric G protein is a membrane-associated molecular switch regulated by GDP/GTP binding and interaction with an activated GPCR.",
+          "image": "the separate three-part G protein resting beside the membrane with GDP bound"
+        },
+        {
+          "term": "GDP-to-GTP exchange",
+          "meaning": "Activated GPCR promotes release of GDP from the G protein and binding of GTP; the GTP-bound form can regulate downstream effector proteins.",
+          "image": "GDP leaving and GTP entering the G-protein nucleotide switch"
+        },
+        {
+          "term": "GTP hydrolysis and switch reset",
+          "meaning": "Intrinsic GTPase activity converts GTP to GDP and helps return the G protein to its inactive state; GTP functions here primarily as part of a molecular switch.",
+          "image": "GTP being hydrolyzed to GDP as the G-protein switch resets"
+        },
+        {
+          "term": "GPCR effector enzyme",
+          "meaning": "An activated G-protein subunit can interact with an effector enzyme or channel, altering downstream signaling and potentially amplifying the response.",
+          "image": "the GTP-bound G-protein component regulating an effector enzyme or channel"
+        }
+      ],
+      "misconception_guards": [
+        "GDP/GTP binding is a molecular switch in this mechanism; do not teach GTP primarily as an ATP-like energy source.",
+        "Discrimination requirement: keep G protein-coupled receptor (GPCR), heterotrimeric G protein physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Discrimination requirement: keep GDP-to-GTP exchange, GTP hydrolysis and switch reset physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-012: In heterotrimeric G-protein signaling, GDP/GTP binding acts primarily as a molecular switch; GTP hydrolysis helps terminate the active state. Do not teach GTP’s role here mainly as energy supply."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At G-Protein Switchboard, remember the fixed inactive GDP-bound G protein → GPCR-triggered GDP-to-GTP switch → effector activation and GTP-hydrolysis reset relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Heterotrimeric G protein",
+          "GDP-to-GTP exchange",
+          "GTP hydrolysis and switch reset",
+          "GPCR effector enzyme"
+        ],
+        "redraw_test": "From memory, place inactive GDP-bound G protein on the left, GPCR-triggered GDP-to-GTP switch in the center, and effector activation and GTP-hydrolysis reset on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-082",
+      "checkpoint_prompt": "What nucleotide-state change activates the heterotrimeric G-protein switch, and what resets it?",
+      "checkpoint_answer": "GDP is released and GTP binds to activate the switch; GTP hydrolysis returns it toward the GDP-bound inactive state.",
+      "checkpoint_hint": "Picture the left GDP-bound switch, the center GDP-to-GTP exchange, and the right-side GTP hydrolysis reset.",
+      "next_locus": "Ligand-Gated Channel Gate",
+      "causal_transition": "The G-protein switch resets successfully, and the monitor flags a second membrane-receptor mechanism whose receptor is itself an ion channel; the learner moves to the Ligand-Gated Channel Gate."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Ligand-Gated Channel Gate",
+      "locus_id": "U4-L12",
+      "title": "The Receptor That Opens an Ion Door",
+      "scene_kicker": "Here the receptor is also the gate, so ligand binding changes ion flux without using the GPCR/G-protein switch.",
+      "location_description": "Ligand-Gated Channel Gate — the ion-channel doorway whose open or closed state changes when ligand binds.",
+      "scene_layout": {
+        "orientation": "Enter Ligand-Gated Channel Gate and stop at the ion-channel doorway whose open or closed state changes when ligand binds. The closed channel / ligand approach is fixed on the left, the ligand-binding channel gate is directly ahead at the working center, and the ion-flow response after channel-state change is fixed on the right. Those anchors stay in place while the scientific action unfolds.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Closed ion channel",
+            "symbol": "▮",
+            "description": "A membrane channel waits closed while its ligand approaches from the signaling side, making the inactive starting state visually unmistakable before binding occurs."
+          },
+          {
+            "position": "center",
+            "label": "Ligand-binding channel gate",
+            "symbol": "⇅",
+            "description": "Ligand binding changes the channel gate or open probability. The receptor and ion channel are the same functional membrane structure in this mechanism."
+          },
+          {
+            "position": "right",
+            "label": "Ion-flow response lane",
+            "symbol": "+ −",
+            "description": "Specific ions move according to their electrochemical driving forces after the gate changes state, altering membrane or ionic conditions that can initiate a cellular response."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet clipped beside a three-state receptor monitor",
+          "job": "Mira keeps ligand, receptor, receptor location, and receptor state separate while the gateway is repaired. She names the biology only after the defining molecular event is visible."
+        },
+        {
+          "name": "closed channel / ligand approach",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of closed channel / ligand approach fixed on the learner’s left in the ligand gated channel display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "ligand-binding channel gate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the ion-channel doorway whose open or closed state changes when ligand binds; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Keep the ligand-gated ion channel closed while no ligand is bound, then bind the ligand and change the channel’s open probability or gate state."
+        },
+        {
+          "name": "ion-flow response after channel-state change",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of ion-flow response after channel-state change fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Three-state receptor monitor",
+          "kind": "journey continuity object",
+          "visual": "a narrow vertical display with exactly three lights labeled UNBOUND/INACTIVE, LIGAND-BOUND, and ACTIVATED/CHANGED; it travels beside the membrane from room to room",
+          "job": "records receptor state without becoming a biological molecule, keeping signal arrival, binding, and receptor activation in causal order across all six locations"
+        }
+      ],
+      "continuity_object": "one receptor-state monitor that remains beside the membrane and records only three states—unbound/inactive, ligand-bound, and activated/changed—while different receptor mechanisms are tested.",
+      "story_open": "The final room of the **Signal Reception Gateway** is a narrow membrane hall. On your **left**, a ligand approaches a closed ion channel embedded in the membrane. Directly **ahead**, the channel's ligand-binding region and gate form one central protein structure. On your **right**, a row of specific ions waits on one side of the membrane beside a meter that can display ion flux and changes in membrane conditions. Mira sets the three-state receptor monitor beneath the channel. Unlike the previous room, there is no GPCR and no separate G protein anywhere in the mechanism.",
+      "story_paragraphs": [
+        "The final room of the **Signal Reception Gateway** is a narrow membrane hall. On your **left**, a ligand approaches a closed ion channel embedded in the membrane. Directly **ahead**, the channel's ligand-binding region and gate form one central protein structure. On your **right**, a row of specific ions waits on one side of the membrane beside a meter that can display ion flux and changes in membrane conditions. Mira sets the three-state receptor monitor beneath the channel. Unlike the previous room, there is no GPCR and no separate G protein anywhere in the mechanism.",
+        "With no ligand bound, the channel remains in its initial gate state and ion flow is restricted. Mira allows the compatible ligand to bind. The receptor-channel changes state, and the gate's probability of being open changes. This is a **ligand-gated ion channel**, a membrane receptor and channel whose open probability changes when a ligand binds, thereby allowing or restricting specific ion movement. At the broader level, **ligand-gated channels** can open or close in response to ligand binding. The receptor is not handing the message to a separate G protein here; the receptor's own channel gate is the crucial moving part.",
+        "The central gate opens in the model. Only the relevant ions move through the channel, following their electrochemical driving forces. Mira does not add a tiny motor that pushes each ion through. The change in gating alters ion flux across the membrane. On the right, the ion-flux meter rises and the membrane/electrical display changes. This is the **ion-channel signaling response**: opening or closing a ligand-gated ion channel changes ion movement and membrane properties, which can initiate downstream cellular responses. If the gate closes, ion flux falls. The sequence remains ligand binding → channel-state change → altered ion flux → downstream consequence.",
+        "Mira places the three receptor mechanisms from the journey on a final wall without merging them. The intracellular-receptor route shows a ligand crossing the membrane to meet its receptor inside. The GPCR route shows an extracellular ligand changing a seven-pass receptor that regulates a separate G protein. The ligand-gated ion-channel route shows ligand binding changing the receptor-channel's gate state directly. All are examples of reception, but their locations and downstream mechanisms differ. The comparison prevents the shortcut that every receptor simply passes a signal to another protein in the same way.",
+        "The three-state monitor now works exactly as intended. UNBOUND/INACTIVE lights before the signal arrives. LIGAND-BOUND lights only for a compatible ligand at the proper receptor. ACTIVATED/CHANGED appears only when that receptor's actual mechanism changes state. Mira turns the monitor toward the corridor beyond the gateway. A new violet line has appeared there, branching through several intracellular relay stations. The receptor problem is solved; the next unresolved question is what happens **after** a receptor activates. The doors of the Signal Relay Tower begin to open, ready for transduction, phosphorylation, second messengers, amplification, and response."
+      ],
+      "story_close": "The reception gateway is repaired. With ligand, receptor, receptor location, and receptor mechanism now distinct, the only unresolved signal lies downstream in the Signal Relay Tower.",
+      "object_ids": [
+        "U4-K-014",
+        "U4-K-086",
+        "U4-K-087"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-014",
+          "term": "Ligand-gated channels",
+          "story": "the membrane receptor-channel changing gate state when its ligand binds",
+          "science": "Ligand binding to ligand-gated channels can cause the channel to open or close.",
+          "exact_name": true,
+          "hint": "the membrane receptor-channel changing gate state when its ligand binds",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-086",
+          "term": "Ligand-gated ion channel",
+          "story": "the central ligand-gated ion channel acting as both receptor and ion pore",
+          "science": "A ligand-gated ion channel is a membrane receptor/channel whose open probability changes when a ligand binds, allowing or restricting specific ion movement.",
+          "exact_name": true,
+          "hint": "the central ligand-gated ion channel acting as both receptor and ion pore",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U4-K-087",
+          "term": "Ion-channel signaling response",
+          "story": "specific ions changing flux after the channel gate changes state",
+          "science": "Opening or closing a ligand-gated ion channel changes ion flux and membrane properties, which can initiate downstream cellular responses.",
+          "exact_name": true,
+          "hint": "specific ions changing flux after the channel gate changes state",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Ligand-gated channels",
+          "meaning": "Ligand binding to ligand-gated channels can cause the channel to open or close.",
+          "image": "the membrane receptor-channel changing gate state when its ligand binds"
+        },
+        {
+          "term": "Ligand-gated ion channel",
+          "meaning": "A ligand-gated ion channel is a membrane receptor/channel whose open probability changes when a ligand binds, allowing or restricting specific ion movement.",
+          "image": "the central ligand-gated ion channel acting as both receptor and ion pore"
+        },
+        {
+          "term": "Ion-channel signaling response",
+          "meaning": "Opening or closing a ligand-gated ion channel changes ion flux and membrane properties, which can initiate downstream cellular responses.",
+          "image": "specific ions changing flux after the channel gate changes state"
+        }
+      ],
+      "misconception_guards": [
+        "Resolved science guard RF-U4-011: Those are two important receptor types, not an exhaustive pair; receptor tyrosine kinases and other membrane receptors also exist. Preserve GPCR and ligand-gated channels as teacher/CED examples without encoding a false exhaustive taxonomy."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Ligand-Gated Channel Gate, remember the fixed closed channel / ligand approach → ligand-binding channel gate → ion-flow response after channel-state change relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Ligand-gated channels",
+          "Ligand-gated ion channel",
+          "Ion-channel signaling response"
+        ],
+        "redraw_test": "From memory, place closed channel / ligand approach on the left, ligand-binding channel gate in the center, and ion-flow response after channel-state change on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-086",
+      "checkpoint_prompt": "What directly changes when ligand binds a ligand-gated ion channel?",
+      "checkpoint_answer": "The channel’s gate/open probability changes, altering ion flux across the membrane.",
+      "checkpoint_hint": "Picture the central receptor-channel: ligand binding changes the gate first, and the ion-flow meter on the right changes only afterward.",
+      "next_locus": null,
+      "causal_transition": "The reception gateway now distinguishes location, GPCR/G-protein switching, and ligand-gated channels; the journey ends with the receptor-state monitor showing correctly ordered receptor activation and downstream effect."
+    }
+  ],
+  "student_release": "DEVELOPER_PREVIEW_F4B",
+  "narrative_standard": "V2-NARRATIVE-4.1-U4-F4B"
+}

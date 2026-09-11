@@ -1,0 +1,730 @@
+{
+  "palace_id": "U8-J3",
+  "unit_id": "unit-8",
+  "palace_name": "Biogeochemical Cycle Watershed",
+  "story_title": "The Watershed with the Missing Arrows",
+  "tagline": "Five fixed locations, four matter tracers, and one rule. Keep reservoirs stationary and move matter only when a real transfer process earns an arrow.",
+  "guide": {
+    "name": "Dr. Mira Sen",
+    "role": "ecological-systems field curator who accompanies the learner through all eight Unit 8 journeys",
+    "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+    "story_job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+  },
+  "premise": "The Biogeochemical Cycle Watershed has lost the arrows connecting its reservoirs. Dr. Mira Sen carries one transparent watershed reservoir board through five fixed locations. Each pathway returns only when the learner can distinguish where matter is stored from the process that moves it and can preserve the characteristic reservoirs and transformations of water, carbon, nitrogen, and phosphorus.",
+  "mission": "Travel the locked F2 route in order. Keep reservoir boxes and transfer arrows physically distinct, follow the same matter through valid ecological processes, preserve the chemical direction of nitrogen transformations, and explain why the phosphorus cycle is primarily sedimentary without inventing a large atmospheric phosphorus reservoir.",
+  "finale": "The watershed map is restored after the learner can rebuild all four cycles from reservoirs and processes instead of memorized arrow shapes. Water, carbon, nitrogen, and phosphorus share a reservoir-transfer grammar while retaining different dominant reservoirs, transformations, chemical directions, and timescales.",
+  "estimated_minutes": 18,
+  "scene_count": 5,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4C",
+  "preview_release": true,
+  "narrative_design": "U8-F4C-NARRATIVE-1.0",
+  "learner_rule": "Fix left, center, and right before moving any tracer. Reservoir boxes remain stationary, process names remain on arrows, and the same material is followed into a destination reservoir. Exact terms appear only after the defining transfer or chemical direction is visible. Optional Quick Recall appears only twice.",
+  "route_orientation": "The watershed follows one continuous route through five permanent locations in F2 order. Enter at Watershed Reservoir Map Hub and continue through Water Cycle Watershed, Carbon Cycle Reservoir Terrace, Nitrogen Transformation Gallery, and Phosphorus Sedimentary Basin. Every location fixes left, center, and right before the matter tracer moves.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Watershed Reservoir Map Hub",
+      "short": "Reservoirs and transfers",
+      "floor": "Map hub",
+      "symbol": "POOL→PROCESS"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Water Cycle Watershed",
+      "short": "Water cycle",
+      "floor": "Glass valley",
+      "symbol": "H₂O"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Carbon Cycle Reservoir Terrace",
+      "short": "Carbon cycle",
+      "floor": "Reservoir terrace",
+      "symbol": "CO₂↔C"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Nitrogen Transformation Gallery",
+      "short": "Nitrogen cycle",
+      "floor": "Transformation gallery",
+      "symbol": "N₂→NH₄⁺→NO₃⁻"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Phosphorus Sedimentary Basin",
+      "short": "Phosphorus cycle",
+      "floor": "Sedimentary basin",
+      "symbol": "ROCK→PO₄"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U8-L22",
+      "locus": "Watershed Reservoir Map Hub",
+      "title": "The Boxes That Refused to Move",
+      "scene_kicker": "At Watershed Reservoir Map Hub, reconstruct abiotic and biotic reservoir boxes → transfer-process arrow slots → same-material tracer at destination reservoir and explain Biogeochemical cycle from the actual ecological mechanism.",
+      "location_description": "Watershed Reservoir Map Hub",
+      "scene_layout": {
+        "orientation": "Enter Watershed Reservoir Map Hub and stop at the pool-versus-process map key. Keep abiotic and biotic reservoir boxes fixed on the left, transfer-process arrow slots as the working center, and same-material tracer at destination reservoir fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "abiotic and biotic reservoir boxes",
+            "symbol": "L",
+            "description": "A conventional scientific representation of abiotic and biotic reservoir boxes, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "transfer-process arrow slots",
+            "symbol": "C",
+            "description": "The main scientific work model at Watershed Reservoir Map Hub, centered on the pool-versus-process map key."
+          },
+          {
+            "position": "right",
+            "label": "same-material tracer at destination reservoir",
+            "symbol": "R",
+            "description": "A conventional scientific representation of same-material tracer at destination reservoir, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "abiotic and biotic reservoir boxes",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of abiotic and biotic reservoir boxes, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "transfer-process arrow slots",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Watershed Reservoir Map Hub, centered on the pool-versus-process map key.",
+          "job": "Execute the defining action beginning with: Place matter in a named reservoir and keep the reservoir box stationary."
+        },
+        {
+          "name": "same-material tracer at destination reservoir",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of same-material tracer at destination reservoir, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent watershed reservoir board",
+          "kind": "journey continuity object",
+          "visual": "a clear watershed map with fixed reservoir boxes and empty transfer-arrow slots; water, carbon, nitrogen, and phosphorus tracers change, while reservoir versus process never changes meaning",
+          "job": "keeps reservoirs, transfer processes, and same-material tracers spatially stable without replacing real molecules, organisms, rocks, water, microbes, or conventional process arrows"
+        }
+      ],
+      "continuity_object": "one watershed reservoir board with fixed pool boxes and transfer-arrow slots; the tracked substance changes by cycle, but reservoir versus process never changes meaning",
+      "story_open": "You enter the Watershed Reservoir Map Hub at the crest of a broad indoor watershed model. On your left, a wall holds fixed boxes labeled for abiotic and biotic pools, including atmosphere, water, soil, rock, plants, animals, and decomposers. Ahead at the center, an empty metal grid waits for transfer arrows to be slotted between those boxes. On your right, a clear destination box holds one glass tracer bead that is chemically unchanged from the bead that began on the left. Dr. Mira Sen places the same transparent watershed reservoir board you carried from the energy hall on the rail in front of you. Its pool boxes are fixed in place, and every pathway between them is blank.",
+      "story_paragraphs": [
+        "You enter the Watershed Reservoir Map Hub at the crest of a broad indoor watershed model. On your left, a wall holds fixed boxes labeled for abiotic and biotic pools, including atmosphere, water, soil, rock, plants, animals, and decomposers. Ahead at the center, an empty metal grid waits for transfer arrows to be slotted between those boxes. On your right, a clear destination box holds one glass tracer bead that is chemically unchanged from the bead that began on the left. Dr. Mira Sen places the same transparent watershed reservoir board you carried from the energy hall on the rail in front of you. Its pool boxes are fixed in place, and every pathway between them is blank.",
+        "A warning light above the map reads ARROWS MISSING. Mira does not reach for the labels. She taps one of the left boxes and asks you to treat it as a place where matter can remain for some period. A carbon atom can remain in atmospheric carbon dioxide, water can remain in an ocean, nitrogen can remain in atmospheric N₂, and phosphate can remain in rock or sediment. The amount of time can vary widely. What matters first is that the location is a pool, not a process. Mira slides the tracer into the atmosphere box and leaves it there. Nothing is moving, so no arrow appears. Only after the bead has clearly stayed in one place does she name the role. A component of a cycle in which matter can remain for a period before transfer to another pool is a **reservoir**.",
+        "Now the center grid activates. Mira places a card labeled PHOTOSYNTHESIS into one arrow slot between atmosphere and plant. The arrow lights, and the tracer moves from the atmosphere box to the plant box on the right side of that route. The process stays printed on the arrow. It never becomes a reservoir. She removes the process card, and the tracer stops. Next she inserts FEEDING between plant and animal, then DECOMPOSITION between an organism and soil. Each time, the boxes remain fixed while the tracer changes location only through a named transfer. The board makes the distinction impossible to miss. Reservoirs are where matter can stay. Transfer processes are what move matter among reservoirs.",
+        "Mira turns the board so you can see both kinds of pools together. Some reservoirs are abiotic, such as atmosphere, water, soil, rock, and sediment. Others are biotic, such as living plants, animals, and microorganisms. Matter can move between abiotic and biotic reservoirs through specific processes. The route does not have to be one perfect circle, and different ecosystems can have different reservoir sizes and different fluxes. The useful structure is the same. Identify the matter, identify where it is stored, identify the process that transfers it, and follow the same material into the next reservoir without pretending that the process itself is a pool.",
+        "The four tracer cases on the far wall unlock one at a time. One holds water, one carbon, one nitrogen, and one phosphorus. Mira leaves their names covered. She wants the shared architecture to become stable before the chemistry changes. A cycle that tracks the movement of a chemical element or compound among biotic and abiotic reservoirs through transfer processes is a **biogeochemical cycle**. The word is long, but the map underneath it is simple enough to redraw. Fixed pools on the left, a transfer arrow in the center, the same matter arriving in a destination reservoir on the right.",
+        "A floor channel opens toward the next chamber. The blue water tracer rolls into a clear trough while the other three remain locked in their cases. Mira does not carry the arrow labels with you. Only the reservoir board comes forward. The challenge in the next room is to rebuild the pathways from the behavior of water itself. If you remember only one picture from this hub, keep the boxes still and move the tracer only when a real process earns an arrow."
+      ],
+      "story_close": "A floor channel opens toward the next chamber. The blue water tracer rolls into a clear trough while the other three remain locked in their cases. Mira does not carry the arrow labels with you. Only the reservoir board comes forward. The challenge in the next room is to rebuild the pathways from the behavior of water itself. If you remember only one picture from this hub, keep the boxes still and move the tracer only when a real process earns an arrow.",
+      "object_ids": [
+        "U8-K-136",
+        "U8-K-016",
+        "U8-K-137"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-136",
+          "term": "Biogeochemical cycle",
+          "story": "the the pool-versus-process map key where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "A biogeochemical cycle tracks movement of a chemical element or compound among biotic and abiotic reservoirs.",
+          "exact_name": true,
+          "hint": "the pool-versus-process map key",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-016",
+          "term": "Cycle reservoirs and transfers",
+          "story": "the the pool-versus-process map key where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Biogeochemical cycles include abiotic and biotic reservoirs connected by transfer processes.",
+          "exact_name": false,
+          "hint": "the pool-versus-process map key",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-137",
+          "term": "Reservoir",
+          "story": "the the pool-versus-process map key where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "A reservoir is a component of a biogeochemical cycle in which matter can remain for a period before transfer to another pool.",
+          "exact_name": true,
+          "hint": "the pool-versus-process map key",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-016",
+          "term": "Cycle reservoirs and transfers",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-136",
+      "checkpoint_prompt": "Without looking back, identify or explain Biogeochemical cycle from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "A biogeochemical cycle tracks movement of a chemical element or compound among biotic and abiotic reservoirs.",
+      "next_locus": "Water Cycle Watershed",
+      "f3_scene_brief_id": "F3-U8-L22",
+      "narrative_word_count": 664
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U8-L23",
+      "locus": "Water Cycle Watershed",
+      "title": "The Storm Above the Glass Valley",
+      "scene_kicker": "At Water Cycle Watershed, reconstruct ocean/surface-water and organism reservoirs → evaporation/transpiration-condensation-precipitation loop → runoff/infiltration/groundwater/stream return paths and explain Water cycle from the actual ecological mechanism.",
+      "location_description": "Water Cycle Watershed",
+      "scene_layout": {
+        "orientation": "Enter Water Cycle Watershed and stop at the atmosphere-surface-groundwater cross-section. Keep ocean/surface-water and organism reservoirs fixed on the left, evaporation/transpiration-condensation-precipitation loop as the working center, and runoff/infiltration/groundwater/stream return paths fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "ocean/surface-water and organism reservoirs",
+            "symbol": "L",
+            "description": "A conventional scientific representation of ocean/surface-water and organism reservoirs, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "evaporation/transpiration-condensation-precipitation loop",
+            "symbol": "C",
+            "description": "The main scientific work model at Water Cycle Watershed, centered on the atmosphere-surface-groundwater cross-section."
+          },
+          {
+            "position": "right",
+            "label": "runoff/infiltration/groundwater/stream return paths",
+            "symbol": "R",
+            "description": "A conventional scientific representation of runoff/infiltration/groundwater/stream return paths, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "ocean/surface-water and organism reservoirs",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of ocean/surface-water and organism reservoirs, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "evaporation/transpiration-condensation-precipitation loop",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Water Cycle Watershed, centered on the atmosphere-surface-groundwater cross-section.",
+          "job": "Execute the defining action beginning with: Evaporate water from surface reservoirs and transpire water from organisms into the atmosphere."
+        },
+        {
+          "name": "runoff/infiltration/groundwater/stream return paths",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of runoff/infiltration/groundwater/stream return paths, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent watershed reservoir board",
+          "kind": "journey continuity object",
+          "visual": "a clear watershed map with fixed reservoir boxes and empty transfer-arrow slots; water, carbon, nitrogen, and phosphorus tracers change, while reservoir versus process never changes meaning",
+          "job": "keeps reservoirs, transfer processes, and same-material tracers spatially stable without replacing real molecules, organisms, rocks, water, microbes, or conventional process arrows"
+        }
+      ],
+      "continuity_object": "one watershed reservoir board with fixed pool boxes and transfer-arrow slots; the tracked substance changes by cycle, but reservoir versus process never changes meaning",
+      "story_open": "You step into the Water Cycle Watershed and stand at the edge of a waist-high glass valley. On your left, a deep ocean basin, a shallow lake, a stream, and a row of living plants hold the starting water reservoirs. Ahead in the center, warm lamps, a transparent atmosphere chamber, cooling plates, and cloud nozzles form an evaporation, transpiration, condensation, and precipitation loop. On your right, sloping soil, porous gravel, a groundwater tank, and a returning stream channel show runoff, infiltration, groundwater, and stream pathways. The same watershed reservoir board locks beside the model, with its boxes fixed and its arrow slots empty.",
+      "story_paragraphs": [
+        "You step into the Water Cycle Watershed and stand at the edge of a waist-high glass valley. On your left, a deep ocean basin, a shallow lake, a stream, and a row of living plants hold the starting water reservoirs. Ahead in the center, warm lamps, a transparent atmosphere chamber, cooling plates, and cloud nozzles form an evaporation, transpiration, condensation, and precipitation loop. On your right, sloping soil, porous gravel, a groundwater tank, and a returning stream channel show runoff, infiltration, groundwater, and stream pathways. The same watershed reservoir board locks beside the model, with its boxes fixed and its arrow slots empty.",
+        "Mira releases the first blue tracer into the ocean basin. The warm lamp comes on, and a fine mist rises from the water surface into the clear atmosphere chamber. The tracer marker on the board shifts from surface water to atmosphere only after the upward arrow is labeled **evaporation**. Beside the basin, the plant roots take up water and a second mist leaves the stomata of the leaves. That path receives a different label, **transpiration**. Both routes move water into the atmosphere, but one begins at exposed water surfaces and the other passes through organisms. The water molecule has not become a new kind of matter merely because its physical state or location changed.",
+        "Cold plates above the valley cool the rising vapor. Droplets appear, join, and cling to the underside of the chamber. Mira waits until you can see water collecting before the next arrow receives the word **condensation**. Then the nozzles release a brief artificial storm. Water falls back toward the land and surface reservoirs as **precipitation**. The central loop now has four clear process names, each attached to motion between reservoirs. The board does not suggest that every droplet must follow one identical circle. It shows multiple valid routes through a shared system.",
+        "That becomes obvious on the right. Some rain strikes the steep slope and runs over the surface into the stream as **runoff**. Some enters spaces in the soil as **infiltration**. A portion continues downward into the groundwater tank, then moves slowly toward the stream from below. Mira shines a narrow light through the gravel so you can watch the blue tracer appear beneath the land long after the surface flow has passed. Groundwater and streams are reservoirs and pathways within the larger movement of water, not missing details to be squeezed into the central four-arrow loop.",
+        "Only after the storm has passed does Mira uncover the room name. The movement of water among oceans, surface waters, atmosphere, and organisms through processes including evaporation, condensation, precipitation, and transpiration is the **water cycle**. Runoff, infiltration, groundwater, and streams add important return pathways. You glance back at the reservoir board and see the same rule from the first room working again. The boxes hold matter. The process names sit on the arrows. The blue tracer is still water wherever it goes.",
+        "At the far end of the valley, the water drains through a grate. Behind it, a terrace glows under greenhouse lamps. The next tracer case opens and reveals black carbon markers. Mira leaves the blue water bead in its final reservoir and slides the carbon set onto the same board. She points out that the shared reservoir-transfer grammar will remain, while the dominant reservoirs and transformations will change. Water moved readily through the atmosphere as vapor and precipitation. Carbon will require you to watch organisms, stored carbon, and chemical exchange much more closely."
+      ],
+      "story_close": "At the far end of the valley, the water drains through a grate. Behind it, a terrace glows under greenhouse lamps. The next tracer case opens and reveals black carbon markers. Mira leaves the blue water bead in its final reservoir and slides the carbon set onto the same board. She points out that the shared reservoir-transfer grammar will remain, while the dominant reservoirs and transformations will change. Water moved readily through the atmosphere as vapor and precipitation. Carbon will require you to watch organisms, stored carbon, and chemical exchange much more closely.",
+      "object_ids": [
+        "U8-K-017",
+        "U8-K-138"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-017",
+          "term": "Water cycle",
+          "story": "the the atmosphere-surface-groundwater cross-section where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Water moves among oceans, surface waters, atmosphere, and organisms through processes including evaporation, condensation, precipitation, and transpiration.",
+          "exact_name": true,
+          "hint": "the atmosphere-surface-groundwater cross-section",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-138",
+          "term": "Water-cycle runoff and groundwater",
+          "story": "the the atmosphere-surface-groundwater cross-section where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "In addition to evaporation, condensation, precipitation, and transpiration, water can move through surface runoff, infiltration, groundwater, and streams.",
+          "exact_name": false,
+          "hint": "the atmosphere-surface-groundwater cross-section",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-017",
+          "term": "Water cycle",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD18: Identify the dominant reservoirs and transformations for water, carbon, nitrogen, and phosphorus. Keep Water cycle, Carbon cycle, Nitrogen cycle, Phosphorus cycle physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Carbon Cycle Reservoir Terrace",
+      "f3_scene_brief_id": "F3-U8-L23",
+      "narrative_word_count": 580
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U8-L24",
+      "locus": "Carbon Cycle Reservoir Terrace",
+      "title": "The Tree Between Air and Fire",
+      "scene_kicker": "At Carbon Cycle Reservoir Terrace, reconstruct atmospheric CO₂ and stored-carbon reservoirs → photosynthesis/respiration/decomposition exchange arrows → combustion and returned-CO₂ panel and explain Carbon cycle from the actual ecological mechanism.",
+      "location_description": "Carbon Cycle Reservoir Terrace",
+      "scene_layout": {
+        "orientation": "Enter Carbon Cycle Reservoir Terrace and stop at the atmosphere-organic-carbon exchange wall. Keep atmospheric CO₂ and stored-carbon reservoirs fixed on the left, photosynthesis/respiration/decomposition exchange arrows as the working center, and combustion and returned-CO₂ panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "atmospheric CO₂ and stored-carbon reservoirs",
+            "symbol": "L",
+            "description": "A conventional scientific representation of atmospheric CO₂ and stored-carbon reservoirs, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "photosynthesis/respiration/decomposition exchange arrows",
+            "symbol": "C",
+            "description": "The main scientific work model at Carbon Cycle Reservoir Terrace, centered on the atmosphere-organic-carbon exchange wall."
+          },
+          {
+            "position": "right",
+            "label": "combustion and returned-CO₂ panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of combustion and returned-CO₂ panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "atmospheric CO₂ and stored-carbon reservoirs",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of atmospheric CO₂ and stored-carbon reservoirs, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "photosynthesis/respiration/decomposition exchange arrows",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Carbon Cycle Reservoir Terrace, centered on the atmosphere-organic-carbon exchange wall.",
+          "job": "Execute the defining action beginning with: Move atmospheric carbon into organic matter through photosynthesis."
+        },
+        {
+          "name": "combustion and returned-CO₂ panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of combustion and returned-CO₂ panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent watershed reservoir board",
+          "kind": "journey continuity object",
+          "visual": "a clear watershed map with fixed reservoir boxes and empty transfer-arrow slots; water, carbon, nitrogen, and phosphorus tracers change, while reservoir versus process never changes meaning",
+          "job": "keeps reservoirs, transfer processes, and same-material tracers spatially stable without replacing real molecules, organisms, rocks, water, microbes, or conventional process arrows"
+        }
+      ],
+      "continuity_object": "one watershed reservoir board with fixed pool boxes and transfer-arrow slots; the tracked substance changes by cycle, but reservoir versus process never changes meaning",
+      "story_open": "You climb onto the Carbon Cycle Reservoir Terrace and stop beside a living tree rooted in a deep soil column. On your left, a transparent chamber labeled ATMOSPHERIC CO₂ hangs above the canopy, while sealed drawers beneath the floor represent longer-lived stored-carbon reservoirs. Ahead in the center, illuminated arrows connect the atmosphere, green leaves, living tissues, decomposers, and soil through photosynthesis, cellular respiration, and decomposition. On your right, a combustion chamber faces a returned-CO₂ panel that feeds back toward the atmosphere. The watershed reservoir board sits beside the tree with carbon tracer markers ready to move through the same fixed pool-and-process framework.",
+      "story_paragraphs": [
+        "You climb onto the Carbon Cycle Reservoir Terrace and stop beside a living tree rooted in a deep soil column. On your left, a transparent chamber labeled ATMOSPHERIC CO₂ hangs above the canopy, while sealed drawers beneath the floor represent longer-lived stored-carbon reservoirs. Ahead in the center, illuminated arrows connect the atmosphere, green leaves, living tissues, decomposers, and soil through photosynthesis, cellular respiration, and decomposition. On your right, a combustion chamber faces a returned-CO₂ panel that feeds back toward the atmosphere. The watershed reservoir board sits beside the tree with carbon tracer markers ready to move through the same fixed pool-and-process framework.",
+        "Mira begins with one carbon marker inside atmospheric CO₂. The greenhouse lamps brighten, and the leaf display starts tracking carbon atoms incorporated into organic molecules. Only then does the arrow from atmosphere into plant tissue light with **photosynthesis**. Carbon dioxide has moved into organic matter. Mira keeps the energy column on her transparent ecology tablet separate from the matter tracer. Light energy supports the chemical reactions, yet the carbon being tracked is matter. The scene cannot be reduced to energy cycling. The carbon atom remains traceable even as chemical bonds and molecular forms change.",
+        "The tree and a small animal chamber begin cellular respiration. Carbon markers leave organic molecules and return to the atmosphere as carbon dioxide. The arrow is labeled **cellular respiration**. In the soil column, dead leaves fall into a decomposer chamber. Microorganisms break down organic matter, and carbon dioxide returns through **decomposition**. Mira has you compare those two arrows with photosynthesis. Photosynthesis removes atmospheric carbon dioxide into organic matter. Cellular respiration and decomposition return carbon dioxide from organic matter. The same carbon can enter and leave living reservoirs through different processes.",
+        "Then the room lights dim except for the sealed drawers beneath the floor. They represent carbon that can remain stored for much longer periods in geological or other reservoirs. Mira transfers several markers into one drawer and closes it. Nothing happens until she activates the combustion chamber on the right. The stored carbon markers move rapidly to the returned-CO₂ panel and then toward the atmosphere. **Combustion** can release stored carbon much faster than many natural storage processes accumulated it. The pathway differs in timescale and mechanism from the biological exchange you watched around the tree.",
+        "The full map is now crowded with carbon pathways but still obeys the original architecture. Atmospheric carbon dioxide, organic matter, soil carbon, and stored carbon are reservoirs. Photosynthesis, cellular respiration, decomposition, and combustion are transfers. This movement of carbon through the biosphere and atmosphere is the **carbon cycle**. Mira runs one finger along the arrows and asks you to explain the cycle without describing it as a single circular conveyor. You can begin anywhere, name the reservoir, name the transfer process, and follow the carbon into another reservoir.",
+        "A steel door opens behind the returned-CO₂ panel. Through it you can see a long gallery with nitrogen symbols printed above five separate gates. Mira removes the carbon tracer from the board and replaces it with a marker labeled N. She warns you that the next room punishes vague arrows. Water could often be followed as the same H₂O molecule through changes in location and state. Carbon could be tracked through several familiar biological exchanges. Nitrogen will require attention to chemical form. The reservoir board stays with you, but the center arrows are about to become a chemically directional pathway."
+      ],
+      "story_close": "A steel door opens behind the returned-CO₂ panel. Through it you can see a long gallery with nitrogen symbols printed above five separate gates. Mira removes the carbon tracer from the board and replaces it with a marker labeled N. She warns you that the next room punishes vague arrows. Water could often be followed as the same H₂O molecule through changes in location and state. Carbon could be tracked through several familiar biological exchanges. Nitrogen will require attention to chemical form. The reservoir board stays with you, but the center arrows are about to become a chemically directional pathway.",
+      "object_ids": [
+        "U8-K-018",
+        "U8-K-139"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-018",
+          "term": "Carbon cycle",
+          "story": "the the atmosphere-organic-carbon exchange wall where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Carbon moves through the biosphere and atmosphere through processes including photosynthesis, respiration, decomposition, and combustion.",
+          "exact_name": true,
+          "hint": "the atmosphere-organic-carbon exchange wall",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-139",
+          "term": "Carbon-cycle biological exchange",
+          "story": "the the atmosphere-organic-carbon exchange wall where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Photosynthesis removes carbon dioxide into organic matter; cellular respiration and decomposition return carbon dioxide, while combustion rapidly releases stored carbon.",
+          "exact_name": false,
+          "hint": "the atmosphere-organic-carbon exchange wall",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-018",
+          "term": "Carbon cycle",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD18: Identify the dominant reservoirs and transformations for water, carbon, nitrogen, and phosphorus. Keep Water cycle, Carbon cycle, Nitrogen cycle, Phosphorus cycle physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Nitrogen Transformation Gallery",
+      "f3_scene_brief_id": "F3-U8-L24",
+      "narrative_word_count": 569
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U8-L25",
+      "locus": "Nitrogen Transformation Gallery",
+      "title": "Five Gates for One Element",
+      "scene_kicker": "At Nitrogen Transformation Gallery, reconstruct atmospheric N₂ and organic-N pools → ammonium/nitrite/nitrate transformation track → assimilation and atmospheric-return endpoints and explain Nitrogen cycle from the actual ecological mechanism.",
+      "location_description": "Nitrogen Transformation Gallery",
+      "scene_layout": {
+        "orientation": "Enter Nitrogen Transformation Gallery and stop at the chemically directional nitrogen pathway. Keep atmospheric N₂ and organic-N pools fixed on the left, ammonium/nitrite/nitrate transformation track as the working center, and assimilation and atmospheric-return endpoints fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "atmospheric N₂ and organic-N pools",
+            "symbol": "L",
+            "description": "A conventional scientific representation of atmospheric N₂ and organic-N pools, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "ammonium/nitrite/nitrate transformation track",
+            "symbol": "C",
+            "description": "The main scientific work model at Nitrogen Transformation Gallery, centered on the chemically directional nitrogen pathway."
+          },
+          {
+            "position": "right",
+            "label": "assimilation and atmospheric-return endpoints",
+            "symbol": "R",
+            "description": "A conventional scientific representation of assimilation and atmospheric-return endpoints, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "atmospheric N₂ and organic-N pools",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of atmospheric N₂ and organic-N pools, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "ammonium/nitrite/nitrate transformation track",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Nitrogen Transformation Gallery, centered on the chemically directional nitrogen pathway.",
+          "job": "Execute the defining action beginning with: Convert atmospheric N₂ to reduced nitrogen through fixation, then incorporate inorganic nitrogen into organisms through assimilation."
+        },
+        {
+          "name": "assimilation and atmospheric-return endpoints",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of assimilation and atmospheric-return endpoints, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent watershed reservoir board",
+          "kind": "journey continuity object",
+          "visual": "a clear watershed map with fixed reservoir boxes and empty transfer-arrow slots; water, carbon, nitrogen, and phosphorus tracers change, while reservoir versus process never changes meaning",
+          "job": "keeps reservoirs, transfer processes, and same-material tracers spatially stable without replacing real molecules, organisms, rocks, water, microbes, or conventional process arrows"
+        }
+      ],
+      "continuity_object": "one watershed reservoir board with fixed pool boxes and transfer-arrow slots; the tracked substance changes by cycle, but reservoir versus process never changes meaning",
+      "story_open": "You enter the Nitrogen Transformation Gallery and stand before a long illuminated pathway. On your left, a tall cylinder marked ATMOSPHERIC N₂ rises beside a bin of organic nitrogen in dead matter and waste. Ahead in the center, three connected stations display ammonium, nitrite, and nitrate as distinct chemical forms rather than interchangeable labels. On your right, one doorway leads nitrogen into living organic molecules through assimilation, while another returns gaseous nitrogen forms to the atmosphere. The watershed reservoir board remains fixed beside the track, but every transfer arrow is dark until its chemical direction is earned.",
+      "story_paragraphs": [
+        "You enter the Nitrogen Transformation Gallery and stand before a long illuminated pathway. On your left, a tall cylinder marked ATMOSPHERIC N₂ rises beside a bin of organic nitrogen in dead matter and waste. Ahead in the center, three connected stations display ammonium, nitrite, and nitrate as distinct chemical forms rather than interchangeable labels. On your right, one doorway leads nitrogen into living organic molecules through assimilation, while another returns gaseous nitrogen forms to the atmosphere. The watershed reservoir board remains fixed beside the track, but every transfer arrow is dark until its chemical direction is earned.",
+        "Mira starts at the atmospheric N₂ cylinder. The molecule is abundant in the atmosphere, yet most organisms cannot simply pull N₂ directly into proteins or nucleic acids. A microbial chamber activates and converts atmospheric N₂ into reduced nitrogen forms that can enter biological systems. Only after that conversion occurs does the first gate illuminate with the name **nitrogen fixation**. Mira moves the resulting inorganic nitrogen marker toward the right-side plant chamber. Roots take up inorganic nitrogen and incorporate it into organic molecules. That biological incorporation receives its own name, **nitrogen assimilation**. Fixation changes atmospheric N₂ into biologically accessible reduced forms. Assimilation incorporates inorganic nitrogen into organic molecules in organisms. The two gates are connected, but they are not the same process.",
+        "Next Mira points to the organic nitrogen bin on the left. Dead tissue and waste enter a decomposer chamber. Microorganisms convert organic nitrogen into ammonium. The moment the ammonium marker appears, a second pathway label lights with **ammonification**. The name stays attached to the conversion from organic nitrogen to ammonium. Mira physically places the organic-N card before the gate and the ammonium card after it so the direction cannot be reversed in memory. This is matter being chemically transformed and transferred, not a general label for all decomposition.",
+        "The ammonium marker then enters the center track. Microorganisms oxidize ammonium to nitrite and then nitrate. Two redox steps illuminate in sequence, but the whole microbial oxidation pathway is labeled **nitrification**. Mira keeps ammonium, nitrite, and nitrate in separate slots. She does not let the three forms collapse into one vague box called soil nitrogen. The chemical direction matters. Nitrification begins with ammonium and proceeds through nitrite to nitrate. The nitrate can then be available for assimilation by producers, or it can enter a different microbial pathway under suitable conditions.",
+        "At the final gate, nitrate enters a chamber where microbes reduce it to gaseous nitrogen forms. A pipe rises from the chamber to the atmospheric N₂ cylinder. Only when the gas reaches the left-side atmospheric reservoir does the gate display **denitrification**. The word tells you what happened to nitrate and where the nitrogen can go. Nitrate was reduced to gaseous nitrogen forms, returning nitrogen toward the atmosphere. Mira now has you point to all five gates without relying on their names. Atmospheric N₂ to reduced nitrogen is fixation. Inorganic nitrogen into organic molecules is assimilation. Organic nitrogen to ammonium is ammonification. Ammonium to nitrite and nitrate is nitrification. Nitrate to gaseous nitrogen forms is denitrification.",
+        "The full network brightens. It is not one compulsory circular conveyor, and organisms do not choose a route because they need nitrogen to move in a particular direction. Microorganisms mediate several key transformations, and different nitrogen forms occupy different reservoirs and pathways. The movement of nitrogen through fixation, assimilation, ammonification, nitrification, and denitrification is the **nitrogen cycle**. Mira leaves the five process names above their gates and lowers the lights everywhere else. If you can reconstruct the direction of each chemical transformation, the names become labels on a mechanism you already understand.",
+        "A final door opens at floor level rather than overhead. Beyond it lies a rocky basin with no large atmospheric chamber at all. Mira smiles and taps the empty sky above the model. The absence is deliberate. The phosphorus tracer waits in a block of rock on the left. The reservoir board rolls forward one last time, ready to show a cycle whose dominant architecture is sedimentary rather than atmospheric."
+      ],
+      "story_close": "A final door opens at floor level rather than overhead. Beyond it lies a rocky basin with no large atmospheric chamber at all. Mira smiles and taps the empty sky above the model. The absence is deliberate. The phosphorus tracer waits in a block of rock on the left. The reservoir board rolls forward one last time, ready to show a cycle whose dominant architecture is sedimentary rather than atmospheric.",
+      "object_ids": [
+        "U8-K-019",
+        "U8-K-140",
+        "U8-K-141",
+        "U8-K-142",
+        "U8-K-143",
+        "U8-K-144"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-019",
+          "term": "Nitrogen cycle",
+          "story": "the the chemically directional nitrogen pathway where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Nitrogen cycles through fixation, assimilation, ammonification, nitrification, and denitrification, with microorganisms mediating key transformations.",
+          "exact_name": true,
+          "hint": "the chemically directional nitrogen pathway",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-140",
+          "term": "Nitrogen fixation",
+          "story": "the the chemically directional nitrogen pathway where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Nitrogen fixation converts atmospheric N₂ into reduced nitrogen forms that can enter biological systems.",
+          "exact_name": true,
+          "hint": "the chemically directional nitrogen pathway",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-141",
+          "term": "Ammonification",
+          "story": "the the chemically directional nitrogen pathway where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Ammonification converts organic nitrogen in dead matter and wastes into ammonium.",
+          "exact_name": true,
+          "hint": "the chemically directional nitrogen pathway",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-142",
+          "term": "Nitrification",
+          "story": "the the chemically directional nitrogen pathway where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Nitrification is microbial oxidation of ammonium to nitrite and then nitrate.",
+          "exact_name": true,
+          "hint": "the chemically directional nitrogen pathway",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-143",
+          "term": "Denitrification",
+          "story": "the the chemically directional nitrogen pathway where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Denitrification is microbial reduction of nitrate to gaseous nitrogen forms, returning nitrogen to the atmosphere.",
+          "exact_name": true,
+          "hint": "the chemically directional nitrogen pathway",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-144",
+          "term": "Nitrogen assimilation",
+          "story": "the the chemically directional nitrogen pathway where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Nitrogen assimilation incorporates inorganic nitrogen into organic molecules in organisms.",
+          "exact_name": true,
+          "hint": "the chemically directional nitrogen pathway",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-019",
+          "term": "Nitrogen cycle",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD18: Identify the dominant reservoirs and transformations for water, carbon, nitrogen, and phosphorus. Keep Water cycle, Carbon cycle, Nitrogen cycle, Phosphorus cycle physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD19: Discriminate chemical direction and biological role of fixation, ammonification, nitrification, denitrification, and assimilation. Keep Nitrogen fixation, Ammonification, Nitrification, Denitrification, Nitrogen assimilation physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-019",
+      "checkpoint_prompt": "Without looking back, identify or explain Nitrogen cycle from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Nitrogen cycles through fixation, assimilation, ammonification, nitrification, and denitrification, with microorganisms mediating key transformations.",
+      "next_locus": "Phosphorus Sedimentary Basin",
+      "f3_scene_brief_id": "F3-U8-L25",
+      "narrative_word_count": 673
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U8-L26",
+      "locus": "Phosphorus Sedimentary Basin",
+      "title": "The Cycle with No Great Sky Reservoir",
+      "scene_kicker": "At Phosphorus Sedimentary Basin, reconstruct rock and sediment phosphate reservoirs → weathering/uptake/feeding/decomposition transfers → soil/water/sediment return reservoirs and explain Phosphorus cycle from the actual ecological mechanism.",
+      "location_description": "Phosphorus Sedimentary Basin",
+      "scene_layout": {
+        "orientation": "Enter Phosphorus Sedimentary Basin and stop at the rock-soil-water-food-web cross-section. Keep rock and sediment phosphate reservoirs fixed on the left, weathering/uptake/feeding/decomposition transfers as the working center, and soil/water/sediment return reservoirs fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "rock and sediment phosphate reservoirs",
+            "symbol": "L",
+            "description": "A conventional scientific representation of rock and sediment phosphate reservoirs, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "weathering/uptake/feeding/decomposition transfers",
+            "symbol": "C",
+            "description": "The main scientific work model at Phosphorus Sedimentary Basin, centered on the rock-soil-water-food-web cross-section."
+          },
+          {
+            "position": "right",
+            "label": "soil/water/sediment return reservoirs",
+            "symbol": "R",
+            "description": "A conventional scientific representation of soil/water/sediment return reservoirs, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "rock and sediment phosphate reservoirs",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of rock and sediment phosphate reservoirs, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "weathering/uptake/feeding/decomposition transfers",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Phosphorus Sedimentary Basin, centered on the rock-soil-water-food-web cross-section.",
+          "job": "Execute the defining action beginning with: Weather phosphate-bearing rock to release phosphate into soil or water."
+        },
+        {
+          "name": "soil/water/sediment return reservoirs",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of soil/water/sediment return reservoirs, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent watershed reservoir board",
+          "kind": "journey continuity object",
+          "visual": "a clear watershed map with fixed reservoir boxes and empty transfer-arrow slots; water, carbon, nitrogen, and phosphorus tracers change, while reservoir versus process never changes meaning",
+          "job": "keeps reservoirs, transfer processes, and same-material tracers spatially stable without replacing real molecules, organisms, rocks, water, microbes, or conventional process arrows"
+        }
+      ],
+      "continuity_object": "one watershed reservoir board with fixed pool boxes and transfer-arrow slots; the tracked substance changes by cycle, but reservoir versus process never changes meaning",
+      "story_open": "You descend into the Phosphorus Sedimentary Basin and stand beside a rock-soil-water-food-web cross-section. On your left, phosphate-bearing rock rises above layered sediment reservoirs at the bottom of the basin. Ahead in the center, arrows for weathering, producer uptake, feeding, decomposition, and excretion cross from rock into soil and water, then through plants and animals. On your right, soil, shallow water, and accumulating sediment receive returning phosphate. Above all three zones, the ceiling is deliberately empty. There is no giant atmospheric tank waiting to dominate this cycle.",
+      "story_paragraphs": [
+        "You descend into the Phosphorus Sedimentary Basin and stand beside a rock-soil-water-food-web cross-section. On your left, phosphate-bearing rock rises above layered sediment reservoirs at the bottom of the basin. Ahead in the center, arrows for weathering, producer uptake, feeding, decomposition, and excretion cross from rock into soil and water, then through plants and animals. On your right, soil, shallow water, and accumulating sediment receive returning phosphate. Above all three zones, the ceiling is deliberately empty. There is no giant atmospheric tank waiting to dominate this cycle.",
+        "Mira fixes a phosphate tracer inside the rock on the left. A simulated rain system starts, and the exposed rock surface slowly breaks down. Phosphate moves into the soil and water only when the arrow labeled **weathering** illuminates. The process is slow compared with the rapid movement you saw in some earlier rooms, yet it is a crucial route by which phosphate becomes available from rock. The phosphorus atom itself is conserved as it changes location and chemical context. The reservoir board still distinguishes the stationary pools from the processes that connect them.",
+        "A plant root reaches into the soil reservoir and takes up phosphate. Mira moves the tracer into the producer and marks the transfer as assimilation into biological material. An herbivore feeds on the plant, carrying that phosphorus into a consumer. Another consumer feeds farther along the food web. The movement through organisms happens through uptake and feeding, not through a major atmospheric phase. Mira briefly points to the empty ceiling again. Nitrogen had a huge atmospheric N₂ reservoir and processes that connected the atmosphere to biologically available forms. Phosphorus does not have an equivalently large atmospheric reservoir in its major ecological cycle.",
+        "Dead material and waste now enter the decomposer zone. Phosphate returns to soil or water through decomposition and excretion. Some phosphate is transported into aquatic systems and ultimately settles into sediments. Over long periods, sedimentary processes can lock phosphorus into rock again. Mira asks you to compare this route with the water, carbon, and nitrogen rooms without borrowing their distinctive mechanisms. There is no evaporation-condensation loop for phosphorus. There is no photosynthesis-respiration exchange that defines the carbon cycle. There is no sequence of nitrogen fixation, nitrification, and denitrification. Each cycle uses the same reservoir-transfer logic while preserving its own dominant reservoirs and transformations.",
+        "Only after the rocky route is complete does the basin wall reveal its name. Weathering releases phosphate, producers assimilate it, consumers acquire it through feeding, and decomposition and excretion return it to environmental reservoirs. This movement is the **phosphorus cycle**. Its **sedimentary character** is visible in the importance of rock and sediment reservoirs and in the absence of a large atmospheric reservoir. Mira does not call the cycle perfectly closed or identical in every ecosystem. Reservoir sizes, transfer rates, and specific pathways can vary. What remains stable is the scientific distinction between where phosphate can remain and the processes that move it.",
+        "The basin doors open back onto a balcony overlooking all five locations. The original map hub lies closest, followed by the glass water valley, the carbon terrace, the nitrogen gallery, and the rocky phosphorus basin. Mira places the four tracer sets side by side on the transparent watershed reservoir board. Water emphasizes evaporation, condensation, precipitation, transpiration, runoff, infiltration, groundwater, and streams. Carbon emphasizes photosynthesis, respiration, decomposition, and combustion. Nitrogen requires chemical direction through fixation, assimilation, ammonification, nitrification, and denitrification. Phosphorus emphasizes weathering, uptake, feeding, decomposition, excretion, and sedimentation without a large atmospheric reservoir. The missing arrows are no longer missing. You rebuilt them from reservoirs and processes, which means you can rebuild the cycles even when the diagram changes."
+      ],
+      "story_close": "The basin doors open back onto a balcony overlooking all five locations. The original map hub lies closest, followed by the glass water valley, the carbon terrace, the nitrogen gallery, and the rocky phosphorus basin. Mira places the four tracer sets side by side on the transparent watershed reservoir board. Water emphasizes evaporation, condensation, precipitation, transpiration, runoff, infiltration, groundwater, and streams. Carbon emphasizes photosynthesis, respiration, decomposition, and combustion. Nitrogen requires chemical direction through fixation, assimilation, ammonification, nitrification, and denitrification. Phosphorus emphasizes weathering, uptake, feeding, decomposition, excretion, and sedimentation without a large atmospheric reservoir. The missing arrows are no longer missing. You rebuilt them from reservoirs and processes, which means you can rebuild the cycles even when the diagram changes.",
+      "object_ids": [
+        "U8-K-020",
+        "U8-K-145"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-020",
+          "term": "Phosphorus cycle",
+          "story": "the the rock-soil-water-food-web cross-section where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "Weathering releases phosphate, producers assimilate it, consumers acquire it through feeding, and decomposition/excretion return it to environmental reservoirs.",
+          "exact_name": true,
+          "hint": "the rock-soil-water-food-web cross-section",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-145",
+          "term": "Phosphorus-cycle sedimentary character",
+          "story": "the the rock-soil-water-food-web cross-section where the reservoir, process, or chemical direction is made visible before the term is named",
+          "science": "The phosphorus cycle is primarily sedimentary and lacks a large atmospheric reservoir; weathering releases phosphate that moves through food webs and sediments.",
+          "exact_name": false,
+          "hint": "the rock-soil-water-food-web cross-section",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-020",
+          "term": "Phosphorus cycle",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD18: Identify the dominant reservoirs and transformations for water, carbon, nitrogen, and phosphorus. Keep Water cycle, Carbon cycle, Nitrogen cycle, Phosphorus cycle physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U8-L26",
+      "narrative_word_count": 605
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "prior_narrative_locks": [
+    "LOCKED_F4A_J1",
+    "LOCKED_F4B_J2"
+  ]
+}

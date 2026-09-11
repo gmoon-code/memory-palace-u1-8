@@ -1,0 +1,35 @@
+{
+  "schema": "memory-palace-v2-unit6-content-lock-f3-1.0",
+  "generated_utc": "2026-09-08T00:20:00+00:00",
+  "unit_id": "unit-6",
+  "lock_status": "LOCKED_F3",
+  "student_release": false,
+  "f1_protected_hashes": {
+    "content/ap-biology/unit-6/source/canonical-unit6-f1.json": "eb430eadcb08d9a6828a28c9c74b62eb5fcf4cc584fd11e9bb78066dce88aab6",
+    "content/ap-biology/unit-6/source/coverage-manifest-f1.json": "e004d9bad5b63ff2bb50344d9d9bfba60ab7670e5a3fa71032ec567a0605b041",
+    "content/ap-biology/unit-6/content-lock-f1.json": "3ea932f70c02efacfe80493731f92113c53b0fd93e8d770ba2141c9b0764d888",
+    "content/ap-biology/unit-6/f1-release-manifest.json": "fd4d0227d8cf96340420b01118f1688e3394328821fe56e2ebcefd014f7d70e2"
+  },
+  "f2_protected_hashes": {
+    "content/ap-biology/unit-6/architecture/learning-classification-f2.json": "ef3e1c80d1116a9b1f1ef4bb5d0247fc09b1990faa2562d95952a94cfd477736",
+    "content/ap-biology/unit-6/architecture/palace-architecture-f2.json": "97d7a9e0e2b0175f171abc0670457c48c36fd90d8b56eae13c11ea536eb82c04",
+    "content/ap-biology/unit-6/content-lock-f2.json": "ebfdbe6a0d2f8a7f3d1baea2331abbf40cd99f6cf512ad556581ad0042316da6",
+    "content/ap-biology/unit-6/f2-release-manifest.json": "295e36c8bf49e32b3c358c7750ec1fea82033c9a1fe6484c10abdbc4e855b3c0",
+    "content/ap-biology/unit-6/status-f2.json": "5d6ad80b501608427f19571b4deb2c5bf10611b6d420cabf50138e010a8b9fab"
+  },
+  "files": {
+    "content/ap-biology/unit-6/briefs/journey-briefs-f3.json": {
+      "bytes": 33057,
+      "sha256": "dd4842d90ec951309f548dc93176a98f87586919c25c18af20b734d11ad0e836"
+    },
+    "content/ap-biology/unit-6/briefs/scene-briefs-f3.json": {
+      "bytes": 737049,
+      "sha256": "063594c872dda4b5279c9dbdda80d8624039e1b5c0dbd6d1a6aba3492bf9d076"
+    },
+    "content/ap-biology/unit-6/status-f3.json": {
+      "bytes": 946,
+      "sha256": "51d5383a2fd358921f5c466d59196b87ac35420bface0b00e3676a0ddbfd956f"
+    }
+  },
+  "policy": "F3 locks science-bearing journey and scene briefs while leaving F1 science and F2 learning architecture unchanged. F4 may write polished story prose only from these briefs and may not alter protected earlier locks."
+}

@@ -1,0 +1,1200 @@
+{
+  "palace_id": "Z8",
+  "palace_name": "Nucleic Acid Archive",
+  "story_title": "The Lost Genetic Manuscript",
+  "tagline": "A damaged genetic manuscript has lost its orientation and pairing marks. Rebuild it from nucleotide parts and restore the information stored in its sequence.",
+  "guide": {
+    "name": "Nia Sol",
+    "role": "keeper of the genetic archive",
+    "visual": "black archivist coat, gold page clips, violet inspection lamp",
+    "story_job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+  },
+  "premise": "A humidity-control failure has torn apart one of the archive’s genetic manuscripts. Bases, sugars, phosphates, strand directions, and pairing marks are scattered across ten rooms.",
+  "mission": "Reconstruct the manuscript with Nia. Distinguish DNA from RNA, nucleotide from nucleoside, purines from pyrimidines, 5′ from 3′ ends, strand direction, antiparallel geometry, base pairing, and what happens when DNA melts apart.",
+  "finale": "At the DNA Melting Room, the restored manuscript separates cleanly into two intact strands and then re-pairs. Nia shelves it again, and the route behind you reads like one structural sentence: units connect directionally, sequence stores information, and complementary antiparallel strands create the DNA double helix.",
+  "estimated_minutes": 18,
+  "scene_count": 10,
+  "checkpoint_count": 4,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The archive is a long reading hall wrapped around a central spiral staircase. You begin at the front desk, move through component rooms and the backbone bridge, climb the antiparallel stair, inspect base pairing, and finish in the controlled melting chamber.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "DNA/RNA Front Desk",
+      "short": "DNA/RNA",
+      "floor": "Front desk",
+      "symbol": "📜"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Nucleotide Pass Counter",
+      "short": "Unit",
+      "floor": "Desk 1",
+      "symbol": "◇"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Ring Reading Room",
+      "short": "Bases",
+      "floor": "Desk 2",
+      "symbol": "⬡"
+    },
+    {
+      "scene_index": 3,
+      "locus": "DNA/RNA Sugar Gallery",
+      "short": "DNA vs RNA",
+      "floor": "Gallery",
+      "symbol": "D/R"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Backbone Bridge",
+      "short": "Backbone",
+      "floor": "Bridge",
+      "symbol": "5′—3′"
+    },
+    {
+      "scene_index": 5,
+      "locus": "3′ Growth Desk",
+      "short": "Growth",
+      "floor": "Desk 3",
+      "symbol": "→3′"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Sequence Catalog",
+      "short": "Sequence",
+      "floor": "Catalog",
+      "symbol": "ABC"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Antiparallel Spiral Staircase",
+      "short": "Antiparallel",
+      "floor": "Stair",
+      "symbol": "⇅"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Base-Pair Reading Table",
+      "short": "Pairing",
+      "floor": "Reading room",
+      "symbol": "A·T"
+    },
+    {
+      "scene_index": 9,
+      "locus": "DNA Melting Room",
+      "short": "Melting",
+      "floor": "Archive lab",
+      "symbol": "♨"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "DNA/RNA Front Desk",
+      "title": "Two Manuscripts, One Molecular Family",
+      "scene_kicker": "DNA and RNA are related information molecules, but their usual structures are not identical.",
+      "location_description": "The archive entrance contains two damaged manuscript cases. A heavy double-scroll case labeled DNA sits left. A lighter single-scroll case labeled RNA sits right. A central information vault waits for both.",
+      "scene_layout": {
+        "orientation": "DNA case is left, hereditary-information vault is center, and RNA case is right. The component-check counter is visible beyond the vault.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "DNA case",
+            "symbol": "DNA",
+            "description": "Holds a usually double-stranded nucleic acid containing deoxyribose and thymine."
+          },
+          {
+            "position": "center",
+            "label": "Information vault",
+            "symbol": "i",
+            "description": "Represents storage, transmission, and expression of hereditary information."
+          },
+          {
+            "position": "right",
+            "label": "RNA case",
+            "symbol": "RNA",
+            "description": "Holds a usually single-stranded nucleic acid containing ribose and uracil."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "Nucleic acid",
+          "kind": "information polymer",
+          "visual": "a long chain of nucleotide pages entering the archive vault",
+          "job": "stores, transmits, or helps express hereditary information"
+        },
+        {
+          "name": "DNA and RNA",
+          "kind": "two nucleic-acid forms",
+          "visual": "one double-scroll DNA case and one single-scroll RNA case",
+          "job": "are the two major nucleic-acid forms emphasized here"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **DNA/RNA Front Desk**. The archive entrance contains two damaged manuscript cases. A heavy double-scroll case labeled DNA sits left. A lighter single-scroll case labeled RNA sits right. A central information vault waits for both. The DNA case is on your left, the Information vault is directly ahead, and the RNA case marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **DNA/RNA Front Desk**. The archive entrance contains two damaged manuscript cases. A heavy double-scroll case labeled DNA sits left. A lighter single-scroll case labeled RNA sits right. A central information vault waits for both. The DNA case is on your left, the Information vault is directly ahead, and the RNA case marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "Nia Sol opens the two cases. Both manuscripts belong to the same molecular family: **nucleic acids**, polymers of nucleotides involved in storing, transmitting, and expressing hereditary information.",
+        "The left case is **DNA**, deoxyribonucleic acid. The right is **RNA**, ribonucleic acid. They share a nucleotide-based architecture but differ in sugar, one nitrogenous base, and their usual strand organization.",
+        "Nia places the two manuscript types side by side and names them together: **DNA and RNA**. DNA is deoxyribonucleic acid; RNA is ribonucleic acid. The rest of the archive will show why their structural differences matter.",
+        "A torn strip from the DNA case slides across the desk. Nia places it under the first inspection lamp. “Before we rebuild a strand, we need to know exactly what one unit contains.”"
+      ],
+      "story_close": "A torn strip from the DNA case slides across the desk. Nia places it under the first inspection lamp. “Before we rebuild a strand, we need to know exactly what one unit contains.”",
+      "object_ids": [
+        "MO-APBIO-U1-NA001",
+        "MO-APBIO-U1-NA002"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA001",
+          "term": "Nucleic acid",
+          "story": "a long chain of nucleotide tiles feeding into a locked hereditary-information vault",
+          "science": "Nucleic acids are nucleotide polymers involved in storing, transmitting, and expressing hereditary information.",
+          "exact_name": true,
+          "hint": "a long chain of nucleotide tiles feeding into a locked hereditary-information vault"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA002",
+          "term": "DNA and RNA",
+          "story": "two contrasting information scrolls, one with a de-oxygenated sugar and T marker and one with a ribose sugar and U marker",
+          "science": "The two forms emphasized are deoxyribonucleic acid (DNA) and ribonucleic acid (RNA).",
+          "exact_name": true,
+          "hint": "two contrasting information scrolls, one with a de-oxygenated sugar and T marker and one with a ribose sugar and U marker"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Nucleic acid",
+          "meaning": "Nucleic acids are nucleotide polymers involved in storing, transmitting, and expressing hereditary information.",
+          "image": "a long chain of nucleotide tiles feeding into a locked hereditary-information vault"
+        },
+        {
+          "term": "DNA and RNA",
+          "meaning": "The two forms emphasized are deoxyribonucleic acid (DNA) and ribonucleic acid (RNA).",
+          "image": "two contrasting information scrolls, one with a de-oxygenated sugar and T marker and one with a ribose sugar and U marker"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-NA001",
+      "checkpoint_prompt": "",
+      "next_locus": "Nucleotide Pass Counter"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Nucleotide Pass Counter",
+      "title": "Three Parts Make the Pass",
+      "scene_kicker": "Base, sugar, phosphate: those three components define the nucleotide unit used to build a nucleic-acid strand.",
+      "location_description": "A customs-style counter has three trays labeled BASE, SUGAR, and PHOSPHATE. A page receives a gold pass only when all three pieces are present. A side lane removes the phosphate and prints a different label.",
+      "scene_layout": {
+        "orientation": "Base tray is left, sugar/phosphate assembly is center, and the phosphate-free nucleoside lane is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Nitrogenous-base tray",
+            "symbol": "B",
+            "description": "Supplies the information-bearing base."
+          },
+          {
+            "position": "center",
+            "label": "Nucleotide assembly",
+            "symbol": "B+S+P",
+            "description": "Combines base, five-carbon sugar, and phosphate."
+          },
+          {
+            "position": "right",
+            "label": "Nucleoside lane",
+            "symbol": "B+S",
+            "description": "Shows the base-plus-sugar structure without phosphate."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "Nucleotide",
+          "kind": "nucleic-acid unit",
+          "visual": "a three-part pass containing base, sugar, and phosphate",
+          "job": "is the unit incorporated into nucleic-acid polymers"
+        },
+        {
+          "name": "Nucleoside",
+          "kind": "base-plus-sugar unit",
+          "visual": "the same pass after the phosphate tag has been removed",
+          "job": "consists of a nitrogenous base joined to a sugar without phosphate"
+        },
+        {
+          "name": "Backbone phosphate",
+          "kind": "strand connector component",
+          "visual": "a phosphate tag positioned between neighboring sugars",
+          "job": "contributes to the sugar-phosphate backbone when the nucleotide is incorporated into a strand"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **Nucleotide Pass Counter**. A customs-style counter has three trays labeled BASE, SUGAR, and PHOSPHATE. A page receives a gold pass only when all three pieces are present. A side lane removes the phosphate and prints a different label. The Nitrogenous-base tray is on your left, the Nucleotide assembly is directly ahead, and the Nucleoside lane marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **Nucleotide Pass Counter**. A customs-style counter has three trays labeled BASE, SUGAR, and PHOSPHATE. A page receives a gold pass only when all three pieces are present. A side lane removes the phosphate and prints a different label. The Nitrogenous-base tray is on your left, the Nucleotide assembly is directly ahead, and the Nucleoside lane marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "Nia places a nitrogenous base in the first tray, a five-carbon sugar in the second, and a phosphate in the third. Together those components form a **nucleotide**. Free nucleotide precursors can carry additional phosphates during cellular reactions, but the nucleotide incorporated into a strand contributes one phosphate to the repeating backbone.",
+        "She removes the phosphate from a second model. Base plus sugar without phosphate is a **nucleoside**. The words sound similar because the structures are similar; the phosphate is the decisive difference.",
+        "On the finished strand model, phosphate groups sit between neighboring sugars as part of the sugar-phosphate backbone. The pass counter releases the base pieces into a reading room where their ring shapes are projected onto the walls."
+      ],
+      "story_close": "On the finished strand model, phosphate groups sit between neighboring sugars as part of the sugar-phosphate backbone. The pass counter releases the base pieces into a reading room where their ring shapes are projected onto the walls.",
+      "object_ids": [
+        "MO-APBIO-U1-NA003",
+        "MO-APBIO-U1-NA004",
+        "MO-APBIO-U1-NA011"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA003",
+          "term": "Nucleotide",
+          "story": "an entry pass assembled from a base card, a five-sided sugar token, and a phosphate tag",
+          "science": "A nucleotide consists of a nitrogenous base, a five-carbon sugar, and phosphate. In a nucleic-acid strand, each incorporated nucleotide contributes one phosphate to the sugar-phosphate backbone.",
+          "exact_name": true,
+          "hint": "an entry pass assembled from a base card, a five-sided sugar token, and a phosphate tag"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA004",
+          "term": "Backbone phosphate in an incorporated nucleotide",
+          "story": "a free precursor tray beside a stamped sugar-phosphate backbone rail",
+          "science": "Within a nucleic-acid strand, phosphate groups connect adjacent nucleotide units as part of the sugar-phosphate backbone.",
+          "exact_name": false,
+          "hint": "a free precursor tray beside a stamped sugar-phosphate backbone rail"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA011",
+          "term": "Nucleoside",
+          "story": "a base card and sugar token standing SIDE-by-side while phosphate waits outside the lane",
+          "science": "A nucleoside is a nitrogenous base joined to a sugar without a phosphate group.",
+          "exact_name": true,
+          "hint": "a base card and sugar token standing SIDE-by-side while phosphate waits outside the lane"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Nucleotide",
+          "meaning": "A nucleotide consists of a nitrogenous base, a five-carbon sugar, and phosphate. In a nucleic-acid strand, each incorporated nucleotide contributes one phosphate to the sugar-phosphate backbone.",
+          "image": "an entry pass assembled from a base card, a five-sided sugar token, and a phosphate tag"
+        },
+        {
+          "term": "Backbone phosphate in an incorporated nucleotide",
+          "meaning": "Within a nucleic-acid strand, phosphate groups connect adjacent nucleotide units as part of the sugar-phosphate backbone.",
+          "image": "a free precursor tray beside a stamped sugar-phosphate backbone rail"
+        },
+        {
+          "term": "Nucleoside",
+          "meaning": "A nucleoside is a nitrogenous base joined to a sugar without a phosphate group.",
+          "image": "a base card and sugar token standing SIDE-by-side while phosphate waits outside the lane"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-NA003",
+      "checkpoint_prompt": "What molecule contains a nitrogenous base, a five-carbon sugar, and phosphate and serves as the building unit of nucleic acids?",
+      "next_locus": "Ring Reading Room"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Ring Reading Room",
+      "title": "One Ring or Two",
+      "scene_kicker": "The nitrogenous bases fall into two structural families.",
+      "location_description": "The room is dark except for five projected base silhouettes. Cytosine, thymine, and uracil each cast one ring on the left wall. Adenine and guanine cast two fused rings on the right.",
+      "scene_layout": {
+        "orientation": "Single-ring bases are left, a sorting lectern is center, and two-ring bases are right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Pyrimidine wall",
+            "symbol": "1",
+            "description": "Displays cytosine, thymine, and uracil as single-ring bases."
+          },
+          {
+            "position": "center",
+            "label": "Base sorter",
+            "symbol": "B",
+            "description": "Sorts nitrogenous bases by ring framework."
+          },
+          {
+            "position": "right",
+            "label": "Purine wall",
+            "symbol": "2",
+            "description": "Displays adenine and guanine as two-ring bases."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "Pyrimidines",
+          "kind": "base class",
+          "visual": "C, T, and U cards carrying one-ring silhouettes",
+          "job": "are nitrogenous bases with a single-ring framework"
+        },
+        {
+          "name": "Purines",
+          "kind": "base class",
+          "visual": "A and G cards carrying two-ring silhouettes",
+          "job": "are nitrogenous bases with a two-ring framework"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **Ring Reading Room**. The room is dark except for five projected base silhouettes. Cytosine, thymine, and uracil each cast one ring on the left wall. Adenine and guanine cast two fused rings on the right. The Pyrimidine wall is on your left, the Base sorter is directly ahead, and the Purine wall marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **Ring Reading Room**. The room is dark except for five projected base silhouettes. Cytosine, thymine, and uracil each cast one ring on the left wall. Adenine and guanine cast two fused rings on the right. The Pyrimidine wall is on your left, the Base sorter is directly ahead, and the Purine wall marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "Nia turns on the left projector. Cytosine, thymine, and uracil each show a single-ring framework. Those bases are **pyrimidines**.",
+        "The right projector enlarges adenine and guanine. Their bases contain two fused rings; they are **purines**.",
+        "The ring classification tells you what kind of base you are holding, but it does not yet tell you whether the manuscript is DNA or RNA. For that, Nia carries the base cards into a gallery where the sugars and T/U labels are paired side by side."
+      ],
+      "story_close": "The ring classification tells you what kind of base you are holding, but it does not yet tell you whether the manuscript is DNA or RNA. For that, Nia carries the base cards into a gallery where the sugars and T/U labels are paired side by side.",
+      "object_ids": [
+        "MO-APBIO-U1-NA005",
+        "MO-APBIO-U1-NA006"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA005",
+          "term": "Pyrimidine",
+          "story": "a PYRAMID DINES at a table with one ring and seats labeled C, T, and U",
+          "science": "Cytosine, thymine, and uracil are pyrimidines, nitrogenous bases with a single-ring framework.",
+          "exact_name": true,
+          "hint": "a PYRAMID DINES at a table with one ring and seats labeled C, T, and U"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA006",
+          "term": "Purine",
+          "story": "a PURRING cat wearing two fused rings beside A and G cards",
+          "science": "Adenine and guanine are purines, nitrogenous bases with a two-ring framework.",
+          "exact_name": true,
+          "hint": "a PURRING cat wearing two fused rings beside A and G cards"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Pyrimidine",
+          "meaning": "Cytosine, thymine, and uracil are pyrimidines, nitrogenous bases with a single-ring framework.",
+          "image": "a PYRAMID DINES at a table with one ring and seats labeled C, T, and U"
+        },
+        {
+          "term": "Purine",
+          "meaning": "Adenine and guanine are purines, nitrogenous bases with a two-ring framework.",
+          "image": "a PURRING cat wearing two fused rings beside A and G cards"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-NA005",
+      "checkpoint_prompt": "",
+      "next_locus": "DNA/RNA Sugar Gallery"
+    },
+    {
+      "scene_index": 3,
+      "locus": "DNA/RNA Sugar Gallery",
+      "title": "The Sugar and Base Clues",
+      "scene_kicker": "DNA and RNA can be distinguished by their sugars and by thymine versus uracil.",
+      "location_description": "Two long display cases run parallel down the gallery. The DNA case contains deoxyribose sugar and thymine cards. The RNA case contains ribose sugar and uracil cards. Adenine, cytosine, and guanine appear in both.",
+      "scene_layout": {
+        "orientation": "DNA display is left, shared A/C/G cards sit center, and RNA display is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "DNA case",
+            "symbol": "D/T",
+            "description": "Contains deoxyribose and thymine."
+          },
+          {
+            "position": "center",
+            "label": "Shared bases",
+            "symbol": "A C G",
+            "description": "Adenine, cytosine, and guanine occur in both DNA and RNA."
+          },
+          {
+            "position": "right",
+            "label": "RNA case",
+            "symbol": "R/U",
+            "description": "Contains ribose and uracil."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "Deoxyribose",
+          "kind": "DNA sugar",
+          "visual": "a five-carbon sugar card with the DNA case seal",
+          "job": "is the sugar found in DNA"
+        },
+        {
+          "name": "Ribose",
+          "kind": "RNA sugar",
+          "visual": "a five-carbon sugar card with the RNA case seal",
+          "job": "is the sugar found in RNA"
+        },
+        {
+          "name": "Thymine",
+          "kind": "DNA base",
+          "visual": "a T card clipped only into the DNA case",
+          "job": "is the nitrogenous base used in DNA in place of uracil"
+        },
+        {
+          "name": "Uracil",
+          "kind": "RNA base",
+          "visual": "a U card clipped only into the RNA case",
+          "job": "is the nitrogenous base used in RNA in place of thymine"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **DNA/RNA Sugar Gallery**. Two long display cases run parallel down the gallery. The DNA case contains deoxyribose sugar and thymine cards. The RNA case contains ribose sugar and uracil cards. Adenine, cytosine, and guanine appear in both. The DNA case is on your left, the Shared bases is directly ahead, and the RNA case marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **DNA/RNA Sugar Gallery**. Two long display cases run parallel down the gallery. The DNA case contains deoxyribose sugar and thymine cards. The RNA case contains ribose sugar and uracil cards. Adenine, cytosine, and guanine appear in both. The DNA case is on your left, the Shared bases is directly ahead, and the RNA case marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "Nia places the DNA and RNA sugar cards beside each other. DNA contains **deoxyribose**; RNA contains **ribose**. The names of the nucleic acids preserve that distinction.",
+        "She then slides a T card into the DNA case: **thymine** is used in DNA. In the RNA case, a U card takes its place: **uracil** is used in RNA. Adenine, cytosine, and guanine remain available to both.",
+        "The two cases now have enough identity to rebuild a strand. Their component trays move onto a narrow bridge where the 5′ and 3′ ends are marked in gold."
+      ],
+      "story_close": "The two cases now have enough identity to rebuild a strand. Their component trays move onto a narrow bridge where the 5′ and 3′ ends are marked in gold.",
+      "object_ids": [
+        "MO-APBIO-U1-NA007",
+        "MO-APBIO-U1-NA008",
+        "MO-APBIO-U1-NA009",
+        "MO-APBIO-U1-NA010"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA007",
+          "term": "Thymine",
+          "story": "THYME herb resting on a large T card at the deoxy-sugar display",
+          "science": "Thymine is a nitrogenous base used in DNA.",
+          "exact_name": true,
+          "hint": "THYME herb resting on a large T card at the deoxy-sugar display"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA008",
+          "term": "Uracil",
+          "story": "a seal saying 'YOU’RE A SEAL' while holding a U card at the ribose display",
+          "science": "Uracil is a nitrogenous base used in RNA.",
+          "exact_name": true,
+          "hint": "a seal saying 'YOU’RE A SEAL' while holding a U card at the ribose display"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA009",
+          "term": "Deoxyribose",
+          "story": "a sugar RIB cage with one oxygen symbol crossed out on the DNA shelf",
+          "science": "DNA contains the five-carbon sugar deoxyribose.",
+          "exact_name": true,
+          "hint": "a sugar RIB cage with one oxygen symbol crossed out on the DNA shelf"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA010",
+          "term": "Ribose",
+          "story": "an intact sugar RIB cage on the RNA shelf",
+          "science": "RNA contains the five-carbon sugar ribose.",
+          "exact_name": true,
+          "hint": "an intact sugar RIB cage on the RNA shelf"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Thymine",
+          "meaning": "Thymine is a nitrogenous base used in DNA.",
+          "image": "THYME herb resting on a large T card at the deoxy-sugar display"
+        },
+        {
+          "term": "Uracil",
+          "meaning": "Uracil is a nitrogenous base used in RNA.",
+          "image": "a seal saying 'YOU’RE A SEAL' while holding a U card at the ribose display"
+        },
+        {
+          "term": "Deoxyribose",
+          "meaning": "DNA contains the five-carbon sugar deoxyribose.",
+          "image": "a sugar RIB cage with one oxygen symbol crossed out on the DNA shelf"
+        },
+        {
+          "term": "Ribose",
+          "meaning": "RNA contains the five-carbon sugar ribose.",
+          "image": "an intact sugar RIB cage on the RNA shelf"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-NA007",
+      "checkpoint_prompt": "",
+      "next_locus": "Backbone Bridge"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Backbone Bridge",
+      "title": "The Strand Has Two Different Ends",
+      "scene_kicker": "The sugar-phosphate backbone has direction because its two ends are chemically distinct.",
+      "location_description": "A narrow bridge is built from alternating sugar tiles and phosphate rails. A large 5′ marker stands at the entrance beside a phosphate. A 3′ marker stands at the far end beside a free hydroxyl group.",
+      "scene_layout": {
+        "orientation": "The 5′ phosphate end begins left, repeating sugar-phosphate links cross center, and the 3′ hydroxyl end is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "5′ end",
+            "symbol": "5′ P",
+            "description": "Marks the strand end associated with phosphate at the sugar’s 5′ carbon."
+          },
+          {
+            "position": "center",
+            "label": "Sugar-phosphate backbone",
+            "symbol": "S—P—S",
+            "description": "Adjacent nucleotides are connected through covalent phosphodiester linkages."
+          },
+          {
+            "position": "right",
+            "label": "3′ end",
+            "symbol": "3′ OH",
+            "description": "Marks the strand end associated with a free hydroxyl on the sugar’s 3′ carbon."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "5′ phosphate end",
+          "kind": "strand end",
+          "visual": "gold 5′ marker beside a phosphate group",
+          "job": "identifies one chemically distinct end of the nucleic-acid strand"
+        },
+        {
+          "name": "3′ hydroxyl end",
+          "kind": "strand end",
+          "visual": "gold 3′ marker beside a free hydroxyl group",
+          "job": "identifies the opposite chemically distinct end"
+        },
+        {
+          "name": "Phosphodiester linkage",
+          "kind": "backbone covalent bond",
+          "visual": "a strong clasp connecting neighboring sugar and phosphate units",
+          "job": "covalently joins adjacent nucleotides through the sugar-phosphate backbone"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **Backbone Bridge**. A narrow bridge is built from alternating sugar tiles and phosphate rails. A large 5′ marker stands at the entrance beside a phosphate. A 3′ marker stands at the far end beside a free hydroxyl group. The 5′ end is on your left, the Sugar-phosphate backbone is directly ahead, and the 3′ end marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **Backbone Bridge**. A narrow bridge is built from alternating sugar tiles and phosphate rails. A large 5′ marker stands at the entrance beside a phosphate. A 3′ marker stands at the far end beside a free hydroxyl group. The 5′ end is on your left, the Sugar-phosphate backbone is directly ahead, and the 3′ end marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "At the bridge entrance, Nia taps the **5′ phosphate end**. The 5′ label refers to carbon numbering in the sugar, and the strand end here is associated with phosphate at the 5′ carbon.",
+        "Across the bridge, alternating sugar and phosphate groups create the backbone. Neighboring nucleotide units are covalently connected through **phosphodiester linkages**.",
+        "At the far rail, the strand terminates with a free **3′ hydroxyl end**. These two different ends give the strand directionality. Nia clips a new nucleotide to her belt and leads you to the growth desk built beside the 3′ end."
+      ],
+      "story_close": "At the far rail, the strand terminates with a free **3′ hydroxyl end**. These two different ends give the strand directionality. Nia clips a new nucleotide to her belt and leads you to the growth desk built beside the 3′ end.",
+      "object_ids": [
+        "MO-APBIO-U1-NA012",
+        "MO-APBIO-U1-NA013",
+        "MO-APBIO-U1-NA014"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA012",
+          "term": "5′ phosphate end",
+          "story": "a glowing 5′ flag carrying a phosphate marker at one end of a sugar-phosphate bridge",
+          "science": "The 5′ end of a nucleic-acid strand is associated with the phosphate attached to the sugar’s 5′ carbon.",
+          "exact_name": false,
+          "hint": "a glowing 5′ flag carrying a phosphate marker at one end of a sugar-phosphate bridge"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA013",
+          "term": "3′ hydroxyl end",
+          "story": "a glowing 3′-OH docking light at the opposite end of the bridge",
+          "science": "Nucleic acids have a 3′ hydroxyl end.",
+          "exact_name": false,
+          "hint": "a glowing 3′-OH docking light at the opposite end of the bridge"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA014",
+          "term": "Phosphodiester linkage",
+          "story": "one phosphate bridge gripping two ESTHER handles attached to neighboring sugars",
+          "science": "A phosphodiester linkage is the covalent connection that joins adjacent nucleotides through the sugar-phosphate backbone.",
+          "exact_name": true,
+          "hint": "one phosphate bridge gripping two ESTHER handles attached to neighboring sugars"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "5′ phosphate end",
+          "meaning": "The 5′ end of a nucleic-acid strand is associated with the phosphate attached to the sugar’s 5′ carbon.",
+          "image": "a glowing 5′ flag carrying a phosphate marker at one end of a sugar-phosphate bridge"
+        },
+        {
+          "term": "3′ hydroxyl end",
+          "meaning": "Nucleic acids have a 3′ hydroxyl end.",
+          "image": "a glowing 3′-OH docking light at the opposite end of the bridge"
+        },
+        {
+          "term": "Phosphodiester linkage",
+          "meaning": "A phosphodiester linkage is the covalent connection that joins adjacent nucleotides through the sugar-phosphate backbone.",
+          "image": "one phosphate bridge gripping two ESTHER handles attached to neighboring sugars"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-NA014",
+      "checkpoint_prompt": "What covalent linkage joins adjacent nucleotides through the sugar-phosphate backbone?",
+      "next_locus": "3′ Growth Desk"
+    },
+    {
+      "scene_index": 5,
+      "locus": "3′ Growth Desk",
+      "title": "The Strand Can Grow From Only One End",
+      "scene_kicker": "New nucleotides are added to the 3′ end, so synthesis proceeds 5′→3′.",
+      "location_description": "A drafting desk is attached directly to the 3′ end of the backbone bridge. New nucleotide cards approach on a feeder rail and can connect only at the free 3′ hydroxyl end.",
+      "scene_layout": {
+        "orientation": "Completed 5′ portion lies left, the growing strand passes through center, and the nucleotide-addition tool sits at the 3′ end on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Older 5′ region",
+            "symbol": "5′",
+            "description": "The already-built portion extends away from the growth point."
+          },
+          {
+            "position": "center",
+            "label": "Growing strand",
+            "symbol": "5′→3′",
+            "description": "Makes strand direction visible along the backbone."
+          },
+          {
+            "position": "right",
+            "label": "3′ addition desk",
+            "symbol": "+N",
+            "description": "Adds each new nucleotide to the strand’s 3′ end."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "3′-end addition",
+          "kind": "polymerization rule",
+          "visual": "a stamping tool that accepts a new nucleotide only at the free 3′ hydroxyl",
+          "job": "extends the nucleic-acid strand by adding nucleotides at the 3′ end"
+        },
+        {
+          "name": "5′→3′ directionality",
+          "kind": "synthesis direction",
+          "visual": "an arrow painted from the older 5′ end toward the growing 3′ end",
+          "job": "describes the direction in which the new strand is extended"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **3′ Growth Desk**. A drafting desk is attached directly to the 3′ end of the backbone bridge. New nucleotide cards approach on a feeder rail and can connect only at the free 3′ hydroxyl end. The Older 5′ region is on your left, the Growing strand is directly ahead, and the 3′ addition desk marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **3′ Growth Desk**. A drafting desk is attached directly to the 3′ end of the backbone bridge. New nucleotide cards approach on a feeder rail and can connect only at the free 3′ hydroxyl end. The Older 5′ region is on your left, the Growing strand is directly ahead, and the 3′ addition desk marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "Nia tries the new nucleotide at the 5′ end. The tool refuses it. She moves to the free 3′ hydroxyl and the nucleotide locks into place. During nucleic-acid synthesis, **new nucleotides are added to the 3′ end** of the growing strand.",
+        "Because growth occurs at that end, the strand is synthesized in the **5′→3′ direction**. The 5′ and 3′ labels are therefore not decorative arrows; they describe real chemical directionality in the backbone.",
+        "The one-way tool demonstrates **nucleotide addition to 3′ end**: each incoming nucleotide is attached at the growing strand's free 3′ end, so synthesis proceeds in the 5′→3′ direction.",
+        "Each new addition lengthens the manuscript by one base. The growing strip feeds into a cataloging machine that reads the bases not merely as parts, but as information."
+      ],
+      "story_close": "Each new addition lengthens the manuscript by one base. The growing strip feeds into a cataloging machine that reads the bases not merely as parts, but as information.",
+      "object_ids": [
+        "MO-APBIO-U1-NA015",
+        "MO-APBIO-U1-NA016",
+        "MO-APBIO-U1-NA025"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA015",
+          "term": "3′-end nucleotide addition",
+          "story": "a clerk adding each incoming nucleotide only at the glowing 3′-OH socket",
+          "science": "During nucleic-acid synthesis, nucleotides are added to the 3′ end of the growing strand.",
+          "exact_name": false,
+          "hint": "a clerk adding each incoming nucleotide only at the glowing 3′-OH socket"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA016",
+          "term": "5′→3′ directionality",
+          "story": "a one-way route arrow running from a 5′ marker toward the active 3′ growth desk",
+          "science": "Nucleic acid strands have directionality defined by 5′ and 3′ ends.",
+          "exact_name": false,
+          "hint": "a one-way route arrow running from a 5′ marker toward the active 3′ growth desk"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA025",
+          "term": "Nucleotide addition to 3′ end",
+          "story": "an incoming nucleotide repeatedly docking at the same glowing 3′-OH bay",
+          "science": "During nucleic-acid polymerization, a new nucleotide is added to the 3′ end of the growing strand.",
+          "exact_name": true,
+          "hint": "an incoming nucleotide repeatedly docking at the same glowing 3′-OH bay"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "3′-end nucleotide addition",
+          "meaning": "During nucleic-acid synthesis, nucleotides are added to the 3′ end of the growing strand.",
+          "image": "a clerk adding each incoming nucleotide only at the glowing 3′-OH socket"
+        },
+        {
+          "term": "5′→3′ directionality",
+          "meaning": "Nucleic acid strands have directionality defined by 5′ and 3′ ends.",
+          "image": "a one-way route arrow running from a 5′ marker toward the active 3′ growth desk"
+        },
+        {
+          "term": "Nucleotide addition to 3′ end",
+          "meaning": "During nucleic-acid polymerization, a new nucleotide is added to the 3′ end of the growing strand.",
+          "image": "an incoming nucleotide repeatedly docking at the same glowing 3′-OH bay"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-NA025",
+      "checkpoint_prompt": "",
+      "next_locus": "Sequence Catalog"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Sequence Catalog",
+      "title": "The Order of Bases Is the Message",
+      "scene_kicker": "A nucleic-acid strand stores information in sequence, not simply in how many nucleotides it contains.",
+      "location_description": "Tall catalog shelves contain strips with different base orders. Two strips have the same number and types of nucleotide cards but in different sequences; the translation display assigns them different downstream messages.",
+      "scene_layout": {
+        "orientation": "Example sequences are left, the catalog reader is center, and a gene-to-protein information display is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Sequence shelves",
+            "symbol": "ACGT",
+            "description": "Store nucleotide strings in specific orders."
+          },
+          {
+            "position": "center",
+            "label": "Catalog reader",
+            "symbol": "→",
+            "description": "Reads order position by position."
+          },
+          {
+            "position": "right",
+            "label": "Information output",
+            "symbol": "protein",
+            "description": "Shows how a gene’s nucleotide sequence can specify an amino-acid sequence and influence protein structure."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "Nucleotide sequence",
+          "kind": "information pattern",
+          "visual": "an ordered string of A/C/G/T or A/C/G/U cards",
+          "job": "encodes biological information in the linear order of nucleotides"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **Sequence Catalog**. Tall catalog shelves contain strips with different base orders. Two strips have the same number and types of nucleotide cards but in different sequences; the translation display assigns them different downstream messages. The Sequence shelves is on your left, the Catalog reader is directly ahead, and the Information output marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **Sequence Catalog**. Tall catalog shelves contain strips with different base orders. Two strips have the same number and types of nucleotide cards but in different sequences; the translation display assigns them different downstream messages. The Sequence shelves is on your left, the Catalog reader is directly ahead, and the Information output marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "Nia holds two strips with the same length and the same collection of base cards. Their orders differ, so their information differs. Biological information is encoded in the **linear nucleotide sequence**, not simply in the number of nucleotides present.",
+        "In a gene, that sequence ultimately specifies an amino-acid sequence, connecting nucleic-acid information to protein structure and function.",
+        "The restored DNA sequence is ready, but its second strand is lying upside down beside it. Nia carries both strips toward the central spiral staircase, where opposite direction is built into the architecture."
+      ],
+      "story_close": "The restored DNA sequence is ready, but its second strand is lying upside down beside it. Nia carries both strips toward the central spiral staircase, where opposite direction is built into the architecture.",
+      "object_ids": [
+        "MO-APBIO-U1-NA017"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA017",
+          "term": "Nucleotide sequence encodes information",
+          "story": "a scanner reading the order of nucleotide-letter tiles along a scroll and sending that order toward a protein instruction board",
+          "science": "Biological information is encoded in the linear sequence of nucleotides. In genes, nucleotide sequence ultimately specifies amino-acid sequence and can therefore affect protein structure.",
+          "exact_name": false,
+          "hint": "a scanner reading the order of nucleotide-letter tiles along a scroll and sending that order toward a protein instruction board"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Nucleotide sequence encodes information",
+          "meaning": "Biological information is encoded in the linear sequence of nucleotides. In genes, nucleotide sequence ultimately specifies amino-acid sequence and can therefore affect protein structure.",
+          "image": "a scanner reading the order of nucleotide-letter tiles along a scroll and sending that order toward a protein instruction board"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-NA017",
+      "checkpoint_prompt": "",
+      "next_locus": "Antiparallel Spiral Staircase"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Antiparallel Spiral Staircase",
+      "title": "Two Strands Running Opposite Ways",
+      "scene_kicker": "The DNA double helix is built from two strands whose directions oppose one another.",
+      "location_description": "Two rails wind around a central spiral staircase. One rail begins 5′ at the bottom and reaches 3′ at the top. The neighboring rail begins 3′ at the bottom and reaches 5′ at the top.",
+      "scene_layout": {
+        "orientation": "The first strand coils up the left side, the stair axis is center, and the opposite-direction strand coils up the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Strand A",
+            "symbol": "5′↑3′",
+            "description": "Runs upward from its 5′ end toward its 3′ end."
+          },
+          {
+            "position": "center",
+            "label": "Double-helix axis",
+            "symbol": "🧬",
+            "description": "The paired strands twist around the same central axis."
+          },
+          {
+            "position": "right",
+            "label": "Strand B",
+            "symbol": "3′↑5′",
+            "description": "Runs upward in the opposite chemical orientation."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "DNA double helix",
+          "kind": "two-strand structure",
+          "visual": "two paired polynucleotide rails twisted around a shared axis",
+          "job": "is the usual double-stranded helical structure of DNA"
+        },
+        {
+          "name": "Antiparallel strands",
+          "kind": "opposite orientations",
+          "visual": "neighboring rails with 5′→3′ arrows pointing in opposite directions",
+          "job": "run in opposite 5′→3′ orientations"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **Antiparallel Spiral Staircase**. Two rails wind around a central spiral staircase. One rail begins 5′ at the bottom and reaches 3′ at the top. The neighboring rail begins 3′ at the bottom and reaches 5′ at the top. The Strand A is on your left, the Double-helix axis is directly ahead, and the Strand B marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **Antiparallel Spiral Staircase**. Two rails wind around a central spiral staircase. One rail begins 5′ at the bottom and reaches 3′ at the top. The neighboring rail begins 3′ at the bottom and reaches 5′ at the top. The Strand A is on your left, the Double-helix axis is directly ahead, and the Strand B marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "Nia lays one DNA strand along the left rail. Its 5′ end begins low and its 3′ end rises. The second strand can pair properly only when its direction is reversed: 3′ at the bottom and 5′ at the top.",
+        "That opposite orientation is **antiparallel**. DNA consists of two antiparallel polynucleotide strands twisted into a **double helix**.",
+        "As the rails twist upward, base cards turn inward toward one another. The staircase opens onto a reading table where the pairing rules are built into matching slots."
+      ],
+      "story_close": "As the rails twist upward, base cards turn inward toward one another. The staircase opens onto a reading table where the pairing rules are built into matching slots.",
+      "object_ids": [
+        "MO-APBIO-U1-NA018",
+        "MO-APBIO-U1-NA019"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA018",
+          "term": "DNA double helix",
+          "story": "two polynucleotide rails twisting together into one spiral staircase",
+          "science": "DNA consists of two antiparallel polynucleotide strands twisted into a double helix.",
+          "exact_name": false,
+          "hint": "two polynucleotide rails twisting together into one spiral staircase"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA019",
+          "term": "Antiparallel",
+          "story": "two lines of ANTS walking on parallel helical rails in opposite directions",
+          "science": "DNA strands are antiparallel and run in opposite 5′ to 3′ orientations.",
+          "exact_name": true,
+          "hint": "two lines of ANTS walking on parallel helical rails in opposite directions"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "DNA double helix",
+          "meaning": "DNA consists of two antiparallel polynucleotide strands twisted into a double helix.",
+          "image": "two polynucleotide rails twisting together into one spiral staircase"
+        },
+        {
+          "term": "Antiparallel",
+          "meaning": "DNA strands are antiparallel and run in opposite 5′ to 3′ orientations.",
+          "image": "two lines of ANTS walking on parallel helical rails in opposite directions"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-NA019",
+      "checkpoint_prompt": "What term describes DNA strands running in opposite 5′→3′ orientations?",
+      "next_locus": "Base-Pair Reading Table"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Base-Pair Reading Table",
+      "title": "The Matching Rules Inside the Helix",
+      "scene_kicker": "Complementary base pairing holds the two DNA strands together and also allows RNA to pair where sequences are complementary.",
+      "location_description": "A long reading table has matching base slots. A fits only T in the DNA tray; C fits G. Beside it, an RNA ribbon folds back on itself so A pairs with U and C pairs with G.",
+      "scene_layout": {
+        "orientation": "DNA A–T pairing is left, C–G pairing is center, and the single-stranded folding RNA model is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "A–T tray",
+            "symbol": "A··T",
+            "description": "DNA adenine and thymine pair through hydrogen bonds."
+          },
+          {
+            "position": "center",
+            "label": "C–G tray",
+            "symbol": "C···G",
+            "description": "DNA cytosine and guanine pair through hydrogen bonds."
+          },
+          {
+            "position": "right",
+            "label": "RNA fold",
+            "symbol": "A·U",
+            "description": "RNA is typically single stranded but can fold through complementary intramolecular base pairing, including A–U and C–G."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "A–T pair",
+          "kind": "DNA complementary pair",
+          "visual": "adenine and thymine joined by two dotted hydrogen bonds",
+          "job": "pairs A with T in DNA"
+        },
+        {
+          "name": "C–G pair",
+          "kind": "complementary pair",
+          "visual": "cytosine and guanine joined by three dotted hydrogen bonds",
+          "job": "pairs C with G in DNA and can also occur in RNA"
+        },
+        {
+          "name": "RNA strand",
+          "kind": "usually single strand",
+          "visual": "one ribbon that bends back so complementary regions meet",
+          "job": "is typically single stranded but can form local paired structures within the same molecule"
+        }
+      ],
+      "story_open": "Nia Sol carries the damaged genetic manuscript into **Base-Pair Reading Table**. A long reading table has matching base slots. A fits only T in the DNA tray; C fits G. Beside it, an RNA ribbon folds back on itself so A pairs with U and C pairs with G. The A–T tray is on your left, the C–G tray is directly ahead, and the RNA fold marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+      "story_paragraphs": [
+        "Nia Sol carries the damaged genetic manuscript into **Base-Pair Reading Table**. A long reading table has matching base slots. A fits only T in the DNA tray; C fits G. Beside it, an RNA ribbon folds back on itself so A pairs with U and C pairs with G. The A–T tray is on your left, the C–G tray is directly ahead, and the RNA fold marks the other side of the archive. The same strip of nucleic acid remains in your hands, so each repair changes one identifiable part of the manuscript.",
+        "On the DNA side, **adenine pairs with thymine** through hydrogen bonds. **Cytosine pairs with guanine** through hydrogen bonds. These complementary relationships place a purine opposite a pyrimidine inside the double helix.",
+        "The RNA ribbon behaves differently as a whole: RNA is **typically single stranded**, yet complementary regions of one RNA molecule can fold back and pair with each other. In RNA, **adenine pairs with uracil**, while **cytosine can pair with guanine** just as C–G pairing occurs in DNA.",
+        "Nia places the fully paired DNA manuscript into a temperature-controlled chamber. The final test will separate the strands without cutting the covalent backbones."
+      ],
+      "story_close": "Nia places the fully paired DNA manuscript into a temperature-controlled chamber. The final test will separate the strands without cutting the covalent backbones.",
+      "object_ids": [
+        "MO-APBIO-U1-NA020",
+        "MO-APBIO-U1-NA021",
+        "MO-APBIO-U1-NA022",
+        "MO-APBIO-U1-NA023",
+        "MO-APBIO-U1-NA024"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA020",
+          "term": "A–T base pairing",
+          "story": "an A card clasping a T card across the DNA page with dashed hydrogen-bond marks",
+          "science": "In DNA, adenine pairs with thymine via hydrogen bonds.",
+          "exact_name": false,
+          "hint": "an A card clasping a T card across the DNA page with dashed hydrogen-bond marks"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA021",
+          "term": "C–G base pairing",
+          "story": "a C card clasping a G card across the base-pair table",
+          "science": "In DNA, cytosine pairs with guanine via hydrogen bonds.",
+          "exact_name": false,
+          "hint": "a C card clasping a G card across the base-pair table"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA022",
+          "term": "RNA is typically single stranded",
+          "story": "one RNA ribbon folding back on itself so complementary regions can meet",
+          "science": "RNA is typically single stranded and can fold through complementary base pairing within the same RNA molecule.",
+          "exact_name": false,
+          "hint": "one RNA ribbon folding back on itself so complementary regions can meet"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA023",
+          "term": "A–U base pairing",
+          "story": "an A card clasping the U card on the RNA page",
+          "science": "In RNA, adenine pairs with uracil.",
+          "exact_name": false,
+          "hint": "an A card clasping the U card on the RNA page"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA024",
+          "term": "RNA C–G base pairing",
+          "story": "a folded RNA ribbon bringing a C card against a G card",
+          "science": "Cytosine can pair with guanine by hydrogen bonding in RNA, just as C–G pairing occurs in DNA.",
+          "exact_name": false,
+          "hint": "a folded RNA ribbon bringing a C card against a G card"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "A–T base pairing",
+          "meaning": "In DNA, adenine pairs with thymine via hydrogen bonds.",
+          "image": "an A card clasping a T card across the DNA page with dashed hydrogen-bond marks"
+        },
+        {
+          "term": "C–G base pairing",
+          "meaning": "In DNA, cytosine pairs with guanine via hydrogen bonds.",
+          "image": "a C card clasping a G card across the base-pair table"
+        },
+        {
+          "term": "RNA is typically single stranded",
+          "meaning": "RNA is typically single stranded and can fold through complementary base pairing within the same RNA molecule.",
+          "image": "one RNA ribbon folding back on itself so complementary regions can meet"
+        },
+        {
+          "term": "A–U base pairing",
+          "meaning": "In RNA, adenine pairs with uracil.",
+          "image": "an A card clasping the U card on the RNA page"
+        },
+        {
+          "term": "RNA C–G base pairing",
+          "meaning": "Cytosine can pair with guanine by hydrogen bonding in RNA, just as C–G pairing occurs in DNA.",
+          "image": "a folded RNA ribbon bringing a C card against a G card"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-NA020",
+      "checkpoint_prompt": "",
+      "next_locus": "DNA Melting Room"
+    },
+    {
+      "scene_index": 9,
+      "locus": "DNA Melting Room",
+      "title": "Separate the Strands Without Cutting Them",
+      "scene_kicker": "Heating can disrupt noncovalent pairing while leaving each covalent backbone intact.",
+      "location_description": "A temperature chamber holds three paired DNA strips. One is rich in A–T pairs, one in G–C pairs, and one mixed. Dotted hydrogen bonds disappear as temperature rises, but the sugar-phosphate rails remain unbroken.",
+      "scene_layout": {
+        "orientation": "A–T-rich sample is left, melting DNA is center, and G–C-rich sample with a higher-temperature marker is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "A–T-rich sample",
+            "symbol": "2",
+            "description": "Each A–T pair contributes two hydrogen bonds."
+          },
+          {
+            "position": "center",
+            "label": "Melting chamber",
+            "symbol": "♨",
+            "description": "Heat disrupts the noncovalent interactions stabilizing the double helix and separates the strands."
+          },
+          {
+            "position": "right",
+            "label": "G–C-rich sample",
+            "symbol": "3",
+            "description": "Each G–C pair contributes three hydrogen bonds and higher GC content generally raises melting temperature under comparable conditions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Nia Sol",
+          "kind": "guide",
+          "visual": "black archivist coat, gold page clips, violet inspection lamp",
+          "job": "keeps one damaged nucleic-acid manuscript with you while each room restores a different structural feature"
+        },
+        {
+          "name": "Hydrogen-bond count",
+          "kind": "pairing comparison",
+          "visual": "A–T card with two dotted lines and G–C card with three",
+          "job": "shows the two-versus-three hydrogen-bond difference without treating count alone as the whole explanation of duplex stability"
+        },
+        {
+          "name": "DNA denaturation",
+          "kind": "strand separation",
+          "visual": "two intact covalent backbones pulling apart as dotted base-pair interactions vanish",
+          "job": "separates complementary strands when noncovalent interactions are disrupted"
+        },
+        {
+          "name": "GC content",
+          "kind": "sequence property",
+          "visual": "a slider increasing the fraction of G–C base pairs",
+          "job": "generally raises DNA melting temperature under comparable conditions, alongside stacking, sequence, length, ionic conditions, and other thermodynamic factors"
+        }
+      ],
+      "story_open": "The first cards make the pairwise difference clear: an **A–T base pair forms two hydrogen bonds**, while a **G–C base pair forms three**. That contributes to stability, but Nia immediately covers a sign that says THREE IS THE ONLY REASON. DNA duplex stability also depends on sequence-dependent stacking, strand length, ionic conditions, and other thermodynamic effects.",
+      "story_paragraphs": [
+        "The first cards make the pairwise difference clear: an **A–T base pair forms two hydrogen bonds**, while a **G–C base pair forms three**. That contributes to stability, but Nia immediately covers a sign that says THREE IS THE ONLY REASON. DNA duplex stability also depends on sequence-dependent stacking, strand length, ionic conditions, and other thermodynamic effects.",
+        "She raises the temperature. The dotted interactions between complementary bases disappear and the two strands separate. This is **DNA denaturation**. The covalent sugar-phosphate backbones remain intact during ordinary thermal denaturation; the manuscript has opened, not been chopped into nucleotides.",
+        "Under comparable conditions, DNA regions with higher **GC content** generally melt at higher temperatures than equivalent lower-GC regions. The bond-count difference contributes, but it is not a complete mechanistic explanation by itself.",
+        "Nia calls the side-by-side cards a **base-pair hydrogen-bond count comparison**. A–T forms two hydrogen bonds and G–C forms three, although that count is only one contributor to overall DNA duplex stability.",
+        "Nia cools the chamber and the complementary strands pair again. She clips the restored manuscript into its case. From base + sugar + phosphate to directional backbone, sequence, antiparallel helix, complementary pairing, and melting, the archive is readable again."
+      ],
+      "story_close": "Nia cools the chamber and the complementary strands pair again. She clips the restored manuscript into its case. From base + sugar + phosphate to directional backbone, sequence, antiparallel helix, complementary pairing, and melting, the archive is readable again.",
+      "object_ids": [
+        "MO-APBIO-U1-NA026",
+        "MO-APBIO-U1-NA027",
+        "MO-APBIO-U1-NA028"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-NA026",
+          "term": "Base-pair hydrogen-bond count comparison",
+          "story": "an A–T pair displaying two dashed connections beside a G–C pair displaying three",
+          "science": "In DNA, an A–T base pair forms two hydrogen bonds and a G–C base pair forms three. The difference can contribute to stability, but hydrogen-bond count should not be encoded as the sole determinant of DNA duplex thermal stability.",
+          "exact_name": true,
+          "hint": "an A–T pair displaying two dashed connections beside a G–C pair displaying three"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA027",
+          "term": "DNA denaturation",
+          "story": "heat opening the paired DNA zipper while both sugar-phosphate rails remain continuous",
+          "science": "Heating can separate complementary DNA strands by disrupting the noncovalent interactions that stabilize the double helix; the covalent sugar-phosphate backbones remain intact in ordinary thermal denaturation.",
+          "exact_name": true,
+          "hint": "heat opening the paired DNA zipper while both sugar-phosphate rails remain continuous"
+        },
+        {
+          "object_id": "MO-APBIO-U1-NA028",
+          "term": "GC content and thermal stability",
+          "story": "two equal-length DNA sections heating side-by-side while the GC-richer section remains paired to a higher temperature and a context panel shows stacking, length, and ionic conditions",
+          "science": "DNA regions with higher G–C content generally melt at higher temperatures than equivalently sized lower-GC regions under comparable conditions. Do not explain this only by counting hydrogen bonds: DNA thermal stability also depends on nearest-neighbor sequence/stacking interactions, strand length, ionic conditions, and other thermodynamic factors.",
+          "exact_name": false,
+          "hint": "two equal-length DNA sections heating side-by-side while the GC-richer section remains paired to a higher temperature and a context panel shows stacking, length, and ionic conditions"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Base-pair hydrogen-bond count comparison",
+          "meaning": "In DNA, an A–T base pair forms two hydrogen bonds and a G–C base pair forms three. The difference can contribute to stability, but hydrogen-bond count should not be encoded as the sole determinant of DNA duplex thermal stability.",
+          "image": "an A–T pair displaying two dashed connections beside a G–C pair displaying three"
+        },
+        {
+          "term": "DNA denaturation",
+          "meaning": "Heating can separate complementary DNA strands by disrupting the noncovalent interactions that stabilize the double helix; the covalent sugar-phosphate backbones remain intact in ordinary thermal denaturation.",
+          "image": "heat opening the paired DNA zipper while both sugar-phosphate rails remain continuous"
+        },
+        {
+          "term": "GC content and thermal stability",
+          "meaning": "DNA regions with higher G–C content generally melt at higher temperatures than equivalently sized lower-GC regions under comparable conditions. Do not explain this only by counting hydrogen bonds: DNA thermal stability also depends on nearest-neighbor sequence/stacking interactions, strand length, ionic conditions, and other thermodynamic factors.",
+          "image": "two equal-length DNA sections heating side-by-side while the GC-richer section remains paired to a higher temperature and a context panel shows stacking, length, and ionic conditions"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-NA027",
+      "checkpoint_prompt": "What process separates complementary DNA strands by disrupting noncovalent interactions while leaving the covalent sugar-phosphate backbones intact?",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}

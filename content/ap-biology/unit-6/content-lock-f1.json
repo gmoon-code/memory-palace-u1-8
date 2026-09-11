@@ -1,0 +1,52 @@
+{
+  "schema": "memory-palace-u6-f1-content-lock-1.0",
+  "unit_id": "unit-6",
+  "lock_status": "LOCKED_F1",
+  "scientific_content_lock": "LOCKED_F1",
+  "protected_file_count": 7,
+  "protected_files": [
+    {
+      "path": "source/canonical-unit6-f1.json",
+      "bytes": 319952,
+      "sha256": "eb430eadcb08d9a6828a28c9c74b62eb5fcf4cc584fd11e9bb78066dce88aab6"
+    },
+    {
+      "path": "source/coverage-manifest-f1.json",
+      "bytes": 1166,
+      "sha256": "e004d9bad5b63ff2bb50344d9d9bfba60ab7670e5a3fa71032ec567a0605b041"
+    },
+    {
+      "path": "audit/F1_SOURCE_AUDIT.md",
+      "bytes": 2634,
+      "sha256": "41653000445b956502385571f072ba78911638c5df48fbbd812997a120176a1e"
+    },
+    {
+      "path": "audit/F1_REVIEW_FLAGS.md",
+      "bytes": 14297,
+      "sha256": "6179100b464b371ffc9b0889be30eb76ef4dc31d4b9e49426bfa69b859743763"
+    },
+    {
+      "path": "audit/APBIO_Unit6_F1_Source_Lock.xlsx",
+      "bytes": 70813,
+      "sha256": "e415b76dc19454142e5306deb263448a741cf7b9406af12c475a73d5c842c2b8"
+    },
+    {
+      "path": "upstream-u1-u5-protection-f1.json",
+      "bytes": 53379,
+      "sha256": "a200338b6cf37e3ba40b097e4981ab73c651f2d0b8919f089da56bb3782ff494"
+    },
+    {
+      "path": "f1-release-manifest.json",
+      "bytes": 829,
+      "sha256": "fd4d0227d8cf96340420b01118f1688e3394328821fe56e2ebcefd014f7d70e2"
+    }
+  ],
+  "student_runtime": {
+    "journeys": 0,
+    "scenes": 0,
+    "memory_objects": 0,
+    "application_challenges": 0,
+    "student_release": false
+  },
+  "unlock_policy": "Changes to protected Unit 6 F1 science require an explicit scientific-version update and a fresh F1 QA pass."
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "memory-palace-v2-unit8-f4g-lock-1.0",
+  "unit_id": "unit-8",
+  "lock_status": "LOCKED_F4G_J7",
+  "student_release": false,
+  "preview_release": true,
+  "protected_prior_locks": [
+    "f1-source-lock.json",
+    "content-lock-f2.json",
+    "content-lock-f3.json",
+    "content-lock-f4a.json",
+    "content-lock-f4b.json",
+    "content-lock-f4c.json",
+    "content-lock-f4d.json",
+    "content-lock-f4e.json",
+    "content-lock-f4f.json"
+  ],
+  "journey_id": "U8-J7",
+  "scene_count": 4,
+  "knowledge_record_count": 15,
+  "exact_name_target_count": 9,
+  "checkpoint_count": 2,
+  "files": {
+    "narrative-source-f4g.md": {
+      "bytes": 16421,
+      "sha256": "a3cc034b8f2ad17d976cf43f0e737311e8ced41541110e0bc95fac27cd436ce9"
+    },
+    "journeys/U8-J7.json": {
+      "bytes": 59749,
+      "sha256": "b36e3a0446b4473dc9bdfa156e5f6b98b8a3691276c74ace8e7173a6a7de5876"
+    },
+    "journeys-f4g.json": {
+      "bytes": 17229,
+      "sha256": "70d48bad71877cc06a57c66c385347015e00997a44173f3dcc618d962e501f51"
+    },
+    "status-f4g.json": {
+      "bytes": 2609,
+      "sha256": "e1ddaca1e5bc8e09fa701f059403569f4b6a1852684a2858054db94f92f6e991"
+    },
+    "f4g-release-manifest.json": {
+      "bytes": 1091,
+      "sha256": "320bac121be67ac08a111b4aec3e53ec7c26fad78b953e5d46cd0121cb055450"
+    },
+    "docs/UNIT8_F4G_JOURNEY7_STORY.md": {
+      "bytes": 16421,
+      "sha256": "a3cc034b8f2ad17d976cf43f0e737311e8ced41541110e0bc95fac27cd436ce9"
+    },
+    "docs/UNIT8_F4G_STORY_MATRIX.md": {
+      "bytes": 3868,
+      "sha256": "aba30fa5b97049ddaee59e12080ccb03351c11a86bc22a2fe55b73fef73254eb"
+    }
+  },
+  "rule": "Journey 7 polished prose may not change after F4G without a new explicit narrative version. Journeys 1 through 6 remain frozen. F1 science, F2 classification and geometry, and F3 scene briefs remain authoritative boundaries."
+}

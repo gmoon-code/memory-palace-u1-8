@@ -1,0 +1,1087 @@
+{
+  "schema": "memory-palace-u5-f1-upstream-protection-1.0",
+  "baseline_package_sha256": "e372a71832ca74997fb827b222a8666d9d0c06abbb34a6b9f856c261a14bc9bb",
+  "protected_file_count": 216,
+  "protected_files": [
+    {
+      "path": "content/ap-biology/unit-1/application-lab.json",
+      "sha256": "c5d7e5b02feb64965b20da33e2d9bf5b2231b46e5d2e65eb12a41f19a55858cf",
+      "bytes": 15659
+    },
+    {
+      "path": "content/ap-biology/unit-1/content-lock.json",
+      "sha256": "52675f6be1429608005eae4e301c6891f294cd4856a34710f6cccb7d3cc8f8c0",
+      "bytes": 1034
+    },
+    {
+      "path": "content/ap-biology/unit-1/finalization.json",
+      "sha256": "d6bf4b61188741b782237e24311d9ebe01e09dcb48bf6c334b3f26b20fa7aff9",
+      "bytes": 50717
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z1.json",
+      "sha256": "04b47a3baeb19978c779d04e654795a6b77b033d74a5cdde4d9d14fd8d96b762",
+      "bytes": 71014
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z2.json",
+      "sha256": "3c7289b9d06300f7364efe283bc9668fb26159e87a9d2d7799a95c1467e26182",
+      "bytes": 78990
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z3.json",
+      "sha256": "628b51dc95a59d2674fb510fc520113864cd30b6f2b70e0430cc9edad8d5727a",
+      "bytes": 73750
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z4.json",
+      "sha256": "4d0018a87c9aa2a6f580f7fd8c3eb2a1437e7b3337d69a052d6a737472c5661c",
+      "bytes": 23329
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z5.json",
+      "sha256": "d5ada2a05f179d1463f0096711bd688ebeeffeb90d83205794bbc88ec23279c8",
+      "bytes": 24398
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z6.json",
+      "sha256": "fc39c6b84e96e6ef7a7a729256da87c70b158a8533aff9b9bccf5a02ac624bce",
+      "bytes": 53612
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z7.json",
+      "sha256": "beef3d53302143a6bf311605faf5e1d7df25bae0bd7e0dade2fe68d1f943db15",
+      "bytes": 91939
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z8.json",
+      "sha256": "697211fd5fb9c0cb94490d6112ee69669cb1e8dac9d4f7e59970a6e2873887fa",
+      "bytes": 71674
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys/Z9.json",
+      "sha256": "3e7894f14a31e3c8afa81ae4c04b0a89433de7003c0190bf45b80c06c5fed462",
+      "bytes": 55583
+    },
+    {
+      "path": "content/ap-biology/unit-1/journeys.json",
+      "sha256": "ca26d36ed623c4d7c5b98f4a93fe08a4369d658e1cb5bd849606dc0efe4e8a68",
+      "bytes": 13884
+    },
+    {
+      "path": "content/ap-biology/unit-1/memory-objects.json",
+      "sha256": "53eb68c4bd7276cde80aec45f2c33e84e09e8470e65032fac08b3aa10eecfb9a",
+      "bytes": 850925
+    },
+    {
+      "path": "content/ap-biology/unit-1/migration/f6_9-runtime-snapshot.json",
+      "sha256": "d6184bcae6f78ac6f402c057d7e3599ba87d2eb68dc9d186d7ee729894b943c4",
+      "bytes": 1306715
+    },
+    {
+      "path": "content/ap-biology/unit-1/reference-journey-water.json",
+      "sha256": "509f66de6f3401c00332bf2b7f03022e74539b671a14d02d207966ab83015cd2",
+      "bytes": 73708
+    },
+    {
+      "path": "content/ap-biology/unit-1/scope-guards.json",
+      "sha256": "6d80680ab621eefbfb5082a01e5b5cf42551cf08b8850d2235a6fa39467b303f",
+      "bytes": 2459
+    },
+    {
+      "path": "content/ap-biology/unit-1/source/canonical-unit1.json",
+      "sha256": "0bcd6e2fb61e9e31bf47ba7ef4f5d7bfd647d68a9d77b3b22bc6e6e044e71e49",
+      "bytes": 1127491
+    },
+    {
+      "path": "content/ap-biology/unit-1/source/coverage-manifest.json",
+      "sha256": "54b7e8d314609dd7b4d0691ace07df35a62561f2f1561cdfe9106d8d0e009fdb",
+      "bytes": 2498
+    },
+    {
+      "path": "content/ap-biology/unit-1/source/guided-journeys.json",
+      "sha256": "c4e1079f8eeba4b3f28304ad52e77dcddcab0c9d08dce4e1bc7c2efbc94fe034",
+      "bytes": 232277
+    },
+    {
+      "path": "content/ap-biology/unit-1/transfer-bench.json",
+      "sha256": "de5106bc4323923026ebc6c5afca82c901864ba08b0caff24d12cedd2a643752",
+      "bytes": 17739
+    },
+    {
+      "path": "content/ap-biology/unit-1/v2-release-manifest.json",
+      "sha256": "e7752bbdcc57a40c1be3e49f800f4b9b1efe083f4ab762914dd917efade8ac32",
+      "bytes": 6185
+    },
+    {
+      "path": "content/ap-biology/unit-2/application-lab.json",
+      "sha256": "553a6d3bb407c5ec1d373775f4898aec5c41cd04be2781e89876009c848a9a79",
+      "bytes": 12565
+    },
+    {
+      "path": "content/ap-biology/unit-2/architecture/learning-classification-f2.json",
+      "sha256": "8e644797dcb9fa20970b77928610215fdd1daf084a7e5b4a69135a73c46ea0f4",
+      "bytes": 93637
+    },
+    {
+      "path": "content/ap-biology/unit-2/architecture/palace-architecture-f2.json",
+      "sha256": "49b962d037bd60beccb99d16b24f5ca46f3fa1d16625f6614284f063ff34987e",
+      "bytes": 52086
+    },
+    {
+      "path": "content/ap-biology/unit-2/audit/APBIO_Unit2_F1_Source_Lock.xlsx",
+      "sha256": "e1e2e83e578fdbe9bace478eec60e24a62e1a60ea0f84f7c8433c19632d0f208",
+      "bytes": 49663
+    },
+    {
+      "path": "content/ap-biology/unit-2/audit/F1_REVIEW_FLAGS.md",
+      "sha256": "086f498c6996e82d9f4119e48ccd5166e1564a6e2e9604251ab2ec0b59bb257b",
+      "bytes": 8573
+    },
+    {
+      "path": "content/ap-biology/unit-2/audit/F1_SOURCE_AUDIT.md",
+      "sha256": "18752f49e74c653ac5f616a29ffcca7f0d7ad0b4d8d09500be4eb0a578efa8dd",
+      "bytes": 3461
+    },
+    {
+      "path": "content/ap-biology/unit-2/briefs/journey-briefs-f3.json",
+      "sha256": "05a6b8b9c700e111afd40a2fa468ed69cb5f87c7bd269fe78aaf04dea113ac89",
+      "bytes": 20946
+    },
+    {
+      "path": "content/ap-biology/unit-2/briefs/scene-briefs-f3.json",
+      "sha256": "8ff62cef85c208179ecfbca0446ac79374f35ffdf4728e60badfc2a0d95545f8",
+      "bytes": 295174
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f1.json",
+      "sha256": "d81095b2f5cecc05d849fa8f602ea9384a0b3da5049c342403ee4a5316fb9d5f",
+      "bytes": 1093
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f2.json",
+      "sha256": "6bdcbafe06b6f565f396437b37fddc342d7606f4b44b575d2828b18f8bccac51",
+      "bytes": 1192
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f3.json",
+      "sha256": "933918cdc3987d164e0d4cecdc1412b5b6fc3c5c585518c04c09a52f3f3c82c0",
+      "bytes": 1503
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f4a.json",
+      "sha256": "17e7218f246eb181693eae975d8c61912aba211781eea738b2d263278efee24b",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f4b.json",
+      "sha256": "0d0776b61605e401ee63de989fafa7207ee5be9a89e434446bcd84f86b2a912d",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f4c.json",
+      "sha256": "873f5c377368c021571d140b51e4987cdd7ff27ec6110b8b5cf7553c160445a0",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f4d.json",
+      "sha256": "5de3671560c061e9e4e165a90af628aea2f36bf35eb3380a32301143532f7528",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f4e.json",
+      "sha256": "20fab4c0f8ed2a06955da6124a4e2c4654e5f1605ef082860e63322b9db1ced5",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f4f.json",
+      "sha256": "7e4145fcb2250774b54fbcf4f717c004a92053719b18496cd7e36953f441528c",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f4g.json",
+      "sha256": "b81b2fa675faaa78f8822936245ad455feece9ad35e13634659d6ef8a2bb11cf",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-2/content-lock-f5.json",
+      "sha256": "dfec2d6d6211b8b7656776177f535c2132d0a855083a19916ac3f74e903066e9",
+      "bytes": 722
+    },
+    {
+      "path": "content/ap-biology/unit-2/f1-release-manifest.json",
+      "sha256": "b0c510b47cc0942a4b7b63a5d144c5b597cb7284b603a516d6030c06e68b250d",
+      "bytes": 1075
+    },
+    {
+      "path": "content/ap-biology/unit-2/f2-release-manifest.json",
+      "sha256": "d0df2a3f8202b6ad7609600e5b28d1d691cd3925afac15aa1bbb9b49b8bb4fca",
+      "bytes": 654
+    },
+    {
+      "path": "content/ap-biology/unit-2/f3-release-manifest.json",
+      "sha256": "aae84b7e789fd718b3665f044abf564205dc27878f1b4aac576fc52a5ebf7b98",
+      "bytes": 556
+    },
+    {
+      "path": "content/ap-biology/unit-2/f4a-release-manifest.json",
+      "sha256": "95d9f6e5aa9764e1f18f3eee9936e91bd9014408829d21e4373f30454c8b7a51",
+      "bytes": 566
+    },
+    {
+      "path": "content/ap-biology/unit-2/f4b-release-manifest.json",
+      "sha256": "6e4377c85c9e7ead36f1bd02ce6aa070aeb2f9e0d88453526a073e68748c10f7",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-2/f4c-release-manifest.json",
+      "sha256": "fd224e7c5e56fa58b3660af654b9b9e056303c04bf338a22cc02fe74bac3e83e",
+      "bytes": 301
+    },
+    {
+      "path": "content/ap-biology/unit-2/f4d-release-manifest.json",
+      "sha256": "316480194db210acb42f05727b65f3c3d3d27f4d74080dde7eafd4e5385ce155",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-2/f4e-release-manifest.json",
+      "sha256": "a42d763a1610982900abf3ba7c87a4404f379df4950ebb4a125f07dfed3f182c",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-2/f4f-release-manifest.json",
+      "sha256": "20e80f20f67aea545f880233704ce5921cf40f7ac3a4d3a6c480460fe143391c",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-2/f4g-release-manifest.json",
+      "sha256": "ff79e2b60b2ddffccb327770eb66e7be9320d804a66604d1957666fb05f5a4b0",
+      "bytes": 352
+    },
+    {
+      "path": "content/ap-biology/unit-2/f5-release-manifest.json",
+      "sha256": "16be0e446ff00dee2798dd5888d928535b9972d6835d290c53a7e136cfc04523",
+      "bytes": 590
+    },
+    {
+      "path": "content/ap-biology/unit-2/finalization-f5.json",
+      "sha256": "19d2bba8fbfe3b7909f60a98de7a54434146ec53a20e20eee3f3958a23ced9f3",
+      "bytes": 3952
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys/U2-J1.json",
+      "sha256": "69544073aa39edb4f734f0fa2c085ab3ba96bf69902636deb45223a9d9742a76",
+      "bytes": 113651
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys/U2-J2.json",
+      "sha256": "3905a95b37536ec8db6baa5bd233894e4dfdb2a41dfb655696bb145e03b7eada",
+      "bytes": 48492
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys/U2-J3.json",
+      "sha256": "826aafdd9b9a4e7629de4d6711923c9387ecae7fb01ec2d5a5cfa2dccf4695ff",
+      "bytes": 34930
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys/U2-J4.json",
+      "sha256": "5a21920ac10300a1afbc3602de2409745751ef6e08498b79e872120fae2db3b5",
+      "bytes": 82379
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys/U2-J5.json",
+      "sha256": "6daad779b967959339f3af06efc1758088c6d52fabcafa65ba1acd823f4e377a",
+      "bytes": 98602
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys/U2-J6.json",
+      "sha256": "14c2c1f6e27410ea70375cf97260b5bf442f60e1f14f051a039166b0f6471e34",
+      "bytes": 65888
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys/U2-J7.json",
+      "sha256": "ea83d65977ba40b106dbec57be7957970ac78f14aaf224a9876972b424ed7874",
+      "bytes": 49078
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f4a.json",
+      "sha256": "160f0746ac0ba0041135d4dd927153ef675cea7bfb231d8b6a9347a5a07bc015",
+      "bytes": 1844
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f4b.json",
+      "sha256": "450572e509fa874a3804689f81e00f585e611defb91aa395409a399952e29b7c",
+      "bytes": 3404
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f4c.json",
+      "sha256": "81cb8b3eccce66d85d632939288c8373f9146929af21ee5aa92f09fd077a05b3",
+      "bytes": 4865
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f4d.json",
+      "sha256": "7539eb55f5986c12c3dce2a244b814fe7b867e802139e0dfdda61fcf0fb5862f",
+      "bytes": 6550
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f4e.json",
+      "sha256": "5db3269c7572543a3424f885fac08ee962d91efbdf08fa98cde24d85933ae3c7",
+      "bytes": 8162
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f4f.json",
+      "sha256": "b2d5bc532b2fb5346f7a51822370b6ced6b412b87de05451120c4b5b99f35cf9",
+      "bytes": 9811
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f4g.json",
+      "sha256": "4621a6fbdf6d35976ad25a6502cd560c0f2c93f7a8ecbbd564707dcabec95871",
+      "bytes": 11437
+    },
+    {
+      "path": "content/ap-biology/unit-2/journeys-f5.json",
+      "sha256": "e4390533621fd0e088e717b168418401cd486c87d60596035c984210498e8d97",
+      "bytes": 11516
+    },
+    {
+      "path": "content/ap-biology/unit-2/mixed-discrimination-f5.json",
+      "sha256": "b6d2d8cbd6d1972605a285e16b0916ed7e12e60b41926fd7949832b1e77285f2",
+      "bytes": 26520
+    },
+    {
+      "path": "content/ap-biology/unit-2/review-manifest-f5.json",
+      "sha256": "cd11408c9e214e5f9b2b9291afa915a0807375a8dca4d0927e359596e9361db5",
+      "bytes": 79256
+    },
+    {
+      "path": "content/ap-biology/unit-2/source/canonical-unit2-f1.json",
+      "sha256": "1f5f776016591e58c6b0d8589953d632e1466b557d1af3a0f4888eabb6dde953",
+      "bytes": 168513
+    },
+    {
+      "path": "content/ap-biology/unit-2/source/coverage-manifest-f1.json",
+      "sha256": "ec4b7a79dc5df7f68c83b8465972ee71014e8ab1b3103ed3f43ad499739a2fb6",
+      "bytes": 743
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f3.json",
+      "sha256": "6f3e7a43a71057679bc13b983c7af9e7814b614061a4cd5d645ec66bd5b25fd0",
+      "bytes": 980
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f4a.json",
+      "sha256": "dd9b8344985cdfec7673a1ba5774ab80aa236ead596a4af5d96644a9cd297424",
+      "bytes": 1127
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f4b.json",
+      "sha256": "6b0c63f065eed3ab6f00c2a5b2f65c665f5ae2b71035ec0a76a9920585e93974",
+      "bytes": 1130
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f4c.json",
+      "sha256": "57acf57d2fc5f945817008ba430cb2a64bb0b31420556ac9a7be94fa3e846be2",
+      "bytes": 1130
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f4d.json",
+      "sha256": "dbbe30e347b5b53f09e8c8623e57ab07aa6fea65049108946895f5e5df6898c7",
+      "bytes": 1131
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f4e.json",
+      "sha256": "75f65b4f923aec8580a324a5d54d272a9a6940b9d03086574cd7885bbe52b078",
+      "bytes": 1131
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f4f.json",
+      "sha256": "666262529f91a013b46fc5721ea7c88ab4cad5d2b2cb6fb62997e0f625974dd7",
+      "bytes": 1131
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f4g.json",
+      "sha256": "1d914c890e2960d8b4f12f2a916e528643de844881a24ba7fa4078e13b45e33c",
+      "bytes": 1238
+    },
+    {
+      "path": "content/ap-biology/unit-2/status-f5.json",
+      "sha256": "390be13001a49f7877e5b238ff31ede3df71cb863826e3151432f394479624c9",
+      "bytes": 1383
+    },
+    {
+      "path": "content/ap-biology/unit-2/status.json",
+      "sha256": "0f303c9064aa8503e16cd7a1903c56dfbf2aa0bde2f6e12866e5548a82ece8a3",
+      "bytes": 852
+    },
+    {
+      "path": "content/ap-biology/unit-3/application-lab.json",
+      "sha256": "04bfd54d4d8ecfd90258e447023d0821e72f91b9fe53d79e9f13597e0a00ae0b",
+      "bytes": 17983
+    },
+    {
+      "path": "content/ap-biology/unit-3/architecture/learning-classification-f2.json",
+      "sha256": "1a70601c84102a174e7416b9d5dd1cf783bccea39e08618a6b6b2f50c46c2a64",
+      "bytes": 124050
+    },
+    {
+      "path": "content/ap-biology/unit-3/architecture/palace-architecture-f2.json",
+      "sha256": "7b46882c468524fc84f65678a01b30c4e2e5c5660ff93354b2c28da5d99bd427",
+      "bytes": 63770
+    },
+    {
+      "path": "content/ap-biology/unit-3/audit/APBIO_Unit3_F1_Source_Lock.xlsx",
+      "sha256": "36397e82fda0e3ffd2429c3b518a30587b03579f8e5073f632d479dcabaef840",
+      "bytes": 72770
+    },
+    {
+      "path": "content/ap-biology/unit-3/audit/APBIO_Unit3_F2_Classification.xlsx",
+      "sha256": "147abb80455f8a2f38de1cf9999cc605aa662a41f3558c518a17a0d37bd7a74b",
+      "bytes": 34533
+    },
+    {
+      "path": "content/ap-biology/unit-3/audit/F1_REVIEW_FLAGS.md",
+      "sha256": "1111a8b6517dcb41c9fca3d5c46f579dbf448efcc8e0c5bda5bf5c7447749a58",
+      "bytes": 14235
+    },
+    {
+      "path": "content/ap-biology/unit-3/audit/F1_SOURCE_AUDIT.md",
+      "sha256": "9a2c770ca13e8093e1d70123753ea39d857a0ea75517ed8a5d2badaf0e9920b0",
+      "bytes": 2809
+    },
+    {
+      "path": "content/ap-biology/unit-3/briefs/journey-briefs-f3.json",
+      "sha256": "df22bf058069ed67c6eae67493f6e28d9dc97d1a97987431a4eb55958d67f03b",
+      "bytes": 25352
+    },
+    {
+      "path": "content/ap-biology/unit-3/briefs/scene-briefs-f3.json",
+      "sha256": "fc37f3fd631152ffb785c9311211df0362f490a75f8d532abe292bb0305963f9",
+      "bytes": 479219
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f1.json",
+      "sha256": "19afb7a6554595071cd8fa0c26125df360c3586bcbdf1625982e3491c2a68a48",
+      "bytes": 665
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f2.json",
+      "sha256": "78d3b42c72ecd073da44ec533a802090785b110cbdee2f2a066a28d790f664e1",
+      "bytes": 1386
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f3.json",
+      "sha256": "b5fd8fcfbca985308acdeba47a25f6f6ae94470ce92fda28e41a3e45b96a109f",
+      "bytes": 1474
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f4a.json",
+      "sha256": "95d7fa80c545a0a7177ea55c4b69b32f6362fcacd433200a088bfa7c6567e2d7",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f4b.json",
+      "sha256": "e0ce906515930840e903da31dc2b788de8cd433065e6a3d7ce4671c83bbae890",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f4c.json",
+      "sha256": "d46c5d89983c6f07f836d51e73a18aa7a1edbc55cab2c4ddf033b7c5e395ff20",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f4d.json",
+      "sha256": "3ce7181757dac9813f4a73f6d1db4d96000d072a76b850524a90a8f3b8e8b3eb",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f4e.json",
+      "sha256": "de53a4068938743b1df047a70fa84a843ad891725139ea473951957d664beef3",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f4f.json",
+      "sha256": "b761c213e3a7532d5f4eb4550e164201165b6f65002701d637e5ce969542c040",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f4g.json",
+      "sha256": "a6680b95c658e33a43bc7c7f8c1099380b9f491e073181d5b3c1253342e6ab25",
+      "bytes": 427
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f5.json",
+      "sha256": "4415c9942261e3c842c73f9a5bd735d279fda167e343ddf56a4ef0f117b0b663",
+      "bytes": 818
+    },
+    {
+      "path": "content/ap-biology/unit-3/content-lock-f6.json",
+      "sha256": "800d7245cbd33e3d04974b45f248add04c4856aeaf558449efa2731342f4b1f5",
+      "bytes": 344
+    },
+    {
+      "path": "content/ap-biology/unit-3/f1-release-manifest.json",
+      "sha256": "7abaf83cce99f2c57f4e8a0dce5b147f6b796b1e061ac981b221c152bb3336a8",
+      "bytes": 522
+    },
+    {
+      "path": "content/ap-biology/unit-3/f2-release-manifest.json",
+      "sha256": "35f4406335eff1195d257a2188d8de9fdc08f84cb665cbdfb4be59e9c5de231e",
+      "bytes": 682
+    },
+    {
+      "path": "content/ap-biology/unit-3/f3-release-manifest.json",
+      "sha256": "2a34558dd315bf9add1eea90a08f14b1dee029c652c0eca3473c957267ff9558",
+      "bytes": 422
+    },
+    {
+      "path": "content/ap-biology/unit-3/f4a-release-manifest.json",
+      "sha256": "b1c2214ebc7ea6a530a2fc215e2a017b9c3a2354214b7f0f830771679729c09f",
+      "bytes": 301
+    },
+    {
+      "path": "content/ap-biology/unit-3/f4b-release-manifest.json",
+      "sha256": "c206b234c95b81f84ac196c2c15584f6595a65cd4aff0afc009a2290cc190fba",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-3/f4c-release-manifest.json",
+      "sha256": "116a48dc807755daf7b371019a707ad00231b3634bb8a776f213b387880bec4f",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-3/f4d-release-manifest.json",
+      "sha256": "15afdb5c3ab221b5156a43671c5c987d16de25114c3a086370d44942bb46963d",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-3/f4e-release-manifest.json",
+      "sha256": "7d24eae1c8d3b027d8148380060538b25086cc69fa7b1d604171e6607018628c",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-3/f4f-release-manifest.json",
+      "sha256": "a7a7b9cc4ac1e34eb63f8f9f3a2c180612f5b50fe8d335f1bb0c29a15e9293c1",
+      "bytes": 302
+    },
+    {
+      "path": "content/ap-biology/unit-3/f4g-release-manifest.json",
+      "sha256": "5befcb385d1cc418250affa9f68a0f8a522d0ef729fa23e548e228de799f2f72",
+      "bytes": 386
+    },
+    {
+      "path": "content/ap-biology/unit-3/f5-release-manifest.json",
+      "sha256": "b0cf3767df04185611f8b9326582ae0a068f4cc285eda6a6e2ecdd590dfecd88",
+      "bytes": 620
+    },
+    {
+      "path": "content/ap-biology/unit-3/finalization-f5.json",
+      "sha256": "8b50fc26d444246c30b00434ecacc98bf052407ebf4ade67a53cd729a98d496a",
+      "bytes": 4885
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys/U3-J1.json",
+      "sha256": "91229aef70e3d29ace49bd9f45dd632a70d9ad61a311b022681012bff91ab66c",
+      "bytes": 36847
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys/U3-J2.json",
+      "sha256": "8040d9fa9e55244c11fe813fe4a54f839898ad58dc99625b49908f4e9b705b34",
+      "bytes": 90901
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys/U3-J3.json",
+      "sha256": "a4ae4f26f263937ed11559a3904e0ad9f605f82278ad619b7766dc4ab94cf979",
+      "bytes": 114237
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys/U3-J4.json",
+      "sha256": "70b655302e42753764e1331faa5ff852f2cd92999c9298f17d5cccdd1747d361",
+      "bytes": 142315
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys/U3-J5.json",
+      "sha256": "1e39e256866ccf715f6dd2c484b6d6c5a22c1019e35c56addd8602debf163f3d",
+      "bytes": 58752
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys/U3-J6.json",
+      "sha256": "b9e03ca4b8f65bb8b80261c415da96f3cf1b0fe6ebe95ed4662091ca049e5be7",
+      "bytes": 143626
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys/U3-J7.json",
+      "sha256": "8bb39acbbb3de3de854a7b93cc6c3b4e25b796b93aff11200ee6d0a2a4694681",
+      "bytes": 50020
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f4a.json",
+      "sha256": "5bd10be6e864e1ab02a452ec77e989e23a373e095046cc275dd465253d91ab7f",
+      "bytes": 1998
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f4b.json",
+      "sha256": "f2f4f74aad7097669570436341bd05e10c0aa39141babd10166a2c866c7ce3f6",
+      "bytes": 3809
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f4c.json",
+      "sha256": "46d9cef605132ade5fecc78e8e6a99f2d33be8de3609901b93d1dd0ab18572c5",
+      "bytes": 5555
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f4d.json",
+      "sha256": "35921b1dfe768f558f83da97a1474bba7bc78d62ed05725d323f5f136d82d18b",
+      "bytes": 7541
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f4e.json",
+      "sha256": "d7eb9db556b813a806c17c297e367327732ce95a2e3b8984673a82670937e3ac",
+      "bytes": 9456
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f4f.json",
+      "sha256": "349de968623ad334ecec95100ae6144f0a5f246555063bca1091d03dcfc1c661",
+      "bytes": 11497
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f4g.json",
+      "sha256": "15b3810bf983229524dd5a84aa72889ef9564dbfe275d9b1616e0c29af8f759c",
+      "bytes": 13453
+    },
+    {
+      "path": "content/ap-biology/unit-3/journeys-f5.json",
+      "sha256": "9baa36ef56ab205414b54e716beda8caf9d747c3da308f8ae74788473b65eef9",
+      "bytes": 13557
+    },
+    {
+      "path": "content/ap-biology/unit-3/mixed-discrimination-f5.json",
+      "sha256": "29ed2dcb857191e7a936ad221acf94fb2918a5137ecbb55906205f51c6436ad2",
+      "bytes": 55747
+    },
+    {
+      "path": "content/ap-biology/unit-3/review-manifest-f5.json",
+      "sha256": "3fd168ad0f6e6019a13944e2a0ecb0fe84b6c3f108d802d4f185428bf799ba0d",
+      "bytes": 100890
+    },
+    {
+      "path": "content/ap-biology/unit-3/scope-guards-f5.json",
+      "sha256": "9ddb0a1cbc1c3580ba9481e36071b7709baa1317fb63762d228047a3388deea6",
+      "bytes": 2543
+    },
+    {
+      "path": "content/ap-biology/unit-3/source/canonical-unit3-f1.json",
+      "sha256": "029dd4317f2fc10489f5b21c3f6f27c3645fe499fa1101047413dd79ad84a6d9",
+      "bytes": 259825
+    },
+    {
+      "path": "content/ap-biology/unit-3/source/coverage-manifest-f1.json",
+      "sha256": "693a3ba24abb48bf2918ea3e983cb3c7b58d0c92e2c6c1e4a3cbd68327e6fe37",
+      "bytes": 54757
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f2.json",
+      "sha256": "d44665439dc83fcf701f3985c0c2f4a0757aa974a392b5889c0e67776f982704",
+      "bytes": 836
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f3.json",
+      "sha256": "d2453e44d2d2f4873a1cfbcfca0ee1d15a56a3cc57aab67deedb0c52e6e4e321",
+      "bytes": 930
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f4a.json",
+      "sha256": "c925bb5b1390235d76623f9b49a3560e1f2d44f5a42fba139f3e25052169679d",
+      "bytes": 1019
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f4b.json",
+      "sha256": "13fd829e1dfe13e0d6ba0403bec523b44976a80a68724c905d6c9e1a6c7be843",
+      "bytes": 1027
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f4c.json",
+      "sha256": "9d3bf9b715ed450d4b79fe6dc6e6136b5ac027f3f4c1bb39f3a8d6bb94ac9fdb",
+      "bytes": 1024
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f4d.json",
+      "sha256": "2107e90c619391ab906164c3ab81647c06f0f4e55b1984de6d22ac4e7b88b07b",
+      "bytes": 1025
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f4e.json",
+      "sha256": "bbff816a868e7fb38cd94cc810271c96135a7ed2e5bb54ad8300fb33cd493298",
+      "bytes": 1022
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f4f.json",
+      "sha256": "1038d45b4f503f58497caf65a5c0cec3d5079256985f93ebb8a7a9d564cfde44",
+      "bytes": 1037
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f4g.json",
+      "sha256": "8715402dac05be54ee709ca16c924cc4377f635981def4c2e9fb77acfcfb87e2",
+      "bytes": 1078
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f5.json",
+      "sha256": "bb46b4d9d6d2e3387acbeb6975d0267e816d614b0fd47513cf6ef40878e765fe",
+      "bytes": 1364
+    },
+    {
+      "path": "content/ap-biology/unit-3/status-f6.json",
+      "sha256": "21410119b4dc3b188b3ad78c738a343692a07bbff4ead91a1f476e7d54870a7b",
+      "bytes": 1580
+    },
+    {
+      "path": "content/ap-biology/unit-3/status.json",
+      "sha256": "21410119b4dc3b188b3ad78c738a343692a07bbff4ead91a1f476e7d54870a7b",
+      "bytes": 1580
+    },
+    {
+      "path": "content/ap-biology/unit-3/ux-validation-f6.json",
+      "sha256": "5f2a20cb7befcd8ebfe684cb00e05cef0b40a4c315a82add5385c7611e0ccce1",
+      "bytes": 2962
+    },
+    {
+      "path": "content/ap-biology/unit-4/application-lab.json",
+      "sha256": "bae0b664396ed7b4c356bc4bab2c04346c13a4622847cf7caf397ce98f88eca7",
+      "bytes": 25507
+    },
+    {
+      "path": "content/ap-biology/unit-4/architecture/learning-classification-f2.json",
+      "sha256": "ba55a720a2dc81beef6c3e9eefae4993451e50b89feb15aa5f06659cfc810b96",
+      "bytes": 120984
+    },
+    {
+      "path": "content/ap-biology/unit-4/architecture/palace-architecture-f2.json",
+      "sha256": "f11772cfab3ed6debe865af1b340ad814a1a0a35ea85fba6c2c17eb5febfaf45",
+      "bytes": 66025
+    },
+    {
+      "path": "content/ap-biology/unit-4/audit/APBIO_Unit4_F1_Source_Lock.xlsx",
+      "sha256": "d689ea4a8af42b1e5fa0fe369d48ed704031449d8ffd4e473b4475f8de83718f",
+      "bytes": 59280
+    },
+    {
+      "path": "content/ap-biology/unit-4/audit/APBIO_Unit4_F2_Classification.xlsx",
+      "sha256": "01ce3a6e5b10799a5df049c7fe9ad55cbcb41592fd0421153df58c6b1f70df2f",
+      "bytes": 45143
+    },
+    {
+      "path": "content/ap-biology/unit-4/audit/APBIO_Unit4_F3_Scene_Briefs.xlsx",
+      "sha256": "8265794600afff0fb04608da9a0ec049d9cd07b0e41053aa0b542c869bc5214a",
+      "bytes": 68741
+    },
+    {
+      "path": "content/ap-biology/unit-4/audit/F1_REVIEW_FLAGS.md",
+      "sha256": "adfc605b1de28d8e3b5c0dc783ee3d65c7ec99d0743be30f988505703ba1180e",
+      "bytes": 15255
+    },
+    {
+      "path": "content/ap-biology/unit-4/audit/F1_SOURCE_AUDIT.md",
+      "sha256": "5d0861934001218df6acace6e67edb1a80c242ee0b0f10625332f6a50786dd1c",
+      "bytes": 4003
+    },
+    {
+      "path": "content/ap-biology/unit-4/briefs/journey-briefs-f3.json",
+      "sha256": "b57d6011b7f4ca14acd49158b70a6af4c649bd7a0ea3454216ab951fac2ab38e",
+      "bytes": 33098
+    },
+    {
+      "path": "content/ap-biology/unit-4/briefs/scene-briefs-f3.json",
+      "sha256": "230d5fb8a63728b205d2c95fe2a40919600a044728040bf9c0ccf10cbce99512",
+      "bytes": 685291
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f1.json",
+      "sha256": "49165c12858d19eec358f7f992b85d6c84f437864f2c70d6ba665eb5c28cd071",
+      "bytes": 666
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f2.json",
+      "sha256": "92ded94edfb70f92f06528af47c4feb39a9d98ba447a280896f010d086c6a0aa",
+      "bytes": 1205
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f3.json",
+      "sha256": "c8a6360270ded6bbc9c8ad0067eda942564caa2ba68c07079c1ff0b5b8f5365e",
+      "bytes": 1699
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f4a.json",
+      "sha256": "eef2f9cd3e884ea3f153597507db8c6097f487581df6e60bf604d99f43744b5d",
+      "bytes": 624
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f4b.json",
+      "sha256": "ab6eda599926967bd2eb101e853878cb84da554c721acd4aa3f011f1c169ce4d",
+      "bytes": 942
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f4c.json",
+      "sha256": "0700db659259290777dc64ff6e1a7562e377a15e98ed6887930d90e470a3d2ab",
+      "bytes": 1229
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f4d.json",
+      "sha256": "5b993b0fb46b5eb149959aa1dbf9afd1e24187f8d34eb3b46ad6b87a4f2630fc",
+      "bytes": 1516
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f4e.json",
+      "sha256": "c93f76c3f8e4b0fb2737985474d226d5fd933d2d743be8613446636ce3034376",
+      "bytes": 1802
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f4f.json",
+      "sha256": "85249d76a54aa471c30a5f33be5e4e284d98f4e29625b777f62089c9d14e9b86",
+      "bytes": 2089
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f4g.json",
+      "sha256": "9fab6e6b6c41c120640966e50878a610362873e1785068ddd92230240eed3c81",
+      "bytes": 2376
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f5.json",
+      "sha256": "d283e1cc2b47e3800bd8502e49baddf23c0391aca21e9cbeb0d2bea0577d7420",
+      "bytes": 1613
+    },
+    {
+      "path": "content/ap-biology/unit-4/content-lock-f6.json",
+      "sha256": "aeb85d38e6a927cd81ec852443e86a8888fda3975a24cf926d77be5ab71bc725",
+      "bytes": 1059
+    },
+    {
+      "path": "content/ap-biology/unit-4/f1-release-manifest.json",
+      "sha256": "52fac7ad9fc5d326d6a958eaf71f713558eba82d66cd9ab5ed1becd21098f475",
+      "bytes": 563
+    },
+    {
+      "path": "content/ap-biology/unit-4/f2-release-manifest.json",
+      "sha256": "e93504b6c1d8c3ce75876ac5ab0c0d1194976aaa154ff3ccb86758b5bac67969",
+      "bytes": 682
+    },
+    {
+      "path": "content/ap-biology/unit-4/f3-release-manifest.json",
+      "sha256": "fb88d14a591790eb4b7939cc1d826fc01142c0bbaef42c78a59aff3baba7ea7d",
+      "bytes": 497
+    },
+    {
+      "path": "content/ap-biology/unit-4/f4a-release-manifest.json",
+      "sha256": "eae0d92471a5dc816a2e31aef44e4cac4bc53a65094a607e964dc80ba259beab",
+      "bytes": 389
+    },
+    {
+      "path": "content/ap-biology/unit-4/f4b-release-manifest.json",
+      "sha256": "70474ba3c3c438f416c60a525dcba4b649398f95179f46f33b7e84af4e8c258f",
+      "bytes": 417
+    },
+    {
+      "path": "content/ap-biology/unit-4/f4c-release-manifest.json",
+      "sha256": "696a8a86c1117f3cc5691672027681b1bab6aa620a027f3834b2d383e08f30b2",
+      "bytes": 444
+    },
+    {
+      "path": "content/ap-biology/unit-4/f4d-release-manifest.json",
+      "sha256": "4e95e67cb0efb66620943fb36f304502b41fc0f5eb4ef45571d8ca297b04793d",
+      "bytes": 390
+    },
+    {
+      "path": "content/ap-biology/unit-4/f4e-release-manifest.json",
+      "sha256": "bee96ce82a94c8008194bcc53345b51d1042ef8ed3b90af461d17c4a7f1898ad",
+      "bytes": 390
+    },
+    {
+      "path": "content/ap-biology/unit-4/f4f-release-manifest.json",
+      "sha256": "7a973cc9b615aea4c6bfb3f5375902f515c105b65a92de8c46ccc25f4a1ae802",
+      "bytes": 390
+    },
+    {
+      "path": "content/ap-biology/unit-4/f4g-release-manifest.json",
+      "sha256": "4ef2d77a1f371cc2f51f7a9096e5c22654ca8a7757652832de8ab01e904466d8",
+      "bytes": 432
+    },
+    {
+      "path": "content/ap-biology/unit-4/f5-release-manifest.json",
+      "sha256": "de03b8f68a04dffb751ca240f36a49d31716b793f6a3117b6f3fd212afcd39d4",
+      "bytes": 677
+    },
+    {
+      "path": "content/ap-biology/unit-4/finalization-f5.json",
+      "sha256": "36dd750ec55a42c404978fc2060a6f5f50694dcab6424547ead63683802510d4",
+      "bytes": 4853
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys/U4-J1.json",
+      "sha256": "30b2bb72a3916cc86adce1d3b0174932864e9f32514f74d628c63feb128ab5f1",
+      "bytes": 85956
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys/U4-J2.json",
+      "sha256": "0f066556b7b482bbae2cdf1238a01c7cc5f7da7e1aa4c5623566e7345ea27bb6",
+      "bytes": 90968
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys/U4-J3.json",
+      "sha256": "b8c1194095a647c8229f3e879efefdfb61e95b517a83dedae046f5b9de67cbed",
+      "bytes": 104190
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys/U4-J4.json",
+      "sha256": "f7eb691e6b61330cc5f5662516350c85606e742dd95d01215761626778e90df4",
+      "bytes": 83811
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys/U4-J5.json",
+      "sha256": "fcf4f9aa34d5e67dae9f95dde092857de8dd9b6ea92191d2d1c045267a2159a0",
+      "bytes": 114420
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys/U4-J6.json",
+      "sha256": "c902a16581a38af77459e7a15078834c597b9562b38c59e88fb63c88dc4f6028",
+      "bytes": 111277
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys/U4-J7.json",
+      "sha256": "9d0b86bc4474f71b81e59e16e37e8fa381c2d60fb520e530d2c74710c22d8033",
+      "bytes": 145142
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f4a.json",
+      "sha256": "22bd180a085326e29b0b5ed7dd5200427977f98b4b6cbe563a30b9c7d7d58de6",
+      "bytes": 2317
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f4b.json",
+      "sha256": "5e52bbb7be99cc9a83af27d7b3bb8e786858da6a36b163d8b90c63b4d13a4b69",
+      "bytes": 4702
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f4c.json",
+      "sha256": "fdff798394b131d9c8fcb36a67086a16c78d1274096da7782722e2ca16e05942",
+      "bytes": 7331
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f4d.json",
+      "sha256": "566da31d55dc24824f30616777a40e196d0da0885307605fd40d4c424322fa5b",
+      "bytes": 10294
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f4e.json",
+      "sha256": "731861c28158ff09d8c3e4e006b6020697e21decabdff2f59a846d4dcd9c45e1",
+      "bytes": 12958
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f4f.json",
+      "sha256": "0ad0f5eba11efb6cd23eecabd4d58aa7a3d8d0f44722f541b24192744c0960f3",
+      "bytes": 15413
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f4g.json",
+      "sha256": "2ec9cf3ae5b77e995b84edcb2a16012cf3758779921f9deda51510150e68089e",
+      "bytes": 17659
+    },
+    {
+      "path": "content/ap-biology/unit-4/journeys-f5.json",
+      "sha256": "2b66eaee68fdfcb25663c296c115e7afcbb85ae012506710887ff24976ecf56b",
+      "bytes": 17763
+    },
+    {
+      "path": "content/ap-biology/unit-4/memory-objects-f5.json",
+      "sha256": "b97e8464ba987a4347f6add5538a71b13ea7083a9fb37510e24fa401c8e3f5ae",
+      "bytes": 343833
+    },
+    {
+      "path": "content/ap-biology/unit-4/mixed-discrimination-f5.json",
+      "sha256": "1d66aca9f077b73c81ac6fda0d10295ae46ec5cd253188cc4fbdfbeafa160932",
+      "bytes": 77490
+    },
+    {
+      "path": "content/ap-biology/unit-4/review-manifest-f5.json",
+      "sha256": "2156a787728e4c50b09c5c09655426821e6ca5f66750d46c684b684b70374cbf",
+      "bytes": 138825
+    },
+    {
+      "path": "content/ap-biology/unit-4/scope-guards-f5.json",
+      "sha256": "f30ee50d09999a19f7aef06b34ef507027c8e6fb372cf2b38927d474eb8cce60",
+      "bytes": 2043
+    },
+    {
+      "path": "content/ap-biology/unit-4/source/canonical-unit4-f1.json",
+      "sha256": "7bc97cba8cfa8fb05debf125640f107cb112c965577441a8c76b7aec574faf19",
+      "bytes": 231668
+    },
+    {
+      "path": "content/ap-biology/unit-4/source/coverage-manifest-f1.json",
+      "sha256": "be7ba6575056f7436c4f559a96ff52a9dc2423e1248d2e034e1964f6af4d0fe6",
+      "bytes": 37297
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f2.json",
+      "sha256": "4a51c82461ab1f4aff62bcdcdb2864d8b332e2245ea49145f61a97281b2315a4",
+      "bytes": 1023
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f3.json",
+      "sha256": "9b774e6d65f7bd59057eabc9d944e4979b3990e280f086a230d8513aaaccf987",
+      "bytes": 1056
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f4a.json",
+      "sha256": "5e6aa9b0625e333efb63629e1c339dc279e058144e339d3b6a41f0f9e5b58093",
+      "bytes": 1140
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f4b.json",
+      "sha256": "4f27da485b334ee22c25354595d6d06dd23f0f0ae8c448e880a43d14d6b02421",
+      "bytes": 1155
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f4c.json",
+      "sha256": "ce453c02a68733c176f67bc8353681e00d676aac514e0a53c118f08dff4b5626",
+      "bytes": 1158
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f4d.json",
+      "sha256": "4dcb9f4386a4a7f4dbce37b3490a95f608aa143f875def9971a200764eb876c4",
+      "bytes": 1162
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f4e.json",
+      "sha256": "669d8eb27a6e4d60fe160bcc4db33cbb3a4e8d5fc840ed01f4c75715e24add1f",
+      "bytes": 1165
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f4f.json",
+      "sha256": "db2990e9e36f5a0ca3c6cefd2db000ce7176c3a203feac25ee2fc5c297503a00",
+      "bytes": 1168
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f4g.json",
+      "sha256": "89c1769bd44b9eca9080b5fe8dec201e12b8420ff87357a77d467020436d81b8",
+      "bytes": 1267
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f5.json",
+      "sha256": "b9670d52f36b08d3201cf89fd05497a3d3e508454212d677bb0980ab6e6491a3",
+      "bytes": 1512
+    },
+    {
+      "path": "content/ap-biology/unit-4/status-f6.json",
+      "sha256": "40d6e84a5452d983435082cb866a9ed526cd45e9961030713f563130d3a4e29b",
+      "bytes": 1971
+    },
+    {
+      "path": "content/ap-biology/unit-4/status.json",
+      "sha256": "40d6e84a5452d983435082cb866a9ed526cd45e9961030713f563130d3a4e29b",
+      "bytes": 1971
+    },
+    {
+      "path": "content/ap-biology/unit-4/ux-validation-f6.json",
+      "sha256": "15ef164b17cf8a85c117bcf961ae482417c6cc900d035963369adec0ebb9e4b4",
+      "bytes": 4049
+    }
+  ]
+}

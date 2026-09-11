@@ -1,0 +1,1153 @@
+{
+  "palace_id": "U4-J3",
+  "palace_name": "Signal Relay Tower",
+  "story_title": "The Tower That Lost the Signal Without Losing the Ligand",
+  "tagline": "The receptor receives correctly, yet the intracellular tower relays, amplifies, and terminates signals inconsistently. Trace information through real molecular state changes and find every breakpoint.",
+  "guide": {
+    "name": "Dr. Mira Chen",
+    "role": "cellular-systems investigator",
+    "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+    "story_job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+  },
+  "premise": "Reception is repaired, but the intracellular Signal Relay Tower is failing. Some receptor inputs vanish before reaching a target, some are multiplied into excessive downstream activity, and other routes persist after mutations or chemical perturbations. Mira brings one thin violet information trace that can advance only when an actual pathway component changes state. The trace is never a molecule, and the extracellular ligand remains at the receptor throughout the journey.",
+  "mission": "Repair the tower from transduction to response. Keep receptor activation separate from intracellular relay, use kinase and phosphatase chemistry correctly, follow a phosphorylation cascade, distinguish an intracellular second messenger from the extracellular ligand, make amplification visible as multiplication of downstream events, route signaling into distinct cellular responses, and diagnose mutation versus chemical perturbation by where and how pathway activity changes.",
+  "finale": "At the final console, the same pathway can be reconstructed from activated receptor through transduction, reversible phosphorylation, cascading protein modification, cAMP-mediated second-messenger signaling, amplification, and a defined cellular response. Receptor and downstream mutations produce distinguishable breakpoints, chemical inputs reversibly increase or decrease pathway activity without rewriting DNA, and the extracellular ligand remains outside the cytoplasmic relay. The repaired tower can now hand a correctly regulated output to the feedback systems of Journey 4.",
+  "estimated_minutes": 24,
+  "scene_count": 7,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen and fix the room in your mind before the relay moves. Keep left, center, and right stable. The violet trace is only an information overlay. Watch the actual molecular component change state first, then attach the scientific term. Quick Recall is optional during first exposure.",
+  "route_orientation": "The Signal Relay Tower is one continuous seven-location climb. Begin at the Transduction Relay Map on the tower base, move upward through the Kinase–Phosphatase Switchboard and Phosphorylation Cascade Staircase, enter the Second-Messenger Amplifier, branch through Cellular Response Dispatch, carry the same pathway into the Mutation Breakpoint Lab, and finish at the Agonist–Antagonist Console. The violet information trace travels with Mira through all seven locations but advances only after a real biological state change.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Transduction Relay Map",
+      "short": "Relay map",
+      "floor": "Tower base",
+      "symbol": "↝"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Kinase–Phosphatase Switchboard",
+      "short": "Phosphate switch",
+      "floor": "Control floor",
+      "symbol": "P"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Phosphorylation Cascade Staircase",
+      "short": "Cascade",
+      "floor": "Relay stair",
+      "symbol": "P↓"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Second-Messenger Amplifier",
+      "short": "Amplifier",
+      "floor": "Amplifier chamber",
+      "symbol": "cAMP"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Cellular Response Dispatch",
+      "short": "Responses",
+      "floor": "Dispatch floor",
+      "symbol": "⇢"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Mutation Breakpoint Lab",
+      "short": "Mutations",
+      "floor": "Test lab",
+      "symbol": "✕"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Agonist–Antagonist Console",
+      "short": "Chemicals",
+      "floor": "Perturbation deck",
+      "symbol": "+/−"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Transduction Relay Map",
+      "locus_id": "U4-L13",
+      "title": "The Light That Refused to Leave the Receptor",
+      "scene_kicker": "Reception is working, yet the tower still cannot relay the information inward without confusing the message with the messenger.",
+      "location_description": "Transduction Relay Map — the intracellular route map carrying information from an activated receptor through interacting molecular components.",
+      "scene_layout": {
+        "orientation": "On your left is Activated receptor input. Directly ahead is Signal-transduction pathway. On your right is Downstream target branch. These anchors stay fixed while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Activated receptor input",
+            "symbol": "▥",
+            "description": "The activated receptor remains fixed at the membrane on the learner’s left. The extracellular ligand stays outside the cell and does not travel into the tower."
+          },
+          {
+            "position": "center",
+            "label": "Signal-transduction pathway",
+            "symbol": "↝",
+            "description": "A vertical route map contains a sequence of real intracellular relay components. Each component changes state in order before the violet information trace is allowed to advance."
+          },
+          {
+            "position": "right",
+            "label": "Downstream target branch",
+            "symbol": "⇢",
+            "description": "A separate downstream target remains inactive until the central relay reaches it, making transduction distinct from both receptor reception and the eventual cellular response."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+          "job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+        },
+        {
+          "name": "activated receptor input",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of activated receptor input fixed on the learner’s left in the transduction pathway map display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "signal-transduction pathway",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the intracellular route map carrying information from an activated receptor through interacting molecular components; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Start with an activated receptor at the membrane and activate a sequence of intracellular relay components one after another without moving the extracellular ligand through the cytoplasm."
+        },
+        {
+          "name": "downstream target branch",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of downstream target branch fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Violet information trace",
+          "kind": "non-molecular visualization overlay",
+          "visual": "a thin violet line projected across the floor and molecular models; it never occupies a binding site or replaces a biological molecule",
+          "job": "marks where signaling information has reached after an actual receptor, protein, enzyme, second messenger, or response component changes state; it is never treated as material moving through the pathway"
+        }
+      ],
+      "continuity_object": "a thin violet tracing light that marks where signaling information is being carried. It is explicitly a visualization overlay, not a molecule, and it moves only when the actual pathway component changes state.",
+      "story_open": "The Ligand-Gated Channel Gate from the previous journey opens onto the **base of the Signal Relay Tower**, a tall cylindrical chamber whose floors are visible through a hollow central shaft. Before you move, the room fixes itself around three landmarks. On your **left**, the activated receptor from the repaired gateway is embedded in a vertical strip of plasma membrane. The ligand is still attached on the extracellular face, visibly outside the cell. Directly **ahead**, a dark route map climbs through the center of the tower, with several intracellular relay proteins arranged like stations on a vertical line. On your **right**, a downstream target branch waits behind a clear panel. Nothing there has changed. Mira stands beside the receptor and projects a hair-thin violet line from her tablet. The line stops at the receptor and refuses to climb.",
+      "story_paragraphs": [
+        "The Ligand-Gated Channel Gate from the previous journey opens onto the **base of the Signal Relay Tower**, a tall cylindrical chamber whose floors are visible through a hollow central shaft. Before you move, the room fixes itself around three landmarks. On your **left**, the activated receptor from the repaired gateway is embedded in a vertical strip of plasma membrane. The ligand is still attached on the extracellular face, visibly outside the cell. Directly **ahead**, a dark route map climbs through the center of the tower, with several intracellular relay proteins arranged like stations on a vertical line. On your **right**, a downstream target branch waits behind a clear panel. Nothing there has changed. Mira stands beside the receptor and projects a hair-thin violet line from her tablet. The line stops at the receptor and refuses to climb.",
+        "Mira points first to the ligand outside the membrane. It has completed its job in reception by binding the receptor. She does not move it. Then she touches the activated receptor on its cytoplasmic side, and the first intracellular relay protein changes state. Only after that real molecular change does the violet line extend from the receptor to the first relay station. A second protein interacts with the first and changes state, so the line advances again. Then a third component changes. The violet trace climbs one step at a time, always after the biology has changed. Mira names the process **transduction**. Signal transduction converts information from receptor activation into intracellular molecular changes that can produce a cellular response.",
+        "The central route is now alive, yet the ligand remains visibly stranded on the left side of the membrane. Mira taps the violet line with two fingers. It is a tracing overlay, not a molecule. It marks where information has reached. The actual relay is carried by changes in the states and interactions of pathway components. The ordered sequence of those interacting molecular components is a **signal transduction pathway**. The route begins with information from an activated receptor and passes that information to intracellular targets. You can therefore point to three separate stages without letting one term swallow the others. Reception occurred at the receptor on the left. Transduction is happening through the center. A cellular response will occur only when downstream cellular machinery actually changes.",
+        "Mira opens a branch in the center map. One relay component can feed a downstream target on the right while another branch continues upward through the tower. The right-hand target changes only when the route reaches it. This makes the pathway a causal chain rather than a glowing tunnel. If the first relay component never changes state, the violet trace stops there. If the second changes, the trace can advance. The line therefore cannot jump over a broken step or drift into the cytoplasm on its own. The route map finally reports a clean sequence from activated receptor to intracellular relay to downstream target.",
+        "The newly lit target immediately sends a narrow cable into the next floor. At the top of the cable sits a single protein whose state can be changed by adding or removing a phosphate group. Two opposite workstations face it. Mira retracts the violet trace until it rests on the cable. The tower has proved that information can move without the ligand moving. Now it must show how one of its most common reversible protein-control mechanisms actually works."
+      ],
+      "story_close": "The relay map now separates reception from transduction and response. The first control cable rises directly into the Kinase–Phosphatase Switchboard, where one target protein waits between phosphate addition and phosphate removal.",
+      "object_ids": [
+        "U4-K-068",
+        "U4-K-069"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-068",
+          "term": "Transduction",
+          "story": "the violet information trace advancing only after real intracellular relay components change state while the ligand remains outside the membrane",
+          "science": "Signal transduction converts information from receptor activation into intracellular molecular changes that can produce a cellular response.",
+          "exact_name": true,
+          "hint": "the violet information trace advancing only after real intracellular relay components change state while the ligand remains outside the membrane",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-069",
+          "term": "Signal transduction pathway",
+          "story": "the center tower map containing an ordered sequence of interacting intracellular molecular components from activated receptor to target",
+          "science": "A signal transduction pathway is a sequence of interacting molecular components that relays information from an activated receptor to cellular targets.",
+          "exact_name": true,
+          "hint": "the center tower map containing an ordered sequence of interacting intracellular molecular components from activated receptor to target",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Transduction",
+          "meaning": "Signal transduction converts information from receptor activation into intracellular molecular changes that can produce a cellular response.",
+          "image": "the violet information trace advancing only after real intracellular relay components change state while the ligand remains outside the membrane"
+        },
+        {
+          "term": "Signal transduction pathway",
+          "meaning": "A signal transduction pathway is a sequence of interacting molecular components that relays information from an activated receptor to cellular targets.",
+          "image": "the center tower map containing an ordered sequence of interacting intracellular molecular components from activated receptor to target"
+        }
+      ],
+      "misconception_guards": [
+        "The violet tracing light is explicitly non-molecular and only marks information flow; the ligand stays outside the intracellular relay.",
+        "Discrimination requirement: keep reception, transduction, cellular response physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-008: The ligand carries the extracellular message and binds the receptor; usually the ligand itself is not passed through the intracellular cascade. Signal transduction relays information through receptor and downstream molecular state changes."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Transduction Relay Map, remember the fixed activated receptor input → signal-transduction pathway → downstream target branch relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Transduction",
+          "Signal transduction pathway"
+        ],
+        "redraw_test": "From memory, place activated receptor input on the left, signal-transduction pathway in the center, and downstream target branch on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-068",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Kinase–Phosphatase Switchboard",
+      "causal_transition": "The relay map reaches its first reversible protein-control node, so the violet information trace climbs to the Kinase–Phosphatase Switchboard."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Kinase–Phosphatase Switchboard",
+      "locus_id": "U4-L14",
+      "title": "One Protein Between Two Opposite Hands",
+      "scene_kicker": "A phosphate can be added or removed reversibly, yet neither chemical action carries a universal meaning of on or off.",
+      "location_description": "Kinase–Phosphatase Switchboard — the reversible protein-control board where kinases add phosphate and phosphatases remove it.",
+      "scene_layout": {
+        "orientation": "On your left is Protein kinase and ATP station. Directly ahead is Target-protein state panel. On your right is Protein phosphatase station. These anchors stay fixed while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Protein kinase and ATP station",
+            "symbol": "ATP→P",
+            "description": "A protein kinase receives ATP and transfers a phosphate group to the same target protein used throughout the comparison."
+          },
+          {
+            "position": "center",
+            "label": "Target-protein state panel",
+            "symbol": "P?",
+            "description": "One target protein is held in the center so its phosphorylated and dephosphorylated states can be compared without assuming either state is universally active."
+          },
+          {
+            "position": "right",
+            "label": "Protein phosphatase station",
+            "symbol": "P→",
+            "description": "A protein phosphatase removes the phosphate from the center target, reversing the chemical modification while leaving the functional consequence target-dependent."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+          "job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+        },
+        {
+          "name": "protein kinase / ATP phosphate transfer",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of protein kinase / ATP phosphate transfer fixed on the learner’s left in the phosphorylation switch comparison display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "target-protein state panel",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the reversible protein-control board where kinases add phosphate and phosphatases remove it; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Use ATP at the left kinase station to transfer a phosphate group to a target protein, then show that phosphorylation changes the target’s state or activity without assuming the change must be activation."
+        },
+        {
+          "name": "protein phosphatase / phosphate removal",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of protein phosphatase / phosphate removal fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Violet information trace",
+          "kind": "non-molecular visualization overlay",
+          "visual": "a thin violet line projected across the floor and molecular models; it never occupies a binding site or replaces a biological molecule",
+          "job": "marks where signaling information has reached after an actual receptor, protein, enzyme, second messenger, or response component changes state; it is never treated as material moving through the pathway"
+        }
+      ],
+      "continuity_object": "a thin violet tracing light that marks where signaling information is being carried. It is explicitly a visualization overlay, not a molecule, and it moves only when the actual pathway component changes state.",
+      "story_open": "You climb one short flight into the **Kinase–Phosphatase Switchboard**. The room is narrow enough that all three stations fit in one glance. On your **left**, a protein kinase sits beside an ATP rack and a bright phosphate-transfer arm. Directly **ahead**, the same target protein is held in a transparent state panel so every change to it remains visible. On your **right**, a protein phosphatase waits beside a phosphate-removal tray. Mira places the violet information trace along the floor from the previous relay cable to the center target, then locks the trace in place. It cannot move again until one of the two enzymes performs a real chemical action.",
+      "story_paragraphs": [
+        "You climb one short flight into the **Kinase–Phosphatase Switchboard**. The room is narrow enough that all three stations fit in one glance. On your **left**, a protein kinase sits beside an ATP rack and a bright phosphate-transfer arm. Directly **ahead**, the same target protein is held in a transparent state panel so every change to it remains visible. On your **right**, a protein phosphatase waits beside a phosphate-removal tray. Mira places the violet information trace along the floor from the previous relay cable to the center target, then locks the trace in place. It cannot move again until one of the two enzymes performs a real chemical action.",
+        "Mira sends the target protein to the left station first. ATP binds at the kinase station, and the enzyme transfers a phosphate group from ATP to the target protein. The center panel now marks the protein as phosphorylated and shows that its functional state has changed. Mira names the enzyme a **protein kinase**. A protein kinase transfers a phosphate group, usually from ATP, to a target protein. The chemistry is precise. A phosphate has been added. The effect on activity depends on the target protein. On this demonstration target, the phosphorylated state happens to increase one activity meter, yet a second comparison target beside it shows phosphorylation decreasing activity. Mira leaves both meters visible so the word phosphorylation never becomes a synonym for activation.",
+        "The same target moves across the center panel to the station on your right. The **protein phosphatase** removes the phosphate group. This removal is **dephosphorylation**. The phosphate appears in the removal tray, and the target protein changes state again. Mira runs the same two-target comparison in reverse. One protein becomes less active when dephosphorylated, while another becomes more active. The chemical contrast stays stable even though the functional outcomes differ. Kinase adds phosphate. Phosphatase removes phosphate. Phosphorylation and dephosphorylation change protein state or activity according to the specific target and pathway.",
+        "Mira now positions both enzymes on opposite sides of the center protein and cycles the target back and forth. ATP supplies the phosphate donor for the kinase reaction on the left. The phosphatase reverses the modification on the right. The center panel records the target's current phosphorylation state but refuses to label either state universally ON or OFF. The violet trace advances only when the target's state change affects the next relay component. This makes reversible phosphorylation a controllable molecular switch without turning phosphate into a magic activation sticker.",
+        "A small staircase unfolds from the back of the target-protein panel. The top step carries one activated kinase. Below it sit rows of inactive kinase molecules waiting to be modified. Mira looks up the staircase and then back at the single target you just followed. One reversible switch is now clear. The tower's next problem is scale. The same type of modification has to be repeated across several relay layers without losing track of who acts on whom."
+      ],
+      "story_close": "The single reversible switch is repaired. Its output becomes the first step of the Phosphorylation Cascade Staircase, where one activated kinase can modify multiple downstream proteins.",
+      "object_ids": [
+        "U4-K-070",
+        "U4-K-072",
+        "U4-K-073"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-070",
+          "term": "Protein kinase",
+          "story": "the left kinase station transferring a phosphate group from ATP to the center target protein",
+          "science": "A protein kinase transfers a phosphate group, usually from ATP, to a target protein; phosphorylation changes the target protein’s functional state.",
+          "exact_name": true,
+          "hint": "the left kinase station transferring a phosphate group from ATP to the center target protein",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-072",
+          "term": "Protein phosphatase",
+          "story": "the right phosphatase station removing the phosphate from the same center target protein",
+          "science": "A protein phosphatase removes phosphate groups from target proteins and thereby changes their activity or signaling state.",
+          "exact_name": true,
+          "hint": "the right phosphatase station removing the phosphate from the same center target protein",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-073",
+          "term": "Dephosphorylation",
+          "story": "the phosphate leaving the target protein at the right-side phosphatase station",
+          "science": "Dephosphorylation is removal of a phosphate group; it may activate or inactivate a target depending on the pathway.",
+          "exact_name": true,
+          "hint": "the phosphate leaving the target protein at the right-side phosphatase station",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Protein kinase",
+          "meaning": "A protein kinase transfers a phosphate group, usually from ATP, to a target protein; phosphorylation changes the target protein’s functional state.",
+          "image": "the left kinase station transferring a phosphate group from ATP to the center target protein"
+        },
+        {
+          "term": "Protein phosphatase",
+          "meaning": "A protein phosphatase removes phosphate groups from target proteins and thereby changes their activity or signaling state.",
+          "image": "the right phosphatase station removing the phosphate from the same center target protein"
+        },
+        {
+          "term": "Dephosphorylation",
+          "meaning": "Dephosphorylation is removal of a phosphate group; it may activate or inactivate a target depending on the pathway.",
+          "image": "the phosphate leaving the target protein at the right-side phosphatase station"
+        }
+      ],
+      "misconception_guards": [
+        "Phosphorylation can activate or inhibit a target depending on the protein; dephosphorylation also has target-dependent effects.",
+        "Protein kinase adds phosphate; protein phosphatase removes phosphate. Do not equate those chemical actions with universal on/off outcomes.",
+        "Discrimination requirement: keep protein kinase, protein phosphatase, dephosphorylation physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-010: Protein kinases transfer phosphate groups and phosphorylation changes protein state/activity; phosphorylation can activate or inhibit depending on the target.",
+        "Resolved science guard RF-U4-009: Protein phosphatases remove phosphate groups. Dephosphorylation can inactivate or activate a target depending on the protein and pathway; avoid a universal “phosphatase = off” rule."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Kinase–Phosphatase Switchboard, remember the fixed protein kinase / ATP phosphate transfer → target-protein state panel → protein phosphatase / phosphate removal relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Protein kinase",
+          "Protein phosphatase",
+          "Dephosphorylation"
+        ],
+        "redraw_test": "From memory, place protein kinase / ATP phosphate transfer on the left, target-protein state panel in the center, and protein phosphatase / phosphate removal on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-070",
+      "checkpoint_prompt": "What is the chemical difference between a kinase and a phosphatase?",
+      "checkpoint_answer": "A protein kinase transfers a phosphate group to a target; a protein phosphatase removes a phosphate group.",
+      "checkpoint_hint": "Picture one target protein between two enzyme stations. The left enzyme transfers phosphate from ATP; the right enzyme removes phosphate.",
+      "next_locus": "Phosphorylation Cascade Staircase",
+      "causal_transition": "One reversible phosphorylation switch works, but the tower requires the same chemistry repeated through multiple relay layers; the next stair lights as the Phosphorylation Cascade Staircase."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Phosphorylation Cascade Staircase",
+      "locus_id": "U4-L15",
+      "title": "The Staircase That Multiplied the Relay",
+      "scene_kicker": "Repeated phosphorylation can pass information through several protein layers and can increase the number of downstream molecules affected.",
+      "location_description": "Phosphorylation Cascade Staircase — the multi-step kinase staircase where one activated protein changes the state of the next.",
+      "scene_layout": {
+        "orientation": "On your left is Upstream activated kinase. Directly ahead is Phosphorylation cascade staircase. On your right is Downstream activated targets. These anchors stay fixed while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Upstream activated kinase",
+            "symbol": "K1",
+            "description": "One activated kinase supplies the first input and can act on multiple copies of the next kinase layer."
+          },
+          {
+            "position": "center",
+            "label": "Phosphorylation cascade staircase",
+            "symbol": "K1→K2→K3",
+            "description": "Several kinase layers rise through the center. Each activated layer phosphorylates downstream proteins so the relay can continue through repeated protein modification."
+          },
+          {
+            "position": "right",
+            "label": "Downstream activated targets",
+            "symbol": "•••",
+            "description": "Many downstream target molecules remain dark until the staircase reaches them, making relay and possible amplification visible as separate consequences of the cascade."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+          "job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+        },
+        {
+          "name": "upstream activated kinase",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of upstream activated kinase fixed on the learner’s left in the kinase cascade display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "multi-step phosphorylation cascade",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the multi-step kinase staircase where one activated protein changes the state of the next; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Activate one upstream protein kinase and let it phosphorylate multiple copies of the next kinase layer, then continue the relay through at least one additional kinase layer."
+        },
+        {
+          "name": "downstream activated targets",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of downstream activated targets fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Violet information trace",
+          "kind": "non-molecular visualization overlay",
+          "visual": "a thin violet line projected across the floor and molecular models; it never occupies a binding site or replaces a biological molecule",
+          "job": "marks where signaling information has reached after an actual receptor, protein, enzyme, second messenger, or response component changes state; it is never treated as material moving through the pathway"
+        }
+      ],
+      "continuity_object": "a thin violet tracing light that marks where signaling information is being carried. It is explicitly a visualization overlay, not a molecule, and it moves only when the actual pathway component changes state.",
+      "story_open": "The **Phosphorylation Cascade Staircase** rises through the middle of the tower like a wide spiral stair built from three molecular landings. On your **left**, one upstream activated kinase stands on a small starting platform. Directly **ahead**, the staircase contains rows of kinase molecules arranged in successive levels. On your **right**, a bank of downstream target proteins remains dark. The activated receptor from below is still visible through the central shaft, far beneath you. The extracellular ligand is even farther outside the membrane. Mira stretches the violet trace from the left starting kinase to the first central landing and stops it there.",
+      "story_paragraphs": [
+        "The **Phosphorylation Cascade Staircase** rises through the middle of the tower like a wide spiral stair built from three molecular landings. On your **left**, one upstream activated kinase stands on a small starting platform. Directly **ahead**, the staircase contains rows of kinase molecules arranged in successive levels. On your **right**, a bank of downstream target proteins remains dark. The activated receptor from below is still visible through the central shaft, far beneath you. The extracellular ligand is even farther outside the membrane. Mira stretches the violet trace from the left starting kinase to the first central landing and stops it there.",
+        "The upstream kinase acts on several copies of the next kinase layer. Each target kinase receives a phosphate group and changes state. The violet trace does not become several new molecules. It splits into several thin projected branches only to show that information has reached multiple real proteins. Those newly activated kinases then phosphorylate proteins on the next landing. The relay repeats. Mira calls this a **phosphorylation cascade**, a series in which activated protein kinases phosphorylate downstream proteins, allowing the signal to be relayed through several molecular steps and often amplified along the way.",
+        "You can now see why the broader phrase **protein modification and phosphorylation cascades** belongs here. Many signal transduction pathways depend on protein modifications, and phosphorylation is a common reversible modification used in cascades. Each stair does real chemistry to the next protein. The pathway does not advance because the violet trace flows downhill. The trace advances because an activated kinase changes the state of downstream proteins. Mira briefly turns the overlay off, leaving only the actual kinases and phosphate marks. The biological sequence remains completely readable without the visual aid.",
+        "At the final landing, several activated kinases act on many downstream targets on your right. The output is larger than the single kinase input at the beginning. Mira marks this as one possible source of amplification, while keeping the concepts separate. A phosphorylation cascade describes the multi-step kinase relay. **Signal amplification** describes the increase in the number of activated downstream molecules or events. A cascade can contribute to amplification, yet the two phrases do not mean the same thing.",
+        "The downstream targets illuminate a circular door at the top of the stairs. Beyond it is a chamber whose center contains no staircase at all. Instead, one upstream enzyme faces a reservoir that can suddenly fill with hundreds of small intracellular molecules. Mira follows the violet trace to the threshold. Protein relays are only one way to move information inside a cell. The next room will use a small intracellular messenger and make amplification impossible to miss."
+      ],
+      "story_close": "The staircase now relays information through repeated protein modification. Its amplified output opens the Second-Messenger Amplifier, where one upstream event can generate many intracellular messenger molecules.",
+      "object_ids": [
+        "U4-K-005",
+        "U4-K-071"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-005",
+          "term": "Protein modification and phosphorylation cascades",
+          "story": "multiple protein layers in the staircase changing state through repeated phosphorylation",
+          "science": "Many signal transduction pathways include protein modifications and involve phosphorylation cascades.",
+          "exact_name": true,
+          "hint": "multiple protein layers in the staircase changing state through repeated phosphorylation",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-071",
+          "term": "Phosphorylation cascade",
+          "story": "the center kinase staircase where one activated layer phosphorylates downstream kinase layers",
+          "science": "A phosphorylation cascade is a series in which activated protein kinases phosphorylate downstream proteins, allowing relay and often amplification of a signal.",
+          "exact_name": true,
+          "hint": "the center kinase staircase where one activated layer phosphorylates downstream kinase layers",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Protein modification and phosphorylation cascades",
+          "meaning": "Many signal transduction pathways include protein modifications and involve phosphorylation cascades.",
+          "image": "multiple protein layers in the staircase changing state through repeated phosphorylation"
+        },
+        {
+          "term": "Phosphorylation cascade",
+          "meaning": "A phosphorylation cascade is a series in which activated protein kinases phosphorylate downstream proteins, allowing relay and often amplification of a signal.",
+          "image": "the center kinase staircase where one activated layer phosphorylates downstream kinase layers"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep phosphorylation cascade, second messenger, signal amplification physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Phosphorylation Cascade Staircase, remember the fixed upstream activated kinase → multi-step phosphorylation cascade → downstream activated targets relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Protein modification and phosphorylation cascades",
+          "Phosphorylation cascade"
+        ],
+        "redraw_test": "From memory, place upstream activated kinase on the left, multi-step phosphorylation cascade in the center, and downstream activated targets on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-071",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Second-Messenger Amplifier",
+      "causal_transition": "The cascade now relays through proteins, but a chamber above is designed to turn one input into many intracellular signals; the trace continues to the Second-Messenger Amplifier."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Second-Messenger Amplifier",
+      "locus_id": "U4-L16",
+      "title": "One Input, a Chamber Full of cAMP",
+      "scene_kicker": "A small intracellular second messenger can spread information from an upstream signaling event to many downstream targets.",
+      "location_description": "Second-Messenger Amplifier — the amplification chamber where enzymes generate many small intracellular messengers such as cAMP.",
+      "scene_layout": {
+        "orientation": "On your left is Upstream enzyme input. Directly ahead is Second-messenger chamber. On your right is Many downstream relay targets. These anchors stay fixed while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Upstream enzyme input",
+            "symbol": "AC",
+            "description": "An activated upstream enzyme such as adenylyl cyclase receives a limited input from the preceding signaling step."
+          },
+          {
+            "position": "center",
+            "label": "Second-messenger chamber",
+            "symbol": "cAMP × many",
+            "description": "The chamber generates many small intracellular cAMP molecules and keeps them physically inside the cell, separate from the extracellular ligand left behind at the receptor."
+          },
+          {
+            "position": "right",
+            "label": "Many downstream relay targets",
+            "symbol": "•••••",
+            "description": "Multiple downstream targets receive the intracellular messenger, showing how one upstream event can influence many molecules without making any single molecule physically stronger."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+          "job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+        },
+        {
+          "name": "upstream enzyme / receptor input",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of upstream enzyme / receptor input fixed on the learner’s left in the second messenger amplification display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "second-messenger production and amplification",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the amplification chamber where enzymes generate many small intracellular messengers such as cAMP; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Activate an upstream enzyme such as adenylyl cyclase and convert a relatively small input into many molecules of a small intracellular messenger, using cAMP as the named example."
+        },
+        {
+          "name": "many downstream relay targets",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of many downstream relay targets fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Violet information trace",
+          "kind": "non-molecular visualization overlay",
+          "visual": "a thin violet line projected across the floor and molecular models; it never occupies a binding site or replaces a biological molecule",
+          "job": "marks where signaling information has reached after an actual receptor, protein, enzyme, second messenger, or response component changes state; it is never treated as material moving through the pathway"
+        }
+      ],
+      "continuity_object": "a thin violet tracing light that marks where signaling information is being carried. It is explicitly a visualization overlay, not a molecule, and it moves only when the actual pathway component changes state.",
+      "story_open": "The door opens into the round **Second-Messenger Amplifier**, a chamber with three unmistakable zones. On your **left**, an upstream enzyme station is built into the inner face of the membrane. The label ADENYLYL CYCLASE sits above it as a concrete example of an enzyme that can be activated by an upstream signaling step. Directly **ahead**, a clear cylindrical vessel fills the center of the room. It is empty at first. On your **right**, dozens of downstream relay targets are arranged in rows. Through a small window behind you, the original extracellular ligand is still visible at the receptor far below. It never enters this chamber.",
+      "story_paragraphs": [
+        "The door opens into the round **Second-Messenger Amplifier**, a chamber with three unmistakable zones. On your **left**, an upstream enzyme station is built into the inner face of the membrane. The label ADENYLYL CYCLASE sits above it as a concrete example of an enzyme that can be activated by an upstream signaling step. Directly **ahead**, a clear cylindrical vessel fills the center of the room. It is empty at first. On your **right**, dozens of downstream relay targets are arranged in rows. Through a small window behind you, the original extracellular ligand is still visible at the receptor far below. It never enters this chamber.",
+        "Mira lets the violet information trace reach the left enzyme only after that upstream component changes state. She gives the enzyme a limited activating input. The central vessel immediately begins producing many small molecules. Each has the same ring-shaped molecular label, cAMP. Mira waits until the vessel contains a dense cloud before naming the class. A **second messenger** is a small intracellular molecule or ion that relays information from an activated receptor or an upstream signaling component to downstream targets. The messenger here is **cyclic AMP**, written **cAMP**, short for **cyclic adenosine monophosphate**. It is generated inside the cell. It is therefore physically and conceptually different from the extracellular ligand that initiated reception.",
+        "The chamber opens ports toward the right-hand target bank. Many cAMP molecules distribute to downstream signaling targets. One upstream event has now influenced many intracellular components. Mira names this **signal amplification**. Amplification occurs when activation of one signaling component leads to activation of many downstream molecules or events, increasing the magnitude of the intracellular response. Nothing about an individual cAMP molecule has become stronger. The increased magnitude comes from number and branching. One upstream input has produced many intracellular messengers, and those messengers can affect many downstream targets.",
+        "Mira resets the chamber and runs the whole route more slowly. The receptor-level event occurs upstream. An enzyme participates in the intracellular relay. Many cAMP molecules appear. Downstream targets change state. This is why **enzymes and second messengers** can relay and amplify intracellular signals. She then switches on a side panel labeled RELAY, AMPLIFICATION, RESPONSE. The first two lights are active, while RESPONSE remains dark. **Relay, amplification, and response** are connected stages or properties of signaling, yet a larger internal signal is still incomplete until some cellular process actually changes.",
+        "The right-hand target bank now sends several thick conduits through the wall. One turns downward toward membrane channels. Another enters a room filled with metabolic enzymes. A third heads toward the nucleus. A fourth narrow route ends at a regulated cell-death symbol. Mira drains the central cAMP vessel and leaves one molecule under glass as a reference. The amplifier is repaired. Its output has somewhere to go, and the next floor is built to show how different cellular responses can emerge from signaling information."
+      ],
+      "story_close": "The cAMP chamber now separates extracellular ligand from intracellular second messenger and makes amplification visible as multiplication of downstream events. Its output conduits lead into Cellular Response Dispatch.",
+      "object_ids": [
+        "U4-K-010",
+        "U4-K-012",
+        "U4-K-074",
+        "U4-K-075",
+        "U4-K-076"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-010",
+          "term": "Relay, amplification, and response",
+          "story": "the route panel separating intracellular relay, multiplication of downstream events, and the eventual cellular response",
+          "science": "Signaling cascades relay signals from receptors to cellular targets, often amplifying incoming signals and producing responses such as cell growth, secretion, or gene expression.",
+          "exact_name": true,
+          "hint": "the route panel separating intracellular relay, multiplication of downstream events, and the eventual cellular response",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-012",
+          "term": "Enzymes and second messengers",
+          "story": "the upstream enzyme generating many intracellular cAMP molecules that carry information to downstream targets",
+          "science": "Enzymes and second messengers such as cyclic AMP (cAMP) relay and amplify intracellular signals.",
+          "exact_name": true,
+          "hint": "the upstream enzyme generating many intracellular cAMP molecules that carry information to downstream targets",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-074",
+          "term": "Signal amplification",
+          "story": "one upstream event producing many downstream activated molecules or events across the amplifier chamber",
+          "science": "Signal amplification occurs when activation of one signaling component leads to activation of many downstream molecules, increasing the magnitude of the intracellular response.",
+          "exact_name": true,
+          "hint": "one upstream event producing many downstream activated molecules or events across the amplifier chamber",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-075",
+          "term": "Second messenger",
+          "story": "small intracellular messenger molecules carrying information from an upstream signaling step to downstream targets",
+          "science": "A second messenger is a small intracellular molecule or ion that relays information from an activated receptor or upstream signaling component to downstream targets.",
+          "exact_name": true,
+          "hint": "small intracellular messenger molecules carrying information from an upstream signaling step to downstream targets",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-076",
+          "term": "Cyclic AMP (cAMP)",
+          "story": "the central vessel filled with cyclic adenosine monophosphate, cAMP, generated inside the cell",
+          "science": "Cyclic adenosine monophosphate (cAMP) is a common second messenger that can relay and amplify intracellular signaling.",
+          "exact_name": true,
+          "hint": "the central vessel filled with cyclic adenosine monophosphate, cAMP, generated inside the cell",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Relay, amplification, and response",
+          "meaning": "Signaling cascades relay signals from receptors to cellular targets, often amplifying incoming signals and producing responses such as cell growth, secretion, or gene expression.",
+          "image": "the route panel separating intracellular relay, multiplication of downstream events, and the eventual cellular response"
+        },
+        {
+          "term": "Enzymes and second messengers",
+          "meaning": "Enzymes and second messengers such as cyclic AMP (cAMP) relay and amplify intracellular signals.",
+          "image": "the upstream enzyme generating many intracellular cAMP molecules that carry information to downstream targets"
+        },
+        {
+          "term": "Signal amplification",
+          "meaning": "Signal amplification occurs when activation of one signaling component leads to activation of many downstream molecules, increasing the magnitude of the intracellular response.",
+          "image": "one upstream event producing many downstream activated molecules or events across the amplifier chamber"
+        },
+        {
+          "term": "Second messenger",
+          "meaning": "A second messenger is a small intracellular molecule or ion that relays information from an activated receptor or upstream signaling component to downstream targets.",
+          "image": "small intracellular messenger molecules carrying information from an upstream signaling step to downstream targets"
+        },
+        {
+          "term": "Cyclic AMP (cAMP)",
+          "meaning": "Cyclic adenosine monophosphate (cAMP) is a common second messenger that can relay and amplify intracellular signaling.",
+          "image": "the central vessel filled with cyclic adenosine monophosphate, cAMP, generated inside the cell"
+        }
+      ],
+      "misconception_guards": [
+        "A second messenger is intracellular and distinct from the extracellular ligand/first signal; cAMP is one example.",
+        "Amplification means one upstream event produces many downstream activated molecules/events, not that each molecule becomes physically “stronger.”",
+        "Discrimination requirement: keep phosphorylation cascade, second messenger, signal amplification physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Discrimination requirement: keep ligand, second messenger, cyclic AMP (cAMP) physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Second-Messenger Amplifier, remember the fixed upstream enzyme / receptor input → second-messenger production and amplification → many downstream relay targets relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Relay, amplification, and response",
+          "Enzymes and second messengers",
+          "Signal amplification",
+          "Second messenger",
+          "Cyclic AMP (cAMP)"
+        ],
+        "redraw_test": "From memory, place upstream enzyme / receptor input on the left, second-messenger production and amplification in the center, and many downstream relay targets on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-075",
+      "checkpoint_prompt": "How is cAMP different from the ligand at the membrane?",
+      "checkpoint_answer": "cAMP is an intracellular second messenger generated inside the cell; the ligand is the extracellular signal that initiated reception.",
+      "checkpoint_hint": "Keep the extracellular ligand at the membrane. Inside the amplifier, the central vessel fills with cAMP, a small intracellular messenger.",
+      "next_locus": "Cellular Response Dispatch",
+      "causal_transition": "Amplification produces many internal relay events that must now do something to the cell; the output conduits branch into Cellular Response Dispatch."
+    },
+    {
+      "scene_index": 4,
+      "locus": "Cellular Response Dispatch",
+      "locus_id": "U4-L17",
+      "title": "The Same Signal Reaches Different Cellular Workrooms",
+      "scene_kicker": "Transduction ends in changes to real cellular processes, from transport and metabolism to gene expression, phenotype, or regulated cell death.",
+      "location_description": "Cellular Response Dispatch — the branching dispatch room where one pathway can change membrane transport, metabolism, gene expression, phenotype, or apoptosis.",
+      "scene_layout": {
+        "orientation": "On your left is Membrane and metabolic branches. Directly ahead is Cellular-response dispatch center. On your right is Gene-expression, phenotype, and apoptosis branches. These anchors stay fixed while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Membrane and metabolic branches",
+            "symbol": "⇅ / ⚙",
+            "description": "One branch changes a membrane channel or transporter while another changes the activity of a metabolic enzyme."
+          },
+          {
+            "position": "center",
+            "label": "Cellular-response dispatch center",
+            "symbol": "⇢",
+            "description": "A central switchyard receives the completed intracellular signal and routes its consequences into distinct cellular processes."
+          },
+          {
+            "position": "right",
+            "label": "Gene-expression, phenotype, and apoptosis branches",
+            "symbol": "DNA / cell / apoptosis",
+            "description": "Separate response routes change gene expression, contribute to phenotype or function, or trigger regulated apoptosis when the signaling context calls for programmed cell death."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+          "job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+        },
+        {
+          "name": "membrane and metabolic response branches",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of membrane and metabolic response branches fixed on the learner’s left in the response branching display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "cellular-response dispatch center",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the branching dispatch room where one pathway can change membrane transport, metabolism, gene expression, phenotype, or apoptosis; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Send the same completed signaling input into separate response branches and change membrane permeability or transport in one branch, metabolic enzyme activity in another, and gene expression in a third."
+        },
+        {
+          "name": "gene-expression / phenotype / apoptosis branches",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of gene-expression / phenotype / apoptosis branches fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Violet information trace",
+          "kind": "non-molecular visualization overlay",
+          "visual": "a thin violet line projected across the floor and molecular models; it never occupies a binding site or replaces a biological molecule",
+          "job": "marks where signaling information has reached after an actual receptor, protein, enzyme, second messenger, or response component changes state; it is never treated as material moving through the pathway"
+        }
+      ],
+      "continuity_object": "a thin violet tracing light that marks where signaling information is being carried. It is explicitly a visualization overlay, not a molecule, and it moves only when the actual pathway component changes state.",
+      "story_open": "You enter **Cellular Response Dispatch**, the widest floor in the tower. Its fixed geometry is drawn directly into the floor. On your **left**, two short branches lead to a membrane-transport panel and a metabolic-enzyme bench. Directly **ahead**, the central dispatch table receives the completed signaling input from the amplifier below. On your **right**, three longer branches lead toward a nuclear gene-expression room, a whole-cell phenotype display, and a quiet chamber marked PROGRAMMED CELL DEATH. Mira lays the violet trace across the center table but keeps every branch dark until a specific cellular process changes.",
+      "story_paragraphs": [
+        "You enter **Cellular Response Dispatch**, the widest floor in the tower. Its fixed geometry is drawn directly into the floor. On your **left**, two short branches lead to a membrane-transport panel and a metabolic-enzyme bench. Directly **ahead**, the central dispatch table receives the completed signaling input from the amplifier below. On your **right**, three longer branches lead toward a nuclear gene-expression room, a whole-cell phenotype display, and a quiet chamber marked PROGRAMMED CELL DEATH. Mira lays the violet trace across the center table but keeps every branch dark until a specific cellular process changes.",
+        "She routes the completed signal left first. At the membrane branch, a channel or transport protein changes state, altering the movement of material across the membrane. Mira names this a **membrane-permeability response**. Signaling pathways can change membrane permeability by modifying channels or transport proteins. The violet trace then returns to the central table and enters the metabolic branch. An enzyme changes activity, altering the rate of a metabolic process. This is a **metabolic response**. The response is the change in cellular activity, not the path of the information trace itself.",
+        "Mira resets the table and sends the same upstream signaling input toward the right. A regulatory protein reaches the nuclear branch and changes transcriptional activity. That change is a **gene-expression response**. Signaling pathways can activate or repress proteins that regulate transcription and therefore change gene expression. The dispatch table now labels the broader idea **cellular response**. A cellular response is the change in cell activity produced by a signaling pathway, such as altered membrane transport, enzyme activity, secretion, growth, or gene expression. Reception detected the signal. Transduction relayed the information. Response is what the cell actually does differently.",
+        "The gene-expression branch remains active long enough for the whole-cell display beside it to change. Cell shape, protein abundance, and functional behavior shift together. Mira identifies this as a **phenotypic signaling outcome**. Sustained changes in signaling can alter gene expression and cellular function, so they can alter phenotype. She places a card beside the whole display reading **signal response changes phenotype/function**. The phrase refers to an integrated consequence of molecular changes. Phenotype is not another messenger traveling down the pathway. It is what becomes different about the cell as signaling changes cellular processes.",
+        "Finally, Mira activates the quiet chamber at the far right under an appropriate damage-related signaling condition. The cell begins an orderly programmed dismantling process. She names **apoptosis as a signaling outcome**. Programmed cell death can be triggered by signaling pathways in developmental or damage-related contexts. Apoptosis is therefore one possible cellular response, not the definition of response itself. Mira keeps the membrane, metabolic, gene-expression, phenotype, and apoptosis branches separate so each outcome retains its own mechanism and scale.",
+        "All five routes now respond normally, which gives Mira the baseline she needs for a harsher test. She copies the complete pathway onto a rolling transparent bench and wheels it through a door labeled BREAKPOINT LAB. If a mutation changes the receptor, the relay, or a regulatory enzyme, the position of the failure should reveal what kind of component has been altered."
+      ],
+      "story_close": "The dispatch floor now shows what a cellular response actually is. With normal outputs established, the same pathway moves intact into the Mutation Breakpoint Lab so altered signaling can be localized instead of guessed.",
+      "object_ids": [
+        "U4-K-015",
+        "U4-K-077",
+        "U4-K-078",
+        "U4-K-079",
+        "U4-K-080",
+        "U4-K-088",
+        "U4-K-089"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-015",
+          "term": "Signal response changes phenotype/function",
+          "story": "the whole-cell phenotype display changing after signaling alters gene expression and cell function",
+          "science": "Signal transduction can change gene expression and cell function, alter phenotype, or contribute to programmed cell death (apoptosis).",
+          "exact_name": true,
+          "hint": "the whole-cell phenotype display changing after signaling alters gene expression and cell function",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-077",
+          "term": "Cellular response",
+          "story": "the dispatch center routing a completed signaling input into a real change in cell activity",
+          "science": "A cellular response is the change in cell activity produced by a signaling pathway, such as altered membrane transport, enzyme activity, secretion, growth, or gene expression.",
+          "exact_name": true,
+          "hint": "the dispatch center routing a completed signaling input into a real change in cell activity",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-078",
+          "term": "Membrane-permeability response",
+          "story": "the left membrane branch changing a channel or transporter and therefore membrane permeability or transport",
+          "science": "Signaling pathways can change membrane permeability by modifying channels or transport proteins.",
+          "exact_name": true,
+          "hint": "the left membrane branch changing a channel or transporter and therefore membrane permeability or transport",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-079",
+          "term": "Metabolic response",
+          "story": "the left metabolic bench changing enzyme activity and metabolic output",
+          "science": "Signaling pathways can alter metabolic activity by modifying enzymes or other metabolic regulators.",
+          "exact_name": true,
+          "hint": "the left metabolic bench changing enzyme activity and metabolic output",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-080",
+          "term": "Gene-expression response",
+          "story": "the right nuclear branch changing transcriptional regulation and gene expression",
+          "science": "Signaling pathways can activate or repress proteins that regulate transcription and therefore change gene expression.",
+          "exact_name": true,
+          "hint": "the right nuclear branch changing transcriptional regulation and gene expression",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-088",
+          "term": "Phenotypic signaling outcome",
+          "story": "the whole-cell display showing sustained signaling changes reflected in phenotype or function",
+          "science": "Because signaling can alter gene expression and cellular function, sustained pathway changes can alter phenotype.",
+          "exact_name": true,
+          "hint": "the whole-cell display showing sustained signaling changes reflected in phenotype or function",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-089",
+          "term": "Apoptosis as signaling outcome",
+          "story": "the separate programmed-cell-death chamber carrying out regulated apoptosis as one signaling outcome",
+          "science": "Programmed cell death (apoptosis) can be triggered by signaling pathways in response to developmental or damage-related cues.",
+          "exact_name": true,
+          "hint": "the separate programmed-cell-death chamber carrying out regulated apoptosis as one signaling outcome",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Signal response changes phenotype/function",
+          "meaning": "Signal transduction can change gene expression and cell function, alter phenotype, or contribute to programmed cell death (apoptosis).",
+          "image": "the whole-cell phenotype display changing after signaling alters gene expression and cell function"
+        },
+        {
+          "term": "Cellular response",
+          "meaning": "A cellular response is the change in cell activity produced by a signaling pathway, such as altered membrane transport, enzyme activity, secretion, growth, or gene expression.",
+          "image": "the dispatch center routing a completed signaling input into a real change in cell activity"
+        },
+        {
+          "term": "Membrane-permeability response",
+          "meaning": "Signaling pathways can change membrane permeability by modifying channels or transport proteins.",
+          "image": "the left membrane branch changing a channel or transporter and therefore membrane permeability or transport"
+        },
+        {
+          "term": "Metabolic response",
+          "meaning": "Signaling pathways can alter metabolic activity by modifying enzymes or other metabolic regulators.",
+          "image": "the left metabolic bench changing enzyme activity and metabolic output"
+        },
+        {
+          "term": "Gene-expression response",
+          "meaning": "Signaling pathways can activate or repress proteins that regulate transcription and therefore change gene expression.",
+          "image": "the right nuclear branch changing transcriptional regulation and gene expression"
+        },
+        {
+          "term": "Phenotypic signaling outcome",
+          "meaning": "Because signaling can alter gene expression and cellular function, sustained pathway changes can alter phenotype.",
+          "image": "the whole-cell display showing sustained signaling changes reflected in phenotype or function"
+        },
+        {
+          "term": "Apoptosis as signaling outcome",
+          "meaning": "Programmed cell death (apoptosis) can be triggered by signaling pathways in response to developmental or damage-related cues.",
+          "image": "the separate programmed-cell-death chamber carrying out regulated apoptosis as one signaling outcome"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep reception, transduction, cellular response physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Discrimination requirement: keep membrane-permeability response, metabolic response, gene-expression response physically and verbally distinct; do not let one label stand in for the whole set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Cellular Response Dispatch, remember the fixed membrane and metabolic response branches → cellular-response dispatch center → gene-expression / phenotype / apoptosis branches relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Signal response changes phenotype/function",
+          "Cellular response",
+          "Membrane-permeability response",
+          "Metabolic response",
+          "Gene-expression response",
+          "Phenotypic signaling outcome",
+          "Apoptosis as signaling outcome"
+        ],
+        "redraw_test": "From memory, place membrane and metabolic response branches on the left, cellular-response dispatch center in the center, and gene-expression / phenotype / apoptosis branches on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-077",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Mutation Breakpoint Lab",
+      "causal_transition": "The response branches work under normal conditions, so Mira deliberately breaks the route at different molecular levels and carries the same pathway model into the Mutation Breakpoint Lab."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Mutation Breakpoint Lab",
+      "locus_id": "U4-L18",
+      "title": "Find the Break Before You Blame the Whole Pathway",
+      "scene_kicker": "Mutations at different pathway levels create different patterns, so the location of the breakpoint matters.",
+      "location_description": "Mutation Breakpoint Lab — the pathway test bench comparing receptor mutations, downstream-component mutations, and failed phosphatase control.",
+      "scene_layout": {
+        "orientation": "On your left is Receptor-level mutation. Directly ahead is Signaling pathway breakpoint. On your right is Downstream-component and phosphatase defects. These anchors stay fixed while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Receptor-level mutation",
+            "symbol": "✕R",
+            "description": "A mutated receptor changes detection or activation before the pathway enters the intracellular relay."
+          },
+          {
+            "position": "center",
+            "label": "Signaling pathway breakpoint",
+            "symbol": "│✕│",
+            "description": "The complete pathway is laid out as a test bench so the exact point where normal information flow fails or changes can be located."
+          },
+          {
+            "position": "right",
+            "label": "Downstream-component and phosphatase defects",
+            "symbol": "✕D / ✕P",
+            "description": "A separate downstream mutation leaves reception intact, while a phosphatase defect changes phosphorylation persistence according to the target protein and pathway."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+          "job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+        },
+        {
+          "name": "receptor-level mutation",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of receptor-level mutation fixed on the learner’s left in the mutation perturbation display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "signaling pathway breakpoint",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the pathway test bench comparing receptor mutations, downstream-component mutations, and failed phosphatase control; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Introduce a receptor mutation that changes signal detection or receptor activation while leaving downstream components intact, then record how pathway output changes."
+        },
+        {
+          "name": "downstream-component / phosphatase defect",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of downstream-component / phosphatase defect fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Violet information trace",
+          "kind": "non-molecular visualization overlay",
+          "visual": "a thin violet line projected across the floor and molecular models; it never occupies a binding site or replaces a biological molecule",
+          "job": "marks where signaling information has reached after an actual receptor, protein, enzyme, second messenger, or response component changes state; it is never treated as material moving through the pathway"
+        }
+      ],
+      "continuity_object": "a thin violet tracing light that marks where signaling information is being carried. It is explicitly a visualization overlay, not a molecule, and it moves only when the actual pathway component changes state.",
+      "story_open": "The **Mutation Breakpoint Lab** is arranged around one full-length signaling pathway mounted under glass. On your **left**, a receptor model is fixed in the membrane with a small mutation marker attached to one of its domains. Directly **ahead**, the normal signaling pathway runs through the center bench from receptor to response, with every relay component individually numbered. On your **right**, a downstream relay protein and a protein phosphatase sit in separate mutation bays. Mira projects the violet trace along the normal pathway once so you have a baseline, then turns it off. The lab will now introduce one alteration at a time.",
+      "story_paragraphs": [
+        "The **Mutation Breakpoint Lab** is arranged around one full-length signaling pathway mounted under glass. On your **left**, a receptor model is fixed in the membrane with a small mutation marker attached to one of its domains. Directly **ahead**, the normal signaling pathway runs through the center bench from receptor to response, with every relay component individually numbered. On your **right**, a downstream relay protein and a protein phosphatase sit in separate mutation bays. Mira projects the violet trace along the normal pathway once so you have a baseline, then turns it off. The lab will now introduce one alteration at a time.",
+        "First, Mira changes the receptor on the left while leaving every downstream component normal. Depending on the altered domain, ligand binding, receptor activation, membrane behavior, or communication with intracellular signaling components can change. The fault occurs at reception, so downstream output changes even though the downstream machinery itself is intact. Mira labels this a **receptor mutation effect**. A receptor mutation can alter whether and how the pathway responds by changing ligand-binding, membrane, or intracellular signaling domains. The violet trace stops or behaves abnormally at the receptor because the first relevant state transition has changed.",
+        "She resets the receptor and instead changes one numbered relay component in the center-right portion of the pathway. Ligand binding and receptor activation now occur normally. The trace reaches the mutated component and then fails to propagate correctly beyond that point. This is a **downstream-component mutation effect**. Mutations in intracellular signaling components can change propagation, amplification, termination, or output even when ligand binding is normal. Mira places the two trials side by side. One breaks the pathway at reception. The other breaks it after reception. Together they demonstrate the broader rule that **mutations alter signaling** when receptor domains or other pathway components are changed.",
+        "The final mutation bay targets the phosphatase on your right. Mira disables its normal function and watches phosphorylated pathway proteins persist longer than they did in the baseline run. She refuses to label the outcome automatically MORE SIGNALING. The correct **defective phosphatase prediction** depends on the particular phosphorylated target. A defective phosphatase can prolong or alter phosphorylation states, while the functional consequence depends on whether those phosphorylated targets are active or inactive in that pathway. The chemistry is phosphate removal. The pathway meaning remains target-specific.",
+        "Mira restores the original DNA sequence in every model and reruns the pathway. Normal signaling returns. Then she points to a neighboring console with two chemical reservoirs. “A pathway can also be perturbed without changing DNA,” she says. One reservoir is labeled ACTIVATE and the other INHIBIT. Because the mutation experiments established permanent genetic alterations at defined breakpoints, the next test can cleanly compare them with reversible chemical effects on the same signaling machinery."
+      ],
+      "story_close": "The lab now distinguishes receptor mutations, downstream mutations, and target-dependent phosphatase defects by where normal information flow changes. The intact pathway slides next into the Agonist–Antagonist Console for reversible chemical perturbation.",
+      "object_ids": [
+        "U4-K-016",
+        "U4-K-090",
+        "U4-K-091",
+        "U4-K-093"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-016",
+          "term": "Mutations alter signaling",
+          "story": "the complete pathway test bench showing that changes in receptor or relay components alter downstream signaling",
+          "science": "Changes in receptor domains or other signaling-pathway components can alter downstream signal transduction and cellular responses.",
+          "exact_name": true,
+          "hint": "the complete pathway test bench showing that changes in receptor or relay components alter downstream signaling",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-090",
+          "term": "Receptor mutation effect",
+          "story": "the left receptor mutation changing detection or receptor activation before the intracellular relay",
+          "science": "A mutation that changes a receptor’s ligand-binding, membrane, or intracellular signaling domain can alter whether and how the pathway responds.",
+          "exact_name": true,
+          "hint": "the left receptor mutation changing detection or receptor activation before the intracellular relay",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-091",
+          "term": "Downstream-component mutation effect",
+          "story": "the downstream mutation allowing normal reception before the information trace breaks later in the pathway",
+          "science": "Mutations in intracellular signaling components can change propagation, amplification, termination, or output even when ligand binding is normal.",
+          "exact_name": true,
+          "hint": "the downstream mutation allowing normal reception before the information trace breaks later in the pathway",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U4-K-093",
+          "term": "Defective phosphatase prediction",
+          "story": "the defective phosphatase allowing altered phosphorylation states to persist with target-dependent functional consequences",
+          "science": "A defective phosphatase can prolong or alter phosphorylation states of pathway proteins; the effect depends on whether those phosphorylated targets are active or inactive.",
+          "exact_name": true,
+          "hint": "the defective phosphatase allowing altered phosphorylation states to persist with target-dependent functional consequences",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Mutations alter signaling",
+          "meaning": "Changes in receptor domains or other signaling-pathway components can alter downstream signal transduction and cellular responses.",
+          "image": "the complete pathway test bench showing that changes in receptor or relay components alter downstream signaling"
+        },
+        {
+          "term": "Receptor mutation effect",
+          "meaning": "A mutation that changes a receptor’s ligand-binding, membrane, or intracellular signaling domain can alter whether and how the pathway responds.",
+          "image": "the left receptor mutation changing detection or receptor activation before the intracellular relay"
+        },
+        {
+          "term": "Downstream-component mutation effect",
+          "meaning": "Mutations in intracellular signaling components can change propagation, amplification, termination, or output even when ligand binding is normal.",
+          "image": "the downstream mutation allowing normal reception before the information trace breaks later in the pathway"
+        },
+        {
+          "term": "Defective phosphatase prediction",
+          "meaning": "A defective phosphatase can prolong or alter phosphorylation states of pathway proteins; the effect depends on whether those phosphorylated targets are active or inactive.",
+          "image": "the defective phosphatase allowing altered phosphorylation states to persist with target-dependent functional consequences"
+        }
+      ],
+      "misconception_guards": [
+        "A receptor mutation and a downstream-component mutation must have different breakpoint locations in the visual model.",
+        "Discrimination requirement: keep receptor mutation effect, downstream-component mutation effect physically and verbally distinct; do not let one label stand in for the whole set.",
+        "Resolved science guard RF-U4-009: Protein phosphatases remove phosphate groups. Dephosphorylation can inactivate or activate a target depending on the protein and pathway; avoid a universal “phosphatase = off” rule."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Mutation Breakpoint Lab, remember the fixed receptor-level mutation → signaling pathway breakpoint → downstream-component / phosphatase defect relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Mutations alter signaling",
+          "Receptor mutation effect",
+          "Downstream-component mutation effect",
+          "Defective phosphatase prediction"
+        ],
+        "redraw_test": "From memory, place receptor-level mutation on the left, signaling pathway breakpoint in the center, and downstream-component / phosphatase defect on the right, then describe the causal action in order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U4-K-016",
+      "checkpoint_prompt": "How can you tell a receptor mutation from a downstream-component mutation in a pathway diagram?",
+      "checkpoint_answer": "A receptor mutation disrupts detection/activation at reception, while a downstream mutation leaves reception intact but changes relay or response after the breakpoint.",
+      "checkpoint_hint": "Find the first abnormal point. A receptor mutation changes reception; a downstream mutation leaves reception normal and breaks the pathway later.",
+      "next_locus": "Agonist–Antagonist Console",
+      "causal_transition": "Genetic breakpoints are now distinct, but the lab still needs reversible non-genetic perturbation; the same pathway slides to the Agonist–Antagonist Console."
+    },
+    {
+      "scene_index": 6,
+      "locus": "Agonist–Antagonist Console",
+      "locus_id": "U4-L19",
+      "title": "Change the Pathway Without Rewriting the DNA",
+      "scene_kicker": "Chemicals can increase or decrease signaling by interacting with pathway components, and the effect can be reversible without a mutation.",
+      "location_description": "Agonist–Antagonist Console — the chemical perturbation console where pathway activity can be increased or inhibited without changing the DNA sequence.",
+      "scene_layout": {
+        "orientation": "On your left is Pathway-activating chemical input. Directly ahead is Signaling activity readout. On your right is Pathway-inhibiting chemical input. These anchors stay fixed while the mechanism runs.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Pathway-activating chemical input",
+            "symbol": "+",
+            "description": "A reversible chemical perturbation increases pathway activity through a defined interaction without altering the DNA sequence."
+          },
+          {
+            "position": "center",
+            "label": "Signaling activity readout",
+            "symbol": "▥",
+            "description": "A central pathway meter reports the current signaling output after each chemical is applied, washed away, and reset."
+          },
+          {
+            "position": "right",
+            "label": "Pathway-inhibiting chemical input",
+            "symbol": "−",
+            "description": "A second reversible chemical perturbation decreases pathway activity at a defined receptor or downstream step without requiring a mutation."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Chen",
+          "kind": "guide",
+          "visual": "charcoal field jacket, clear protective glasses, and a compact white tablet with a thin violet tracing light projected from one edge",
+          "job": "Mira keeps the extracellular ligand, activated receptor, intracellular relay components, and response machinery physically separate. The violet light marks information flow only when a real pathway component changes state."
+        },
+        {
+          "name": "pathway-activating chemical input",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional, clearly labeled scientific representation of pathway-activating chemical input fixed on the learner’s left in the agonist antagonist perturbation display.",
+          "job": "Establish the starting condition, one comparison, or the input that must be interpreted before the central mechanism acts."
+        },
+        {
+          "name": "signaling activity readout",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the chemical perturbation console where pathway activity can be increased or inhibited without changing the DNA sequence; moving parts are confined to this central action zone.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Apply a pathway-activating chemical input and observe increased signaling activity without changing the DNA sequence, then wash/reset the system."
+        },
+        {
+          "name": "pathway-inhibiting chemical input",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of pathway-inhibiting chemical input fixed on the learner’s right; its visible state changes only after the center mechanism produces an outcome.",
+          "job": "Display the consequence, destination, competing alternative, or resolved state that proves what the central mechanism did."
+        },
+        {
+          "name": "Violet information trace",
+          "kind": "non-molecular visualization overlay",
+          "visual": "a thin violet line projected across the floor and molecular models; it never occupies a binding site or replaces a biological molecule",
+          "job": "marks where signaling information has reached after an actual receptor, protein, enzyme, second messenger, or response component changes state; it is never treated as material moving through the pathway"
+        }
+      ],
+      "continuity_object": "a thin violet tracing light that marks where signaling information is being carried. It is explicitly a visualization overlay, not a molecule, and it moves only when the actual pathway component changes state.",
+      "story_open": "The final floor is the **Agonist–Antagonist Console**, a clean perturbation deck built around the same pathway model from the mutation lab. On your **left**, a reservoir contains a pathway-activating chemical input. Directly **ahead**, a tall signaling-activity readout reports receptor state, relay activity, and final output on one continuous scale. On your **right**, a second reservoir contains a pathway-inhibiting chemical input. The DNA sequence display above the pathway is locked and unchanged. Mira runs one untreated baseline while the violet trace moves through the normal pathway and the activity meter settles at its reference level.",
+      "story_paragraphs": [
+        "The final floor is the **Agonist–Antagonist Console**, a clean perturbation deck built around the same pathway model from the mutation lab. On your **left**, a reservoir contains a pathway-activating chemical input. Directly **ahead**, a tall signaling-activity readout reports receptor state, relay activity, and final output on one continuous scale. On your **right**, a second reservoir contains a pathway-inhibiting chemical input. The DNA sequence display above the pathway is locked and unchanged. Mira runs one untreated baseline while the violet trace moves through the normal pathway and the activity meter settles at its reference level.",
+        "She applies the left-hand chemical at a defined signaling component. Pathway activity rises above baseline. No DNA sequence changes. Mira washes the chemical away, resets the system, and the activity meter returns toward its original state. She then applies the right-hand chemical at a defined receptor or downstream step. Pathway activity falls. Again, the DNA sequence remains unchanged. These trials demonstrate that **chemicals activate or inhibit pathways** when they interact with signaling components in ways that alter pathway activity.",
+        "Mira names the more specific comparison **chemical pathway agonism/antagonism**. A chemical that binds or modifies a signaling-pathway component can increase or decrease pathway activity depending on its interaction. An agonistic or activating effect raises the relevant pathway activity in this test. An antagonistic or inhibitory effect reduces it. The labels describe functional effects in the defined system. They do not require that every chemical bind the receptor, and they do not imply a mutation has occurred.",
+        "For the final comparison, Mira places the mutation-lab results beside the chemical trials. The receptor mutation remained present until the genetic model was restored. The downstream mutation likewise followed the altered component. The chemical perturbations could be applied, removed, and reapplied while the DNA display stayed unchanged. You can now diagnose a pathway by asking where normal information flow changes, whether the altered state persists as a genetic change or follows a chemical exposure, and whether the measured output rises or falls.",
+        "Mira turns off every display except the violet information trace. It begins at an activated receptor, then stops. She looks at you and waits. You reconstruct the tower in order. **Transduction** relays information through intracellular molecular changes. Kinases add phosphate and phosphatases remove it. A phosphorylation cascade can relay through multiple protein layers. A **second messenger** such as **cAMP** can spread and amplify an intracellular signal. A **cellular response** changes what the cell actually does. Mutations can alter signaling at distinct breakpoints, and chemicals can activate or inhibit pathway components without changing DNA. Only after the sequence is complete does Mira allow the violet trace to climb through all seven floors. The ligand remains outside the membrane exactly where the journey began."
+      ],
+      "story_close": "The Signal Relay Tower is repaired. The learner can now follow information from receptor activation through intracellular relay, amplification, response, genetic breakpoints, and reversible chemical perturbation without turning the extracellular ligand into the intracellular signal.",
+      "object_ids": [
+        "U4-K-017",
+        "U4-K-092"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U4-K-017",
+          "term": "Chemicals activate or inhibit pathways",
+          "story": "the activity meter rising or falling after reversible chemicals interact with signaling components",
+          "science": "Chemicals that interact with signaling-pathway components may activate or inhibit the pathway.",
+          "exact_name": true,
+          "hint": "the activity meter rising or falling after reversible chemicals interact with signaling components",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U4-K-092",
+          "term": "Chemical pathway agonism/antagonism",
+          "story": "the left activating chemical and right inhibiting chemical producing opposite pathway effects without changing DNA",
+          "science": "A chemical that binds or modifies a signaling-pathway component can increase or decrease pathway activity depending on its interaction.",
+          "exact_name": true,
+          "hint": "the left activating chemical and right inhibiting chemical producing opposite pathway effects without changing DNA",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Chemicals activate or inhibit pathways",
+          "meaning": "Chemicals that interact with signaling-pathway components may activate or inhibit the pathway.",
+          "image": "the activity meter rising or falling after reversible chemicals interact with signaling components"
+        },
+        {
+          "term": "Chemical pathway agonism/antagonism",
+          "meaning": "A chemical that binds or modifies a signaling-pathway component can increase or decrease pathway activity depending on its interaction.",
+          "image": "the left activating chemical and right inhibiting chemical producing opposite pathway effects without changing DNA"
+        }
+      ],
+      "misconception_guards": [
+        "Preserve the conventional biological structure/process and do not add a mnemonic action that changes causal direction, location, or mechanism."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Agonist–Antagonist Console, remember the fixed pathway-activating chemical input → signaling activity readout → pathway-inhibiting chemical input relationship and the mechanism that changed the right-side state.",
+        "terms_to_carry": [
+          "Chemicals activate or inhibit pathways",
+          "Chemical pathway agonism/antagonism"
+        ],
+        "redraw_test": "From memory, place pathway-activating chemical input on the left, signaling activity readout in the center, and pathway-inhibiting chemical input on the right, then describe the causal action in order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": "U4-K-017",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "causal_transition": "The relay tower closes after the learner can predict normal information flow, amplification, response, mutation breakpoints, and chemical activation/inhibition without confusing any of them with the extracellular ligand physically moving through the pathway."
+    }
+  ],
+  "student_release": "DEVELOPER_PREVIEW_F4C",
+  "narrative_standard": "V2-NARRATIVE-4.2-U4-F4C"
+}

@@ -1,0 +1,888 @@
+{
+  "palace_id": "U5-J7",
+  "unit_id": "unit-5",
+  "palace_name": "Chromosome Mapping Rail Yard",
+  "story_title": "The Rail Yard That Turned a Percentage Into a Distance",
+  "tagline": "Track one two-locus chromosome railcar from linkage through crossover, outcome sorting, recombination frequency, linkage mapping, and the fifty-percent ceiling without losing the distinction between genetic and physical distance.",
+  "guide": {
+    "name": "Dr. Imani Reyes",
+    "role": "inheritance-systems geneticist",
+    "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the blue and amber parental-origin chromosome identities, and the narrow gold generation ledger",
+    "story_job": "Imani keeps one two-locus chromosome railcar visible from linkage through crossover, class sorting, recombination-frequency measurement, map construction, and the 50-percent ceiling."
+  },
+  "premise": "The Chromosome Mapping Rail Yard has been producing maps from percentages without preserving where those percentages came from. Parental classes, recombinant classes, map units, and physical distances have been mixed together. The yard can be repaired only if the same two-locus chromosome railcar and parental arrangement remain visible from the first linkage platform to the final ceiling gate.",
+  "mission": "Follow Dr. Imani Reyes through six connected locations. Tie linkage to same-chromosome position, create recombination through a crossover between tracked loci, classify parental and recombinant outcomes from the known starting arrangement, calculate recombination frequency from those classes, infer short-interval linkage-map distances in centimorgans, and finish by explaining the fifty-percent ceiling and its interpretive limit.",
+  "finale": "The rail yard now keeps evidence and inference attached. Recombination frequency describes observed recombinant outcomes, linkage maps use those outcomes to infer relative genetic distance, centimorgans remain genetic-map units, and the fifty-percent ceiling marks where ordinary two-locus data can no longer distinguish very distant same-chromosome loci from effectively unlinked genes.",
+  "estimated_minutes": 24,
+  "scene_count": 6,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4G",
+  "learner_rule": "Keep the same two-locus chromosome railcar and original parental arrangement in view. Classify biological outcomes before calculating a percentage, and interpret a percentage only after recalling what it measured. Optional Quick Recall appears only twice.",
+  "route_orientation": "This is one continuous south-to-east rail-yard route. Begin at the south linked-gene loading platform, pass through the crossover switch, cross the central parental-recombinant sorting yard, enter the north recombination-frequency meter hall, continue to the east linkage map board, and finish at the far-east fifty-percent ceiling gate. The same chromosome railcar, recombination meter, and gold mapping ledger persist throughout.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Linked-Gene Platform",
+      "short": "Linked genes",
+      "floor": "South loading platform",
+      "symbol": "same chromosome"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Recombination Switch",
+      "short": "Recombination",
+      "floor": "Crossover switch house",
+      "symbol": "nonsister exchange"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Parental–Recombinant Sorting Yard",
+      "short": "Sort classes",
+      "floor": "Central sorting yard",
+      "symbol": "parental recombinant"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Recombination Frequency Meter",
+      "short": "Frequency",
+      "floor": "North meter hall",
+      "symbol": "recombinants over total"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Linkage Map Board",
+      "short": "Map",
+      "floor": "East mapping board",
+      "symbol": "cM"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Fifty-Percent Ceiling Gate",
+      "short": "50% ceiling",
+      "floor": "Far-east ceiling gate",
+      "symbol": "50%"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U5-L38",
+      "locus": "Linked-Gene Platform",
+      "title": "The Platform Where Linked Had Been Mistaken for Locked",
+      "scene_kicker": "Genetic linkage reflects genes occupying the same chromosome, often close enough to be inherited together more frequently, while crossing over can still separate their alleles.",
+      "location_description": "the chromosome platform where nearby loci on the same chromosome tend to travel together through meiosis",
+      "scene_layout": {
+        "orientation": "Enter Linked-Gene Platform and stop at the chromosome platform where nearby loci on the same chromosome tend to travel together through meiosis. The left side is anchored by nearby linked loci, the working center is same-chromosome linkage platform, and the right side is anchored by less-linked distant loci reference. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "name": "Nearby-loci loading siding",
+            "memory_anchor": "close loci",
+            "description": "Two locus plates sit close together on the same chromosome railcar, with the parental allele arrangement locked visibly above them."
+          },
+          {
+            "position": "center",
+            "name": "Same-chromosome linkage platform",
+            "memory_anchor": "co-transmission",
+            "description": "The blue and amber homolog railcars travel in parallel while the two tracked loci remain on the same chromosome and are usually carried together unless a crossover falls between them."
+          },
+          {
+            "position": "right",
+            "name": "Distant-loci comparison siding",
+            "memory_anchor": "more crossover opportunity",
+            "description": "A second display moves two loci farther apart on the same chromosome so the longer interval offers more opportunity for a crossover to occur between them."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the blue and amber parental-origin chromosome identities, and the narrow gold generation ledger",
+          "story_job": "Imani keeps one two-locus chromosome railcar visible from linkage through crossover, class sorting, recombination-frequency measurement, map construction, and the 50-percent ceiling."
+        },
+        {
+          "name": "Two-locus chromosome railcar",
+          "kind": "continuity scientific model",
+          "visual": "a long blue chromosome railcar carrying two brass locus plates, A and B, with the homologous amber railcar beside it and allele tags fixed at corresponding loci",
+          "job": "keeps chromosome identity, locus order, and parental allele arrangement stable while crossing over changes only the chromatid segments and allele combinations actually exchanged."
+        },
+        {
+          "name": "Recombination meter",
+          "kind": "continuity quantitative instrument",
+          "visual": "a large mechanical percentage dial connected to parental and recombinant sorting bins, with a hard stop at fifty percent and a separate map-distance scale that activates only for interpretation",
+          "job": "separates observed recombinant proportion from genetic-map interpretation and prevents the percentage from being read as literal physical DNA length."
+        },
+        {
+          "name": "Gold mapping ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger, now ruled for parental arrangement, recombinant classes, total count, recombination frequency, inferred gene order, map units, and model limits",
+          "job": "forces each conclusion to retain the evidence and assumptions that support it."
+        },
+        {
+          "name": "Nearby-loci loading siding",
+          "kind": "scientific zone",
+          "visual": "Two locus plates sit close together on the same chromosome railcar, with the parental allele arrangement locked visibly above them.",
+          "job": "occupies the left zone and preserves the fixed scientific role of close loci."
+        },
+        {
+          "name": "Same-chromosome linkage platform",
+          "kind": "scientific zone",
+          "visual": "The blue and amber homolog railcars travel in parallel while the two tracked loci remain on the same chromosome and are usually carried together unless a crossover falls between them.",
+          "job": "occupies the center zone and preserves the fixed scientific role of co-transmission."
+        },
+        {
+          "name": "Distant-loci comparison siding",
+          "kind": "scientific zone",
+          "visual": "A second display moves two loci farther apart on the same chromosome so the longer interval offers more opportunity for a crossover to occur between them.",
+          "job": "occupies the right zone and preserves the fixed scientific role of more crossover opportunity."
+        }
+      ],
+      "continuity_object": "one two-locus chromosome railcar whose allele arrangement remains visible as it passes crossover switches, offspring sorting, frequency meters, and the final map board.",
+      "story_open": "The doors of the **Chromosome Mapping Rail Yard** open onto a long station built around one enormous chromosome-shaped railcar. On your **left**, two brass locus plates marked A and B sit close together on the same blue railcar, with matching positions on an amber homolog beside it. Directly **ahead**, both homolog railcars rest on a shared loading platform where their allele tags can be followed from one end to the other. On your **right**, a comparison railcar carries another pair of loci much farther apart. Dr. Imani Reyes sets the **gold mapping ledger** on a waist-high stand and locks the **two-locus chromosome railcar** into place. Above the center track, a dark **recombination meter** waits at zero. Imani tells you that this journey will never replace the chromosome with a fresh diagram. The same tracked loci must survive every calculation that follows.",
+      "story_paragraphs": [
+        "The doors of the **Chromosome Mapping Rail Yard** open onto a long station built around one enormous chromosome-shaped railcar. On your **left**, two brass locus plates marked A and B sit close together on the same blue railcar, with matching positions on an amber homolog beside it. Directly **ahead**, both homolog railcars rest on a shared loading platform where their allele tags can be followed from one end to the other. On your **right**, a comparison railcar carries another pair of loci much farther apart. Dr. Imani Reyes sets the **gold mapping ledger** on a waist-high stand and locks the **two-locus chromosome railcar** into place. Above the center track, a dark **recombination meter** waits at zero. Imani tells you that this journey will never replace the chromosome with a fresh diagram. The same tracked loci must survive every calculation that follows.",
+        "Imani taps the two nearby locus plates on the left railcar. They are physically on the same chromosome. She names the relationship **Genetic linkage**. Genetic linkage describes genes located on the same chromosome that tend to be inherited together, especially when the loci are close enough that crossing over between them is relatively uncommon. She writes the original allele arrangement in the ledger and clips the same arrangement above the railcar. The definition is now attached to a physical reason. The loci travel together because they occupy one chromosome segment that can pass through meiosis as a connected structure.",
+        "The center platform begins moving the homologs through a transparent model of meiosis. The two tracked allele tags remain together on a chromatid when no crossover occurs between their loci. Imani labels this relationship **Linked genes tend to be inherited together**. The word tend is printed in large letters on the platform. A mechanic tries to replace it with always, and the railcar immediately triggers a warning bell. Imani removes the false sign. Genes on the same chromosome can be separated by recombination when a crossover occurs at a position between their loci. Linkage changes the probability of allele combinations. It does not weld alleles together permanently.",
+        "She then rolls the right comparison railcar closer. Its two loci are still on the same chromosome, yet they are separated by a much longer interval. The track between them contains many possible crossover positions. The nearby pair on the left has a shorter interval with fewer opportunities for a crossover to land between the tracked loci. Imani does not claim that chromosome distance determines an exact crossover count in every meiosis. She uses the comparison to establish the mapping logic. Relative position affects the chance that crossing over will separate the two tracked alleles, and that chance can be estimated from many scored meiotic products or offspring.",
+        "The gold ledger now shows two columns. The first says same chromosome. The second says recombination can still occur. Imani asks you to read them together. A gene pair can be linked and still produce recombinant outcomes. A pair can also be so far apart on the same chromosome that ordinary two-locus data eventually make them behave as though they assort independently. The yard therefore cannot use linked as a simple yes or no label detached from recombination evidence. It needs the chromosome location, the original allele arrangement, and the observed outcome classes.",
+        "A small switch house ahead lights up between the A and B plates. Imani keeps the nearby pair loaded on the blue and amber homologs and pushes both railcars forward. The next room will force a crossover to occur at a known position between the loci. Because the parental arrangement has been preserved here, you will be able to tell exactly what changed and exactly which chromatids become recombinant."
+      ],
+      "story_close": "The loading platform now defines linkage through same-chromosome position and co-transmission without turning linked into permanently inseparable. The railcar enters the crossover switch with its parental arrangement still visible.",
+      "object_ids": [
+        "U5-K-024",
+        "U5-K-104"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-024",
+          "term": "Genetic linkage",
+          "story": "Linked-Gene Platform makes Genetic linkage visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "Genes on the same chromosome can be genetically linked; recombination frequency can be used to estimate relative map distance between linked genes.",
+          "exact_name": true,
+          "hint": "the chromosome platform where nearby loci on the same chromosome tend to travel together through meiosis",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        },
+        {
+          "object_id": "U5-K-104",
+          "term": "Linked genes tend to be inherited together",
+          "story": "Linked-Gene Platform makes Linked genes tend to be inherited together visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "Genes that are close together on the same chromosome tend to be transmitted together because a crossover is less likely to occur between nearby loci.",
+          "exact_name": true,
+          "hint": "the chromosome platform where nearby loci on the same chromosome tend to travel together through meiosis",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Genetic linkage",
+          "meaning": "Genes on the same chromosome can be genetically linked; recombination frequency can be used to estimate relative map distance between linked genes.",
+          "image": "the chromosome platform where nearby loci on the same chromosome tend to travel together through meiosis"
+        },
+        {
+          "term": "Linked genes tend to be inherited together",
+          "meaning": "Genes that are close together on the same chromosome tend to be transmitted together because a crossover is less likely to occur between nearby loci.",
+          "image": "the chromosome platform where nearby loci on the same chromosome tend to travel together through meiosis"
+        }
+      ],
+      "misconception_guards": [
+        "Linked genes tend to be inherited together but can be separated by crossing over.",
+        "Discrimination requirement: keep genetic linkage, genetic recombination physically and verbally distinct; do not let one label stand in for the full contrast set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Linked-Gene Platform, reconstruct the fixed nearby linked loci → same-chromosome linkage platform → less-linked distant loci reference relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Genetic linkage",
+          "Linked genes tend to be inherited together"
+        ],
+        "redraw_test": "From memory, place nearby linked loci on the left, same-chromosome linkage platform in the center, and less-linked distant loci reference on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Recombination Switch",
+      "causal_transition": "The same-chromosome railcar establishes linkage strength as a positional relationship; the next station introduces a physical crossover between the tracked loci at the Recombination Switch."
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U5-L39",
+      "locus": "Recombination Switch",
+      "title": "The Switch Where a Crossover Rebuilt the Allele Combination",
+      "scene_kicker": "Crossing over between nonsister chromatids can create genetic recombination when the exchange occurs between linked loci.",
+      "location_description": "the crossover switch where a recombination event between linked loci can separate parental allele combinations",
+      "scene_layout": {
+        "orientation": "Enter Recombination Switch and stop at the crossover switch where a recombination event between linked loci can separate parental allele combinations. The left side is anchored by parental homolog arrangement, the working center is crossover between linked loci, and the right side is anchored by recombinant chromatid output. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "name": "Parental arrangement dock",
+            "memory_anchor": "starting arrangement",
+            "description": "The original allele combinations remain fixed on blue and amber homologous chromosomes before any exchange occurs."
+          },
+          {
+            "position": "center",
+            "name": "Nonsister crossover switch",
+            "memory_anchor": "exchange between loci",
+            "description": "A crossover switch connects nonsister chromatids at a position between the tracked loci and swaps corresponding chromosome segments."
+          },
+          {
+            "position": "right",
+            "name": "Recombinant output track",
+            "memory_anchor": "new combinations",
+            "description": "Altered chromatids roll out with new allele combinations while unaffected chromatids retain the original parental arrangements."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the blue and amber parental-origin chromosome identities, and the narrow gold generation ledger",
+          "story_job": "Imani keeps one two-locus chromosome railcar visible from linkage through crossover, class sorting, recombination-frequency measurement, map construction, and the 50-percent ceiling."
+        },
+        {
+          "name": "Two-locus chromosome railcar",
+          "kind": "continuity scientific model",
+          "visual": "a long blue chromosome railcar carrying two brass locus plates, A and B, with the homologous amber railcar beside it and allele tags fixed at corresponding loci",
+          "job": "keeps chromosome identity, locus order, and parental allele arrangement stable while crossing over changes only the chromatid segments and allele combinations actually exchanged."
+        },
+        {
+          "name": "Recombination meter",
+          "kind": "continuity quantitative instrument",
+          "visual": "a large mechanical percentage dial connected to parental and recombinant sorting bins, with a hard stop at fifty percent and a separate map-distance scale that activates only for interpretation",
+          "job": "separates observed recombinant proportion from genetic-map interpretation and prevents the percentage from being read as literal physical DNA length."
+        },
+        {
+          "name": "Gold mapping ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger, now ruled for parental arrangement, recombinant classes, total count, recombination frequency, inferred gene order, map units, and model limits",
+          "job": "forces each conclusion to retain the evidence and assumptions that support it."
+        },
+        {
+          "name": "Parental arrangement dock",
+          "kind": "scientific zone",
+          "visual": "The original allele combinations remain fixed on blue and amber homologous chromosomes before any exchange occurs.",
+          "job": "occupies the left zone and preserves the fixed scientific role of starting arrangement."
+        },
+        {
+          "name": "Nonsister crossover switch",
+          "kind": "scientific zone",
+          "visual": "A crossover switch connects nonsister chromatids at a position between the tracked loci and swaps corresponding chromosome segments.",
+          "job": "occupies the center zone and preserves the fixed scientific role of exchange between loci."
+        },
+        {
+          "name": "Recombinant output track",
+          "kind": "scientific zone",
+          "visual": "Altered chromatids roll out with new allele combinations while unaffected chromatids retain the original parental arrangements.",
+          "job": "occupies the right zone and preserves the fixed scientific role of new combinations."
+        }
+      ],
+      "continuity_object": "one two-locus chromosome railcar whose allele arrangement remains visible as it passes crossover switches, offspring sorting, frequency meters, and the final map board.",
+      "story_open": "The railcars enter the **Recombination Switch**, a narrow chamber with three fixed tracks. On your **left**, the blue and amber homologs hold the original parental allele arrangements exactly as they left the previous platform. Directly **ahead**, a mechanical crossover bridge can join two nonsister chromatids at a chosen position between loci A and B. On your **right**, four chromatid lanes wait to receive the products. Dr. Imani Reyes checks the **gold mapping ledger** before touching the switch. The parental arrangement is the reference state. Without that reference, the word recombinant would have nothing to compare against.",
+      "story_paragraphs": [
+        "The railcars enter the **Recombination Switch**, a narrow chamber with three fixed tracks. On your **left**, the blue and amber homologs hold the original parental allele arrangements exactly as they left the previous platform. Directly **ahead**, a mechanical crossover bridge can join two nonsister chromatids at a chosen position between loci A and B. On your **right**, four chromatid lanes wait to receive the products. Dr. Imani Reyes checks the **gold mapping ledger** before touching the switch. The parental arrangement is the reference state. Without that reference, the word recombinant would have nothing to compare against.",
+        "Imani duplicates the homologs in the model so each chromosome consists of sister chromatids, then pairs the homologous chromosomes as they would be during prophase I. She highlights one blue chromatid and one amber chromatid. They are nonsister chromatids because they belong to homologous chromosomes, not to the same replicated chromosome. The crossover bridge closes at a point between the two tracked loci. Corresponding DNA segments are exchanged. The loci themselves remain the same loci in the same chromosomal order. What changes is which parental-origin segment and allele combination now occupies part of each participating chromatid.",
+        "As the bridge opens, Imani names **Genetic recombination**. Genetic recombination can create new combinations of alleles relative to the parental chromosome arrangements. In this chamber, the causal event is crossing over between nonsister chromatids. The exchange lands between A and B, so the two tracked alleles can be separated from the combinations that entered the room. Imani leaves the two chromatids that did not participate in the crossover untouched. They preserve parental arrangements and provide a visual comparison with the altered chromatids.",
+        "She then states the relationship that the switch was built to teach. **Crossing over can separate linked alleles** when the crossover occurs between the loci. A crossover somewhere else on the chromosome might not change the tracked A and B combination. The yard therefore does not count every crossover as a recombinant event for every pair of loci. The location of the exchange relative to the tracked loci matters. The two-locus railcar makes that geometry visible because you can point to the A plate, the crossover position, and the B plate on one continuous chromosome.",
+        "The right-side lanes receive four chromatid products. Two retain the original parental combinations. Two carry new combinations produced by the exchange. Imani does not call all four products recombinant simply because crossing over happened in the cell. She classifies the tracked allele arrangement on each chromatid. This keeps recombination tied to the specific loci being studied. It also prepares the next room, where offspring or gamete classes must be sorted against the known parental reference before any percentages are calculated.",
+        "Imani pauses the machinery and asks you to reconstruct the exchange without using the word recombination. You point first to the blue and amber homologs, then to one nonsister chromatid from each homolog, then to the crossover position between A and B, and finally to the swapped distal segments. Only after that sequence is visible does the label return. This replay matters because a recombinant type is not created by moving an allele tag by hand. It is produced when chromosome segments exchange during meiosis and the tracked loci end up in a new combination. The chromosome railcar preserves that causal chain from structure to outcome.",
+        "A small recall lamp illuminates above the crossover bridge. If you choose to answer, Imani asks, **What event can create recombinant chromatids for linked loci?** The answer is **Crossing over between nonsister chromatids at a position between the loci.** After the lamp dims, the railcar products roll toward the sorting yard. The original parental arrangement remains clipped to the ledger, so the next classification will be based on evidence and not on which bins happen to contain the largest counts."
+      ],
+      "story_close": "The crossover switch has created new tracked allele combinations while preserving the parental reference. The next yard classifies parental and recombinant types before any frequency is calculated.",
+      "object_ids": [
+        "U5-K-101",
+        "U5-K-105"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-101",
+          "term": "Genetic recombination",
+          "story": "Recombination Switch makes Genetic recombination visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "Genetic recombination produces chromosome or offspring allele combinations that differ from the parental combinations, including through crossing over during meiosis.",
+          "exact_name": true,
+          "hint": "the crossover switch where a recombination event between linked loci can separate parental allele combinations",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U5-K-105",
+          "term": "Crossing over can separate linked alleles",
+          "story": "Recombination Switch makes Crossing over can separate linked alleles visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "A crossover between two loci on homologous nonsister chromatids can produce recombinant chromatids that separate linked parental allele combinations.",
+          "exact_name": true,
+          "hint": "the crossover switch where a recombination event between linked loci can separate parental allele combinations",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Genetic recombination",
+          "meaning": "Genetic recombination produces chromosome or offspring allele combinations that differ from the parental combinations, including through crossing over during meiosis.",
+          "image": "the crossover switch where a recombination event between linked loci can separate parental allele combinations"
+        },
+        {
+          "term": "Crossing over can separate linked alleles",
+          "meaning": "A crossover between two loci on homologous nonsister chromatids can produce recombinant chromatids that separate linked parental allele combinations.",
+          "image": "the crossover switch where a recombination event between linked loci can separate parental allele combinations"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep genetic linkage, genetic recombination physically and verbally distinct; do not let one label stand in for the full contrast set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Recombination Switch, reconstruct the fixed parental homolog arrangement → crossover between linked loci → recombinant chromatid output relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Genetic recombination",
+          "Crossing over can separate linked alleles"
+        ],
+        "redraw_test": "From memory, place parental homolog arrangement on the left, crossover between linked loci in the center, and recombinant chromatid output on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U5-K-101",
+      "checkpoint_prompt": "What event can create recombinant chromatids for linked loci?",
+      "checkpoint_answer": "Crossing over between nonsister chromatids at a position between the loci.",
+      "checkpoint_hint": "Return to the fixed chromosome railcar and identify the crossover position or the genetic-map ruler before naming the answer.",
+      "next_locus": "Parental–Recombinant Sorting Yard",
+      "causal_transition": "Crossover has produced altered allele combinations, so offspring/gamete classes can be sorted into parental and recombinant bins before any mapping calculation is attempted."
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U5-L40",
+      "locus": "Parental–Recombinant Sorting Yard",
+      "title": "The Sorting Yard Where the Largest Bin Could Not Name Itself",
+      "scene_kicker": "Parental and recombinant types are defined by whether tracked allele combinations match or differ from the original parental arrangements, not by bin size alone.",
+      "location_description": "the offspring sorting yard separating parental-type classes from recombinant-type classes before frequencies are calculated",
+      "scene_layout": {
+        "orientation": "Enter Parental–Recombinant Sorting Yard and stop at the offspring sorting yard separating parental-type classes from recombinant-type classes before frequencies are calculated. The left side is anchored by parental-type bins, the working center is offspring-classification sorter, and the right side is anchored by recombinant-type bins. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "name": "Parental-type bins",
+            "memory_anchor": "matches parents",
+            "description": "Classes that match the original tracked parental allele combinations are sorted into blue bins."
+          },
+          {
+            "position": "center",
+            "name": "Evidence classification turntable",
+            "memory_anchor": "classify before calculating",
+            "description": "Each offspring or gamete class is compared with the known original parental arrangement before any percentage is calculated."
+          },
+          {
+            "position": "right",
+            "name": "Recombinant-type bins",
+            "memory_anchor": "new combinations",
+            "description": "Classes carrying new tracked allele combinations are sorted into amber bins as recombinant types."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the blue and amber parental-origin chromosome identities, and the narrow gold generation ledger",
+          "story_job": "Imani keeps one two-locus chromosome railcar visible from linkage through crossover, class sorting, recombination-frequency measurement, map construction, and the 50-percent ceiling."
+        },
+        {
+          "name": "Two-locus chromosome railcar",
+          "kind": "continuity scientific model",
+          "visual": "a long blue chromosome railcar carrying two brass locus plates, A and B, with the homologous amber railcar beside it and allele tags fixed at corresponding loci",
+          "job": "keeps chromosome identity, locus order, and parental allele arrangement stable while crossing over changes only the chromatid segments and allele combinations actually exchanged."
+        },
+        {
+          "name": "Recombination meter",
+          "kind": "continuity quantitative instrument",
+          "visual": "a large mechanical percentage dial connected to parental and recombinant sorting bins, with a hard stop at fifty percent and a separate map-distance scale that activates only for interpretation",
+          "job": "separates observed recombinant proportion from genetic-map interpretation and prevents the percentage from being read as literal physical DNA length."
+        },
+        {
+          "name": "Gold mapping ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger, now ruled for parental arrangement, recombinant classes, total count, recombination frequency, inferred gene order, map units, and model limits",
+          "job": "forces each conclusion to retain the evidence and assumptions that support it."
+        },
+        {
+          "name": "Parental-type bins",
+          "kind": "scientific zone",
+          "visual": "Classes that match the original tracked parental allele combinations are sorted into blue bins.",
+          "job": "occupies the left zone and preserves the fixed scientific role of matches parents."
+        },
+        {
+          "name": "Evidence classification turntable",
+          "kind": "scientific zone",
+          "visual": "Each offspring or gamete class is compared with the known original parental arrangement before any percentage is calculated.",
+          "job": "occupies the center zone and preserves the fixed scientific role of classify before calculating."
+        },
+        {
+          "name": "Recombinant-type bins",
+          "kind": "scientific zone",
+          "visual": "Classes carrying new tracked allele combinations are sorted into amber bins as recombinant types.",
+          "job": "occupies the right zone and preserves the fixed scientific role of new combinations."
+        }
+      ],
+      "continuity_object": "one two-locus chromosome railcar whose allele arrangement remains visible as it passes crossover switches, offspring sorting, frequency meters, and the final map board.",
+      "story_open": "The chromatid lanes empty into the **Parental–Recombinant Sorting Yard**. On your **left**, blue bins are labeled with the original parental allele combinations recorded before crossing over. Directly **ahead**, a circular classification turntable receives scored gamete or offspring classes one at a time. On your **right**, amber bins wait for combinations that differ from the original parental reference. Dr. Imani Reyes places the **gold mapping ledger** beside the turntable and locks the parental arrangement page open. The **two-locus chromosome railcar** remains visible through a glass wall behind you, so the categories cannot drift away from the chromosomes that produced them.",
+      "story_paragraphs": [
+        "The chromatid lanes empty into the **Parental–Recombinant Sorting Yard**. On your **left**, blue bins are labeled with the original parental allele combinations recorded before crossing over. Directly **ahead**, a circular classification turntable receives scored gamete or offspring classes one at a time. On your **right**, amber bins wait for combinations that differ from the original parental reference. Dr. Imani Reyes places the **gold mapping ledger** beside the turntable and locks the parental arrangement page open. The **two-locus chromosome railcar** remains visible through a glass wall behind you, so the categories cannot drift away from the chromosomes that produced them.",
+        "The first class arrives with the same tracked combination that appeared on one parental homolog. Imani sends it left and names **Parental type**. A parental type matches one of the original tracked parental allele or phenotype combinations used as the reference for the cross. A second matching class follows it. The important feature is identity with the parental arrangement. The category is not defined by being common, large, or expected to dominate the dataset. Those patterns may occur in many linkage experiments, yet they are consequences that depend on the cross and recombination rate.",
+        "A new class arrives carrying an A allele with the B-associated partner that originally belonged on the other homolog. Imani sends it right and names **Recombinant type**. A recombinant type contains a new combination of the tracked alleles or phenotypes relative to the parental classes. The sorter compares the class with the original arrangement before deciding where it belongs. The classification therefore depends on the known parental phase. Without the starting arrangement, a label such as recombinant cannot be assigned just from the absolute size of a group.",
+        "The yard supervisor tries a shortcut. He points to the two largest bins and declares them parental. Imani stops the turntable. In many classic testcross linkage datasets, parental classes are indeed larger than recombinant classes because linked loci recombine less than half the time. That pattern can help identify the likely parental classes when the experimental design supports it. It is still not the definition. The yard must preserve the actual parental genotypes or allele arrangements and use them as the reference. Imani writes this distinction in the ledger before allowing the sorter to restart.",
+        "Every class is now frozen in its correct bin. Imani counts the recombinant bins but does not yet divide by anything. The center turntable has completed one conceptual task. It has classified outcome identity. The next instrument will perform a separate quantitative task and calculate the fraction of all scored outcomes that are recombinant. Keeping those steps separate prevents a student from seeing a percentage and forgetting what observations entered its numerator.",
+        "To test the sorter, Imani deliberately changes the number of items in the bins without changing their identities. A small parental class remains parental if it matches the original arrangement, and a large recombinant class would still be recombinant if it carried a new tracked combination. The exercise strips frequency away from category. Only after the identities are fixed does count become useful. This is the logic students will need later when a dataset is noisy, sample sizes are small, or the familiar pattern of two large parental classes and two smaller recombinant classes is less visually obvious.",
+        "The bins lock shut and roll onto a conveyor. Blue parental bins stay on one side. Amber recombinant bins stay on the other. A large dial becomes visible through the next doorway, but its pointer is still blank. Imani carries the ledger forward with the recombinant count and total count written on separate lines. The next room can now calculate a meaningful recombination frequency because the biological categories were established first."
+      ],
+      "story_close": "The sorting yard now defines parental and recombinant types from the original arrangement before arithmetic begins. The counted recombinant classes move into the recombination-frequency meter.",
+      "object_ids": [
+        "U5-K-102",
+        "U5-K-103"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-102",
+          "term": "Parental type",
+          "story": "Parental–Recombinant Sorting Yard makes Parental type visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "In a genetic-cross analysis, a parental-type offspring has the same allele/phenotype combination as one of the parental classes being tracked.",
+          "exact_name": true,
+          "hint": "the offspring sorting yard separating parental-type classes from recombinant-type classes before frequencies are calculated",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-103",
+          "term": "Recombinant type",
+          "story": "Parental–Recombinant Sorting Yard makes Recombinant type visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "A recombinant-type offspring has a new combination of the tracked alleles/phenotypes relative to the parental classes.",
+          "exact_name": true,
+          "hint": "the offspring sorting yard separating parental-type classes from recombinant-type classes before frequencies are calculated",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Parental type",
+          "meaning": "In a genetic-cross analysis, a parental-type offspring has the same allele/phenotype combination as one of the parental classes being tracked.",
+          "image": "the offspring sorting yard separating parental-type classes from recombinant-type classes before frequencies are calculated"
+        },
+        {
+          "term": "Recombinant type",
+          "meaning": "A recombinant-type offspring has a new combination of the tracked alleles/phenotypes relative to the parental classes.",
+          "image": "the offspring sorting yard separating parental-type classes from recombinant-type classes before frequencies are calculated"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep parental type, recombinant type physically and verbally distinct; do not let one label stand in for the full contrast set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Parental–Recombinant Sorting Yard, reconstruct the fixed parental-type bins → offspring-classification sorter → recombinant-type bins relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Parental type",
+          "Recombinant type"
+        ],
+        "redraw_test": "From memory, place parental-type bins on the left, offspring-classification sorter in the center, and recombinant-type bins on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Recombination Frequency Meter",
+      "causal_transition": "With classes correctly identified, their counts can enter the Recombination Frequency Meter as a quantitative summary of recombinant outcomes."
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U5-L41",
+      "locus": "Recombination Frequency Meter",
+      "title": "The Meter Where a Percentage Was Forbidden to Become a Ruler",
+      "scene_kicker": "Recombination frequency is the proportion of scored outcomes that are recombinant and provides evidence about relative genetic linkage, not a direct measurement of physical DNA length.",
+      "location_description": "the meter calculating the percentage of recombinant offspring or gametes for two loci",
+      "scene_layout": {
+        "orientation": "Enter Recombination Frequency Meter and stop at the meter calculating the percentage of recombinant offspring or gametes for two loci. The left side is anchored by recombinant count input, the working center is recombination-frequency percentage meter, and the right side is anchored by linkage / distance interpretation output. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "name": "Recombinant count hopper",
+            "memory_anchor": "recombinants over total",
+            "description": "The counted recombinant classes enter one hopper while the total number of scored outcomes remains visible on a separate counter."
+          },
+          {
+            "position": "center",
+            "name": "Recombination-frequency dial",
+            "memory_anchor": "percentage",
+            "description": "The meter divides recombinant outcomes by total outcomes and expresses the result as a percentage."
+          },
+          {
+            "position": "right",
+            "name": "Linkage interpretation panel",
+            "memory_anchor": "relative genetic separation",
+            "description": "The percentage is interpreted as evidence about relative genetic linkage and separation, with a warning that it is not direct base-pair distance."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the blue and amber parental-origin chromosome identities, and the narrow gold generation ledger",
+          "story_job": "Imani keeps one two-locus chromosome railcar visible from linkage through crossover, class sorting, recombination-frequency measurement, map construction, and the 50-percent ceiling."
+        },
+        {
+          "name": "Two-locus chromosome railcar",
+          "kind": "continuity scientific model",
+          "visual": "a long blue chromosome railcar carrying two brass locus plates, A and B, with the homologous amber railcar beside it and allele tags fixed at corresponding loci",
+          "job": "keeps chromosome identity, locus order, and parental allele arrangement stable while crossing over changes only the chromatid segments and allele combinations actually exchanged."
+        },
+        {
+          "name": "Recombination meter",
+          "kind": "continuity quantitative instrument",
+          "visual": "a large mechanical percentage dial connected to parental and recombinant sorting bins, with a hard stop at fifty percent and a separate map-distance scale that activates only for interpretation",
+          "job": "separates observed recombinant proportion from genetic-map interpretation and prevents the percentage from being read as literal physical DNA length."
+        },
+        {
+          "name": "Gold mapping ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger, now ruled for parental arrangement, recombinant classes, total count, recombination frequency, inferred gene order, map units, and model limits",
+          "job": "forces each conclusion to retain the evidence and assumptions that support it."
+        },
+        {
+          "name": "Recombinant count hopper",
+          "kind": "scientific zone",
+          "visual": "The counted recombinant classes enter one hopper while the total number of scored outcomes remains visible on a separate counter.",
+          "job": "occupies the left zone and preserves the fixed scientific role of recombinants over total."
+        },
+        {
+          "name": "Recombination-frequency dial",
+          "kind": "scientific zone",
+          "visual": "The meter divides recombinant outcomes by total outcomes and expresses the result as a percentage.",
+          "job": "occupies the center zone and preserves the fixed scientific role of percentage."
+        },
+        {
+          "name": "Linkage interpretation panel",
+          "kind": "scientific zone",
+          "visual": "The percentage is interpreted as evidence about relative genetic linkage and separation, with a warning that it is not direct base-pair distance.",
+          "job": "occupies the right zone and preserves the fixed scientific role of relative genetic separation."
+        }
+      ],
+      "continuity_object": "one two-locus chromosome railcar whose allele arrangement remains visible as it passes crossover switches, offspring sorting, frequency meters, and the final map board.",
+      "story_open": "The conveyor reaches the **Recombination Frequency Meter**. On your **left**, the amber recombinant bins empty into a count hopper while a second counter displays the total number of scored gametes or offspring. Directly **ahead**, a wide percentage dial connects the recombinant count to the total count. On your **right**, an interpretation panel shows two linked loci that can move closer together or farther apart on a genetic map. Dr. Imani Reyes clips the **gold mapping ledger** beneath the dial. The numerator and denominator remain visible so the percentage never loses its biological meaning.",
+      "story_paragraphs": [
+        "The conveyor reaches the **Recombination Frequency Meter**. On your **left**, the amber recombinant bins empty into a count hopper while a second counter displays the total number of scored gametes or offspring. Directly **ahead**, a wide percentage dial connects the recombinant count to the total count. On your **right**, an interpretation panel shows two linked loci that can move closer together or farther apart on a genetic map. Dr. Imani Reyes clips the **gold mapping ledger** beneath the dial. The numerator and denominator remain visible so the percentage never loses its biological meaning.",
+        "Imani turns the crank and names **Recombination frequency**. Recombination frequency is calculated as the number of recombinant outcomes divided by the total number of scored outcomes, multiplied by one hundred to express a percentage. The meter does not care which bin looked visually large. It uses the classified evidence from the previous yard. If twelve of one hundred scored outcomes are recombinant for the tracked loci, the dial reads twelve percent. That percentage describes the observed proportion of recombinant outcomes for this genetic interval under the study conditions.",
+        "The right panel responds to the dial. Lower recombination frequencies are consistent with tighter linkage because a crossover is less often observed between the loci. Higher frequencies, up to the observable ceiling, are consistent with greater relative genetic separation or effective independence. Imani keeps the wording relative and genetic. The panel is not a tape measure laid along DNA. A value of twelve percent does not mean the loci are separated by twelve percent of a chromosome, twelve base pairs, or any fixed physical number of nucleotides.",
+        "A technician tries to engrave physical distance onto the meter. Imani stops him. Recombination frequency is shaped by meiotic crossover behavior and by whether crossover events produce detectable recombinant outcomes for the tracked markers. For relatively short intervals, the percentage becomes useful for estimating genetic map distance. For larger intervals, multiple crossovers can occur between the loci. Some of those crossover combinations can restore parental marker arrangements and therefore hide exchanges from simple two-locus scoring. The observed percentage can then underestimate the total number of crossover events across the interval.",
+        "Imani turns the railcar model so you can see why the warning matters. One crossover between A and B can produce recombinant chromatids. Two crossovers within the interval can sometimes return the outside marker relationship to a parental arrangement. A simple two-locus count sees the final marker combinations, not a complete film of every crossover that occurred. The meter therefore measures recombinant outcomes, and the map interpretation depends on a genetic model. This is why the same percentage can serve as evidence about genetic distance without being identical to physical chromosome length.",
+        "Imani covers the right interpretation panel and gives you only the counts. You must first state the measured quantity in words before the dial is allowed to move. The numerator is the number of recombinant outcomes for the tracked loci. The denominator is the total number of scored outcomes. When you uncover the panel again, the percentage can support a statement about genetic linkage only because its biological ingredients are still known. The yard is training a habit that will matter in Challenge Lab calculations. A number earns meaning from the observations and model that produced it.",
+        "The percentage dial sends its value to a large mapping board in the next room. Imani leaves the recombinant and total counts attached to the ledger, then marks the current percentage as evidence. The next board will combine such evidence across pairs of genes to infer relative order and distance. The meter has done its job only when the learner can reconstruct where the numerator came from, what the denominator represents, and what the resulting percentage can and cannot claim."
+      ],
+      "story_close": "The meter now links recombinant proportion to relative genetic separation while refusing direct physical-distance interpretation. Its pairwise evidence moves to the linkage map board.",
+      "object_ids": [
+        "U5-K-106"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-106",
+          "term": "Recombination frequency",
+          "story": "Recombination Frequency Meter makes Recombination frequency visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "Recombination frequency is the percentage of recombinant offspring/gametes for two loci and is used to infer genetic linkage and relative distance.",
+          "exact_name": true,
+          "hint": "the meter calculating the percentage of recombinant offspring or gametes for two loci",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Recombination frequency",
+          "meaning": "Recombination frequency is the percentage of recombinant offspring/gametes for two loci and is used to infer genetic linkage and relative distance.",
+          "image": "the meter calculating the percentage of recombinant offspring or gametes for two loci"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep recombination frequency, linkage map, centimorgan physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Resolved science guard RF-U5-028: For relatively short intervals, 1% recombinant offspring corresponds to about 1 map unit (1 cM). Multiple crossovers cause recombination frequency to underestimate longer map distances, and observed recombination frequency approaches a maximum of 50%."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Recombination Frequency Meter, reconstruct the fixed recombinant count input → recombination-frequency percentage meter → linkage / distance interpretation output relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Recombination frequency"
+        ],
+        "redraw_test": "From memory, place recombinant count input on the left, recombination-frequency percentage meter in the center, and linkage / distance interpretation output on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Linkage Map Board",
+      "causal_transition": "The recombination percentage now acts as relative-distance evidence, so the next board can convert short-interval frequencies into gene order and approximate centimorgan spacing."
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U5-L42",
+      "locus": "Linkage Map Board",
+      "title": "The Map Board Where Centimorgans Refused to Become Centimeters",
+      "scene_kicker": "A linkage map orders genes by recombination-based genetic distance, and for short intervals about one percent recombination corresponds to approximately one centimorgan.",
+      "location_description": "the gene-order board converting short-interval recombination percentages into approximate centimorgan distances",
+      "scene_layout": {
+        "orientation": "Enter Linkage Map Board and stop at the gene-order board converting short-interval recombination percentages into approximate centimorgan distances. The left side is anchored by recombination-frequency marks, the working center is linkage map / gene-order board, and the right side is anchored by map-unit / centimorgan ruler. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "name": "Pairwise frequency markers",
+            "memory_anchor": "evidence marks",
+            "description": "Observed pairwise recombination frequencies hang as movable brass markers that can be placed between candidate locus positions."
+          },
+          {
+            "position": "center",
+            "name": "Gene-order map board",
+            "memory_anchor": "relative order",
+            "description": "The loci are arranged in an order that is consistent with the set of observed genetic distances."
+          },
+          {
+            "position": "right",
+            "name": "Centimorgan ruler",
+            "memory_anchor": "genetic map units",
+            "description": "A ruler marked in centimorgans converts short-interval recombination values into approximate genetic-map distances while keeping physical DNA length off the scale."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the blue and amber parental-origin chromosome identities, and the narrow gold generation ledger",
+          "story_job": "Imani keeps one two-locus chromosome railcar visible from linkage through crossover, class sorting, recombination-frequency measurement, map construction, and the 50-percent ceiling."
+        },
+        {
+          "name": "Two-locus chromosome railcar",
+          "kind": "continuity scientific model",
+          "visual": "a long blue chromosome railcar carrying two brass locus plates, A and B, with the homologous amber railcar beside it and allele tags fixed at corresponding loci",
+          "job": "keeps chromosome identity, locus order, and parental allele arrangement stable while crossing over changes only the chromatid segments and allele combinations actually exchanged."
+        },
+        {
+          "name": "Recombination meter",
+          "kind": "continuity quantitative instrument",
+          "visual": "a large mechanical percentage dial connected to parental and recombinant sorting bins, with a hard stop at fifty percent and a separate map-distance scale that activates only for interpretation",
+          "job": "separates observed recombinant proportion from genetic-map interpretation and prevents the percentage from being read as literal physical DNA length."
+        },
+        {
+          "name": "Gold mapping ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger, now ruled for parental arrangement, recombinant classes, total count, recombination frequency, inferred gene order, map units, and model limits",
+          "job": "forces each conclusion to retain the evidence and assumptions that support it."
+        },
+        {
+          "name": "Pairwise frequency markers",
+          "kind": "scientific zone",
+          "visual": "Observed pairwise recombination frequencies hang as movable brass markers that can be placed between candidate locus positions.",
+          "job": "occupies the left zone and preserves the fixed scientific role of evidence marks."
+        },
+        {
+          "name": "Gene-order map board",
+          "kind": "scientific zone",
+          "visual": "The loci are arranged in an order that is consistent with the set of observed genetic distances.",
+          "job": "occupies the center zone and preserves the fixed scientific role of relative order."
+        },
+        {
+          "name": "Centimorgan ruler",
+          "kind": "scientific zone",
+          "visual": "A ruler marked in centimorgans converts short-interval recombination values into approximate genetic-map distances while keeping physical DNA length off the scale.",
+          "job": "occupies the right zone and preserves the fixed scientific role of genetic map units."
+        }
+      ],
+      "continuity_object": "one two-locus chromosome railcar whose allele arrangement remains visible as it passes crossover switches, offspring sorting, frequency meters, and the final map board.",
+      "story_open": "The percentage signal enters the **Linkage Map Board**, a room built around a long horizontal chromosome map. On your **left**, brass markers hold pairwise recombination frequencies collected for different gene pairs. Directly **ahead**, movable locus plates can slide along a gene-order track until their arrangement fits the evidence. On your **right**, a ruler is marked in cM and not in centimeters. Dr. Imani Reyes places the **two-locus chromosome railcar** beneath the board and opens the **gold mapping ledger** to a page for gene order and genetic distance. The physical chromosome model remains visible, but the ruler is deliberately labeled as a genetic mapping tool.",
+      "story_paragraphs": [
+        "The percentage signal enters the **Linkage Map Board**, a room built around a long horizontal chromosome map. On your **left**, brass markers hold pairwise recombination frequencies collected for different gene pairs. Directly **ahead**, movable locus plates can slide along a gene-order track until their arrangement fits the evidence. On your **right**, a ruler is marked in cM and not in centimeters. Dr. Imani Reyes places the **two-locus chromosome railcar** beneath the board and opens the **gold mapping ledger** to a page for gene order and genetic distance. The physical chromosome model remains visible, but the ruler is deliberately labeled as a genetic mapping tool.",
+        "Imani places three hypothetical locus plates on the center board and compares their pairwise recombination evidence. She names the resulting representation a **Linkage map**. A linkage map is a genetic map that uses recombination data to infer the relative order and genetic distances among loci on a chromosome. The map is built from patterns in inheritance across many meiotic products or offspring. It does not directly sequence the DNA or count base pairs. The board therefore places genes in relative positions that are consistent with the recombination relationships.",
+        "She then points to the right-side ruler and names the **Map unit (centimorgan)**. For relatively short intervals, about one percent recombination corresponds to approximately one map unit, also called one centimorgan or 1 cM. Imani aligns a one-percent marker with one cM on the short-interval portion of the ruler. The correspondence is approximate and genetic. The unit reflects recombination behavior under the mapping model. It is not one centimeter of chromosome, one million base pairs, or a universal fixed physical length.",
+        "The board extends to a longer interval. Imani adds a second crossover marker and then a third. The simple one-percent-to-one-cM relationship becomes less reliable as the interval grows because multiple crossovers can occur between the loci. Some multiple-crossover outcomes are not detected as recombinant by a simple two-marker score. The observed recombination frequency can therefore underestimate the true genetic map distance over longer intervals. More sophisticated mapping functions or additional markers can improve estimates, but the basic AP Biology relationship is safest for relatively short intervals.",
+        "A student assistant tries to place gene C by looking at only one pairwise value. Imani requires all available pairwise evidence to stay on the left wall. A good gene order must be consistent across the relationships. If A to B is a short interval, B to C is another interval, and A to C is larger, the arrangement should reflect those relative distances within the limits of the data. The map is an inference built from recombination evidence, not a decorative line whose spacing can be chosen freely.",
+        "The board then tests a tempting mistake. A brass ruler marked in base pairs is brought beside the centimorgan scale, but the tick marks fail to align consistently. Imani leaves both rulers visible for comparison. Physical distance measures nucleotide separation along DNA. Genetic distance reflects recombination behavior and is influenced by how often crossovers are recovered between loci. The two quantities can be related in real genomes, yet the relationship is not a universal conversion factor. For this palace, the cM ruler therefore remains attached to inheritance evidence while physical DNA length stays on a separate instrument.",
+        "The optional recall lamp now lights beside the cM ruler. Imani asks, **For a short interval, about 1% recombination corresponds to approximately what genetic-map distance?** The answer is **About 1 centimorgan (1 cM).** When the lamp dims, she slides the loci farther apart. The recombination meter rises, but the map board begins flashing a ceiling warning. The final gate will explain why two-locus recombination data stop becoming more informative after the observed recombinant fraction approaches one half."
+      ],
+      "story_close": "The linkage map board now uses recombination evidence to infer relative gene order and short-interval genetic distance in centimorgans. The loci move toward the fifty-percent ceiling gate.",
+      "object_ids": [
+        "U5-K-107",
+        "U5-K-108"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-107",
+          "term": "Linkage map",
+          "story": "Linkage Map Board makes Linkage map visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "A linkage map orders genes and estimates relative genetic distances from recombination data; it represents recombination distance, not direct physical base-pair distance.",
+          "exact_name": true,
+          "hint": "the gene-order board converting short-interval recombination percentages into approximate centimorgan distances",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U5-K-108",
+          "term": "Map unit (centimorgan)",
+          "story": "Linkage Map Board makes Map unit (centimorgan) visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "For short intervals, a recombination frequency of about 1% corresponds to approximately 1 map unit (centimorgan, cM); multiple crossovers complicate larger distances.",
+          "exact_name": true,
+          "hint": "the gene-order board converting short-interval recombination percentages into approximate centimorgan distances",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Linkage map",
+          "meaning": "A linkage map orders genes and estimates relative genetic distances from recombination data; it represents recombination distance, not direct physical base-pair distance.",
+          "image": "the gene-order board converting short-interval recombination percentages into approximate centimorgan distances"
+        },
+        {
+          "term": "Map unit (centimorgan)",
+          "meaning": "For short intervals, a recombination frequency of about 1% corresponds to approximately 1 map unit (centimorgan, cM); multiple crossovers complicate larger distances.",
+          "image": "the gene-order board converting short-interval recombination percentages into approximate centimorgan distances"
+        }
+      ],
+      "misconception_guards": [
+        "Centimorgans are genetic-map units inferred from recombination, not direct physical base-pair distances; large intervals are complicated by multiple crossovers.",
+        "Discrimination requirement: keep recombination frequency, linkage map, centimorgan physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Resolved science guard RF-U5-028: For relatively short intervals, 1% recombinant offspring corresponds to about 1 map unit (1 cM). Multiple crossovers cause recombination frequency to underestimate longer map distances, and observed recombination frequency approaches a maximum of 50%."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Linkage Map Board, reconstruct the fixed recombination-frequency marks → linkage map / gene-order board → map-unit / centimorgan ruler relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Linkage map",
+          "Map unit (centimorgan)"
+        ],
+        "redraw_test": "From memory, place recombination-frequency marks on the left, linkage map / gene-order board in the center, and map-unit / centimorgan ruler on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U5-K-107",
+      "checkpoint_prompt": "For a short interval, about 1% recombination corresponds to approximately what genetic-map distance?",
+      "checkpoint_answer": "About 1 centimorgan (1 cM).",
+      "checkpoint_hint": "Return to the fixed chromosome railcar and identify the crossover position or the genetic-map ruler before naming the answer.",
+      "next_locus": "Fifty-Percent Ceiling Gate",
+      "causal_transition": "A linkage map is built, but increasing distance exposes the limit of the two-locus measure; the rail ends at the Fifty-Percent Ceiling Gate."
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U5-L43",
+      "locus": "Fifty-Percent Ceiling Gate",
+      "title": "The Gate Where Fifty Percent Hid Two Different Chromosome Arrangements",
+      "scene_kicker": "Observed two-locus recombination frequency approaches a maximum of about fifty percent, so a value near that ceiling cannot distinguish unlinked genes from very distant loci on the same chromosome.",
+      "location_description": "the mapping gate showing why recombination frequency cannot exceed about 50% as an observable two-locus measure",
+      "scene_layout": {
+        "orientation": "Enter Fifty-Percent Ceiling Gate and stop at the mapping gate showing why recombination frequency cannot exceed about 50% as an observable two-locus measure. The left side is anchored by increasing locus separation, the working center is 50-percent ceiling barrier, and the right side is anchored by independent-assortment-equivalent outcome. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "name": "Increasing-separation track",
+            "memory_anchor": "farther apart",
+            "description": "The tracked loci slide farther apart while crossover opportunities accumulate and multiple crossovers become increasingly possible."
+          },
+          {
+            "position": "center",
+            "name": "Fifty-percent ceiling gate",
+            "memory_anchor": "observable ceiling",
+            "description": "The recombination meter rises toward fifty percent and then cannot provide a larger distinguishable two-locus recombinant fraction."
+          },
+          {
+            "position": "right",
+            "name": "Indistinguishable-outcome platform",
+            "memory_anchor": "two explanations remain",
+            "description": "Two tracks remain open, one for genes on different chromosomes and one for very distant loci on the same chromosome, because ordinary two-locus data near fifty percent cannot distinguish them by recombination frequency alone."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the blue and amber parental-origin chromosome identities, and the narrow gold generation ledger",
+          "story_job": "Imani keeps one two-locus chromosome railcar visible from linkage through crossover, class sorting, recombination-frequency measurement, map construction, and the 50-percent ceiling."
+        },
+        {
+          "name": "Two-locus chromosome railcar",
+          "kind": "continuity scientific model",
+          "visual": "a long blue chromosome railcar carrying two brass locus plates, A and B, with the homologous amber railcar beside it and allele tags fixed at corresponding loci",
+          "job": "keeps chromosome identity, locus order, and parental allele arrangement stable while crossing over changes only the chromatid segments and allele combinations actually exchanged."
+        },
+        {
+          "name": "Recombination meter",
+          "kind": "continuity quantitative instrument",
+          "visual": "a large mechanical percentage dial connected to parental and recombinant sorting bins, with a hard stop at fifty percent and a separate map-distance scale that activates only for interpretation",
+          "job": "separates observed recombinant proportion from genetic-map interpretation and prevents the percentage from being read as literal physical DNA length."
+        },
+        {
+          "name": "Gold mapping ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger, now ruled for parental arrangement, recombinant classes, total count, recombination frequency, inferred gene order, map units, and model limits",
+          "job": "forces each conclusion to retain the evidence and assumptions that support it."
+        },
+        {
+          "name": "Increasing-separation track",
+          "kind": "scientific zone",
+          "visual": "The tracked loci slide farther apart while crossover opportunities accumulate and multiple crossovers become increasingly possible.",
+          "job": "occupies the left zone and preserves the fixed scientific role of farther apart."
+        },
+        {
+          "name": "Fifty-percent ceiling gate",
+          "kind": "scientific zone",
+          "visual": "The recombination meter rises toward fifty percent and then cannot provide a larger distinguishable two-locus recombinant fraction.",
+          "job": "occupies the center zone and preserves the fixed scientific role of observable ceiling."
+        },
+        {
+          "name": "Indistinguishable-outcome platform",
+          "kind": "scientific zone",
+          "visual": "Two tracks remain open, one for genes on different chromosomes and one for very distant loci on the same chromosome, because ordinary two-locus data near fifty percent cannot distinguish them by recombination frequency alone.",
+          "job": "occupies the right zone and preserves the fixed scientific role of two explanations remain."
+        }
+      ],
+      "continuity_object": "one two-locus chromosome railcar whose allele arrangement remains visible as it passes crossover switches, offspring sorting, frequency meters, and the final map board.",
+      "story_open": "The map track reaches the **Fifty-Percent Ceiling Gate**. On your **left**, the two tracked loci slide farther and farther apart along the same chromosome model. Directly **ahead**, the **recombination meter** rises toward a massive gate labeled 50%. On your **right**, the track divides into two platforms. One platform shows genes on different chromosomes. The other shows loci very far apart on the same chromosome. Dr. Imani Reyes anchors the **gold mapping ledger** between the platforms and keeps the original blue and amber chromosome identities visible. The final problem is no longer how to calculate a percentage. It is how to interpret the limit of what that percentage can reveal.",
+      "story_paragraphs": [
+        "The map track reaches the **Fifty-Percent Ceiling Gate**. On your **left**, the two tracked loci slide farther and farther apart along the same chromosome model. Directly **ahead**, the **recombination meter** rises toward a massive gate labeled 50%. On your **right**, the track divides into two platforms. One platform shows genes on different chromosomes. The other shows loci very far apart on the same chromosome. Dr. Imani Reyes anchors the **gold mapping ledger** between the platforms and keeps the original blue and amber chromosome identities visible. The final problem is no longer how to calculate a percentage. It is how to interpret the limit of what that percentage can reveal.",
+        "As locus separation increases, more crossover configurations can occur between the markers. Recombination frequency rises because recombinant marker combinations become more common. Yet the meter does not continue toward one hundred percent. In ordinary two-locus scoring, the observable recombinant fraction approaches a maximum of about one half. Imani names this the **Fifty-percent recombination ceiling**. At that point, parental and recombinant marker combinations occur in proportions that make the loci behave as though they assort independently in the two-locus dataset.",
+        "Imani opens the same-chromosome platform on the right. The two loci are extremely far apart, and multiple crossovers can occur within the long interval. Some exchanges generate recombinant outside-marker combinations. Other combinations of exchanges restore parental outside-marker relationships. As distance grows, the simple final-marker score loses information about how many crossover events actually occurred. The recombinant fraction therefore approaches fifty percent and stops giving a simple linear measure of additional genetic separation.",
+        "She then opens the different-chromosome platform. Genes on different chromosomes can assort independently during meiosis, producing the same effective fifty-percent recombinant relationship under a standard two-locus analysis. The meter cannot look at a value near fifty percent and tell which of these two chromosome arrangements generated it. Imani leaves both platform lights on. A fifty-percent recombination value alone cannot distinguish genes on different chromosomes from very distant loci on the same chromosome.",
+        "The gold ledger now contains the entire mapping chain. Same-chromosome position can create linkage. A crossover between tracked loci can create recombinant chromatids. Parental and recombinant outcome classes must be identified from the original arrangement. Recombinant outcomes divided by total outcomes produce recombination frequency. Short-interval frequencies can support linkage-map distances in centimorgans. Longer intervals are complicated by multiple crossovers. Near the fifty-percent ceiling, ordinary two-locus recombination data lose the power to distinguish effective independence from very distant same-chromosome linkage.",
+        "Imani closes the gate and asks you to look back down the rail yard. Every room used the same two-locus chromosome railcar. No percentage appeared before the biological classes were defined, and no map unit was allowed to become a physical ruler. The final platform therefore preserves the most important limitation of the method. Recombination mapping is an inference from inheritance outcomes. Its measurements are useful because their assumptions and boundaries remain attached to them.",
+        "Before leaving, Imani lowers the meter from fifty percent to a smaller value and then raises it again. Below the ceiling, changing recombination frequency can still provide useful relative mapping information within the model. At the ceiling, that simple two-locus information saturates. The loss is informational, not a claim that crossovers have stopped occurring. Very distant loci can experience many crossover events even while the final marker classes approach the same fifty-fifty relationship seen for effectively unlinked genes. The gate marks the limit of the measurement, not the limit of chromosome motion.",
+        "Beyond the gate, the rail line ends at a laboratory door marked inheritance evidence. The next journey will leave chromosome mapping and examine non-nuclear inheritance, organelle transmission, illustrative genetic cases, and chi-square goodness-of-fit reasoning. Imani closes the mapping ledger page and carries the evidence forward."
+      ],
+      "story_close": "The ceiling gate now explains why recombination frequency tops out near fifty percent and why that value cannot identify chromosome arrangement by itself. The mapping rail yard is complete.",
+      "object_ids": [
+        "U5-K-109"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-109",
+          "term": "Fifty-percent recombination ceiling",
+          "story": "Fifty-Percent Ceiling Gate makes Fifty-percent recombination ceiling visible through the continuous chromosome railcar and mapping evidence before the exact name is attached.",
+          "science": "Observed recombination frequency approaches a maximum of 50%; a 50% value cannot distinguish genes on different chromosomes from loci so far apart on one chromosome that they assort effectively independently.",
+          "exact_name": true,
+          "hint": "the mapping gate showing why recombination frequency cannot exceed about 50% as an observable two-locus measure",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Fifty-percent recombination ceiling",
+          "meaning": "Observed recombination frequency approaches a maximum of 50%; a 50% value cannot distinguish genes on different chromosomes from loci so far apart on one chromosome that they assort effectively independently.",
+          "image": "the mapping gate showing why recombination frequency cannot exceed about 50% as an observable two-locus measure"
+        }
+      ],
+      "misconception_guards": [
+        "Observed recombination frequency has an approximate 50% ceiling and cannot distinguish unlinked genes from very distant loci on the same chromosome.",
+        "Resolved science guard RF-U5-028: For relatively short intervals, 1% recombinant offspring corresponds to about 1 map unit (1 cM). Multiple crossovers cause recombination frequency to underestimate longer map distances, and observed recombination frequency approaches a maximum of 50%."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Fifty-Percent Ceiling Gate, reconstruct the fixed increasing locus separation → 50-percent ceiling barrier → independent-assortment-equivalent outcome relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Fifty-percent recombination ceiling"
+        ],
+        "redraw_test": "From memory, place increasing locus separation on the left, 50-percent ceiling barrier in the center, and independent-assortment-equivalent outcome on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "causal_transition": "Journey 7 closes with linkage, crossover, parental/recombinant classification, recombination frequency, map units, multiple-crossover limitations, and the 50% ceiling connected to one chromosome route."
+    }
+  ],
+  "narrative_design": "U5-F4G-NARRATIVE-1.0"
+}

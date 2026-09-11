@@ -1,0 +1,2940 @@
+{
+  "schema": "memory-palace-v2-unit5-f2-classification-1.0",
+  "generated_utc": "2026-09-04T05:30:00+00:00",
+  "unit_id": "unit-5",
+  "canonical_source_lock": "F1",
+  "policy": {
+    "palace": "Use permanent loci for durable biological identities, mechanisms, relationships, and exact terms that benefit from stable spatial retrieval.",
+    "embedded": "Embed tightly related definitions/examples inside a locus when a separate locus would fragment one biological mechanism.",
+    "challenge_lab": "Keep calculations, novel crosses, model identification, pedigree inference, and transfer problems outside permanent loci.",
+    "scope_guard": "Preserve misconception and scope boundaries as non-runtime support rather than memorization targets.",
+    "spelling": "No mandatory spelling gate in F2; spelling support remains adaptive."
+  },
+  "counts": {
+    "total": 152,
+    "by_destination": {
+      "PALACE_PRIMARY_LOCUS": 50,
+      "PALACE_EMBEDDED": 81,
+      "CHALLENGE_LAB": 16,
+      "SUPPORTING_NON_RUNTIME_SCOPE_GUARD": 5
+    },
+    "by_name_support": {
+      "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE": 71,
+      "SEMANTIC_SCIENCE_CUE_SUFFICIENT": 28,
+      "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED": 31,
+      "NO_EXACT_NAME_GATE": 22
+    },
+    "exact_name_targets": 130,
+    "mandatory_spelling_targets": 0
+  },
+  "records": [
+    {
+      "knowledge_id": "U5-K-001",
+      "canonical_label": "Meiosis forms haploid cells",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L15",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MEIOSIS_FINAL_OUTCOME_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-002",
+      "canonical_label": "Prophase I",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L07",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROPHASE_I_SYNAPIS_CROSSOVER",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-003",
+      "canonical_label": "Metaphase I",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L08",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "METAPHASE_I_INDEPENDENT_ORIENTATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-004",
+      "canonical_label": "Anaphase I",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L09",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ANAPHASE_I_HOMOLOG_SEPARATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-005",
+      "canonical_label": "Telophase I and cytokinesis",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L10",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TELOPHASE_I_HAPLOID_DUPLICATED_STATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-006",
+      "canonical_label": "Prophase II",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L12",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROPHASE_II_SPINDLE_RESTART",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-007",
+      "canonical_label": "Metaphase II",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L13",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "METAPHASE_II_SISTER_ALIGNMENT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-008",
+      "canonical_label": "Anaphase II",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L14",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ANAPHASE_II_SISTER_SEPARATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-009",
+      "canonical_label": "Telophase II and cytokinesis",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L15",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MEIOSIS_FINAL_OUTCOME_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-010",
+      "canonical_label": "Mitosis versus meiosis",
+      "topic": "5.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L15",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MEIOSIS_FINAL_OUTCOME_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-011",
+      "canonical_label": "Correct chromosome segregation and nondisjunction",
+      "topic": "5.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L17",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SEGREGATION_VS_NONDISJUNCTION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-012",
+      "canonical_label": "Crossing over increases diversity",
+      "topic": "5.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROPHASE_I_SYNAPIS_CROSSOVER",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-013",
+      "canonical_label": "Sources of variation in sexual reproduction",
+      "topic": "5.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L16",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SEXUAL_VARIATION_SOURCE_SYNTHESIS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-014",
+      "canonical_label": "Mendelian laws for unlinked genes",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L23",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SEGREGATION_INDEPENDENT_ASSORTMENT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-015",
+      "canonical_label": "Fertilization restores diploidy and creates allele combinations",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L05",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "FERTILIZATION_PLOIDY_LIFE_CYCLE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-016",
+      "canonical_label": "Probability in inheritance",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L27",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "INHERITANCE_PROBABILITY_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-017",
+      "canonical_label": "Monohybrid, dihybrid, and test crosses",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L24",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MONOHYBRID_DIHYBRID_TESTCROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-018",
+      "canonical_label": "Genotype, homozygous, heterozygous",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L22",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GENOTYPE_PHENOTYPE_DOMINANCE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-019",
+      "canonical_label": "Phenotype",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_PHENOTYPE_DOMINANCE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-017"
+    },
+    {
+      "knowledge_id": "U5-K-020",
+      "canonical_label": "Inheritance-pattern inference",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L30",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "INHERITANCE_PATTERN_INFERENCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-021",
+      "canonical_label": "Addition rule of probability",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ADDITION_MULTIPLICATION_RULE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-022",
+      "canonical_label": "Multiplication rule of probability",
+      "topic": "5.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L28",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ADDITION_MULTIPLICATION_RULE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-023",
+      "canonical_label": "Quantitative identification of non-Mendelian ratios",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L31",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NON_MENDELIAN_RATIO_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-024",
+      "canonical_label": "Genetic linkage",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L38",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GENETIC_LINKAGE_DISTANCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-025",
+      "canonical_label": "Codominance",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L32",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DOMINANCE_MULTIPLE_ALLELE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-026",
+      "canonical_label": "Incomplete dominance",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L32",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DOMINANCE_MULTIPLE_ALLELE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-024"
+    },
+    {
+      "knowledge_id": "U5-K-027",
+      "canonical_label": "Sex-linked inheritance",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L34",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "AUTOSOME_XY_SEX_LINKAGE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-025"
+    },
+    {
+      "knowledge_id": "U5-K-028",
+      "canonical_label": "Pleiotropy",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L33",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EPISTASIS_POLYGENIC_PLEIOTROPY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-029",
+      "canonical_label": "Non-nuclear inheritance overview",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L44",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NON_NUCLEAR_ORGANELLE_INHERITANCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-030",
+      "canonical_label": "Non-nuclear inheritance",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NON_NUCLEAR_ORGANELLE_INHERITANCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-031",
+      "canonical_label": "Animal mitochondrial inheritance",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L45",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MITOCHONDRIAL_INHERITANCE_ROUTE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-029"
+    },
+    {
+      "knowledge_id": "U5-K-032",
+      "canonical_label": "Plant organelle inheritance",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L46",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PLANT_ORGANELLE_INHERITANCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-029"
+    },
+    {
+      "knowledge_id": "U5-K-033",
+      "canonical_label": "Chi-square hypothesis testing",
+      "topic": "5.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L48",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHI_SQUARE_GOODNESS_OF_FIT_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-034",
+      "canonical_label": "Environmental effects on phenotype",
+      "topic": "5.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L37",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GENOTYPE_ENVIRONMENT_PLASTICITY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-035",
+      "canonical_label": "Genetics",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HEREDITY_GENE_CHROMOSOME_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-036",
+      "canonical_label": "Heredity",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L01",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "HEREDITY_GENE_CHROMOSOME_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-037",
+      "canonical_label": "Gene",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HEREDITY_GENE_CHROMOSOME_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-001"
+    },
+    {
+      "knowledge_id": "U5-K-038",
+      "canonical_label": "Genes are inherited on chromosomes",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HEREDITY_GENE_CHROMOSOME_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-039",
+      "canonical_label": "Asexual reproduction",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SEXUAL_ASEXUAL_REPRODUCTION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-002"
+    },
+    {
+      "knowledge_id": "U5-K-040",
+      "canonical_label": "Clone",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SEXUAL_ASEXUAL_REPRODUCTION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-002"
+    },
+    {
+      "knowledge_id": "U5-K-041",
+      "canonical_label": "Sexual reproduction",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L04",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SEXUAL_ASEXUAL_REPRODUCTION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-042",
+      "canonical_label": "Homologous chromosomes",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L02",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "HOMOLOG_SISTER_KARYOTYPE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-004"
+    },
+    {
+      "knowledge_id": "U5-K-043",
+      "canonical_label": "Sister chromatids",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HOMOLOG_SISTER_KARYOTYPE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-044",
+      "canonical_label": "Karyotype",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HOMOLOG_SISTER_KARYOTYPE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-005"
+    },
+    {
+      "knowledge_id": "U5-K-045",
+      "canonical_label": "Somatic cell",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PLOIDY_CELL_TYPE_COUNTER",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-046",
+      "canonical_label": "Diploid (2n)",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L03",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PLOIDY_CELL_TYPE_COUNTER",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-047",
+      "canonical_label": "Haploid (n)",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PLOIDY_CELL_TYPE_COUNTER",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-048",
+      "canonical_label": "Gamete",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PLOIDY_CELL_TYPE_COUNTER",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-049",
+      "canonical_label": "Human diploid and haploid chromosome numbers",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PLOIDY_CELL_TYPE_COUNTER",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-050",
+      "canonical_label": "Autosome",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L34",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "AUTOSOME_XY_SEX_LINKAGE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-006"
+    },
+    {
+      "knowledge_id": "U5-K-051",
+      "canonical_label": "Human X/Y chromosome-complement model",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L34",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "AUTOSOME_XY_SEX_LINKAGE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-052",
+      "canonical_label": "Life cycle",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "FERTILIZATION_PLOIDY_LIFE_CYCLE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-007"
+    },
+    {
+      "knowledge_id": "U5-K-053",
+      "canonical_label": "Fertilization",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "FERTILIZATION_PLOIDY_LIFE_CYCLE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-008"
+    },
+    {
+      "knowledge_id": "U5-K-054",
+      "canonical_label": "Zygote",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "FERTILIZATION_PLOIDY_LIFE_CYCLE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-055",
+      "canonical_label": "Premeiotic interphase",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L06",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PREMEIOTIC_REPLICATION_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-012"
+    },
+    {
+      "knowledge_id": "U5-K-056",
+      "canonical_label": "Synapsis",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROPHASE_I_SYNAPIS_CROSSOVER",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-057",
+      "canonical_label": "Tetrad",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROPHASE_I_SYNAPIS_CROSSOVER",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-058",
+      "canonical_label": "Chiasma",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROPHASE_I_SYNAPIS_CROSSOVER",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-059",
+      "canonical_label": "Recombinant chromosome",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SEXUAL_VARIATION_SOURCE_SYNTHESIS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-060",
+      "canonical_label": "Independent orientation in metaphase I",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "METAPHASE_I_INDEPENDENT_ORIENTATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-061",
+      "canonical_label": "Random fertilization",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SEXUAL_VARIATION_SOURCE_SYNTHESIS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-014"
+    },
+    {
+      "knowledge_id": "U5-K-062",
+      "canonical_label": "No DNA replication between meiosis I and II",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L11",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NO_REPLICATION_BETWEEN_DIVISIONS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-012"
+    },
+    {
+      "knowledge_id": "U5-K-063",
+      "canonical_label": "Chromosome-set number versus DNA content",
+      "topic": "5.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L10",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TELOPHASE_I_HAPLOID_DUPLICATED_STATE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-011"
+    },
+    {
+      "knowledge_id": "U5-K-064",
+      "canonical_label": "Genetic code conservation and common ancestry",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HEREDITY_GENE_CHROMOSOME_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-015"
+    },
+    {
+      "knowledge_id": "U5-K-065",
+      "canonical_label": "Gregor Mendel",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L20",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MENDEL_GENERATION_CROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-037"
+    },
+    {
+      "knowledge_id": "U5-K-066",
+      "canonical_label": "True-breeding line",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MENDEL_GENERATION_CROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-067",
+      "canonical_label": "P generation",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MENDEL_GENERATION_CROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-068",
+      "canonical_label": "F1 generation",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MENDEL_GENERATION_CROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-069",
+      "canonical_label": "F2 generation",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MENDEL_GENERATION_CROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-070",
+      "canonical_label": "Punnett square",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L25",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GAMETE_TO_PUNNETT_WORKFLOW",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-071",
+      "canonical_label": "Allele",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L21",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ALLELE_DOMINANCE_NOTATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-072",
+      "canonical_label": "Dominance notation convention",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ALLELE_DOMINANCE_NOTATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-016"
+    },
+    {
+      "knowledge_id": "U5-K-073",
+      "canonical_label": "Homozygous dominant",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_PHENOTYPE_DOMINANCE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-074",
+      "canonical_label": "Homozygous recessive",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_PHENOTYPE_DOMINANCE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-075",
+      "canonical_label": "Testcross mechanics",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MONOHYBRID_DIHYBRID_TESTCROSS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-018"
+    },
+    {
+      "knowledge_id": "U5-K-076",
+      "canonical_label": "Dominant allele",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ALLELE_DOMINANCE_NOTATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-077",
+      "canonical_label": "Recessive allele",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ALLELE_DOMINANCE_NOTATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-078",
+      "canonical_label": "Complete dominance",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_PHENOTYPE_DOMINANCE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-079",
+      "canonical_label": "Law of segregation",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SEGREGATION_INDEPENDENT_ASSORTMENT",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-080",
+      "canonical_label": "Monohybrid",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MONOHYBRID_DIHYBRID_TESTCROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-081",
+      "canonical_label": "Law of independent assortment",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SEGREGATION_INDEPENDENT_ASSORTMENT",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-021"
+    },
+    {
+      "knowledge_id": "U5-K-082",
+      "canonical_label": "Dihybrid",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MONOHYBRID_DIHYBRID_TESTCROSS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-083",
+      "canonical_label": "Classic 3:1 F2 ratio",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L26",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CLASSIC_RATIO_CONDITIONS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-084",
+      "canonical_label": "Classic 9:3:3:1 ratio",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CLASSIC_RATIO_CONDITIONS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-022"
+    },
+    {
+      "knowledge_id": "U5-K-085",
+      "canonical_label": "Gametes from a genotype",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L25",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GAMETE_TO_PUNNETT_WORKFLOW",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-086",
+      "canonical_label": "Pedigree",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L29",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PEDIGREE_NOTATION_AND_CLUES",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-087",
+      "canonical_label": "Pedigree notation",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PEDIGREE_NOTATION_AND_CLUES",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-088",
+      "canonical_label": "Autosomal-dominant pedigree clue",
+      "topic": "5.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PEDIGREE_NOTATION_AND_CLUES",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-023"
+    },
+    {
+      "knowledge_id": "U5-K-089",
+      "canonical_label": "Non-Mendelian inheritance patterns",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L31",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NON_MENDELIAN_RATIO_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-090",
+      "canonical_label": "Multiple alleles",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L32",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DOMINANCE_MULTIPLE_ALLELE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-091",
+      "canonical_label": "ABO blood-group allele system",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L32",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DOMINANCE_MULTIPLE_ALLELE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-092",
+      "canonical_label": "Epistasis",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L33",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EPISTASIS_POLYGENIC_PLEIOTROPY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-093",
+      "canonical_label": "Polygenic inheritance",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L33",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EPISTASIS_POLYGENIC_PLEIOTROPY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-094",
+      "canonical_label": "X-linked gene",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L34",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "AUTOSOME_XY_SEX_LINKAGE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-025"
+    },
+    {
+      "knowledge_id": "U5-K-095",
+      "canonical_label": "Y-linked gene",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L34",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "AUTOSOME_XY_SEX_LINKAGE_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-025"
+    },
+    {
+      "knowledge_id": "U5-K-096",
+      "canonical_label": "Hemizygous",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L35",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "HEMIZYGOUS_X_LINKED_TRANSMISSION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-026"
+    },
+    {
+      "knowledge_id": "U5-K-097",
+      "canonical_label": "X-linked transmission in an XX/XY model",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L35",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HEMIZYGOUS_X_LINKED_TRANSMISSION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-098",
+      "canonical_label": "X-chromosome inactivation",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L36",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "X_INACTIVATION_BARR_BODY_MOSAIC",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-027"
+    },
+    {
+      "knowledge_id": "U5-K-099",
+      "canonical_label": "Barr body",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L36",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "X_INACTIVATION_BARR_BODY_MOSAIC",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-100",
+      "canonical_label": "X-linked disorder examples",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L35",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HEMIZYGOUS_X_LINKED_TRANSMISSION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-036"
+    },
+    {
+      "knowledge_id": "U5-K-101",
+      "canonical_label": "Genetic recombination",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L39",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "LINKED_GENE_CROSSOVER_RECOMBINATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-102",
+      "canonical_label": "Parental type",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L40",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PARENTAL_RECOMBINANT_CLASSIFICATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-103",
+      "canonical_label": "Recombinant type",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L40",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PARENTAL_RECOMBINANT_CLASSIFICATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-104",
+      "canonical_label": "Linked genes tend to be inherited together",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENETIC_LINKAGE_DISTANCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-105",
+      "canonical_label": "Crossing over can separate linked alleles",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LINKED_GENE_CROSSOVER_RECOMBINATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-106",
+      "canonical_label": "Recombination frequency",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L41",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RECOMBINATION_FREQUENCY_METER",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-028"
+    },
+    {
+      "knowledge_id": "U5-K-107",
+      "canonical_label": "Linkage map",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L42",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "LINKAGE_MAP_CENTIMORGAN",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-108",
+      "canonical_label": "Map unit (centimorgan)",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L42",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LINKAGE_MAP_CENTIMORGAN",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-028"
+    },
+    {
+      "knowledge_id": "U5-K-109",
+      "canonical_label": "Fifty-percent recombination ceiling",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L43",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RECOMBINATION_50_PERCENT_CEILING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-028"
+    },
+    {
+      "knowledge_id": "U5-K-110",
+      "canonical_label": "Organelle assortment",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NON_NUCLEAR_ORGANELLE_INHERITANCE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-111",
+      "canonical_label": "Chi-square goodness-of-fit test",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHI_SQUARE_GOODNESS_OF_FIT_MODEL",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-112",
+      "canonical_label": "Observed count (O)",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L49",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHI_SQUARE_OBSERVED_EXPECTED_CALCULATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-113",
+      "canonical_label": "Expected count (E)",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHI_SQUARE_OBSERVED_EXPECTED_CALCULATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-114",
+      "canonical_label": "Chi-square uses categorical counts",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHI_SQUARE_GOODNESS_OF_FIT_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-115",
+      "canonical_label": "Chi-square contribution",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHI_SQUARE_OBSERVED_EXPECTED_CALCULATION",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-116",
+      "canonical_label": "Degrees of freedom for AP goodness-of-fit",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L50",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHI_SQUARE_DECISION_LOGIC",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-032"
+    },
+    {
+      "knowledge_id": "U5-K-117",
+      "canonical_label": "Chi-square critical value",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L50",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHI_SQUARE_DECISION_LOGIC",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-118",
+      "canonical_label": "p-value and significance level",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L50",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHI_SQUARE_DECISION_LOGIC",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-030"
+    },
+    {
+      "knowledge_id": "U5-K-119",
+      "canonical_label": "Reject or fail to reject the null",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L50",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHI_SQUARE_DECISION_LOGIC",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-031"
+    },
+    {
+      "knowledge_id": "U5-K-120",
+      "canonical_label": "Genotype-by-environment context",
+      "topic": "5.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_ENVIRONMENT_PLASTICITY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-121",
+      "canonical_label": "Temperature-dependent pigmentation example",
+      "topic": "5.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_ENVIRONMENT_PLASTICITY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-122",
+      "canonical_label": "Soil-pH flower-color example",
+      "topic": "5.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_ENVIRONMENT_PLASTICITY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-123",
+      "canonical_label": "UV and melanin example",
+      "topic": "5.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENOTYPE_ENVIRONMENT_PLASTICITY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-124",
+      "canonical_label": "Genetic disorder",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L47",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GENETIC_DISORDER_VARIANT_CASES",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-125",
+      "canonical_label": "Pathogenic variant",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENETIC_DISORDER_VARIANT_CASES",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-033"
+    },
+    {
+      "knowledge_id": "U5-K-126",
+      "canonical_label": "Tay-Sachs disease example",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENETIC_DISORDER_VARIANT_CASES",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-127",
+      "canonical_label": "Sickle cell disease example",
+      "topic": "5.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENETIC_DISORDER_VARIANT_CASES",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-128",
+      "canonical_label": "Nondisjunction",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SEGREGATION_VS_NONDISJUNCTION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-129",
+      "canonical_label": "Aneuploidy",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L18",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ANEUPLOIDY_KARYOTYPE_DIAGNOSTIC",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-130",
+      "canonical_label": "Trisomy 21 example",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U5-L19",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRISOMY_21_ANEUPLOIDY_CASE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-131",
+      "canonical_label": "Karyotype and chromosome-number abnormalities",
+      "topic": "5.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U5-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ANEUPLOIDY_KARYOTYPE_DIAGNOSTIC",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-035"
+    },
+    {
+      "knowledge_id": "U5-K-132",
+      "canonical_label": "Meiosis phase identification practice",
+      "topic": "5.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-133",
+      "canonical_label": "Genetic-diversity mechanism practice",
+      "topic": "5.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-134",
+      "canonical_label": "Monohybrid Punnett-square practice",
+      "topic": "5.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-135",
+      "canonical_label": "Gamete-generation practice",
+      "topic": "5.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-136",
+      "canonical_label": "Dihybrid Punnett-square practice",
+      "topic": "5.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-137",
+      "canonical_label": "Multiplication-rule genetics practice",
+      "topic": "5.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-138",
+      "canonical_label": "Addition-rule genetics practice",
+      "topic": "5.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-139",
+      "canonical_label": "Pedigree inference practice",
+      "topic": "5.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-140",
+      "canonical_label": "Incomplete-dominance and codominance cross practice",
+      "topic": "5.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-141",
+      "canonical_label": "ABO genotype inference practice",
+      "topic": "5.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-142",
+      "canonical_label": "X-linked inheritance practice",
+      "topic": "5.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-143",
+      "canonical_label": "Linked-gene recombinant classification practice",
+      "topic": "5.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-144",
+      "canonical_label": "Genetic map-distance practice",
+      "topic": "5.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-145",
+      "canonical_label": "Chi-square expected-count setup",
+      "topic": "5.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-146",
+      "canonical_label": "Chi-square calculation and hypothesis decision",
+      "topic": "5.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-147",
+      "canonical_label": "Environmental phenotype application",
+      "topic": "5.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-148",
+      "canonical_label": "Sexual-life-cycle detail scope guard",
+      "topic": "5.2",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-007"
+    },
+    {
+      "knowledge_id": "U5-K-149",
+      "canonical_label": "Chromosome complement terminology scope guard",
+      "topic": "5.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-150",
+      "canonical_label": "Classic Mendelian ratio scope guard",
+      "topic": "5.3",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U5-K-151",
+      "canonical_label": "Named-disorder scope guard",
+      "topic": "5.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U5-036"
+    },
+    {
+      "knowledge_id": "U5-K-152",
+      "canonical_label": "Null-hypothesis language scope guard",
+      "topic": "5.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    }
+  ]
+}

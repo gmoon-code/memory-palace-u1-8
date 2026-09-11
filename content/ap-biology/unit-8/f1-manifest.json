@@ -1,0 +1,129 @@
+{
+  "release": "Memory Palace V2 Unit 8 F1 Source-Lock Overlay",
+  "unit": 8,
+  "gate": "F1",
+  "state": "SCIENCE_LOCKED_F1_NOT_STUDENT_RELEASED",
+  "baseline": {
+    "release": "Units 1–7 F6 frozen mainline",
+    "runtime": "v2-apbio-0.28.0-u7-f6",
+    "canonical_records": 1306,
+    "guided_journeys": 50,
+    "permanent_scenes": 390,
+    "challenge_lab_items": 99,
+    "unit8_state_before": "SOURCE_READY_NOT_MIGRATED",
+    "source_release_file": "content/ap-biology/mainline-release-u1-u7.json",
+    "expected_prior_zip": "MemoryPalace_V2_Mainline_Units1-7_Unit7-F6.zip",
+    "expected_prior_zip_sha256": "d344f3641dd2949fc6824bc6e7d150b681b72511572669524be22af9984a36ed"
+  },
+  "accounting": {
+    "Teacher PPT slides ingested": 96,
+    "Current CED topics": 7,
+    "Current CED atoms": 50,
+    "Canonical records": 255,
+    "AP-required records": 61,
+    "Teacher-required enrichment": 150,
+    "Practice-only records": 13,
+    "Scope guards": 31,
+    "Resolved review flags": 31,
+    "Assessment crosswalks": 13,
+    "Blocking missing resources": 0,
+    "Student journeys": 0,
+    "Student scenes": 0,
+    "Student Memory Objects": 0,
+    "Student Challenge Lab tasks": 0
+  },
+  "source_pdf_policy": "Source PDFs are referenced by hash and excluded from the release artifact.",
+  "file_count_excluding_manifest": 18,
+  "files": [
+    {
+      "path": "BASELINE_U1_U7_F6.json",
+      "bytes": 499,
+      "sha256": "01e461e49209be93581f9f154acfa689a068a8c75c4dc5e6787d4f88ca36aa3b"
+    },
+    {
+      "path": "OVERLAY_README.md",
+      "bytes": 1028,
+      "sha256": "77a9e494a6ad71e03d3c92c3784544fa6715e4759760ef5325405cb83471f77c"
+    },
+    {
+      "path": "content/ap-biology/unit-8/assessment-crosswalk.json",
+      "bytes": 3712,
+      "sha256": "6a939ee106221fb9ad413de82b77fa110dfbce5b12a050de35c1b54cc5dfdf48"
+    },
+    {
+      "path": "content/ap-biology/unit-8/canonical-catalog.json",
+      "bytes": 184019,
+      "sha256": "29b069dac2c6d6613f10b0cb38c53bf635598be7127634fb2dd615248747410e"
+    },
+    {
+      "path": "content/ap-biology/unit-8/ced-atoms.json",
+      "bytes": 18279,
+      "sha256": "c696dce8aa66320f14cceb396712eed87db79cd635a7392193fe65ea1fd7a800"
+    },
+    {
+      "path": "content/ap-biology/unit-8/ced-coverage.json",
+      "bytes": 10677,
+      "sha256": "aafbae55d15069b1cbf77c3b590b4bc1a6eeb58a3042becc30f4db198117e51b"
+    },
+    {
+      "path": "content/ap-biology/unit-8/f1-source-lock.json",
+      "bytes": 1659,
+      "sha256": "d792df5d4599dad879a96f623b17d53a8fd4fb34ce1ebe8234560324b132d4da"
+    },
+    {
+      "path": "content/ap-biology/unit-8/review-flags.json",
+      "bytes": 10770,
+      "sha256": "68d4f2f55904d3eba5da0fe97a7656e7654a25a02e1a0ea003f1c0d53c6fed26"
+    },
+    {
+      "path": "content/ap-biology/unit-8/scope-guards.json",
+      "bytes": 24620,
+      "sha256": "469086e114620c75015ef5822932e5964b2792501a5286eb71b523128b1d6cc6"
+    },
+    {
+      "path": "content/ap-biology/unit-8/source-inventory.json",
+      "bytes": 1137,
+      "sha256": "c1815e76ddbe0d938140393c82bb0974b5494042642d139d6a6ac3f5e2b79ccd"
+    },
+    {
+      "path": "content/ap-biology/unit-8/teacher-slide-inventory.json",
+      "bytes": 49763,
+      "sha256": "c34d1a89ddfe99fae460d0e7813d8765adcbb0d8ecf996bef9c00bf0b4c7c48a"
+    },
+    {
+      "path": "docs/UNIT8_F1_COVERAGE_REPAIR.md",
+      "bytes": 2365,
+      "sha256": "4276eabad6633786f3e7c5f5d809678c7bf64b2d265a12f162d764f80b5f70c4"
+    },
+    {
+      "path": "docs/UNIT8_F1_PACKAGE_QA.md",
+      "bytes": 1741,
+      "sha256": "7a6d8444d7842cd54ffb490517c69f355cd85d64e1835663a46fe5b56373d466"
+    },
+    {
+      "path": "docs/UNIT8_F1_RELEASE.md",
+      "bytes": 4317,
+      "sha256": "6ea1bf85b30b4f4165a39a5fbf3090541e7057b12335b55a9840879d7cab520d"
+    },
+    {
+      "path": "docs/UNIT8_F1_SOURCE_AUDIT.md",
+      "bytes": 2161,
+      "sha256": "da2f40b6abce80155eb4fb9307082654be3279f1785f78709afd6b57d7dd01f8"
+    },
+    {
+      "path": "reports/APBIO_Unit8_F1_Source_Lock.xlsx",
+      "bytes": 70785,
+      "sha256": "3cfe51046c60385b4fd8fb92dbb277ec2c0c24e0ae89f6cfe99435f48f7a4cbc"
+    },
+    {
+      "path": "scripts/apply_unit8_f1_overlay.py",
+      "bytes": 3438,
+      "sha256": "5e0a546cecf578ba17f0afed30d00e99c90c4e609d846907ea37845913854250"
+    },
+    {
+      "path": "tests/test_unit8_f1_overlay.py",
+      "bytes": 1430,
+      "sha256": "b85585a19c3bbb15789a3f63dca301d2b8c4caccc359f6e41f2c5765fdf86497"
+    }
+  ]
+}

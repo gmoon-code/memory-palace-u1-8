@@ -1,0 +1,1382 @@
+{
+  "palace_id": "U7-J5",
+  "unit_id": "unit-7",
+  "palace_name": "Speciation Barrier Archipelago",
+  "story_title": "The Archipelago That Kept Calling Every Difference a New Species",
+  "tagline": "Follow the same two descendant lineages through geography, gene flow, mating, fertilization, hybrid outcomes, and deep time until every species boundary and evolutionary pattern has a visible cause.",
+  "guide": {
+    "name": "Dr. Imani Vale",
+    "role": "evolutionary-systems curator",
+    "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+    "story_job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+  },
+  "premise": "The archipelago has begun declaring new species whenever two populations look different. Dr. Imani Vale freezes lineage A and lineage B, a gene-flow meter, and one reproductive-outcome sequence so no species claim can be accepted until reduced gene flow and reproductive isolation are actually demonstrated.",
+  "mission": "Track one ancestral population into two descendant lineages, distinguish allopatric from sympatric pathways, classify five prezygotic and three postzygotic barriers by their exact failure point, then place tempo, divergence, adaptive radiation, convergence, macroevolution, and extinction on longer timescales without confusing divergence with guaranteed speciation.",
+  "finale": "The archipelago clears when every species boundary is tied to reproductive isolation and every longer-term evolutionary pattern remains distinct from the mechanism that creates or maintains a species boundary.",
+  "estimated_minutes": 32,
+  "scene_count": 9,
+  "checkpoint_count": 3,
+  "student_release": "DEVELOPER_PREVIEW_F4E",
+  "preview_release": true,
+  "narrative_design": "U7-F4E-NARRATIVE-1.0",
+  "learner_rule": "Keep lineage A and lineage B, the gene-flow meter, and the encounter-to-hybrid outcome sequence fixed. Identify barriers by where reproduction fails and pathways by whether geographic separation is present.",
+  "route_orientation": "Travel from the species boundary desk through allopatric and sympatric geography, then through prezygotic and postzygotic barriers, and finish on long-timescale tempo and macroevolution overlooks.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Species Boundary Desk",
+      "short": "Species Boundary Desk",
+      "floor": "archipelago route",
+      "symbol": "S1"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Allopatric Barrier Island",
+      "short": "Allopatric Barrier Island",
+      "floor": "archipelago route",
+      "symbol": "S2"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Sympatric Overlap Island",
+      "short": "Sympatric Overlap Island",
+      "floor": "archipelago route",
+      "symbol": "S3"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Prezygotic Barrier Entry",
+      "short": "Prezygotic Barrier Entry",
+      "floor": "archipelago route",
+      "symbol": "S4"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Habitat and Temporal Isolation Gates",
+      "short": "Habitat and Temporal Isolation Gates",
+      "floor": "archipelago route",
+      "symbol": "S5"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Behavioral–Mechanical–Gametic Gates",
+      "short": "Behavioral–Mechanical–Gametic Gates",
+      "floor": "archipelago route",
+      "symbol": "S6"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Postzygotic Outcome Ward",
+      "short": "Postzygotic Outcome Ward",
+      "floor": "archipelago route",
+      "symbol": "S7"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Evolutionary Tempo Gallery",
+      "short": "Evolutionary Tempo Gallery",
+      "floor": "archipelago route",
+      "symbol": "S8"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Divergence–Radiation–Convergence Overlook",
+      "short": "Divergence–Radiation–Convergence Overlook",
+      "floor": "archipelago route",
+      "symbol": "S9"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U7-L42",
+      "locus": "Species Boundary Desk",
+      "title": " overlooks one large breeding lagoon. On your ",
+      "scene_kicker": "Make Speciation requires reproductive isolation reconstructable from the visible relationship at Species Boundary Desk while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the desk defining species boundaries through reproductive compatibility and reduced gene flow",
+      "scene_layout": {
+        "orientation": "Enter Species Boundary Desk and stop at the desk defining species boundaries through reproductive compatibility and reduced gene flow. Keep within-species gene exchange side fixed on the left, species / reproductive-isolation boundary desk as the working center, and diverging population side fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "within-species gene exchange side",
+            "symbol": "LEFT",
+            "description": "within-species gene exchange side remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "species / reproductive-isolation boundary desk",
+            "symbol": "CENTER",
+            "description": "species / reproductive-isolation boundary desk carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "diverging population side",
+            "symbol": "RIGHT",
+            "description": "diverging population side remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "within-species gene exchange side",
+          "kind": "left spatial anchor",
+          "visual": "within-species gene exchange side",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "species / reproductive-isolation boundary desk",
+          "kind": "center spatial anchor",
+          "visual": "species / reproductive-isolation boundary desk",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "diverging population side",
+          "kind": "right spatial anchor",
+          "visual": "diverging population side",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Species Boundary Desk** overlooks one large breeding lagoon. On your **left**, blue-banded and amber-banded birds move freely across the same nesting ground and the gene-flow meter glows high. Directly **ahead**, the center desk shows mating attempts, fertilization, offspring survival, and later fertility in separate windows. On your **right**, two smaller lineage pens wait behind a boundary light that is still off. Dr. Imani Vale labels the birds lineage A and lineage B only for tracking. At this moment they still belong to one freely interbreeding population.",
+      "story_paragraphs": [
+        "The **Species Boundary Desk** overlooks one large breeding lagoon. On your **left**, blue-banded and amber-banded birds move freely across the same nesting ground and the gene-flow meter glows high. Directly **ahead**, the center desk shows mating attempts, fertilization, offspring survival, and later fertility in separate windows. On your **right**, two smaller lineage pens wait behind a boundary light that is still off. Dr. Imani Vale labels the birds lineage A and lineage B only for tracking. At this moment they still belong to one freely interbreeding population.",
+        "Imani begins with the biological outcome rather than appearance. Blue and amber birds mate across the color bands, fertilization occurs, and the offspring survive and later reproduce. Under the **Biological species concept**, sexually reproducing populations belong to the same species when members can exchange genes through mating and produce viable, fertile offspring. The color bands make ancestry visible, yet color difference alone does not create a species boundary.",
+        "The desk then names **Species** under that concept. The species boundary here is biological. Gene exchange still connects the lineages. Imani adds a caution to the ledger. The biological species concept is most useful for sexually reproducing organisms and becomes difficult or inapplicable for asexual organisms and many fossil taxa, where direct tests of interbreeding are unavailable.",
+        "The center gene-flow meter now begins to fall as successful gene exchange is experimentally reduced. The right pens accumulate different allele frequencies, but Imani refuses to call them new species merely because they diverge. Differences can accumulate while enough gene flow remains to keep the populations reproductively connected.",
+        "Only when the mating and offspring panel shows that gene exchange is sufficiently reduced or prevented does Imani name **Speciation requires reproductive isolation**. New species can arise when populations become reproductively isolated so gene flow is sufficiently reduced or prevented. The barrier is causal because it limits the exchange that otherwise keeps the populations connected.",
+        "Imani tests one more deceptive case. The two lineages now differ visibly in beak size and song pitch, yet the outcome panel still shows regular interbreeding and viable, fertile offspring. The species boundary light stays off. She then restores similar appearance while blocking successful gene exchange, and the boundary warning returns. The comparison makes the criterion reconstructable. Under the biological species concept, reproductive compatibility and gene exchange carry the classification, while visible similarity or difference alone does not decide species membership. The ledger therefore stores phenotype difference and reproductive isolation in separate fields so one can never silently stand in for the other.",
+        "A storm wall rises between the two pens and physically splits the lagoon. The same color bands remain visible on opposite shores, and the gene-flow meter drops for a reason that can now be seen. The next island will test whether geographic separation itself is enough for allopatric speciation, or whether reproductive isolation still has to evolve before the lineage split becomes a species boundary."
+      ],
+      "story_close": "A storm wall rises between the two pens and physically splits the lagoon. The same color bands remain visible on opposite shores, and the gene-flow meter drops for a reason that can now be seen. The next island will test whether geographic separation itself is enough for allopatric speciation, or whether reproductive isolation still has to evolve before the lineage split becomes a species boundary.",
+      "object_ids": [
+        "U7-K-050",
+        "U7-K-051",
+        "U7-K-146"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-050",
+          "term": "Speciation requires reproductive isolation",
+          "story": "Recall Speciation requires reproductive isolation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L42.",
+          "science": "New species can arise when populations become reproductively isolated so gene flow is sufficiently reduced or prevented.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L42.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-051",
+          "term": "Biological species concept",
+          "story": "Recall Biological species concept from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L42.",
+          "science": "For sexually reproducing organisms, the biological species concept defines a species as populations whose members can interbreed and exchange genetic information to produce viable, fertile offspring.",
+          "exact_name": false,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L42.",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-146",
+          "term": "Species",
+          "story": "Recall Species from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L42.",
+          "science": "Under the biological species concept, sexually reproducing populations belong to the same species when they can exchange genes through mating and produce viable, fertile offspring.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L42.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-025: Apply the biological species concept to sexually reproducing organisms and note that it is difficult or inapplicable for asexual organisms and many fossil taxa.",
+        "Discrimination requirement U7-D26: keep Species, Speciation requires reproductive isolation, Biological species concept physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Allopatric Barrier Island",
+      "f3_scene_brief_id": "F3-U7-L42",
+      "narrative_word_count": 483
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U7-L43",
+      "locus": "Allopatric Barrier Island",
+      "title": " is divided by a new volcanic channel. On your ",
+      "scene_kicker": "Make Allopatric and sympatric speciation reconstructable from the visible relationship at Allopatric Barrier Island while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the island where geographic separation reduces gene flow and allows reproductive isolation to evolve",
+      "scene_layout": {
+        "orientation": "Enter Allopatric Barrier Island and stop at the island where geographic separation reduces gene flow and allows reproductive isolation to evolve. Keep source population shore fixed on the left, geographic barrier as the working center, and isolated descendant population fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "source population shore",
+            "symbol": "LEFT",
+            "description": "source population shore remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "geographic barrier",
+            "symbol": "CENTER",
+            "description": "geographic barrier carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "isolated descendant population",
+            "symbol": "RIGHT",
+            "description": "isolated descendant population remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "source population shore",
+          "kind": "left spatial anchor",
+          "visual": "source population shore",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "geographic barrier",
+          "kind": "center spatial anchor",
+          "visual": "geographic barrier",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "isolated descendant population",
+          "kind": "right spatial anchor",
+          "visual": "isolated descendant population",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Allopatric Barrier Island** is divided by a new volcanic channel. On your **left**, lineage A occupies the original shore with its blue-and-amber ancestry tags still visible. Directly **ahead**, the water channel cuts the former population in two and the migration arrows stop. On your **right**, lineage B occupies the isolated island while the gene-flow meter falls toward zero. Imani keeps both descendant groups linked to the same ancestral-population card.",
+      "story_paragraphs": [
+        "The **Allopatric Barrier Island** is divided by a new volcanic channel. On your **left**, lineage A occupies the original shore with its blue-and-amber ancestry tags still visible. Directly **ahead**, the water channel cuts the former population in two and the migration arrows stop. On your **right**, lineage B occupies the isolated island while the gene-flow meter falls toward zero. Imani keeps both descendant groups linked to the same ancestral-population card.",
+        "The barrier changes geography first. Individuals on opposite shores no longer exchange genes routinely. Mutations, drift, and selection can now alter the two gene pools independently. Imani lets allele and trait frequencies diverge over many generations while the channel remains in place. Geographic separation reduces gene flow, but the birds are not declared separate species at the moment the channel forms.",
+        "After divergence accumulates, the archive temporarily brings members of A and B into a common test enclosure. Early in the sequence they can still mate successfully. Later, reproductive incompatibilities appear. That ordering protects the mechanism. Geography starts the separation, and reproductive isolation can evolve during the period of reduced gene flow.",
+        "Only then does Imani name **Allopatric speciation**. Allopatric speciation occurs when geographic separation reduces gene flow and diverging populations evolve reproductive isolation. The word allopatric stays attached to the visible channel. It does not mean every geographically isolated population automatically becomes a new species.",
+        "She places a comparison placard beside it reading **Allopatric and sympatric speciation**. Allopatric speciation involves geographic isolation, while sympatric speciation occurs despite geographic overlap. Geography is the defining contrast between the pathways, while reproductive isolation is still required for species formation in either case.",
+        "Imani also reverses the geography without erasing the history. The channel remains for hundreds of displayed generations while the two populations accumulate different allele frequencies and mating cues. When the barrier is finally removed, the system asks whether gene flow resumes. If the lineages mate freely again, geographic separation produced divergence without a completed species boundary. If reproductive isolation persists after contact, the allopatric pathway has produced a lasting barrier to gene exchange. The reunion test keeps the story focused on reproductive isolation instead of treating physical distance as a permanent definition of species.",
+        "The gene-flow meter is also paired with a divergence meter, and the two are not allowed to substitute for one another. Divergence can increase while some migration still occurs, and migration can remain near zero before reproductive isolation is complete. The allopatric pathway is therefore remembered as a sequence. geographic separation reduces gene flow, independent change accumulates, and reproductive isolation must eventually establish the species boundary.",
+        "The recall light briefly hides the labels, leaving the channel, the two lineage pens, and the low gene-flow meter visible. When the labels return, the channel retracts from the next exhibit. Lineages A and B now occupy the same continuous habitat, yet mating begins clustering within each lineage. The next scene will ask how reproductive isolation can strengthen when there is no geographic wall to blame."
+      ],
+      "story_close": "The recall light briefly hides the labels, leaving the channel, the two lineage pens, and the low gene-flow meter visible. When the labels return, the channel retracts from the next exhibit. Lineages A and B now occupy the same continuous habitat, yet mating begins clustering within each lineage. The next scene will ask how reproductive isolation can strengthen when there is no geographic wall to blame.",
+      "object_ids": [
+        "U7-K-055",
+        "U7-K-147"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-055",
+          "term": "Allopatric and sympatric speciation",
+          "story": "Recall Allopatric and sympatric speciation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L43.",
+          "science": "Allopatric speciation involves geographic isolation; sympatric speciation occurs despite geographic overlap.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L43.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-147",
+          "term": "Allopatric speciation",
+          "story": "Recall Allopatric speciation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L43.",
+          "science": "Allopatric speciation occurs when geographic separation reduces gene flow and diverging populations evolve reproductive isolation.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L43.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-026: Lock geography as the defining contrast. Allopatric isolation can arise through many geographic processes; sympatric speciation can arise through mechanisms such as polyploidy, habitat differentiation, or sexual selection.",
+        "Discrimination requirement U7-D27: keep Allopatric speciation, Sympatric speciation, Allopatric and sympatric speciation physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-055",
+      "checkpoint_prompt": "Without looking back, identify or explain Allopatric and sympatric speciation from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Allopatric speciation involves geographic isolation; sympatric speciation occurs despite geographic overlap.",
+      "next_locus": "Sympatric Overlap Island",
+      "f3_scene_brief_id": "F3-U7-L43",
+      "narrative_word_count": 496
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U7-L44",
+      "locus": "Sympatric Overlap Island",
+      "title": " has no channel at all. On your ",
+      "scene_kicker": "Make Sympatric speciation reconstructable from the visible relationship at Sympatric Overlap Island while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the shared-space island where reproductive isolation evolves despite geographic overlap",
+      "scene_layout": {
+        "orientation": "Enter Sympatric Overlap Island and stop at the shared-space island where reproductive isolation evolves despite geographic overlap. Keep population niche / mating subset A fixed on the left, sympatric overlap zone as the working center, and population niche / mating subset B fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "population niche / mating subset A",
+            "symbol": "LEFT",
+            "description": "population niche / mating subset A remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "sympatric overlap zone",
+            "symbol": "CENTER",
+            "description": "sympatric overlap zone carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "population niche / mating subset B",
+            "symbol": "RIGHT",
+            "description": "population niche / mating subset B remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "population niche / mating subset A",
+          "kind": "left spatial anchor",
+          "visual": "population niche / mating subset A",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "sympatric overlap zone",
+          "kind": "center spatial anchor",
+          "visual": "sympatric overlap zone",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "population niche / mating subset B",
+          "kind": "right spatial anchor",
+          "visual": "population niche / mating subset B",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Sympatric Overlap Island** has no channel at all. On your **left**, lineage A feeds and mates around one host patch. Directly **ahead**, the shared overlap zone remains physically open from end to end. On your **right**, lineage B concentrates around a different host patch and mating subset in the same geographic area. Imani checks the map twice so no hidden mountain, river, or distance can be smuggled into the explanation.",
+      "story_paragraphs": [
+        "The **Sympatric Overlap Island** has no channel at all. On your **left**, lineage A feeds and mates around one host patch. Directly **ahead**, the shared overlap zone remains physically open from end to end. On your **right**, lineage B concentrates around a different host patch and mating subset in the same geographic area. Imani checks the map twice so no hidden mountain, river, or distance can be smuggled into the explanation.",
+        "The two lineages can still encounter one another geographically, yet mating becomes increasingly nonrandom within the shared area. Habitat differentiation, mating preference, chromosome changes such as polyploidy in some organisms, or other mechanisms can reduce gene flow without geographic separation. The important feature is that the populations overlap while reproductive exchange declines.",
+        "Imani keeps the gene-flow meter in the center and watches it fall even though the map remains continuous. The lineages accumulate differences while living side by side. She avoids turning niche use into the only explanation. Several biological mechanisms can produce the needed reduction in gene exchange within geographic overlap.",
+        "When reproductive isolation becomes established, she names **Sympatric speciation**. Sympatric speciation occurs without geographic separation when gene flow is reduced within an overlapping population and reproductive isolation evolves. The overlap zone remains lit throughout the definition so the contrast with the previous island cannot disappear.",
+        "She now places the allopatric channel image beside the sympatric overlap map. Both pathways can lead to reproductive isolation. One begins with geographic separation. The other proceeds while geographic overlap remains. The comparison keeps geography and reproductive isolation as two different variables instead of treating them as synonyms.",
+        "To make the overlap condition unmistakable, Imani draws one transparent boundary around both lineages. Every individual remains inside the same geographic outline while the mating network within that outline becomes increasingly partitioned. She then swaps the mechanism. A habitat preference is removed and a strong assortative mating preference is introduced. Gene flow can still fall. The scene therefore teaches the defining sympatric condition without tying it to one favorite example. Geographic overlap remains, while biological processes inside the shared area reduce gene exchange and allow reproductive isolation to evolve.",
+        "The shared-area outline never disappears during the test. Imani uses it as a visual checksum. If a physical barrier is introduced, the scene has become allopatric and must be sent back to the previous island. If the outline remains shared while mating connections split into separate networks, the sympatric condition is preserved. The geography test therefore stays independent from the mechanism that reduces mating within that geography.",
+        "Ahead, the archive stops asking where the lineages live and starts asking exactly where reproduction fails. A long causal track runs from encounter to courtship to mating to gamete transfer to gamete fusion and finally zygote formation. The next gate will divide all barriers that act before that zygote from the failures that can occur afterward."
+      ],
+      "story_close": "Ahead, the archive stops asking where the lineages live and starts asking exactly where reproduction fails. A long causal track runs from encounter to courtship to mating to gamete transfer to gamete fusion and finally zygote formation. The next gate will divide all barriers that act before that zygote from the failures that can occur afterward.",
+      "object_ids": [
+        "U7-K-148"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-148",
+          "term": "Sympatric speciation",
+          "story": "Recall Sympatric speciation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L44.",
+          "science": "Sympatric speciation occurs without geographic separation when gene flow is reduced within an overlapping population and reproductive isolation evolves.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L44.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-026: Lock geography as the defining contrast. Allopatric isolation can arise through many geographic processes; sympatric speciation can arise through mechanisms such as polyploidy, habitat differentiation, or sexual selection.",
+        "Discrimination requirement U7-D27: keep Allopatric speciation, Sympatric speciation, Allopatric and sympatric speciation physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Prezygotic Barrier Entry",
+      "f3_scene_brief_id": "F3-U7-L44",
+      "narrative_word_count": 478
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U7-L45",
+      "locus": "Prezygotic Barrier Entry",
+      "title": " is a straight reproductive sequence. On your ",
+      "scene_kicker": "Make Reproductive isolating mechanisms reconstructable from the visible relationship at Prezygotic Barrier Entry while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the entry gate separating barriers that prevent mating or fertilization from postzygotic outcomes",
+      "scene_layout": {
+        "orientation": "Enter Prezygotic Barrier Entry and stop at the entry gate separating barriers that prevent mating or fertilization from postzygotic outcomes. Keep mate-encounter side fixed on the left, prezygotic barrier gate as the working center, and fertilization threshold fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "mate-encounter side",
+            "symbol": "LEFT",
+            "description": "mate-encounter side remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "prezygotic barrier gate",
+            "symbol": "CENTER",
+            "description": "prezygotic barrier gate carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "fertilization threshold",
+            "symbol": "RIGHT",
+            "description": "fertilization threshold remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "mate-encounter side",
+          "kind": "left spatial anchor",
+          "visual": "mate-encounter side",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "prezygotic barrier gate",
+          "kind": "center spatial anchor",
+          "visual": "prezygotic barrier gate",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "fertilization threshold",
+          "kind": "right spatial anchor",
+          "visual": "fertilization threshold",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Prezygotic Barrier Entry** is a straight reproductive sequence. On your **left**, lineage A and lineage B enter the mate-encounter side together. Directly **ahead**, the center gate has checkpoints for encounter, courtship, mating, gamete transfer, and gamete fusion. On your **right**, a bright threshold marked ZYGOTE lights only if fertilization succeeds. The postzygotic ward is visible beyond the threshold but remains dark.",
+      "story_paragraphs": [
+        "The **Prezygotic Barrier Entry** is a straight reproductive sequence. On your **left**, lineage A and lineage B enter the mate-encounter side together. Directly **ahead**, the center gate has checkpoints for encounter, courtship, mating, gamete transfer, and gamete fusion. On your **right**, a bright threshold marked ZYGOTE lights only if fertilization succeeds. The postzygotic ward is visible beyond the threshold but remains dark.",
+        "Imani first runs an unrestricted control. The two lineages encounter one another, complete mating, gametes fuse, and the zygote light turns on. She then resets the sequence and blocks a step before fusion. No zygote forms. The exact location of the stop matters more than the dramatic appearance of the barrier.",
+        "She labels the broad category **Reproductive isolating mechanisms**. Prezygotic and postzygotic barriers can maintain reproductive isolation and reduce gene flow between diverging populations. The category contains mechanisms acting at different times, so the next distinction must be based on the stage of reproduction at which the failure occurs.",
+        "Because the block occurs before zygote formation, Imani names a **Prezygotic barrier**. A prezygotic reproductive barrier acts before zygote formation by preventing mating or fertilization. The right-side zygote lamp remains off, making timing visible without requiring the learner to memorize a disconnected list.",
+        "Imani points through the glass toward the untouched postzygotic ward. A postzygotic barrier cannot be diagnosed unless fertilization has already occurred. That simple sequence protects the categories. Before zygote means prezygotic. After a zygote forms, later problems with hybrid survival or reproduction can be postzygotic.",
+        "The gate then runs three quick counterexamples. A hybrid that dies after fertilization is sent forward to the postzygotic ward because the zygote already formed. A pair that never meets is stopped before mating and stays prezygotic. A pair that mates but whose gametes never fuse also stays prezygotic because fertilization never occurs. Imani has the learner follow the same illuminated sequence each time. Encounter, courtship, mating, gamete transfer, fusion, zygote, survival, fertility. Barrier class follows the stage at which the sequence fails, which makes the later named mechanisms easier to locate.",
+        "A red line is drawn immediately before the zygote box. Everything that fails to the left of that line is prezygotic. Everything that fails only after the zygote box belongs to the postzygotic category. The line is deliberately simple because it will remain visible through the next three scenes, giving habitat, temporal, behavioral, mechanical, and gametic isolation one shared timing anchor without making their mechanisms identical.",
+        "The center gate now branches into five diagnostic paths. Two of them prevent potential mates from meeting at all. Different habitat use sends one lineage left. Different breeding time sends another right. The next corridor will separate those encounter barriers before courtship, structure, or gamete compatibility are tested."
+      ],
+      "story_close": "The center gate now branches into five diagnostic paths. Two of them prevent potential mates from meeting at all. Different habitat use sends one lineage left. Different breeding time sends another right. The next corridor will separate those encounter barriers before courtship, structure, or gamete compatibility are tested.",
+      "object_ids": [
+        "U7-K-056",
+        "U7-K-149"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-056",
+          "term": "Reproductive isolating mechanisms",
+          "story": "Recall Reproductive isolating mechanisms from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L45.",
+          "science": "Prezygotic and postzygotic barriers can maintain reproductive isolation and reduce gene flow between diverging populations.",
+          "exact_name": false,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L45.",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-149",
+          "term": "Prezygotic barrier",
+          "story": "Recall Prezygotic barrier from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L45.",
+          "science": "A prezygotic reproductive barrier acts before zygote formation by preventing mating or fertilization.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L45.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U7-D28: keep Prezygotic barrier, Postzygotic barrier, Reproductive isolating mechanisms physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Habitat and Temporal Isolation Gates",
+      "f3_scene_brief_id": "F3-U7-L45",
+      "narrative_word_count": 455
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U7-L46",
+      "locus": "Habitat and Temporal Isolation Gates",
+      "title": " share one long encounter corridor. On your ",
+      "scene_kicker": "Make Habitat isolation reconstructable from the visible relationship at Habitat and Temporal Isolation Gates while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the paired gates preventing encounters through different habitats or reproductive timing",
+      "scene_layout": {
+        "orientation": "Enter Habitat and Temporal Isolation Gates and stop at the paired gates preventing encounters through different habitats or reproductive timing. Keep habitat-isolation gate fixed on the left, encounter-frequency corridor as the working center, and temporal-isolation gate fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "habitat-isolation gate",
+            "symbol": "LEFT",
+            "description": "habitat-isolation gate remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "encounter-frequency corridor",
+            "symbol": "CENTER",
+            "description": "encounter-frequency corridor carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "temporal-isolation gate",
+            "symbol": "RIGHT",
+            "description": "temporal-isolation gate remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "habitat-isolation gate",
+          "kind": "left spatial anchor",
+          "visual": "habitat-isolation gate",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "encounter-frequency corridor",
+          "kind": "center spatial anchor",
+          "visual": "encounter-frequency corridor",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "temporal-isolation gate",
+          "kind": "right spatial anchor",
+          "visual": "temporal-isolation gate",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Habitat and Temporal Isolation Gates** share one long encounter corridor. On your **left**, lineage A and lineage B occupy different microhabitats inside the same broader region. Directly **ahead**, the center counter records how often potential mates actually encounter one another. On your **right**, the same lineages occupy overlapping space but the breeding clocks glow in different seasons. Imani leaves mating compatibility turned on so only encounter opportunity changes.",
+      "story_paragraphs": [
+        "The **Habitat and Temporal Isolation Gates** share one long encounter corridor. On your **left**, lineage A and lineage B occupy different microhabitats inside the same broader region. Directly **ahead**, the center counter records how often potential mates actually encounter one another. On your **right**, the same lineages occupy overlapping space but the breeding clocks glow in different seasons. Imani leaves mating compatibility turned on so only encounter opportunity changes.",
+        "At the left gate, individuals remain capable of mating in principle, yet they spend their reproductive lives in different habitats or microhabitats and rarely meet. The encounter counter collapses even though no courtship or anatomical mismatch has been introduced. Imani names **Habitat isolation**. Habitat isolation reduces mating when populations occupy different habitats or microhabitats and therefore rarely encounter one another as potential mates.",
+        "At the right gate, the habitat map overlaps, but lineage A enters reproductive condition in spring while lineage B does so later in summer. The same location cannot create mating if reproductive timing does not overlap. Imani names **Temporal isolation**. Temporal isolation reduces mating when populations reproduce at different times of day, seasons, or years.",
+        "She then swaps the displays to prove the diagnostic difference. If the two groups are placed in the same microhabitat but keep different breeding seasons, temporal isolation remains. If their breeding times are synchronized but their reproductive activity occurs in different microhabitats, habitat isolation remains. The barrier is identified by what prevents the encounter.",
+        "Neither barrier requires a structural mismatch, a failed courtship signal, or incompatible gametes. Those mechanisms are still waiting farther down the reproductive sequence. Imani leaves the prezygotic header visible so all five mechanisms remain members of the same before-zygote class without becoming interchangeable.",
+        "Imani now places the same two birds in a neutral test chamber during the same breeding hour. They mate successfully, confirming that the earlier barriers did not require behavioral dislike, mechanical mismatch, or gametic incompatibility. She then restores only the habitat difference and encounters vanish again. Next she restores only the seasonal offset and encounters vanish for a different reason. The middle encounter counter gives both mechanisms the same consequence, reduced mating, while the left and right gates preserve the diagnostic cause. The student can therefore retrieve habitat isolation from *where* the populations reproduce and temporal isolation from *when* they reproduce.",
+        "The corridor records encounter rate rather than reproductive success after contact. That distinction matters because both habitat and temporal isolation can reduce mating before the organisms ever test courtship or gamete compatibility. Imani leaves the later gates physically closed. If the lineages never encounter one another as potential mates, the causal chain stops here and no downstream failure is needed to explain the reduced gene flow.",
+        "The encounter corridor ends at three illuminated gates. A courtship signal flashes on the left, a structural-fit model locks in the center, and gametes approach one another on the right. The same two lineages pass into all three tests. The next scene will stop reproduction at three different points and name each barrier from the precise failure."
+      ],
+      "story_close": "The encounter corridor ends at three illuminated gates. A courtship signal flashes on the left, a structural-fit model locks in the center, and gametes approach one another on the right. The same two lineages pass into all three tests. The next scene will stop reproduction at three different points and name each barrier from the precise failure.",
+      "object_ids": [
+        "U7-K-150",
+        "U7-K-151"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-150",
+          "term": "Habitat isolation",
+          "story": "Recall Habitat isolation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L46.",
+          "science": "Habitat isolation reduces mating when populations occupy different habitats or microhabitats and therefore rarely encounter one another as potential mates.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L46.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-151",
+          "term": "Temporal isolation",
+          "story": "Recall Temporal isolation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L46.",
+          "science": "Temporal isolation reduces mating when populations reproduce at different times of day, seasons, or years.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L46.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U7-D29: keep Habitat isolation, Temporal isolation, Behavioral isolation, Mechanical isolation, Gametic isolation physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Behavioral–Mechanical–Gametic Gates",
+      "f3_scene_brief_id": "F3-U7-L46",
+      "narrative_word_count": 508
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U7-L47",
+      "locus": "Behavioral–Mechanical–Gametic Gates",
+      "title": " are arranged in three stages. On your ",
+      "scene_kicker": "Make Behavioral isolation reconstructable from the visible relationship at Behavioral–Mechanical–Gametic Gates while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the three-stage gate separating courtship mismatch, structural incompatibility, and gamete-recognition failure",
+      "scene_layout": {
+        "orientation": "Enter Behavioral–Mechanical–Gametic Gates and stop at the three-stage gate separating courtship mismatch, structural incompatibility, and gamete-recognition failure. Keep behavioral-isolation signal gate fixed on the left, mechanical-isolation fit gate as the working center, and gametic-isolation fusion gate fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "behavioral-isolation signal gate",
+            "symbol": "LEFT",
+            "description": "behavioral-isolation signal gate remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "mechanical-isolation fit gate",
+            "symbol": "CENTER",
+            "description": "mechanical-isolation fit gate carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "gametic-isolation fusion gate",
+            "symbol": "RIGHT",
+            "description": "gametic-isolation fusion gate remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "behavioral-isolation signal gate",
+          "kind": "left spatial anchor",
+          "visual": "behavioral-isolation signal gate",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "mechanical-isolation fit gate",
+          "kind": "center spatial anchor",
+          "visual": "mechanical-isolation fit gate",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "gametic-isolation fusion gate",
+          "kind": "right spatial anchor",
+          "visual": "gametic-isolation fusion gate",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Behavioral–Mechanical–Gametic Gates** are arranged in three stages. On your **left**, lineage A performs one courtship display while lineage B responds only to a different signal. Directly **ahead**, the mechanical gate compares reproductive structures and transfer fit. On your **right**, compatible mating has already occurred but gametes meet at a recognition-and-fusion chamber. Imani keeps the zygote threshold visible beyond all three gates and leaves it off until fusion succeeds.",
+      "story_paragraphs": [
+        "The **Behavioral–Mechanical–Gametic Gates** are arranged in three stages. On your **left**, lineage A performs one courtship display while lineage B responds only to a different signal. Directly **ahead**, the mechanical gate compares reproductive structures and transfer fit. On your **right**, compatible mating has already occurred but gametes meet at a recognition-and-fusion chamber. Imani keeps the zygote threshold visible beyond all three gates and leaves it off until fusion succeeds.",
+        "At the left gate, the lineages occupy the same place at the same time, yet the courtship signal from one lineage does not elicit the appropriate reproductive response from the other. Imani names **Behavioral isolation**. Behavioral isolation reduces mating when courtship signals or other reproductive behaviors differ between populations.",
+        "She resets the signal system so courtship proceeds, then stops the pair at the center gate. Their reproductive structures cannot mate successfully or transfer gametes effectively. The failure now occurs later in the sequence and for a different reason. Imani names **Mechanical isolation**. Mechanical isolation prevents successful mating or transfer of gametes when reproductive structures are incompatible.",
+        "Finally she permits courtship and transfer but carries the gametes to the right fusion chamber. They fail to recognize, survive, or fuse successfully across the lineages. This is **Gametic isolation**. Gametic isolation occurs when sperm and egg or other gametes fail to recognize, survive, or fuse successfully across populations.",
+        "The three failures remain frozen side by side. Behavior fails before successful mating. Mechanical fit blocks mating or transfer. Gametic incompatibility blocks successful fertilization even after gametes are present. Each is prezygotic because the zygote lamp never turns on, yet the exact failure point remains different.",
+        "The three gates are then run in the wrong order on purpose. Gametes cannot be tested if courtship never leads to mating, and mechanical fit cannot be diagnosed from a pair that never attempts mating. Imani resets the sequence and allows each earlier step to succeed before testing the next barrier. That procedural order keeps the terms causal. Behavioral isolation concerns reproductive signals or behavior. Mechanical isolation concerns successful mating or gamete transfer. Gametic isolation concerns recognition, survival, or fusion of gametes after they are available. All three reduce gene flow before a zygote forms.",
+        "At the end, Imani places three small flags directly on the reproductive sequence. SIGNAL before mating, FIT at mating or transfer, FUSION at fertilization. The flags remain in that order even if the lineages are redrawn. This gives each exact name a durable location in the causal pathway and prevents gametic isolation from drifting backward into courtship or mechanical isolation from drifting forward into postzygotic development.",
+        "The optional recall shutter hides the term labels while leaving the signal, fit, and fusion gates visible. When it rises, one experimental cross bypasses all five prezygotic barriers. Gamete fusion succeeds and the zygote lamp finally turns green. The next ward begins only after that event and will diagnose what can still fail in hybrids after fertilization."
+      ],
+      "story_close": "The optional recall shutter hides the term labels while leaving the signal, fit, and fusion gates visible. When it rises, one experimental cross bypasses all five prezygotic barriers. Gamete fusion succeeds and the zygote lamp finally turns green. The next ward begins only after that event and will diagnose what can still fail in hybrids after fertilization.",
+      "object_ids": [
+        "U7-K-152",
+        "U7-K-153",
+        "U7-K-154"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-152",
+          "term": "Behavioral isolation",
+          "story": "Recall Behavioral isolation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L47.",
+          "science": "Behavioral isolation reduces mating when courtship signals or other reproductive behaviors differ between populations.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L47.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-153",
+          "term": "Mechanical isolation",
+          "story": "Recall Mechanical isolation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L47.",
+          "science": "Mechanical isolation prevents successful mating or transfer of gametes when reproductive structures are incompatible.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L47.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-154",
+          "term": "Gametic isolation",
+          "story": "Recall Gametic isolation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L47.",
+          "science": "Gametic isolation occurs when sperm and egg or other gametes fail to recognize, survive, or fuse successfully across populations.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L47.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U7-D29: keep Habitat isolation, Temporal isolation, Behavioral isolation, Mechanical isolation, Gametic isolation physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-152",
+      "checkpoint_prompt": "Without looking back, identify or explain Behavioral isolation from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Behavioral isolation reduces mating when courtship signals or other reproductive behaviors differ between populations.",
+      "next_locus": "Postzygotic Outcome Ward",
+      "f3_scene_brief_id": "F3-U7-L47",
+      "narrative_word_count": 490
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U7-L48",
+      "locus": "Postzygotic Outcome Ward",
+      "title": " begins with one fact already established. Fertilization occurred. On your ",
+      "scene_kicker": "Make Postzygotic barrier reconstructable from the visible relationship at Postzygotic Outcome Ward while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the ward distinguishing reduced hybrid viability, reduced fertility, and hybrid breakdown after fertilization",
+      "scene_layout": {
+        "orientation": "Enter Postzygotic Outcome Ward and stop at the ward distinguishing reduced hybrid viability, reduced fertility, and hybrid breakdown after fertilization. Keep reduced-hybrid-viability bay fixed on the left, postzygotic-barrier ward as the working center, and reduced-fertility / hybrid-breakdown bays fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "reduced-hybrid-viability bay",
+            "symbol": "LEFT",
+            "description": "reduced-hybrid-viability bay remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "postzygotic-barrier ward",
+            "symbol": "CENTER",
+            "description": "postzygotic-barrier ward carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "reduced-fertility / hybrid-breakdown bays",
+            "symbol": "RIGHT",
+            "description": "reduced-fertility / hybrid-breakdown bays remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "reduced-hybrid-viability bay",
+          "kind": "left spatial anchor",
+          "visual": "reduced-hybrid-viability bay",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "postzygotic-barrier ward",
+          "kind": "center spatial anchor",
+          "visual": "postzygotic-barrier ward",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "reduced-fertility / hybrid-breakdown bays",
+          "kind": "right spatial anchor",
+          "visual": "reduced-fertility / hybrid-breakdown bays",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Postzygotic Outcome Ward** begins with one fact already established. Fertilization occurred. On your **left**, a hybrid-development bay follows zygotes that fail to develop normally or survive. Directly **ahead**, the center ward records the successful fertilization event so no later outcome can be mistaken for prezygotic isolation. On your **right**, one bay follows surviving but infertile hybrids and another follows later-generation descendants of initially viable, fertile F1 hybrids.",
+      "story_paragraphs": [
+        "The **Postzygotic Outcome Ward** begins with one fact already established. Fertilization occurred. On your **left**, a hybrid-development bay follows zygotes that fail to develop normally or survive. Directly **ahead**, the center ward records the successful fertilization event so no later outcome can be mistaken for prezygotic isolation. On your **right**, one bay follows surviving but infertile hybrids and another follows later-generation descendants of initially viable, fertile F1 hybrids.",
+        "Imani places the class label **Postzygotic barrier** above the ward. A postzygotic reproductive barrier acts after fertilization by reducing hybrid viability or reproductive success. The glowing zygote record remains visible beneath the label. Timing alone separates the entire ward from the prezygotic gates behind you.",
+        "In the left bay, hybrid embryos develop poorly or fail to survive to reproductive age because of genetic incompatibilities. Imani names **Reduced hybrid viability**. Reduced hybrid viability occurs when genetic incompatibilities impair hybrid development or survival. The failure is survival or development after fertilization.",
+        "In the first right bay, hybrids survive but produce few or no functional gametes or otherwise have greatly reduced reproductive fertility. This is **Reduced hybrid fertility**. Reduced hybrid fertility occurs when hybrids survive but have low or zero reproductive fertility because of chromosomal or genic incompatibilities. Imani explicitly keeps chromosome-number differences as one possible cause, not a universal explanation for hybrid sterility.",
+        "In the second right bay, the F1 hybrids survive and reproduce, but their later-generation descendants show reduced viability or fertility. Imani names **Hybrid breakdown**. Hybrid breakdown occurs when first-generation hybrids are viable and fertile but later-generation descendants show reduced viability or fertility. The generation labels prevent this from collapsing into the reduced-fertility bay.",
+        "Imani places a mule image beside the reduced-fertility bay but refuses to let it become the definition. Chromosome-number or structural differences can contribute to meiotic problems and sterility in some hybrids, while genic incompatibilities can also reduce fertility. She then moves the image away and leaves the outcome criterion visible. Survive but reproduce poorly belongs in reduced hybrid fertility regardless of the exact molecular cause. The hybrid-breakdown bay remains separate because its F1 generation can be viable and fertile. Only later descendants reveal the reduced viability, reduced fertility, or both that define that barrier.",
+        "The ward keeps the generation number printed on every hybrid record. F1 survival, F1 fertility, and later-generation outcomes are separate columns. Imani makes the learner point to the column that fails before naming the barrier. That simple act prevents reduced hybrid viability, reduced hybrid fertility, and hybrid breakdown from becoming three synonyms for a bad hybrid outcome. Timing and reproductive consequence remain part of the definition.",
+        "The recall light hides all labels while leaving the successful zygote in the center and the three later outcomes visible. When the labels return, the archipelago map expands into geological time. The next gallery will no longer classify barriers. It will compare how evolutionary change can accumulate gradually or appear in relatively rapid episodes separated by long intervals of little net morphological change."
+      ],
+      "story_close": "The recall light hides all labels while leaving the successful zygote in the center and the three later outcomes visible. When the labels return, the archipelago map expands into geological time. The next gallery will no longer classify barriers. It will compare how evolutionary change can accumulate gradually or appear in relatively rapid episodes separated by long intervals of little net morphological change.",
+      "object_ids": [
+        "U7-K-155",
+        "U7-K-156",
+        "U7-K-157",
+        "U7-K-158"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-155",
+          "term": "Postzygotic barrier",
+          "story": "Recall Postzygotic barrier from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L48.",
+          "science": "A postzygotic reproductive barrier acts after fertilization by reducing hybrid viability or reproductive success.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L48.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-156",
+          "term": "Reduced hybrid viability",
+          "story": "Recall Reduced hybrid viability from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L48.",
+          "science": "Reduced hybrid viability occurs when genetic incompatibilities impair hybrid development or survival.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L48.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-157",
+          "term": "Reduced hybrid fertility",
+          "story": "Recall Reduced hybrid fertility from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L48.",
+          "science": "Reduced hybrid fertility occurs when hybrids survive but have low or zero reproductive fertility because of chromosomal or genic incompatibilities.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L48.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-158",
+          "term": "Hybrid breakdown",
+          "story": "Recall Hybrid breakdown from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L48.",
+          "science": "Hybrid breakdown occurs when first-generation hybrids are viable and fertile but later-generation descendants show reduced viability or fertility.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L48.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-027: Chromosome-number or structural differences can cause hybrid sterility, but genic incompatibilities and meiotic problems can also reduce fertility. Keep the mule as an example without making chromosome number the universal cause.",
+        "Resolved F1 guard RF-U7-028: Use the broader definition: first-generation hybrids may be viable and fertile, while later-generation hybrids can show reduced viability, reduced fertility, or both.",
+        "Discrimination requirement U7-D28: keep Prezygotic barrier, Postzygotic barrier, Reproductive isolating mechanisms physically and verbally distinct until the diagnostic comparison is complete.",
+        "Discrimination requirement U7-D30: keep Reduced hybrid viability, Reduced hybrid fertility, Hybrid breakdown physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U7-K-155",
+      "checkpoint_prompt": "Without looking back, identify or explain Postzygotic barrier from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "A postzygotic reproductive barrier acts after fertilization by reducing hybrid viability or reproductive success.",
+      "next_locus": "Evolutionary Tempo Gallery",
+      "f3_scene_brief_id": "F3-U7-L48",
+      "narrative_word_count": 495
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U7-L49",
+      "locus": "Evolutionary Tempo Gallery",
+      "title": " stretches across a single geological time axis. On your ",
+      "scene_kicker": "Make Punctuated equilibrium and gradualism reconstructable from the visible relationship at Evolutionary Tempo Gallery while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the timeline comparing gradualism with punctuated episodes separated by stasis",
+      "scene_layout": {
+        "orientation": "Enter Evolutionary Tempo Gallery and stop at the timeline comparing gradualism with punctuated episodes separated by stasis. Keep gradual-change timeline fixed on the left, punctuated-equilibrium comparison as the working center, and stasis interval display fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "gradual-change timeline",
+            "symbol": "LEFT",
+            "description": "gradual-change timeline remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "punctuated-equilibrium comparison",
+            "symbol": "CENTER",
+            "description": "punctuated-equilibrium comparison carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "stasis interval display",
+            "symbol": "RIGHT",
+            "description": "stasis interval display remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "gradual-change timeline",
+          "kind": "left spatial anchor",
+          "visual": "gradual-change timeline",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "punctuated-equilibrium comparison",
+          "kind": "center spatial anchor",
+          "visual": "punctuated-equilibrium comparison",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "stasis interval display",
+          "kind": "right spatial anchor",
+          "visual": "stasis interval display",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Evolutionary Tempo Gallery** stretches across a single geological time axis. On your **left**, one lineage changes by small accumulated steps across many intervals. Directly **ahead**, a second lineage shows long periods with little net morphological change interrupted by a comparatively short interval of rapid change. On your **right**, the long flat interval is magnified while the same time units remain visible. Imani keeps the lineages and timescale fixed so the comparison is about tempo, not different clocks.",
+      "story_paragraphs": [
+        "The **Evolutionary Tempo Gallery** stretches across a single geological time axis. On your **left**, one lineage changes by small accumulated steps across many intervals. Directly **ahead**, a second lineage shows long periods with little net morphological change interrupted by a comparatively short interval of rapid change. On your **right**, the long flat interval is magnified while the same time units remain visible. Imani keeps the lineages and timescale fixed so the comparison is about tempo, not different clocks.",
+        "She names the broad contrast **Punctuated equilibrium and gradualism**. Evolutionary change can be concentrated in relatively rapid episodes separated by stasis or can accumulate more gradually over long timescales. The word rapid remains relative to geological time. Nothing in the display implies that a complex lineage appears instantaneously in a single generation.",
+        "The left timeline illustrates gradual accumulation. Small changes add across long spans without requiring a sudden jump. The center timeline illustrates a punctuated pattern in which relatively rapid episodes are separated by longer periods of much less net morphological change. Imani refuses to crown either timeline the universal pattern for all lineages.",
+        "The right-side flat interval receives its own name **Stasis**. Stasis is a period in which a lineage shows relatively little net morphological evolutionary change in the fossil record. Stasis does not mean no mutation, no reproduction, or no genetic change of any kind. It describes little net morphological change in the fossil record over the interval being considered.",
+        "Imani overlays the same total time span on both timelines. That prevents a visual trick where one pattern looks faster merely because its axis was compressed. Evolutionary tempo has to be interpreted against the scale shown, just as tree branch length in the previous journey had to be interpreted only when a scale was encoded.",
+        "The gallery adds fossil silhouettes at equal time intervals so the learner can see what the record would look like under each tempo. On the gradual track, successive forms shift incrementally across many intervals. On the punctuated track, long stretches show little net morphological difference, followed by a geologically shorter interval with greater change. Imani reminds the learner that the fossil record is incomplete, so tempo interpretations rely on evidence quality and sampling. The two models describe patterns of evolutionary change through time, not opposing laws that force every lineage into one category forever.",
+        "Imani also keeps speciation barriers off this gallery. Punctuated equilibrium, gradualism, and stasis describe tempo in evolutionary history, not mechanisms of reproductive isolation. A lineage can show either tempo while speciation, selection, drift, or other processes operate underneath. The gallery therefore answers a different question from the archipelago gates. It asks how change is distributed through time, not what barrier created a species boundary.",
+        "At the end of the gallery, the timelines open onto a high overlook containing many branches. Some related lineages spread into different ecological roles. Distant lineages independently acquire similar forms under similar pressures. Other branches terminate completely. The final scene will place these patterns together without confusing divergence with guaranteed speciation or convergence with shared recent ancestry."
+      ],
+      "story_close": "At the end of the gallery, the timelines open onto a high overlook containing many branches. Some related lineages spread into different ecological roles. Distant lineages independently acquire similar forms under similar pressures. Other branches terminate completely. The final scene will place these patterns together without confusing divergence with guaranteed speciation or convergence with shared recent ancestry.",
+      "object_ids": [
+        "U7-K-052",
+        "U7-K-160"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-052",
+          "term": "Punctuated equilibrium and gradualism",
+          "story": "Recall Punctuated equilibrium and gradualism from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L49.",
+          "science": "Evolutionary change can be concentrated in relatively rapid episodes separated by stasis or can accumulate more gradually over long timescales.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L49.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-160",
+          "term": "Stasis",
+          "story": "Recall Stasis from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L49.",
+          "science": "Stasis is a period in which a lineage shows relatively little net morphological evolutionary change in the fossil record.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L49.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U7-D31: keep Punctuated equilibrium and gradualism, Stasis physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Divergence–Radiation–Convergence Overlook",
+      "f3_scene_brief_id": "F3-U7-L49",
+      "narrative_word_count": 510
+    },
+    {
+      "scene_index": 8,
+      "locus_id": "U7-L50",
+      "locus": "Divergence–Radiation–Convergence Overlook",
+      "title": " looks across the entire archipelago. On your ",
+      "scene_kicker": "Make Divergent evolution and adaptive radiation reconstructable from the visible relationship at Divergence–Radiation–Convergence Overlook while preserving the exact F2 geography, F1 qualifiers, population/evidence identities, and the journey continuity object.",
+      "location_description": "the overlook comparing diversification from common ancestry with independently evolved similarity and extinction-scale context",
+      "scene_layout": {
+        "orientation": "Enter Divergence–Radiation–Convergence Overlook and stop at the overlook comparing diversification from common ancestry with independently evolved similarity and extinction-scale context. Keep divergent-evolution / adaptive-radiation branch fixed on the left, macroevolutionary overlook as the working center, and convergent-evolution / extinction side fixed on the right. The learner should be able to redraw those three positions before any population, evidence, branch, barrier, or chemistry changes state.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "divergent-evolution / adaptive-radiation branch",
+            "symbol": "LEFT",
+            "description": "divergent-evolution / adaptive-radiation branch remains the fixed left-side reference for this locus."
+          },
+          {
+            "position": "center",
+            "label": "macroevolutionary overlook",
+            "symbol": "CENTER",
+            "description": "macroevolutionary overlook carries the science-bearing comparison or barrier in the center."
+          },
+          {
+            "position": "right",
+            "label": "convergent-evolution / extinction side",
+            "symbol": "RIGHT",
+            "description": "convergent-evolution / extinction side remains the fixed right-side consequence or comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Vale",
+          "kind": "guide",
+          "visual": "charcoal field jacket, pale-green specimen gloves, brass pointer, and transparent lineage ledger",
+          "job": "keeps lineage A and lineage B, the gene-flow meter, and every mating or hybrid outcome physically traceable while changing only the barrier or timescale under study"
+        },
+        {
+          "name": "Lineage A",
+          "kind": "persistent descendant population",
+          "visual": "blue-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains one of the same two tracked populations through every geography, barrier, hybrid, and macroevolution scene"
+        },
+        {
+          "name": "Lineage B",
+          "kind": "persistent descendant population",
+          "visual": "amber-banded descendants whose ancestry remains traceable to the original mixed population",
+          "job": "remains the comparison population throughout the complete speciation route"
+        },
+        {
+          "name": "Gene-flow meter",
+          "kind": "persistent causal instrument",
+          "visual": "a transparent meter showing relative gene exchange between lineages A and B",
+          "job": "keeps reduced gene flow visible as the central causal variable in speciation"
+        },
+        {
+          "name": "Mating and hybrid outcome panel",
+          "kind": "persistent reproductive instrument",
+          "visual": "a causal sequence from encounter through courtship, mating, gamete fusion, zygote, hybrid survival, and fertility",
+          "job": "shows the exact stage at which each reproductive barrier acts"
+        },
+        {
+          "name": "divergent-evolution / adaptive-radiation branch",
+          "kind": "left spatial anchor",
+          "visual": "divergent-evolution / adaptive-radiation branch",
+          "job": "fixed left-side reference"
+        },
+        {
+          "name": "macroevolutionary overlook",
+          "kind": "center spatial anchor",
+          "visual": "macroevolutionary overlook",
+          "job": "center science-bearing mechanism"
+        },
+        {
+          "name": "convergent-evolution / extinction side",
+          "kind": "right spatial anchor",
+          "visual": "convergent-evolution / extinction side",
+          "job": "fixed right-side consequence"
+        }
+      ],
+      "continuity_object": "one ancestral population represented by two interbreeding color bands that later separate into lineage A and lineage B; a visible gene-flow meter and mating/fertility outcome panel follow the same two lineages through every barrier. The two color bands keep their lineage identity after separation so every later barrier and hybrid outcome can be traced back to the same ancestral population.",
+      "story_open": "The **Divergence–Radiation–Convergence Overlook** looks across the entire archipelago. On your **left**, one ancestral branch splits into several related lineages occupying different environments. Directly **ahead**, a large scale map tracks patterns above the species level through branching, diversification, and lineage loss. On your **right**, two distantly related lineages face similar selective pressures and develop similar functional traits, while another branch ends at an extinction marker. Imani brings lineage A and lineage B from the earlier islands into the left display so the long-timescale view remains connected to the speciation story.",
+      "story_paragraphs": [
+        "The **Divergence–Radiation–Convergence Overlook** looks across the entire archipelago. On your **left**, one ancestral branch splits into several related lineages occupying different environments. Directly **ahead**, a large scale map tracks patterns above the species level through branching, diversification, and lineage loss. On your **right**, two distantly related lineages face similar selective pressures and develop similar functional traits, while another branch ends at an extinction marker. Imani brings lineage A and lineage B from the earlier islands into the left display so the long-timescale view remains connected to the speciation story.",
+        "She first names **Divergent evolution**. Divergent evolution is the accumulation of differences among related lineages as they experience different environments or evolutionary histories. It can contribute to speciation when reproductive isolation develops. The last clause stays visible because divergence alone does not guarantee a new species boundary.",
+        "When one ancestral lineage rapidly diversifies into several descendant lineages as new ecological opportunities become available, Imani names **Adaptive radiation**. Adaptive radiation is rapid diversification of one ancestral lineage into multiple descendant lineages, often associated with newly available ecological opportunities. The combined relationship **Divergent evolution and adaptive radiation** remains on the left because adaptive radiation is a particularly extensive pattern of diversification from common ancestry.",
+        "On the right, distantly related lineages encounter similar selective pressures and independently evolve similar phenotypic adaptations. Imani names **Convergent evolution**. Similar selective pressures can independently favor similar phenotypic adaptations in distantly related populations or species. Similarity here does not imply that the similar trait came from a recent common ancestor.",
+        "The center overlook supplies the scale term **Macroevolution**. Macroevolution refers to broad evolutionary patterns above the species level, including patterns of speciation, extinction, and diversification. Imani then points to the branch that ends permanently. **Extinction** is the permanent loss of a species or lineage when no living members remain. Population decline alone does not count if living members persist.",
+        "Imani makes one final discrimination by placing three arrows over the overlook. The first arrow starts from a shared ancestor and spreads outward as related lineages accumulate differences. That is divergence. The second starts from one ancestral lineage and fans rapidly into many ecological roles when opportunities are available. That is adaptive radiation. The third begins from distant branches and points toward similar phenotypes under similar selective pressures. That is convergence. None of those arrows alone tells you that a new species formed. The reproductive-isolation logic from the beginning of the archipelago remains the gate for speciation, while these arrows describe broader evolutionary patterns.",
+        "The archive finally reconnects every part of the journey. Reproductive isolation established species boundaries. Allopatric and sympatric pathways differed in geography. Prezygotic barriers stopped mating or fertilization, while postzygotic barriers acted after fertilization. Over longer timescales, lineages can diverge, radiate, converge, persist through stasis, change gradually or in punctuated episodes, and go extinct. The archipelago clears its final warning because every pattern now has a causal place without turning every difference into speciation or every similarity into common ancestry."
+      ],
+      "story_close": "The archive finally reconnects every part of the journey. Reproductive isolation established species boundaries. Allopatric and sympatric pathways differed in geography. Prezygotic barriers stopped mating or fertilization, while postzygotic barriers acted after fertilization. Over longer timescales, lineages can diverge, radiate, converge, persist through stasis, change gradually or in punctuated episodes, and go extinct. The archipelago clears its final warning because every pattern now has a causal place without turning every difference into speciation or every similarity into common ancestry.",
+      "object_ids": [
+        "U7-K-053",
+        "U7-K-054",
+        "U7-K-159",
+        "U7-K-161",
+        "U7-K-162",
+        "U7-K-163"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U7-K-053",
+          "term": "Divergent evolution and adaptive radiation",
+          "story": "Recall Divergent evolution and adaptive radiation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L50.",
+          "science": "Divergent evolution can accompany adaptation to different habitats; adaptive radiation can produce especially rapid diversification when ecological opportunities become available.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L50.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-054",
+          "term": "Convergent evolution",
+          "story": "Recall Convergent evolution from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L50.",
+          "science": "Similar selective pressures can independently favor similar phenotypic adaptations in distantly related populations or species.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L50.",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U7-K-159",
+          "term": "Macroevolution",
+          "story": "Recall Macroevolution from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L50.",
+          "science": "Macroevolution refers to broad evolutionary patterns above the species level, including patterns of speciation, extinction, and diversification.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L50.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-161",
+          "term": "Divergent evolution",
+          "story": "Recall Divergent evolution from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L50.",
+          "science": "Divergent evolution is the accumulation of differences among related lineages as they experience different environments or evolutionary histories; it can contribute to speciation when reproductive isolation develops.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L50.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-162",
+          "term": "Adaptive radiation",
+          "story": "Recall Adaptive radiation from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L50.",
+          "science": "Adaptive radiation is rapid diversification of one ancestral lineage into multiple descendant lineages, often associated with newly available ecological opportunities.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L50.",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U7-K-163",
+          "term": "Extinction",
+          "story": "Recall Extinction from the visible lineage, gene-flow, geography, mating-stage, or hybrid-outcome relationship in U7-L50.",
+          "science": "Extinction is the permanent loss of a species or lineage when no living members remain.",
+          "exact_name": true,
+          "hint": "Use the fixed left/center/right barrier layout in U7-L50.",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT7_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U7-030: Preserve as teacher enrichment and conceptual context. Do not make memorization of the number of mass extinctions a Unit 7 AP requirement.",
+        "Resolved F1 guard RF-U7-029: Divergence can occur within or among populations and may contribute to speciation when reproductive isolation evolves; divergence does not automatically create a new species.",
+        "Discrimination requirement U7-D32: keep Divergent evolution, Convergent evolution, Adaptive radiation, Divergent evolution and adaptive radiation physically and verbally distinct until the diagnostic comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U7-L50",
+      "narrative_word_count": 495
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "frozen_prior_journey_lock": "LOCKED_F4D_J1_J4"
+}

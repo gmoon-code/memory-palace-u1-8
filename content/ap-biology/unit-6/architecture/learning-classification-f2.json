@@ -1,0 +1,5100 @@
+{
+  "schema": "memory-palace-v2-unit6-f2-learning-classification-1.0",
+  "generated_utc": "2026-09-07T01:00:00+00:00",
+  "unit_id": "unit-6",
+  "canonical_source_lock": "canonical-unit6-f1.json",
+  "policy": {
+    "palace": "Permanent loci carry durable scientific identities, mechanisms, directional relationships, visual models, and teacher-required content that belongs to the taught Unit 6 corpus.",
+    "prerequisite_reactivation": "Prior-unit concepts are reactivated inside an appropriate Unit 6 locus and are not given duplicate standalone palaces.",
+    "challenge_lab": "Calculations, strand conversion, codon-chart use, FRQ synthesis, visual analysis, and other transfer procedures remain outside permanent loci.",
+    "scope_guard": "Scope guards remain non-runtime constraints and may shape wording/QA but are never memorization targets.",
+    "review": "Every exact-name palace-managed record is eligible for delayed Review; visible review limits remain a runtime concern for later gates.",
+    "spelling": "No Unit 6 item receives a mandatory spelling gate at F2. Adaptive spelling support may be added later when useful."
+  },
+  "counts": {
+    "total": 202,
+    "by_destination": {
+      "PALACE_PRIMARY_LOCUS": 53,
+      "PALACE_EMBEDDED": 108,
+      "SUPPORTING_NON_RUNTIME_SCOPE_GUARD": 25,
+      "CHALLENGE_LAB": 16
+    },
+    "by_name_support": {
+      "SEMANTIC_SCIENCE_CUE_SUFFICIENT": 72,
+      "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED": 21,
+      "NO_EXACT_NAME_GATE": 68,
+      "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE": 41
+    },
+    "exact_name_targets": 134,
+    "mandatory_spelling_targets": 0,
+    "prerequisite_reactivations": 5
+  },
+  "records": [
+    {
+      "knowledge_id": "U6-K-001",
+      "canonical_label": "DNA/RNA as hereditary information",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L01",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "HEREDITARY_INFORMATION_EVIDENCE_ARCHIVE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D01"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-004"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-002",
+      "canonical_label": "Typical prokaryotic chromosome form",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L02",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHROMOSOME_FORM_CONDENSATION_COMPARISON",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D03"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-003",
+      "canonical_label": "Typical eukaryotic chromosome form",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_FORM_CONDENSATION_COMPARISON",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D03"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-004",
+      "canonical_label": "Eukaryotic chromosome condensation",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_FORM_CONDENSATION_COMPARISON",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-005",
+      "canonical_label": "Plasmids",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L03",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PLASMID_IDENTITY_REPLICATION_TRANSFER",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D03"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-006",
+      "canonical_label": "Purines",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L04",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PURINE_PYRIMIDINE_CHARGAFF_TABLE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D02"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-007",
+      "canonical_label": "Pyrimidines",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PURINE_PYRIMIDINE_CHARGAFF_TABLE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D02"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-008",
+      "canonical_label": "Conserved complementary base pairing",
+      "topic": "6.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L05",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ANTIPARALLEL_BASE_PAIRING_REACTIVATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D04"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-004"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-009",
+      "canonical_label": "Replication preserves hereditary continuity",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L06",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REPLICATION_CONTINUITY_S_PHASE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-005",
+        "RF-U6-006"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-010",
+      "canonical_label": "DNA synthesis direction",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L10",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LEADING_LAGGING_DIRECTIONAL_FORK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007",
+        "RF-U6-008"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-011",
+      "canonical_label": "Semiconservative replication",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L07",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REPLICATION_MODEL_EVIDENCE_DISCRIMINATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D05"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-006"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-012",
+      "canonical_label": "Helicase",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L08",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ORIGIN_HELICASE_TOPOISOMERASE_FORK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D06"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-013",
+      "canonical_label": "Topoisomerase",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ORIGIN_HELICASE_TOPOISOMERASE_FORK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D06"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-014",
+      "canonical_label": "DNA polymerase requires RNA primers",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L09",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PRIMER_POLYMERASE_SYNTHESIS_DOCK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D07"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-015",
+      "canonical_label": "Leading and lagging strand synthesis",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L10",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "LEADING_LAGGING_DIRECTIONAL_FORK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D08"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007",
+        "RF-U6-008"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-016",
+      "canonical_label": "Ligase joins lagging-strand fragments",
+      "topic": "6.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L11",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "LIGASE_PROOFREADING_REPAIR_BENCH",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D06"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-017",
+      "canonical_label": "Replication enzyme-name scope guard",
+      "topic": "6.2",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-018",
+      "canonical_label": "RNA sequence and structure determine function",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L13",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RNA_FUNCTION_MRNA_RRNA",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-012"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-019",
+      "canonical_label": "mRNA function",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RNA_FUNCTION_MRNA_RRNA",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D11"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-020",
+      "canonical_label": "tRNA amino-acid specificity",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L14",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRNA_AMINO_ACID_ANTICODON_COURIER",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D11"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-012",
+        "RF-U6-018"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-021",
+      "canonical_label": "tRNA anticodon pairing",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TRNA_AMINO_ACID_ANTICODON_COURIER",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D16"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-012",
+        "RF-U6-018"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-022",
+      "canonical_label": "tRNA recruitment during translation",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TRNA_AMINO_ACID_ANTICODON_COURIER",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-012",
+        "RF-U6-018"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-023",
+      "canonical_label": "rRNA as ribosome component",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RNA_FUNCTION_MRNA_RRNA",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D11"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-019"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-024",
+      "canonical_label": "Transcription uses one DNA template strand",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L16",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TEMPLATE_PROMOTER_INITIATION_GATE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D12"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-013"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-025",
+      "canonical_label": "Transcription directionality",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L17",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRANSCRIPTION_DIRECTION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D12"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-026",
+      "canonical_label": "Eukaryotic pre-mRNA processing",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L19",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PREMRNA_CAP_POLYA_PROCESSING",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-016",
+        "RF-U6-017"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-027",
+      "canonical_label": "Poly-A tail stability",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PREMRNA_CAP_POLYA_PROCESSING",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D14"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-016"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-028",
+      "canonical_label": "5′ GTP cap recognition",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PREMRNA_CAP_POLYA_PROCESSING",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D14"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-029",
+      "canonical_label": "Intron excision and exon splicing",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L20",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "INTRON_EXON_ALTERNATIVE_SPLICING",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D15"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-017"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-030",
+      "canonical_label": "Alternative splicing",
+      "topic": "6.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "INTRON_EXON_ALTERNATIVE_SPLICING",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D15"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-031",
+      "canonical_label": "Translation location",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L21",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROK_EUK_TRANSLATION_LOCATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D20"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-011",
+        "RF-U6-019"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-032",
+      "canonical_label": "Coupled transcription and translation in prokaryotes",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROK_EUK_TRANSLATION_LOCATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D20"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-016",
+        "RF-U6-019"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-033",
+      "canonical_label": "Translation stages",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "READING_FRAME_AUG_START",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-014",
+        "RF-U6-018",
+        "RF-U6-020"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-034",
+      "canonical_label": "Start codon AUG",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L22",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "READING_FRAME_AUG_START",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D17"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-020"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-035",
+      "canonical_label": "Codons",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L23",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CODON_CODE_REDUNDANCY_UNIVERSALITY",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D16",
+        "U6-D18"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-013",
+        "RF-U6-014"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-036",
+      "canonical_label": "Codon specifies amino acid",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CODON_CODE_REDUNDANCY_UNIVERSALITY",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-014"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-037",
+      "canonical_label": "Genetic-code redundancy",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CODON_CODE_REDUNDANCY_UNIVERSALITY",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-014"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-038",
+      "canonical_label": "Near universality of genetic code",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L23",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CODON_CODE_REDUNDANCY_UNIVERSALITY",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-014"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-039",
+      "canonical_label": "tRNA delivers amino acid",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L24",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRNA_CHARGING_DELIVERY",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D19"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-012",
+        "RF-U6-014",
+        "RF-U6-018",
+        "RF-U6-020"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-040",
+      "canonical_label": "Polypeptide elongation",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L26",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRANSLATION_ELONGATION_TRANSLOCATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D19"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-020"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-041",
+      "canonical_label": "Translation continues to stop codon",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L27",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "STOP_CODON_TERMINATION_RELEASE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D17"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-014",
+        "RF-U6-018",
+        "RF-U6-020"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-042",
+      "canonical_label": "Translation termination releases product",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "STOP_CODON_TERMINATION_RELEASE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-018"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-043",
+      "canonical_label": "Translation factor-name scope guard",
+      "topic": "6.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-044",
+      "canonical_label": "Genetic-code memorization scope guard",
+      "topic": "6.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-045",
+      "canonical_label": "Retroviral reverse transcription",
+      "topic": "6.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L28",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RETROVIRAL_REVERSE_TRANSCRIPTION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-021"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-046",
+      "canonical_label": "Regulatory DNA sequences and proteins",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L29",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "REGULATORY_DNA_CONSTITUTIVE_INDUCIBLE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-022",
+        "RF-U6-035",
+        "RF-U6-036"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-047",
+      "canonical_label": "Constitutive and inducible expression",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "REGULATORY_DNA_CONSTITUTIVE_INDUCIBLE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-024",
+        "RF-U6-036"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-048",
+      "canonical_label": "Reversible epigenetic regulation",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L34",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EPIGENETIC_HISTONE_DNA_METHYLATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-025",
+        "RF-U6-026"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-049",
+      "canonical_label": "Gene-expression profile determines phenotype",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L38",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GENE_EXPRESSION_PROFILE_PHENOTYPE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-036"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-050",
+      "canonical_label": "Differentiation and tissue-specific proteins",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L39",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DIFFERENTIAL_EXPRESSION_CELL_DIFFERENTIATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-051",
+      "canonical_label": "Sequential developmental gene expression",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L40",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DEVELOPMENTAL_GENE_EXPRESSION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027",
+        "RF-U6-035"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-052",
+      "canonical_label": "Gene-product amount and function influence phenotype",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GENE_EXPRESSION_PROFILE_PHENOTYPE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-053",
+      "canonical_label": "Coordinated prokaryotic operon regulation",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L30",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "OPERON_PROMOTER_OPERATOR_REPRESSOR",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-023",
+        "RF-U6-024",
+        "RF-U6-036"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-054",
+      "canonical_label": "Coordinated eukaryotic regulation",
+      "topic": "6.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L33",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EUKARYOTIC_MULTI_STAGE_REGULATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-035"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-055",
+      "canonical_label": "Promoter/enhancer recruitment of transcription machinery",
+      "topic": "6.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L35",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROMOTER_ENHANCER_RECRUITMENT",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D25"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-015",
+        "RF-U6-035"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-056",
+      "canonical_label": "Regulatory-sequence position",
+      "topic": "6.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L35",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PROMOTER_ENHANCER_RECRUITMENT",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-035"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-057",
+      "canonical_label": "Negative transcriptional regulation",
+      "topic": "6.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L36",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ACTIVATOR_REPRESSOR_NEGATIVE_REGULATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D25"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-022",
+        "RF-U6-035"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-058",
+      "canonical_label": "Differential gene expression and specialization",
+      "topic": "6.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L39",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DIFFERENTIAL_EXPRESSION_CELL_DIFFERENTIATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027",
+        "RF-U6-036"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-059",
+      "canonical_label": "Small RNA regulation",
+      "topic": "6.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L37",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SMALL_RNA_ALTERNATIVE_SPLICING_REGULATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D26"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-060",
+      "canonical_label": "Mutation effects depend on molecular consequence",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L41",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MUTATION_CONSEQUENCE_CONTEXT_SELECTION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-028",
+        "RF-U6-029",
+        "RF-U6-032"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-061",
+      "canonical_label": "Point substitution",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L42",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SUBSTITUTION_SILENT_MISSENSE_NONSENSE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D28",
+        "U6-D29"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-062",
+      "canonical_label": "Frameshift mutation",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L43",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "FRAMESHIFT_READING_FRAME",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D29"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-029"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-063",
+      "canonical_label": "Nonsense mutation",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L42",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SUBSTITUTION_SILENT_MISSENSE_NONSENSE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D28"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-064",
+      "canonical_label": "Silent mutation",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L42",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SUBSTITUTION_SILENT_MISSENSE_NONSENSE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D28"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-065",
+      "canonical_label": "Specific-mutation effect scope guard",
+      "topic": "6.7",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-066",
+      "canonical_label": "Sources of random DNA mutation",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L44",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MUTATION_VARIATION_SOURCES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-010",
+        "RF-U6-028"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-067",
+      "canonical_label": "Environmental context of mutation effect",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L41",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MUTATION_CONSEQUENCE_CONTEXT_SELECTION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-032"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-068",
+      "canonical_label": "Mutations generate genetic variation",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MUTATION_VARIATION_SOURCES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-028",
+        "RF-U6-032"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-069",
+      "canonical_label": "Cell-division errors can alter phenotype",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NONDISJUNCTION_CHROMOSOME_NUMBER_EFFECT",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-070",
+      "canonical_label": "Nondisjunction and chromosome number",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L45",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NONDISJUNCTION_CHROMOSOME_NUMBER_EFFECT",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D31"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-071",
+      "canonical_label": "Chromosome-number changes can disrupt development",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L45",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NONDISJUNCTION_CHROMOSOME_NUMBER_EFFECT",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-072",
+      "canonical_label": "Chromosome-structure alterations",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L46",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHROMOSOME_REARRANGEMENT_TYPES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D31"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-073",
+      "canonical_label": "Specific chromosome-disorder scope guard",
+      "topic": "6.7",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-074",
+      "canonical_label": "Mutation connects genotype, phenotype, and selection",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L41",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MUTATION_CONSEQUENCE_CONTEXT_SELECTION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-032"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-075",
+      "canonical_label": "Transformation as horizontal gene transfer",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L47",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "HORIZONTAL_GENE_TRANSFER_MODES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D32",
+        "U6-D34"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-037",
+        "RF-U6-038"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-076",
+      "canonical_label": "Transduction as horizontal gene transfer",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HORIZONTAL_GENE_TRANSFER_MODES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D32"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-037",
+        "RF-U6-038"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-077",
+      "canonical_label": "Conjugation as horizontal gene transfer",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HORIZONTAL_GENE_TRANSFER_MODES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D32"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-037",
+        "RF-U6-038"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-078",
+      "canonical_label": "Transposition",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L48",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRANSPOSITION_VIRAL_RECOMBINATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D33"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-037",
+        "RF-U6-038"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-079",
+      "canonical_label": "Viral recombination",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TRANSPOSITION_VIRAL_RECOMBINATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D33"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-080",
+      "canonical_label": "Conserved reproductive sources of variation",
+      "topic": "6.7",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MUTATION_VARIATION_SOURCES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-081",
+      "canonical_label": "Genetic engineering manipulates/analyzes nucleic acids",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L49",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GENETIC_ENGINEERING_SCOPE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-082",
+      "canonical_label": "Gel electrophoresis",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L50",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GEL_ELECTROPHORESIS_MIGRATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D36"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-033"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-083",
+      "canonical_label": "PCR denaturation",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L51",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PCR_THREE_STAGE_AMPLIFICATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D35",
+        "U6-D36"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-034",
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-084",
+      "canonical_label": "PCR primer annealing",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L51",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PCR_THREE_STAGE_AMPLIFICATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D35"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-034",
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-085",
+      "canonical_label": "PCR extension",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L51",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PCR_THREE_STAGE_AMPLIFICATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D35"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-034",
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-086",
+      "canonical_label": "Bacterial transformation as biotechnology",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L52",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "BACTERIAL_TRANSFORMATION_RECOMBINANT_EXPRESSION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D34"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-037",
+        "RF-U6-038"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-087",
+      "canonical_label": "DNA sequencing",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L53",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "DNA_SEQUENCING_PROFILE_COMPARISON",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D36",
+        "U6-D37"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-088",
+      "canonical_label": "DNA profiles/fingerprints support comparison",
+      "topic": "6.8",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L53",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "DNA_SEQUENCING_PROFILE_COMPARISON",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D37"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-033",
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-089",
+      "canonical_label": "Biotechnology-detail scope guard",
+      "topic": "6.8",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-090",
+      "canonical_label": "Rosalind Franklin and X-ray diffraction",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L01",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "HEREDITARY_INFORMATION_EVIDENCE_ARCHIVE",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-001"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-091",
+      "canonical_label": "Chargaff’s composition observations",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L04",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PURINE_PYRIMIDINE_CHARGAFF_TABLE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-092",
+      "canonical_label": "Base-pair hydrogen-bond counts",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L05",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "ANTIPARALLEL_BASE_PAIRING_REACTIVATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-093",
+      "canonical_label": "Watson–Crick model-building history",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L01",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "HEREDITARY_INFORMATION_EVIDENCE_ARCHIVE",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-002"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-094",
+      "canonical_label": "DNA antiparallel structural review",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L05",
+      "scene_role": "PREREQUISITE_REACTIVATION",
+      "visual_mode": "ANTIPARALLEL_BASE_PAIRING_REACTIVATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D01",
+        "U6-D04"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-095",
+      "canonical_label": "5′ and 3′ end chemistry review",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L05",
+      "scene_role": "PREREQUISITE_REACTIVATION",
+      "visual_mode": "ANTIPARALLEL_BASE_PAIRING_REACTIVATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D01",
+        "U6-D04"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-096",
+      "canonical_label": "Plasmid independent replication",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L03",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PLASMID_IDENTITY_REPLICATION_TRANSFER",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-097",
+      "canonical_label": "Conditional value of plasmid genes",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L03",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PLASMID_IDENTITY_REPLICATION_TRANSFER",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-098",
+      "canonical_label": "Recombinant plasmid DNA",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L03",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PLASMID_IDENTITY_REPLICATION_TRANSFER",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-099",
+      "canonical_label": "Plasmid-mediated gene exchange",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L03",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PLASMID_IDENTITY_REPLICATION_TRANSFER",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-100",
+      "canonical_label": "Typical RNA versus DNA architecture",
+      "topic": "6.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L05",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "ANTIPARALLEL_BASE_PAIRING_REACTIVATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D01"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-004"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-101",
+      "canonical_label": "Eukaryotic S-phase replication context",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L06",
+      "scene_role": "PREREQUISITE_REACTIVATION",
+      "visual_mode": "REPLICATION_CONTINUITY_S_PHASE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-005"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-102",
+      "canonical_label": "Conservative replication model",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L07",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "REPLICATION_MODEL_EVIDENCE_DISCRIMINATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D05"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-103",
+      "canonical_label": "Dispersive replication model",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L07",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "REPLICATION_MODEL_EVIDENCE_DISCRIMINATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D05"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-104",
+      "canonical_label": "Meselson–Stahl experiment",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L07",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "REPLICATION_MODEL_EVIDENCE_DISCRIMINATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-105",
+      "canonical_label": "Origins of replication",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L08",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "ORIGIN_HELICASE_TOPOISOMERASE_FORK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-106",
+      "canonical_label": "Replication fork",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L08",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "ORIGIN_HELICASE_TOPOISOMERASE_FORK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-107",
+      "canonical_label": "Single-strand binding proteins",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L09",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PRIMER_POLYMERASE_SYNTHESIS_DOCK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-108",
+      "canonical_label": "Primase",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L09",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PRIMER_POLYMERASE_SYNTHESIS_DOCK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D07"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-109",
+      "canonical_label": "DNA polymerase movement on template",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L09",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PRIMER_POLYMERASE_SYNTHESIS_DOCK",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-110",
+      "canonical_label": "Okazaki fragments",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L10",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "LEADING_LAGGING_DIRECTIONAL_FORK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D08"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007",
+        "RF-U6-008"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-111",
+      "canonical_label": "Primer replacement detail",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L11",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "LIGASE_PROOFREADING_REPAIR_BENCH",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-112",
+      "canonical_label": "Telomeres",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L12",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TELOMERE_TELOMERASE_END_DOCK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D09"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-009"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-113",
+      "canonical_label": "Telomerase",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L12",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TELOMERE_TELOMERASE_END_DOCK",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D09"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-009"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-114",
+      "canonical_label": "DNA polymerase proofreading",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L11",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "LIGASE_PROOFREADING_REPAIR_BENCH",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-010"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-115",
+      "canonical_label": "Mismatch and excision repair overview",
+      "topic": "6.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L11",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "LIGASE_PROOFREADING_REPAIR_BENCH",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-010"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-116",
+      "canonical_label": "Protein structure prerequisite",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L15",
+      "scene_role": "PREREQUISITE_REACTIVATION",
+      "visual_mode": "GENE_EXPRESSION_TRANSCRIPTION_TRANSLATION",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-117",
+      "canonical_label": "Gene expression",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L15",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GENE_EXPRESSION_TRANSCRIPTION_TRANSLATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-118",
+      "canonical_label": "Transcription definition",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L15",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "GENE_EXPRESSION_TRANSCRIPTION_TRANSLATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D10"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-011"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-119",
+      "canonical_label": "Translation definition",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L15",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "GENE_EXPRESSION_TRANSCRIPTION_TRANSLATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D10"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-011"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-120",
+      "canonical_label": "Template strand terminology",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L16",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TEMPLATE_PROMOTER_INITIATION_GATE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D12"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-013"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-121",
+      "canonical_label": "Reading frame",
+      "topic": "6.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L22",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "READING_FRAME_AUG_START",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D18"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-122",
+      "canonical_label": "Transcription initiation, elongation, termination",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L17",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TRANSCRIPTION_DIRECTION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-016"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-123",
+      "canonical_label": "Promoter",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L16",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TEMPLATE_PROMOTER_INITIATION_GATE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D13"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-015"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-124",
+      "canonical_label": "TATA box",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L16",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TEMPLATE_PROMOTER_INITIATION_GATE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D13"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-015"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-125",
+      "canonical_label": "Multiple RNA polymerases increase transcript output",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L17",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TRANSCRIPTION_DIRECTION_SEQUENCE",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-126",
+      "canonical_label": "Prokaryotic transcript usability",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L18",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PROKARYOTIC_TRANSCRIPT_USABILITY",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D20"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-016"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-127",
+      "canonical_label": "Polyadenylation signal sequence",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L19",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PREMRNA_CAP_POLYA_PROCESSING",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-016"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-128",
+      "canonical_label": "Functions of cap and poly-A tail",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L19",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PREMRNA_CAP_POLYA_PROCESSING",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-129",
+      "canonical_label": "Mature mRNA",
+      "topic": "6.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L20",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "INTRON_EXON_ALTERNATIVE_SPLICING",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D15"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-130",
+      "canonical_label": "Aminoacyl-tRNA synthetase",
+      "topic": "6.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L24",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TRNA_CHARGING_DELIVERY",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-018"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-131",
+      "canonical_label": "Ribosomal subunit sizes",
+      "topic": "6.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L25",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "RIBOSOME_APE_SITES",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-019"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-132",
+      "canonical_label": "Ribosomal A, P, and E sites",
+      "topic": "6.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L25",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RIBOSOME_APE_SITES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D19"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-020"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-133",
+      "canonical_label": "Codon recognition and translocation",
+      "topic": "6.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L26",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TRANSLATION_ELONGATION_TRANSLOCATION",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-020"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-134",
+      "canonical_label": "Stop codons and release",
+      "topic": "6.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L27",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "STOP_CODON_TERMINATION_RELEASE",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-018"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-135",
+      "canonical_label": "Protein folding during/after translation",
+      "topic": "6.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L27",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "STOP_CODON_TERMINATION_RELEASE",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-136",
+      "canonical_label": "Operon",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L30",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "OPERON_PROMOTER_OPERATOR_REPRESSOR",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D21"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-036"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-137",
+      "canonical_label": "Promoter–operator–structural gene model",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L30",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "OPERON_PROMOTER_OPERATOR_REPRESSOR",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D21"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-036"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-138",
+      "canonical_label": "Repressor protein",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L30",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "OPERON_PROMOTER_OPERATOR_REPRESSOR",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D21"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-022"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-139",
+      "canonical_label": "Allosteric regulation review",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L31",
+      "scene_role": "PREREQUISITE_REACTIVATION",
+      "visual_mode": "TRP_REPRESSIBLE_COREPRESSOR",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "PRIOR_UNIT_REACTIVATION",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-023"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-140",
+      "canonical_label": "trp operon as repressible system",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L31",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRP_REPRESSIBLE_COREPRESSOR",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D22"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-023"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-141",
+      "canonical_label": "Tryptophan as corepressor",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L31",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "TRP_REPRESSIBLE_COREPRESSOR",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D23"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-023"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-142",
+      "canonical_label": "lac operon as inducible system",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U6-L32",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "LAC_INDUCIBLE_ALLOLACTOSE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D22"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-024"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-143",
+      "canonical_label": "Allolactose as inducer",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L32",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "LAC_INDUCIBLE_ALLOLACTOSE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D23"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-024"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-144",
+      "canonical_label": "lac structural gene products",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L32",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "LAC_INDUCIBLE_ALLOLACTOSE",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-024"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-145",
+      "canonical_label": "Multiple regulatory stages in eukaryotes",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L33",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "EUKARYOTIC_MULTI_STAGE_REGULATION",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-025",
+        "RF-U6-035"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-146",
+      "canonical_label": "Histone acetylation association",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L34",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "EPIGENETIC_HISTONE_DNA_METHYLATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D24"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-025"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-147",
+      "canonical_label": "DNA methylation association",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L34",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "EPIGENETIC_HISTONE_DNA_METHYLATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D24"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-025",
+        "RF-U6-026"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-148",
+      "canonical_label": "Epigenetic state inheritance",
+      "topic": "6.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L34",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "EPIGENETIC_HISTONE_DNA_METHYLATION",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-026"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-149",
+      "canonical_label": "Control elements, activators, and repressors",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L35",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PROMOTER_ENHANCER_RECRUITMENT",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D25"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-035"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-150",
+      "canonical_label": "Alternative splicing as regulatory mechanism",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L37",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "SMALL_RNA_ALTERNATIVE_SPLICING_REGULATION",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-151",
+      "canonical_label": "microRNA and siRNA",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L37",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "SMALL_RNA_ALTERNATIVE_SPLICING_REGULATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D26"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-152",
+      "canonical_label": "Cell differentiation",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L39",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "DIFFERENTIAL_EXPRESSION_CELL_DIFFERENTIATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D27"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-153",
+      "canonical_label": "Morphogenesis",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L40",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "DEVELOPMENTAL_GENE_EXPRESSION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D27"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-154",
+      "canonical_label": "Cytoplasmic determinants",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L40",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "DEVELOPMENTAL_GENE_EXPRESSION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-155",
+      "canonical_label": "Induction in development",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L40",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "DEVELOPMENTAL_GENE_EXPRESSION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-156",
+      "canonical_label": "Pattern formation and homeotic genes",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L40",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "DEVELOPMENTAL_GENE_EXPRESSION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-157",
+      "canonical_label": "Apoptosis",
+      "topic": "6.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L40",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "DEVELOPMENTAL_GENE_EXPRESSION_SEQUENCE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-158",
+      "canonical_label": "Missense mutation",
+      "topic": "6.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L42",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "SUBSTITUTION_SILENT_MISSENSE_NONSENSE",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D28"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-159",
+      "canonical_label": "Chromosomal translocation",
+      "topic": "6.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L46",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "CHROMOSOME_REARRANGEMENT_TYPES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D30"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-160",
+      "canonical_label": "Chromosomal inversion",
+      "topic": "6.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L46",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "CHROMOSOME_REARRANGEMENT_TYPES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D30"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-161",
+      "canonical_label": "Chromosomal duplication",
+      "topic": "6.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L46",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "CHROMOSOME_REARRANGEMENT_TYPES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D30"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-162",
+      "canonical_label": "Chromosomal deletion",
+      "topic": "6.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L46",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "CHROMOSOME_REARRANGEMENT_TYPES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [
+        "U6-D30"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-163",
+      "canonical_label": "Trisomy 21 contextual example",
+      "topic": "6.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L45",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "NONDISJUNCTION_CHROMOSOME_NUMBER_EFFECT",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-164",
+      "canonical_label": "Horizontal gene transfer",
+      "topic": "6.7",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L47",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "HORIZONTAL_GENE_TRANSFER_MODES",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-037",
+        "RF-U6-038"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-165",
+      "canonical_label": "Recombinant DNA expression in bacteria",
+      "topic": "6.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L52",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "BACTERIAL_TRANSFORMATION_RECOMBINANT_EXPRESSION",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-166",
+      "canonical_label": "PCR amplification principle",
+      "topic": "6.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L51",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "PCR_THREE_STAGE_AMPLIFICATION",
+      "exact_name_recall": true,
+      "delayed_review_target": true,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-034",
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-167",
+      "canonical_label": "DNA migration in electrophoresis",
+      "topic": "6.8",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U6-L50",
+      "scene_role": "TEACHER_ENRICHMENT_SUPPORT",
+      "visual_mode": "GEL_ELECTROPHORESIS_MIGRATION",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-033"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-168",
+      "canonical_label": "Chargaff percentage calculation",
+      "topic": "6.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-169",
+      "canonical_label": "DNA/RNA structure discrimination",
+      "topic": "6.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-003"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-170",
+      "canonical_label": "Plasmid antibiotic-resistance FRQ",
+      "topic": "6.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-171",
+      "canonical_label": "Complementary-strand directionality practice",
+      "topic": "6.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-172",
+      "canonical_label": "Replication mechanism explanation",
+      "topic": "6.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-173",
+      "canonical_label": "DNA-template to mRNA conversion",
+      "topic": "6.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-174",
+      "canonical_label": "Codon-chart translation",
+      "topic": "6.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-175",
+      "canonical_label": "Transcription synthesis check",
+      "topic": "6.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-176",
+      "canonical_label": "Translation component check",
+      "topic": "6.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-177",
+      "canonical_label": "Gene-to-functional-protein FRQ",
+      "topic": "6.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-178",
+      "canonical_label": "Prokaryotic/eukaryotic translation comparison",
+      "topic": "6.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-019"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-179",
+      "canonical_label": "lac versus trp operon discrimination",
+      "topic": "6.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-180",
+      "canonical_label": "Mutation-type visual analysis",
+      "topic": "6.7",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": []
+    },
+    {
+      "knowledge_id": "U6-K-181",
+      "canonical_label": "Gel electrophoresis pattern interpretation",
+      "topic": "6.8",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-033"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-182",
+      "canonical_label": "PCR mechanism application",
+      "topic": "6.8",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-034",
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-183",
+      "canonical_label": "DNA sequence comparison",
+      "topic": "6.8",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLICATION_ONLY",
+      "visual_mode": "APPLICATION_OR_DATA_MODEL",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "NOVEL_APPLICATION_OR_DATA_REASONING"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-039"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-184",
+      "canonical_label": "Backbone bond versus base-pair bond",
+      "topic": "6.1",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-003"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-185",
+      "canonical_label": "Typical DNA/RNA structure is not absolute",
+      "topic": "6.1",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-004"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-186",
+      "canonical_label": "Extra replication enzyme names are enrichment",
+      "topic": "6.2",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-007"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-187",
+      "canonical_label": "Telomere mechanism is enrichment",
+      "topic": "6.2",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-009"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-188",
+      "canonical_label": "Transcription location depends on cell type",
+      "topic": "6.3",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-011"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-189",
+      "canonical_label": "TATA box is not every eukaryotic promoter",
+      "topic": "6.3",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-015"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-190",
+      "canonical_label": "Exon does not mean entirely protein-coding",
+      "topic": "6.3",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-017"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-191",
+      "canonical_label": "Genetic code is nearly universal",
+      "topic": "6.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-014"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-192",
+      "canonical_label": "Ribosome size values are enrichment and corrected",
+      "topic": "6.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-019"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-193",
+      "canonical_label": "Retroviral DNA integrates into host DNA",
+      "topic": "6.4",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-021"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-194",
+      "canonical_label": "trp repressor is not an enzyme",
+      "topic": "6.5",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-023"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-195",
+      "canonical_label": "lac operon is not a human lactase pathway",
+      "topic": "6.5",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-024"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-196",
+      "canonical_label": "Epigenetic effects are context dependent",
+      "topic": "6.5",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-025",
+        "RF-U6-026"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-197",
+      "canonical_label": "Developmental mechanism names are enrichment",
+      "topic": "6.6",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-027"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-198",
+      "canonical_label": "Frameshift effects are not universally catastrophic",
+      "topic": "6.7",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-029"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-199",
+      "canonical_label": "Named chromosome disorders are contextual",
+      "topic": "6.7",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-200",
+      "canonical_label": "Aneuploidy versus polyploidy",
+      "topic": "6.7",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-030",
+        "RF-U6-031"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-201",
+      "canonical_label": "Selection acts on heritable phenotypic variation",
+      "topic": "6.7",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-032"
+      ]
+    },
+    {
+      "knowledge_id": "U6-K-202",
+      "canonical_label": "Biotechnology functional scope",
+      "topic": "6.8",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "NO_PERMANENT_MNEMONIC",
+      "exact_name_recall": false,
+      "delayed_review_target": false,
+      "reactivation_mode": "NEW_OR_EXTENDED_UNIT6_LEARNING",
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_ONLY"
+      ],
+      "discrimination_sets": [],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_ids": [
+        "RF-U6-033",
+        "RF-U6-034",
+        "RF-U6-039"
+      ]
+    }
+  ]
+}

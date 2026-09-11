@@ -1,0 +1,1708 @@
+{
+  "schema": "memory-palace-v2-unit3-f4f-story-1.0",
+  "unit_id": "unit-3",
+  "palace_id": "U3-J6",
+  "journey_id": "U3-J6",
+  "palace_name": "Respiration Power Plant",
+  "story_title": "The Power Plant With Fuel but No Power",
+  "tagline": "Follow separate carbon, electron, and proton traces from cytosolic glycolysis through mitochondrial oxidation, the respiratory ETC, oxygen reduction, chemiosmosis, ATP synthase, heat release, and a prokaryotic membrane comparison.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cellular-energetics investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+    "story_job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+  },
+  "premise": "A respiration power plant has fuel but its energy harvest is fragmented. The learner follows carbon and electrons from cytosolic glycolysis into mitochondrial oxidation, the electron-transport chain, proton pumping, oxygen reduction, ATP synthase, heat, and a prokaryotic membrane comparison.",
+  "mission": "Reconstruct aerobic respiration as a coordinated sequence that transfers energy from fuel to reduced carriers, a proton-motive force, and ATP.",
+  "finale": "The power plant succeeds when fuel carbon is oxidized and released as CO₂, electrons are transferred through reduced carriers to a respiratory ETC and terminal acceptor, electron-transfer energy establishes a proton-motive force, H⁺ flow through ATP synthase supports oxidative phosphorylation, proton leak can release heat, and the same membrane logic is reconstructed across a prokaryotic plasma membrane without requiring mitochondria.",
+  "estimated_minutes": 34,
+  "scene_count": 12,
+  "checkpoint_count": 3,
+  "learner_rule": "Follow the paired tracer system. Amber marks carbon accounting, blue marks representative electron transfer, and the red H⁺ gauge marks the proton gradient. Keep these traces separate even when one process causes the next. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Respiration Power Plant is a twelve-station cytosol-to-membrane route. Begin outside the mitochondrion at fuel intake and glycolysis, pause at the carrier bay, cross the pyruvate airlock into matrix carbon oxidation, orient inside the mitochondrial cutaway, descend the inner-membrane ETC, build the intermembrane proton gradient, finish terminal electron transfer at oxygen, spend proton-motive force through ATP synthase, test uncoupling, and end by rebuilding the same chemiosmotic logic across a prokaryotic plasma membrane.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Respiration Fuel Intake",
+      "short": "Fuel Intake",
+      "floor": "Cytosolic entrance",
+      "symbol": "fuel"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Glycolysis Floor",
+      "short": "Glycolysis",
+      "floor": "Cytosolic processing floor",
+      "symbol": "3C"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Electron Carrier Charging Bay",
+      "short": "Carriers",
+      "floor": "Carrier bay",
+      "symbol": "e⁻"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Pyruvate Oxidation Airlock",
+      "short": "Pyruvate",
+      "floor": "Mitochondrial entry",
+      "symbol": "2C"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Citric Acid Cycle Chamber",
+      "short": "Citric Cycle",
+      "floor": "Matrix cycle room",
+      "symbol": "cycle"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Mitochondrial Architecture Bay",
+      "short": "Mitochondrion",
+      "floor": "Cutaway bay",
+      "symbol": "mt"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Respiratory Electron-Transport Descent",
+      "short": "ETC",
+      "floor": "Inner-membrane descent",
+      "symbol": "e⁻↓"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Proton Pumping Wall",
+      "short": "H⁺ Gradient",
+      "floor": "Inner membrane",
+      "symbol": "H⁺"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Oxygen Terminal-Acceptor Basin",
+      "short": "Oxygen",
+      "floor": "ETC terminus",
+      "symbol": "O₂"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Oxidative-Phosphorylation Turbine",
+      "short": "OxPhos",
+      "floor": "ATP turbine hall",
+      "symbol": "ATP"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Uncoupling Heat Vent",
+      "short": "Heat Vent",
+      "floor": "Bypass chamber",
+      "symbol": "heat"
+    },
+    {
+      "scene_index": 11,
+      "locus": "Prokaryotic Respiratory Membrane",
+      "short": "Prokaryote",
+      "floor": "Comparison annex",
+      "symbol": "PM"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Respiration Fuel Intake",
+      "title": "The Plant With Fuel and No Power",
+      "scene_kicker": "A glucose shipment has arrived, yet the ATP grid remains dark because carbon, electrons, protons, and energy capture have been disconnected from one another.",
+      "location_description": "Respiration Fuel Intake — the power-plant intake map connecting macromolecular fuels to the coordinated stages of aerobic respiration.",
+      "scene_layout": {
+        "orientation": "You enter Respiration Fuel Intake and stop at the power-plant intake map connecting macromolecular fuels to the coordinated stages of aerobic respiration. On your left is carbohydrate/fat/protein fuel inputs; directly ahead is aerobic respiration stage map; on your right is CO2/H2O/ATP plus heat outputs. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Fuel receiving lanes",
+            "symbol": "fuel",
+            "description": "Carbohydrate-, fat-, and protein-derived molecules enter through separate left-side lanes so glucose can remain a central example without being treated as the only respiratory fuel."
+          },
+          {
+            "position": "center",
+            "label": "Aerobic respiration stage map",
+            "symbol": "route",
+            "description": "A large center map connects cytosolic glycolysis, mitochondrial carbon oxidation, and oxidative phosphorylation into one coordinated energy-harvesting pathway."
+          },
+          {
+            "position": "right",
+            "label": "Respiration output board",
+            "symbol": "CO₂ H₂O ATP heat",
+            "description": "Carbon dioxide, water, ATP, and heat appear only after the relevant stages operate, keeping the overall equation as net accounting rather than one literal reaction."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "fuel shipment",
+          "kind": "respiratory input",
+          "visual": "a rack of glucose, fatty-acid, and amino-acid derived fuel models entering through three labeled chutes",
+          "job": "supplies oxidizable biological molecules whose chemical energy can be harvested by cellular respiration"
+        },
+        {
+          "name": "amber carbon tracer",
+          "kind": "carbon continuity marker",
+          "visual": "one amber-highlighted carbon atom embedded in the glucose model and retained on Nia’s carbon ledger",
+          "job": "lets the learner follow carbon through oxidation and eventual carbon-dioxide release without confusing carbon flow with electron transfer"
+        },
+        {
+          "name": "blue electron tracer",
+          "kind": "electron continuity marker",
+          "visual": "a blue glowing electron-pair marker shown on Nia’s separate electron ledger beside the fuel",
+          "job": "will be transferred onto reduced carriers and later through the respiratory ETC while remaining separate from the carbon tracer"
+        }
+      ],
+      "story_open": "The service hatch from the Carbon Fixation Greenhouse opens onto an industrial hall built around a transparent mitochondrial block. The organic-carbon crate from Journey 5 rolls in beside you, but Dr. Nia Park stops it before it reaches the machinery. The **left** wall holds three fuel lanes marked carbohydrate-derived, fat-derived, and protein-derived. The **center** is a stage map whose three major sections are dark. The **right** wall carries four output gauges for CO₂, H₂O, ATP, and heat. Nothing moves between them. Nia’s tablet splits into three traces. An amber carbon marker sits inside a glucose model. A separate blue electron marker glows on the electron ledger. A red H⁺ pressure gauge stays at zero. ‘If those traces blur together,’ she says, ‘the plant may run in your imagination while the biology falls apart.’",
+      "story_paragraphs": [
+        "The service hatch from the Carbon Fixation Greenhouse opens onto an industrial hall built around a transparent mitochondrial block. The organic-carbon crate from Journey 5 rolls in beside you, but Dr. Nia Park stops it before it reaches the machinery. The **left** wall holds three fuel lanes marked carbohydrate-derived, fat-derived, and protein-derived. The **center** is a stage map whose three major sections are dark. The **right** wall carries four output gauges for CO₂, H₂O, ATP, and heat. Nothing moves between them. Nia’s tablet splits into three traces. An amber carbon marker sits inside a glucose model. A separate blue electron marker glows on the electron ledger. A red H⁺ pressure gauge stays at zero. ‘If those traces blur together,’ she says, ‘the plant may run in your imagination while the biology falls apart.’",
+        "Nia feeds glucose into the center map first, then points back to the other fuel lanes. Cells can harvest energy from **carbohydrates, fats, and proteins**. Glucose is a central respiratory substrate and the cleanest molecule for following this route, yet the plant does not label starch as a universal major fuel for animals. The center map now illuminates three broad stages. The first is **glycolysis** in the cytosol. The second combines **pyruvate oxidation and the citric acid cycle** in mitochondrial carbon oxidation. The third is **oxidative phosphorylation** at the inner mitochondrial membrane. Nia names the overall organization **Aerobic respiration as coordinated pathway**. It is a connected series of enzyme-catalyzed reactions, not one giant combustion event inside a mitochondrion.",
+        "The right board displays a familiar net model, **C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O + usable energy captured in ATP plus heat**. Nia keeps it above the stage map as accounting, not choreography. Six oxygen molecules do not collide with one glucose molecule in a single cellular step. Carbon compounds derived from glucose are progressively **oxidized**, while oxygen is ultimately **reduced** as electrons move toward lower-free-energy states. The blue electron tracer therefore has its own route. The amber carbon tracer has another. The red proton gauge will appear only after electron transfer is coupled to membrane pumping. ATP remains an output of energy coupling, not a destination into which carbon or electrons literally transform.",
+        "With those distinctions fixed, Nia names the mission **respiration and ATP synthesis**. Cellular respiration uses energy from biological macromolecules to synthesize ATP. The plant’s output board flickers, but only the first stage of the center map opens. It is outside the mitochondrial block in a broad cytosolic processing floor. The amber tracer enters as one carbon within six-carbon glucose, and the blue electron marker is clipped to the same fuel ledger without being fused to it. ‘We start where a eukaryotic cell actually starts,’ Nia says. ‘Before the mitochondrion.’ You follow the glucose model down the ramp to the Glycolysis Floor while the other fuel lanes remain visible behind you as alternate inputs to the larger respiratory network."
+      ],
+      "story_close": "The stage map has stopped pretending respiration is one reaction. Glucose and its separate carbon and electron tracers descend into the cytosolic Glycolysis Floor, where ATP investment, carbon splitting, and electron capture can be watched independently.",
+      "object_ids": [
+        "U3-K-040",
+        "U3-K-042",
+        "U3-K-145",
+        "U3-K-146",
+        "U3-K-147",
+        "U3-K-150"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-040",
+          "term": "Respiration and ATP synthesis",
+          "story": "the center respiration map turning fuel-derived chemical energy into a coordinated route that ultimately supports ATP synthesis",
+          "science": "Cellular respiration uses energy from biological macromolecules to synthesize ATP.",
+          "exact_name": true,
+          "hint": "the center respiration map turning fuel-derived chemical energy into a coordinated route that ultimately supports ATP synthesis"
+        },
+        {
+          "object_id": "U3-K-042",
+          "term": "Aerobic respiration as coordinated pathway",
+          "story": "the three-stage center map linking cytosolic glycolysis, mitochondrial carbon oxidation, and oxidative phosphorylation",
+          "science": "Aerobic cellular respiration in eukaryotes uses coordinated enzyme-catalyzed reactions to capture energy from biological macromolecules.",
+          "exact_name": true,
+          "hint": "the three-stage center map linking cytosolic glycolysis, mitochondrial carbon oxidation, and oxidative phosphorylation"
+        },
+        {
+          "object_id": "U3-K-145",
+          "term": "Cellular respiration overall equation",
+          "story": "the net equation board showing glucose and oxygen on the input side and carbon dioxide, water, ATP-captured energy, and heat on the output side",
+          "science": "A common model for aerobic glucose respiration is C6H12O6 + 6 O2 → 6 CO2 + 6 H2O + usable energy captured in ATP plus heat.",
+          "exact_name": false,
+          "hint": "the net equation board showing glucose and oxygen on the input side and carbon dioxide, water, ATP-captured energy, and heat on the output side"
+        },
+        {
+          "object_id": "U3-K-146",
+          "term": "Respiratory fuels",
+          "story": "three separate left intake lanes for carbohydrate-, fat-, and protein-derived respiratory fuels",
+          "science": "Cells can harvest energy from carbohydrates, fats, and proteins; glucose is a central respiratory substrate, but starch is not a universal “major fuel” for animals.",
+          "exact_name": false,
+          "hint": "three separate left intake lanes for carbohydrate-, fat-, and protein-derived respiratory fuels"
+        },
+        {
+          "object_id": "U3-K-147",
+          "term": "Glucose oxidation and oxygen reduction",
+          "story": "the amber carbon ledger losing carbon as CO₂ while the blue electron ledger moves toward oxygen reduction",
+          "science": "In aerobic respiration, carbon compounds derived from glucose are oxidized and oxygen is reduced as electrons move to lower free-energy states.",
+          "exact_name": false,
+          "hint": "the amber carbon ledger losing carbon as CO₂ while the blue electron ledger moves toward oxygen reduction"
+        },
+        {
+          "object_id": "U3-K-150",
+          "term": "Cellular respiration stages",
+          "story": "the stage map grouping glycolysis, pyruvate oxidation plus citric acid cycle, and oxidative phosphorylation",
+          "science": "A useful eukaryotic model groups aerobic respiration into glycolysis, pyruvate oxidation plus the citric acid cycle, and oxidative phosphorylation.",
+          "exact_name": false,
+          "hint": "the stage map grouping glycolysis, pyruvate oxidation plus citric acid cycle, and oxidative phosphorylation"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Respiration and ATP synthesis",
+          "meaning": "Cellular respiration uses energy from biological macromolecules to synthesize ATP.",
+          "image": "the center respiration map turning fuel-derived chemical energy into a coordinated route that ultimately supports ATP synthesis"
+        },
+        {
+          "term": "Aerobic respiration as coordinated pathway",
+          "meaning": "Aerobic cellular respiration in eukaryotes uses coordinated enzyme-catalyzed reactions to capture energy from biological macromolecules.",
+          "image": "the three-stage center map linking cytosolic glycolysis, mitochondrial carbon oxidation, and oxidative phosphorylation"
+        },
+        {
+          "term": "Cellular respiration overall equation",
+          "meaning": "A common model for aerobic glucose respiration is C6H12O6 + 6 O2 → 6 CO2 + 6 H2O + usable energy captured in ATP plus heat.",
+          "image": "the net equation board showing glucose and oxygen on the input side and carbon dioxide, water, ATP-captured energy, and heat on the output side"
+        },
+        {
+          "term": "Respiratory fuels",
+          "meaning": "Cells can harvest energy from carbohydrates, fats, and proteins; glucose is a central respiratory substrate, but starch is not a universal “major fuel” for animals.",
+          "image": "three separate left intake lanes for carbohydrate-, fat-, and protein-derived respiratory fuels"
+        },
+        {
+          "term": "Glucose oxidation and oxygen reduction",
+          "meaning": "In aerobic respiration, carbon compounds derived from glucose are oxidized and oxygen is reduced as electrons move to lower free-energy states.",
+          "image": "the amber carbon ledger losing carbon as CO₂ while the blue electron ledger moves toward oxygen reduction"
+        },
+        {
+          "term": "Cellular respiration stages",
+          "meaning": "A useful eukaryotic model groups aerobic respiration into glycolysis, pyruvate oxidation plus the citric acid cycle, and oxidative phosphorylation.",
+          "image": "the stage map grouping glycolysis, pyruvate oxidation plus citric acid cycle, and oxidative phosphorylation"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-040",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Glycolysis Floor",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: aerobic respiration, anaerobic respiration, fermentation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-019; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "SYSTEM_OVERVIEW_MAP",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "carbohydrate/fat/protein fuel inputs",
+          "aerobic respiration stage map",
+          "CO2/H2O/ATP plus heat outputs",
+          "Feed carbohydrate, fat, and protein-derived carbon into a stage map and trace the coordinated outputs of aerobic respiration: carbon dioxide, water, ATP, and heat."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Respiration and ATP synthesis; Aerobic respiration as coordinated pathway; Cellular respiration overall equation; Respiratory fuels; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Glycolysis Floor",
+      "title": "The Six-Carbon Line Splits in Two",
+      "scene_kicker": "Glycolysis must account for carbon, electron carriers, ATP investment, and ATP payoff without placing any of those events inside the mitochondrion.",
+      "location_description": "Glycolysis Floor — the cytosolic six-carbon-to-two-three-carbon splitting line with ATP investment and payoff stations.",
+      "scene_layout": {
+        "orientation": "You enter Glycolysis Floor and stop at the cytosolic six-carbon-to-two-three-carbon splitting line with ATP investment and payoff stations. On your left is glucose and ATP investment; directly ahead is glycolytic splitting line; on your right is pyruvate/NADH/net ATP outputs. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Glucose and ATP investment gate",
+            "symbol": "6C + 2 ATP",
+            "description": "A conventional six-carbon glucose model enters from the left beside two ATP tokens that are visibly spent during the investment portion of glycolysis."
+          },
+          {
+            "position": "center",
+            "label": "Glycolytic splitting line",
+            "symbol": "6C → 3C + 3C",
+            "description": "The center line remains in the cytosol and converts one six-carbon glucose through enzyme-catalyzed steps into two three-carbon pyruvate molecules."
+          },
+          {
+            "position": "right",
+            "label": "Glycolysis output platform",
+            "symbol": "pyruvate NADH ATP",
+            "description": "Two pyruvate models, charged NADH carriers, and the ATP payoff appear separately on the right so carbon, electrons, and ATP accounting remain distinct."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "glucose",
+          "kind": "six-carbon fuel",
+          "visual": "a conventional six-carbon glucose model carrying the amber carbon tracer",
+          "job": "enters glycolysis as the carbon substrate that is split into two three-carbon pyruvate products"
+        },
+        {
+          "name": "ATP investment and payoff",
+          "kind": "energy accounting",
+          "visual": "two red ATP tokens disappear at the investment gate while four green ATP tokens appear later at payoff stations",
+          "job": "separates gross ATP production from the net gain of two ATP in the classroom bookkeeping model"
+        },
+        {
+          "name": "pyruvate pair",
+          "kind": "carbon output",
+          "visual": "two matching three-carbon pyruvate models exiting the line",
+          "job": "carry glucose-derived carbon from cytosolic glycolysis toward mitochondrial oxidation"
+        }
+      ],
+      "story_open": "The ramp ends on a wide **cytosolic** factory floor. There is no mitochondrial membrane around you. On your **left**, one conventional six-carbon glucose model waits beside two ATP tokens at an investment gate. Directly **ahead**, an enzyme-controlled splitting line runs through the center. On your **right**, three output shelves are empty and labeled PYRUVATE, NADH, and ATP. Nia places the amber carbon tracer on one carbon within glucose and keeps the blue electron marker on a separate readout above the line. The geography is simple enough to redraw. Input and investment stay left. The carbon-processing line stays center. Products stay right. This is where **glycolysis** occurs, in the cytosol.",
+      "story_paragraphs": [
+        "The ramp ends on a wide **cytosolic** factory floor. There is no mitochondrial membrane around you. On your **left**, one conventional six-carbon glucose model waits beside two ATP tokens at an investment gate. Directly **ahead**, an enzyme-controlled splitting line runs through the center. On your **right**, three output shelves are empty and labeled PYRUVATE, NADH, and ATP. Nia places the amber carbon tracer on one carbon within glucose and keeps the blue electron marker on a separate readout above the line. The geography is simple enough to redraw. Input and investment stay left. The carbon-processing line stays center. Products stay right. This is where **glycolysis** occurs, in the cytosol.",
+        "The first section consumes two ATP in the standard bookkeeping model. Nia lets the ATP tokens disappear into phosphorylation steps and then keeps the investment counter visible instead of suggesting that glycolysis simply makes ATP from its first instant. Farther along, the six-carbon carbon skeleton is reorganized and split so the line ultimately produces **two three-carbon pyruvate molecules**. The amber carbon tracer rides into one of them. No CO₂ vent opens here. The six glucose carbons are still represented in the two three-carbon products at the end of glycolysis. That absence matters because carbon dioxide release begins later in mitochondrial carbon oxidation, not during this cytosolic splitting stage.",
+        "A second set of events charges NAD⁺ carriers while the payoff portion generates ATP. Four ATP tokens appear during the payoff in the classroom accounting model. With two ATP invested and four produced, the **net gain is two ATP per glucose**. Nia points to the small mechanical transfer that makes those ATP molecules. A high-energy phosphate is transferred directly from an organic metabolic intermediate to ADP. She names that mechanism **substrate-level phosphorylation**. ATP forms by direct enzymatic phosphate transfer from a substrate. No proton gradient and no ATP synthase is required for this particular ATP-making mechanism. Nia pins a label over it so it will remain physically separate from oxidative phosphorylation later and photophosphorylation from Journey 4.",
+        "The right platform finally fills. Two pyruvate models arrive on the carbon shelf. Reduced NADH carriers appear on the electron shelf. The net ATP counter settles at two. Nia names the complete visible result **glycolysis outputs**. Glycolysis releases energy from glucose to form ATP, NADH, and pyruvate. The phrase now belongs to three separate shelves rather than one vague bag of ‘energy products.’ The carbon tracer is still inside pyruvate. The representative blue electron tracer now sits on an NADH carrier. The ATP tokens remain on their own accounting display. When the pyruvate carts start toward the mitochondrial airlock, the NADH carrier takes a different overhead rail toward the electron-carrier system. You follow both routes into the next bay before the carbon line crosses the mitochondrial boundary."
+      ],
+      "story_close": "Glycolysis ends in the cytosol with two pyruvate, NADH, and a net gain of ATP. The carbon cart and the electron-carrier rail now diverge long enough for the next bay to make oxidized and reduced carrier states unmistakable.",
+      "object_ids": [
+        "U3-K-049",
+        "U3-K-151",
+        "U3-K-152",
+        "U3-K-153"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-049",
+          "term": "Glycolysis outputs",
+          "story": "the right glycolysis platform holding two pyruvate, charged NADH carriers, and net ATP",
+          "science": "Glycolysis releases energy from glucose to form ATP, NADH, and pyruvate.",
+          "exact_name": true,
+          "hint": "the right glycolysis platform holding two pyruvate, charged NADH carriers, and net ATP"
+        },
+        {
+          "object_id": "U3-K-151",
+          "term": "Glycolysis location and carbon products",
+          "story": "one six-carbon glucose splitting in the cytosol into two three-carbon pyruvate molecules",
+          "science": "Glycolysis occurs in the cytosol and splits one six-carbon glucose into two three-carbon pyruvate molecules.",
+          "exact_name": false,
+          "hint": "one six-carbon glucose splitting in the cytosol into two three-carbon pyruvate molecules"
+        },
+        {
+          "object_id": "U3-K-152",
+          "term": "Glycolysis ATP accounting",
+          "story": "two ATP spent at the left investment gate and four ATP appearing later for a net gain of two",
+          "science": "In the teacher-taught bookkeeping model, glycolysis invests 2 ATP and produces 4 ATP by substrate-level phosphorylation for a net gain of 2 ATP per glucose.",
+          "exact_name": false,
+          "hint": "two ATP spent at the left investment gate and four ATP appearing later for a net gain of two"
+        },
+        {
+          "object_id": "U3-K-153",
+          "term": "Substrate-level phosphorylation",
+          "story": "a phosphate transferred directly from an organic substrate intermediate to ADP without ATP synthase",
+          "science": "Substrate-level phosphorylation forms ATP by direct enzymatic transfer of a phosphate group from an organic substrate to ADP.",
+          "exact_name": true,
+          "hint": "a phosphate transferred directly from an organic substrate intermediate to ADP without ATP synthase"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Glycolysis outputs",
+          "meaning": "Glycolysis releases energy from glucose to form ATP, NADH, and pyruvate.",
+          "image": "the right glycolysis platform holding two pyruvate, charged NADH carriers, and net ATP"
+        },
+        {
+          "term": "Glycolysis location and carbon products",
+          "meaning": "Glycolysis occurs in the cytosol and splits one six-carbon glucose into two three-carbon pyruvate molecules.",
+          "image": "one six-carbon glucose splitting in the cytosol into two three-carbon pyruvate molecules"
+        },
+        {
+          "term": "Glycolysis ATP accounting",
+          "meaning": "In the bookkeeping model used here, glycolysis spends 2 ATP and produces 4 ATP by substrate-level phosphorylation, giving a net gain of 2 ATP per glucose.",
+          "image": "two ATP spent at the left investment gate and four ATP appearing later for a net gain of two"
+        },
+        {
+          "term": "Substrate-level phosphorylation",
+          "meaning": "Substrate-level phosphorylation forms ATP by direct enzymatic transfer of a phosphate group from an organic substrate to ADP.",
+          "image": "a phosphate transferred directly from an organic substrate intermediate to ADP without ATP synthase"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-049",
+      "checkpoint_prompt": "Where does glycolysis occur and what three major output types leave the line?",
+      "checkpoint_answer": "In the cytosol; pyruvate, NADH, and net ATP leave the pathway.",
+      "checkpoint_hint": "Return to the right side of the cytosolic splitting floor. The three output shelves separate the carbon product, the reduced electron carrier, and the net ATP payoff.",
+      "next_locus": "Electron Carrier Charging Bay",
+      "misconception_guards": [
+        "Substrate-level phosphorylation forms ATP by direct phosphate transfer from a metabolic intermediate; keep it distinct from oxidative phosphorylation.",
+        "Keep these confusable terms physically and verbally distinct: glycolysis, pyruvate oxidation, citric acid cycle, oxidative phosphorylation.",
+        "Keep these confusable terms physically and verbally distinct: substrate-level phosphorylation, oxidative phosphorylation, photophosphorylation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-023; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "PATHWAY_OUTPUT_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "glucose and ATP investment",
+          "glycolytic splitting line",
+          "pyruvate/NADH/net ATP outputs",
+          "Split one six-carbon glucose through cytosolic glycolysis, show ATP investment and payoff separately, and end with two pyruvate plus NADH and net ATP while identifying substrate-level phosphorylation."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Glycolysis outputs; Glycolysis location and carbon products; Glycolysis ATP accounting; Substrate-level phosphorylation."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Electron Carrier Charging Bay",
+      "title": "The Carriers That Leave Empty and Return Loaded",
+      "scene_kicker": "Electron carriers must be understood as reversible oxidized/reduced pairs before their electrons enter the respiratory chain.",
+      "location_description": "Electron Carrier Charging Bay — the redox charging station comparing oxidized NAD+/FAD with reduced NADH/FADH2.",
+      "scene_layout": {
+        "orientation": "You enter Electron Carrier Charging Bay and stop at the redox charging station comparing oxidized NAD+/FAD with reduced NADH/FADH2. On your left is NAD+/NADH carrier pair; directly ahead is electron-loading station; on your right is FAD/FADH2 carrier pair. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "NAD⁺ / NADH carrier pair",
+            "symbol": "NAD⁺ ⇄ NADH",
+            "description": "The left station keeps oxidized NAD⁺ physically paired with reduced NADH and uses a blue electron marker to show when the carrier is loaded."
+          },
+          {
+            "position": "center",
+            "label": "Electron-loading station",
+            "symbol": "e⁻ transfer",
+            "description": "A center transfer platform moves representative high-energy electrons from oxidized fuel intermediates onto mobile electron carriers without portraying electrons as stored ATP."
+          },
+          {
+            "position": "right",
+            "label": "FAD / FADH₂ carrier pair",
+            "symbol": "FAD ⇄ FADH₂",
+            "description": "The right station previews the FAD carrier pair used later in the citric acid cycle and keeps its reduced FADH₂ form distinct from NADH."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "NAD⁺ / NADH",
+          "kind": "electron-carrier pair",
+          "visual": "an oxidized NAD⁺ carrier that closes around transferred electrons and becomes NADH",
+          "job": "accepts high-energy electrons and a proton equivalent and carries reducing power toward later reactions including the respiratory ETC"
+        },
+        {
+          "name": "FAD / FADH₂",
+          "kind": "electron-carrier pair",
+          "visual": "an FAD carrier on the right that becomes FADH₂ when loaded during later citric-cycle reactions",
+          "job": "provides a second reduced electron carrier that can feed the respiratory ETC"
+        },
+        {
+          "name": "blue electron tracer",
+          "kind": "electron continuity marker",
+          "visual": "a blue marker moving from an oxidized fuel intermediate into the carrier dock",
+          "job": "keeps electron transfer visible without implying that NADH or FADH₂ is itself energy in material form"
+        }
+      ],
+      "story_open": "A narrow side bay sits between the Glycolysis Floor and the mitochondrial airlock. On your **left**, an empty carrier frame is labeled NAD⁺. On your **right**, a second carrier pair is labeled FAD and FADH₂. The **center** loading station has only one moving object, the blue electron tracer. The pyruvate carbon cart waits behind a glass gate, deliberately paused. Nia says this room is about carrier state, not another carbon reaction. She also points to the right-side FAD pair before it has received anything. FADH₂ is important later in the citric acid cycle. Its presence here is a comparison model, not a claim that glycolysis just produced FADH₂.",
+      "story_paragraphs": [
+        "A narrow side bay sits between the Glycolysis Floor and the mitochondrial airlock. On your **left**, an empty carrier frame is labeled NAD⁺. On your **right**, a second carrier pair is labeled FAD and FADH₂. The **center** loading station has only one moving object, the blue electron tracer. The pyruvate carbon cart waits behind a glass gate, deliberately paused. Nia says this room is about carrier state, not another carbon reaction. She also points to the right-side FAD pair before it has received anything. FADH₂ is important later in the citric acid cycle. Its presence here is a comparison model, not a claim that glycolysis just produced FADH₂.",
+        "Nia brings an NAD⁺ carrier to the center dock. Electrons transferred from an oxidized fuel intermediate load onto the carrier, along with the associated proton chemistry represented by the model. The carrier closes and its label changes to NADH. She names the pair **NAD+ and NADH**. The familiar NAD⁺ notation on the carrier means the same oxidized form. NAD⁺ accepts electrons and a proton to become NADH, and NADH can carry high-energy electrons to other reactions, including the respiratory electron transport chain. The blue tracer sits on NADH like cargo. The carrier did not become an electron, and the electron did not become ATP. This is transfer of reducing power from one reaction to another.",
+        "The right station now demonstrates the second pair. **FAD and FADH2** remain physically paired, with FADH₂ shown as the reduced notation on the model, so their oxidation state is always visible. During the citric acid cycle, FAD accepts electrons and protons to form FADH₂. FADH₂ can then deliver those electrons to the respiratory electron transport chain. Nia loads the demonstration carrier and immediately marks its future origin on the matrix-cycle map. NADH and FADH₂ are both reduced electron carriers, yet their later entry into the respiratory ETC is not identical. Keeping the two carrier pairs on opposite sides of the bay will make that difference easier to reconstruct when they arrive at the inner membrane.",
+        "Nia zooms her tablet out. Many carrier molecules will be reduced over the course of respiration, so the single blue tracer is only a representative electron marker that helps you follow transfer. It does not mean one literal electron pair completes every step of the entire pathway. The carbon ledger remains separate. The pyruvate cart begins moving again and reaches a sealed mitochondrial entry station. As the airlock opens, the NADH rail branches away toward storage for the later ETC. You follow the three-carbon pyruvate and amber carbon tracer into the transition station, where the first carbon-dioxide vent is already attached to the ceiling."
+      ],
+      "story_close": "The carrier bay leaves NAD⁺/NADH on the left and FAD/FADH₂ on the right as permanent redox pairs. The carbon route now resumes at the mitochondrial Pyruvate Oxidation Airlock while reduced carriers wait to deliver electrons later.",
+      "object_ids": [
+        "U3-K-148",
+        "U3-K-149"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-148",
+          "term": "NAD+ and NADH",
+          "story": "the NAD⁺ carrier closing around transferred electrons and becoming NADH",
+          "science": "NAD+ accepts electrons and a proton to become NADH; NADH carries high-energy electrons to other reactions including the respiratory electron transport chain.",
+          "exact_name": true,
+          "hint": "the NAD⁺ carrier closing around transferred electrons and becoming NADH"
+        },
+        {
+          "object_id": "U3-K-149",
+          "term": "FAD and FADH2",
+          "story": "the FAD carrier becoming FADH₂ when loaded with electrons and protons during the citric acid cycle",
+          "science": "FAD accepts electrons and protons during the citric acid cycle to become FADH2, which can deliver electrons to the respiratory electron transport chain.",
+          "exact_name": true,
+          "hint": "the FAD carrier becoming FADH₂ when loaded with electrons and protons during the citric acid cycle"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "NAD+ and NADH",
+          "meaning": "NAD+ accepts electrons and a proton to become NADH; NADH carries high-energy electrons to other reactions including the respiratory electron transport chain.",
+          "image": "the NAD⁺ carrier closing around transferred electrons and becoming NADH"
+        },
+        {
+          "term": "FAD and FADH2",
+          "meaning": "FAD accepts electrons and protons during the citric acid cycle to become FADH2, which can deliver electrons to the respiratory electron transport chain.",
+          "image": "the FAD carrier becoming FADH₂ when loaded with electrons and protons during the citric acid cycle"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-148",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Pyruvate Oxidation Airlock",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: NAD+ / NADH, FAD / FADH2."
+      ],
+      "required_visual": {
+        "visual_mode": "REDOX_CARRIER_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "NAD+/NADH carrier pair",
+          "electron-loading station",
+          "FAD/FADH2 carrier pair",
+          "Load electrons onto NAD+ and FAD to form NADH and FADH2, then keep oxidized and reduced carrier forms paired so electron-carrier state is unmistakable."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: NAD+ and NADH; FAD and FADH2."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Pyruvate Oxidation Airlock",
+      "title": "The Three-Carbon Cart Loses Carbon at the Airlock",
+      "scene_kicker": "Pyruvate oxidation is a transition step that releases CO₂, charges NADH, and converts the remaining carbon into acetyl-CoA before the cycle begins.",
+      "location_description": "Pyruvate Oxidation Airlock — the mitochondrial entry process where pyruvate becomes an acetyl group carried by coenzyme A.",
+      "scene_layout": {
+        "orientation": "You enter Pyruvate Oxidation Airlock and stop at the mitochondrial entry process where pyruvate becomes an acetyl group carried by coenzyme A. On your left is pyruvate entry; directly ahead is oxidation/decarboxylation airlock; on your right is acetyl-CoA/NADH/CO2 outputs. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Pyruvate entry rail",
+            "symbol": "3C pyruvate",
+            "description": "Two three-carbon pyruvate molecules arrive from the cytosol and cross into the mitochondrial processing route."
+          },
+          {
+            "position": "center",
+            "label": "Oxidation and decarboxylation airlock",
+            "symbol": "3C → 2C",
+            "description": "The central transition station removes carbon as CO₂, transfers electrons to NAD⁺, and attaches the remaining two-carbon acetyl group to coenzyme A."
+          },
+          {
+            "position": "right",
+            "label": "Acetyl-CoA output dock",
+            "symbol": "acetyl-CoA + NADH + CO₂",
+            "description": "Acetyl-CoA, NADH, and carbon dioxide leave through separate right-side channels so the carbon product and electron carrier are never collapsed into one output."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "pyruvate",
+          "kind": "three-carbon substrate",
+          "visual": "a three-carbon pyruvate model arriving from the glycolysis floor",
+          "job": "is transported into mitochondrial processing and converted to an acetyl group carried by coenzyme A"
+        },
+        {
+          "name": "coenzyme A",
+          "kind": "acetyl carrier",
+          "visual": "a recognizable coenzyme A handle waiting beside the two-carbon product",
+          "job": "accepts the remaining two-carbon acetyl group to form acetyl-CoA"
+        },
+        {
+          "name": "NAD⁺ carrier",
+          "kind": "electron acceptor",
+          "visual": "an NAD⁺ carrier positioned beside the oxidation station",
+          "job": "is reduced to NADH as pyruvate oxidation transfers electrons away from the carbon substrate"
+        }
+      ],
+      "story_open": "The next station is built as an airlock between the cytosolic intake wing and the mitochondrial processing block. Two three-carbon pyruvate carts arrive on your **left**. The **center** chamber contains oxidation machinery, a CO₂ vent, an NAD⁺ docking arm, and a coenzyme A handle. On your **right**, three output lanes are labeled ACETYL-CoA, NADH, and CO₂. Nia leaves the outer architecture visible enough to remind you that pyruvate came from cytosolic glycolysis. In standard eukaryotic aerobic respiration, pyruvate is transported into the mitochondrion before this transition chemistry proceeds. The amber carbon tracer remains on one pyruvate as the chamber closes.",
+      "story_paragraphs": [
+        "The next station is built as an airlock between the cytosolic intake wing and the mitochondrial processing block. Two three-carbon pyruvate carts arrive on your **left**. The **center** chamber contains oxidation machinery, a CO₂ vent, an NAD⁺ docking arm, and a coenzyme A handle. On your **right**, three output lanes are labeled ACETYL-CoA, NADH, and CO₂. Nia leaves the outer architecture visible enough to remind you that pyruvate came from cytosolic glycolysis. In standard eukaryotic aerobic respiration, pyruvate is transported into the mitochondrion before this transition chemistry proceeds. The amber carbon tracer remains on one pyruvate as the chamber closes.",
+        "Inside the airlock, the three-carbon substrate is oxidized. One carbon is removed and leaves through a CO₂ vent. Electrons are transferred to NAD⁺, creating NADH. The remaining two-carbon acetyl group is attached to coenzyme A. Nia names this transition **pyruvate oxidation**. During standard aerobic eukaryotic respiration, pyruvate is oxidized to an acetyl group carried by coenzyme A, with CO₂ and NADH produced. She keeps the right lanes separate. Carbon dioxide is carbon that has left the organic fuel pathway. NADH carries transferred electrons. Coenzyme A carries the remaining acetyl group. None of these three outputs is interchangeable with the others.",
+        "The product on the main right rail is **acetyl-CoA**, short for acetyl coenzyme A. It carries a two-carbon acetyl group into the citric acid cycle. Nia points to the amber tracer, which in this model remains with the acetyl carbon entering the cycle. The exact fate of a particular carbon atom across repeated cycle turns depends on carbon position and cycle chemistry, so the tracer is an accounting aid for following carbon oxidation, not a claim that every carbon exits at one predetermined moment. What matters for the route is that glucose-derived carbon is progressively released as CO₂ as respiration proceeds.",
+        "Above the airlock, Nia opens a broader sign labeled **pyruvate oxidation and Krebs inputs**. The name connects this transition to the matrix oxidation stage that follows. Pyruvate enters mitochondrial processing, carbon dioxide is released, NAD⁺ is reduced here, and the acetyl group becomes the input to the Krebs or citric acid cycle. During the cycle itself, additional electron transfer reduces NAD⁺ and FAD. The airlock therefore does not get credit for FADH₂ that forms later. The acetyl-CoA rail now continues directly into a circular chamber embedded in the mitochondrial matrix. The CO₂ vent remains behind you as the first visible proof that the carbon ledger has started to empty."
+      ],
+      "story_close": "Pyruvate oxidation has converted three-carbon pyruvate into a two-carbon acetyl group carried by coenzyme A while producing CO₂ and NADH. Acetyl-CoA now enters the matrix cycle where much more reducing power will be harvested.",
+      "object_ids": [
+        "U3-K-050",
+        "U3-K-154",
+        "U3-K-155"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-050",
+          "term": "Pyruvate oxidation and Krebs inputs",
+          "story": "the mitochondrial transition route linking pyruvate oxidation to later Krebs-cycle carrier reduction and CO₂ release",
+          "science": "In eukaryotic aerobic respiration, pyruvate enters mitochondria and oxidation associated with the Krebs cycle transfers electrons to NAD+ and FAD and releases carbon dioxide.",
+          "exact_name": true,
+          "hint": "the mitochondrial transition route linking pyruvate oxidation to later Krebs-cycle carrier reduction and CO₂ release"
+        },
+        {
+          "object_id": "U3-K-154",
+          "term": "Pyruvate oxidation",
+          "story": "three-carbon pyruvate entering the airlock, losing CO₂, reducing NAD⁺, and leaving as a two-carbon acetyl group",
+          "science": "During standard aerobic eukaryotic respiration, pyruvate is transported into mitochondria and oxidized to an acetyl group carried by coenzyme A, producing CO2 and NADH.",
+          "exact_name": true,
+          "hint": "three-carbon pyruvate entering the airlock, losing CO₂, reducing NAD⁺, and leaving as a two-carbon acetyl group"
+        },
+        {
+          "object_id": "U3-K-155",
+          "term": "Acetyl-CoA",
+          "story": "the two-carbon acetyl group attached to a coenzyme A handle and entering the cycle",
+          "science": "Acetyl coenzyme A (acetyl-CoA) carries a two-carbon acetyl group into the citric acid cycle.",
+          "exact_name": true,
+          "hint": "the two-carbon acetyl group attached to a coenzyme A handle and entering the cycle"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Pyruvate oxidation and Krebs inputs",
+          "meaning": "In eukaryotic aerobic respiration, pyruvate enters mitochondria and oxidation associated with the Krebs cycle transfers electrons to NAD+ and FAD and releases carbon dioxide.",
+          "image": "the mitochondrial transition route linking pyruvate oxidation to later Krebs-cycle carrier reduction and CO₂ release"
+        },
+        {
+          "term": "Pyruvate oxidation",
+          "meaning": "During standard aerobic eukaryotic respiration, pyruvate is transported into mitochondria and oxidized to an acetyl group carried by coenzyme A, producing CO2 and NADH.",
+          "image": "three-carbon pyruvate entering the airlock, losing CO₂, reducing NAD⁺, and leaving as a two-carbon acetyl group"
+        },
+        {
+          "term": "Acetyl-CoA",
+          "meaning": "Acetyl coenzyme A (acetyl-CoA) carries a two-carbon acetyl group into the citric acid cycle.",
+          "image": "the two-carbon acetyl group attached to a coenzyme A handle and entering the cycle"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-154",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Citric Acid Cycle Chamber",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: glycolysis, pyruvate oxidation, citric acid cycle, oxidative phosphorylation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-020, RF-U3-023; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "PATHWAY_TRANSITION_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "pyruvate entry",
+          "oxidation/decarboxylation airlock",
+          "acetyl-CoA/NADH/CO2 outputs",
+          "Move pyruvate into the mitochondrial transition station, remove carbon as CO2, reduce NAD+, and attach the remaining acetyl group to coenzyme A."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Pyruvate oxidation and Krebs inputs; Pyruvate oxidation; Acetyl-CoA."
+    },
+    {
+      "scene_index": 4,
+      "locus": "Citric Acid Cycle Chamber",
+      "title": "The Cycle That Empties the Carbon Ledger",
+      "scene_kicker": "The citric acid cycle oxidizes acetyl-derived carbon, releases CO₂, reduces electron carriers, and regenerates its acceptor without requiring a memorized parade of intermediates.",
+      "location_description": "Citric Acid Cycle Chamber — the matrix cycle where acetyl groups are oxidized and energy is transferred to ATP, NADH, and FADH2.",
+      "scene_layout": {
+        "orientation": "You enter Citric Acid Cycle Chamber and stop at the matrix cycle where acetyl groups are oxidized and energy is transferred to ATP, NADH, and FADH2. On your left is acetyl-CoA entry; directly ahead is citric acid/Krebs cycle in matrix; on your right is CO2/ATP/reduced-carrier outputs. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Acetyl-CoA entry gate",
+            "symbol": "2C acetyl",
+            "description": "The two-carbon acetyl group carried by coenzyme A enters from the left while coenzyme A itself remains visually identifiable as the carrier."
+          },
+          {
+            "position": "center",
+            "label": "Citric acid cycle in matrix",
+            "symbol": "cycle",
+            "description": "A circular center pathway in the mitochondrial matrix oxidizes acetyl-derived carbon while regenerating the cycle acceptor and transferring energy to reduced carriers."
+          },
+          {
+            "position": "right",
+            "label": "Cycle output rack",
+            "symbol": "CO₂ ATP NADH FADH₂",
+            "description": "Carbon dioxide, a small amount of ATP or equivalent substrate-level product, NADH, and FADH₂ accumulate on distinct right-side shelves."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "acetyl-CoA",
+          "kind": "two-carbon entry carrier",
+          "visual": "a two-carbon acetyl unit held by a coenzyme A handle at the cycle entrance",
+          "job": "delivers acetyl carbon into the citric acid cycle"
+        },
+        {
+          "name": "NAD⁺ and FAD carriers",
+          "kind": "electron acceptors",
+          "visual": "empty NAD⁺ and FAD carriers circulating along the outer rail of the chamber",
+          "job": "accept electrons during oxidation steps to form NADH and FADH₂"
+        },
+        {
+          "name": "carbon-dioxide vents",
+          "kind": "carbon output",
+          "visual": "CO₂ vents opening above the right-side output rack as carbon is oxidized",
+          "job": "show carbon leaving the pathway separately from the electron carriers and ATP output"
+        }
+      ],
+      "story_open": "The acetyl-CoA rail enters a round room deep in the **mitochondrial matrix**. On your **left**, the two-carbon acetyl group waits at an entry gate. The **center** floor is a circular pathway whose individual intermediate names are deliberately small. On your **right**, four shelves are labeled CO₂, ATP, NADH, and FADH₂. Nia parks the carbon ledger beside the cycle and spreads empty NAD⁺ and FAD carriers around the outer rail. ‘Keep your attention on what the cycle accomplishes,’ she says. ‘The detailed intermediate sequence can support understanding, but the main route is carbon oxidation, carrier reduction, a small direct ATP contribution, and regeneration of the cycle acceptor.’",
+      "story_paragraphs": [
+        "The acetyl-CoA rail enters a round room deep in the **mitochondrial matrix**. On your **left**, the two-carbon acetyl group waits at an entry gate. The **center** floor is a circular pathway whose individual intermediate names are deliberately small. On your **right**, four shelves are labeled CO₂, ATP, NADH, and FADH₂. Nia parks the carbon ledger beside the cycle and spreads empty NAD⁺ and FAD carriers around the outer rail. ‘Keep your attention on what the cycle accomplishes,’ she says. ‘The detailed intermediate sequence can support understanding, but the main route is carbon oxidation, carrier reduction, a small direct ATP contribution, and regeneration of the cycle acceptor.’",
+        "The acetyl group enters the circular pathway and its carbons become part of the cycle’s carbon pool. As oxidation reactions proceed, carbon dioxide leaves through vents and electron carriers are reduced. NAD⁺ becomes NADH. FAD becomes FADH₂. A small amount of ATP, or an energetically equivalent nucleotide product depending on context, is formed through substrate-level phosphorylation. The center pathway returns to a regenerated acceptor so another acetyl group can enter. Nia names the mechanism the **citric acid cycle**, also called the **Krebs cycle**. It oxidizes acetyl groups in the mitochondrial matrix and transfers energy to ATP, NADH, and FADH₂ while releasing CO₂.",
+        "Nia then activates a fixed sign reading **Krebs-cycle location and outputs**. The location is the mitochondrial matrix. The outputs emphasized here are carbon dioxide, ATP, NADH, and FADH₂. The amber carbon tracer eventually reaches a CO₂ vent as carbon oxidation continues, so the carbon route that began in glucose can end as carbon dioxide. The blue electron ledger goes the opposite conceptual direction. Electrons removed from carbon compounds are now carried away on NADH and FADH₂ instead of leaving with CO₂. Carbon flow and electron flow are therefore visibly separating even as both arise from oxidation of the same fuel.",
+        "A small accounting panel appears under the right shelves. In the per-glucose classroom model, the two cycle turns associated with one glucose yield **4 CO₂, 2 ATP, 6 NADH, and 2 FADH₂**. Nia keeps the figures smaller than the structural map. They are useful bookkeeping for this model, while the central idea is the repeated transfer of energy from acetyl-derived carbon into reduced carriers and a small amount of ATP. The room begins to fill with NADH and FADH₂ carts. They have nowhere useful to unload in the matrix. A door opens into a huge transparent mitochondrial cutaway, and every reduced carrier turns toward the folded inner membrane."
+      ],
+      "story_close": "The matrix cycle has released carbon as CO₂ and concentrated much of the harvested energy in reduced carriers. NADH and FADH₂ now leave the cycle chamber toward the mitochondrial inner membrane, forcing the next question of where electron transport and ATP synthesis actually occur.",
+      "object_ids": [
+        "U3-K-051",
+        "U3-K-156",
+        "U3-K-157"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-051",
+          "term": "Krebs-cycle location and outputs",
+          "story": "the mitochondrial matrix cycle venting CO₂ while ATP, NADH, and FADH₂ collect on separate shelves",
+          "science": "The Krebs cycle occurs in the mitochondrial matrix, releases carbon dioxide, synthesizes ATP, and transfers electrons to NAD+ and FAD.",
+          "exact_name": true,
+          "hint": "the mitochondrial matrix cycle venting CO₂ while ATP, NADH, and FADH₂ collect on separate shelves"
+        },
+        {
+          "object_id": "U3-K-156",
+          "term": "Citric acid cycle",
+          "story": "the circular matrix pathway oxidizing acetyl-derived carbon and regenerating its acceptor",
+          "science": "The citric acid cycle, also called the Krebs cycle, oxidizes acetyl groups in the mitochondrial matrix and transfers energy to ATP, NADH, and FADH2 while releasing CO2.",
+          "exact_name": true,
+          "hint": "the circular matrix pathway oxidizing acetyl-derived carbon and regenerating its acceptor"
+        },
+        {
+          "object_id": "U3-K-157",
+          "term": "Detailed citric-cycle bookkeeping",
+          "story": "the small per-glucose cycle-accounting panel showing 4 CO₂, 2 ATP, 6 NADH, and 2 FADH₂ across two turns",
+          "science": "In the teacher-taught per-glucose model, two turns of the citric acid cycle yield 4 CO2, 2 ATP, 6 NADH, and 2 FADH2.",
+          "exact_name": false,
+          "hint": "the small per-glucose cycle-accounting panel showing 4 CO₂, 2 ATP, 6 NADH, and 2 FADH₂ across two turns"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Krebs-cycle location and outputs",
+          "meaning": "The Krebs cycle occurs in the mitochondrial matrix, releases carbon dioxide, synthesizes ATP, and transfers electrons to NAD+ and FAD.",
+          "image": "the mitochondrial matrix cycle venting CO₂ while ATP, NADH, and FADH₂ collect on separate shelves"
+        },
+        {
+          "term": "Citric acid cycle",
+          "meaning": "The citric acid cycle, also called the Krebs cycle, oxidizes acetyl groups in the mitochondrial matrix and transfers energy to ATP, NADH, and FADH2 while releasing CO2.",
+          "image": "the circular matrix pathway oxidizing acetyl-derived carbon and regenerating its acceptor"
+        },
+        {
+          "term": "Detailed citric-cycle bookkeeping",
+          "meaning": "Across the two citric-acid-cycle turns associated with one glucose in this bookkeeping model, the cycle yields 4 CO₂, 2 ATP, 6 NADH, and 2 FADH₂.",
+          "image": "the small per-glucose cycle-accounting panel showing 4 CO₂, 2 ATP, 6 NADH, and 2 FADH₂ across two turns"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-051",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Mitochondrial Architecture Bay",
+      "misconception_guards": [
+        "Detailed citric-cycle intermediate names and exact bookkeeping remain enrichment, not a primary AP memorization burden.",
+        "Keep these confusable terms physically and verbally distinct: glycolysis, pyruvate oxidation, citric acid cycle, oxidative phosphorylation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-023; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "CYCLIC_PATHWAY_OUTPUT_MODEL",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "acetyl-CoA entry",
+          "citric acid/Krebs cycle in matrix",
+          "CO2/ATP/reduced-carrier outputs",
+          "Feed acetyl-CoA into the matrix cycle, release carbon as CO2, transfer energy to NADH/FADH2 and ATP/GTP, and regenerate the cycle acceptor without making detailed intermediate memorization primary."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Krebs-cycle location and outputs; Citric acid cycle; Detailed citric-cycle bookkeeping."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Mitochondrial Architecture Bay",
+      "title": "The Folded Wall Where the Next Stage Must Happen",
+      "scene_kicker": "Mitochondrial compartments become memorable when each respiration stage is attached to its actual location.",
+      "location_description": "Mitochondrial Architecture Bay — the mitochondrial cutaway showing matrix, inner membrane, cristae, and intermembrane space as respiration compartments.",
+      "scene_layout": {
+        "orientation": "You enter Mitochondrial Architecture Bay and stop at the mitochondrial cutaway showing matrix, inner membrane, cristae, and intermembrane space as respiration compartments. On your left is intermembrane space; directly ahead is cristae-rich inner membrane; on your right is matrix. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Intermembrane space",
+            "symbol": "high-H⁺ side later",
+            "description": "The left compartment lies between the outer and inner mitochondrial membranes and will become the higher-proton side once the respiratory ETC is running."
+          },
+          {
+            "position": "center",
+            "label": "Cristae-rich inner membrane",
+            "symbol": "folded membrane",
+            "description": "The center inner membrane folds into recognizable cristae, increasing membrane surface available for electron transport and ATP-synthesis machinery."
+          },
+          {
+            "position": "right",
+            "label": "Mitochondrial matrix",
+            "symbol": "matrix",
+            "description": "The right compartment contains the pyruvate-oxidation and citric-cycle machinery already visited and stays visually distinct from the intermembrane space."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "mitochondrial cutaway",
+          "kind": "organelle map",
+          "visual": "a conventional double-membrane mitochondrion cut open so matrix, inner membrane, cristae, and intermembrane space remain visible at once",
+          "job": "anchors each stage of eukaryotic aerobic respiration to the correct cellular compartment"
+        },
+        {
+          "name": "cristae",
+          "kind": "inner-membrane folds",
+          "visual": "deep folds of the inner mitochondrial membrane extending through the central bay",
+          "job": "increase membrane surface available for respiratory electron transport and ATP-synthesis machinery"
+        },
+        {
+          "name": "stage markers",
+          "kind": "location labels",
+          "visual": "small markers for glycolysis, pyruvate oxidation/citric cycle, and oxidative phosphorylation attached to their actual locations",
+          "job": "prevent the entire respiration pathway from being incorrectly placed inside the mitochondrion"
+        }
+      ],
+      "story_open": "You and Nia step onto a platform beside a giant conventional mitochondrial cutaway. The organelle is no longer a generic bean. The **left** compartment is the **intermembrane space** between the outer and inner membranes. The **center** is the inner mitochondrial membrane, folded repeatedly into **cristae**. The **right** compartment is the **matrix**, the room you just left. Nia rotates the cutaway until those three regions stay fixed relative to you. Then she brings the earlier route back onto the model. Glycolysis remains outside the mitochondrion in the cytosol. Pyruvate oxidation and the citric acid cycle attach to the matrix. The upcoming electron-transport and ATP-synthesis machinery attaches to the inner membrane.",
+      "story_paragraphs": [
+        "You and Nia step onto a platform beside a giant conventional mitochondrial cutaway. The organelle is no longer a generic bean. The **left** compartment is the **intermembrane space** between the outer and inner membranes. The **center** is the inner mitochondrial membrane, folded repeatedly into **cristae**. The **right** compartment is the **matrix**, the room you just left. Nia rotates the cutaway until those three regions stay fixed relative to you. Then she brings the earlier route back onto the model. Glycolysis remains outside the mitochondrion in the cytosol. Pyruvate oxidation and the citric acid cycle attach to the matrix. The upcoming electron-transport and ATP-synthesis machinery attaches to the inner membrane.",
+        "Nia names the display **mitochondrial structural review**. Eukaryotic aerobic respiration uses distinct mitochondrial compartments including the matrix, inner membrane, cristae, and intermembrane space. The value of the cutaway is causal. A membrane can maintain different conditions on its two sides. The matrix and intermembrane space can therefore support an electrochemical gradient once proton pumping begins. If those spaces are mentally collapsed into one interior, chemiosmosis becomes impossible to reconstruct correctly.",
+        "She runs a light across the folded center membrane. Each fold is a **crista** and the set of folds are **cristae**. Their effect is captured by the term **cristae and ATP-production surface**. Folding of the inner mitochondrial membrane into cristae increases membrane surface area available for electron transport and ATP synthesis. Nia does not claim that folding creates energy by itself. It creates more membrane area in which the protein complexes that perform these processes can be embedded. The surface supports the machinery. The fuel-derived electron carriers supply the reducing power that will operate it.",
+        "The NADH and FADH₂ carts from the matrix cycle now line up along the inner membrane. The left intermembrane space is still nearly empty of the red H⁺ markers that will later accumulate there. The right matrix contains the reduced carriers and a relatively low proton concentration. Nia clips the blue electron tracer to one NADH cart and opens a descending catwalk embedded in the center membrane. The catwalk ends near an oxygen basin, but ATP synthase is still locked behind another gate. ‘First the electrons have to move,’ she says. ‘Then we ask what that electron transfer does to the membrane.’"
+      ],
+      "story_close": "The mitochondrial cutaway fixes the geography. Matrix on one side, intermembrane space on the other, and cristae-rich inner membrane between them. Reduced carriers now enter the respiratory electron-transfer machinery embedded in that membrane.",
+      "object_ids": [
+        "U3-K-045",
+        "U3-K-144"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-045",
+          "term": "Cristae and ATP-production surface",
+          "story": "the cristae-rich inner membrane providing expanded surface for respiratory ETC and ATP-synthesis machinery",
+          "science": "Folding of the inner mitochondrial membrane into cristae increases membrane surface area available for electron transport and ATP synthesis.",
+          "exact_name": true,
+          "hint": "the cristae-rich inner membrane providing expanded surface for respiratory ETC and ATP-synthesis machinery"
+        },
+        {
+          "object_id": "U3-K-144",
+          "term": "Mitochondrial structural review",
+          "story": "the conventional mitochondrial cutaway keeping matrix, inner membrane, cristae, and intermembrane space distinct",
+          "science": "Eukaryotic aerobic respiration uses mitochondrial compartments including the matrix, inner membrane, cristae, and intermembrane space.",
+          "exact_name": false,
+          "hint": "the conventional mitochondrial cutaway keeping matrix, inner membrane, cristae, and intermembrane space distinct"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cristae and ATP-production surface",
+          "meaning": "Folding of the inner mitochondrial membrane into cristae increases membrane surface area available for electron transport and ATP synthesis.",
+          "image": "the cristae-rich inner membrane providing expanded surface for respiratory ETC and ATP-synthesis machinery"
+        },
+        {
+          "term": "Mitochondrial structural review",
+          "meaning": "Eukaryotic aerobic respiration uses mitochondrial compartments including the matrix, inner membrane, cristae, and intermembrane space.",
+          "image": "the conventional mitochondrial cutaway keeping matrix, inner membrane, cristae, and intermembrane space distinct"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-045",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Respiratory Electron-Transport Descent",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: mitochondrial matrix, intermembrane space."
+      ],
+      "required_visual": {
+        "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "intermembrane space",
+          "cristae-rich inner membrane",
+          "matrix",
+          "Rotate a mitochondrial cutaway so matrix, inner membrane, cristae, and intermembrane space remain fixed while respiration-stage markers attach to their proper locations."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Cristae and ATP-production surface; Mitochondrial structural review."
+    },
+    {
+      "scene_index": 6,
+      "locus": "Respiratory Electron-Transport Descent",
+      "title": "The Electron Descent That Charges the Membrane",
+      "scene_kicker": "NADH and FADH₂ donate electrons to an inner-membrane redox chain, and the electron path ends at a terminal acceptor rather than at ATP.",
+      "location_description": "Respiratory Electron-Transport Descent — the inner-membrane redox chain receiving electrons from NADH and FADH2 and transferring them toward a terminal acceptor.",
+      "scene_layout": {
+        "orientation": "You enter Respiratory Electron-Transport Descent and stop at the inner-membrane redox chain receiving electrons from NADH and FADH2 and transferring them toward a terminal acceptor. On your left is NADH/FADH2 electron entry; directly ahead is respiratory ETC redox chain; on your right is terminal-acceptor end. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Reduced-carrier electron entry",
+            "symbol": "NADH FADH₂",
+            "description": "NADH and FADH₂ arrive from earlier reactions and release representative blue electron tracers into different entry points of the respiratory electron-transfer system."
+          },
+          {
+            "position": "center",
+            "label": "Respiratory electron-transport chain",
+            "symbol": "redox descent",
+            "description": "A conventional series of inner-membrane electron carriers passes electrons through successive redox reactions toward lower-free-energy states."
+          },
+          {
+            "position": "right",
+            "label": "Terminal-acceptor end",
+            "symbol": "O₂ ahead",
+            "description": "The chain ends beside an oxygen-marked acceptor basin that remains inactive until terminal electrons actually arrive."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "NADH",
+          "kind": "reduced electron carrier",
+          "visual": "a reduced carrier arriving at a high-energy entry point with blue electron tracers",
+          "job": "donates electrons to the respiratory electron-transfer system and returns to an oxidized carrier form"
+        },
+        {
+          "name": "FADH₂",
+          "kind": "reduced electron carrier",
+          "visual": "a second reduced carrier entering the chain at a different point",
+          "job": "delivers electrons to the respiratory ETC through a route that does not create the same proton-pumping opportunity as NADH entry"
+        },
+        {
+          "name": "inner-membrane redox carriers",
+          "kind": "electron-transfer chain",
+          "visual": "a series of conventional membrane complexes and mobile carriers arranged along the descent",
+          "job": "undergo successive oxidation-reduction reactions and pass electrons toward the terminal acceptor"
+        }
+      ],
+      "story_open": "The inner-membrane catwalk slopes through a row of conventional respiratory complexes. On your **left**, NADH and FADH₂ carts arrive carrying blue electron tracers. Directly **ahead**, the **respiratory electron transport chain** runs through the center membrane. On your **right**, an oxygen-marked terminal basin waits at the end, still separated from the ATP turbine. Nia unloads the representative blue tracer from NADH and leaves the carrier in its oxidized form. Another route shows FADH₂ contributing electrons through a different entry point. The two reduced carriers therefore feed the same larger electron-transfer system without being treated as identical in how they enter it.",
+      "story_paragraphs": [
+        "The inner-membrane catwalk slopes through a row of conventional respiratory complexes. On your **left**, NADH and FADH₂ carts arrive carrying blue electron tracers. Directly **ahead**, the **respiratory electron transport chain** runs through the center membrane. On your **right**, an oxygen-marked terminal basin waits at the end, still separated from the ATP turbine. Nia unloads the representative blue tracer from NADH and leaves the carrier in its oxidized form. Another route shows FADH₂ contributing electrons through a different entry point. The two reduced carriers therefore feed the same larger electron-transfer system without being treated as identical in how they enter it.",
+        "Nia names the input relationship **reduced coenzymes feed ETC**. NADH and FADH₂ produced during glycolysis and mitochondrial oxidation reactions transfer electrons to the inner-membrane electron transport chain. The carriers are shuttle systems between fuel oxidation and the membrane machinery. Once they donate their electrons, they can return in oxidized forms to participate in earlier reactions again. The blue tracer enters the center chain. It does not move toward an ATP molecule. It moves from one redox carrier to another.",
+        "The center pathway is the **respiratory electron transport chain**, a series of inner-membrane electron carriers that undergo oxidation-reduction reactions and transfer electrons toward a terminal acceptor. As the blue tracer progresses, Nia’s energy indicator steps downward. The sequence lets electrons move through successively lower-free-energy states. Energy released along appropriate portions of that transfer can be coupled to other work, especially proton pumping. The electron itself remains an electron. Its route is an electron-transfer route. The red proton gauge beside the membrane is still a separate measurement.",
+        "Nia labels the complete motion **respiratory electron transfer**. NADH and FADH₂ deliver electrons to an electron transport chain. In aerobic respiration, those electrons move toward oxygen as the terminal acceptor. She leaves one side panel showing that some anaerobic prokaryotic respiratory systems can use terminal acceptors other than oxygen, which keeps **aerobic respiration**, **anaerobic respiration**, and **fermentation** from collapsing into one category. Fermentation does not use this kind of respiratory ETC to pass electrons to an external terminal acceptor. As the blue tracer approaches the oxygen end, selected membrane complexes begin flashing arrows from the matrix toward the intermembrane space. The unresolved consequence pulls you to the Proton Pumping Wall."
+      ],
+      "story_close": "The blue electron tracer has descended through the respiratory ETC toward the terminal acceptor. Its transfer has activated membrane proton-pumping machinery, so the next scene follows H⁺ movement rather than pretending the electron itself becomes ATP.",
+      "object_ids": [
+        "U3-K-043",
+        "U3-K-052",
+        "U3-K-159"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-043",
+          "term": "Respiratory electron transfer",
+          "story": "the blue electron tracer moving from reduced carriers through the respiratory ETC toward the terminal acceptor",
+          "science": "NADH and FADH2 deliver electrons to an electron transport chain; in aerobic respiration electrons move toward oxygen as the terminal acceptor, while anaerobic prokaryotes can use other terminal acceptors.",
+          "exact_name": true,
+          "hint": "the blue electron tracer moving from reduced carriers through the respiratory ETC toward the terminal acceptor"
+        },
+        {
+          "object_id": "U3-K-052",
+          "term": "Reduced coenzymes feed ETC",
+          "story": "NADH and FADH₂ unloading high-energy electrons into the inner-membrane electron-transfer system",
+          "science": "NADH and FADH2 produced during glycolysis and Krebs-cycle reactions transfer electrons to the inner-membrane electron transport chain.",
+          "exact_name": true,
+          "hint": "NADH and FADH₂ unloading high-energy electrons into the inner-membrane electron-transfer system"
+        },
+        {
+          "object_id": "U3-K-159",
+          "term": "Respiratory electron transport chain",
+          "story": "the series of inner-membrane redox carriers passing electrons stepwise toward a terminal acceptor",
+          "science": "The respiratory ETC is a series of inner-membrane electron carriers that undergo redox reactions and transfer electrons toward a terminal acceptor.",
+          "exact_name": true,
+          "hint": "the series of inner-membrane redox carriers passing electrons stepwise toward a terminal acceptor"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Respiratory electron transfer",
+          "meaning": "NADH and FADH2 deliver electrons to an electron transport chain; in aerobic respiration electrons move toward oxygen as the terminal acceptor, while anaerobic prokaryotes can use other terminal acceptors.",
+          "image": "the blue electron tracer moving from reduced carriers through the respiratory ETC toward the terminal acceptor"
+        },
+        {
+          "term": "Reduced coenzymes feed ETC",
+          "meaning": "NADH and FADH2 produced during glycolysis and Krebs-cycle reactions transfer electrons to the inner-membrane electron transport chain.",
+          "image": "NADH and FADH₂ unloading high-energy electrons into the inner-membrane electron-transfer system"
+        },
+        {
+          "term": "Respiratory electron transport chain",
+          "meaning": "The respiratory ETC is a series of inner-membrane electron carriers that undergo redox reactions and transfer electrons toward a terminal acceptor.",
+          "image": "the series of inner-membrane redox carriers passing electrons stepwise toward a terminal acceptor"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-043",
+      "checkpoint_prompt": "What do NADH and FADH2 contribute to the respiratory electron-transport chain?",
+      "checkpoint_answer": "High-energy electrons.",
+      "checkpoint_hint": "Look to the left entrance of the inner-membrane descent. The two reduced carriers arrive carrying the same kind of cargo that moves through the center redox chain.",
+      "next_locus": "Proton Pumping Wall",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "REDOX_CHAIN",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "NADH/FADH2 electron entry",
+          "respiratory ETC redox chain",
+          "terminal-acceptor end",
+          "Unload electrons from NADH and FADH2 into the inner-membrane chain and pass them through progressively lower-energy redox steps toward the terminal acceptor end."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Respiratory electron transfer; Reduced coenzymes feed ETC; Respiratory electron transport chain."
+    },
+    {
+      "scene_index": 7,
+      "locus": "Proton Pumping Wall",
+      "title": "The Wall That Builds Pressure From Electron Transfer",
+      "scene_kicker": "Energy released by electron transfer is coupled to proton pumping, creating an electrochemical gradient across the inner mitochondrial membrane.",
+      "location_description": "Proton Pumping Wall — the inner mitochondrial membrane where electron-transfer energy pumps H+ from matrix to intermembrane space.",
+      "scene_layout": {
+        "orientation": "You enter Proton Pumping Wall and stop at the inner mitochondrial membrane where electron-transfer energy pumps H+ from matrix to intermembrane space. On your left is matrix low-H+ side; directly ahead is inner-membrane proton pumps; on your right is intermembrane high-H+ side. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Matrix low-H⁺ side",
+            "symbol": "matrix",
+            "description": "The matrix side remains on the left of this membrane cross-section and loses protons as selected ETC complexes move H⁺ away from it."
+          },
+          {
+            "position": "center",
+            "label": "Inner-membrane proton-pumping complexes",
+            "symbol": "pump",
+            "description": "Certain center membrane complexes couple energy released by electron transfer to active proton translocation across the inner membrane."
+          },
+          {
+            "position": "right",
+            "label": "Intermembrane high-H⁺ side",
+            "symbol": "H⁺ H⁺ H⁺",
+            "description": "Protons accumulate on the right in the intermembrane space, creating both a concentration difference and an electrical contribution to proton-motive force."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "proton pumps",
+          "kind": "membrane transport machinery",
+          "visual": "selected ETC complexes spanning the inner mitochondrial membrane with arrows from matrix to intermembrane space",
+          "job": "couple energy released during electron transfer to proton translocation"
+        },
+        {
+          "name": "H⁺ gradient",
+          "kind": "electrochemical gradient",
+          "visual": "a rising concentration of red H⁺ markers on the intermembrane side and a lower concentration in the matrix",
+          "job": "stores potential energy as an electrochemical proton gradient across the inner membrane"
+        },
+        {
+          "name": "pH gauges",
+          "kind": "chemical comparison",
+          "visual": "two fixed pH gauges showing a more acidic intermembrane side and a relatively higher-pH matrix",
+          "job": "connect proton concentration to the matrix-intermembrane pH difference"
+        }
+      ],
+      "story_open": "You turn one corner and face the inner membrane as a vertical wall. For this cross-section, the **matrix** is fixed on your **left** and the **intermembrane space** on your **right**. The **center** wall contains selected ETC complexes with proton-pumping arrows. Nia deliberately reverses the left-right view from the earlier organelle cutaway only once, then locks it for this scene and marks the labels in large lettering. The blue electron tracer continues through the membrane complexes along a horizontal track. Red H⁺ markers occupy their own vertical route. The two paths cross at the machinery, yet they never merge.",
+      "story_paragraphs": [
+        "You turn one corner and face the inner membrane as a vertical wall. For this cross-section, the **matrix** is fixed on your **left** and the **intermembrane space** on your **right**. The **center** wall contains selected ETC complexes with proton-pumping arrows. Nia deliberately reverses the left-right view from the earlier organelle cutaway only once, then locks it for this scene and marks the labels in large lettering. The blue electron tracer continues through the membrane complexes along a horizontal track. Red H⁺ markers occupy their own vertical route. The two paths cross at the machinery, yet they never merge.",
+        "As electron transfer proceeds through certain ETC complexes, those complexes use released free energy to move H⁺ from the matrix across the inner membrane into the intermembrane space. Nia names this relationship **respiratory proton pumping**. The electron-transfer chain supplies the energy change that makes proton translocation possible. Electrons are not pumped into the intermembrane space, and protons do not travel along the electron-carrier sequence. One process is redox transfer within the membrane. The coupled process is active proton movement across it.",
+        "The right-hand intermembrane space fills with red H⁺ markers. The left matrix loses them. Nia labels the resulting difference the **mitochondrial proton gradient**. Electron transfer through the respiratory ETC is coupled to formation of a proton gradient across the inner mitochondrial membrane, with a higher proton concentration in the intermembrane space than in the matrix. A charge indicator also shifts because H⁺ carries positive charge. Together, the concentration and electrical differences contribute to proton-motive force. Nia stores that term for the turbine room, where the gradient will actually do work.",
+        "Two pH gauges now become legible. The high-H⁺ intermembrane side has the lower pH. The lower-H⁺ matrix has the higher pH. Nia calls the comparison the **matrix-intermembrane pH difference**. The matrix is higher in pH than the intermembrane space while this respiratory gradient is maintained. The pH labels are consequences of proton concentration, not an independent chemical trick. The gradient gauge reaches a stable pressure, yet the oxygen basin at the end of the electron chain still has unanswered electron cargo. Nia follows the blue tracer to that basin while leaving the red H⁺ reservoir stored behind the wall for later use."
+      ],
+      "story_close": "Electron transfer has built a high-H⁺ intermembrane side and a lower-H⁺, higher-pH matrix. The gradient is stored, while the blue electron tracer continues separately to oxygen at the end of the chain.",
+      "object_ids": [
+        "U3-K-044",
+        "U3-K-053",
+        "U3-K-160"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-044",
+          "term": "Mitochondrial proton gradient",
+          "story": "red H⁺ markers accumulating in the intermembrane space while the matrix becomes the lower-proton side",
+          "science": "Electron transfer through the respiratory electron transport chain is coupled to formation of a proton gradient across the inner mitochondrial membrane, with higher proton concentration in the intermembrane space than in the matrix.",
+          "exact_name": true,
+          "hint": "red H⁺ markers accumulating in the intermembrane space while the matrix becomes the lower-proton side"
+        },
+        {
+          "object_id": "U3-K-053",
+          "term": "Matrix-intermembrane pH difference",
+          "story": "paired pH gauges showing higher pH in the matrix and lower pH in the proton-rich intermembrane space",
+          "science": "The proton gradient established by respiratory electron transport makes the mitochondrial matrix higher in pH than the intermembrane space.",
+          "exact_name": true,
+          "hint": "paired pH gauges showing higher pH in the matrix and lower pH in the proton-rich intermembrane space"
+        },
+        {
+          "object_id": "U3-K-160",
+          "term": "Respiratory proton pumping",
+          "story": "selected ETC complexes using electron-transfer energy to pump H⁺ from matrix to intermembrane space",
+          "science": "Energy released by electron transfer through certain ETC complexes is used to pump protons from the mitochondrial matrix into the intermembrane space.",
+          "exact_name": false,
+          "hint": "selected ETC complexes using electron-transfer energy to pump H⁺ from matrix to intermembrane space"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Mitochondrial proton gradient",
+          "meaning": "Electron transfer through the respiratory electron transport chain is coupled to formation of a proton gradient across the inner mitochondrial membrane, with higher proton concentration in the intermembrane space than in the matrix.",
+          "image": "red H⁺ markers accumulating in the intermembrane space while the matrix becomes the lower-proton side"
+        },
+        {
+          "term": "Matrix-intermembrane pH difference",
+          "meaning": "The proton gradient established by respiratory electron transport makes the mitochondrial matrix higher in pH than the intermembrane space.",
+          "image": "paired pH gauges showing higher pH in the matrix and lower pH in the proton-rich intermembrane space"
+        },
+        {
+          "term": "Respiratory proton pumping",
+          "meaning": "Energy released by electron transfer through certain ETC complexes is used to pump protons from the mitochondrial matrix into the intermembrane space.",
+          "image": "selected ETC complexes using electron-transfer energy to pump H⁺ from matrix to intermembrane space"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-044",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Oxygen Terminal-Acceptor Basin",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: mitochondrial matrix, intermembrane space.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-022; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "GRADIENT_BUILDING_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "matrix low-H+ side",
+          "inner-membrane proton pumps",
+          "intermembrane high-H+ side",
+          "Use energy from electron transfer to pump H+ from the matrix across the inner membrane into the intermembrane space and display the resulting concentration and pH difference."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Mitochondrial proton gradient; Matrix-intermembrane pH difference; Respiratory proton pumping."
+    },
+    {
+      "scene_index": 8,
+      "locus": "Oxygen Terminal-Acceptor Basin",
+      "title": "The Basin Where Oxygen Finally Receives the Electrons",
+      "scene_kicker": "Oxygen’s job in aerobic respiration is terminal electron acceptance and reduction to water, not direct ATP production.",
+      "location_description": "Oxygen Terminal-Acceptor Basin — the end of the aerobic ETC where oxygen receives electrons and protons to form water.",
+      "scene_layout": {
+        "orientation": "You enter Oxygen Terminal-Acceptor Basin and stop at the end of the aerobic ETC where oxygen receives electrons and protons to form water. On your left is incoming electrons; directly ahead is oxygen terminal-acceptor basin; on your right is water product. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Incoming terminal electrons",
+            "symbol": "e⁻",
+            "description": "The final blue electron tracers arrive from the respiratory ETC on the left after their energy has already been used along the chain."
+          },
+          {
+            "position": "center",
+            "label": "Oxygen terminal-acceptor basin",
+            "symbol": "O₂",
+            "description": "Molecular oxygen sits at the center as the terminal electron acceptor and receives electrons together with protons."
+          },
+          {
+            "position": "right",
+            "label": "Water product channel",
+            "symbol": "H₂O",
+            "description": "Water forms on the right after oxygen is reduced, making oxygen consumption a terminal redox event rather than a direct ATP-forming reaction."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "oxygen",
+          "kind": "terminal electron acceptor",
+          "visual": "a conventional O₂ molecule waiting in a basin at the end of the ETC",
+          "job": "accepts terminal electrons and is reduced during aerobic respiration"
+        },
+        {
+          "name": "terminal electrons",
+          "kind": "electron input",
+          "visual": "blue electron tracers arriving from the final ETC carrier",
+          "job": "complete the electron-transfer route that began when fuel molecules were oxidized"
+        },
+        {
+          "name": "protons",
+          "kind": "reaction partners",
+          "visual": "H⁺ markers approaching the oxygen basin from the surrounding aqueous compartment",
+          "job": "combine with reduced oxygen during water formation"
+        }
+      ],
+      "story_open": "The respiratory chain ends at a shallow basin cut into the inner-membrane terminus. On your **left**, the last electron carrier delivers the blue tracer. In the **center**, a conventional O₂ molecule waits under a sign marked TERMINAL ACCEPTOR. On your **right**, an empty water channel leads away from the basin. The red proton-gradient reservoir remains visible through a window behind you, still stored across the membrane. ATP synthase has not yet opened. Nia keeps the timing deliberate. Oxygen acts here at the end of the electron-transfer chain before the stored proton gradient is released through the ATP turbine.",
+      "story_paragraphs": [
+        "The respiratory chain ends at a shallow basin cut into the inner-membrane terminus. On your **left**, the last electron carrier delivers the blue tracer. In the **center**, a conventional O₂ molecule waits under a sign marked TERMINAL ACCEPTOR. On your **right**, an empty water channel leads away from the basin. The red proton-gradient reservoir remains visible through a window behind you, still stored across the membrane. ATP synthase has not yet opened. Nia keeps the timing deliberate. Oxygen acts here at the end of the electron-transfer chain before the stored proton gradient is released through the ATP turbine.",
+        "The incoming electrons are transferred to oxygen. Protons participate in the terminal chemistry, and oxygen is reduced to water. The balanced terminal reaction appears briefly above the basin as **O₂ + 4 e⁻ + 4 H⁺ → 2 H₂O**. Nia sends four blue electron markers into the model so the stoichiometry has visible meaning, while your representative tracer is one member of that set. Two water molecules leave through the right channel. The oxygen molecule has served as the **terminal electron acceptor** because it accepts the electrons at the end of the aerobic respiratory chain.",
+        "Nia names the event **oxygen terminal reduction**. In aerobic respiration, O₂ is the terminal electron acceptor and is reduced to water. She points at the ATP counter, which remains unchanged during the basin demonstration. Oxygen does not donate ATP, and the act of oxygen reduction does not mechanically stamp ATP molecules into existence. Oxygen’s terminal acceptance allows the electron-transfer pathway to continue operating. Earlier electron transfer helped establish the proton gradient. That stored electrochemical gradient will be the immediate energy source used by ATP synthase in the next room.",
+        "The water channel begins to flow and the blue electron tracer disappears into the completed reduction product. Its route is finished. Nia closes the electron tab on her tablet for the first time since the Fuel Intake and enlarges the red H⁺ gradient tab. The carbon ledger has already reached CO₂ vents. The electron ledger has reached H₂O through oxygen reduction. The remaining unspent potential is now spatial, stored as unequal H⁺ distribution across the inner membrane. A turbine gate opens beside the basin. You follow the pressure gauge, not the electron, into the Oxidative-Phosphorylation Turbine."
+      ],
+      "story_close": "Oxygen has accepted terminal electrons and been reduced to water. The electron journey ends here, while the proton gradient created earlier remains available to drive ATP synthesis through a separate membrane mechanism.",
+      "object_ids": [
+        "U3-K-161"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-161",
+          "term": "Oxygen terminal reduction",
+          "story": "oxygen accepting terminal electrons and protons to form water at the end of the aerobic ETC",
+          "science": "In aerobic respiration, O2 is the terminal electron acceptor and is reduced to water; the balanced terminal reaction is O2 + 4 e− + 4 H+ → 2 H2O.",
+          "exact_name": false,
+          "hint": "oxygen accepting terminal electrons and protons to form water at the end of the aerobic ETC"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Oxygen terminal reduction",
+          "meaning": "In aerobic respiration, O2 is the terminal electron acceptor and is reduced to water; the balanced terminal reaction is O2 + 4 e− + 4 H+ → 2 H2O.",
+          "image": "oxygen accepting terminal electrons and protons to form water at the end of the aerobic ETC"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-161",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Oxidative-Phosphorylation Turbine",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-021; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "TERMINAL_REDOX_REACTION",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "incoming electrons",
+          "oxygen terminal-acceptor basin",
+          "water product",
+          "Deliver terminal electrons and protons to oxygen and form water, making oxygen the final electron acceptor rather than a source of ATP itself."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Oxygen terminal reduction."
+    },
+    {
+      "scene_index": 9,
+      "locus": "Oxidative-Phosphorylation Turbine",
+      "title": "The Turbine Driven by a Gradient",
+      "scene_kicker": "Oxidative phosphorylation couples respiratory electron transport to chemiosmotic ATP synthesis, with proton-motive force driving ATP synthase and ATP yield remaining an estimate.",
+      "location_description": "Oxidative-Phosphorylation Turbine — the ATP synthase complex where proton-motive force drives rotation/conformational change and ATP formation.",
+      "scene_layout": {
+        "orientation": "You enter Oxidative-Phosphorylation Turbine and stop at the ATP synthase complex where proton-motive force drives rotation/conformational change and ATP formation. On your left is proton gradient reservoir; directly ahead is ATP synthase/chemiosmosis turbine; on your right is ATP output and yield dashboard. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Proton-gradient reservoir",
+            "symbol": "H⁺ reservoir",
+            "description": "The high-proton intermembrane side feeds H⁺ toward ATP synthase while the lower-proton matrix side waits beyond the membrane."
+          },
+          {
+            "position": "center",
+            "label": "ATP synthase and chemiosmosis turbine",
+            "symbol": "ATP synthase",
+            "description": "A conventional membrane-spanning ATP synthase uses proton-motive force as H⁺ moves through it, driving rotational and conformational changes linked to ATP formation."
+          },
+          {
+            "position": "right",
+            "label": "ATP and yield dashboard",
+            "symbol": "ATP ≈ variable",
+            "description": "ATP appears beside a yield dashboard that presents approximate respiratory totals while keeping variable shuttle costs and proton leak visible."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "ATP synthase",
+          "kind": "membrane enzyme complex",
+          "visual": "a conventional F-type ATP synthase spanning the inner mitochondrial membrane with a rotor-like central stalk",
+          "job": "uses proton-motive force to catalyze ATP formation from ADP and inorganic phosphate"
+        },
+        {
+          "name": "proton-motive force",
+          "kind": "stored gradient energy",
+          "visual": "the combined concentration and charge difference represented by the high-H⁺ reservoir",
+          "job": "drives proton flow through ATP synthase during chemiosmosis"
+        },
+        {
+          "name": "ATP yield dashboard",
+          "kind": "variable accounting display",
+          "visual": "a dashboard showing oxidative phosphorylation near 26–28 ATP and total aerobic yield near 30–32 ATP per glucose with a visible variability bracket",
+          "job": "keeps useful modern estimates available without presenting one exact ATP total as universal"
+        }
+      ],
+      "story_open": "The turbine hall is built directly into the inner mitochondrial membrane. On your **left**, the intermembrane-side reservoir is crowded with H⁺. The **center** is dominated by a conventional membrane-spanning **ATP synthase** complex. On your **right**, the matrix side contains ADP, inorganic phosphate, newly formed ATP, and a yield dashboard. The blue electron tracer is gone because its terminal route ended at oxygen. Nia makes that absence part of the scene. ‘If you are waiting for an electron to enter this turbine, you are following the wrong continuity object,’ she says. The active tracer now is the proton gradient itself.",
+      "story_paragraphs": [
+        "The turbine hall is built directly into the inner mitochondrial membrane. On your **left**, the intermembrane-side reservoir is crowded with H⁺. The **center** is dominated by a conventional membrane-spanning **ATP synthase** complex. On your **right**, the matrix side contains ADP, inorganic phosphate, newly formed ATP, and a yield dashboard. The blue electron tracer is gone because its terminal route ended at oxygen. Nia makes that absence part of the scene. ‘If you are waiting for an electron to enter this turbine, you are following the wrong continuity object,’ she says. The active tracer now is the proton gradient itself.",
+        "H⁺ begins moving down its electrochemical gradient through ATP synthase toward the matrix. Nia names this use of gradient energy **chemiosmosis**. Chemiosmosis uses energy stored in an electrochemical proton gradient as protons move through a membrane-associated process such as ATP synthase. The proton-motive force drives motion and conformational changes within the enzyme complex. Nia lets the rotor-like elements turn while catalytic sites change shape. Those **rotational and conformational changes** support formation and release of ATP from ADP and inorganic phosphate. The protons do not become phosphate groups or ATP molecules. Their downhill movement supplies the energy that the enzyme couples to ATP synthesis.",
+        "Nia places the exact name **ATP synthase** on the center complex. ATP synthase is a membrane enzyme complex that uses proton-motive force to catalyze ATP formation from ADP and inorganic phosphate. Then she widens the label to include the entire system. **Oxidative phosphorylation** is the aerobic respiratory process in which electron transport establishes the proton gradient and chemiosmosis through ATP synthase uses that gradient to drive ATP formation. The phrase **oxidative phosphorylation components** therefore belongs to two linked pieces, the electron-transport machinery that builds the gradient and ATP synthase-mediated chemiosmosis that spends it. This is distinct from the direct phosphate transfer of substrate-level phosphorylation and from light-driven photophosphorylation in chloroplasts.",
+        "The right dashboard **does not show a fixed universal integer**. It shows a common modern estimate of roughly **26 to 28 ATP from oxidative phosphorylation** and roughly **30 to 32 ATP total per glucose** in many eukaryotic cells, then widens into a range. Shuttle systems, cell type, membrane leak, and other conditions change the exact yield. Nia labels the panel **respiratory ATP-yield estimate** so the number remains useful without becoming a law. The plant’s ATP grid finally turns on across the ceiling. Then a bypass valve beside ATP synthase starts glowing. ‘A functioning gradient can be spent another way,’ Nia says. ‘Watch what happens when H⁺ gets across without using this turbine.’"
+      ],
+      "story_close": "Chemiosmosis through ATP synthase now converts proton-motive force into ATP production as part of oxidative phosphorylation. The ATP grid is restored, but a side valve is about to reveal where gradient energy goes when proton flow bypasses ATP synthase.",
+      "object_ids": [
+        "U3-K-047",
+        "U3-K-158",
+        "U3-K-162",
+        "U3-K-163",
+        "U3-K-164",
+        "U3-K-165"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-047",
+          "term": "Oxidative phosphorylation",
+          "story": "the full inner-membrane system in which electron transport establishes a gradient and proton flow through ATP synthase drives ATP formation",
+          "science": "Protons flow through ATP synthase by chemiosmosis to drive ATP formation; in aerobic respiration this process is oxidative phosphorylation.",
+          "exact_name": true,
+          "hint": "the full inner-membrane system in which electron transport establishes a gradient and proton flow through ATP synthase drives ATP formation"
+        },
+        {
+          "object_id": "U3-K-158",
+          "term": "Oxidative phosphorylation components",
+          "story": "the two linked components of oxidative phosphorylation, respiratory electron transport and ATP-synthase chemiosmosis",
+          "science": "Oxidative phosphorylation includes electron transport that establishes a proton gradient and chemiosmosis through ATP synthase.",
+          "exact_name": true,
+          "hint": "the two linked components of oxidative phosphorylation, respiratory electron transport and ATP-synthase chemiosmosis"
+        },
+        {
+          "object_id": "U3-K-162",
+          "term": "Chemiosmosis",
+          "story": "H⁺ moving down an electrochemical gradient through the membrane-associated ATP synthase process",
+          "science": "Chemiosmosis is the use of energy stored in an electrochemical proton gradient as protons move through a membrane-associated process such as ATP synthase.",
+          "exact_name": true,
+          "hint": "H⁺ moving down an electrochemical gradient through the membrane-associated ATP synthase process"
+        },
+        {
+          "object_id": "U3-K-163",
+          "term": "ATP synthase",
+          "story": "the membrane-spanning ATP synthase complex using proton-motive force to form ATP from ADP and inorganic phosphate",
+          "science": "ATP synthase is a membrane enzyme complex that uses proton-motive force to catalyze formation of ATP from ADP and inorganic phosphate.",
+          "exact_name": true,
+          "hint": "the membrane-spanning ATP synthase complex using proton-motive force to form ATP from ADP and inorganic phosphate"
+        },
+        {
+          "object_id": "U3-K-164",
+          "term": "ATP synthase rotational catalysis",
+          "story": "proton flow driving rotational and conformational changes in ATP synthase catalytic machinery",
+          "science": "Proton flow through ATP synthase drives rotational/conformational changes that alter catalytic sites and support ATP formation.",
+          "exact_name": false,
+          "hint": "proton flow driving rotational and conformational changes in ATP synthase catalytic machinery"
+        },
+        {
+          "object_id": "U3-K-165",
+          "term": "Respiratory ATP-yield estimate",
+          "story": "the variable yield dashboard showing about 26–28 ATP from oxidative phosphorylation and about 30–32 total in many eukaryotic cells",
+          "science": "Modern textbook estimates commonly place oxidative phosphorylation near 26–28 ATP and total aerobic yield near 30–32 ATP per glucose in many eukaryotic cells, but exact yield varies with conditions and shuttle costs.",
+          "exact_name": false,
+          "hint": "the variable yield dashboard showing about 26–28 ATP from oxidative phosphorylation and about 30–32 total in many eukaryotic cells"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Oxidative phosphorylation",
+          "meaning": "Protons flow through ATP synthase by chemiosmosis to drive ATP formation; in aerobic respiration this process is oxidative phosphorylation.",
+          "image": "the full inner-membrane system in which electron transport establishes a gradient and proton flow through ATP synthase drives ATP formation"
+        },
+        {
+          "term": "Oxidative phosphorylation components",
+          "meaning": "Oxidative phosphorylation includes electron transport that establishes a proton gradient and chemiosmosis through ATP synthase.",
+          "image": "the two linked components of oxidative phosphorylation, respiratory electron transport and ATP-synthase chemiosmosis"
+        },
+        {
+          "term": "Chemiosmosis",
+          "meaning": "Chemiosmosis is the use of energy stored in an electrochemical proton gradient as protons move through a membrane-associated process such as ATP synthase.",
+          "image": "H⁺ moving down an electrochemical gradient through the membrane-associated ATP synthase process"
+        },
+        {
+          "term": "ATP synthase",
+          "meaning": "ATP synthase is a membrane enzyme complex that uses proton-motive force to catalyze formation of ATP from ADP and inorganic phosphate.",
+          "image": "the membrane-spanning ATP synthase complex using proton-motive force to form ATP from ADP and inorganic phosphate"
+        },
+        {
+          "term": "ATP synthase rotational catalysis",
+          "meaning": "Proton flow through ATP synthase drives rotational/conformational changes that alter catalytic sites and support ATP formation.",
+          "image": "proton flow driving rotational and conformational changes in ATP synthase catalytic machinery"
+        },
+        {
+          "term": "Respiratory ATP-yield estimate",
+          "meaning": "A useful modern estimate places oxidative phosphorylation near 26–28 ATP and total aerobic yield near 30–32 ATP per glucose in many eukaryotic cells. Exact yield varies with cell type, shuttle systems, and proton leak.",
+          "image": "the variable yield dashboard showing about 26–28 ATP from oxidative phosphorylation and about 30–32 total in many eukaryotic cells"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-047",
+      "checkpoint_prompt": "What energy source drives ATP formation at this mitochondrial turbine?",
+      "checkpoint_answer": "The proton-motive force as H+ flows through ATP synthase.",
+      "checkpoint_hint": "Ignore the old electron path and look at the left reservoir. The immediate driving force is stored across the membrane and is released only when H⁺ passes through the center enzyme.",
+      "next_locus": "Uncoupling Heat Vent",
+      "misconception_guards": [
+        "Respiratory ATP yield varies with cell type, shuttle systems, and proton leak; do not teach one exact ATP total as universal.",
+        "Keep these confusable terms physically and verbally distinct: substrate-level phosphorylation, oxidative phosphorylation, photophosphorylation.",
+        "Keep these confusable terms physically and verbally distinct: glycolysis, pyruvate oxidation, citric acid cycle, oxidative phosphorylation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-023; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "CHEMIOSMOSIS_TURBINE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "proton gradient reservoir",
+          "ATP synthase/chemiosmosis turbine",
+          "ATP output and yield dashboard",
+          "Release the proton-motive force through ATP synthase, couple proton flow to rotational/conformational catalysis, and form ATP while keeping exact yield as an estimate rather than a fixed universal count."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Oxidative phosphorylation; Oxidative phosphorylation components; Chemiosmosis; ATP synthase; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 10,
+      "locus": "Uncoupling Heat Vent",
+      "title": "The Bypass That Turns Gradient Energy Into Heat",
+      "scene_kicker": "A proton leak can uncouple part of respiration from ATP production, lowering ATP capture efficiency while increasing heat release.",
+      "location_description": "Uncoupling Heat Vent — the controlled proton-leak bypass where gradient energy is released as heat instead of captured efficiently as ATP.",
+      "scene_layout": {
+        "orientation": "You enter Uncoupling Heat Vent and stop at the controlled proton-leak bypass where gradient energy is released as heat instead of captured efficiently as ATP. On your left is proton gradient; directly ahead is uncoupling bypass; on your right is heat output. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Stored proton gradient",
+            "symbol": "H⁺ pressure",
+            "description": "The same proton gradient from oxidative phosphorylation remains intact on the left before any bypass is opened."
+          },
+          {
+            "position": "center",
+            "label": "Uncoupling proton bypass",
+            "symbol": "leak",
+            "description": "A controlled center leak lets protons cross the membrane without passing through ATP synthase, disconnecting part of proton flow from ATP production."
+          },
+          {
+            "position": "right",
+            "label": "Heat and efficiency display",
+            "symbol": "heat ↑ ATP capture ↓",
+            "description": "More gradient energy is dissipated as heat on the right while the amount captured as ATP falls, making the energy-partition tradeoff visible on two separate gauges."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "uncoupling bypass",
+          "kind": "proton leak path",
+          "visual": "a membrane channel opening beside ATP synthase and carrying H⁺ across without ATP production",
+          "job": "dissipates part of the proton gradient independently of ATP synthase"
+        },
+        {
+          "name": "heat sensor",
+          "kind": "energy consequence",
+          "visual": "a thermal gauge rising as the bypass opens",
+          "job": "shows gradient energy appearing as heat when proton flow is decoupled from ATP production"
+        },
+        {
+          "name": "ATP capture meter",
+          "kind": "efficiency consequence",
+          "visual": "an ATP-production meter dropping as more H⁺ avoids ATP synthase",
+          "job": "shows that uncoupling reduces the fraction of gradient energy captured in ATP"
+        }
+      ],
+      "story_open": "The turbine hall narrows into a test chamber. The **left** reservoir contains the same stored proton gradient you just used for ATP synthesis. The **center** membrane holds a bypass channel beside ATP synthase. The **right** side has two gauges, one for ATP capture and one for heat. Nia closes ATP synthase temporarily so you can see the bypass by itself. The H⁺ markers remain high on one side and low on the other. The gradient still stores potential energy. Only the route by which protons return has changed.",
+      "story_paragraphs": [
+        "The turbine hall narrows into a test chamber. The **left** reservoir contains the same stored proton gradient you just used for ATP synthesis. The **center** membrane holds a bypass channel beside ATP synthase. The **right** side has two gauges, one for ATP capture and one for heat. Nia closes ATP synthase temporarily so you can see the bypass by itself. The H⁺ markers remain high on one side and low on the other. The gradient still stores potential energy. Only the route by which protons return has changed.",
+        "Nia opens the bypass. H⁺ flows down its electrochemical gradient through the leak without passing through ATP synthase. The proton difference shrinks, but the ATP counter barely moves. The heat sensor rises. Nia names the mechanism **respiratory uncoupling and heat**. Decoupling proton flow from ATP production can release stored gradient energy as heat. In endotherms, regulated uncoupling can contribute to thermoregulation. The model does not imply that every proton leak is beneficial or that all respiratory energy becomes heat. It demonstrates what happens to energy capture when some gradient dissipation is separated from ATP synthesis.",
+        "The right display makes the tradeoff explicit. As more of the gradient is dissipated through the bypass, less of its potential energy is captured through ATP synthase. ATP-production efficiency falls, while heat output rises. Nia reconnects ATP synthase and lets both routes exist as possible fates for proton-motive force. The earlier yield dashboard now makes more sense. Proton leak is one reason a respiratory ATP total is not a fixed universal integer. The gradient is a real energetic intermediate whose fate depends on membrane processes, not a guaranteed packet of a predetermined number of ATP molecules.",
+        "When the test ends, Nia powers down the giant mitochondrial display. A wall slides aside to reveal a much smaller cell with no mitochondrial organelle at all. The membrane is conventional and simple, yet respiratory ETC complexes and ATP synthase are embedded directly in it. Nia carries only the mechanism, not the mitochondrion, into the comparison annex. ‘If membrane chemiosmosis is the core logic,’ she says, ‘a cell does not need a mitochondrion to use that logic.’ You follow her toward the prokaryotic model."
+      ],
+      "story_close": "The uncoupling test shows that proton-motive force can be dissipated as heat when H⁺ bypasses ATP synthase. The final annex now asks whether the same electron-transfer and proton-gradient logic can operate in a cell that has no mitochondria.",
+      "object_ids": [
+        "U3-K-048"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-048",
+          "term": "Respiratory uncoupling and heat",
+          "story": "the center proton bypass dissipating gradient energy as heat while ATP capture falls",
+          "science": "Decoupling proton flow from ATP production can release stored gradient energy as heat, which can contribute to thermoregulation in endotherms.",
+          "exact_name": true,
+          "hint": "the center proton bypass dissipating gradient energy as heat while ATP capture falls"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Respiratory uncoupling and heat",
+          "meaning": "Decoupling proton flow from ATP production can release stored gradient energy as heat, which can contribute to thermoregulation in endotherms.",
+          "image": "the center proton bypass dissipating gradient energy as heat while ATP capture falls"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-048",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Prokaryotic Respiratory Membrane",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "ENERGY_PARTITION_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "proton gradient",
+          "uncoupling bypass",
+          "heat output",
+          "Open a controlled proton leak that bypasses ATP synthase, let gradient energy dissipate, and route more of that energy to heat while ATP capture efficiency falls."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Respiratory uncoupling and heat."
+    },
+    {
+      "scene_index": 11,
+      "locus": "Prokaryotic Respiratory Membrane",
+      "title": "The Same Membrane Logic Without a Mitochondrion",
+      "scene_kicker": "Prokaryotes can perform respiratory electron transport and proton translocation across the plasma membrane, showing that chemiosmotic logic does not depend on a mitochondrial organelle.",
+      "location_description": "Prokaryotic Respiratory Membrane — the prokaryotic plasma-membrane model carrying respiratory ETC and proton-translocation machinery without mitochondria.",
+      "scene_layout": {
+        "orientation": "You enter Prokaryotic Respiratory Membrane and stop at the prokaryotic plasma-membrane model carrying respiratory ETC and proton-translocation machinery without mitochondria. On your left is cytoplasmic side; directly ahead is prokaryotic plasma membrane ETC; on your right is external/periplasmic proton side. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Cytoplasmic side",
+            "symbol": "cytoplasm",
+            "description": "The left side represents the cytoplasm of a prokaryotic cell, where no mitochondrial matrix is available because the cell has no mitochondria."
+          },
+          {
+            "position": "center",
+            "label": "Prokaryotic plasma-membrane ETC",
+            "symbol": "plasma membrane",
+            "description": "Respiratory electron carriers, proton-translocation machinery, and ATP-synthesis machinery are embedded directly in the prokaryotic plasma membrane."
+          },
+          {
+            "position": "right",
+            "label": "External or periplasmic proton side",
+            "symbol": "H⁺ outside",
+            "description": "The right side represents the proton-enriched side outside the cytoplasm, which may be external or periplasmic depending on prokaryotic cell organization."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet now split into three synchronized traces labeled carbon, electrons, and proton gradient",
+          "job": "Nia keeps carbon flow, electron transfer, proton movement, oxygen reduction, and ATP formation on separate visual tracks while the learner follows one continuous respiration route from cytosol to mitochondrial membrane and then to a prokaryotic comparison."
+        },
+        {
+          "name": "prokaryotic plasma membrane",
+          "kind": "respiratory membrane",
+          "visual": "a conventional bacterial-style plasma membrane containing respiratory electron carriers and ATP synthase",
+          "job": "provides the membrane across which prokaryotic respiration can establish a proton gradient without mitochondria"
+        },
+        {
+          "name": "cytoplasm",
+          "kind": "low-proton side",
+          "visual": "the aqueous cell interior fixed on the left of the membrane model",
+          "job": "serves as one side of the chemiosmotic gradient and contains many metabolic reactions"
+        },
+        {
+          "name": "proton-enriched side",
+          "kind": "gradient destination",
+          "visual": "the region outside the cytoplasm fixed on the right, labeled external/periplasmic as appropriate",
+          "job": "receives protons translocated across the plasma membrane and supports the same general chemiosmotic logic"
+        }
+      ],
+      "story_open": "The final annex contains no mitochondrial cutaway. The prokaryotic cell has **no mitochondrial organelle**. Instead, an enlarged prokaryotic cell membrane stretches from floor to ceiling. For this scene, the **cytoplasmic side** is fixed on your **left**. The **center** is the prokaryotic plasma membrane itself, containing respiratory electron carriers, proton-translocation machinery, and ATP synthase. The **right** side is labeled external or periplasmic proton side, depending on the cell’s organization. Nia places the earlier mitochondrial cutaway on a small comparison screen but keeps it physically secondary. The question is no longer where a mitochondrion is. The question is what a membrane must do to support respiratory chemiosmosis.",
+      "story_paragraphs": [
+        "The final annex contains no mitochondrial cutaway. The prokaryotic cell has **no mitochondrial organelle**. Instead, an enlarged prokaryotic cell membrane stretches from floor to ceiling. For this scene, the **cytoplasmic side** is fixed on your **left**. The **center** is the prokaryotic plasma membrane itself, containing respiratory electron carriers, proton-translocation machinery, and ATP synthase. The **right** side is labeled external or periplasmic proton side, depending on the cell’s organization. Nia places the earlier mitochondrial cutaway on a small comparison screen but keeps it physically secondary. The question is no longer where a mitochondrion is. The question is what a membrane must do to support respiratory chemiosmosis.",
+        "Reduced electron carriers feed electrons into the membrane respiratory chain. As redox transfer proceeds, proton-translocation machinery moves H⁺ away from the cytoplasmic side, creating an electrochemical gradient across the plasma membrane. H⁺ can then return through ATP synthase and drive ATP formation. Nia names the structure-function relationship **prokaryotic respiratory membrane**. In prokaryotes, electron transport and proton translocation associated with respiration occur across the plasma membrane. The machinery has a different cellular location from the eukaryotic inner mitochondrial membrane, while the broader logic of electron transfer, proton gradient formation, and ATP synthase remains recognizable.",
+        "Nia turns the comparison screen sideways. On the eukaryotic model, the inner mitochondrial membrane separates matrix from intermembrane space. On the prokaryotic model, the plasma membrane separates cytoplasm from the external or periplasmic side. The labels cannot be swapped carelessly, yet both systems use membrane compartmentalization to maintain a proton-motive force. This comparison also protects an earlier distinction. Prokaryotic respiration can be aerobic or, in some organisms, use other terminal electron acceptors. That differs from fermentation, which regenerates electron carriers without operating a respiratory ETC and proton-gradient system of this kind. Fermentation waits for Journey 7.",
+        "The three traces on Nia’s tablet finally collapse into a completed ledger. The amber carbon route began in organic fuel and was released as CO₂ through carbon oxidation. The blue electron route moved from fuel-derived intermediates onto NADH and FADH₂, through the respiratory ETC, and finally to a terminal acceptor, with oxygen reduced to water in the aerobic route. The red H⁺ route was created by electron-transfer-driven proton pumping, stored as proton-motive force, and spent through ATP synthase or dissipated partly as heat. ATP was produced by more than one mechanism, with substrate-level phosphorylation earlier and oxidative phosphorylation dominating the membrane-coupled harvest. The power plant is no longer one vague ‘energy-making’ room. It is a connected set of transfers that can be reconstructed from the route.",
+        "Nia closes the respiration map only after you can walk it backward. Cytosolic glycolysis produces pyruvate, NADH, and net ATP. Pyruvate oxidation makes acetyl-CoA, CO₂, and NADH. The citric acid cycle in the matrix releases more CO₂ and loads NADH and FADH₂. Reduced carriers feed the inner-membrane ETC. Electron transfer builds the proton gradient. Oxygen accepts terminal electrons in aerobic respiration. Proton-motive force drives chemiosmosis through ATP synthase. The same membrane principle can operate across a prokaryotic plasma membrane. A final emergency door unlocks beyond the annex. Its sign reads OXYGEN LIMITED. The next journey will ask how cells keep glycolysis running when respiratory electron transfer cannot proceed normally."
+      ],
+      "story_close": "The Respiration Power Plant is restored. Carbon flow, electron transfer, proton pumping, oxygen reduction, ATP synthesis, heat release, and membrane location now form one causal route, and the oxygen-limited door leads directly toward fermentation and metabolic flexibility.",
+      "object_ids": [
+        "U3-K-046"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-046",
+          "term": "Prokaryotic respiratory membrane",
+          "story": "respiratory ETC and proton-translocation machinery embedded directly in a prokaryotic plasma membrane",
+          "science": "In prokaryotes, electron transport and proton translocation associated with respiration occur across the plasma membrane.",
+          "exact_name": true,
+          "hint": "respiratory ETC and proton-translocation machinery embedded directly in a prokaryotic plasma membrane"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Prokaryotic respiratory membrane",
+          "meaning": "In prokaryotes, electron transport and proton translocation associated with respiration occur across the plasma membrane.",
+          "image": "respiratory ETC and proton-translocation machinery embedded directly in a prokaryotic plasma membrane"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-046",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "CROSS_DOMAIN_MEMBRANE_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "cytoplasmic side",
+          "prokaryotic plasma membrane ETC",
+          "external/periplasmic proton side",
+          "Place respiratory ETC and proton-translocation machinery directly in a prokaryotic plasma membrane to show how chemiosmotic respiration works without mitochondria."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Prokaryotic respiratory membrane."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4F",
+  "narrative_standard": "V2-NARRATIVE-3.0-U3-F4F"
+}

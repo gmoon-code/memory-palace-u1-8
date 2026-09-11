@@ -1,0 +1,110 @@
+{
+  "schema": "memory-palace-v2-unit8-f6-browser-classroom-validation-1.0",
+  "generated_utc": "2026-09-09T07:00:00+00:00",
+  "unit_id": "unit-8",
+  "stage": "F6",
+  "release_status": "STUDENT_READY_F6_VALIDATED",
+  "curriculum_content_changed": false,
+  "canonical_records": 255,
+  "guided_journeys": 8,
+  "scenes_validated": 58,
+  "recall_scenes_validated": 18,
+  "runtime_memory_objects": 211,
+  "challenge_lab_items": 13,
+  "scope_guards": 31,
+  "exact_name_review_targets": 135,
+  "non_exact_palace_records": 76,
+  "mixed_discrimination_sets": 40,
+  "mixed_discrimination_questions": 104,
+  "target_viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "tablet",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "browser_facing_validation": {
+    "validation_mode": "production HTML render + state-machine interaction QA + responsive CSS contract + live FastAPI/HTTP smoke",
+    "scene_render_checks": 58,
+    "recall_render_checks": 18,
+    "scene_viewport_contract_checks": 174,
+    "recall_viewport_contract_checks": 54,
+    "route_lengths": [
+      12,
+      9,
+      5,
+      7,
+      5,
+      8,
+      4,
+      8
+    ],
+    "scene_geometry_findings": 0,
+    "recall_content_leak_findings": 0,
+    "broken_interpolation_findings": 0,
+    "unit_switch_findings": 0,
+    "refresh_resume_findings": 0,
+    "review_scheduler_findings": 0,
+    "mixed_review_findings": 0,
+    "challenge_lab_findings": 0,
+    "speech_preparation_findings": 0,
+    "result": "PASS",
+    "pixel_screenshot_validation": "NOT_EXECUTED_IN_THIS_CONTAINER",
+    "pixel_screenshot_note": "Chromium was directly probed with a 12-second headless about:blank render and timed out without DOM output in this sandbox. The release does not claim screenshot/pixel validation. Production render functions, state-machine interactions, responsive CSS contracts, and live HTTP/API behavior are validated directly."
+  },
+  "f6_runtime_fixes": [
+    {
+      "id": "U8-F6-AUDIO-001",
+      "finding": "Browser speech synthesis can read common Unit 8 ecological equations, abbreviations, and nitrogen-cycle notation awkwardly.",
+      "resolution": "Speech-only normalization now covers NPP, GPP, dN/dt, rmax, N₂, NH₄⁺, NO₃⁻, the Simpson diversity expression 1 − Σ(n/N)², sigma, Unicode minus, and equals without changing visible scientific text or any frozen narrative byte."
+    }
+  ],
+  "review_validation": {
+    "exact_name_targets": 135,
+    "non_exact_palace_records": 76,
+    "mixed_sets": 40,
+    "mixed_questions": 104,
+    "visible_due_limit": 5,
+    "mixed_initial_delay_hours_minimum": 48,
+    "unit_scoped_review_isolation": true,
+    "hinted_review_continuation": true,
+    "mandatory_spelling_targets": 0
+  },
+  "first_exposure_policy": {
+    "story_first": true,
+    "optional_quick_recall": true,
+    "memory_anchors_collapsed_by_default": true,
+    "recall_hides_story_location_route_cast_and_anchors": true
+  },
+  "resume_validation": {
+    "active_unit_persists": true,
+    "active_journey_persists": true,
+    "scene_index_persists": true,
+    "refresh_returns_to_home_with_continue_action": true
+  },
+  "f5_lock_sha256": "c1e9fe347a0bbc89d8c7ae43c3b5548ca5989b043ebe65120c66e5b795aaee82",
+  "runtime_file_sha256": {
+    "backend/main.py": "2fb490c24f6df9a2acb04869e02eecb1d7275c3e37037e7b5cd593b866e524e0",
+    "backend/content.py": "0473f60c2495839d818e94bcf6e252a3a31a64fb5eab38aa139f7e7c3c3f6469",
+    "backend/settings.py": "408f9ccf84baacbc7c8b71888c3d696de968949a3be63b95bc4bf8f0c4fb2e5c",
+    "frontend/js/app.js": "acfe768150cacd609e3726dabe44f5cb8b895712113e9ba49e1d4e94faccdd65",
+    "frontend/js/api.js": "7ea249133a6514e49adab56784988954cdea8456f9c40fb5af179e32771f7e44",
+    "frontend/js/audio.js": "cf29a8d1096a6f37ee6c578dd000a9362c834af5cde02e884c1619ba82306d68",
+    "frontend/js/state.js": "35d3828dc39236fa19abe8db71ae6fa32acc331c35a3a8876e925039362549c9",
+    "frontend/js/views/home.js": "eab63293f3aec59fe3843f4f463da82d53a270dcb14674390677eb1f4b9d7006",
+    "frontend/js/views/learn.js": "57489f35dc6fcf021fb639bd05c4cac3f00b37233012c5f1754d5633f0604070",
+    "frontend/js/views/review.js": "dbe4009c72dee6c9e6cf433402a8fc856c8b9612a15be503e6ccd75a59e38c63",
+    "frontend/js/views/practice.js": "9189c8ee87853b0ccf35837531e9c9e25467bd2e97595d2e74dad19737b719a4"
+  },
+  "next_gate": "Unit 8 F6 is the final validation gate. Freeze the complete Units 1-8 AP Biology release after F6 QA passes."
+}

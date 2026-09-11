@@ -1,0 +1,1144 @@
+{
+  "schema": "memory-palace-v2-unit3-f4b-story-1.0",
+  "unit_id": "unit-3",
+  "palace_id": "U3-J2",
+  "journey_id": "U3-J2",
+  "palace_name": "Enzyme Regulation Control Wing",
+  "story_title": "The Control Wing That Would Not Hold a Steady Rate",
+  "tagline": "Carry one transparent enzyme through eight diagnostic stations and learn to identify why enzyme activity changes from visible molecular evidence.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cellular-energetics investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+    "story_job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+  },
+  "premise": "The enzyme control wing is producing erratic rates. One reference enzyme is carried through heat, pH, concentration, helper, inhibitor, allosteric, cooperative, and pathway-feedback tests so each regulatory mechanism remains physically distinct.",
+  "mission": "Stress and regulate one enzyme system while preserving the difference between altered protein structure, active-site competition, allosteric control, cooperative binding, feedback inhibition, and irreversible loss of function.",
+  "finale": "The control wing stabilizes only after every rate change is tied to a distinct physical cause. Environmental stress, saturation, helper requirements, active-site competition, allosteric regulation, cooperative subunits, feedback inhibition, and irreversible inactivation can now be diagnosed from what happens to the enzyme or pathway.",
+  "estimated_minutes": 22,
+  "scene_count": 8,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen while holding the left, center, and right anchors of each station in mind. Diagnose the visible mechanism first, then attach the scientific term. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Enzyme Regulation Control Wing is an eight-station route. Enter at the stability chamber, follow the same transparent enzyme through the saturation track and helper assembly bench, then move through active-site competition, allosteric control, cooperative binding, pathway feedback, and the final irreversible-inhibition recovery bay. Left, center, and right anchors remain fixed within every station.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Enzyme Stability Chamber",
+      "short": "Stability Chamber",
+      "floor": "Control wing entrance",
+      "symbol": "⌁"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Collision and Saturation Track",
+      "short": "Saturation Track",
+      "floor": "Rate-testing corridor",
+      "symbol": "↗"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Cofactor Assembly Station",
+      "short": "Cofactor Station",
+      "floor": "Assembly bay",
+      "symbol": "⊕"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Competitive Inhibitor Gate",
+      "short": "Competitive Gate",
+      "floor": "Active-site checkpoint",
+      "symbol": "⇥"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Allosteric Control Panel",
+      "short": "Allosteric Panel",
+      "floor": "Regulation console",
+      "symbol": "⌘"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Cooperative Binding Array",
+      "short": "Cooperative Array",
+      "floor": "Linked-subunit gallery",
+      "symbol": "⛓"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Feedback Loop Control Room",
+      "short": "Feedback Room",
+      "floor": "Pathway control center",
+      "symbol": "↩"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Irreversible Inhibition Lockout",
+      "short": "Lockout Bay",
+      "floor": "Recovery bay",
+      "symbol": "⛔"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Enzyme Stability Chamber",
+      "title": "The Enzyme That Lost Its Shape",
+      "scene_kicker": "The control wing blames every slowdown on temperature. The transparent enzyme lets you see when that explanation is actually true.",
+      "location_description": "Enzyme Stability Chamber — the enzyme-shape monitor between controlled temperature and pH panels.",
+      "scene_layout": {
+        "orientation": "You enter Enzyme Stability Chamber and stop at the enzyme-shape monitor between controlled temperature and pH panels. On your left is temperature control; directly ahead is enzyme structure/function monitor; on your right is pH and chemical environment control. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Temperature control",
+            "symbol": "°C",
+            "description": "A fixed temperature dial holds the reference enzyme at its optimum, then moves toward colder and hotter conditions while the enzyme remains in the center monitor."
+          },
+          {
+            "position": "center",
+            "label": "Enzyme structure monitor",
+            "symbol": "⌁",
+            "description": "A transparent folded enzyme shows its active-site geometry and overall conformation while catalytic output is measured beneath it."
+          },
+          {
+            "position": "right",
+            "label": "pH and chemical-environment control",
+            "symbol": "pH",
+            "description": "A pH panel changes hydrogen-ion conditions independently and includes a recovery setting that can restore ordinary conditions after the stress test."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "transparent reference enzyme",
+          "kind": "continuity object",
+          "visual": "a clear folded enzyme with its active-site pocket outlined in amber and a green activity lamp below it",
+          "job": "remain the same enzyme system while temperature and pH are changed independently"
+        },
+        {
+          "name": "temperature dial",
+          "kind": "scientific control",
+          "visual": "a blue-to-red calibrated dial mounted permanently on the left wall",
+          "job": "change molecular temperature while keeping the enzyme visible in the center"
+        },
+        {
+          "name": "pH control",
+          "kind": "scientific control",
+          "visual": "a numbered acid-to-base slider mounted permanently on the right wall",
+          "job": "change the chemical environment and restore the starting pH during recovery tests"
+        }
+      ],
+      "story_open": "You leave the catalytic workshop through a narrow service door and enter the **Enzyme Stability Chamber**. A transparent version of the same enzyme is clamped directly ahead at chest height, its folded outline lit in pale green and its active-site pocket traced in amber. The room is easy to redraw. On your **left** is one large temperature dial. Directly **ahead** is the enzyme-shape monitor and a reaction counter. On your **right** is a pH slider beside a recovery switch. Every alarm in the wing is flashing at once, yet Nia covers all but these three controls. ‘One variable at a time,’ she says. ‘First we find out whether the protein itself has changed.’",
+      "story_paragraphs": [
+        "You leave the catalytic workshop through a narrow service door and enter the **Enzyme Stability Chamber**. A transparent version of the same enzyme is clamped directly ahead at chest height, its folded outline lit in pale green and its active-site pocket traced in amber. The room is easy to redraw. On your **left** is one large temperature dial. Directly **ahead** is the enzyme-shape monitor and a reaction counter. On your **right** is a pH slider beside a recovery switch. Every alarm in the wing is flashing at once, yet Nia covers all but these three controls. ‘One variable at a time,’ she says. ‘First we find out whether the protein itself has changed.’",
+        "At the starting setting, substrate reaches the active site and products leave at a steady pace. A green line marks the enzyme’s current three-dimensional conformation. Nia nudges the temperature away from the setting where this enzyme works fastest. The rate changes. She then pushes the temperature much farther. The green structural outline begins to distort, the active-site geometry shifts, and catalytic output falls sharply. Nia points to the shape monitor before naming the relationship. Nia names that visible link a **structure-function disruption**. A change in molecular **structure** can change enzyme **function** or efficiency. When temperature, pH, or another chemical condition disrupts the interactions that help maintain protein shape strongly enough to eliminate catalytic ability, the enzyme has undergone **denaturation**.",
+        "She resets the temperature and turns to the right-side pH control. The same enzyme is tested across several pH values. Activity is highest within a particular range, then drops as the environment moves farther from it. Nia labels the best-performing temperature and pH as this enzyme’s **optimal conditions**. The display immediately adds a warning. Different enzymes can have different optima. An enzyme adapted to one cellular compartment or organism does not inherit a universal optimum from the word enzyme itself. Nia labels the outer settings **temperature and pH outside the optimum** once they move beyond the range that supports highest activity. The important image is still the transparent protein in the center, because temperature and pH matter through their effects on molecular interactions, collision behavior, and, at damaging extremes, protein conformation.",
+        "Nia now performs the recovery test. She applies a moderate structural disturbance, then returns the chamber to the starting conditions. The enzyme’s outline moves back toward its earlier conformation and the reaction counter restarts. ‘This is **reversible denaturation**,’ she says. ‘Some denaturation can be reversible when the disturbance has not produced persistent structural damage.’ ‘Recovery depends on what changed and how severely.’ The screen stores that result beside the earlier failed shape. A temporary rate change and a destroyed enzyme are not automatically the same event. The diagnosis comes from the visible structure and the recovery test.",
+        "The chamber alarms finally quiet, yet the control wing’s main rate gauge still swings even while the enzyme shape remains stable. A conveyor door opens beyond the center monitor. Amber substrates are piling up behind it. Nia releases the clamp and the transparent reference enzyme slides forward with you. ‘Its shape is stable now,’ she says. ‘So the next question is how often substrate reaches an available active site.’ You follow the enzyme into the **Collision and Saturation Track**."
+      ],
+      "story_close": "You carry forward one intact reference enzyme and the rule that environmental effects must be diagnosed from their molecular consequence, especially whether protein conformation is disrupted and whether activity can recover.",
+      "object_ids": [
+        "U3-K-006",
+        "U3-K-007",
+        "U3-K-008",
+        "U3-K-009",
+        "U3-K-091"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-006",
+          "term": "Structure-function disruption",
+          "story": "the center enzyme changing conformation as its catalytic output falls",
+          "science": "A change to the molecular structure of a component in an enzymatic system may change its function or efficiency.",
+          "exact_name": true,
+          "hint": "the center enzyme changing conformation as its catalytic output falls"
+        },
+        {
+          "object_id": "U3-K-007",
+          "term": "Enzyme denaturation",
+          "story": "the transparent folded enzyme losing the active-site geometry required for catalysis under an extreme condition",
+          "science": "Temperature, pH, or chemical-environment changes can disrupt enzyme protein structure and eliminate catalytic ability.",
+          "exact_name": true,
+          "hint": "the transparent folded enzyme losing the active-site geometry required for catalysis under an extreme condition"
+        },
+        {
+          "object_id": "U3-K-008",
+          "term": "Temperature and pH outside optimum",
+          "story": "the left temperature dial and right pH slider moving away from the settings that give the highest activity",
+          "science": "Temperatures and pH values outside an enzyme’s optimal range can disrupt interactions that maintain structure and alter catalytic efficiency.",
+          "exact_name": true,
+          "hint": "the left temperature dial and right pH slider moving away from the settings that give the highest activity"
+        },
+        {
+          "object_id": "U3-K-009",
+          "term": "Reversible denaturation",
+          "story": "the disturbed enzyme regaining its working conformation and catalytic output after ordinary conditions are restored",
+          "science": "In some cases enzyme denaturation is reversible and activity can return when conditions are restored.",
+          "exact_name": true,
+          "hint": "the disturbed enzyme regaining its working conformation and catalytic output after ordinary conditions are restored"
+        },
+        {
+          "object_id": "U3-K-091",
+          "term": "Optimal conditions",
+          "story": "the temperature and pH range where the center reaction counter reaches its highest activity for this enzyme",
+          "science": "An enzyme’s optimal temperature and pH are conditions under which its catalytic activity is highest; the optimum differs among enzymes.",
+          "exact_name": false,
+          "hint": "the temperature and pH range where the center reaction counter reaches its highest activity for this enzyme"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Structure-function disruption",
+          "meaning": "A change to the molecular structure of a component in an enzymatic system may change its function or efficiency.",
+          "image": "the center enzyme changing conformation as its catalytic output falls"
+        },
+        {
+          "term": "Enzyme denaturation",
+          "meaning": "Temperature, pH, or chemical-environment changes can disrupt enzyme protein structure and eliminate catalytic ability.",
+          "image": "the transparent folded enzyme losing the active-site geometry required for catalysis under an extreme condition"
+        },
+        {
+          "term": "Temperature and pH outside optimum",
+          "meaning": "Temperatures and pH values outside an enzyme’s optimal range can disrupt interactions that maintain structure and alter catalytic efficiency.",
+          "image": "the left temperature dial and right pH slider moving away from the settings that give the highest activity"
+        },
+        {
+          "term": "Reversible denaturation",
+          "meaning": "In some cases enzyme denaturation is reversible and activity can return when conditions are restored.",
+          "image": "the disturbed enzyme regaining its working conformation and catalytic output after ordinary conditions are restored"
+        },
+        {
+          "term": "Optimal conditions",
+          "meaning": "An enzyme’s optimal temperature and pH are conditions under which its catalytic activity is highest; the optimum differs among enzymes.",
+          "image": "the temperature and pH range where the center reaction counter reaches its highest activity for this enzyme"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-007",
+      "checkpoint_prompt": "What visible change links extreme temperature or pH to loss of enzyme activity here?",
+      "checkpoint_answer": "The enzyme conformation is disrupted, changing the structure needed for function.",
+      "checkpoint_hint": "Look at the transparent enzyme in the center chamber. The temperature and pH controls matter here when they alter the conformation required for catalytic function.",
+      "next_locus": "Collision and Saturation Track",
+      "misconception_guards": [
+        "Keep denaturation distinct from ordinary reversible changes in rate; loss of function can reflect altered conformation, and reversibility depends on the severity and cause of disruption.",
+        "Keep these confusable terms physically and verbally distinct: denaturation, reversible denaturation, irreversible inhibition."
+      ],
+      "required_visual": {
+        "visual_mode": "STRUCTURE_FUNCTION_STRESS_TEST",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "temperature control",
+          "enzyme structure/function monitor",
+          "pH and chemical environment control",
+          "Hold one enzyme in a structure monitor while temperature and pH move from optimum toward extremes; let function decline as conformation is disrupted, then test whether restoring conditions allows recovery."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Structure-function disruption; Enzyme denaturation; Temperature and pH outside optimum; Reversible denaturation; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Collision and Saturation Track",
+      "title": "The Conveyor That Hit a Ceiling",
+      "scene_kicker": "The enzyme is folded correctly, yet the reaction rate still changes. Now the problem is how often reactants meet available active sites.",
+      "location_description": "Collision and Saturation Track — the reaction-rate conveyor where substrate concentration and temperature can be varied independently.",
+      "scene_layout": {
+        "orientation": "You enter Collision and Saturation Track and stop at the reaction-rate conveyor where substrate concentration and temperature can be varied independently. On your left is substrate concentration feeder; directly ahead is enzyme reaction-rate track; on your right is temperature/collision-frequency control. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Substrate concentration feeder",
+            "symbol": "◆◆",
+            "description": "Amber substrate enters from a calibrated feeder whose concentration can be raised while the amount of enzyme stays fixed."
+          },
+          {
+            "position": "center",
+            "label": "Reaction-rate conveyor",
+            "symbol": "↗",
+            "description": "Identical transparent enzymes process substrate along a central conveyor while a rate graph rises and eventually approaches a ceiling."
+          },
+          {
+            "position": "right",
+            "label": "Temperature and collision control",
+            "symbol": "⇆",
+            "description": "A separate temperature dial changes molecular speed below the damaging range so collision-frequency effects can be distinguished from substrate saturation."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "transparent reference enzyme",
+          "kind": "continuity object",
+          "visual": "the recovered enzyme from the stability chamber, now repeated in identical copies along the central conveyor",
+          "job": "hold enzyme concentration fixed while substrate and temperature variables are tested"
+        },
+        {
+          "name": "amber substrate",
+          "kind": "scientific input",
+          "visual": "small amber molecular models entering from the left concentration feeder",
+          "job": "provide the reactant whose abundance changes collision frequency and active-site occupancy"
+        },
+        {
+          "name": "rate graph",
+          "kind": "scientific output",
+          "visual": "a live graph above the conveyor plotting reaction rate as conditions change",
+          "job": "show rising reaction rate and the plateau that appears when available active sites are saturated"
+        }
+      ],
+      "story_open": "The **Collision and Saturation Track** is a straight testing corridor. On your **left**, an amber-substrate feeder has a concentration dial and a transparent hopper. Directly **ahead**, identical copies of the reference enzyme ride on a central reaction conveyor. On your **right**, a separate temperature control changes molecular speed without entering the damaging range you just tested. A rate graph hangs above the center lane. Nia fixes the amount of enzyme and leaves it unchanged. ‘This room is about encounters,’ she says. ‘Do not change the number of active sites while we change the substrate supply.’",
+      "story_paragraphs": [
+        "The **Collision and Saturation Track** is a straight testing corridor. On your **left**, an amber-substrate feeder has a concentration dial and a transparent hopper. Directly **ahead**, identical copies of the reference enzyme ride on a central reaction conveyor. On your **right**, a separate temperature control changes molecular speed without entering the damaging range you just tested. A rate graph hangs above the center lane. Nia fixes the amount of enzyme and leaves it unchanged. ‘This room is about encounters,’ she says. ‘Do not change the number of active sites while we change the substrate supply.’",
+        "She starts with only a few amber substrates. Some enzyme active sites wait empty between collisions. The feeder increases substrate concentration. More substrate molecules move through the same volume, encounters with active sites become more frequent, and the reaction-rate graph rises. Nia points to the two labeled reservoirs at the ends of the conveyor and names the variable **substrate and product concentrations**. The **relative concentrations of substrates and products** influence how efficiently an enzymatic reaction proceeds. The exact effect depends on the reaction and conditions, but concentration changes alter the molecular context in which forward and reverse processes occur.",
+        "The feeder keeps increasing substrate while enzyme concentration remains fixed. The graph rises again, then bends. Soon nearly every enzyme on the central conveyor is occupied whenever it becomes available. Nia doubles the incoming substrate once more. The hopper becomes crowded, yet the graph barely rises. You can see why. There are no large stretches of unused active sites left to recruit. At sufficiently high substrate concentration, the available enzymes approach **substrate saturation**, so reaction rate approaches a maximum for that fixed enzyme concentration.",
+        "Nia returns the substrate feeder to an unsaturated level and moves to the right-side temperature dial. She raises temperature gradually while staying below the range that disrupts the enzyme’s structure. The particles move faster and enzyme-substrate encounters become more frequent, so reaction rate rises toward the enzyme’s optimum. This is a **temperature and collision-frequency** effect. The center enzyme has not gained more active sites, and the protein is not being denatured in this part of the test. A later rise beyond the optimum would require you to consider the structural damage you saw in the previous room.",
+        "One enzyme at the far end of the conveyor still shows zero activity despite plenty of substrate, an appropriate temperature, and an open active site. A small socket on its surface is empty. The machine labels it REQUIRED HELPER. Nia lifts that enzyme off the track. ‘Concentration cannot solve a missing component,’ she says. You follow the inactive protein through the next door into the **Cofactor Assembly Station**."
+      ],
+      "story_close": "The rate ceiling stays behind as a visible reminder that more substrate cannot create more active sites once the available enzyme population is saturated.",
+      "object_ids": [
+        "U3-K-010",
+        "U3-K-011",
+        "U3-K-092"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-010",
+          "term": "Substrate and product concentrations",
+          "story": "the calibrated left feeder and product reservoir changing the concentration context around a fixed amount of enzyme",
+          "science": "Relative concentrations of substrates and products influence how efficiently an enzymatic reaction proceeds.",
+          "exact_name": true,
+          "hint": "the calibrated left feeder and product reservoir changing the concentration context around a fixed amount of enzyme"
+        },
+        {
+          "object_id": "U3-K-011",
+          "term": "Temperature and collision frequency",
+          "story": "the right-side temperature control increasing molecular speed and encounter frequency while enzyme structure stays intact",
+          "science": "Increasing temperature raises average molecular speed and enzyme-substrate collision frequency until the enzyme’s optimal temperature is reached.",
+          "exact_name": true,
+          "hint": "the right-side temperature control increasing molecular speed and encounter frequency while enzyme structure stays intact"
+        },
+        {
+          "object_id": "U3-K-092",
+          "term": "Substrate saturation",
+          "story": "the rate graph flattening while nearly every central active site remains continuously occupied",
+          "science": "At sufficiently high substrate concentration, enzyme active sites can become saturated and reaction rate approaches a maximum for the available enzyme concentration.",
+          "exact_name": true,
+          "hint": "the rate graph flattening while nearly every central active site remains continuously occupied"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Substrate and product concentrations",
+          "meaning": "Relative concentrations of substrates and products influence how efficiently an enzymatic reaction proceeds.",
+          "image": "the calibrated left feeder and product reservoir changing the concentration context around a fixed amount of enzyme"
+        },
+        {
+          "term": "Temperature and collision frequency",
+          "meaning": "Increasing temperature raises average molecular speed and enzyme-substrate collision frequency until the enzyme’s optimal temperature is reached.",
+          "image": "the right-side temperature control increasing molecular speed and encounter frequency while enzyme structure stays intact"
+        },
+        {
+          "term": "Substrate saturation",
+          "meaning": "At sufficiently high substrate concentration, enzyme active sites can become saturated and reaction rate approaches a maximum for the available enzyme concentration.",
+          "image": "the rate graph flattening while nearly every central active site remains continuously occupied"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-010",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Cofactor Assembly Station",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "RATE_VARIABLES_GRAPH_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "substrate concentration feeder",
+          "enzyme reaction-rate track",
+          "temperature/collision-frequency control",
+          "Increase substrate concentration at fixed enzyme concentration until active sites are continuously occupied, then separately change temperature to distinguish collision-frequency effects from saturation."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Substrate and product concentrations; Temperature and collision frequency; Substrate saturation."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Cofactor Assembly Station",
+      "title": "The Missing Helper Slot",
+      "scene_kicker": "One enzyme has substrate, a stable shape, and an open active site. It still cannot work until the missing nonprotein helper is identified.",
+      "location_description": "Cofactor Assembly Station — the incomplete enzyme assembly bench with removable helper components.",
+      "scene_layout": {
+        "orientation": "You enter Cofactor Assembly Station and stop at the incomplete enzyme assembly bench with removable helper components. On your left is apoenzyme/protein component; directly ahead is helper-binding assembly bench; on your right is active holoenzyme output. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Protein component",
+            "symbol": "E",
+            "description": "A folded enzyme protein sits inactive with an empty helper-binding position clearly visible on its surface."
+          },
+          {
+            "position": "center",
+            "label": "Helper-binding assembly bench",
+            "symbol": "⊕",
+            "description": "Removable inorganic and organic helper models can be placed into the enzyme assembly one at a time while catalytic activity is tested."
+          },
+          {
+            "position": "right",
+            "label": "Active holoenzyme output",
+            "symbol": "✓",
+            "description": "The completed active enzyme complex moves to a green output platform only when its required nonprotein helper is associated correctly."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "enzyme protein component",
+          "kind": "scientific part",
+          "visual": "a folded protein with an empty helper-binding position and no catalytic output",
+          "job": "show that some enzyme proteins require a nonprotein helper before the complete complex is active"
+        },
+        {
+          "name": "metal-ion helper",
+          "kind": "scientific part",
+          "visual": "a small inorganic ion model that fits one helper position on the assembly bench",
+          "job": "represent an inorganic cofactor"
+        },
+        {
+          "name": "organic helper",
+          "kind": "scientific part",
+          "visual": "an organic molecular helper tagged as vitamin-derived on the comparison tray",
+          "job": "represent a coenzyme, which is an organic cofactor"
+        }
+      ],
+      "story_open": "The **Cofactor Assembly Station** looks like a repair bench built around one incomplete enzyme. On your **left**, the folded protein component rests under a lamp with its active site intact and a second, smaller helper position left empty. Directly **ahead**, a circular assembly platform holds two removable helper trays. On your **right**, a green output pad is labeled ACTIVE COMPLEX. Nia places the protein on the center bench and sends substrate toward it. Nothing happens. The missing helper socket flashes.",
+      "story_paragraphs": [
+        "The **Cofactor Assembly Station** looks like a repair bench built around one incomplete enzyme. On your **left**, the folded protein component rests under a lamp with its active site intact and a second, smaller helper position left empty. Directly **ahead**, a circular assembly platform holds two removable helper trays. On your **right**, a green output pad is labeled ACTIVE COMPLEX. Nia places the protein on the center bench and sends substrate toward it. Nothing happens. The missing helper socket flashes.",
+        "From the first tray, Nia lifts a small metal-ion model and seats it into the required position. The enzyme becomes catalytically active and moves toward the green pad. ‘A nonprotein helper required by some enzymes is a **cofactor**,’ she says. The bench identifies this example as inorganic. Metal ions can function as cofactors for some enzymes. Nia removes it and the output falls again, keeping the relationship visible. The protein alone is not always the complete active catalytic system.",
+        "She opens the second tray. This helper is an organic molecule, and a tag shows that many molecules of this general kind are derived from vitamins. Once the organic helper is associated correctly, the activity light returns. Nia names the category **coenzyme**. The hierarchy matters. A coenzyme is an **organic cofactor**. The two words are not competing boxes where a helper must be one or the other. Cofactor is the broader helper category; coenzyme identifies the organic members of that category.",
+        "The bench now outlines the entire working assembly in green. The protein component plus its required associated cofactor forms the catalytically active **holoenzyme**. Nia keeps the term attached to the complete active complex on the right output pad, not to every enzyme protein in the building. You compare the three physical states one last time. Protein component alone on the left. Helper added at the center. Active holoenzyme on the right.",
+        "The restored holoenzyme moves out through a narrow gate. Before it can enter the next reaction lane, a pale molecule approaches from the opposite side and slips into the enzyme’s active site. The amber substrate stops at the threshold. Nia looks at the occupied pocket. ‘The helper problem is fixed. This is a different kind of control.’ You follow both molecules into the **Competitive Inhibitor Gate**."
+      ],
+      "story_close": "You leave with a three-part hierarchy that can be redrawn from the bench itself: cofactor is the broad nonprotein-helper category, coenzyme is an organic cofactor, and a holoenzyme is the active enzyme complex with its required helper associated.",
+      "object_ids": [
+        "U3-K-093",
+        "U3-K-094",
+        "U3-K-095"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-093",
+          "term": "Cofactor",
+          "story": "an inorganic helper such as a metal ion completing a required nonprotein helper position on the enzyme",
+          "science": "A cofactor is a nonprotein helper required for the function of some enzymes; inorganic cofactors can include metal ions.",
+          "exact_name": true,
+          "hint": "an inorganic helper such as a metal ion completing a required nonprotein helper position on the enzyme"
+        },
+        {
+          "object_id": "U3-K-094",
+          "term": "Coenzyme",
+          "story": "an organic, often vitamin-derived helper occupying the same conceptual helper category",
+          "science": "A coenzyme is an organic cofactor; many coenzymes are derived from vitamins.",
+          "exact_name": true,
+          "hint": "an organic, often vitamin-derived helper occupying the same conceptual helper category"
+        },
+        {
+          "object_id": "U3-K-095",
+          "term": "Holoenzyme",
+          "story": "the complete catalytically active enzyme complex glowing green only after its required cofactor is associated",
+          "science": "A holoenzyme is the catalytically active enzyme complex with its required cofactor or cofactors associated.",
+          "exact_name": true,
+          "hint": "the complete catalytically active enzyme complex glowing green only after its required cofactor is associated"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cofactor",
+          "meaning": "A cofactor is a nonprotein helper required for the function of some enzymes; inorganic cofactors can include metal ions.",
+          "image": "an inorganic helper such as a metal ion completing a required nonprotein helper position on the enzyme"
+        },
+        {
+          "term": "Coenzyme",
+          "meaning": "A coenzyme is an organic cofactor; many coenzymes are derived from vitamins.",
+          "image": "an organic, often vitamin-derived helper occupying the same conceptual helper category"
+        },
+        {
+          "term": "Holoenzyme",
+          "meaning": "A holoenzyme is the catalytically active enzyme complex with its required cofactor or cofactors associated.",
+          "image": "the complete catalytically active enzyme complex glowing green only after its required cofactor is associated"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-093",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Competitive Inhibitor Gate",
+      "misconception_guards": [
+        "A coenzyme is an organic cofactor; do not present cofactor and coenzyme as mutually exclusive categories.",
+        "Use holoenzyme only for the active enzyme complex that includes its required nonprotein component(s).",
+        "Keep these confusable terms physically and verbally distinct: cofactor, coenzyme, holoenzyme.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-004; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "MOLECULAR_ASSEMBLY_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "apoenzyme/protein component",
+          "helper-binding assembly bench",
+          "active holoenzyme output",
+          "Start with an inactive protein component, add a required helper, compare an inorganic cofactor with an organic coenzyme, and show the complete active enzyme complex only after the required component is present."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Cofactor; Coenzyme; Holoenzyme."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Competitive Inhibitor Gate",
+      "title": "Two Molecules, One Door",
+      "scene_kicker": "The substrate and inhibitor are approaching from opposite sides, yet both need the same active-site pocket.",
+      "location_description": "Competitive Inhibitor Gate — the active-site checkpoint where substrate and competitor approach the same binding pocket.",
+      "scene_layout": {
+        "orientation": "You enter Competitive Inhibitor Gate and stop at the active-site checkpoint where substrate and competitor approach the same binding pocket. On your left is substrate lane; directly ahead is shared active-site gate; on your right is competitive inhibitor lane. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Substrate lane",
+            "symbol": "◆",
+            "description": "Amber substrate molecules approach the enzyme active site from the left in an adjustable stream."
+          },
+          {
+            "position": "center",
+            "label": "Shared active-site gate",
+            "symbol": "⊂",
+            "description": "One enzyme active site can be occupied by either the substrate or a similarly fitting reversible competitor, never both at the same instant."
+          },
+          {
+            "position": "right",
+            "label": "Competitive inhibitor lane",
+            "symbol": "◇",
+            "description": "A look-alike inhibitor enters from the right and repeatedly competes with substrate for the same active-site pocket."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "amber substrate",
+          "kind": "continuity object",
+          "visual": "the same amber substrate stream used on the saturation track",
+          "job": "compete for access to the enzyme active site"
+        },
+        {
+          "name": "reversible competitor",
+          "kind": "scientific comparison",
+          "visual": "a pale molecular model with enough active-site compatibility to occupy the same pocket temporarily",
+          "job": "reduce substrate access by reversibly occupying the active site"
+        },
+        {
+          "name": "shared active site",
+          "kind": "scientific structure",
+          "visual": "one pocket in the transparent enzyme at the center gate",
+          "job": "make active-site competition physically explicit"
+        }
+      ],
+      "story_open": "You enter the **Competitive Inhibitor Gate** and stop exactly where three lanes meet. On your **left**, amber substrate molecules advance in a steady line. Directly **ahead**, the transparent enzyme presents one active-site pocket. On your **right**, pale competitor molecules wait in a second lane. The competitors resemble the substrate closely enough to fit the same pocket, though they are not converted into the intended product. The geometry makes the conflict immediate. One pocket cannot hold both molecules at the same time.",
+      "story_paragraphs": [
+        "You enter the **Competitive Inhibitor Gate** and stop exactly where three lanes meet. On your **left**, amber substrate molecules advance in a steady line. Directly **ahead**, the transparent enzyme presents one active-site pocket. On your **right**, pale competitor molecules wait in a second lane. The competitors resemble the substrate closely enough to fit the same pocket, though they are not converted into the intended product. The geometry makes the conflict immediate. One pocket cannot hold both molecules at the same time.",
+        "Nia releases equal streams from both sides. An amber substrate reaches the active site first and the reaction proceeds. On the next cycle, a pale molecule arrives first and occupies the pocket. The substrate stops outside. The competitor later leaves, and the pocket becomes available again. Nia names the mechanism **competitive inhibition**. In the standard reversible model shown here, the inhibitor reduces substrate access by binding the enzyme’s **active site**. Nothing has happened at a distant regulatory pocket. The competition is local and visible at the shared gate.",
+        "The reaction-rate display falls because some active-site opportunities are being captured by the competitor. Nia leaves the inhibitor stream unchanged and turns up only the substrate feeder on the left. Amber molecules now reach the gate much more frequently. The competitor can still bind, but substrate occupies the active site in a larger fraction of encounters. For a **reversible competitive inhibitor**, increasing substrate concentration can reduce the inhibitor’s effect by increasing the probability that substrate occupies the shared active site.",
+        "She lowers substrate again and the competitor regains more gate time. The inhibitor has not vanished, and increasing substrate did not chemically destroy it. You are watching a probability shift caused by two molecules competing for the same site. Nia saves a frozen image of the three lanes because you will need it for comparison. Left substrate. Center active site. Right competitor. ‘When we enter the next room,’ she says, ‘the regulator will no longer need this door.’",
+        "A side panel on the enzyme body begins flashing several centimeters away from the active site. Even with the center pocket empty, catalytic activity falls. The competitive model can no longer explain the slowdown. A door opens on the right wall, aligned with that distant panel. You carry the same transparent enzyme into the **Allosteric Control Panel**."
+      ],
+      "story_close": "The shared gate remains behind as the defining image of reversible competitive inhibition, two molecules changing occupancy probabilities at the same active site.",
+      "object_ids": [
+        "U3-K-012",
+        "U3-K-097"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-012",
+          "term": "Competitive inhibition",
+          "story": "amber substrate and a reversible competitor approaching the same central active-site pocket from opposite lanes",
+          "science": "Competitive inhibitors can bind reversibly to an enzyme active site and reduce substrate access.",
+          "exact_name": true,
+          "hint": "amber substrate and a reversible competitor approaching the same central active-site pocket from opposite lanes"
+        },
+        {
+          "object_id": "U3-K-097",
+          "term": "Competitive inhibition and substrate concentration",
+          "story": "the left substrate stream becoming denser so substrate occupies the shared active site more often while inhibitor concentration stays unchanged",
+          "science": "For a reversible competitive inhibitor, increasing substrate concentration can reduce the inhibitor’s effect by increasing the probability that substrate occupies the active site.",
+          "exact_name": false,
+          "hint": "the left substrate stream becoming denser so substrate occupies the shared active site more often while inhibitor concentration stays unchanged"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Competitive inhibition",
+          "meaning": "Competitive inhibitors can bind reversibly to an enzyme active site and reduce substrate access.",
+          "image": "amber substrate and a reversible competitor approaching the same central active-site pocket from opposite lanes"
+        },
+        {
+          "term": "Competitive inhibition and substrate concentration",
+          "meaning": "For a reversible competitive inhibitor, increasing substrate concentration can reduce the inhibitor’s effect by increasing the probability that substrate occupies the active site.",
+          "image": "the left substrate stream becoming denser so substrate occupies the shared active site more often while inhibitor concentration stays unchanged"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-012",
+      "checkpoint_prompt": "Why can increasing substrate concentration reduce the effect seen at this shared gate?",
+      "checkpoint_answer": "Substrate and competitive inhibitor compete for the same active site, so more substrate increases the chance that substrate occupies it.",
+      "checkpoint_hint": "Return to the three-lane gate. Substrate enters from the left and competitor from the right, and both are trying to occupy the same center active-site pocket.",
+      "next_locus": "Allosteric Control Panel",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: competitive inhibition, noncompetitive inhibition, irreversible inhibition.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-005; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "COMPETITION_MECHANISM",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "substrate lane",
+          "shared active-site gate",
+          "competitive inhibitor lane",
+          "Send substrate and a similarly fitting competitor toward the same active site, then raise substrate concentration to show why active-site competition can be partly overcome."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Competitive inhibition; Competitive inhibition and substrate concentration."
+    },
+    {
+      "scene_index": 4,
+      "locus": "Allosteric Control Panel",
+      "title": "The Switch Far from the Active Site",
+      "scene_kicker": "The active site is empty, yet enzyme activity changes when a molecule binds on the opposite side of the protein.",
+      "location_description": "Allosteric Control Panel — the enzyme control console with a regulatory site physically separated from the active site.",
+      "scene_layout": {
+        "orientation": "You enter Allosteric Control Panel and stop at the enzyme control console with a regulatory site physically separated from the active site. On your left is active-site reaction zone; directly ahead is enzyme body; on your right is allosteric regulatory site. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Active-site reaction zone",
+            "symbol": "⊂",
+            "description": "The substrate-binding pocket remains visible on the left side of the same transparent enzyme so its activity can be watched while regulation occurs elsewhere."
+          },
+          {
+            "position": "center",
+            "label": "Enzyme body",
+            "symbol": "⌁",
+            "description": "The enzyme spans the center console and visibly shifts between more-active and less-active conformations."
+          },
+          {
+            "position": "right",
+            "label": "Allosteric regulatory site",
+            "symbol": "●",
+            "description": "A separate regulatory pocket on the right accepts activator or inhibitor molecules without occupying the substrate-binding active site."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "transparent reference enzyme",
+          "kind": "continuity object",
+          "visual": "the same enzyme with its active site glowing on the left and a separate regulatory pocket glowing on the right",
+          "job": "show how regulation at one site changes activity at another"
+        },
+        {
+          "name": "allosteric activator",
+          "kind": "regulatory molecule",
+          "visual": "a green regulator that binds the right-side regulatory pocket",
+          "job": "stabilize a more active enzyme conformation"
+        },
+        {
+          "name": "allosteric inhibitor",
+          "kind": "regulatory molecule",
+          "visual": "a red regulator that binds the same separate regulatory region in the comparison test",
+          "job": "stabilize a less active enzyme conformation without occupying the active site"
+        }
+      ],
+      "story_open": "The **Allosteric Control Panel** keeps the entire enzyme in one transparent display. On your **left**, the familiar active site receives amber substrate. Directly **ahead**, the folded enzyme body spans the center console. On your **right**, a second pocket glows blue several molecular regions away from the substrate-binding site. Nia locks the left active site open so you can see that the regulator never enters it. ‘Keep your eyes on both pockets,’ she says.",
+      "story_paragraphs": [
+        "The **Allosteric Control Panel** keeps the entire enzyme in one transparent display. On your **left**, the familiar active site receives amber substrate. Directly **ahead**, the folded enzyme body spans the center console. On your **right**, a second pocket glows blue several molecular regions away from the substrate-binding site. Nia locks the left active site open so you can see that the regulator never enters it. ‘Keep your eyes on both pockets,’ she says.",
+        "A red regulator binds the right-side pocket. The central protein shifts. The left active site changes enough that substrate binding or catalysis becomes less effective, and the reaction-rate lamp dims. The right pocket is an **allosteric site**, a regulatory binding site distinct from the active site. Regulation produced by a molecule binding noncovalently at such a separate site and changing activity through a conformational shift is **allosteric regulation**. The molecule does not have to block the substrate-binding pocket directly to control the reaction.",
+        "Nia repeats the test with two regulators. The green regulator binds on the right and stabilizes a conformation with higher activity. It is an **allosteric activator**. The red regulator stabilizes a less-active conformation. It is an **allosteric inhibitor**. The center enzyme rocks between the two conformational states while the active site stays on the left and the regulatory site stays on the right. The location of binding and the resulting conformational change are the retrieval anchors.",
+        "A comparison screen now places the previous room beside this one. In competitive inhibition, the reversible competitor occupied the active site itself. Here, the inhibitor binds a separate allosteric region and changes the enzyme’s behavior through conformation. A **noncompetitive inhibitor** can act through an allosteric site and reduce enzyme activity without competing for occupancy of the active site. Nia keeps that example tied to this separate-site mechanism and warns against treating every allosteric interaction as if it were active-site competition.",
+        "The right-side regulator releases, but the center console remains connected to a larger protein assembly beyond the wall. Four linked subunits light up in sequence. Nia sends one amber substrate toward the first subunit and watches the others shift before they have bound anything. ‘A regulatory change can travel through one protein complex,’ she says. You follow the linked structure into the **Cooperative Binding Array**."
+      ],
+      "story_close": "You leave the room with two sites held apart in space, the substrate-binding active site on the left and the allosteric regulatory site on the right, connected through a conformational change in the enzyme body.",
+      "object_ids": [
+        "U3-K-013",
+        "U3-K-098",
+        "U3-K-099",
+        "U3-K-100",
+        "U3-K-101"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-013",
+          "term": "Noncompetitive inhibition",
+          "story": "a red regulator binding the separate right-side site while activity falls at the left active site",
+          "science": "Noncompetitive inhibitors can bind allosteric sites and change enzyme activity.",
+          "exact_name": true,
+          "hint": "a red regulator binding the separate right-side site while activity falls at the left active site"
+        },
+        {
+          "object_id": "U3-K-098",
+          "term": "Allosteric site",
+          "story": "the blue regulatory pocket physically separated from the substrate-binding active site",
+          "science": "An allosteric site is a regulatory binding site distinct from an enzyme’s active site.",
+          "exact_name": true,
+          "hint": "the blue regulatory pocket physically separated from the substrate-binding active site"
+        },
+        {
+          "object_id": "U3-K-099",
+          "term": "Allosteric regulation",
+          "story": "a regulator binding on the right, shifting the center enzyme conformation, and changing activity on the left",
+          "science": "Allosteric regulation occurs when a regulatory molecule binds noncovalently at a site other than the active site and changes enzyme activity through a conformational change.",
+          "exact_name": true,
+          "hint": "a regulator binding on the right, shifting the center enzyme conformation, and changing activity on the left"
+        },
+        {
+          "object_id": "U3-K-100",
+          "term": "Allosteric activator",
+          "story": "a green regulator stabilizing the more-active enzyme conformation",
+          "science": "An allosteric activator is a regulatory molecule that binds an allosteric site and stabilizes a more active enzyme conformation.",
+          "exact_name": true,
+          "hint": "a green regulator stabilizing the more-active enzyme conformation"
+        },
+        {
+          "object_id": "U3-K-101",
+          "term": "Allosteric inhibitor",
+          "story": "a red regulator stabilizing the less-active enzyme conformation",
+          "science": "An allosteric inhibitor is a regulatory molecule that binds an allosteric site and stabilizes a less active enzyme conformation.",
+          "exact_name": true,
+          "hint": "a red regulator stabilizing the less-active enzyme conformation"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Noncompetitive inhibition",
+          "meaning": "Noncompetitive inhibitors can bind allosteric sites and change enzyme activity.",
+          "image": "a red regulator binding the separate right-side site while activity falls at the left active site"
+        },
+        {
+          "term": "Allosteric site",
+          "meaning": "An allosteric site is a regulatory binding site distinct from an enzyme’s active site.",
+          "image": "the blue regulatory pocket physically separated from the substrate-binding active site"
+        },
+        {
+          "term": "Allosteric regulation",
+          "meaning": "Allosteric regulation occurs when a regulatory molecule binds noncovalently at a site other than the active site and changes enzyme activity through a conformational change.",
+          "image": "a regulator binding on the right, shifting the center enzyme conformation, and changing activity on the left"
+        },
+        {
+          "term": "Allosteric activator",
+          "meaning": "An allosteric activator is a regulatory molecule that binds an allosteric site and stabilizes a more active enzyme conformation.",
+          "image": "a green regulator stabilizing the more-active enzyme conformation"
+        },
+        {
+          "term": "Allosteric inhibitor",
+          "meaning": "An allosteric inhibitor is a regulatory molecule that binds an allosteric site and stabilizes a less active enzyme conformation.",
+          "image": "a red regulator stabilizing the less-active enzyme conformation"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-013",
+      "checkpoint_prompt": "How is the regulatory site in this room different from the substrate-binding pocket?",
+      "checkpoint_answer": "It is a separate allosteric site; binding there changes enzyme conformation and activity.",
+      "checkpoint_hint": "Keep the two enzyme pockets separate. Substrate binds on the left, while the regulator binds the distinct right-side site and changes the center protein conformation.",
+      "next_locus": "Cooperative Binding Array",
+      "misconception_guards": [
+        "The regulatory molecule binds an allosteric/regulatory site, not necessarily the substrate or active site.",
+        "Do not collapse allosteric inhibition into active-site competition.",
+        "Keep these confusable terms physically and verbally distinct: competitive inhibition, noncompetitive inhibition, irreversible inhibition.",
+        "Keep these confusable terms physically and verbally distinct: allosteric site, allosteric activator, allosteric inhibitor.",
+        "Keep these confusable terms physically and verbally distinct: cooperativity, feedback inhibition, allosteric regulation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-006, RF-U3-007; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "ALLOSTERIC_CONTROL_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "active-site reaction zone",
+          "enzyme body",
+          "allosteric regulatory site",
+          "Bind regulatory molecules at a site physically separated from the active site and show the enzyme conformation shifting so activity rises or falls without direct competition for the substrate-binding pocket."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Noncompetitive inhibition; Allosteric site; Allosteric regulation; Allosteric activator; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Cooperative Binding Array",
+      "title": "The First Binding Changes the Rest",
+      "scene_kicker": "One substrate binds at the far left of a multisubunit enzyme, and the remaining active sites change before they bind anything themselves.",
+      "location_description": "Cooperative Binding Array — the multi-subunit enzyme display where one ligand-binding event changes later binding behavior.",
+      "scene_layout": {
+        "orientation": "You enter Cooperative Binding Array and stop at the multi-subunit enzyme display where one ligand-binding event changes later binding behavior. On your left is first binding site; directly ahead is linked subunit array; on your right is later binding sites. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "First binding site",
+            "symbol": "1",
+            "description": "The first substrate-binding site sits on the left subunit of one linked multisubunit enzyme complex."
+          },
+          {
+            "position": "center",
+            "label": "Linked subunit array",
+            "symbol": "⛓",
+            "description": "Several protein subunits remain physically connected, allowing a conformational change in one part of the complex to propagate across the array."
+          },
+          {
+            "position": "right",
+            "label": "Later binding sites",
+            "symbol": "2 3 4",
+            "description": "The remaining active sites change their binding behavior after the first substrate binds on the left."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "multisubunit enzyme",
+          "kind": "scientific structure",
+          "visual": "four linked protein subunits arranged in one conventional enzyme complex with four visible active sites",
+          "job": "transmit a binding-associated conformational change across connected subunits"
+        },
+        {
+          "name": "first substrate",
+          "kind": "scientific input",
+          "visual": "one amber substrate approaching the leftmost active site",
+          "job": "trigger the first binding event"
+        },
+        {
+          "name": "later substrates",
+          "kind": "scientific inputs",
+          "visual": "additional amber substrates waiting beside the right-side active sites",
+          "job": "reveal how the first binding event changes later binding behavior"
+        }
+      ],
+      "story_open": "The **Cooperative Binding Array** is a long glass case containing one multisubunit enzyme complex. On your **left**, the first active site is empty. Directly **ahead**, four linked protein subunits form one connected structure. On your **right**, three later active sites wait beside amber substrates. Thin alignment lines make the subunits’ shapes easy to compare. Nia asks you to watch the right side before she allows the first substrate to bind.",
+      "story_paragraphs": [
+        "The **Cooperative Binding Array** is a long glass case containing one multisubunit enzyme complex. On your **left**, the first active site is empty. Directly **ahead**, four linked protein subunits form one connected structure. On your **right**, three later active sites wait beside amber substrates. Thin alignment lines make the subunits’ shapes easy to compare. Nia asks you to watch the right side before she allows the first substrate to bind.",
+        "At the starting moment, all four sites have one conformation. The first amber substrate enters the left site. As it binds, the left subunit shifts slightly. That shift propagates through the connected center array. The remaining subunits change conformation as well, and the right-side sites now bind subsequent substrate more readily. The first binding event has altered the behavior of later sites in the same protein complex.",
+        "Nia names this pattern **cooperativity**. In some multisubunit enzymes, substrate binding at one active site promotes a conformation that increases activity or substrate affinity at other active sites. The important feature is the linkage among subunits. The first substrate is not traveling through the protein to occupy the other sites. Its binding changes the shared protein conformation, and that conformational change alters later binding behavior.",
+        "The allosteric control panel is still visible through the doorway behind you, which makes the distinction useful. Both rooms involve conformational communication within a protein. In the previous room, a separate regulatory molecule bound an allosteric site and altered activity. Here, substrate binding at one active site changes the behavior of other active sites in a multisubunit enzyme. Nia leaves the two images side by side so **cooperativity** does not collapse into the broader idea of allosteric regulation.",
+        "The rightmost substrate is converted into a blue product and drops into a channel under the case. Instead of leaving the building, the blue product travels along a pipe toward a large pathway map. More copies begin to accumulate at the far end of that map. Nia follows the return pipe with her finger. ‘Now the signal is not staying inside one enzyme,’ she says. You follow the blue product into the **Feedback Loop Control Room**."
+      ],
+      "story_close": "The multisubunit array freezes with the first site bound on the left and the later sites altered on the right, giving cooperativity one distinct physical signature.",
+      "object_ids": [
+        "U3-K-102"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-102",
+          "term": "Cooperativity",
+          "story": "one substrate binding to the first subunit and a linked conformational change making later active sites more active or more receptive",
+          "science": "Cooperativity occurs in some multisubunit enzymes when substrate binding at one active site promotes a conformation that increases activity at other active sites.",
+          "exact_name": true,
+          "hint": "one substrate binding to the first subunit and a linked conformational change making later active sites more active or more receptive"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Cooperativity",
+          "meaning": "Cooperativity occurs in some multisubunit enzymes when substrate binding at one active site promotes a conformation that increases activity at other active sites.",
+          "image": "one substrate binding to the first subunit and a linked conformational change making later active sites more active or more receptive"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-102",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Feedback Loop Control Room",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: cooperativity, feedback inhibition, allosteric regulation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-007; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "COOPERATIVITY_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "first binding site",
+          "linked subunit array",
+          "later binding sites",
+          "Bind one ligand to the first subunit of a linked multi-subunit protein and visibly change the binding behavior of the remaining subunits."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Cooperativity."
+    },
+    {
+      "scene_index": 6,
+      "locus": "Feedback Loop Control Room",
+      "title": "The Product That Shut Down Its Own Line",
+      "scene_kicker": "The pathway is producing exactly what the cell needs. The problem begins when the final product keeps accumulating.",
+      "location_description": "Feedback Loop Control Room — the metabolic pathway board where a downstream product feeds back to an earlier control enzyme.",
+      "scene_layout": {
+        "orientation": "You enter Feedback Loop Control Room and stop at the metabolic pathway board where a downstream product feeds back to an earlier control enzyme. On your left is pathway inputs and early enzyme; directly ahead is multi-step metabolic route; on your right is end product feedback line. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Pathway input and early enzyme",
+            "symbol": "A→",
+            "description": "A starting substrate enters an early regulatory enzyme before moving into the central sequence of metabolic reactions."
+          },
+          {
+            "position": "center",
+            "label": "Multi-step metabolic pathway",
+            "symbol": "→→→",
+            "description": "A visible chain of enzyme-catalyzed steps converts the starting material through intermediates toward one final product."
+          },
+          {
+            "position": "right",
+            "label": "End-product feedback line",
+            "symbol": "↩",
+            "description": "Accumulating final product enters a return channel that leads back to the earlier regulatory enzyme and decreases pathway flow."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "early regulatory enzyme",
+          "kind": "scientific structure",
+          "visual": "the first major control enzyme at the left entrance of a multi-step pathway",
+          "job": "adjust pathway flow when a downstream product feeds back"
+        },
+        {
+          "name": "pathway intermediates",
+          "kind": "scientific process",
+          "visual": "distinct molecular products passed from one central enzyme-catalyzed step to the next",
+          "job": "make the pathway a sequence rather than one single reaction"
+        },
+        {
+          "name": "final product",
+          "kind": "continuity output",
+          "visual": "a blue product accumulating at the right end of the pathway",
+          "job": "feed back to the earlier regulatory enzyme when enough product has accumulated"
+        }
+      ],
+      "story_open": "The **Feedback Loop Control Room** spans an entire wall. On your **left**, a starting substrate enters an early regulatory enzyme. Directly **ahead**, the product of that reaction moves through a visible chain of additional enzyme-catalyzed steps. On your **right**, blue final product collects in a transparent reservoir. A return pipe curves from that reservoir all the way back to the early enzyme. At first the pipe is empty, and the pathway runs continuously from left to right.",
+      "story_paragraphs": [
+        "The **Feedback Loop Control Room** spans an entire wall. On your **left**, a starting substrate enters an early regulatory enzyme. Directly **ahead**, the product of that reaction moves through a visible chain of additional enzyme-catalyzed steps. On your **right**, blue final product collects in a transparent reservoir. A return pipe curves from that reservoir all the way back to the early enzyme. At first the pipe is empty, and the pathway runs continuously from left to right.",
+        "Nia allows the final product to accumulate. When the right reservoir reaches its marked level, blue product enters the return pipe and reaches the earlier regulatory enzyme. That enzyme’s activity decreases. The center pathway slows, and less final product is made. Nia names the mechanism **feedback inhibition**. A downstream product inhibits an enzyme acting earlier in the same metabolic pathway, reducing further production when enough product has accumulated.",
+        "The diagram matters as a route. The final product is not simply blocking the last reaction. It travels conceptually from the right-side endpoint back toward an earlier control point on the left. As the product level later falls, the pathway can resume according to the regulatory system involved. This creates a self-regulating flow that helps prevent unnecessary overproduction and conserves cellular resources.",
+        "Nia opens a second layer of the control board. Feedback inhibition is only one way cells regulate metabolic pathways. Cells can alter the **activity** of enzymes already present, place enzymes in particular cellular **locations**, change enzyme **abundance**, and regulate the **gene expression** that determines how much enzyme is produced. She calls this broader control **metabolic pathway regulation**. She keeps these controls secondary to the main return loop so the central mental picture remains simple. Pathway output can influence an earlier enzyme and change pathway flux.",
+        "Most alarms in the wing turn green. One remains red in a recovery bay beyond the right wall. The display says the inhibitor has already been removed, temperature and pH are normal, substrate is available, and the enzyme still does nothing. Nia closes the feedback valve. ‘That failure does not behave like the reversible controls we have tested.’ You follow her into the **Irreversible Inhibition Lockout**."
+      ],
+      "story_close": "You carry forward the right-to-left return loop, a downstream product feeding back to an earlier enzyme and reducing the pathway’s own output.",
+      "object_ids": [
+        "U3-K-103",
+        "U3-K-104"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-103",
+          "term": "Feedback inhibition",
+          "story": "blue final product accumulating on the right and returning through a loop to inhibit an earlier enzyme on the left",
+          "science": "Feedback inhibition occurs when a downstream product inhibits an enzyme acting earlier in the same metabolic pathway, reducing further product formation.",
+          "exact_name": true,
+          "hint": "blue final product accumulating on the right and returning through a loop to inhibit an earlier enzyme on the left"
+        },
+        {
+          "object_id": "U3-K-104",
+          "term": "Metabolic pathway regulation",
+          "story": "a secondary control board adjusting enzyme activity, location, abundance, and gene expression around the main feedback-regulated pathway",
+          "science": "Cells regulate metabolic pathways by controlling enzyme activity, enzyme location, and enzyme abundance, including regulation of gene expression.",
+          "exact_name": false,
+          "hint": "a secondary control board adjusting enzyme activity, location, abundance, and gene expression around the main feedback-regulated pathway"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Feedback inhibition",
+          "meaning": "Feedback inhibition occurs when a downstream product inhibits an enzyme acting earlier in the same metabolic pathway, reducing further product formation.",
+          "image": "blue final product accumulating on the right and returning through a loop to inhibit an earlier enzyme on the left"
+        },
+        {
+          "term": "Metabolic pathway regulation",
+          "meaning": "Cells regulate metabolic pathways by controlling enzyme activity, enzyme location, and enzyme abundance, including regulation of gene expression.",
+          "image": "a secondary control board adjusting enzyme activity, location, abundance, and gene expression around the main feedback-regulated pathway"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-103",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Irreversible Inhibition Lockout",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: cooperativity, feedback inhibition, allosteric regulation.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-007; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "PATHWAY_FEEDBACK_LOOP",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "pathway inputs and early enzyme",
+          "multi-step metabolic route",
+          "end product feedback line",
+          "Run a multi-step pathway until end product accumulates, then route that product back to an earlier regulatory enzyme and show pathway flux decreasing."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Feedback inhibition; Metabolic pathway regulation."
+    },
+    {
+      "scene_index": 7,
+      "locus": "Irreversible Inhibition Lockout",
+      "title": "The Enzyme That Would Not Recover",
+      "scene_kicker": "Every ordinary condition has been restored, yet one enzyme remains inactive. The recovery test reveals a fundamentally different kind of inhibition.",
+      "location_description": "Irreversible Inhibition Lockout — the damaged enzyme bay where a persistent inhibitor prevents recovery after ordinary conditions are restored.",
+      "scene_layout": {
+        "orientation": "You enter Irreversible Inhibition Lockout and stop at the damaged enzyme bay where a persistent inhibitor prevents recovery after ordinary conditions are restored. On your left is functional enzyme reference; directly ahead is irreversibly inhibited enzyme; on your right is failed recovery test. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Functional reference enzyme",
+            "symbol": "✓",
+            "description": "An untreated transparent enzyme continues catalysis normally and provides a side-by-side recovery reference."
+          },
+          {
+            "position": "center",
+            "label": "Persistently inhibited enzyme",
+            "symbol": "⛔",
+            "description": "A second enzyme receives a persistent inhibitor interaction and remains inactive after the surrounding inhibitor is washed away."
+          },
+          {
+            "position": "right",
+            "label": "Recovery test",
+            "symbol": "↻",
+            "description": "Fresh substrate, ordinary temperature, ordinary pH, and clean solution are restored, yet the treated enzyme still fails to resume catalysis."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing enzyme shape, reaction-rate, and pathway-control models",
+          "job": "Nia keeps the control-wing geography fixed, changes one variable at a time, asks you to diagnose the cause of each rate change, and names scientific terms after the mechanism is visible."
+        },
+        {
+          "name": "functional reference enzyme",
+          "kind": "scientific control",
+          "visual": "an untreated transparent enzyme with a working active site and green activity lamp",
+          "job": "show what recovery looks like under ordinary conditions"
+        },
+        {
+          "name": "treated enzyme",
+          "kind": "scientific comparison",
+          "visual": "an otherwise identical enzyme carrying a persistent inhibitor interaction and a dark activity lamp",
+          "job": "test whether activity returns after inhibitor removal"
+        },
+        {
+          "name": "washout and recovery station",
+          "kind": "scientific control",
+          "visual": "a clean-solution rinse followed by fresh substrate and restored temperature and pH",
+          "job": "distinguish persistent irreversible inhibition from reversible inhibition or a reversible environmental disturbance"
+        }
+      ],
+      "story_open": "The final room, **Irreversible Inhibition Lockout**, contains two enzyme bays. On your **left**, an untreated reference enzyme repeatedly converts amber substrate and flashes green. Directly **ahead**, an identical enzyme sits dark after exposure to a persistent inhibitor. On your **right**, the recovery station is already prepared with clean solution, fresh substrate, ordinary temperature, and ordinary pH. Nia places the two enzymes side by side so you can compare recovery under the same conditions.",
+      "story_paragraphs": [
+        "The final room, **Irreversible Inhibition Lockout**, contains two enzyme bays. On your **left**, an untreated reference enzyme repeatedly converts amber substrate and flashes green. Directly **ahead**, an identical enzyme sits dark after exposure to a persistent inhibitor. On your **right**, the recovery station is already prepared with clean solution, fresh substrate, ordinary temperature, and ordinary pH. Nia places the two enzymes side by side so you can compare recovery under the same conditions.",
+        "First she washes all free inhibitor out of the center bay. The solution sensor confirms that the surrounding inhibitor is gone. Fresh substrate enters. The treated enzyme still produces no product. Nia restores every environmental control you used in the stability chamber. The active-site region remains persistently inactivated. In many cases, irreversible inhibitors form covalent or otherwise very stable interactions with an enzyme. The defining result in this room is persistence after the inhibitor has been removed.",
+        "Nia names the mechanism **irreversible enzyme inhibition**. She then points back through three windows in the corridor. At the competitive gate, a reversible inhibitor could leave the active site, and greater substrate concentration could reduce its effect. At the allosteric panel, regulatory molecules changed activity through reversible binding and conformational control. In the stability chamber, some structurally disturbed enzymes recovered when ordinary conditions returned. Here, the center enzyme fails the washout and recovery test. ‘Irreversible’ describes persistent loss of activity, not merely an inhibitor that feels unusually strong.",
+        "The room also separates irreversible inhibition from denaturation. Both can produce an inactive enzyme, so the word inactive is not enough for diagnosis. In the earlier chamber, you manipulated temperature and pH and watched protein conformation respond to environmental stress. In this lockout, the key evidence is a persistent inhibitor-associated inactivation that remains after free inhibitor is removed. The cause and the recovery behavior distinguish the mechanisms.",
+        "Nia turns off the last red alarm. A route map lights across the floor behind you. It traces the entire control wing from the stability chamber to saturation, helper assembly, active-site competition, allosteric control, cooperativity, feedback, and finally irreversible lockout. The transparent reference enzyme appears above the map in each diagnostic state. ‘An enzyme can speed up, slow down, or stop for many different reasons,’ she says. ‘Your job is to read the evidence and identify the mechanism.’ The final door opens toward the cellular energy hall, where reactions will be connected to energy transfer rather than enzyme regulation alone."
+      ],
+      "story_close": "The control wing stabilizes with each failure tied to its own mechanism, leaving you with a diagnostic route instead of one vague rule for every change in enzyme activity.",
+      "object_ids": [
+        "U3-K-096"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-096",
+          "term": "Irreversible enzyme inhibition",
+          "story": "the treated center enzyme remaining inactive after inhibitor washout, fresh substrate, and restoration of ordinary temperature and pH",
+          "science": "Irreversible inhibitors form very stable interactions, often covalent, that persistently inactivate an enzyme; this is distinct from the standard reversible competitive-inhibition model.",
+          "exact_name": true,
+          "hint": "the treated center enzyme remaining inactive after inhibitor washout, fresh substrate, and restoration of ordinary temperature and pH"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Irreversible enzyme inhibition",
+          "meaning": "Irreversible inhibitors form very stable interactions, often covalent, that persistently inactivate an enzyme; this is distinct from the standard reversible competitive-inhibition model.",
+          "image": "the treated center enzyme remaining inactive after inhibitor washout, fresh substrate, and restoration of ordinary temperature and pH"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-096",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "misconception_guards": [
+        "Irreversible inhibition is defined by persistent loss of activity after inhibitor removal, not simply by “very strong” binding.",
+        "Keep these confusable terms physically and verbally distinct: denaturation, reversible denaturation, irreversible inhibition.",
+        "Keep these confusable terms physically and verbally distinct: competitive inhibition, noncompetitive inhibition, irreversible inhibition.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-005; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "DISTINCTION_STRESS_TEST",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "functional enzyme reference",
+          "irreversibly inhibited enzyme",
+          "failed recovery test",
+          "Expose one enzyme to a persistent inhibitor, remove the surrounding inhibitor, restore ordinary conditions, and show that the enzyme still fails the recovery test."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Irreversible enzyme inhibition."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4B",
+  "narrative_standard": "V2-NARRATIVE-3.0-U3-F4B"
+}

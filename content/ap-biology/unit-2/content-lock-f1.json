@@ -1,0 +1,28 @@
+{
+  "schema_version": "memory-palace-v2-unit2-f1-content-lock-1.0",
+  "unit_id": "unit-2",
+  "lock_status": "LOCKED_F1",
+  "student_release": false,
+  "files": {
+    "content/ap-biology/unit-2/source/canonical-unit2-f1.json": {
+      "sha256": "1f5f776016591e58c6b0d8589953d632e1466b557d1af3a0f4888eabb6dde953",
+      "bytes": 168513,
+      "purpose": "Immutable Unit 2 F1 canonical/source-lock artifact"
+    },
+    "content/ap-biology/unit-2/source/coverage-manifest-f1.json": {
+      "sha256": "ec4b7a79dc5df7f68c83b8465972ee71014e8ab1b3103ed3f43ad499739a2fb6",
+      "bytes": 743,
+      "purpose": "Immutable Unit 2 F1 canonical/source-lock artifact"
+    }
+  },
+  "expected_counts": {
+    "ppt_slides": 109,
+    "legacy_packet_topics": 11,
+    "current_ced_topics": 10,
+    "ced_atoms": 66,
+    "canonical_records": 142,
+    "review_flags": 20,
+    "blocking_missing_resources": 0
+  },
+  "rule": "Changing a locked file requires an explicit scientific version update, renewed source comparison, and a regenerated lock. Narrative generation is downstream and may not rewrite these files."
+}

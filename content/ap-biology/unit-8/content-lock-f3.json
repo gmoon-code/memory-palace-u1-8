@@ -1,0 +1,38 @@
+{
+  "schema": "memory-palace-v2-unit8-content-lock-f3-1.0",
+  "generated_utc": "2026-09-09T02:37:09+00:00",
+  "unit_id": "unit-8",
+  "lock_status": "LOCKED_F3",
+  "student_release": false,
+  "f1_protected_hashes": {
+    "content/ap-biology/unit-8/canonical-catalog.json": "29b069dac2c6d6613f10b0cb38c53bf635598be7127634fb2dd615248747410e",
+    "content/ap-biology/unit-8/f1-source-lock.json": "d792df5d4599dad879a96f623b17d53a8fd4fb34ce1ebe8234560324b132d4da",
+    "content/ap-biology/unit-8/f1-manifest.json": "8cd1617045b084bd275d90adf383abc3988313189b01c052b55abae5347b8ebb",
+    "content/ap-biology/unit-8/review-flags.json": "68d4f2f55904d3eba5da0fe97a7656e7654a25a02e1a0ea003f1c0d53c6fed26",
+    "content/ap-biology/unit-8/scope-guards.json": "469086e114620c75015ef5822932e5964b2792501a5286eb71b523128b1d6cc6",
+    "content/ap-biology/unit-8/ced-atoms.json": "c696dce8aa66320f14cceb396712eed87db79cd635a7392193fe65ea1fd7a800",
+    "content/ap-biology/unit-8/ced-coverage.json": "aafbae55d15069b1cbf77c3b590b4bc1a6eeb58a3042becc30f4db198117e51b"
+  },
+  "f2_protected_hashes": {
+    "content/ap-biology/unit-8/architecture/learning-classification-f2.json": "bbc82ddd67c57ff393d36a882fcc74c0ff0d4802319a31be20c9eea13d90ee0b",
+    "content/ap-biology/unit-8/architecture/palace-architecture-f2.json": "19a4f4ae12fb6a80b377b69db8a12f1e290e8ee4a9d28a55fcf3d91e0007e7a7",
+    "content/ap-biology/unit-8/content-lock-f2.json": "190b5d99f8f15ada2fed8cd1c954e2060af0022d29da15fd6c96124e558cfbff",
+    "content/ap-biology/unit-8/f2-release-manifest.json": "99cc9e71eb3ef14bafe050e42f97a4c7f2251e59ecd749d51a9699266bc61e03",
+    "content/ap-biology/unit-8/status-f2.json": "87d7474120e36e5486b536feef58f42d433221e3878ad26e7a2a386e53a7b7ca"
+  },
+  "files": {
+    "content/ap-biology/unit-8/briefs/journey-briefs-f3.json": {
+      "bytes": 52712,
+      "sha256": "cafbe438f146bc769db1460e5135f3dc0e5282fd7d2a3cf707fd4016a3a6f305"
+    },
+    "content/ap-biology/unit-8/briefs/scene-briefs-f3.json": {
+      "bytes": 824294,
+      "sha256": "0b51a5b711305277e95d52cf28860a6a220becb70353ad88b31830a1e6a7027e"
+    },
+    "content/ap-biology/unit-8/status-f3.json": {
+      "bytes": 1055,
+      "sha256": "3e38eb604428bf120b444a8bc50dde608bdf094f43d0d564419d2feb6b331182"
+    }
+  },
+  "policy": "F3 locks science-bearing journey and scene briefs while leaving F1 science and F2 architecture unchanged. F4 may write polished story prose only from these briefs."
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "memory-palace-v2-mainline-u1-u8-f6-1.0",
+  "release_status": "STUDENT_READY_UNITS_1_8_UNIT8_F6_VALIDATED",
+  "units": [
+    "unit-1",
+    "unit-2",
+    "unit-3",
+    "unit-4",
+    "unit-5",
+    "unit-6",
+    "unit-7",
+    "unit-8"
+  ],
+  "runtime_version": "v2-apbio-0.30.0-u8-f6",
+  "totals": {
+    "canonical_records_units_1_8": 1561,
+    "guided_journeys": 58,
+    "permanent_scenes": 448,
+    "challenge_lab_items": 112
+  },
+  "unit8": {
+    "schema": "memory-palace-v2-unit8-f6-release-manifest-1.0",
+    "generated_utc": "2026-09-09T07:00:00+00:00",
+    "unit_id": "unit-8",
+    "stage": "F6",
+    "student_release": true,
+    "preview_release": false,
+    "browser_validation": "PASS_F6",
+    "canonical_records": 255,
+    "canonical_records_accounted": 255,
+    "unaccounted_canonical_records": 0,
+    "runtime_memory_objects": 211,
+    "story_records": 211,
+    "practice_only_records": 13,
+    "scope_guard_records": 31,
+    "guided_journeys": 8,
+    "permanent_loci": 58,
+    "challenge_count": 13,
+    "optional_first_exposure_recalls": 18,
+    "exact_name_review_targets": 135,
+    "non_exact_palace_records": 76,
+    "mandatory_spelling_targets": 0,
+    "mixed_discrimination_sets": 40,
+    "mixed_discrimination_questions": 104,
+    "runtime_version": "v2-apbio-0.30.0-u8-f6",
+    "next_stage": "FREEZE_COMPLETE_AP_BIOLOGY_UNITS_1_8_RELEASE"
+  },
+  "future_units": []
+}

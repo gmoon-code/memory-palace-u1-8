@@ -1,0 +1,103 @@
+{
+  "schema": "memory-palace-v2-unit4-f6-browser-classroom-validation-1.0",
+  "unit_id": "unit-4",
+  "stage": "F6",
+  "release_status": "STUDENT_READY_F6_VALIDATED",
+  "curriculum_content_changed": false,
+  "canonical_records": 180,
+  "guided_journeys": 7,
+  "scenes_validated": 51,
+  "recall_scenes_validated": 18,
+  "runtime_memory_objects": 162,
+  "challenge_lab_items": 15,
+  "scope_guards": 3,
+  "exact_name_review_targets": 162,
+  "mixed_discrimination_sets": 33,
+  "mixed_discrimination_questions": 99,
+  "target_viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "tablet",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "browser_facing_validation": {
+    "validation_mode": "runtime HTML render + state-machine interaction QA + responsive CSS contract + live FastAPI smoke",
+    "scene_render_checks": 51,
+    "recall_render_checks": 18,
+    "scene_viewport_contract_checks": 153,
+    "recall_viewport_contract_checks": 54,
+    "route_lengths": [
+      6,
+      6,
+      7,
+      6,
+      8,
+      8,
+      10
+    ],
+    "scene_geometry_findings": 0,
+    "recall_content_leak_findings": 0,
+    "broken_interpolation_findings": 0,
+    "unit_switch_findings": 0,
+    "refresh_resume_findings": 0,
+    "review_scheduler_findings": 0,
+    "challenge_lab_findings": 0,
+    "result": "PASS",
+    "pixel_screenshot_validation": "NOT_EXECUTED_IN_THIS_CONTAINER",
+    "pixel_screenshot_note": "The installed Chromium executable does not complete even an about:blank headless render in this sandbox. F6 therefore records functional browser-facing and responsive-contract validation without claiming screenshot/pixel validation."
+  },
+  "f6_runtime_fixes": [
+    {
+      "id": "U4-F6-UI-001",
+      "finding": "After an exact-name Review hint revealed the answer, the item was rescheduled but the learner had no direct control to advance to the next due review.",
+      "resolution": "Hinted exact-name Review now provides a Continue review button that immediately advances to the next due item."
+    },
+    {
+      "id": "U4-F6-UI-002",
+      "finding": "Browser speech synthesis could read frequent Unit 4 abbreviations and phase labels awkwardly.",
+      "resolution": "Speech-only normalization now covers DNA, GPCR, GDP, GTP, cAMP, CDK/CDKs, APC/APCs, G1, G2, and G0 without changing visible scientific text."
+    }
+  ],
+  "review_validation": {
+    "exact_name_targets": 162,
+    "mixed_sets": 33,
+    "mixed_questions": 99,
+    "visible_due_limit": 5,
+    "mixed_initial_delay_hours_minimum": 48,
+    "unit_scoped_review_isolation": true,
+    "hinted_review_continuation": true
+  },
+  "first_exposure_policy": {
+    "story_first": true,
+    "optional_quick_recall": true,
+    "memory_anchors_collapsed_by_default": true,
+    "recall_hides_story_location_route_cast_and_anchors": true
+  },
+  "resume_validation": {
+    "active_unit_persists": true,
+    "active_journey_persists": true,
+    "scene_index_persists": true,
+    "refresh_returns_to_home_with_continue_action": true
+  },
+  "f5_lock_sha256": "d283e1cc2b47e3800bd8502e49baddf23c0391aca21e9cbeb0d2bea0577d7420",
+  "runtime_file_sha256": {
+    "frontend/js/app.js": "acfe768150cacd609e3726dabe44f5cb8b895712113e9ba49e1d4e94faccdd65",
+    "frontend/js/audio.js": "97bb0e627a16f3461d746bc438d2ddcad38562a37c69a163d2a1bb18f471283a",
+    "frontend/js/state.js": "35d3828dc39236fa19abe8db71ae6fa32acc331c35a3a8876e925039362549c9",
+    "frontend/js/views/learn.js": "57489f35dc6fcf021fb639bd05c4cac3f00b37233012c5f1754d5633f0604070",
+    "frontend/js/views/review.js": "dbe4009c72dee6c9e6cf433402a8fc856c8b9612a15be503e6ccd75a59e38c63",
+    "frontend/js/views/practice.js": "9189c8ee87853b0ccf35837531e9c9e25467bd2e97595d2e74dad19737b719a4"
+  },
+  "next_gate": "Begin Unit 5 source inventory, scientific atomization, AP scope mapping, conflict/misconception audit, and canonical scientific lock before any Unit 5 palace or narrative generation."
+}

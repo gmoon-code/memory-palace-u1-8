@@ -1,0 +1,1836 @@
+{
+  "schema": "memory-palace-v2-unit3-f4d-story-1.0",
+  "unit_id": "unit-3",
+  "palace_id": "U3-J4",
+  "journey_id": "U3-J4",
+  "palace_name": "Light Capture Conservatory",
+  "story_title": "The Light That Could Not Reach the Greenhouse",
+  "tagline": "Follow light from organism-level carbon strategy into a leaf and chloroplast, then separate photon capture, excitation transfer, electron flow, proton-gradient formation, NADPH production, and photophosphorylation until ATP and NADPH can reach carbon fixation.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cellular-energetics investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+    "story_job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+  },
+  "premise": "A light-capture conservatory is receiving sunlight but cannot reliably convert it into ATP and NADPH. The learner follows light from ecological context into leaf and chloroplast structure, pigments, photosystems, electron transfer, proton-gradient formation, and photophosphorylation.",
+  "mission": "Build one continuous map from photon capture to linear electron flow and the chemical energy products that leave the light reactions.",
+  "finale": "The conservatory succeeds only after carbon and energy sources are separated, photosynthesis is located in the correct chloroplast compartments, oxygen is traced to water oxidation, pigments transfer excitation correctly, photosystem II and photosystem I are linked by electron transfer, the thylakoid proton gradient is established, and ATP plus NADPH leave the light reactions together for carbon fixation.",
+  "estimated_minutes": 34,
+  "scene_count": 12,
+  "checkpoint_count": 4,
+  "learner_rule": "Read or listen while holding the fixed left, center, and right anchors of each scene in mind. Follow the physical output that causes the transition to the next locus. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Light Capture Conservatory is a twelve-station route. Enter through carbon strategy and deep-time oxygenation, cross a leaf into the chloroplast, separate the overall redox process, then follow light through wavelength and pigments. At the photosystem theater, the continuity marker changes from absorbed light to excitation energy and then to a highlighted electron path. Follow that electron from photosystem II through the thylakoid electron-transport bridge to photosystem I while the lumen proton-gradient gauge rises, then finish at ATP synthase on the stroma side.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Carbon Strategy Entrance",
+      "short": "Carbon Strategy",
+      "floor": "Glasshouse entrance",
+      "symbol": "C"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Oxygenation Timeline",
+      "short": "Oxygenation",
+      "floor": "Evolution corridor",
+      "symbol": "O₂"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Leaf Gas-Exchange Balcony",
+      "short": "Leaf Balcony",
+      "floor": "Leaf pavilion",
+      "symbol": "↕"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Chloroplast Compartment Gallery",
+      "short": "Chloroplast",
+      "floor": "Organelle gallery",
+      "symbol": "◎"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Photosynthesis Redox Board",
+      "short": "Redox Board",
+      "floor": "Reaction hall",
+      "symbol": "e⁻"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Photon and Wavelength Prism",
+      "short": "Photon Prism",
+      "floor": "Spectrum corridor",
+      "symbol": "λ"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Pigment Spectrum Bench",
+      "short": "Pigments",
+      "floor": "Pigment laboratory",
+      "symbol": "◐"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Photosystem Antenna Theater",
+      "short": "Photosystem",
+      "floor": "Antenna theater",
+      "symbol": "✳"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Photosystem II Water Splitter",
+      "short": "PSII",
+      "floor": "Thylakoid line A",
+      "symbol": "II"
+    },
+    {
+      "scene_index": 9,
+      "locus": "Thylakoid Electron-Transport Bridge",
+      "short": "ETC Bridge",
+      "floor": "Thylakoid bridge",
+      "symbol": "→"
+    },
+    {
+      "scene_index": 10,
+      "locus": "Photosystem I NADPH Station",
+      "short": "PSI",
+      "floor": "Thylakoid line B",
+      "symbol": "I"
+    },
+    {
+      "scene_index": 11,
+      "locus": "Photophosphorylation Turbine",
+      "short": "ATP Turbine",
+      "floor": "Stroma exit",
+      "symbol": "ATP"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Carbon Strategy Entrance",
+      "title": "The Door With Three Different Ways to Get Carbon",
+      "scene_kicker": "The conservatory cannot even begin its light route until carbon source and energy source stop being treated as the same question.",
+      "location_description": "Carbon Strategy Entrance — the three-way carbon-and-energy intake gate comparing autotrophic and heterotrophic strategies.",
+      "scene_layout": {
+        "orientation": "You enter Carbon Strategy Entrance and stop at the three-way carbon-and-energy intake gate comparing autotrophic and heterotrophic strategies. On your left is photoautotroph light-input lane; directly ahead is autotroph carbon-building center; on your right is heterotroph organic-carbon lane. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Photoautotroph light-input lane",
+            "symbol": "☀",
+            "description": "A fixed left lane supplies light while an inorganic-carbon inlet remains visible, making energy source and carbon source independently traceable."
+          },
+          {
+            "position": "center",
+            "label": "Autotroph carbon-building center",
+            "symbol": "CO₂→C",
+            "description": "The center station accepts inorganic carbon and uses an external energy input to build organic carbon, keeping carbon acquisition separate from the identity of the energy source."
+          },
+          {
+            "position": "right",
+            "label": "Heterotroph organic-carbon lane",
+            "symbol": "food C",
+            "description": "A fixed right lane receives preexisting organic molecules made by other organisms and routes that organic carbon directly into the consumer side of the comparison."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "sunlight beam",
+          "kind": "energy input",
+          "visual": "a narrow white beam entering the conservatory roof and illuminating only the left strategy lane",
+          "job": "supply light energy to the photoautotroph comparison without being confused with a carbon source"
+        },
+        {
+          "name": "inorganic carbon inlet",
+          "kind": "carbon source",
+          "visual": "a labeled CO₂ inlet feeding the central carbon-building station",
+          "job": "supply inorganic carbon that autotrophs can incorporate into organic molecules"
+        },
+        {
+          "name": "organic-carbon crate",
+          "kind": "comparison input",
+          "visual": "a crate of preexisting organic molecules arriving on the right lane",
+          "job": "show how heterotrophs obtain organic carbon from molecules made by other organisms"
+        }
+      ],
+      "story_open": "A glass door slides open from the Cellular Energy Exchange Hall into the **Carbon Strategy Entrance**. Sunlight pours through the conservatory roof, but the ATP and NADPH indicators above the far greenhouse remain dark. The entrance is divided into three permanent lanes. On your **left**, a bright lane receives a white beam of light and a separate CO₂ inlet. Directly **ahead**, a carbon-building station accepts inorganic carbon and waits for an energy source. On your **right**, a delivery belt carries crates of preexisting organic molecules. Nia stops beside the center station and draws two headings on her tablet: CARBON SOURCE and ENERGY SOURCE. ‘If those two questions get blended together,’ she says, ‘the rest of photosynthesis becomes a vocabulary list instead of a mechanism.’",
+      "story_paragraphs": [
+        "A glass door slides open from the Cellular Energy Exchange Hall into the **Carbon Strategy Entrance**. Sunlight pours through the conservatory roof, but the ATP and NADPH indicators above the far greenhouse remain dark. The entrance is divided into three permanent lanes. On your **left**, a bright lane receives a white beam of light and a separate CO₂ inlet. Directly **ahead**, a carbon-building station accepts inorganic carbon and waits for an energy source. On your **right**, a delivery belt carries crates of preexisting organic molecules. Nia stops beside the center station and draws two headings on her tablet: CARBON SOURCE and ENERGY SOURCE. ‘If those two questions get blended together,’ she says, ‘the rest of photosynthesis becomes a vocabulary list instead of a mechanism.’",
+        "She opens the center CO₂ inlet. Carbon dioxide enters, but no organic product appears until the station is also supplied with energy. An organism that builds organic molecules from inorganic carbon such as CO₂ is an **autotroph**. The term tells you where the carbon comes from. It does not, by itself, tell you whether the energy comes from sunlight or from chemical reactions. Nia then activates the **left** lane. Light reaches the carbon-building center while inorganic carbon continues to enter. This combination defines a **photoautotroph**: an organism that uses light energy to build organic molecules from inorganic carbon. The beam is the energy input; CO₂ is the carbon input. They remain on separate pipes so you cannot accidentally turn light into matter or CO₂ into an energy source.",
+        "Now the **right** belt starts. Instead of feeding inorganic carbon into a building station, it delivers organic molecules that already contain reduced carbon. Nia labels this strategy **heterotroph**. A heterotroph obtains organic carbon from preexisting organic molecules made by other organisms. The comparison now has a stable geometry: photoautotrophic light input on the left, autotrophic carbon construction in the center, heterotrophic organic-carbon acquisition on the right. A plant is a familiar photoautotroph, but the categories are broader than plants and animals. The crucial distinction is what carbon source and energy source an organism uses.",
+        "A large glass panel above the entrance finally lights. It summarizes **photosynthesis overall process** as the use of carbon dioxide, water, and light energy to produce carbohydrates and oxygen. Beside it, a storage shelf fills with sugar models. Nia names **solar energy capture**: photosynthetic organisms capture solar energy and produce sugars that can be used in biological processes or stored. She does not let the panel become a one-step cartoon. ‘This is a net process,’ she says. ‘We still have to discover where the oxygen comes from, where the light is captured, and how ATP and NADPH are actually made.’ The unanswered oxygen indicator begins pulsing and pulls a thin line of light down a corridor marked DEEP TIME."
+      ],
+      "story_close": "You follow the pulsing oxygen line into the next gallery, where the conservatory’s history is laid out as a timeline rather than a reaction pathway.",
+      "object_ids": [
+        "U3-K-022",
+        "U3-K-023",
+        "U3-K-105",
+        "U3-K-106",
+        "U3-K-107"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-022",
+          "term": "Photosynthesis overall process",
+          "story": "the overhead net-process panel connecting CO₂, water, and light to carbohydrate production and O₂ release",
+          "science": "Photosynthesis uses carbon dioxide, water, and light energy to produce carbohydrates and oxygen.",
+          "exact_name": true,
+          "hint": "the overhead net-process panel connecting CO₂, water, and light to carbohydrate production and O₂ release"
+        },
+        {
+          "object_id": "U3-K-023",
+          "term": "Solar energy capture",
+          "story": "the left sunlight lane filling the sugar-storage shelf only after light capture is connected to carbon building",
+          "science": "Photosynthetic organisms capture solar energy and produce sugars that can be used in biological processes or stored.",
+          "exact_name": true,
+          "hint": "the left sunlight lane filling the sugar-storage shelf only after light capture is connected to carbon building"
+        },
+        {
+          "object_id": "U3-K-105",
+          "term": "Autotroph",
+          "story": "the center station building organic carbon from a CO₂ inlet using an external energy source",
+          "science": "An autotroph builds organic molecules from inorganic carbon such as CO2 using energy from light or chemical reactions.",
+          "exact_name": true,
+          "hint": "the center station building organic carbon from a CO₂ inlet using an external energy source"
+        },
+        {
+          "object_id": "U3-K-106",
+          "term": "Photoautotroph",
+          "story": "the left lane combining light energy with inorganic carbon at the autotroph center",
+          "science": "A photoautotroph uses light energy to build organic molecules from inorganic carbon.",
+          "exact_name": true,
+          "hint": "the left lane combining light energy with inorganic carbon at the autotroph center"
+        },
+        {
+          "object_id": "U3-K-107",
+          "term": "Heterotroph",
+          "story": "the right belt delivering preexisting organic-carbon crates",
+          "science": "A heterotroph obtains organic carbon from preexisting organic molecules made by other organisms.",
+          "exact_name": true,
+          "hint": "the right belt delivering preexisting organic-carbon crates"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Photosynthesis overall process",
+          "meaning": "Photosynthesis uses carbon dioxide, water, and light energy to produce carbohydrates and oxygen.",
+          "image": "the overhead net-process panel connecting CO₂, water, and light to carbohydrate production and O₂ release"
+        },
+        {
+          "term": "Solar energy capture",
+          "meaning": "Photosynthetic organisms capture solar energy and produce sugars that can be used in biological processes or stored.",
+          "image": "the left sunlight lane filling the sugar-storage shelf only after light capture is connected to carbon building"
+        },
+        {
+          "term": "Autotroph",
+          "meaning": "An autotroph builds organic molecules from inorganic carbon such as CO2 using energy from light or chemical reactions.",
+          "image": "the center station building organic carbon from a CO₂ inlet using an external energy source"
+        },
+        {
+          "term": "Photoautotroph",
+          "meaning": "A photoautotroph uses light energy to build organic molecules from inorganic carbon.",
+          "image": "the left lane combining light energy with inorganic carbon at the autotroph center"
+        },
+        {
+          "term": "Heterotroph",
+          "meaning": "A heterotroph obtains organic carbon from preexisting organic molecules made by other organisms.",
+          "image": "the right belt delivering preexisting organic-carbon crates"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-105",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Oxygenation Timeline",
+      "misconception_guards": [
+        "Separate carbon source from energy source: photoautotroph describes light energy plus inorganic carbon, while heterotroph describes use of organic carbon.",
+        "Keep these confusable terms physically and verbally distinct: autotroph, photoautotroph, heterotroph.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-008; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "NUTRITION_STRATEGY_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "photoautotroph light-input lane",
+          "autotroph carbon-building center",
+          "heterotroph organic-carbon lane",
+          "Route carbon and energy inputs through photoautotroph, autotroph, and heterotroph lanes so carbon source and energy source are compared separately."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Photosynthesis overall process; Solar energy capture; Autotroph; Photoautotroph; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Oxygenation Timeline",
+      "title": "The Timeline That Fills an Atmosphere",
+      "scene_kicker": "Before chloroplasts appear, the light route begins in prokaryotic life and changes the planet around it.",
+      "location_description": "Oxygenation Timeline — the evolutionary timeline from prokaryotic oxygenic photosynthesis to atmospheric oxygenation and eukaryotic photosynthesis.",
+      "scene_layout": {
+        "orientation": "You enter Oxygenation Timeline and stop at the evolutionary timeline from prokaryotic oxygenic photosynthesis to atmospheric oxygenation and eukaryotic photosynthesis. On your left is ancestral photosynthetic prokaryotes; directly ahead is atmospheric oxygen rise; on your right is eukaryotic photosynthetic lineage. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Ancestral photosynthetic prokaryotes",
+            "symbol": "prok",
+            "description": "A deep-time display on the left shows photosynthesis operating in prokaryotic cells before eukaryotic photosynthetic lineages existed."
+          },
+          {
+            "position": "center",
+            "label": "Atmospheric oxygen rise",
+            "symbol": "O₂↑",
+            "description": "A central atmosphere column gradually accumulates molecular oxygen as oxygenic photosynthesis continues across immense spans of time."
+          },
+          {
+            "position": "right",
+            "label": "Eukaryotic photosynthetic lineage",
+            "symbol": "euk",
+            "description": "A later right-side lineage display shows eukaryotic photosynthesis built on an older prokaryotic photosynthetic foundation without erasing differences in cellular organization."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "cyanobacterial panel",
+          "kind": "evolutionary reference",
+          "visual": "a conventional prokaryotic cell panel connected to an oxygenic-photosynthesis indicator",
+          "job": "represent cyanobacteria as prokaryotes capable of oxygenic photosynthesis"
+        },
+        {
+          "name": "atmosphere column",
+          "kind": "time-dependent output",
+          "visual": "a transparent atmospheric column whose oxygen gauge rises only as oxygenic photosynthesis persists",
+          "job": "make atmospheric oxygenation a long-term consequence rather than a single-cell event"
+        },
+        {
+          "name": "lineage timeline",
+          "kind": "evolutionary continuity model",
+          "visual": "a horizontal timeline extending from ancient prokaryotic photosynthesis toward later eukaryotic photosynthetic lineages",
+          "job": "preserve the evolutionary foundation without claiming identical organization across lineages"
+        }
+      ],
+      "story_open": "The corridor opens into the **Oxygenation Timeline**. Its floor is a dark band stretching from an ancient left wall toward a brighter right wall. On your **left**, conventional prokaryotic cell models glow beneath a label reading PHOTOSYNTHESIS PRESENT. Directly **ahead**, a transparent atmosphere column begins with a very low oxygen reading. On your **right**, a later branch contains eukaryotic photosynthetic cells. The white light pulse from the entrance does not travel literally through billions of years. Instead, Nia pins a small luminous marker above the timeline to show which photosynthetic innovation the display is following. ‘This is a history marker now,’ she says. ‘We are tracking the origin and consequences of the process, not a single photon.’",
+      "story_paragraphs": [
+        "The corridor opens into the **Oxygenation Timeline**. Its floor is a dark band stretching from an ancient left wall toward a brighter right wall. On your **left**, conventional prokaryotic cell models glow beneath a label reading PHOTOSYNTHESIS PRESENT. Directly **ahead**, a transparent atmosphere column begins with a very low oxygen reading. On your **right**, a later branch contains eukaryotic photosynthetic cells. The white light pulse from the entrance does not travel literally through billions of years. Instead, Nia pins a small luminous marker above the timeline to show which photosynthetic innovation the display is following. ‘This is a history marker now,’ she says. ‘We are tracking the origin and consequences of the process, not a single photon.’",
+        "She activates the **left** panel first. Photosynthetic chemistry is already operating in prokaryotic cells. Nia names the **prokaryotic origin of photosynthesis**: photosynthesis first evolved in prokaryotic organisms. The display then highlights cyanobacterial cells. These are not tiny chloroplasts floating freely; they are prokaryotes in their own right. The panel labels **cyanobacteria and oxygenic photosynthesis**. Cyanobacteria perform oxygenic photosynthesis, meaning their light reactions ultimately release molecular oxygen. The same broad light-capture logic that will later appear in chloroplasts has deep prokaryotic roots.",
+        "As the cyanobacterial panel remains active, the **center** atmosphere column changes slowly. Its oxygen gauge rises over the timeline rather than jumping after one reaction. Nia names **atmospheric oxygenation**. Scientific evidence supports the claim that cyanobacterial photosynthesis contributed substantially to oxygenation of Earth’s atmosphere. The display is careful with scale. One cell does not ‘make the atmosphere oxygen-rich.’ Repeated oxygenic photosynthesis across enormous populations and spans of time contributes to a planetary change. The accumulating O₂ in the center therefore represents an ecological and geochemical consequence of biological metabolism.",
+        "Only after the center atmosphere has changed does the **right** lineage illuminate. Eukaryotic photosynthetic organisms appear later on the timeline, carrying photosynthetic machinery organized inside chloroplasts. Nia labels the relationship **foundation of eukaryotic photosynthesis**: prokaryotic photosynthetic pathways formed the evolutionary foundation of eukaryotic photosynthesis. The right display does not claim that every modern photosynthetic organism uses every pathway in an identical way. It preserves the older biochemical foundation while allowing cellular organization to change. A leaf silhouette now grows out of the right-hand lineage, and the conservatory’s light beam passes directly into it."
+      ],
+      "story_close": "The leaf silhouette becomes a real suspended leaf ahead of you, and a tiny pore on its lower surface expands until it is large enough to walk toward.",
+      "object_ids": [
+        "U3-K-024",
+        "U3-K-025",
+        "U3-K-026",
+        "U3-K-108"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-024",
+          "term": "Prokaryotic origin of photosynthesis",
+          "story": "the ancient left timeline showing photosynthesis operating in prokaryotic cells",
+          "science": "Photosynthesis first evolved in prokaryotic organisms.",
+          "exact_name": true,
+          "hint": "the ancient left timeline showing photosynthesis operating in prokaryotic cells"
+        },
+        {
+          "object_id": "U3-K-025",
+          "term": "Atmospheric oxygenation",
+          "story": "the center atmosphere column slowly increasing its O₂ reading",
+          "science": "Scientific evidence supports the claim that cyanobacterial photosynthesis contributed to oxygenation of Earth’s atmosphere.",
+          "exact_name": true,
+          "hint": "the center atmosphere column slowly increasing its O₂ reading"
+        },
+        {
+          "object_id": "U3-K-026",
+          "term": "Foundation of eukaryotic photosynthesis",
+          "story": "the right eukaryotic photosynthetic lineage built on an older prokaryotic foundation",
+          "science": "Prokaryotic photosynthetic pathways formed the evolutionary foundation of eukaryotic photosynthesis.",
+          "exact_name": true,
+          "hint": "the right eukaryotic photosynthetic lineage built on an older prokaryotic foundation"
+        },
+        {
+          "object_id": "U3-K-108",
+          "term": "Cyanobacteria and oxygenic photosynthesis",
+          "story": "the cyanobacterial panel coupling a prokaryotic cell model to oxygenic photosynthesis",
+          "science": "Cyanobacteria are prokaryotes that perform oxygenic photosynthesis; ancient cyanobacterial activity contributed substantially to atmospheric oxygenation.",
+          "exact_name": true,
+          "hint": "the cyanobacterial panel coupling a prokaryotic cell model to oxygenic photosynthesis"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Prokaryotic origin of photosynthesis",
+          "meaning": "Photosynthesis first evolved in prokaryotic organisms.",
+          "image": "the ancient left timeline showing photosynthesis operating in prokaryotic cells"
+        },
+        {
+          "term": "Atmospheric oxygenation",
+          "meaning": "Scientific evidence supports the claim that cyanobacterial photosynthesis contributed to oxygenation of Earth’s atmosphere.",
+          "image": "the center atmosphere column slowly increasing its O₂ reading"
+        },
+        {
+          "term": "Foundation of eukaryotic photosynthesis",
+          "meaning": "Prokaryotic photosynthetic pathways formed the evolutionary foundation of eukaryotic photosynthesis.",
+          "image": "the right eukaryotic photosynthetic lineage built on an older prokaryotic foundation"
+        },
+        {
+          "term": "Cyanobacteria and oxygenic photosynthesis",
+          "meaning": "Cyanobacteria are prokaryotes that perform oxygenic photosynthesis; ancient cyanobacterial activity contributed substantially to atmospheric oxygenation.",
+          "image": "the cyanobacterial panel coupling a prokaryotic cell model to oxygenic photosynthesis"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-024",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Leaf Gas-Exchange Balcony",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "EVOLUTIONARY_TIMELINE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "ancestral photosynthetic prokaryotes",
+          "atmospheric oxygen rise",
+          "eukaryotic photosynthetic lineage",
+          "Advance a timeline from oxygenic photosynthetic prokaryotes through atmospheric oxygen accumulation to later eukaryotic photosynthetic lineages."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Prokaryotic origin of photosynthesis; Atmospheric oxygenation; Foundation of eukaryotic photosynthesis; Cyanobacteria and oxygenic photosynthesis."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Leaf Gas-Exchange Balcony",
+      "title": "The Balcony Where the Leaf Breathes With the Air",
+      "scene_kicker": "Light capture inside the leaf depends on a route for carbon dioxide to reach photosynthetic tissue while other gases can leave.",
+      "location_description": "Leaf Gas-Exchange Balcony — the leaf cross-section balcony with mesophyll tissue behind adjustable stomatal pores.",
+      "scene_layout": {
+        "orientation": "You enter Leaf Gas-Exchange Balcony and stop at the leaf cross-section balcony with mesophyll tissue behind adjustable stomatal pores. On your left is stomatal pore and guard-cell opening; directly ahead is leaf/mesophyll photosynthetic tissue; on your right is CO2/O2/water-vapor diffusion paths. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Stomatal pore and guard-cell opening",
+            "symbol": "◌",
+            "description": "A magnified epidermal pore bordered by two guard cells opens and closes on the left while the rest of the leaf remains fixed."
+          },
+          {
+            "position": "center",
+            "label": "Leaf and mesophyll photosynthetic tissue",
+            "symbol": "leaf",
+            "description": "A transparent leaf cross-section at center exposes mesophyll cells containing chloroplasts as a major site of photosynthesis in most plants."
+          },
+          {
+            "position": "right",
+            "label": "CO₂, O₂, and water-vapor diffusion paths",
+            "symbol": "⇄",
+            "description": "Three labeled diffusion paths on the right show carbon dioxide moving inward while oxygen and water vapor can move outward under typical photosynthetic conditions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "leaf cross-section",
+          "kind": "organ model",
+          "visual": "a conventional leaf cutaway showing epidermis, internal photosynthetic tissue, and air spaces",
+          "job": "keep the path from atmosphere to mesophyll cells visible"
+        },
+        {
+          "name": "guard-cell pair",
+          "kind": "adjustable structure",
+          "visual": "two curved guard cells bordering one epidermal pore",
+          "job": "change the stomatal opening and thereby alter the diffusion path"
+        },
+        {
+          "name": "gas tracers",
+          "kind": "molecular movement markers",
+          "visual": "separate CO₂, O₂, and H₂O-vapor labels following diffusion arrows",
+          "job": "show the typical directions of gas exchange without merging the molecules"
+        }
+      ],
+      "story_open": "You step onto the **Leaf Gas-Exchange Balcony**, built around a suspended leaf cross-section the size of a room. On your **left**, two curved guard-cell models surround a single adjustable epidermal pore. Directly **ahead**, layers of mesophyll tissue contain dozens of visible chloroplasts. On your **right**, three separate tracer paths are labeled CO₂, O₂, and H₂O VAPOR. Nia keeps the white light beam fixed above the leaf so the atmospheric input and the internal photosynthetic tissue can be seen at the same time. The conservatory’s problem is now more local: light reaches the leaf, but carbon dioxide still has to cross from air into the tissue where photosynthesis occurs.",
+      "story_paragraphs": [
+        "You step onto the **Leaf Gas-Exchange Balcony**, built around a suspended leaf cross-section the size of a room. On your **left**, two curved guard-cell models surround a single adjustable epidermal pore. Directly **ahead**, layers of mesophyll tissue contain dozens of visible chloroplasts. On your **right**, three separate tracer paths are labeled CO₂, O₂, and H₂O VAPOR. Nia keeps the white light beam fixed above the leaf so the atmospheric input and the internal photosynthetic tissue can be seen at the same time. The conservatory’s problem is now more local: light reaches the leaf, but carbon dioxide still has to cross from air into the tissue where photosynthesis occurs.",
+        "Nia opens the left pore. A CO₂ tracer moves inward through the opening and into the internal air spaces of the leaf. The center mesophyll cells light as the tracer approaches their chloroplasts. Nia names **leaf photosynthesis**. Leaves are major photosynthetic organs in most plants, and much of that photosynthesis occurs in mesophyll cells. She taps one chloroplast inside a mesophyll cell. The leaf itself is not one giant reaction chamber. Its tissue organization brings light, gases, water, and photosynthetic organelles into a geometry that supports the chemistry.",
+        "The adjustable opening on the **left** is a **stoma**; the plural is **stomata**. Stomata are epidermal pores whose opening can be adjusted by surrounding guard cells. Under typical photosynthetic conditions, carbon dioxide can diffuse inward through these pores, while oxygen and water vapor can diffuse outward. On the **right**, the CO₂ path points toward the mesophyll, while O₂ and water-vapor paths point toward the atmosphere. Nia narrows the pore, and all three diffusion routes become more restricted. She opens it again, and the gas-exchange paths widen. The structure therefore connects photosynthetic carbon demand with water loss as well as oxygen release.",
+        "The center mesophyll wall now becomes transparent. One chloroplast enlarges until its double envelope fills the doorway ahead. Nia points back once to the right-side gas paths. ‘We have brought carbon dioxide to the photosynthetic tissue,’ she says. ‘Now we need to put every reaction in the correct part of the chloroplast.’ The white beam follows you toward the enlarged organelle, while the CO₂ tracer stops at the stroma entrance instead of being allowed to wander through every compartment."
+      ],
+      "story_close": "You pass through the enlarged chloroplast envelope and enter a cutaway gallery where stroma and thylakoids remain visible at the same time.",
+      "object_ids": [
+        "U3-K-109",
+        "U3-K-110"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-109",
+          "term": "Leaf photosynthesis",
+          "story": "the center leaf cross-section with photosynthetic mesophyll cells",
+          "science": "Leaves are major photosynthetic organs in most plants, with much photosynthesis occurring in mesophyll cells.",
+          "exact_name": false,
+          "hint": "the center leaf cross-section with photosynthetic mesophyll cells"
+        },
+        {
+          "object_id": "U3-K-110",
+          "term": "Stomata",
+          "story": "the adjustable epidermal pore bordered by guard cells and connected to gas-diffusion arrows",
+          "science": "Stomata are adjustable epidermal pores that permit CO2 diffusion into leaves and allow O2 and water vapor to diffuse out under typical photosynthetic conditions.",
+          "exact_name": true,
+          "hint": "the adjustable epidermal pore bordered by guard cells and connected to gas-diffusion arrows"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Leaf photosynthesis",
+          "meaning": "Leaves are major photosynthetic organs in most plants, with much photosynthesis occurring in mesophyll cells.",
+          "image": "the center leaf cross-section with photosynthetic mesophyll cells"
+        },
+        {
+          "term": "Stomata",
+          "meaning": "Stomata are adjustable epidermal pores that permit CO2 diffusion into leaves and allow O2 and water vapor to diffuse out under typical photosynthetic conditions.",
+          "image": "the adjustable epidermal pore bordered by guard cells and connected to gas-diffusion arrows"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-110",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Chloroplast Compartment Gallery",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "stomatal pore and guard-cell opening",
+          "leaf/mesophyll photosynthetic tissue",
+          "CO2/O2/water-vapor diffusion paths",
+          "Open and close stomata in a leaf cutaway while tracing CO2 inward and O2 plus water vapor outward to connect guard-cell pores with mesophyll photosynthesis and gas exchange."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Leaf photosynthesis; Stomata."
+    },
+    {
+      "scene_index": 3,
+      "locus": "Chloroplast Compartment Gallery",
+      "title": "The Chloroplast With Two Different Workspaces",
+      "scene_kicker": "The light route fails if the thylakoid membrane and stroma are treated as interchangeable places.",
+      "location_description": "Chloroplast Compartment Gallery — the chloroplast cutaway linking stroma, thylakoid membranes, and grana to their photosynthetic roles.",
+      "scene_layout": {
+        "orientation": "You enter Chloroplast Compartment Gallery and stop at the chloroplast cutaway linking stroma, thylakoid membranes, and grana to their photosynthetic roles. On your left is chloroplast envelope and stroma; directly ahead is thylakoid membrane/granum stack; on your right is reaction-location labels. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Chloroplast envelope and stroma",
+            "symbol": "stroma",
+            "description": "A conventional chloroplast cutaway on the left preserves its two-membrane envelope and the fluid stroma surrounding the thylakoid system."
+          },
+          {
+            "position": "center",
+            "label": "Thylakoid membrane and granum stack",
+            "symbol": "grana",
+            "description": "A central stack of disk-shaped thylakoids keeps the thylakoid membrane, internal thylakoid space, and granum architecture continuously visible."
+          },
+          {
+            "position": "right",
+            "label": "Reaction-location labels",
+            "symbol": "map",
+            "description": "Fixed right-side markers attach light-reaction machinery to thylakoid membranes and carbon-fixation reactions to the stroma so the two locations cannot be swapped."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "transparent chloroplast",
+          "kind": "organelle model",
+          "visual": "a conventional green chloroplast cutaway with a two-membrane envelope, stroma, and thylakoid stacks",
+          "job": "hold every compartment in one stable visual frame"
+        },
+        {
+          "name": "granum stack",
+          "kind": "membrane structure",
+          "visual": "several disk-shaped thylakoids stacked in the center of the cutaway",
+          "job": "provide abundant thylakoid membrane carrying light-reaction machinery"
+        },
+        {
+          "name": "reaction-location markers",
+          "kind": "spatial labels",
+          "visual": "two fixed markers reading LIGHT REACTIONS and CARBON FIXATION",
+          "job": "attach each process to the correct chloroplast region"
+        }
+      ],
+      "story_open": "The **Chloroplast Compartment Gallery** is built inside a transparent organelle model. On your **left**, a two-membrane envelope surrounds a broad fluid region labeled STROMA. Directly **ahead**, flattened thylakoid sacs rise in stacks like green coins. On your **right**, two movable location tags read LIGHT REACTIONS and CARBON FIXATION. Nia locks the whole cutaway in place before anything moves. ‘This room is about geography,’ she says. ‘If you know the process but put it in the wrong compartment, you do not actually know the mechanism.’ The light beam from the leaf balcony strikes the thylakoid stack at center, while the CO₂ tracer waits in the stroma on the left.",
+      "story_paragraphs": [
+        "The **Chloroplast Compartment Gallery** is built inside a transparent organelle model. On your **left**, a two-membrane envelope surrounds a broad fluid region labeled STROMA. Directly **ahead**, flattened thylakoid sacs rise in stacks like green coins. On your **right**, two movable location tags read LIGHT REACTIONS and CARBON FIXATION. Nia locks the whole cutaway in place before anything moves. ‘This room is about geography,’ she says. ‘If you know the process but put it in the wrong compartment, you do not actually know the mechanism.’ The light beam from the leaf balcony strikes the thylakoid stack at center, while the CO₂ tracer waits in the stroma on the left.",
+        "Nia outlines the entire organelle. A **chloroplast** is a photosynthetic organelle bounded by an envelope of two membranes and containing stroma and thylakoids. She then traces the **chloroplast compartments** separately. The **stroma** is the fluid inside the inner chloroplast membrane and outside the thylakoids. Carbon-fixation reactions of the Calvin cycle occur there, so Nia attaches the CARBON FIXATION marker to the **left** stroma. This is **stroma and carbon fixation**: the carbon-building reactions use the stroma as their compartment, not the interior of the thylakoid.",
+        "At the **center**, Nia magnifies the membrane of one thylakoid. Chlorophyll molecules are embedded there as parts of photosystems, alongside proteins that transfer electrons. She labels this **thylakoid membrane machinery**. Thylakoid membranes contain chlorophyll organized into photosystems together with electron-transport proteins. The flattened sacs are not empty green disks; their membrane surface is the platform that organizes the light-reaction machinery. The internal space enclosed by the membrane will later become important because protons can accumulate there.",
+        "The camera pulls back enough to show multiple thylakoids stacked together. These stacks are **grana**; one stack is a granum. Nia fixes the LIGHT REACTIONS marker onto the thylakoid membranes and names **grana and light reactions**: thylakoids form stacks called grana, and the light reactions occur on thylakoid membranes in these stacks. The two right-side markers now have permanent homes. Light-reaction machinery belongs on thylakoid membranes; Calvin-cycle carbon fixation belongs in the stroma. A redox board unlocks at the far end of the gallery because location alone still does not explain what is oxidized and what is reduced."
+      ],
+      "story_close": "The chloroplast cutaway remains behind you as a reference map while water enters the left side of the next redox board and carbon dioxide enters the right.",
+      "object_ids": [
+        "U3-K-027",
+        "U3-K-028",
+        "U3-K-029",
+        "U3-K-030",
+        "U3-K-111"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-027",
+          "term": "Chloroplast compartments",
+          "story": "the chloroplast cutaway keeping stroma and thylakoids physically distinct",
+          "science": "Stroma and thylakoids are distinct internal regions of chloroplasts.",
+          "exact_name": true,
+          "hint": "the chloroplast cutaway keeping stroma and thylakoids physically distinct"
+        },
+        {
+          "object_id": "U3-K-028",
+          "term": "Stroma and carbon fixation",
+          "story": "the stroma marker holding carbon-fixation reactions outside the thylakoids",
+          "science": "The stroma is the fluid inside the inner chloroplast membrane and outside the thylakoids; Calvin-cycle carbon-fixation reactions occur there.",
+          "exact_name": true,
+          "hint": "the stroma marker holding carbon-fixation reactions outside the thylakoids"
+        },
+        {
+          "object_id": "U3-K-029",
+          "term": "Thylakoid membrane machinery",
+          "story": "the thylakoid membrane carrying chlorophyll, photosystems, and electron-transfer proteins",
+          "science": "Thylakoid membranes contain chlorophyll organized into photosystems together with electron-transport proteins.",
+          "exact_name": true,
+          "hint": "the thylakoid membrane carrying chlorophyll, photosystems, and electron-transfer proteins"
+        },
+        {
+          "object_id": "U3-K-030",
+          "term": "Grana and light reactions",
+          "story": "the granum stack whose thylakoid membranes carry the light reactions",
+          "science": "Thylakoids form stacks called grana, and the light reactions occur on thylakoid membranes in these stacks.",
+          "exact_name": true,
+          "hint": "the granum stack whose thylakoid membranes carry the light reactions"
+        },
+        {
+          "object_id": "U3-K-111",
+          "term": "Chloroplast",
+          "story": "the whole two-membrane chloroplast containing stroma and thylakoids",
+          "science": "A chloroplast is a photosynthetic organelle bounded by an envelope of two membranes and containing stroma and thylakoids.",
+          "exact_name": true,
+          "hint": "the whole two-membrane chloroplast containing stroma and thylakoids"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Chloroplast compartments",
+          "meaning": "Stroma and thylakoids are distinct internal regions of chloroplasts.",
+          "image": "the chloroplast cutaway keeping stroma and thylakoids physically distinct"
+        },
+        {
+          "term": "Stroma and carbon fixation",
+          "meaning": "The stroma is the fluid inside the inner chloroplast membrane and outside the thylakoids; Calvin-cycle carbon-fixation reactions occur there.",
+          "image": "the stroma marker holding carbon-fixation reactions outside the thylakoids"
+        },
+        {
+          "term": "Thylakoid membrane machinery",
+          "meaning": "Thylakoid membranes contain chlorophyll organized into photosystems together with electron-transport proteins.",
+          "image": "the thylakoid membrane carrying chlorophyll, photosystems, and electron-transfer proteins"
+        },
+        {
+          "term": "Grana and light reactions",
+          "meaning": "Thylakoids form stacks called grana, and the light reactions occur on thylakoid membranes in these stacks.",
+          "image": "the granum stack whose thylakoid membranes carry the light reactions"
+        },
+        {
+          "term": "Chloroplast",
+          "meaning": "A chloroplast is a photosynthetic organelle bounded by an envelope of two membranes and containing stroma and thylakoids.",
+          "image": "the whole two-membrane chloroplast containing stroma and thylakoids"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-027",
+      "checkpoint_prompt": "Where are the light reactions and Calvin cycle located in the chloroplast model?",
+      "checkpoint_answer": "Light-reaction machinery is in thylakoid membranes; the Calvin cycle occurs in the stroma.",
+      "checkpoint_hint": "Picture the transparent chloroplast: thylakoid membranes and grana are at the center, while the surrounding stroma is on the left.",
+      "next_locus": "Photosynthesis Redox Board",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: stroma, thylakoid membrane, granum."
+      ],
+      "required_visual": {
+        "visual_mode": "NESTED_STRUCTURE_FUNCTION_CUTAWAY",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "chloroplast envelope and stroma",
+          "thylakoid membrane/granum stack",
+          "reaction-location labels",
+          "Open a chloroplast cutaway and keep stroma, thylakoid membrane, and grana simultaneously visible while reaction-location markers attach to the correct compartment."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Chloroplast compartments; Stroma and carbon fixation; Thylakoid membrane machinery; Grana and light reactions; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 4,
+      "locus": "Photosynthesis Redox Board",
+      "title": "The Board That Separates Water From Carbon Dioxide",
+      "scene_kicker": "The overall photosynthesis equation hides two different redox stories, so the board pulls them apart before reconnecting them.",
+      "location_description": "Photosynthesis Redox Board — the overall photosynthesis model with water oxidation separated from carbon-dioxide reduction.",
+      "scene_layout": {
+        "orientation": "You enter Photosynthesis Redox Board and stop at the overall photosynthesis model with water oxidation separated from carbon-dioxide reduction. On your left is water oxidation and O2 release; directly ahead is light reactions / Calvin-cycle linkage; on your right is CO2 reduction to carbohydrate model. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Water oxidation and oxygen release",
+            "symbol": "H₂O→O₂",
+            "description": "A left reaction chamber removes electrons from water and releases molecular oxygen while keeping the water-derived products visually separate."
+          },
+          {
+            "position": "center",
+            "label": "Light-reaction and Calvin-cycle linkage",
+            "symbol": "ATP/NADPH",
+            "description": "The center board routes ATP and NADPH from the light reactions toward carbon fixation without depicting them as carbon atoms or as oxygen sources."
+          },
+          {
+            "position": "right",
+            "label": "Carbon-dioxide reduction to carbohydrate model",
+            "symbol": "CO₂→CH",
+            "description": "A right-side carbon model begins with carbon dioxide and ends in reduced organic carbon, emphasizing the reduction side of photosynthetic redox chemistry."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "water molecule set",
+          "kind": "redox input",
+          "visual": "conventional water molecules entering the left oxidation chamber",
+          "job": "donate electrons during light-reaction water oxidation and yield oxygen as a product"
+        },
+        {
+          "name": "NADPH carrier",
+          "kind": "reducing-power carrier",
+          "visual": "a labeled NADPH model moving from the light-reaction side toward the carbon-reduction side",
+          "job": "carry reducing power without being portrayed as carbon or oxygen itself"
+        },
+        {
+          "name": "carbon dioxide model",
+          "kind": "carbon input",
+          "visual": "a conventional CO₂ model entering the right reduction side",
+          "job": "supply carbon that will ultimately be incorporated into reduced organic molecules"
+        }
+      ],
+      "story_open": "The **Photosynthesis Redox Board** spans the next wall. On your **left**, water molecules enter an oxidation chamber beneath a small O₂ outlet. Directly **ahead**, a central bridge connects LIGHT REACTIONS to CALVIN CYCLE with separate ATP and NADPH carriers. On your **right**, carbon dioxide enters a carbon-reduction model that ends in organic carbohydrate material. Nia places the familiar net equation across the top: 6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂. Then she draws a large bracket around it. ‘Useful summary,’ she says. ‘Dangerous if you imagine it as one literal step.’",
+      "story_paragraphs": [
+        "The **Photosynthesis Redox Board** spans the next wall. On your **left**, water molecules enter an oxidation chamber beneath a small O₂ outlet. Directly **ahead**, a central bridge connects LIGHT REACTIONS to CALVIN CYCLE with separate ATP and NADPH carriers. On your **right**, carbon dioxide enters a carbon-reduction model that ends in organic carbohydrate material. Nia places the familiar net equation across the top: 6 CO₂ + 6 H₂O + light → C₆H₁₂O₆ + 6 O₂. Then she draws a large bracket around it. ‘Useful summary,’ she says. ‘Dangerous if you imagine it as one literal step.’",
+        "She labels the display **photosynthesis equation as model**. The common overall equation is a simplified net model of photosynthesis. It accounts for major inputs and outputs, but the direct carbon-fixation product is not glucose itself, and the pathway contains many linked reactions. Nia therefore keeps the equation above the room as bookkeeping while the actual chemistry runs below it. Water goes to the **left** chamber. CO₂ goes to the **right** chamber. ATP and NADPH move through the **center** connection between the light reactions and carbon-fixation chemistry.",
+        "The left chamber now oxidizes water. Electrons are removed from water, and molecular oxygen appears at the O₂ outlet. Nia names **photosynthetic oxygen comes from water**. The O₂ released by oxygenic photosynthesis is derived from oxidation of water during the light reactions. She physically blocks an incorrect arrow that had connected CO₂ directly to the oxygen outlet. Carbon dioxide is the carbon source for carbohydrate production; it is not the source of the O₂ gas released by the light reactions. This distinction will matter again when we reach photosystem II.",
+        "Nia zooms out to the whole board and labels **photosynthesis as redox**. Water is oxidized, while carbon dioxide is ultimately reduced to carbohydrate using reducing power carried by NADPH. She then names the two linked phases on the center bridge: **light reactions and Calvin cycle**. The light reactions capture light energy and produce ATP and NADPH. The Calvin cycle uses ATP and NADPH to reduce carbon dioxide toward carbohydrate production. The board still cannot explain how a photon becomes an excited electron, so the light inlet above the board opens into a prism corridor."
+      ],
+      "story_close": "A narrow beam of white light leaves the redox board and enters a glass prism, while the electron and proton parts of the mechanism remain deliberately unresolved.",
+      "object_ids": [
+        "U3-K-113",
+        "U3-K-114",
+        "U3-K-115",
+        "U3-K-116"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-113",
+          "term": "Photosynthesis equation as model",
+          "story": "the net photosynthesis equation suspended above the detailed two-part reaction board",
+          "science": "The common overall equation 6 CO2 + 6 H2O + light → C6H12O6 + 6 O2 is a simplified net model of photosynthesis; the direct carbon-fixation product is not glucose itself.",
+          "exact_name": false,
+          "hint": "the net photosynthesis equation suspended above the detailed two-part reaction board"
+        },
+        {
+          "object_id": "U3-K-114",
+          "term": "Photosynthetic oxygen comes from water",
+          "story": "the left water-oxidation chamber feeding the O₂ outlet while the CO₂ chamber stays separate",
+          "science": "The O2 released by oxygenic photosynthesis is derived from oxidation of water during the light reactions.",
+          "exact_name": false,
+          "hint": "the left water-oxidation chamber feeding the O₂ outlet while the CO₂ chamber stays separate"
+        },
+        {
+          "object_id": "U3-K-115",
+          "term": "Photosynthesis as redox",
+          "story": "water being oxidized on the left while carbon dioxide is ultimately reduced on the right",
+          "science": "During oxygenic photosynthesis, water is oxidized and carbon dioxide is ultimately reduced to carbohydrate using reducing power carried by NADPH.",
+          "exact_name": false,
+          "hint": "water being oxidized on the left while carbon dioxide is ultimately reduced on the right"
+        },
+        {
+          "object_id": "U3-K-116",
+          "term": "Light reactions and Calvin cycle",
+          "story": "the central ATP/NADPH bridge linking thylakoid light reactions to stroma carbon fixation",
+          "science": "Photosynthesis can be organized into light reactions that capture light energy and a Calvin cycle that uses ATP and NADPH to reduce carbon dioxide to carbohydrate.",
+          "exact_name": false,
+          "hint": "the central ATP/NADPH bridge linking thylakoid light reactions to stroma carbon fixation"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Photosynthesis equation as model",
+          "meaning": "The common overall equation 6 CO2 + 6 H2O + light → C6H12O6 + 6 O2 is a simplified net model of photosynthesis; the direct carbon-fixation product is not glucose itself.",
+          "image": "the net photosynthesis equation suspended above the detailed two-part reaction board"
+        },
+        {
+          "term": "Photosynthetic oxygen comes from water",
+          "meaning": "The O2 released by oxygenic photosynthesis is derived from oxidation of water during the light reactions.",
+          "image": "the left water-oxidation chamber feeding the O₂ outlet while the CO₂ chamber stays separate"
+        },
+        {
+          "term": "Photosynthesis as redox",
+          "meaning": "During oxygenic photosynthesis, water is oxidized and carbon dioxide is ultimately reduced to carbohydrate using reducing power carried by NADPH.",
+          "image": "water being oxidized on the left while carbon dioxide is ultimately reduced on the right"
+        },
+        {
+          "term": "Light reactions and Calvin cycle",
+          "meaning": "Photosynthesis can be organized into light reactions that capture light energy and a Calvin cycle that uses ATP and NADPH to reduce carbon dioxide to carbohydrate.",
+          "image": "the central ATP/NADPH bridge linking thylakoid light reactions to stroma carbon fixation"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-115",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Photon and Wavelength Prism",
+      "misconception_guards": [
+        "Photosynthetic O2 comes from water oxidation, not from CO2.",
+        "NADPH is used later for carbon reduction; do not depict water electrons as being passed directly into carbohydrate in one step.",
+        "Keep these confusable terms physically and verbally distinct: light reactions, Calvin cycle.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-009, RF-U3-029; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "REDOX_SYSTEM_MAP",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "water oxidation and O2 release",
+          "light reactions / Calvin-cycle linkage",
+          "CO2 reduction to carbohydrate model",
+          "Oxidize water on the left, carry energy and reducing power through the light-reaction/Calvin-cycle linkage, and reduce carbon dioxide on the right without implying that the oxygen released comes from CO2."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Photosynthesis equation as model; Photosynthetic oxygen comes from water; Photosynthesis as redox; Light reactions and Calvin cycle."
+    },
+    {
+      "scene_index": 5,
+      "locus": "Photon and Wavelength Prism",
+      "title": "The Prism Where Shorter Waves Carry More Per Photon",
+      "scene_kicker": "Before a pigment can capture light, the conservatory has to distinguish photon energy from wavelength and color.",
+      "location_description": "Photon and Wavelength Prism — the spectrum wall where wavelength changes are tied to photon energy and pigment absorption.",
+      "scene_layout": {
+        "orientation": "You enter Photon and Wavelength Prism and stop at the spectrum wall where wavelength changes are tied to photon energy and pigment absorption. On your left is short-wavelength/high-energy photons; directly ahead is visible-spectrum prism; on your right is long-wavelength/lower-energy photons. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Short-wavelength, higher-energy photons",
+            "symbol": "short λ",
+            "description": "A fixed left beam contains shorter-wavelength photons and an energy meter that reads higher per photon."
+          },
+          {
+            "position": "center",
+            "label": "Visible-spectrum prism",
+            "symbol": "spectrum",
+            "description": "White light enters the central prism and spreads into visible wavelengths whose spacing and energy can be compared without treating color itself as stored energy."
+          },
+          {
+            "position": "right",
+            "label": "Long-wavelength, lower-energy photons",
+            "symbol": "long λ",
+            "description": "A fixed right beam contains longer-wavelength photons and an energy meter that reads lower per photon than the short-wavelength beam."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "white-light beam",
+          "kind": "radiation source",
+          "visual": "a white beam entering the prism from above",
+          "job": "provide photons spanning visible wavelengths"
+        },
+        {
+          "name": "photon marker",
+          "kind": "scientific tracer",
+          "visual": "a small pulse marker attached to one photon path only until that photon is absorbed",
+          "job": "help compare wavelength and photon energy without turning light energy into a persistent material token"
+        },
+        {
+          "name": "wavelength ruler",
+          "kind": "measurement reference",
+          "visual": "a ruler measuring crest-to-crest spacing on stylized waves",
+          "job": "make wavelength a spatially measurable property"
+        }
+      ],
+      "story_open": "You enter the **Photon and Wavelength Prism**. On your **left**, tightly spaced wave crests run beneath a SHORT λ label and a higher-energy meter. Directly **ahead**, white light enters a large glass prism and separates into visible colors. On your **right**, widely spaced crests run beneath a LONG λ label and a lower-energy meter. Nia clips a tiny luminous marker to one incoming light path. ‘This marker follows a photon only until it is absorbed,’ she says. ‘After absorption, we will change what we track. We will not pretend a little glowing bead of “light energy” keeps traveling through the chloroplast.’",
+      "story_paragraphs": [
+        "You enter the **Photon and Wavelength Prism**. On your **left**, tightly spaced wave crests run beneath a SHORT λ label and a higher-energy meter. Directly **ahead**, white light enters a large glass prism and separates into visible colors. On your **right**, widely spaced crests run beneath a LONG λ label and a lower-energy meter. Nia clips a tiny luminous marker to one incoming light path. ‘This marker follows a photon only until it is absorbed,’ she says. ‘After absorption, we will change what we track. We will not pretend a little glowing bead of “light energy” keeps traveling through the chloroplast.’",
+        "Nia names a **photon** as a discrete quantum of electromagnetic radiation. The energy carried by a photon is inversely related to wavelength. She directs one short-wavelength photon down the **left** path and one longer-wavelength photon down the **right** path. The left energy meter reads higher per photon. The right reads lower. A shorter wavelength therefore corresponds to a higher-energy photon than a longer wavelength. This does not mean a visible color is itself a stored fuel molecule. It describes the energy associated with individual photons of different wavelengths.",
+        "She stretches a ruler between corresponding crests on the wave model. That crest-to-crest distance is **wavelength**. The left ruler is shorter; the right ruler is longer. The prism makes the abstract measurement visible as different regions of the spectrum, but Nia keeps the wavelength ruler in place so you remember that wavelength is a physical property of the radiation. As wavelength decreases, photon energy increases. As wavelength increases, photon energy decreases. The exact biological effect still depends on whether a pigment can absorb that wavelength.",
+        "Pigment screens descend across the spectrum. Some wavelengths disappear into a pigment model, while others continue through or bounce toward your eyes. Nia labels **pigment absorption and reflection**. Photosynthetic pigments absorb some wavelengths of visible light and reflect or transmit others; reflected wavelengths contribute to perceived color. Absorbed photons can drive electronic excitation in the pigment. Reflected light does not enter that pigment’s photochemistry. The photon marker vanishes the instant its photon is absorbed by the next bench, and a new EXCITATION indicator flashes in its place."
+      ],
+      "story_close": "With the original photon now absorbed, you follow the excitation indicator into the Pigment Spectrum Bench rather than carrying a fictional light particle forward.",
+      "object_ids": [
+        "U3-K-117",
+        "U3-K-118",
+        "U3-K-119"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-117",
+          "term": "Photon",
+          "story": "one discrete light pulse compared across short- and long-wavelength paths",
+          "science": "A photon is a discrete quantum of electromagnetic radiation; photon energy is inversely related to wavelength.",
+          "exact_name": true,
+          "hint": "one discrete light pulse compared across short- and long-wavelength paths"
+        },
+        {
+          "object_id": "U3-K-118",
+          "term": "Wavelength",
+          "story": "the crest-to-crest ruler showing shorter versus longer wavelength",
+          "science": "Wavelength is the distance between corresponding points of successive waves; shorter-wavelength photons carry more energy than longer-wavelength photons.",
+          "exact_name": true,
+          "hint": "the crest-to-crest ruler showing shorter versus longer wavelength"
+        },
+        {
+          "object_id": "U3-K-119",
+          "term": "Pigment absorption and reflection",
+          "story": "the pigment screen absorbing selected wavelengths while others are reflected or transmitted",
+          "science": "Photosynthetic pigments absorb some wavelengths of visible light and reflect or transmit others; reflected wavelengths contribute to perceived color.",
+          "exact_name": false,
+          "hint": "the pigment screen absorbing selected wavelengths while others are reflected or transmitted"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Photon",
+          "meaning": "A photon is a discrete quantum of electromagnetic radiation; photon energy is inversely related to wavelength.",
+          "image": "one discrete light pulse compared across short- and long-wavelength paths"
+        },
+        {
+          "term": "Wavelength",
+          "meaning": "Wavelength is the distance between corresponding points of successive waves; shorter-wavelength photons carry more energy than longer-wavelength photons.",
+          "image": "the crest-to-crest ruler showing shorter versus longer wavelength"
+        },
+        {
+          "term": "Pigment absorption and reflection",
+          "meaning": "Photosynthetic pigments absorb some wavelengths of visible light and reflect or transmit others; reflected wavelengths contribute to perceived color.",
+          "image": "the pigment screen absorbing selected wavelengths while others are reflected or transmitted"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-117",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Pigment Spectrum Bench",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-010; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "SPECTRUM_ENERGY_VISUAL",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "short-wavelength/high-energy photons",
+          "visible-spectrum prism",
+          "long-wavelength/lower-energy photons",
+          "Send photons of different wavelengths through the prism, compare their energy, and show pigment absorption versus reflection without treating color as stored “light energy.”"
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Photon; Wavelength; Pigment absorption and reflection."
+    },
+    {
+      "scene_index": 6,
+      "locus": "Pigment Spectrum Bench",
+      "title": "The Bench Where Pigments Divide the Work",
+      "scene_kicker": "The same spectrum reaches several pigments, but they do not absorb, excite, or protect the photosynthetic system in exactly the same way.",
+      "location_description": "Pigment Spectrum Bench — the absorption-spectrum bench comparing chlorophyll a, chlorophyll b, carotenoids, and reflected light.",
+      "scene_layout": {
+        "orientation": "You enter Pigment Spectrum Bench and stop at the absorption-spectrum bench comparing chlorophyll a, chlorophyll b, carotenoids, and reflected light. On your left is chlorophyll a/b absorption panels; directly ahead is pigment excitation bench; on your right is carotenoid/protection panel. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Chlorophyll a and b absorption panels",
+            "symbol": "Chl a/b",
+            "description": "Two fixed absorption panels compare chlorophyll a and chlorophyll b under the same incident spectrum."
+          },
+          {
+            "position": "center",
+            "label": "Pigment excitation bench",
+            "symbol": "excite",
+            "description": "A central thylakoid-membrane bench shows absorbed light exciting pigment electrons while reflected or transmitted wavelengths leave the pigment model."
+          },
+          {
+            "position": "right",
+            "label": "Carotenoid absorption and protection panel",
+            "symbol": "carot",
+            "description": "A right-side carotenoid panel broadens the usable light range and visibly dissipates excess excitation that could otherwise damage the photosynthetic apparatus."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "chlorophyll a panel",
+          "kind": "pigment model",
+          "visual": "a thylakoid-embedded pigment panel labeled chlorophyll a with its absorption trace",
+          "job": "show the primary reaction-center pigment while also participating in broader light absorption"
+        },
+        {
+          "name": "chlorophyll b panel",
+          "kind": "accessory pigment model",
+          "visual": "a neighboring chlorophyll b panel with a different absorption trace",
+          "job": "broaden the range of wavelengths usable by plants and green algae"
+        },
+        {
+          "name": "carotenoid panel",
+          "kind": "accessory/protective pigment model",
+          "visual": "orange-yellow pigment models with an excess-energy dissipation indicator",
+          "job": "broaden absorption and help protect the photosynthetic apparatus from excess excitation"
+        }
+      ],
+      "story_open": "The **Pigment Spectrum Bench** is arranged like a three-station laboratory. On your **left**, chlorophyll a and chlorophyll b absorption panels face the same incoming spectrum. Directly **ahead**, a thylakoid-membrane bench contains pigment molecules under a controlled light source. On your **right**, orange and yellow carotenoid models sit beside an excess-excitation warning lamp. The luminous photon marker from the prism is gone because its photon was absorbed. In its place, Nia activates a thin glow around one pigment molecule to represent an excited electronic state. ‘From this point on,’ she says, ‘we have to distinguish the light that was absorbed from what happens inside the pigment after absorption.’",
+      "story_paragraphs": [
+        "The **Pigment Spectrum Bench** is arranged like a three-station laboratory. On your **left**, chlorophyll a and chlorophyll b absorption panels face the same incoming spectrum. Directly **ahead**, a thylakoid-membrane bench contains pigment molecules under a controlled light source. On your **right**, orange and yellow carotenoid models sit beside an excess-excitation warning lamp. The luminous photon marker from the prism is gone because its photon was absorbed. In its place, Nia activates a thin glow around one pigment molecule to represent an excited electronic state. ‘From this point on,’ she says, ‘we have to distinguish the light that was absorbed from what happens inside the pigment after absorption.’",
+        "When the central pigment absorbs an appropriate photon, one of its electrons is raised to a higher energy level. Nia labels this **light excitation of chlorophyll**. Chlorophyll absorbs light energy, raising electrons to higher energy levels in photosystems I and II. She then names **chlorophyll** itself: a photosynthetic pigment embedded in thylakoid membranes that absorbs light used to excite electrons in photosystems. The important visual is not simply that chlorophyll is green. Its biological role here is that absorption changes the energy state of electrons associated with the pigment.",
+        "On the **left**, the two chlorophyll panels do not have identical absorption patterns. Nia highlights **chlorophyll a** as the primary reaction-center pigment in oxygenic photosynthesis. Beside it, **chlorophyll b** is labeled as an accessory chlorophyll that broadens the wavelengths usable for photosynthesis in plants and green algae. The word accessory does not mean unnecessary. By absorbing light in somewhat different regions and transferring excitation into the photosynthetic system, chlorophyll b expands the portion of the incident spectrum that can contribute to light capture.",
+        "The **right** carotenoid panel now absorbs additional wavelengths and the warning lamp flashes when the central bench receives more excitation than the system can safely use. The carotenoid model dissipates part of that excess excitation. Nia names **carotenoids** as accessory pigments that broaden light absorption and can dissipate excess light energy, helping protect the photosynthetic apparatus. All three pigment types therefore contribute to light handling, but not in identical roles. A circular array of pigment-protein complexes rises from the bench, arranging these pigments around a central pair."
+      ],
+      "story_close": "The pigment panels fold inward into a complete photosystem, and the excitation indicator begins moving toward the center without any electron yet leaving one antenna pigment for another.",
+      "object_ids": [
+        "U3-K-034",
+        "U3-K-112",
+        "U3-K-120",
+        "U3-K-121",
+        "U3-K-122"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-034",
+          "term": "Light excitation of chlorophyll",
+          "story": "the central chlorophyll electron indicator rising to an excited state after photon absorption",
+          "science": "Chlorophyll absorbs light energy, raising electrons to higher energy levels in photosystems I and II.",
+          "exact_name": true,
+          "hint": "the central chlorophyll electron indicator rising to an excited state after photon absorption"
+        },
+        {
+          "object_id": "U3-K-112",
+          "term": "Chlorophyll",
+          "story": "the thylakoid-embedded chlorophyll model absorbing light used for electron excitation",
+          "science": "Chlorophyll is a photosynthetic pigment embedded in thylakoid membranes that absorbs light used to excite electrons in photosystems.",
+          "exact_name": true,
+          "hint": "the thylakoid-embedded chlorophyll model absorbing light used for electron excitation"
+        },
+        {
+          "object_id": "U3-K-120",
+          "term": "Chlorophyll a",
+          "story": "the chlorophyll a panel connected to the reaction-center role",
+          "science": "Chlorophyll a is the primary reaction-center pigment in oxygenic photosynthesis.",
+          "exact_name": true,
+          "hint": "the chlorophyll a panel connected to the reaction-center role"
+        },
+        {
+          "object_id": "U3-K-121",
+          "term": "Chlorophyll b",
+          "story": "the chlorophyll b panel broadening usable wavelengths",
+          "science": "Chlorophyll b is an accessory chlorophyll that broadens the wavelengths usable for photosynthesis in plants and green algae.",
+          "exact_name": true,
+          "hint": "the chlorophyll b panel broadening usable wavelengths"
+        },
+        {
+          "object_id": "U3-K-122",
+          "term": "Carotenoids",
+          "story": "the carotenoid panel broadening absorption and dissipating excess excitation",
+          "science": "Carotenoids are accessory pigments that broaden light absorption and can dissipate excess light energy, helping protect the photosynthetic apparatus.",
+          "exact_name": true,
+          "hint": "the carotenoid panel broadening absorption and dissipating excess excitation"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Light excitation of chlorophyll",
+          "meaning": "Chlorophyll absorbs light energy, raising electrons to higher energy levels in photosystems I and II.",
+          "image": "the central chlorophyll electron indicator rising to an excited state after photon absorption"
+        },
+        {
+          "term": "Chlorophyll",
+          "meaning": "Chlorophyll is a photosynthetic pigment embedded in thylakoid membranes that absorbs light used to excite electrons in photosystems.",
+          "image": "the thylakoid-embedded chlorophyll model absorbing light used for electron excitation"
+        },
+        {
+          "term": "Chlorophyll a",
+          "meaning": "Chlorophyll a is the primary reaction-center pigment in oxygenic photosynthesis.",
+          "image": "the chlorophyll a panel connected to the reaction-center role"
+        },
+        {
+          "term": "Chlorophyll b",
+          "meaning": "Chlorophyll b is an accessory chlorophyll that broadens the wavelengths usable for photosynthesis in plants and green algae.",
+          "image": "the chlorophyll b panel broadening usable wavelengths"
+        },
+        {
+          "term": "Carotenoids",
+          "meaning": "Carotenoids are accessory pigments that broaden light absorption and can dissipate excess light energy, helping protect the photosynthetic apparatus.",
+          "image": "the carotenoid panel broadening absorption and dissipating excess excitation"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-112",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Photosystem Antenna Theater",
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: chlorophyll a, chlorophyll b, carotenoids.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-010; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "PIGMENT_COMPARISON",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "chlorophyll a/b absorption panels",
+          "pigment excitation bench",
+          "carotenoid/protection panel",
+          "Illuminate chlorophyll a, chlorophyll b, and carotenoids with the same spectrum and compare absorption, excitation, reflected wavelengths, and carotenoid protective roles."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Light excitation of chlorophyll; Chlorophyll; Chlorophyll a; Chlorophyll b; plus embedded supporting relationships at this locus."
+    },
+    {
+      "scene_index": 7,
+      "locus": "Photosystem Antenna Theater",
+      "title": "The Antenna Where Energy Moves Before an Electron Does",
+      "scene_kicker": "The conservatory’s most dangerous shortcut is exposed here: excitation can move through an antenna without one electron hopping from pigment to pigment.",
+      "location_description": "Photosystem Antenna Theater — the thylakoid-membrane photosystem model with antenna pigments surrounding a reaction center.",
+      "scene_layout": {
+        "orientation": "You enter Photosystem Antenna Theater and stop at the thylakoid-membrane photosystem model with antenna pigments surrounding a reaction center. On your left is light-harvesting pigments; directly ahead is reaction-center chlorophyll and acceptor; on your right is excitation-energy transfer path. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Light-harvesting pigments",
+            "symbol": "antenna",
+            "description": "A fixed left antenna array contains multiple pigment molecules bound to proteins around the photosystem core."
+          },
+          {
+            "position": "center",
+            "label": "Reaction-center chlorophyll and primary acceptor",
+            "symbol": "RC",
+            "description": "The central reaction center contains a special chlorophyll pair beside a primary electron acceptor where excitation finally produces actual electron transfer."
+          },
+          {
+            "position": "right",
+            "label": "Excitation-energy transfer path",
+            "symbol": "energy→",
+            "description": "A right-side tracing display follows excitation energy toward the reaction center while explicitly refusing to draw one identical electron hopping from pigment to pigment."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "antenna pigment array",
+          "kind": "light-harvesting structure",
+          "visual": "a ring of pigments bound to proteins around a central reaction center",
+          "job": "absorb photons and transfer excitation energy toward the center"
+        },
+        {
+          "name": "reaction-center chlorophyll pair",
+          "kind": "reaction center",
+          "visual": "a special paired chlorophyll model at the center of the photosystem",
+          "job": "become excited and donate an electron to the primary acceptor"
+        },
+        {
+          "name": "primary electron acceptor",
+          "kind": "electron destination",
+          "visual": "a conventional acceptor positioned directly beside the reaction-center pair",
+          "job": "receive the actual transferred electron after reaction-center excitation"
+        }
+      ],
+      "story_open": "You enter the **Photosystem Antenna Theater**, a circular thylakoid-membrane stage. On your **left**, many pigments are bound to proteins in a broad antenna array. Directly **ahead**, a special chlorophyll pair sits beside a primary electron acceptor. On your **right**, a tracing wall can display either EXCITATION ENERGY or ELECTRON TRANSFER, but never both with the same symbol. Nia dims the room and sends one photon into a pigment near the edge of the left antenna. The pigment becomes excited. The photon itself is absorbed and is no longer shown traveling. A wave of excitation begins moving inward instead.",
+      "story_paragraphs": [
+        "You enter the **Photosystem Antenna Theater**, a circular thylakoid-membrane stage. On your **left**, many pigments are bound to proteins in a broad antenna array. Directly **ahead**, a special chlorophyll pair sits beside a primary electron acceptor. On your **right**, a tracing wall can display either EXCITATION ENERGY or ELECTRON TRANSFER, but never both with the same symbol. Nia dims the room and sends one photon into a pigment near the edge of the left antenna. The pigment becomes excited. The photon itself is absorbed and is no longer shown traveling. A wave of excitation begins moving inward instead.",
+        "Nia names the whole membrane complex a **photosystem**. A photosystem contains a reaction center surrounded by light-harvesting pigments and proteins. The broad left array is the **light-harvesting complex**. Its pigment molecules absorb photons and transfer excitation energy toward the reaction center. Each pigment remains fixed in its protein environment, so the theater looks like a receiving dish funneling excitation inward, not a chain of pigments handing electrons to one another. The tracing wall deliberately shows the excitation as a changing glow that appears on neighboring pigments in sequence. It does not draw a single labeled electron leaving one antenna pigment, entering the next, and continuing around the ring.",
+        "That distinction becomes explicit when Nia labels **excitation-energy transfer**. In light-harvesting complexes, excitation energy is transferred among pigment molecules until reaction-center chlorophyll is excited; the same electron is not passed from antenna pigment to antenna pigment. The glowing excitation reaches the central chlorophyll pair. Only now does the electron-transfer display on the **right** activate. The antenna stage has delivered energy to the reaction center, not delivered one traveling antenna electron to it.",
+        "The center is the **reaction center**. It contains a special chlorophyll pair and a primary electron acceptor. Once the reaction-center chlorophyll is excited, an electron can be transferred from that chlorophyll system to the primary acceptor. Nia changes the continuity marker at this exact moment. The soft excitation glow stops. A sharply outlined blue electron path begins at the reaction center and points to the acceptor. ‘Now we are following an actual electron transfer,’ she says. The acceptor gate opens onto the first large membrane complex in the linear electron-flow route: photosystem II."
+      ],
+      "story_close": "You follow the newly highlighted electron path into photosystem II, while the antenna theater remains behind as the place where excitation energy and electron transfer were permanently separated.",
+      "object_ids": [
+        "U3-K-123",
+        "U3-K-124",
+        "U3-K-125",
+        "U3-K-131"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-123",
+          "term": "Photosystem",
+          "story": "the complete antenna-plus-reaction-center complex embedded in thylakoid membrane",
+          "science": "A photosystem is a thylakoid-membrane complex containing a reaction center and surrounding light-harvesting pigments and proteins.",
+          "exact_name": true,
+          "hint": "the complete antenna-plus-reaction-center complex embedded in thylakoid membrane"
+        },
+        {
+          "object_id": "U3-K-124",
+          "term": "Reaction center",
+          "story": "the central special chlorophyll pair beside a primary electron acceptor",
+          "science": "A photosystem reaction center contains a special chlorophyll pair and primary electron acceptor where excitation leads to electron transfer.",
+          "exact_name": true,
+          "hint": "the central special chlorophyll pair beside a primary electron acceptor"
+        },
+        {
+          "object_id": "U3-K-125",
+          "term": "Light-harvesting complex",
+          "story": "the surrounding pigment-protein antenna transferring excitation toward the center",
+          "science": "Light-harvesting complexes contain pigment molecules bound to proteins and transfer excitation energy toward the reaction center.",
+          "exact_name": true,
+          "hint": "the surrounding pigment-protein antenna transferring excitation toward the center"
+        },
+        {
+          "object_id": "U3-K-131",
+          "term": "Excitation-energy transfer",
+          "story": "the excitation glow moving pigment-to-pigment without one identical electron hopping through the antenna",
+          "science": "In light-harvesting complexes, excitation energy is transferred among pigment molecules until reaction-center chlorophyll is excited; the same electron is not passed from antenna pigment to antenna pigment.",
+          "exact_name": false,
+          "hint": "the excitation glow moving pigment-to-pigment without one identical electron hopping through the antenna"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Photosystem",
+          "meaning": "A photosystem is a thylakoid-membrane complex containing a reaction center and surrounding light-harvesting pigments and proteins.",
+          "image": "the complete antenna-plus-reaction-center complex embedded in thylakoid membrane"
+        },
+        {
+          "term": "Reaction center",
+          "meaning": "A photosystem reaction center contains a special chlorophyll pair and primary electron acceptor where excitation leads to electron transfer.",
+          "image": "the central special chlorophyll pair beside a primary electron acceptor"
+        },
+        {
+          "term": "Light-harvesting complex",
+          "meaning": "Light-harvesting complexes contain pigment molecules bound to proteins and transfer excitation energy toward the reaction center.",
+          "image": "the surrounding pigment-protein antenna transferring excitation toward the center"
+        },
+        {
+          "term": "Excitation-energy transfer",
+          "meaning": "In light-harvesting complexes, excitation energy is transferred among pigment molecules until reaction-center chlorophyll is excited; the same electron is not passed from antenna pigment to antenna pigment.",
+          "image": "the excitation glow moving pigment-to-pigment without one identical electron hopping through the antenna"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-123",
+      "checkpoint_prompt": "What moves through the antenna pigments before the reaction center transfers an electron?",
+      "checkpoint_answer": "Excitation energy moves among pigments toward the reaction center.",
+      "checkpoint_hint": "Picture the antenna theater. A glow of excitation moves among pigments, but the blue electron path begins only at the reaction center and primary acceptor.",
+      "next_locus": "Photosystem II Water Splitter",
+      "misconception_guards": [
+        "Transfer excitation energy among antenna pigments; do not animate one identical electron hopping pigment-to-pigment through the antenna complex.",
+        "Keep these confusable terms physically and verbally distinct: photosystem, light-harvesting complex, reaction center.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-011, RF-U3-015; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "EXCITATION_TRANSFER_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "light-harvesting pigments",
+          "reaction-center chlorophyll and acceptor",
+          "excitation-energy transfer path",
+          "Excite an antenna pigment, pass excitation energy among neighboring pigments, and deliver that energy to the reaction-center chlorophyll while keeping actual electron transfer confined to the reaction center/acceptor step."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Photosystem; Reaction center; Light-harvesting complex; Excitation-energy transfer."
+    },
+    {
+      "scene_index": 8,
+      "locus": "Photosystem II Water Splitter",
+      "title": "The Water Splitter That Replaces a Missing Electron",
+      "scene_kicker": "Photosystem II can send an excited electron onward only if the reaction center is supplied with a replacement, and water provides it.",
+      "location_description": "Photosystem II Water Splitter — the PSII reaction-center station beside the water-oxidation complex.",
+      "scene_layout": {
+        "orientation": "You enter Photosystem II Water Splitter and stop at the PSII reaction-center station beside the water-oxidation complex. On your left is water-splitting input; directly ahead is photosystem II reaction center; on your right is electron/O2/proton outputs. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Water-splitting input",
+            "symbol": "H₂O",
+            "description": "A water-oxidation complex on the left supplies replacement electrons while separating the resulting protons and molecular oxygen into distinct outputs."
+          },
+          {
+            "position": "center",
+            "label": "Photosystem II reaction center",
+            "symbol": "PSII",
+            "description": "The center photosystem II model absorbs light and transfers an excited reaction-center electron to an acceptor, leaving an electron vacancy that must be replaced."
+          },
+          {
+            "position": "right",
+            "label": "Electron, oxygen, and proton outputs",
+            "symbol": "e⁻/O₂/H⁺",
+            "description": "Three fixed right-side paths keep the outgoing electron, released oxygen, and lumen-directed protons physically separated so their roles cannot be merged."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "photosystem II complex",
+          "kind": "membrane complex",
+          "visual": "a conventional photosystem II complex embedded in a thylakoid membrane cross-section",
+          "job": "absorb light and transfer an excited electron to an acceptor"
+        },
+        {
+          "name": "water-oxidation complex",
+          "kind": "electron replacement system",
+          "visual": "a water-splitting complex beside photosystem II on the lumen side",
+          "job": "replace electrons lost from photosystem II while producing H+ and O₂"
+        },
+        {
+          "name": "rising lumen H+ gauge",
+          "kind": "continuity gauge",
+          "visual": "the first illuminated segment of a proton-concentration gauge inside the thylakoid lumen",
+          "job": "begin tracking the proton gradient that will later drive ATP synthase"
+        }
+      ],
+      "story_open": "The **Photosystem II Water Splitter** is embedded in a full thylakoid-membrane cross-section. On your **left**, water molecules enter a water-oxidation complex facing the thylakoid lumen. Directly **ahead**, photosystem II spans the membrane with its reaction center connected to an electron acceptor. On your **right**, three output tracks are physically separated: a blue electron path leading into the electron transport chain, an O₂ outlet, and a proton path emptying into the lumen. The proton-gradient gauge introduced in the briefs is dark except for its first segment. Nia keeps all three outputs visible before she turns on the light.",
+      "story_paragraphs": [
+        "The **Photosystem II Water Splitter** is embedded in a full thylakoid-membrane cross-section. On your **left**, water molecules enter a water-oxidation complex facing the thylakoid lumen. Directly **ahead**, photosystem II spans the membrane with its reaction center connected to an electron acceptor. On your **right**, three output tracks are physically separated: a blue electron path leading into the electron transport chain, an O₂ outlet, and a proton path emptying into the lumen. The proton-gradient gauge introduced in the briefs is dark except for its first segment. Nia keeps all three outputs visible before she turns on the light.",
+        "A photon is absorbed by the photosystem II antenna system and excitation reaches the reaction center. The reaction-center system transfers an excited electron to an acceptor, and the blue electron tracer moves onto the **right** electron track. Nia names **photosystem II**. Photosystem II absorbs light, transfers an excited electron to an acceptor, and receives replacement electrons from water oxidation. The electron leaving the reaction center creates a vacancy. Without replacement electrons, the photosystem could not continue sending electrons into linear electron flow.",
+        "The **left** water-oxidation complex now acts. Water is oxidized, and electrons from that oxidation replace electrons lost from photosystem II. Nia labels the relationship **water supplies PSII electrons**. Water is split during the light reactions and supplies electrons that replace those lost from photosystem II. The display prevents a common mix-up by keeping the replacement electron moving toward the reaction center while the already-excited electron continues away through the acceptor route. They are part of one continuous electron-flow system, but they occupy different moments in the cycle.",
+        "The other products of water oxidation separate visibly. Nia names **water-splitting products**. Oxidation of water associated with photosystem II supplies electrons, releases protons into the thylakoid lumen, and produces molecular oxygen. The O₂ leaves through its own outlet. The H⁺ markers accumulate inside the lumen and the proton-gradient gauge rises for the first time. The blue electron continues along the membrane toward the next complex. Nia points back to the redox board: this is the molecular event that explains why photosynthetic O₂ comes from water."
+      ],
+      "story_close": "The oxygen outlet vents away, the lumen keeps its new protons, and you follow the highlighted electron onto the thylakoid electron-transport bridge.",
+      "object_ids": [
+        "U3-K-035",
+        "U3-K-126",
+        "U3-K-130"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-035",
+          "term": "Water supplies PSII electrons",
+          "story": "the left water-oxidation complex supplying replacement electrons to photosystem II",
+          "science": "Water is split during the light reactions and supplies electrons that replace those lost from photosystem II.",
+          "exact_name": true,
+          "hint": "the left water-oxidation complex supplying replacement electrons to photosystem II"
+        },
+        {
+          "object_id": "U3-K-126",
+          "term": "Photosystem II",
+          "story": "the photosystem II reaction center transferring an excited electron to an acceptor",
+          "science": "Photosystem II absorbs light, transfers an excited electron to an acceptor, and receives replacement electrons from water oxidation.",
+          "exact_name": true,
+          "hint": "the photosystem II reaction center transferring an excited electron to an acceptor"
+        },
+        {
+          "object_id": "U3-K-130",
+          "term": "Water-splitting products",
+          "story": "the three separated water-oxidation outputs: replacement electrons, lumen H⁺, and O₂",
+          "science": "Oxidation of water associated with photosystem II supplies electrons, releases protons into the thylakoid lumen, and produces molecular oxygen.",
+          "exact_name": false,
+          "hint": "the three separated water-oxidation outputs: replacement electrons, lumen H⁺, and O₂"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Water supplies PSII electrons",
+          "meaning": "Water is split during the light reactions and supplies electrons that replace those lost from photosystem II.",
+          "image": "the left water-oxidation complex supplying replacement electrons to photosystem II"
+        },
+        {
+          "term": "Photosystem II",
+          "meaning": "Photosystem II absorbs light, transfers an excited electron to an acceptor, and receives replacement electrons from water oxidation.",
+          "image": "the photosystem II reaction center transferring an excited electron to an acceptor"
+        },
+        {
+          "term": "Water-splitting products",
+          "meaning": "Oxidation of water associated with photosystem II supplies electrons, releases protons into the thylakoid lumen, and produces molecular oxygen.",
+          "image": "the three separated water-oxidation outputs: replacement electrons, lumen H⁺, and O₂"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-126",
+      "checkpoint_prompt": "Where does photosystem II obtain replacement electrons after excitation?",
+      "checkpoint_answer": "From water oxidation at the water-splitting complex.",
+      "checkpoint_hint": "Picture the water splitter on the left of photosystem II. It refills the missing electron while O₂ leaves and H⁺ enters the lumen.",
+      "next_locus": "Thylakoid Electron-Transport Bridge",
+      "misconception_guards": [
+        "Water splitting replaces electrons lost from photosystem II and produces O2 and H+; keep those products spatially separate.",
+        "Keep these confusable terms physically and verbally distinct: photosystem II, photosystem I.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-009; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "REDOX_REPLACEMENT_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "water-splitting input",
+          "photosystem II reaction center",
+          "electron/O2/proton outputs",
+          "Excite photosystem II, remove an electron from its reaction center, split water to replace that electron, and visibly separate the resulting electrons, protons, and oxygen product."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Water supplies PSII electrons; Photosystem II; Water-splitting products."
+    },
+    {
+      "scene_index": 9,
+      "locus": "Thylakoid Electron-Transport Bridge",
+      "title": "The Bridge That Builds a Gradient While Electrons Move",
+      "scene_kicker": "The electron does not become ATP; its transfer through membrane machinery helps establish the proton gradient that will later power ATP synthase.",
+      "location_description": "Thylakoid Electron-Transport Bridge — the membrane electron-transfer bridge linking photosystem II to photosystem I while pumping protons.",
+      "scene_layout": {
+        "orientation": "You enter Thylakoid Electron-Transport Bridge and stop at the membrane electron-transfer bridge linking photosystem II to photosystem I while pumping protons. On your left is photosystem II electron departure; directly ahead is electron transport/proton-pumping bridge; on your right is photosystem I arrival. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Photosystem II electron departure",
+            "symbol": "PSII e⁻",
+            "description": "The highlighted electron leaves photosystem II from a fixed left-side donor point and enters the membrane electron-transfer route."
+          },
+          {
+            "position": "center",
+            "label": "Electron-transport and proton-gradient bridge",
+            "symbol": "ETC",
+            "description": "The central thylakoid-membrane bridge couples a series of redox transfers to increasing proton concentration in the thylakoid lumen."
+          },
+          {
+            "position": "right",
+            "label": "Photosystem I arrival",
+            "symbol": "PSI e⁻",
+            "description": "The electron reaches a fixed photosystem I receiving point on the right after some of its transferred energy has been used to help establish the proton gradient."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "highlighted electron",
+          "kind": "electron tracer",
+          "visual": "the same highlighted electron path leaving photosystem II and entering the chain",
+          "job": "keep electron transfer distinct from the earlier antenna excitation-energy transfer"
+        },
+        {
+          "name": "thylakoid membrane bridge",
+          "kind": "membrane route",
+          "visual": "a conventional membrane segment containing electron-transfer proteins between photosystem II and photosystem I",
+          "job": "couple stepwise redox transfer to proton-gradient formation"
+        },
+        {
+          "name": "lumen proton gauge",
+          "kind": "continuity gauge",
+          "visual": "the same H+ gauge now rising along the lumen side of the bridge",
+          "job": "show that the thylakoid lumen becomes more proton-rich than the stroma"
+        }
+      ],
+      "story_open": "The **Thylakoid Electron-Transport Bridge** stretches across the conservatory like a membrane walkway. Photosystem II remains fixed on your **left**. Directly **ahead**, a chain of membrane electron-transfer components crosses the bridge. Photosystem I waits on your **right**. Beneath the walkway is the thylakoid lumen, where the H⁺ gauge has already risen because of water oxidation. Above it is the stroma, with a lower proton concentration. The blue electron tracer enters the first transfer step. Nia places a separate red arrow on the proton gauge so electron movement and proton accumulation are never represented by the same marker.",
+      "story_paragraphs": [
+        "The **Thylakoid Electron-Transport Bridge** stretches across the conservatory like a membrane walkway. Photosystem II remains fixed on your **left**. Directly **ahead**, a chain of membrane electron-transfer components crosses the bridge. Photosystem I waits on your **right**. Beneath the walkway is the thylakoid lumen, where the H⁺ gauge has already risen because of water oxidation. Above it is the stroma, with a lower proton concentration. The blue electron tracer enters the first transfer step. Nia places a separate red arrow on the proton gauge so electron movement and proton accumulation are never represented by the same marker.",
+        "The electron moves through a sequence of redox transfers from one component to another. The blue tracer advances carrier by carrier while the red proton gauge changes separately, making it impossible to mistake the electron itself for a proton or for ATP. As electron transfer proceeds, some of the available energy associated with that transfer is coupled to processes that increase proton concentration in the thylakoid lumen. Nia names the relationship **photosystem linkage**: photosystems II and I are embedded in the thylakoid membrane and linked by electron transfer through an electron transport chain. The chain is a route for stepwise electron transfer, not a pipe that directly pours ATP into the stroma.",
+        "The red H⁺ gauge rises further. Nia labels the result the **thylakoid proton gradient**. Electron-transfer redox reactions establish an electrochemical proton gradient across the thylakoid membrane, with a higher proton concentration in the thylakoid lumen than in the stroma. The two sides of the membrane remain visible at once. H⁺ accumulation is spatially inside the thylakoid lumen. ATP has not yet been formed at this bridge; the gradient is stored potential for the chemiosmotic step still ahead.",
+        "A side display briefly compares the same general membrane logic across forms of life. Nia names **ETC locations across life**. Electron transport chain reactions occur in chloroplasts, mitochondria, and across prokaryotic plasma membranes. The membranes and associated pathways are not identical in every organism, but membrane-bound electron transfer coupled to electrochemical gradients is a recurring biological strategy. On the main bridge, the highlighted electron reaches photosystem I on the **right**. Its energy state is now lower than it was immediately after photosystem II excitation, so another light input is required."
+      ],
+      "story_close": "The electron arrives at photosystem I and pauses beside a second light receiver, while the elevated lumen H+ gauge remains behind as a separate product of the bridge.",
+      "object_ids": [
+        "U3-K-032",
+        "U3-K-036",
+        "U3-K-037"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-032",
+          "term": "ETC locations across life",
+          "story": "the comparison panel showing membrane electron transport in chloroplasts, mitochondria, and prokaryotic plasma membranes",
+          "science": "Electron transport chain reactions occur in chloroplasts, mitochondria, and across prokaryotic plasma membranes.",
+          "exact_name": true,
+          "hint": "the comparison panel showing membrane electron transport in chloroplasts, mitochondria, and prokaryotic plasma membranes"
+        },
+        {
+          "object_id": "U3-K-036",
+          "term": "Photosystem linkage",
+          "story": "the highlighted electron path linking photosystem II to photosystem I through the thylakoid chain",
+          "science": "Photosystems II and I are embedded in the thylakoid membrane and linked by electron transfer through an electron transport chain.",
+          "exact_name": true,
+          "hint": "the highlighted electron path linking photosystem II to photosystem I through the thylakoid chain"
+        },
+        {
+          "object_id": "U3-K-037",
+          "term": "Thylakoid proton gradient",
+          "story": "the lumen H⁺ gauge rising above the stroma H⁺ level across the thylakoid membrane",
+          "science": "Electron-transfer redox reactions establish an electrochemical proton gradient across the thylakoid membrane, with higher proton concentration in the thylakoid lumen than in the stroma.",
+          "exact_name": true,
+          "hint": "the lumen H⁺ gauge rising above the stroma H⁺ level across the thylakoid membrane"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "ETC locations across life",
+          "meaning": "Electron transport chain reactions occur in chloroplasts, mitochondria, and across prokaryotic plasma membranes.",
+          "image": "the comparison panel showing membrane electron transport in chloroplasts, mitochondria, and prokaryotic plasma membranes"
+        },
+        {
+          "term": "Photosystem linkage",
+          "meaning": "Photosystems II and I are embedded in the thylakoid membrane and linked by electron transfer through an electron transport chain.",
+          "image": "the highlighted electron path linking photosystem II to photosystem I through the thylakoid chain"
+        },
+        {
+          "term": "Thylakoid proton gradient",
+          "meaning": "Electron-transfer redox reactions establish an electrochemical proton gradient across the thylakoid membrane, with higher proton concentration in the thylakoid lumen than in the stroma.",
+          "image": "the lumen H⁺ gauge rising above the stroma H⁺ level across the thylakoid membrane"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-036",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Photosystem I NADPH Station",
+      "misconception_guards": [
+        "Do not replace the conventional scientific structure or process with a mnemonic object that changes the underlying mechanism."
+      ],
+      "required_visual": {
+        "visual_mode": "MEMBRANE_ETC_GRADIENT_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "photosystem II electron departure",
+          "electron transport/proton-pumping bridge",
+          "photosystem I arrival",
+          "Move the highlighted electron from photosystem II through the thylakoid electron-transport chain toward photosystem I while using released energy to increase H+ concentration in the lumen."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: ETC locations across life; Photosystem linkage; Thylakoid proton gradient."
+    },
+    {
+      "scene_index": 10,
+      "locus": "Photosystem I NADPH Station",
+      "title": "The Second Light Lift and the NADPH Exit",
+      "scene_kicker": "Photosystem I raises electron energy again and directs reducing power into NADPH on the stroma side.",
+      "location_description": "Photosystem I NADPH Station — the PSI reaction center where arriving electrons are re-excited before NADP+ reduction.",
+      "scene_layout": {
+        "orientation": "You enter Photosystem I NADPH Station and stop at the PSI reaction center where arriving electrons are re-excited before NADP+ reduction. On your left is incoming ETC electrons; directly ahead is photosystem I / P700 reaction center; on your right is NADP+ to NADPH output. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Incoming electron from the thylakoid ETC",
+            "symbol": "e⁻ in",
+            "description": "The electron arriving from the inter-photosystem chain enters from the left at a lower energy state than immediately after photosystem II excitation."
+          },
+          {
+            "position": "center",
+            "label": "Photosystem I and P700 reaction center",
+            "symbol": "PSI/P700",
+            "description": "A central photosystem I model uses another light input to re-excite the reaction-center system before electron transfer continues."
+          },
+          {
+            "position": "right",
+            "label": "NADP+ to NADPH output",
+            "symbol": "NADPH",
+            "description": "The stroma-side right station accepts reducing power and converts NADP+ to NADPH, keeping this reducing carrier distinct from ATP."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "photosystem I complex",
+          "kind": "membrane complex",
+          "visual": "a conventional photosystem I complex centered around its reaction-center chlorophyll pair",
+          "job": "use a new light input to raise electron energy again"
+        },
+        {
+          "name": "P680/P700 label cards",
+          "kind": "reaction-center labels",
+          "visual": "two small reference cards assigning P680 to photosystem II and P700 to photosystem I",
+          "job": "keep the labels attached to reaction-center chlorophyll pairs rather than inventing extra photosystems"
+        },
+        {
+          "name": "NADP+ reduction station",
+          "kind": "carrier-forming output",
+          "visual": "a stroma-side station where NADP+ receives reducing power and becomes NADPH",
+          "job": "form the light-reaction reducing carrier used later in carbon fixation"
+        }
+      ],
+      "story_open": "The **Photosystem I NADPH Station** keeps the thylakoid membrane horizontal across the room. On your **left**, the highlighted electron arrives from the inter-photosystem electron transport chain. Directly **ahead**, photosystem I surrounds its central reaction-center chlorophyll pair. On your **right**, a stroma-side station holds NADP⁺ beside an empty NADPH output slot. Two small reference cards are mounted above the membrane: P680 under photosystem II and P700 under photosystem I. Nia does not let those labels become new actors. ‘They name reaction-center chlorophyll pairs,’ she says, ‘not additional photosystems.’",
+      "story_paragraphs": [
+        "The **Photosystem I NADPH Station** keeps the thylakoid membrane horizontal across the room. On your **left**, the highlighted electron arrives from the inter-photosystem electron transport chain. Directly **ahead**, photosystem I surrounds its central reaction-center chlorophyll pair. On your **right**, a stroma-side station holds NADP⁺ beside an empty NADPH output slot. Two small reference cards are mounted above the membrane: P680 under photosystem II and P700 under photosystem I. Nia does not let those labels become new actors. ‘They name reaction-center chlorophyll pairs,’ she says, ‘not additional photosystems.’",
+        "A new photon is absorbed by the photosystem I light-harvesting system, and excitation energy reaches its reaction center. Nia names **photosystem I**. Photosystem I re-excites electrons arriving from the thylakoid electron transport chain and supports reduction of NADP⁺ to NADPH. The blue electron path leaves the reaction-center system again at a higher energy state and continues toward the stroma-side reducing pathway. This second light input is why the electron can finish at a high-energy reducing carrier after losing transferable energy along the bridge from photosystem II.",
+        "Nia points to the two reference cards and names **P680 and P700 reaction-center labels**. P680 and P700 are conventional labels for the reaction-center chlorophyll pairs of photosystem II and photosystem I, respectively, named for characteristic absorption peaks. She keeps the mapping physically fixed: PSII with P680, PSI with P700. The numbers do not tell the order in which the photosystems act in linear electron flow, and P680 or P700 should not be pictured as independent photosystems roaming the membrane. The two label cards remain bolted above their own complexes so the names cannot drift away from the reaction centers they describe.",
+        "At the **right** station, NADP⁺ receives reducing power and NADPH appears in the output slot. Nia labels **NADPH formation**. In photosynthesis, electrons passing through the thylakoid electron transport system ultimately reduce NADP⁺ to NADPH in association with photosystem I. The NADPH model moves to a waiting shelf on the stroma side. It is not ATP. It carries reducing power that will be used in carbon reduction. The proton-gradient gauge is still high, however, and no ATP has yet left the light-reaction system. A doorway opens beside a membrane-spanning turbine."
+      ],
+      "story_close": "NADPH waits at the stroma-side exit while you follow the still-unresolved proton gradient to ATP synthase for the final light-reaction step.",
+      "object_ids": [
+        "U3-K-033",
+        "U3-K-127",
+        "U3-K-128"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-033",
+          "term": "NADPH formation",
+          "story": "the stroma-side NADP⁺ station becoming NADPH after photosystem I electron transfer",
+          "science": "In photosynthesis, electrons passing through the thylakoid electron transport system ultimately reduce NADP+ to NADPH in association with photosystem I.",
+          "exact_name": true,
+          "hint": "the stroma-side NADP⁺ station becoming NADPH after photosystem I electron transfer"
+        },
+        {
+          "object_id": "U3-K-127",
+          "term": "Photosystem I",
+          "story": "the photosystem I reaction center re-exciting the incoming electron with a second light input",
+          "science": "Photosystem I re-excites electrons arriving from the thylakoid electron transport chain and supports reduction of NADP+ to NADPH.",
+          "exact_name": true,
+          "hint": "the photosystem I reaction center re-exciting the incoming electron with a second light input"
+        },
+        {
+          "object_id": "U3-K-128",
+          "term": "P680 and P700 reaction-center labels",
+          "story": "the fixed P680 label under PSII and P700 label under PSI",
+          "science": "P680 and P700 are conventional labels for the reaction-center chlorophyll pairs of photosystem II and photosystem I, named for characteristic absorption peaks.",
+          "exact_name": false,
+          "hint": "the fixed P680 label under PSII and P700 label under PSI"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "NADPH formation",
+          "meaning": "In photosynthesis, electrons passing through the thylakoid electron transport system ultimately reduce NADP+ to NADPH in association with photosystem I.",
+          "image": "the stroma-side NADP⁺ station becoming NADPH after photosystem I electron transfer"
+        },
+        {
+          "term": "Photosystem I",
+          "meaning": "Photosystem I re-excites electrons arriving from the thylakoid electron transport chain and supports reduction of NADP+ to NADPH.",
+          "image": "the photosystem I reaction center re-exciting the incoming electron with a second light input"
+        },
+        {
+          "term": "P680 and P700 reaction-center labels",
+          "meaning": "P680 and P700 are conventional labels for the reaction-center chlorophyll pairs of photosystem II and photosystem I, named for characteristic absorption peaks.",
+          "image": "the fixed P680 label under PSII and P700 label under PSI"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U3-K-127",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Photophosphorylation Turbine",
+      "misconception_guards": [
+        "P680 and P700 are reaction-center chlorophyll labels associated with PSII and PSI respectively; do not turn them into separate photosystems.",
+        "Keep these confusable terms physically and verbally distinct: ATP, NADPH.",
+        "Keep these confusable terms physically and verbally distinct: photosystem II, photosystem I.",
+        "Authoring must preserve the already-resolved scientific/scope correction associated with RF-U3-015; future student prose should express only the corrected science, not the audit label."
+      ],
+      "required_visual": {
+        "visual_mode": "REDOX_OUTPUT_SEQUENCE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "incoming ETC electrons",
+          "photosystem I / P700 reaction center",
+          "NADP+ to NADPH output",
+          "Re-excite the arriving electron in photosystem I and transfer reducing power to NADP+ so NADPH forms on the stroma side."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: NADPH formation; Photosystem I; P680 and P700 reaction-center labels."
+    },
+    {
+      "scene_index": 11,
+      "locus": "Photophosphorylation Turbine",
+      "title": "The Turbine Driven by Protons, Not by Photons",
+      "scene_kicker": "The final conversion becomes clear only when the learner sees that H+ movement through ATP synthase directly drives ATP formation.",
+      "location_description": "Photophosphorylation Turbine — the thylakoid ATP synthase spanning lumen and stroma with proton flow driving ATP formation.",
+      "scene_layout": {
+        "orientation": "You enter Photophosphorylation Turbine and stop at the thylakoid ATP synthase spanning lumen and stroma with proton flow driving ATP formation. On your left is high-H+ thylakoid lumen; directly ahead is ATP synthase turbine; on your right is stroma ATP output. These three zones do not swap positions during the scene.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "High-H+ thylakoid lumen",
+            "symbol": "H⁺ high",
+            "description": "A fixed left reservoir inside the thylakoid holds the higher proton concentration established during the light reactions."
+          },
+          {
+            "position": "center",
+            "label": "ATP synthase turbine",
+            "symbol": "ATP synthase",
+            "description": "A membrane-spanning ATP synthase at center provides the controlled route for protons to move down their electrochemical gradient."
+          },
+          {
+            "position": "right",
+            "label": "Stroma ATP and NADPH departure gate",
+            "symbol": "ATP + NADPH",
+            "description": "ATP is formed on the stroma side and joins NADPH at the fixed right exit leading toward the adjoining carbon-fixation greenhouse."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet showing a chloroplast cutaway, electron path, and thylakoid proton-gradient gauge",
+          "job": "Nia keeps the conservatory route spatially stable, separates light capture from electron transfer, keeps every chloroplast compartment visible, and names scientific terms only after their structure or action is clear."
+        },
+        {
+          "name": "proton gradient gauge",
+          "kind": "continuity gauge",
+          "visual": "the completed gauge showing more H+ in the thylakoid lumen than in the stroma",
+          "job": "provide the electrochemical gradient that directly powers proton flow through ATP synthase"
+        },
+        {
+          "name": "ATP synthase",
+          "kind": "membrane enzyme complex",
+          "visual": "a conventional ATP synthase spanning the thylakoid membrane with its catalytic side facing the stroma",
+          "job": "couple downhill proton movement to ATP formation from ADP and inorganic phosphate"
+        },
+        {
+          "name": "ATP and NADPH exit pair",
+          "kind": "light-reaction products",
+          "visual": "separate ATP and NADPH models waiting together at the stroma-side greenhouse door",
+          "job": "carry energy and reducing power toward carbon fixation while remaining chemically distinct"
+        }
+      ],
+      "story_open": "The route ends at the **Photophosphorylation Turbine**. On your **left**, the thylakoid lumen is crowded with H⁺ markers and the proton-gradient gauge reads high. Directly **ahead**, ATP synthase spans the thylakoid membrane. On your **right**, the stroma contains ADP and inorganic phosphate, an empty ATP slot, and the NADPH model produced at the previous station. Nia turns off every decorative light except the gradient gauge. ‘A photon is not about to spin this enzyme,’ she says. ‘The immediate driver now is the electrochemical proton gradient built by the light reactions.’",
+      "story_paragraphs": [
+        "The route ends at the **Photophosphorylation Turbine**. On your **left**, the thylakoid lumen is crowded with H⁺ markers and the proton-gradient gauge reads high. Directly **ahead**, ATP synthase spans the thylakoid membrane. On your **right**, the stroma contains ADP and inorganic phosphate, an empty ATP slot, and the NADPH model produced at the previous station. Nia turns off every decorative light except the gradient gauge. ‘A photon is not about to spin this enzyme,’ she says. ‘The immediate driver now is the electrochemical proton gradient built by the light reactions.’",
+        "A gate through ATP synthase opens. Protons move from the higher-H⁺ thylakoid lumen through ATP synthase toward the lower-H⁺ stroma, down their electrochemical gradient. The enzyme couples that flow to formation of ATP from ADP and inorganic phosphate on the stroma side. Nia names this **photophosphorylation**. Protons flow through membrane-bound ATP synthase by chemiosmosis, driving ATP formation from ADP and inorganic phosphate; in photosynthesis this ATP-producing process is photophosphorylation. The proton-gradient gauge falls as the controlled flow proceeds.",
+        "The new ATP molecule joins NADPH at the **right** exit. Nia labels them **light-reaction energy products**. The light reactions capture light energy to produce ATP and NADPH, which provide energy and reducing power for carbohydrate production in the Calvin cycle. ATP and NADPH remain separate models because they do different chemical jobs. ATP is an energy-coupling molecule. NADPH carries high-energy electrons and reducing power. Both are produced on the stroma side where the Calvin-cycle reactions can use them.",
+        "Nia then activates a final input-output board. This is **light-reaction inputs and outputs**. The light reactions use light, water, ADP plus inorganic phosphate, and NADP⁺. They produce O₂, ATP, and NADPH. The path behind you is now reconstructable: pigments capture light; photosystem II sends an electron onward and water replaces it; water oxidation adds H⁺ to the lumen and releases O₂; the electron transport chain helps build the proton gradient while delivering electrons to photosystem I; photosystem I re-excites electrons and supports NADPH formation; H⁺ then flows through ATP synthase to make ATP. The conservatory’s ATP and NADPH indicators finally turn green, and the adjoining carbon-fixation greenhouse unlocks."
+      ],
+      "story_close": "ATP and NADPH leave together through the stroma-side greenhouse door, completing the Light Capture Conservatory and setting up the next journey through carbon fixation.",
+      "object_ids": [
+        "U3-K-031",
+        "U3-K-038",
+        "U3-K-132"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U3-K-031",
+          "term": "Light-reaction energy products",
+          "story": "ATP and NADPH waiting together at the stroma-side greenhouse exit",
+          "science": "The light reactions capture light energy to produce ATP and NADPH, which provide energy and reducing power for carbohydrate production in the Calvin cycle.",
+          "exact_name": true,
+          "hint": "ATP and NADPH waiting together at the stroma-side greenhouse exit"
+        },
+        {
+          "object_id": "U3-K-038",
+          "term": "Photophosphorylation",
+          "story": "H⁺ flowing from the thylakoid lumen through ATP synthase and driving ATP formation in the stroma",
+          "science": "Protons flow through membrane-bound ATP synthase by chemiosmosis, driving ATP formation from ADP and inorganic phosphate; in photosynthesis this is photophosphorylation.",
+          "exact_name": true,
+          "hint": "H⁺ flowing from the thylakoid lumen through ATP synthase and driving ATP formation in the stroma"
+        },
+        {
+          "object_id": "U3-K-132",
+          "term": "Light-reaction inputs and outputs",
+          "story": "the final board listing light, water, ADP + Pi, and NADP⁺ as inputs and O₂, ATP, and NADPH as outputs",
+          "science": "The light reactions use light, water, ADP plus inorganic phosphate, and NADP+ and produce O2, ATP, and NADPH.",
+          "exact_name": false,
+          "hint": "the final board listing light, water, ADP + Pi, and NADP⁺ as inputs and O₂, ATP, and NADPH as outputs"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Light-reaction energy products",
+          "meaning": "The light reactions capture light energy to produce ATP and NADPH, which provide energy and reducing power for carbohydrate production in the Calvin cycle.",
+          "image": "ATP and NADPH waiting together at the stroma-side greenhouse exit"
+        },
+        {
+          "term": "Photophosphorylation",
+          "meaning": "Protons flow through membrane-bound ATP synthase by chemiosmosis, driving ATP formation from ADP and inorganic phosphate; in photosynthesis this is photophosphorylation.",
+          "image": "H⁺ flowing from the thylakoid lumen through ATP synthase and driving ATP formation in the stroma"
+        },
+        {
+          "term": "Light-reaction inputs and outputs",
+          "meaning": "The light reactions use light, water, ADP plus inorganic phosphate, and NADP+ and produce O2, ATP, and NADPH.",
+          "image": "the final board listing light, water, ADP + Pi, and NADP⁺ as inputs and O₂, ATP, and NADPH as outputs"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U3-K-038",
+      "checkpoint_prompt": "What directly drives ATP synthase in this thylakoid scene?",
+      "checkpoint_answer": "H+ moving down its electrochemical gradient through ATP synthase.",
+      "checkpoint_hint": "Picture the crowded H⁺ lumen on the left and ATP synthase in the membrane. The protons themselves move through the enzyme toward the stroma.",
+      "next_locus": null,
+      "misconception_guards": [
+        "Keep these confusable terms physically and verbally distinct: ATP, NADPH.",
+        "Keep these confusable terms physically and verbally distinct: substrate-level phosphorylation, oxidative phosphorylation, photophosphorylation."
+      ],
+      "required_visual": {
+        "visual_mode": "CHEMIOSMOSIS_TURBINE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "high-H+ thylakoid lumen",
+          "ATP synthase turbine",
+          "stroma ATP output",
+          "Let H+ flow down its electrochemical gradient from the thylakoid lumen through ATP synthase and couple that flow to ATP formation in the stroma."
+        ],
+        "composition_rule": "Preserve left/center/right geography and recognizable scientific geometry. The center action may animate, but the structural anchors must remain spatially stable and redrawable from memory."
+      },
+      "carry_forward": "Carry forward this resolved mental model: Light-reaction energy products; Photophosphorylation; Light-reaction inputs and outputs."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4D",
+  "narrative_standard": "V2-NARRATIVE-3.0-U3-F4D"
+}

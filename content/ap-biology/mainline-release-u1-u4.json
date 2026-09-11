@@ -1,0 +1,45 @@
+{
+  "schema": "memory-palace-v2-mainline-u1-u4-f6-1.0",
+  "release_status": "STUDENT_READY_UNITS_1_4_U4_F6_VALIDATED",
+  "units": [
+    "unit-1",
+    "unit-2",
+    "unit-3",
+    "unit-4"
+  ],
+  "totals": {
+    "canonical_records_units_1_4": 737,
+    "guided_journeys": 30,
+    "permanent_scenes": 232,
+    "challenge_lab_items": 51
+  },
+  "unit4": {
+    "schema": "memory-palace-v2-unit4-f6-release-manifest-1.0",
+    "unit_id": "unit-4",
+    "stage": "F6",
+    "student_release": true,
+    "preview_release": false,
+    "browser_validation": "PASS_F6",
+    "canonical_records": 180,
+    "canonical_records_accounted": 180,
+    "unaccounted_canonical_records": 0,
+    "runtime_memory_objects": 162,
+    "story_records": 162,
+    "practice_only_records": 15,
+    "scope_guard_records": 3,
+    "guided_journeys": 7,
+    "permanent_loci": 51,
+    "challenge_count": 15,
+    "exact_name_review_targets": 162,
+    "mandatory_spelling_targets": 0,
+    "mixed_discrimination_sets": 33,
+    "mixed_discrimination_questions": 99,
+    "next_stage": "UNIT5_SOURCE_INVENTORY_AND_SCIENTIFIC_LOCK"
+  },
+  "future_units": [
+    "unit-5",
+    "unit-6",
+    "unit-7",
+    "unit-8"
+  ]
+}

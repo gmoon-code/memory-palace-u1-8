@@ -1,0 +1,81 @@
+{
+  "schema": "memory-palace-v2-unit3-f6-browser-validation-1.0",
+  "unit_id": "unit-3",
+  "stage": "F6",
+  "release_status": "STUDENT_READY_F6_VALIDATED",
+  "curriculum_content_changed": false,
+  "canonical_records": 186,
+  "guided_journeys": 7,
+  "scenes_validated": 54,
+  "recall_scenes_validated": 18,
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "tablet",
+      "width": 820,
+      "height": 1180
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "browser_validation": {
+    "scene_viewport_combinations": 162,
+    "recall_viewport_combinations": 54,
+    "body_horizontal_overflow_findings": 0,
+    "route_wrap_findings": 0,
+    "scene_geometry_findings": 0,
+    "recall_content_leak_findings": 0,
+    "memory_anchors_default_open_findings": 0,
+    "result": "PASS"
+  },
+  "f6_runtime_fixes": [
+    {
+      "id": "F6-UI-001",
+      "finding": "Twelve-location routes wrapped the final locus onto a second row.",
+      "resolution": "Route columns now use the full journey length and remain on one horizontally scrollable row."
+    },
+    {
+      "id": "F6-UI-002",
+      "finding": "Late route positions could be off-screen on narrow viewports.",
+      "resolution": "The active route node is automatically centered horizontally without changing vertical reading position."
+    },
+    {
+      "id": "F6-UI-003",
+      "finding": "Unit 3 mixed-discrimination sets were exposed by API but blocked by a legacy Unit-2-only scheduling condition.",
+      "resolution": "Mixed-discrimination scheduling is now unit-generic and activates for Unit 3 after all members of a set are encountered."
+    },
+    {
+      "id": "F6-UI-004",
+      "finding": "Memory anchors were expanded after every scene, making first exposure feel like a second vocabulary sheet.",
+      "resolution": "Memory anchors remain available but are collapsed by default after the narrative."
+    },
+    {
+      "id": "F6-UI-005",
+      "finding": "Listen controls gave no browser feedback and scientific notation could sound awkward in browser speech synthesis.",
+      "resolution": "Listen now reports audio state and normalizes common Unit 3 scientific symbols and abbreviations for speech only."
+    }
+  ],
+  "review_validation": {
+    "exact_name_targets": 126,
+    "mixed_sets": 28,
+    "mixed_questions": 78,
+    "visible_due_limit": 5,
+    "mixed_initial_delay_hours_minimum": 48,
+    "unit3_mixed_scheduler_enabled": true
+  },
+  "first_exposure_policy": {
+    "story_first": true,
+    "optional_quick_recall": true,
+    "memory_anchors_collapsed_by_default": true,
+    "recall_hides_story_location_route_and_anchors": true
+  },
+  "f5_lock_sha256": "4415c9942261e3c842c73f9a5bd735d279fda167e343ddf56a4ef0f117b0b663",
+  "next_gate": "Unit 4 source inventory, scientific atomization, AP scope mapping, conflict audit, and canonical lock before Unit 4 narrative generation."
+}

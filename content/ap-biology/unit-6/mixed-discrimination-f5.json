@@ -1,0 +1,1740 @@
+{
+  "schema": "memory-palace-v2-unit6-f5-mixed-discrimination-1.0",
+  "unit_id": "unit-6",
+  "set_count": 37,
+  "question_count": 94,
+  "sets": [
+    {
+      "set_id": "U6-D01",
+      "title": "DNA versus RNA architecture",
+      "knowledge_ids": [
+        "U6-K-001",
+        "U6-K-100",
+        "U6-K-094",
+        "U6-K-095"
+      ],
+      "terms": [
+        "DNA/RNA as hereditary information",
+        "Typical RNA versus DNA architecture",
+        "DNA antiparallel structural review",
+        "5′ and 3′ end chemistry review"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D01-Q01",
+          "prompt": "Which option best matches this scientific description? Genetic _____ is stored in and passed to subsequent generations through _____ molecules and, in some cases, _____ molecules.",
+          "choices": [
+            "DNA/RNA as hereditary information",
+            "Typical RNA versus DNA architecture",
+            "DNA antiparallel structural review",
+            "5′ and 3′ end chemistry review"
+          ],
+          "answer": "DNA/RNA as hereditary information",
+          "explanation": "Genetic information is stored in and passed to subsequent generations through DNA molecules and, in some cases, RNA molecules.",
+          "knowledge_id": "U6-K-001"
+        },
+        {
+          "question_id": "U6-D01-Q02",
+          "prompt": "Which option best matches this scientific description? Cellular _____ is typically double-stranded and uses thymine; cellular _____ is typically single-stranded, uses uracil, and can fold into base-paired secondary _____.",
+          "choices": [
+            "DNA/RNA as hereditary information",
+            "Typical RNA versus DNA architecture",
+            "DNA antiparallel structural review",
+            "5′ and 3′ end chemistry review"
+          ],
+          "answer": "Typical RNA versus DNA architecture",
+          "explanation": "Cellular DNA is typically double-stranded and uses thymine; cellular RNA is typically single-stranded, uses uracil, and can fold into base-paired secondary structures.",
+          "knowledge_id": "U6-K-100"
+        },
+        {
+          "question_id": "U6-D01-Q03",
+          "prompt": "Which option best matches this scientific description? The two _____ strands run _____; each strand has a sugar-phosphate backbone, with paired bases oriented toward the helix interior.",
+          "choices": [
+            "DNA/RNA as hereditary information",
+            "Typical RNA versus DNA architecture",
+            "DNA antiparallel structural review",
+            "5′ and 3′ end chemistry review"
+          ],
+          "answer": "DNA antiparallel structural review",
+          "explanation": "The two DNA strands run antiparallel; each strand has a sugar-phosphate backbone, with paired bases oriented toward the helix interior.",
+          "knowledge_id": "U6-K-094"
+        },
+        {
+          "question_id": "U6-D01-Q04",
+          "prompt": "Which option best matches this scientific description? A nucleic-acid strand has _____ distinct _____, conventionally described by a 5′ phosphate-associated _____ and a 3′ hydroxyl _____.",
+          "choices": [
+            "DNA/RNA as hereditary information",
+            "Typical RNA versus DNA architecture",
+            "DNA antiparallel structural review",
+            "5′ and 3′ end chemistry review"
+          ],
+          "answer": "5′ and 3′ end chemistry review",
+          "explanation": "A nucleic-acid strand has chemically distinct ends, conventionally described by a 5′ phosphate-associated end and a 3′ hydroxyl end.",
+          "knowledge_id": "U6-K-095"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D02",
+      "title": "Purines versus pyrimidines",
+      "knowledge_ids": [
+        "U6-K-006",
+        "U6-K-007"
+      ],
+      "terms": [
+        "Purines",
+        "Pyrimidines"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D02-Q01",
+          "prompt": "Which option best matches this scientific description? Adenine and guanine are _____ with double-ring structures.",
+          "choices": [
+            "Purines",
+            "Pyrimidines"
+          ],
+          "answer": "Purines",
+          "explanation": "Adenine and guanine are purines with double-ring structures.",
+          "knowledge_id": "U6-K-006"
+        },
+        {
+          "question_id": "U6-D02-Q02",
+          "prompt": "Which option best matches this scientific description? Cytosine, thymine, and uracil are _____ with single-ring structures.",
+          "choices": [
+            "Purines",
+            "Pyrimidines"
+          ],
+          "answer": "Pyrimidines",
+          "explanation": "Cytosine, thymine, and uracil are pyrimidines with single-ring structures.",
+          "knowledge_id": "U6-K-007"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D03",
+      "title": "Chromosome versus plasmid",
+      "knowledge_ids": [
+        "U6-K-002",
+        "U6-K-003",
+        "U6-K-005"
+      ],
+      "terms": [
+        "Typical prokaryotic chromosome form",
+        "Typical eukaryotic chromosome form",
+        "Plasmids"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D03-Q01",
+          "prompt": "Which option best matches this scientific description? _____ organisms typically have circular _____.",
+          "choices": [
+            "Typical prokaryotic chromosome form",
+            "Typical eukaryotic chromosome form",
+            "Plasmids"
+          ],
+          "answer": "Typical prokaryotic chromosome form",
+          "explanation": "Prokaryotic organisms typically have circular chromosomes.",
+          "knowledge_id": "U6-K-002"
+        },
+        {
+          "question_id": "U6-D03-Q02",
+          "prompt": "Which option best matches this scientific description? _____ organisms typically have multiple linear _____ composed of DNA.",
+          "choices": [
+            "Typical prokaryotic chromosome form",
+            "Typical eukaryotic chromosome form",
+            "Plasmids"
+          ],
+          "answer": "Typical eukaryotic chromosome form",
+          "explanation": "Eukaryotic organisms typically have multiple linear chromosomes composed of DNA.",
+          "knowledge_id": "U6-K-003"
+        },
+        {
+          "question_id": "U6-D03-Q03",
+          "prompt": "Which option best matches this scientific description? _____ and _____ can contain _____, extra-_____ circular DNA molecules.",
+          "choices": [
+            "Typical prokaryotic chromosome form",
+            "Typical eukaryotic chromosome form",
+            "Plasmids"
+          ],
+          "answer": "Plasmids",
+          "explanation": "Prokaryotes and eukaryotes can contain plasmids, extra-chromosomal circular DNA molecules.",
+          "knowledge_id": "U6-K-005"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D04",
+      "title": "Complementary base pairing versus backbone direction",
+      "knowledge_ids": [
+        "U6-K-008",
+        "U6-K-094",
+        "U6-K-095"
+      ],
+      "terms": [
+        "Conserved complementary base pairing",
+        "DNA antiparallel structural review",
+        "5′ and 3′ end chemistry review"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D04-Q01",
+          "prompt": "Which option best matches this scientific description? Purines pair with pyrimidines: adenine pairs with thymine in _____ or uracil in RNA, and guanine pairs with cytosine.",
+          "choices": [
+            "Conserved complementary base pairing",
+            "DNA antiparallel structural review",
+            "5′ and 3′ end chemistry review"
+          ],
+          "answer": "Conserved complementary base pairing",
+          "explanation": "Purines pair with pyrimidines: adenine pairs with thymine in DNA or uracil in RNA, and guanine pairs with cytosine.",
+          "knowledge_id": "U6-K-008"
+        },
+        {
+          "question_id": "U6-D04-Q02",
+          "prompt": "Which option best matches this scientific description? The two _____ strands run _____; each strand has a sugar-phosphate backbone, with paired _____ oriented toward the helix interior.",
+          "choices": [
+            "Conserved complementary base pairing",
+            "DNA antiparallel structural review",
+            "5′ and 3′ end chemistry review"
+          ],
+          "answer": "DNA antiparallel structural review",
+          "explanation": "The two DNA strands run antiparallel; each strand has a sugar-phosphate backbone, with paired bases oriented toward the helix interior.",
+          "knowledge_id": "U6-K-094"
+        },
+        {
+          "question_id": "U6-D04-Q03",
+          "prompt": "Which option best matches this scientific description? A nucleic-acid strand has _____ distinct _____, conventionally described by a 5′ phosphate-associated _____ and a 3′ hydroxyl _____.",
+          "choices": [
+            "Conserved complementary base pairing",
+            "DNA antiparallel structural review",
+            "5′ and 3′ end chemistry review"
+          ],
+          "answer": "5′ and 3′ end chemistry review",
+          "explanation": "A nucleic-acid strand has chemically distinct ends, conventionally described by a 5′ phosphate-associated end and a 3′ hydroxyl end.",
+          "knowledge_id": "U6-K-095"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D05",
+      "title": "Conservative versus semiconservative versus dispersive replication",
+      "knowledge_ids": [
+        "U6-K-011",
+        "U6-K-102",
+        "U6-K-103"
+      ],
+      "terms": [
+        "Semiconservative replication",
+        "Conservative replication model",
+        "Dispersive replication model"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D05-Q01",
+          "prompt": "Which option best matches this scientific description? DNA _____ is _____: each parental strand serves as a template for a complementary new strand, so each daughter DNA duplex contains one parental strand and one new strand.",
+          "choices": [
+            "Semiconservative replication",
+            "Conservative replication model",
+            "Dispersive replication model"
+          ],
+          "answer": "Semiconservative replication",
+          "explanation": "DNA replication is semiconservative: each parental strand serves as a template for a complementary new strand, so each daughter DNA duplex contains one parental strand and one new strand.",
+          "knowledge_id": "U6-K-011"
+        },
+        {
+          "question_id": "U6-D05-Q02",
+          "prompt": "Which option best matches this scientific description? The rejected _____ predicts that the parental double helix remains together while a wholly new double helix is synthesized.",
+          "choices": [
+            "Semiconservative replication",
+            "Conservative replication model",
+            "Dispersive replication model"
+          ],
+          "answer": "Conservative replication model",
+          "explanation": "The rejected conservative model predicts that the parental double helix remains together while a wholly new double helix is synthesized.",
+          "knowledge_id": "U6-K-102"
+        },
+        {
+          "question_id": "U6-D05-Q03",
+          "prompt": "Which option best matches this scientific description? The rejected _____ predicts daughter DNA strands containing interspersed segments of parental and newly synthesized DNA.",
+          "choices": [
+            "Semiconservative replication",
+            "Conservative replication model",
+            "Dispersive replication model"
+          ],
+          "answer": "Dispersive replication model",
+          "explanation": "The rejected dispersive model predicts daughter DNA strands containing interspersed segments of parental and newly synthesized DNA.",
+          "knowledge_id": "U6-K-103"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D06",
+      "title": "Helicase versus topoisomerase versus ligase",
+      "knowledge_ids": [
+        "U6-K-012",
+        "U6-K-013",
+        "U6-K-016"
+      ],
+      "terms": [
+        "Helicase",
+        "Topoisomerase",
+        "Ligase joins lagging-strand fragments"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D06-Q01",
+          "prompt": "Which option best matches this scientific description? _____ unwinds the DNA strands at replication forks.",
+          "choices": [
+            "Helicase",
+            "Topoisomerase",
+            "Ligase joins lagging-strand fragments"
+          ],
+          "answer": "Helicase",
+          "explanation": "Helicase unwinds the DNA strands at replication forks.",
+          "knowledge_id": "U6-K-012"
+        },
+        {
+          "question_id": "U6-D06-Q02",
+          "prompt": "Which option best matches this scientific description? _____ relaxes supercoiling ahead of the replication fork.",
+          "choices": [
+            "Helicase",
+            "Topoisomerase",
+            "Ligase joins lagging-strand fragments"
+          ],
+          "answer": "Topoisomerase",
+          "explanation": "Topoisomerase relaxes supercoiling ahead of the replication fork.",
+          "knowledge_id": "U6-K-013"
+        },
+        {
+          "question_id": "U6-D06-Q03",
+          "prompt": "Which option best matches this scientific description? DNA _____ DNA _____ on the _____ strand into a continuous strand.",
+          "choices": [
+            "Helicase",
+            "Topoisomerase",
+            "Ligase joins lagging-strand fragments"
+          ],
+          "answer": "Ligase joins lagging-strand fragments",
+          "explanation": "DNA ligase joins DNA fragments on the lagging strand into a continuous strand.",
+          "knowledge_id": "U6-K-016"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D07",
+      "title": "Primase versus DNA polymerase",
+      "knowledge_ids": [
+        "U6-K-014",
+        "U6-K-108"
+      ],
+      "terms": [
+        "DNA polymerase requires RNA primers",
+        "Primase"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D07-Q01",
+          "prompt": "Which option best matches this scientific description? _____ an _____ with an available 3′ end to initiate new _____ synthesis.",
+          "choices": [
+            "DNA polymerase requires RNA primers",
+            "Primase"
+          ],
+          "answer": "DNA polymerase requires RNA primers",
+          "explanation": "DNA polymerase requires an RNA primer with an available 3′ end to initiate new DNA synthesis.",
+          "knowledge_id": "U6-K-014"
+        },
+        {
+          "question_id": "U6-D07-Q02",
+          "prompt": "Which option best matches this scientific description? _____ synthesizes short _____ that provide a 3′ end from which _____ can extend.",
+          "choices": [
+            "DNA polymerase requires RNA primers",
+            "Primase"
+          ],
+          "answer": "Primase",
+          "explanation": "Primase synthesizes short RNA primers that provide a 3′ end from which DNA polymerase can extend.",
+          "knowledge_id": "U6-K-108"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D08",
+      "title": "Leading versus lagging strand",
+      "knowledge_ids": [
+        "U6-K-015",
+        "U6-K-110"
+      ],
+      "terms": [
+        "Leading and lagging strand synthesis",
+        "Okazaki fragments"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D08-Q01",
+          "prompt": "Which option best matches this scientific description? DNA polymerase _____ the _____ continuously and the _____ discontinuously because both new _____ must be _____ 5′→3′ on antiparallel templates.",
+          "choices": [
+            "Leading and lagging strand synthesis",
+            "Okazaki fragments"
+          ],
+          "answer": "Leading and lagging strand synthesis",
+          "explanation": "DNA polymerase synthesizes the leading strand continuously and the lagging strand discontinuously because both new strands must be synthesized 5′→3′ on antiparallel templates.",
+          "knowledge_id": "U6-K-015"
+        },
+        {
+          "question_id": "U6-D08-Q02",
+          "prompt": "Which option best matches this scientific description? _____ are short DNA segments _____ discontinuously on the _____ before being joined into a continuous _____.",
+          "choices": [
+            "Leading and lagging strand synthesis",
+            "Okazaki fragments"
+          ],
+          "answer": "Okazaki fragments",
+          "explanation": "Okazaki fragments are short DNA segments synthesized discontinuously on the lagging strand before being joined into a continuous strand.",
+          "knowledge_id": "U6-K-110"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D09",
+      "title": "Telomere versus telomerase",
+      "knowledge_ids": [
+        "U6-K-112",
+        "U6-K-113"
+      ],
+      "terms": [
+        "Telomeres",
+        "Telomerase"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D09-Q01",
+          "prompt": "Which option best matches this scientific description? _____ are repetitive DNA sequences and associated structures at chromosome ends that buffer loss of coding sequence and help maintain chromosome-end integrity.",
+          "choices": [
+            "Telomeres",
+            "Telomerase"
+          ],
+          "answer": "Telomeres",
+          "explanation": "Telomeres are repetitive DNA sequences and associated structures at chromosome ends that buffer loss of coding sequence and help maintain chromosome-end integrity.",
+          "knowledge_id": "U6-K-112"
+        },
+        {
+          "question_id": "U6-D09-Q02",
+          "prompt": "Which option best matches this scientific description? _____ can extend _____ DNA using an RNA-containing reverse-transcriptase mechanism in cells where it is active.",
+          "choices": [
+            "Telomeres",
+            "Telomerase"
+          ],
+          "answer": "Telomerase",
+          "explanation": "Telomerase can extend telomeric DNA using an RNA-containing reverse-transcriptase mechanism in cells where it is active.",
+          "knowledge_id": "U6-K-113"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D10",
+      "title": "Transcription versus translation",
+      "knowledge_ids": [
+        "U6-K-118",
+        "U6-K-119"
+      ],
+      "terms": [
+        "Transcription definition",
+        "Translation definition"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D10-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is DNA-directed synthesis of RNA by RNA polymerase.",
+          "choices": [
+            "Transcription definition",
+            "Translation definition"
+          ],
+          "answer": "Transcription definition",
+          "explanation": "Transcription is DNA-directed synthesis of RNA by RNA polymerase.",
+          "knowledge_id": "U6-K-118"
+        },
+        {
+          "question_id": "U6-D10-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is synthesis of a polypeptide using the nucleotide sequence of mRNA as information at a ribosome.",
+          "choices": [
+            "Transcription definition",
+            "Translation definition"
+          ],
+          "answer": "Translation definition",
+          "explanation": "Translation is synthesis of a polypeptide using the nucleotide sequence of mRNA as information at a ribosome.",
+          "knowledge_id": "U6-K-119"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D11",
+      "title": "mRNA versus tRNA versus rRNA",
+      "knowledge_ids": [
+        "U6-K-019",
+        "U6-K-020",
+        "U6-K-023"
+      ],
+      "terms": [
+        "mRNA function",
+        "tRNA amino-acid specificity",
+        "rRNA as ribosome component"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D11-Q01",
+          "prompt": "Which option best matches this scientific description? Messenger RNA carries genetic information from DNA to _____ for translation.",
+          "choices": [
+            "mRNA function",
+            "tRNA amino-acid specificity",
+            "rRNA as ribosome component"
+          ],
+          "answer": "mRNA function",
+          "explanation": "Messenger RNA carries genetic information from DNA to ribosomes for translation.",
+          "knowledge_id": "U6-K-019"
+        },
+        {
+          "question_id": "U6-D11-Q02",
+          "prompt": "Which option best matches this scientific description? Distinct _____ molecules bind _____ acids.",
+          "choices": [
+            "mRNA function",
+            "tRNA amino-acid specificity",
+            "rRNA as ribosome component"
+          ],
+          "answer": "tRNA amino-acid specificity",
+          "explanation": "Distinct tRNA molecules bind specific amino acids.",
+          "knowledge_id": "U6-K-020"
+        },
+        {
+          "question_id": "U6-D11-Q03",
+          "prompt": "Which option best matches this scientific description? _____ RNA is a _____ building block of _____ and participates in protein synthesis.",
+          "choices": [
+            "mRNA function",
+            "tRNA amino-acid specificity",
+            "rRNA as ribosome component"
+          ],
+          "answer": "rRNA as ribosome component",
+          "explanation": "Ribosomal RNA is a functional building block of ribosomes and participates in protein synthesis.",
+          "knowledge_id": "U6-K-023"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D12",
+      "title": "Template strand versus transcript direction",
+      "knowledge_ids": [
+        "U6-K-024",
+        "U6-K-025",
+        "U6-K-120"
+      ],
+      "terms": [
+        "Transcription uses one DNA template strand",
+        "Transcription directionality",
+        "Template strand terminology"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D12-Q01",
+          "prompt": "Which option best matches this scientific description? RNA polymerase _____ a single _____ to _____ complementary RNA synthesis; this process is _____.",
+          "choices": [
+            "Transcription uses one DNA template strand",
+            "Transcription directionality",
+            "Template strand terminology"
+          ],
+          "answer": "Transcription uses one DNA template strand",
+          "explanation": "RNA polymerase uses a single DNA template strand to direct complementary RNA synthesis; this process is transcription.",
+          "knowledge_id": "U6-K-024"
+        },
+        {
+          "question_id": "U6-D12-Q02",
+          "prompt": "Which option best matches this scientific description? RNA polymerase synthesizes RNA 5′→3′ while reading the _____ 3′→5′.",
+          "choices": [
+            "Transcription uses one DNA template strand",
+            "Transcription directionality",
+            "Template strand terminology"
+          ],
+          "answer": "Transcription directionality",
+          "explanation": "RNA polymerase synthesizes RNA 5′→3′ while reading the DNA template 3′→5′.",
+          "knowledge_id": "U6-K-025"
+        },
+        {
+          "question_id": "U6-D12-Q03",
+          "prompt": "Which option best matches this scientific description? For a _____ gene, RNA polymerase reads _____; “_____” or “noncoding” _____ is preferred over treating alternate historical aliases as separate concepts.",
+          "choices": [
+            "Transcription uses one DNA template strand",
+            "Transcription directionality",
+            "Template strand terminology"
+          ],
+          "answer": "Template strand terminology",
+          "explanation": "For a transcribed gene, RNA polymerase reads one DNA template strand; “template” or “noncoding” strand is preferred over treating alternate historical aliases as separate concepts.",
+          "knowledge_id": "U6-K-120"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D13",
+      "title": "Promoter versus TATA box",
+      "knowledge_ids": [
+        "U6-K-123",
+        "U6-K-124"
+      ],
+      "terms": [
+        "Promoter",
+        "TATA box"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D13-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a DNA region where transcription machinery assembles to initiate transcription of a gene.",
+          "choices": [
+            "Promoter",
+            "TATA box"
+          ],
+          "answer": "Promoter",
+          "explanation": "A promoter is a DNA region where transcription machinery assembles to initiate transcription of a gene.",
+          "knowledge_id": "U6-K-123"
+        },
+        {
+          "question_id": "U6-D13-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a _____ DNA element found in some eukaryotic genes and can participate in assembly of transcription machinery; it is not present in every eukaryotic _____.",
+          "choices": [
+            "Promoter",
+            "TATA box"
+          ],
+          "answer": "TATA box",
+          "explanation": "A TATA box is a promoter DNA element found in some eukaryotic genes and can participate in assembly of transcription machinery; it is not present in every eukaryotic promoter.",
+          "knowledge_id": "U6-K-124"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D14",
+      "title": "5′ cap versus poly-A tail",
+      "knowledge_ids": [
+        "U6-K-027",
+        "U6-K-028"
+      ],
+      "terms": [
+        "Poly-A tail stability",
+        "5′ GTP cap recognition"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D14-Q01",
+          "prompt": "Which option best matches this scientific description? Addition of a poly-A _____ increases mRNA _____.",
+          "choices": [
+            "Poly-A tail stability",
+            "5′ GTP cap recognition"
+          ],
+          "answer": "Poly-A tail stability",
+          "explanation": "Addition of a poly-A tail increases mRNA stability.",
+          "knowledge_id": "U6-K-027"
+        },
+        {
+          "question_id": "U6-D14-Q02",
+          "prompt": "Which option best matches this scientific description? Addition of a 5′ _____ supports ribosomal _____ and also contributes to mRNA protection and handling.",
+          "choices": [
+            "Poly-A tail stability",
+            "5′ GTP cap recognition"
+          ],
+          "answer": "5′ GTP cap recognition",
+          "explanation": "Addition of a 5′ GTP cap supports ribosomal recognition and also contributes to mRNA protection and handling.",
+          "knowledge_id": "U6-K-028"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D15",
+      "title": "Intron versus exon/spliced product",
+      "knowledge_ids": [
+        "U6-K-029",
+        "U6-K-030",
+        "U6-K-129"
+      ],
+      "terms": [
+        "Intron excision and exon splicing",
+        "Alternative splicing",
+        "Mature mRNA"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D15-Q01",
+          "prompt": "Which option best matches this scientific description? RNA processing removes _____ and _____ retained _____ to produce _____.",
+          "choices": [
+            "Intron excision and exon splicing",
+            "Alternative splicing",
+            "Mature mRNA"
+          ],
+          "answer": "Intron excision and exon splicing",
+          "explanation": "RNA processing removes introns and splices retained exons to produce mature mRNA.",
+          "knowledge_id": "U6-K-029"
+        },
+        {
+          "question_id": "U6-D15-Q02",
+          "prompt": "Which option best matches this scientific description? _____ retains different combinations of _____, allowing one pre-_____ to generate different _____ versions.",
+          "choices": [
+            "Intron excision and exon splicing",
+            "Alternative splicing",
+            "Mature mRNA"
+          ],
+          "answer": "Alternative splicing",
+          "explanation": "Alternative splicing retains different combinations of exons, allowing one pre-mRNA to generate different mature mRNA versions.",
+          "knowledge_id": "U6-K-030"
+        },
+        {
+          "question_id": "U6-D15-Q03",
+          "prompt": "Which option best matches this scientific description? After appropriate processing, eukaryotic _____ can be exported from the nucleus and used for translation in the cytoplasm.",
+          "choices": [
+            "Intron excision and exon splicing",
+            "Alternative splicing",
+            "Mature mRNA"
+          ],
+          "answer": "Mature mRNA",
+          "explanation": "After appropriate processing, eukaryotic mature mRNA can be exported from the nucleus and used for translation in the cytoplasm.",
+          "knowledge_id": "U6-K-129"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D16",
+      "title": "Codon versus anticodon",
+      "knowledge_ids": [
+        "U6-K-035",
+        "U6-K-021"
+      ],
+      "terms": [
+        "Codons",
+        "tRNA anticodon pairing"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D16-Q01",
+          "prompt": "Which option best matches this scientific description? The mRNA nucleotide sequence is read in three-nucleotide units called _____.",
+          "choices": [
+            "Codons",
+            "tRNA anticodon pairing"
+          ],
+          "answer": "Codons",
+          "explanation": "The mRNA nucleotide sequence is read in three-nucleotide units called codons.",
+          "knowledge_id": "U6-K-035"
+        },
+        {
+          "question_id": "U6-D16-Q02",
+          "prompt": "Which option best matches this scientific description? Each _____ has an _____ that base-pairs with a complementary mRNA _____.",
+          "choices": [
+            "Codons",
+            "tRNA anticodon pairing"
+          ],
+          "answer": "tRNA anticodon pairing",
+          "explanation": "Each tRNA has an anticodon that base-pairs with a complementary mRNA codon.",
+          "knowledge_id": "U6-K-021"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D17",
+      "title": "Start codon versus stop codon",
+      "knowledge_ids": [
+        "U6-K-034",
+        "U6-K-041"
+      ],
+      "terms": [
+        "Start codon AUG",
+        "Translation continues to stop codon"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D17-Q01",
+          "prompt": "Which option best matches this scientific description? _____ initiates at _____, the _____ that specifies methionine, through interactions among mRNA, rRNA/ribosome, and an initiator tRNA.",
+          "choices": [
+            "Start codon AUG",
+            "Translation continues to stop codon"
+          ],
+          "answer": "Start codon AUG",
+          "explanation": "Translation initiates at AUG, the start codon that specifies methionine, through interactions among mRNA, rRNA/ribosome, and an initiator tRNA.",
+          "knowledge_id": "U6-K-034"
+        },
+        {
+          "question_id": "U6-D17-Q02",
+          "prompt": "Which option best matches this scientific description? The ribosome advances along the mRNA until a _____ is reached.",
+          "choices": [
+            "Start codon AUG",
+            "Translation continues to stop codon"
+          ],
+          "answer": "Translation continues to stop codon",
+          "explanation": "The ribosome advances along the mRNA until a stop codon is reached.",
+          "knowledge_id": "U6-K-041"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D18",
+      "title": "Reading frame versus codon",
+      "knowledge_ids": [
+        "U6-K-121",
+        "U6-K-035"
+      ],
+      "terms": [
+        "Reading frame",
+        "Codons"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D18-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is the grouping of an mRNA nucleotide sequence into consecutive _____; shifting the _____ changes downstream _____ groupings.",
+          "choices": [
+            "Reading frame",
+            "Codons"
+          ],
+          "answer": "Reading frame",
+          "explanation": "A reading frame is the grouping of an mRNA nucleotide sequence into consecutive codons; shifting the frame changes downstream codon groupings.",
+          "knowledge_id": "U6-K-121"
+        },
+        {
+          "question_id": "U6-D18-Q02",
+          "prompt": "Which option best matches this scientific description? The mRNA nucleotide sequence is read in three-nucleotide units called _____.",
+          "choices": [
+            "Reading frame",
+            "Codons"
+          ],
+          "answer": "Codons",
+          "explanation": "The mRNA nucleotide sequence is read in three-nucleotide units called codons.",
+          "knowledge_id": "U6-K-035"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D19",
+      "title": "Ribosomal A versus P versus E sites",
+      "knowledge_ids": [
+        "U6-K-132",
+        "U6-K-039",
+        "U6-K-040"
+      ],
+      "terms": [
+        "Ribosomal A, P, and E sites",
+        "tRNA delivers amino acid",
+        "Polypeptide elongation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D19-Q01",
+          "prompt": "Which option best matches this scientific description? The large _____ subunit contains functionally defined A, P, and E _____ that organize _____ entry, peptide-chain transfer, and exit during _____.",
+          "choices": [
+            "Ribosomal A, P, and E sites",
+            "tRNA delivers amino acid",
+            "Polypeptide elongation"
+          ],
+          "answer": "Ribosomal A, P, and E sites",
+          "explanation": "The large ribosomal subunit contains functionally defined A, P, and E tRNA-binding sites that organize tRNA entry, peptide-chain transfer, and exit during elongation.",
+          "knowledge_id": "U6-K-132"
+        },
+        {
+          "question_id": "U6-D19-Q02",
+          "prompt": "Which option best matches this scientific description? _____ brings the _____ specified by the mRNA codon to the _____.",
+          "choices": [
+            "Ribosomal A, P, and E sites",
+            "tRNA delivers amino acid",
+            "Polypeptide elongation"
+          ],
+          "answer": "tRNA delivers amino acid",
+          "explanation": "tRNA brings the amino acid specified by the mRNA codon to the ribosome.",
+          "knowledge_id": "U6-K-039"
+        },
+        {
+          "question_id": "U6-D19-Q03",
+          "prompt": "Which option best matches this scientific description? During _____, _____ are transferred to the growing _____ chain as peptide bonds form.",
+          "choices": [
+            "Ribosomal A, P, and E sites",
+            "tRNA delivers amino acid",
+            "Polypeptide elongation"
+          ],
+          "answer": "Polypeptide elongation",
+          "explanation": "During elongation, amino acids are transferred to the growing polypeptide chain as peptide bonds form.",
+          "knowledge_id": "U6-K-040"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D20",
+      "title": "Prokaryotic versus eukaryotic expression geography",
+      "knowledge_ids": [
+        "U6-K-031",
+        "U6-K-032",
+        "U6-K-126"
+      ],
+      "terms": [
+        "Translation location",
+        "Coupled transcription and translation in prokaryotes",
+        "Prokaryotic transcript usability"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D20-Q01",
+          "prompt": "Which option best matches this scientific description? _____ occurs on ribosomes in the cytoplasm of _____ and eukaryotic cells and on ribosomes associated with the cytoplasmic surface of rough ER in eukaryotes.",
+          "choices": [
+            "Translation location",
+            "Coupled transcription and translation in prokaryotes",
+            "Prokaryotic transcript usability"
+          ],
+          "answer": "Translation location",
+          "explanation": "Translation occurs on ribosomes in the cytoplasm of prokaryotic and eukaryotic cells and on ribosomes associated with the cytoplasmic surface of rough ER in eukaryotes.",
+          "knowledge_id": "U6-K-031"
+        },
+        {
+          "question_id": "U6-D20-Q02",
+          "prompt": "Which option best matches this scientific description? In _____, _____ can begin on an mRNA while that mRNA is still being _____.",
+          "choices": [
+            "Translation location",
+            "Coupled transcription and translation in prokaryotes",
+            "Prokaryotic transcript usability"
+          ],
+          "answer": "Coupled transcription and translation in prokaryotes",
+          "explanation": "In prokaryotes, translation can begin on an mRNA while that mRNA is still being transcribed.",
+          "knowledge_id": "U6-K-032"
+        },
+        {
+          "question_id": "U6-D20-Q03",
+          "prompt": "Which option best matches this scientific description? Many bacterial mRNAs can be _____ without the eukaryotic cap/poly-A/splicing processing sequence and can be _____ while _____ continues.",
+          "choices": [
+            "Translation location",
+            "Coupled transcription and translation in prokaryotes",
+            "Prokaryotic transcript usability"
+          ],
+          "answer": "Prokaryotic transcript usability",
+          "explanation": "Many bacterial mRNAs can be translated without the eukaryotic cap/poly-A/splicing processing sequence and can be translated while transcription continues.",
+          "knowledge_id": "U6-K-126"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D21",
+      "title": "Operon promoter versus operator versus structural genes",
+      "knowledge_ids": [
+        "U6-K-136",
+        "U6-K-137",
+        "U6-K-138"
+      ],
+      "terms": [
+        "Operon",
+        "Promoter–operator–structural gene model",
+        "Repressor protein"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D21-Q01",
+          "prompt": "Which option best matches this scientific description? An _____ is a cluster of functionally related bacterial _____ regulated together from shared control DNA, allowing coordinated transcription.",
+          "choices": [
+            "Operon",
+            "Promoter–operator–structural gene model",
+            "Repressor protein"
+          ],
+          "answer": "Operon",
+          "explanation": "An operon is a cluster of functionally related bacterial genes regulated together from shared control DNA, allowing coordinated transcription.",
+          "knowledge_id": "U6-K-136"
+        },
+        {
+          "question_id": "U6-D21-Q02",
+          "prompt": "Which option best matches this scientific description? In the simplified bacterial _____, the _____ recruits RNA polymerase, the _____ is a regulatory DNA site, and adjacent _____ encode related products.",
+          "choices": [
+            "Operon",
+            "Promoter–operator–structural gene model",
+            "Repressor protein"
+          ],
+          "answer": "Promoter–operator–structural gene model",
+          "explanation": "In the simplified bacterial operon model, the promoter recruits RNA polymerase, the operator is a regulatory DNA site, and adjacent structural genes encode related products.",
+          "knowledge_id": "U6-K-137"
+        },
+        {
+          "question_id": "U6-D21-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ is a regulatory _____ whose binding to regulatory DNA can decrease transcription; its binding may be reversible and controlled by small molecules.",
+          "choices": [
+            "Operon",
+            "Promoter–operator–structural gene model",
+            "Repressor protein"
+          ],
+          "answer": "Repressor protein",
+          "explanation": "A repressor is a regulatory protein whose binding to regulatory DNA can decrease transcription; its binding may be reversible and controlled by small molecules.",
+          "knowledge_id": "U6-K-138"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D22",
+      "title": "trp repressible versus lac inducible operon",
+      "knowledge_ids": [
+        "U6-K-140",
+        "U6-K-142"
+      ],
+      "terms": [
+        "trp operon as repressible system",
+        "lac operon as inducible system"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D22-Q01",
+          "prompt": "Which option best matches this scientific description? In the E. coli _____, high tryptophan favors activation of the _____ through corepressor binding, reducing transcription of tryptophan-biosynthesis genes.",
+          "choices": [
+            "trp operon as repressible system",
+            "lac operon as inducible system"
+          ],
+          "answer": "trp operon as repressible system",
+          "explanation": "In the E. coli trp operon, high tryptophan favors activation of the trp repressor through corepressor binding, reducing transcription of tryptophan-biosynthesis genes.",
+          "knowledge_id": "U6-K-140"
+        },
+        {
+          "question_id": "U6-D22-Q02",
+          "prompt": "Which option best matches this scientific description? In the E. coli _____, _____ availability can inactivate the _____ through allolactose, permitting transcription of genes involved in _____ uptake/metabolism.",
+          "choices": [
+            "trp operon as repressible system",
+            "lac operon as inducible system"
+          ],
+          "answer": "lac operon as inducible system",
+          "explanation": "In the E. coli lac operon, lactose availability can inactivate the lac repressor through allolactose, permitting transcription of genes involved in lactose uptake/metabolism.",
+          "knowledge_id": "U6-K-142"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D23",
+      "title": "Corepressor versus inducer",
+      "knowledge_ids": [
+        "U6-K-141",
+        "U6-K-143"
+      ],
+      "terms": [
+        "Tryptophan as corepressor",
+        "Allolactose as inducer"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D23-Q01",
+          "prompt": "Which option best matches this scientific description? _____ functions as a _____ by binding the trp repressor protein and enabling it to bind operator DNA.",
+          "choices": [
+            "Tryptophan as corepressor",
+            "Allolactose as inducer"
+          ],
+          "answer": "Tryptophan as corepressor",
+          "explanation": "Tryptophan functions as a corepressor by binding the trp repressor protein and enabling it to bind operator DNA.",
+          "knowledge_id": "U6-K-141"
+        },
+        {
+          "question_id": "U6-D23-Q02",
+          "prompt": "Which option best matches this scientific description? _____ binds the lac repressor and reduces its operator-binding activity, acting as an _____ of lac-operon transcription.",
+          "choices": [
+            "Tryptophan as corepressor",
+            "Allolactose as inducer"
+          ],
+          "answer": "Allolactose as inducer",
+          "explanation": "Allolactose binds the lac repressor and reduces its operator-binding activity, acting as an inducer of lac-operon transcription.",
+          "knowledge_id": "U6-K-143"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D24",
+      "title": "Histone acetylation versus DNA methylation",
+      "knowledge_ids": [
+        "U6-K-146",
+        "U6-K-147"
+      ],
+      "terms": [
+        "Histone acetylation association",
+        "DNA methylation association"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D24-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is commonly _____ with more accessible chromatin and increased transcriptional potential at affected loci.",
+          "choices": [
+            "Histone acetylation association",
+            "DNA methylation association"
+          ],
+          "answer": "Histone acetylation association",
+          "explanation": "Histone acetylation is commonly associated with more accessible chromatin and increased transcriptional potential at affected loci.",
+          "knowledge_id": "U6-K-146"
+        },
+        {
+          "question_id": "U6-D24-Q02",
+          "prompt": "Which option best matches this scientific description? _____ can contribute to stable or reversible repression of gene expression in many eukaryotic contexts, depending on genomic location and regulatory system.",
+          "choices": [
+            "Histone acetylation association",
+            "DNA methylation association"
+          ],
+          "answer": "DNA methylation association",
+          "explanation": "DNA methylation can contribute to stable or reversible repression of gene expression in many eukaryotic contexts, depending on genomic location and regulatory system.",
+          "knowledge_id": "U6-K-147"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D25",
+      "title": "Activator versus repressor / positive versus negative regulation",
+      "knowledge_ids": [
+        "U6-K-055",
+        "U6-K-057",
+        "U6-K-149"
+      ],
+      "terms": [
+        "Promoter/enhancer recruitment of transcription machinery",
+        "Negative transcriptional regulation",
+        "Control elements, activators, and repressors"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D25-Q01",
+          "prompt": "Which option best matches this scientific description? RNA polymerase and _____ factors bind _____ or _____ DNA sequences to _____ initiation of _____.",
+          "choices": [
+            "Promoter/enhancer recruitment of transcription machinery",
+            "Negative transcriptional regulation",
+            "Control elements, activators, and repressors"
+          ],
+          "answer": "Promoter/enhancer recruitment of transcription machinery",
+          "explanation": "RNA polymerase and transcription factors bind promoter or enhancer DNA sequences to regulate initiation of transcription.",
+          "knowledge_id": "U6-K-055"
+        },
+        {
+          "question_id": "U6-D25-Q02",
+          "prompt": "Which option best matches this scientific description? _____ molecules can inhibit gene expression by binding DNA and preventing or reducing _____.",
+          "choices": [
+            "Promoter/enhancer recruitment of transcription machinery",
+            "Negative transcriptional regulation",
+            "Control elements, activators, and repressors"
+          ],
+          "answer": "Negative transcriptional regulation",
+          "explanation": "Negative regulatory molecules can inhibit gene expression by binding DNA and preventing or reducing transcription.",
+          "knowledge_id": "U6-K-057"
+        },
+        {
+          "question_id": "U6-D25-Q03",
+          "prompt": "Which option best matches this scientific description? Noncoding _____ DNA _____ can bind _____ factors that increase or decrease _____ of target genes.",
+          "choices": [
+            "Promoter/enhancer recruitment of transcription machinery",
+            "Negative transcriptional regulation",
+            "Control elements, activators, and repressors"
+          ],
+          "answer": "Control elements, activators, and repressors",
+          "explanation": "Noncoding regulatory DNA elements can bind transcription factors that increase or decrease transcription of target genes.",
+          "knowledge_id": "U6-K-149"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D26",
+      "title": "microRNA versus siRNA / small-RNA regulation",
+      "knowledge_ids": [
+        "U6-K-059",
+        "U6-K-151"
+      ],
+      "terms": [
+        "Small RNA regulation",
+        "microRNA and siRNA"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D26-Q01",
+          "prompt": "Which option best matches this scientific description? Certain _____ molecules _____ gene expression, for example by affecting mRNA stability or translation.",
+          "choices": [
+            "Small RNA regulation",
+            "microRNA and siRNA"
+          ],
+          "answer": "Small RNA regulation",
+          "explanation": "Certain small RNA molecules regulate gene expression, for example by affecting mRNA stability or translation.",
+          "knowledge_id": "U6-K-059"
+        },
+        {
+          "question_id": "U6-D26-Q02",
+          "prompt": "Which option best matches this scientific description? _____ and _____ interfering _____ can base-pair with target _____ and promote _____ degradation or inhibit translation; the named subclasses are teacher enrichment beyond the CED’s broader _____ requirement.",
+          "choices": [
+            "Small RNA regulation",
+            "microRNA and siRNA"
+          ],
+          "answer": "microRNA and siRNA",
+          "explanation": "microRNAs and small interfering RNAs can base-pair with target RNAs and promote RNA degradation or inhibit translation; the named subclasses are teacher enrichment beyond the CED’s broader small-RNA requirement.",
+          "knowledge_id": "U6-K-151"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D27",
+      "title": "Differentiation versus morphogenesis",
+      "knowledge_ids": [
+        "U6-K-152",
+        "U6-K-153"
+      ],
+      "terms": [
+        "Cell differentiation",
+        "Morphogenesis"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D27-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is the process by which cells develop specialized structures and functions through regulated gene expression.",
+          "choices": [
+            "Cell differentiation",
+            "Morphogenesis"
+          ],
+          "answer": "Cell differentiation",
+          "explanation": "Cell differentiation is the process by which cells develop specialized structures and functions through regulated gene expression.",
+          "knowledge_id": "U6-K-152"
+        },
+        {
+          "question_id": "U6-D27-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is the development of organismal form through coordinated cell behaviors, _____, growth, and patterning.",
+          "choices": [
+            "Cell differentiation",
+            "Morphogenesis"
+          ],
+          "answer": "Morphogenesis",
+          "explanation": "Morphogenesis is the development of organismal form through coordinated cell behaviors, differentiation, growth, and patterning.",
+          "knowledge_id": "U6-K-153"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D28",
+      "title": "Point substitution outcomes",
+      "knowledge_ids": [
+        "U6-K-061",
+        "U6-K-063",
+        "U6-K-064",
+        "U6-K-158"
+      ],
+      "terms": [
+        "Point substitution",
+        "Nonsense mutation",
+        "Silent mutation",
+        "Missense mutation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D28-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ can _____ one nucleotide for another nucleotide.",
+          "choices": [
+            "Point substitution",
+            "Nonsense mutation",
+            "Silent mutation",
+            "Missense mutation"
+          ],
+          "answer": "Point substitution",
+          "explanation": "A point mutation can substitute one nucleotide for another nucleotide.",
+          "knowledge_id": "U6-K-061"
+        },
+        {
+          "question_id": "U6-D28-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ creates a premature stop codon.",
+          "choices": [
+            "Point substitution",
+            "Nonsense mutation",
+            "Silent mutation",
+            "Missense mutation"
+          ],
+          "answer": "Nonsense mutation",
+          "explanation": "A nonsense mutation creates a premature stop codon.",
+          "knowledge_id": "U6-K-063"
+        },
+        {
+          "question_id": "U6-D28-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ changes a nucleotide sequence without changing the encoded amino-acid sequence.",
+          "choices": [
+            "Point substitution",
+            "Nonsense mutation",
+            "Silent mutation",
+            "Missense mutation"
+          ],
+          "answer": "Silent mutation",
+          "explanation": "A silent mutation changes a nucleotide sequence without changing the encoded amino-acid sequence.",
+          "knowledge_id": "U6-K-064"
+        },
+        {
+          "question_id": "U6-D28-Q04",
+          "prompt": "Which option best matches this scientific description? A _____ changes a codon so that a different amino acid is incorporated into the polypeptide.",
+          "choices": [
+            "Point substitution",
+            "Nonsense mutation",
+            "Silent mutation",
+            "Missense mutation"
+          ],
+          "answer": "Missense mutation",
+          "explanation": "A missense substitution changes a codon so that a different amino acid is incorporated into the polypeptide.",
+          "knowledge_id": "U6-K-158"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D29",
+      "title": "Point substitution versus frameshift",
+      "knowledge_ids": [
+        "U6-K-061",
+        "U6-K-062"
+      ],
+      "terms": [
+        "Point substitution",
+        "Frameshift mutation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D29-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ can _____ one nucleotide for another nucleotide.",
+          "choices": [
+            "Point substitution",
+            "Frameshift mutation"
+          ],
+          "answer": "Point substitution",
+          "explanation": "A point mutation can substitute one nucleotide for another nucleotide.",
+          "knowledge_id": "U6-K-061"
+        },
+        {
+          "question_id": "U6-D29-Q02",
+          "prompt": "Which option best matches this scientific description? Insertion or deletion of nucleotide(s) can shift the reading _____ when the change is not in a multiple of three within a coding sequence.",
+          "choices": [
+            "Point substitution",
+            "Frameshift mutation"
+          ],
+          "answer": "Frameshift mutation",
+          "explanation": "Insertion or deletion of nucleotide(s) can shift the reading frame when the change is not in a multiple of three within a coding sequence.",
+          "knowledge_id": "U6-K-062"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D30",
+      "title": "Chromosomal deletion, duplication, inversion, translocation",
+      "knowledge_ids": [
+        "U6-K-159",
+        "U6-K-160",
+        "U6-K-161",
+        "U6-K-162"
+      ],
+      "terms": [
+        "Chromosomal translocation",
+        "Chromosomal inversion",
+        "Chromosomal duplication",
+        "Chromosomal deletion"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D30-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ moves a _____ segment to a different location, often involving a nonhomologous _____, and can disrupt or rearrange genes/regulation.",
+          "choices": [
+            "Chromosomal translocation",
+            "Chromosomal inversion",
+            "Chromosomal duplication",
+            "Chromosomal deletion"
+          ],
+          "answer": "Chromosomal translocation",
+          "explanation": "A translocation moves a chromosome segment to a different location, often involving a nonhomologous chromosome, and can disrupt or rearrange genes/regulation.",
+          "knowledge_id": "U6-K-159"
+        },
+        {
+          "question_id": "U6-D30-Q02",
+          "prompt": "Which option best matches this scientific description? An _____ reverses the orientation of a _____ segment.",
+          "choices": [
+            "Chromosomal translocation",
+            "Chromosomal inversion",
+            "Chromosomal duplication",
+            "Chromosomal deletion"
+          ],
+          "answer": "Chromosomal inversion",
+          "explanation": "An inversion reverses the orientation of a chromosome segment.",
+          "knowledge_id": "U6-K-160"
+        },
+        {
+          "question_id": "U6-D30-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ creates an extra copy of a _____ segment.",
+          "choices": [
+            "Chromosomal translocation",
+            "Chromosomal inversion",
+            "Chromosomal duplication",
+            "Chromosomal deletion"
+          ],
+          "answer": "Chromosomal duplication",
+          "explanation": "A duplication creates an extra copy of a chromosome segment.",
+          "knowledge_id": "U6-K-161"
+        },
+        {
+          "question_id": "U6-D30-Q04",
+          "prompt": "Which option best matches this scientific description? A _____ removes a _____ segment.",
+          "choices": [
+            "Chromosomal translocation",
+            "Chromosomal inversion",
+            "Chromosomal duplication",
+            "Chromosomal deletion"
+          ],
+          "answer": "Chromosomal deletion",
+          "explanation": "A chromosomal deletion removes a chromosome segment.",
+          "knowledge_id": "U6-K-162"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D31",
+      "title": "Nondisjunction versus structural chromosome alteration",
+      "knowledge_ids": [
+        "U6-K-070",
+        "U6-K-072"
+      ],
+      "terms": [
+        "Nondisjunction and chromosome number",
+        "Chromosome-structure alterations"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D31-Q01",
+          "prompt": "Which option best matches this scientific description? _____ can produce cells with abnormal _____ (aneuploidy).",
+          "choices": [
+            "Nondisjunction and chromosome number",
+            "Chromosome-structure alterations"
+          ],
+          "answer": "Nondisjunction and chromosome number",
+          "explanation": "Nondisjunction can produce cells with abnormal chromosome numbers (aneuploidy).",
+          "knowledge_id": "U6-K-070"
+        },
+        {
+          "question_id": "U6-D31-Q02",
+          "prompt": "Which option best matches this scientific description? _____ in _____ structure can change gene dosage, gene integrity, or regulation and can lead to genetic disorders.",
+          "choices": [
+            "Nondisjunction and chromosome number",
+            "Chromosome-structure alterations"
+          ],
+          "answer": "Chromosome-structure alterations",
+          "explanation": "Alterations in chromosome structure can change gene dosage, gene integrity, or regulation and can lead to genetic disorders.",
+          "knowledge_id": "U6-K-072"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D32",
+      "title": "Transformation versus transduction versus conjugation",
+      "knowledge_ids": [
+        "U6-K-075",
+        "U6-K-076",
+        "U6-K-077"
+      ],
+      "terms": [
+        "Transformation as horizontal gene transfer",
+        "Transduction as horizontal gene transfer",
+        "Conjugation as horizontal gene transfer"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D32-Q01",
+          "prompt": "Which option best matches this scientific description? _____ increases prokaryotic _____ variation through uptake of DNA from the environment.",
+          "choices": [
+            "Transformation as horizontal gene transfer",
+            "Transduction as horizontal gene transfer",
+            "Conjugation as horizontal gene transfer"
+          ],
+          "answer": "Transformation as horizontal gene transfer",
+          "explanation": "Transformation increases prokaryotic genetic variation through uptake of DNA from the environment.",
+          "knowledge_id": "U6-K-075"
+        },
+        {
+          "question_id": "U6-D32-Q02",
+          "prompt": "Which option best matches this scientific description? _____ increases prokaryotic _____ variation through virus-mediated _____ of _____ information.",
+          "choices": [
+            "Transformation as horizontal gene transfer",
+            "Transduction as horizontal gene transfer",
+            "Conjugation as horizontal gene transfer"
+          ],
+          "answer": "Transduction as horizontal gene transfer",
+          "explanation": "Transduction increases prokaryotic genetic variation through virus-mediated transfer of genetic information.",
+          "knowledge_id": "U6-K-076"
+        },
+        {
+          "question_id": "U6-D32-Q03",
+          "prompt": "Which option best matches this scientific description? _____ increases prokaryotic _____ variation through cell-to-cell _____ of DNA.",
+          "choices": [
+            "Transformation as horizontal gene transfer",
+            "Transduction as horizontal gene transfer",
+            "Conjugation as horizontal gene transfer"
+          ],
+          "answer": "Conjugation as horizontal gene transfer",
+          "explanation": "Conjugation increases prokaryotic genetic variation through cell-to-cell transfer of DNA.",
+          "knowledge_id": "U6-K-077"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D33",
+      "title": "Transposition versus viral recombination",
+      "knowledge_ids": [
+        "U6-K-078",
+        "U6-K-079"
+      ],
+      "terms": [
+        "Transposition",
+        "Viral recombination"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D33-Q01",
+          "prompt": "Which option best matches this scientific description? _____ moves DNA segments within or between DNA molecules and can increase genetic variation.",
+          "choices": [
+            "Transposition",
+            "Viral recombination"
+          ],
+          "answer": "Transposition",
+          "explanation": "Transposition moves DNA segments within or between DNA molecules and can increase genetic variation.",
+          "knowledge_id": "U6-K-078"
+        },
+        {
+          "question_id": "U6-D33-Q02",
+          "prompt": "Which option best matches this scientific description? Related viruses can _____ genetic information when they infect the same host cell.",
+          "choices": [
+            "Transposition",
+            "Viral recombination"
+          ],
+          "answer": "Viral recombination",
+          "explanation": "Related viruses can recombine genetic information when they infect the same host cell.",
+          "knowledge_id": "U6-K-079"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D34",
+      "title": "Natural transformation versus biotechnology transformation",
+      "knowledge_ids": [
+        "U6-K-075",
+        "U6-K-086"
+      ],
+      "terms": [
+        "Transformation as horizontal gene transfer",
+        "Bacterial transformation as biotechnology"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D34-Q01",
+          "prompt": "Which option best matches this scientific description? _____ increases prokaryotic _____ variation through uptake of DNA from the environment.",
+          "choices": [
+            "Transformation as horizontal gene transfer",
+            "Bacterial transformation as biotechnology"
+          ],
+          "answer": "Transformation as horizontal gene transfer",
+          "explanation": "Transformation increases prokaryotic genetic variation through uptake of DNA from the environment.",
+          "knowledge_id": "U6-K-075"
+        },
+        {
+          "question_id": "U6-D34-Q02",
+          "prompt": "Which option best matches this scientific description? _____ introduces foreign DNA into _____ cells and can be used to propagate or express engineered DNA.",
+          "choices": [
+            "Transformation as horizontal gene transfer",
+            "Bacterial transformation as biotechnology"
+          ],
+          "answer": "Bacterial transformation as biotechnology",
+          "explanation": "Bacterial transformation introduces foreign DNA into bacterial cells and can be used to propagate or express engineered DNA.",
+          "knowledge_id": "U6-K-086"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D35",
+      "title": "PCR stages",
+      "knowledge_ids": [
+        "U6-K-083",
+        "U6-K-084",
+        "U6-K-085"
+      ],
+      "terms": [
+        "PCR denaturation",
+        "PCR primer annealing",
+        "PCR extension"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D35-Q01",
+          "prompt": "Which option best matches this scientific description? _____ amplification cycles include _____ to separate template DNA strands.",
+          "choices": [
+            "PCR denaturation",
+            "PCR primer annealing",
+            "PCR extension"
+          ],
+          "answer": "PCR denaturation",
+          "explanation": "PCR amplification cycles include denaturation to separate template DNA strands.",
+          "knowledge_id": "U6-K-083"
+        },
+        {
+          "question_id": "U6-D35-Q02",
+          "prompt": "Which option best matches this scientific description? _____ amplification cycles include _____ to complementary target sequences.",
+          "choices": [
+            "PCR denaturation",
+            "PCR primer annealing",
+            "PCR extension"
+          ],
+          "answer": "PCR primer annealing",
+          "explanation": "PCR amplification cycles include annealing primers to complementary target sequences.",
+          "knowledge_id": "U6-K-084"
+        },
+        {
+          "question_id": "U6-D35-Q03",
+          "prompt": "Which option best matches this scientific description? _____ amplification cycles include polymerase-mediated _____ to synthesize new DNA strands.",
+          "choices": [
+            "PCR denaturation",
+            "PCR primer annealing",
+            "PCR extension"
+          ],
+          "answer": "PCR extension",
+          "explanation": "PCR amplification cycles include polymerase-mediated extension to synthesize new DNA strands.",
+          "knowledge_id": "U6-K-085"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D36",
+      "title": "PCR versus gel electrophoresis versus sequencing",
+      "knowledge_ids": [
+        "U6-K-082",
+        "U6-K-083",
+        "U6-K-087"
+      ],
+      "terms": [
+        "Gel electrophoresis",
+        "PCR denaturation",
+        "DNA sequencing"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D36-Q01",
+          "prompt": "Which option best matches this scientific description? _____ separates _____ fragments by their movement through a _____ under an _____ field, with fragment size strongly affecting migration under standard _____ conditions.",
+          "choices": [
+            "Gel electrophoresis",
+            "PCR denaturation",
+            "DNA sequencing"
+          ],
+          "answer": "Gel electrophoresis",
+          "explanation": "Gel electrophoresis separates DNA fragments by their movement through a gel under an electric field, with fragment size strongly affecting migration under standard DNA-gel conditions.",
+          "knowledge_id": "U6-K-082"
+        },
+        {
+          "question_id": "U6-D36-Q02",
+          "prompt": "Which option best matches this scientific description? _____ amplification cycles include _____ to separate template _____ strands.",
+          "choices": [
+            "Gel electrophoresis",
+            "PCR denaturation",
+            "DNA sequencing"
+          ],
+          "answer": "PCR denaturation",
+          "explanation": "PCR amplification cycles include denaturation to separate template DNA strands.",
+          "knowledge_id": "U6-K-083"
+        },
+        {
+          "question_id": "U6-D36-Q03",
+          "prompt": "Which option best matches this scientific description? _____ determines the order of nucleotides in a _____ molecule.",
+          "choices": [
+            "Gel electrophoresis",
+            "PCR denaturation",
+            "DNA sequencing"
+          ],
+          "answer": "DNA sequencing",
+          "explanation": "DNA sequencing determines the order of nucleotides in a DNA molecule.",
+          "knowledge_id": "U6-K-087"
+        }
+      ]
+    },
+    {
+      "set_id": "U6-D37",
+      "title": "DNA sequence versus DNA profile",
+      "knowledge_ids": [
+        "U6-K-087",
+        "U6-K-088"
+      ],
+      "terms": [
+        "DNA sequencing",
+        "DNA profiles/fingerprints support comparison"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 6 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U6-D37-Q01",
+          "prompt": "Which option best matches this scientific description? _____ determines the order of nucleotides in a _____ molecule.",
+          "choices": [
+            "DNA sequencing",
+            "DNA profiles/fingerprints support comparison"
+          ],
+          "answer": "DNA sequencing",
+          "explanation": "DNA sequencing determines the order of nucleotides in a DNA molecule.",
+          "knowledge_id": "U6-K-087"
+        },
+        {
+          "question_id": "U6-D37-Q02",
+          "prompt": "Which option best matches this scientific description? Genetic-analysis techniques can produce _____ data or fragment patterns that allow _____ among _____ samples.",
+          "choices": [
+            "DNA sequencing",
+            "DNA profiles/fingerprints support comparison"
+          ],
+          "answer": "DNA profiles/fingerprints support comparison",
+          "explanation": "Genetic-analysis techniques can produce sequence data or fragment patterns that allow comparisons among DNA samples.",
+          "knowledge_id": "U6-K-088"
+        }
+      ]
+    }
+  ]
+}

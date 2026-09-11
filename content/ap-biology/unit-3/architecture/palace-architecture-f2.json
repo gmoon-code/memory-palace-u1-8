@@ -1,0 +1,2143 @@
+{
+  "schema": "memory-palace-v2-unit3-f2-architecture-1.0",
+  "generated_utc": "2026-09-03T02:05:00+00:00",
+  "unit": {
+    "unit_id": "unit-3",
+    "title": "Cellular Energetics",
+    "canonical_source_lock": "F1",
+    "student_release": false,
+    "narrative_generation_allowed": false
+  },
+  "design_rules": {
+    "student_simplicity": "The learner will eventually see guided journeys, Review, and Challenge Lab; F2 classification machinery remains hidden.",
+    "locus_rule": "A permanent locus represents one coherent causal, spatial, or comparison model rather than one canonical record.",
+    "embedded_rule": "Related definitions, mechanism details, and teacher enrichment are embedded in the locus whose scientific action makes them intelligible.",
+    "practice_rule": "Applied-transfer records remain in Challenge Lab and do not consume permanent palace locations.",
+    "scope_guard_rule": "Scope guards protect AP boundaries and remain non-runtime support metadata unless a later audit needs to surface them.",
+    "process_rule": "Photosynthesis and respiration must preserve scientifically recognizable membrane, compartment, redox, gradient, and pathway geometry.",
+    "narrative_gate": "No polished Unit 3 story prose may be authored until F3 scene briefs pass QA.",
+    "spelling_rule": "No mandatory spelling gate. Exact-name support is adaptive and can use optional sound cues only when useful."
+  },
+  "counts": {
+    "canonical_records": 186,
+    "palace_managed_records": 171,
+    "scope_guard_records": 4,
+    "practice_only_records": 11,
+    "journeys": 7,
+    "bundles": 20,
+    "permanent_loci": 54,
+    "confusable_sets": 28
+  },
+  "journeys": [
+    {
+      "journey_id": "U3-J1",
+      "working_title": "Enzyme Catalysis Workshop",
+      "content_focus": "Catalysts, activation energy, active-site compatibility, induced fit, and enzyme reuse",
+      "setting_logic": "A molecular workshop makes the reaction barrier, docking geometry, and catalytic turnover visible before terminology is attached.",
+      "bundles": [
+        {
+          "bundle_id": "U3-B01",
+          "title": "Catalysis and substrate binding",
+          "loci": [
+            "U3-L01",
+            "U3-L02",
+            "U3-L03"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U3-J2",
+      "working_title": "Enzyme Regulation Control Wing",
+      "content_focus": "Environmental effects, enzyme concentration variables, helpers, inhibition, allostery, cooperativity, and pathway regulation",
+      "setting_logic": "A control wing allows one enzyme system to be stressed, supplied, blocked, activated, and regulated while preserving clear distinctions among mechanisms.",
+      "bundles": [
+        {
+          "bundle_id": "U3-B02",
+          "title": "Environmental and concentration effects",
+          "loci": [
+            "U3-L04",
+            "U3-L05"
+          ]
+        },
+        {
+          "bundle_id": "U3-B03",
+          "title": "Helpers and inhibitor mechanisms",
+          "loci": [
+            "U3-L06",
+            "U3-L07",
+            "U3-L08",
+            "U3-L09"
+          ]
+        },
+        {
+          "bundle_id": "U3-B04",
+          "title": "Pathway-level regulation",
+          "loci": [
+            "U3-L10",
+            "U3-L11"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U3-J3",
+      "working_title": "Cellular Energy Exchange Hall",
+      "content_focus": "Metabolism, thermodynamics, free energy, cellular work, ATP structure, coupling, and regeneration",
+      "setting_logic": "An energy-accounting hall keeps forms of energy, thermodynamic constraints, work, and ATP cycling inside one causal system instead of treating them as separate definitions.",
+      "bundles": [
+        {
+          "bundle_id": "U3-B05",
+          "title": "Metabolism and energy forms",
+          "loci": [
+            "U3-L12",
+            "U3-L13"
+          ]
+        },
+        {
+          "bundle_id": "U3-B06",
+          "title": "Thermodynamic constraints",
+          "loci": [
+            "U3-L14",
+            "U3-L15",
+            "U3-L16"
+          ]
+        },
+        {
+          "bundle_id": "U3-B07",
+          "title": "Cellular work and ATP coupling",
+          "loci": [
+            "U3-L17",
+            "U3-L18",
+            "U3-L19",
+            "U3-L20"
+          ]
+        },
+        {
+          "bundle_id": "U3-B08",
+          "title": "Evolutionary conservation of metabolism",
+          "loci": [
+            "U3-L21"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U3-J4",
+      "working_title": "Light Capture Conservatory",
+      "content_focus": "Photosynthetic origins, chloroplast geography, light, pigments, photosystems, electron transport, proton gradients, and photophosphorylation",
+      "setting_logic": "A light-processing conservatory follows energy from incoming photons through pigments, photosystems, electron transfer, proton-gradient formation, ATP, and NADPH.",
+      "bundles": [
+        {
+          "bundle_id": "U3-B09",
+          "title": "Photosynthetic context and origins",
+          "loci": [
+            "U3-L22",
+            "U3-L23"
+          ]
+        },
+        {
+          "bundle_id": "U3-B10",
+          "title": "Leaf and chloroplast organization",
+          "loci": [
+            "U3-L24",
+            "U3-L25",
+            "U3-L26"
+          ]
+        },
+        {
+          "bundle_id": "U3-B11",
+          "title": "Light and photosystem capture",
+          "loci": [
+            "U3-L27",
+            "U3-L28",
+            "U3-L29"
+          ]
+        },
+        {
+          "bundle_id": "U3-B12",
+          "title": "Linear electron flow and energy products",
+          "loci": [
+            "U3-L30",
+            "U3-L31",
+            "U3-L32",
+            "U3-L33"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U3-J5",
+      "working_title": "Carbon Fixation Greenhouse",
+      "content_focus": "Calvin cycle, carbon fixation, Rubisco, RuBP, G3P, photorespiration, C4, and CAM",
+      "setting_logic": "A carbon greenhouse turns ATP and NADPH into visible carbon-flow work, then tests how plants reduce photorespiration under different environmental constraints.",
+      "bundles": [
+        {
+          "bundle_id": "U3-B13",
+          "title": "Calvin-cycle carbon flow",
+          "loci": [
+            "U3-L34",
+            "U3-L35",
+            "U3-L36"
+          ]
+        },
+        {
+          "bundle_id": "U3-B14",
+          "title": "Photorespiration and carbon-concentration strategies",
+          "loci": [
+            "U3-L37",
+            "U3-L38"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U3-J6",
+      "working_title": "Respiration Power Plant",
+      "content_focus": "Aerobic respiration from fuel intake through glycolysis, mitochondrial oxidation, electron transport, proton gradients, ATP synthase, heat, and prokaryotic respiration",
+      "setting_logic": "A power plant follows carbon and electrons through successive energy-harvesting stages while keeping mitochondrial compartments and chemiosmosis spatially explicit.",
+      "bundles": [
+        {
+          "bundle_id": "U3-B15",
+          "title": "Fuel entry and glycolysis",
+          "loci": [
+            "U3-L39",
+            "U3-L40",
+            "U3-L41"
+          ]
+        },
+        {
+          "bundle_id": "U3-B16",
+          "title": "Mitochondrial carbon oxidation",
+          "loci": [
+            "U3-L42",
+            "U3-L43",
+            "U3-L44"
+          ]
+        },
+        {
+          "bundle_id": "U3-B17",
+          "title": "Electron transport and oxidative phosphorylation",
+          "loci": [
+            "U3-L45",
+            "U3-L46",
+            "U3-L47",
+            "U3-L48"
+          ]
+        },
+        {
+          "bundle_id": "U3-B18",
+          "title": "Heat and cross-domain respiration",
+          "loci": [
+            "U3-L49",
+            "U3-L50"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_id": "U3-J7",
+      "working_title": "Alternative Energy Annex",
+      "content_focus": "Aerobic versus anaerobic respiration, fermentation, NAD+ recycling, alcohol fermentation, and lactate metabolism",
+      "setting_logic": "A branching annex compares alternative routes from shared metabolic constraints so anaerobic respiration and fermentation cannot collapse into the same idea.",
+      "bundles": [
+        {
+          "bundle_id": "U3-B19",
+          "title": "Alternative electron and redox routes",
+          "loci": [
+            "U3-L51",
+            "U3-L52"
+          ]
+        },
+        {
+          "bundle_id": "U3-B20",
+          "title": "Fermentation products and physiological context",
+          "loci": [
+            "U3-L53",
+            "U3-L54"
+          ]
+        }
+      ]
+    }
+  ],
+  "loci": [
+    {
+      "locus_id": "U3-L01",
+      "journey_id": "U3-J1",
+      "bundle_id": "U3-B01",
+      "title": "Catalyst Energy Ramp",
+      "micro_anchor": "the reaction-energy track with an uncatalyzed hill beside a lower enzyme-catalyzed route",
+      "scene_geometry": {
+        "left": "uncatalyzed activation-energy hill",
+        "center": "enzyme-catalyzed lower barrier",
+        "right": "product-side exit"
+      },
+      "primary_knowledge_id": "U3-K-003",
+      "knowledge_ids": [
+        "U3-K-001",
+        "U3-K-002",
+        "U3-K-003",
+        "U3-K-083"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-001",
+        "U3-K-002",
+        "U3-K-083"
+      ],
+      "visual_mode": "ENERGY_PROFILE_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L02",
+      "journey_id": "U3-J1",
+      "bundle_id": "U3-B01",
+      "title": "Active-Site Dock",
+      "micro_anchor": "the molecular docking bay where substrate shape and charge are tested against an enzyme pocket",
+      "scene_geometry": {
+        "left": "free substrate approach lane",
+        "center": "enzyme active-site docking pocket",
+        "right": "enzyme-substrate complex display"
+      },
+      "primary_knowledge_id": "U3-K-004",
+      "knowledge_ids": [
+        "U3-K-004",
+        "U3-K-005",
+        "U3-K-084",
+        "U3-K-085",
+        "U3-K-086"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-005",
+        "U3-K-084",
+        "U3-K-085",
+        "U3-K-086"
+      ],
+      "visual_mode": "MOLECULAR_DOCKING_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L03",
+      "journey_id": "U3-J1",
+      "bundle_id": "U3-B01",
+      "title": "Catalytic Turnover Bench",
+      "micro_anchor": "the reusable enzyme station that releases product and returns the catalyst to service",
+      "scene_geometry": {
+        "left": "substrate arrival",
+        "center": "catalytic turnover bench",
+        "right": "product release and enzyme reset"
+      },
+      "primary_knowledge_id": "U3-K-087",
+      "knowledge_ids": [
+        "U3-K-087",
+        "U3-K-088"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-088"
+      ],
+      "visual_mode": "CATALYTIC_CYCLE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L04",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B02",
+      "title": "Enzyme Stability Chamber",
+      "micro_anchor": "the enzyme-shape monitor between controlled temperature and pH panels",
+      "scene_geometry": {
+        "left": "temperature control",
+        "center": "enzyme structure/function monitor",
+        "right": "pH and chemical environment control"
+      },
+      "primary_knowledge_id": "U3-K-007",
+      "knowledge_ids": [
+        "U3-K-006",
+        "U3-K-007",
+        "U3-K-008",
+        "U3-K-009",
+        "U3-K-091"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-006",
+        "U3-K-008",
+        "U3-K-009",
+        "U3-K-091"
+      ],
+      "visual_mode": "STRUCTURE_FUNCTION_STRESS_TEST",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L05",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B02",
+      "title": "Collision and Saturation Track",
+      "micro_anchor": "the reaction-rate conveyor where substrate concentration and temperature can be varied independently",
+      "scene_geometry": {
+        "left": "substrate concentration feeder",
+        "center": "enzyme reaction-rate track",
+        "right": "temperature/collision-frequency control"
+      },
+      "primary_knowledge_id": "U3-K-010",
+      "knowledge_ids": [
+        "U3-K-010",
+        "U3-K-011",
+        "U3-K-092"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-011",
+        "U3-K-092"
+      ],
+      "visual_mode": "RATE_VARIABLES_GRAPH_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L06",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B03",
+      "title": "Cofactor Assembly Station",
+      "micro_anchor": "the incomplete enzyme assembly bench with removable helper components",
+      "scene_geometry": {
+        "left": "apoenzyme/protein component",
+        "center": "helper-binding assembly bench",
+        "right": "active holoenzyme output"
+      },
+      "primary_knowledge_id": "U3-K-093",
+      "knowledge_ids": [
+        "U3-K-093",
+        "U3-K-094",
+        "U3-K-095"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-094",
+        "U3-K-095"
+      ],
+      "visual_mode": "MOLECULAR_ASSEMBLY_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L07",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B03",
+      "title": "Competitive Inhibitor Gate",
+      "micro_anchor": "the active-site checkpoint where substrate and competitor approach the same binding pocket",
+      "scene_geometry": {
+        "left": "substrate lane",
+        "center": "shared active-site gate",
+        "right": "competitive inhibitor lane"
+      },
+      "primary_knowledge_id": "U3-K-012",
+      "knowledge_ids": [
+        "U3-K-012",
+        "U3-K-097"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-097"
+      ],
+      "visual_mode": "COMPETITION_MECHANISM",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L08",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B03",
+      "title": "Allosteric Control Panel",
+      "micro_anchor": "the enzyme control console with a regulatory site physically separated from the active site",
+      "scene_geometry": {
+        "left": "active-site reaction zone",
+        "center": "enzyme body",
+        "right": "allosteric regulatory site"
+      },
+      "primary_knowledge_id": "U3-K-013",
+      "knowledge_ids": [
+        "U3-K-013",
+        "U3-K-098",
+        "U3-K-099",
+        "U3-K-100",
+        "U3-K-101"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-098",
+        "U3-K-099",
+        "U3-K-100",
+        "U3-K-101"
+      ],
+      "visual_mode": "ALLOSTERIC_CONTROL_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L09",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B03",
+      "title": "Cooperative Binding Array",
+      "micro_anchor": "the multi-subunit enzyme display where one ligand-binding event changes later binding behavior",
+      "scene_geometry": {
+        "left": "first binding site",
+        "center": "linked subunit array",
+        "right": "later binding sites"
+      },
+      "primary_knowledge_id": "U3-K-102",
+      "knowledge_ids": [
+        "U3-K-102"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "COOPERATIVITY_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L10",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B04",
+      "title": "Feedback Loop Control Room",
+      "micro_anchor": "the metabolic pathway board where a downstream product feeds back to an earlier control enzyme",
+      "scene_geometry": {
+        "left": "pathway inputs and early enzyme",
+        "center": "multi-step metabolic route",
+        "right": "end product feedback line"
+      },
+      "primary_knowledge_id": "U3-K-103",
+      "knowledge_ids": [
+        "U3-K-103",
+        "U3-K-104"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-104"
+      ],
+      "visual_mode": "PATHWAY_FEEDBACK_LOOP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L11",
+      "journey_id": "U3-J2",
+      "bundle_id": "U3-B04",
+      "title": "Irreversible Inhibition Lockout",
+      "micro_anchor": "the damaged enzyme bay where a persistent inhibitor prevents recovery after ordinary conditions are restored",
+      "scene_geometry": {
+        "left": "functional enzyme reference",
+        "center": "irreversibly inhibited enzyme",
+        "right": "failed recovery test"
+      },
+      "primary_knowledge_id": "U3-K-096",
+      "knowledge_ids": [
+        "U3-K-096"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "DISTINCTION_STRESS_TEST",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L12",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B05",
+      "title": "Metabolism Route Map",
+      "micro_anchor": "the central pathway map splitting degradative routes from biosynthetic routes",
+      "scene_geometry": {
+        "left": "catabolic breakdown branch",
+        "center": "shared metabolic pathway map",
+        "right": "anabolic synthesis branch"
+      },
+      "primary_knowledge_id": "U3-K-055",
+      "knowledge_ids": [
+        "U3-K-019",
+        "U3-K-020",
+        "U3-K-055",
+        "U3-K-056",
+        "U3-K-057",
+        "U3-K-058",
+        "U3-K-089",
+        "U3-K-090"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-019",
+        "U3-K-020",
+        "U3-K-056",
+        "U3-K-057",
+        "U3-K-058",
+        "U3-K-089",
+        "U3-K-090"
+      ],
+      "visual_mode": "SYSTEM_PATHWAY_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L13",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B05",
+      "title": "Energy Forms Gallery",
+      "micro_anchor": "the conversion gallery showing motion, heat, position, and molecular-bond energy",
+      "scene_geometry": {
+        "left": "kinetic and thermal displays",
+        "center": "energy-conversion turntable",
+        "right": "potential and chemical energy displays"
+      },
+      "primary_knowledge_id": "U3-K-059",
+      "knowledge_ids": [
+        "U3-K-059",
+        "U3-K-060",
+        "U3-K-061",
+        "U3-K-062",
+        "U3-K-063"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-060",
+        "U3-K-061",
+        "U3-K-062",
+        "U3-K-063"
+      ],
+      "visual_mode": "ENERGY_FORM_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L14",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B06",
+      "title": "First-Law Ledger",
+      "micro_anchor": "the closed accounting wall that tracks energy entering, changing form, and leaving",
+      "scene_geometry": {
+        "left": "energy input ledger",
+        "center": "transformation/accounting panel",
+        "right": "energy output ledger"
+      },
+      "primary_knowledge_id": "U3-K-065",
+      "knowledge_ids": [
+        "U3-K-015",
+        "U3-K-064",
+        "U3-K-065"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-015",
+        "U3-K-064"
+      ],
+      "visual_mode": "THERMODYNAMIC_ACCOUNTING",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L15",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B06",
+      "title": "Entropy and Living Order Chamber",
+      "micro_anchor": "the order-maintenance room where local cellular organization is sustained while energy disperses to the surroundings",
+      "scene_geometry": {
+        "left": "organized cellular system",
+        "center": "maintenance-energy input",
+        "right": "dispersed heat and environmental entropy"
+      },
+      "primary_knowledge_id": "U3-K-066",
+      "knowledge_ids": [
+        "U3-K-016",
+        "U3-K-018",
+        "U3-K-066",
+        "U3-K-067"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-016",
+        "U3-K-018",
+        "U3-K-067"
+      ],
+      "visual_mode": "THERMODYNAMIC_DIRECTION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L16",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B06",
+      "title": "Free-Energy Terrain",
+      "micro_anchor": "the reaction landscape with downhill exergonic and uphill endergonic paths relative to cellular equilibrium",
+      "scene_geometry": {
+        "left": "exergonic downhill path",
+        "center": "free-energy/equilibrium reference",
+        "right": "endergonic uphill path"
+      },
+      "primary_knowledge_id": "U3-K-068",
+      "knowledge_ids": [
+        "U3-K-068",
+        "U3-K-070",
+        "U3-K-071",
+        "U3-K-072"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-070",
+        "U3-K-071",
+        "U3-K-072"
+      ],
+      "visual_mode": "ENERGY_LANDSCAPE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L17",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B07",
+      "title": "Cellular Work Dock",
+      "micro_anchor": "the three-bay work station where an energy-releasing process powers chemical, transport, and mechanical work",
+      "scene_geometry": {
+        "left": "mechanical-work bay",
+        "center": "energy-coupling junction",
+        "right": "transport and chemical-work bays"
+      },
+      "primary_knowledge_id": "U3-K-017",
+      "knowledge_ids": [
+        "U3-K-014",
+        "U3-K-017",
+        "U3-K-073",
+        "U3-K-074",
+        "U3-K-075"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-014",
+        "U3-K-073",
+        "U3-K-074",
+        "U3-K-075"
+      ],
+      "visual_mode": "ENERGY_COUPLING_WORK_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L18",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B07",
+      "title": "ATP Structure Station",
+      "micro_anchor": "the enlarged ATP model beside ADP and inorganic phosphate",
+      "scene_geometry": {
+        "left": "adenine-ribose body",
+        "center": "triphosphate chain",
+        "right": "ADP plus Pi comparison"
+      },
+      "primary_knowledge_id": "U3-K-076",
+      "knowledge_ids": [
+        "U3-K-076",
+        "U3-K-077"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-077"
+      ],
+      "visual_mode": "MOLECULAR_STRUCTURE_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L19",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B07",
+      "title": "ATP Hydrolysis Forge",
+      "micro_anchor": "the coupling forge where ATP hydrolysis changes reactant free energy through phosphorylation",
+      "scene_geometry": {
+        "left": "ATP hydrolysis input",
+        "center": "coupling/phosphorylation forge",
+        "right": "altered phosphorylated target"
+      },
+      "primary_knowledge_id": "U3-K-078",
+      "knowledge_ids": [
+        "U3-K-078",
+        "U3-K-079",
+        "U3-K-080",
+        "U3-K-081"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-079",
+        "U3-K-080",
+        "U3-K-081"
+      ],
+      "visual_mode": "COUPLED_REACTION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L20",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B07",
+      "title": "ATP Regeneration Wheel",
+      "micro_anchor": "the continuously turning ATP/ADP cycle driven by energy from catabolic processes and consumed by cellular work",
+      "scene_geometry": {
+        "left": "ADP plus Pi return path",
+        "center": "ATP regeneration wheel",
+        "right": "ATP use for cellular work"
+      },
+      "primary_knowledge_id": "U3-K-082",
+      "knowledge_ids": [
+        "U3-K-082"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "ENERGY_CYCLE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L21",
+      "journey_id": "U3-J3",
+      "bundle_id": "U3-B08",
+      "title": "Conserved Metabolism Archive",
+      "micro_anchor": "the cross-species pathway archive showing shared core metabolic logic in diverse organisms",
+      "scene_geometry": {
+        "left": "prokaryotic pathway record",
+        "center": "conserved core reactions display",
+        "right": "eukaryotic pathway record"
+      },
+      "primary_knowledge_id": "U3-K-021",
+      "knowledge_ids": [
+        "U3-K-021"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "EVOLUTIONARY_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L22",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B09",
+      "title": "Carbon Strategy Entrance",
+      "micro_anchor": "the three-way carbon-and-energy intake gate comparing autotrophic and heterotrophic strategies",
+      "scene_geometry": {
+        "left": "photoautotroph light-input lane",
+        "center": "autotroph carbon-building center",
+        "right": "heterotroph organic-carbon lane"
+      },
+      "primary_knowledge_id": "U3-K-105",
+      "knowledge_ids": [
+        "U3-K-022",
+        "U3-K-023",
+        "U3-K-105",
+        "U3-K-106",
+        "U3-K-107"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-022",
+        "U3-K-023",
+        "U3-K-106",
+        "U3-K-107"
+      ],
+      "visual_mode": "NUTRITION_STRATEGY_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L23",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B09",
+      "title": "Oxygenation Timeline",
+      "micro_anchor": "the evolutionary timeline from prokaryotic oxygenic photosynthesis to atmospheric oxygenation and eukaryotic photosynthesis",
+      "scene_geometry": {
+        "left": "ancestral photosynthetic prokaryotes",
+        "center": "atmospheric oxygen rise",
+        "right": "eukaryotic photosynthetic lineage"
+      },
+      "primary_knowledge_id": "U3-K-024",
+      "knowledge_ids": [
+        "U3-K-024",
+        "U3-K-025",
+        "U3-K-026",
+        "U3-K-108"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-025",
+        "U3-K-026",
+        "U3-K-108"
+      ],
+      "visual_mode": "EVOLUTIONARY_TIMELINE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L24",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B10",
+      "title": "Leaf Gas-Exchange Balcony",
+      "micro_anchor": "the leaf cross-section balcony with mesophyll tissue behind adjustable stomatal pores",
+      "scene_geometry": {
+        "left": "stomatal pore and guard-cell opening",
+        "center": "leaf/mesophyll photosynthetic tissue",
+        "right": "CO2/O2/water-vapor diffusion paths"
+      },
+      "primary_knowledge_id": "U3-K-110",
+      "knowledge_ids": [
+        "U3-K-109",
+        "U3-K-110"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-109"
+      ],
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L25",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B10",
+      "title": "Chloroplast Compartment Gallery",
+      "micro_anchor": "the chloroplast cutaway linking stroma, thylakoid membranes, and grana to their photosynthetic roles",
+      "scene_geometry": {
+        "left": "chloroplast envelope and stroma",
+        "center": "thylakoid membrane/granum stack",
+        "right": "reaction-location labels"
+      },
+      "primary_knowledge_id": "U3-K-027",
+      "knowledge_ids": [
+        "U3-K-027",
+        "U3-K-028",
+        "U3-K-029",
+        "U3-K-030",
+        "U3-K-111"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-028",
+        "U3-K-029",
+        "U3-K-030",
+        "U3-K-111"
+      ],
+      "visual_mode": "NESTED_STRUCTURE_FUNCTION_CUTAWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L26",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B10",
+      "title": "Photosynthesis Redox Board",
+      "micro_anchor": "the overall photosynthesis model with water oxidation separated from carbon-dioxide reduction",
+      "scene_geometry": {
+        "left": "water oxidation and O2 release",
+        "center": "light reactions / Calvin-cycle linkage",
+        "right": "CO2 reduction to carbohydrate model"
+      },
+      "primary_knowledge_id": "U3-K-115",
+      "knowledge_ids": [
+        "U3-K-113",
+        "U3-K-114",
+        "U3-K-115",
+        "U3-K-116"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-113",
+        "U3-K-114",
+        "U3-K-116"
+      ],
+      "visual_mode": "REDOX_SYSTEM_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L27",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B11",
+      "title": "Photon and Wavelength Prism",
+      "micro_anchor": "the spectrum wall where wavelength changes are tied to photon energy and pigment absorption",
+      "scene_geometry": {
+        "left": "short-wavelength/high-energy photons",
+        "center": "visible-spectrum prism",
+        "right": "long-wavelength/lower-energy photons"
+      },
+      "primary_knowledge_id": "U3-K-117",
+      "knowledge_ids": [
+        "U3-K-117",
+        "U3-K-118",
+        "U3-K-119"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-118",
+        "U3-K-119"
+      ],
+      "visual_mode": "SPECTRUM_ENERGY_VISUAL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L28",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B11",
+      "title": "Pigment Spectrum Bench",
+      "micro_anchor": "the absorption-spectrum bench comparing chlorophyll a, chlorophyll b, carotenoids, and reflected light",
+      "scene_geometry": {
+        "left": "chlorophyll a/b absorption panels",
+        "center": "pigment excitation bench",
+        "right": "carotenoid/protection panel"
+      },
+      "primary_knowledge_id": "U3-K-112",
+      "knowledge_ids": [
+        "U3-K-034",
+        "U3-K-112",
+        "U3-K-120",
+        "U3-K-121",
+        "U3-K-122"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-034",
+        "U3-K-120",
+        "U3-K-121",
+        "U3-K-122"
+      ],
+      "visual_mode": "PIGMENT_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L29",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B11",
+      "title": "Photosystem Antenna Theater",
+      "micro_anchor": "the thylakoid-membrane photosystem model with antenna pigments surrounding a reaction center",
+      "scene_geometry": {
+        "left": "light-harvesting pigments",
+        "center": "reaction-center chlorophyll and acceptor",
+        "right": "excitation-energy transfer path"
+      },
+      "primary_knowledge_id": "U3-K-123",
+      "knowledge_ids": [
+        "U3-K-123",
+        "U3-K-124",
+        "U3-K-125",
+        "U3-K-131"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-124",
+        "U3-K-125",
+        "U3-K-131"
+      ],
+      "visual_mode": "EXCITATION_TRANSFER_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L30",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B12",
+      "title": "Photosystem II Water Splitter",
+      "micro_anchor": "the PSII reaction-center station beside the water-oxidation complex",
+      "scene_geometry": {
+        "left": "water-splitting input",
+        "center": "photosystem II reaction center",
+        "right": "electron/O2/proton outputs"
+      },
+      "primary_knowledge_id": "U3-K-126",
+      "knowledge_ids": [
+        "U3-K-035",
+        "U3-K-126",
+        "U3-K-130"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-035",
+        "U3-K-130"
+      ],
+      "visual_mode": "REDOX_REPLACEMENT_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L31",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B12",
+      "title": "Thylakoid Electron-Transport Bridge",
+      "micro_anchor": "the membrane electron-transfer bridge linking photosystem II to photosystem I while pumping protons",
+      "scene_geometry": {
+        "left": "photosystem II electron departure",
+        "center": "electron transport/proton-pumping bridge",
+        "right": "photosystem I arrival"
+      },
+      "primary_knowledge_id": "U3-K-036",
+      "knowledge_ids": [
+        "U3-K-032",
+        "U3-K-036",
+        "U3-K-037"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-032",
+        "U3-K-037"
+      ],
+      "visual_mode": "MEMBRANE_ETC_GRADIENT_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L32",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B12",
+      "title": "Photosystem I NADPH Station",
+      "micro_anchor": "the PSI reaction center where arriving electrons are re-excited before NADP+ reduction",
+      "scene_geometry": {
+        "left": "incoming ETC electrons",
+        "center": "photosystem I / P700 reaction center",
+        "right": "NADP+ to NADPH output"
+      },
+      "primary_knowledge_id": "U3-K-127",
+      "knowledge_ids": [
+        "U3-K-033",
+        "U3-K-127",
+        "U3-K-128"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-033",
+        "U3-K-128"
+      ],
+      "visual_mode": "REDOX_OUTPUT_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L33",
+      "journey_id": "U3-J4",
+      "bundle_id": "U3-B12",
+      "title": "Photophosphorylation Turbine",
+      "micro_anchor": "the thylakoid ATP synthase spanning lumen and stroma with proton flow driving ATP formation",
+      "scene_geometry": {
+        "left": "high-H+ thylakoid lumen",
+        "center": "ATP synthase turbine",
+        "right": "stroma ATP output"
+      },
+      "primary_knowledge_id": "U3-K-038",
+      "knowledge_ids": [
+        "U3-K-031",
+        "U3-K-038",
+        "U3-K-132"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-031",
+        "U3-K-132"
+      ],
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L34",
+      "journey_id": "U3-J5",
+      "bundle_id": "U3-B13",
+      "title": "Calvin Cycle Energy Dock",
+      "micro_anchor": "the stroma carbon-fixation cycle receiving ATP and NADPH from the light reactions",
+      "scene_geometry": {
+        "left": "ATP/NADPH delivery",
+        "center": "Calvin-cycle route in stroma",
+        "right": "carbohydrate-building output"
+      },
+      "primary_knowledge_id": "U3-K-039",
+      "knowledge_ids": [
+        "U3-K-039",
+        "U3-K-133"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-133"
+      ],
+      "visual_mode": "ENERGY_INPUT_PATHWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L35",
+      "journey_id": "U3-J5",
+      "bundle_id": "U3-B13",
+      "title": "Carbon Fixation Bench",
+      "micro_anchor": "the rubisco station where CO2 is attached to RuBP at the start of carbon fixation",
+      "scene_geometry": {
+        "left": "CO2 input",
+        "center": "rubisco fixation station",
+        "right": "RuBP carbon acceptor"
+      },
+      "primary_knowledge_id": "U3-K-134",
+      "knowledge_ids": [
+        "U3-K-134",
+        "U3-K-135",
+        "U3-K-136"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-135",
+        "U3-K-136"
+      ],
+      "visual_mode": "CARBON_FIXATION_REACTION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L36",
+      "journey_id": "U3-J5",
+      "bundle_id": "U3-B13",
+      "title": "G3P Output and Regeneration Loop",
+      "micro_anchor": "the three-turn Calvin-cycle accounting loop with one net G3P leaving and RuBP regenerated",
+      "scene_geometry": {
+        "left": "G3P production/output",
+        "center": "ATP/NADPH accounting loop",
+        "right": "RuBP regeneration return"
+      },
+      "primary_knowledge_id": "U3-K-137",
+      "knowledge_ids": [
+        "U3-K-137",
+        "U3-K-138"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-138"
+      ],
+      "visual_mode": "PATHWAY_ACCOUNTING_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L37",
+      "journey_id": "U3-J5",
+      "bundle_id": "U3-B14",
+      "title": "Photorespiration Detour",
+      "micro_anchor": "the rubisco branch point where O2 competes with CO2 and lowers net carbon fixation",
+      "scene_geometry": {
+        "left": "CO2 fixation route",
+        "center": "rubisco branch point",
+        "right": "O2/photorespiration detour"
+      },
+      "primary_knowledge_id": "U3-K-140",
+      "knowledge_ids": [
+        "U3-K-140",
+        "U3-K-141"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-141"
+      ],
+      "visual_mode": "COMPETING_SUBSTRATE_PATHWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L38",
+      "journey_id": "U3-J5",
+      "bundle_id": "U3-B14",
+      "title": "C4 and CAM Strategy Conservatory",
+      "micro_anchor": "the split greenhouse comparing spatial and temporal CO2-concentration strategies",
+      "scene_geometry": {
+        "left": "C4 spatial separation display",
+        "center": "photorespiration-pressure reference",
+        "right": "CAM temporal separation display"
+      },
+      "primary_knowledge_id": "U3-K-142",
+      "knowledge_ids": [
+        "U3-K-142",
+        "U3-K-143"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-143"
+      ],
+      "visual_mode": "ADAPTATION_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L39",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B15",
+      "title": "Respiration Fuel Intake",
+      "micro_anchor": "the power-plant intake map connecting macromolecular fuels to the coordinated stages of aerobic respiration",
+      "scene_geometry": {
+        "left": "carbohydrate/fat/protein fuel inputs",
+        "center": "aerobic respiration stage map",
+        "right": "CO2/H2O/ATP plus heat outputs"
+      },
+      "primary_knowledge_id": "U3-K-040",
+      "knowledge_ids": [
+        "U3-K-040",
+        "U3-K-042",
+        "U3-K-145",
+        "U3-K-146",
+        "U3-K-147",
+        "U3-K-150"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-042",
+        "U3-K-145",
+        "U3-K-146",
+        "U3-K-147",
+        "U3-K-150"
+      ],
+      "visual_mode": "SYSTEM_OVERVIEW_MAP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L40",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B15",
+      "title": "Glycolysis Floor",
+      "micro_anchor": "the cytosolic six-carbon-to-two-three-carbon splitting line with ATP investment and payoff stations",
+      "scene_geometry": {
+        "left": "glucose and ATP investment",
+        "center": "glycolytic splitting line",
+        "right": "pyruvate/NADH/net ATP outputs"
+      },
+      "primary_knowledge_id": "U3-K-049",
+      "knowledge_ids": [
+        "U3-K-049",
+        "U3-K-151",
+        "U3-K-152",
+        "U3-K-153"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-151",
+        "U3-K-152",
+        "U3-K-153"
+      ],
+      "visual_mode": "PATHWAY_OUTPUT_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L41",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B15",
+      "title": "Electron Carrier Charging Bay",
+      "micro_anchor": "the redox charging station comparing oxidized NAD+/FAD with reduced NADH/FADH2",
+      "scene_geometry": {
+        "left": "NAD+/NADH carrier pair",
+        "center": "electron-loading station",
+        "right": "FAD/FADH2 carrier pair"
+      },
+      "primary_knowledge_id": "U3-K-148",
+      "knowledge_ids": [
+        "U3-K-148",
+        "U3-K-149"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-149"
+      ],
+      "visual_mode": "REDOX_CARRIER_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L42",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B16",
+      "title": "Pyruvate Oxidation Airlock",
+      "micro_anchor": "the mitochondrial entry process where pyruvate becomes an acetyl group carried by coenzyme A",
+      "scene_geometry": {
+        "left": "pyruvate entry",
+        "center": "oxidation/decarboxylation airlock",
+        "right": "acetyl-CoA/NADH/CO2 outputs"
+      },
+      "primary_knowledge_id": "U3-K-154",
+      "knowledge_ids": [
+        "U3-K-050",
+        "U3-K-154",
+        "U3-K-155"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-050",
+        "U3-K-155"
+      ],
+      "visual_mode": "PATHWAY_TRANSITION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L43",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B16",
+      "title": "Citric Acid Cycle Chamber",
+      "micro_anchor": "the matrix cycle where acetyl groups are oxidized and energy is transferred to ATP, NADH, and FADH2",
+      "scene_geometry": {
+        "left": "acetyl-CoA entry",
+        "center": "citric acid/Krebs cycle in matrix",
+        "right": "CO2/ATP/reduced-carrier outputs"
+      },
+      "primary_knowledge_id": "U3-K-051",
+      "knowledge_ids": [
+        "U3-K-051",
+        "U3-K-156",
+        "U3-K-157"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-156",
+        "U3-K-157"
+      ],
+      "visual_mode": "CYCLIC_PATHWAY_OUTPUT_MODEL",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L44",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B16",
+      "title": "Mitochondrial Architecture Bay",
+      "micro_anchor": "the mitochondrial cutaway showing matrix, inner membrane, cristae, and intermembrane space as respiration compartments",
+      "scene_geometry": {
+        "left": "intermembrane space",
+        "center": "cristae-rich inner membrane",
+        "right": "matrix"
+      },
+      "primary_knowledge_id": "U3-K-045",
+      "knowledge_ids": [
+        "U3-K-045",
+        "U3-K-144"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-144"
+      ],
+      "visual_mode": "STRUCTURE_FUNCTION_CUTAWAY",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L45",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B17",
+      "title": "Respiratory Electron-Transport Descent",
+      "micro_anchor": "the inner-membrane redox chain receiving electrons from NADH and FADH2 and transferring them toward a terminal acceptor",
+      "scene_geometry": {
+        "left": "NADH/FADH2 electron entry",
+        "center": "respiratory ETC redox chain",
+        "right": "terminal-acceptor end"
+      },
+      "primary_knowledge_id": "U3-K-043",
+      "knowledge_ids": [
+        "U3-K-043",
+        "U3-K-052",
+        "U3-K-159"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-052",
+        "U3-K-159"
+      ],
+      "visual_mode": "REDOX_CHAIN",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L46",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B17",
+      "title": "Proton Pumping Wall",
+      "micro_anchor": "the inner mitochondrial membrane where electron-transfer energy pumps H+ from matrix to intermembrane space",
+      "scene_geometry": {
+        "left": "matrix low-H+ side",
+        "center": "inner-membrane proton pumps",
+        "right": "intermembrane high-H+ side"
+      },
+      "primary_knowledge_id": "U3-K-044",
+      "knowledge_ids": [
+        "U3-K-044",
+        "U3-K-053",
+        "U3-K-160"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-053",
+        "U3-K-160"
+      ],
+      "visual_mode": "GRADIENT_BUILDING_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L47",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B17",
+      "title": "Oxygen Terminal-Acceptor Basin",
+      "micro_anchor": "the end of the aerobic ETC where oxygen receives electrons and protons to form water",
+      "scene_geometry": {
+        "left": "incoming electrons",
+        "center": "oxygen terminal-acceptor basin",
+        "right": "water product"
+      },
+      "primary_knowledge_id": "U3-K-161",
+      "knowledge_ids": [
+        "U3-K-161"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "TERMINAL_REDOX_REACTION",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L48",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B17",
+      "title": "Oxidative-Phosphorylation Turbine",
+      "micro_anchor": "the ATP synthase complex where proton-motive force drives rotation/conformational change and ATP formation",
+      "scene_geometry": {
+        "left": "proton gradient reservoir",
+        "center": "ATP synthase/chemiosmosis turbine",
+        "right": "ATP output and yield dashboard"
+      },
+      "primary_knowledge_id": "U3-K-047",
+      "knowledge_ids": [
+        "U3-K-047",
+        "U3-K-158",
+        "U3-K-162",
+        "U3-K-163",
+        "U3-K-164",
+        "U3-K-165"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-158",
+        "U3-K-162",
+        "U3-K-163",
+        "U3-K-164",
+        "U3-K-165"
+      ],
+      "visual_mode": "CHEMIOSMOSIS_TURBINE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L49",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B18",
+      "title": "Uncoupling Heat Vent",
+      "micro_anchor": "the controlled proton-leak bypass where gradient energy is released as heat instead of captured efficiently as ATP",
+      "scene_geometry": {
+        "left": "proton gradient",
+        "center": "uncoupling bypass",
+        "right": "heat output"
+      },
+      "primary_knowledge_id": "U3-K-048",
+      "knowledge_ids": [
+        "U3-K-048"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "ENERGY_PARTITION_SCENE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L50",
+      "journey_id": "U3-J6",
+      "bundle_id": "U3-B18",
+      "title": "Prokaryotic Respiratory Membrane",
+      "micro_anchor": "the prokaryotic plasma-membrane model carrying respiratory ETC and proton-translocation machinery without mitochondria",
+      "scene_geometry": {
+        "left": "cytoplasmic side",
+        "center": "prokaryotic plasma membrane ETC",
+        "right": "external/periplasmic proton side"
+      },
+      "primary_knowledge_id": "U3-K-046",
+      "knowledge_ids": [
+        "U3-K-046"
+      ],
+      "embedded_knowledge_ids": [],
+      "visual_mode": "CROSS_DOMAIN_MEMBRANE_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L51",
+      "journey_id": "U3-J7",
+      "bundle_id": "U3-B19",
+      "title": "Respiration Across Life Junction",
+      "micro_anchor": "the three-route energy-harvesting junction separating aerobic respiration, anaerobic respiration, and fermentation",
+      "scene_geometry": {
+        "left": "aerobic oxygen-terminal route",
+        "center": "shared energy-harvesting junction",
+        "right": "anaerobic/fermentative alternatives"
+      },
+      "primary_knowledge_id": "U3-K-041",
+      "knowledge_ids": [
+        "U3-K-041",
+        "U3-K-167",
+        "U3-K-168"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-167",
+        "U3-K-168"
+      ],
+      "visual_mode": "PROCESS_COMPARISON",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L52",
+      "journey_id": "U3-J7",
+      "bundle_id": "U3-B19",
+      "title": "Fermentation NAD+ Recycling Gate",
+      "micro_anchor": "the cytosolic redox loop where NADH transfers electrons to an organic molecule so NAD+ returns to glycolysis",
+      "scene_geometry": {
+        "left": "glycolysis NADH output",
+        "center": "fermentation redox gate",
+        "right": "regenerated NAD+ return path"
+      },
+      "primary_knowledge_id": "U3-K-054",
+      "knowledge_ids": [
+        "U3-K-054",
+        "U3-K-169",
+        "U3-K-170"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-169",
+        "U3-K-170"
+      ],
+      "visual_mode": "REDOX_RECYCLING_LOOP",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L53",
+      "journey_id": "U3-J7",
+      "bundle_id": "U3-B20",
+      "title": "Alcohol Fermentation Vat",
+      "micro_anchor": "the two-step pyruvate-to-acetaldehyde-to-ethanol pathway with CO2 release and NAD+ regeneration",
+      "scene_geometry": {
+        "left": "pyruvate decarboxylation",
+        "center": "acetaldehyde intermediate",
+        "right": "ethanol plus regenerated NAD+"
+      },
+      "primary_knowledge_id": "U3-K-171",
+      "knowledge_ids": [
+        "U3-K-171",
+        "U3-K-172"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-172"
+      ],
+      "visual_mode": "FERMENTATION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    },
+    {
+      "locus_id": "U3-L54",
+      "journey_id": "U3-J7",
+      "bundle_id": "U3-B20",
+      "title": "Lactate Fermentation Track",
+      "micro_anchor": "the pyruvate-to-lactate route linked to NAD+ regeneration and downstream lactate transport/use",
+      "scene_geometry": {
+        "left": "pyruvate/NADH input",
+        "center": "lactate-forming reaction",
+        "right": "lactate transport and reuse"
+      },
+      "primary_knowledge_id": "U3-K-173",
+      "knowledge_ids": [
+        "U3-K-173",
+        "U3-K-174",
+        "U3-K-175"
+      ],
+      "embedded_knowledge_ids": [
+        "U3-K-174",
+        "U3-K-175"
+      ],
+      "visual_mode": "FERMENTATION_SEQUENCE",
+      "scientific_visual_required": true,
+      "narrative_status": "ARCHITECTURE_ONLY_NO_STORY_PROSE_F2"
+    }
+  ],
+  "challenge_lab": [
+    {
+      "challenge_id": "U3-CH-01",
+      "knowledge_id": "U3-K-176",
+      "title": "Fever and enzyme function",
+      "type": "MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U3-L04"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-02",
+      "knowledge_id": "U3-K-177",
+      "title": "Vitamin cofactor reasoning",
+      "type": "MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U3-L06"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-03",
+      "knowledge_id": "U3-K-178",
+      "title": "Peroxidase pH data",
+      "type": "DATA_INTERPRETATION",
+      "prerequisite_loci": [
+        "U3-L04",
+        "U3-L05"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-04",
+      "knowledge_id": "U3-K-179",
+      "title": "Penicillin transpeptidase inhibition",
+      "type": "MECHANISM_EVALUATION",
+      "prerequisite_loci": [
+        "U3-L07",
+        "U3-L11"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-05",
+      "knowledge_id": "U3-K-180",
+      "title": "Enzyme saturation graph",
+      "type": "GRAPH_INTERPRETATION",
+      "prerequisite_loci": [
+        "U3-L05"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-06",
+      "knowledge_id": "U3-K-181",
+      "title": "Light-wavelength plant growth",
+      "type": "DATA_FRQ",
+      "prerequisite_loci": [
+        "U3-L27",
+        "U3-L28"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-07",
+      "knowledge_id": "U3-K-182",
+      "title": "Photorespiration evidence",
+      "type": "EVIDENCE_FRQ",
+      "prerequisite_loci": [
+        "U3-L37",
+        "U3-L38"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-08",
+      "knowledge_id": "U3-K-183",
+      "title": "Bentazon photosystem-II disruption",
+      "type": "MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U3-L30",
+        "U3-L31",
+        "U3-L32",
+        "U3-L33"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-09",
+      "knowledge_id": "U3-K-184",
+      "title": "Yeast sugar fermentation data",
+      "type": "DATA_INTERPRETATION",
+      "prerequisite_loci": [
+        "U3-L52",
+        "U3-L53"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-10",
+      "knowledge_id": "U3-K-185",
+      "title": "Fish oxygen deprivation",
+      "type": "MECHANISM_FRQ",
+      "prerequisite_loci": [
+        "U3-L45",
+        "U3-L47",
+        "U3-L48",
+        "U3-L52"
+      ]
+    },
+    {
+      "challenge_id": "U3-CH-11",
+      "knowledge_id": "U3-K-186",
+      "title": "Mitochondrial pH gradient",
+      "type": "MODEL_FRQ",
+      "prerequisite_loci": [
+        "U3-L46",
+        "U3-L48"
+      ]
+    }
+  ],
+  "confusable_sets": [
+    {
+      "set_id": "U3-CF-01",
+      "title": "Catalysis vocabulary",
+      "terms": [
+        "activation energy",
+        "enzyme",
+        "substrate",
+        "active site",
+        "enzyme-substrate complex"
+      ],
+      "knowledge_ids": [
+        "U3-K-083",
+        "U3-K-002",
+        "U3-K-084",
+        "U3-K-085",
+        "U3-K-005"
+      ]
+    },
+    {
+      "set_id": "U3-CF-02",
+      "title": "Active-site models",
+      "terms": [
+        "active-site compatibility",
+        "induced fit"
+      ],
+      "knowledge_ids": [
+        "U3-K-004",
+        "U3-K-086"
+      ]
+    },
+    {
+      "set_id": "U3-CF-03",
+      "title": "Enzyme disruption mechanisms",
+      "terms": [
+        "denaturation",
+        "reversible denaturation",
+        "irreversible inhibition"
+      ],
+      "knowledge_ids": [
+        "U3-K-007",
+        "U3-K-009",
+        "U3-K-096"
+      ]
+    },
+    {
+      "set_id": "U3-CF-04",
+      "title": "Inhibition mechanisms",
+      "terms": [
+        "competitive inhibition",
+        "noncompetitive inhibition",
+        "irreversible inhibition"
+      ],
+      "knowledge_ids": [
+        "U3-K-012",
+        "U3-K-013",
+        "U3-K-096"
+      ]
+    },
+    {
+      "set_id": "U3-CF-05",
+      "title": "Enzyme helpers",
+      "terms": [
+        "cofactor",
+        "coenzyme",
+        "holoenzyme"
+      ],
+      "knowledge_ids": [
+        "U3-K-093",
+        "U3-K-094",
+        "U3-K-095"
+      ]
+    },
+    {
+      "set_id": "U3-CF-06",
+      "title": "Allosteric control",
+      "terms": [
+        "allosteric site",
+        "allosteric activator",
+        "allosteric inhibitor"
+      ],
+      "knowledge_ids": [
+        "U3-K-098",
+        "U3-K-100",
+        "U3-K-101"
+      ]
+    },
+    {
+      "set_id": "U3-CF-07",
+      "title": "Pathway regulation",
+      "terms": [
+        "cooperativity",
+        "feedback inhibition",
+        "allosteric regulation"
+      ],
+      "knowledge_ids": [
+        "U3-K-102",
+        "U3-K-103",
+        "U3-K-099"
+      ]
+    },
+    {
+      "set_id": "U3-CF-08",
+      "title": "Metabolic direction",
+      "terms": [
+        "catabolic pathway",
+        "anabolic pathway"
+      ],
+      "knowledge_ids": [
+        "U3-K-057",
+        "U3-K-058"
+      ]
+    },
+    {
+      "set_id": "U3-CF-09",
+      "title": "Energy forms",
+      "terms": [
+        "kinetic energy",
+        "thermal energy",
+        "potential energy",
+        "chemical energy"
+      ],
+      "knowledge_ids": [
+        "U3-K-060",
+        "U3-K-061",
+        "U3-K-062",
+        "U3-K-063"
+      ]
+    },
+    {
+      "set_id": "U3-CF-10",
+      "title": "Thermodynamic laws",
+      "terms": [
+        "first law of thermodynamics",
+        "second law of thermodynamics"
+      ],
+      "knowledge_ids": [
+        "U3-K-065",
+        "U3-K-066"
+      ]
+    },
+    {
+      "set_id": "U3-CF-11",
+      "title": "Reaction energetics",
+      "terms": [
+        "exergonic reaction",
+        "endergonic reaction"
+      ],
+      "knowledge_ids": [
+        "U3-K-070",
+        "U3-K-071"
+      ]
+    },
+    {
+      "set_id": "U3-CF-12",
+      "title": "Cellular work",
+      "terms": [
+        "mechanical work",
+        "transport work",
+        "chemical work"
+      ],
+      "knowledge_ids": [
+        "U3-K-073",
+        "U3-K-074",
+        "U3-K-075"
+      ]
+    },
+    {
+      "set_id": "U3-CF-13",
+      "title": "ATP coupling",
+      "terms": [
+        "ATP hydrolysis",
+        "phosphorylation",
+        "ATP regeneration"
+      ],
+      "knowledge_ids": [
+        "U3-K-078",
+        "U3-K-081",
+        "U3-K-082"
+      ]
+    },
+    {
+      "set_id": "U3-CF-14",
+      "title": "Carbon acquisition",
+      "terms": [
+        "autotroph",
+        "photoautotroph",
+        "heterotroph"
+      ],
+      "knowledge_ids": [
+        "U3-K-105",
+        "U3-K-106",
+        "U3-K-107"
+      ]
+    },
+    {
+      "set_id": "U3-CF-15",
+      "title": "Chloroplast locations",
+      "terms": [
+        "stroma",
+        "thylakoid membrane",
+        "granum"
+      ],
+      "knowledge_ids": [
+        "U3-K-028",
+        "U3-K-029",
+        "U3-K-030"
+      ]
+    },
+    {
+      "set_id": "U3-CF-16",
+      "title": "Photosynthetic pigments",
+      "terms": [
+        "chlorophyll a",
+        "chlorophyll b",
+        "carotenoids"
+      ],
+      "knowledge_ids": [
+        "U3-K-120",
+        "U3-K-121",
+        "U3-K-122"
+      ]
+    },
+    {
+      "set_id": "U3-CF-17",
+      "title": "Photosystem components",
+      "terms": [
+        "photosystem",
+        "light-harvesting complex",
+        "reaction center"
+      ],
+      "knowledge_ids": [
+        "U3-K-123",
+        "U3-K-125",
+        "U3-K-124"
+      ]
+    },
+    {
+      "set_id": "U3-CF-18",
+      "title": "Photosystems",
+      "terms": [
+        "photosystem II",
+        "photosystem I"
+      ],
+      "knowledge_ids": [
+        "U3-K-126",
+        "U3-K-127"
+      ]
+    },
+    {
+      "set_id": "U3-CF-19",
+      "title": "Light-reaction energy products",
+      "terms": [
+        "ATP",
+        "NADPH"
+      ],
+      "knowledge_ids": [
+        "U3-K-031",
+        "U3-K-033"
+      ]
+    },
+    {
+      "set_id": "U3-CF-20",
+      "title": "Photosynthetic phases",
+      "terms": [
+        "light reactions",
+        "Calvin cycle"
+      ],
+      "knowledge_ids": [
+        "U3-K-116",
+        "U3-K-133"
+      ]
+    },
+    {
+      "set_id": "U3-CF-21",
+      "title": "Calvin-cycle roles",
+      "terms": [
+        "rubisco",
+        "RuBP",
+        "G3P"
+      ],
+      "knowledge_ids": [
+        "U3-K-135",
+        "U3-K-136",
+        "U3-K-137"
+      ]
+    },
+    {
+      "set_id": "U3-CF-22",
+      "title": "Carbon-conservation strategies",
+      "terms": [
+        "photorespiration",
+        "C4 photosynthesis",
+        "CAM photosynthesis"
+      ],
+      "knowledge_ids": [
+        "U3-K-140",
+        "U3-K-142",
+        "U3-K-143"
+      ]
+    },
+    {
+      "set_id": "U3-CF-23",
+      "title": "Respiratory electron carriers",
+      "terms": [
+        "NAD+ / NADH",
+        "FAD / FADH2"
+      ],
+      "knowledge_ids": [
+        "U3-K-148",
+        "U3-K-149"
+      ]
+    },
+    {
+      "set_id": "U3-CF-24",
+      "title": "Phosphorylation mechanisms",
+      "terms": [
+        "substrate-level phosphorylation",
+        "oxidative phosphorylation",
+        "photophosphorylation"
+      ],
+      "knowledge_ids": [
+        "U3-K-153",
+        "U3-K-047",
+        "U3-K-038"
+      ]
+    },
+    {
+      "set_id": "U3-CF-25",
+      "title": "Respiration stages",
+      "terms": [
+        "glycolysis",
+        "pyruvate oxidation",
+        "citric acid cycle",
+        "oxidative phosphorylation"
+      ],
+      "knowledge_ids": [
+        "U3-K-151",
+        "U3-K-154",
+        "U3-K-156",
+        "U3-K-158"
+      ]
+    },
+    {
+      "set_id": "U3-CF-26",
+      "title": "Respiratory gradient locations",
+      "terms": [
+        "mitochondrial matrix",
+        "intermembrane space"
+      ],
+      "knowledge_ids": [
+        "U3-K-144",
+        "U3-K-044"
+      ]
+    },
+    {
+      "set_id": "U3-CF-27",
+      "title": "Energy-harvesting alternatives",
+      "terms": [
+        "aerobic respiration",
+        "anaerobic respiration",
+        "fermentation"
+      ],
+      "knowledge_ids": [
+        "U3-K-042",
+        "U3-K-167",
+        "U3-K-169"
+      ]
+    },
+    {
+      "set_id": "U3-CF-28",
+      "title": "Fermentation products",
+      "terms": [
+        "alcohol fermentation",
+        "lactate fermentation"
+      ],
+      "knowledge_ids": [
+        "U3-K-171",
+        "U3-K-173"
+      ]
+    }
+  ],
+  "scope_guards": [
+    {
+      "knowledge_id": "U3-K-069",
+      "canonical_label": "Gibbs free-energy equation scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U3-K-129",
+      "canonical_label": "Photosynthetic electron-carrier names scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U3-K-139",
+      "canonical_label": "Calvin-cycle memorization scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY"
+    },
+    {
+      "knowledge_id": "U3-K-166",
+      "canonical_label": "Respiration-detail memorization scope guard",
+      "policy": "NON_RUNTIME_AP_SCOPE_BOUNDARY"
+    }
+  ]
+}

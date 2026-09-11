@@ -1,0 +1,1393 @@
+{
+  "version": "F6.8",
+  "status": "UNIT1_RELEASE_CANDIDATE",
+  "canonical_records_total": 229,
+  "student_runtime_records": 207,
+  "course_meta_records_accounted": 18,
+  "scope_guard_records_accounted": 4,
+  "unaccounted_records": 0,
+  "permanent_palaces": 9,
+  "permanent_loci": 78,
+  "eyes_closed_variants": 27,
+  "embedded_mastery_targets": [
+    {
+      "target_id": "EMT-001",
+      "canonical_term": "3′ hydroxyl end",
+      "embedded_ids": [
+        "EMB-036"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-013"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA013"
+      ],
+      "name_cues": [
+        "a glowing 3′-OH docking bay"
+      ],
+      "scientific_roles": [
+        "New nucleotides are added to the 3′ end."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-002",
+      "canonical_term": "5′ phosphate end",
+      "embedded_ids": [
+        "EMB-035"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-012"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA012"
+      ],
+      "name_cues": [
+        "a glowing 5′ phosphate flag at one end of the backbone"
+      ],
+      "scientific_roles": [
+        "Nucleic-acid directionality includes a 5′ phosphate end."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-003",
+      "canonical_term": "Abomasum",
+      "embedded_ids": [
+        "EMB-044"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CHO-019"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CG018"
+      ],
+      "name_cues": [
+        "an 'A-BOMB' acid stomach chamber with the cow's digestive enzymes"
+      ],
+      "scientific_roles": [
+        "The abomasum is the glandular stomach chamber; the acid-bomb image is a sound cue only."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-004",
+      "canonical_term": "Adenine",
+      "embedded_ids": [
+        "EMB-032"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-020"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA020"
+      ],
+      "name_cues": [
+        "a large A card pairing with T in DNA and U in RNA"
+      ],
+      "scientific_roles": [
+        "Adenine pairs with thymine in DNA and uracil in RNA."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-005",
+      "canonical_term": "Amine group",
+      "embedded_ids": [
+        "EMB-020"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF003"
+      ],
+      "name_cues": [
+        "an NH₂ 'AMINE' arm on the amino-acid figure"
+      ],
+      "scientific_roles": [
+        "The CED uses amine group in its amino-acid component wording."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-006",
+      "canonical_term": "Amino group",
+      "embedded_ids": [
+        "EMB-013"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CARBON-001"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CA010"
+      ],
+      "name_cues": [
+        "an NH₂ 'AMINO' hand on the tool pegboard"
+      ],
+      "scientific_roles": [
+        "Amino is one of the named functional groups and a component of amino acids."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-007",
+      "canonical_term": "C-terminus",
+      "embedded_ids": [
+        "EMB-025"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-012"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF012"
+      ],
+      "name_cues": [
+        "a C-labelled exit at the other end of the polypeptide conveyor"
+      ],
+      "scientific_roles": [
+        "C-terminus is chemically distinct from the N-terminus."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-008",
+      "canonical_term": "Carbon",
+      "embedded_ids": [
+        "EMB-004"
+      ],
+      "parent_knowledge_ids": [
+        "K-EL-002"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C024"
+      ],
+      "name_cues": [
+        "a black C block"
+      ],
+      "scientific_roles": [
+        "C is among the most prevalent elements used to build biological molecules."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-009",
+      "canonical_term": "Carbonyl group",
+      "embedded_ids": [
+        "EMB-011"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CARBON-001"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CA010"
+      ],
+      "name_cues": [
+        "a C=O double-bond clamp on the tool pegboard"
+      ],
+      "scientific_roles": [
+        "Carbonyl is recognized by a carbon double-bonded to oxygen."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-010",
+      "canonical_term": "Carboxyl group",
+      "embedded_ids": [
+        "EMB-012",
+        "EMB-019"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CARBON-001",
+        "K-PRO-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CA010",
+        "MO-APBIO-U1-PF003"
+      ],
+      "name_cues": [
+        "a COOH car-shaped hook",
+        "a COOH car-shaped arm on the amino-acid figure"
+      ],
+      "scientific_roles": [
+        "Carboxyl combines carbonyl and hydroxyl features.",
+        "Carboxyl is one required amino-acid component."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-011",
+      "canonical_term": "Cecum",
+      "embedded_ids": [
+        "EMB-046"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CHO-019"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CG018"
+      ],
+      "name_cues": [
+        "a SEE-COME microbial fermentation pouch behind the horse"
+      ],
+      "scientific_roles": [
+        "Campbell identifies the enlarged cecum/large intestine as a major microbial-fermentation site in horses."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-012",
+      "canonical_term": "Central carbon",
+      "embedded_ids": [
+        "EMB-018"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF003"
+      ],
+      "name_cues": [
+        "the central carbon hub of the amino-acid figure"
+      ],
+      "scientific_roles": [
+        "The amino-acid groups attach to the central carbon."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-013",
+      "canonical_term": "Cytosine",
+      "embedded_ids": [
+        "EMB-033"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-021"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA021"
+      ],
+      "name_cues": [
+        "a C card clasping G"
+      ],
+      "scientific_roles": [
+        "Cytosine pairs with guanine."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-014",
+      "canonical_term": "Double helix",
+      "embedded_ids": [
+        "EMB-037"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-018"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA018"
+      ],
+      "name_cues": [
+        "a two-rail spiral staircase"
+      ],
+      "scientific_roles": [
+        "DNA is structured as an antiparallel double helix."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-015",
+      "canonical_term": "Electron",
+      "embedded_ids": [
+        "EMB-003"
+      ],
+      "parent_knowledge_ids": [
+        "K-CHEM-013"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C013"
+      ],
+      "name_cues": [
+        "a tiny negative ELECTRON token pulled by an electronegativity magnet"
+      ],
+      "scientific_roles": [
+        "Electronegativity concerns attraction for electrons."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-016",
+      "canonical_term": "Fat / triacylglycerol concept",
+      "embedded_ids": [
+        "EMB-038"
+      ],
+      "parent_knowledge_ids": [
+        "K-LIP-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-LIP003"
+      ],
+      "name_cues": [
+        "a glycerol rack carrying three fatty-acid tails"
+      ],
+      "scientific_roles": [
+        "The PPT describes fats as glycerol joined to three fatty acids."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-017",
+      "canonical_term": "Five-carbon sugar",
+      "embedded_ids": [
+        "EMB-030"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA003"
+      ],
+      "name_cues": [
+        "a five-sided sugar token"
+      ],
+      "scientific_roles": [
+        "A nucleotide contains a five-carbon sugar."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-018",
+      "canonical_term": "Fructose",
+      "embedded_ids": [
+        "EMB-017"
+      ],
+      "parent_knowledge_ids": [
+        "K-CHO-007"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CG007"
+      ],
+      "name_cues": [
+        "a FRUIT sugar cube paired with glucose before Sue Crow joins them"
+      ],
+      "scientific_roles": [
+        "Sucrose is the packet/PPT example glucose + fructose."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-019",
+      "canonical_term": "Guanine",
+      "embedded_ids": [
+        "EMB-034"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-021"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA021"
+      ],
+      "name_cues": [
+        "a G card clasping C"
+      ],
+      "scientific_roles": [
+        "Guanine pairs with cytosine."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-020",
+      "canonical_term": "Hindgut fermenter",
+      "embedded_ids": [
+        "EMB-045"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CHO-019"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CG018"
+      ],
+      "name_cues": [
+        "a horse stands on a separate hindgut route ending at a large cecum"
+      ],
+      "scientific_roles": [
+        "Horses are non-ruminant hindgut fermenters, not ruminants."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-021",
+      "canonical_term": "Hydrogen",
+      "embedded_ids": [
+        "EMB-005"
+      ],
+      "parent_knowledge_ids": [
+        "K-EL-002"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C024"
+      ],
+      "name_cues": [
+        "a white H balloon"
+      ],
+      "scientific_roles": [
+        "H is among the most prevalent elements used to build biological molecules."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-022",
+      "canonical_term": "Hydronium",
+      "embedded_ids": [
+        "EMB-047"
+      ],
+      "parent_knowledge_ids": [
+        "K-WAT-027"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-W029"
+      ],
+      "name_cues": [
+        "the precise H₃O+ product at the self-ionization fountain"
+      ],
+      "scientific_roles": [
+        "Water self-ionization produces hydronium (H₃O+); H+ is introductory shorthand for aqueous protons associated with water."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-023",
+      "canonical_term": "Hydrophilic / polar R group",
+      "embedded_ids": [
+        "EMB-022"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-007"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF007"
+      ],
+      "name_cues": [
+        "a polar R backpack reaching toward water droplets"
+      ],
+      "scientific_roles": [
+        "Polar R groups are hydrophilic."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-024",
+      "canonical_term": "Hydrophilic head",
+      "embedded_ids": [
+        "EMB-039"
+      ],
+      "parent_knowledge_ids": [
+        "K-LIP-014"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-LIP014"
+      ],
+      "name_cues": [
+        "a water-loving phospholipid head facing the pool"
+      ],
+      "scientific_roles": [
+        "The phospholipid head interacts with water."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-025",
+      "canonical_term": "Hydrophobic / nonpolar R group",
+      "embedded_ids": [
+        "EMB-021"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-006"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF006"
+      ],
+      "name_cues": [
+        "an oily R backpack hiding from water"
+      ],
+      "scientific_roles": [
+        "Nonpolar R groups are hydrophobic."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-026",
+      "canonical_term": "Hydrophobic interaction",
+      "embedded_ids": [
+        "EMB-026"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-022"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF022"
+      ],
+      "name_cues": [
+        "oily side chains huddle together away from water"
+      ],
+      "scientific_roles": [
+        "Hydrophobic interactions contribute to tertiary structure."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-027",
+      "canonical_term": "Hydrophobic tails",
+      "embedded_ids": [
+        "EMB-040"
+      ],
+      "parent_knowledge_ids": [
+        "K-LIP-014"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-LIP014"
+      ],
+      "name_cues": [
+        "two oily tails hiding from water toward the bilayer interior"
+      ],
+      "scientific_roles": [
+        "Phospholipid fatty-acid tails are hydrophobic."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-028",
+      "canonical_term": "Hydroxide",
+      "embedded_ids": [
+        "EMB-048"
+      ],
+      "parent_knowledge_ids": [
+        "K-WAT-027"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-W029"
+      ],
+      "name_cues": [
+        "the precise OH− product at the self-ionization fountain"
+      ],
+      "scientific_roles": [
+        "Water self-ionization produces hydroxide (OH−) alongside hydronium."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-029",
+      "canonical_term": "Hydroxyl group",
+      "embedded_ids": [
+        "EMB-010"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CARBON-001"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CA010"
+      ],
+      "name_cues": [
+        "an OH water-drop handle on the tool pegboard"
+      ],
+      "scientific_roles": [
+        "Hydroxyl is one of the named functional groups students recognize."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-030",
+      "canonical_term": "Ionic / charged R group",
+      "embedded_ids": [
+        "EMB-023"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-008"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF008"
+      ],
+      "name_cues": [
+        "an R backpack with + or − charge magnets"
+      ],
+      "scientific_roles": [
+        "Ionic/charged side chains are generally hydrophilic."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-031",
+      "canonical_term": "Ionic interaction",
+      "embedded_ids": [
+        "EMB-027"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-022"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF022"
+      ],
+      "name_cues": [
+        "+ and − side-chain magnets attract"
+      ],
+      "scientific_roles": [
+        "Ionic interactions contribute to tertiary structure."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-032",
+      "canonical_term": "Methyl group",
+      "embedded_ids": [
+        "EMB-016"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CARBON-001"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CA010"
+      ],
+      "name_cues": [
+        "a CH₃ three-H cap"
+      ],
+      "scientific_roles": [
+        "Methyl is one of the packet's functional-group recognition targets."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-033",
+      "canonical_term": "N-terminus",
+      "embedded_ids": [
+        "EMB-024"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-012"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF012"
+      ],
+      "name_cues": [
+        "an N-labelled entrance at one end of the polypeptide conveyor"
+      ],
+      "scientific_roles": [
+        "N-terminus is chemically distinct from the C-terminus."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-034",
+      "canonical_term": "Neutron",
+      "embedded_ids": [
+        "EMB-002"
+      ],
+      "parent_knowledge_ids": [
+        "K-CHEM-007"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C007"
+      ],
+      "name_cues": [
+        "a neutral gray NEUTRON token in the nucleus"
+      ],
+      "scientific_roles": [
+        "Mass number for one isotope includes protons + neutrons."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-035",
+      "canonical_term": "Nitrogen",
+      "embedded_ids": [
+        "EMB-007"
+      ],
+      "parent_knowledge_ids": [
+        "K-EL-005",
+        "K-EL-006"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C027",
+        "MO-APBIO-U1-C028"
+      ],
+      "name_cues": [
+        "a blue N badge on nucleic-acid bases and amino groups"
+      ],
+      "scientific_roles": [
+        "N is used in nucleic acids and is also present in amino acids/proteins."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-036",
+      "canonical_term": "Nitrogenous base",
+      "embedded_ids": [
+        "EMB-029"
+      ],
+      "parent_knowledge_ids": [
+        "K-NA-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-NA003"
+      ],
+      "name_cues": [
+        "a lettered BASE card attached to the sugar"
+      ],
+      "scientific_roles": [
+        "A nucleotide contains a nitrogenous base."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-037",
+      "canonical_term": "Omasum",
+      "embedded_ids": [
+        "EMB-043"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CHO-019"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CG018"
+      ],
+      "name_cues": [
+        "an 'O-MASS' of folded absorbent pages squeezing water"
+      ],
+      "scientific_roles": [
+        "The omasum is represented as the water-removal/folded chamber in the course case-study."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-038",
+      "canonical_term": "Oxygen",
+      "embedded_ids": [
+        "EMB-006"
+      ],
+      "parent_knowledge_ids": [
+        "K-EL-002"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C024"
+      ],
+      "name_cues": [
+        "a red O balloon"
+      ],
+      "scientific_roles": [
+        "O is among the most prevalent elements used to build biological molecules."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-039",
+      "canonical_term": "Phosphate group",
+      "embedded_ids": [
+        "EMB-015",
+        "EMB-031"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CARBON-001",
+        "K-NA-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CA010",
+        "MO-APBIO-U1-NA003"
+      ],
+      "name_cues": [
+        "a PO₄ phosphate tag with negative-charge sparks",
+        "a glowing phosphate tag attached to the sugar"
+      ],
+      "scientific_roles": [
+        "Phosphate is a named functional group and appears in nucleotides/phospholipids.",
+        "A nucleotide contains phosphate."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-040",
+      "canonical_term": "Phosphorus",
+      "embedded_ids": [
+        "EMB-009"
+      ],
+      "parent_knowledge_ids": [
+        "K-EL-004"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C026"
+      ],
+      "name_cues": [
+        "a glowing P on phospholipid heads and nucleic-acid backbone phosphates"
+      ],
+      "scientific_roles": [
+        "P is used in phospholipids and nucleic acids."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-041",
+      "canonical_term": "Proton",
+      "embedded_ids": [
+        "EMB-001"
+      ],
+      "parent_knowledge_ids": [
+        "K-CHEM-006"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C006"
+      ],
+      "name_cues": [
+        "a red + PROTON token in the nucleus"
+      ],
+      "scientific_roles": [
+        "Atomic number counts protons."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-042",
+      "canonical_term": "Reticulum",
+      "embedded_ids": [
+        "EMB-042"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CHO-019"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CG018"
+      ],
+      "name_cues": [
+        "a RETI-net/mesh room beside the rumen"
+      ],
+      "scientific_roles": [
+        "Reticulum is the next named ruminant chamber in the packet case-study route."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-043",
+      "canonical_term": "Rumen",
+      "embedded_ids": [
+        "EMB-041"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CHO-019"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CG018"
+      ],
+      "name_cues": [
+        "ROOM-in: a large fermentation ROOM full of microbes"
+      ],
+      "scientific_roles": [
+        "The rumen is a major microbial fermentation chamber in ruminants."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-044",
+      "canonical_term": "Sulfhydryl group",
+      "embedded_ids": [
+        "EMB-014"
+      ],
+      "parent_knowledge_ids": [
+        "PK-CARBON-001"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-CA010"
+      ],
+      "name_cues": [
+        "an SH sulfur hook"
+      ],
+      "scientific_roles": [
+        "Sulfhydryl contains sulfur and hydrogen."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-045",
+      "canonical_term": "Sulfur",
+      "embedded_ids": [
+        "EMB-008"
+      ],
+      "parent_knowledge_ids": [
+        "K-EL-003"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-C025"
+      ],
+      "name_cues": [
+        "a yellow S clasp appearing on some protein side chains"
+      ],
+      "scientific_roles": [
+        "S is used in proteins but is not present in every protein."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    },
+    {
+      "target_id": "EMT-046",
+      "canonical_term": "van der Waals interaction",
+      "embedded_ids": [
+        "EMB-028"
+      ],
+      "parent_knowledge_ids": [
+        "K-PRO-022"
+      ],
+      "parent_memory_object_ids": [
+        "MO-APBIO-U1-PF022"
+      ],
+      "name_cues": [
+        "closely packed side chains make many tiny contact sparks"
+      ],
+      "scientific_roles": [
+        "Campbell adds van der Waals interactions as tertiary-structure contributors; AP CED does not require the term in its list."
+      ],
+      "exact_name_required": true,
+      "role_explanation_required": true,
+      "delayed_retrieval_required": true,
+      "mastery_rule": "Exact name + scientific role + due delayed exact-name retrieval. Parent-object mastery does not automatically satisfy this target.",
+      "source_status": "Consolidated from the locked embedded-name cue bank; no new scientific claim added."
+    }
+  ],
+  "embedded_unique_terms": 46,
+  "embedded_source_cues": 48,
+  "interference_sets": [
+    {
+      "set_id": "INT-01",
+      "title": "Biomolecular covalent linkages",
+      "member_terms": [
+        "Glycosidic linkage",
+        "Peptide bond",
+        "Phosphodiester linkage",
+        "Ester linkage"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-CG013",
+        "MO-APBIO-U1-PF009",
+        "MO-APBIO-U1-NA014",
+        "MO-APBIO-U1-LIP006"
+      ],
+      "palace_zones": [
+        "Carbohydrate Greenhouse",
+        "Lipid Membrane Wing",
+        "Nucleic Acid Archive",
+        "Protein Factory"
+      ],
+      "cross_palace": true,
+      "design_guardrail": "Four different covalent connections occur in four macromolecular contexts. Identify the linkage from the scientific relationship, not from a palace room name.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-02",
+      "title": "Bonding, polarity, and water interactions",
+      "member_terms": [
+        "Polar covalent bond",
+        "Hydrogen bond",
+        "Cohesion",
+        "Adhesion"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-C017",
+        "MO-APBIO-U1-C021",
+        "MO-APBIO-U1-W006",
+        "MO-APBIO-U1-W008"
+      ],
+      "palace_zones": [
+        "Chemistry Foyer",
+        "Water Atrium"
+      ],
+      "cross_palace": true,
+      "design_guardrail": "Separate unequal electron sharing inside a covalent bond from a hydrogen bond and from the emergent same-substance/different-surface attractions that hydrogen bonding helps produce.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-03",
+      "title": "Assembly, cleavage, and loss of protein shape",
+      "member_terms": [
+        "Dehydration synthesis",
+        "Hydrolysis",
+        "Denaturation"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-PA004",
+        "MO-APBIO-U1-PA006",
+        "MO-APBIO-U1-PF028"
+      ],
+      "palace_zones": [
+        "Polymer Assembly Hall",
+        "Protein Factory"
+      ],
+      "cross_palace": true,
+      "design_guardrail": "Dehydration synthesis joins smaller units, hydrolysis cleaves covalent bonds using water, and ordinary denaturation disrupts higher-order protein structure without being treated as peptide-bond hydrolysis.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-04",
+      "title": "Sugar and nucleic-acid names",
+      "member_terms": [
+        "Glucose",
+        "Monosaccharide",
+        "Ribose",
+        "Deoxyribose"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-CG004",
+        "MO-APBIO-U1-CG002",
+        "MO-APBIO-U1-NA010",
+        "MO-APBIO-U1-NA009"
+      ],
+      "palace_zones": [
+        "Carbohydrate Greenhouse",
+        "Nucleic Acid Archive"
+      ],
+      "cross_palace": true,
+      "design_guardrail": "Separate a common monosaccharide example from the general monosaccharide category and from the two five-carbon sugars emphasized in RNA and DNA.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-05",
+      "title": "Chain vocabulary",
+      "member_terms": [
+        "Monomer",
+        "Polymer",
+        "Polypeptide"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-PA002",
+        "MO-APBIO-U1-PA003",
+        "MO-APBIO-U1-PF011"
+      ],
+      "palace_zones": [
+        "Polymer Assembly Hall",
+        "Protein Factory"
+      ],
+      "cross_palace": true,
+      "design_guardrail": "Separate the general single-building-unit term, the general many-unit chain term, and the amino-acid-chain term used for proteins.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-06",
+      "title": "Alpha/beta labels in different contexts",
+      "member_terms": [
+        "Alpha and beta glucose",
+        "Alpha helix",
+        "Beta-pleated sheet"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-CG014",
+        "MO-APBIO-U1-PF019",
+        "MO-APBIO-U1-PF020"
+      ],
+      "palace_zones": [
+        "Carbohydrate Greenhouse",
+        "Protein Factory"
+      ],
+      "cross_palace": true,
+      "design_guardrail": "The Greek labels refer to different structural ideas in carbohydrates and proteins. Use the defining scientific context, not the shared letters.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-07",
+      "title": "Macromolecule identity and membrane lipids",
+      "member_terms": [
+        "Phospholipid",
+        "Steroid",
+        "Cholesterol"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-LIP013",
+        "MO-APBIO-U1-LIP016",
+        "MO-APBIO-U1-LIP019"
+      ],
+      "palace_zones": [
+        "Lipid Membrane Wing"
+      ],
+      "cross_palace": false,
+      "design_guardrail": "Separate the amphipathic bilayer-forming lipid, the four-fused-ring structural class, and the specific steroid used as a membrane-fluidity buffer.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-08",
+      "title": "Nucleic-acid units and base classes",
+      "member_terms": [
+        "Nucleotide",
+        "Nucleoside",
+        "Purine",
+        "Pyrimidine"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-NA003",
+        "MO-APBIO-U1-NA011",
+        "MO-APBIO-U1-NA006",
+        "MO-APBIO-U1-NA005"
+      ],
+      "palace_zones": [
+        "Nucleic Acid Archive"
+      ],
+      "cross_palace": false,
+      "design_guardrail": "Separate base+sugar+phosphate from base+sugar, and separate two-ring from one-ring nitrogenous-base classes.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-09",
+      "title": "Water solution vocabulary",
+      "member_terms": [
+        "Solvent",
+        "Solute",
+        "Solution"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-W021",
+        "MO-APBIO-U1-W023",
+        "MO-APBIO-U1-W022"
+      ],
+      "palace_zones": [
+        "Water Atrium"
+      ],
+      "cross_palace": false,
+      "design_guardrail": "Identify the dissolving medium, the dissolved substance, and the resulting homogeneous mixture.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    },
+    {
+      "set_id": "INT-10",
+      "title": "Statistical spread and sampling uncertainty",
+      "member_terms": [
+        "Standard deviation",
+        "Standard error of the mean",
+        "Confidence intervals and error bars"
+      ],
+      "member_object_ids": [
+        "MO-APBIO-U1-P027",
+        "MO-APBIO-U1-P028",
+        "MO-APBIO-U1-P029"
+      ],
+      "palace_zones": [
+        "Scientific Inquiry Lab Annex"
+      ],
+      "cross_palace": false,
+      "design_guardrail": "Separate variability among observations from uncertainty in an estimated mean and from interval/error-bar representations whose meaning depends on the stated statistic.",
+      "pass_rule": "Each member must be correctly selected from its locked definition/context and the learner must self-confirm the defining distinction."
+    }
+  ],
+  "scope_guard_cards": [
+    {
+      "knowledge_id": "K-CHO-013",
+      "scope_sign": "Specific carbohydrate polymer molecular structures",
+      "student_facing_message": "The molecular structure of specific carbohydrate polymers is beyond AP Exam scope. Cellulose, starch, and glycogen can support understanding/examples without requiring exact structure reproduction.",
+      "allowed_use": "Supporting diagram, optional enrichment, conceptual recognition.",
+      "prohibited_use": "Do not make exact molecular drawing/reproduction a mandatory AP-memory-palace target.",
+      "ced_reference": "CED-1.4-EX",
+      "status": "ACTIVE_SCOPE_GUARD"
+    },
+    {
+      "knowledge_id": "K-PRO-026",
+      "scope_sign": "Specific amino-acid molecular structures",
+      "student_facing_message": "Exact molecular structures of amino acids are beyond AP Exam scope. Students still need the conceptual component groups of a generic amino acid.",
+      "allowed_use": "Supporting diagram, optional enrichment, conceptual recognition.",
+      "prohibited_use": "Do not make exact molecular drawing/reproduction a mandatory AP-memory-palace target.",
+      "ced_reference": "CED-1.7-EX",
+      "status": "ACTIVE_SCOPE_GUARD"
+    },
+    {
+      "knowledge_id": "K-NA-025",
+      "scope_sign": "Specific nucleotide molecular structures",
+      "student_facing_message": "Exact molecular structures of specific nucleotides are beyond AP Exam scope. Students still need nucleotide components, directionality, DNA/RNA differences, and base-pairing rules.",
+      "allowed_use": "Supporting diagram, optional enrichment, conceptual recognition.",
+      "prohibited_use": "Do not make exact molecular drawing/reproduction a mandatory AP-memory-palace target.",
+      "ced_reference": "CED-1.6-EX",
+      "status": "ACTIVE_SCOPE_GUARD"
+    },
+    {
+      "knowledge_id": "K-LIP-020",
+      "scope_sign": "Specific lipid molecular structures",
+      "student_facing_message": "Exact molecular structures of specific lipids are beyond AP Exam scope. Students still need required structure-function relationships such as saturated/unsaturated fatty acids and phospholipid bilayer formation.",
+      "allowed_use": "Supporting diagram, optional enrichment, conceptual recognition.",
+      "prohibited_use": "Do not make exact molecular drawing/reproduction a mandatory AP-memory-palace target.",
+      "ced_reference": "CED-1.5-EX",
+      "status": "ACTIVE_SCOPE_GUARD"
+    }
+  ],
+  "transfer_bench_records_total": 16,
+  "transfer_bench_records_in_runtime": 16,
+  "release_rule": "Every canonical Unit 1 record must have an explicit destination: student runtime, course-meta framework, or active AP scope guard. No substantive source record may be silently dropped.",
+  "mastery_guardrail": "Parent Memory Object mastery does not automatically grant mastery of embedded exact-name targets. Embedded targets require their own name, role, and delayed-retrieval evidence.",
+  "unit2_gate": "Begin Unit 2 only after F6.8 QA reports zero unaccounted canonical records and all finalization integrity tests pass."
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "memory-palace-u4-f1-content-lock-1.0",
+  "generated_utc": "2026-09-03T06:45:00+00:00",
+  "unit_id": "unit-4",
+  "lock_status": "LOCKED_F1",
+  "protected_files": [
+    {
+      "path": "source/canonical-unit4-f1.json",
+      "sha256": "7bc97cba8cfa8fb05debf125640f107cb112c965577441a8c76b7aec574faf19",
+      "bytes": 231668
+    },
+    {
+      "path": "source/coverage-manifest-f1.json",
+      "sha256": "be7ba6575056f7436c4f559a96ff52a9dc2423e1248d2e034e1964f6af4d0fe6",
+      "bytes": 37297
+    }
+  ],
+  "policy": "Any modification to a protected Unit 4 F1 scientific artifact requires an explicit scientific version update and a new content lock."
+}

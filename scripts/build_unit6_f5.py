@@ -1,0 +1,237 @@
+from __future__ import annotations
+import json, hashlib, re
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+U6=ROOT/'content'/'ap-biology'/'unit-6'
+AP=ROOT/'content'/'ap-biology'
+COURSE=AP/'course.json'
+
+def read(p): return json.loads(Path(p).read_text(encoding='utf-8'))
+def write(p,d): Path(p).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
+
+def significant_tokens(text):
+    stop={'a','an','and','or','the','of','to','in','on','for','with','from','as','at','by','is','are','be','via','vs','versus','into','across','over','through','cell','cells','phase','stage','system','role','example','effect','typical','review','principle'}
+    out=[]
+    for t in re.findall(r"[A-Za-z0-9β′'-]+",text):
+        low=t.casefold()
+        if low in stop or len(low)<3: continue
+        out.append(low)
+    return out
+
+def redact(text,terms):
+    out=text
+    for term in sorted(set(terms),key=len,reverse=True):
+        if term: out=re.sub(re.escape(term),'_____',out,flags=re.I)
+    toks=[]
+    for term in terms: toks.extend(significant_tokens(term))
+    for tok in sorted(set(toks),key=len,reverse=True):
+        stem=tok[:5] if len(tok)>=6 else tok[:max(3,len(tok)-1)]
+        if re.match(r'^[A-Za-z0-9]+$',stem):
+            out=re.sub(rf'\b{re.escape(stem)}[A-Za-z0-9-]*\b','_____',out,flags=re.I)
+    out=re.sub(r'(_____\s*){2,}','_____ ',out)
+    out=re.sub(r'\s+([,.;:])',r'\1',out)
+    return re.sub(r'\s{2,}',' ',out).strip()
+
+source=read(U6/'source'/'canonical-unit6-f1.json')
+canon={r['knowledge_id']:r for r in source['canonical_catalog']}
+classification=read(U6/'architecture'/'learning-classification-f2.json')
+arch=read(U6/'architecture'/'palace-architecture-f2.json')
+class_by={r['knowledge_id']:r for r in classification['records']}
+journeys=[read(U6/'journeys'/f'U6-J{i}.json') for i in range(1,7)]
+beat_by={}; scene_by={}
+for j in journeys:
+    for s in j['scenes']:
+        for b in s['story_beats']:
+            kid=b['object_id']
+            if kid in beat_by: raise RuntimeError(f'duplicate story record {kid}')
+            beat_by[kid]=b
+            scene_by[kid]={'journey_id':j['palace_id'],'journey_title':j['story_title'],'scene_index':s['scene_index'],'scene_title':s['locus'],'locus_id':s['locus_id']}
+
+story_ids=sorted(beat_by)
+challenge_ids=[r['knowledge_id'] for r in classification['records'] if r['destination']=='CHALLENGE_LAB']
+scope_ids=[r['knowledge_id'] for r in classification['records'] if r['scope_class']=='SCOPE_GUARD']
+assert len(canon)==202 and len(story_ids)==161 and len(challenge_ids)==16 and len(scope_ids)==25
+assert set(story_ids)|set(challenge_ids)|set(scope_ids)==set(canon)
+assert not(set(story_ids)&set(challenge_ids) or set(story_ids)&set(scope_ids) or set(challenge_ids)&set(scope_ids))
+
+# Runtime Memory Objects. Canonical science comes directly from the F1 lock; narrative bytes are unchanged.
+conf_sets_by_id={kid:[] for kid in story_ids}
+for s in arch['confusable_sets']:
+    for kid in s['knowledge_ids']:
+        if kid in conf_sets_by_id: conf_sets_by_id[kid].append(s['set_id'])
+memory_objects=[]
+for kid in story_ids:
+    c=canon[kid]; cl=class_by[kid]; b=beat_by[kid]; sc=scene_by[kid]
+    exact=bool(cl.get('exact_name_recall'))
+    memory_objects.append({
+      'memory_object_id':kid,'source_knowledge_id':kid,'object_type':'UNIT6_STORY_MEMORY_OBJECT',
+      'canonical_term':b['term'],'canonical_definition':c['canonical_verified_statement'],'canonical_scientific_language':'English',
+      'topic':c['topic'],'scope_class':c['scope_class'],'exact_name_required':'YES' if exact else 'NO','exact_spelling_required':'NO',
+      'name_support':cl['name_support'],'spelling_policy':cl['spelling_policy'],'retrieval_modes':cl['retrieval_modes'],
+      'visual_mode':cl['visual_mode'],'palace_zone':sc['journey_title'],'primary_palace_locus':sc['scene_title'],'locus_id':sc['locus_id'],
+      'scene_index':sc['scene_index'],'confusable_set_ids':conf_sets_by_id.get(kid,[]),'story_hint':b.get('hint',''),
+      'forward_prompt_name_to_meaning':f"Explain the scientific meaning of '{b['term']}' without relying on the story.",
+      'reverse_prompt_meaning_to_name':(f"Retrieve the exact Unit 6 term or named relationship for this scientific role: {redact(c['canonical_verified_statement'],[b['term']])}" if exact else None),
+      'productive_retrieval_target':b['term'],'scientific_lock_status':'LOCKED_F1','narrative_lock_status':'LOCKED_F4F',
+      'student_runtime':True,'ai_mutability':'AI may vary mnemonic wording, hints, practice phrasing, language, pacing, and distractors. AI may not change canonical term, locked scientific meaning, AP scope, confusable distinction, misconception guardrail, or the frozen F4F narrative.',
+      'source_trace':c.get('source_reference',''),'content_version':1,'version_status':'STUDENT_READY_F5'
+    })
+assert sum(x['exact_name_required']=='YES' for x in memory_objects)==134
+write(U6/'memory-objects-f5.json',{'schema':'memory-palace-v2-unit6-f5-memory-objects-1.0','unit_id':'unit-6','count':len(memory_objects),'exact_name_required_count':134,'memory_objects':memory_objects})
+
+# Delayed exact-name Review. The 27 meaning/mechanism-only palace records do not become required exact-name targets.
+review_targets=[]
+for kid in story_ids:
+    cl=class_by[kid]
+    if not cl.get('exact_name_recall'): continue
+    b=beat_by[kid]; c=canon[kid]; sc=scene_by[kid]; answer=b['term']
+    prompt='Which exact Unit 6 term or named relationship matches this scientific description? '+redact(c['canonical_verified_statement'],[answer])
+    hint_source=b.get('hint') or f"Return to {sc['scene_title']} and reconstruct the defining scientific action."
+    hint=redact(hint_source,[answer])
+    if len(hint)<25: hint=f"Return to {sc['scene_title']} and reconstruct the defining action before naming it."
+    review_targets.append({'knowledge_id':kid,'target_answer':answer,'prompt':prompt,'hint':hint,'journey_id':sc['journey_id'],'scene_index':sc['scene_index'],'scene_title':sc['scene_title'],'canonical_science':c['canonical_verified_statement'],'spelling_policy':cl['spelling_policy'],'initial_review_window_hours':[18,72]})
+assert len(review_targets)==134
+write(U6/'review-manifest-f5.json',{'schema':'memory-palace-v2-unit6-f5-review-manifest-1.0','unit_id':'unit-6','target_count':134,'non_exact_palace_records':27,'mandatory_spelling_targets':0,'visible_review_limit':5,'targets':review_targets})
+
+# Mixed discrimination. Every F2 set produces one operational item per member after all members have been encountered.
+mixed=[]
+for base in arch['confusable_sets']:
+    choices=base['terms']; qs=[]
+    for qi,(kid,answer) in enumerate(zip(base['knowledge_ids'],choices),1):
+        clue='Which option best matches this scientific description? '+redact(canon[kid]['canonical_verified_statement'],choices)
+        if answer.casefold() in clue.casefold(): raise RuntimeError(f'mixed clue leaked answer {answer}')
+        qs.append({'question_id':f"{base['set_id']}-Q{qi:02d}",'prompt':clue,'choices':choices,'answer':answer,'explanation':canon[kid]['canonical_verified_statement'],'knowledge_id':kid})
+    mixed.append({'set_id':base['set_id'],'title':base['title'],'knowledge_ids':base['knowledge_ids'],'terms':choices,'unlock_rule':'Schedule only after every associated Unit 6 knowledge record has been encountered in a story.','initial_delay_hours':48,'questions':qs})
+mixed_q=sum(len(s['questions']) for s in mixed)
+assert len(mixed)==37 and mixed_q==94
+write(U6/'mixed-discrimination-f5.json',{'schema':'memory-palace-v2-unit6-f5-mixed-discrimination-1.0','unit_id':'unit-6','set_count':37,'question_count':mixed_q,'sets':mixed})
+
+# Challenge Lab. These 16 locked PRACTICE_ONLY records stay outside the permanent palace.
+C={
+'U6-K-168':('DNA structure','Calculate base percentages from Chargaff relationships',
+ 'A double-stranded DNA sample contains 18% guanine. Calculate the percentages of cytosine, adenine, and thymine. Show the complementary-pair relationship you use and confirm that all four base percentages sum to 100%.',
+ 'In double-stranded DNA, guanine pairs with cytosine, so C = 18%. G + C therefore accounts for 36% of all bases. The remaining 64% must be adenine plus thymine. Because A = T in double-stranded DNA, A = 32% and T = 32%. The check is 18 + 18 + 32 + 32 = 100%.',
+ 'Return to the Base-Class Reading Table and Antiparallel Pairing Bridge. Pair G with C first, then divide the remaining percentage equally between A and T.'),
+'U6-K-169':('DNA and RNA','Discriminate DNA and RNA structural evidence',
+ 'A molecular sample is single stranded in the diagram, contains ribose and uracil, and folds back on itself so complementary bases pair within the same molecule. A second sample contains deoxyribose and thymine and is drawn as two antiparallel strands. Identify the strongest evidence for classifying each sample and explain why “single stranded” alone is not an absolute definition of RNA.',
+ 'The ribose-plus-uracil sample is RNA, while the deoxyribose-plus-thymine sample is DNA. Sugar identity and the thymine-versus-uracil distinction are decisive structural evidence. Cellular RNA is typically single stranded and can form internal base-paired regions, while DNA is typically double stranded. Those strand-number patterns are common, not universal rules across every nucleic acid or virus.',
+ 'Reconstruct the Hereditary Information Intake and Base-Class Reading Table. Keep sugar/base identity separate from the typical strand-number comparison.'),
+'U6-K-170':('Plasmids and gene transfer','Infer a plasmid-based resistance explanation',
+ 'Two bacterial strains are initially sensitive to antibiotic X. Researchers introduce a small circular DNA molecule carrying a resistance gene into strain A. After A and strain B are grown together, some B cells become resistant even though sequencing of the original B chromosome showed no resistance allele. Propose a plasmid-based explanation for the observations and identify evidence that would distinguish plasmid carriage from a new chromosomal mutation.',
+ 'A reasonable explanation is that strain A carried the resistance gene on a plasmid and plasmid DNA, or DNA derived from it, was horizontally transferred to some B cells. Finding the resistance gene on an extrachromosomal plasmid in resistant B cells would support that explanation. Demonstrating that the resistance determinant was absent from the original B chromosome also argues against the resistance arising from the preexisting chromosomal sequence.',
+ 'Return to the Plasmid Ring Vault, then connect it to the Horizontal Gene Transfer Hub. Keep the main chromosome and the smaller plasmid physically separate.'),
+'U6-K-171':('DNA replication','Generate an antiparallel complementary strand',
+ 'A DNA strand is written 5′-A G T C C A T G-3′. Write the complementary DNA strand with both end labels shown. Then explain why writing the complement in the same left-to-right 5′→3′ orientation requires reversing the order of the complementary bases.',
+ 'Base pairing gives T C A G G T A C opposite the original sequence. Because the strands are antiparallel, the directly aligned complement is 3′-T C A G G T A C-5′. If the complementary strand must be written 5′→3′ from left to right, reverse that order to 5′-C A T G G A C T-3′. The end labels are essential because complementarity and antiparallel directionality must both be satisfied.',
+ 'Use the Antiparallel Pairing Bridge. First pair each base across the bridge, then check that the two arrows point in opposite directions.'),
+'U6-K-172':('DNA replication','Explain replication-fork mechanism and lagging synthesis',
+ 'At a replication fork, a student says helicase “removes supercoiling,” topoisomerase “unzips the DNA,” and DNA polymerase should synthesize both new strands continuously because both templates are present. Correct the student’s explanation and account for why one new strand is made discontinuously.',
+ 'Helicase separates the parental DNA strands at the replication fork by disrupting the interactions that hold the strands together. Topoisomerase acts ahead of the fork to relieve torsional strain generated as DNA is opened. DNA polymerase extends new DNA only 5′→3′ from an available primer end. Because the two template strands are antiparallel, one new strand can be synthesized continuously toward the fork, while the other must be synthesized discontinuously as Okazaki fragments that are later joined by ligase.',
+ 'Walk from Origin and Fork Launch to Primer–Polymerase Dock and the Leading–Lagging Split Track. Keep helicase at the fork and topoisomerase ahead of it.'),
+'U6-K-173':('Transcription','Transcribe a DNA template into mRNA',
+ 'A DNA template strand is 3′-T A C G G A T T C-5′. Write the mRNA produced from this template with its 5′ and 3′ ends labeled. Explain the direction in which RNA polymerase reads the template and the direction in which the RNA strand grows.',
+ 'The complementary RNA is 5′-A U G C C U A A G-3′. RNA polymerase reads the DNA template in the 3′→5′ direction while synthesizing RNA in the 5′→3′ direction. Uracil is used in RNA opposite adenine in the DNA template. The new RNA grows by adding nucleotides to its 3′ end.',
+ 'Return to the Template–Promoter Entry Gate and Transcription Direction Rail. Keep the violet DNA template arrow opposite the direction of red RNA growth.'),
+'U6-K-174':('Translation','Translate mRNA using a supplied codon chart',
+ 'Using a supplied codon chart, translate the mRNA sequence 5′-AUG GCU UUU GAA UGA-3′. State where translation begins and ends, list the amino acids incorporated before termination, and explain why the stop codon is not translated into an additional amino acid.',
+ 'Translation begins at AUG, which specifies methionine. With a standard supplied chart, GCU specifies alanine, UUU specifies phenylalanine, and GAA specifies glutamate. UGA is a stop codon, so the amino-acid sequence is Met–Ala–Phe–Glu before termination. A stop codon does not encode a stop amino acid; termination machinery recognizes the stop signal and releases the completed polypeptide.',
+ 'Use the Reading-Frame Start Gate, Codon Code Wall, and Stop and Release Dock. Lock the reading frame at AUG and move exactly one codon at a time.'),
+'U6-K-175':('Transcription','Explain transcription purpose and initiation context',
+ 'Compare transcription of a bacterial gene with transcription of a eukaryotic nuclear gene. Explain the overall information-transfer purpose of transcription, identify the role of a promoter, and describe one important cellular-context difference without claiming that every eukaryotic promoter contains a TATA box.',
+ 'Transcription produces an RNA copy of information encoded in DNA. In both bacterial and eukaryotic systems, transcription machinery recognizes promoter DNA and RNA polymerase uses one DNA strand as a template to synthesize RNA 5′→3′. Bacteria lack a nucleus, so transcription occurs in the same cellular compartment in which ribosomes can begin translation. Eukaryotic nuclear transcription occurs in the nucleus and the transcript may undergo processing before export. A TATA box is one possible promoter element in some eukaryotic genes, not a universal definition of a promoter.',
+ 'Return to Gene Expression Junction, Template–Promoter Entry Gate, and the Prokaryotic Transcript Exit. Keep promoter, TATA-box example, and cellular compartment as separate features.'),
+'U6-K-176':('Translation','Interpret codon, anticodon, and A/P/E-site roles',
+ 'A ribosome diagram shows three tRNAs. One charged tRNA is entering the A site, a second tRNA in the P site carries the growing polypeptide, and an uncharged tRNA is leaving through the E site. Explain how codon–anticodon pairing determines which tRNA enters and describe the functional sequence of the A, P, and E sites without calling the sites ribosomal subunits.',
+ 'A codon is a three-nucleotide sequence in mRNA, and a tRNA with a complementary anticodon can base-pair with that codon. A correctly charged tRNA enters the A site, the growing polypeptide is associated with tRNA in the P site as peptide-bond formation and transfer occur, and a deacylated tRNA exits through the E site after translocation. A, P, and E are functional binding sites within the ribosome, not the names of ribosomal subunits.',
+ 'Return to the tRNA Charging Dock and Ribosome A–P–E Platform. Keep the anticodon on the tRNA separate from the mRNA codon and keep sites separate from subunits.'),
+'U6-K-177':('Gene expression','Explain the causal path from gene to functional protein',
+ 'A eukaryotic cell activates a gene encoding a secreted protein. Explain the causal sequence from DNA to a functional polypeptide. Include transcription, pre-mRNA processing, nuclear export, translation, and protein folding, and identify how a change in the DNA sequence could ultimately alter protein function.',
+ 'RNA polymerase transcribes one DNA template strand to produce an RNA transcript. In a eukaryotic nuclear gene, the pre-mRNA can receive a 5′ cap and poly-A tail and undergo splicing to form mature mRNA, which exits the nucleus. Ribosomes then translate the mRNA codons, using tRNAs to deliver amino acids and build a polypeptide. The amino-acid sequence influences folding and therefore protein structure and function. A DNA-sequence change can alter an RNA codon, change the amino-acid sequence or expression, and thereby alter the final protein or its amount.',
+ 'Reconstruct the route from Template–Promoter Entry Gate through the Splice and Isoform Chamber, then carry the same mature mRNA into the Translation Assembly Hall.'),
+'U6-K-178':('Translation','Compare prokaryotic and eukaryotic translation contexts',
+ 'A bacterial cell and a eukaryotic cell are both making the same small cytosolic protein from homologous genes. Compare where transcription and translation occur in each cell and explain why transcription and translation can be coupled in bacteria but are spatially separated for a eukaryotic nuclear gene.',
+ 'Bacteria have no nucleus, so transcription and translation can occur in the same cellular compartment. Ribosomes can begin translating an mRNA while transcription of that RNA is still occurring. In a eukaryotic cell, a nuclear gene is transcribed in the nucleus, its RNA can be processed there, and mature mRNA must be exported to the cytoplasm before cytosolic ribosomes translate it. Translation itself uses the same broad information-flow logic of mRNA codons, tRNAs, ribosomes, and polypeptide synthesis in both systems.',
+ 'Use the Prokaryotic Transcript Exit and Translation Geography Platform. The key visual difference is the nuclear boundary, not a different genetic code.'),
+'U6-K-179':('Gene regulation','Discriminate lac and trp operon control logic',
+ 'Two bacterial operons are shown. In system A, abundant end product binds a repressor and increases its ability to block transcription. In system B, a small sugar-related molecule binds a repressor and decreases its ability to block transcription. Identify which pattern matches the trp operon and which matches the lac operon. Explain promoter, operator, structural-gene, corepressor, and inducer roles.',
+ 'System A matches the repressible trp-operon logic. Tryptophan acts as a corepressor by binding the trp repressor and enabling effective operator binding, reducing transcription of genes needed for tryptophan synthesis when tryptophan is abundant. System B matches inducible lac-operon logic. Allolactose acts as an inducer by reducing lac-repressor binding to the operator, allowing transcription of lactose-use genes. The promoter is where transcription machinery assembles, the operator is regulatory DNA bound by the repressor, and structural genes encode the relevant bacterial proteins.',
+ 'Compare the trp Repressible Chamber with the lac Inducible Chamber. Keep the regulatory DNA operator separate from the repressor protein and ask whether the small molecule strengthens or weakens repression.'),
+'U6-K-180':('Mutations','Classify sequence changes from DNA/RNA/protein evidence',
+ 'A reference coding region produces the peptide Met–Ala–Gly–Leu. Four altered versions are shown. Version 1 changes one DNA base but the encoded amino acid at that position is unchanged. Version 2 changes one codon so a different amino acid is incorporated. Version 3 creates an early stop codon. Version 4 inserts one nucleotide near the beginning and changes most downstream codons. Classify the four outcomes and explain why a three-nucleotide insertion would not necessarily produce the same reading-frame effect as version 4.',
+ 'Version 1 is a silent substitution, version 2 is a missense substitution, version 3 is a nonsense substitution, and version 4 is an insertion that causes a frameshift because the number of inserted nucleotides is not a multiple of three. A three-nucleotide insertion can add one codon while leaving the downstream triplet grouping in frame, so insertions and deletions do not automatically cause frameshifts. Molecular and phenotypic consequences still depend on location and context.',
+ 'Return to the Substitution Sorter and Frameshift Reading Track. First identify the physical DNA change, then inspect the codon and protein consequence.'),
+'U6-K-181':('Biotechnology','Interpret a gel electrophoresis pattern',
+ 'A DNA digest produces a gel with three lanes. Lane A has bands at 900 bp and 300 bp. Lane B has bands at 900 bp, 600 bp, and 300 bp. Lane C has bands at 600 bp and 300 bp. Which samples share fragments of the same apparent size? Which band should migrate farthest in a standard agarose gel, and what can you conclude from the pattern without claiming that the gel reveals nucleotide sequence?',
+ 'All three samples share a 300-bp fragment. Lanes A and B share a 900-bp fragment, and lanes B and C share a 600-bp fragment. Under standard agarose gel conditions, the 300-bp fragments generally migrate farther than 600-bp or 900-bp fragments. The band pattern supports comparison of fragment sizes or presence/absence patterns. It does not by itself reveal the nucleotide sequence of each fragment.',
+ 'Return to the Gel Electrophoresis Lane. Keep wells near the negative side, migration toward the positive electrode, and band position separate from nucleotide order.'),
+'U6-K-182':('Biotechnology','Predict how PCR-stage changes affect amplification',
+ 'A PCR reaction contains template DNA, suitable primers, nucleotides, and DNA polymerase. Predict what would happen if the denaturation temperature were too low to separate the template strands, if primers could not anneal to the target, or if polymerase extension failed. Explain why successful repeated cycling increases copies of the selected target region.',
+ 'If denaturation is insufficient, the template strands will not separate effectively and primers will have limited access to complementary target sequences. If primers cannot anneal, DNA polymerase lacks the correctly positioned primer ends that define the target. If extension fails, new copies are not synthesized. Successful cycles repeatedly separate templates, allow target-specific primers to anneal, and extend new strands, so products from earlier cycles become templates in later cycles and the selected region accumulates rapidly.',
+ 'Return to the PCR Thermal Cycler and move left to right through denaturation, primer annealing, and extension before imagining the cycle repeating.'),
+'U6-K-183':('Biotechnology','Compare DNA sequences to infer similarity',
+ 'Three aligned DNA segments are shown. Sample A is 5′-ATGCCATTA-3′, sample B is 5′-ATGCGATTA-3′, and sample C is 5′-TTGCGACTA-3′. Count the nucleotide differences between A and B and between A and C. Which sample is more similar to A over this short region, and what limitation should you state before using this small segment to make a broad biological relationship claim?',
+ 'A and B differ at one position in the nine-nucleotide segment. A and C differ at several positions, so B is more similar to A for this specific aligned region. The conclusion is limited to the sequence data provided. A short segment does not automatically establish a complete evolutionary, forensic, or functional relationship; broader conclusions require appropriate sequence length, sampling, biological context, and the type of question being asked.',
+ 'Return to the Sequence and Profile Analysis Desk. Use nucleotide-order evidence for sequence comparison and keep that evidence separate from a gel-band profile.'),
+}
+assert set(C)==set(challenge_ids)
+locus_title={x['locus_id']:x['title'] for x in arch['loci']}
+arch_ch={x['knowledge_id']:x for x in arch['challenge_lab']}
+items=[]
+for idx,kid in enumerate(challenge_ids,1):
+    domain,title,prompt,answer,hint=C[kid]; a=arch_ch[kid]
+    items.append({'challenge_id':f'U6-CL-{idx:02d}','knowledge_id':kid,'domain':domain,'title':title,'type':a['retrieval_demand'],'prerequisite_loci':a['prerequisite_loci'],'prerequisite_scene_titles':[locus_title[x] for x in a['prerequisite_loci']],'prompt':prompt,'answer_guide':answer,'story_hint':hint,'canonical_statement':canon[kid]['canonical_verified_statement'],'success_criterion':'Solve the unfamiliar problem from ordinary scientific information, show the requested reasoning or mechanism, and keep the named distinctions separate. Recognition of a palace image alone is not sufficient.','practice_only_runtime':True})
+write(U6/'application-lab.json',{'schema':'memory-palace-v2-unit6-f5-challenge-lab-1.0','unit_id':'unit-6','title':'Unit 6 Challenge Lab','student_intro':'Use these after the related journeys. One challenge appears at a time so DNA/RNA structure, replication, transcription, translation, regulation, mutation, and biotechnology are practiced without depending on the mnemonic story.','challenge_count':16,'practice_only_runtime_count':16,'practice_only_runtime_object_ids':[x['knowledge_id'] for x in items],'items':items})
+
+# Scope guards remain explicit, locked, and non-runtime.
+guards=[]
+for kid in scope_ids:
+    c=canon[kid]
+    guards.append({'knowledge_id':kid,'canonical_label':c['canonical_label'],'policy':'NON_RUNTIME_AP_SCOPE_OR_SCIENTIFIC_BOUNDARY','canonical_statement':c['canonical_verified_statement'],'student_runtime':False,'permanent_palace':False,'challenge_lab':False,'enforcement':'May support teacher explanation, prevent over-teaching, or constrain student-facing wording, but must not become a required student memorization target, exact-name Review target, or Challenge Lab requirement.'})
+write(U6/'scope-guards-f5.json',{'schema':'memory-palace-v2-unit6-f5-scope-guards-1.0','unit_id':'unit-6','guard_count':25,'guards':guards})
+
+# Finalization accounting and review policy.
+finalization={
+ 'schema':'memory-palace-v2-unit6-f5-finalization-1.0','unit_id':'unit-6','release_status':'STUDENT_READY_F5',
+ 'canonical_records':202,'runtime_memory_objects':161,'story_records':161,'challenge_lab_records':16,'scope_guard_records':25,'accounted_records':202,'unaccounted_records':0,
+ 'guided_journeys':6,'permanent_loci':53,'optional_first_exposure_recalls':18,
+ 'exact_name_review_targets':134,'non_exact_palace_records':27,'mandatory_spelling_targets':0,'mixed_discrimination_sets':37,'mixed_discrimination_questions':94,
+ 'review_policy':{'first_exposure':'Story-first. Quick Recall remains optional and sparse.','exact_name':'Only the 134 F2 records marked for exact-name retrieval enter the locked delayed exact-name manifest. The 27 meaning/mechanism-only palace records remain learnable in the stories without a required exact-name gate.','mixed_discrimination':'A confusable set becomes eligible only after every associated Unit 6 knowledge record has been encountered; first mixed practice is delayed by 48 hours.','visible_review_load':'At most five due review items are shown at a time.','spelling':'No mandatory Unit 6 spelling gate; spelling support remains adaptive.'},
+ 'destinations':{'story':sorted(story_ids),'challenge_lab':sorted(challenge_ids),'scope_guards':sorted(scope_ids)},
+ 'release_gate':{'science_lock':'PASS_F1','architecture_lock':'PASS_F2','scene_brief_lock':'PASS_F3','narratives':'PASS_F4A_F4F','runtime_memory_objects':'PASS_F5','challenge_lab':'PASS_F5','scope_guards':'PASS_F5','mixed_discrimination':'PASS_F5','exact_name_review':'PASS_F5','zero_loss_accounting':'PASS_F5'}
+}
+write(U6/'finalization-f5.json',finalization)
+
+# Student-ready journey registry. The six narrative files remain byte-identical to F4F.
+f4reg=read(U6/'journeys-f4f.json'); f5reg=dict(f4reg)
+ready=[]
+for j in f4reg['guided_journeys']:
+    x=dict(j); x['student_release']='STUDENT_READY_F5'; x['preview_release']=False; ready.append(x)
+f5reg.update({'schema':'memory-palace-v2-unit6-f5-registry-1.0','stage':'F5','narrative_standard':'V2-NARRATIVE-3.0-F5-STUDENT-READY','student_release':True,'preview_release':False,'release_status':'STUDENT_READY_F5','guided_journeys':ready})
+write(U6/'journeys-f5.json',f5reg)
+
+# Status and course registry.
+status=read(U6/'status-f4f.json')
+status.update({'status':'STUDENT_READY','pipeline_status':'UNIT6_FINALIZED_F5','pipeline_stage':'UNIT6_FINALIZED_F5','student_release':True,'preview_release':False,'canonical_records_accounted':202,'unaccounted_canonical_records':0,'memory_objects':161,'runtime_memory_objects':161,'application_challenges':16,'practice_only_records':16,'scope_guard_records':25,'mixed_discrimination_sets':37,'mixed_discrimination_questions':94,'exact_name_review_targets':134,'non_exact_palace_records':27,'mandatory_spelling_targets':0,'polished_journeys':6,'polished_scenes':53,'next_required_output':'Classroom/browser validation of the released Unit 6 experience.','next_gate':'Unit 6 F6 browser/classroom validation.'})
+write(U6/'status-f5.json',status); write(U6/'status.json',status)
+
+course=read(COURSE)
+for u in course['units']:
+    if u['unit_id']=='unit-6':
+        u.update({'status':'STUDENT_READY','journey_count':6,'scene_count':53,'source_status':'AUDITED_F1_ARCHITECTURE_F2_SCENE_BRIEFS_F3_NARRATIVES_F4_FINALIZED_F5','polished_journeys':6,'polished_scenes':53,'student_release':True,'preview_release':False,'application_challenges':16,'scope_guard_records':25,'canonical_records_accounted':202,'runtime_memory_objects':161,'mixed_discrimination_sets':37,'mixed_discrimination_questions':94,'exact_name_review_targets':134,'non_exact_palace_records':27,'pipeline_stage':'UNIT6_FINALIZED_F5'})
+write(COURSE,course)
+
+files=['memory-objects-f5.json','application-lab.json','review-manifest-f5.json','mixed-discrimination-f5.json','scope-guards-f5.json','finalization-f5.json','journeys-f5.json','status-f5.json']
+runtime_files=['backend/main.py','backend/content.py','backend/settings.py','frontend/js/app.js','frontend/js/api.js','frontend/js/audio.js','frontend/js/state.js','frontend/js/views/home.js','frontend/js/views/learn.js','frontend/js/views/review.js','frontend/js/views/practice.js']
+lock={'schema':'memory-palace-v2-unit6-f5-content-lock-1.0','unit_id':'unit-6','stage':'F5','student_release':True,'files':{f:sha(U6/f) for f in files},'protected_narratives':{f'journeys/U6-J{i}.json':sha(U6/'journeys'/f'U6-J{i}.json') for i in range(1,7)},'protected_upstream_locks':{f'content-lock-{s}.json':sha(U6/f'content-lock-{s}.json') for s in ['f1','f2','f3','f4a','f4b','f4c','f4d','f4e','f4f']},'runtime_file_sha256':{rel:sha(ROOT/rel) for rel in runtime_files}}
+write(U6/'content-lock-f5.json',lock)
+release={'schema':'memory-palace-v2-unit6-f5-release-manifest-1.0','unit_id':'unit-6','stage':'F5','student_release':True,'preview_release':False,'canonical_records':202,'canonical_records_accounted':202,'unaccounted_canonical_records':0,'runtime_memory_objects':161,'story_records':161,'practice_only_records':16,'scope_guard_records':25,'guided_journeys':6,'permanent_loci':53,'challenge_count':16,'optional_first_exposure_recalls':18,'exact_name_review_targets':134,'non_exact_palace_records':27,'mandatory_spelling_targets':0,'mixed_discrimination_sets':37,'mixed_discrimination_questions':94,'next_stage':'UNIT6_BROWSER_CLASSROOM_VALIDATION_F6'}
+write(U6/'f5-release-manifest.json',release)
+
+# Consolidated Units 1–6 mainline manifest.
+u15=read(AP/'mainline-release-u1-u5.json')
+mainline={'schema':'memory-palace-v2-mainline-u1-u6-f5-1.0','release_status':'STUDENT_READY_UNITS_1_6_UNIT6_F5','units':['unit-1','unit-2','unit-3','unit-4','unit-5','unit-6'],'totals':{'canonical_records_units_1_6':u15['totals']['canonical_records_units_1_5']+202,'guided_journeys':u15['totals']['guided_journeys']+6,'permanent_scenes':u15['totals']['permanent_scenes']+53,'challenge_lab_items':u15['totals']['challenge_lab_items']+16},'unit6':release,'future_units':['unit-7','unit-8']}
+write(AP/'mainline-release-u1-u6.json',mainline)
+print('Built Unit 6 F5')
+print(json.dumps(release,indent=2))

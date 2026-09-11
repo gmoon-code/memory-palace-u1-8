@@ -1,0 +1,1860 @@
+{
+  "schema": "memory-palace-v2-unit7-f5-mixed-discrimination-1.0",
+  "unit_id": "unit-7",
+  "set_count": 33,
+  "question_count": 102,
+  "sets": [
+    {
+      "set_id": "U7-D01",
+      "title": "Natural selection versus artificial selection",
+      "knowledge_ids": [
+        "U7-K-001",
+        "U7-K-009",
+        "U7-K-091"
+      ],
+      "terms": [
+        "Natural selection as mechanism",
+        "Artificial selection",
+        "Natural versus artificial selection"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D01-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is a major _____ that changes populations over generations.",
+          "choices": [
+            "Natural selection as mechanism",
+            "Artificial selection",
+            "Natural versus artificial selection"
+          ],
+          "answer": "Natural selection as mechanism",
+          "explanation": "Natural selection is a major mechanism that changes populations over generations.",
+          "knowledge_id": "U7-K-001"
+        },
+        {
+          "question_id": "U7-D01-Q02",
+          "prompt": "Which option best matches this scientific description? Human _____ breeding can change variation and trait frequencies in other species.",
+          "choices": [
+            "Natural selection as mechanism",
+            "Artificial selection",
+            "Natural versus artificial selection"
+          ],
+          "answer": "Artificial selection",
+          "explanation": "Human selective breeding can change variation and trait frequencies in other species.",
+          "knowledge_id": "U7-K-009"
+        },
+        {
+          "question_id": "U7-D01-Q03",
+          "prompt": "Which option best matches this scientific description? _____ results from environmental differences in reproductive success, whereas _____ results from human choices about breeding; both can change population trait frequencies across generations.",
+          "choices": [
+            "Natural selection as mechanism",
+            "Artificial selection",
+            "Natural versus artificial selection"
+          ],
+          "answer": "Natural versus artificial selection",
+          "explanation": "Natural selection results from environmental differences in reproductive success, whereas artificial selection results from human choices about breeding; both can change population trait frequencies across generations.",
+          "knowledge_id": "U7-K-091"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D02",
+      "title": "Fitness versus adaptation",
+      "knowledge_ids": [
+        "U7-K-003",
+        "U7-K-084",
+        "U7-K-080"
+      ],
+      "terms": [
+        "Evolutionary fitness",
+        "Relative fitness",
+        "Adaptation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D02-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is evaluated through reproductive success _____ to others in the population.",
+          "choices": [
+            "Evolutionary fitness",
+            "Relative fitness",
+            "Adaptation"
+          ],
+          "answer": "Evolutionary fitness",
+          "explanation": "Evolutionary fitness is evaluated through reproductive success relative to others in the population.",
+          "knowledge_id": "U7-K-003"
+        },
+        {
+          "question_id": "U7-D02-Q02",
+          "prompt": "Which option best matches this scientific description? _____ compares an individual's genetic contribution to the next generation with that of other individuals in the population.",
+          "choices": [
+            "Evolutionary fitness",
+            "Relative fitness",
+            "Adaptation"
+          ],
+          "answer": "Relative fitness",
+          "explanation": "Relative fitness compares an individual's genetic contribution to the next generation with that of other individuals in the population.",
+          "knowledge_id": "U7-K-084"
+        },
+        {
+          "question_id": "U7-D02-Q03",
+          "prompt": "Which option best matches this scientific description? An _____ is a heritable trait that increases reproductive success in a particular environment _____ to alternative traits.",
+          "choices": [
+            "Evolutionary fitness",
+            "Relative fitness",
+            "Adaptation"
+          ],
+          "answer": "Adaptation",
+          "explanation": "An adaptation is a heritable trait that increases reproductive success in a particular environment relative to alternative traits.",
+          "knowledge_id": "U7-K-080"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D03",
+      "title": "Acclimation versus evolutionary change",
+      "knowledge_ids": [
+        "U7-K-004",
+        "U7-K-083",
+        "U7-K-082"
+      ],
+      "terms": [
+        "Changing environments change selection",
+        "Acclimation versus evolutionary change",
+        "Populations evolve, individuals do not"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D03-Q01",
+          "prompt": "Which option best matches this scientific description? Biotic and abiotic conditions can _____, altering which genetic variants are favored and _____ the rate or direction of evolution.",
+          "choices": [
+            "Changing environments change selection",
+            "Acclimation versus evolutionary change",
+            "Populations evolve, individuals do not"
+          ],
+          "answer": "Changing environments change selection",
+          "explanation": "Biotic and abiotic conditions can change, altering which genetic variants are favored and changing the rate or direction of evolution.",
+          "knowledge_id": "U7-K-004"
+        },
+        {
+          "question_id": "U7-D03-Q02",
+          "prompt": "Which option best matches this scientific description? An _____ induced _____ in body condition is _____ evidence of evolution unless heritable genetic composition _____ across generations.",
+          "choices": [
+            "Changing environments change selection",
+            "Acclimation versus evolutionary change",
+            "Populations evolve, individuals do not"
+          ],
+          "answer": "Acclimation versus evolutionary change",
+          "explanation": "An environmentally induced change in body condition is not evidence of evolution unless heritable genetic composition changes across generations.",
+          "knowledge_id": "U7-K-083"
+        },
+        {
+          "question_id": "U7-D03-Q03",
+          "prompt": "Which option best matches this scientific description? Evolutionary _____ is measured across generations in populations; an _____ organism does _____ genetically _____ during its lifetime.",
+          "choices": [
+            "Changing environments change selection",
+            "Acclimation versus evolutionary change",
+            "Populations evolve, individuals do not"
+          ],
+          "answer": "Populations evolve, individuals do not",
+          "explanation": "Evolutionary change is measured across generations in populations; an individual organism does not genetically evolve during its lifetime.",
+          "knowledge_id": "U7-K-082"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D04",
+      "title": "Three selection distributions",
+      "knowledge_ids": [
+        "U7-K-085",
+        "U7-K-086",
+        "U7-K-087"
+      ],
+      "terms": [
+        "Directional selection",
+        "Stabilizing selection",
+        "Disruptive selection"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D04-Q01",
+          "prompt": "Which option best matches this scientific description? _____ favors phenotypes toward one end of a trait distribution, shifting the population mean when the trait is heritable.",
+          "choices": [
+            "Directional selection",
+            "Stabilizing selection",
+            "Disruptive selection"
+          ],
+          "answer": "Directional selection",
+          "explanation": "Directional selection favors phenotypes toward one end of a trait distribution, shifting the population mean when the trait is heritable.",
+          "knowledge_id": "U7-K-085"
+        },
+        {
+          "question_id": "U7-D04-Q02",
+          "prompt": "Which option best matches this scientific description? _____ favors intermediate phenotypes and _____ against extremes, tending to reduce phenotypic variation around the mean.",
+          "choices": [
+            "Directional selection",
+            "Stabilizing selection",
+            "Disruptive selection"
+          ],
+          "answer": "Stabilizing selection",
+          "explanation": "Stabilizing selection favors intermediate phenotypes and selects against extremes, tending to reduce phenotypic variation around the mean.",
+          "knowledge_id": "U7-K-086"
+        },
+        {
+          "question_id": "U7-D04-Q03",
+          "prompt": "Which option best matches this scientific description? _____ favors phenotypes at both extremes over intermediate phenotypes and can increase variation within a population.",
+          "choices": [
+            "Directional selection",
+            "Stabilizing selection",
+            "Disruptive selection"
+          ],
+          "answer": "Disruptive selection",
+          "explanation": "Disruptive selection favors phenotypes at both extremes over intermediate phenotypes and can increase variation within a population.",
+          "knowledge_id": "U7-K-087"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D05",
+      "title": "Natural versus sexual selection",
+      "knowledge_ids": [
+        "U7-K-001",
+        "U7-K-088",
+        "U7-K-089"
+      ],
+      "terms": [
+        "Natural selection as mechanism",
+        "Sexual selection",
+        "Sexually selected trait trade-offs"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D05-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is a major _____ that changes populations over generations.",
+          "choices": [
+            "Natural selection as mechanism",
+            "Sexual selection",
+            "Sexually selected trait trade-offs"
+          ],
+          "answer": "Natural selection as mechanism",
+          "explanation": "Natural selection is a major mechanism that changes populations over generations.",
+          "knowledge_id": "U7-K-001"
+        },
+        {
+          "question_id": "U7-D05-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is differential reproductive success caused by variation in obtaining mates, including mate choice and competition among potential mates.",
+          "choices": [
+            "Natural selection as mechanism",
+            "Sexual selection",
+            "Sexually selected trait trade-offs"
+          ],
+          "answer": "Sexual selection",
+          "explanation": "Sexual selection is differential reproductive success caused by variation in obtaining mates, including mate choice and competition among potential mates.",
+          "knowledge_id": "U7-K-088"
+        },
+        {
+          "question_id": "U7-D05-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ favored through mating success can persist even if it carries a survival cost, provided its net effect increases reproductive success.",
+          "choices": [
+            "Natural selection as mechanism",
+            "Sexual selection",
+            "Sexually selected trait trade-offs"
+          ],
+          "answer": "Sexually selected trait trade-offs",
+          "explanation": "A trait favored through mating success can persist even if it carries a survival cost, provided its net effect increases reproductive success.",
+          "knowledge_id": "U7-K-089"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D06",
+      "title": "Mutation versus selection",
+      "knowledge_ids": [
+        "U7-K-011",
+        "U7-K-001",
+        "U7-K-098"
+      ],
+      "terms": [
+        "Mutation adds genetic variation",
+        "Natural selection as mechanism",
+        "Mutation fitness effects"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D06-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is a random process with respect to _____ that introduces new _____ into populations.",
+          "choices": [
+            "Mutation adds genetic variation",
+            "Natural selection as mechanism",
+            "Mutation fitness effects"
+          ],
+          "answer": "Mutation adds genetic variation",
+          "explanation": "Mutation is a random process with respect to fitness that introduces new genetic variation into populations.",
+          "knowledge_id": "U7-K-011"
+        },
+        {
+          "question_id": "U7-D06-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is a major _____ that changes populations over generations.",
+          "choices": [
+            "Mutation adds genetic variation",
+            "Natural selection as mechanism",
+            "Mutation fitness effects"
+          ],
+          "answer": "Natural selection as mechanism",
+          "explanation": "Natural selection is a major mechanism that changes populations over generations.",
+          "knowledge_id": "U7-K-001"
+        },
+        {
+          "question_id": "U7-D06-Q03",
+          "prompt": "Which option best matches this scientific description? _____ can be neutral, deleterious, or beneficial with respect to _____, and their _____ can depend on environment and _____ context.",
+          "choices": [
+            "Mutation adds genetic variation",
+            "Natural selection as mechanism",
+            "Mutation fitness effects"
+          ],
+          "answer": "Mutation fitness effects",
+          "explanation": "Mutations can be neutral, deleterious, or beneficial with respect to fitness, and their effects can depend on environment and genetic context.",
+          "knowledge_id": "U7-K-098"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D07",
+      "title": "Drift versus selection",
+      "knowledge_ids": [
+        "U7-K-012",
+        "U7-K-102",
+        "U7-K-001"
+      ],
+      "terms": [
+        "Genetic drift",
+        "Drift is nonadaptive",
+        "Natural selection as mechanism"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D07-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is a nonselective change in allele frequency caused by chance, especially influential in small populations.",
+          "choices": [
+            "Genetic drift",
+            "Drift is nonadaptive",
+            "Natural selection as mechanism"
+          ],
+          "answer": "Genetic drift",
+          "explanation": "Genetic drift is a nonselective change in allele frequency caused by chance, especially influential in small populations.",
+          "knowledge_id": "U7-K-012"
+        },
+        {
+          "question_id": "U7-D07-Q02",
+          "prompt": "Which option best matches this scientific description? _____ changes allele frequencies by chance and does not consistently increase adaptation.",
+          "choices": [
+            "Genetic drift",
+            "Drift is nonadaptive",
+            "Natural selection as mechanism"
+          ],
+          "answer": "Drift is nonadaptive",
+          "explanation": "Genetic drift changes allele frequencies by chance and does not consistently increase adaptation.",
+          "knowledge_id": "U7-K-102"
+        },
+        {
+          "question_id": "U7-D07-Q03",
+          "prompt": "Which option best matches this scientific description? _____ is a major _____ that changes populations over generations.",
+          "choices": [
+            "Genetic drift",
+            "Drift is nonadaptive",
+            "Natural selection as mechanism"
+          ],
+          "answer": "Natural selection as mechanism",
+          "explanation": "Natural selection is a major mechanism that changes populations over generations.",
+          "knowledge_id": "U7-K-001"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D08",
+      "title": "Bottleneck versus founder effect",
+      "knowledge_ids": [
+        "U7-K-013",
+        "U7-K-014"
+      ],
+      "terms": [
+        "Bottleneck effect",
+        "Founder effect"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D08-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is genetic drift following a severe population-size reduction that leaves a nonrepresentative sample of the original gene pool.",
+          "choices": [
+            "Bottleneck effect",
+            "Founder effect"
+          ],
+          "answer": "Bottleneck effect",
+          "explanation": "A bottleneck is genetic drift following a severe population-size reduction that leaves a nonrepresentative sample of the original gene pool.",
+          "knowledge_id": "U7-K-013"
+        },
+        {
+          "question_id": "U7-D08-Q02",
+          "prompt": "Which option best matches this scientific description? The _____ is genetic drift when a new population is established by a small subset whose allele frequencies differ by chance from the source population.",
+          "choices": [
+            "Bottleneck effect",
+            "Founder effect"
+          ],
+          "answer": "Founder effect",
+          "explanation": "The founder effect is genetic drift when a new population is established by a small subset whose allele frequencies differ by chance from the source population.",
+          "knowledge_id": "U7-K-014"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D09",
+      "title": "Drift versus gene flow",
+      "knowledge_ids": [
+        "U7-K-012",
+        "U7-K-015",
+        "U7-K-019"
+      ],
+      "terms": [
+        "Genetic drift",
+        "Gene flow",
+        "Gene flow counteracts divergence"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D09-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is a nonselective change in allele frequency caused by chance, especially influential in small populations.",
+          "choices": [
+            "Genetic drift",
+            "Gene flow",
+            "Gene flow counteracts divergence"
+          ],
+          "answer": "Genetic drift",
+          "explanation": "Genetic drift is a nonselective change in allele frequency caused by chance, especially influential in small populations.",
+          "knowledge_id": "U7-K-012"
+        },
+        {
+          "question_id": "U7-D09-Q02",
+          "prompt": "Which option best matches this scientific description? Migration of fertile individuals or gametes can add or remove alleles from a population through _____.",
+          "choices": [
+            "Genetic drift",
+            "Gene flow",
+            "Gene flow counteracts divergence"
+          ],
+          "answer": "Gene flow",
+          "explanation": "Migration of fertile individuals or gametes can add or remove alleles from a population through gene flow.",
+          "knowledge_id": "U7-K-015"
+        },
+        {
+          "question_id": "U7-D09-Q03",
+          "prompt": "Which option best matches this scientific description? _____ between populations tends to reduce _____ differences and can hinder _____ into separate species.",
+          "choices": [
+            "Genetic drift",
+            "Gene flow",
+            "Gene flow counteracts divergence"
+          ],
+          "answer": "Gene flow counteracts divergence",
+          "explanation": "Gene flow between populations tends to reduce genetic differences and can hinder divergence into separate species.",
+          "knowledge_id": "U7-K-019"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D10",
+      "title": "Population versus gene pool versus allele frequency",
+      "knowledge_ids": [
+        "U7-K-092",
+        "U7-K-093",
+        "U7-K-108"
+      ],
+      "terms": [
+        "Population",
+        "Gene pool",
+        "Allele frequency"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D10-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a group of individuals of the same species living in the same area that can contribute to a shared _____.",
+          "choices": [
+            "Population",
+            "Gene pool",
+            "Allele frequency"
+          ],
+          "answer": "Population",
+          "explanation": "A population is a group of individuals of the same species living in the same area that can contribute to a shared gene pool.",
+          "knowledge_id": "U7-K-092"
+        },
+        {
+          "question_id": "U7-D10-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ consists of all _____ at all loci present in the reproducing members of a _____.",
+          "choices": [
+            "Population",
+            "Gene pool",
+            "Allele frequency"
+          ],
+          "answer": "Gene pool",
+          "explanation": "A gene pool consists of all alleles at all loci present in the reproducing members of a population.",
+          "knowledge_id": "U7-K-093"
+        },
+        {
+          "question_id": "U7-D10-Q03",
+          "prompt": "Which option best matches this scientific description? _____ is the proportion of all _____ copies at a locus represented by a particular _____.",
+          "choices": [
+            "Population",
+            "Gene pool",
+            "Allele frequency"
+          ],
+          "answer": "Allele frequency",
+          "explanation": "Allele frequency is the proportion of all allele copies at a locus represented by a particular allele.",
+          "knowledge_id": "U7-K-108"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D11",
+      "title": "Allele frequency versus genotype frequency",
+      "knowledge_ids": [
+        "U7-K-108",
+        "U7-K-107"
+      ],
+      "terms": [
+        "Allele frequency",
+        "Genotype frequency"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D11-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is the proportion of all _____ copies at a locus represented by a particular _____.",
+          "choices": [
+            "Allele frequency",
+            "Genotype frequency"
+          ],
+          "answer": "Allele frequency",
+          "explanation": "Allele frequency is the proportion of all allele copies at a locus represented by a particular allele.",
+          "knowledge_id": "U7-K-108"
+        },
+        {
+          "question_id": "U7-D11-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is the proportion of individuals in a population with a particular _____.",
+          "choices": [
+            "Allele frequency",
+            "Genotype frequency"
+          ],
+          "answer": "Genotype frequency",
+          "explanation": "Genotype frequency is the proportion of individuals in a population with a particular genotype.",
+          "knowledge_id": "U7-K-107"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D12",
+      "title": "p and q symbols",
+      "knowledge_ids": [
+        "U7-K-070",
+        "U7-K-071",
+        "U7-K-068"
+      ],
+      "terms": [
+        "p as allele-1 frequency",
+        "q as allele-2 frequency",
+        "Allele-frequency equation p + q = 1"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D12-Q01",
+          "prompt": "Which option best matches this scientific description? In Hardy-Weinberg notation, p is the _____ of one _____ at a two-_____ locus; it is not inherently the dominant _____.",
+          "choices": [
+            "p as allele-1 frequency",
+            "q as allele-2 frequency",
+            "Allele-frequency equation p + q = 1"
+          ],
+          "answer": "p as allele-1 frequency",
+          "explanation": "In Hardy-Weinberg notation, p is the frequency of one allele at a two-allele locus; it is not inherently the dominant allele.",
+          "knowledge_id": "U7-K-070"
+        },
+        {
+          "question_id": "U7-D12-Q02",
+          "prompt": "Which option best matches this scientific description? In Hardy-Weinberg notation, q is the _____ of the other _____ at a two-_____ locus; it is not inherently the recessive _____.",
+          "choices": [
+            "p as allele-1 frequency",
+            "q as allele-2 frequency",
+            "Allele-frequency equation p + q = 1"
+          ],
+          "answer": "q as allele-2 frequency",
+          "explanation": "In Hardy-Weinberg notation, q is the frequency of the other allele at a two-allele locus; it is not inherently the recessive allele.",
+          "knowledge_id": "U7-K-071"
+        },
+        {
+          "question_id": "U7-D12-Q03",
+          "prompt": "Which option best matches this scientific description? For a two-_____ locus, the _____ sum to 1: p + q = 1.",
+          "choices": [
+            "p as allele-1 frequency",
+            "q as allele-2 frequency",
+            "Allele-frequency equation p + q = 1"
+          ],
+          "answer": "Allele-frequency equation p + q = 1",
+          "explanation": "For a two-allele locus, the allele frequencies sum to 1: p + q = 1.",
+          "knowledge_id": "U7-K-068"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D13",
+      "title": "p² 2pq q² genotype terms",
+      "knowledge_ids": [
+        "U7-K-072",
+        "U7-K-073",
+        "U7-K-074"
+      ],
+      "terms": [
+        "p² expected homozygote frequency",
+        "2pq expected heterozygote frequency",
+        "q² expected homozygote frequency"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D13-Q01",
+          "prompt": "Which option best matches this scientific description? Under Hardy-Weinberg equilibrium, p² is the _____ of the _____ genotype containing two copies of the p-designated allele.",
+          "choices": [
+            "p² expected homozygote frequency",
+            "2pq expected heterozygote frequency",
+            "q² expected homozygote frequency"
+          ],
+          "answer": "p² expected homozygote frequency",
+          "explanation": "Under Hardy-Weinberg equilibrium, p² is the expected frequency of the homozygous genotype containing two copies of the p-designated allele.",
+          "knowledge_id": "U7-K-072"
+        },
+        {
+          "question_id": "U7-D13-Q02",
+          "prompt": "Which option best matches this scientific description? Under Hardy-Weinberg equilibrium, _____ is the _____.",
+          "choices": [
+            "p² expected homozygote frequency",
+            "2pq expected heterozygote frequency",
+            "q² expected homozygote frequency"
+          ],
+          "answer": "2pq expected heterozygote frequency",
+          "explanation": "Under Hardy-Weinberg equilibrium, 2pq is the expected heterozygote frequency.",
+          "knowledge_id": "U7-K-073"
+        },
+        {
+          "question_id": "U7-D13-Q03",
+          "prompt": "Which option best matches this scientific description? Under Hardy-Weinberg equilibrium, q² is the _____ of the _____ genotype containing two copies of the q-designated allele.",
+          "choices": [
+            "p² expected homozygote frequency",
+            "2pq expected heterozygote frequency",
+            "q² expected homozygote frequency"
+          ],
+          "answer": "q² expected homozygote frequency",
+          "explanation": "Under Hardy-Weinberg equilibrium, q² is the expected frequency of the homozygous genotype containing two copies of the q-designated allele.",
+          "knowledge_id": "U7-K-074"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D14",
+      "title": "Hardy-Weinberg allele versus genotype equations",
+      "knowledge_ids": [
+        "U7-K-068",
+        "U7-K-069"
+      ],
+      "terms": [
+        "Allele-frequency equation p + q = 1",
+        "Hardy-Weinberg genotype equation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D14-Q01",
+          "prompt": "Which option best matches this scientific description? For a two-_____ locus, the _____ frequencies sum to 1: p + q = 1.",
+          "choices": [
+            "Allele-frequency equation p + q = 1",
+            "Hardy-Weinberg genotype equation"
+          ],
+          "answer": "Allele-frequency equation p + q = 1",
+          "explanation": "For a two-allele locus, the allele frequencies sum to 1: p + q = 1.",
+          "knowledge_id": "U7-K-068"
+        },
+        {
+          "question_id": "U7-D14-Q02",
+          "prompt": "Which option best matches this scientific description? Under _____ equilibrium for a two-_____ locus, expected _____ frequencies are p² + 2pq + q² = 1.",
+          "choices": [
+            "Allele-frequency equation p + q = 1",
+            "Hardy-Weinberg genotype equation"
+          ],
+          "answer": "Hardy-Weinberg genotype equation",
+          "explanation": "Under Hardy-Weinberg equilibrium for a two-allele locus, expected genotype frequencies are p² + 2pq + q² = 1.",
+          "knowledge_id": "U7-K-069"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D15",
+      "title": "Hardy-Weinberg assumptions",
+      "knowledge_ids": [
+        "U7-K-022",
+        "U7-K-023",
+        "U7-K-024",
+        "U7-K-025",
+        "U7-K-026"
+      ],
+      "terms": [
+        "Hardy-Weinberg condition large population",
+        "Hardy-Weinberg condition no migration",
+        "Hardy-Weinberg condition no mutation",
+        "Hardy-Weinberg condition random mating",
+        "Hardy-Weinberg condition no natural selection"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D15-Q01",
+          "prompt": "Which option best matches this scientific description? The _____ model assumes a sufficiently _____ population so _____ sampling effects are negligible.",
+          "choices": [
+            "Hardy-Weinberg condition large population",
+            "Hardy-Weinberg condition no migration",
+            "Hardy-Weinberg condition no mutation",
+            "Hardy-Weinberg condition random mating",
+            "Hardy-Weinberg condition no natural selection"
+          ],
+          "answer": "Hardy-Weinberg condition large population",
+          "explanation": "The Hardy-Weinberg model assumes a sufficiently large population so random sampling effects are negligible.",
+          "knowledge_id": "U7-K-022"
+        },
+        {
+          "question_id": "U7-D15-Q02",
+          "prompt": "Which option best matches this scientific description? The _____ model assumes no _____ or gene flow at the locus being modeled.",
+          "choices": [
+            "Hardy-Weinberg condition large population",
+            "Hardy-Weinberg condition no migration",
+            "Hardy-Weinberg condition no mutation",
+            "Hardy-Weinberg condition random mating",
+            "Hardy-Weinberg condition no natural selection"
+          ],
+          "answer": "Hardy-Weinberg condition no migration",
+          "explanation": "The Hardy-Weinberg model assumes no migration or gene flow at the locus being modeled.",
+          "knowledge_id": "U7-K-023"
+        },
+        {
+          "question_id": "U7-D15-Q03",
+          "prompt": "Which option best matches this scientific description? The _____ model assumes no new _____ changing the alleles at the locus.",
+          "choices": [
+            "Hardy-Weinberg condition large population",
+            "Hardy-Weinberg condition no migration",
+            "Hardy-Weinberg condition no mutation",
+            "Hardy-Weinberg condition random mating",
+            "Hardy-Weinberg condition no natural selection"
+          ],
+          "answer": "Hardy-Weinberg condition no mutation",
+          "explanation": "The Hardy-Weinberg model assumes no new mutation changing the alleles at the locus.",
+          "knowledge_id": "U7-K-024"
+        },
+        {
+          "question_id": "U7-D15-Q04",
+          "prompt": "Which option best matches this scientific description? The _____ model assumes _____ with respect to the locus.",
+          "choices": [
+            "Hardy-Weinberg condition large population",
+            "Hardy-Weinberg condition no migration",
+            "Hardy-Weinberg condition no mutation",
+            "Hardy-Weinberg condition random mating",
+            "Hardy-Weinberg condition no natural selection"
+          ],
+          "answer": "Hardy-Weinberg condition random mating",
+          "explanation": "The Hardy-Weinberg model assumes random mating with respect to the locus.",
+          "knowledge_id": "U7-K-025"
+        },
+        {
+          "question_id": "U7-D15-Q05",
+          "prompt": "Which option best matches this scientific description? The _____ model assumes no differential reproductive success among genotypes at the locus.",
+          "choices": [
+            "Hardy-Weinberg condition large population",
+            "Hardy-Weinberg condition no migration",
+            "Hardy-Weinberg condition no mutation",
+            "Hardy-Weinberg condition random mating",
+            "Hardy-Weinberg condition no natural selection"
+          ],
+          "answer": "Hardy-Weinberg condition no natural selection",
+          "explanation": "The Hardy-Weinberg model assumes no differential reproductive success among genotypes at the locus.",
+          "knowledge_id": "U7-K-026"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D16",
+      "title": "Homology versus analogy",
+      "knowledge_ids": [
+        "U7-K-118",
+        "U7-K-122",
+        "U7-K-123"
+      ],
+      "terms": [
+        "Homology",
+        "Homologous structures",
+        "Analogous structures"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D16-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is similarity caused by shared ancestry, even when descendant _____ or sequences have different functions.",
+          "choices": [
+            "Homology",
+            "Homologous structures",
+            "Analogous structures"
+          ],
+          "answer": "Homology",
+          "explanation": "Homology is similarity caused by shared ancestry, even when descendant structures or sequences have different functions.",
+          "knowledge_id": "U7-K-118"
+        },
+        {
+          "question_id": "U7-D16-Q02",
+          "prompt": "Which option best matches this scientific description? _____ anatomical _____ share an underlying inherited _____ pattern because of common ancestry, even when they perform different functions.",
+          "choices": [
+            "Homology",
+            "Homologous structures",
+            "Analogous structures"
+          ],
+          "answer": "Homologous structures",
+          "explanation": "Homologous anatomical structures share an underlying inherited structural pattern because of common ancestry, even when they perform different functions.",
+          "knowledge_id": "U7-K-122"
+        },
+        {
+          "question_id": "U7-D16-Q03",
+          "prompt": "Which option best matches this scientific description? _____ perform similar functions or have similar forms because of independent evolution under similar selective pressures, not because the feature was inherited from a recent common ancestor.",
+          "choices": [
+            "Homology",
+            "Homologous structures",
+            "Analogous structures"
+          ],
+          "answer": "Analogous structures",
+          "explanation": "Analogous structures perform similar functions or have similar forms because of independent evolution under similar selective pressures, not because the feature was inherited from a recent common ancestor.",
+          "knowledge_id": "U7-K-123"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D17",
+      "title": "Fossil record versus radiometric dating",
+      "knowledge_ids": [
+        "U7-K-114",
+        "U7-K-115",
+        "U7-K-030"
+      ],
+      "terms": [
+        "Fossil record",
+        "Radiometric dating",
+        "Dating fossils"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D17-Q01",
+          "prompt": "Which option best matches this scientific description? The _____ documents changes in organisms through geologic time while remaining incomplete and biased toward conditions favorable to _____.",
+          "choices": [
+            "Fossil record",
+            "Radiometric dating",
+            "Dating fossils"
+          ],
+          "answer": "Fossil record",
+          "explanation": "The fossil record documents changes in organisms through geologic time while remaining incomplete and biased toward conditions favorable to fossilization.",
+          "knowledge_id": "U7-K-114"
+        },
+        {
+          "question_id": "U7-D17-Q02",
+          "prompt": "Which option best matches this scientific description? _____ estimates ages from predictable _____ decay; isotope choice must match the age range being studied.",
+          "choices": [
+            "Fossil record",
+            "Radiometric dating",
+            "Dating fossils"
+          ],
+          "answer": "Radiometric dating",
+          "explanation": "Radiometric dating estimates ages from predictable radioactive decay; isotope choice must match the age range being studied.",
+          "knowledge_id": "U7-K-115"
+        },
+        {
+          "question_id": "U7-D17-Q03",
+          "prompt": "Which option best matches this scientific description? _____ ages can be inferred using rock context, _____ methods appropriate to the timescale, and geographic/geologic information.",
+          "choices": [
+            "Fossil record",
+            "Radiometric dating",
+            "Dating fossils"
+          ],
+          "answer": "Dating fossils",
+          "explanation": "Fossil ages can be inferred using rock context, radiometric methods appropriate to the timescale, and geographic/geologic information.",
+          "knowledge_id": "U7-K-030"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D18",
+      "title": "Morphological versus molecular homology",
+      "knowledge_ids": [
+        "U7-K-031",
+        "U7-K-121",
+        "U7-K-032"
+      ],
+      "terms": [
+        "Morphological homology",
+        "Molecular homology",
+        "Sequence similarity as evidence"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D18-Q01",
+          "prompt": "Which option best matches this scientific description? _____ and vestigial structures provide _____ of common ancestry.",
+          "choices": [
+            "Morphological homology",
+            "Molecular homology",
+            "Sequence similarity as evidence"
+          ],
+          "answer": "Morphological homology",
+          "explanation": "Homologous and vestigial structures provide evidence of common ancestry.",
+          "knowledge_id": "U7-K-031"
+        },
+        {
+          "question_id": "U7-D18-Q02",
+          "prompt": "Which option best matches this scientific description? _____ in DNA or protein _____ can indicate common ancestry, with greater _____ often supporting a more recent common ancestor when compared appropriately.",
+          "choices": [
+            "Morphological homology",
+            "Molecular homology",
+            "Sequence similarity as evidence"
+          ],
+          "answer": "Molecular homology",
+          "explanation": "Similarity in DNA or protein sequences can indicate common ancestry, with greater sequence similarity often supporting a more recent common ancestor when compared appropriately.",
+          "knowledge_id": "U7-K-121"
+        },
+        {
+          "question_id": "U7-D18-Q03",
+          "prompt": "Which option best matches this scientific description? Comparisons of DNA nucleotide _____ and protein amino-acid _____ provide _____ for evolution and common ancestry.",
+          "choices": [
+            "Morphological homology",
+            "Molecular homology",
+            "Sequence similarity as evidence"
+          ],
+          "answer": "Sequence similarity as evidence",
+          "explanation": "Comparisons of DNA nucleotide sequences and protein amino-acid sequences provide evidence for evolution and common ancestry.",
+          "knowledge_id": "U7-K-032"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D19",
+      "title": "Systematics taxonomy phylogenetics phylogeny",
+      "knowledge_ids": [
+        "U7-K-129",
+        "U7-K-130",
+        "U7-K-131",
+        "U7-K-132"
+      ],
+      "terms": [
+        "Systematics",
+        "Taxonomy",
+        "Phylogenetics",
+        "Phylogeny"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D19-Q01",
+          "prompt": "Which option best matches this scientific description? _____ studies biological diversity and evolutionary relationships and includes classification informed by _____.",
+          "choices": [
+            "Systematics",
+            "Taxonomy",
+            "Phylogenetics",
+            "Phylogeny"
+          ],
+          "answer": "Systematics",
+          "explanation": "Systematics studies biological diversity and evolutionary relationships and includes classification informed by phylogeny.",
+          "knowledge_id": "U7-K-129"
+        },
+        {
+          "question_id": "U7-D19-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is the naming and classification of organisms.",
+          "choices": [
+            "Systematics",
+            "Taxonomy",
+            "Phylogenetics",
+            "Phylogeny"
+          ],
+          "answer": "Taxonomy",
+          "explanation": "Taxonomy is the naming and classification of organisms.",
+          "knowledge_id": "U7-K-130"
+        },
+        {
+          "question_id": "U7-D19-Q03",
+          "prompt": "Which option best matches this scientific description? _____ comprises methods used to infer and test evolutionary relationships among organisms or lineages.",
+          "choices": [
+            "Systematics",
+            "Taxonomy",
+            "Phylogenetics",
+            "Phylogeny"
+          ],
+          "answer": "Phylogenetics",
+          "explanation": "Phylogenetics comprises methods used to infer and test evolutionary relationships among organisms or lineages.",
+          "knowledge_id": "U7-K-131"
+        },
+        {
+          "question_id": "U7-D19-Q04",
+          "prompt": "Which option best matches this scientific description? A _____ is a hypothesis about the evolutionary history and relationships of a group of organisms or genes.",
+          "choices": [
+            "Systematics",
+            "Taxonomy",
+            "Phylogenetics",
+            "Phylogeny"
+          ],
+          "answer": "Phylogeny",
+          "explanation": "A phylogeny is a hypothesis about the evolutionary history and relationships of a group of organisms or genes.",
+          "knowledge_id": "U7-K-132"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D20",
+      "title": "Tree versus cladogram",
+      "knowledge_ids": [
+        "U7-K-042",
+        "U7-K-043"
+      ],
+      "terms": [
+        "Trees and cladograms are testable hypotheses",
+        "Tree versus cladogram scale"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D20-Q01",
+          "prompt": "Which option best matches this scientific description? Phylogenetic _____ about evolutionary relationships among lineages.",
+          "choices": [
+            "Trees and cladograms are testable hypotheses",
+            "Tree versus cladogram scale"
+          ],
+          "answer": "Trees and cladograms are testable hypotheses",
+          "explanation": "Phylogenetic trees and cladograms are testable hypotheses about evolutionary relationships among lineages.",
+          "knowledge_id": "U7-K-042"
+        },
+        {
+          "question_id": "U7-D20-Q02",
+          "prompt": "Which option best matches this scientific description? Phylogenetic _____ can represent amounts of evolutionary change or time when calibrated with fossils or molecular clocks; _____ show branching order without implying _____.",
+          "choices": [
+            "Trees and cladograms are testable hypotheses",
+            "Tree versus cladogram scale"
+          ],
+          "answer": "Tree versus cladogram scale",
+          "explanation": "Phylogenetic trees can represent amounts of evolutionary change or time when calibrated with fossils or molecular clocks; cladograms show branching order without implying scale.",
+          "knowledge_id": "U7-K-043"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D21",
+      "title": "Tree anatomy",
+      "knowledge_ids": [
+        "U7-K-133",
+        "U7-K-134",
+        "U7-K-135",
+        "U7-K-047"
+      ],
+      "terms": [
+        "Lineage",
+        "Clade",
+        "Root of a phylogenetic tree",
+        "Nodes represent common ancestors"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D21-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ is a sequence of _____ and descendant populations _____ by a branch in a _____ diagram.",
+          "choices": [
+            "Lineage",
+            "Clade",
+            "Root of a phylogenetic tree",
+            "Nodes represent common ancestors"
+          ],
+          "answer": "Lineage",
+          "explanation": "A lineage is a sequence of ancestral and descendant populations represented by a branch in a phylogenetic diagram.",
+          "knowledge_id": "U7-K-133"
+        },
+        {
+          "question_id": "U7-D21-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a monophyletic group consisting of an _____ and all of its descendants.",
+          "choices": [
+            "Lineage",
+            "Clade",
+            "Root of a phylogenetic tree",
+            "Nodes represent common ancestors"
+          ],
+          "answer": "Clade",
+          "explanation": "A clade is a monophyletic group consisting of an ancestor and all of its descendants.",
+          "knowledge_id": "U7-K-134"
+        },
+        {
+          "question_id": "U7-D21-Q03",
+          "prompt": "Which option best matches this scientific description? The _____ the _____ from which all taxa shown in a _____ descend.",
+          "choices": [
+            "Lineage",
+            "Clade",
+            "Root of a phylogenetic tree",
+            "Nodes represent common ancestors"
+          ],
+          "answer": "Root of a phylogenetic tree",
+          "explanation": "The root represents the ancestral lineage from which all taxa shown in a rooted tree descend.",
+          "knowledge_id": "U7-K-135"
+        },
+        {
+          "question_id": "U7-D21-Q04",
+          "prompt": "Which option best matches this scientific description? _____ on _____ or _____ inferred most recent _____ of descendant _____s.",
+          "choices": [
+            "Lineage",
+            "Clade",
+            "Root of a phylogenetic tree",
+            "Nodes represent common ancestors"
+          ],
+          "answer": "Nodes represent common ancestors",
+          "explanation": "Nodes on phylogenetic trees or cladograms represent inferred most recent common ancestors of descendant lineages.",
+          "knowledge_id": "U7-K-047"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D22",
+      "title": "Sister versus early-branching lineage",
+      "knowledge_ids": [
+        "U7-K-136",
+        "U7-K-137"
+      ],
+      "terms": [
+        "Sister taxa",
+        "Basal lineage"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D22-Q01",
+          "prompt": "Which option best matches this scientific description? _____ or _____ clades share an immediate common ancestor and are each other's closest relatives within the represented tree.",
+          "choices": [
+            "Sister taxa",
+            "Basal lineage"
+          ],
+          "answer": "Sister taxa",
+          "explanation": "Sister taxa or sister clades share an immediate common ancestor and are each other's closest relatives within the represented tree.",
+          "knowledge_id": "U7-K-136"
+        },
+        {
+          "question_id": "U7-D22-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ branching near the root diverged earlier in the represented phylogeny; an extant early-branching _____ is not the ancestor of the other extant _____.",
+          "choices": [
+            "Sister taxa",
+            "Basal lineage"
+          ],
+          "answer": "Basal lineage",
+          "explanation": "A lineage branching near the root diverged earlier in the represented phylogeny; an extant early-branching lineage is not the ancestor of the other extant taxa.",
+          "knowledge_id": "U7-K-137"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D23",
+      "title": "Ancestral derived synapomorphy",
+      "knowledge_ids": [
+        "U7-K-140",
+        "U7-K-139",
+        "U7-K-138",
+        "U7-K-045"
+      ],
+      "terms": [
+        "Ancestral character",
+        "Derived character",
+        "Synapomorphy",
+        "Shared derived characters"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D23-Q01",
+          "prompt": "Which option best matches this scientific description? An _____ is a _____ state inherited from an _____ that predates the focal clade or comparison.",
+          "choices": [
+            "Ancestral character",
+            "Derived character",
+            "Synapomorphy",
+            "Shared derived characters"
+          ],
+          "answer": "Ancestral character",
+          "explanation": "An ancestral character is a character state inherited from an ancestor that predates the focal clade or comparison.",
+          "knowledge_id": "U7-K-140"
+        },
+        {
+          "question_id": "U7-D23-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ is a _____ state that evolved in a lineage relative to the _____ condition used for comparison.",
+          "choices": [
+            "Ancestral character",
+            "Derived character",
+            "Synapomorphy",
+            "Shared derived characters"
+          ],
+          "answer": "Derived character",
+          "explanation": "A derived character is a character state that evolved in a lineage relative to the ancestral condition used for comparison.",
+          "knowledge_id": "U7-K-139"
+        },
+        {
+          "question_id": "U7-D23-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ is a _____ that originated in the common _____ of a clade and is inherited by its descendants.",
+          "choices": [
+            "Ancestral character",
+            "Derived character",
+            "Synapomorphy",
+            "Shared derived characters"
+          ],
+          "answer": "Synapomorphy",
+          "explanation": "A synapomorphy is a shared derived character that originated in the common ancestor of a clade and is inherited by its descendants.",
+          "knowledge_id": "U7-K-138"
+        },
+        {
+          "question_id": "U7-D23-Q04",
+          "prompt": "Which option best matches this scientific description? _____ support common _____ and help define clades.",
+          "choices": [
+            "Ancestral character",
+            "Derived character",
+            "Synapomorphy",
+            "Shared derived characters"
+          ],
+          "answer": "Shared derived characters",
+          "explanation": "Shared derived characters support common ancestry and help define clades.",
+          "knowledge_id": "U7-K-045"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D24",
+      "title": "Outgroup versus common ancestor",
+      "knowledge_ids": [
+        "U7-K-141",
+        "U7-K-215",
+        "U7-K-047"
+      ],
+      "terms": [
+        "Outgroup use",
+        "Outgroup in phylogenetic inference",
+        "Nodes represent common ancestors"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D24-Q01",
+          "prompt": "Which option best matches this scientific description? An _____ is a lineage outside the focal ingroup that helps _____ which character states are _____ and which are derived.",
+          "choices": [
+            "Outgroup use",
+            "Outgroup in phylogenetic inference",
+            "Nodes represent common ancestors"
+          ],
+          "answer": "Outgroup use",
+          "explanation": "An outgroup is a lineage outside the focal ingroup that helps infer which character states are ancestral and which are derived.",
+          "knowledge_id": "U7-K-141"
+        },
+        {
+          "question_id": "U7-D24-Q02",
+          "prompt": "Which option best matches this scientific description? The _____ a lineage that is less closely related to the focal ingroup than the ingroup members are to one another and helps identify _____ versus derived character states.",
+          "choices": [
+            "Outgroup use",
+            "Outgroup in phylogenetic inference",
+            "Nodes represent common ancestors"
+          ],
+          "answer": "Outgroup in phylogenetic inference",
+          "explanation": "The outgroup represents a lineage that is less closely related to the focal ingroup than the ingroup members are to one another and helps identify ancestral versus derived character states.",
+          "knowledge_id": "U7-K-215"
+        },
+        {
+          "question_id": "U7-D24-Q03",
+          "prompt": "Which option best matches this scientific description? _____ on _____ trees or cladograms _____ most recent _____ of descendant lineages.",
+          "choices": [
+            "Outgroup use",
+            "Outgroup in phylogenetic inference",
+            "Nodes represent common ancestors"
+          ],
+          "answer": "Nodes represent common ancestors",
+          "explanation": "Nodes on phylogenetic trees or cladograms represent inferred most recent common ancestors of descendant lineages.",
+          "knowledge_id": "U7-K-047"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D25",
+      "title": "Monophyletic paraphyletic polyphyletic",
+      "knowledge_ids": [
+        "U7-K-142",
+        "U7-K-143",
+        "U7-K-144"
+      ],
+      "terms": [
+        "Monophyletic group",
+        "Paraphyletic group",
+        "Polyphyletic group"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D25-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ contains a common ancestor and all of its descendants.",
+          "choices": [
+            "Monophyletic group",
+            "Paraphyletic group",
+            "Polyphyletic group"
+          ],
+          "answer": "Monophyletic group",
+          "explanation": "A monophyletic group contains a common ancestor and all of its descendants.",
+          "knowledge_id": "U7-K-142"
+        },
+        {
+          "question_id": "U7-D25-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ing includes a common ancestor but omits one or more descendant lineages.",
+          "choices": [
+            "Monophyletic group",
+            "Paraphyletic group",
+            "Polyphyletic group"
+          ],
+          "answer": "Paraphyletic group",
+          "explanation": "A paraphyletic grouping includes a common ancestor but omits one or more descendant lineages.",
+          "knowledge_id": "U7-K-143"
+        },
+        {
+          "question_id": "U7-D25-Q03",
+          "prompt": "Which option best matches this scientific description? A _____ing combines taxa while excluding their most recent common ancestor.",
+          "choices": [
+            "Monophyletic group",
+            "Paraphyletic group",
+            "Polyphyletic group"
+          ],
+          "answer": "Polyphyletic group",
+          "explanation": "A polyphyletic grouping combines taxa while excluding their most recent common ancestor.",
+          "knowledge_id": "U7-K-144"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D26",
+      "title": "Species versus speciation",
+      "knowledge_ids": [
+        "U7-K-146",
+        "U7-K-050",
+        "U7-K-051"
+      ],
+      "terms": [
+        "Species",
+        "Speciation requires reproductive isolation",
+        "Biological species concept"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D26-Q01",
+          "prompt": "Which option best matches this scientific description? Under the _____, sexually _____ populations belong to the same _____ when they can exchange genes through mating and produce viable, fertile offspring.",
+          "choices": [
+            "Species",
+            "Speciation requires reproductive isolation",
+            "Biological species concept"
+          ],
+          "answer": "Species",
+          "explanation": "Under the biological species concept, sexually reproducing populations belong to the same species when they can exchange genes through mating and produce viable, fertile offspring.",
+          "knowledge_id": "U7-K-146"
+        },
+        {
+          "question_id": "U7-D26-Q02",
+          "prompt": "Which option best matches this scientific description? New _____ can arise when populations become _____ so gene flow is sufficiently reduced or prevented.",
+          "choices": [
+            "Species",
+            "Speciation requires reproductive isolation",
+            "Biological species concept"
+          ],
+          "answer": "Speciation requires reproductive isolation",
+          "explanation": "New species can arise when populations become reproductively isolated so gene flow is sufficiently reduced or prevented.",
+          "knowledge_id": "U7-K-050"
+        },
+        {
+          "question_id": "U7-D26-Q03",
+          "prompt": "Which option best matches this scientific description? For sexually _____ organisms, the _____ defines a _____ as populations whose members can interbreed and exchange genetic information to produce viable, fertile offspring.",
+          "choices": [
+            "Species",
+            "Speciation requires reproductive isolation",
+            "Biological species concept"
+          ],
+          "answer": "Biological species concept",
+          "explanation": "For sexually reproducing organisms, the biological species concept defines a species as populations whose members can interbreed and exchange genetic information to produce viable, fertile offspring.",
+          "knowledge_id": "U7-K-051"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D27",
+      "title": "Allopatric versus sympatric speciation",
+      "knowledge_ids": [
+        "U7-K-147",
+        "U7-K-148",
+        "U7-K-055"
+      ],
+      "terms": [
+        "Allopatric speciation",
+        "Sympatric speciation",
+        "Allopatric and sympatric speciation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D27-Q01",
+          "prompt": "Which option best matches this scientific description? _____ occurs when geographic separation reduces gene flow and diverging populations evolve reproductive isolation.",
+          "choices": [
+            "Allopatric speciation",
+            "Sympatric speciation",
+            "Allopatric and sympatric speciation"
+          ],
+          "answer": "Allopatric speciation",
+          "explanation": "Allopatric speciation occurs when geographic separation reduces gene flow and diverging populations evolve reproductive isolation.",
+          "knowledge_id": "U7-K-147"
+        },
+        {
+          "question_id": "U7-D27-Q02",
+          "prompt": "Which option best matches this scientific description? _____ occurs without geographic separation when gene flow is reduced within an overlapping population and reproductive isolation evolves.",
+          "choices": [
+            "Allopatric speciation",
+            "Sympatric speciation",
+            "Allopatric and sympatric speciation"
+          ],
+          "answer": "Sympatric speciation",
+          "explanation": "Sympatric speciation occurs without geographic separation when gene flow is reduced within an overlapping population and reproductive isolation evolves.",
+          "knowledge_id": "U7-K-148"
+        },
+        {
+          "question_id": "U7-D27-Q03",
+          "prompt": "Which option best matches this scientific description? _____ involves geographic isolation; _____ occurs despite geographic overlap.",
+          "choices": [
+            "Allopatric speciation",
+            "Sympatric speciation",
+            "Allopatric and sympatric speciation"
+          ],
+          "answer": "Allopatric and sympatric speciation",
+          "explanation": "Allopatric speciation involves geographic isolation; sympatric speciation occurs despite geographic overlap.",
+          "knowledge_id": "U7-K-055"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D28",
+      "title": "Prezygotic versus postzygotic barrier",
+      "knowledge_ids": [
+        "U7-K-149",
+        "U7-K-155",
+        "U7-K-056"
+      ],
+      "terms": [
+        "Prezygotic barrier",
+        "Postzygotic barrier",
+        "Reproductive isolating mechanisms"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D28-Q01",
+          "prompt": "Which option best matches this scientific description? A _____ acts before zygote formation by preventing mating or fertilization.",
+          "choices": [
+            "Prezygotic barrier",
+            "Postzygotic barrier",
+            "Reproductive isolating mechanisms"
+          ],
+          "answer": "Prezygotic barrier",
+          "explanation": "A prezygotic reproductive barrier acts before zygote formation by preventing mating or fertilization.",
+          "knowledge_id": "U7-K-149"
+        },
+        {
+          "question_id": "U7-D28-Q02",
+          "prompt": "Which option best matches this scientific description? A _____ acts after fertilization by reducing hybrid viability or _____ success.",
+          "choices": [
+            "Prezygotic barrier",
+            "Postzygotic barrier",
+            "Reproductive isolating mechanisms"
+          ],
+          "answer": "Postzygotic barrier",
+          "explanation": "A postzygotic reproductive barrier acts after fertilization by reducing hybrid viability or reproductive success.",
+          "knowledge_id": "U7-K-155"
+        },
+        {
+          "question_id": "U7-D28-Q03",
+          "prompt": "Which option best matches this scientific description? _____ and _____s can maintain _____ and reduce gene flow between diverging populations.",
+          "choices": [
+            "Prezygotic barrier",
+            "Postzygotic barrier",
+            "Reproductive isolating mechanisms"
+          ],
+          "answer": "Reproductive isolating mechanisms",
+          "explanation": "Prezygotic and postzygotic barriers can maintain reproductive isolation and reduce gene flow between diverging populations.",
+          "knowledge_id": "U7-K-056"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D29",
+      "title": "Prezygotic barrier types",
+      "knowledge_ids": [
+        "U7-K-150",
+        "U7-K-151",
+        "U7-K-152",
+        "U7-K-153",
+        "U7-K-154"
+      ],
+      "terms": [
+        "Habitat isolation",
+        "Temporal isolation",
+        "Behavioral isolation",
+        "Mechanical isolation",
+        "Gametic isolation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D29-Q01",
+          "prompt": "Which option best matches this scientific description? _____ reduces mating when populations occupy different _____ or microhabitats and therefore rarely encounter one another as potential mates.",
+          "choices": [
+            "Habitat isolation",
+            "Temporal isolation",
+            "Behavioral isolation",
+            "Mechanical isolation",
+            "Gametic isolation"
+          ],
+          "answer": "Habitat isolation",
+          "explanation": "Habitat isolation reduces mating when populations occupy different habitats or microhabitats and therefore rarely encounter one another as potential mates.",
+          "knowledge_id": "U7-K-150"
+        },
+        {
+          "question_id": "U7-D29-Q02",
+          "prompt": "Which option best matches this scientific description? _____ reduces mating when populations reproduce at different times of day, seasons, or years.",
+          "choices": [
+            "Habitat isolation",
+            "Temporal isolation",
+            "Behavioral isolation",
+            "Mechanical isolation",
+            "Gametic isolation"
+          ],
+          "answer": "Temporal isolation",
+          "explanation": "Temporal isolation reduces mating when populations reproduce at different times of day, seasons, or years.",
+          "knowledge_id": "U7-K-151"
+        },
+        {
+          "question_id": "U7-D29-Q03",
+          "prompt": "Which option best matches this scientific description? _____ reduces mating when courtship signals or other reproductive _____ differ between populations.",
+          "choices": [
+            "Habitat isolation",
+            "Temporal isolation",
+            "Behavioral isolation",
+            "Mechanical isolation",
+            "Gametic isolation"
+          ],
+          "answer": "Behavioral isolation",
+          "explanation": "Behavioral isolation reduces mating when courtship signals or other reproductive behaviors differ between populations.",
+          "knowledge_id": "U7-K-152"
+        },
+        {
+          "question_id": "U7-D29-Q04",
+          "prompt": "Which option best matches this scientific description? _____ prevents successful mating or transfer of _____ when reproductive structures are incompatible.",
+          "choices": [
+            "Habitat isolation",
+            "Temporal isolation",
+            "Behavioral isolation",
+            "Mechanical isolation",
+            "Gametic isolation"
+          ],
+          "answer": "Mechanical isolation",
+          "explanation": "Mechanical isolation prevents successful mating or transfer of gametes when reproductive structures are incompatible.",
+          "knowledge_id": "U7-K-153"
+        },
+        {
+          "question_id": "U7-D29-Q05",
+          "prompt": "Which option best matches this scientific description? _____ occurs when sperm and egg or other _____ fail to recognize, survive, or fuse successfully across populations.",
+          "choices": [
+            "Habitat isolation",
+            "Temporal isolation",
+            "Behavioral isolation",
+            "Mechanical isolation",
+            "Gametic isolation"
+          ],
+          "answer": "Gametic isolation",
+          "explanation": "Gametic isolation occurs when sperm and egg or other gametes fail to recognize, survive, or fuse successfully across populations.",
+          "knowledge_id": "U7-K-154"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D30",
+      "title": "Postzygotic barrier types",
+      "knowledge_ids": [
+        "U7-K-156",
+        "U7-K-157",
+        "U7-K-158"
+      ],
+      "terms": [
+        "Reduced hybrid viability",
+        "Reduced hybrid fertility",
+        "Hybrid breakdown"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D30-Q01",
+          "prompt": "Which option best matches this scientific description? _____ occurs when genetic incompatibilities impair _____ development or survival.",
+          "choices": [
+            "Reduced hybrid viability",
+            "Reduced hybrid fertility",
+            "Hybrid breakdown"
+          ],
+          "answer": "Reduced hybrid viability",
+          "explanation": "Reduced hybrid viability occurs when genetic incompatibilities impair hybrid development or survival.",
+          "knowledge_id": "U7-K-156"
+        },
+        {
+          "question_id": "U7-D30-Q02",
+          "prompt": "Which option best matches this scientific description? _____ occurs when _____ survive but have low or zero reproductive _____ because of chromosomal or genic incompatibilities.",
+          "choices": [
+            "Reduced hybrid viability",
+            "Reduced hybrid fertility",
+            "Hybrid breakdown"
+          ],
+          "answer": "Reduced hybrid fertility",
+          "explanation": "Reduced hybrid fertility occurs when hybrids survive but have low or zero reproductive fertility because of chromosomal or genic incompatibilities.",
+          "knowledge_id": "U7-K-157"
+        },
+        {
+          "question_id": "U7-D30-Q03",
+          "prompt": "Which option best matches this scientific description? _____ occurs when first-generation _____ are viable and _____ but later-generation descendants show _____ or _____.",
+          "choices": [
+            "Reduced hybrid viability",
+            "Reduced hybrid fertility",
+            "Hybrid breakdown"
+          ],
+          "answer": "Hybrid breakdown",
+          "explanation": "Hybrid breakdown occurs when first-generation hybrids are viable and fertile but later-generation descendants show reduced viability or fertility.",
+          "knowledge_id": "U7-K-158"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D31",
+      "title": "Gradualism punctuated equilibrium stasis",
+      "knowledge_ids": [
+        "U7-K-052",
+        "U7-K-160"
+      ],
+      "terms": [
+        "Punctuated equilibrium and gradualism",
+        "Stasis"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D31-Q01",
+          "prompt": "Which option best matches this scientific description? Evolutionary change can be concentrated in relatively rapid episodes separated by _____ or can accumulate more _____ over long timescales.",
+          "choices": [
+            "Punctuated equilibrium and gradualism",
+            "Stasis"
+          ],
+          "answer": "Punctuated equilibrium and gradualism",
+          "explanation": "Evolutionary change can be concentrated in relatively rapid episodes separated by stasis or can accumulate more gradually over long timescales.",
+          "knowledge_id": "U7-K-052"
+        },
+        {
+          "question_id": "U7-D31-Q02",
+          "prompt": "Which option best matches this scientific description? _____ is a period in which a lineage shows relatively little net morphological evolutionary change in the fossil record.",
+          "choices": [
+            "Punctuated equilibrium and gradualism",
+            "Stasis"
+          ],
+          "answer": "Stasis",
+          "explanation": "Stasis is a period in which a lineage shows relatively little net morphological evolutionary change in the fossil record.",
+          "knowledge_id": "U7-K-160"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D32",
+      "title": "Divergent convergence adaptive radiation",
+      "knowledge_ids": [
+        "U7-K-161",
+        "U7-K-054",
+        "U7-K-162",
+        "U7-K-053"
+      ],
+      "terms": [
+        "Divergent evolution",
+        "Convergent evolution",
+        "Adaptive radiation",
+        "Divergent evolution and adaptive radiation"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D32-Q01",
+          "prompt": "Which option best matches this scientific description? _____ is the accumulation of differences among related lineages as they experience different environments or evolutionary histories; it can contribute to speciation when reproductive isolation develops.",
+          "choices": [
+            "Divergent evolution",
+            "Convergent evolution",
+            "Adaptive radiation",
+            "Divergent evolution and adaptive radiation"
+          ],
+          "answer": "Divergent evolution",
+          "explanation": "Divergent evolution is the accumulation of differences among related lineages as they experience different environments or evolutionary histories; it can contribute to speciation when reproductive isolation develops.",
+          "knowledge_id": "U7-K-161"
+        },
+        {
+          "question_id": "U7-D32-Q02",
+          "prompt": "Which option best matches this scientific description? Similar selective pressures can independently favor similar phenotypic _____ in distantly related populations or species.",
+          "choices": [
+            "Divergent evolution",
+            "Convergent evolution",
+            "Adaptive radiation",
+            "Divergent evolution and adaptive radiation"
+          ],
+          "answer": "Convergent evolution",
+          "explanation": "Similar selective pressures can independently favor similar phenotypic adaptations in distantly related populations or species.",
+          "knowledge_id": "U7-K-054"
+        },
+        {
+          "question_id": "U7-D32-Q03",
+          "prompt": "Which option best matches this scientific description? _____ is rapid _____ of one ancestral lineage into multiple descendant lineages, often associated with newly available ecological opportunities.",
+          "choices": [
+            "Divergent evolution",
+            "Convergent evolution",
+            "Adaptive radiation",
+            "Divergent evolution and adaptive radiation"
+          ],
+          "answer": "Adaptive radiation",
+          "explanation": "Adaptive radiation is rapid diversification of one ancestral lineage into multiple descendant lineages, often associated with newly available ecological opportunities.",
+          "knowledge_id": "U7-K-162"
+        },
+        {
+          "question_id": "U7-D32-Q04",
+          "prompt": "Which option best matches this scientific description? _____ can accompany _____ to different habitats; _____ can produce especially rapid _____ when ecological opportunities become available.",
+          "choices": [
+            "Divergent evolution",
+            "Convergent evolution",
+            "Adaptive radiation",
+            "Divergent evolution and adaptive radiation"
+          ],
+          "answer": "Divergent evolution and adaptive radiation",
+          "explanation": "Divergent evolution can accompany adaptation to different habitats; adaptive radiation can produce especially rapid diversification when ecological opportunities become available.",
+          "knowledge_id": "U7-K-053"
+        }
+      ]
+    },
+    {
+      "set_id": "U7-D33",
+      "title": "Origin-of-life models versus later endosymbiosis",
+      "knowledge_ids": [
+        "U7-K-064",
+        "U7-K-168",
+        "U7-K-167",
+        "U7-K-172"
+      ],
+      "terms": [
+        "RNA world hypothesis",
+        "Miller-Urey experiment",
+        "Oparin-Haldane hypothesis",
+        "Endosymbiosis is later than life's origin"
+      ],
+      "unlock_rule": "Schedule only after every associated Unit 7 knowledge record has been encountered in a story.",
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "U7-D33-Q01",
+          "prompt": "Which option best matches this scientific description? The _____ proposes _____ could have served as an early genetic material before modern DNA-protein systems evolved.",
+          "choices": [
+            "RNA world hypothesis",
+            "Miller-Urey experiment",
+            "Oparin-Haldane hypothesis",
+            "Endosymbiosis is later than life's origin"
+          ],
+          "answer": "RNA world hypothesis",
+          "explanation": "The RNA world hypothesis proposes that RNA could have served as an early genetic material before modern DNA-protein systems evolved.",
+          "knowledge_id": "U7-K-064"
+        },
+        {
+          "question_id": "U7-D33-Q02",
+          "prompt": "Which option best matches this scientific description? _____, working with Urey, tested a historical early-atmosphere model and demonstrated _____ amino acids and other small organic compounds could form abiotically under the simulated conditions.",
+          "choices": [
+            "RNA world hypothesis",
+            "Miller-Urey experiment",
+            "Oparin-Haldane hypothesis",
+            "Endosymbiosis is later than life's origin"
+          ],
+          "answer": "Miller-Urey experiment",
+          "explanation": "Miller, working with Urey, tested a historical early-atmosphere model and demonstrated that amino acids and other small organic compounds could form abiotically under the simulated conditions.",
+          "knowledge_id": "U7-K-168"
+        },
+        {
+          "question_id": "U7-D33-Q03",
+          "prompt": "Which option best matches this scientific description? _____ and Haldane historically proposed _____ organic molecules could arise abiotically in a reducing early atmosphere supplied with energy.",
+          "choices": [
+            "RNA world hypothesis",
+            "Miller-Urey experiment",
+            "Oparin-Haldane hypothesis",
+            "Endosymbiosis is later than life's origin"
+          ],
+          "answer": "Oparin-Haldane hypothesis",
+          "explanation": "Oparin and Haldane historically proposed that organic molecules could arise abiotically in a reducing early atmosphere supplied with energy.",
+          "knowledge_id": "U7-K-167"
+        },
+        {
+          "question_id": "U7-D33-Q04",
+          "prompt": "Which option best matches this scientific description? _____ explains the evolutionary _____ of mitochondria and chloroplasts from formerly free-living prokaryotes within ancestral host cells; it is a _____ event _____ the _____ of the first cellular life.",
+          "choices": [
+            "RNA world hypothesis",
+            "Miller-Urey experiment",
+            "Oparin-Haldane hypothesis",
+            "Endosymbiosis is later than life's origin"
+          ],
+          "answer": "Endosymbiosis is later than life's origin",
+          "explanation": "Endosymbiosis explains the evolutionary origin of mitochondria and chloroplasts from formerly free-living prokaryotes within ancestral host cells; it is a later event than the origin of the first cellular life.",
+          "knowledge_id": "U7-K-172"
+        }
+      ]
+    }
+  ]
+}

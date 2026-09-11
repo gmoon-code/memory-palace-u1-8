@@ -1,0 +1,1590 @@
+{
+  "palace_id": "U8-J2",
+  "unit_id": "unit-8",
+  "palace_name": "Ecosystem Energy Exchange Hall",
+  "story_title": "The Ledger That Would Not Balance",
+  "tagline": "Nine fixed stations, one two-column ledger, and one rule. Track where energy enters, where it becomes less available, and where matter remains conserved before the hall will let you leave.",
+  "guide": {
+    "name": "Dr. Mira Sen",
+    "role": "ecological-systems field curator who accompanies the learner through all eight Unit 8 journeys",
+    "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+    "story_job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+  },
+  "premise": "The Ecosystem Energy Exchange Hall has begun treating every ecological transfer as though energy and matter obeyed the same route. Dr. Mira Sen carries one transparent two-column ledger through nine fixed stations. The hall can balance only when organism budgets, thermoregulation, ecological scale, energy flow, matter cycling, carbon and energy acquisition, trophic roles, food-web direction, production, and trophic transfer remain causally distinct.",
+  "mission": "Travel the locked F2 route in order. Keep energy and matter in separate visible columns, preserve ecological scale, follow feeding arrows toward the receiving consumer, distinguish producer capture from respiration and heterotroph production, and treat trophic-transfer efficiency as variable rather than a universal ten-percent law.",
+  "finale": "The nine stations relight only after the learner can reconstruct energy input, transformation, respiration, heat dissipation, biomass production, feeding transfer, and matter conservation without recycling energy or losing track of reservoirs. The route ends with energy becoming progressively less available for biological work while matter remains traceable into the biogeochemical-cycle journey.",
+  "estimated_minutes": 27,
+  "scene_count": 9,
+  "checkpoint_count": 3,
+  "student_release": "DEVELOPER_PREVIEW_F4B",
+  "preview_release": true,
+  "narrative_design": "U8-F4B-NARRATIVE-1.0",
+  "learner_rule": "Place yourself in the room and fix left, center, and right before following the ecological transfer. The same transparent two-column energy-matter ledger persists through all nine locations. Exact terms appear only after the defining mechanism, equation relation, or transfer is visible. Optional Quick Recall appears only three times.",
+  "route_orientation": "The hall follows one continuous route through nine permanent locations in F2 order. Enter at Organism Energy Budget Counter and continue through Thermal Regulation Bay, Ecological Scale Atrium, Energy-Matter Split Gate, Carbon and Energy Acquisition Workshop, Trophic Ladder Tower, Food-Web Projection Room, Production Accounting Ledger, and Trophic Transfer Pyramid Exit. Every room fixes left, center, and right before the ecological state changes.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Organism Energy Budget Counter",
+      "short": "Energy budget",
+      "floor": "Budget counter",
+      "symbol": "IN−OUT"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Thermal Regulation Bay",
+      "short": "Thermal regulation",
+      "floor": "Thermal bay",
+      "symbol": "HEAT"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Ecological Scale Atrium",
+      "short": "Ecological scale",
+      "floor": "Scale atrium",
+      "symbol": "NEST"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Energy-Matter Split Gate",
+      "short": "Energy and matter",
+      "floor": "Split gate",
+      "symbol": "FLOW/CYCLE"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Carbon and Energy Acquisition Workshop",
+      "short": "Acquisition",
+      "floor": "Acquisition workshop",
+      "symbol": "C/E"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Trophic Ladder Tower",
+      "short": "Trophic roles",
+      "floor": "Ladder tower",
+      "symbol": "FEED"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Food-Web Projection Room",
+      "short": "Food webs",
+      "floor": "Projection room",
+      "symbol": "→CONSUMER"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Production Accounting Ledger",
+      "short": "Production",
+      "floor": "Production ledger",
+      "symbol": "GPP−R=NPP"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Trophic Transfer Pyramid Exit",
+      "short": "Trophic transfer",
+      "floor": "Pyramid exit",
+      "symbol": "≈10%"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U8-L13",
+      "locus": "Organism Energy Budget Counter",
+      "title": "Every organism has to pay its energy bill",
+      "scene_kicker": "At Organism Energy Budget Counter, reconstruct energy intake and acquisition column → maintenance/growth/reproduction expenditure ledger → storage or sustained-deficit outcome column and explain Energy use by organisms from the actual ecological mechanism.",
+      "location_description": "Organism Energy Budget Counter",
+      "scene_layout": {
+        "orientation": "Enter Organism Energy Budget Counter and stop at the intake-expenditure balance board. Keep energy intake and acquisition column fixed on the left, maintenance/growth/reproduction expenditure ledger as the working center, and storage or sustained-deficit outcome column fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "energy intake and acquisition column",
+            "symbol": "L",
+            "description": "A conventional scientific representation of energy intake and acquisition column, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "maintenance/growth/reproduction expenditure ledger",
+            "symbol": "C",
+            "description": "The main scientific work model at Organism Energy Budget Counter, centered on the intake-expenditure balance board."
+          },
+          {
+            "position": "right",
+            "label": "storage or sustained-deficit outcome column",
+            "symbol": "R",
+            "description": "A conventional scientific representation of storage or sustained-deficit outcome column, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "energy intake and acquisition column",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of energy intake and acquisition column, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "maintenance/growth/reproduction expenditure ledger",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Organism Energy Budget Counter, centered on the intake-expenditure balance board.",
+          "job": "Execute the defining action beginning with: Record energy acquired and energy expended over the same interval."
+        },
+        {
+          "name": "storage or sustained-deficit outcome column",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of storage or sustained-deficit outcome column, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The doors from the greenhouse open into the **Organism Energy Budget Counter**, a long room arranged like a biological accounting station. Dr. Mira Sen carries in a new transparent ledger with two narrow columns running down its face. ENERGY glows along the left edge and MATTER along the right. Before she lets anything change, she turns you toward three fixed stations. On your **left**, an intake column receives measured packets of food energy. Directly **ahead**, a broad expenditure board divides outgoing energy among maintenance, homeostasis, growth, and reproduction. On your **right**, an outcome column holds two transparent storage tanks, one marked RESERVES RISING and the other RESERVES FALLING. The same three positions will remain fixed while the organism’s energy balance changes.",
+      "story_paragraphs": [
+        "The doors from the greenhouse open into the **Organism Energy Budget Counter**, a long room arranged like a biological accounting station. Dr. Mira Sen carries in a new transparent ledger with two narrow columns running down its face. ENERGY glows along the left edge and MATTER along the right. Before she lets anything change, she turns you toward three fixed stations. On your **left**, an intake column receives measured packets of food energy. Directly **ahead**, a broad expenditure board divides outgoing energy among maintenance, homeostasis, growth, and reproduction. On your **right**, an outcome column holds two transparent storage tanks, one marked RESERVES RISING and the other RESERVES FALLING. The same three positions will remain fixed while the organism’s energy balance changes.",
+        "A small bird lands on the center platform after feeding. Mira records the energy it acquired during one interval, then records the energy it used over that same interval. Some of the incoming energy supports basic cellular work and body maintenance. Some supports thermoregulation and other forms of homeostasis. Some can support growth. Some can support reproduction. Only after the board has shown those different demands does Mira write the first principle on the ledger. **Energy use by organisms** includes maintaining organization, growing, reproducing, and maintaining homeostasis. The room makes the idea physical. Energy arriving on the left does not remain untouched once the organism is alive and functioning.",
+        "Mira adds a second feeding interval. This time the bird acquires more usable energy than it expends. The center board completes its maintenance costs and still leaves energy available. The right-hand RESERVES RISING tank begins to fill, and a growth indicator turns on beside it. Mira calls this a **net energy gain** only after the surplus is visible. Net energy gain can permit energy storage and growth and can support greater reproductive output when other conditions allow it. She keeps the reproductive panel conditional because a positive balance does not guarantee one fixed reproductive response in every species or environment.",
+        "Then she reverses the comparison. Food becomes scarce while energy expenditure remains high. The left intake column shrinks, the center board keeps charging maintenance costs, and the RESERVES FALLING tank drains. The bird first loses stored energy, then mass, and its reproductive-output gauge falls. Mira names this **net energy loss** after the deficit has persisted long enough to show a biological consequence. Persistent net energy loss can cause loss of mass, reduced reproductive output, and eventually death. The ledger now makes the **net energy balance** visible as the difference between energy acquired and energy expended over the same interval.",
+        "A side panel opens with two possible reproductive schedules. Under one set of environmental conditions, an organism can afford a more energy-demanding reproductive strategy. Under another, the strategy changes as available energy changes. Mira labels the idea **energy and reproductive strategy** and keeps the examples conditional. Some organisms can alternate sexual and asexual reproduction in response to environmental conditions, yet no single response is universal. The mechanism being remembered is that reproductive strategy can shift with energy availability.",
+        "Finally, Mira swaps the units on the intake display. Calories become kilocalories and then joules without changing the underlying energy accounting. A calorie is an energy unit, and the capital-C Calories used on nutrition labels are kilocalories. Ecological budgets can also be expressed in joules or related units. Mira taps the unchanged two-column ledger. The unit label can change, but the question remains the same. How much energy came in, where was it spent, and what remained.",
+        "The center board goes dark except for one glowing demand labeled HEAT. A sealed door opens behind it, and cold air spills through. Mira lifts the ledger and carries the same energy balance into the next room. The bird’s energy bill is still unresolved because maintaining body temperature can change how quickly that bill accumulates."
+      ],
+      "story_close": "The center board goes dark except for one glowing demand labeled HEAT. A sealed door opens behind it, and cold air spills through. Mira lifts the ledger and carries the same energy balance into the next room. The bird’s energy bill is still unresolved because maintaining body temperature can change how quickly that bill accumulates.",
+      "object_ids": [
+        "U8-K-009",
+        "U8-K-011",
+        "U8-K-012",
+        "U8-K-013",
+        "U8-K-110",
+        "U8-K-112"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-009",
+          "term": "Energy use by organisms",
+          "story": "the the intake-expenditure balance board where the defining ecological relationship is made visible before the term is named",
+          "science": "Organisms use energy to maintain organization, grow, reproduce, and maintain homeostasis.",
+          "exact_name": false,
+          "hint": "the intake-expenditure balance board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-011",
+          "term": "Net energy gain",
+          "story": "the the intake-expenditure balance board where the defining ecological relationship is made visible before the term is named",
+          "science": "Net energy gain permits energy storage, growth, and potentially greater reproductive output.",
+          "exact_name": false,
+          "hint": "the intake-expenditure balance board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-012",
+          "term": "Net energy loss",
+          "story": "the the intake-expenditure balance board where the defining ecological relationship is made visible before the term is named",
+          "science": "Persistent net energy loss causes loss of mass, reduced reproductive output, and eventually death.",
+          "exact_name": false,
+          "hint": "the intake-expenditure balance board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-013",
+          "term": "Energy and reproductive strategy",
+          "story": "the the intake-expenditure balance board where the defining ecological relationship is made visible before the term is named",
+          "science": "Reproductive strategies can change with energy availability; some organisms alternate sexual and asexual reproduction in response to environmental conditions.",
+          "exact_name": false,
+          "hint": "the intake-expenditure balance board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-110",
+          "term": "Net energy balance",
+          "story": "the the intake-expenditure balance board where the defining ecological relationship is made visible before the term is named",
+          "science": "An organism’s net energy balance is the difference between energy acquired and energy expended; positive balance supports storage/growth while sustained negative balance depletes reserves.",
+          "exact_name": false,
+          "hint": "the intake-expenditure balance board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-112",
+          "term": "Calorie and kilocalorie context",
+          "story": "the the intake-expenditure balance board where the defining ecological relationship is made visible before the term is named",
+          "science": "A calorie is an energy unit; nutritional Calories are kilocalories. Ecological energy budgets may be expressed in calories, joules, or related units.",
+          "exact_name": false,
+          "hint": "the intake-expenditure balance board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-009",
+          "term": "Energy use by organisms",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-011",
+          "term": "Net energy gain",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-012",
+          "term": "Net energy loss",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-013",
+          "term": "Energy and reproductive strategy",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Thermal Regulation Bay",
+      "f3_scene_brief_id": "F3-U8-L13",
+      "narrative_word_count": 639
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U8-L14",
+      "locus": "Thermal Regulation Bay",
+      "title": "The heat can come from inside or outside",
+      "scene_kicker": "At Thermal Regulation Bay, reconstruct external heat environment → metabolic heat and metabolic-rate monitor → body-temperature and energetic-demand outcome and explain Endotherm from the actual ecological mechanism.",
+      "location_description": "Thermal Regulation Bay",
+      "scene_layout": {
+        "orientation": "Enter Thermal Regulation Bay and stop at the heat-source comparison platform. Keep external heat environment fixed on the left, metabolic heat and metabolic-rate monitor as the working center, and body-temperature and energetic-demand outcome fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "external heat environment",
+            "symbol": "L",
+            "description": "A conventional scientific representation of external heat environment, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "metabolic heat and metabolic-rate monitor",
+            "symbol": "C",
+            "description": "The main scientific work model at Thermal Regulation Bay, centered on the heat-source comparison platform."
+          },
+          {
+            "position": "right",
+            "label": "body-temperature and energetic-demand outcome",
+            "symbol": "R",
+            "description": "A conventional scientific representation of body-temperature and energetic-demand outcome, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "external heat environment",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of external heat environment, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "metabolic heat and metabolic-rate monitor",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Thermal Regulation Bay, centered on the heat-source comparison platform.",
+          "job": "Execute the defining action beginning with: Compare organisms receiving the same external thermal conditions while identifying whether metabolic heat plays a major thermoregulatory role."
+        },
+        {
+          "name": "body-temperature and energetic-demand outcome",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of body-temperature and energetic-demand outcome, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The **Thermal Regulation Bay** is a circular chamber with temperature sensors embedded in the floor. Before the climate system turns on, Mira fixes the geography. On your **left**, an external environment platform can be warmed by lamps or chilled by cold air. Directly **ahead**, a metabolic monitor measures heat production and tracks oxygen consumption and carbon dioxide production. On your **right**, a body-temperature display shows the resulting thermal state and the energetic cost of maintaining it. Mira sets the transparent energy-matter ledger beside the center monitor so every thermal response still has to be paid for.",
+      "story_paragraphs": [
+        "The **Thermal Regulation Bay** is a circular chamber with temperature sensors embedded in the floor. Before the climate system turns on, Mira fixes the geography. On your **left**, an external environment platform can be warmed by lamps or chilled by cold air. Directly **ahead**, a metabolic monitor measures heat production and tracks oxygen consumption and carbon dioxide production. On your **right**, a body-temperature display shows the resulting thermal state and the energetic cost of maintaining it. Mira sets the transparent energy-matter ledger beside the center monitor so every thermal response still has to be paid for.",
+        "Two animals enter matched environmental conditions. The first produces enough metabolic heat for that internal heat to play a major role in maintaining body temperature. The center monitor climbs even when the external platform cools. Only after the source of the heat is unmistakable does Mira write **endotherm**. An endotherm produces enough metabolic heat to play a major role in maintaining body temperature. The defining feature is the importance of internally generated metabolic heat, not a promise that body temperature is perfectly constant at all times.",
+        "The second animal warms on the external platform and changes position when the lamp moves. Its own metabolic heat contributes less to maintaining body temperature, while environmental heat plays the larger role. Mira names it an **ectotherm**. An ectotherm gains most body heat from external sources and can use behavior to regulate body temperature. The animal moves into the warm zone and later retreats into shade. That behavior prevents the easy mistake that ectotherms simply let body temperature drift without regulation.",
+        "Mira now focuses on the center monitor. The display reports total energy use per unit time. Heat production can estimate it. Oxygen consumption and carbon dioxide production can estimate it as well. She names this quantity **metabolic rate** only after the measurement channels are visible. Metabolic rate is the total amount of energy an organism uses per unit time. The energy ledger from the previous room suddenly has a clock attached to it. A larger metabolic rate means the organism is spending energy faster over that interval.",
+        "Two additional organisms appear on the right, one much larger than the other. Mira asks you to compare two different ways of describing energy use. The larger organism generally has the greater **absolute metabolic rate** because its whole body uses more energy overall. Yet when energy use is divided by body mass, the smaller organism generally has the greater **mass-specific metabolic rate**. Body size and metabolic rate therefore cannot be summarized by a single statement that smaller or larger organisms always use more energy. Absolute metabolic rate generally rises with body size, while mass-specific metabolic rate generally falls as body size increases.",
+        "Mira draws a line between the two animal stations and labels the comparison **endothermy and ectothermy**. Endotherms rely more heavily on metabolically generated heat. Ectotherms rely more heavily on external heat and can regulate temperature behaviorally. She leaves the words constant temperature and variable temperature off the wall because those labels do not define the two groups. The chamber is about predominant heat source and energetic demand.",
+        "A set of doors opens beyond the right-hand temperature display. Through them you can see a forest model built inside a vast glass atrium. Soil, air, water, plants, animals, and microorganisms occupy separate layers. Mira carries the energy ledger forward. The next question widens from how one organism spends energy to where that organism sits inside an ecological system."
+      ],
+      "story_close": "A set of doors opens beyond the right-hand temperature display. Through them you can see a forest model built inside a vast glass atrium. Soil, air, water, plants, animals, and microorganisms occupy separate layers. Mira carries the energy ledger forward. The next question widens from how one organism spends energy to where that organism sits inside an ecological system.",
+      "object_ids": [
+        "U8-K-114",
+        "U8-K-010",
+        "U8-K-111",
+        "U8-K-113",
+        "U8-K-115"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-114",
+          "term": "Endotherm",
+          "story": "the the heat-source comparison platform where the defining ecological relationship is made visible before the term is named",
+          "science": "An endotherm produces enough metabolic heat to play a major role in maintaining body temperature.",
+          "exact_name": true,
+          "hint": "the heat-source comparison platform",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-010",
+          "term": "Endothermy and ectothermy",
+          "story": "the the heat-source comparison platform where the defining ecological relationship is made visible before the term is named",
+          "science": "Endotherms use metabolically generated heat to regulate body temperature; ectotherms rely more on external heat and may regulate temperature behaviorally.",
+          "exact_name": false,
+          "hint": "the heat-source comparison platform",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-111",
+          "term": "Metabolic rate",
+          "story": "the the heat-source comparison platform where the defining ecological relationship is made visible before the term is named",
+          "science": "Metabolic rate is the total amount of energy an organism uses per unit time and can be estimated from heat production or rates of oxygen consumption/carbon dioxide production.",
+          "exact_name": true,
+          "hint": "the heat-source comparison platform",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-113",
+          "term": "Body size and metabolic rate",
+          "story": "the the heat-source comparison platform where the defining ecological relationship is made visible before the term is named",
+          "science": "Absolute metabolic rate generally increases with body size, while mass-specific metabolic rate generally decreases as body size increases.",
+          "exact_name": false,
+          "hint": "the heat-source comparison platform",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-115",
+          "term": "Ectotherm",
+          "story": "the the heat-source comparison platform where the defining ecological relationship is made visible before the term is named",
+          "science": "An ectotherm gains most body heat from external sources and can use behavior to regulate body temperature.",
+          "exact_name": true,
+          "hint": "the heat-source comparison platform",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-010",
+          "term": "Endothermy and ectothermy",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD11: Distinguish predominant heat source without claiming either group has constant versus variable body temperature by definition. Keep Endotherm, Ectotherm physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Ecological Scale Atrium",
+      "f3_scene_brief_id": "F3-U8-L14",
+      "narrative_word_count": 578
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U8-L15",
+      "locus": "Ecological Scale Atrium",
+      "title": "A community does not include the whole environment",
+      "scene_kicker": "At Ecological Scale Atrium, reconstruct organism/population/community nesting → ecosystem exchange boundary → biotic/abiotic component and biome context panel and explain Ecosystem from the actual ecological mechanism.",
+      "location_description": "Ecological Scale Atrium",
+      "scene_layout": {
+        "orientation": "Enter Ecological Scale Atrium and stop at the nested ecosystem-scale model. Keep organism/population/community nesting fixed on the left, ecosystem exchange boundary as the working center, and biotic/abiotic component and biome context panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "organism/population/community nesting",
+            "symbol": "L",
+            "description": "A conventional scientific representation of organism/population/community nesting, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "ecosystem exchange boundary",
+            "symbol": "C",
+            "description": "The main scientific work model at Ecological Scale Atrium, centered on the nested ecosystem-scale model."
+          },
+          {
+            "position": "right",
+            "label": "biotic/abiotic component and biome context panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of biotic/abiotic component and biome context panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "organism/population/community nesting",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of organism/population/community nesting, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "ecosystem exchange boundary",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Ecological Scale Atrium, centered on the nested ecosystem-scale model.",
+          "job": "Execute the defining action beginning with: Place populations inside communities and communities with their abiotic environment inside ecosystems, then situate ecosystems within broader biomes."
+        },
+        {
+          "name": "biotic/abiotic component and biome context panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of biotic/abiotic component and biome context panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "You enter the **Ecological Scale Atrium** from an upper walkway. The space is built as a set of nested transparent enclosures, each larger than the one before it. On your **left**, a single organism stands inside a marked population, and several populations fit inside a larger community enclosure. Directly **ahead**, the community shares a glass boundary with soil, water, air, temperature sensors, and other nonliving conditions. On your **right**, a regional wall groups many ecosystems under broader climate and vegetation patterns. Mira locks the transparent ledger onto the center railing and makes you trace the nesting from smallest visible level to largest before anything is named.",
+      "story_paragraphs": [
+        "You enter the **Ecological Scale Atrium** from an upper walkway. The space is built as a set of nested transparent enclosures, each larger than the one before it. On your **left**, a single organism stands inside a marked population, and several populations fit inside a larger community enclosure. Directly **ahead**, the community shares a glass boundary with soil, water, air, temperature sensors, and other nonliving conditions. On your **right**, a regional wall groups many ecosystems under broader climate and vegetation patterns. Mira locks the transparent ledger onto the center railing and makes you trace the nesting from smallest visible level to largest before anything is named.",
+        "She begins on the left. One species group occupies the population enclosure. Several different populations occupy the community enclosure together. The community is still surrounded by a boundary. It does not yet include the nonliving water, mineral conditions, temperature, or light outside that boundary. Mira then opens exchange ports between the community and the physical environment. Water moves in. Carbon dioxide crosses the boundary. Heat leaves. Nutrients move between organisms and soil. Only after those exchanges are visible does she name an **ecosystem**. An ecosystem includes a biological community and the abiotic environment with which organisms exchange energy and matter.",
+        "Mira points back through the nesting sequence and labels it **ecological levels**. Populations are nested within communities. Communities interact with abiotic conditions inside ecosystems. Ecosystems can be grouped within broader biomes that share major climate and biological patterns. The route keeps the levels visible at the same time so population, community, ecosystem, and biome cannot quietly substitute for one another.",
+        "The center boundary now becomes a sorting gate. A living tree passes through the biological side. A bacterium follows it. Fallen leaf material from an organism is placed with the living or once-living components. A predator-prey relationship is represented on the same side because it is a biological interaction. Mira names these **biotic factors** only after the category can be reconstructed from the examples. A biotic factor is a living or once-living component or biological interaction in an ecosystem.",
+        "On the other half of the gate, sunlight, temperature, pH, water availability, salinity, and mineral conditions pass through a separate track. Mira names them **abiotic factors** after the distinction is visible. An abiotic factor is a nonliving physical or chemical component of the environment. The two tracks remain side by side because many ecological outcomes emerge from interactions between them. A plant is biotic. Soil pH is abiotic. Herbivory is biotic. Temperature is abiotic.",
+        "Mira now chooses one exchange to make the ecosystem definition operational. Sunlight enters from above. Producers capture part of that energy. Carbon and nutrients move between organisms and the physical environment. The energy column on the transparent ledger moves in one direction while the matter column remains traceable through both living and nonliving compartments. The atrium has become more than a list of levels. It is a working boundary across which energy and matter move.",
+        "At the far end, two enormous arrows appear on a split gate. The left arrow runs forward through an ENERGY lane and fades toward a heat vent. The right arrow loops through a MATTER lane and returns to labeled reservoirs. Mira does not let you cross yet. The atrium has established what an ecosystem contains. The next room will decide what can flow through it, what can cycle, and what can never be created from nothing."
+      ],
+      "story_close": "At the far end, two enormous arrows appear on a split gate. The left arrow runs forward through an ENERGY lane and fades toward a heat vent. The right arrow loops through a MATTER lane and returns to labeled reservoirs. Mira does not let you cross yet. The atrium has established what an ecosystem contains. The next room will decide what can flow through it, what can cycle, and what can never be created from nothing.",
+      "object_ids": [
+        "U8-K-104",
+        "U8-K-014",
+        "U8-K-105",
+        "U8-K-106"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-104",
+          "term": "Ecosystem",
+          "story": "the the nested ecosystem-scale model where the defining ecological relationship is made visible before the term is named",
+          "science": "An ecosystem includes a biological community and the abiotic environment with which organisms exchange energy and matter.",
+          "exact_name": true,
+          "hint": "the nested ecosystem-scale model",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-014",
+          "term": "Ecological levels",
+          "story": "the the nested ecosystem-scale model where the defining ecological relationship is made visible before the term is named",
+          "science": "Ecological organization includes populations, communities, ecosystems, and biomes.",
+          "exact_name": false,
+          "hint": "the nested ecosystem-scale model",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-105",
+          "term": "Biotic factor",
+          "story": "the the nested ecosystem-scale model where the defining ecological relationship is made visible before the term is named",
+          "science": "A biotic factor is a living or once-living component or biological interaction in an ecosystem.",
+          "exact_name": true,
+          "hint": "the nested ecosystem-scale model",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-106",
+          "term": "Abiotic factor",
+          "story": "the the nested ecosystem-scale model where the defining ecological relationship is made visible before the term is named",
+          "science": "An abiotic factor is a nonliving physical or chemical component of the environment.",
+          "exact_name": true,
+          "hint": "the nested ecosystem-scale model",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-014",
+          "term": "Ecological levels",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent.",
+        "Discrimination requirement U8-MD20: Keep ecological levels nested and do not collapse population/community/ecosystem. Keep Ecological levels, Population ecology, Community, Ecosystem physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD12: Separate living/biological components from nonliving physical and chemical components. Keep Biotic factor, Abiotic factor physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Energy-Matter Split Gate",
+      "f3_scene_brief_id": "F3-U8-L15",
+      "narrative_word_count": 570
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U8-L16",
+      "locus": "Energy-Matter Split Gate",
+      "title": "One column keeps moving while the other comes back",
+      "scene_kicker": "At Energy-Matter Split Gate, reconstruct energy input/transformation lane → transfer and heat-dissipation gate → matter reservoir/cycling lane and explain First law of thermodynamics from the actual ecological mechanism.",
+      "location_description": "Energy-Matter Split Gate",
+      "scene_layout": {
+        "orientation": "Enter Energy-Matter Split Gate and stop at the paired energy-flow and matter-cycle diagram. Keep energy input/transformation lane fixed on the left, transfer and heat-dissipation gate as the working center, and matter reservoir/cycling lane fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "energy input/transformation lane",
+            "symbol": "L",
+            "description": "A conventional scientific representation of energy input/transformation lane, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "transfer and heat-dissipation gate",
+            "symbol": "C",
+            "description": "The main scientific work model at Energy-Matter Split Gate, centered on the paired energy-flow and matter-cycle diagram."
+          },
+          {
+            "position": "right",
+            "label": "matter reservoir/cycling lane",
+            "symbol": "R",
+            "description": "A conventional scientific representation of matter reservoir/cycling lane, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "energy input/transformation lane",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of energy input/transformation lane, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "transfer and heat-dissipation gate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Energy-Matter Split Gate, centered on the paired energy-flow and matter-cycle diagram.",
+          "job": "Execute the defining action beginning with: Track energy through transfer or transformation without creating or destroying it, then mark energy that becomes less available for biological work, often as heat."
+        },
+        {
+          "name": "matter reservoir/cycling lane",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of matter reservoir/cycling lane, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The **Energy-Matter Split Gate** is built like two adjacent transit lines that share the same ecosystem but obey different bookkeeping rules. On your **left**, the ENERGY lane begins at an input lamp and chemical-energy port. Directly **ahead**, a transfer gate sends energy through organisms while a heat vent rises above it. On your **right**, the MATTER lane passes through organisms and then loops into labeled environmental reservoirs. Mira places the transparent ledger across the dividing rail so its energy column aligns with the left lane and its matter column aligns with the right.",
+      "story_paragraphs": [
+        "The **Energy-Matter Split Gate** is built like two adjacent transit lines that share the same ecosystem but obey different bookkeeping rules. On your **left**, the ENERGY lane begins at an input lamp and chemical-energy port. Directly **ahead**, a transfer gate sends energy through organisms while a heat vent rises above it. On your **right**, the MATTER lane passes through organisms and then loops into labeled environmental reservoirs. Mira places the transparent ledger across the dividing rail so its energy column aligns with the left lane and its matter column aligns with the right.",
+        "She sends one packet of energy into the left lane. It enters a producer, is transformed into chemical energy, and later moves through a feeding interaction. At every stage the form can change, but the total accounting does not permit energy to appear from nowhere or vanish into nothing. Only after the transformations are visible does Mira write **First law of thermodynamics** above the entry gate. Energy can be transferred or transformed, but it is not created or destroyed.",
+        "The packet moves through another transfer. This time the heat vent glows. Some energy remains in forms that can support biological work, while some becomes less available for that work and disperses as heat. Mira names the **Second law of thermodynamics** only after the heat loss and reduced availability can be seen. Every transfer or transformation increases the entropy of the universe, and some energy becomes less available to do biological work, often as heat. The room does not say energy has been destroyed. It says the usefulness of that energy for further biological work has changed.",
+        "Mira now starts the matter lane. A carbon tracer enters a producer, moves into a consumer, returns through waste and decomposition, and reaches an environmental reservoir from which it can later enter organisms again. The matter tracer changes molecular form many times, yet the atoms remain traceable. This is **conservation of matter**. Matter is conserved in ordinary biological and ecological transformations and can cycle among reservoirs. Mira keeps that statement on the right side because it is distinct from the first law of thermodynamics even though both involve conservation.",
+        "The two lanes continue side by side. The energy lane enters ecosystems, moves through trophic relationships, and ultimately leaves largely as heat. It does not loop back to the original input lamp as recycled ecosystem energy. The matter lane does loop among reservoirs and organisms. Mira writes **energy flow and matter cycling** across the middle rail and then marks **energy flow is one-way** beside the heat vent. Energy flows through ecosystems while matter and nutrients cycle through biogeochemical processes. Matter remains conserved, while energy ultimately leaves largely as heat.",
+        "She freezes both lanes at once. On the left, the energy arrow points forward toward the vent. On the right, matter is still moving among reservoirs. That picture is the distinction the entire journey will keep using. If energy were shown circling back like carbon or nitrogen, the ecosystem accounting would fail. If matter were shown disappearing as heat, the accounting would also fail."
+      ],
+      "story_close": "She freezes both lanes at once. On the left, the energy arrow points forward toward the vent. On the right, matter is still moving among reservoirs. That picture is the distinction the entire journey will keep using. If energy were shown circling back like carbon or nitrogen, the ecosystem accounting would fail. If matter were shown disappearing as heat, the accounting would also fail.",
+      "object_ids": [
+        "U8-K-107",
+        "U8-K-015",
+        "U8-K-108",
+        "U8-K-109",
+        "U8-K-122"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-107",
+          "term": "First law of thermodynamics",
+          "story": "the the paired energy-flow and matter-cycle diagram where the defining ecological relationship is made visible before the term is named",
+          "science": "Energy is conserved: it can be transferred or transformed but is not created or destroyed.",
+          "exact_name": true,
+          "hint": "the paired energy-flow and matter-cycle diagram",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-015",
+          "term": "Energy flow and matter cycling",
+          "story": "the the paired energy-flow and matter-cycle diagram where the defining ecological relationship is made visible before the term is named",
+          "science": "Energy flows through ecosystems while matter and nutrients cycle through biogeochemical processes; matter is conserved.",
+          "exact_name": false,
+          "hint": "the paired energy-flow and matter-cycle diagram",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-108",
+          "term": "Second law of thermodynamics",
+          "story": "the the paired energy-flow and matter-cycle diagram where the defining ecological relationship is made visible before the term is named",
+          "science": "Every energy transfer or transformation increases the entropy of the universe; some energy becomes less available to do biological work, often as heat.",
+          "exact_name": true,
+          "hint": "the paired energy-flow and matter-cycle diagram",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-109",
+          "term": "Conservation of matter",
+          "story": "the the paired energy-flow and matter-cycle diagram where the defining ecological relationship is made visible before the term is named",
+          "science": "Matter is conserved in ordinary biological and ecological transformations and is cycled among reservoirs; this is distinct from the first law of thermodynamics.",
+          "exact_name": false,
+          "hint": "the paired energy-flow and matter-cycle diagram",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-122",
+          "term": "Energy flow is one-way",
+          "story": "the the paired energy-flow and matter-cycle diagram where the defining ecological relationship is made visible before the term is named",
+          "science": "Energy enters ecosystems, moves through trophic relationships, and ultimately leaves largely as heat; energy is not recycled through ecosystems.",
+          "exact_name": false,
+          "hint": "the paired energy-flow and matter-cycle diagram",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-107",
+          "term": "First law of thermodynamics",
+          "dependency": "Unit 3 thermodynamics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-015",
+          "term": "Energy flow and matter cycling",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-108",
+          "term": "Second law of thermodynamics",
+          "dependency": "Unit 3 thermodynamics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-109",
+          "term": "Conservation of matter",
+          "dependency": "Unit 1 chemistry",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-007: Separate canonical locks for first law, second law, and conservation of matter.",
+        "Resolved F1 guard RF-U8-007: Separate canonical locks for first law, second law, and conservation of matter.",
+        "Discrimination requirement U8-MD13: Energy ultimately leaves as heat while matter is conserved and cycles among reservoirs. Keep Energy flow and matter cycling, Conservation of matter, Energy flow is one-way physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-107",
+      "checkpoint_prompt": "Without looking back, identify or explain First law of thermodynamics from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Energy is conserved: it can be transferred or transformed but is not created or destroyed.",
+      "next_locus": "Carbon and Energy Acquisition Workshop",
+      "f3_scene_brief_id": "F3-U8-L16",
+      "narrative_word_count": 511
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U8-L17",
+      "locus": "Carbon and Energy Acquisition Workshop",
+      "title": "Carbon source and energy source are different questions",
+      "scene_kicker": "At Carbon and Energy Acquisition Workshop, reconstruct inorganic carbon and external-energy inputs → autotroph/chemosynthesis conversion bench → heterotroph organic-matter intake panel and explain Autotroph from the actual ecological mechanism.",
+      "location_description": "Carbon and Energy Acquisition Workshop",
+      "scene_layout": {
+        "orientation": "Enter Carbon and Energy Acquisition Workshop and stop at the carbon-source/energy-source matrix. Keep inorganic carbon and external-energy inputs fixed on the left, autotroph/chemosynthesis conversion bench as the working center, and heterotroph organic-matter intake panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "inorganic carbon and external-energy inputs",
+            "symbol": "L",
+            "description": "A conventional scientific representation of inorganic carbon and external-energy inputs, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "autotroph/chemosynthesis conversion bench",
+            "symbol": "C",
+            "description": "The main scientific work model at Carbon and Energy Acquisition Workshop, centered on the carbon-source/energy-source matrix."
+          },
+          {
+            "position": "right",
+            "label": "heterotroph organic-matter intake panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of heterotroph organic-matter intake panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "inorganic carbon and external-energy inputs",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of inorganic carbon and external-energy inputs, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "autotroph/chemosynthesis conversion bench",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Carbon and Energy Acquisition Workshop, centered on the carbon-source/energy-source matrix.",
+          "job": "Execute the defining action beginning with: Hold carbon source and energy source as separate variables before naming nutritional modes."
+        },
+        {
+          "name": "heterotroph organic-matter intake panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of heterotroph organic-matter intake panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The **Carbon and Energy Acquisition Workshop** is arranged as a three-part assembly floor. On your **left**, an inorganic-carbon bin stands beside two external-energy ports, one admitting light and one feeding in reduced inorganic chemicals. Directly **ahead**, a conversion bench can assemble organic molecules from inorganic carbon using captured energy. On your **right**, a separate intake panel receives already formed organic matter from organisms, waste, or detritus. Mira locks the transparent ledger above the center bench and leaves CARBON SOURCE and ENERGY SOURCE written as two separate questions.",
+      "story_paragraphs": [
+        "The **Carbon and Energy Acquisition Workshop** is arranged as a three-part assembly floor. On your **left**, an inorganic-carbon bin stands beside two external-energy ports, one admitting light and one feeding in reduced inorganic chemicals. Directly **ahead**, a conversion bench can assemble organic molecules from inorganic carbon using captured energy. On your **right**, a separate intake panel receives already formed organic matter from organisms, waste, or detritus. Mira locks the transparent ledger above the center bench and leaves CARBON SOURCE and ENERGY SOURCE written as two separate questions.",
+        "She feeds inorganic carbon into the center bench and shines light onto an energy-capture system. Organic molecules appear on the output tray. The carbon came from an inorganic source, while the energy came from outside the organism. Mira names an **autotroph** only after both inputs are visible. An autotroph uses an external energy source to build organic molecules from inorganic carbon. The term therefore describes a carbon-building strategy linked to external energy capture, not simply an organism that happens to be green.",
+        "Mira keeps the carbon input unchanged and swaps the light port for a chemical-energy port. Reduced inorganic substances enter a reaction chamber where oxidation releases chemical energy that the organism can capture and transform. Organic molecules are still built from inorganic carbon. She names **chemosynthesis** after the chemical-energy pathway is working. Chemosynthetic organisms can capture energy from small inorganic molecules, and this can occur in the absence of oxygen. The room deliberately avoids suggesting that oxygen must always be present.",
+        "The chemical port flashes a warning when the ledger tries to add more energy than entered. Mira resets it and labels **chemosynthetic energy capture**. Chemosynthetic organisms obtain energy by oxidizing inorganic substances. The reaction transforms energy from chemical sources. It does not create energy. This preserves the same first-law accounting from the previous room even when sunlight is absent.",
+        "Mira now activates the right-hand intake panel. An animal takes in organic molecules made by other organisms and obtains both organic carbon and usable chemical energy from that material. Only after the source is visible does she write **heterotroph**. A heterotroph obtains organic carbon and energy by consuming other organisms or organic matter. Heterotrophs can metabolize carbohydrates, lipids, and proteins that ultimately trace back through food relationships to primary production.",
+        "The center bench and right intake panel remain illuminated together. Mira labels the broader processes **autotrophic energy capture** and **heterotrophic energy capture**. Autotrophs capture energy from physical or chemical sources in the environment while building organic matter from inorganic carbon. Heterotrophs obtain energy and matter from organic material. Carbon source and energy source stay separate on the ledger so light energy, chemical energy, inorganic carbon, and organic carbon cannot collapse into one vague idea of food.",
+        "A tall door rises behind the workshop. Beyond it is a vertical tower with feeding positions marked on ladders, a detritus chute running along the right wall, and organisms waiting at different levels. Mira detaches the ledger from the conversion bench. The workshop has explained how organic matter first enters biological food systems and how consumers obtain it. The tower will now assign organisms to feeding positions according to where their energy and matter come from."
+      ],
+      "story_close": "A tall door rises behind the workshop. Beyond it is a vertical tower with feeding positions marked on ladders, a detritus chute running along the right wall, and organisms waiting at different levels. Mira detaches the ledger from the conversion bench. The workshop has explained how organic matter first enters biological food systems and how consumers obtain it. The tower will now assign organisms to feeding positions according to where their energy and matter come from.",
+      "object_ids": [
+        "U8-K-123",
+        "U8-K-025",
+        "U8-K-027",
+        "U8-K-028",
+        "U8-K-124",
+        "U8-K-125"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-123",
+          "term": "Autotroph",
+          "story": "the the carbon-source/energy-source matrix where the defining ecological relationship is made visible before the term is named",
+          "science": "An autotroph uses an external energy source to build organic molecules from inorganic carbon.",
+          "exact_name": true,
+          "hint": "the carbon-source/energy-source matrix",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-025",
+          "term": "Autotrophic energy capture",
+          "story": "the the carbon-source/energy-source matrix where the defining ecological relationship is made visible before the term is named",
+          "science": "Autotrophs capture energy from physical or chemical sources in the environment.",
+          "exact_name": false,
+          "hint": "the carbon-source/energy-source matrix",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-027",
+          "term": "Chemosynthesis",
+          "story": "the the carbon-source/energy-source matrix where the defining ecological relationship is made visible before the term is named",
+          "science": "Chemosynthetic organisms capture energy from small inorganic molecules, and this can occur in the absence of oxygen.",
+          "exact_name": true,
+          "hint": "the carbon-source/energy-source matrix",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-028",
+          "term": "Heterotrophic energy capture",
+          "story": "the the carbon-source/energy-source matrix where the defining ecological relationship is made visible before the term is named",
+          "science": "Heterotrophs obtain energy and matter by consuming organic matter derived from autotrophs and metabolizing carbohydrates, lipids, and proteins.",
+          "exact_name": false,
+          "hint": "the carbon-source/energy-source matrix",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-124",
+          "term": "Chemosynthetic energy capture",
+          "story": "the the carbon-source/energy-source matrix where the defining ecological relationship is made visible before the term is named",
+          "science": "Chemosynthetic organisms obtain energy by oxidizing inorganic substances; the energy is transformed from chemical sources, not created by the reaction.",
+          "exact_name": false,
+          "hint": "the carbon-source/energy-source matrix",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-125",
+          "term": "Heterotroph",
+          "story": "the the carbon-source/energy-source matrix where the defining ecological relationship is made visible before the term is named",
+          "science": "A heterotroph obtains organic carbon and energy by consuming other organisms or organic matter.",
+          "exact_name": true,
+          "hint": "the carbon-source/energy-source matrix",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-025",
+          "term": "Autotrophic energy capture",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-027",
+          "term": "Chemosynthesis",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-028",
+          "term": "Heterotrophic energy capture",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-029: All 50 current CED atoms are separately locked even where teacher slides are silent.",
+        "Resolved F1 guard RF-U8-008: Canonical lock says energy is captured/transformed from oxidation of inorganic molecules.",
+        "Discrimination requirement U8-MD14: Distinguish carbon/energy acquisition modes. Keep Autotroph, Heterotroph physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Trophic Ladder Tower",
+      "f3_scene_brief_id": "F3-U8-L17",
+      "narrative_word_count": 530
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U8-L18",
+      "locus": "Trophic Ladder Tower",
+      "title": "The position depends on what you eat",
+      "scene_kicker": "At Trophic Ladder Tower, reconstruct producer and primary-consumer levels → higher consumer and omnivory ladder → detritus/decomposer nutrient-return station and explain Trophic level from the actual ecological mechanism.",
+      "location_description": "Trophic Ladder Tower",
+      "scene_layout": {
+        "orientation": "Enter Trophic Ladder Tower and stop at the feeding-position ladder beside the detritus chute. Keep producer and primary-consumer levels fixed on the left, higher consumer and omnivory ladder as the working center, and detritus/decomposer nutrient-return station fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "producer and primary-consumer levels",
+            "symbol": "L",
+            "description": "A conventional scientific representation of producer and primary-consumer levels, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "higher consumer and omnivory ladder",
+            "symbol": "C",
+            "description": "The main scientific work model at Trophic Ladder Tower, centered on the feeding-position ladder beside the detritus chute."
+          },
+          {
+            "position": "right",
+            "label": "detritus/decomposer nutrient-return station",
+            "symbol": "R",
+            "description": "A conventional scientific representation of detritus/decomposer nutrient-return station, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "producer and primary-consumer levels",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of producer and primary-consumer levels, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "higher consumer and omnivory ladder",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Trophic Ladder Tower, centered on the feeding-position ladder beside the detritus chute.",
+          "job": "Execute the defining action beginning with: Assign trophic position by source of energy and matter, beginning with producers and primary consumers."
+        },
+        {
+          "name": "detritus/decomposer nutrient-return station",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of detritus/decomposer nutrient-return station, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The **Trophic Ladder Tower** rises several stories above you, yet its route remains easy to redraw. On your **left**, the lowest platforms hold producers and the organisms that feed directly on them. Directly **ahead**, a central ladder supports higher consumers and branches whenever an omnivore feeds through more than one pathway. On your **right**, a steep chute carries dead organisms, shed tissues, and waste downward to a decomposer station connected to inorganic nutrient reservoirs. Mira clips the transparent ledger to the base rail and makes every feeding position answer one question. Where did this organism obtain its energy and matter.",
+      "story_paragraphs": [
+        "The **Trophic Ladder Tower** rises several stories above you, yet its route remains easy to redraw. On your **left**, the lowest platforms hold producers and the organisms that feed directly on them. Directly **ahead**, a central ladder supports higher consumers and branches whenever an omnivore feeds through more than one pathway. On your **right**, a steep chute carries dead organisms, shed tissues, and waste downward to a decomposer station connected to inorganic nutrient reservoirs. Mira clips the transparent ledger to the base rail and makes every feeding position answer one question. Where did this organism obtain its energy and matter.",
+        "A plant occupies the first platform. It built organic molecules from inorganic carbon using captured energy, so Mira labels it a **producer**. A producer is an autotroph that incorporates inorganic carbon into organic molecules using captured energy. Above it, an herbivore feeds directly on the plant. Mira names the herbivore a **primary consumer** only after the feeding link is visible. A primary consumer feeds directly on producers.",
+        "A predator then consumes the herbivore. It enters the next position and becomes a **secondary consumer**. A secondary consumer feeds on primary consumers. Mira points to the entire vertical arrangement and names each feeding position a **trophic level**. A trophic level is a feeding position in a food chain or food web based on how organisms obtain energy and matter. The number beside a platform has meaning only because the feeding relationship underneath it is visible.",
+        "The central ladder branches when an omnivore feeds on both plant material and animal prey. Mira refuses to force it into one permanent rung. Tertiary and higher consumers can occupy successively higher trophic positions, but real food webs often contain omnivory and do not form perfectly simple linear chains. The tower therefore allows one organism to participate in more than one feeding pathway depending on what it is consuming.",
+        "On the right, dead leaves, an animal carcass, shed tissue, and waste enter the chute. Mira names this material **detritus**. Detritus is nonliving organic material such as dead organisms, shed tissues, and waste. Fungi and bacteria at the bottom obtain energy from that dead organic matter. Mira names them **decomposers** after their role is visible. A decomposer obtains energy from dead organic matter and releases inorganic nutrients that can be reused by producers.",
+        "The nutrient-return pipe sends inorganic matter back toward producer-accessible reservoirs. The energy column on the transparent ledger does something different. Energy obtained by decomposers supports their metabolism and eventually contributes to heat loss just as it does elsewhere in the ecosystem. Decomposers help return matter and nutrients. They do not recycle energy back into the producer platform. Mira taps the two columns to keep that split from the previous room intact.",
+        "The tower lights its feeding links in several directions, and the simple ladder suddenly looks inadequate. A primary consumer has more than one food source. A predator has more than one prey species. The omnivore connects several levels. Mira walks toward a dark projection room beside the tower. The next task will flatten these feeding positions into arrows and decide exactly which direction every arrow must point."
+      ],
+      "story_close": "The tower lights its feeding links in several directions, and the simple ladder suddenly looks inadequate. A primary consumer has more than one food source. A predator has more than one prey species. The omnivore connects several levels. Mira walks toward a dark projection room beside the tower. The next task will flatten these feeding positions into arrows and decide exactly which direction every arrow must point.",
+      "object_ids": [
+        "U8-K-116",
+        "U8-K-117",
+        "U8-K-118",
+        "U8-K-119",
+        "U8-K-120",
+        "U8-K-121",
+        "U8-K-126"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-116",
+          "term": "Trophic level",
+          "story": "the the feeding-position ladder beside the detritus chute where the defining ecological relationship is made visible before the term is named",
+          "science": "A trophic level is a feeding position in a food chain or food web based on how organisms obtain energy and matter.",
+          "exact_name": true,
+          "hint": "the feeding-position ladder beside the detritus chute",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-117",
+          "term": "Producer",
+          "story": "the the feeding-position ladder beside the detritus chute where the defining ecological relationship is made visible before the term is named",
+          "science": "A producer is an autotroph that incorporates inorganic carbon into organic molecules using captured energy.",
+          "exact_name": true,
+          "hint": "the feeding-position ladder beside the detritus chute",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-118",
+          "term": "Primary consumer",
+          "story": "the the feeding-position ladder beside the detritus chute where the defining ecological relationship is made visible before the term is named",
+          "science": "A primary consumer feeds directly on producers.",
+          "exact_name": true,
+          "hint": "the feeding-position ladder beside the detritus chute",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-119",
+          "term": "Secondary consumer",
+          "story": "the the feeding-position ladder beside the detritus chute where the defining ecological relationship is made visible before the term is named",
+          "science": "A secondary consumer feeds on primary consumers.",
+          "exact_name": true,
+          "hint": "the feeding-position ladder beside the detritus chute",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-120",
+          "term": "Tertiary and higher consumers",
+          "story": "the the feeding-position ladder beside the detritus chute where the defining ecological relationship is made visible before the term is named",
+          "science": "Tertiary and higher consumers feed at successively higher trophic positions; real food webs often contain omnivory and do not form simple linear chains.",
+          "exact_name": false,
+          "hint": "the feeding-position ladder beside the detritus chute",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-121",
+          "term": "Decomposer",
+          "story": "the the feeding-position ladder beside the detritus chute where the defining ecological relationship is made visible before the term is named",
+          "science": "A decomposer obtains energy from dead organic matter and releases inorganic nutrients that can be reused by producers.",
+          "exact_name": true,
+          "hint": "the feeding-position ladder beside the detritus chute",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-126",
+          "term": "Detritus",
+          "story": "the the feeding-position ladder beside the detritus chute where the defining ecological relationship is made visible before the term is named",
+          "science": "Detritus is nonliving organic material such as dead organisms, shed tissues, and waste.",
+          "exact_name": true,
+          "hint": "the feeding-position ladder beside the detritus chute",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD15: Discriminate trophic roles from trophic-level numbering alone. Keep Producer, Primary consumer, Secondary consumer, Decomposer physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Food-Web Projection Room",
+      "f3_scene_brief_id": "F3-U8-L18",
+      "narrative_word_count": 523
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U8-L19",
+      "locus": "Food-Web Projection Room",
+      "title": "Follow the energy, not the teeth",
+      "scene_kicker": "At Food-Web Projection Room, reconstruct linear resource-prey sequence → interconnected feeding network → consumer energy/matter receipt endpoints and explain Food web from the actual ecological mechanism.",
+      "location_description": "Food-Web Projection Room",
+      "scene_layout": {
+        "orientation": "Enter Food-Web Projection Room and stop at the chain-to-web arrow wall. Keep linear resource-prey sequence fixed on the left, interconnected feeding network as the working center, and consumer energy/matter receipt endpoints fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "linear resource-prey sequence",
+            "symbol": "L",
+            "description": "A conventional scientific representation of linear resource-prey sequence, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "interconnected feeding network",
+            "symbol": "C",
+            "description": "The main scientific work model at Food-Web Projection Room, centered on the chain-to-web arrow wall."
+          },
+          {
+            "position": "right",
+            "label": "consumer energy/matter receipt endpoints",
+            "symbol": "R",
+            "description": "A conventional scientific representation of consumer energy/matter receipt endpoints, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "linear resource-prey sequence",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of linear resource-prey sequence, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "interconnected feeding network",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Food-Web Projection Room, centered on the chain-to-web arrow wall.",
+          "job": "Execute the defining action beginning with: Build one simplified food chain first and orient every arrow from resource or prey toward the consumer receiving energy and matter."
+        },
+        {
+          "name": "consumer energy/matter receipt endpoints",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of consumer energy/matter receipt endpoints, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The **Food-Web Projection Room** is dark except for three wall panels. On your **left**, one simplified feeding sequence appears as a line of organisms. Directly **ahead**, a much larger projection wall can add branches until the sequence becomes a network. On your **right**, illuminated receiver circles mark the organism that obtains energy and matter at the end of each feeding link. Mira places the transparent ledger on a console beneath the center wall so the arrow direction can be checked against actual transfer.",
+      "story_paragraphs": [
+        "The **Food-Web Projection Room** is dark except for three wall panels. On your **left**, one simplified feeding sequence appears as a line of organisms. Directly **ahead**, a much larger projection wall can add branches until the sequence becomes a network. On your **right**, illuminated receiver circles mark the organism that obtains energy and matter at the end of each feeding link. Mira places the transparent ledger on a console beneath the center wall so the arrow direction can be checked against actual transfer.",
+        "She begins with one producer, one herbivore, and one predator. The producer is eaten by the herbivore, and the herbivore is eaten by the predator. Mira draws the first arrow from the producer toward the herbivore and the second from the herbivore toward the predator. The arrowheads point toward the organism receiving transferred energy and matter. Only after the linear route is complete does she name it a **food chain**. A food chain is a simplified linear sequence of energy and matter transfer through feeding relationships.",
+        "Mira then adds another plant, a second herbivore, an omnivore, and a predator that can consume more than one prey species. New arrows spread across the center wall until several feeding paths overlap. The chain has become a **food web**. A food web represents interconnected feeding relationships among organisms in a community. The web keeps the same arrow convention even though the pattern is no longer linear.",
+        "To test you, Mira deliberately reverses one arrow so it points from a fox toward the rabbit the fox eats. She does not ask which animal attacks which. She asks which organism receives the transferred energy and matter in that feeding event. The rabbit does not receive the fox’s biomass when the fox eats the rabbit. The fox receives energy and matter from the rabbit. You turn the arrow around so it runs from rabbit to fox. Mira labels this rule **food-web arrow direction**. In ecological food chains and webs, arrows conventionally point from resource or prey toward the consumer receiving the energy and matter.",
+        "The center projection now pulses energy along several pathways. Some producer material reaches herbivores. Some reaches omnivores directly. Some detrital material takes another route toward decomposers. Matter is transferred along the same feeding links while the energy ledger keeps losing availability through metabolism and heat. The web makes the system more realistic without changing the meaning of a single arrow.",
+        "Mira asks you to redraw only three relationships from memory. Start with a resource or prey. Point the arrow toward the consumer that receives it. Then add enough links to show why a real community is a web rather than one rigid chain. If the arrows can be reconstructed from transfer logic, the picture remains useful even when the species change.",
+        "A rectangular light appears at the back of the room with three columns labeled GPP, R, and NPP. The food-web projection fades until only the producer nodes remain. Mira lifts the ledger from the console. Before energy can move through all those arrows, primary producers must first convert external energy and inorganic carbon into new organic matter. The next room will account for how much producer biomass is actually available to the rest of the web."
+      ],
+      "story_close": "A rectangular light appears at the back of the room with three columns labeled GPP, R, and NPP. The food-web projection fades until only the producer nodes remain. Mira lifts the ledger from the console. Before energy can move through all those arrows, primary producers must first convert external energy and inorganic carbon into new organic matter. The next room will account for how much producer biomass is actually available to the rest of the web.",
+      "object_ids": [
+        "U8-K-128",
+        "U8-K-127",
+        "U8-K-129"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-128",
+          "term": "Food web",
+          "story": "the the chain-to-web arrow wall where the defining ecological relationship is made visible before the term is named",
+          "science": "A food web represents interconnected feeding relationships among organisms in a community.",
+          "exact_name": true,
+          "hint": "the chain-to-web arrow wall",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-127",
+          "term": "Food chain",
+          "story": "the the chain-to-web arrow wall where the defining ecological relationship is made visible before the term is named",
+          "science": "A food chain is a simplified linear sequence of energy and matter transfer through feeding relationships.",
+          "exact_name": true,
+          "hint": "the chain-to-web arrow wall",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-129",
+          "term": "Food-web arrow direction",
+          "story": "the the chain-to-web arrow wall where the defining ecological relationship is made visible before the term is named",
+          "science": "In ecological food chains and webs, arrows conventionally point in the direction of energy/matter transfer from resource or prey to consumer.",
+          "exact_name": false,
+          "hint": "the chain-to-web arrow wall",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD16: Separate a simplified linear pathway from interconnected feeding relationships and retain arrow direction. Keep Food chain, Food web, Food-web arrow direction physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Production Accounting Ledger",
+      "f3_scene_brief_id": "F3-U8-L19",
+      "narrative_word_count": 538
+    },
+    {
+      "scene_index": 7,
+      "locus_id": "U8-L20",
+      "locus": "Production Accounting Ledger",
+      "title": "The producer keeps part of what it captures",
+      "scene_kicker": "At Production Accounting Ledger, reconstruct total producer capture/GPP column → producer respiration subtraction gate → NPP growth/consumer-transfer and secondary-production panel and explain Net primary production from the actual ecological mechanism.",
+      "location_description": "Production Accounting Ledger",
+      "scene_layout": {
+        "orientation": "Enter Production Accounting Ledger and stop at the GPP-respiration-NPP accounting board. Keep total producer capture/GPP column fixed on the left, producer respiration subtraction gate as the working center, and NPP growth/consumer-transfer and secondary-production panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "total producer capture/GPP column",
+            "symbol": "L",
+            "description": "A conventional scientific representation of total producer capture/GPP column, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "producer respiration subtraction gate",
+            "symbol": "C",
+            "description": "The main scientific work model at Production Accounting Ledger, centered on the GPP-respiration-NPP accounting board."
+          },
+          {
+            "position": "right",
+            "label": "NPP growth/consumer-transfer and secondary-production panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of NPP growth/consumer-transfer and secondary-production panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "total producer capture/GPP column",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of total producer capture/GPP column, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "producer respiration subtraction gate",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Production Accounting Ledger, centered on the GPP-respiration-NPP accounting board.",
+          "job": "Execute the defining action beginning with: Record total primary production as GPP before any producer respiration is subtracted."
+        },
+        {
+          "name": "NPP growth/consumer-transfer and secondary-production panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of NPP growth/consumer-transfer and secondary-production panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The **Production Accounting Ledger** looks like a bank vault built for ecosystems. On your **left**, a large producer column records the total rate at which autotrophs capture energy and build organic matter. Directly **ahead**, a respiration gate subtracts the energy used by those primary producers themselves. On your **right**, one panel records the producer biomass that remains available for growth and trophic transfer, while a separate lower panel records new heterotroph biomass. Mira aligns her transparent energy-matter ledger with the three stations and leaves the food web glowing faintly behind you.",
+      "story_paragraphs": [
+        "The **Production Accounting Ledger** looks like a bank vault built for ecosystems. On your **left**, a large producer column records the total rate at which autotrophs capture energy and build organic matter. Directly **ahead**, a respiration gate subtracts the energy used by those primary producers themselves. On your **right**, one panel records the producer biomass that remains available for growth and trophic transfer, while a separate lower panel records new heterotroph biomass. Mira aligns her transparent energy-matter ledger with the three stations and leaves the food web glowing faintly behind you.",
+        "She begins by allowing a group of producers to capture energy and incorporate inorganic carbon into organic matter. The total rate appears in the left column before any producer respiration is removed. Mira names this **gross primary production** after the full amount is visible. Gross primary production, or GPP, is the total rate of primary production before subtracting the producers’ own respiration.",
+        "The center gate now turns on. Producers use some of the captured energy in cellular respiration to support their own metabolism. The gate subtracts that respiration value, marked R, from GPP. The remaining amount moves into the right-hand producer-biomass panel. Mira writes **net primary production** only after the subtraction is complete. Net primary production, or NPP, is GPP minus the energy used by primary producers in respiration. NPP is the production available for producer growth and for transfer to consumers.",
+        "She writes the relationship directly on the glass as **NPP = GPP − R**. This is the **NPP equation**, with R representing respiration by primary producers. Mira keeps the equation attached to the three physical stations. GPP begins on the left. Producer respiration is removed in the center. NPP remains on the right. The equation is therefore a map of the room rather than a string of symbols to memorize without meaning.",
+        "Mira widens the left column and labels the broader process **primary production**. Primary production is the rate at which autotrophs convert energy and inorganic carbon into organic matter. Primary production may be photosynthetic or chemosynthetic. Photosynthetic organisms capture sunlight energy and contribute to primary productivity, while chemosynthetic producers use captured chemical energy, so the concept is not restricted to light-driven systems.",
+        "The lower right panel now follows a herbivore that eats producer biomass and converts part of assimilated food energy into new animal tissue. Mira names this **secondary production** only after the new heterotroph biomass appears. Secondary production is the generation of new heterotroph biomass from assimilated food energy. It belongs on a different pathway from GPP and NPP because it describes biomass production by heterotrophs after feeding.",
+        "Mira covers the term labels while leaving the three stations illuminated. Total producer capture on the left. Producer respiration in the center. Remaining producer production on the right. A separate heterotroph-growth panel below. The arrangement keeps gross primary production, net primary production, the NPP equation, and secondary production from collapsing into one vague idea of productivity."
+      ],
+      "story_close": "Mira covers the term labels while leaving the three stations illuminated. Total producer capture on the left. Producer respiration in the center. Remaining producer production on the right. A separate heterotroph-growth panel below. The arrangement keeps gross primary production, net primary production, the NPP equation, and secondary production from collapsing into one vague idea of productivity.",
+      "object_ids": [
+        "U8-K-132",
+        "U8-K-026",
+        "U8-K-130",
+        "U8-K-131",
+        "U8-K-133",
+        "U8-K-134"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-132",
+          "term": "Net primary production",
+          "story": "the the GPP-respiration-NPP accounting board where the defining ecological relationship is made visible before the term is named",
+          "science": "Net primary production (NPP) is GPP minus energy used by primary producers in respiration; NPP is the production available for producer growth and transfer to consumers.",
+          "exact_name": true,
+          "hint": "the GPP-respiration-NPP accounting board",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-026",
+          "term": "Photosynthesis and primary productivity",
+          "story": "the the GPP-respiration-NPP accounting board where the defining ecological relationship is made visible before the term is named",
+          "science": "Photosynthetic organisms capture sunlight energy and contribute to primary productivity.",
+          "exact_name": false,
+          "hint": "the GPP-respiration-NPP accounting board",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-130",
+          "term": "Primary production",
+          "story": "the the GPP-respiration-NPP accounting board where the defining ecological relationship is made visible before the term is named",
+          "science": "Primary production is the rate at which autotrophs convert energy and inorganic carbon into organic matter; it may be photosynthetic or chemosynthetic.",
+          "exact_name": true,
+          "hint": "the GPP-respiration-NPP accounting board",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-131",
+          "term": "Gross primary production",
+          "story": "the the GPP-respiration-NPP accounting board where the defining ecological relationship is made visible before the term is named",
+          "science": "Gross primary production (GPP) is the total rate of primary production before subtracting producers’ own respiration.",
+          "exact_name": true,
+          "hint": "the GPP-respiration-NPP accounting board",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-133",
+          "term": "NPP equation",
+          "story": "the the GPP-respiration-NPP accounting board where the defining ecological relationship is made visible before the term is named",
+          "science": "Net primary production is NPP = GPP − R, where R is respiration by primary producers.",
+          "exact_name": true,
+          "hint": "the GPP-respiration-NPP accounting board",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-134",
+          "term": "Secondary production",
+          "story": "the the GPP-respiration-NPP accounting board where the defining ecological relationship is made visible before the term is named",
+          "science": "Secondary production is the generation of new heterotroph biomass from assimilated food energy.",
+          "exact_name": true,
+          "hint": "the GPP-respiration-NPP accounting board",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-026",
+          "term": "Photosynthesis and primary productivity",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-009: Canonical primary production includes photosynthetic and chemosynthetic production, matching current CED.",
+        "Discrimination requirement U8-MD17: Keep total producer production, producer production after respiration, and new heterotroph biomass distinct. Keep Gross primary production, Net primary production, NPP equation, Secondary production physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-132",
+      "checkpoint_prompt": "Without looking back, identify or explain Net primary production from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Net primary production (NPP) is GPP minus energy used by primary producers in respiration; NPP is the production available for producer growth and transfer to consumers.",
+      "next_locus": "Trophic Transfer Pyramid Exit",
+      "f3_scene_brief_id": "F3-U8-L20",
+      "narrative_word_count": 487
+    },
+    {
+      "scene_index": 8,
+      "locus_id": "U8-L21",
+      "locus": "Trophic Transfer Pyramid Exit",
+      "title": "The ten percent sign is a warning, not a law",
+      "scene_kicker": "At Trophic Transfer Pyramid Exit, reconstruct producer energy/biomass base → successive trophic transfer steps → upper-level population and ecosystem response panel and explain Trophic transfer efficiency from the actual ecological mechanism.",
+      "location_description": "Trophic Transfer Pyramid Exit",
+      "scene_layout": {
+        "orientation": "Enter Trophic Transfer Pyramid Exit and stop at the variable-efficiency energy pyramid. Keep producer energy/biomass base fixed on the left, successive trophic transfer steps as the working center, and upper-level population and ecosystem response panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "producer energy/biomass base",
+            "symbol": "L",
+            "description": "A conventional scientific representation of producer energy/biomass base, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "successive trophic transfer steps",
+            "symbol": "C",
+            "description": "The main scientific work model at Trophic Transfer Pyramid Exit, centered on the variable-efficiency energy pyramid."
+          },
+          {
+            "position": "right",
+            "label": "upper-level population and ecosystem response panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of upper-level population and ecosystem response panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "producer energy/biomass base",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of producer energy/biomass base, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "successive trophic transfer steps",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Trophic Transfer Pyramid Exit, centered on the variable-efficiency energy pyramid.",
+          "job": "Execute the defining action beginning with: Transfer energy upward while showing that ecological transfer efficiency varies; use about ten percent only as a rule of thumb, never a fixed law."
+        },
+        {
+          "name": "upper-level population and ecosystem response panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of upper-level population and ecosystem response panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "Transparent energy-matter ledger",
+          "kind": "journey continuity object",
+          "visual": "a clear two-column ledger with ENERGY on the left and MATTER on the right, preserving energy dissipation and traceable matter across all nine stations",
+          "job": "keeps energy transformation, heat loss, biomass transfer, and matter conservation visible without replacing real organisms, trophic relationships, equations, reservoirs, or arrows"
+        }
+      ],
+      "continuity_object": "one transparent energy-matter ledger with an energy column that can dissipate as heat and a matter column that remains traceable through organisms and reservoirs",
+      "story_open": "The final room is the **Trophic Transfer Pyramid Exit**, a high chamber built around a broad producer platform. On your **left**, the producer base displays stored energy and biomass. Directly **ahead**, a staircase of transfer gates leads upward through successive trophic positions. On your **right**, a response wall tracks consumer population size, decomposer activity, and the number and size of trophic levels supported by the system. Mira sets the transparent ledger against the first step so the energy column can be followed upward while the matter column remains traceable through organisms and detrital pathways.",
+      "story_paragraphs": [
+        "The final room is the **Trophic Transfer Pyramid Exit**, a high chamber built around a broad producer platform. On your **left**, the producer base displays stored energy and biomass. Directly **ahead**, a staircase of transfer gates leads upward through successive trophic positions. On your **right**, a response wall tracks consumer population size, decomposer activity, and the number and size of trophic levels supported by the system. Mira sets the transparent ledger against the first step so the energy column can be followed upward while the matter column remains traceable through organisms and detrital pathways.",
+        "Energy moves from the producer base into the first consumer step. Only part of the energy represented in producer biomass becomes new consumer biomass. More is used in metabolism, lost in waste, or dissipated as heat during biological processes. Mira repeats the transfer at the next level and then changes the efficiency. The staircase does not use the same fraction every time. Only after the variation is visible does she name **trophic transfer efficiency**. Ecological transfer efficiency varies among systems. About ten percent is a useful average rule of thumb for energy converted to biomass at the next trophic level, not a fixed law.",
+        "A large TEN PERCENT sign flashes above the staircase, and Mira immediately turns it into a caution symbol. It can be useful for rough reasoning, yet the room refuses to treat it as an exact ecological constant. Different organisms, tissues, environments, and feeding relationships can change how much energy becomes biomass at the next level. The mechanism remains energy transfer with substantial losses from the biomass pathway, not obedience to a universal percentage.",
+        "Mira now reduces the incoming energy at the producer base. The lower platform dims. Less producer biomass becomes available, and the first consumer level receives less energy. Higher levels contract in turn. The right-hand population display falls for some consumer populations. Mira labels the first consequence **energy and population size**. Energy availability can change population size.",
+        "She reduces producer biomass directly in a second trial. The effect propagates beyond the producers. Consumer levels shrink, some feeding links weaken, and decomposer inputs change as the whole structure adjusts. Mira labels this **producer changes propagate**. Changes in producer biomass or abundance can affect the number and size of other trophic levels. She then widens the response wall to the entire network. Changes in energy availability can disrupt ecosystem structure and dynamics. This is **energy disruption of ecosystems**.",
+        "The staircase itself now changes shape. Under one energy regime, several trophic levels can be supported. Under another, upper levels become smaller or disappear from the model. Mira names the relationship **energy and trophic structure**. Changes in incoming energy can alter the number or size of trophic levels, including producers, consumers, and decomposers. She points to the ten-percent caution sign again. The explanation comes from energy availability and variable transfer, not from assuming each level must contain exactly one tenth of the level below.",
+        "The two-column ledger now holds the entire journey. Organism intake and expenditure led to thermal costs. Organisms were nested into ecosystems. Energy and matter separated into different accounting lanes. Autotrophs captured external energy and built organic matter from inorganic carbon. Heterotrophs acquired organic matter. Feeding positions became chains and webs. GPP was reduced by producer respiration to NPP. Energy then moved upward with variable efficiency while matter remained traceable through organisms, detritus, and reservoirs."
+      ],
+      "story_close": "The two-column ledger now holds the entire journey. Organism intake and expenditure led to thermal costs. Organisms were nested into ecosystems. Energy and matter separated into different accounting lanes. Autotrophs captured external energy and built organic matter from inorganic carbon. Heterotrophs acquired organic matter. Feeding positions became chains and webs. GPP was reduced by producer respiration to NPP. Energy then moved upward with variable efficiency while matter remained traceable through organisms, detritus, and reservoirs.",
+      "object_ids": [
+        "U8-K-135",
+        "U8-K-021",
+        "U8-K-022",
+        "U8-K-023",
+        "U8-K-024"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-135",
+          "term": "Trophic transfer efficiency",
+          "story": "the the variable-efficiency energy pyramid where the defining ecological relationship is made visible before the term is named",
+          "science": "Ecological transfer efficiency varies among systems; about 10% is a useful average rule of thumb for energy converted to biomass at the next trophic level, not a fixed law.",
+          "exact_name": false,
+          "hint": "the variable-efficiency energy pyramid",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-021",
+          "term": "Energy and population size",
+          "story": "the the variable-efficiency energy pyramid where the defining ecological relationship is made visible before the term is named",
+          "science": "Energy availability can change population size.",
+          "exact_name": false,
+          "hint": "the variable-efficiency energy pyramid",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-022",
+          "term": "Energy disruption of ecosystems",
+          "story": "the the variable-efficiency energy pyramid where the defining ecological relationship is made visible before the term is named",
+          "science": "Changes in energy availability can disrupt ecosystem structure and dynamics.",
+          "exact_name": false,
+          "hint": "the variable-efficiency energy pyramid",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-023",
+          "term": "Energy and trophic structure",
+          "story": "the the variable-efficiency energy pyramid where the defining ecological relationship is made visible before the term is named",
+          "science": "Changes in incoming energy can alter the number or size of trophic levels, including producers, consumers, and decomposers.",
+          "exact_name": false,
+          "hint": "the variable-efficiency energy pyramid",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-024",
+          "term": "Producer changes propagate",
+          "story": "the the variable-efficiency energy pyramid where the defining ecological relationship is made visible before the term is named",
+          "science": "Changes in producer biomass or abundance can affect the number and size of other trophic levels.",
+          "exact_name": false,
+          "hint": "the variable-efficiency energy pyramid",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-021",
+          "term": "Energy and population size",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-022",
+          "term": "Energy disruption of ecosystems",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-023",
+          "term": "Energy and trophic structure",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-024",
+          "term": "Producer changes propagate",
+          "dependency": "Unit 1 chemistry; Unit 3 energetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-010: Lock treats ~10% as an average rule of thumb with ecological variation."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-135",
+      "checkpoint_prompt": "Without looking back, identify or explain Trophic transfer efficiency from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Ecological transfer efficiency varies among systems; about 10% is a useful average rule of thumb for energy converted to biomass at the next trophic level, not a fixed law.",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U8-L21",
+      "narrative_word_count": 564
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "prior_narrative_lock": "LOCKED_F4A_J1"
+}

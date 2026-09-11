@@ -1,0 +1,449 @@
+{
+  "schema": "memory-palace-v2-unit2-f4c-story-1.0",
+  "unit_id": "unit-2",
+  "palace_id": "U2-J3",
+  "journey_id": "U2-J3",
+  "palace_name": "Scaling Observatory",
+  "story_title": "The Giant Cell That Starved at the Center",
+  "tagline": "Rescue an oversized cell by discovering why volume outruns exchange surface, then carry the same scaling rule onto a cold organism terrace.",
+  "guide": {
+    "name": "Dr. Nia Park",
+    "role": "cell-systems investigator",
+    "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+    "story_job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+  },
+  "premise": "An observatory has enlarged a cell model until its interior is starving even though the outer surface looks enormous.",
+  "mission": "Use geometric models to discover why surface area and volume scale differently, then restore exchange by changing shape and compare thermal consequences across organism sizes.",
+  "finale": "The giant cell regains exchange capacity only after its surface is folded, and the thermal terrace shows the same size relationship at organism scale. The final alarm then shifts attention from how much surface exists to how a membrane controls passage.",
+  "estimated_minutes": 8,
+  "scene_count": 3,
+  "checkpoint_count": 1,
+  "learner_rule": "Read or listen and build each scale model in your mind. Watch the exchange failure happen before naming the rule. Quick Recall is optional during the first pass.",
+  "route_orientation": "The Scaling Observatory is one continuous route. Begin in the indoor Cube Gallery with small models on the left and giant matching models on the right, move one platform forward to the Fold Deck where shape is changed without shrinking the model, then step outside onto the thermal terrace to compare whole organisms at different sizes.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Cell Size Cube Gallery",
+      "short": "Cube Gallery",
+      "floor": "Observatory modeling hall",
+      "symbol": "◫"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Exchange-Surface Fold Deck",
+      "short": "Fold Deck",
+      "floor": "Observatory rescue platform",
+      "symbol": "≋"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Organism Scaling Terrace",
+      "short": "Scaling Terrace",
+      "floor": "Outdoor thermal terrace",
+      "symbol": "△"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Cell Size Cube Gallery",
+      "title": "The Giant Cell That Could Not Feed Its Center",
+      "scene_kicker": "The enormous model has more membrane than the tiny one, yet its interior is the first place to run out of oxygen and nutrients.",
+      "location_description": "Cell Size Cube Gallery — the side-by-side cube-and-sphere modeling table where a tiny green cell model is compared with a giant red-centered model.",
+      "scene_layout": {
+        "orientation": "At the Cell Size Cube Gallery, small cubes and spheres are left, a calculation/display surface is center, and geometrically similar large models are right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Small cell models",
+            "symbol": "◫",
+            "description": "A small transparent cube and sphere glow green as nutrients cross their surfaces and reach the center quickly."
+          },
+          {
+            "position": "center",
+            "label": "SA:V calculation table",
+            "symbol": "▦",
+            "description": "A live glass table displays surface-area and volume formulas, then converts them into a surface-area-to-volume ratio as each model changes size."
+          },
+          {
+            "position": "right",
+            "label": "Large cell models",
+            "symbol": "▣",
+            "description": "Geometrically similar enlarged models have more total surface area, yet their deep interiors dim red as exchange fails to keep pace with volume."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "small cell models",
+          "kind": "scientific part",
+          "visual": "small transparent cube and sphere glowing green",
+          "job": "show high surface-area-to-volume ratio and rapid access between surface and center"
+        },
+        {
+          "name": "large cell models",
+          "kind": "scientific part",
+          "visual": "enlarged matching cube and sphere with red dim centers",
+          "job": "show lower surface-area-to-volume ratio and exchange limitation"
+        },
+        {
+          "name": "SA:V calculation table",
+          "kind": "scientific instrument",
+          "visual": "glass table showing formulas, values, and a live ratio",
+          "job": "make the scaling relationship quantitative and compare shapes"
+        }
+      ],
+      "story_open": "The doors of the **Scaling Observatory** slide apart and reveal a long white modeling hall. On your **left**, a transparent cube no bigger than your fist glows green from edge to edge. Tiny blue nutrient markers touch its surface, cross the boundary, and reach the center almost immediately. Beside it, a glass sphere of similar small scale does the same. In the **center**, a black calculation table waits beneath a suspended exchange meter. On your **right** stands the problem that brought Nia here. A cube built to exactly the same shape has been enlarged until it fills most of the room. Its outer surface is enormous. Its center is dark red. The meter above it reads INTERIOR EXCHANGE FAILURE.",
+      "story_paragraphs": [
+        "The doors of the **Scaling Observatory** slide apart and reveal a long white modeling hall. On your **left**, a transparent cube no bigger than your fist glows green from edge to edge. Tiny blue nutrient markers touch its surface, cross the boundary, and reach the center almost immediately. Beside it, a glass sphere of similar small scale does the same. In the **center**, a black calculation table waits beneath a suspended exchange meter. On your **right** stands the problem that brought Nia here. A cube built to exactly the same shape has been enlarged until it fills most of the room. Its outer surface is enormous. Its center is dark red. The meter above it reads INTERIOR EXCHANGE FAILURE.",
+        "Nia walks to the giant cube and presses her palm against its wall. “Look carefully before you decide what is wrong.” She sends the same kind of nutrient markers toward both cubes. The large cube receives particles across a much larger total surface, yet the distance and amount of interior that must be served have increased even more dramatically. The red center keeps spreading. Nia taps the table and gives the relationship a name only after the failure is visible. **Surface-area-to-volume ratio**, often written **SA:V**, compares the amount of exchange surface with the volume that surface must serve. Plasma-membrane surface area has to be sufficient for the living volume behind it. That ratio influences nutrient acquisition, waste elimination, chemical and energy exchange, and thermal exchange.",
+        "The table lights with a one-unit cube. Its side length is 1. Surface area appears as **6s²**, so the cube has 6 square units of surface. Volume appears as **s³**, so it has 1 cubic unit of volume. The ratio is 6:1. Nia doubles the side length to 2. The cube now has more total surface area, 24 square units, but its volume has jumped to 8 cubic units. The ratio falls to 3:1. She enlarges it again to side length 3. Surface area becomes 54 while volume becomes 27. The ratio falls again to 2:1. The giant cube never lost surface area. Its problem is that **volume grows faster than surface area as linear size increases**, so less exchange surface is available relative to the amount of interior that depends on it.",
+        "To prove that the rule is not a special trick of cubes, Nia rolls the small sphere onto the center table. Its surface area is **4πr²** and its volume is **4/3πr³**. When the radius doubles, both quantities increase, yet volume again grows faster. The sphere’s SA:V drops as radius increases. Now the green small models and the red large models tell the same story in two shapes. Smaller cells typically have a higher surface-area-to-volume ratio and can exchange materials with their surroundings more efficiently than geometrically similar larger cells. This relationship can constrain cell size and shape because internal demand rises with volume while the exchange boundary does not keep pace.",
+        "Nia looks back at the giant cube. “We are not allowed to shrink this model,” she says. “The observatory needs the same internal volume for the next experiment. So if size is fixed, what else could we change?” A section of the giant model’s membrane unlocks and swings toward the next platform. It is perfectly flat. Beside it, mechanical arms wait to bend that same surface into deep folds. The exchange meter remains red, as though daring you to make more usable surface without adding a second giant cell."
+      ],
+      "story_close": "The giant model stays the same overall size while one flat section of its boundary moves onto the rescue platform, where shape itself becomes the next variable.",
+      "object_ids": [
+        "U2-K-021",
+        "U2-K-022",
+        "U2-K-023",
+        "U2-K-024",
+        "U2-K-097",
+        "U2-K-098"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-021",
+          "term": "SA:V exchange",
+          "story": "small green models exchanging efficiently beside a giant red-centered model whose larger volume overwhelms its relative exchange surface",
+          "science": "Surface-area-to-volume ratio affects acquisition of nutrients, elimination of wastes, exchange of chemicals/energy, and acquisition or dissipation of thermal energy.",
+          "exact_name": false,
+          "hint": "small green models exchanging efficiently beside a giant red-centered model whose larger volume overwhelms its relative exchange surface"
+        },
+        {
+          "object_id": "U2-K-022",
+          "term": "Membrane area requirement",
+          "story": "one plasma-membrane boundary trying to supply the entire volume behind it while the interior demand meter rises",
+          "science": "Plasma-membrane surface area must be sufficient to exchange materials for the volume it serves.",
+          "exact_name": false,
+          "hint": "one plasma-membrane boundary trying to supply the entire volume behind it while the interior demand meter rises"
+        },
+        {
+          "object_id": "U2-K-023",
+          "term": "Cell size limitation",
+          "story": "the same-shaped small and large cells showing the small model with a higher SA:V and faster access to its center",
+          "science": "Surface-area-to-volume ratio can restrict cell size and shape; smaller cells typically have a higher ratio and more efficient exchange with the environment than larger cells.",
+          "exact_name": false,
+          "hint": "the same-shaped small and large cells showing the small model with a higher SA:V and faster access to its center"
+        },
+        {
+          "object_id": "U2-K-024",
+          "term": "Scaling with volume",
+          "story": "a size slider making volume rise faster than surface area and driving the SA:V display downward",
+          "science": "As cell volume increases, surface-area-to-volume ratio decreases while internal resource demand increases.",
+          "exact_name": false,
+          "hint": "a size slider making volume rise faster than surface area and driving the SA:V display downward"
+        },
+        {
+          "object_id": "U2-K-097",
+          "term": "Surface area formula for cube",
+          "story": "a transparent cube labeled surface area 6s², volume s³, and a ratio that falls as side length increases",
+          "science": "For a cube with side length s, surface area is 6s² and volume is s³; SA:V is surface area divided by volume.",
+          "exact_name": true,
+          "hint": "a transparent cube labeled surface area 6s², volume s³, and a ratio that falls as side length increases"
+        },
+        {
+          "object_id": "U2-K-098",
+          "term": "Surface area and volume of sphere",
+          "story": "a glass sphere labeled 4πr² for surface area and 4/3πr³ for volume while SA:V falls as radius increases",
+          "science": "For a sphere, surface area is 4πr² and volume is 4/3πr³; therefore SA:V decreases as radius increases.",
+          "exact_name": true,
+          "hint": "a glass sphere labeled 4πr² for surface area and 4/3πr³ for volume while SA:V falls as radius increases"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "SA:V exchange",
+          "meaning": "Surface-area-to-volume ratio affects acquisition of nutrients, elimination of wastes, exchange of chemicals/energy, and acquisition or dissipation of thermal energy.",
+          "image": "small green models exchanging efficiently beside a giant red-centered model whose larger volume overwhelms its relative exchange surface"
+        },
+        {
+          "term": "Membrane area requirement",
+          "meaning": "Plasma-membrane surface area must be sufficient to exchange materials for the volume it serves.",
+          "image": "one plasma-membrane boundary trying to supply the entire volume behind it while the interior demand meter rises"
+        },
+        {
+          "term": "Cell size limitation",
+          "meaning": "Surface-area-to-volume ratio can restrict cell size and shape; smaller cells typically have a higher ratio and more efficient exchange with the environment than larger cells.",
+          "image": "the same-shaped small and large cells showing the small model with a higher SA:V and faster access to its center"
+        },
+        {
+          "term": "Scaling with volume",
+          "meaning": "As cell volume increases, surface-area-to-volume ratio decreases while internal resource demand increases.",
+          "image": "a size slider making volume rise faster than surface area and driving the SA:V display downward"
+        },
+        {
+          "term": "Surface area formula for cube",
+          "meaning": "For a cube with side length s, surface area is 6s² and volume is s³; SA:V is surface area divided by volume.",
+          "image": "a transparent cube labeled surface area 6s², volume s³, and a ratio that falls as side length increases"
+        },
+        {
+          "term": "Surface area and volume of sphere",
+          "meaning": "For a sphere, surface area is 4πr² and volume is 4/3πr³; therefore SA:V decreases as radius increases.",
+          "image": "a glass sphere labeled 4πr² for surface area and 4/3πr³ for volume while SA:V falls as radius increases"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U2-K-023",
+      "checkpoint_prompt": "As a geometrically similar cell gets larger, what happens to its surface-area-to-volume ratio?",
+      "checkpoint_answer": "It decreases.",
+      "checkpoint_hint": "Picture the small and giant versions of the same shape. The giant one has more total surface, yet its volume increased even faster.",
+      "next_locus": "Exchange-Surface Fold Deck",
+      "misconception_guards": [
+        "Do not say large cells have less total surface area; they have less surface area relative to volume."
+      ],
+      "required_visual": {
+        "visual_mode": "QUANTITATIVE_SCALE_MODEL",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "small and large same-shape models",
+          "surface area and volume formulas",
+          "ratio falling with size",
+          "exchange consequence"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Volume outpaces surface area as size increases, lowering SA:V and constraining exchange."
+    },
+    {
+      "scene_index": 1,
+      "locus": "Exchange-Surface Fold Deck",
+      "title": "Rescuing Exchange Without Shrinking the Cell",
+      "scene_kicker": "The volume must stay. The membrane chemistry must stay. The only tool left is shape.",
+      "location_description": "Exchange-Surface Fold Deck — the membrane-rescue platform beside the giant cell, where a flat boundary is folded while volume stays nearly constant.",
+      "scene_layout": {
+        "orientation": "At the Exchange-Surface Fold Deck, a flat membrane panel is left, a deeply folded panel is center, and exchange-flow indicators are right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Flat membrane panel",
+            "symbol": "▭",
+            "description": "A smooth boundary of fixed material spans the left side and provides only a limited number of simultaneous exchange sites."
+          },
+          {
+            "position": "center",
+            "label": "Folded membrane panel",
+            "symbol": "≋",
+            "description": "The same amount of boundary material is pulled into ridges and projections, exposing much more surface while enclosing nearly the same volume."
+          },
+          {
+            "position": "right",
+            "label": "Exchange-flow display",
+            "symbol": "⇄",
+            "description": "Nutrient and waste markers cross at many more locations once the surface is folded, turning the failing exchange meter back toward green."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "flat exchange surface",
+          "kind": "scientific part",
+          "visual": "smooth membrane panel with few simultaneous particle crossings",
+          "job": "provide the baseline surface area"
+        },
+        {
+          "name": "folded exchange surface",
+          "kind": "scientific part",
+          "visual": "the same membrane bent into ridges and projections",
+          "job": "increase surface area without a proportional volume increase"
+        },
+        {
+          "name": "exchange particles",
+          "kind": "scientific part",
+          "visual": "blue nutrient markers and yellow waste markers crossing the boundary",
+          "job": "make exchange capacity visibly measurable"
+        }
+      ],
+      "story_open": "A narrow bridge carries you from the Cube Gallery to the **Exchange-Surface Fold Deck**. The failing giant cell remains visible through the glass behind you, its center still glowing red. On your **left**, the removed membrane section has been stretched into one smooth flat panel. In the **center**, an identical panel is clamped into a folding frame. On your **right**, streams of blue nutrient markers and yellow waste markers wait behind a digital counter. Nia locks the enclosed model volume at its current value and disables every permeability control. “We are changing geometry,” she says. “Nothing about the membrane’s chemical selectivity is being upgraded.”",
+      "story_paragraphs": [
+        "A narrow bridge carries you from the Cube Gallery to the **Exchange-Surface Fold Deck**. The failing giant cell remains visible through the glass behind you, its center still glowing red. On your **left**, the removed membrane section has been stretched into one smooth flat panel. In the **center**, an identical panel is clamped into a folding frame. On your **right**, streams of blue nutrient markers and yellow waste markers wait behind a digital counter. Nia locks the enclosed model volume at its current value and disables every permeability control. “We are changing geometry,” she says. “Nothing about the membrane’s chemical selectivity is being upgraded.”",
+        "She releases the first particle stream. The flat panel admits particles across its available surface, but the exchange counter rises too slowly to meet the demand of the volume behind it. The giant model remains red. Then the central frame pulls the second panel outward into ridges. More ridges appear, followed by narrow projections, all made from the same kind of membrane. The boundary now occupies more actual surface while the volume it serves changes very little. The number of exposed crossing sites multiplies in front of you.",
+        "Nia releases the particle stream again. Nutrient markers cross at many points at once. Waste markers leave through equally numerous regions. The counter on the right climbs rapidly and the giant model’s interior begins returning from red to amber, then green. The scientific principle is now visible. **Membrane folds and other complex surface structures increase exchange surface area relative to volume.** These are **exchange-surface adaptations**. Their benefit comes from geometry. A folded boundary can provide more membrane area to serve a given volume.",
+        "Nia projects several biological silhouettes above the folding frame. Some cells use surface projections. Some internal membranes form extensive folds. The exact structures differ, yet the geometric advantage is shared. She leaves one warning beside the model. Folding alone does not magically change what the membrane is chemically permeable to. If a substance cannot cross a particular membrane by the relevant mechanism, adding folds does not rewrite that mechanism. The folds provide **more surface on which the existing transport machinery can operate**.",
+        "The exchange meter finally turns fully green. The giant model has not been made smaller, and its chemistry has not been replaced. Its boundary simply offers more usable area. As the alarm clears, the observatory roof retracts above you. Cold outside air pours across a terrace where two animal models are waiting under thermal cameras. Nia points toward them. “SA:V does not stop mattering when we leave the scale of one cell,” she says. “Now watch what size does to heat exchange across a whole body.”"
+      ],
+      "story_close": "With the giant cell stabilized by added surface folds, the observatory opens onto the thermal terrace, where the same geometry will be tested at organism scale.",
+      "object_ids": [
+        "U2-K-025"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-025",
+          "term": "Exchange-surface adaptations",
+          "story": "the same approximate volume served first by a flat membrane and then by a deeply folded membrane with many more simultaneous crossing sites",
+          "science": "Membrane folds and other complex structures increase exchange surface area relative to volume.",
+          "exact_name": false,
+          "hint": "the same approximate volume served first by a flat membrane and then by a deeply folded membrane with many more simultaneous crossing sites"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Exchange-surface adaptations",
+          "meaning": "Membrane folds and other complex structures increase exchange surface area relative to volume.",
+          "image": "the same approximate volume served first by a flat membrane and then by a deeply folded membrane with many more simultaneous crossing sites"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-025",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Organism Scaling Terrace",
+      "misconception_guards": [
+        "Do not imply folding changes the chemical permeability of the membrane by itself."
+      ],
+      "required_visual": {
+        "visual_mode": "STRUCTURE_ADAPTATION_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "same approximate volume with flat vs folded surface",
+          "increased crossing sites"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Folding increases available exchange surface without needing a proportional increase in volume."
+    },
+    {
+      "scene_index": 2,
+      "locus": "Organism Scaling Terrace",
+      "title": "The Cold Wind Test",
+      "scene_kicker": "Two bodies face the same cold wind, but their size changes how much surface is exposed relative to the amount of tissue inside.",
+      "location_description": "Organism Scaling Terrace — the cold outdoor deck where small and large organism models are compared under thermal cameras and metabolic gauges.",
+      "scene_layout": {
+        "orientation": "At the Organism Scaling Terrace, a small organism thermal model is left, a size-comparison scale is center, and a larger organism model is right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Small organism thermal model",
+            "symbol": "◉",
+            "description": "A compact animal model is surrounded by dense heat-loss arrows and a high mass-specific energy-use reading."
+          },
+          {
+            "position": "center",
+            "label": "Body-size comparison scale",
+            "symbol": "▥",
+            "description": "A central scale enlarges the same general body form while tracking surface-area-to-volume ratio, proportional heat exchange, and mass-specific metabolic rate."
+          },
+          {
+            "position": "right",
+            "label": "Large organism thermal model",
+            "symbol": "⬤",
+            "description": "A much larger animal model shows fewer heat-loss arrows relative to its mass and a lower mass-specific energy-use reading."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Nia Park",
+          "kind": "guide",
+          "visual": "navy field jacket, clear safety glasses, and a compact tablet displaying a transparent map of the cell",
+          "job": "Nia keeps the route physically clear, asks you to predict what will happen, and names scientific terms only after the defining structure or action is visible."
+        },
+        {
+          "name": "small organism model",
+          "kind": "scientific model",
+          "visual": "compact animal model surrounded by dense thermal arrows",
+          "job": "show high proportional heat exchange"
+        },
+        {
+          "name": "large organism model",
+          "kind": "scientific model",
+          "visual": "much larger animal model with fewer thermal arrows relative to mass",
+          "job": "show lower proportional heat exchange"
+        },
+        {
+          "name": "scaling gauges",
+          "kind": "scientific instrument",
+          "visual": "paired SA:V, heat-exchange, and mass-specific metabolic-rate meters",
+          "job": "connect body size with thermal exchange and broad metabolic scaling"
+        }
+      ],
+      "story_open": "You step onto the **Organism Scaling Terrace** and the temperature drops sharply. On your **left**, a compact animal model about the size of a small mammal stands beneath a thermal camera. Bright heat arrows stream away from nearly every part of its surface. In the **center**, a body-size scale and two gauges track proportional heat exchange and energy use per unit mass. On your **right**, a much larger animal model faces the same moving air. Its body holds far more volume and mass, yet the heat arrows are sparse when viewed relative to that mass. The terrace has taken the same geometry you saw in the cell models and made it impossible to ignore.",
+      "story_paragraphs": [
+        "You step onto the **Organism Scaling Terrace** and the temperature drops sharply. On your **left**, a compact animal model about the size of a small mammal stands beneath a thermal camera. Bright heat arrows stream away from nearly every part of its surface. In the **center**, a body-size scale and two gauges track proportional heat exchange and energy use per unit mass. On your **right**, a much larger animal model faces the same moving air. Its body holds far more volume and mass, yet the heat arrows are sparse when viewed relative to that mass. The terrace has taken the same geometry you saw in the cell models and made it impossible to ignore.",
+        "Nia activates the size slider. As the modeled organism grows, total surface area still increases. Total volume also increases. The ratio between them falls. A smaller body therefore exposes relatively more surface to the environment for each unit of internal volume than a larger, similarly shaped body. The thermal camera converts that geometry into a biological consequence. **As organism size increases, surface-area-to-volume ratio and proportional heat exchange with the environment generally decrease.** The smaller model exchanges heat more rapidly relative to its body size because more surface is available per unit of internal volume.",
+        "A second gauge begins to pulse. It reports metabolic rate per unit body mass. The smaller model’s gauge runs higher. The larger model’s gauge settles lower. Nia marks the result as a broad biological scaling trend, not a universal law that predicts every species or every physiological state. **Metabolic rate per unit body mass is generally higher in smaller multicellular organisms than in larger ones.** Many factors influence metabolism, but body-size scaling helps explain why small organisms often need proportionally rapid energy turnover while losing heat relatively quickly.",
+        "The terrace wind slows. Behind the glass wall, the giant cell model remains green because its folded surface restored exchange capacity. The continuity meter now shows three linked images. A small cell has high SA:V. A large same-shaped cell has lower SA:V. A folded surface can recover more exchange area without requiring a proportional increase in volume. Outside, the small organism sheds heat relatively rapidly while the large organism exchanges heat more slowly relative to its mass. The same geometric relationship has traveled from a microscopic cell boundary to a whole-body thermal problem.",
+        "Nia closes the scaling display and points below the terrace. A flexible molecular border stretches across the next terminal. Several particles are slipping through when they should not, while others that need passage are being blocked. “Size told us how much exchange surface a system has,” she says. “Now we need to understand what that surface is made of and why some substances cross more easily than others.” The doors to the **Membrane Border Terminal** unlock beneath your feet."
+      ],
+      "story_close": "The scaling problem is solved, and the next failure shifts from how much surface exists to how the membrane itself controls what can cross it.",
+      "object_ids": [
+        "U2-K-026",
+        "U2-K-027"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U2-K-026",
+          "term": "Body size and heat exchange",
+          "story": "a small organism covered in dense heat-loss arrows beside a much larger organism with fewer arrows relative to its mass",
+          "science": "As organism size increases, surface-area-to-volume ratio and proportional heat exchange with the environment generally decrease.",
+          "exact_name": false,
+          "hint": "a small organism covered in dense heat-loss arrows beside a much larger organism with fewer arrows relative to its mass"
+        },
+        {
+          "object_id": "U2-K-027",
+          "term": "Body size and metabolic rate",
+          "story": "a mass-specific energy-use gauge running generally higher for the small multicellular organism and lower for the larger one",
+          "science": "Metabolic rate per unit body mass is generally higher in smaller multicellular organisms than in larger ones.",
+          "exact_name": false,
+          "hint": "a mass-specific energy-use gauge running generally higher for the small multicellular organism and lower for the larger one"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Body size and heat exchange",
+          "meaning": "As organism size increases, surface-area-to-volume ratio and proportional heat exchange with the environment generally decrease.",
+          "image": "a small organism covered in dense heat-loss arrows beside a much larger organism with fewer arrows relative to its mass"
+        },
+        {
+          "term": "Body size and metabolic rate",
+          "meaning": "Metabolic rate per unit body mass is generally higher in smaller multicellular organisms than in larger ones.",
+          "image": "a mass-specific energy-use gauge running generally higher for the small multicellular organism and lower for the larger one"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "U2-K-026",
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "misconception_guards": [
+        "Do not claim body size alone determines metabolic rate in every species or circumstance."
+      ],
+      "required_visual": {
+        "visual_mode": "SCALE_COMPARISON_SCENE",
+        "conventional_scientific_visual_required": true,
+        "must_show": [
+          "size contrast",
+          "relative surface heat arrows",
+          "mass-specific rate gauge"
+        ],
+        "composition_rule": "The illustration must preserve the left/center/right geography and recognizable biological geometry. Narrative styling may increase salience but may not alter scientific structure."
+      },
+      "carry_forward": "Larger size generally lowers SA:V and proportional heat exchange; smaller organisms often have higher mass-specific metabolic rates."
+    }
+  ],
+  "student_release": "PILOT_PREVIEW_F4C",
+  "narrative_standard": "V2-NARRATIVE-3.0-F4C"
+}

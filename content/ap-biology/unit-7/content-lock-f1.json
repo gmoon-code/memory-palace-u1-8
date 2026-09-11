@@ -1,0 +1,58 @@
+{
+  "schema": "memory-palace-u7-f1-content-lock-1.0",
+  "unit_id": "unit-7",
+  "lock_status": "LOCKED_F1",
+  "scientific_content_lock": "LOCKED_F1",
+  "protected_file_count": 7,
+  "protected_files": [
+    {
+      "path": "source/canonical-unit7-f1.json",
+      "bytes": 347287,
+      "sha256": "28fc75b356582cea4cedd04be25bd0ebb6a506708c791dfbe74e747b103d0ba4"
+    },
+    {
+      "path": "source/coverage-manifest-f1.json",
+      "bytes": 1225,
+      "sha256": "61877e77e0c75527e871d66af4f98ef658f90a928d54c53850d0014fcc0e53e6"
+    },
+    {
+      "path": "audit/F1_SOURCE_AUDIT.md",
+      "bytes": 6276,
+      "sha256": "46f8bf4ade123e82f46458a54017235c6ab733c38b9992e0b8e5f0b66fcc903e"
+    },
+    {
+      "path": "audit/F1_REVIEW_FLAGS.md",
+      "bytes": 16834,
+      "sha256": "45e085f0654acda0e9a9b94aa94332c059e37253d97788ed7c7bf2b8faec8622"
+    },
+    {
+      "path": "audit/APBIO_Unit7_F1_Source_Lock.xlsx",
+      "bytes": 73520,
+      "sha256": "f0bb0100b4d119c5aa016425729f207177af660a9cb335fdde76f38e388c7d6c"
+    },
+    {
+      "path": "upstream-u1-u6-protection-f1.json",
+      "bytes": 65413,
+      "sha256": "9bbdc0d3da1ae9497e91a42a07643d3f1379240aabb4a405f934d536da602e9d"
+    },
+    {
+      "path": "f1-release-manifest.json",
+      "bytes": 1030,
+      "sha256": "7f3e8da79b1649608129fa12184638eb40f0a5ea82bc33946de7c4898b7ee832"
+    }
+  ],
+  "student_runtime": {
+    "journeys": 0,
+    "scenes": 0,
+    "memory_objects": 0,
+    "application_challenges": 0,
+    "student_release": false
+  },
+  "unlock_policy": "Changes to protected Unit 7 F1 science require an explicit scientific-version update and a fresh F1 QA pass.",
+  "runtime_file_sha256": {
+    "backend/main.py": "e79df0d52052794134044cc4de9ec2a84221e3bad1da9065bb4c3f7a1be91b56",
+    "backend/content.py": "deacf952f78ec28d2d6ef4232aedd06e8fd55a09218e9fa81ea30de7dc61196b",
+    "backend/settings.py": "11e9caed4daae789540ad483ae50804b4b4bfd0cd6b067118149f96381415243"
+  },
+  "course_registry_sha256": "b0bf32ab39ad09b67a68679a01b3b787ed12cd9584f2ff87b1e7c197de9b727f"
+}

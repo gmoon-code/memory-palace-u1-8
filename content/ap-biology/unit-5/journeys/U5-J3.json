@@ -1,0 +1,598 @@
+{
+  "palace_id": "U5-J3",
+  "unit_id": "unit-5",
+  "palace_name": "Diversity and Chromosome Error Center",
+  "story_title": "The Scanner That Confused Diversity With Error",
+  "tagline": "Calibrate one chromosome-outcome scanner so it can separate normal allele-combination diversity from segregation failure, abnormal chromosome number, and a specific trisomy case.",
+  "guide": {
+    "name": "Dr. Imani Reyes",
+    "role": "inheritance-systems geneticist",
+    "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the same blue/amber parental-origin chromosome identities from the meiosis hall, plus the narrow gold generation ledger",
+    "story_job": "Imani keeps normal diversity mechanisms separate from chromosome-segregation failures. She makes the outcome scanner change modes before the error cases begin, so allele-combination diversity is never confused with abnormal chromosome number."
+  },
+  "premise": "The Diversity and Chromosome Error Center has started classifying every unusual genetic outcome as the same kind of “variation.” Recombinant chromosomes with normal copy numbers, gametes created by ordinary assortment, and products of failed chromosome segregation are arriving on one conveyor. The center can work again only if each outcome is traced to the mechanism that produced it.",
+  "mission": "Follow Dr. Imani Reyes through four diagnostic stations. First separate crossing over, independent orientation/assortment, and random fertilization as normal sources of genetic diversity. Then switch the chromosome-outcome scanner into segregation-integrity mode, distinguish correct segregation from nondisjunction, name aneuploidy as the resulting abnormal copy number of particular chromosomes, interpret what a karyotype can and cannot show, and finish with trisomy 21 as one specific human chromosome-number example.",
+  "finale": "The center finally runs two different diagnostic modes instead of one vague “different” alarm. Normal diversity is reconstructed from crossing over, independent orientation/assortment, and random fertilization. Segregation failure is reconstructed as nondisjunction. Abnormal copy number of particular chromosomes is reconstructed as aneuploidy and can be visible in a karyotype. Trisomy 21 remains one specific aneuploid case involving three copies of chromosome 21 rather than a definition of the broader mechanisms.",
+  "estimated_minutes": 14,
+  "scene_count": 4,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4C",
+  "learner_rule": "Follow the chromosome outcome from mechanism to evidence. A difference in allele combination and a difference in chromosome number are never treated as the same kind of event. Optional Quick Recall appears only twice.",
+  "route_orientation": "This is one continuous four-location diagnostic center. Enter at the Variation Sources Compass in violet diversity mode, switch the same scanner to red segregation-integrity mode at the Segregation Integrity Gate, carry abnormal-count outcome cards to the Aneuploidy Diagnostic Bench, and finish at the Trisomy 21 Case Window. The scanner and ledger preserve cause versus outcome across the route.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Variation Sources Compass",
+      "short": "Three sources",
+      "floor": "Diversity floor",
+      "symbol": "3↗"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Segregation Integrity Gate",
+      "short": "Movement check",
+      "floor": "Integrity floor",
+      "symbol": "✓/✕"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Aneuploidy Diagnostic Bench",
+      "short": "Count outcome",
+      "floor": "Diagnostics",
+      "symbol": "±1"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Trisomy 21 Case Window",
+      "short": "Case example",
+      "floor": "Case gallery",
+      "symbol": "21×3"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U5-L16",
+      "locus": "Variation Sources Compass",
+      "title": "The Scanner That Called Every Difference an Error",
+      "scene_kicker": "Three normal processes can create new allele combinations, and none of them is a chromosome-count mistake.",
+      "location_description": "the three-direction compass linking crossover-created recombinant chromosomes, independent meiotic orientation, and random fertilization to genetic diversity",
+      "scene_layout": {
+        "orientation": "Enter Variation Sources Compass and stop at the three-direction compass linking crossover-created recombinant chromosomes, independent meiotic orientation, and random fertilization to genetic diversity. The left side is anchored by crossover / recombinant route, the working center is three-source diversity compass, and the right side is anchored by random-fertilization route. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Crossover / recombinant route",
+            "symbol": "X↔X",
+            "description": "The same blue and amber homolog identities appear on the left with visible exchanged DNA segments. This lane represents crossing over that already occurred between nonsister chromatids during prophase I and the recombinant chromosomes produced by that exchange."
+          },
+          {
+            "position": "center",
+            "label": "Three-source diversity compass",
+            "symbol": "3↗",
+            "description": "A three-direction floor compass compares crossing over, independent orientation/assortment during meiosis, and random fertilization without merging them into one vague “gene mixing” event."
+          },
+          {
+            "position": "right",
+            "label": "Random-fertilization dock",
+            "symbol": "n+n",
+            "description": "Two completed haploid gametes arrive from separate chutes and may fuse. The dock is visibly downstream of meiosis so fertilization cannot be mistaken for a meiotic event."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the same blue/amber parental-origin chromosome identities from the meiosis hall, plus the narrow gold generation ledger",
+          "story_job": "Imani keeps normal diversity mechanisms separate from chromosome-segregation failures. She makes the outcome scanner change modes before the error cases begin, so allele-combination diversity is never confused with abnormal chromosome number."
+        },
+        {
+          "name": "Chromosome-outcome scanner",
+          "kind": "continuity instrument",
+          "visual": "a waist-high black-and-glass scanner with two unmistakable settings: violet DIVERSITY MODE reads allele combinations, while red SEGREGATION-INTEGRITY MODE reads chromosome movement and copy number",
+          "job": "follows the same chromosome outcomes through the center. It first identifies normal sources of new allele combinations, then switches modes before checking nondisjunction and chromosome-number outcomes."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger from Journeys 1–2, now carrying separate columns for ALLELE COMBINATION, SEGREGATION EVENT, and CHROMOSOME COUNT",
+          "job": "records the causal category of each outcome so normal recombination, segregation failure, and resulting chromosome-number state remain distinct."
+        },
+        {
+          "name": "crossover / recombinant route",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of crossover / recombinant route fixed on the learner’s left, with labels limited to the biological identities needed for this locus.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "three-source diversity compass",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the three-direction compass linking crossover-created recombinant chromosomes, independent meiotic orientation, and random fertilization to genetic diversity; any motion, pairing, separation, calculation, or comparison that defines the concept occurs here.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Feed crossover-generated recombinant chromatids into the left route and independent metaphase-I orientations into the center compass as two meiosis-based sources of new allele combinations."
+        },
+        {
+          "name": "random-fertilization route",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of random-fertilization route fixed on the learner’s right; its visible state changes only after the central mechanism or comparison produces an interpretable outcome.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        }
+      ],
+      "continuity_object": "a chromosome-outcome scanner that first reads allele combinations and then chromosome counts; its mode visibly switches from diversity mode to segregation-integrity mode before error cases begin.",
+      "story_open": "The four haploid products from the Meiosis Transit Hall roll through a short tunnel and enter the **Variation Sources Compass**, the first room of the Diversity and Chromosome Error Center. The room is triangular enough to redraw from memory. On your **left**, a glass lane carries the same blue and amber chromosomes you followed through meiosis, including chromatids whose colored segments show where crossing over occurred. Directly **ahead**, a bronze three-point compass is set into the floor beneath a black-and-glass chromosome-outcome scanner. On your **right**, two separate gamete chutes descend toward a round fertilization dock. Imani places the gold ledger beside the scanner and turns its dial to violet **DIVERSITY MODE**. A warning above the exit explains the center’s problem. NORMAL VARIATION and SEGREGATION ERROR have been dumped into one bin marked DIFFERENT. Nothing can leave until those categories are separated.",
+      "story_paragraphs": [
+        "The four haploid products from the Meiosis Transit Hall roll through a short tunnel and enter the **Variation Sources Compass**, the first room of the Diversity and Chromosome Error Center. The room is triangular enough to redraw from memory. On your **left**, a glass lane carries the same blue and amber chromosomes you followed through meiosis, including chromatids whose colored segments show where crossing over occurred. Directly **ahead**, a bronze three-point compass is set into the floor beneath a black-and-glass chromosome-outcome scanner. On your **right**, two separate gamete chutes descend toward a round fertilization dock. Imani places the gold ledger beside the scanner and turns its dial to violet **DIVERSITY MODE**. A warning above the exit explains the center’s problem. NORMAL VARIATION and SEGREGATION ERROR have been dumped into one bin marked DIFFERENT. Nothing can leave until those categories are separated.",
+        "Imani starts at the left lane because the chromosome itself already carries evidence of one diversity-producing mechanism. One large blue chromosome contains a short amber segment, and its amber homolog carries the reciprocal blue segment. Those segments were exchanged earlier between **nonsister chromatids of homologous chromosomes** during prophase I. The chromosome now contains a DNA-segment combination that differs from either original homolog. Imani slides it through the scanner and names the structure only after you can see the changed segment pattern. It is a **recombinant chromosome**. The word recombinant belongs to the altered combination of DNA segments produced through crossing over; it does not mean that chromosome number is abnormal.",
+        "She then rotates the center compass to its second point. A small model of two homologous chromosome pairs appears exactly as it did at metaphase I. The large pair can face one pole in either parental-origin orientation, and the smaller pair can orient independently of that choice. When the model runs forward, different haploid products receive different combinations of the blue- and amber-origin homologs. Imani keeps the term on the mechanism. Independent orientation, often discussed as part of **independent assortment**, changes which homolog combinations enter gametes. No DNA segment has to cross over for this source of diversity to operate. The scanner reads a new allele combination while its chromosome-count light remains normal.",
+        "Only after those meiotic events are complete does Imani open the right-side chutes. Two already-produced haploid gametes descend from separate paths into the dock. The dock does not know which compatible gametes will meet; which gametes fuse is probabilistic. When one pair enters the fusion ring, their allele combinations are brought together in a new diploid zygote. Imani names this third source **random fertilization**. She draws a thick line on the ledger between MEIOSIS and FERTILIZATION so the timing cannot blur. Crossing over and independent orientation occur during meiosis. Random fertilization happens afterward, when gametes fuse.",
+        "The compass now holds three arrows that stay physically separate even though they converge on one outcome category. Imani labels the whole panel **Sources of variation in sexual reproduction**. The left arrow is crossing over, which can create recombinant chromosomes. The forward arrow is independent orientation/assortment of homologous pairs during meiosis. The right arrow is random fertilization. Together, these processes can greatly increase the number of possible genetic combinations among offspring. The center does not promise a fixed amount of variation from any one reproductive event, and it does not collapse the three mechanisms into the vague phrase “mixing genes.” You should be able to point to where each process occurs and what it physically changes.",
+        "Imani closes the first ledger column with three entries. CROSSOVER → recombinant DNA segment combinations. INDEPENDENT ORIENTATION → different homolog combinations in gametes. RANDOM FERTILIZATION → different combinations of gametes in a zygote. Then she turns the scanner toward you for the optional recall. The actual chromosomes and compass remain visible for a moment, but the term labels dim. If you can reconstruct all three mechanisms from their locations, the diversity side of the center is calibrated.",
+        "The exit does not open immediately. Instead, the scanner gives a sharp red tone and flips its own dial from violet DIVERSITY MODE to red **SEGREGATION-INTEGRITY MODE**. The recombinant chromosome remains perfectly acceptable. What the scanner wants to know next is different. During meiosis, did the chromosome partners that were supposed to separate actually go to opposite products? Imani carries the same chromosome-outcome cards through the red gate. The next room will inspect chromosome movement, not allele-combination diversity."
+      ],
+      "story_close": "Crossing over, independent orientation/assortment, and random fertilization are now separated as normal sources of genetic diversity. The scanner switches modes before any segregation error is introduced.",
+      "object_ids": [
+        "U5-K-013",
+        "U5-K-059",
+        "U5-K-061"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-013",
+          "term": "Sources of variation in sexual reproduction",
+          "story": "the three-way compass keeping crossing over, independent orientation/assortment, and random fertilization in three physically separate directions that all increase possible allele combinations",
+          "science": "Sexual reproduction increases genetic variation through crossing over, random assortment/orientation of homologous chromosome pairs during meiosis, and subsequent fertilization of gametes.",
+          "exact_name": true,
+          "hint": "the three-way compass keeping crossing over, independent orientation/assortment, and random fertilization in three physically separate directions that all increase possible allele combinations",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-059",
+          "term": "Recombinant chromosome",
+          "story": "a blue chromosome carrying a short amber segment and an amber chromosome carrying the reciprocal blue segment after a crossover between nonsister chromatids",
+          "science": "A recombinant chromosome contains a combination of DNA segments that differs from either original homolog because of crossing over.",
+          "exact_name": true,
+          "hint": "a blue chromosome carrying a short amber segment and an amber chromosome carrying the reciprocal blue segment after a crossover between nonsister chromatids",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-061",
+          "term": "Random fertilization",
+          "story": "two already-produced haploid gametes entering the fertilization dock from different chutes and fusing probabilistically only after meiosis is complete",
+          "science": "Which gametes fuse during fertilization is probabilistic and creates additional allele combinations among offspring.",
+          "exact_name": true,
+          "hint": "two already-produced haploid gametes entering the fertilization dock from different chutes and fusing probabilistically only after meiosis is complete",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Sources of variation in sexual reproduction",
+          "meaning": "Sexual reproduction increases genetic variation through crossing over, random assortment/orientation of homologous chromosome pairs during meiosis, and subsequent fertilization of gametes.",
+          "image": "the three-way compass keeping crossing over, independent orientation/assortment, and random fertilization in three physically separate directions that all increase possible allele combinations"
+        },
+        {
+          "term": "Recombinant chromosome",
+          "meaning": "A recombinant chromosome contains a combination of DNA segments that differs from either original homolog because of crossing over.",
+          "image": "a blue chromosome carrying a short amber segment and an amber chromosome carrying the reciprocal blue segment after a crossover between nonsister chromatids"
+        },
+        {
+          "term": "Random fertilization",
+          "meaning": "Which gametes fuse during fertilization is probabilistic and creates additional allele combinations among offspring.",
+          "image": "two already-produced haploid gametes entering the fertilization dock from different chutes and fusing probabilistically only after meiosis is complete"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep crossing over, independent orientation, random fertilization physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Resolved science guard RF-U5-014: Crossing over and independent assortment occur during meiosis; fertilization is subsequent. Together sexual reproduction processes increase genetic variation rather than guarantee a particular amount of diversity."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Variation Sources Compass, reconstruct the fixed crossover / recombinant route → three-source diversity compass → random-fertilization route relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Sources of variation in sexual reproduction",
+          "Recombinant chromosome",
+          "Random fertilization"
+        ],
+        "redraw_test": "From memory, place crossover / recombinant route on the left, three-source diversity compass in the center, and random-fertilization route on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U5-K-013",
+      "checkpoint_prompt": "Name the three major sources of genetic diversity emphasized across meiosis and fertilization.",
+      "checkpoint_answer": "Crossing over, independent orientation/assortment, and random fertilization.",
+      "checkpoint_hint": "Return to the fixed three-source compass or chromosome-count bench and reconstruct what physically changed before naming the term.",
+      "next_locus": "Segregation Integrity Gate",
+      "causal_transition": "The center now recognizes the three normal diversity sources; Imani switches the scanner from allele-combination mode to chromosome-segregation mode at the Segregation Integrity Gate."
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U5-L17",
+      "locus": "Segregation Integrity Gate",
+      "title": "The Gate Where Separation Either Happens or Fails",
+      "scene_kicker": "Nondisjunction is a movement failure during chromosome segregation; the abnormal chromosome count comes afterward.",
+      "location_description": "the checkpoint contrasting correct chromosome segregation with nondisjunction in meiosis I or meiosis II",
+      "scene_layout": {
+        "orientation": "Enter Segregation Integrity Gate and stop at the checkpoint contrasting correct chromosome segregation with nondisjunction in meiosis I or meiosis II. The left side is anchored by correct homolog / sister segregation, the working center is segregation integrity checkpoint, and the right side is anchored by nondisjunction failure route. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Correct segregation lane",
+            "symbol": "✓",
+            "description": "A reference chromosome set repeats the correct mechanics from Journey 2: homologous chromosomes segregate in meiosis I and sister chromatids segregate in meiosis II."
+          },
+          {
+            "position": "center",
+            "label": "Segregation-integrity checkpoint",
+            "symbol": "SCAN",
+            "description": "The chromosome-outcome scanner is now locked in red segregation-integrity mode and asks one question only: did the chromosome partners that were supposed to separate actually segregate to opposite products?"
+          },
+          {
+            "position": "right",
+            "label": "Nondisjunction failure route",
+            "symbol": "✕",
+            "description": "A branching failure chute shows either homologous chromosomes failing to separate in meiosis I or sister chromatids failing to separate in meiosis II. The failure is kept separate from the later chromosome-count diagnosis."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the same blue/amber parental-origin chromosome identities from the meiosis hall, plus the narrow gold generation ledger",
+          "story_job": "Imani keeps normal diversity mechanisms separate from chromosome-segregation failures. She makes the outcome scanner change modes before the error cases begin, so allele-combination diversity is never confused with abnormal chromosome number."
+        },
+        {
+          "name": "Chromosome-outcome scanner",
+          "kind": "continuity instrument",
+          "visual": "a waist-high black-and-glass scanner with two unmistakable settings: violet DIVERSITY MODE reads allele combinations, while red SEGREGATION-INTEGRITY MODE reads chromosome movement and copy number",
+          "job": "follows the same chromosome outcomes through the center. It first identifies normal sources of new allele combinations, then switches modes before checking nondisjunction and chromosome-number outcomes."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger from Journeys 1–2, now carrying separate columns for ALLELE COMBINATION, SEGREGATION EVENT, and CHROMOSOME COUNT",
+          "job": "records the causal category of each outcome so normal recombination, segregation failure, and resulting chromosome-number state remain distinct."
+        },
+        {
+          "name": "correct homolog / sister segregation",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of correct homolog / sister segregation fixed on the learner’s left, with labels limited to the biological identities needed for this locus.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "segregation integrity checkpoint",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the checkpoint contrasting correct chromosome segregation with nondisjunction in meiosis I or meiosis II; any motion, pairing, separation, calculation, or comparison that defines the concept occurs here.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Run one chromosome set through correct meiosis-I homolog segregation and one through correct meiosis-II sister-chromatid segregation to establish the reference movements at the left checkpoint."
+        },
+        {
+          "name": "nondisjunction failure route",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of nondisjunction failure route fixed on the learner’s right; its visible state changes only after the central mechanism or comparison produces an interpretable outcome.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        }
+      ],
+      "continuity_object": "a chromosome-outcome scanner that first reads allele combinations and then chromosome counts; its mode visibly switches from diversity mode to segregation-integrity mode before error cases begin.",
+      "story_open": "You enter the **Segregation Integrity Gate** through a red-lit doorway, and the room immediately divides into three lanes. On your **left**, a correct-segregation track reuses the same blue and amber chromosome geometry from the meiosis hall. Directly **ahead**, the chromosome-outcome scanner sits inside a metal checkpoint arch, now locked in red SEGREGATION-INTEGRITY MODE. On your **right**, a failure chute splits into two branches labeled DIVISION I and DIVISION II. The gold ledger is open to two different columns labeled EVENT and RESULT. Imani places a finger between them. “We are going to keep the thing that goes wrong separate from the chromosome-number state that may result.”",
+      "story_paragraphs": [
+        "You enter the **Segregation Integrity Gate** through a red-lit doorway, and the room immediately divides into three lanes. On your **left**, a correct-segregation track reuses the same blue and amber chromosome geometry from the meiosis hall. Directly **ahead**, the chromosome-outcome scanner sits inside a metal checkpoint arch, now locked in red SEGREGATION-INTEGRITY MODE. On your **right**, a failure chute splits into two branches labeled DIVISION I and DIVISION II. The gold ledger is open to two different columns labeled EVENT and RESULT. Imani places a finger between them. “We are going to keep the thing that goes wrong separate from the chromosome-number state that may result.”",
+        "The left lane runs first as the reference. A duplicated blue homolog and its duplicated amber homolog align as a pair, then move to opposite sides during meiosis I while each chromosome keeps its sister chromatids joined. The scanner stamps the event CORRECT HOMOLOG SEGREGATION. A second panel then runs meiosis II. One duplicated chromosome aligns, its sister connection releases, and the sister chromatids move to opposite poles. The scanner stamps CORRECT SISTER-CHROMATID SEGREGATION. Imani names the full reference relationship **Correct chromosome segregation and nondisjunction** because the room is built around that contrast. Correct homolog separation in meiosis I and correct sister-chromatid separation in meiosis II normally distribute one chromosome from each homologous pair into each haploid product.",
+        "Now the right-side DIVISION I branch activates. The blue and amber homologs approach the first-division separation gate, but the gate on one side fails to release. Both homologs travel toward the same product while another product receives neither member of that homologous pair. Imani freezes the movement at the moment of failure. She names the event **nondisjunction**. Homologous chromosomes in meiosis I have failed to segregate normally. She does not name the chromosome-count outcome yet. The scanner writes only EVENT = NONDISJUNCTION and leaves the RESULT column blank.",
+        "The branch resets and the DIVISION II route lights. This time meiosis I proceeds normally, so the homologous chromosomes are already in different cells. In one meiosis-II cell, however, the sister chromatids of a duplicated chromosome fail to separate. Both sisters move into one product while another product from that division receives no copy of that chromosome. Imani again stops the model at the failed movement. This is also **nondisjunction**, but the partners that failed to segregate are sister chromatids in meiosis II, not homologous chromosomes in meiosis I. The shared scientific idea is failure of the chromosome structures that should separate at that division.",
+        "The difference between the two error routes is visually important. A meiosis-I nondisjunction error can affect all gametes produced from that meiotic event for the chromosome being tracked, because the homologs were misdistributed at the first division. A meiosis-II error occurs after homologs have separated correctly, so the pattern of resulting gametes differs. Imani does not turn these pattern differences into a memorized table here; the permanent lesson is more basic and more transferable. Identify what should separate at the division, observe whether it segregates normally, and call the failure **nondisjunction** when it does not.",
+        "The scanner now ejects four chromosome-outcome cards onto the floor. Some cards show an ordinary haploid count for the tracked chromosome. Others show an extra copy or a missing copy. Imani refuses to let the red NONDISJUNCTION stamp spread onto those count cards. “Nondisjunction is the segregation failure,” she says, tapping the EVENT column. “The chromosome-number condition belongs in RESULT.” That distinction keeps cause and consequence in separate physical places, exactly as the center was designed to do.",
+        "A conveyor under the right chute begins carrying the abnormal-count cards into the next room. The scanner follows, still in red mode, but the movement animation disappears. Ahead, a counting bench and an organized chromosome display are waiting. The question has changed again. Now that a segregation error has produced an unusual chromosome count, what is the chromosome-number state called, and what evidence can a karyotype actually show?"
+      ],
+      "story_close": "Nondisjunction has been fixed to the failed segregation event itself. The resulting chromosome-count cards now move to a separate diagnostic bench, where the outcome will receive its own name.",
+      "object_ids": [
+        "U5-K-011",
+        "U5-K-128"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-011",
+          "term": "Correct chromosome segregation and nondisjunction",
+          "story": "the scanner comparing correct homolog separation in meiosis I and correct sister-chromatid separation in meiosis II with a failed-segregation route",
+          "science": "Correct homolog separation in meiosis I and sister-chromatid separation in meiosis II give each gamete a haploid chromosome set containing maternal and paternal chromosomes; nondisjunction disrupts that chromosome-number outcome.",
+          "exact_name": true,
+          "hint": "the scanner comparing correct homolog separation in meiosis I and correct sister-chromatid separation in meiosis II with a failed-segregation route",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        },
+        {
+          "object_id": "U5-K-128",
+          "term": "Nondisjunction",
+          "story": "a red failure gate where homologs fail to segregate in meiosis I or sister chromatids fail to segregate in meiosis II, producing gametes with abnormal chromosome numbers",
+          "science": "Nondisjunction is failure of homologous chromosomes in meiosis I or sister chromatids in meiosis II to segregate normally, producing cells/gametes with abnormal chromosome numbers.",
+          "exact_name": true,
+          "hint": "a red failure gate where homologs fail to segregate in meiosis I or sister chromatids fail to segregate in meiosis II, producing gametes with abnormal chromosome numbers",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Correct chromosome segregation and nondisjunction",
+          "meaning": "Correct homolog separation in meiosis I and sister-chromatid separation in meiosis II give each gamete a haploid chromosome set containing maternal and paternal chromosomes; nondisjunction disrupts that chromosome-number outcome.",
+          "image": "the scanner comparing correct homolog separation in meiosis I and correct sister-chromatid separation in meiosis II with a failed-segregation route"
+        },
+        {
+          "term": "Nondisjunction",
+          "meaning": "Nondisjunction is failure of homologous chromosomes in meiosis I or sister chromatids in meiosis II to segregate normally, producing cells/gametes with abnormal chromosome numbers.",
+          "image": "a red failure gate where homologs fail to segregate in meiosis I or sister chromatids fail to segregate in meiosis II, producing gametes with abnormal chromosome numbers"
+        }
+      ],
+      "misconception_guards": [
+        "Nondisjunction is the segregation failure; aneuploidy is an abnormal chromosome-number state that can result.",
+        "Discrimination requirement: keep nondisjunction, aneuploidy physically and verbally distinct; do not let one label stand in for the full contrast set."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Segregation Integrity Gate, reconstruct the fixed correct homolog / sister segregation → segregation integrity checkpoint → nondisjunction failure route relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Correct chromosome segregation and nondisjunction",
+          "Nondisjunction"
+        ],
+        "redraw_test": "From memory, place correct homolog / sister segregation on the left, segregation integrity checkpoint in the center, and nondisjunction failure route on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": "Aneuploidy Diagnostic Bench",
+      "causal_transition": "Nondisjunction is now visible as a movement failure, so the next bench examines the chromosome-number state that can result rather than confusing cause with outcome."
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U5-L18",
+      "locus": "Aneuploidy Diagnostic Bench",
+      "title": "The Count Bench With One Chromosome Too Many",
+      "scene_kicker": "Aneuploidy changes the copy number of particular chromosomes, and a karyotype can show that resulting state without replaying the meiotic error that produced it.",
+      "location_description": "the chromosome-count diagnostic bench separating extra or missing individual chromosomes from the meiotic error that produced them",
+      "scene_layout": {
+        "orientation": "Enter Aneuploidy Diagnostic Bench and stop at the chromosome-count diagnostic bench separating extra or missing individual chromosomes from the meiotic error that produced them. The left side is anchored by normal chromosome complement, the working center is aneuploid count comparison, and the right side is anchored by abnormal karyotype display. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Normal chromosome complement",
+            "symbol": "2 copies",
+            "description": "A simplified karyotype reference keeps the expected copy number for each displayed chromosome visible on the left so the diagnostic comparison always has a normal count baseline."
+          },
+          {
+            "position": "center",
+            "label": "Aneuploid count bench",
+            "symbol": "+1 / −1",
+            "description": "The center bench changes the copy number of one particular chromosome while leaving the rest of the displayed complement unchanged, distinguishing extra or missing individual chromosomes from whole-set ploidy changes."
+          },
+          {
+            "position": "right",
+            "label": "Karyotype evidence wall",
+            "symbol": "pairs by type",
+            "description": "A conventional karyotype-style display organizes chromosome copies so the resulting abnormal chromosome complement can be observed. It shows the outcome, not a replay of the earlier nondisjunction event."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the same blue/amber parental-origin chromosome identities from the meiosis hall, plus the narrow gold generation ledger",
+          "story_job": "Imani keeps normal diversity mechanisms separate from chromosome-segregation failures. She makes the outcome scanner change modes before the error cases begin, so allele-combination diversity is never confused with abnormal chromosome number."
+        },
+        {
+          "name": "Chromosome-outcome scanner",
+          "kind": "continuity instrument",
+          "visual": "a waist-high black-and-glass scanner with two unmistakable settings: violet DIVERSITY MODE reads allele combinations, while red SEGREGATION-INTEGRITY MODE reads chromosome movement and copy number",
+          "job": "follows the same chromosome outcomes through the center. It first identifies normal sources of new allele combinations, then switches modes before checking nondisjunction and chromosome-number outcomes."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger from Journeys 1–2, now carrying separate columns for ALLELE COMBINATION, SEGREGATION EVENT, and CHROMOSOME COUNT",
+          "job": "records the causal category of each outcome so normal recombination, segregation failure, and resulting chromosome-number state remain distinct."
+        },
+        {
+          "name": "normal chromosome complement",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of normal chromosome complement fixed on the learner’s left, with labels limited to the biological identities needed for this locus.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "aneuploid count comparison",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the chromosome-count diagnostic bench separating extra or missing individual chromosomes from the meiotic error that produced them; any motion, pairing, separation, calculation, or comparison that defines the concept occurs here.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Place a normal chromosome complement on the left, then add or remove one individual chromosome at the center comparison so the total no longer contains the normal copy number for that chromosome."
+        },
+        {
+          "name": "abnormal karyotype display",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of abnormal karyotype display fixed on the learner’s right; its visible state changes only after the central mechanism or comparison produces an interpretable outcome.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        }
+      ],
+      "continuity_object": "a chromosome-outcome scanner that first reads allele combinations and then chromosome counts; its mode visibly switches from diversity mode to segregation-integrity mode before error cases begin.",
+      "story_open": "The conveyor stops inside the **Aneuploidy Diagnostic Bench**, a bright rectangular laboratory with three fixed displays. On your **left**, a normal chromosome-complement reference is arranged in corresponding groups, with the expected copy number visible for every simplified chromosome type. Directly **ahead**, the black diagnostic bench holds movable chromosome tiles under a large +1 / −1 counter. On your **right**, a wall-sized karyotype-style display is empty, waiting for the final chromosome complement to be organized. Imani places the red-stamped nondisjunction event card behind the bench rather than on it. The cause has already happened. This room diagnoses the resulting chromosome-number state.",
+      "story_paragraphs": [
+        "The conveyor stops inside the **Aneuploidy Diagnostic Bench**, a bright rectangular laboratory with three fixed displays. On your **left**, a normal chromosome-complement reference is arranged in corresponding groups, with the expected copy number visible for every simplified chromosome type. Directly **ahead**, the black diagnostic bench holds movable chromosome tiles under a large +1 / −1 counter. On your **right**, a wall-sized karyotype-style display is empty, waiting for the final chromosome complement to be organized. Imani places the red-stamped nondisjunction event card behind the bench rather than on it. The cause has already happened. This room diagnoses the resulting chromosome-number state.",
+        "She begins with the normal reference on the left and duplicates it at the center bench. Then she adds one additional copy of a single chromosome type while leaving the copy number of the other chromosome types unchanged. The counter flashes +1. She resets the bench and removes one copy of a particular chromosome instead; the counter flashes −1. In both cases the abnormality concerns one or more **individual chromosomes**, not a complete extra or missing set. Imani names the category **aneuploidy**. Aneuploidy is an abnormal chromosome-number condition involving extra or missing particular chromosomes rather than whole additional or missing chromosome sets.",
+        "The gold ledger now makes a distinction you already encountered at the Ploidy Counter in Journey 1. Ploidy describes the number of complete chromosome sets. Aneuploidy describes an imbalance in the copy number of particular chromosomes. If one chromosome type appears in three copies while the rest retain their usual copy numbers, that is not simply “3n.” If one copy of a chromosome is missing, the cell has not automatically lost an entire chromosome set. The center +1 / −1 counter is deliberately narrow because it is teaching a different counting question from the earlier n versus 2n gauge.",
+        "Imani transfers the +1 outcome to the right wall. The chromosomes are grouped by corresponding type in a **karyotype**-style display, allowing the unusual copy number to be seen. She labels the larger relationship **Karyotype and chromosome-number abnormalities**. A karyotype analysis can reveal some chromosome-number abnormalities, including a trisomic pattern in which a particular chromosome is present in three copies. What the wall cannot show directly is the historical moment during meiosis when the homologs or sister chromatids failed to segregate. The karyotype shows the resulting chromosome complement; the earlier nondisjunction event was a movement in a different room and time.",
+        "To make that limit memorable, Imani tries to drag the red nondisjunction animation onto the karyotype wall. The wall rejects it and displays only the final chromosome copies. She can infer that nondisjunction is one possible mechanism that produced certain aneuploid outcomes, but the static organized chromosome display does not replay that event. This protects two distinctions at once. Nondisjunction versus aneuploidy, and a present chromosome-count observation versus the causal history that generated it.",
+        "The chromosome-outcome scanner dims every label except the central +1 / −1 counter for the second optional recall. The left reference still shows normal copy numbers; the center shows one particular chromosome in an extra or missing copy; the right organizes the resulting complement. If you can name the abnormal chromosome-number category from that geometry, you have identified the result without confusing it with the segregation failure.",
+        "When the labels return, one specific +1 card is highlighted. It shows chromosome 21 in three copies. Imani does not use that card to redefine the general concept you just learned. She carries it through a narrow door marked CASE WINDOW. The general diagnosis remains **aneuploidy**; the next room will examine one named human example and keep its scope deliberately limited."
+      ],
+      "story_close": "Aneuploidy is now fixed to an abnormal copy number of particular chromosomes, and the karyotype is fixed to evidence of the resulting complement. One highlighted chromosome-21 case moves forward as an example, not a definition.",
+      "object_ids": [
+        "U5-K-129",
+        "U5-K-131"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-129",
+          "term": "Aneuploidy",
+          "story": "the count bench showing an otherwise normal complement with one particular chromosome present in an extra or missing copy rather than a whole extra or missing set",
+          "science": "Aneuploidy is a chromosome-number condition in which a cell has extra or missing individual chromosomes rather than complete extra or missing sets.",
+          "exact_name": true,
+          "hint": "the count bench showing an otherwise normal complement with one particular chromosome present in an extra or missing copy rather than a whole extra or missing set",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED"
+        },
+        {
+          "object_id": "U5-K-131",
+          "term": "Karyotype and chromosome-number abnormalities",
+          "story": "a karyotype-style board arranging chromosome copies into corresponding groups so an abnormal count can be seen while the earlier meiotic event itself remains offstage",
+          "science": "Karyotype analysis can reveal some aneuploid chromosome complements, including trisomy, but shows the resulting chromosome state rather than directly observing the earlier nondisjunction event.",
+          "exact_name": true,
+          "hint": "a karyotype-style board arranging chromosome copies into corresponding groups so an abnormal count can be seen while the earlier meiotic event itself remains offstage",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Aneuploidy",
+          "meaning": "Aneuploidy is a chromosome-number condition in which a cell has extra or missing individual chromosomes rather than complete extra or missing sets.",
+          "image": "the count bench showing an otherwise normal complement with one particular chromosome present in an extra or missing copy rather than a whole extra or missing set"
+        },
+        {
+          "term": "Karyotype and chromosome-number abnormalities",
+          "meaning": "Karyotype analysis can reveal some aneuploid chromosome complements, including trisomy, but shows the resulting chromosome state rather than directly observing the earlier nondisjunction event.",
+          "image": "a karyotype-style board arranging chromosome copies into corresponding groups so an abnormal count can be seen while the earlier meiotic event itself remains offstage"
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement: keep nondisjunction, aneuploidy physically and verbally distinct; do not let one label stand in for the full contrast set.",
+        "Resolved science guard RF-U5-035: A karyotype can detect some chromosome-number abnormalities resulting from nondisjunction, such as trisomy 21; it generally shows the resulting chromosome complement, not the historical meiotic event directly."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Aneuploidy Diagnostic Bench, reconstruct the fixed normal chromosome complement → aneuploid count comparison → abnormal karyotype display relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Aneuploidy",
+          "Karyotype and chromosome-number abnormalities"
+        ],
+        "redraw_test": "From memory, place normal chromosome complement on the left, aneuploid count comparison in the center, and abnormal karyotype display on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": true,
+      "checkpoint_object_id": "U5-K-129",
+      "checkpoint_prompt": "What term describes an abnormal number of particular chromosomes rather than a change in whole chromosome sets?",
+      "checkpoint_answer": "Aneuploidy.",
+      "checkpoint_hint": "Return to the fixed three-source compass or chromosome-count bench and reconstruct what physically changed before naming the term.",
+      "next_locus": "Trisomy 21 Case Window",
+      "causal_transition": "The general abnormal chromosome-count concept is clear, allowing one concrete three-copy chromosome-21 pattern to be interpreted at the Trisomy 21 Case Window without replacing the broader mechanism."
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U5-L19",
+      "locus": "Trisomy 21 Case Window",
+      "title": "Three Copies at the Chromosome-21 Window",
+      "scene_kicker": "Trisomy 21 is one specific aneuploid chromosome-count pattern, not a substitute for the broader concepts of nondisjunction or aneuploidy.",
+      "location_description": "the case window showing three copies of chromosome 21 as one illustrative aneuploid outcome of nondisjunction",
+      "scene_layout": {
+        "orientation": "Enter Trisomy 21 Case Window and stop at the case window showing three copies of chromosome 21 as one illustrative aneuploid outcome of nondisjunction. The left side is anchored by paired chromosome-21 reference, the working center is three-copy chromosome-21 display, and the right side is anchored by case interpretation / scope reminder. Those anchors remain visible while the inheritance mechanism is resolved.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Paired chromosome-21 reference",
+            "symbol": "21 21",
+            "description": "Two copies of chromosome 21 are fixed on the learner’s left as the normal comparison state. They stay visible while the center adds one extra chromosome 21, so the change from two copies to three can be reconstructed without shifting the reference."
+          },
+          {
+            "position": "center",
+            "label": "Three-copy chromosome-21 display",
+            "symbol": "21 21 21",
+            "description": "A third chromosome 21 is added in the center while the other displayed chromosome groups retain their ordinary copy numbers, making trisomy a count-level condition rather than a vague “different chromosome” label."
+          },
+          {
+            "position": "right",
+            "label": "Case interpretation panel",
+            "symbol": "case ≠ definition",
+            "description": "The right panel connects trisomy 21 with aneuploidy and possible nondisjunction origins while explicitly keeping this named human case separate from the general definitions of nondisjunction and aneuploidy."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Imani Reyes",
+          "role": "inheritance-systems geneticist",
+          "visual": "deep-green field coat, clear gloves, compact chromosome tablet preserving the same blue/amber parental-origin chromosome identities from the meiosis hall, plus the narrow gold generation ledger",
+          "story_job": "Imani keeps normal diversity mechanisms separate from chromosome-segregation failures. She makes the outcome scanner change modes before the error cases begin, so allele-combination diversity is never confused with abnormal chromosome number."
+        },
+        {
+          "name": "Chromosome-outcome scanner",
+          "kind": "continuity instrument",
+          "visual": "a waist-high black-and-glass scanner with two unmistakable settings: violet DIVERSITY MODE reads allele combinations, while red SEGREGATION-INTEGRITY MODE reads chromosome movement and copy number",
+          "job": "follows the same chromosome outcomes through the center. It first identifies normal sources of new allele combinations, then switches modes before checking nondisjunction and chromosome-number outcomes."
+        },
+        {
+          "name": "Gold generation ledger",
+          "kind": "continuity record",
+          "visual": "the same narrow gold ledger from Journeys 1–2, now carrying separate columns for ALLELE COMBINATION, SEGREGATION EVENT, and CHROMOSOME COUNT",
+          "job": "records the causal category of each outcome so normal recombination, segregation failure, and resulting chromosome-number state remain distinct."
+        },
+        {
+          "name": "paired chromosome-21 reference",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of paired chromosome-21 reference fixed on the learner’s left, with labels limited to the biological identities needed for this locus.",
+          "job": "Establish the starting state, comparison, reference class, or input whose meaning must remain visible before the central mechanism changes anything."
+        },
+        {
+          "name": "three-copy chromosome-21 display",
+          "kind": "scientific_process_or_structure",
+          "visual": "The largest working scientific model in the room, centered on the case window showing three copies of chromosome 21 as one illustrative aneuploid outcome of nondisjunction; any motion, pairing, separation, calculation, or comparison that defines the concept occurs here.",
+          "job": "Perform the diagnostic mechanism that defines this locus: Show a paired chromosome-21 reference first, then add a third chromosome-21 copy to create the trisomy 21 karyotype pattern while leaving the other displayed chromosome pairs unchanged."
+        },
+        {
+          "name": "case interpretation / scope reminder",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of case interpretation / scope reminder fixed on the learner’s right; its visible state changes only after the central mechanism or comparison produces an interpretable outcome.",
+          "job": "Display the consequence, destination, alternative, product, or evidence state that proves what the center mechanism did."
+        }
+      ],
+      "continuity_object": "a chromosome-outcome scanner that first reads allele combinations and then chromosome counts; its mode visibly switches from diversity mode to segregation-integrity mode before error cases begin.",
+      "story_open": "The final door opens into the **Trisomy 21 Case Window**, a quiet clinical-style gallery designed to prevent the example from swallowing the rule. On your **left**, two chromosome-21 tiles sit side by side as a paired reference. Directly **ahead**, the case window contains a larger chromosome display with space for an additional copy of chromosome 21. On your **right**, a restrained interpretation panel has three headings labeled CHROMOSOME STATE, POSSIBLE ORIGIN, and CASE SCOPE. The chromosome-outcome scanner parks beneath the center window, and the gold ledger keeps its EVENT and RESULT columns visible from the previous rooms.",
+      "story_paragraphs": [
+        "The final door opens into the **Trisomy 21 Case Window**, a quiet clinical-style gallery designed to prevent the example from swallowing the rule. On your **left**, two chromosome-21 tiles sit side by side as a paired reference. Directly **ahead**, the case window contains a larger chromosome display with space for an additional copy of chromosome 21. On your **right**, a restrained interpretation panel has three headings labeled CHROMOSOME STATE, POSSIBLE ORIGIN, and CASE SCOPE. The chromosome-outcome scanner parks beneath the center window, and the gold ledger keeps its EVENT and RESULT columns visible from the previous rooms.",
+        "Imani begins with the left reference and points to the two chromosome-21 copies. She then takes the highlighted +1 card from the diagnostic bench and adds a third chromosome 21 at the center. The other displayed chromosome groups keep their usual copy numbers. The defining structural fact is now visible before she names it. **Trisomy 21** means three copies of chromosome 21. On the ledger, RESULT reads ANEUPLOIDY → THREE COPIES OF CHROMOSOME 21. The general category remains aneuploidy because one particular chromosome is present in an extra copy rather than an entire extra chromosome set.",
+        "Only after the count is clear does Imani fill in the POSSIBLE ORIGIN field. **Nondisjunction** during meiosis can produce a gamete with an abnormal chromosome number; after fertilization, that can contribute to a zygote with three copies of chromosome 21. She deliberately writes CAN RESULT FROM rather than IS. Nondisjunction is still the failed segregation event. Trisomy 21 is a resulting chromosome-count state. The same causal chain you built across the previous rooms now reads from movement failure to abnormal count to one specific case example.",
+        "The right interpretation panel then names the full learning target **Trisomy 21 example**. Trisomy 21 is the most common chromosomal cause of **Down syndrome**. Imani keeps that sentence next to the chromosome-count display and nowhere else. The case window is not used to claim that every phenotypic feature of a person can be read directly from a simple karyotype, and it does not turn Down syndrome into the definition of aneuploidy. A karyotype can show the three-copy chromosome-21 pattern; biological development and phenotype involve consequences beyond what this one static chromosome picture alone displays.",
+        "Imani steps back and reopens the four-room route on her tablet. At the first compass, normal genetic diversity arose through crossing over, independent orientation/assortment, and random fertilization. At the second gate, nondisjunction was a failure of homologous chromosomes or sister chromatids to segregate normally. At the third bench, aneuploidy was the resulting abnormal number of particular chromosomes, and a karyotype could reveal that chromosome complement without directly showing the earlier meiotic error. Here, trisomy 21 is one concrete aneuploid chromosome-count pattern involving chromosome 21.",
+        "The chromosome-outcome scanner now shows both modes side by side. Violet DIVERSITY MODE contains recombinant segments and normal chromosome counts. Red SEGREGATION-INTEGRITY MODE contains the movement failure and its count-level consequences. The center finally stops filing every unusual outcome under one word. A recombinant chromosome can be genetically different while carrying the expected chromosome number. An aneuploid cell can have an abnormal chromosome count because segregation failed. Difference alone never tells you which mechanism occurred; the chromosome action and count evidence do.",
+        "Imani closes the gold ledger with three causal lines that can be reconstructed without the room labels. NORMAL VARIATION → crossing over / independent orientation / random fertilization → new allele combinations. SEGREGATION ERROR → nondisjunction → abnormal chromosome-number products. CASE EXAMPLE → aneuploid chromosome complement → three copies of chromosome 21 in trisomy 21. The case-gallery lights fade, leaving the blue and amber chromosome identities on her tablet ready for the next inheritance route, where chromosome mechanics will give way to Mendelian allele tracking."
+      ],
+      "story_close": "The center can now distinguish normal diversity mechanisms from segregation failure, resulting aneuploidy, karyotype evidence, and the specific trisomy 21 example without letting any one term replace the others.",
+      "object_ids": [
+        "U5-K-130"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U5-K-130",
+          "term": "Trisomy 21 example",
+          "story": "the chromosome-21 case window changing from a normal paired reference to three copies of chromosome 21 while other displayed chromosome groups remain unchanged",
+          "science": "Trisomy 21 means three copies of chromosome 21 and is the most common chromosomal cause of Down syndrome; it can result from nondisjunction.",
+          "exact_name": true,
+          "hint": "the chromosome-21 case window changing from a normal paired reference to three copies of chromosome 21 while other displayed chromosome groups remain unchanged",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Trisomy 21 example",
+          "meaning": "Trisomy 21 means three copies of chromosome 21 and is the most common chromosomal cause of Down syndrome; it can result from nondisjunction.",
+          "image": "the chromosome-21 case window changing from a normal paired reference to three copies of chromosome 21 while other displayed chromosome groups remain unchanged"
+        }
+      ],
+      "misconception_guards": [
+        "Trisomy 21 is one illustrative aneuploid outcome and must not become the definition of nondisjunction or aneuploidy."
+      ],
+      "exit_memory": {
+        "one_sentence_model": "At Trisomy 21 Case Window, reconstruct the fixed paired chromosome-21 reference → three-copy chromosome-21 display → case interpretation / scope reminder relationship and state the inheritance mechanism or comparison that changed the right-side interpretation.",
+        "terms_to_carry": [
+          "Trisomy 21 example"
+        ],
+        "redraw_test": "From memory, place paired chromosome-21 reference on the left, three-copy chromosome-21 display in the center, and case interpretation / scope reminder on the right, then redraw or describe the chromosome, allele, cell, organelle, pedigree, or data transformation in causal order."
+      },
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "checkpoint_hint": "",
+      "next_locus": null,
+      "causal_transition": "Journey 3 closes with normal genetic diversity, segregation integrity, nondisjunction, aneuploidy, karyotype evidence, and trisomy 21 kept in separate causal positions."
+    }
+  ],
+  "narrative_design": "U5-F4C-NARRATIVE-1.0"
+}

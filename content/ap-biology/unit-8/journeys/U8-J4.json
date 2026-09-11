@@ -1,0 +1,1053 @@
+{
+  "palace_id": "U8-J4",
+  "unit_id": "unit-8",
+  "palace_name": "Population Survey and Demography Reserve",
+  "story_title": "The Reserve That Could Not Agree on One Population",
+  "tagline": "Seven fixed stations, one census identity, and one rule. Change the measurement without changing the population you are measuring.",
+  "guide": {
+    "name": "Dr. Mira Sen",
+    "role": "ecological-systems field curator who accompanies the learner through all eight Unit 8 journeys",
+    "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+    "story_job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+  },
+  "premise": "Population R17 keeps triggering apparently contradictory reserve reports because density, dispersion, age structure, survivorship, population change, and life-history strategy are being treated as if they were the same measurement. Dr. Mira Sen carries one census card through seven fixed stations so the learner can separate each quantity while keeping one population identity.",
+  "mission": "Travel the locked F2 route in order. Preserve population R17, its mapped boundary, cohort ledger, and N counter while changing only the measurement or comparison required at each station. Keep density separate from dispersion, life tables separate from survivorship curves, dN/dt separate from per-capita rate, and r/K language on a continuum rather than in rigid species boxes.",
+  "finale": "The reserve dashboard reconciles its reports after the learner reconstructs one population through seven different ecological questions. The same R17 population can have a density, a dispersion pattern, demographic structure, a survivorship pattern, an absolute population-change rate, life-history trade-offs, and context-dependent placement along the historical r/K continuum without those ideas becoming interchangeable.",
+  "estimated_minutes": 25,
+  "scene_count": 7,
+  "checkpoint_count": 2,
+  "student_release": "DEVELOPER_PREVIEW_F4D",
+  "preview_release": true,
+  "narrative_design": "U8-F4D-NARRATIVE-1.0",
+  "learner_rule": "Keep population R17 fixed while one measurement changes at a time. Density, dispersion, demography, survivorship, dN/dt, life history, and r/K placement remain distinct. Exact terms appear only after the defining field pattern, table, graph, accounting relation, or trait continuum is visible. Optional Quick Recall appears only twice.",
+  "route_orientation": "The reserve follows one continuous route through seven permanent locations in F2 order. Enter at Reserve Population Survey Grid and continue through Dispersion Pattern Field, Demography Census Station, Survivorship Curve Observatory, Population Change Ledger, Life-History Allocation Walk, and Life-History Continuum Bridge. Every location fixes left, center, and right before the measured variable or comparison changes.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Reserve Population Survey Grid",
+      "short": "Population, density, sampling",
+      "floor": "Survey grid",
+      "symbol": "BOUNDARY→SAMPLE→DENSITY"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Dispersion Pattern Field",
+      "short": "Dispersion patterns",
+      "floor": "Matched field plots",
+      "symbol": "CLUMPED|UNIFORM|RANDOM"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Demography Census Station",
+      "short": "Demography and life tables",
+      "floor": "Census station",
+      "symbol": "AGE→SURVIVAL→REPRODUCTION"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Survivorship Curve Observatory",
+      "short": "Survivorship curves",
+      "floor": "Graph observatory",
+      "symbol": "I|II|III"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Population Change Ledger",
+      "short": "Population change accounting",
+      "floor": "Ledger room",
+      "symbol": "dN/dt=B−D"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Life-History Allocation Walk",
+      "short": "Life-history trade-offs",
+      "floor": "Lifetime walkway",
+      "symbol": "GROWTH↔REPRODUCTION↔SURVIVAL"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Life-History Continuum Bridge",
+      "short": "r/K continuum",
+      "floor": "Continuum bridge",
+      "symbol": "r↔K"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "U8-L27",
+      "locus": "Reserve Population Survey Grid",
+      "title": "The Boundary Before the Number",
+      "scene_kicker": "At Reserve Population Survey Grid, reconstruct same-species population boundary → sampling/quadrat census grid → density estimate and representativeness check and explain Population ecology from the actual ecological mechanism.",
+      "location_description": "Reserve Population Survey Grid",
+      "scene_layout": {
+        "orientation": "Enter Reserve Population Survey Grid and stop at the marked quadrat and population boundary. Keep same-species population boundary fixed on the left, sampling/quadrat census grid as the working center, and density estimate and representativeness check fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "same-species population boundary",
+            "symbol": "L",
+            "description": "A conventional scientific representation of same-species population boundary, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "sampling/quadrat census grid",
+            "symbol": "C",
+            "description": "The main scientific work model at Reserve Population Survey Grid, centered on the marked quadrat and population boundary."
+          },
+          {
+            "position": "right",
+            "label": "density estimate and representativeness check",
+            "symbol": "R",
+            "description": "A conventional scientific representation of density estimate and representativeness check, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "same-species population boundary",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of same-species population boundary, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "sampling/quadrat census grid",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Reserve Population Survey Grid, centered on the marked quadrat and population boundary.",
+          "job": "Execute the defining action beginning with: Define the focal population as same-species organisms interacting within the mapped boundary."
+        },
+        {
+          "name": "density estimate and representativeness check",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of density estimate and representativeness check, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "R17 population census card",
+          "kind": "journey continuity object",
+          "visual": "a durable field card labeled POPULATION R17 that keeps the mapped population boundary, census ID, cohort ledger, population-size counter N, and later measurement tabs visible as the learner moves through the reserve",
+          "job": "preserves one population identity while each station adds a different measurement, graph, accounting rule, or life-history comparison without replacing the real organisms, data tables, equations, or graphs"
+        }
+      ],
+      "continuity_object": "one marked field population with a persistent census ID, mapped boundary, cohort ledger, and population-size counter N",
+      "story_open": "You enter the Reserve Population Survey Grid at the edge of a fenced meadow just after sunrise. On your left, a white boundary line loops around one marked population of small field mice wearing numbered ear tags. Ahead at the center, a square sampling grid covers the meadow in equal plots, with several quadrats lit for inspection and the rest left dark. On your right, a tall survey screen waits to display a density estimate and a warning about whether the sample represents the whole meadow. Dr. Mira Sen clips a metal census card to the rail. The card reads POPULATION R17 and carries the same mapped boundary, cohort ledger, and population-size counter N that will follow you through the reserve.",
+      "story_paragraphs": [
+        "You enter the Reserve Population Survey Grid at the edge of a fenced meadow just after sunrise. On your left, a white boundary line loops around one marked population of small field mice wearing numbered ear tags. Ahead at the center, a square sampling grid covers the meadow in equal plots, with several quadrats lit for inspection and the rest left dark. On your right, a tall survey screen waits to display a density estimate and a warning about whether the sample represents the whole meadow. Dr. Mira Sen clips a metal census card to the rail. The card reads POPULATION R17 and carries the same mapped boundary, cohort ledger, and population-size counter N that will follow you through the reserve.",
+        "Mira points first to the boundary, not the grid. Every mouse inside it belongs to the same species, and the animals can interact with one another and with the same local environment. One mouse alone is an organism. The tagged mice inside the mapped area form the focal population. The grasses, insects, hawks, soil organisms, and other species around them are part of a larger community, but the survey card refuses to absorb those species into R17. The distinction stays visible. A population consists of organisms of the same species that interact with one another and with their environment. Studying how and why a population changes in size, density, distribution, and demographic characteristics across space and time is **population ecology**.",
+        "The center grid flashes. Counting every animal in the entire meadow would be slow, disruptive, and sometimes impossible, so Mira activates several quadrats that spread across the boundary. She refuses to choose only the squares closest to the feeder station, where mice are easiest to see. A sample that overrepresents one unusual patch could give a distorted estimate for the full population. The quadrats must represent the meadow adequately. In each selected square, the system records the area sampled and counts the marked individuals detected there. The point is not that one sampling design works everywhere. The point is that ecologists often estimate population properties from samples when a complete census is impractical, and the sampling design must match the question well enough to represent the population.",
+        "The right screen now receives the count and the amount of area represented by the sampled plots. It does not ask where each mouse sat relative to its neighbors. It asks how many individuals occur per unit area. Mira writes the phrase **population density** below the result. Population density is the number of individuals per unit area or volume. A pond population could be expressed per unit volume. A meadow population is usually expressed per unit area. The screen deliberately hides the map of individual positions so you cannot confuse density with the spatial arrangement that comes next. Two plots can contain the same number of individuals in the same area and therefore have the same density while placing those individuals in completely different patterns.",
+        "The census card updates without changing the population identity. R17 is still the same field-mouse population, bounded by the same white line. Only the way you measured it has changed. Mira taps four headings on the card. Population size asks how many individuals are present. Density asks how many occur per unit area or volume. Distribution asks where the population occurs in space. Demographic characteristics will later ask how survival, death, age structure, and reproduction are arranged within the population. Population ecology connects these measurements across space and time without collapsing them into one number.",
+        "A gate opens at the far end of the grid. The right screen keeps the density estimate fixed while the center display sends three copies of the same population count into the next field. Mira slides the R17 census card into a transparent sleeve so the boundary and N counter remain visible. The next problem looks deceptively similar. You will keep the same abundance and the same area, then move only the positions of individuals. If the number per area stays unchanged while the pattern changes, you will be able to see exactly why density and dispersion cannot be the same measurement."
+      ],
+      "story_close": "A gate opens at the far end of the grid. The right screen keeps the density estimate fixed while the center display sends three copies of the same population count into the next field. Mira slides the R17 census card into a transparent sleeve so the boundary and N counter remain visible. The next problem looks deceptively similar. You will keep the same abundance and the same area, then move only the positions of individuals. If the number per area stays unchanged while the pattern changes, you will be able to see exactly why density and dispersion cannot be the same measurement.",
+      "object_ids": [
+        "U8-K-146",
+        "U8-K-029",
+        "U8-K-147",
+        "U8-K-148"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-146",
+          "term": "Population ecology",
+          "story": "the the marked quadrat and population boundary where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Population ecology studies how and why population size, density, distribution, and demographic characteristics change over space and time.",
+          "exact_name": true,
+          "hint": "the marked quadrat and population boundary",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-029",
+          "term": "Population interactions",
+          "story": "the the marked quadrat and population boundary where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "A population consists of organisms of the same species that interact with one another and with their environment.",
+          "exact_name": false,
+          "hint": "the marked quadrat and population boundary",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-147",
+          "term": "Population density",
+          "story": "the the marked quadrat and population boundary where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Population density is the number of individuals per unit area or volume.",
+          "exact_name": true,
+          "hint": "the marked quadrat and population boundary",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-148",
+          "term": "Population sampling",
+          "story": "the the marked quadrat and population boundary where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Ecologists often estimate population density using samples when a complete census is impractical; sampling design must represent the population adequately.",
+          "exact_name": false,
+          "hint": "the marked quadrat and population boundary",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-029",
+          "term": "Population interactions",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD20: Keep ecological levels nested and do not collapse population/community/ecosystem. Keep Ecological levels, Population ecology, Community, Ecosystem physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD21: Separate number per area/volume from spatial arrangement. Keep Population density, Dispersion pattern physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Dispersion Pattern Field",
+      "f3_scene_brief_id": "F3-U8-L27",
+      "narrative_word_count": 690
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "U8-L28",
+      "locus": "Dispersion Pattern Field",
+      "title": "Three Plots with the Same Density",
+      "scene_kicker": "At Dispersion Pattern Field, reconstruct clumped plot → uniform plot → random plot and explain Dispersion pattern from the actual ecological mechanism.",
+      "location_description": "Dispersion Pattern Field",
+      "scene_layout": {
+        "orientation": "Enter Dispersion Pattern Field and stop at the three equal-density plots. Keep clumped plot fixed on the left, uniform plot as the working center, and random plot fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "clumped plot",
+            "symbol": "L",
+            "description": "A conventional scientific representation of clumped plot, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "uniform plot",
+            "symbol": "C",
+            "description": "The main scientific work model at Dispersion Pattern Field, centered on the three equal-density plots."
+          },
+          {
+            "position": "right",
+            "label": "random plot",
+            "symbol": "R",
+            "description": "A conventional scientific representation of random plot, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "clumped plot",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of clumped plot, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "uniform plot",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Dispersion Pattern Field, centered on the three equal-density plots.",
+          "job": "Execute the defining action beginning with: Hold total abundance and plot area constant across all three panels so density is identical."
+        },
+        {
+          "name": "random plot",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of random plot, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "R17 population census card",
+          "kind": "journey continuity object",
+          "visual": "a durable field card labeled POPULATION R17 that keeps the mapped population boundary, census ID, cohort ledger, population-size counter N, and later measurement tabs visible as the learner moves through the reserve",
+          "job": "preserves one population identity while each station adds a different measurement, graph, accounting rule, or life-history comparison without replacing the real organisms, data tables, equations, or graphs"
+        }
+      ],
+      "continuity_object": "one marked field population with a persistent census ID, mapped boundary, cohort ledger, and population-size counter N",
+      "story_open": "You enter the Dispersion Pattern Field through a narrow gate that divides into three equal plots. On your left, the first plot contains the R17 mouse markers gathered into several tight patches. Ahead at the center, the second plot contains the same number of markers spaced at nearly even intervals. On your right, the third plot contains the same number again, scattered with no obvious regular spacing. Each plot has the same area, and a counter above every gate shows the same total abundance. Mira places the R17 census card on a post where all three plots can see it. The population identity and density remain fixed while only location changes.",
+      "story_paragraphs": [
+        "You enter the Dispersion Pattern Field through a narrow gate that divides into three equal plots. On your left, the first plot contains the R17 mouse markers gathered into several tight patches. Ahead at the center, the second plot contains the same number of markers spaced at nearly even intervals. On your right, the third plot contains the same number again, scattered with no obvious regular spacing. Each plot has the same area, and a counter above every gate shows the same total abundance. Mira places the R17 census card on a post where all three plots can see it. The population identity and density remain fixed while only location changes.",
+        "The left plot activates first. Food patches appear in several sheltered grass clumps, and the markers gather around them. Mira also switches on a social-attraction setting, and some individuals remain near one another even when an adjacent patch is available. The exact cause can vary among populations, so the board does not claim that every cluster has the same explanation. It shows the defining geometry. Individuals are aggregated in patches. This spatial arrangement is **clumped dispersion**. Patchy resources and social interactions often contribute to clumping, but the visible pattern comes first and the causal explanation must be supported by the ecology of the population being studied.",
+        "At the center plot, the feeder patches disappear and territorial boundaries light up between neighboring markers. Each marker occupies a roughly similar amount of space, and close neighbors push one another apart. The final arrangement is more evenly spaced than expected by chance. Mira names this **uniform dispersion**. Territorial behavior or competition can help produce a uniform pattern, although those causes are not universal. The center plot keeps one rule visible. The same number of individuals still occupies the same total area. Density has not changed. Only the spacing among individuals has changed.",
+        "The right plot clears both the resource patches and territorial boundaries. Each marker receives a location independently from the locations of the others. The result looks irregular without forming obvious clusters or even spacing. Mira names this **random dispersion**. Random dispersion is most plausible when individual positions are relatively independent and when resources or environmental conditions do not create strong spacing patterns. The display refuses to treat random as meaning careless or unmeasured. It is a specific spatial pattern that can be compared with clumped and uniform arrangements.",
+        "A white line stretches beneath all three plots. Mira writes **dispersion pattern** across it. Dispersion describes the spatial pattern of individuals within a population. She then places the density screen from the previous room above the line and locks it at one value for all three plots. The comparison is the point. Population density tells you how many individuals occupy a given area or volume. Dispersion tells you how those individuals are arranged inside that space. A dense population could be clumped, uniform, or random. A sparse population could also show any of those patterns. One measurement cannot be used as a substitute for the other.",
+        "The three plots dim, but their shapes remain etched on the floor as patches, evenly spaced dots, and irregular dots. Mira folds those shapes into the R17 census card beside the boundary map. A new door opens toward a station filled with age bands and survival columns. The population will no longer be rearranged across the meadow. Next, the reserve will ask who inside R17 is young, who survives into later stages, and when reproduction occurs. The spatial map stays with you, but the center of attention shifts from where individuals stand to the vital statistics that accumulate across their lives."
+      ],
+      "story_close": "The three plots dim, but their shapes remain etched on the floor as patches, evenly spaced dots, and irregular dots. Mira folds those shapes into the R17 census card beside the boundary map. A new door opens toward a station filled with age bands and survival columns. The population will no longer be rearranged across the meadow. Next, the reserve will ask who inside R17 is young, who survives into later stages, and when reproduction occurs. The spatial map stays with you, but the center of attention shifts from where individuals stand to the vital statistics that accumulate across their lives.",
+      "object_ids": [
+        "U8-K-149",
+        "U8-K-150",
+        "U8-K-151",
+        "U8-K-152"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-149",
+          "term": "Dispersion pattern",
+          "story": "the the three equal-density plots where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Dispersion describes the spatial pattern of individuals within a population.",
+          "exact_name": true,
+          "hint": "the three equal-density plots",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-150",
+          "term": "Clumped dispersion",
+          "story": "the the three equal-density plots where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Clumped dispersion occurs when individuals aggregate in patches, often because resources or social interactions are patchy.",
+          "exact_name": true,
+          "hint": "the three equal-density plots",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-151",
+          "term": "Uniform dispersion",
+          "story": "the the three equal-density plots where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Uniform dispersion occurs when individuals are more evenly spaced than expected by chance, often because of territoriality or competition.",
+          "exact_name": true,
+          "hint": "the three equal-density plots",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-152",
+          "term": "Random dispersion",
+          "story": "the the three equal-density plots where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Random dispersion occurs when individual locations are independent of one another and resources/conditions do not create strong spacing patterns.",
+          "exact_name": true,
+          "hint": "the three equal-density plots",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD21: Separate number per area/volume from spatial arrangement. Keep Population density, Dispersion pattern physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD22: Classify spatial pattern while holding density conceptually separate. Keep Clumped dispersion, Uniform dispersion, Random dispersion physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-149",
+      "checkpoint_prompt": "Without looking back, identify or explain Dispersion pattern from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "Dispersion describes the spatial pattern of individuals within a population.",
+      "next_locus": "Demography Census Station",
+      "f3_scene_brief_id": "F3-U8-L28",
+      "narrative_word_count": 605
+    },
+    {
+      "scene_index": 2,
+      "locus_id": "U8-L29",
+      "locus": "Demography Census Station",
+      "title": "The Population Gains an Age Structure",
+      "scene_kicker": "At Demography Census Station, reconstruct age/stage classes → survival and mortality columns → reproduction and demographic summary columns and explain Demography from the actual ecological mechanism.",
+      "location_description": "Demography Census Station",
+      "scene_layout": {
+        "orientation": "Enter Demography Census Station and stop at the age-class life-table desk. Keep age/stage classes fixed on the left, survival and mortality columns as the working center, and reproduction and demographic summary columns fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "age/stage classes",
+            "symbol": "L",
+            "description": "A conventional scientific representation of age/stage classes, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "survival and mortality columns",
+            "symbol": "C",
+            "description": "The main scientific work model at Demography Census Station, centered on the age-class life-table desk."
+          },
+          {
+            "position": "right",
+            "label": "reproduction and demographic summary columns",
+            "symbol": "R",
+            "description": "A conventional scientific representation of reproduction and demographic summary columns, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "age/stage classes",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of age/stage classes, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "survival and mortality columns",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Demography Census Station, centered on the age-class life-table desk.",
+          "job": "Execute the defining action beginning with: Group the same population into age or life-stage classes without changing population identity."
+        },
+        {
+          "name": "reproduction and demographic summary columns",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of reproduction and demographic summary columns, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "R17 population census card",
+          "kind": "journey continuity object",
+          "visual": "a durable field card labeled POPULATION R17 that keeps the mapped population boundary, census ID, cohort ledger, population-size counter N, and later measurement tabs visible as the learner moves through the reserve",
+          "job": "preserves one population identity while each station adds a different measurement, graph, accounting rule, or life-history comparison without replacing the real organisms, data tables, equations, or graphs"
+        }
+      ],
+      "continuity_object": "one marked field population with a persistent census ID, mapped boundary, cohort ledger, and population-size counter N",
+      "story_open": "You enter the Demography Census Station with the R17 boundary map still visible on the census card. On your left, a wall of numbered drawers sorts members of the same population into age and life-stage classes. Ahead at the center, a long table records survival and mortality for each class. On your right, a second set of columns records reproduction and summarizes how those patterns change across the population. No new species enter the room. Mira clips the same census ID above the table so every row remains part of population R17.",
+      "story_paragraphs": [
+        "You enter the Demography Census Station with the R17 boundary map still visible on the census card. On your left, a wall of numbered drawers sorts members of the same population into age and life-stage classes. Ahead at the center, a long table records survival and mortality for each class. On your right, a second set of columns records reproduction and summarizes how those patterns change across the population. No new species enter the room. Mira clips the same census ID above the table so every row remains part of population R17.",
+        "The left drawers open in sequence. Young individuals appear in the first class, then progressively older animals in later classes. Mira does not pretend that age classes must be identical for every organism. Some populations are better described by life stages, especially when biological transitions matter more than exact age. The function is the same. The population is divided into meaningful classes so survival, death, and reproduction can be followed through time. The reserve has moved beyond a single total N. It now cares about how the individuals composing N are distributed across ages or stages.",
+        "The center table begins with one cohort and follows it forward. In each class, the ledger records how many individuals survive and how many die before reaching the next class. A high count in one row and a low count in the next means something different from a simple decrease in the total population on a single day. These are vital statistics tied to age or stage. Mira writes **demography** above the table. Demography is the study of population vital statistics, especially birth, death, age structure, and related life-history patterns. The same population can have an unchanged total size for a time while its age structure shifts substantially, which can change what happens later.",
+        "The right columns then add reproduction. Some age classes contribute no offspring. Other classes contribute more. Mira combines the survival and reproductive columns into one structured record and names it a **life table**. A life table summarizes survival and reproductive patterns across age classes or life stages. The table therefore carries more information than the N counter alone. It can reveal which stages experience high mortality and which stages contribute most to reproduction, helping ecologists understand the demographic structure that underlies later population change.",
+        "Mira slides a sheet of transparent graph paper over the center table. You can see the rows beneath it, but she does not draw a curve yet. A life table is tabulated information. The curve you will see next is a graphical representation of survivorship across age. The distinction matters. A table can include class-specific survival and reproduction. A survivorship curve focuses on the pattern of survival through age. The two are related, but they are not interchangeable objects. She lifts the graph paper again and leaves the life table visible so you remember what the next graph is built from.",
+        "At the exit, the R17 card gains a cohort tab. The tab now carries age classes, survival entries, mortality entries, and reproductive information beside the original boundary and density record. Mira leads you up a ramp toward a dark observatory where three luminous curves hang over a common set of axes. The reserve is about to compress rows of survival information into shapes. Your task will be to read those shapes by age-specific mortality pattern and resist the temptation to turn each curve into a permanent label for an entire species."
+      ],
+      "story_close": "At the exit, the R17 card gains a cohort tab. The tab now carries age classes, survival entries, mortality entries, and reproductive information beside the original boundary and density record. Mira leads you up a ramp toward a dark observatory where three luminous curves hang over a common set of axes. The reserve is about to compress rows of survival information into shapes. Your task will be to read those shapes by age-specific mortality pattern and resist the temptation to turn each curve into a permanent label for an entire species.",
+      "object_ids": [
+        "U8-K-153",
+        "U8-K-155"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-153",
+          "term": "Demography",
+          "story": "the the age-class life-table desk where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Demography is the study of vital statistics of populations, especially birth, death, age structure, and related life-history patterns.",
+          "exact_name": true,
+          "hint": "the age-class life-table desk",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-155",
+          "term": "Life table",
+          "story": "the the age-class life-table desk where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "A life table summarizes survival and reproductive patterns across age classes or life stages.",
+          "exact_name": true,
+          "hint": "the age-class life-table desk",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD23: Separate tabulated age/stage survival data from its graphical survivorship representation. Keep Life table, Survivorship curve physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Survivorship Curve Observatory",
+      "f3_scene_brief_id": "F3-U8-L29",
+      "narrative_word_count": 578
+    },
+    {
+      "scene_index": 3,
+      "locus_id": "U8-L30",
+      "locus": "Survivorship Curve Observatory",
+      "title": "The Shapes of Mortality",
+      "scene_kicker": "At Survivorship Curve Observatory, reconstruct Type I curve → Type II curve → Type III curve and explain Survivorship curve from the actual ecological mechanism.",
+      "location_description": "Survivorship Curve Observatory",
+      "scene_layout": {
+        "orientation": "Enter Survivorship Curve Observatory and stop at the common age-versus-survival graph. Keep Type I curve fixed on the left, Type II curve as the working center, and Type III curve fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Type I curve",
+            "symbol": "L",
+            "description": "A conventional scientific representation of Type I curve, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "Type II curve",
+            "symbol": "C",
+            "description": "The main scientific work model at Survivorship Curve Observatory, centered on the common age-versus-survival graph."
+          },
+          {
+            "position": "right",
+            "label": "Type III curve",
+            "symbol": "R",
+            "description": "A conventional scientific representation of Type III curve, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "Type I curve",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of Type I curve, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "Type II curve",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Survivorship Curve Observatory, centered on the common age-versus-survival graph.",
+          "job": "Execute the defining action beginning with: Plot survivorship against age on the same axes for all three patterns."
+        },
+        {
+          "name": "Type III curve",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of Type III curve, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "R17 population census card",
+          "kind": "journey continuity object",
+          "visual": "a durable field card labeled POPULATION R17 that keeps the mapped population boundary, census ID, cohort ledger, population-size counter N, and later measurement tabs visible as the learner moves through the reserve",
+          "job": "preserves one population identity while each station adds a different measurement, graph, accounting rule, or life-history comparison without replacing the real organisms, data tables, equations, or graphs"
+        }
+      ],
+      "continuity_object": "one marked field population with a persistent census ID, mapped boundary, cohort ledger, and population-size counter N",
+      "story_open": "You enter the Survivorship Curve Observatory at the top of the ramp. On your left, a graph falls only slightly through early and middle ages before dropping steeply near the far end. Ahead at the center, a second graph declines at an approximately steady pace across the age axis. On your right, a third graph plunges sharply near the beginning and then levels into a much shallower decline. All three use the same horizontal axis for age and the same vertical axis for the number or proportion of a cohort still surviving. Mira lays the R17 life table below the shared axes so the graphs remain tied to survival data rather than to animal mascots.",
+      "story_paragraphs": [
+        "You enter the Survivorship Curve Observatory at the top of the ramp. On your left, a graph falls only slightly through early and middle ages before dropping steeply near the far end. Ahead at the center, a second graph declines at an approximately steady pace across the age axis. On your right, a third graph plunges sharply near the beginning and then levels into a much shallower decline. All three use the same horizontal axis for age and the same vertical axis for the number or proportion of a cohort still surviving. Mira lays the R17 life table below the shared axes so the graphs remain tied to survival data rather than to animal mascots.",
+        "She begins with the left curve. Early in life, most members of the cohort remain alive, so the curve stays high. Mortality rises much more strongly at older ages, and the line falls steeply near the end. Mira names the pattern **Type I survivorship**. Type I survivorship shows high survival through early and middle life followed by a steep decline at older ages. The graph is defined by that age-specific shape. A familiar example can help you remember it, but the curve is not a rigid species box. What you should be able to recover is the mortality pattern from the line itself.",
+        "At the center, the second line crosses the graph with a much more even decline. The chance of dying is approximately similar across ages, so the cohort loses survivors at a roughly steady proportional pattern through time. Mira names this **Type II survivorship**. Type II survivorship approximates a constant mortality risk across ages. The word approximates stays on the display. Real populations do not have to produce a mathematically perfect line for the pattern to be useful. The defining idea is that mortality risk does not become concentrated almost entirely at the youngest or oldest ages.",
+        "The right curve activates next. Many members of the cohort die very early, causing the steep initial drop. Those that survive the vulnerable early period have a much better chance of reaching later stages, so the curve becomes shallower. Mira names this **Type III survivorship**. Type III survivorship shows very high juvenile mortality with much higher survival among individuals that reach later stages. Again, the graph describes a survivorship pattern. It does not decree that every population of a named species must always follow the same curve under every environmental condition.",
+        "Mira turns on all three lines at once and writes **survivorship curve** across the common axes. A survivorship curve plots the proportion or number of a cohort surviving at each age. She then points back down the ramp to the life table. The table held rows of survival and reproduction across classes. The curve takes the survival component and displays its age pattern visually. Type I bends downward late, Type II declines at an approximately constant risk, and Type III falls early. The locations of the bends tell you far more than memorizing example organisms would.",
+        "The observatory doors open onto a ledger room. The R17 card retains its cohort tab, and the population-size counter N begins flashing. Births are entering the population at one side of the next chamber while deaths are being subtracted at the center. A separate lane on the far right carries immigration and emigration. Mira warns you that the next room is where one common mistake can corrupt every later growth model. You must keep the absolute change in population size per unit time separate from a rate that has been scaled to each individual in the population."
+      ],
+      "story_close": "The observatory doors open onto a ledger room. The R17 card retains its cohort tab, and the population-size counter N begins flashing. Births are entering the population at one side of the next chamber while deaths are being subtracted at the center. A separate lane on the far right carries immigration and emigration. Mira warns you that the next room is where one common mistake can corrupt every later growth model. You must keep the absolute change in population size per unit time separate from a rate that has been scaled to each individual in the population.",
+      "object_ids": [
+        "U8-K-156",
+        "U8-K-157",
+        "U8-K-158",
+        "U8-K-159"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-156",
+          "term": "Survivorship curve",
+          "story": "the the common age-versus-survival graph where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "A survivorship curve plots the proportion or number of a cohort surviving at each age.",
+          "exact_name": true,
+          "hint": "the common age-versus-survival graph",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-157",
+          "term": "Type I survivorship",
+          "story": "the the common age-versus-survival graph where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Type I survivorship shows high survival through early and middle life followed by a steep decline at older ages.",
+          "exact_name": true,
+          "hint": "the common age-versus-survival graph",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-158",
+          "term": "Type II survivorship",
+          "story": "the the common age-versus-survival graph where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Type II survivorship approximates a constant mortality risk across ages.",
+          "exact_name": true,
+          "hint": "the common age-versus-survival graph",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-159",
+          "term": "Type III survivorship",
+          "story": "the the common age-versus-survival graph where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Type III survivorship shows very high juvenile mortality with much higher survival among individuals that reach later stages.",
+          "exact_name": true,
+          "hint": "the common age-versus-survival graph",
+          "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Discrimination requirement U8-MD23: Separate tabulated age/stage survival data from its graphical survivorship representation. Keep Life table, Survivorship curve physically distinct until the comparison is complete.",
+        "Discrimination requirement U8-MD24: Distinguish the age-specific mortality shapes rather than memorizing example species. Keep Type I survivorship, Type II survivorship, Type III survivorship physically distinct until the comparison is complete."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Population Change Ledger",
+      "f3_scene_brief_id": "F3-U8-L30",
+      "narrative_word_count": 598
+    },
+    {
+      "scene_index": 4,
+      "locus_id": "U8-L31",
+      "locus": "Population Change Ledger",
+      "title": "The Number That Was Not Per Capita",
+      "scene_kicker": "At Population Change Ledger, reconstruct B births input → D deaths subtraction and dN/dt result → immigration/emigration and per-capita comparison lane and explain Population growth equation dN/dt = B − D from the actual ecological mechanism.",
+      "location_description": "Population Change Ledger",
+      "scene_layout": {
+        "orientation": "Enter Population Change Ledger and stop at the dN/dt births-deaths board with migration side lane. Keep B births input fixed on the left, D deaths subtraction and dN/dt result as the working center, and immigration/emigration and per-capita comparison lane fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "B births input",
+            "symbol": "L",
+            "description": "A conventional scientific representation of B births input, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "D deaths subtraction and dN/dt result",
+            "symbol": "C",
+            "description": "The main scientific work model at Population Change Ledger, centered on the dN/dt births-deaths board with migration side lane."
+          },
+          {
+            "position": "right",
+            "label": "immigration/emigration and per-capita comparison lane",
+            "symbol": "R",
+            "description": "A conventional scientific representation of immigration/emigration and per-capita comparison lane, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "B births input",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of B births input, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "D deaths subtraction and dN/dt result",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Population Change Ledger, centered on the dN/dt births-deaths board with migration side lane.",
+          "job": "Execute the defining action beginning with: Use the simplified AP model dN/dt = B − D to compute the direction and magnitude of absolute population change when migration is excluded."
+        },
+        {
+          "name": "immigration/emigration and per-capita comparison lane",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of immigration/emigration and per-capita comparison lane, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "R17 population census card",
+          "kind": "journey continuity object",
+          "visual": "a durable field card labeled POPULATION R17 that keeps the mapped population boundary, census ID, cohort ledger, population-size counter N, and later measurement tabs visible as the learner moves through the reserve",
+          "job": "preserves one population identity while each station adds a different measurement, graph, accounting rule, or life-history comparison without replacing the real organisms, data tables, equations, or graphs"
+        }
+      ],
+      "continuity_object": "one marked field population with a persistent census ID, mapped boundary, cohort ledger, and population-size counter N",
+      "story_open": "You enter the Population Change Ledger beneath a large illuminated N counter. On your left, a gate marked B feeds births into the R17 population record. Ahead at the center, a gate marked D removes deaths and sends the result to a display labeled dN/dt. On your right, a separate side lane brings immigrants across the reserve boundary and carries emigrants out. Mira sets the R17 census card beneath the N counter. The same population remains in view while the room separates population size, births, deaths, migration, and the kind of rate being reported.",
+      "story_paragraphs": [
+        "You enter the Population Change Ledger beneath a large illuminated N counter. On your left, a gate marked B feeds births into the R17 population record. Ahead at the center, a gate marked D removes deaths and sends the result to a display labeled dN/dt. On your right, a separate side lane brings immigrants across the reserve boundary and carries emigrants out. Mira sets the R17 census card beneath the N counter. The same population remains in view while the room separates population size, births, deaths, migration, and the kind of rate being reported.",
+        "Mira taps N first. In these population models, **N in population models** represents population size. The counter is not a density, an age class, or a survivorship curve. It is the number of individuals in the population at a given point in the model. She then points to B and D. In the simplified population-growth ledger, **B and D in population growth** represent the birth and death inputs used in the equation. Births add individuals and deaths remove individuals. The symbols keep those directions physically visible before the equation is read.",
+        "The center board lights with **dN/dt = B − D**. Mira names it the **population growth equation dN/dt = B − D** for the simplified model that ignores migration. The expression means that the change in population size per unit time equals births minus deaths. If the birth input is greater than the death input, dN/dt is positive and the population increases. If deaths exceed births, dN/dt is negative and the population decreases. If the two inputs balance, the net change from those two processes is zero. The equation describes the direction and magnitude of absolute population change under its stated simplification.",
+        "A red warning flashes when the board tries to rename dN/dt as a per-capita rate. Mira cancels it immediately. dN/dt is the absolute change in population size per unit time. A per-capita rate scales population change to N so the change is expressed relative to the number of individuals present. Two populations can have the same absolute change while having very different per-capita changes if their values of N are different. The reserve keeps these quantities on separate displays so a later exponential-growth model cannot inherit the mistake.",
+        "The right migration lane now activates. Several marked mice enter across the mapped boundary while others leave it. Mira does not squeeze these movements into B or D. Immigration adds individuals to a population and emigration removes individuals. The simplified equation dN/dt = B − D omits migration, so a fuller accounting would need to include those movements when they matter. The side lane exists to make the assumption visible. An equation can be useful without pretending to include processes it has deliberately left out.",
+        "The N counter stabilizes and the R17 card gains a new page with births, deaths, migration arrows, and an absolute-change display. Mira closes the ledger before any exponential or logistic curve appears. Those growth models belong to a later journey. Here, the job is accounting. The next door opens onto a long walkway marked with growth, survival, first reproduction, offspring number, offspring size, and future reproduction. The population ledger will stay with you, but the question shifts from how N changes to how individual organisms allocate limited energy and matter across a lifetime in ways that can shape reproductive success."
+      ],
+      "story_close": "The N counter stabilizes and the R17 card gains a new page with births, deaths, migration arrows, and an absolute-change display. Mira closes the ledger before any exponential or logistic curve appears. Those growth models belong to a later journey. Here, the job is accounting. The next door opens onto a long walkway marked with growth, survival, first reproduction, offspring number, offspring size, and future reproduction. The population ledger will stay with you, but the question shifts from how N changes to how individual organisms allocate limited energy and matter across a lifetime in ways that can shape reproductive success.",
+      "object_ids": [
+        "U8-K-051",
+        "U8-K-031",
+        "U8-K-052",
+        "U8-K-053",
+        "U8-K-154",
+        "U8-K-160"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-051",
+          "term": "Population growth equation dN/dt = B − D",
+          "story": "the the dN/dt births-deaths board with migration side lane where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "For the AP Biology population-growth model that ignores migration, the change in population size per unit time equals births minus deaths: dN/dt = B − D.",
+          "exact_name": true,
+          "hint": "the dN/dt births-deaths board with migration side lane",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-031",
+          "term": "Population growth inputs",
+          "story": "the the dN/dt births-deaths board with migration side lane where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Population growth dynamics depend on birth rate, death rate, and population size.",
+          "exact_name": false,
+          "hint": "the dN/dt births-deaths board with migration side lane",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-052",
+          "term": "N in population models",
+          "story": "the the dN/dt births-deaths board with migration side lane where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "N represents population size in the AP Biology population-growth equations.",
+          "exact_name": true,
+          "hint": "the dN/dt births-deaths board with migration side lane",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-053",
+          "term": "B and D in population growth",
+          "story": "the the dN/dt births-deaths board with migration side lane where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "B and D represent birth rate and death rate, respectively, in the AP Biology equation dN/dt = B − D.",
+          "exact_name": true,
+          "hint": "the dN/dt births-deaths board with migration side lane",
+          "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-154",
+          "term": "Immigration and emigration",
+          "story": "the the dN/dt births-deaths board with migration side lane where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Immigration adds individuals to a population and emigration removes individuals; the simplified AP equation dN/dt = B − D omits migration.",
+          "exact_name": false,
+          "hint": "the dN/dt births-deaths board with migration side lane",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-160",
+          "term": "Population growth rate versus per-capita rate",
+          "story": "the the dN/dt births-deaths board with migration side lane where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "dN/dt is the absolute change in population size per unit time; a per-capita rate is obtained by scaling population change to N.",
+          "exact_name": false,
+          "hint": "the dN/dt births-deaths board with migration side lane",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-051",
+          "term": "Population growth equation dN/dt = B − D",
+          "dependency": "Unit 5 quantitative reasoning; Unit 7 population genetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-031",
+          "term": "Population growth inputs",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-052",
+          "term": "N in population models",
+          "dependency": "Unit 5 quantitative reasoning; Unit 7 population genetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        },
+        {
+          "knowledge_id": "U8-K-053",
+          "term": "B and D in population growth",
+          "dependency": "Unit 5 quantitative reasoning; Unit 7 population genetics",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-011: Canonical record explicitly distinguishes absolute dN/dt from per-capita rate.",
+        "Resolved F1 guard RF-U8-011: Canonical record explicitly distinguishes absolute dN/dt from per-capita rate.",
+        "Resolved F1 guard RF-U8-011: Canonical record explicitly distinguishes absolute dN/dt from per-capita rate.",
+        "Resolved F1 guard RF-U8-011: Canonical record explicitly distinguishes absolute dN/dt from per-capita rate.",
+        "Discrimination requirement U8-MD25: Keep dN/dt distinct from a rate scaled to N and interpret rmax as a per-capita parameter in the exponential model. Keep Population growth equation dN/dt = B − D, rmax, Population growth rate versus per-capita rate physically distinct until the comparison is complete."
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "U8-K-051",
+      "checkpoint_prompt": "Without looking back, identify or explain Population growth equation dN/dt = B − D from the scientific relationship you just reconstructed.",
+      "checkpoint_answer": "For the AP Biology population-growth model that ignores migration, the change in population size per unit time equals births minus deaths: dN/dt = B − D.",
+      "next_locus": "Life-History Allocation Walk",
+      "f3_scene_brief_id": "F3-U8-L31",
+      "narrative_word_count": 562
+    },
+    {
+      "scene_index": 5,
+      "locus_id": "U8-L32",
+      "locus": "Life-History Allocation Walk",
+      "title": "The Budget Across a Lifetime",
+      "scene_kicker": "At Life-History Allocation Walk, reconstruct growth and maintenance phase → age at first reproduction and offspring allocation → future survival/reproduction tradeoff panel and explain Life history from the actual ecological mechanism.",
+      "location_description": "Life-History Allocation Walk",
+      "scene_layout": {
+        "orientation": "Enter Life-History Allocation Walk and stop at the lifetime energy allocation schedule. Keep growth and maintenance phase fixed on the left, age at first reproduction and offspring allocation as the working center, and future survival/reproduction tradeoff panel fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "growth and maintenance phase",
+            "symbol": "L",
+            "description": "A conventional scientific representation of growth and maintenance phase, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "age at first reproduction and offspring allocation",
+            "symbol": "C",
+            "description": "The main scientific work model at Life-History Allocation Walk, centered on the lifetime energy allocation schedule."
+          },
+          {
+            "position": "right",
+            "label": "future survival/reproduction tradeoff panel",
+            "symbol": "R",
+            "description": "A conventional scientific representation of future survival/reproduction tradeoff panel, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "growth and maintenance phase",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of growth and maintenance phase, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "age at first reproduction and offspring allocation",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Life-History Allocation Walk, centered on the lifetime energy allocation schedule.",
+          "job": "Execute the defining action beginning with: Lay out growth, survival, and reproduction across the organism’s lifetime."
+        },
+        {
+          "name": "future survival/reproduction tradeoff panel",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of future survival/reproduction tradeoff panel, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "R17 population census card",
+          "kind": "journey continuity object",
+          "visual": "a durable field card labeled POPULATION R17 that keeps the mapped population boundary, census ID, cohort ledger, population-size counter N, and later measurement tabs visible as the learner moves through the reserve",
+          "job": "preserves one population identity while each station adds a different measurement, graph, accounting rule, or life-history comparison without replacing the real organisms, data tables, equations, or graphs"
+        }
+      ],
+      "continuity_object": "one marked field population with a persistent census ID, mapped boundary, cohort ledger, and population-size counter N",
+      "story_open": "You enter the Life-History Allocation Walk beside a row of age markers that begins at birth and stretches toward later life. On your left, the first section represents growth and maintenance, with food-derived energy and matter entering tissues, repair, movement, and survival. Ahead at the center, the path branches at age at first reproduction into displays for offspring number, offspring size, and reproductive frequency. On your right, a future panel shows the consequences for later survival and later reproduction. Mira clips the R17 census card to a moving rail so the same population history travels beside you while the focus narrows to the lifetime schedule of its individual members.",
+      "story_paragraphs": [
+        "You enter the Life-History Allocation Walk beside a row of age markers that begins at birth and stretches toward later life. On your left, the first section represents growth and maintenance, with food-derived energy and matter entering tissues, repair, movement, and survival. Ahead at the center, the path branches at age at first reproduction into displays for offspring number, offspring size, and reproductive frequency. On your right, a future panel shows the consequences for later survival and later reproduction. Mira clips the R17 census card to a moving rail so the same population history travels beside you while the focus narrows to the lifetime schedule of its individual members.",
+        "The left section makes one constraint visible. Organisms acquire finite energy and matter from their environment at any given time. Using more of those resources for one function can reduce what is available for another. Growth, maintenance, storage, defense, and reproduction all have biological costs. Many adaptations are related to obtaining and using energy and matter in a particular environment. Mira does not turn the walkway into a fixed cash budget with identical numbers for every organism. The useful idea is the tradeoff. Allocation to one life function can constrain allocation to another under real energetic and material limits.",
+        "At the center branch, Mira moves the age-at-first-reproduction marker earlier. The reproduction panel activates sooner, but the growth lane shortens. She then increases the number of offspring while holding the available allocation within the model. Average investment per offspring falls unless more resources are acquired. On another pass, she reduces offspring number and increases offspring size. A third switch changes how often reproduction occurs. These are not separate definitions floating in space. They are interacting components of a lifetime schedule shaped by survival, reproduction, and environmental conditions.",
+        "Mira writes **life history** along the rail. Life history describes an organism's schedule of growth, reproduction, and survival across its lifetime. The center display lists major life-history traits, including age at first reproduction, number and size of offspring, and frequency of reproduction. These traits involve energetic tradeoffs. Earlier reproduction can provide one kind of advantage under some conditions while leaving less time or energy for growth. Greater investment in each offspring can reduce the number produced. Repeated reproduction can interact with future survival and condition. The direction and magnitude of these tradeoffs depend on biology and environment, so the walkway never labels one schedule universally best.",
+        "The right panel now connects the schedule to the population ledger. If individuals in R17 reproduce at different ages, produce different numbers of offspring, or survive differently after reproduction, those traits can alter future age structure and population growth. The causal path goes through individual survival and reproductive success, then accumulates at the population level over generations. Mira keeps the word adaptation tied to inherited variation and selection across populations. Organisms do not redesign their life histories simply because the environment demands a better strategy.",
+        "At the end of the walk, every trait slider detaches from its separate box and snaps onto one long horizontal track. The left end is labeled low density and uncrowded conditions. The right end is labeled high density near carrying capacity K. Mira leaves the middle wide and continuous. She tells you the final station will use historical terms that are easy to misuse if they are treated as permanent species categories. The only safe way across is to keep the traits on a continuum and ask which combinations can be favored under different ecological conditions."
+      ],
+      "story_close": "At the end of the walk, every trait slider detaches from its separate box and snaps onto one long horizontal track. The left end is labeled low density and uncrowded conditions. The right end is labeled high density near carrying capacity K. Mira leaves the middle wide and continuous. She tells you the final station will use historical terms that are easy to misuse if they are treated as permanent species categories. The only safe way across is to keep the traits on a continuum and ask which combinations can be favored under different ecological conditions.",
+      "object_ids": [
+        "U8-K-163",
+        "U8-K-030",
+        "U8-K-164"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-163",
+          "term": "Life history",
+          "story": "the the lifetime energy allocation schedule where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Life history describes an organism’s schedule of growth, reproduction, and survival across its lifetime.",
+          "exact_name": true,
+          "hint": "the lifetime energy allocation schedule",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-030",
+          "term": "Energy/matter adaptations",
+          "story": "the the lifetime energy allocation schedule where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Many adaptations are related to obtaining and using energy and matter in a particular environment.",
+          "exact_name": false,
+          "hint": "the lifetime energy allocation schedule",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "AP_REQUIRED"
+        },
+        {
+          "object_id": "U8-K-164",
+          "term": "Life-history traits",
+          "story": "the the lifetime energy allocation schedule where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "Key life-history traits include age at first reproduction, number and size of offspring, and frequency of reproduction; these traits involve energetic trade-offs.",
+          "exact_name": false,
+          "hint": "the lifetime energy allocation schedule",
+          "name_support": "NO_EXACT_NAME_GATE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [
+        {
+          "knowledge_id": "U8-K-030",
+          "term": "Energy/matter adaptations",
+          "dependency": "Unit 7 natural selection",
+          "rule": "Reactivate prerequisite science only as needed to interpret this ecology relationship; do not assign a duplicate mnemonic identity unless a later architecture explicitly requires one."
+        }
+      ],
+      "misconception_guards": [],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": "Life-History Continuum Bridge",
+      "f3_scene_brief_id": "F3-U8-L32",
+      "narrative_word_count": 582
+    },
+    {
+      "scene_index": 6,
+      "locus_id": "U8-L33",
+      "locus": "Life-History Continuum Bridge",
+      "title": "The Two Labels at the Ends",
+      "scene_kicker": "At Life-History Continuum Bridge, reconstruct low-density/uncrowded end → trait continuum → high-density/near-K end and explain K-selection from the actual ecological mechanism.",
+      "location_description": "Life-History Continuum Bridge",
+      "scene_layout": {
+        "orientation": "Enter Life-History Continuum Bridge and stop at the r-to-K selection continuum. Keep low-density/uncrowded end fixed on the left, trait continuum as the working center, and high-density/near-K end fixed on the right. The learner should be able to redraw these positions before the system changes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "low-density/uncrowded end",
+            "symbol": "L",
+            "description": "A conventional scientific representation of low-density/uncrowded end, fixed on the learner’s left."
+          },
+          {
+            "position": "center",
+            "label": "trait continuum",
+            "symbol": "C",
+            "description": "The main scientific work model at Life-History Continuum Bridge, centered on the r-to-K selection continuum."
+          },
+          {
+            "position": "right",
+            "label": "high-density/near-K end",
+            "symbol": "R",
+            "description": "A conventional scientific representation of high-density/near-K end, fixed on the learner’s right."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mira Sen",
+          "kind": "guide",
+          "visual": "dark field vest, waterproof notebook, a transparent ecology tablet that can display the current scale, organism or population identity, energy/matter arrows, and measured variables, plus a pointer used only to indicate real structures, graphs, reservoirs, or interactions",
+          "job": "Mira establishes the physical geography before terminology, keeps ecological scale and organism/population/community identity visible, changes one causal variable or transfer at a time, and names a term only after its defining pattern or mechanism can be reconstructed."
+        },
+        {
+          "name": "low-density/uncrowded end",
+          "kind": "scientific_part_or_reference",
+          "visual": "A conventional scientific representation of low-density/uncrowded end, fixed on the learner’s left.",
+          "job": "Hold the starting state, cue, resource, population, reservoir, or comparison."
+        },
+        {
+          "name": "trait continuum",
+          "kind": "scientific_process_or_structure",
+          "visual": "The main scientific work model at Life-History Continuum Bridge, centered on the r-to-K selection continuum.",
+          "job": "Execute the defining action beginning with: Place reproductive traits along a continuum rather than sorting species into two rigid boxes."
+        },
+        {
+          "name": "high-density/near-K end",
+          "kind": "scientific_part_or_output",
+          "visual": "A conventional scientific representation of high-density/near-K end, fixed on the learner’s right.",
+          "job": "Display the resulting ecological state, interpretation, or consequence."
+        },
+        {
+          "name": "R17 population census card",
+          "kind": "journey continuity object",
+          "visual": "a durable field card labeled POPULATION R17 that keeps the mapped population boundary, census ID, cohort ledger, population-size counter N, and later measurement tabs visible as the learner moves through the reserve",
+          "job": "preserves one population identity while each station adds a different measurement, graph, accounting rule, or life-history comparison without replacing the real organisms, data tables, equations, or graphs"
+        }
+      ],
+      "continuity_object": "one marked field population with a persistent census ID, mapped boundary, cohort ledger, and population-size counter N",
+      "story_open": "You enter the Life-History Continuum Bridge above the reserve meadow. On your left, the bridge begins over a low-density, relatively uncrowded landscape where resources are not yet strongly limited by crowding. Ahead at the center, a long rail carries the life-history trait sliders from the previous room, including timing of reproduction, offspring number, offspring size, and investment in survival. On your right, the bridge reaches a high-density landscape near the environment's carrying capacity K, where competition for limiting resources can be stronger. Mira locks the R17 census card into the rail so the population identity remains fixed while the selective conditions change across the bridge.",
+      "story_paragraphs": [
+        "You enter the Life-History Continuum Bridge above the reserve meadow. On your left, the bridge begins over a low-density, relatively uncrowded landscape where resources are not yet strongly limited by crowding. Ahead at the center, a long rail carries the life-history trait sliders from the previous room, including timing of reproduction, offspring number, offspring size, and investment in survival. On your right, the bridge reaches a high-density landscape near the environment's carrying capacity K, where competition for limiting resources can be stronger. Mira locks the R17 census card into the rail so the population identity remains fixed while the selective conditions change across the bridge.",
+        "At the left end, the display emphasizes conditions where rapid reproduction can contribute strongly to reproductive success. Trait combinations that increase the rate of offspring production can be favored when population density is low and competition is relatively weak. Mira places the historical label **r-selection** over this end. r-selection describes selection favoring traits that maximize reproductive success in uncrowded, low-density conditions. The label belongs to an endpoint of a continuum. It does not mean that an organism carries a permanent r badge regardless of environment, population state, or the particular life-history trait being considered.",
+        "At the right end, crowding indicators rise and the population approaches K for the current environment. Traits that improve performance under stronger competition can become more advantageous. Mira places the historical label **K-selection** over this end. K-selection describes selection favoring traits advantageous at high density near carrying capacity. It is also one end of a continuum of life histories. The K on the sign refers to carrying capacity, which depends on environmental conditions and can change. The sign does not claim that K is a fixed species constant.",
+        "The center rail is the most important part of the bridge. Mira spreads the trait sliders across it instead of allowing them to snap into two boxes. Some organisms and populations may show combinations that resemble one end more strongly for certain traits, while other traits fall elsewhere. Environmental conditions can also shift which traits are favored. The framework therefore works best as a way to compare life-history tendencies and tradeoffs across a continuum. Turning every species into permanently r-selected or K-selected would erase the variation and context that the bridge is designed to preserve.",
+        "Mira asks you to look back across the reserve. The white population boundary from the first station is still visible. The three equal-density dispersion plots lie beside it. The demographic table and survivorship graphs glow on the hillside. The births and deaths ledger flashes under the N counter. The lifetime allocation walk leads directly onto the bridge. None of those stations described a different ecological level. They were different measurements and mechanisms applied to one population. Density described number per area. Dispersion described spatial arrangement. Demography organized vital statistics. Survivorship curves displayed age-specific survival. dN/dt recorded absolute population change per unit time. Life history organized growth, survival, and reproduction across a lifetime.",
+        "The R17 census card finally unlocks from the rail. Mira folds it once so the mapped boundary, N counter, cohort ledger, and life-history track all remain visible on one page. The reserve no longer looks like a collection of unrelated vocabulary. It looks like one population seen through a sequence of questions. Who belongs to the population. How many occupy the space. How are they arranged. Who survives at each age. What changes N. How are energy and matter allocated across a lifetime. Which life-history traits can be favored under different density conditions. When you can rebuild that route in order, the reserve gate opens toward the next population-growth control center."
+      ],
+      "story_close": "The R17 census card finally unlocks from the rail. Mira folds it once so the mapped boundary, N counter, cohort ledger, and life-history track all remain visible on one page. The reserve no longer looks like a collection of unrelated vocabulary. It looks like one population seen through a sequence of questions. Who belongs to the population. How many occupy the space. How are they arranged. Who survives at each age. What changes N. How are energy and matter allocated across a lifetime. Which life-history traits can be favored under different density conditions. When you can rebuild that route in order, the reserve gate opens toward the next population-growth control center.",
+      "object_ids": [
+        "U8-K-165",
+        "U8-K-166"
+      ],
+      "story_beats": [
+        {
+          "object_id": "U8-K-165",
+          "term": "K-selection",
+          "story": "the the r-to-K selection continuum where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "K-selection describes selection favoring traits advantageous at high density near carrying capacity; it is one end of a continuum of life histories.",
+          "exact_name": true,
+          "hint": "the r-to-K selection continuum",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        },
+        {
+          "object_id": "U8-K-166",
+          "term": "r-selection",
+          "story": "the the r-to-K selection continuum where the population measurement, table, graph, equation, or life-history comparison is made visible before the term is named",
+          "science": "r-selection describes selection favoring traits that maximize reproductive success in uncrowded, low-density conditions; it is one end of a continuum.",
+          "exact_name": true,
+          "hint": "the r-to-K selection continuum",
+          "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+          "reactivation_mode": "NEW_OR_EXTENDED_UNIT8_LEARNING",
+          "scope_class": "TEACHER_REQUIRED_ENRICHMENT"
+        }
+      ],
+      "prior_unit_reactivation": [],
+      "misconception_guards": [
+        "Resolved F1 guard RF-U8-014: Canonical wording preserves historical terms as endpoints of a life-history continuum.",
+        "Resolved F1 guard RF-U8-014: Canonical wording preserves historical terms as endpoints of a life-history continuum."
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": null,
+      "checkpoint_prompt": "",
+      "checkpoint_answer": "",
+      "next_locus": null,
+      "f3_scene_brief_id": "F3-U8-L33",
+      "narrative_word_count": 606
+    }
+  ],
+  "source_brief_lock": "LOCKED_F3",
+  "scientific_lock": "LOCKED_F1",
+  "architecture_lock": "LOCKED_F2",
+  "prior_narrative_locks": [
+    "LOCKED_F4A_J1",
+    "LOCKED_F4B_J2",
+    "LOCKED_F4C_J3"
+  ]
+}

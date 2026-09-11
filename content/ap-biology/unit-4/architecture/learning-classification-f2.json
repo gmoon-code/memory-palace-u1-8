@@ -1,0 +1,3438 @@
+{
+  "schema": "memory-palace-v2-unit4-f2-classification-1.0",
+  "generated_utc": "2026-09-03T07:00:00+00:00",
+  "unit_id": "unit-4",
+  "canonical_source_lock": "F1",
+  "counts": {
+    "total": 180,
+    "by_destination": {
+      "PALACE_PRIMARY_LOCUS": 51,
+      "PALACE_EMBEDDED": 111,
+      "CHALLENGE_LAB": 15,
+      "SUPPORTING_NON_RUNTIME_SCOPE_GUARD": 3
+    },
+    "by_name_support": {
+      "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE": 75,
+      "SEMANTIC_SCIENCE_CUE_SUFFICIENT": 47,
+      "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED": 40,
+      "NO_EXACT_NAME_GATE": 18
+    },
+    "exact_name_targets": 162,
+    "mandatory_spelling_targets": 0
+  },
+  "records": [
+    {
+      "knowledge_id": "U4-K-001",
+      "canonical_label": "Direct or distance communication",
+      "topic": "4.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L01",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "COMMUNICATION_MODE_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-002",
+      "canonical_label": "Short-distance local regulators",
+      "topic": "4.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-003",
+      "canonical_label": "Long-distance signaling",
+      "topic": "4.1",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENDOCRINE_TRANSPORT_ROUTE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-004",
+      "canonical_label": "Signal pathway links reception to response",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-005",
+      "canonical_label": "Protein modification and phosphorylation cascades",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L15",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "KINASE_CASCADE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-006",
+      "canonical_label": "Ligand recognition by receptor",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-007",
+      "canonical_label": "Ligand-binding specificity",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-008",
+      "canonical_label": "GPCR example",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L10",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "GPCR_MEMBRANE_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-009",
+      "canonical_label": "Receptor location",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L08",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RECEPTOR_LOCATION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-010",
+      "canonical_label": "Relay, amplification, and response",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SECOND_MESSENGER_AMPLIFICATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-011",
+      "canonical_label": "Ligand-induced receptor shape change",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-012",
+      "canonical_label": "Enzymes and second messengers",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SECOND_MESSENGER_AMPLIFICATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-013",
+      "canonical_label": "Hormones as long-distance messengers",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENDOCRINE_TRANSPORT_ROUTE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-014",
+      "canonical_label": "Ligand-gated channels",
+      "topic": "4.2",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LIGAND_GATED_CHANNEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-015",
+      "canonical_label": "Signal response changes phenotype/function",
+      "topic": "4.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RESPONSE_BRANCHING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-016",
+      "canonical_label": "Mutations alter signaling",
+      "topic": "4.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L18",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MUTATION_PERTURBATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-017",
+      "canonical_label": "Chemicals activate or inhibit pathways",
+      "topic": "4.3",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L19",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "AGONIST_ANTAGONIST_PERTURBATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-018",
+      "canonical_label": "Feedback maintains internal environment",
+      "topic": "4.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HOMEOSTATIC_LOOP_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-019",
+      "canonical_label": "Negative feedback",
+      "topic": "4.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L22",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "NEGATIVE_FEEDBACK_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-020",
+      "canonical_label": "Positive feedback",
+      "topic": "4.4",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L24",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "POSITIVE_FEEDBACK_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-021",
+      "canonical_label": "Cell cycle regulation",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CELL_CYCLE_CLOCK",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-022",
+      "canonical_label": "Cell-cycle stages",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L29",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CELL_CYCLE_CLOCK",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-023",
+      "canonical_label": "G1 phase",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L30",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "G1_PHASE_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-024",
+      "canonical_label": "S phase",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L31",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "S_PHASE_REPLICATION_AND_COUNT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-025",
+      "canonical_label": "G2 phase",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L32",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "G2_PHASE_SCENE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-026",
+      "canonical_label": "G0 stage and reentry",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L33",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "G0_BRANCH",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-027",
+      "canonical_label": "Nondividing cells",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L33",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "G0_BRANCH",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-028",
+      "canonical_label": "Mitosis genome transmission",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L34",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "MITOSIS_SEQUENCE_OVERVIEW",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-029",
+      "canonical_label": "Mitosis roles",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L34",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MITOSIS_SEQUENCE_OVERVIEW",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-030",
+      "canonical_label": "Mitosis sequence",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L34",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MITOSIS_SEQUENCE_OVERVIEW",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-031",
+      "canonical_label": "Prophase",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L35",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SPINDLE_FORMATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-032",
+      "canonical_label": "Metaphase",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L37",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "METAPHASE_ALIGNMENT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-033",
+      "canonical_label": "Anaphase",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L38",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ANAPHASE_DYNAMICS_AND_COUNT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-034",
+      "canonical_label": "Telophase",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L39",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TELOPHASE_REASSEMBLY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-035",
+      "canonical_label": "Cytokinesis",
+      "topic": "4.5",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L40",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ANIMAL_CYTOKINESIS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-036",
+      "canonical_label": "Cell-cycle checkpoints",
+      "topic": "4.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L42",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHECKPOINT_DECISION_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-037",
+      "canonical_label": "Cyclin-CDK control",
+      "topic": "4.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L47",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CYCLIN_CDK_OSCILLATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-038",
+      "canonical_label": "Disrupted cell-cycle control",
+      "topic": "4.6",
+      "scope_class": "AP_REQUIRED",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CANCER_CONTROL_FAILURE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-039",
+      "canonical_label": "Cell communication importance",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L01",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "COMMUNICATION_MODE_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-040",
+      "canonical_label": "Direct contact",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L02",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "JUNCTION_AND_CONTACT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-001"
+    },
+    {
+      "knowledge_id": "U4-K-041",
+      "canonical_label": "Gap junction",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "JUNCTION_AND_CONTACT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-001"
+    },
+    {
+      "knowledge_id": "U4-K-042",
+      "canonical_label": "Plasmodesmata",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "JUNCTION_AND_CONTACT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-001"
+    },
+    {
+      "knowledge_id": "U4-K-043",
+      "canonical_label": "Antigen-presenting cell contact example",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L02",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "JUNCTION_AND_CONTACT_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-044",
+      "canonical_label": "Local signaling",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L03",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-045",
+      "canonical_label": "Local regulator",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-046",
+      "canonical_label": "Ligand",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-047",
+      "canonical_label": "Target cell",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-048",
+      "canonical_label": "Paracrine signaling",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-002"
+    },
+    {
+      "knowledge_id": "U4-K-049",
+      "canonical_label": "Growth factor as local signal",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L03",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LOCAL_SIGNAL_RADIUS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-029"
+    },
+    {
+      "knowledge_id": "U4-K-050",
+      "canonical_label": "Synaptic signaling",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L04",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SYNAPSE_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-051",
+      "canonical_label": "Neurotransmitter",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYNAPSE_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-052",
+      "canonical_label": "Synaptic cleft",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L04",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SYNAPSE_CUTAWAY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-053",
+      "canonical_label": "Long-distance signaling",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENDOCRINE_TRANSPORT_ROUTE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-054",
+      "canonical_label": "Hormone",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENDOCRINE_TRANSPORT_ROUTE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-055",
+      "canonical_label": "Endocrine signaling",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L05",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "ENDOCRINE_TRANSPORT_ROUTE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-056",
+      "canonical_label": "Plant long-distance hormone signaling",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L06",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PLANT_HORMONE_TRANSPORT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-003"
+    },
+    {
+      "knowledge_id": "U4-K-057",
+      "canonical_label": "Insulin signaling example",
+      "topic": "4.1",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L05",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ENDOCRINE_TRANSPORT_ROUTE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-058",
+      "canonical_label": "Reception",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L07",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-059",
+      "canonical_label": "Receptor",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-004"
+    },
+    {
+      "knowledge_id": "U4-K-060",
+      "canonical_label": "Ligand-receptor specificity",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-061",
+      "canonical_label": "Receptor conformational/state change",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L07",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTION_SPECIFICITY_GATE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-062",
+      "canonical_label": "Cell-surface receptor",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTOR_LOCATION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-006"
+    },
+    {
+      "knowledge_id": "U4-K-063",
+      "canonical_label": "Intracellular receptor",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTOR_LOCATION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-064",
+      "canonical_label": "Hydrophobic ligand principle",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L08",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RECEPTOR_LOCATION_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-065",
+      "canonical_label": "Steroid-hormone intracellular signaling",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L09",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "INTRACELLULAR_SIGNALING_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-007"
+    },
+    {
+      "knowledge_id": "U4-K-066",
+      "canonical_label": "Thyroid-hormone intracellular signaling",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L09",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "INTRACELLULAR_SIGNALING_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-007"
+    },
+    {
+      "knowledge_id": "U4-K-067",
+      "canonical_label": "Nitric-oxide intracellular signaling",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L09",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "INTRACELLULAR_SIGNALING_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-007"
+    },
+    {
+      "knowledge_id": "U4-K-068",
+      "canonical_label": "Transduction",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L13",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TRANSDUCTION_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-008"
+    },
+    {
+      "knowledge_id": "U4-K-069",
+      "canonical_label": "Signal transduction pathway",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L13",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TRANSDUCTION_PATHWAY_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-070",
+      "canonical_label": "Protein kinase",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L14",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PHOSPHORYLATION_SWITCH_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-010"
+    },
+    {
+      "knowledge_id": "U4-K-071",
+      "canonical_label": "Phosphorylation cascade",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L15",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "KINASE_CASCADE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-072",
+      "canonical_label": "Protein phosphatase",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PHOSPHORYLATION_SWITCH_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-009"
+    },
+    {
+      "knowledge_id": "U4-K-073",
+      "canonical_label": "Dephosphorylation",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L14",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "PHOSPHORYLATION_SWITCH_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-009"
+    },
+    {
+      "knowledge_id": "U4-K-074",
+      "canonical_label": "Signal amplification",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SECOND_MESSENGER_AMPLIFICATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-075",
+      "canonical_label": "Second messenger",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L16",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SECOND_MESSENGER_AMPLIFICATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-076",
+      "canonical_label": "Cyclic AMP (cAMP)",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L16",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SECOND_MESSENGER_AMPLIFICATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-077",
+      "canonical_label": "Cellular response",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L17",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "RESPONSE_BRANCHING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-078",
+      "canonical_label": "Membrane-permeability response",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RESPONSE_BRANCHING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-079",
+      "canonical_label": "Metabolic response",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RESPONSE_BRANCHING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-080",
+      "canonical_label": "Gene-expression response",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RESPONSE_BRANCHING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-081",
+      "canonical_label": "G protein-coupled receptor (GPCR)",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L10",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GPCR_MEMBRANE_MODEL",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-011"
+    },
+    {
+      "knowledge_id": "U4-K-082",
+      "canonical_label": "Heterotrimeric G protein",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L11",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "G_PROTEIN_MOLECULAR_SWITCH",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-012"
+    },
+    {
+      "knowledge_id": "U4-K-083",
+      "canonical_label": "GDP-to-GTP exchange",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L11",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "G_PROTEIN_MOLECULAR_SWITCH",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-012"
+    },
+    {
+      "knowledge_id": "U4-K-084",
+      "canonical_label": "GTP hydrolysis and switch reset",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L11",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "G_PROTEIN_MOLECULAR_SWITCH",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-012"
+    },
+    {
+      "knowledge_id": "U4-K-085",
+      "canonical_label": "GPCR effector enzyme",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L11",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "G_PROTEIN_MOLECULAR_SWITCH",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-086",
+      "canonical_label": "Ligand-gated ion channel",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L12",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "LIGAND_GATED_CHANNEL",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-011"
+    },
+    {
+      "knowledge_id": "U4-K-087",
+      "canonical_label": "Ion-channel signaling response",
+      "topic": "4.2",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L12",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "LIGAND_GATED_CHANNEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-088",
+      "canonical_label": "Phenotypic signaling outcome",
+      "topic": "4.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RESPONSE_BRANCHING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-089",
+      "canonical_label": "Apoptosis as signaling outcome",
+      "topic": "4.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L17",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "RESPONSE_BRANCHING",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-090",
+      "canonical_label": "Receptor mutation effect",
+      "topic": "4.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MUTATION_PERTURBATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-091",
+      "canonical_label": "Downstream-component mutation effect",
+      "topic": "4.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MUTATION_PERTURBATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-092",
+      "canonical_label": "Chemical pathway agonism/antagonism",
+      "topic": "4.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L19",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "AGONIST_ANTAGONIST_PERTURBATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-093",
+      "canonical_label": "Defective phosphatase prediction",
+      "topic": "4.3",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L18",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "MUTATION_PERTURBATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-009"
+    },
+    {
+      "knowledge_id": "U4-K-094",
+      "canonical_label": "Homeostasis",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L20",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "HOMEOSTATIC_LOOP_MAP",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-095",
+      "canonical_label": "Set point",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HOMEOSTATIC_LOOP_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-014"
+    },
+    {
+      "knowledge_id": "U4-K-096",
+      "canonical_label": "Feedback loop",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HOMEOSTATIC_LOOP_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-097",
+      "canonical_label": "Stimulus in feedback",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SENSOR_INTEGRATOR_EFFECTOR_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-098",
+      "canonical_label": "Sensor/receptor in feedback",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SENSOR_INTEGRATOR_EFFECTOR_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-013"
+    },
+    {
+      "knowledge_id": "U4-K-099",
+      "canonical_label": "Control/integration function",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L21",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SENSOR_INTEGRATOR_EFFECTOR_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-013"
+    },
+    {
+      "knowledge_id": "U4-K-100",
+      "canonical_label": "Effector",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SENSOR_INTEGRATOR_EFFECTOR_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-101",
+      "canonical_label": "Feedback response",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L21",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SENSOR_INTEGRATOR_EFFECTOR_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-102",
+      "canonical_label": "Thermoregulation example",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L22",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "NEGATIVE_FEEDBACK_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-014"
+    },
+    {
+      "knowledge_id": "U4-K-103",
+      "canonical_label": "Blood-glucose feedback example",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L23",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "GLUCOSE_FEEDBACK_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-104",
+      "canonical_label": "Childbirth positive feedback",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "POSITIVE_FEEDBACK_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-105",
+      "canonical_label": "Blood-clotting positive feedback example",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "POSITIVE_FEEDBACK_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-106",
+      "canonical_label": "Fruit-ripening positive feedback example",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L24",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "POSITIVE_FEEDBACK_LOOP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-107",
+      "canonical_label": "Homeostatic dysregulation and disease",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L25",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "HOMEOSTATIC_DYSREGULATION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-015"
+    },
+    {
+      "knowledge_id": "U4-K-108",
+      "canonical_label": "Cell signaling supports homeostasis",
+      "topic": "4.4",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L20",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "HOMEOSTATIC_LOOP_MAP",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-109",
+      "canonical_label": "Genome",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMATIN_PACKING_HIERARCHY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-110",
+      "canonical_label": "Histone",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMATIN_PACKING_HIERARCHY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-111",
+      "canonical_label": "Nucleosome",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMATIN_PACKING_HIERARCHY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-112",
+      "canonical_label": "Chromatin",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L26",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHROMATIN_PACKING_HIERARCHY",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-016"
+    },
+    {
+      "knowledge_id": "U4-K-113",
+      "canonical_label": "Chromosome",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L27",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHROMOSOME_ANATOMY_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-016"
+    },
+    {
+      "knowledge_id": "U4-K-114",
+      "canonical_label": "Replicated chromosome",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_ANATOMY_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-115",
+      "canonical_label": "Sister chromatid",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_ANATOMY_MODEL",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-116",
+      "canonical_label": "Centromere",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_ANATOMY_MODEL",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-017"
+    },
+    {
+      "knowledge_id": "U4-K-117",
+      "canonical_label": "Kinetochore",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L27",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_ANATOMY_MODEL",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-118",
+      "canonical_label": "Common prokaryotic chromosome pattern",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-018"
+    },
+    {
+      "knowledge_id": "U4-K-119",
+      "canonical_label": "Eukaryotic chromosome pattern",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-120",
+      "canonical_label": "Homologous chromosomes",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L28",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-019"
+    },
+    {
+      "knowledge_id": "U4-K-121",
+      "canonical_label": "Somatic cell",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-122",
+      "canonical_label": "Diploid",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-123",
+      "canonical_label": "Gamete",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-020"
+    },
+    {
+      "knowledge_id": "U4-K-124",
+      "canonical_label": "Haploid",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L28",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMOSOME_SET_AND_PLOIDY_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-125",
+      "canonical_label": "Interphase",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CELL_CYCLE_CLOCK",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-021"
+    },
+    {
+      "knowledge_id": "U4-K-126",
+      "canonical_label": "M phase",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L29",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CELL_CYCLE_CLOCK",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-127",
+      "canonical_label": "Mitotic spindle",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L35",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SPINDLE_FORMATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-128",
+      "canonical_label": "Centrosome",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L35",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "SPINDLE_FORMATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-129",
+      "canonical_label": "Prometaphase",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L36",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "KINETOCHORE_ATTACHMENT_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-023"
+    },
+    {
+      "knowledge_id": "U4-K-130",
+      "canonical_label": "Metaphase plate",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L37",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "METAPHASE_ALIGNMENT",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-131",
+      "canonical_label": "Cleavage furrow",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L40",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ANIMAL_CYTOKINESIS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-132",
+      "canonical_label": "Contractile ring",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L40",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ANIMAL_CYTOKINESIS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-133",
+      "canonical_label": "Cell plate",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L41",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "PLANT_CYTOKINESIS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-134",
+      "canonical_label": "Chromosome counting across S phase",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L31",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "S_PHASE_REPLICATION_AND_COUNT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-135",
+      "canonical_label": "Chromosome counting at anaphase",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ANAPHASE_DYNAMICS_AND_COUNT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-136",
+      "canonical_label": "Mitosis-stage visual identification",
+      "topic": "4.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-137",
+      "canonical_label": "Anaphase spindle dynamics",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L38",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "ANAPHASE_DYNAMICS_AND_COUNT",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-024"
+    },
+    {
+      "knowledge_id": "U4-K-138",
+      "canonical_label": "Chromatin composition",
+      "topic": "4.5",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L26",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CHROMATIN_PACKING_HIERARCHY",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_SCIENCE_CUE_SUFFICIENT",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-139",
+      "canonical_label": "Diploid-from-gamete calculation",
+      "topic": "4.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-140",
+      "canonical_label": "Mitosis segregation error prediction",
+      "topic": "4.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-141",
+      "canonical_label": "Checkpoint",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L42",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CHECKPOINT_DECISION_MAP",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-142",
+      "canonical_label": "G1 checkpoint",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L43",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "G1_COMMITMENT_DECISION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-025"
+    },
+    {
+      "knowledge_id": "U4-K-143",
+      "canonical_label": "G0",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L43",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "G1_COMMITMENT_DECISION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-026"
+    },
+    {
+      "knowledge_id": "U4-K-144",
+      "canonical_label": "G2 checkpoint",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L44",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "G2_DNA_DAMAGE_DECISION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-027"
+    },
+    {
+      "knowledge_id": "U4-K-145",
+      "canonical_label": "Spindle assembly checkpoint",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L45",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "SPINDLE_CHECKPOINT",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-146",
+      "canonical_label": "Cell-cycle arrest",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "G2_DNA_DAMAGE_DECISION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-147",
+      "canonical_label": "DNA-damage response",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L44",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "G2_DNA_DAMAGE_DECISION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-027"
+    },
+    {
+      "knowledge_id": "U4-K-148",
+      "canonical_label": "Apoptosis",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L46",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "APOPTOSIS_SEQUENCE",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-149",
+      "canonical_label": "Cyclin",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CYCLIN_CDK_OSCILLATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-150",
+      "canonical_label": "Cyclin-dependent kinase (CDK)",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CYCLIN_CDK_OSCILLATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-151",
+      "canonical_label": "Cyclin-CDK complex",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L47",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CYCLIN_CDK_OSCILLATION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM",
+        "MODEL_OR_CAUSAL_INTERPRETATION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-152",
+      "canonical_label": "Specific cyclin-CDK pairs exclusion",
+      "topic": "4.6",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-028"
+    },
+    {
+      "knowledge_id": "U4-K-153",
+      "canonical_label": "Specific growth-factor names exclusion",
+      "topic": "4.6",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-154",
+      "canonical_label": "Growth-factor cell-cycle signaling",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L48",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "EXTRACELLULAR_GROWTH_CONSTRAINTS",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-029"
+    },
+    {
+      "knowledge_id": "U4-K-155",
+      "canonical_label": "Density-dependent inhibition",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EXTRACELLULAR_GROWTH_CONSTRAINTS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-030"
+    },
+    {
+      "knowledge_id": "U4-K-156",
+      "canonical_label": "Anchorage dependence",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L48",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "EXTRACELLULAR_GROWTH_CONSTRAINTS",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-157",
+      "canonical_label": "Cancer",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L49",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CANCER_CONTROL_FAILURE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-158",
+      "canonical_label": "Cancer-driver alterations",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CANCER_CONTROL_FAILURE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-031"
+    },
+    {
+      "knowledge_id": "U4-K-159",
+      "canonical_label": "Checkpoint evasion in cancer",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CANCER_CONTROL_FAILURE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-160",
+      "canonical_label": "Apoptosis evasion in cancer",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L49",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CANCER_CONTROL_FAILURE",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-161",
+      "canonical_label": "Replicative immortality",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L50",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TUMOR_PROGRESSION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-032"
+    },
+    {
+      "knowledge_id": "U4-K-162",
+      "canonical_label": "Tumor",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L50",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "TUMOR_PROGRESSION",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-163",
+      "canonical_label": "Benign tumor",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L50",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TUMOR_PROGRESSION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-033"
+    },
+    {
+      "knowledge_id": "U4-K-164",
+      "canonical_label": "Malignant tumor",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L50",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TUMOR_PROGRESSION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-034"
+    },
+    {
+      "knowledge_id": "U4-K-165",
+      "canonical_label": "Metastasis",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L50",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "TUMOR_PROGRESSION",
+      "exact_name_recall": true,
+      "name_support": "PHONOLOGICAL_SUPPORT_RECOMMENDED_IF_NEEDED",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-166",
+      "canonical_label": "UV and skin-cancer risk",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_PRIMARY_LOCUS",
+      "locus_id": "U4-L51",
+      "scene_role": "PRIMARY_ANCHOR",
+      "visual_mode": "CARCINOGEN_RISK_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-037"
+    },
+    {
+      "knowledge_id": "U4-K-167",
+      "canonical_label": "Tobacco carcinogen risk",
+      "topic": "4.6",
+      "scope_class": "TEACHER_REQUIRED_ENRICHMENT",
+      "destination": "PALACE_EMBEDDED",
+      "locus_id": "U4-L51",
+      "scene_role": "EMBEDDED_SCIENCE",
+      "visual_mode": "CARCINOGEN_RISK_COMPARISON",
+      "exact_name_recall": true,
+      "name_support": "SEMANTIC_PLUS_OPTIONAL_SOUND_CUE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "EXACT_NAME_FROM_SCIENTIFIC_ROLE",
+        "MEANING_OR_MECHANISM"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-035"
+    },
+    {
+      "knowledge_id": "U4-K-168",
+      "canonical_label": "Unsupported cancer-prevention simplification guard",
+      "topic": "4.6",
+      "scope_class": "SCOPE_GUARD",
+      "destination": "SUPPORTING_NON_RUNTIME_SCOPE_GUARD",
+      "locus_id": null,
+      "scene_role": "SCOPE_BOUNDARY",
+      "visual_mode": "SCOPE_GUARD",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "SCOPE_BOUNDARY_RECOGNITION"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-036"
+    },
+    {
+      "knowledge_id": "U4-K-169",
+      "canonical_label": "Vinblastine spindle mechanism",
+      "topic": "4.6",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": "RF-U4-038"
+    },
+    {
+      "knowledge_id": "U4-K-170",
+      "canonical_label": "Communication-mode discrimination",
+      "topic": "4.1",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-171",
+      "canonical_label": "Receptor structure-function inference",
+      "topic": "4.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-172",
+      "canonical_label": "Signaling-stage diagram interpretation",
+      "topic": "4.2",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-173",
+      "canonical_label": "Pathway-disruption prediction",
+      "topic": "4.3",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-174",
+      "canonical_label": "Feedback graph/data reasoning",
+      "topic": "4.4",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-175",
+      "canonical_label": "Cell-cycle phase data interpretation",
+      "topic": "4.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-176",
+      "canonical_label": "Cell-cycle quantitative reasoning",
+      "topic": "4.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-177",
+      "canonical_label": "Chromosome-count reasoning",
+      "topic": "4.5",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-178",
+      "canonical_label": "Checkpoint disruption prediction",
+      "topic": "4.6",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-179",
+      "canonical_label": "Cyclin-CDK graph interpretation",
+      "topic": "4.6",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    },
+    {
+      "knowledge_id": "U4-K-180",
+      "canonical_label": "Cancer-control application",
+      "topic": "4.6",
+      "scope_class": "PRACTICE_ONLY",
+      "destination": "CHALLENGE_LAB",
+      "locus_id": null,
+      "scene_role": "APPLIED_TRANSFER",
+      "visual_mode": "APPLICATION_PROMPT",
+      "exact_name_recall": false,
+      "name_support": "NO_EXACT_NAME_GATE",
+      "spelling_policy": "ADAPTIVE_SUPPORT_ONLY_NO_MANDATORY_SPELLING_GATE",
+      "retrieval_modes": [
+        "APPLIED_TRANSFER"
+      ],
+      "canonical_lock": "LOCKED_F1",
+      "review_flag_id": null
+    }
+  ]
+}

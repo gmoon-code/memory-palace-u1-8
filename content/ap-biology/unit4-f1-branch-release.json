@@ -1,0 +1,50 @@
+{
+  "schema": "memory-palace-v2-u4-f1-branch-release-1.0",
+  "unit_id": "unit-4",
+  "unit_title": "Cell Communication and Cell Cycle",
+  "base_mainline": "Units 1\u20133 classroom-validated mainline",
+  "base_runtime_version": "v2-apbio-0.20.0-u3-f6",
+  "release_state": "SCIENCE_LOCKED_F1_NOT_STUDENT_RELEASED",
+  "scientific_lock": "LOCKED_F1",
+  "accounting": {
+    "teacher_ppt_slides": 85,
+    "current_ced_topics": 6,
+    "ced_atoms": 38,
+    "canonical_records": 180,
+    "ap_required": 38,
+    "teacher_required_enrichment": 124,
+    "practice_only": 15,
+    "scope_guards": 3,
+    "review_flags_resolved": 39,
+    "assessment_semantic_crosswalks": 9,
+    "student_journeys": 0,
+    "student_scenes": 0,
+    "student_memory_objects": 0,
+    "student_application_challenges": 0
+  },
+  "mainline_regression": {
+    "units_1_3_canonical_records": 557,
+    "guided_journeys": 23,
+    "permanent_scenes": 181,
+    "challenge_lab_items": 36,
+    "automated_tests": 146,
+    "full_workflow_sequence": "PASS",
+    "unit3_f6_ui_logic": "PASS",
+    "live_api_smoke": "PASS"
+  },
+  "protected_files": [
+    {
+      "path": "source/canonical-unit4-f1.json",
+      "sha256": "7bc97cba8cfa8fb05debf125640f107cb112c965577441a8c76b7aec574faf19",
+      "bytes": 231668
+    },
+    {
+      "path": "source/coverage-manifest-f1.json",
+      "sha256": "be7ba6575056f7436c4f559a96ff52a9dc2423e1248d2e034e1964f6af4d0fe6",
+      "bytes": 37297
+    }
+  ],
+  "audit_workbook": "unit-4/audit/APBIO_Unit4_F1_Source_Lock.xlsx",
+  "next_stage": "F2 learning-function classification and palace architecture",
+  "student_release": false
+}

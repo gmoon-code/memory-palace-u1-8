@@ -1,0 +1,1176 @@
+{
+  "palace_id": "Z1",
+  "palace_name": "Scientific Inquiry Lab Annex",
+  "story_title": "The Evidence Lockdown",
+  "tagline": "One glowing result has triggered a lab lockdown. Follow the evidence until you can decide what the experiment actually supports.",
+  "guide": {
+    "name": "Dr. Rowan Lee",
+    "role": "night research director",
+    "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+    "story_job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+  },
+  "premise": "At 11:47 p.m., an automated cell experiment reports an unexpectedly bright signal and seals the research annex. The doors will reopen only after the result has been traced from observation through experimental design and statistical interpretation.",
+  "mission": "Stay with Dr. Rowan Lee and audit one reporter-cell experiment. Decide what changed, what was measured, which comparisons make the result interpretable, how variable the data are, and how much confidence the sample mean deserves.",
+  "finale": "On the Sampling Balcony, the last uncertainty bars settle around the treatment and control means. Rowan closes the orange folder: the annex opens because you can now say exactly what the experiment supports, what it does not prove, and how the data justify that conclusion.",
+  "estimated_minutes": 16,
+  "scene_count": 9,
+  "checkpoint_count": 3,
+  "learner_rule": "Read or listen and picture the scene. The important terms are introduced inside the action. Stop only when a Quick Recall appears.",
+  "route_orientation": "The annex is a straight glass corridor that bends around a central data chamber. You begin at the south Observation Window, move clockwise through experiment design, then climb one level to the statistics rooms and finish on the north Sampling Balcony.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Observation Window",
+      "short": "Observe",
+      "floor": "South wing",
+      "symbol": "◉"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Hypothesis Doors",
+      "short": "Hypotheses",
+      "floor": "South wing",
+      "symbol": "⇄"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Control Benches",
+      "short": "Controls",
+      "floor": "West lab",
+      "symbol": "⚖"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Variable Control Panel",
+      "short": "Variables",
+      "floor": "West lab",
+      "symbol": "↔"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Bias Goggles Cabinet",
+      "short": "Bias",
+      "floor": "North turn",
+      "symbol": "⌁"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Statistics Reporter Desk",
+      "short": "Statistics",
+      "floor": "Upper level",
+      "symbol": "▤"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Center-of-Data Roundabout",
+      "short": "Center",
+      "floor": "Upper level",
+      "symbol": "◎"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Variability Floor",
+      "short": "Spread",
+      "floor": "Upper level",
+      "symbol": "↔"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Sampling Balcony",
+      "short": "Sampling",
+      "floor": "North balcony",
+      "symbol": "±"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus": "Observation Window",
+      "title": "The Light That Should Not Be There",
+      "scene_kicker": "A single observation starts the investigation, but it cannot finish it.",
+      "location_description": "You stand at the south end of the annex behind a thick observation window. Beyond the glass are two trays of identical reporter cells. One tray glows faint green. The other burns bright enough to color the room.",
+      "scene_layout": {
+        "orientation": "The corridor is behind you. The two cell trays sit directly ahead. Rowan’s orange evidence board is fixed to the right wall, and the sealed door to the hypothesis chamber is on the far left.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Sealed hypothesis door",
+            "symbol": "⇄",
+            "description": "Two dark doors wait for possible explanations."
+          },
+          {
+            "position": "center",
+            "label": "Reporter-cell chamber",
+            "symbol": "🧫",
+            "description": "Two trays of cells show the unexpected difference that triggered the lockdown."
+          },
+          {
+            "position": "right",
+            "label": "Evidence board",
+            "symbol": "📋",
+            "description": "Rowan pins observations, questions, predictions, methods, data, and conclusions here as the investigation develops."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Reporter cells",
+          "kind": "experimental subjects",
+          "visual": "two clear trays of cultured cells, one dim and one bright",
+          "job": "provide the observable response that needs an explanation"
+        },
+        {
+          "name": "Orange evidence board",
+          "kind": "investigation map",
+          "visual": "six connected slots with arrows that can point forward or backward",
+          "job": "keeps observation, question, hypothesis, experiment, data, and conclusion connected without pretending science always moves in one rigid line"
+        }
+      ],
+      "story_open": "The annex locks with a metallic thud. Beyond the Observation Window, one tray of reporter cells gives off the faint green glow Rowan expected. The second tray shines like a row of tiny emergency lamps. Rowan does not celebrate. He opens his orange folder and says, “First we describe what we can actually see.”",
+      "story_paragraphs": [
+        "The annex locks with a metallic thud. Beyond the Observation Window, one tray of reporter cells gives off the faint green glow Rowan expected. The second tray shines like a row of tiny emergency lamps. Rowan does not celebrate. He opens his orange folder and says, “First we describe what we can actually see.”",
+        "That first careful noticing is an **observation**. It raises a question: why are these cells brighter? Rowan slides the observation into the first slot of the evidence board, but the arrows on the board do not form a one-way staircase. They loop backward as well as forward. Scientific inquiry can move from observations to questions, hypotheses or predictions, experiments or other methods, data, and evidence-based conclusions, then circle back when the evidence creates a new question. That whole evidence-seeking process is the **scientific method**, while observation → question → hypothesis → experiment → data → conclusion is a useful organizing sequence, not a law that scientists must follow mechanically.",
+        "Rowan writes a tentative explanation: perhaps the new nutrient solution increases production of the glowing reporter protein. A scientific **hypothesis** is a tentative explanation that leads to testable predictions. Beneath it he writes, “If cells receive the new solution, then reporter brightness will increase because…” The **if–then–because** form is a useful way to make the manipulated condition, predicted response, and reasoning visible, but the grammar itself is optional.",
+        "He underlines one final warning in red. Evidence can **support** a hypothesis or fail to support it; even a strong result does not prove the explanation eternally true. The bright tray is an invitation to test, not permission to skip the experiment.",
+        "A green light appears above the two doors on the left. The annex will let you move on only after the explanation is turned into competing predictions."
+      ],
+      "story_close": "A green light appears above the two doors on the left. The annex will let you move on only after the explanation is turned into competing predictions.",
+      "object_ids": [
+        "MO-APBIO-U1-P001",
+        "MO-APBIO-U1-P002",
+        "MO-APBIO-U1-P003",
+        "MO-APBIO-U1-P004",
+        "MO-APBIO-U1-P005"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P001",
+          "term": "Scientific method",
+          "story": "scientist following and revisiting an investigation map",
+          "science": "Scientific inquiry uses observations, questions, hypotheses or predictions, experiments or other methods, data analysis, and evidence-based conclusions. These activities form an iterative process, not a universally fixed step-by-step sequence.",
+          "exact_name": true,
+          "hint": "scientist following and revisiting an investigation map"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P002",
+          "term": "Scientific method sequence",
+          "story": "Looping investigation route",
+          "science": "Observation → question → hypothesis → experiment → data → conclusion is a useful classroom scaffold for organizing an investigation, but real scientific inquiry can involve repetition, backtracking, and feedback among stages.",
+          "exact_name": false,
+          "hint": "Looping investigation route"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P003",
+          "term": "Hypothesis",
+          "story": "HIPPO writing a THESIS on the window sill",
+          "science": "A scientific hypothesis is a tentative explanation based on observations and assumptions that leads to one or more testable predictions.",
+          "exact_name": true,
+          "hint": "HIPPO writing a THESIS on the window sill"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P004",
+          "term": "If-then-because format",
+          "story": "Optional IF–THEN–BECAUSE card",
+          "science": "An if–then–because sentence can help students express a testable prediction and reasoning, but scientific hypotheses do not have to use that grammatical format.",
+          "exact_name": false,
+          "hint": "Optional IF–THEN–BECAUSE card"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P005",
+          "term": "Support or refute",
+          "story": "SUPPORT / FAIL TO SUPPORT stamps",
+          "science": "Experimental results may support a hypothesis or fail to support it; a successful test does not prove a hypothesis true.",
+          "exact_name": false,
+          "hint": "SUPPORT / FAIL TO SUPPORT stamps"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Scientific method",
+          "meaning": "Scientific inquiry uses observations, questions, hypotheses or predictions, experiments or other methods, data analysis, and evidence-based conclusions. These activities form an iterative process, not a universally fixed step-by-step sequence.",
+          "image": "scientist following and revisiting an investigation map"
+        },
+        {
+          "term": "Scientific method sequence",
+          "meaning": "Observation → question → hypothesis → experiment → data → conclusion is a useful classroom scaffold for organizing an investigation, but real scientific inquiry can involve repetition, backtracking, and feedback among stages.",
+          "image": "Looping investigation route"
+        },
+        {
+          "term": "Hypothesis",
+          "meaning": "A scientific hypothesis is a tentative explanation based on observations and assumptions that leads to one or more testable predictions.",
+          "image": "HIPPO writing a THESIS on the window sill"
+        },
+        {
+          "term": "If-then-because format",
+          "meaning": "An if–then–because sentence can help students express a testable prediction and reasoning, but scientific hypotheses do not have to use that grammatical format.",
+          "image": "Optional IF–THEN–BECAUSE card"
+        },
+        {
+          "term": "Support or refute",
+          "meaning": "Experimental results may support a hypothesis or fail to support it; a successful test does not prove a hypothesis true.",
+          "image": "SUPPORT / FAIL TO SUPPORT stamps"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-P001",
+      "checkpoint_prompt": "",
+      "next_locus": "Hypothesis Doors"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Hypothesis Doors",
+      "title": "Two Doors, Two Possible Worlds",
+      "scene_kicker": "The same experiment must be able to separate “no effect” from an effect.",
+      "location_description": "You enter a narrow chamber with two identical steel doors facing you. A white zero is painted on the left door. A glowing upward arrow is painted on the right. The cell experiment can unlock only one path at a time.",
+      "scene_layout": {
+        "orientation": "You entered from the south. The NULL door is on your left, the ALTERNATIVE door on your right, and a small decision console sits between them.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Null door",
+            "symbol": "0",
+            "description": "Represents the possibility that the treatment produces no effect or difference of the type being tested."
+          },
+          {
+            "position": "center",
+            "label": "Decision console",
+            "symbol": "?",
+            "description": "Holds the research question and forces both predictions to refer to the same measured outcome."
+          },
+          {
+            "position": "right",
+            "label": "Alternative door",
+            "symbol": "↑",
+            "description": "Represents an effect, association, or difference inconsistent with the null."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Null door",
+          "kind": "hypothesis",
+          "visual": "flat white door marked NO DIFFERENCE",
+          "job": "represents the formal null hypothesis when null-hypothesis testing is appropriate"
+        },
+        {
+          "name": "Alternative door",
+          "kind": "hypothesis",
+          "visual": "dark door with a bright arrow climbing upward",
+          "job": "represents a treatment effect that conflicts with the null"
+        }
+      ],
+      "story_open": "The left door flashes **NULL HYPOTHESIS**. Rowan reads the plate aloud: if formal null-hypothesis testing is appropriate, the null predicts no treatment effect, association, or difference of the type being tested. For this experiment, that means the new solution does not change mean reporter brightness beyond the variation expected in the experiment.",
+      "story_paragraphs": [
+        "The left door flashes **NULL HYPOTHESIS**. Rowan reads the plate aloud: if formal null-hypothesis testing is appropriate, the null predicts no treatment effect, association, or difference of the type being tested. For this experiment, that means the new solution does not change mean reporter brightness beyond the variation expected in the experiment.",
+        "The right door flashes **ALTERNATIVE HYPOTHESIS**. It predicts an effect inconsistent with the null: cells receiving the new solution will differ in reporter brightness from the comparison condition. Rowan keeps both doors tied to the same response so the test can actually distinguish them.",
+        "“Notice what we are not doing,” Rowan says. “We are not declaring the null false because we dislike it, and we are not pretending every investigation in science must begin with this formal pair.” When the statistics are appropriate, the language later will be **reject** or **fail to reject** the null, not “prove the null” or “prove the alternative.”",
+        "The console accepts both predictions. A floor panel opens beneath the doors and reveals two long experimental benches waiting in the next room."
+      ],
+      "story_close": "The console accepts both predictions. A floor panel opens beneath the doors and reveals two long experimental benches waiting in the next room.",
+      "object_ids": [
+        "MO-APBIO-U1-P006",
+        "MO-APBIO-U1-P007"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P006",
+          "term": "Null hypothesis",
+          "story": "HIPPO-THESIS at the left NULL/Ø door",
+          "science": "When formal null-hypothesis testing is appropriate, the null hypothesis states that there is no effect, association, or difference of the type being tested. Students should use reject or fail to reject language; not every investigation must begin with a formal null hypothesis.",
+          "exact_name": true,
+          "hint": "HIPPO-THESIS at the left NULL/Ø door"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P007",
+          "term": "Alternative hypothesis",
+          "story": "HIPPO-THESIS taking the right ALTERNATE door",
+          "science": "An alternative hypothesis specifies an effect, association, or difference that is inconsistent with the null hypothesis; the exact form depends on the research question and design.",
+          "exact_name": true,
+          "hint": "HIPPO-THESIS taking the right ALTERNATE door"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Null hypothesis",
+          "meaning": "When formal null-hypothesis testing is appropriate, the null hypothesis states that there is no effect, association, or difference of the type being tested. Students should use reject or fail to reject language; not every investigation must begin with a formal null hypothesis.",
+          "image": "HIPPO-THESIS at the left NULL/Ø door"
+        },
+        {
+          "term": "Alternative hypothesis",
+          "meaning": "An alternative hypothesis specifies an effect, association, or difference that is inconsistent with the null hypothesis; the exact form depends on the research question and design.",
+          "image": "HIPPO-THESIS taking the right ALTERNATE door"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-P006",
+      "checkpoint_prompt": "In formal hypothesis testing, which hypothesis predicts no effect, association, or difference of the type being tested?",
+      "next_locus": "Control Benches"
+    },
+    {
+      "scene_index": 2,
+      "locus": "Control Benches",
+      "title": "The Comparisons That Make the Result Mean Something",
+      "scene_kicker": "A treatment result is interpretable only when the comparison conditions tell you what “normal” looks like.",
+      "location_description": "You step into a wide wet-lab room containing four parallel benches. Each bench holds identical reporter cells, but the labels above them differ: CONTROL, EXPERIMENTAL, NEGATIVE CONTROL, and POSITIVE CONTROL.",
+      "scene_layout": {
+        "orientation": "The benches run west to east like lanes. The ordinary control is nearest the entrance, the experimental bench is beside it, and the negative and positive controls occupy the two far lanes.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Comparison lanes",
+            "symbol": "⚖",
+            "description": "The ordinary control and experimental group sit side by side so one focal difference can be judged."
+          },
+          {
+            "position": "center",
+            "label": "Replication rack",
+            "symbol": "▦",
+            "description": "Multiple independent wells repeat each condition so variability can be estimated."
+          },
+          {
+            "position": "right",
+            "label": "Validation lanes",
+            "symbol": "−/+",
+            "description": "Negative and positive controls test whether false signals or a broken detection system could explain the result."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Control group",
+          "kind": "comparison condition",
+          "visual": "cells handled like the experimental group but without the focal treatment",
+          "job": "provides the baseline needed to isolate the treatment effect"
+        },
+        {
+          "name": "Experimental group",
+          "kind": "treatment condition",
+          "visual": "cells receiving the new nutrient solution",
+          "job": "receives the independent-variable condition whose effect is being evaluated"
+        },
+        {
+          "name": "Negative control",
+          "kind": "validation comparison",
+          "visual": "cells arranged so the target glow should not appear",
+          "job": "reveals unwanted signal or contamination if the assay lights up anyway"
+        },
+        {
+          "name": "Positive control",
+          "kind": "validation comparison",
+          "visual": "cells given a condition already expected to produce glow",
+          "job": "shows whether the system is capable of detecting the response at all"
+        }
+      ],
+      "story_open": "Rowan walks first to the **control group**. These cells provide the comparison condition. Beside them sits the **experimental group**, which receives the new nutrient solution. If the two groups differ while other relevant conditions remain comparable, the treatment becomes a plausible explanation for the difference.",
+      "story_paragraphs": [
+        "Rowan walks first to the **control group**. These cells provide the comparison condition. Beside them sits the **experimental group**, which receives the new nutrient solution. If the two groups differ while other relevant conditions remain comparable, the treatment becomes a plausible explanation for the difference.",
+        "Two more benches protect the interpretation. The **negative control** is set up so the target response should not appear; if it glows anyway, something besides the intended biological effect may be producing signal. The **positive control** receives a condition already known or strongly expected to produce glow; if that bench stays dark, the assay may be unable to detect the effect even when it is present.",
+        "At the center rack, Rowan loads several independent wells for each condition. Replication helps estimate variability and improves reliability, but he tears down a sign that says THREE TRIALS = SCIENCE. There is no universal rule that every group must contain exactly three trials; the needed replication depends on the design and question.",
+        "He then points to the thermostat, light timer, cell density, and incubation time. Those will be held constant, but they are not “the control.” **Controlled variables or constants** are conditions kept comparable. A **control group** is a comparison condition. Their jobs are different.",
+        "Rowan physically separates the two ideas on the bench. The comparison is **constants versus controls**: constants are conditions kept the same across groups, while a control group is the comparison condition used to evaluate the independent variable. They solve different experimental-design problems.",
+        "All four benches slide forward on rails and lock into a single illuminated control panel in the next room."
+      ],
+      "story_close": "All four benches slide forward on rails and lock into a single illuminated control panel in the next room.",
+      "object_ids": [
+        "MO-APBIO-U1-P008",
+        "MO-APBIO-U1-P009",
+        "MO-APBIO-U1-P010",
+        "MO-APBIO-U1-P011",
+        "MO-APBIO-U1-P018",
+        "MO-APBIO-U1-P031"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P008",
+          "term": "Control group",
+          "story": "a CONTROL bench is the comparison bench",
+          "science": "A control group provides a comparison condition that helps isolate the effect of the independent variable and evaluate alternative explanations.",
+          "exact_name": true,
+          "hint": "a CONTROL bench is the comparison bench"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P009",
+          "term": "Experimental group",
+          "story": "an EXPERIMENTAL bench receives the tested treatment",
+          "science": "An experimental group receives the treatment or condition associated with the independent variable whose effect is being evaluated.",
+          "exact_name": true,
+          "hint": "an EXPERIMENTAL bench receives the tested treatment"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P010",
+          "term": "Negative control",
+          "story": "zero-effect indicator above the negative-control station",
+          "science": "A negative control is a comparison condition expected not to produce the target effect; its exact treatment must be appropriate to the experiment.",
+          "exact_name": true,
+          "hint": "zero-effect indicator above the negative-control station"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P011",
+          "term": "Positive control",
+          "story": "known-effect indicator above the positive-control station",
+          "science": "A positive control receives a treatment known or strongly expected to produce the measured effect and can show that the experimental system is capable of detecting that effect.",
+          "exact_name": true,
+          "hint": "known-effect indicator above the positive-control station"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P018",
+          "term": "Three trials claim",
+          "story": "Replication rack with crossed-out '3 = always' sign",
+          "science": "Appropriate replication and repeated observations improve reliability and help estimate variability. There is no universal scientific rule that every experimental group must contain at least three trials.",
+          "exact_name": false,
+          "hint": "Replication rack with crossed-out '3 = always' sign"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P031",
+          "term": "Constants versus controls",
+          "story": "A comparison clipboard stays on the control bench while the clamps stay bolted to background conditions. A line between them is labelled DIFFERENT JOBS",
+          "science": "Controlled variables/constants are conditions held consistent across groups. A control group is a comparison condition used to evaluate the effect of the independent variable. They serve different roles and should not be treated as synonyms.",
+          "exact_name": true,
+          "hint": "A comparison clipboard stays on the control bench while the clamps stay bolted to background conditions. A line between them is labelled DIFFERENT JOBS"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Control group",
+          "meaning": "A control group provides a comparison condition that helps isolate the effect of the independent variable and evaluate alternative explanations.",
+          "image": "a CONTROL bench is the comparison bench"
+        },
+        {
+          "term": "Experimental group",
+          "meaning": "An experimental group receives the treatment or condition associated with the independent variable whose effect is being evaluated.",
+          "image": "an EXPERIMENTAL bench receives the tested treatment"
+        },
+        {
+          "term": "Negative control",
+          "meaning": "A negative control is a comparison condition expected not to produce the target effect; its exact treatment must be appropriate to the experiment.",
+          "image": "zero-effect indicator above the negative-control station"
+        },
+        {
+          "term": "Positive control",
+          "meaning": "A positive control receives a treatment known or strongly expected to produce the measured effect and can show that the experimental system is capable of detecting that effect.",
+          "image": "known-effect indicator above the positive-control station"
+        },
+        {
+          "term": "Three trials claim",
+          "meaning": "Appropriate replication and repeated observations improve reliability and help estimate variability. There is no universal scientific rule that every experimental group must contain at least three trials.",
+          "image": "Replication rack with crossed-out '3 = always' sign"
+        },
+        {
+          "term": "Constants versus controls",
+          "meaning": "Controlled variables/constants are conditions held consistent across groups. A control group is a comparison condition used to evaluate the effect of the independent variable. They serve different roles and should not be treated as synonyms.",
+          "image": "A comparison clipboard stays on the control bench while the clamps stay bolted to background conditions. A line between them is labelled DIFFERENT JOBS"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-P008",
+      "checkpoint_prompt": "",
+      "next_locus": "Variable Control Panel"
+    },
+    {
+      "scene_index": 3,
+      "locus": "Variable Control Panel",
+      "title": "Change One Lever, Watch One Gauge",
+      "scene_kicker": "The experiment becomes interpretable when the manipulated factor and measured response are unmistakable.",
+      "location_description": "A wall-sized control panel fills the next room. One large blue lever controls treatment concentration. A green gauge displays reporter brightness. Smaller locked dials control temperature, light, time, and cell number.",
+      "scene_layout": {
+        "orientation": "The blue treatment lever is on the left, the measured brightness gauge is centered at eye level, and the bank of locked constant-condition dials is on the right. A graph screen hangs above the center gauge.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Manipulation lever",
+            "symbol": "X",
+            "description": "The treatment condition is deliberately changed here."
+          },
+          {
+            "position": "center",
+            "label": "Response gauge",
+            "symbol": "Y",
+            "description": "Reporter brightness is measured here as the experiment responds."
+          },
+          {
+            "position": "right",
+            "label": "Locked condition dials",
+            "symbol": "🔒",
+            "description": "Other relevant conditions stay comparable across groups."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Independent variable",
+          "kind": "manipulated factor",
+          "visual": "a blue lever labeled nutrient treatment",
+          "job": "is deliberately changed or used to define comparison groups"
+        },
+        {
+          "name": "Dependent variable",
+          "kind": "measured response",
+          "visual": "a bright green gauge labeled reporter fluorescence",
+          "job": "records the response used to evaluate the manipulation"
+        },
+        {
+          "name": "Controlled variables",
+          "kind": "held conditions",
+          "visual": "locked dials for temperature, light, time, and cell number",
+          "job": "prevent other changing conditions from becoming competing explanations"
+        }
+      ],
+      "story_open": "Rowan places your hand on the blue lever. This is the **independent variable**: the factor deliberately manipulated or used to define the comparison groups. Here it is the nutrient treatment. On the central gauge, **reporter brightness** is the **dependent variable**, the measured response used to evaluate what the treatment does.",
+      "story_paragraphs": [
+        "Rowan places your hand on the blue lever. This is the **independent variable**: the factor deliberately manipulated or used to define the comparison groups. Here it is the nutrient treatment. On the central gauge, **reporter brightness** is the **dependent variable**, the measured response used to evaluate what the treatment does.",
+        "The smaller dials are the **controlled variables**, or constants. Temperature, exposure time, light, starting cell density, and other relevant conditions are held comparable. A well-controlled experiment changes the focal independent variable while keeping those competing influences from drifting apart.",
+        "Above the panel, a graph appears. Rowan drags treatment condition to the horizontal axis and brightness to the vertical axis. When that graphing convention fits the data, the **independent variable goes on the x-axis** and the **dependent variable goes on the y-axis**. The graph type still has to match the kind of data being displayed; x and y labels do not rescue a bad graph.",
+        "The small dials are the **controlled variables / constants**. Temperature, light, time, and cell number stay fixed across the comparison so they do not become competing explanations for the brightness change.",
+        "The graph screen turns the panel into **graphing variables**: the independent variable goes on the x-axis and the dependent variable on the y-axis when that convention fits the data, while the graph type still has to match what was measured.",
+        "The blue lever moves. The treatment wells brighten. Before Rowan lets you call it an effect, however, he opens a cabinet containing two pairs of mirrored goggles."
+      ],
+      "story_close": "The blue lever moves. The treatment wells brighten. Before Rowan lets you call it an effect, however, he opens a cabinet containing two pairs of mirrored goggles.",
+      "object_ids": [
+        "MO-APBIO-U1-P012",
+        "MO-APBIO-U1-P013",
+        "MO-APBIO-U1-P014",
+        "MO-APBIO-U1-P015",
+        "MO-APBIO-U1-P032"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P012",
+          "term": "Independent variable",
+          "story": "the only movable lever on the Variable Control Panel",
+          "science": "The independent variable is the factor deliberately manipulated or used to define comparison groups. It is conventionally placed on the x-axis when that graphing form is appropriate.",
+          "exact_name": true,
+          "hint": "the only movable lever on the Variable Control Panel"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P013",
+          "term": "Dependent variable",
+          "story": "a response meter mechanically linked to that lever",
+          "science": "The dependent variable is the measured response used to evaluate the effect of the independent variable. It is conventionally placed on the y-axis when that graphing form is appropriate.",
+          "exact_name": true,
+          "hint": "a response meter mechanically linked to that lever"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P014",
+          "term": "Controlled variables / constants",
+          "story": "fixed clamps holding background conditions steady",
+          "science": "Controlled variables or constants are conditions kept consistent across comparison groups so they do not provide competing explanations for an observed effect; they are not the same thing as a control group.",
+          "exact_name": true,
+          "hint": "fixed clamps holding background conditions steady"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P015",
+          "term": "Single-variable manipulation principle",
+          "story": "Single focal lever with other settings clamped",
+          "science": "A well-controlled experiment changes the focal independent variable while keeping other relevant conditions comparable, allowing differences in the dependent variable to be attributed more confidently to the tested manipulation.",
+          "exact_name": false,
+          "hint": "Single focal lever with other settings clamped"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P032",
+          "term": "Graphing variables",
+          "story": "the independent-variable lever lies along the X-axis and the dependent meter rises on the Y-axis",
+          "science": "The independent variable is conventionally represented on the x-axis and the dependent variable on the y-axis when that graphing convention is appropriate; the graph type must still match the data.",
+          "exact_name": true,
+          "hint": "the independent-variable lever lies along the X-axis and the dependent meter rises on the Y-axis"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Independent variable",
+          "meaning": "The independent variable is the factor deliberately manipulated or used to define comparison groups. It is conventionally placed on the x-axis when that graphing form is appropriate.",
+          "image": "the only movable lever on the Variable Control Panel"
+        },
+        {
+          "term": "Dependent variable",
+          "meaning": "The dependent variable is the measured response used to evaluate the effect of the independent variable. It is conventionally placed on the y-axis when that graphing form is appropriate.",
+          "image": "a response meter mechanically linked to that lever"
+        },
+        {
+          "term": "Controlled variables / constants",
+          "meaning": "Controlled variables or constants are conditions kept consistent across comparison groups so they do not provide competing explanations for an observed effect; they are not the same thing as a control group.",
+          "image": "fixed clamps holding background conditions steady"
+        },
+        {
+          "term": "Single-variable manipulation principle",
+          "meaning": "A well-controlled experiment changes the focal independent variable while keeping other relevant conditions comparable, allowing differences in the dependent variable to be attributed more confidently to the tested manipulation.",
+          "image": "Single focal lever with other settings clamped"
+        },
+        {
+          "term": "Graphing variables",
+          "meaning": "The independent variable is conventionally represented on the x-axis and the dependent variable on the y-axis when that graphing convention is appropriate; the graph type must still match the data.",
+          "image": "the independent-variable lever lies along the X-axis and the dependent meter rises on the Y-axis"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-P012",
+      "checkpoint_prompt": "",
+      "next_locus": "Bias Goggles Cabinet"
+    },
+    {
+      "scene_index": 4,
+      "locus": "Bias Goggles Cabinet",
+      "title": "The Goggles That Change What You Think You Saw",
+      "scene_kicker": "Expectations can bend a study even when nobody intends to cheat.",
+      "location_description": "At the north turn of the corridor stands a tall black cabinet filled with mirrored safety goggles. Through one pair, every treatment well looks brighter before the measurement even begins.",
+      "scene_layout": {
+        "orientation": "The cabinet is on the left wall, a blinded sample rack is centered under neutral white light, and a two-key double-blind lock is mounted on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Bias goggles",
+            "symbol": "👓",
+            "description": "These distorted lenses make expectations visibly warp what an observer thinks they see."
+          },
+          {
+            "position": "center",
+            "label": "Coded sample rack",
+            "symbol": "A/B",
+            "description": "Treatment identities are replaced with neutral codes."
+          },
+          {
+            "position": "right",
+            "label": "Double-key lock",
+            "symbol": "🔐",
+            "description": "One key hides group identity from participants or handlers; another can hide it from the observer or assessor."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Bias",
+          "kind": "systematic distortion",
+          "visual": "mirrored goggles that make favored samples look brighter",
+          "job": "represents systematic influences that can distort design, measurement, analysis, or interpretation"
+        },
+        {
+          "name": "Blinding",
+          "kind": "bias-control method",
+          "visual": "sample labels replaced by neutral codes",
+          "job": "withholds treatment or group information from people whose expectations could affect the result"
+        }
+      ],
+      "story_open": "Rowan hands you the first pair of goggles. The treatment wells seem brighter before the detector has measured anything. That systematic pull on design, measurement, analysis, or interpretation is **bias**. It need not be deliberate; expectations can distort a study precisely because they feel reasonable to the person holding them.",
+      "story_paragraphs": [
+        "Rowan hands you the first pair of goggles. The treatment wells seem brighter before the detector has measured anything. That systematic pull on design, measurement, analysis, or interpretation is **bias**. It need not be deliberate; expectations can distort a study precisely because they feel reasonable to the person holding them.",
+        "He replaces the treatment labels with neutral codes. In a **blind** design, relevant treatment information is withheld from participants, observers, or another group whose knowledge could influence behavior or measurement. When the design allows both participants and the people assessing outcomes to remain unaware of group assignment, a **double-blind** design can reduce additional forms of expectation bias.",
+        "The point is not that every biology experiment can be blinded in the same way. The point is to ask who knows what, whether that knowledge could alter the study, and whether masking it would reduce a systematic distortion.",
+        "When the goggles come off, the detector exports a clean table of numbers. Rowan carries it upstairs to the Statistics Reporter Desk."
+      ],
+      "story_close": "When the goggles come off, the detector exports a clean table of numbers. Rowan carries it upstairs to the Statistics Reporter Desk.",
+      "object_ids": [
+        "MO-APBIO-U1-P016",
+        "MO-APBIO-U1-P017"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P016",
+          "term": "Bias",
+          "story": "a crooked/tinted pair of goggles",
+          "science": "Bias is a systematic influence that can distort study design, measurement, analysis, or interpretation.",
+          "exact_name": true,
+          "hint": "a crooked/tinted pair of goggles"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P017",
+          "term": "Blind and double-blind studies",
+          "story": "Participant and observer blindfolds",
+          "science": "Blinding can reduce some forms of bias by withholding treatment or group information from participants, observers, or both, depending on the design.",
+          "exact_name": false,
+          "hint": "Participant and observer blindfolds"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Bias",
+          "meaning": "Bias is a systematic influence that can distort study design, measurement, analysis, or interpretation.",
+          "image": "a crooked/tinted pair of goggles"
+        },
+        {
+          "term": "Blind and double-blind studies",
+          "meaning": "Blinding can reduce some forms of bias by withholding treatment or group information from participants, observers, or both, depending on the design.",
+          "image": "Participant and observer blindfolds"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-P016",
+      "checkpoint_prompt": "What term describes a systematic influence that can distort study design, measurement, analysis, or interpretation?",
+      "next_locus": "Statistics Reporter Desk"
+    },
+    {
+      "scene_index": 5,
+      "locus": "Statistics Reporter Desk",
+      "title": "The Numbers Become a Report",
+      "scene_kicker": "First describe the sample you actually measured; only then ask what it suggests beyond itself.",
+      "location_description": "On the upper level, an old newsroom desk faces two wall screens. The left screen rearranges the measured values into tables and graphs. The right screen projects a much larger population of cell cultures beyond the experiment.",
+      "scene_layout": {
+        "orientation": "The observed sample fills the left screen, the reporter desk is in the center, and the larger target population appears on the right screen.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Observed-data screen",
+            "symbol": "▤",
+            "description": "Shows only the values actually measured in this experiment."
+          },
+          {
+            "position": "center",
+            "label": "Reporter desk",
+            "symbol": "✎",
+            "description": "Turns raw values into interpretable summaries."
+          },
+          {
+            "position": "right",
+            "label": "Population screen",
+            "symbol": "◌",
+            "description": "Represents the broader population the sample may be used to understand."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Descriptive statistics",
+          "kind": "sample summarizer",
+          "visual": "a reporter arranging the measured values into tables, graphs, centers, and spreads",
+          "job": "summarizes and displays the data that were actually observed"
+        },
+        {
+          "name": "Inferential statistics",
+          "kind": "population reasoner",
+          "visual": "a reporter projecting from the sample toward a much larger field of cells",
+          "job": "uses sample data, together with uncertainty and sampling assumptions, to draw conclusions about a broader population"
+        }
+      ],
+      "story_open": "The left screen is crowded with raw fluorescence values. Rowan asks the desk to summarize only what was actually observed. **Descriptive statistics** organize, display, and summarize the sample: tables, graphs, measures of center, and measures of spread help you see the important features of the measured data.",
+      "story_paragraphs": [
+        "The left screen is crowded with raw fluorescence values. Rowan asks the desk to summarize only what was actually observed. **Descriptive statistics** organize, display, and summarize the sample: tables, graphs, measures of center, and measures of spread help you see the important features of the measured data.",
+        "The right screen is more ambitious. It asks whether this sample tells us something about a broader population of cells that were never placed on these benches. **Inferential statistics** use sample data to draw conclusions or generalize beyond that sample, but the quality of the inference depends on how the sample was obtained and how uncertainty is handled.",
+        "“Description tells us what happened in our data,” Rowan says. “Inference asks how far we can responsibly carry that information.” The desk prints three candidate summaries of the center and sends them spinning into a circular chamber ahead."
+      ],
+      "story_close": "“Description tells us what happened in our data,” Rowan says. “Inference asks how far we can responsibly carry that information.” The desk prints three candidate summaries of the center and sends them spinning into a circular chamber ahead.",
+      "object_ids": [
+        "MO-APBIO-U1-P019",
+        "MO-APBIO-U1-P020"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P019",
+          "term": "Descriptive statistics",
+          "story": "a REPORTER describes only the data on the desk",
+          "science": "Descriptive statistics summarize, organize, or display the observed values in a data set so its important features can be described.",
+          "exact_name": true,
+          "hint": "a REPORTER describes only the data on the desk"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P020",
+          "term": "Inferential statistics",
+          "story": "a DETECTIVE infers a large population from a small sample bag",
+          "science": "Inferential statistics use data from a sample to draw conclusions or generalize about a broader population, with the sampling process and uncertainty affecting the validity of the inference.",
+          "exact_name": true,
+          "hint": "a DETECTIVE infers a large population from a small sample bag"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Descriptive statistics",
+          "meaning": "Descriptive statistics summarize, organize, or display the observed values in a data set so its important features can be described.",
+          "image": "a REPORTER describes only the data on the desk"
+        },
+        {
+          "term": "Inferential statistics",
+          "meaning": "Inferential statistics use data from a sample to draw conclusions or generalize about a broader population, with the sampling process and uncertainty affecting the validity of the inference.",
+          "image": "a DETECTIVE infers a large population from a small sample bag"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-P019",
+      "checkpoint_prompt": "",
+      "next_locus": "Center-of-Data Roundabout"
+    },
+    {
+      "scene_index": 6,
+      "locus": "Center-of-Data Roundabout",
+      "title": "Three Ways to Find the Middle",
+      "scene_kicker": "The center of a data set depends on what you mean by “typical.”",
+      "location_description": "A circular room contains a rotating platform of numbered fluorescence values. Three stations surround it: an adding machine, an ordered staircase, and a frequency bell.",
+      "scene_layout": {
+        "orientation": "The mean station is left of the entrance, the median staircase occupies the center, and the mode bell is on the right. The data values circle all three stations.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Mean station",
+            "symbol": "Σ/n",
+            "description": "Adds every value and divides by the number of observations."
+          },
+          {
+            "position": "center",
+            "label": "Median staircase",
+            "symbol": "↕",
+            "description": "Orders values and selects the middle position."
+          },
+          {
+            "position": "right",
+            "label": "Mode bell",
+            "symbol": "🔔",
+            "description": "Rings beside the value that appears most often."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Central tendency",
+          "kind": "family of measures",
+          "visual": "a circular target drawn over the middle of the rotating data set",
+          "job": "describes the center or typical value of a distribution"
+        },
+        {
+          "name": "Mean",
+          "kind": "measure of center",
+          "visual": "adding machine marked Σ ÷ n",
+          "job": "adds all observations and divides by their number"
+        },
+        {
+          "name": "Median",
+          "kind": "measure of center",
+          "visual": "middle stair in an ordered line",
+          "job": "identifies the middle value after the observations are ordered"
+        },
+        {
+          "name": "Mode",
+          "kind": "measure of center",
+          "visual": "bell attached to the most repeated value",
+          "job": "identifies the value occurring most frequently"
+        }
+      ],
+      "story_open": "Rowan calls the room the **central tendency** roundabout because every station tries to describe the center or typical value of the same data set in a different way.",
+      "story_paragraphs": [
+        "Rowan calls the room the **central tendency** roundabout because every station tries to describe the center or typical value of the same data set in a different way.",
+        "At the left station, every fluorescence value falls into an adding machine. Their sum is divided by the number of observations. The number that emerges is the **mean**.",
+        "At the center staircase, the observations line themselves up from least to greatest. The **median** is the middle value, the point that separates the lower half from the upper half.",
+        "At the right bell, no arithmetic is required. It rings beside the value that appears most frequently. That most common value is the **mode**.",
+        "Rowan takes the mean for the next analysis, but the floor begins stretching under the same center point. “A mean without spread can hide a lot,” he says, stepping into the Variability Floor."
+      ],
+      "story_close": "Rowan takes the mean for the next analysis, but the floor begins stretching under the same center point. “A mean without spread can hide a lot,” he says, stepping into the Variability Floor.",
+      "object_ids": [
+        "MO-APBIO-U1-P021",
+        "MO-APBIO-U1-P022",
+        "MO-APBIO-U1-P023",
+        "MO-APBIO-U1-P024"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P021",
+          "term": "Central tendency",
+          "story": "a crowd pulled toward a glowing CENTER target",
+          "science": "Central tendency describes the center or typical value of a data set. Common measures include the mean, median, and mode.",
+          "exact_name": true,
+          "hint": "a crowd pulled toward a glowing CENTER target"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P022",
+          "term": "Mean",
+          "story": "a balance scale averaging equal shares",
+          "science": "Mean = the sum of all observed values divided by the number of observations.",
+          "exact_name": true,
+          "hint": "a balance scale averaging equal shares"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P023",
+          "term": "Median",
+          "story": "a highway center divider exactly in the middle of ordered cars",
+          "science": "Median = the middle value that separates the greater and lesser halves of an ordered data set.",
+          "exact_name": true,
+          "hint": "a highway center divider exactly in the middle of ordered cars"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P024",
+          "term": "Mode",
+          "story": "a fashion runway where one outfit is worn by the biggest crowd",
+          "science": "Mode = the value that occurs most frequently in a data set.",
+          "exact_name": true,
+          "hint": "a fashion runway where one outfit is worn by the biggest crowd"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Central tendency",
+          "meaning": "Central tendency describes the center or typical value of a data set. Common measures include the mean, median, and mode.",
+          "image": "a crowd pulled toward a glowing CENTER target"
+        },
+        {
+          "term": "Mean",
+          "meaning": "Mean = the sum of all observed values divided by the number of observations.",
+          "image": "a balance scale averaging equal shares"
+        },
+        {
+          "term": "Median",
+          "meaning": "Median = the middle value that separates the greater and lesser halves of an ordered data set.",
+          "image": "a highway center divider exactly in the middle of ordered cars"
+        },
+        {
+          "term": "Mode",
+          "meaning": "Mode = the value that occurs most frequently in a data set.",
+          "image": "a fashion runway where one outfit is worn by the biggest crowd"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-P021",
+      "checkpoint_prompt": "",
+      "next_locus": "Variability Floor"
+    },
+    {
+      "scene_index": 7,
+      "locus": "Variability Floor",
+      "title": "The Floor That Stretches Around the Same Mean",
+      "scene_kicker": "Two data sets can share a center and still tell very different stories.",
+      "location_description": "The floor is printed with a number line. One set of glowing data points clusters tightly around the mean. A second set stretches far toward both walls even though its mean marker sits in the same place.",
+      "scene_layout": {
+        "orientation": "The narrow cluster occupies the left half, the shared mean marker stands at center, and the widely scattered cluster spans the right half.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Tight distribution",
+            "symbol": "••••",
+            "description": "Observations sit close to the mean."
+          },
+          {
+            "position": "center",
+            "label": "Shared mean",
+            "symbol": "│",
+            "description": "Both example distributions balance around the same center."
+          },
+          {
+            "position": "right",
+            "label": "Wide distribution",
+            "symbol": "•   •",
+            "description": "Observations spread much farther from the mean."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Variability",
+          "kind": "spread of observations",
+          "visual": "a floor that can contract or stretch around the same center",
+          "job": "describes how dispersed the observed values are"
+        },
+        {
+          "name": "Range",
+          "kind": "simple spread measure",
+          "visual": "a tape stretched from the smallest value to the largest",
+          "job": "equals the greatest observation minus the smallest"
+        },
+        {
+          "name": "Standard deviation",
+          "kind": "spread around the mean",
+          "visual": "a glowing band expanding or contracting around the mean",
+          "job": "describes how widely observations are distributed around their mean"
+        }
+      ],
+      "story_open": "The room makes **variability** impossible to ignore. On the left, measurements hug the mean. On the right, they are scattered across the floor. The center alone cannot tell you which pattern you have.",
+      "story_paragraphs": [
+        "The room makes **variability** impossible to ignore. On the left, measurements hug the mean. On the right, they are scattered across the floor. The center alone cannot tell you which pattern you have.",
+        "Rowan stretches a tape from the smallest observation to the largest. The distance, calculated as greatest minus smallest, is the **range**. It is easy to compute, but it depends only on the two extreme values.",
+        "Then a glowing band appears around the mean. Its width represents the **standard deviation**, a measure of how observations spread around that mean. A smaller standard deviation means the observations are more tightly clustered. Rowan refuses a sign that says SMALL SD = RELIABLE. “Tight spread describes this data distribution,” he says. “Reliability is a broader judgment about measurement and study design.”",
+        "The floor retracts and a glass door opens onto the balcony, where identical experiments seem to be repeating far below."
+      ],
+      "story_close": "The floor retracts and a glass door opens onto the balcony, where identical experiments seem to be repeating far below.",
+      "object_ids": [
+        "MO-APBIO-U1-P025",
+        "MO-APBIO-U1-P026",
+        "MO-APBIO-U1-P027"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P025",
+          "term": "Variability",
+          "story": "data dots scattered with different spreads",
+          "science": "Variability describes how spread out the observations in a data set are. Measures of variability include standard deviation and range, among others.",
+          "exact_name": true,
+          "hint": "data dots scattered with different spreads"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P026",
+          "term": "Range",
+          "story": "a measuring tape stretched from MIN to MAX",
+          "science": "Range = the greatest observation minus the smallest observation.",
+          "exact_name": true,
+          "hint": "a measuring tape stretched from MIN to MAX"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P027",
+          "term": "Standard deviation",
+          "story": "data points DEVIATE from a STANDARD center line",
+          "science": "Standard deviation describes the spread of observations around the mean. A smaller standard deviation means observations are more tightly clustered around the mean; it should not be treated as a universal synonym for 'more reliable data.'",
+          "exact_name": true,
+          "hint": "data points DEVIATE from a STANDARD center line"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Variability",
+          "meaning": "Variability describes how spread out the observations in a data set are. Measures of variability include standard deviation and range, among others.",
+          "image": "data dots scattered with different spreads"
+        },
+        {
+          "term": "Range",
+          "meaning": "Range = the greatest observation minus the smallest observation.",
+          "image": "a measuring tape stretched from MIN to MAX"
+        },
+        {
+          "term": "Standard deviation",
+          "meaning": "Standard deviation describes the spread of observations around the mean. A smaller standard deviation means observations are more tightly clustered around the mean; it should not be treated as a universal synonym for 'more reliable data.'",
+          "image": "data points DEVIATE from a STANDARD center line"
+        }
+      ],
+      "checkpoint": false,
+      "checkpoint_object_id": "MO-APBIO-U1-P025",
+      "checkpoint_prompt": "",
+      "next_locus": "Sampling Balcony"
+    },
+    {
+      "scene_index": 8,
+      "locus": "Sampling Balcony",
+      "title": "How Much Would the Mean Move If We Repeated This?",
+      "scene_kicker": "The final question is not how scattered individual observations are, but how precise the estimated mean is.",
+      "location_description": "You step onto a north-facing balcony overlooking dozens of miniature copies of the same experiment. Each copy produces a slightly different sample mean. Their mean markers float like lanterns over the courtyard.",
+      "scene_layout": {
+        "orientation": "Repeated experiments fill the courtyard below, a formula rail marked s/√n runs along the balcony center, and the final graph with error bars glows on the right wall.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Repeated samples",
+            "symbol": "◌◌◌",
+            "description": "Each miniature experiment produces its own sample mean."
+          },
+          {
+            "position": "center",
+            "label": "SEM rail",
+            "symbol": "s/√n",
+            "description": "Connects sample standard deviation and sample size to the expected variation of the sample mean."
+          },
+          {
+            "position": "right",
+            "label": "Error-bar display",
+            "symbol": "±",
+            "description": "Shows the two group means with clearly labeled uncertainty bars."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Rowan Lee",
+          "kind": "guide",
+          "visual": "white lab coat, copper-rimmed glasses, orange evidence folder",
+          "job": "keeps one reporter-cell experiment intact from first observation to final interpretation"
+        },
+        {
+          "name": "Standard error of the mean",
+          "kind": "precision measure",
+          "visual": "a cloud of sample means narrowing as sample size grows",
+          "job": "describes how much a sample mean would be expected to vary across repeated samples; SEM = s/√n"
+        },
+        {
+          "name": "Error bars",
+          "kind": "uncertainty display",
+          "visual": "vertical bars extending above and below each plotted mean",
+          "job": "visualize a specified measure of uncertainty or variation, which must be identified before interpretation"
+        }
+      ],
+      "story_open": "The balcony reveals a different kind of variation. Individual cells varied downstairs; now whole **sample means** vary from one repeated sample to another. The **standard error of the mean**, or **SEM**, describes how much the sample mean would be expected to vary across repeated sampling. Rowan taps the rail: SEM = s/√n. For the same underlying spread, larger samples generally give a smaller SEM and a more precise estimate of the mean.",
+      "story_paragraphs": [
+        "The balcony reveals a different kind of variation. Individual cells varied downstairs; now whole **sample means** vary from one repeated sample to another. The **standard error of the mean**, or **SEM**, describes how much the sample mean would be expected to vary across repeated sampling. Rowan taps the rail: SEM = s/√n. For the same underlying spread, larger samples generally give a smaller SEM and a more precise estimate of the mean.",
+        "On the final graph, each group mean carries a vertical bar. Rowan makes you read the legend before the graph. **Error bars** can represent different quantities, so their meaning must be stated. In one common classroom convention, mean ± 2 SEM gives a rough range for where repeated-sample means would often fall, but the bars are not magic significance detectors.",
+        "He drags two error bars until they overlap, then separates them again. “Overlap or non-overlap of SEM bars by itself is not a formal statistical-significance test.” A proper inferential conclusion depends on the chosen statistical procedure and its assumptions, not a visual shortcut.",
+        "The final display is a lesson in **confidence intervals and error bars**. An uncertainty bar has meaning only after you identify what it represents; overlap or non-overlap of SEM bars by itself is not a formal test of statistical significance.",
+        "Rowan lays the experiment beside the original observation. The bright cells are no longer a mysterious green flash. You can trace the result through hypotheses, comparisons, variables, bias controls, descriptive summaries, variability, and sampling uncertainty. The annex doors unlock with a soft click."
+      ],
+      "story_close": "Rowan lays the experiment beside the original observation. The bright cells are no longer a mysterious green flash. You can trace the result through hypotheses, comparisons, variables, bias controls, descriptive summaries, variability, and sampling uncertainty. The annex doors unlock with a soft click.",
+      "object_ids": [
+        "MO-APBIO-U1-P028",
+        "MO-APBIO-U1-P029"
+      ],
+      "story_beats": [
+        {
+          "object_id": "MO-APBIO-U1-P028",
+          "term": "Standard error of the mean",
+          "story": "a mobile of repeated sample means wobbling around a target",
+          "science": "Standard error of the mean (SEM) is calculated as s/√n and describes how much a sample mean would be expected to vary across repeated samples or experiments; smaller SEM indicates greater precision of the estimated mean.",
+          "exact_name": true,
+          "hint": "a mobile of repeated sample means wobbling around a target"
+        },
+        {
+          "object_id": "MO-APBIO-U1-P029",
+          "term": "Confidence intervals and error bars",
+          "story": "a plotted mean standing inside a labelled interval gate",
+          "science": "Error bars must be interpreted according to what they represent. mean ± 2 SEM as a rough range for where a repeated-sample mean would typically fall. Overlap or non-overlap of SEM bars alone is not a formal statistical-significance test.",
+          "exact_name": true,
+          "hint": "a plotted mean standing inside a labelled interval gate"
+        }
+      ],
+      "memory_snapshot": [
+        {
+          "term": "Standard error of the mean",
+          "meaning": "Standard error of the mean (SEM) is calculated as s/√n and describes how much a sample mean would be expected to vary across repeated samples or experiments; smaller SEM indicates greater precision of the estimated mean.",
+          "image": "a mobile of repeated sample means wobbling around a target"
+        },
+        {
+          "term": "Confidence intervals and error bars",
+          "meaning": "Error bars must be interpreted according to what they represent. mean ± 2 SEM as a rough range for where a repeated-sample mean would typically fall. Overlap or non-overlap of SEM bars alone is not a formal statistical-significance test.",
+          "image": "a plotted mean standing inside a labelled interval gate"
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "MO-APBIO-U1-P028",
+      "checkpoint_prompt": "What statistic, calculated as s/√n, describes how much a sample mean would be expected to vary across repeated samples?",
+      "next_locus": null
+    }
+  ],
+  "narrative_design": "V2-NARRATIVE-2.0"
+}
