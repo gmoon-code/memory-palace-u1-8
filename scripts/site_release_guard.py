@@ -80,7 +80,7 @@ def is_packaged_file(root: Path, path: Path) -> bool:
     parts = set(rel.parts)
     if {'.git', '__pycache__', '.pytest_cache'} & parts:
         return False
-    if path.name in {'.env', '.DS_Store'}:
+    if path.name in {'.env', '.DS_Store', '.gitattributes'}:
         return False
     if path.suffix.lower() in {'.pyc', '.pyo', '.db', '.sqlite', '.sqlite3', '.zip'}:
         return False
