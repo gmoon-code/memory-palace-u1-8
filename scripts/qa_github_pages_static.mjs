@@ -46,13 +46,14 @@ for(const entry of course.units){
     const journey=await api.journey(unitId,meta.palace_id);
     assert(journey?.palace_id===meta.palace_id,`${unitId}/${meta.palace_id} journey unavailable`);
     assert(Array.isArray(journey.scenes),`${unitId}/${meta.palace_id} scenes missing`);
+    assert(journey.scenes.length===Number(meta.scene_count),`${unitId}/${meta.palace_id} scene count mismatch`);
     scenes+=journey.scenes.length;
     for(const scene of journey.scenes){
-      if(scene?.checkpoint_object_id)recalls++;
+      if(scene?.checkpoint)recalls++;
       for(const beat of scene?.story_beats||[]){
         if(beat?.object_id)objectRequests.set(`${unitId}:${beat.object_id}`,[unitId,beat.object_id]);
       }
-      if(scene?.checkpoint_object_id)objectRequests.set(`${unitId}:${scene.checkpoint_object_id}`,[unitId,scene.checkpoint_object_id]);
+      if(scene?.checkpoint&&scene?.checkpoint_object_id)objectRequests.set(`${unitId}:${scene.checkpoint_object_id}`,[unitId,scene.checkpoint_object_id]);
     }
   }
   const lab=await api.applicationLab(unitId);challenges+=(lab?.items||[]).length;
