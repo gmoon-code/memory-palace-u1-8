@@ -3,7 +3,10 @@ from __future__ import annotations
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CSS = (ROOT / 'frontend/css/base.css').read_text(encoding='utf-8') + '\n' + (ROOT / 'frontend/css/app.css').read_text(encoding='utf-8')
+BASE_CSS = (ROOT / 'frontend/css/base.css').read_text(encoding='utf-8')
+APP_CSS = (ROOT / 'frontend/css/app.css').read_text(encoding='utf-8')
+THEME_CSS = (ROOT / 'frontend/css/unit-theme.css').read_text(encoding='utf-8')
+CSS = BASE_CSS + '\n' + APP_CSS + '\n' + THEME_CSS
 
 
 def rgb(hex_value: str):
@@ -57,7 +60,7 @@ for label, fg, bg in PAIRS:
         problems.append(f'{label}: contrast {value:.2f}:1 is below 4.5:1')
 
 # Structural design contracts. These stop future changes from quietly returning
-# the site to the previous rounded-dashboard visual language.
+# the site to the previous rounded-dashboard or arbitrary multi-color language.
 for required in [
     'font-family:"Times New Roman", Times, serif',
     '--moon-yellow:#fff36d',
@@ -70,6 +73,24 @@ for required in [
     if required not in CSS:
         problems.append(f'Moon Notes structural contract missing: {required}')
 
+for required in [
+    'body[data-unit-theme="yellow"]',
+    'body[data-unit-theme="green"]',
+    'body[data-unit-theme="turquoise"]',
+    'body[data-unit-theme="pink"]',
+    '--unit-highlight:var(--moon-yellow)',
+    '--unit-highlight:var(--moon-green)',
+    '--unit-highlight:var(--moon-turquoise)',
+    '--unit-highlight:var(--moon-pink)',
+    'background:var(--unit-highlight)',
+    'box-decoration-break:clone',
+]:
+    if required not in THEME_CSS:
+        problems.append(f'Unit-color structural contract missing: {required}')
+
+if 'linear-gradient' in THEME_CSS:
+    problems.append('Unit-theme CSS must use full-height text highlights, not partial-height linear-gradient highlights')
+
 if problems:
     print('MOON NOTES CONTRAST QA FAIL')
     for item in problems:
@@ -78,6 +99,7 @@ if problems:
 
 minimum = min(results, key=lambda x: x[3])
 print('MOON NOTES CONTRAST QA PASS')
+print('Unit color map: U1/U5 yellow · U2/U6 green · U3/U7 turquoise · U4/U8 pink')
 print(f'Minimum audited normal-text contrast: {minimum[3]:.2f}:1 ({minimum[0]})')
 for label, fg, bg, value in results:
     print(f'- {label}: {value:.2f}:1 ({fg} on {bg})')

@@ -1,0 +1,171 @@
+/*
+  Moon Notes unit color system
+  One structural highlighter color belongs to the active AP Biology unit.
+  The sequence repeats after Unit 4.
+
+  Unit 1 / 5  yellow
+  Unit 2 / 6  green
+  Unit 3 / 7  turquoise
+  Unit 4 / 8  pink
+*/
+
+:root{
+  --unit-highlight:var(--moon-yellow);
+  --unit-soft:var(--moon-soft-yellow);
+  --unit-line:#d8c85d;
+}
+body[data-unit-theme="yellow"]{
+  --unit-highlight:var(--moon-yellow);
+  --unit-soft:var(--moon-soft-yellow);
+  --unit-line:#d8c85d;
+}
+body[data-unit-theme="green"]{
+  --unit-highlight:var(--moon-green);
+  --unit-soft:var(--moon-soft-green);
+  --unit-line:#72b96f;
+}
+body[data-unit-theme="turquoise"]{
+  --unit-highlight:var(--moon-turquoise);
+  --unit-soft:var(--moon-soft-turquoise);
+  --unit-line:#62bfc0;
+}
+body[data-unit-theme="pink"]{
+  --unit-highlight:var(--moon-pink);
+  --unit-soft:var(--moon-soft-pink);
+  --unit-line:#d78db4;
+}
+
+/* Utility UI remains neutral. */
+.nav button.active{border-bottom-color:var(--unit-line)}
+
+/* The active unit owns all structural accents. */
+.eyebrow{background:var(--unit-highlight)}
+.hero,
+.library-section,
+.challenge-strip,
+.roadmap,
+.journey-banner,
+.recall-card,
+.review-card,
+.review-empty,
+.practice-card{border-top-color:var(--unit-line)}
+.hero .eyebrow,
+.hero-side .eyebrow,
+.library-section .eyebrow,
+.journey-card .eyebrow,
+.challenge-strip .eyebrow,
+.roadmap summary .eyebrow,
+.journey-banner .eyebrow,
+.scene-orientation .eyebrow,
+.cast-section .eyebrow,
+.narrative-section .eyebrow,
+.memory-panel summary .eyebrow,
+.recall-card .eyebrow,
+.review-card .eyebrow,
+.review-empty .eyebrow,
+.practice-card .eyebrow,
+.answer-guide .eyebrow{background:var(--unit-highlight)}
+
+/* Full-height Word-style highlighter blocks. */
+.hero h1,
+.library-heading h2,
+.challenge-strip h2,
+.roadmap summary strong,
+.journey-banner h1,
+.orientation-copy h2,
+.cast-section .section-heading h3,
+.narrative-section .section-heading h3,
+.memory-panel summary strong,
+.recall-card h1,
+.review-card h1,
+.review-card h2,
+.practice-card h1,
+.review-empty h1,
+.review-empty h2,
+.story-term{
+  color:#111;
+  background:var(--unit-highlight);
+  background-image:none;
+  padding:.04em .18em .08em;
+  border-radius:1px;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+
+/* Force labels above large highlighted headings so they never collide. */
+.hero>div>.eyebrow,
+.library-heading>div>.eyebrow,
+.challenge-strip>div>.eyebrow,
+.journey-banner>div>.eyebrow,
+.orientation-copy>.eyebrow,
+.section-heading>.eyebrow,
+.recall-card>.eyebrow,
+.review-card>.eyebrow,
+.review-empty>.eyebrow,
+.practice-head .eyebrow{
+  display:table;
+  margin-bottom:8px;
+}
+
+/* Home */
+.journey-card:hover{border-color:var(--unit-line)}
+.roadmap-row.current-unit{background:var(--unit-soft)}
+
+/* Learn */
+.progress span{background:var(--unit-highlight);background-image:none}
+.guide-dot{background:var(--unit-soft);border-color:var(--unit-line)}
+.route-wrap{border-left-color:var(--unit-line)}
+.route-label span{background:var(--unit-highlight)}
+.route-node.current{background:var(--unit-highlight);border-color:#111;color:#111}
+.route-node.visited{background:var(--unit-soft);border-color:var(--unit-line);color:#333}
+.route-node:not(:disabled):hover{background:var(--unit-soft);border-color:var(--unit-line)}
+.scene-orientation{border-top-color:var(--unit-line)}
+.orientation-line{border-left-color:var(--unit-line)}
+.stage-symbol{background:var(--unit-soft);border-color:var(--unit-line)}
+.stage-zone.center{border-color:var(--unit-line)}
+.listen-row .secondary{border-left-color:var(--unit-line)}
+.memory-panel{border-left-color:var(--unit-line)}
+
+/* Supporting labels remain neutral so highlighter color keeps meaning. */
+.stage-zone strong,
+.cast-card p strong,
+.memory-image span{
+  background:none;
+  color:#111;
+  padding:0;
+}
+.memory-image{background:#fafafa;border-color:var(--moon-rule)}
+
+/* Recall, Review, Challenge Lab */
+.recall-prompt{background:var(--unit-soft);border-left-color:var(--unit-line)}
+.hint{background:var(--unit-soft);border-left-color:var(--unit-line)}
+.review-feedback{border-left-color:var(--unit-line)}
+.answer-guide{border-left-color:var(--unit-line)}
+.choice-button:hover{background:var(--unit-soft)}
+.preview-banner{border-left-color:var(--unit-line)}
+
+/* Correct line boxes for solid full-height highlights. */
+.hero h1{line-height:1.08}
+.library-heading h2,
+.journey-banner h1,
+.orientation-copy h2,
+.section-heading h3,
+.recall-card h1,
+.review-card h1,
+.review-card h2,
+.practice-card h1{line-height:1.2}
+
+@media print{
+  .eyebrow,
+  .hero h1,
+  .library-heading h2,
+  .challenge-strip h2,
+  .roadmap summary strong,
+  .journey-banner h1,
+  .orientation-copy h2,
+  .section-heading h3,
+  .story-term{
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+}

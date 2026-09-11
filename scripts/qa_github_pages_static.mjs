@@ -22,9 +22,13 @@ function assert(ok,message){if(!ok)throw new Error(`GITHUB PAGES QA FAIL · ${me
 assert(hostingMode==='static','frontend API adapter did not select static mode');
 const index=await readFile(path.join(ROOT,'index.html'),'utf8');
 assert(index.includes('./frontend/css/base.css'),'root entrypoint does not use repository-relative CSS');
+assert(index.includes('./frontend/css/unit-theme.css'),'root entrypoint does not load the unit color system');
+assert(index.includes('./frontend/js/unit-theme.js'),'root entrypoint does not load unit color switching');
 assert(index.includes('./frontend/js/app.js'),'root entrypoint does not use repository-relative JavaScript');
 assert(!index.includes('src="/static/'),'root entrypoint contains server-only absolute script path');
 assert(!index.includes('href="/static/'),'root entrypoint contains server-only absolute stylesheet path');
+await readFile(path.join(ROOT,'frontend/css/unit-theme.css'));
+await readFile(path.join(ROOT,'frontend/js/unit-theme.js'));
 await readFile(path.join(ROOT,'.nojekyll'));
 
 const course=await api.course();
@@ -77,4 +81,4 @@ assert(mixedSets===220,`expected 220 mixed-discrimination sets, got ${mixedSets}
 assert(mixedQuestions===600,`expected 600 mixed questions, got ${mixedQuestions}`);
 
 console.log('GITHUB PAGES STATIC QA PASS');
-console.log(JSON.stringify({site_root:ROOT,units:8,journeys,scenes,quick_recalls:recalls,challenge_lab_items:challenges,review_targets:reviewTargets,mixed_sets:mixedSets,mixed_questions:mixedQuestions,objects_resolved:objectRequests.size},null,2));
+console.log(JSON.stringify({site_root:ROOT,units:8,journeys,scenes,quick_recalls:recalls,challenge_lab_items:challenges,review_targets:reviewTargets,mixed_sets:mixedSets,mixed_questions:mixedQuestions,objects_resolved:objectRequests.size,unit_theme_assets:true},null,2));
