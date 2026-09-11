@@ -68,6 +68,7 @@ jobs:
       - run: node scripts/qa_unit5_f6_ui.mjs
       - run: node scripts/qa_unit6_f6_ui.mjs
       - run: node scripts/qa_site_ux.mjs
+      - run: node scripts/qa_github_pages_static.mjs
       - run: python scripts/qa_site_contrast.py
       - run: python scripts/qa_site_http_live.py
       - run: python -m pytest -q
@@ -79,6 +80,7 @@ jobs:
       - run: node --check frontend/js/views/learn.js
       - run: node --check frontend/js/views/review.js
       - run: node --check frontend/js/views/practice.js
+      - run: node --check scripts/qa_github_pages_static.mjs
       - run: python -m compileall -q backend scripts tests
       - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-a.zip
       - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-b.zip
