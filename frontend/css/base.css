@@ -674,6 +674,7 @@ input:focus,textarea:focus,select:focus{border-color:#333;box-shadow:0 0 0 3px r
   .challenge-side{justify-items:start}
 }
 @media(max-width:700px){
+  .nav{width:100%}
   .shell{padding:0 14px 20px}
   .topbar{padding:12px 0;align-items:flex-start;flex-direction:column;gap:8px}
   .nav{width:100%;gap:10px}
