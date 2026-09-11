@@ -17,6 +17,9 @@ server_data/*
 .env.*
 !.env.example
 
+# Generated release evidence
+docs/SITE_UX1_PACKAGE_MANIFEST.json
+
 # Editors / OS
 .vscode/
 .DS_Store
