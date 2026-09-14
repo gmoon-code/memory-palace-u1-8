@@ -37,10 +37,6 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
     <button class="${current?'primary':'secondary'}" data-action="switch-unit" data-unit="${esc(u.unit_id)}">${current?'Selected unit':'Select Unit '+esc(u.number)}</button>
    </article>`;
  }).join('');
- const courseMap=units.map(u=>{
-   const current=u.unit_id===unit?.unit_id;
-   return `<div class="roadmap-row ${current?'current-unit':''}"><span>Unit ${esc(u.number)}</span><strong>${esc(u.title)}</strong><em>${current?'Current unit':'Available'}</em>${current?`<span class="pill" aria-label="Current unit">Current</span>`:`<button class="ghost unit-open" data-action="switch-unit" data-unit="${esc(u.unit_id)}">Open</button>`}</div>`;
- }).join('');
  const challenge=(unit?.application_challenges||0)>0?`<section class="card challenge-strip"><div><span class="eyebrow">Unit ${esc(unit.number)}</span><h2>Challenge Lab</h2><p>${esc(unit.title)} application questions.</p></div><div class="challenge-side"><strong>${esc(unit.application_challenges)} challenges</strong><button class="secondary" data-action="practice">Open challenge lab</button></div></section>`:'';
  const recommendation=active?`${activeStats.seen?`Continue at location ${currentIndex} of ${activeStats.total}`:'Start with the first location'}`:'';
  return `<main id="main-content" tabindex="-1" class="stack course-home" aria-label="AP Biology Memory Palace home">
@@ -61,6 +57,6 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
 
   <section class="library-section" aria-labelledby="journey-library-title"><div class="library-heading"><div><span class="eyebrow">Unit ${esc(unit?.number||'')} journeys</span><h2 id="journey-library-title">${esc(unit?.title||'')}</h2></div></div><div class="journey-list">${cards}</div></section>
   ${challenge}
-  <details class="card roadmap compact-roadmap"><summary><span><span class="eyebrow">Units</span><strong>Course map</strong></span><span class="summary-chevron" aria-hidden="true">⌄</span></summary><div class="roadmap-list">${courseMap}</div></details>
+  <!-- Course map removed because the eight-unit selector above already provides course navigation. -->
  </main>`;
 }
