@@ -1,0 +1,175 @@
+/* Learn-page fitting polish
+   Keeps dense scientific route labels readable without arbitrary mid-word breaks. */
+
+.story-top > div{
+  min-width:0;
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:6px;
+}
+.story-top > div > strong{
+  min-width:0;
+  line-height:1.25;
+  overflow-wrap:break-word;
+}
+
+.journey-banner > div:first-child{
+  min-width:0;
+  flex:1 1 auto;
+}
+.journey-banner .guide-chip{
+  flex:0 0 min(310px,36%);
+  min-width:240px;
+  max-width:310px;
+}
+.journey-banner .guide-chip > div{
+  min-width:0;
+}
+.journey-banner .guide-chip strong,
+.journey-banner .guide-chip small{
+  overflow-wrap:break-word;
+}
+
+.route-wrap{
+  min-width:0;
+}
+.route-label{
+  min-width:0;
+  align-items:flex-start;
+}
+.route-label strong{
+  flex:1 1 auto;
+  min-width:0;
+  line-height:1.42;
+}
+
+/* A route stop should be wide enough for a scientific chunk such as
+   POTENTIAL→FILTERS→REALIZED. Longer routes scroll horizontally instead of
+   crushing every stop into an unreadably narrow column. */
+.route-strip{
+  grid-template-columns:repeat(var(--route-count,11),minmax(112px,1fr));
+  align-items:stretch;
+  gap:7px;
+  overscroll-behavior-inline:contain;
+  scroll-snap-type:x proximity;
+}
+.route-node{
+  min-width:112px;
+  min-height:112px;
+  height:100%;
+  padding:9px 8px 10px;
+  grid-template-rows:minmax(3.1em,auto) minmax(1.25em,auto) 1fr;
+  gap:5px;
+  align-content:start;
+  justify-items:center;
+  scroll-snap-align:start;
+  overflow:hidden;
+}
+.route-symbol{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  min-height:3.1em;
+  margin:0;
+  padding:0 1px;
+  font-size:.84rem;
+  line-height:1.08;
+  letter-spacing:-.012em;
+  text-align:center;
+  text-wrap:balance;
+  white-space:normal;
+  word-break:normal;
+  overflow-wrap:normal;
+  hyphens:none;
+}
+.route-symbol[data-fit="medium"]{font-size:.79rem}
+.route-symbol[data-fit="long"]{font-size:.73rem;letter-spacing:-.018em}
+.route-symbol[data-fit="xlong"]{font-size:.67rem;letter-spacing:-.022em}
+.route-symbol wbr{display:inline}
+
+.route-floor{
+  width:100%;
+  min-width:0;
+  min-height:1.25em;
+  font-size:.62rem;
+  line-height:1.15;
+  text-align:center;
+  word-break:normal;
+  overflow-wrap:break-word;
+  hyphens:none;
+}
+.route-node > strong{
+  width:100%;
+  min-width:0;
+  align-self:start;
+  font-size:.69rem;
+  line-height:1.18;
+  text-align:center;
+  text-wrap:balance;
+  word-break:normal;
+  overflow-wrap:break-word;
+  hyphens:none;
+}
+.route-node > strong[data-fit="long"]{font-size:.65rem}
+.route-node > strong[data-fit="xlong"]{font-size:.61rem;line-height:1.16}
+
+/* Keep text inside the physical-scene cards tidy as terminology length varies. */
+.scene-stage .stage-zone{
+  min-width:0;
+}
+.scene-stage .stage-symbol,
+.scene-stage .stage-zone > strong,
+.scene-stage .stage-zone > p{
+  max-width:100%;
+  word-break:normal;
+  overflow-wrap:break-word;
+  hyphens:none;
+}
+.scene-stage .stage-zone > strong{
+  line-height:1.25;
+}
+
+.cast-card,
+.memory-anchor{
+  min-width:0;
+}
+.cast-card h4,
+.memory-anchor h4{
+  overflow-wrap:break-word;
+  word-break:normal;
+  hyphens:none;
+}
+
+@media(max-width:900px){
+  .journey-banner .guide-chip{
+    flex-basis:auto;
+    min-width:0;
+    max-width:none;
+  }
+}
+
+@media(max-width:750px){
+  .route-strip{
+    grid-template-columns:repeat(var(--route-count,11),minmax(108px,108px));
+  }
+  .route-node{
+    min-width:108px;
+  }
+}
+
+@media(max-width:520px){
+  .story-top{
+    align-items:flex-start;
+  }
+  .route-strip{
+    grid-template-columns:repeat(var(--route-count,11),minmax(104px,104px));
+  }
+  .route-node{
+    min-width:104px;
+    padding-inline:7px;
+  }
+}
