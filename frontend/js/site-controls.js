@@ -1,4 +1,5 @@
 const PROGRESS_KEY='memory-palace-v2:progress';
+const BRAND_NAME='The Story Method';
 
 function homeUrl(){
   const url=new URL(window.location.href);
@@ -18,13 +19,32 @@ function clearProgress(){
   window.location.assign(homeUrl());
 }
 
+function applyBranding(){
+  const brand=document.querySelector('.brand');
+  if(brand){
+    const first=brand.firstChild;
+    if(first&&first.nodeType===Node.TEXT_NODE&&first.textContent!==`${BRAND_NAME} `){
+      first.textContent=`${BRAND_NAME} `;
+    }
+    brand.setAttribute('aria-label',`Return to ${BRAND_NAME} home`);
+  }
+
+  document.querySelectorAll('.eyebrow').forEach(el=>{
+    if(el.textContent.trim()==='Memory Palace')el.textContent=BRAND_NAME;
+  });
+
+  const home=document.querySelector('main[aria-label="AP Biology Memory Palace home"]');
+  if(home)home.setAttribute('aria-label',`AP Biology ${BRAND_NAME} home`);
+}
+
 function enhanceShell(){
+  applyBranding();
   const brand=document.querySelector('.brand');
   if(brand&&!brand.dataset.homeControl){
     brand.dataset.homeControl='true';
     brand.setAttribute('role','button');
     brand.setAttribute('tabindex','0');
-    brand.setAttribute('aria-label','Return to Memory Palace home');
+    brand.setAttribute('aria-label',`Return to ${BRAND_NAME} home`);
     brand.setAttribute('title','Return to Home');
   }
   const nav=document.querySelector('.nav');
