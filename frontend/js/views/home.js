@@ -1,5 +1,6 @@
 function esc(v=''){return String(v).replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]))}
 function guideName(j){return typeof j?.guide==='object'?j.guide.name:j?.guide||'Your guide'}
+function unitTheme(n){return ['yellow','green','turquoise','pink'][(Math.max(1,Number(n)||1)-1)%4]}
 function journeyStats(state,j){
  const total=Number(j?.scene_count||0);
  const seen=Array.from({length:total},(_,i)=>state?.storySeen?.[`${j.palace_id}:${i}`]).filter(Boolean).length;
@@ -12,25 +13,54 @@ function nextUsefulJourney(journeys,state,recommendedId){
 }
 export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=null){
  const list=Array.isArray(journeys)?journeys:[];
+ const units=Array.isArray(course?.units)?course.units:[];
  const active=nextUsefulJourney(list,state,recommendedId);
  const activeStats=active?journeyStats(state,active):{seen:0,total:0,done:false,pct:0};
  const currentIndex=active?Math.min(Number(state?.sceneByJourney?.[active.palace_id]||0)+1,active.scene_count||1):0;
  const completeCount=list.filter(j=>state?.completedJourneys?.[j.palace_id]).length;
  const visitedCount=list.reduce((sum,j)=>sum+journeyStats(state,j).seen,0);
+ const totalJourneys=units.reduce((sum,u)=>sum+Number(u.journey_count||0),0);
+ const totalScenes=units.reduce((sum,u)=>sum+Number(u.scene_count||0),0);
+ const totalChallenges=units.reduce((sum,u)=>sum+Number(u.application_challenges||0),0);
  const cards=list.map(j=>{
    const s=journeyStats(state,j),label=s.done?'Walk it again':s.seen?'Continue journey':'Begin journey';
    return `<article class="card journey-card"><div class="journey-card-top"><span class="eyebrow">${esc(j.palace_name)}</span><span class="pill">${s.done?'Complete':s.seen?`${s.pct}%`:`${esc(j.estimated_minutes)} min`}</span></div><h3>${esc(j.story_title)}</h3><p>${esc(j.tagline)}</p><div class="journey-meta"><span>${s.total} locations</span><span>${esc(j.checkpoint_count)} optional recalls</span><span>Guide · ${esc(guideName(j))}</span></div><button class="${s.seen?'primary':'secondary'}" data-action="learn" data-id="${esc(j.palace_id)}">${label}</button></article>`;
  }).join('');
- const courseMap=(course?.units||[]).map(u=>{
+ const unitCards=units.map(u=>{
+   const current=u.unit_id===unit?.unit_id;
+   const theme=unitTheme(u.number);
+   const challenges=Number(u.application_challenges||0);
+   return `<article class="card course-unit-card ${current?'current-unit-card':''}" data-unit-card-theme="${theme}">
+    <div class="course-unit-card-head"><span class="unit-number-highlight">Unit ${esc(u.number)}</span>${current?`<span class="current-unit-mark">Current</span>`:''}</div>
+    <h2>${esc(u.title)}</h2>
+    <div class="course-unit-stats"><span><strong>${esc(u.journey_count||0)}</strong> journeys</span><span><strong>${esc(u.scene_count||0)}</strong> locations</span><span><strong>${esc(challenges)}</strong> challenges</span></div>
+    <button class="${current?'primary':'secondary'}" data-action="switch-unit" data-unit="${esc(u.unit_id)}">${current?'Selected unit':'Select Unit '+esc(u.number)}</button>
+   </article>`;
+ }).join('');
+ const courseMap=units.map(u=>{
    const current=u.unit_id===unit?.unit_id;
    return `<div class="roadmap-row ${current?'current-unit':''}"><span>Unit ${esc(u.number)}</span><strong>${esc(u.title)}</strong><em>${current?'Current unit':'Available'}</em>${current?`<span class="pill" aria-label="Current unit">Current</span>`:`<button class="ghost unit-open" data-action="switch-unit" data-unit="${esc(u.unit_id)}">Open</button>`}</div>`;
  }).join('');
- const challenge=(unit?.application_challenges||0)>0?`<section class="card challenge-strip"><div><span class="eyebrow">Apply the science</span><h2>Unit ${esc(unit.number)} Challenge Lab</h2><p>Work through one short application at a time after the palace stories. Hints and answer guides stay separate so you can choose how much support you need.</p></div><div class="challenge-side"><strong>${esc(unit.application_challenges)} challenges</strong><span>Your progress stays in this session</span><button class="secondary" data-action="practice">Open challenge lab</button></div></section>`:'';
+ const challenge=(unit?.application_challenges||0)>0?`<section class="card challenge-strip"><div><span class="eyebrow">Apply Unit ${esc(unit.number)}</span><h2>Challenge Lab</h2><p>Work through one short application at a time after the palace stories. Hints and answer guides stay separate so you can choose how much support you need.</p></div><div class="challenge-side"><strong>${esc(unit.application_challenges)} challenges</strong><span>Your progress stays in this browser</span><button class="secondary" data-action="practice">Open challenge lab</button></div></section>`:'';
  const recommendation=active?`${activeStats.seen?`Continue at location ${currentIndex} of ${activeStats.total}`:'Start with the first location'}`:'';
- return `<main id="main-content" tabindex="-1" class="stack" aria-label="Unit ${esc(unit?.number||'')} home">
-  <section class="card hero"><div><span class="eyebrow">AP Biology · Unit ${esc(unit?.number||'')} · ${esc(unit?.title||'')}</span><h1>Keep the whole route in view.</h1><p>Follow one journey at a time while Home keeps your unit progress, current route, Review queue, and the rest of the course easy to find.</p><div class="row">${active?`<button class="primary" data-action="learn" data-id="${esc(active.palace_id)}">${activeStats.done?'Revisit':activeStats.seen?'Continue':'Begin'} ${esc(active.story_title)}</button>`:''}<button class="secondary" data-action="review">${dueCount?`Review ${dueCount} due ${dueCount===1?'memory':'memories'}`:'Open Review'}</button></div></div><aside class="hero-side"><span class="eyebrow">Current progress</span><strong>${completeCount} of ${list.length} journeys complete</strong><p class="muted">${visitedCount} locations visited · ${dueCount} Review item${dueCount===1?'':'s'} due${active?` · ${esc(recommendation)}`:''}</p><div class="metric-grid"><div class="metric"><strong>${completeCount}/${list.length}</strong><span>journeys</span></div><div class="metric"><strong>${visitedCount}</strong><span>locations visited</span></div><div class="metric"><strong>${dueCount}</strong><span>Review due</span></div></div></aside></section>
-  <section class="library-section" aria-labelledby="journey-library-title"><div class="library-heading"><div><span class="eyebrow">Unit ${esc(unit?.number||'')} journey library</span><h2 id="journey-library-title">Your routes through ${esc(unit?.title||'this unit')}</h2></div><p>Choose any released journey. Previously completed routes stay available for another walk.</p></div><div class="journey-list">${cards}</div></section>
+ return `<main id="main-content" tabindex="-1" class="stack course-home" aria-label="AP Biology Memory Palace home">
+  <section class="card course-home-hero">
+   <div class="course-home-copy"><span class="course-kicker">AP Biology Memory Palace</span><h1>Choose a unit and keep the whole course in view.</h1><p>Eight AP Biology units are organized as guided memory journeys. Select a unit to see its routes, continue your current journey, or return to Review.</p></div>
+   <div class="course-home-summary" aria-label="Course totals"><div><strong>8</strong><span>units</span></div><div><strong>${totalJourneys}</strong><span>journeys</span></div><div><strong>${totalScenes}</strong><span>locations</span></div><div><strong>${totalChallenges}</strong><span>challenges</span></div></div>
+  </section>
+
+  <section class="course-units-section" aria-labelledby="course-units-title">
+   <div class="course-section-heading"><div><span class="course-kicker">Course map</span><h2 id="course-units-title">All eight AP Biology units</h2></div><p>Each unit keeps one structural highlighter color so the course stays visually organized.</p></div>
+   <div class="course-unit-grid">${unitCards}</div>
+  </section>
+
+  <section class="card current-unit-panel">
+   <div class="current-unit-main"><span class="eyebrow">Current unit · Unit ${esc(unit?.number||'')}</span><h2>${esc(unit?.title||'')}</h2><p>${completeCount} of ${list.length} journeys complete · ${visitedCount} locations visited · ${dueCount} Review item${dueCount===1?'':'s'} due.</p><div class="row">${active?`<button class="primary" data-action="learn" data-id="${esc(active.palace_id)}">${activeStats.done?'Revisit':activeStats.seen?'Continue':'Begin'} ${esc(active.story_title)}</button>`:''}<button class="secondary" data-action="review">${dueCount?`Review ${dueCount} due ${dueCount===1?'memory':'memories'}`:'Open Review'}</button></div></div>
+   <aside class="current-unit-progress"><span class="eyebrow">Where to continue</span><strong>${active?esc(active.story_title):'Choose a journey'}</strong><p>${active?esc(recommendation):'Select a journey below.'}</p><div class="metric-grid"><div class="metric"><strong>${completeCount}/${list.length}</strong><span>journeys</span></div><div class="metric"><strong>${visitedCount}</strong><span>locations</span></div><div class="metric"><strong>${dueCount}</strong><span>Review due</span></div></div></aside>
+  </section>
+
+  <section class="library-section" aria-labelledby="journey-library-title"><div class="library-heading"><div><span class="eyebrow">Unit ${esc(unit?.number||'')} journey library</span><h2 id="journey-library-title">Routes through ${esc(unit?.title||'this unit')}</h2></div><p>Choose any released journey. Previously completed routes stay available for another walk.</p></div><div class="journey-list">${cards}</div></section>
   ${challenge}
-  <details class="card roadmap"><summary><span><span class="eyebrow">Course map</span><strong>All eight AP Biology units</strong></span><span class="summary-chevron" aria-hidden="true">⌄</span></summary><div class="roadmap-list">${courseMap}</div></details>
+  <details class="card roadmap compact-roadmap"><summary><span><span class="eyebrow">Course map</span><strong>Compact unit list</strong></span><span class="summary-chevron" aria-hidden="true">⌄</span></summary><div class="roadmap-list">${courseMap}</div></details>
  </main>`;
 }
