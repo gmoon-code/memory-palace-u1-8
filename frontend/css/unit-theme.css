@@ -115,7 +115,66 @@ body[data-unit-theme="pink"]{
 .progress span{background:var(--unit-highlight);background-image:none}
 .guide-dot{background:var(--unit-soft);border-color:var(--unit-line)}
 .route-wrap{border-left-color:var(--unit-line)}
-.route-label span{background:var(--unit-highlight)}
+.route-label{
+  display:grid;
+  grid-template-columns:max-content minmax(0,1fr);
+  gap:8px 16px;
+  align-items:start;
+}
+.route-label span{
+  display:inline-block;
+  justify-self:start;
+  width:max-content;
+  max-width:100%;
+  background:var(--unit-highlight);
+  padding:.04em .18em .06em;
+  line-height:1.2;
+}
+.route-label strong{
+  min-width:0;
+  text-align:left;
+  line-height:1.45;
+}
+.route-strip{
+  align-items:stretch;
+}
+.route-node{
+  min-width:0;
+  min-height:76px;
+  padding:8px 5px;
+  grid-template-rows:minmax(1.35em,auto) auto auto;
+  justify-items:center;
+  align-content:start;
+  overflow:hidden;
+}
+.route-symbol{
+  display:block;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  font-size:.88rem;
+  line-height:1.08;
+  letter-spacing:-.015em;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+.route-floor{
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  line-height:1.15;
+  overflow-wrap:anywhere;
+}
+.route-node strong{
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  line-height:1.18;
+  overflow-wrap:anywhere;
+}
 .route-node.current{background:var(--unit-highlight);border-color:#111;color:#111}
 .route-node.visited{background:var(--unit-soft);border-color:var(--unit-line);color:#333}
 .route-node:not(:disabled):hover{background:var(--unit-soft);border-color:var(--unit-line)}
@@ -199,6 +258,18 @@ body[data-unit-theme="pink"]{
 .review-card h1,
 .review-card h2,
 .practice-card h1{line-height:1.2}
+
+@media(max-width:750px){
+  .route-label{
+    grid-template-columns:1fr;
+  }
+  .route-label strong{
+    width:100%;
+  }
+  .route-node{
+    min-height:78px;
+  }
+}
 
 @media print{
   .eyebrow,
