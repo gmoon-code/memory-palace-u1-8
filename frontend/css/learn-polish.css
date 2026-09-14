@@ -1,5 +1,7 @@
 /* Learn-page fitting polish
-   Keeps dense scientific route labels readable without arbitrary mid-word breaks. */
+   Keeps dense scientific route labels readable without arbitrary mid-word breaks.
+   Also keeps story sections compact, full-width, and visually consistent with the
+   active unit color. */
 
 .story-top > div{
   min-width:0;
@@ -144,6 +146,46 @@
   hyphens:none;
 }
 
+/* Story-section cleanup
+   One unit owns the color system. The divider between scene setup and the
+   narrative therefore uses the active unit line color, never a fixed cyan.
+   The narrative also uses the full reading column so the right side does not
+   look like an accidental empty panel. */
+.cast-section{
+  padding-bottom:22px;
+}
+.cast-section .section-heading{
+  margin-bottom:14px;
+}
+.cast-grid{
+  gap:10px;
+}
+.cast-card p:last-child{
+  margin-bottom:0;
+}
+
+.narrative-section{
+  width:100%;
+  padding:26px 28px 24px;
+  border-top:3px solid var(--unit-line);
+}
+.narrative-section .section-heading{
+  margin-bottom:18px;
+}
+.story-prose{
+  width:100%;
+  max-width:none;
+  min-width:0;
+}
+.story-paragraph{
+  width:100%;
+  max-width:none;
+  margin:0 0 20px;
+}
+.story-paragraph:last-child{
+  margin-bottom:0;
+}
+
 @media(max-width:900px){
   .journey-banner .guide-chip{
     flex-basis:auto;
@@ -159,6 +201,9 @@
   .route-node{
     min-width:108px;
   }
+  .narrative-section{
+    padding:24px 22px 22px;
+  }
 }
 
 @media(max-width:520px){
@@ -171,5 +216,17 @@
   .route-node{
     min-width:104px;
     padding-inline:7px;
+  }
+  .cast-section{
+    padding-bottom:18px;
+  }
+  .narrative-section{
+    padding:22px 19px 20px;
+  }
+  .narrative-section .section-heading{
+    margin-bottom:14px;
+  }
+  .story-paragraph{
+    margin-bottom:18px;
   }
 }
