@@ -55,5 +55,6 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
 
   <section class="library-section" aria-labelledby="journey-library-title"><div class="library-heading"><div><span class="eyebrow">Unit ${esc(unit?.number||'')} journeys</span><h2 id="journey-library-title">${esc(unit?.title||'')}</h2></div></div><div class="journey-list">${cards}</div></section>
   ${challenge}
+  <!-- Course map intentionally omitted because the unit grid already provides course navigation. -->
  </main>`;
 }
