@@ -1,12 +1,38 @@
 /* Home page refinements for the Moon Notes system. */
 
-.course-home-hero{
-  display:none;
+.course-home-intro{
+  padding:10px 2px 18px;
+  margin:0 0 2px;
+  border-bottom:1px solid var(--moon-rule-dark);
+}
+
+.course-home-kicker{
+  display:block;
+  margin:0 0 2px;
+  color:#555;
+  font-size:.82rem;
+  font-weight:700;
+  line-height:1.2;
+}
+
+.course-home-intro h1{
+  margin:0;
+  color:#111;
+  font-size:clamp(2.15rem,4vw,2.9rem);
+  line-height:1.04;
+  font-weight:700;
+}
+
+.course-home-intro p{
+  margin:6px 0 0;
+  color:#555;
+  font-size:.95rem;
+  line-height:1.3;
 }
 
 .course-section-heading{
   display:block;
-  margin:8px 2px 14px;
+  margin:14px 2px 14px;
 }
 
 .course-section-heading h2{
@@ -92,6 +118,14 @@
 }
 
 @media(max-width:720px){
+  .course-home-intro{
+    padding:8px 0 15px;
+  }
+
+  .course-home-intro h1{
+    font-size:2.1rem;
+  }
+
   .current-unit-panel{
     padding:22px 20px;
   }
