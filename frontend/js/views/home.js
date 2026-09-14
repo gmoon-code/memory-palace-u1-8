@@ -19,9 +19,6 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
  const currentIndex=active?Math.min(Number(state?.sceneByJourney?.[active.palace_id]||0)+1,active.scene_count||1):0;
  const completeCount=list.filter(j=>state?.completedJourneys?.[j.palace_id]).length;
  const visitedCount=list.reduce((sum,j)=>sum+journeyStats(state,j).seen,0);
- const totalJourneys=units.reduce((sum,u)=>sum+Number(u.journey_count||0),0);
- const totalScenes=units.reduce((sum,u)=>sum+Number(u.scene_count||0),0);
- const totalChallenges=units.reduce((sum,u)=>sum+Number(u.application_challenges||0),0);
  const cards=list.map(j=>{
    const s=journeyStats(state,j),label=s.done?'Walk it again':s.seen?'Continue journey':'Begin journey';
    return `<article class="card journey-card"><div class="journey-card-top"><span class="eyebrow">${esc(j.palace_name)}</span><span class="pill">${s.done?'Complete':s.seen?`${s.pct}%`:`${esc(j.estimated_minutes)} min`}</span></div><h3>${esc(j.story_title)}</h3><p>${esc(j.tagline)}</p><div class="journey-meta"><span>${s.total} locations</span><span>${esc(j.checkpoint_count)} optional recalls</span><span>Guide · ${esc(guideName(j))}</span></div><button class="${s.seen?'primary':'secondary'}" data-action="learn" data-id="${esc(j.palace_id)}">${label}</button></article>`;
@@ -40,13 +37,14 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
  const challenge=(unit?.application_challenges||0)>0?`<section class="card challenge-strip"><div><span class="eyebrow">Unit ${esc(unit.number)}</span><h2>Challenge Lab</h2><p>${esc(unit.title)} application questions.</p></div><div class="challenge-side"><strong>${esc(unit.application_challenges)} challenges</strong><button class="secondary" data-action="practice">Open challenge lab</button></div></section>`:'';
  const recommendation=active?`${activeStats.seen?`Continue at location ${currentIndex} of ${activeStats.total}`:'Start with the first location'}`:'';
  return `<main id="main-content" tabindex="-1" class="stack course-home" aria-label="AP Biology Memory Palace home">
-  <section class="card course-home-hero">
-   <div class="course-home-copy"><span class="course-kicker">AP Biology</span><h1>Units 1–8</h1><p>Select a unit to open its memory journeys.</p></div>
-   <div class="course-home-summary" aria-label="Course totals"><div><strong>8</strong><span>units</span></div><div><strong>${totalJourneys}</strong><span>journeys</span></div><div><strong>${totalScenes}</strong><span>locations</span></div><div><strong>${totalChallenges}</strong><span>challenges</span></div></div>
-  </section>
+  <header class="course-home-intro" aria-labelledby="course-home-title">
+   <span class="course-home-kicker">AP Biology</span>
+   <h1 id="course-home-title">Memory Palace</h1>
+   <p>Units 1–8</p>
+  </header>
 
   <section class="course-units-section" aria-labelledby="course-units-title">
-   <div class="course-section-heading"><div><h2 id="course-units-title">AP Biology Units</h2></div></div>
+   <div class="course-section-heading"><div><h2 id="course-units-title">Units</h2></div></div>
    <div class="course-unit-grid">${unitCards}</div>
   </section>
 
@@ -57,6 +55,5 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
 
   <section class="library-section" aria-labelledby="journey-library-title"><div class="library-heading"><div><span class="eyebrow">Unit ${esc(unit?.number||'')} journeys</span><h2 id="journey-library-title">${esc(unit?.title||'')}</h2></div></div><div class="journey-list">${cards}</div></section>
   ${challenge}
-  <!-- Course map removed because the eight-unit selector above already provides course navigation. -->
  </main>`;
 }
