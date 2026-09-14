@@ -38,7 +38,7 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
  const recommendation=active?`${activeStats.seen?`Continue at location ${currentIndex} of ${activeStats.total}`:'Start with the first location'}`:'';
  return `<main id="main-content" tabindex="-1" class="stack course-home" aria-label="AP Biology Memory Palace home">
   <section class="course-units-section" aria-labelledby="course-units-title">
-   <div class="course-section-heading"><div><h2 id="course-units-title">Units</h2></div></div>
+   <div class="course-section-heading"><div><h2 id="course-units-title">All Units</h2></div></div>
    <div class="course-unit-grid">${unitCards}</div>
   </section>
 
