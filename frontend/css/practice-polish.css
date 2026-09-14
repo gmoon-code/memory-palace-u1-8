@@ -1,0 +1,177 @@
+/* Challenge Lab polish
+   Keep the page compact, aligned, and free of accidental empty columns. */
+
+.practice-wrap{
+  width:100%;
+  max-width:860px;
+  margin:0 auto;
+}
+
+.practice-card{
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:30px;
+}
+
+.practice-head{
+  display:block;
+  min-width:0;
+}
+
+.practice-meta-row{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  margin:0 0 14px;
+}
+
+.practice-meta-row .eyebrow{
+  display:inline-block;
+  width:auto;
+  max-width:calc(100% - 150px);
+  margin:0;
+  flex:0 1 auto;
+  line-height:1.25;
+}
+
+.practice-meta-row .pill{
+  flex:0 0 auto;
+  max-width:220px;
+  margin:0;
+  padding:6px 10px;
+  white-space:normal;
+  text-align:center;
+  line-height:1.2;
+}
+
+.practice-head h1,
+.practice-card h1{
+  display:table;
+  width:fit-content;
+  max-width:100%;
+  margin:0;
+  font-size:clamp(2rem,3.15vw,2.45rem);
+  line-height:1.12;
+  overflow-wrap:break-word;
+}
+
+.practice-prompt{
+  display:block;
+  width:100%;
+  max-width:none!important;
+  margin:22px 0 20px;
+  font-size:1.08rem;
+  line-height:1.72;
+  color:#222;
+}
+
+.practice-support-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:0 0 18px;
+}
+
+.practice-support-actions button{
+  min-width:0;
+}
+
+.practice-card .feedback-region:not(:empty){
+  margin-top:14px;
+}
+
+.practice-card .answer-guide{
+  margin-top:0;
+}
+
+.practice-navigation{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  margin:4px 0 0;
+  padding:18px 0 0;
+  border-top:1px solid var(--moon-rule);
+}
+
+.practice-navigation>.row{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:10px;
+  margin-left:auto;
+}
+
+.practice-navigation button{
+  white-space:nowrap;
+}
+
+@media(max-width:760px){
+  .practice-wrap{
+    max-width:100%;
+  }
+
+  .practice-card{
+    padding:24px 20px;
+  }
+
+  .practice-meta-row{
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:9px 12px;
+  }
+
+  .practice-meta-row .eyebrow{
+    max-width:100%;
+  }
+
+  .practice-meta-row .pill{
+    max-width:100%;
+  }
+
+  .practice-head h1,
+  .practice-card h1{
+    font-size:clamp(1.75rem,7vw,2.1rem);
+  }
+
+  .practice-prompt{
+    margin:18px 0;
+    font-size:1.03rem;
+    line-height:1.65;
+  }
+
+  .practice-navigation{
+    align-items:stretch;
+    flex-direction:column;
+  }
+
+  .practice-navigation>.row{
+    width:100%;
+    margin-left:0;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .practice-navigation>button,
+  .practice-navigation>.row button{
+    width:100%;
+  }
+}
+
+@media(max-width:520px){
+  .practice-support-actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .practice-support-actions button,
+  .practice-navigation>.row{
+    width:100%;
+  }
+
+  .practice-navigation>.row{
+    grid-template-columns:1fr;
+  }
+}
