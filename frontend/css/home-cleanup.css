@@ -1,0 +1,119 @@
+/* Home page refinements for the Moon Notes system. */
+
+.course-home-hero{
+  align-items:start;
+  padding:28px 30px;
+}
+
+.course-home-copy h1{
+  margin:9px 0 10px;
+  font-size:clamp(2.1rem,4vw,3.15rem);
+  line-height:1.05;
+  font-weight:700;
+}
+
+.course-home-copy p{
+  margin:0;
+  max-width:620px;
+  color:#333;
+  font-size:1rem;
+  line-height:1.5;
+}
+
+.course-section-heading{
+  display:block;
+  margin:18px 2px 14px;
+}
+
+.course-section-heading h2{
+  margin:0;
+  font-size:1.65rem;
+  line-height:1.15;
+}
+
+/* Keep the status label and highlighted unit title in separate line boxes. */
+.current-unit-main{
+  min-width:0;
+}
+
+.current-unit-label{
+  display:block;
+  width:max-content;
+  max-width:100%;
+  margin:0 0 9px;
+  padding:0;
+  color:#555;
+  background:none;
+  font-size:.82rem;
+  font-weight:700;
+  line-height:1.25;
+}
+
+.current-unit-main h2{
+  display:table;
+  width:fit-content;
+  max-width:100%;
+  margin:0 0 12px;
+  padding:.05em .18em .08em;
+  background:var(--unit-highlight);
+  color:#111;
+  font-size:1.6rem;
+  line-height:1.18;
+  font-weight:700;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+}
+
+.current-unit-main p{
+  margin:0 0 16px;
+}
+
+.current-unit-progress{
+  min-width:0;
+}
+
+.current-unit-progress>.eyebrow{
+  display:table;
+  margin-bottom:10px;
+}
+
+.current-unit-progress>strong{
+  margin-top:0;
+}
+
+/* The journey-library heading no longer needs explanatory copy beside it. */
+.library-heading{
+  display:block;
+  margin-bottom:10px;
+}
+
+.library-heading>div{
+  min-width:0;
+}
+
+.library-heading .eyebrow{
+  display:table;
+  margin-bottom:8px;
+}
+
+.library-heading h2{
+  display:table;
+  width:fit-content;
+  max-width:100%;
+  margin:0;
+}
+
+.challenge-strip p{
+  margin-top:6px;
+}
+
+@media(max-width:720px){
+  .course-home-hero,
+  .current-unit-panel{
+    padding:22px 20px;
+  }
+
+  .current-unit-main h2{
+    font-size:1.45rem;
+  }
+}
