@@ -46,8 +46,56 @@ function queuePolish(){
   });
 }
 
+/*
+  Scene-to-scene reading position
+  -------------------------------
+  The Learn view re-renders the whole page whenever Previous scene or
+  Continue story is used. app.js deliberately focuses the new main element,
+  which resets the document to the top. Capture the intent before that render,
+  then restore the learner to the newly rendered Follow what happens heading.
+  Keeping this in an already-loaded runtime file also makes the behavior work
+  in both the GitHub Pages build and the server shell.
+*/
+let storyNavigationPending=false;
+let storyScrollQueued=false;
+
+function queueStoryScroll(){
+  if(!storyNavigationPending||storyScrollQueued)return;
+  storyScrollQueued=true;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    storyScrollQueued=false;
+    if(!storyNavigationPending)return;
+    storyNavigationPending=false;
+
+    const heading=document.querySelector('.narrative-section .section-heading');
+    if(!heading)return;
+
+    const top=heading.getBoundingClientRect().top+window.scrollY-16;
+    try{window.scrollTo({top:Math.max(0,top),left:0,behavior:'auto'})}
+    catch{window.scrollTo?.(0,Math.max(0,top))}
+
+    const focusTarget=heading.querySelector('h3')||heading;
+    focusTarget.setAttribute('tabindex','-1');
+    try{focusTarget.focus({preventScroll:true})}catch{/* focus is optional */}
+  }));
+}
+
+document.addEventListener('click',event=>{
+  const button=event.target.closest?.('[data-action="previous-scene"],[data-action="next-scene"]');
+  if(!button)return;
+
+  /* Only the controls under the visible story should preserve the story
+     reading position. Quick Recall uses its own compact screen. */
+  if(!button.closest('.story-card'))return;
+
+  storyNavigationPending=true;
+},true);
+
 const app=document.querySelector('#app');
 if(app){
-  new MutationObserver(queuePolish).observe(app,{childList:true,subtree:true});
+  new MutationObserver(()=>{
+    queuePolish();
+    queueStoryScroll();
+  }).observe(app,{childList:true,subtree:true});
 }
 polishRoute(document);
