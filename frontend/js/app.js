@@ -11,7 +11,7 @@ const state=loadState();
 let course=null,unit=null,journeys=[],activeJourney=null,applicationLab={items:[]},reviewManifest={targets:[]},mixedData={sets:[]};
 let practiceIndex=0,practiceRevealed=false,view='home',recallOpen=false;
 
-function esc(v=''){return String(v).replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]))}
+function esc(v=''){return String(v).replace(/[&<>'\"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[ch]))}
 function shell(content){
  return `<div class="shell"><header class="topbar"><div class="brand">Memory Palace <span>AP Biology</span></div><nav class="nav" aria-label="Primary"><button data-nav="home" ${view==='home'?'class="active" aria-current="page"':''}>Home</button><button data-nav="learn" ${view==='learn'?'class="active" aria-current="page"':''}>Learn</button><button data-nav="review" ${view==='review'?'class="active" aria-current="page"':''}>Review</button></nav></header>${content}</div>`;
 }
@@ -39,6 +39,15 @@ function focusMain(){
  const main=document.getElementById('main-content');if(!main)return;
  try{window.scrollTo({top:0,left:0,behavior:'auto'})}catch{window.scrollTo?.(0,0)}
  requestAnimationFrame(()=>main.focus({preventScroll:true}));
+}
+function focusStory(){
+ requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   const story=document.querySelector('.narrative-section');if(!story)return;
+   const heading=story.querySelector('.section-heading h3');
+   const top=story.getBoundingClientRect().top+window.scrollY-12;
+   try{window.scrollTo({top:Math.max(0,top),left:0,behavior:'auto'})}catch{window.scrollTo?.(0,Math.max(0,top))}
+   if(heading){heading.setAttribute('tabindex','-1');heading.focus({preventScroll:true})}
+ }));
 }
 function centerCurrentRoute(){
  const strip=document.querySelector('.route-strip'),current=strip?.querySelector('.route-node.current');if(!strip||!current)return;
@@ -90,17 +99,17 @@ function scheduleSceneMemories(scene){
 function goHome(){view='home';recallOpen=false;stopSpeech();render({focus:true})}
 function goToScene(index){
  if(!activeJourney)return;const current=sceneIndex(state,activeJourney.palace_id),next=Math.max(0,Math.min(Number(index)||0,activeJourney.scenes.length-1));
- if(next!==current){markSeen(state,activeJourney.palace_id,current);setSceneIndex(state,activeJourney.palace_id,next)}recallOpen=false;stopSpeech();render({focus:true});
+ if(next!==current){markSeen(state,activeJourney.palace_id,current);setSceneIndex(state,activeJourney.palace_id,next)}recallOpen=false;stopSpeech();render({focus:false});focusStory();
 }
 async function skipRecallAndContinue(){
  const scene=currentScene(),objectId=scene?.checkpoint_object_id;if(objectId){try{const data=await recallData(objectId);scheduleReview(state,{unitId:currentUnitId(),objectId:data.obj.memory_object_id,journeyId:activeJourney.palace_id,prompt:data.prompt,hint:data.hint,answer:data.answer},false)}catch{/* The normal story scheduler will still queue the memory. */}clearRecallAssisted(state,activeJourney.palace_id,objectId)}nextScene();
 }
-function previousScene(){if(!activeJourney)return;const i=sceneIndex(state,activeJourney.palace_id);if(i<=0)return;markSeen(state,activeJourney.palace_id,i);setSceneIndex(state,activeJourney.palace_id,i-1);recallOpen=false;stopSpeech();render({focus:true})}
+function previousScene(){if(!activeJourney)return;const i=sceneIndex(state,activeJourney.palace_id);if(i<=0)return;markSeen(state,activeJourney.palace_id,i);setSceneIndex(state,activeJourney.palace_id,i-1);recallOpen=false;stopSpeech();render({focus:false});focusStory()}
 function nextScene(){
  if(!activeJourney)return;const id=activeJourney.palace_id,i=sceneIndex(state,id),scene=activeJourney.scenes[i];markSeen(state,id,i);scheduleSceneMemories(scene);
  if(scene?.checkpoint_object_id)clearRecallAssisted(state,id,scene.checkpoint_object_id);
  if(i>=activeJourney.scenes.length-1){markJourneyComplete(state,id);setSceneIndex(state,id,0);const next=nextIncompleteAfter(id);state.activeJourney=next?.palace_id||id;saveState(state);view='home';recallOpen=false;stopSpeech();render({focus:true});return}
- setSceneIndex(state,id,i+1);recallOpen=false;stopSpeech();render({focus:true});
+ setSceneIndex(state,id,i+1);recallOpen=false;stopSpeech();render({focus:false});focusStory();
 }
 function exactDue(objectId){return dueReviews(state,5,currentUnitId()).find(i=>i.objectId===objectId)}
 function showReviewHint(objectId){
