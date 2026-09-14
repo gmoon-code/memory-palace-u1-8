@@ -1,4 +1,4 @@
-function esc(v=''){return String(v).replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt',"'":'&#39;','"':'&quot;'}[ch]))}
+function esc(v=''){return String(v).replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]))}
 function guideName(j){return typeof j?.guide==='object'?j.guide.name:j?.guide||'Your guide'}
 function unitTheme(n){return ['yellow','green','turquoise','pink'][(Math.max(1,Number(n)||1)-1)%4]}
 function journeyStats(state,j){
@@ -38,7 +38,7 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
  const recommendation=active?`${activeStats.seen?`Continue at location ${currentIndex} of ${activeStats.total}`:'Start with the first location'}`:'';
  return `<main id="main-content" tabindex="-1" class="stack course-home" aria-label="AP Biology Memory Palace home">
   <section class="course-units-section" aria-labelledby="course-units-title">
-   <div class="course-section-heading"><div><h1 id="course-units-title">Units</h1></div></div>
+   <div class="course-section-heading"><div><h2 id="course-units-title">Units</h2></div></div>
    <div class="course-unit-grid">${unitCards}</div>
   </section>
 
