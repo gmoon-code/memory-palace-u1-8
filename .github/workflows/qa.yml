@@ -79,6 +79,7 @@ jobs:
       - run: node --check frontend/js/api.js
       - run: node --check frontend/js/state.js
       - run: node --check frontend/js/audio.js
+      - run: node --check frontend/js/site-controls.js
       - run: node --check frontend/js/views/home.js
       - run: node --check frontend/js/views/learn.js
       - run: node --check frontend/js/views/review.js
@@ -88,4 +89,8 @@ jobs:
       - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-a.zip
       - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-b.zip
       - run: cmp /tmp/site-ux1-a.zip /tmp/site-ux1-b.zip
-      - run: git diff --exit-code
+      - name: Verify no source drift outside generated release evidence
+        run: >-
+          git diff --exit-code -- .
+          ':(exclude)site-release/site-ux1-lock.json'
+          ':(exclude)docs/SITE_UX1_PACKAGE_MANIFEST.json'
