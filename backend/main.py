@@ -6,10 +6,11 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import content
-from .settings import FRONTEND_DIR, HOST, PORT
+from .settings import ADMIN_ENABLED, FRONTEND_DIR, HOST, PORT
 
 RUNTIME_VERSION = "v2-apbio-0.30.0-u8-f6"
 FRONTEND_ROOT = Path(FRONTEND_DIR).resolve()
+ADMIN_ROOT = (FRONTEND_ROOT / "admin").resolve()
 
 app = FastAPI(
     title="Memory Palace V2 · AP Biology",
@@ -38,7 +39,7 @@ async def security_and_cache_headers(request: Request, call_next):
     response.headers["Cross-Origin-Resource-Policy"] = "same-origin"
     if request.url.path.startswith("/api/"):
         response.headers["Cache-Control"] = "no-store"
-    elif request.url.path.startswith("/static/"):
+    elif request.url.path.startswith("/static/") or request.url.path.startswith("/admin"):
         response.headers["Cache-Control"] = "no-cache"
     else:
         response.headers["Cache-Control"] = "no-cache"
@@ -295,6 +296,33 @@ def unit1_object(object_id: str):
     return item
 
 
+def _admin_file(path: str) -> Path | None:
+    try:
+        candidate = (ADMIN_ROOT / path).resolve()
+        candidate.relative_to(ADMIN_ROOT)
+    except (ValueError, OSError):
+        return None
+    return candidate if candidate.exists() and candidate.is_file() else None
+
+
+@app.get("/admin")
+@app.get("/admin/")
+def admin_root():
+    if not ADMIN_ENABLED:
+        raise HTTPException(404, "Not found")
+    return FileResponse(ADMIN_ROOT / "index.html")
+
+
+@app.get("/admin/{path:path}")
+def admin_assets(path: str):
+    if not ADMIN_ENABLED:
+        raise HTTPException(404, "Not found")
+    candidate = _admin_file(path)
+    if candidate is None:
+        raise HTTPException(404, "Admin asset not found")
+    return FileResponse(candidate)
+
+
 @app.get("/")
 def root():
     return FileResponse(FRONTEND_ROOT / "index.html")
@@ -313,6 +341,8 @@ def _safe_frontend_file(path: str) -> Path | None:
 def spa_fallback(path: str):
     if path == "api" or path.startswith("api/"):
         raise HTTPException(404, "API route not found")
+    if path == "admin" or path.startswith("admin/"):
+        raise HTTPException(404, "Not found")
     if path in {"docs", "redoc", "openapi.json"}:
         raise HTTPException(404, "Developer API documentation is disabled")
     candidate = _safe_frontend_file(path)
