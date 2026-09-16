@@ -28,14 +28,18 @@ jobs:
         run: node --check frontend/js/audio.js
       - name: Static content loader syntax
         run: node --check frontend/js/api.js
-      - name: Z2 JSON parse and locked accounting
+      - name: Z2 JSON parse, metadata, and locked accounting
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
 
-          path = Path('content/ap-biology/unit-1/journeys/Z2.json')
+          root = Path('content/ap-biology/unit-1')
+          path = root / 'journeys' / 'Z2.json'
           data = json.loads(path.read_text(encoding='utf-8'))
+          aggregate = json.loads((root / 'journeys.json').read_text(encoding='utf-8'))
+          summary = next(j for j in aggregate['guided_journeys'] if j['palace_id'] == 'Z2')
+
           assert data['palace_id'] == 'Z2'
           assert data['scene_count'] == len(data['scenes']) == 11
           assert data['checkpoint_count'] == sum(bool(s['checkpoint']) for s in data['scenes']) == 3
@@ -45,6 +49,10 @@ jobs:
           assert [r['locus'] for r in data['route']] == [s['locus'] for s in data['scenes']]
           assert all(s['next_locus'] == data['scenes'][i + 1]['locus'] for i, s in enumerate(data['scenes'][:-1]))
           assert data['scenes'][-1]['next_locus'] is None
+
+          summary_keys = ('palace_name','story_title','tagline','guide','premise','mission','finale','estimated_minutes','scene_count','checkpoint_count','narrative_design')
+          assert all(summary[k] == data[k] for k in summary_keys), 'aggregate Z2 summary metadata drifted from detailed journey'
+
           ids = [oid for s in data['scenes'] for oid in s['object_ids']]
           expected = [f'MO-APBIO-U1-C{i:03d}' for i in range(1, 29)]
           assert ids == expected
@@ -62,12 +70,39 @@ jobs:
               assert len(scene['memory_snapshot']) == len(scene['object_ids'])
               assert {z['position'] for z in scene['scene_layout']['zones']} == {'left', 'center', 'right'}
               assert len(scene['cast']) >= 2
+
           story = '\n'.join(p for s in data['scenes'] for p in s['story_paragraphs'])
           assert 'emergency flooring system' in story
           assert 'The molecules are a simulation' in story
           assert 'electromagnet' not in story.casefold()
           assert 'magnet' not in '\n'.join(data['scenes'][5]['story_paragraphs']).casefold()
           assert '**CHEMICAL BOND**' in '\n'.join(data['scenes'][6]['story_paragraphs'])
+          assert '**Trace elements**' in '\n'.join(data['scenes'][1]['story_paragraphs'])
+          assert '**chemical bond**' in '\n'.join(data['scenes'][5]['story_paragraphs']).casefold()
           assert data['narrative_design'] == 'STORY-METHOD-V3.2'
-          print('Story Method Z2 locked accounting PASS')
+          print('Story Method Z2 locked accounting and metadata PASS')
           PY
+      - name: Z2 renderer and recall smoke test
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const { learnView, sceneSpeech } = await import('./frontend/js/views/learn.js');
+          const journey = JSON.parse(fs.readFileSync('content/ap-biology/unit-1/journeys/Z2.json', 'utf8'));
+          for (let i = 0; i < journey.scenes.length; i += 1) {
+            const scene = journey.scenes[i];
+            const html = learnView(journey, i, false, []);
+            if (!html.includes(scene.title) || !html.includes(scene.locus)) throw new Error(`scene ${i} title/locus missing from render`);
+            if (html.includes('**')) throw new Error(`scene ${i} leaked raw story markdown`);
+            const renderedParagraphs = (html.match(/class="story-paragraph/g) || []).length;
+            if (renderedParagraphs !== scene.story_paragraphs.length) throw new Error(`scene ${i} paragraph render mismatch`);
+            const renderedAnchors = (html.match(/class="memory-anchor/g) || []).length;
+            if (renderedAnchors !== scene.memory_snapshot.length) throw new Error(`scene ${i} memory anchor render mismatch`);
+            const speech = sceneSpeech(journey, i);
+            if (!speech.trim() || speech.includes('**')) throw new Error(`scene ${i} speech preparation failed`);
+            if (scene.checkpoint) {
+              const recall = learnView(journey, i, true, []);
+              if (!recall.includes(scene.checkpoint_prompt) || !recall.includes('Quick recall')) throw new Error(`scene ${i} recall render failed`);
+            }
+          }
+          console.log('Story Method Z2 renderer, speech, memory anchors, and recall smoke PASS');
+          JS
