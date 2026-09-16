@@ -82,7 +82,11 @@ def step9_admin_loader():
 @assets.get("/admin/", response_class=HTMLResponse)
 def step9_admin_shell():
     _admin_enabled()
-    return HTMLResponse(ADMIN_INDEX.read_text(encoding="utf-8"))
+    html = ADMIN_INDEX.read_text(encoding="utf-8")
+    loader = '<script type="module" src="/admin/publication.js"></script>'
+    if loader not in html:
+        html = html.replace("</body>", f"  {loader}\n</body>")
+    return HTMLResponse(html)
 
 
 @router.get("/status")
