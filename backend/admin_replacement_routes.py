@@ -1,14 +1,18 @@
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 from fastapi import APIRouter, HTTPException, Request
+from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel, Field
 
 from . import admin_auth, admin_drafts, admin_replacements
-from .settings import ADMIN_ENABLED
+from .settings import ADMIN_ENABLED, FRONTEND_DIR
 
 router = APIRouter(prefix="/api/admin/replacements", tags=["content-studio-replacements"])
+assets = APIRouter(tags=["content-studio-replacement-assets"])
+ADMIN_FRONTEND = (Path(FRONTEND_DIR).resolve() / "admin").resolve()
 
 
 class CreateReplacementDraftRequest(BaseModel):
@@ -32,6 +36,11 @@ def _owner(request: Request, *, csrf: bool = False) -> admin_auth.AdminSession:
     return session
 
 
+def _admin_enabled() -> None:
+    if not ADMIN_ENABLED:
+        raise HTTPException(404, "Not found")
+
+
 def _raise_replacement_error(exc: Exception) -> None:
     if isinstance(exc, admin_drafts.DraftNotFound):
         raise HTTPException(404, str(exc)) from exc
@@ -42,6 +51,26 @@ def _raise_replacement_error(exc: Exception) -> None:
     if isinstance(exc, admin_drafts.DraftError):
         raise HTTPException(400, str(exc)) from exc
     raise exc
+
+
+@assets.get("/admin/drafts.js")
+def replacement_admin_loader():
+    _admin_enabled()
+    return Response(
+        'import "/admin/drafts-core.js";\nimport "/admin/replacement.js";\n',
+        media_type="text/javascript",
+        headers={"Cache-Control": "no-store"},
+    )
+
+
+@assets.get("/admin/drafts-core.js")
+def replacement_admin_core():
+    _admin_enabled()
+    return FileResponse(
+        ADMIN_FRONTEND / "drafts.js",
+        media_type="text/javascript",
+        headers={"Cache-Control": "no-store"},
+    )
 
 
 @router.get("/plan")
