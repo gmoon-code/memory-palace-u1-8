@@ -25,7 +25,7 @@ def _first(record: dict[str, Any], keys: Iterable[str], default: Any = None) -> 
     return default
 
 
-def _list(value: Any) -> list[Any]:
+def _as_list(value: Any) -> list[Any]:
     if value is None:
         return []
     if isinstance(value, list):
@@ -41,9 +41,16 @@ def _slug(value: str) -> str:
 
 
 def _word_count(paragraphs: Any) -> int:
-    text = " ".join(str(part) for part in _list(paragraphs) if part)
-    text = re.sub(r"[*_`#>"]", " ", text)
+    text = " ".join(str(part) for part in _as_list(paragraphs) if part)
+    text = re.sub(r"[*_`#>]", " ", text)
     return len(re.findall(r"\b\w+[\w′'/-]*\b", text, flags=re.UNICODE))
+
+
+def _repo_path(path: Path) -> str:
+    try:
+        return str(path.relative_to(APBIO_DIR.parent.parent))
+    except ValueError:
+        return str(path)
 
 
 def _prefer_file(unit_dir: Path, exact_name: str, pattern: str) -> Path | None:
@@ -66,33 +73,37 @@ def _canonical_path(unit_id: str) -> Path | None:
     return path if path.exists() else None
 
 
+def _records_from_payload(payload: Any, keys: Iterable[str]) -> list[dict[str, Any]]:
+    if isinstance(payload, list):
+        return [item for item in payload if isinstance(item, dict)]
+    if isinstance(payload, dict):
+        for key in keys:
+            value = payload.get(key)
+            if isinstance(value, list):
+                return [item for item in value if isinstance(item, dict)]
+    return []
+
+
 def _canonical_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
     path = _canonical_path(unit_id)
     if path is None:
         return [], None
-    payload = _read_json(path)
-    if isinstance(payload, list):
-        records = payload
-    elif isinstance(payload, dict):
-        records = []
-        for key in ("canonical_records", "canonical_catalog", "records", "items"):
-            if isinstance(payload.get(key), list):
-                records = payload[key]
-                break
-    else:
-        records = []
-    return [record for record in records if isinstance(record, dict)], str(path.relative_to(APBIO_DIR.parent.parent))
+    records = _records_from_payload(
+        _read_json(path),
+        ("canonical_records", "canonical_catalog", "records", "items"),
+    )
+    return records, _repo_path(path)
 
 
 def _memory_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
     unit_dir = APBIO_DIR / unit_id
     path = _prefer_file(unit_dir, "memory-objects.json", "memory-objects*.json")
     if path is not None:
-        payload = _read_json(path)
-        if isinstance(payload, dict) and isinstance(payload.get("memory_objects"), list):
-            return [r for r in payload["memory_objects"] if isinstance(r, dict)], str(path.relative_to(APBIO_DIR.parent.parent))
+        records = _records_from_payload(_read_json(path), ("memory_objects", "records", "items"))
+        if records:
+            return records, _repo_path(path)
     fallback = list(content.object_index(unit_id).values())
-    return [r for r in fallback if isinstance(r, dict)], None
+    return [item for item in fallback if isinstance(item, dict)], None
 
 
 def _review_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
@@ -100,8 +111,8 @@ def _review_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
     path = _prefer_file(unit_dir, "review-manifest.json", "review-manifest*.json")
     if path is None:
         return [], None
-    payload = _read_json(path)
-    return [r for r in payload.get("targets", []) if isinstance(r, dict)], str(path.relative_to(APBIO_DIR.parent.parent))
+    records = _records_from_payload(_read_json(path), ("targets", "records", "items"))
+    return records, _repo_path(path)
 
 
 def _mixed_sets(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
@@ -109,60 +120,70 @@ def _mixed_sets(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
     path = _prefer_file(unit_dir, "mixed-discrimination.json", "mixed-discrimination*.json")
     if path is None:
         return [], None
-    payload = _read_json(path)
-    return [r for r in payload.get("sets", []) if isinstance(r, dict)], str(path.relative_to(APBIO_DIR.parent.parent))
+    records = _records_from_payload(_read_json(path), ("sets", "records", "items"))
+    return records, _repo_path(path)
 
 
 def _challenge_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
     path = APBIO_DIR / unit_id / "application-lab.json"
     if not path.exists():
         return [], None
-    payload = _read_json(path)
-    return [r for r in payload.get("items", []) if isinstance(r, dict)], str(path.relative_to(APBIO_DIR.parent.parent))
+    records = _records_from_payload(_read_json(path), ("items", "challenges", "records"))
+    return records, _repo_path(path)
 
 
 def _release_manifest() -> dict[str, Any]:
     path = APBIO_DIR / "mainline-release-u1-u8.json"
-    return _read_json(path) if path.exists() else {}
+    payload = _read_json(path) if path.exists() else {}
+    return payload if isinstance(payload, dict) else {}
 
 
 class CatalogBuilder:
     def __init__(self) -> None:
         self.entities: dict[str, dict[str, Any]] = {}
         self.edges: list[dict[str, str]] = []
-        self.edge_keys: set[tuple[str, str, str]] = set()
+        self._edge_keys: set[tuple[str, str, str]] = set()
         self.aliases: dict[tuple[str, str], dict[str, str]] = defaultdict(dict)
         self.unresolved: list[dict[str, Any]] = []
+        self.journey_by_raw: dict[tuple[str, str], str] = {}
         self.scene_by_locator: dict[tuple[str, str], str] = {}
         self.scene_by_title: dict[tuple[str, str], list[str]] = defaultdict(list)
-        self.journey_by_raw: dict[tuple[str, str], str] = {}
-        self.location_by_raw: dict[tuple[str, str], str] = {}
         self.character_by_key: dict[tuple[str, str], str] = {}
 
-    def add_entity(self, entity: dict[str, Any], aliases: Iterable[tuple[str, str]] = ()) -> str:
-        entity_id = entity["id"]
-        if entity_id not in self.entities:
+    def add_entity(
+        self,
+        entity: dict[str, Any],
+        aliases: Iterable[tuple[str, str | None]] = (),
+    ) -> str:
+        entity_id = str(entity["id"])
+        current = self.entities.get(entity_id)
+        if current is None:
             self.entities[entity_id] = entity
+            current = entity
         else:
-            current = self.entities[entity_id]
             for key, value in entity.items():
                 if key not in current or current[key] in (None, "", [], {}):
                     current[key] = value
         for unit_id, raw in aliases:
-            if raw:
-                self.aliases[(unit_id, str(raw))][entity["type"]] = entity_id
+            if raw not in (None, ""):
+                self.aliases[(unit_id, str(raw))][current["type"]] = entity_id
         return entity_id
 
     def edge(self, source: str, target: str, kind: str) -> None:
         if source not in self.entities or target not in self.entities:
             return
         key = (source, target, kind)
-        if key in self.edge_keys:
+        if key in self._edge_keys:
             return
-        self.edge_keys.add(key)
+        self._edge_keys.add(key)
         self.edges.append({"from": source, "to": target, "kind": kind})
 
-    def resolve(self, unit_id: str, raw: Any, prefer: Iterable[str] = ("memory_object", "concept")) -> str | None:
+    def resolve(
+        self,
+        unit_id: str,
+        raw: Any,
+        prefer: Iterable[str] = ("memory_object", "concept"),
+    ) -> str | None:
         if raw in (None, ""):
             return None
         matches = self.aliases.get((unit_id, str(raw)), {})
@@ -171,7 +192,7 @@ class CatalogBuilder:
                 return matches[entity_type]
         return next(iter(matches.values()), None)
 
-    def unresolved_ref(self, *, unit_id: str, source_id: str, raw_ref: Any, relation: str) -> None:
+    def unresolved_ref(self, unit_id: str, source_id: str, raw_ref: Any, relation: str) -> None:
         if raw_ref in (None, ""):
             return
         self.unresolved.append(
@@ -190,33 +211,27 @@ class CatalogBuilder:
             {
                 "id": COURSE_ENTITY_ID,
                 "type": "course",
-                "title": course_payload.get("title", "AP Biology"),
                 "course_id": course_payload.get("course_id", "ap-biology"),
+                "title": course_payload.get("title", "AP Biology"),
                 "release_status": release.get("release_status"),
                 "runtime_version": release.get("runtime_version"),
             }
         )
-
-        units = [unit for unit in course_payload.get("units", []) if isinstance(unit, dict)]
+        units = [item for item in course_payload.get("units", []) if isinstance(item, dict)]
         for unit in units:
             self._add_unit(unit)
-
         for unit in units:
             unit_id = str(unit.get("unit_id"))
-            self._add_canonical(unit_id)
+            self._add_concepts(unit_id)
             self._add_memory_objects(unit_id)
-
         for unit in units:
-            unit_id = str(unit.get("unit_id"))
-            self._add_journeys_and_scenes(unit_id)
-
+            self._add_journeys(str(unit.get("unit_id")))
         for unit in units:
             unit_id = str(unit.get("unit_id"))
             self._add_review_questions(unit_id)
             self._add_mixed_questions(unit_id)
             self._add_challenges(unit_id)
-
-        self._attach_counts()
+        self._attach_dependency_counts()
         return self._snapshot(release)
 
     def _add_unit(self, unit: dict[str, Any]) -> None:
@@ -231,43 +246,30 @@ class CatalogBuilder:
                 "number": summary.get("number"),
                 "title": summary.get("title") or summary.get("unit_title") or unit_id,
                 "status": summary.get("status") or summary.get("release_status") or summary.get("student_release"),
-                "canonical_records": summary.get("canonical_records"),
-                "journeys": summary.get("journeys") or summary.get("journey_count") or summary.get("guided_journeys"),
-                "scenes": summary.get("permanent_loci") or summary.get("scene_count") or summary.get("scenes"),
-                "application_challenges": summary.get("application_challenges") or summary.get("challenge_count"),
+                "reported_canonical_records": summary.get("canonical_records"),
+                "reported_journeys": summary.get("journeys") or summary.get("journey_count") or summary.get("guided_journeys"),
+                "reported_scenes": summary.get("permanent_loci") or summary.get("scene_count") or summary.get("scenes"),
+                "reported_challenges": summary.get("application_challenges") or summary.get("challenge_count"),
             },
             aliases=[(unit_id, unit_id)],
         )
         self.edge(COURSE_ENTITY_ID, entity_id, "contains")
 
-    def _add_canonical(self, unit_id: str) -> None:
+    def _add_concepts(self, unit_id: str) -> None:
         records, source_path = _canonical_records(unit_id)
         unit_entity = f"unit:{unit_id}"
         for index, record in enumerate(records):
             knowledge_id = str(
                 _first(
                     record,
-                    (
-                        "knowledge_id",
-                        "Knowledge ID",
-                        "source_knowledge_id",
-                        "record_id",
-                        "id",
-                    ),
+                    ("knowledge_id", "Knowledge ID", "source_knowledge_id", "record_id", "id"),
                     f"canonical-{index + 1:04d}",
                 )
             )
             label = str(
                 _first(
                     record,
-                    (
-                        "canonical_label",
-                        "Canonical Label",
-                        "canonical_term",
-                        "term",
-                        "label",
-                        "title",
-                    ),
+                    ("canonical_label", "Canonical Label", "canonical_term", "term", "label", "title"),
                     knowledge_id,
                 )
             )
@@ -305,11 +307,12 @@ class CatalogBuilder:
         records, source_path = _memory_records(unit_id)
         unit_entity = f"unit:{unit_id}"
         for index, record in enumerate(records):
-            memory_id = str(_first(record, ("memory_object_id", "object_id", "knowledge_id"), f"memory-{index + 1:04d}"))
+            memory_id = str(
+                _first(record, ("memory_object_id", "object_id", "knowledge_id"), f"memory-{index + 1:04d}")
+            )
             source_knowledge_id = _first(record, ("source_knowledge_id", "knowledge_id", "Knowledge ID"))
             title = str(_first(record, ("canonical_term", "canonical_label", "term", "title"), memory_id))
             entity_id = f"memory:{unit_id}:{memory_id}"
-            aliases = [(unit_id, memory_id)]
             self.add_entity(
                 {
                     "id": entity_id,
@@ -319,7 +322,10 @@ class CatalogBuilder:
                     "source_knowledge_id": source_knowledge_id,
                     "title": title,
                     "canonical_term": title,
-                    "canonical_definition": _first(record, ("canonical_definition", "canonical_verified_statement", "definition")),
+                    "canonical_definition": _first(
+                        record,
+                        ("canonical_definition", "canonical_verified_statement", "definition"),
+                    ),
                     "object_type": record.get("object_type"),
                     "palace_zone": record.get("palace_zone"),
                     "primary_palace_locus": record.get("primary_palace_locus"),
@@ -334,7 +340,7 @@ class CatalogBuilder:
                     "version_status": record.get("version_status"),
                     "source_path": source_path,
                 },
-                aliases=aliases,
+                aliases=[(unit_id, memory_id)],
             )
             self.edge(unit_entity, entity_id, "contains")
             if source_knowledge_id:
@@ -342,17 +348,11 @@ class CatalogBuilder:
                 if concept_id:
                     self.edge(entity_id, concept_id, "represents")
                 else:
-                    self.unresolved_ref(
-                        unit_id=unit_id,
-                        source_id=entity_id,
-                        raw_ref=source_knowledge_id,
-                        relation="represents_concept",
-                    )
+                    self.unresolved_ref(unit_id, entity_id, source_knowledge_id, "represents_concept")
 
-    def _add_journeys_and_scenes(self, unit_id: str) -> None:
+    def _add_journeys(self, unit_id: str) -> None:
         unit_entity = f"unit:{unit_id}"
-        registry = content.journey_registry(unit_id)
-        for journey_index, registry_record in enumerate(registry):
+        for journey_index, registry_record in enumerate(content.journey_registry(unit_id)):
             palace_id = str(registry_record.get("palace_id") or f"journey-{journey_index + 1}")
             payload = content.journey_by_id(unit_id, palace_id) or dict(registry_record)
             journey_id = f"journey:{unit_id}:{palace_id}"
@@ -381,25 +381,31 @@ class CatalogBuilder:
                 aliases=[(unit_id, palace_id)],
             )
             self.edge(unit_entity, journey_id, "contains")
-
             guide = payload.get("guide")
             if isinstance(guide, dict) and guide.get("name"):
                 character_id = self._character(unit_id, guide, journey_id=journey_id)
                 self.edge(journey_id, character_id, "guided_by")
+            for scene in payload.get("scenes", []):
+                if isinstance(scene, dict):
+                    self._add_scene(unit_id, journey_id, palace_id, scene)
 
-            scenes = [scene for scene in payload.get("scenes", []) if isinstance(scene, dict)]
-            for scene in scenes:
-                self._add_scene(unit_id, journey_id, palace_id, scene)
-
-    def _character(self, unit_id: str, record: dict[str, Any], *, journey_id: str | None = None, scene_id: str | None = None) -> str:
+    def _character(
+        self,
+        unit_id: str,
+        record: dict[str, Any],
+        *,
+        journey_id: str | None = None,
+        scene_id: str | None = None,
+    ) -> str:
         name = str(record.get("name") or "Unnamed character")
         key = (unit_id, name.casefold())
         character_id = self.character_by_key.get(key)
         if character_id is None:
-            character_id = f"character:{unit_id}:{_slug(name)}"
+            base = f"character:{unit_id}:{_slug(name)}"
+            character_id = base
             suffix = 2
             while character_id in self.entities and self.entities[character_id].get("title") != name:
-                character_id = f"character:{unit_id}:{_slug(name)}-{suffix}"
+                character_id = f"{base}-{suffix}"
                 suffix += 1
             self.character_by_key[key] = character_id
             self.add_entity(
@@ -424,18 +430,25 @@ class CatalogBuilder:
             entity["scene_ids"].append(scene_id)
         return character_id
 
-    def _add_scene(self, unit_id: str, journey_id: str, palace_id: str, scene: dict[str, Any]) -> None:
+    def _add_scene(
+        self,
+        unit_id: str,
+        journey_id: str,
+        palace_id: str,
+        scene: dict[str, Any],
+    ) -> None:
         scene_index = int(scene.get("scene_index", 0))
         scene_id = f"scene:{unit_id}:{palace_id}:{scene_index}"
         locus = str(scene.get("locus") or scene.get("title") or f"Scene {scene_index + 1}")
         locus_id = scene.get("locus_id")
         paragraphs = scene.get("story_paragraphs") or []
-        object_ids = [str(value) for value in _list(scene.get("object_ids")) if value not in (None, "")]
-        story_beats = [beat for beat in _list(scene.get("story_beats")) if isinstance(beat, dict)]
+        layout = scene.get("scene_layout") if isinstance(scene.get("scene_layout"), dict) else {}
+        object_ids = [str(value) for value in _as_list(scene.get("object_ids")) if value not in (None, "")]
+        beats = [item for item in _as_list(scene.get("story_beats")) if isinstance(item, dict)]
         if not object_ids:
-            object_ids = [str(beat.get("object_id")) for beat in story_beats if beat.get("object_id")]
-        character_names = [str(cast.get("name")) for cast in _list(scene.get("cast")) if isinstance(cast, dict) and cast.get("name")]
-
+            object_ids = [str(item.get("object_id")) for item in beats if item.get("object_id")]
+        cast = [item for item in _as_list(scene.get("cast")) if isinstance(item, dict)]
+        character_names = [str(item.get("name")) for item in cast if item.get("name")]
         self.add_entity(
             {
                 "id": scene_id,
@@ -449,7 +462,7 @@ class CatalogBuilder:
                 "title": scene.get("title") or locus,
                 "scene_kicker": scene.get("scene_kicker"),
                 "location_description": scene.get("location_description"),
-                "orientation": (scene.get("scene_layout") or {}).get("orientation") if isinstance(scene.get("scene_layout"), dict) else None,
+                "orientation": layout.get("orientation"),
                 "object_ids": object_ids,
                 "character_names": character_names,
                 "checkpoint": bool(scene.get("checkpoint")),
@@ -457,17 +470,19 @@ class CatalogBuilder:
                 "checkpoint_prompt": scene.get("checkpoint_prompt"),
                 "next_locus": scene.get("next_locus"),
                 "story_word_count": _word_count(paragraphs),
-                "story_paragraph_count": len(_list(paragraphs)),
+                "story_paragraph_count": len(_as_list(paragraphs)),
                 "story_preview": str(paragraphs[0])[:320] if isinstance(paragraphs, list) and paragraphs else str(scene.get("story_open") or "")[:320],
                 "source_path": f"content/ap-biology/{unit_id}/journeys/{palace_id}.json",
             },
-            aliases=[(unit_id, locus_id)] if locus_id else [],
+            aliases=[(unit_id, str(locus_id))] if locus_id else [],
         )
         self.edge(journey_id, scene_id, "contains")
         self.scene_by_locator[(unit_id, f"{palace_id}:{scene_index}")] = scene_id
         if locus_id:
             self.scene_by_locator[(unit_id, str(locus_id))] = scene_id
-        self.scene_by_title[(unit_id, str(scene.get("title") or ""))].append(scene_id)
+        scene_title = str(scene.get("title") or "")
+        if scene_title:
+            self.scene_by_title[(unit_id, scene_title)].append(scene_id)
 
         location_raw = str(locus_id or f"{palace_id}-{scene_index}")
         location_id = f"location:{unit_id}:{location_raw}"
@@ -482,31 +497,33 @@ class CatalogBuilder:
                 "locus": locus,
                 "locus_id": locus_id,
                 "description": scene.get("location_description"),
-                "orientation": (scene.get("scene_layout") or {}).get("orientation") if isinstance(scene.get("scene_layout"), dict) else None,
-                "zones": (scene.get("scene_layout") or {}).get("zones", []) if isinstance(scene.get("scene_layout"), dict) else [],
+                "orientation": layout.get("orientation"),
+                "zones": layout.get("zones", []),
             },
             aliases=[(unit_id, location_raw)],
         )
-        self.location_by_raw[(unit_id, location_raw)] = location_id
-        if locus_id:
-            self.location_by_raw[(unit_id, str(locus_id))] = location_id
         self.edge(scene_id, location_id, "located_at")
 
-        for cast_record in _list(scene.get("cast")):
-            if isinstance(cast_record, dict) and cast_record.get("name"):
-                character_id = self._character(unit_id, cast_record, journey_id=journey_id, scene_id=scene_id)
+        for cast_record in cast:
+            if cast_record.get("name"):
+                character_id = self._character(
+                    unit_id,
+                    cast_record,
+                    journey_id=journey_id,
+                    scene_id=scene_id,
+                )
                 self.edge(scene_id, character_id, "features")
 
         for raw_object_id in object_ids:
             target = self.resolve(unit_id, raw_object_id, ("memory_object", "concept"))
-            if target:
-                self.edge(scene_id, target, "teaches")
-                if self.entities[target]["type"] == "memory_object":
-                    concept_links = [edge["to"] for edge in self.edges if edge["from"] == target and edge["kind"] == "represents"]
-                    for concept_id in concept_links:
-                        self.edge(scene_id, concept_id, "teaches_concept")
-            else:
-                self.unresolved_ref(unit_id=unit_id, source_id=scene_id, raw_ref=raw_object_id, relation="teaches")
+            if not target:
+                self.unresolved_ref(unit_id, scene_id, raw_object_id, "teaches")
+                continue
+            self.edge(scene_id, target, "teaches")
+            if self.entities[target]["type"] == "memory_object":
+                for edge in list(self.edges):
+                    if edge["from"] == target and edge["kind"] == "represents":
+                        self.edge(scene_id, edge["to"], "teaches_concept")
 
         checkpoint_object_id = scene.get("checkpoint_object_id")
         checkpoint_prompt = scene.get("checkpoint_prompt")
@@ -534,7 +551,7 @@ class CatalogBuilder:
                 if target:
                     self.edge(question_id, target, "assesses")
                 else:
-                    self.unresolved_ref(unit_id=unit_id, source_id=question_id, raw_ref=checkpoint_object_id, relation="assesses")
+                    self.unresolved_ref(unit_id, question_id, checkpoint_object_id, "assesses")
 
     def _add_review_questions(self, unit_id: str) -> None:
         records, source_path = _review_records(unit_id)
@@ -550,8 +567,8 @@ class CatalogBuilder:
                 scene_id = self.scene_by_locator.get((unit_id, f"{journey_raw}:{scene_index}"))
             if scene_id is None and record.get("scene_title"):
                 candidates = self.scene_by_title.get((unit_id, str(record.get("scene_title"))), [])
-                scene_id = candidates[0] if len(candidates) == 1 else None
-
+                if len(candidates) == 1:
+                    scene_id = candidates[0]
             self.add_entity(
                 {
                     "id": question_id,
@@ -578,7 +595,7 @@ class CatalogBuilder:
                 if target:
                     self.edge(question_id, target, "assesses")
                 else:
-                    self.unresolved_ref(unit_id=unit_id, source_id=question_id, raw_ref=knowledge_id, relation="assesses")
+                    self.unresolved_ref(unit_id, question_id, knowledge_id, "assesses")
 
     def _add_mixed_questions(self, unit_id: str) -> None:
         sets, source_path = _mixed_sets(unit_id)
@@ -602,14 +619,13 @@ class CatalogBuilder:
                 }
             )
             self.edge(unit_entity, set_id, "contains_question_set")
-            for knowledge_id in _list(record.get("knowledge_ids")):
+            for knowledge_id in _as_list(record.get("knowledge_ids")):
                 target = self.resolve(unit_id, knowledge_id, ("concept", "memory_object"))
                 if target:
                     self.edge(set_id, target, "discriminates")
                 else:
-                    self.unresolved_ref(unit_id=unit_id, source_id=set_id, raw_ref=knowledge_id, relation="discriminates")
-
-            for q_index, question in enumerate(_list(record.get("questions"))):
+                    self.unresolved_ref(unit_id, set_id, knowledge_id, "discriminates")
+            for q_index, question in enumerate(_as_list(record.get("questions"))):
                 if not isinstance(question, dict):
                     continue
                 raw_question_id = str(question.get("question_id") or f"{set_raw}-Q{q_index + 1}")
@@ -638,7 +654,7 @@ class CatalogBuilder:
                     if target:
                         self.edge(question_id, target, "assesses")
                     else:
-                        self.unresolved_ref(unit_id=unit_id, source_id=question_id, raw_ref=knowledge_id, relation="assesses")
+                        self.unresolved_ref(unit_id, question_id, knowledge_id, "assesses")
 
     def _add_challenges(self, unit_id: str) -> None:
         records, source_path = _challenge_records(unit_id)
@@ -673,22 +689,21 @@ class CatalogBuilder:
                 if target:
                     self.edge(challenge_id, target, "assesses")
                 else:
-                    self.unresolved_ref(unit_id=unit_id, source_id=challenge_id, raw_ref=knowledge_id, relation="assesses")
-            matched_prerequisites: set[str] = set()
-            for raw_locus in _list(record.get("prerequisite_loci")):
+                    self.unresolved_ref(unit_id, challenge_id, knowledge_id, "assesses")
+            matched: set[str] = set()
+            for raw_locus in _as_list(record.get("prerequisite_loci")):
                 scene_id = self.scene_by_locator.get((unit_id, str(raw_locus)))
                 if scene_id:
-                    matched_prerequisites.add(scene_id)
+                    matched.add(scene_id)
                     self.edge(challenge_id, scene_id, "requires_scene")
                 else:
-                    self.unresolved_ref(unit_id=unit_id, source_id=challenge_id, raw_ref=raw_locus, relation="requires_scene")
-            for title in _list(record.get("prerequisite_scene_titles")):
+                    self.unresolved_ref(unit_id, challenge_id, raw_locus, "requires_scene")
+            for title in _as_list(record.get("prerequisite_scene_titles")):
                 candidates = self.scene_by_title.get((unit_id, str(title)), [])
-                if len(candidates) == 1 and candidates[0] not in matched_prerequisites:
-                    matched_prerequisites.add(candidates[0])
+                if len(candidates) == 1 and candidates[0] not in matched:
                     self.edge(challenge_id, candidates[0], "requires_scene")
 
-    def _attach_counts(self) -> None:
+    def _attach_dependency_counts(self) -> None:
         outgoing: dict[str, list[dict[str, str]]] = defaultdict(list)
         incoming: dict[str, list[dict[str, str]]] = defaultdict(list)
         for edge in self.edges:
@@ -703,22 +718,30 @@ class CatalogBuilder:
                 entity["coverage"] = {
                     "scenes": sum(1 for edge in incoming.get(entity_id, []) if edge["kind"] == "teaches_concept"),
                     "memory_objects": sum(1 for edge in incoming.get(entity_id, []) if edge["kind"] == "represents"),
-                    "questions": sum(1 for edge in incoming.get(entity_id, []) if edge["kind"] == "assesses" and self.entities.get(edge["from"], {}).get("type") == "question"),
-                    "challenge_items": sum(1 for edge in incoming.get(entity_id, []) if edge["kind"] == "assesses" and self.entities.get(edge["from"], {}).get("type") == "challenge"),
+                    "questions": sum(
+                        1
+                        for edge in incoming.get(entity_id, [])
+                        if edge["kind"] == "assesses"
+                        and self.entities.get(edge["from"], {}).get("type") == "question"
+                    ),
+                    "challenge_items": sum(
+                        1
+                        for edge in incoming.get(entity_id, [])
+                        if edge["kind"] == "assesses"
+                        and self.entities.get(edge["from"], {}).get("type") == "challenge"
+                    ),
                     "mixed_sets": sum(1 for edge in incoming.get(entity_id, []) if edge["kind"] == "discriminates"),
                 }
 
     def _snapshot(self, release: dict[str, Any]) -> dict[str, Any]:
         counts: dict[str, int] = defaultdict(int)
-        for entity in self.entities.values():
-            counts[entity["type"]] += 1
         question_counts: dict[str, int] = defaultdict(int)
         for entity in self.entities.values():
+            counts[entity["type"]] += 1
             if entity["type"] in {"question", "challenge"}:
                 question_counts[str(entity.get("question_type") or "unknown")] += 1
-
         release_totals = release.get("totals", {}) if isinstance(release, dict) else {}
-        current = {
+        actual = {
             "units": counts.get("unit", 0),
             "journeys": counts.get("journey", 0),
             "scenes": counts.get("scene", 0),
@@ -732,26 +755,30 @@ class CatalogBuilder:
             "canonical_records": release_totals.get("canonical_records_units_1_8"),
             "challenge_lab_items": release_totals.get("challenge_lab_items"),
         }
-        release_alignment = {
+        alignment = {
             key: {
-                "actual": current[key],
+                "actual": actual[key],
                 "expected": expected[key],
-                "matches": expected[key] is None or current[key] == expected[key],
+                "matches": expected[key] is None or actual[key] == expected[key],
             }
-            for key in current
+            for key in actual
         }
-
         return {
             "schema": CATALOG_SCHEMA,
-            "release_status": release.get("release_status") if isinstance(release, dict) else None,
-            "runtime_version": release.get("runtime_version") if isinstance(release, dict) else None,
+            "release_status": release.get("release_status"),
+            "runtime_version": release.get("runtime_version"),
             "counts": dict(sorted(counts.items())),
             "question_counts": dict(sorted(question_counts.items())),
-            "release_alignment": release_alignment,
+            "release_alignment": alignment,
             "unresolved_reference_count": len(self.unresolved),
             "unresolved_references": sorted(
                 self.unresolved,
-                key=lambda item: (item["unit_id"], item["source_id"], item["relation"], item["raw_reference"]),
+                key=lambda item: (
+                    item["unit_id"],
+                    item["source_id"],
+                    item["relation"],
+                    item["raw_reference"],
+                ),
             ),
             "entities": self.entities,
             "edges": self.edges,
@@ -771,23 +798,8 @@ def clear_catalog_cache() -> None:
     catalog.cache_clear()
 
 
-def catalog_summary() -> dict[str, Any]:
-    snapshot = catalog()
-    return {
-        "schema": snapshot["schema"],
-        "release_status": snapshot["release_status"],
-        "runtime_version": snapshot["runtime_version"],
-        "counts": snapshot["counts"],
-        "question_counts": snapshot["question_counts"],
-        "release_alignment": snapshot["release_alignment"],
-        "unresolved_reference_count": snapshot["unresolved_reference_count"],
-        "health": content_health(),
-    }
-
-
 def content_health() -> dict[str, Any]:
     snapshot = catalog()
-    entities = snapshot["entities"]
     problems: list[dict[str, Any]] = []
     for key, record in snapshot["release_alignment"].items():
         if not record["matches"]:
@@ -808,22 +820,15 @@ def content_health() -> dict[str, Any]:
                 "message": "Some source references could not be linked to a normalized entity.",
             }
         )
-
-    scenes_without_concepts = 0
-    scenes_without_story = 0
-    for entity in entities.values():
-        if entity["type"] != "scene":
-            continue
-        if not entity.get("object_ids"):
-            scenes_without_concepts += 1
-        if not entity.get("story_word_count"):
-            scenes_without_story += 1
-    if scenes_without_concepts:
+    scenes = [entity for entity in snapshot["entities"].values() if entity["type"] == "scene"]
+    scenes_without_objects = sum(1 for scene in scenes if not scene.get("object_ids"))
+    scenes_without_story = sum(1 for scene in scenes if not scene.get("story_word_count"))
+    if scenes_without_objects:
         problems.append(
             {
                 "severity": "warning",
                 "code": "scenes-without-object-links",
-                "count": scenes_without_concepts,
+                "count": scenes_without_objects,
                 "message": "Some scenes contain no explicit object_ids in the student runtime record.",
             }
         )
@@ -836,11 +841,24 @@ def content_health() -> dict[str, Any]:
                 "message": "Some normalized scenes have no story paragraphs available to the catalog.",
             }
         )
-
     return {
         "error_count": sum(1 for problem in problems if problem["severity"] == "error"),
         "warning_count": sum(1 for problem in problems if problem["severity"] == "warning"),
         "problems": problems,
+    }
+
+
+def catalog_summary() -> dict[str, Any]:
+    snapshot = catalog()
+    return {
+        "schema": snapshot["schema"],
+        "release_status": snapshot["release_status"],
+        "runtime_version": snapshot["runtime_version"],
+        "counts": snapshot["counts"],
+        "question_counts": snapshot["question_counts"],
+        "release_alignment": snapshot["release_alignment"],
+        "unresolved_reference_count": snapshot["unresolved_reference_count"],
+        "health": content_health(),
     }
 
 
@@ -861,7 +879,7 @@ def course_map() -> dict[str, Any]:
             ),
             key=lambda entity: (entity.get("order") or 0, entity["id"]),
         )
-        normalized_journeys = []
+        normalized_journeys: list[dict[str, Any]] = []
         for journey in journeys:
             scenes = sorted(
                 (
@@ -902,7 +920,7 @@ def course_map() -> dict[str, Any]:
                 "number": unit.get("number"),
                 "title": unit.get("title"),
                 "journey_count": len(normalized_journeys),
-                "scene_count": sum(journey["scene_count"] for journey in normalized_journeys),
+                "scene_count": sum(item["scene_count"] for item in normalized_journeys),
                 "journeys": normalized_journeys,
             }
         )
@@ -919,7 +937,11 @@ def resolve_reference(unit_id: str, raw_reference: str) -> dict[str, Any]:
     return {
         "unit_id": unit_id,
         "raw_reference": raw_reference,
-        "matches": [snapshot["entities"][entity_id] for entity_id in mapping.values() if entity_id in snapshot["entities"]],
+        "matches": [
+            snapshot["entities"][entity_id]
+            for entity_id in mapping.values()
+            if entity_id in snapshot["entities"]
+        ],
     }
 
 
@@ -939,7 +961,14 @@ def list_entities(
         if (entity_type is None or entity["type"] == entity_type)
         and (unit_id is None or entity.get("unit_id") == unit_id)
     ]
-    items.sort(key=lambda entity: (entity.get("unit_id") or "", entity["type"], str(entity.get("title") or "").casefold(), entity["id"]))
+    items.sort(
+        key=lambda entity: (
+            entity.get("unit_id") or "",
+            entity["type"],
+            str(entity.get("title") or "").casefold(),
+            entity["id"],
+        )
+    )
     return {
         "total": len(items),
         "offset": safe_offset,
@@ -976,7 +1005,9 @@ def search_entities(
             entity.get("knowledge_id"),
             entity.get("prompt"),
         ]
-        haystack = " ".join(str(value) for value in haystack_parts if value not in (None, "")).casefold()
+        haystack = " ".join(
+            str(value) for value in haystack_parts if value not in (None, "")
+        ).casefold()
         if q not in haystack:
             continue
         title = str(entity.get("title") or "")
@@ -987,13 +1018,17 @@ def search_entities(
             score += 50
         if str(entity.get("canonical_term") or "").casefold() == q:
             score += 90
-        score += max(0, 20 - haystack.find(q)) if q in haystack else 0
         matches.append((score, title.casefold(), entity))
     matches.sort(key=lambda item: (-item[0], item[1], item[2]["id"]))
     return {"query": query, "items": [item[2] for item in matches[:safe_limit]]}
 
 
-def dependency_report(entity_id: str, *, depth: int = 2, limit: int = 500) -> dict[str, Any] | None:
+def dependency_report(
+    entity_id: str,
+    *,
+    depth: int = 2,
+    limit: int = 500,
+) -> dict[str, Any] | None:
     snapshot = catalog()
     entities = snapshot["entities"]
     if entity_id not in entities:
@@ -1005,16 +1040,14 @@ def dependency_report(entity_id: str, *, depth: int = 2, limit: int = 500) -> di
     for edge in snapshot["edges"]:
         outgoing[edge["from"]].append(edge)
         incoming[edge["to"]].append(edge)
-
     direct_outbound = [
         {"edge": edge, "entity": entities[edge["to"]]}
-        for edge in sorted(outgoing.get(entity_id, []), key=lambda edge: (edge["kind"], edge["to"]))
+        for edge in sorted(outgoing.get(entity_id, []), key=lambda item: (item["kind"], item["to"]))
     ]
     direct_inbound = [
         {"edge": edge, "entity": entities[edge["from"]]}
-        for edge in sorted(incoming.get(entity_id, []), key=lambda edge: (edge["kind"], edge["from"]))
+        for edge in sorted(incoming.get(entity_id, []), key=lambda item: (item["kind"], item["from"]))
     ]
-
     queue: deque[tuple[str, int, list[str]]] = deque([(entity_id, 0, [])])
     visited: dict[str, int] = {entity_id: 0}
     related: list[dict[str, Any]] = []
@@ -1022,9 +1055,9 @@ def dependency_report(entity_id: str, *, depth: int = 2, limit: int = 500) -> di
         current, current_depth, path = queue.popleft()
         if current_depth >= max_depth:
             continue
-        neighbor_edges = [(edge, edge["to"], "outbound") for edge in outgoing.get(current, [])]
-        neighbor_edges += [(edge, edge["from"], "inbound") for edge in incoming.get(current, [])]
-        for edge, neighbor, direction in neighbor_edges:
+        neighbors = [(edge, edge["to"], "outbound") for edge in outgoing.get(current, [])]
+        neighbors.extend((edge, edge["from"], "inbound") for edge in incoming.get(current, []))
+        for edge, neighbor, direction in neighbors:
             next_depth = current_depth + 1
             if visited.get(neighbor, 99) <= next_depth:
                 continue
@@ -1040,7 +1073,6 @@ def dependency_report(entity_id: str, *, depth: int = 2, limit: int = 500) -> di
             queue.append((neighbor, next_depth, next_path))
             if len(related) >= safe_limit:
                 break
-
     by_type: dict[str, int] = defaultdict(int)
     for item in related:
         by_type[item["entity"]["type"]] += 1
