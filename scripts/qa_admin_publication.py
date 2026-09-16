@@ -62,7 +62,7 @@ require('server_data' not in pages_builder, "GitHub Pages builder must not publi
 
 require('qa_admin_publication.py' in workflow, "CI does not run Step 9 publication QA")
 require('node --check frontend/admin/publication.js' in workflow, "CI does not syntax-check publication.js")
-require('rollback never rewrites Git history' in doc.lower(), "Step 9 rollback safety documentation is incomplete")
+require('rollback never rewrites git history' in doc.lower(), "Step 9 rollback safety documentation is incomplete")
 require('All Step 9 gates default to disabled' in doc, "Step 9 default-off documentation is missing")
 
 print("ADMIN PUBLICATION QA PASS")
