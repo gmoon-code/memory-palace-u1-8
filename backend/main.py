@@ -7,7 +7,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import admin_auth, admin_catalog, content
+from . import admin_auth, admin_catalog, admin_draft_routes, content
 from .settings import ADMIN_ENABLED, FRONTEND_DIR, HOST, PORT
 
 RUNTIME_VERSION = "v2-apbio-0.30.0-u8-f6"
@@ -23,6 +23,7 @@ app = FastAPI(
 )
 app.add_middleware(GZipMiddleware, minimum_size=500)
 app.mount("/static", StaticFiles(directory=FRONTEND_ROOT), name="static")
+app.include_router(admin_draft_routes.router)
 
 
 class AdminLoginRequest(BaseModel):
