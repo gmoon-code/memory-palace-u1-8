@@ -8,6 +8,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
   <title>The Story Method · Content Studio</title>
   <link rel="stylesheet" href="/admin/admin.css"/>
+  <link rel="stylesheet" href="/admin/drafts.css"/>
 </head>
 <body>
   <a class="skip-link" href="#admin-main">Skip to admin content</a>
@@ -35,7 +36,7 @@
       <div class="brand-block">
         <span class="eyebrow">The Story Method</span>
         <strong>Content Studio</strong>
-        <span class="status-pill">Step 3 content catalog</span>
+        <span class="status-pill">Step 4 draft and revision layer</span>
       </div>
 
       <nav class="admin-nav">
@@ -54,6 +55,7 @@
         <button class="nav-item" data-view="media">Media Library</button>
         <button class="nav-item" data-view="preview">Student Preview</button>
         <button class="nav-item" data-view="health">Content Health</button>
+        <button class="nav-item" data-view="drafts">Draft Workspace</button>
         <button class="nav-item" data-view="versions">Version History</button>
         <button class="nav-item" data-view="import-export">Import and Export</button>
         <button class="nav-item" data-view="publishing">Publishing</button>
@@ -70,7 +72,7 @@
           <p class="lede" id="view-description">A protected normalized inventory of the current eight-unit AP Biology release.</p>
         </div>
         <div class="header-actions">
-          <span class="read-only-badge">Read only</span>
+          <span class="read-only-badge">Published content locked</span>
           <span id="session-user" class="session-user" aria-label="Signed in user"></span>
           <a class="button secondary" href="/" target="_blank" rel="noopener">Open student site</a>
           <button id="logout-button" class="button secondary" type="button">Sign out</button>
@@ -242,6 +244,98 @@
         </section>
       </section>
 
+      <section id="draft-view" class="view-panel hidden" aria-live="polite">
+        <div class="draft-summary-grid" id="draft-summary-grid"></div>
+
+        <div class="draft-workspace-grid">
+          <section class="panel draft-list-panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Working copies</p>
+                <h2>Drafts</h2>
+              </div>
+              <button id="refresh-drafts" class="button secondary" type="button">Refresh</button>
+            </div>
+            <form id="create-draft-form" class="create-draft-form">
+              <label for="draft-entity-id">Catalog entity ID</label>
+              <div class="draft-inline-controls">
+                <input id="draft-entity-id" type="text" maxlength="512" placeholder="Example  scene:unit-8:U8-J1:0" required/>
+                <button class="button primary" type="submit">Create working copy</button>
+              </div>
+              <small>Use a normalized entity ID from Course Map, search, or a catalog record. Creating a draft never changes student content.</small>
+            </form>
+            <div class="draft-filter-row">
+              <button class="text-button draft-filter active" data-draft-status="draft" type="button">Active</button>
+              <button class="text-button draft-filter" data-draft-status="archived" type="button">Archived</button>
+              <button class="text-button draft-filter" data-draft-status="" type="button">All</button>
+            </div>
+            <div id="draft-list" class="draft-list"></div>
+          </section>
+
+          <section class="panel draft-editor-panel">
+            <div id="draft-empty-state" class="draft-empty-state">
+              <p class="eyebrow">Protected working area</p>
+              <h2>Select or create a draft</h2>
+              <p>Step 4 stores every change in a separate server-side working copy with revision history. Published AP Biology files remain untouched.</p>
+            </div>
+
+            <div id="draft-editor" class="hidden">
+              <div class="draft-editor-header">
+                <div>
+                  <p class="eyebrow" id="draft-editor-type">Draft</p>
+                  <h2 id="draft-editor-title">Working copy</h2>
+                  <p id="draft-editor-meta" class="muted"></p>
+                </div>
+                <div class="draft-state-actions">
+                  <span id="draft-save-state" class="draft-save-state">Saved</span>
+                  <button id="draft-archive-button" class="button secondary" type="button">Archive</button>
+                </div>
+              </div>
+
+              <label class="field-label" for="draft-title-input">Working title</label>
+              <input id="draft-title-input" type="text" maxlength="500"/>
+              <p class="field-help">Title changes autosave to the working copy. Domain-specific story, question, concept, and Memory Object editors arrive in Step 5.</p>
+
+              <details class="advanced-draft-payload">
+                <summary>Advanced structured draft payload</summary>
+                <p class="muted">This temporary Step 4 editor exposes the normalized working object for regression and recovery testing. Friendly field-specific forms replace this in the next stage.</p>
+                <textarea id="draft-payload-editor" spellcheck="false" rows="18"></textarea>
+                <div class="draft-inline-controls top-gap">
+                  <button id="save-draft-payload" class="button secondary" type="button">Save structured payload</button>
+                  <span id="draft-payload-message" class="muted"></span>
+                </div>
+              </details>
+
+              <div class="draft-tool-grid">
+                <section class="draft-tool-card">
+                  <div class="draft-tool-heading">
+                    <div><p class="eyebrow">Recovery point</p><h3>Snapshots</h3></div>
+                    <button id="create-snapshot-button" class="button secondary" type="button">Create snapshot</button>
+                  </div>
+                  <div id="draft-snapshots" class="draft-history-list"></div>
+                </section>
+
+                <section class="draft-tool-card">
+                  <div class="draft-tool-heading">
+                    <div><p class="eyebrow">Non-destructive history</p><h3>Revisions</h3></div>
+                    <button id="refresh-revisions" class="button secondary" type="button">Refresh</button>
+                  </div>
+                  <div id="draft-revisions" class="draft-history-list"></div>
+                </section>
+              </div>
+
+              <section class="draft-tool-card draft-diff-card">
+                <div class="draft-tool-heading">
+                  <div><p class="eyebrow">Current working copy</p><h3>Changes from published catalog base</h3></div>
+                  <button id="refresh-diff" class="button secondary" type="button">Compare</button>
+                </div>
+                <div id="draft-diff" class="draft-diff"></div>
+              </section>
+            </div>
+          </section>
+        </div>
+      </section>
+
       <section id="security-view" class="view-panel hidden" aria-live="polite">
         <div class="two-column-grid">
           <section class="panel">
@@ -280,7 +374,7 @@
         <div class="panel placeholder-card">
           <p class="eyebrow">Reserved workspace</p>
           <h2 id="placeholder-title">Editor module</h2>
-          <p id="placeholder-copy">This module is reserved while the draft and revision layer is built on top of the normalized catalog.</p>
+          <p id="placeholder-copy">This module is reserved while field-specific editors are built on the protected draft and revision layer.</p>
           <div class="future-actions">
             <span>Draft editing</span>
             <span>Validation</span>
@@ -293,5 +387,6 @@
     </main>
   </div>
   <script type="module" src="/admin/admin.js"></script>
+  <script type="module" src="/admin/drafts.js"></script>
 </body>
 </html>
