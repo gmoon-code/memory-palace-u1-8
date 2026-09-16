@@ -5,7 +5,7 @@ from typing import Any
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, Field
 
-from . import admin_auth, admin_drafts, admin_editor_routes
+from . import admin_auth, admin_drafts, admin_editor_routes, admin_replacement_routes
 from .settings import ADMIN_ENABLED
 
 draft_router = APIRouter(prefix="/api/admin/drafts", tags=["content-studio-drafts"])
@@ -237,8 +237,9 @@ def draft_compare(
         _raise_draft_error(exc)
 
 
-# Main imports one router. Keep the Step 4 draft API and Step 5 field-editor API
-# behind the same authenticated Content Studio registration point.
+# Main imports one router. Keep draft, field-editor, and replacement APIs behind
+# the same authenticated Content Studio registration point.
 router = APIRouter()
 router.include_router(draft_router)
 router.include_router(admin_editor_routes.router)
+router.include_router(admin_replacement_routes.router)
