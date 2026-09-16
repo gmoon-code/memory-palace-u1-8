@@ -76,6 +76,7 @@ jobs:
       - run: python scripts/qa_admin_management.py
       - run: python scripts/qa_admin_quality.py
       - run: python scripts/qa_admin_publication.py
+      - run: python scripts/qa_content_studio_integration.py
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-a
       - run: PAGES_SITE_ROOT=/tmp/memory-palace-pages-a node scripts/qa_github_pages_static.mjs
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-b
