@@ -10,6 +10,7 @@ from . import (
     admin_drafts,
     admin_editor_routes,
     admin_management_routes,
+    admin_quality_routes,
     admin_replacement_routes,
 )
 from .settings import ADMIN_ENABLED
@@ -243,11 +244,12 @@ def draft_compare(
         _raise_draft_error(exc)
 
 
-# Main imports one router. Keep draft, field-editor, replacement, and Step 7
-# management APIs behind the same authenticated Content Studio registration point.
+# Main imports one router. Keep draft, field-editor, replacement, management,
+# and quality APIs behind the same authenticated Content Studio registration point.
 router = APIRouter()
 router.include_router(admin_replacement_routes.assets)
 router.include_router(draft_router)
 router.include_router(admin_editor_routes.router)
 router.include_router(admin_replacement_routes.router)
 router.include_router(admin_management_routes.router)
+router.include_router(admin_quality_routes.router)
