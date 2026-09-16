@@ -7,7 +7,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import admin_auth, content
+from . import admin_auth, admin_catalog, content
 from .settings import ADMIN_ENABLED, FRONTEND_DIR, HOST, PORT
 
 RUNTIME_VERSION = "v2-apbio-0.30.0-u8-f6"
@@ -409,6 +409,89 @@ def admin_unit(unit_id: str, request: Request):
     if not item:
         raise HTTPException(404, "Unit not found")
     return item
+
+
+@app.get("/api/admin/catalog/summary")
+def admin_catalog_summary(request: Request):
+    _owner_session(request)
+    return admin_catalog.catalog_summary()
+
+
+@app.get("/api/admin/catalog/course-map")
+def admin_catalog_course_map(request: Request):
+    _owner_session(request)
+    return admin_catalog.course_map()
+
+
+@app.get("/api/admin/catalog/entities")
+def admin_catalog_entities(
+    request: Request,
+    entity_type: str | None = None,
+    unit_id: str | None = None,
+    offset: int = 0,
+    limit: int = 100,
+):
+    _owner_session(request)
+    return admin_catalog.list_entities(
+        entity_type=entity_type,
+        unit_id=unit_id,
+        offset=offset,
+        limit=limit,
+    )
+
+
+@app.get("/api/admin/catalog/search")
+def admin_catalog_search(
+    request: Request,
+    q: str,
+    unit_id: str | None = None,
+    entity_type: str | None = None,
+    limit: int = 50,
+):
+    _owner_session(request)
+    if len(q.strip()) < 2:
+        raise HTTPException(400, "Search query must contain at least 2 characters")
+    return admin_catalog.search_entities(
+        q,
+        unit_id=unit_id,
+        entity_type=entity_type,
+        limit=limit,
+    )
+
+
+@app.get("/api/admin/catalog/resolve")
+def admin_catalog_resolve(request: Request, unit_id: str, ref: str):
+    _owner_session(request)
+    return admin_catalog.resolve_reference(unit_id, ref)
+
+
+@app.get("/api/admin/catalog/entity")
+def admin_catalog_entity(request: Request, entity_id: str):
+    _owner_session(request)
+    item = admin_catalog.get_entity(entity_id)
+    if item is None:
+        raise HTTPException(404, "Catalog entity not found")
+    return item
+
+
+@app.get("/api/admin/catalog/dependencies")
+def admin_catalog_dependencies(
+    request: Request,
+    entity_id: str,
+    depth: int = 2,
+    limit: int = 500,
+):
+    _owner_session(request)
+    item = admin_catalog.dependency_report(entity_id, depth=depth, limit=limit)
+    if item is None:
+        raise HTTPException(404, "Catalog entity not found")
+    return item
+
+
+@app.get("/api/admin/catalog/health")
+def admin_catalog_health(request: Request):
+    _owner_session(request)
+    return admin_catalog.content_health()
 
 
 @app.get("/api/admin/security")
