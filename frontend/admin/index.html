@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="referrer" content="no-referrer"/>
+  <meta name="robots" content="noindex,nofollow"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+  <title>The Story Method · Content Studio</title>
+  <link rel="stylesheet" href="/admin/admin.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#admin-main">Skip to admin content</a>
+  <div class="admin-shell">
+    <aside class="admin-sidebar" aria-label="Content Studio navigation">
+      <div class="brand-block">
+        <span class="eyebrow">The Story Method</span>
+        <strong>Content Studio</strong>
+        <span class="status-pill">Step 1 foundation</span>
+      </div>
+
+      <nav class="admin-nav">
+        <button class="nav-item active" data-view="dashboard">Dashboard</button>
+        <button class="nav-item" data-view="course-map">Course Map</button>
+        <button class="nav-item" data-view="units">Units</button>
+        <button class="nav-item" data-view="journeys">Journeys</button>
+        <button class="nav-item" data-view="scenes">Scenes</button>
+        <button class="nav-item" data-view="stories">Stories</button>
+        <button class="nav-item" data-view="replacement">Complete Story Replacement</button>
+        <button class="nav-item" data-view="concepts">Concept Library</button>
+        <button class="nav-item" data-view="memory-objects">Memory Objects</button>
+        <button class="nav-item" data-view="questions">Question Bank</button>
+        <button class="nav-item" data-view="review">Review System</button>
+        <button class="nav-item" data-view="challenge">Challenge Lab</button>
+        <button class="nav-item" data-view="media">Media Library</button>
+        <button class="nav-item" data-view="preview">Student Preview</button>
+        <button class="nav-item" data-view="health">Content Health</button>
+        <button class="nav-item" data-view="versions">Version History</button>
+        <button class="nav-item" data-view="import-export">Import and Export</button>
+        <button class="nav-item" data-view="publishing">Publishing</button>
+        <button class="nav-item" data-view="settings">Settings</button>
+      </nav>
+    </aside>
+
+    <main id="admin-main" class="admin-main" tabindex="-1">
+      <header class="admin-header">
+        <div>
+          <p class="eyebrow" id="view-eyebrow">Content overview</p>
+          <h1 id="view-title">Dashboard</h1>
+          <p class="lede" id="view-description">A read-only foundation that inventories the current eight-unit AP Biology release without changing student content.</p>
+        </div>
+        <div class="header-actions">
+          <span class="read-only-badge">Read only</span>
+          <a class="button secondary" href="/" target="_blank" rel="noopener">Open student site</a>
+        </div>
+      </header>
+
+      <section id="status-banner" class="status-banner" role="status" aria-live="polite">
+        Loading the current course registry…
+      </section>
+
+      <section id="dashboard-view" class="view-panel">
+        <div class="metric-grid" id="metric-grid" aria-label="Course totals"></div>
+
+        <div class="two-column-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Course structure</p>
+                <h2>Units</h2>
+              </div>
+            </div>
+            <div id="unit-list" class="unit-list"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Implementation guardrails</p>
+                <h2>What Step 1 protects</h2>
+              </div>
+            </div>
+            <ul class="check-list">
+              <li>Production main remains unchanged.</li>
+              <li>The admin interface is disabled by default.</li>
+              <li>No write API exists in this step.</li>
+              <li>The GitHub Pages student deployment excludes the admin interface.</li>
+              <li>All later editing tools will work through validated drafts before publication.</li>
+              <li>Complete story replacement is reserved as a first-class workflow.</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="panel capability-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Planned editor surface</p>
+              <h2>Capability map</h2>
+            </div>
+          </div>
+          <div id="capability-grid" class="capability-grid"></div>
+        </section>
+      </section>
+
+      <section id="placeholder-view" class="view-panel hidden" aria-live="polite">
+        <div class="panel placeholder-card">
+          <p class="eyebrow">Reserved workspace</p>
+          <h2 id="placeholder-title">Editor module</h2>
+          <p id="placeholder-copy">This module is represented in the foundation so the navigation and information architecture are stable before write operations are introduced.</p>
+          <div class="future-actions">
+            <span>Draft editing</span>
+            <span>Validation</span>
+            <span>Dependency checks</span>
+            <span>Student preview</span>
+            <span>Version history</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/admin/admin.js"></script>
+</body>
+</html>
