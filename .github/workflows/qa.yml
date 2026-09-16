@@ -77,6 +77,12 @@ jobs:
       - run: python scripts/qa_admin_quality.py
       - run: python scripts/qa_admin_publication.py
       - run: python scripts/qa_content_studio_integration.py
+      - run: docker build -f deploy/content-studio/Dockerfile -t story-method-content-studio:ci .
+      - name: Smoke production Content Studio container with admin gates off
+        run: |
+          docker run -d --name content-studio-ci -p 127.0.0.1:8765:8000 story-method-content-studio:ci
+          trap 'docker logs content-studio-ci || true; docker rm -f content-studio-ci || true' EXIT
+          python scripts/qa_content_studio_container.py
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-a
       - run: PAGES_SITE_ROOT=/tmp/memory-palace-pages-a node scripts/qa_github_pages_static.mjs
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-b
