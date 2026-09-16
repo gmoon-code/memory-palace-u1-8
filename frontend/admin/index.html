@@ -35,7 +35,7 @@
       <div class="brand-block">
         <span class="eyebrow">The Story Method</span>
         <strong>Content Studio</strong>
-        <span class="status-pill">Step 2 security foundation</span>
+        <span class="status-pill">Step 3 content catalog</span>
       </div>
 
       <nav class="admin-nav">
@@ -67,7 +67,7 @@
         <div>
           <p class="eyebrow" id="view-eyebrow">Content overview</p>
           <h1 id="view-title">Dashboard</h1>
-          <p class="lede" id="view-description">A protected read-only inventory of the current eight-unit AP Biology release.</p>
+          <p class="lede" id="view-description">A protected normalized inventory of the current eight-unit AP Biology release.</p>
         </div>
         <div class="header-actions">
           <span class="read-only-badge">Read only</span>
@@ -78,7 +78,21 @@
       </header>
 
       <section id="status-banner" class="status-banner" role="status" aria-live="polite">
-        Loading the protected course inventory…
+        Loading the protected content catalog…
+      </section>
+
+      <section class="global-search panel" aria-label="Content Studio search">
+        <form id="catalog-search-form" class="search-form">
+          <div class="search-copy">
+            <p class="eyebrow">Search all linked content</p>
+            <label for="catalog-search-input">Find a concept, Memory Object, journey, scene, character, location, question, or challenge</label>
+          </div>
+          <div class="search-controls">
+            <input id="catalog-search-input" type="search" minlength="2" maxlength="160" placeholder="Example  Hypothesis, osmosis, U8-K-063…"/>
+            <button class="button primary" type="submit">Search</button>
+          </div>
+        </form>
+        <div id="catalog-search-results" class="search-results hidden" aria-live="polite"></div>
       </section>
 
       <section id="dashboard-view" class="view-panel">
@@ -88,7 +102,7 @@
           <section class="panel">
             <div class="panel-heading">
               <div>
-                <p class="eyebrow">Course structure</p>
+                <p class="eyebrow">Normalized course structure</p>
                 <h2>Units</h2>
               </div>
             </div>
@@ -98,22 +112,23 @@
           <section class="panel">
             <div class="panel-heading">
               <div>
-                <p class="eyebrow">Security boundary</p>
-                <h2>What Step 2 protects</h2>
+                <p class="eyebrow">Release integrity</p>
+                <h2>Catalog alignment</h2>
               </div>
             </div>
-            <ul class="check-list">
-              <li>Production main remains unchanged.</li>
-              <li>The admin interface remains disabled unless explicitly enabled on a trusted server.</li>
-              <li>Teacher access requires configured credentials and a server-side session.</li>
-              <li>Protected actions require a session-specific CSRF token and same-origin checks.</li>
-              <li>Failed sign-ins are rate limited without storing raw client addresses.</li>
-              <li>Authentication and security events are recorded in the server-side audit database.</li>
-              <li>No content write API exists yet.</li>
-              <li>The GitHub Pages student deployment still excludes the admin interface.</li>
-            </ul>
+            <div id="release-alignment" class="alignment-list"></div>
           </section>
         </div>
+
+        <section class="panel capability-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Normalized inventory</p>
+              <h2>Content types now indexed</h2>
+            </div>
+          </div>
+          <div id="catalog-type-grid" class="capability-grid"></div>
+        </section>
 
         <section class="panel capability-panel">
           <div class="panel-heading">
@@ -123,6 +138,107 @@
             </div>
           </div>
           <div id="capability-grid" class="capability-grid"></div>
+        </section>
+      </section>
+
+      <section id="course-map-view" class="view-panel hidden" aria-live="polite">
+        <div class="workspace-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Unit → Journey → Scene</p>
+                <h2>Current student route</h2>
+              </div>
+              <button id="refresh-course-map" class="button secondary" type="button">Refresh</button>
+            </div>
+            <p class="panel-copy">Expand any unit and journey. Selecting a scene opens its normalized record and dependency graph without changing the source files.</p>
+            <div id="course-map-tree" class="course-map-tree"></div>
+          </section>
+          <aside class="panel inspector-panel" aria-label="Dependency inspector">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Dependency inspector</p>
+                <h2 id="inspector-title">Select an item</h2>
+              </div>
+            </div>
+            <div id="dependency-inspector" class="dependency-inspector">
+              <p class="muted">Choose a scene from the course map or an item from search to see what it teaches, contains, uses, and affects.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="catalog-view" class="view-panel hidden" aria-live="polite">
+        <div class="workspace-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Normalized catalog</p>
+                <h2 id="catalog-view-title">Content records</h2>
+              </div>
+              <span id="catalog-result-count" class="read-only-badge"></span>
+            </div>
+            <div class="catalog-toolbar">
+              <label for="catalog-unit-filter">Unit</label>
+              <select id="catalog-unit-filter">
+                <option value="">All units</option>
+                <option value="unit-1">Unit 1</option>
+                <option value="unit-2">Unit 2</option>
+                <option value="unit-3">Unit 3</option>
+                <option value="unit-4">Unit 4</option>
+                <option value="unit-5">Unit 5</option>
+                <option value="unit-6">Unit 6</option>
+                <option value="unit-7">Unit 7</option>
+                <option value="unit-8">Unit 8</option>
+              </select>
+              <button id="catalog-filter-apply" class="button secondary" type="button">Apply</button>
+            </div>
+            <div id="catalog-record-list" class="catalog-record-list"></div>
+          </section>
+          <aside class="panel inspector-panel" aria-label="Catalog record details">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Linked record</p>
+                <h2 id="catalog-inspector-title">Select a record</h2>
+              </div>
+            </div>
+            <div id="catalog-inspector" class="dependency-inspector">
+              <p class="muted">Select a record to inspect its dependencies and source location.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="health-view" class="view-panel hidden" aria-live="polite">
+        <div class="two-column-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Frozen release comparison</p>
+                <h2>Release alignment</h2>
+              </div>
+              <button id="refresh-health" class="button secondary" type="button">Refresh</button>
+            </div>
+            <div id="health-alignment" class="alignment-list"></div>
+          </section>
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Current catalog</p>
+                <h2>Reference health</h2>
+              </div>
+            </div>
+            <div id="health-summary" class="health-summary"></div>
+          </section>
+        </div>
+        <section class="panel audit-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Actionable findings</p>
+              <h2>Catalog warnings and errors</h2>
+            </div>
+          </div>
+          <div id="health-problems" class="health-problems"></div>
         </section>
       </section>
 
@@ -164,7 +280,7 @@
         <div class="panel placeholder-card">
           <p class="eyebrow">Reserved workspace</p>
           <h2 id="placeholder-title">Editor module</h2>
-          <p id="placeholder-copy">This module remains reserved while the protected content catalog and draft layer are built.</p>
+          <p id="placeholder-copy">This module is reserved while the draft and revision layer is built on top of the normalized catalog.</p>
           <div class="future-actions">
             <span>Draft editing</span>
             <span>Validation</span>
