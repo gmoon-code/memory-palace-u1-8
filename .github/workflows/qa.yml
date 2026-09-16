@@ -69,6 +69,7 @@ jobs:
       - run: node scripts/qa_unit6_f6_ui.mjs
       - run: node scripts/qa_site_ux.mjs
       - run: python scripts/qa_admin_foundation.py
+      - run: python scripts/qa_admin_catalog.py
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-a
       - run: PAGES_SITE_ROOT=/tmp/memory-palace-pages-a node scripts/qa_github_pages_static.mjs
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-b
