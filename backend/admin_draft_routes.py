@@ -240,6 +240,7 @@ def draft_compare(
 # Main imports one router. Keep draft, field-editor, and replacement APIs behind
 # the same authenticated Content Studio registration point.
 router = APIRouter()
+router.include_router(admin_replacement_routes.assets)
 router.include_router(draft_router)
 router.include_router(admin_editor_routes.router)
 router.include_router(admin_replacement_routes.router)
