@@ -1,6 +1,7 @@
 import "./editor.js";
 import "./replacement.js";
 import "./management.js";
+import "./quality.js";
 
 const draftState = {
   csrfToken: "",
