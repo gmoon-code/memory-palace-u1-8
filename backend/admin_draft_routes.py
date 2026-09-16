@@ -5,10 +5,10 @@ from typing import Any
 from fastapi import APIRouter, HTTPException, Request
 from pydantic import BaseModel, Field
 
-from . import admin_auth, admin_drafts
+from . import admin_auth, admin_drafts, admin_editor_routes
 from .settings import ADMIN_ENABLED
 
-router = APIRouter(prefix="/api/admin/drafts", tags=["content-studio-drafts"])
+draft_router = APIRouter(prefix="/api/admin/drafts", tags=["content-studio-drafts"])
 
 
 class CreateDraftRequest(BaseModel):
@@ -53,13 +53,13 @@ def _raise_draft_error(exc: Exception) -> None:
     raise exc
 
 
-@router.get("/summary")
+@draft_router.get("/summary")
 def draft_summary(request: Request):
     _owner(request)
     return admin_drafts.draft_summary()
 
 
-@router.get("")
+@draft_router.get("")
 def drafts_list(
     request: Request,
     status: str | None = None,
@@ -79,7 +79,7 @@ def drafts_list(
         _raise_draft_error(exc)
 
 
-@router.post("")
+@draft_router.post("")
 def drafts_create(payload: CreateDraftRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
@@ -88,7 +88,7 @@ def drafts_create(payload: CreateDraftRequest, request: Request):
         _raise_draft_error(exc)
 
 
-@router.get("/{draft_id}")
+@draft_router.get("/{draft_id}")
 def draft_get(draft_id: str, request: Request):
     _owner(request)
     try:
@@ -97,7 +97,7 @@ def draft_get(draft_id: str, request: Request):
         _raise_draft_error(exc)
 
 
-@router.patch("/{draft_id}")
+@draft_router.patch("/{draft_id}")
 def draft_save(draft_id: str, payload: SaveDraftRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
@@ -113,7 +113,7 @@ def draft_save(draft_id: str, payload: SaveDraftRequest, request: Request):
         _raise_draft_error(exc)
 
 
-@router.post("/{draft_id}/archive")
+@draft_router.post("/{draft_id}/archive")
 def draft_archive(draft_id: str, payload: VersionRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
@@ -126,7 +126,7 @@ def draft_archive(draft_id: str, payload: VersionRequest, request: Request):
         _raise_draft_error(exc)
 
 
-@router.post("/{draft_id}/restore-archive")
+@draft_router.post("/{draft_id}/restore-archive")
 def draft_restore_archive(draft_id: str, payload: VersionRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
@@ -139,7 +139,7 @@ def draft_restore_archive(draft_id: str, payload: VersionRequest, request: Reque
         _raise_draft_error(exc)
 
 
-@router.get("/{draft_id}/revisions")
+@draft_router.get("/{draft_id}/revisions")
 def draft_revisions(draft_id: str, request: Request, limit: int = 100):
     _owner(request)
     try:
@@ -148,7 +148,7 @@ def draft_revisions(draft_id: str, request: Request, limit: int = 100):
         _raise_draft_error(exc)
 
 
-@router.get("/{draft_id}/revisions/{revision_id}")
+@draft_router.get("/{draft_id}/revisions/{revision_id}")
 def draft_revision(draft_id: str, revision_id: int, request: Request):
     _owner(request)
     try:
@@ -157,7 +157,7 @@ def draft_revision(draft_id: str, revision_id: int, request: Request):
         _raise_draft_error(exc)
 
 
-@router.post("/{draft_id}/revisions/{revision_id}/restore")
+@draft_router.post("/{draft_id}/revisions/{revision_id}/restore")
 def draft_restore_revision(
     draft_id: str,
     revision_id: int,
@@ -176,7 +176,7 @@ def draft_restore_revision(
         _raise_draft_error(exc)
 
 
-@router.get("/{draft_id}/snapshots")
+@draft_router.get("/{draft_id}/snapshots")
 def draft_snapshots(draft_id: str, request: Request, limit: int = 100):
     _owner(request)
     try:
@@ -185,7 +185,7 @@ def draft_snapshots(draft_id: str, request: Request, limit: int = 100):
         _raise_draft_error(exc)
 
 
-@router.post("/{draft_id}/snapshots")
+@draft_router.post("/{draft_id}/snapshots")
 def draft_snapshot_create(draft_id: str, payload: SnapshotRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
@@ -198,7 +198,7 @@ def draft_snapshot_create(draft_id: str, payload: SnapshotRequest, request: Requ
         _raise_draft_error(exc)
 
 
-@router.post("/{draft_id}/snapshots/{snapshot_id}/restore")
+@draft_router.post("/{draft_id}/snapshots/{snapshot_id}/restore")
 def draft_snapshot_restore(
     draft_id: str,
     snapshot_id: int,
@@ -217,7 +217,7 @@ def draft_snapshot_restore(
         _raise_draft_error(exc)
 
 
-@router.get("/{draft_id}/compare")
+@draft_router.get("/{draft_id}/compare")
 def draft_compare(
     draft_id: str,
     request: Request,
@@ -235,3 +235,10 @@ def draft_compare(
         )
     except Exception as exc:
         _raise_draft_error(exc)
+
+
+# Main imports one router. Keep the Step 4 draft API and Step 5 field-editor API
+# behind the same authenticated Content Studio registration point.
+router = APIRouter()
+router.include_router(draft_router)
+router.include_router(admin_editor_routes.router)
