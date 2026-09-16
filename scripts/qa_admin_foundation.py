@@ -47,7 +47,8 @@ def main() -> None:
         "method:'DELETE'",
     ]
     require(not any(token in js_text for token in forbidden_write_tokens), "Step 1 admin JavaScript contains a write request")
-    require('fetch("/api/course"' in js_text, "admin dashboard does not read the existing course registry")
+    require('readJson("/api/course")' in js_text, "admin dashboard does not read the existing course registry")
+    require('/api/units/${encodeURIComponent(unit.unit_id)}' in js_text, "admin dashboard does not read unit summaries for complete inventory totals")
 
     require('copy_tree(ROOT / "frontend" / "css"' in pages_build, "GitHub Pages build contract unexpectedly changed")
     require('copy_tree(ROOT / "frontend" / "js"' in pages_build, "GitHub Pages build contract unexpectedly changed")
@@ -59,6 +60,7 @@ def main() -> None:
     print("- Step 1 exposes no write request")
     print("- GitHub Pages excludes admin assets")
     print("- complete story replacement is reserved as a first-class module")
+    print("- course registry and unit summaries drive inventory totals")
 
 
 if __name__ == "__main__":
