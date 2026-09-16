@@ -106,3 +106,11 @@ jobs:
           }
           console.log('Story Method Z2 renderer, speech, memory anchors, and recall smoke PASS');
           JS
+      - name: Build complete static student site from revised branch
+        run: python scripts/build_github_pages.py --output /tmp/story-method-z2-pages-a
+      - name: Static eight-unit regression QA
+        run: PAGES_SITE_ROOT=/tmp/story-method-z2-pages-a node scripts/qa_github_pages_static.mjs
+      - name: Verify static build determinism
+        run: |
+          python scripts/build_github_pages.py --output /tmp/story-method-z2-pages-b
+          diff -qr /tmp/story-method-z2-pages-a /tmp/story-method-z2-pages-b
