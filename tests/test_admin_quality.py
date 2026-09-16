@@ -14,7 +14,7 @@ PASSWORD = "correct-horse-battery-staple"
 USERNAME = "teacher-admin"
 SESSION_SECRET = "test-session-secret-that-is-longer-than-thirty-two-characters"
 SCENE_ID = "scene:unit-8:U8-J1:0"
-CHALLENGE_ID = "challenge:unit-8:U8-CL-001"
+CHALLENGE_ID = "challenge:unit-8:U8-CL-01"
 SCENE_SOURCE = ROOT / "content" / "ap-biology" / "unit-8" / "journeys" / "U8-J1.json"
 
 
