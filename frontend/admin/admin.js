@@ -1,8 +1,14 @@
+const state = {
+  csrfToken: "",
+  session: null,
+  courseLoaded: false,
+};
+
 const views = {
   dashboard: {
     title: "Dashboard",
     eyebrow: "Content overview",
-    description: "A read-only foundation that inventories the current eight-unit AP Biology release without changing student content.",
+    description: "A protected read-only inventory of the current eight-unit AP Biology release.",
   },
   "course-map": {
     title: "Course Map",
@@ -89,10 +95,15 @@ const views = {
     eyebrow: "Release control",
     description: "The publish flow will move from draft through preview, validation, dependency review, version creation, release summary, and controlled publication.",
   },
+  security: {
+    title: "Security and Audit",
+    eyebrow: "Administration security",
+    description: "Authentication, session protections, CSRF enforcement, sign-in throttling, and recent administrative security events are visible here.",
+  },
   settings: {
     title: "Settings",
     eyebrow: "Administration",
-    description: "Authentication, permissions, editor preferences, validation policy, source settings, and publication configuration will be controlled here.",
+    description: "Permissions, editor preferences, validation policy, source settings, and publication configuration will be controlled here.",
   },
 };
 
@@ -119,8 +130,57 @@ function el(id) {
   return document.getElementById(id);
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
 function number(value) {
   return new Intl.NumberFormat().format(value || 0);
+}
+
+function formatTimestamp(epochSeconds) {
+  if (!epochSeconds) return "Unknown";
+  return new Date(epochSeconds * 1000).toLocaleString();
+}
+
+function humanizeKey(value) {
+  return String(value)
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+async function apiRequest(url, options = {}) {
+  const headers = new Headers(options.headers || {});
+  headers.set("Accept", "application/json");
+  if (options.body && !headers.has("Content-Type")) headers.set("Content-Type", "application/json");
+  if (options.csrf) headers.set("X-CSRF-Token", state.csrfToken);
+
+  const response = await fetch(url, {
+    cache: "no-store",
+    credentials: "same-origin",
+    ...options,
+    headers,
+  });
+
+  let payload = null;
+  try {
+    payload = await response.json();
+  } catch {
+    payload = null;
+  }
+
+  if (!response.ok) {
+    const message = payload?.detail || `${url} returned ${response.status}`;
+    const error = new Error(message);
+    error.status = response.status;
+    throw error;
+  }
+  return payload;
 }
 
 function renderMetrics(units) {
@@ -148,9 +208,9 @@ function renderMetrics(units) {
     .map(
       ([label, value, note]) => `
         <article class="metric-card">
-          <span>${label}</span>
+          <span>${escapeHtml(label)}</span>
           <strong>${number(value)}</strong>
-          <span>${note}</span>
+          <span>${escapeHtml(note)}</span>
         </article>`
     )
     .join("");
@@ -162,13 +222,13 @@ function renderUnits(units) {
       (unit) => `
         <article class="unit-row">
           <div>
-            <h3>Unit ${unit.number} · ${unit.title}</h3>
-            <p>${unit.source_status || "No source status recorded"}</p>
+            <h3>Unit ${number(unit.number)} · ${escapeHtml(unit.title)}</h3>
+            <p>${escapeHtml(unit.source_status || "No source status recorded")}</p>
           </div>
-          <div class="unit-meta" aria-label="Unit ${unit.number} summary">
+          <div class="unit-meta" aria-label="Unit ${number(unit.number)} summary">
             <span>${number(unit.journey_count || unit.journeys)} journeys</span>
             <span>${number(unit.scene_count || unit.permanent_loci)} scenes</span>
-            <span>${unit.status || "Unknown"}</span>
+            <span>${escapeHtml(unit.status || "Unknown")}</span>
           </div>
         </article>`
     )
@@ -180,11 +240,64 @@ function renderCapabilities() {
     .map(
       ([title, copy]) => `
         <article class="capability-card">
-          <strong>${title}</strong>
-          <span>${copy}</span>
+          <strong>${escapeHtml(title)}</strong>
+          <span>${escapeHtml(copy)}</span>
         </article>`
     )
     .join("");
+}
+
+function renderSecurity(data) {
+  const protections = data?.protections || {};
+  el("security-grid").innerHTML = Object.entries(protections)
+    .map(
+      ([key, value]) => `
+        <div class="security-item">
+          <span>${escapeHtml(humanizeKey(key))}</span>
+          <strong>${escapeHtml(String(value))}</strong>
+        </div>`
+    )
+    .join("");
+
+  const session = data?.session || {};
+  el("session-details").innerHTML = `
+    <div class="session-line"><span>User</span><strong>${escapeHtml(session.username || "Unknown")}</strong></div>
+    <div class="session-line"><span>Role</span><strong>${escapeHtml(session.role || "Unknown")}</strong></div>
+    <div class="session-line"><span>Expires</span><strong>${escapeHtml(formatTimestamp(session.expires_at))}</strong></div>
+  `;
+}
+
+function renderAudit(events) {
+  const list = el("audit-list");
+  if (!events.length) {
+    list.innerHTML = '<p class="audit-empty">No audit events are recorded yet.</p>';
+    return;
+  }
+  list.innerHTML = events
+    .map(
+      (event) => `
+        <article class="audit-row">
+          <span class="muted">${escapeHtml(event.created_at)}</span>
+          <strong>${escapeHtml(event.event)}</strong>
+          <span>${escapeHtml(event.outcome)}</span>
+          <span>${escapeHtml(event.detail || "")}${event.username ? ` · ${escapeHtml(event.username)}` : ""}</span>
+        </article>`
+    )
+    .join("");
+}
+
+async function loadSecurity() {
+  try {
+    const [security, audit] = await Promise.all([
+      apiRequest("/api/admin/security"),
+      apiRequest("/api/admin/audit?limit=50"),
+    ]);
+    renderSecurity(security);
+    renderAudit(Array.isArray(audit?.events) ? audit.events : []);
+  } catch (error) {
+    if (error.status === 401) return showLogin("Your admin session has expired. Sign in again.");
+    el("audit-list").innerHTML = `<p class="audit-empty">${escapeHtml(error.message)}</p>`;
+  }
 }
 
 function activateView(name) {
@@ -198,30 +311,28 @@ function activateView(name) {
   el("view-description").textContent = view.description;
 
   const isDashboard = name === "dashboard";
+  const isSecurity = name === "security";
   el("dashboard-view").classList.toggle("hidden", !isDashboard);
-  el("placeholder-view").classList.toggle("hidden", isDashboard);
+  el("security-view").classList.toggle("hidden", !isSecurity);
+  el("placeholder-view").classList.toggle("hidden", isDashboard || isSecurity);
 
-  if (!isDashboard) {
+  if (isSecurity) loadSecurity();
+  if (!isDashboard && !isSecurity) {
     el("placeholder-title").textContent = view.title;
-    el("placeholder-copy").textContent = `${view.description} Step 1 reserves the module and its navigation while write operations remain intentionally unavailable.`;
+    el("placeholder-copy").textContent = `${view.description} The protected content catalog and draft layer are built in the next implementation stage.`;
   }
-}
-
-async function readJson(url) {
-  const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
-  if (!response.ok) throw new Error(`${url} returned ${response.status}`);
-  return response.json();
 }
 
 async function loadCourse() {
   const banner = el("status-banner");
+  banner.classList.remove("ok", "error");
   try {
-    const course = await readJson("/api/course");
+    const course = await apiRequest("/api/admin/course");
     const registryUnits = Array.isArray(course.units) ? course.units : [];
     const summaries = await Promise.all(
       registryUnits.map(async (unit) => {
         try {
-          return await readJson(`/api/units/${encodeURIComponent(unit.unit_id)}`);
+          return await apiRequest(`/api/admin/units/${encodeURIComponent(unit.unit_id)}`);
         } catch {
           return {};
         }
@@ -230,20 +341,98 @@ async function loadCourse() {
     const units = registryUnits.map((unit, index) => ({ ...unit, ...summaries[index] }));
     renderMetrics(units);
     renderUnits(units);
-    banner.textContent = `Loaded ${units.length} released units and their read-only summaries. This foundation does not write to content.`;
+    state.courseLoaded = true;
+    banner.textContent = `Loaded ${units.length} released units through the protected admin API. Content editing remains disabled in Step 2.`;
     banner.classList.add("ok");
   } catch (error) {
-    banner.textContent = `The Content Studio shell loaded, but the course registry could not be read. ${error.message}`;
+    if (error.status === 401) return showLogin("Your admin session has expired. Sign in again.");
+    banner.textContent = `The protected course inventory could not be read. ${error.message}`;
     banner.classList.add("error");
     el("metric-grid").innerHTML = "";
     el("unit-list").innerHTML = "";
   }
 }
 
+function showStudio(session) {
+  state.session = session;
+  state.csrfToken = session.csrf_token || "";
+  el("session-user").textContent = `${session.username} · ${session.role}`;
+  el("login-view").classList.add("hidden");
+  el("studio-shell").classList.remove("hidden");
+  el("login-message").textContent = "";
+  el("admin-password").value = "";
+  renderCapabilities();
+  activateView("dashboard");
+  loadCourse();
+}
+
+function showLogin(message = "") {
+  state.session = null;
+  state.csrfToken = "";
+  state.courseLoaded = false;
+  el("studio-shell").classList.add("hidden");
+  el("login-view").classList.remove("hidden");
+  const messageNode = el("login-message");
+  messageNode.textContent = message;
+  messageNode.classList.toggle("error", Boolean(message));
+  el("admin-password").value = "";
+  el("admin-username").focus();
+}
+
+async function restoreSession() {
+  try {
+    const session = await apiRequest("/api/admin/session");
+    showStudio(session);
+  } catch (error) {
+    if (error.status === 401) return showLogin();
+    if (error.status === 503) return showLogin("Admin authentication is enabled but has not been fully configured on the server.");
+    showLogin(error.message);
+  }
+}
+
+el("login-form").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const button = el("login-button");
+  const messageNode = el("login-message");
+  const username = el("admin-username").value.trim();
+  const password = el("admin-password").value;
+  button.disabled = true;
+  messageNode.classList.remove("error");
+  messageNode.textContent = "Signing in…";
+
+  try {
+    const session = await apiRequest("/api/admin/login", {
+      method: "POST",
+      body: JSON.stringify({ username, password }),
+    });
+    showStudio(session);
+  } catch (error) {
+    messageNode.textContent = error.message;
+    messageNode.classList.add("error");
+    el("admin-password").value = "";
+    el("admin-password").focus();
+  } finally {
+    button.disabled = false;
+  }
+});
+
+el("logout-button").addEventListener("click", async () => {
+  try {
+    await apiRequest("/api/admin/logout", { method: "POST", csrf: true });
+  } catch (error) {
+    if (error.status !== 401) {
+      el("status-banner").textContent = `Sign out could not be confirmed. ${error.message}`;
+      el("status-banner").classList.add("error");
+      return;
+    }
+  }
+  showLogin("You have signed out.");
+});
+
+el("refresh-audit").addEventListener("click", loadSecurity);
+
 document.querySelectorAll(".nav-item").forEach((button) => {
   button.addEventListener("click", () => activateView(button.dataset.view));
 });
 
-renderCapabilities();
-activateView("dashboard");
-loadCourse();
+restoreSession();
