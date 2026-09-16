@@ -1,3 +1,5 @@
+import "./editor.js";
+
 const draftState = {
   csrfToken: "",
   statusFilter: "draft",
