@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timezone
 import base64
+import binascii
 import hashlib
 import hmac
 import os
@@ -163,12 +164,21 @@ def verify_password(password: str, encoded_hash: str) -> bool:
             dklen=len(expected),
         )
         return hmac.compare_digest(candidate, expected)
-    except (ValueError, TypeError, base64.binascii.Error):
+    except (ValueError, TypeError, binascii.Error):
         return False
 
 
 def _sha256(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def _csrf_for_session(session_token: str, config: AdminConfig) -> str:
+    digest = hmac.new(
+        config.session_secret.encode("utf-8"),
+        f"csrf:{session_token}".encode("utf-8"),
+        hashlib.sha256,
+    ).digest()
+    return _b64_encode(digest)
 
 
 def _client_key(request: Request, config: AdminConfig) -> str:
@@ -302,6 +312,17 @@ def record_login_failure(request: Request, username: str, config: AdminConfig) -
     )
 
 
+def record_rate_limit(request: Request, username: str, config: AdminConfig) -> None:
+    _audit(
+        config,
+        event="login",
+        outcome="blocked",
+        username=username[:128],
+        detail="temporary login rate limit",
+        client_key=_client_key(request, config),
+    )
+
+
 def clear_login_failures(request: Request, username: str, config: AdminConfig) -> None:
     client_key = _client_key(request, config)
     username_key = _sha256(username.strip().casefold())
@@ -317,7 +338,7 @@ def create_session(request: Request, username: str, config: AdminConfig) -> Admi
     now = int(time.time())
     expires_at = now + config.session_ttl_seconds
     session_token = secrets.token_urlsafe(32)
-    csrf_token = secrets.token_urlsafe(32)
+    csrf_token = _csrf_for_session(session_token, config)
     with _connect(config) as connection:
         _cleanup(config, connection, now)
         connection.execute(
@@ -386,9 +407,13 @@ def get_session(request: Request, *, require_csrf: bool = False) -> AdminSession
         )
         connection.commit()
 
-    csrf_token = request.headers.get(CSRF_HEADER, "") if require_csrf else ""
+    derived_csrf = _csrf_for_session(session_token, config)
+    if not hmac.compare_digest(_sha256(derived_csrf), row["csrf_hash"]):
+        raise HTTPException(401, "Admin session is invalid")
+
     if require_csrf:
-        if not csrf_token or not hmac.compare_digest(_sha256(csrf_token), row["csrf_hash"]):
+        supplied_csrf = request.headers.get(CSRF_HEADER, "")
+        if not supplied_csrf or not hmac.compare_digest(supplied_csrf, derived_csrf):
             _audit(
                 config,
                 event="csrf",
@@ -403,7 +428,7 @@ def get_session(request: Request, *, require_csrf: bool = False) -> AdminSession
     return AdminSession(
         username=row["username"],
         role=row["role"],
-        csrf_token=csrf_token,
+        csrf_token=derived_csrf,
         expires_at=int(row["expires_at"]),
         session_token=session_token,
     )
