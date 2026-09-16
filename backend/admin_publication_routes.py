@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
 
 from fastapi import APIRouter, HTTPException, Request
-from fastapi.responses import HTMLResponse, PlainTextResponse
+from fastapi.responses import HTMLResponse, PlainTextResponse, Response
 from pydantic import BaseModel, Field
 
 from . import admin_auth, admin_drafts, admin_publication
@@ -33,6 +32,11 @@ def _owner(request: Request, *, csrf: bool = False) -> admin_auth.AdminSession:
     if session.role != "owner":
         raise HTTPException(403, "Admin owner access required")
     return session
+
+
+def _admin_enabled() -> None:
+    if not ADMIN_ENABLED:
+        raise HTTPException(404, "Not found")
 
 
 def _audit(request: Request, session: admin_auth.AdminSession, event: str, outcome: str, detail: str) -> None:
@@ -64,16 +68,21 @@ def _raise(exc: Exception) -> None:
     raise exc
 
 
+@assets.get("/admin/drafts.js")
+def step9_admin_loader():
+    _admin_enabled()
+    return Response(
+        'import "/admin/drafts-core.js";\nimport "/admin/replacement.js";\nimport "/admin/publication.js";\n',
+        media_type="text/javascript",
+        headers={"Cache-Control": "no-store"},
+    )
+
+
 @assets.get("/admin", response_class=HTMLResponse)
 @assets.get("/admin/", response_class=HTMLResponse)
 def step9_admin_shell():
-    if not ADMIN_ENABLED:
-        raise HTTPException(404, "Not found")
-    html = ADMIN_INDEX.read_text(encoding="utf-8")
-    loader = '<script type="module" src="/admin/publication.js"></script>'
-    if loader not in html:
-        html = html.replace("</body>", f"  {loader}\n</body>")
-    return HTMLResponse(html)
+    _admin_enabled()
+    return HTMLResponse(ADMIN_INDEX.read_text(encoding="utf-8"))
 
 
 @router.get("/status")
