@@ -1,0 +1,61 @@
+name: Sync Z2 summary metadata
+
+on:
+  push:
+    branches:
+      - story-revision/unit1-pilot
+    paths:
+      - .github/workflows/sync-z2-summary.yml
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Sync aggregate Z2 metadata from detailed journey
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('content/ap-biology/unit-1')
+          detail_path = root / 'journeys' / 'Z2.json'
+          aggregate_path = root / 'journeys.json'
+          detail = json.loads(detail_path.read_text(encoding='utf-8'))
+          aggregate = json.loads(aggregate_path.read_text(encoding='utf-8'))
+          summary = next(j for j in aggregate['guided_journeys'] if j['palace_id'] == 'Z2')
+          for key in ('palace_name','story_title','tagline','guide','premise','mission','finale','estimated_minutes','scene_count','checkpoint_count'):
+              summary[key] = detail[key]
+          summary['narrative_design'] = detail['narrative_design']
+          aggregate_path.write_text(json.dumps(aggregate, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Verify aggregate and detailed Z2 metadata match
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('content/ap-biology/unit-1')
+          detail = json.loads((root/'journeys'/'Z2.json').read_text(encoding='utf-8'))
+          aggregate = json.loads((root/'journeys.json').read_text(encoding='utf-8'))
+          summary = next(j for j in aggregate['guided_journeys'] if j['palace_id']=='Z2')
+          keys = ('palace_name','story_title','tagline','guide','premise','mission','finale','estimated_minutes','scene_count','checkpoint_count','narrative_design')
+          assert all(summary[k] == detail[k] for k in keys)
+          print('Z2 aggregate metadata sync PASS')
+          PY
+      - name: Commit synchronized summary
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/ap-biology/unit-1/journeys.json
+          if git diff --cached --quiet; then
+            echo 'No metadata changes needed.'
+          else
+            git commit -m 'Sync Z2 Story Method summary metadata'
+            git push
+          fi
