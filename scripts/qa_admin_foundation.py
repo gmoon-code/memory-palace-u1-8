@@ -46,11 +46,13 @@ def main() -> None:
     require('@app.get("/api/admin/course")' in main_py, "protected admin course route is missing")
     require('@app.get("/api/admin/audit")' in main_py, "admin audit route is missing")
     require('@app.get("/api/admin/security")' in main_py, "admin security status route is missing")
+    require('@app.get("/api/admin/catalog/summary")' in main_py, "normalized catalog summary route is missing")
+    require('@app.get("/api/admin/catalog/course-map")' in main_py, "normalized course map route is missing")
 
-    require('apiRequest("/api/admin/course")' in js_text, "admin dashboard is not using the protected course route")
-    require('/api/admin/units/${encodeURIComponent(unit.unit_id)}' in js_text, "admin dashboard is not using protected unit summaries")
+    require('apiRequest("/api/admin/catalog/summary")' in js_text, "admin dashboard is not using the protected catalog summary")
+    require('apiRequest("/api/admin/catalog/course-map")' in js_text, "admin dashboard is not using the protected course map")
     require('method: "POST"' in js_text, "login and logout POST requests are missing")
-    require('method: "PUT"' not in js_text and 'method: "PATCH"' not in js_text and 'method: "DELETE"' not in js_text, "Step 2 frontend exposes a content mutation method")
+    require('method: "PUT"' not in js_text and 'method: "PATCH"' not in js_text and 'method: "DELETE"' not in js_text, "Step 3 frontend exposes a content mutation method")
 
     require("hashlib.scrypt" in auth_text, "admin passwords are not using scrypt")
     require("httponly=True" in main_py, "admin session cookie is not HttpOnly")
@@ -67,9 +69,9 @@ def main() -> None:
     print("ADMIN FOUNDATION QA PASS")
     print("- admin shell exists and remains disabled by default")
     print("- teacher authentication and server-side sessions are present")
-    print("- protected admin read APIs are separated from student APIs")
+    print("- protected admin APIs are separated from student APIs")
     print("- login throttling, CSRF protection, and audit storage are present")
-    print("- no content mutation API is exposed in Step 2")
+    print("- Step 3 catalog remains read-only")
     print("- GitHub Pages excludes admin assets")
     print("- complete story replacement remains a first-class module")
 
