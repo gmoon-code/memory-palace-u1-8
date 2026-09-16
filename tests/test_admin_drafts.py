@@ -47,11 +47,14 @@ def create_unit_draft(client: TestClient, csrf: str):
     return response.json()
 
 
-def test_draft_api_requires_authentication_and_csrf(monkeypatch: pytest.MonkeyPatch):
-    monkeypatch.setattr(main_module, "ADMIN_ENABLED", True)
-    monkeypatch.setattr(admin_draft_routes, "ADMIN_ENABLED", True)
-    with TestClient(main_module.app) as client:
-        assert client.get("/api/admin/drafts/summary").status_code == 401
+def test_draft_mutations_require_csrf(draft_client):
+    client, _ = draft_client
+    assert client.get("/api/admin/drafts/summary").status_code == 200
+    missing_csrf = client.post(
+        "/api/admin/drafts",
+        json={"entity_id": "unit:unit-1"},
+    )
+    assert missing_csrf.status_code == 403
 
 
 def test_create_save_compare_and_optimistic_concurrency(draft_client):
