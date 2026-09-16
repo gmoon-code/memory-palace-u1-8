@@ -1,11 +1,13 @@
 from pathlib import Path
+import hmac
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.gzip import GZipMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from pydantic import BaseModel, Field
 
-from . import content
+from . import admin_auth, content
 from .settings import ADMIN_ENABLED, FRONTEND_DIR, HOST, PORT
 
 RUNTIME_VERSION = "v2-apbio-0.30.0-u8-f6"
@@ -23,6 +25,11 @@ app.add_middleware(GZipMiddleware, minimum_size=500)
 app.mount("/static", StaticFiles(directory=FRONTEND_ROOT), name="static")
 
 
+class AdminLoginRequest(BaseModel):
+    username: str = Field(min_length=1, max_length=128)
+    password: str = Field(min_length=1, max_length=1024)
+
+
 @app.middleware("http")
 async def security_and_cache_headers(request: Request, call_next):
     response = await call_next(request)
@@ -37,13 +44,39 @@ async def security_and_cache_headers(request: Request, call_next):
     response.headers["Permissions-Policy"] = "camera=(), microphone=(), geolocation=()"
     response.headers["Cross-Origin-Opener-Policy"] = "same-origin"
     response.headers["Cross-Origin-Resource-Policy"] = "same-origin"
-    if request.url.path.startswith("/api/"):
+    if request.url.path.startswith("/api/admin") or request.url.path.startswith("/admin"):
         response.headers["Cache-Control"] = "no-store"
-    elif request.url.path.startswith("/static/") or request.url.path.startswith("/admin"):
+        response.headers["X-Robots-Tag"] = "noindex, nofollow"
+        response.headers["Vary"] = "Cookie"
+    elif request.url.path.startswith("/api/"):
+        response.headers["Cache-Control"] = "no-store"
+    elif request.url.path.startswith("/static/"):
         response.headers["Cache-Control"] = "no-cache"
     else:
         response.headers["Cache-Control"] = "no-cache"
     return response
+
+
+def _require_admin_enabled() -> None:
+    if not ADMIN_ENABLED:
+        raise HTTPException(404, "Not found")
+
+
+def _configured_admin() -> admin_auth.AdminConfig:
+    config = admin_auth.AdminConfig.from_env()
+    try:
+        config.validate()
+    except admin_auth.AdminConfigurationError as exc:
+        raise HTTPException(503, "Admin authentication is not configured") from exc
+    return config
+
+
+def _owner_session(request: Request, *, require_csrf: bool = False) -> admin_auth.AdminSession:
+    _require_admin_enabled()
+    session = admin_auth.get_session(request, require_csrf=require_csrf)
+    if session.role != "owner":
+        raise HTTPException(403, "Admin owner access required")
+    return session
 
 
 @app.get("/api/health")
@@ -296,6 +329,107 @@ def unit1_object(object_id: str):
     return item
 
 
+# Content Studio security boundary. These APIs are separate from student read APIs.
+@app.post("/api/admin/login")
+def admin_login(payload: AdminLoginRequest, request: Request):
+    _require_admin_enabled()
+    config = _configured_admin()
+    username = payload.username.strip()
+
+    if not admin_auth.login_allowed(request, username, config):
+        admin_auth.record_rate_limit(request, username, config)
+        raise HTTPException(429, "Too many login attempts. Try again later.")
+
+    username_ok = hmac.compare_digest(username, config.username)
+    password_ok = admin_auth.verify_password(payload.password, config.password_hash)
+    if not (username_ok and password_ok):
+        admin_auth.record_login_failure(request, username, config)
+        raise HTTPException(401, "Invalid username or password")
+
+    session = admin_auth.create_session(request, config.username, config)
+    response = JSONResponse(
+        {
+            "authenticated": True,
+            "username": session.username,
+            "role": session.role,
+            "expires_at": session.expires_at,
+            "csrf_token": session.csrf_token,
+        }
+    )
+    response.set_cookie(
+        key=admin_auth.SESSION_COOKIE,
+        value=session.session_token,
+        max_age=config.session_ttl_seconds,
+        httponly=True,
+        secure=config.secure_cookie,
+        samesite="strict",
+        path="/",
+    )
+    return response
+
+
+@app.get("/api/admin/session")
+def admin_session(request: Request):
+    session = _owner_session(request)
+    return {
+        "authenticated": True,
+        "username": session.username,
+        "role": session.role,
+        "expires_at": session.expires_at,
+        "csrf_token": session.csrf_token,
+    }
+
+
+@app.post("/api/admin/logout")
+def admin_logout(request: Request):
+    session = _owner_session(request, require_csrf=True)
+    config = _configured_admin()
+    admin_auth.revoke_session(request, session)
+    response = JSONResponse({"authenticated": False})
+    response.delete_cookie(
+        key=admin_auth.SESSION_COOKIE,
+        path="/",
+        secure=config.secure_cookie,
+        httponly=True,
+        samesite="strict",
+    )
+    return response
+
+
+@app.get("/api/admin/course")
+def admin_course(request: Request):
+    _owner_session(request)
+    return content.course()
+
+
+@app.get("/api/admin/units/{unit_id}")
+def admin_unit(unit_id: str, request: Request):
+    _owner_session(request)
+    item = content.unit_summary(unit_id)
+    if not item:
+        raise HTTPException(404, "Unit not found")
+    return item
+
+
+@app.get("/api/admin/security")
+def admin_security(request: Request):
+    session = _owner_session(request)
+    return {
+        "session": {
+            "username": session.username,
+            "role": session.role,
+            "expires_at": session.expires_at,
+        },
+        "protections": admin_auth.security_summary(),
+    }
+
+
+@app.get("/api/admin/audit")
+def admin_audit(request: Request, limit: int = 50):
+    _owner_session(request)
+    return {"events": admin_auth.read_audit(limit)}
+
+
 def _admin_file(path: str) -> Path | None:
     try:
         candidate = (ADMIN_ROOT / path).resolve()
@@ -308,15 +442,13 @@ def _admin_file(path: str) -> Path | None:
 @app.get("/admin")
 @app.get("/admin/")
 def admin_root():
-    if not ADMIN_ENABLED:
-        raise HTTPException(404, "Not found")
+    _require_admin_enabled()
     return FileResponse(ADMIN_ROOT / "index.html")
 
 
 @app.get("/admin/{path:path}")
 def admin_assets(path: str):
-    if not ADMIN_ENABLED:
-        raise HTTPException(404, "Not found")
+    _require_admin_enabled()
     candidate = _admin_file(path)
     if candidate is None:
         raise HTTPException(404, "Admin asset not found")
