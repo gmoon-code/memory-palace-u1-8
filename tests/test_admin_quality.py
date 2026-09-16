@@ -127,6 +127,7 @@ def test_entity_quality_flags_spatial_and_coverage_loss_in_draft(quality_client)
     payload["location_description"] = ""
     payload["scene_layout"] = dict(payload.get("scene_layout") or {})
     payload["scene_layout"]["orientation"] = ""
+    payload["orientation"] = ""
     payload["object_ids"] = []
     saved = client.patch(
         f"/api/admin/editors/drafts/{draft['draft_id']}",
