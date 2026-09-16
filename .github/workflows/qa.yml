@@ -74,6 +74,7 @@ jobs:
       - run: python scripts/qa_admin_editors.py
       - run: python scripts/qa_admin_replacements.py
       - run: python scripts/qa_admin_management.py
+      - run: python scripts/qa_admin_quality.py
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-a
       - run: PAGES_SITE_ROOT=/tmp/memory-palace-pages-a node scripts/qa_github_pages_static.mjs
       - run: python scripts/build_github_pages.py --output /tmp/memory-palace-pages-b
@@ -95,6 +96,7 @@ jobs:
       - run: node --check frontend/admin/editor.js
       - run: node --check frontend/admin/replacement.js
       - run: node --check frontend/admin/management.js
+      - run: node --check frontend/admin/quality.js
       - run: node --check scripts/qa_github_pages_static.mjs
       - run: python -m compileall -q backend scripts tests
       - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-a.zip
