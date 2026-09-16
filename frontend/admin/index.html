@@ -11,12 +11,31 @@
 </head>
 <body>
   <a class="skip-link" href="#admin-main">Skip to admin content</a>
-  <div class="admin-shell">
+
+  <section id="login-view" class="login-screen" aria-labelledby="login-title">
+    <form id="login-form" class="login-card" autocomplete="on">
+      <p class="eyebrow">The Story Method</p>
+      <h1 id="login-title">Content Studio</h1>
+      <p class="login-copy">Teacher administration is separate from the student website. Sign in to open the protected workspace.</p>
+
+      <label class="field-label" for="admin-username">Username</label>
+      <input id="admin-username" name="username" type="text" autocomplete="username" maxlength="128" required/>
+
+      <label class="field-label" for="admin-password">Password</label>
+      <input id="admin-password" name="password" type="password" autocomplete="current-password" maxlength="1024" required/>
+
+      <button id="login-button" class="button primary wide" type="submit">Sign in</button>
+      <p id="login-message" class="form-message" role="status" aria-live="polite"></p>
+      <p class="security-note">Sessions are server-side, time-limited, protected by an HttpOnly cookie, and guarded by CSRF checks for protected actions.</p>
+    </form>
+  </section>
+
+  <div id="studio-shell" class="admin-shell hidden">
     <aside class="admin-sidebar" aria-label="Content Studio navigation">
       <div class="brand-block">
         <span class="eyebrow">The Story Method</span>
         <strong>Content Studio</strong>
-        <span class="status-pill">Step 1 foundation</span>
+        <span class="status-pill">Step 2 security foundation</span>
       </div>
 
       <nav class="admin-nav">
@@ -38,6 +57,7 @@
         <button class="nav-item" data-view="versions">Version History</button>
         <button class="nav-item" data-view="import-export">Import and Export</button>
         <button class="nav-item" data-view="publishing">Publishing</button>
+        <button class="nav-item" data-view="security">Security and Audit</button>
         <button class="nav-item" data-view="settings">Settings</button>
       </nav>
     </aside>
@@ -47,16 +67,18 @@
         <div>
           <p class="eyebrow" id="view-eyebrow">Content overview</p>
           <h1 id="view-title">Dashboard</h1>
-          <p class="lede" id="view-description">A read-only foundation that inventories the current eight-unit AP Biology release without changing student content.</p>
+          <p class="lede" id="view-description">A protected read-only inventory of the current eight-unit AP Biology release.</p>
         </div>
         <div class="header-actions">
           <span class="read-only-badge">Read only</span>
+          <span id="session-user" class="session-user" aria-label="Signed in user"></span>
           <a class="button secondary" href="/" target="_blank" rel="noopener">Open student site</a>
+          <button id="logout-button" class="button secondary" type="button">Sign out</button>
         </div>
       </header>
 
       <section id="status-banner" class="status-banner" role="status" aria-live="polite">
-        Loading the current course registry…
+        Loading the protected course inventory…
       </section>
 
       <section id="dashboard-view" class="view-panel">
@@ -76,17 +98,19 @@
           <section class="panel">
             <div class="panel-heading">
               <div>
-                <p class="eyebrow">Implementation guardrails</p>
-                <h2>What Step 1 protects</h2>
+                <p class="eyebrow">Security boundary</p>
+                <h2>What Step 2 protects</h2>
               </div>
             </div>
             <ul class="check-list">
               <li>Production main remains unchanged.</li>
-              <li>The admin interface is disabled by default.</li>
-              <li>No write API exists in this step.</li>
-              <li>The GitHub Pages student deployment excludes the admin interface.</li>
-              <li>All later editing tools will work through validated drafts before publication.</li>
-              <li>Complete story replacement is reserved as a first-class workflow.</li>
+              <li>The admin interface remains disabled unless explicitly enabled on a trusted server.</li>
+              <li>Teacher access requires configured credentials and a server-side session.</li>
+              <li>Protected actions require a session-specific CSRF token and same-origin checks.</li>
+              <li>Failed sign-ins are rate limited without storing raw client addresses.</li>
+              <li>Authentication and security events are recorded in the server-side audit database.</li>
+              <li>No content write API exists yet.</li>
+              <li>The GitHub Pages student deployment still excludes the admin interface.</li>
             </ul>
           </section>
         </div>
@@ -102,11 +126,45 @@
         </section>
       </section>
 
+      <section id="security-view" class="view-panel hidden" aria-live="polite">
+        <div class="two-column-grid">
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Active protection</p>
+                <h2>Security status</h2>
+              </div>
+            </div>
+            <div id="security-grid" class="security-grid"></div>
+          </section>
+          <section class="panel">
+            <div class="panel-heading">
+              <div>
+                <p class="eyebrow">Current session</p>
+                <h2>Teacher session</h2>
+              </div>
+            </div>
+            <div id="session-details" class="session-details"></div>
+          </section>
+        </div>
+
+        <section class="panel audit-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Server-side record</p>
+              <h2>Recent audit events</h2>
+            </div>
+            <button id="refresh-audit" class="button secondary" type="button">Refresh</button>
+          </div>
+          <div id="audit-list" class="audit-list"></div>
+        </section>
+      </section>
+
       <section id="placeholder-view" class="view-panel hidden" aria-live="polite">
         <div class="panel placeholder-card">
           <p class="eyebrow">Reserved workspace</p>
           <h2 id="placeholder-title">Editor module</h2>
-          <p id="placeholder-copy">This module is represented in the foundation so the navigation and information architecture are stable before write operations are introduced.</p>
+          <p id="placeholder-copy">This module remains reserved while the protected content catalog and draft layer are built.</p>
           <div class="future-actions">
             <span>Draft editing</span>
             <span>Validation</span>
