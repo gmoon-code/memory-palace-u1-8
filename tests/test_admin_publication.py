@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from backend import admin_auth, admin_editor_routes, admin_publication, admin_publication_routes
+from backend import admin_auth, admin_draft_routes, admin_editor_routes, admin_publication, admin_publication_routes
 from backend import main as main_module
 from backend.settings import ROOT
 
@@ -29,6 +29,7 @@ def csrf(token: str) -> dict[str, str]:
 def publication_client(monkeypatch: pytest.MonkeyPatch, tmp_path: Path):
     password_hash = admin_auth.hash_password(PASSWORD, salt=b"0123456789abcdef")
     monkeypatch.setattr(main_module, "ADMIN_ENABLED", True)
+    monkeypatch.setattr(admin_draft_routes, "ADMIN_ENABLED", True)
     monkeypatch.setattr(admin_editor_routes, "ADMIN_ENABLED", True)
     monkeypatch.setattr(admin_publication_routes, "ADMIN_ENABLED", True)
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_USERNAME", USERNAME)
