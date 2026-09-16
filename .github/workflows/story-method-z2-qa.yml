@@ -114,3 +114,5 @@ jobs:
         run: |
           python scripts/build_github_pages.py --output /tmp/story-method-z2-pages-b
           diff -qr /tmp/story-method-z2-pages-a /tmp/story-method-z2-pages-b
+      - name: Live HTTP eight-unit regression QA
+        run: python scripts/qa_site_http_live.py
