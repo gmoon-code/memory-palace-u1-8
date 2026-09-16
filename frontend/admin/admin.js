@@ -127,8 +127,8 @@ function renderMetrics(units) {
   const totals = units.reduce(
     (acc, unit) => {
       acc.units += 1;
-      acc.journeys += Number(unit.journey_count || 0);
-      acc.scenes += Number(unit.scene_count || 0);
+      acc.journeys += Number(unit.journey_count || unit.journeys || 0);
+      acc.scenes += Number(unit.scene_count || unit.permanent_loci || 0);
       acc.challenges += Number(unit.application_challenges || unit.challenge_lab_records || 0);
       acc.canonical += Number(unit.canonical_records || 0);
       return acc;
@@ -166,8 +166,8 @@ function renderUnits(units) {
             <p>${unit.source_status || "No source status recorded"}</p>
           </div>
           <div class="unit-meta" aria-label="Unit ${unit.number} summary">
-            <span>${number(unit.journey_count)} journeys</span>
-            <span>${number(unit.scene_count)} scenes</span>
+            <span>${number(unit.journey_count || unit.journeys)} journeys</span>
+            <span>${number(unit.scene_count || unit.permanent_loci)} scenes</span>
             <span>${unit.status || "Unknown"}</span>
           </div>
         </article>`
@@ -207,16 +207,30 @@ function activateView(name) {
   }
 }
 
+async function readJson(url) {
+  const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" });
+  if (!response.ok) throw new Error(`${url} returned ${response.status}`);
+  return response.json();
+}
+
 async function loadCourse() {
   const banner = el("status-banner");
   try {
-    const response = await fetch("/api/course", { headers: { Accept: "application/json" }, cache: "no-store" });
-    if (!response.ok) throw new Error(`Course API returned ${response.status}`);
-    const course = await response.json();
-    const units = Array.isArray(course.units) ? course.units : [];
+    const course = await readJson("/api/course");
+    const registryUnits = Array.isArray(course.units) ? course.units : [];
+    const summaries = await Promise.all(
+      registryUnits.map(async (unit) => {
+        try {
+          return await readJson(`/api/units/${encodeURIComponent(unit.unit_id)}`);
+        } catch {
+          return {};
+        }
+      })
+    );
+    const units = registryUnits.map((unit, index) => ({ ...unit, ...summaries[index] }));
     renderMetrics(units);
     renderUnits(units);
-    banner.textContent = `Loaded ${units.length} released units from the current course registry. This foundation does not write to content.`;
+    banner.textContent = `Loaded ${units.length} released units and their read-only summaries. This foundation does not write to content.`;
     banner.classList.add("ok");
   } catch (error) {
     banner.textContent = `The Content Studio shell loaded, but the course registry could not be read. ${error.message}`;
