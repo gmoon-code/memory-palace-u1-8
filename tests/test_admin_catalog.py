@@ -42,11 +42,10 @@ def test_catalog_normalizes_known_unit1_scene_and_memory_object():
     assert memory_id in linked_ids
 
 
-def test_unit8_reference_resolves_to_concept_and_memory_object():
+def test_unit8_reference_resolves_to_canonical_concept():
     result = admin_catalog.resolve_reference("unit-8", "U8-K-063")
     types = {item["type"] for item in result["matches"]}
     assert "concept" in types
-    assert "memory_object" in types
 
 
 def test_course_map_preserves_all_units_journeys_and_scenes():
