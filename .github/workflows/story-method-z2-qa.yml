@@ -1,0 +1,73 @@
+name: Story Method Z2 QA
+
+on:
+  push:
+    branches:
+      - story-revision/unit1-pilot
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  z2-story-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - name: Unit 1 narrative and science structure
+        run: python scripts/qa_unit1_full.py
+      - name: Story renderer syntax
+        run: node --check frontend/js/views/learn.js
+      - name: Story audio syntax
+        run: node --check frontend/js/audio.js
+      - name: Static content loader syntax
+        run: node --check frontend/js/api.js
+      - name: Z2 JSON parse and locked accounting
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('content/ap-biology/unit-1/journeys/Z2.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          assert data['palace_id'] == 'Z2'
+          assert data['scene_count'] == len(data['scenes']) == 11
+          assert data['checkpoint_count'] == sum(bool(s['checkpoint']) for s in data['scenes']) == 3
+          assert len(data['route']) == 11
+          assert [s['scene_index'] for s in data['scenes']] == list(range(11))
+          assert [r['scene_index'] for r in data['route']] == list(range(11))
+          assert [r['locus'] for r in data['route']] == [s['locus'] for s in data['scenes']]
+          assert all(s['next_locus'] == data['scenes'][i + 1]['locus'] for i, s in enumerate(data['scenes'][:-1]))
+          assert data['scenes'][-1]['next_locus'] is None
+          ids = [oid for s in data['scenes'] for oid in s['object_ids']]
+          expected = [f'MO-APBIO-U1-C{i:03d}' for i in range(1, 29)]
+          assert ids == expected
+          assert len(set(ids)) == 28
+          checkpoints = [(s['scene_index'], s['checkpoint_object_id'], s['checkpoint_prompt']) for s in data['scenes'] if s['checkpoint']]
+          assert checkpoints == [
+              (2, 'MO-APBIO-U1-C006', 'Which atomic property is simply the number of protons and determines an element’s identity?'),
+              (6, 'MO-APBIO-U1-C017', 'What kind of covalent bond shares electrons unequally and produces partial charges?'),
+              (8, 'MO-APBIO-U1-C021', 'What noncovalent attraction forms between a partially positive hydrogen and another electronegative atom?'),
+          ]
+          for scene in data['scenes']:
+              assert scene['story_open'] == scene['story_paragraphs'][0]
+              assert scene['story_close'] == scene['story_paragraphs'][-1]
+              assert [b['object_id'] for b in scene['story_beats']] == scene['object_ids']
+              assert len(scene['memory_snapshot']) == len(scene['object_ids'])
+              assert {z['position'] for z in scene['scene_layout']['zones']} == {'left', 'center', 'right'}
+              assert len(scene['cast']) >= 2
+          story = '\n'.join(p for s in data['scenes'] for p in s['story_paragraphs'])
+          assert 'emergency flooring system' in story
+          assert 'The molecules are a simulation' in story
+          assert 'electromagnet' not in story.casefold()
+          assert 'magnet' not in '\n'.join(data['scenes'][5]['story_paragraphs']).casefold()
+          assert '**CHEMICAL BOND**' in '\n'.join(data['scenes'][6]['story_paragraphs'])
+          assert data['narrative_design'] == 'STORY-METHOD-V3.2'
+          print('Story Method Z2 locked accounting PASS')
+          PY
