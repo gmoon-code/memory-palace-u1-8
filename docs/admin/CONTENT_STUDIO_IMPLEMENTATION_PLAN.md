@@ -148,6 +148,14 @@ Student preview, device preview, content health, accessibility checks, continuit
 
 Validated publication, version creation, release summaries, GitHub-backed publication candidates, rollback, and full regression QA.
 
+## Post-Step 9 integration and deployment gate
+
+The nine content-system implementation steps are followed by a separate integration gate. This gate adds no new authoring feature. It packages the private FastAPI Content Studio for trusted deployment, verifies the complete security and publication boundary as one system, preserves the student-only GitHub Pages artifact, and defines the rehearsal required before any production merge or live publication.
+
+The integration branch starts from the validated Step 9 head and adds a non-root production container, deployment exclusions, a persistent-storage and secret-management runbook, a read-only HTTPS deployment smoke test, and a whole-system CI check. Administrative access, controlled publication, GitHub delivery, and server-side merge still default to disabled.
+
+The detailed acceptance criteria and rehearsal procedure are maintained in `docs/admin/CONTENT_STUDIO_INTEGRATION_GATE.md` and `deploy/content-studio/README.md`.
+
 ## Step 1 acceptance criteria
 
 Step 1 is complete only when all of the following are true.
