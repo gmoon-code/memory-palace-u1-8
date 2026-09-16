@@ -1,99 +1,101 @@
 const state = {
   csrfToken: "",
   session: null,
-  courseLoaded: false,
+  catalogSummary: null,
+  courseMap: null,
+  currentCatalogType: null,
 };
 
 const views = {
   dashboard: {
     title: "Dashboard",
     eyebrow: "Content overview",
-    description: "A protected read-only inventory of the current eight-unit AP Biology release.",
+    description: "A protected normalized inventory of the current eight-unit AP Biology release.",
   },
   "course-map": {
     title: "Course Map",
     eyebrow: "Structure",
-    description: "A visual Unit → Journey → Scene map will live here, with ordering, status, coverage, and dependency indicators.",
+    description: "Browse the current Unit → Journey → Scene hierarchy and inspect linked scientific and retrieval dependencies.",
   },
   units: {
     title: "Units",
     eyebrow: "Course structure",
-    description: "Unit-level metadata, coverage, introductions, images, ordering, prerequisites, and release status will be managed here.",
+    description: "Browse normalized Unit records before editing capabilities are introduced.",
   },
   journeys: {
     title: "Journeys",
     eyebrow: "Narrative structure",
-    description: "Journey routes, scene order, locations, coverage, retrieval points, and journey-level replacement tools will be managed here.",
+    description: "Browse all guided journeys through one consistent catalog regardless of the source unit schema.",
   },
   scenes: {
     title: "Scenes",
     eyebrow: "Scene workspace",
-    description: "Scene text, spatial layout, characters, loci, scientific meaning, interactions, and scene-level replacement will be managed here.",
+    description: "Browse permanent scenes, loci, story load, characters, Memory Objects, and dependency links.",
   },
   stories: {
     title: "Stories",
     eyebrow: "Narrative editor",
-    description: "The story editor will support paragraph editing, reordering, focused writing, linked concepts, continuity checks, and student preview.",
+    description: "The story editor will use the normalized scene and dependency records created in this stage.",
   },
   replacement: {
     title: "Complete Story Replacement",
     eyebrow: "Major revision workflow",
-    description: "A dedicated replacement flow will preserve required knowledge, compare old and new versions, detect lost dependencies, validate coverage, and keep the prior story recoverable.",
+    description: "The replacement workflow will use this dependency graph to preserve required knowledge and detect downstream effects.",
   },
   concepts: {
     title: "Concept Library",
     eyebrow: "Scientific backbone",
-    description: "Canonical concepts, definitions, mechanisms, prerequisites, relationships, misconceptions, source notes, and teaching locations will be managed here.",
+    description: "Browse canonical scientific records and their current scene, Memory Object, question, and Challenge Lab coverage.",
   },
   "memory-objects": {
     title: "Memory Objects",
     eyebrow: "Memory architecture",
-    description: "Canonical terms, definitions, pronunciation, mnemonic actors, loci, confusables, productive retrieval, spelling retrieval, and application targets will be managed here.",
+    description: "Browse normalized Memory Objects and their links to canonical concepts, scenes, questions, and review records.",
   },
   questions: {
     title: "Question Bank",
     eyebrow: "Assessment",
-    description: "Question creation, variants, distractors, explanations, difficulty, concept links, AP skills, media, duplication, and bulk editing will be managed here.",
+    description: "Browse normalized Quick Recall, delayed review, and mixed-discrimination questions through one catalog.",
   },
   review: {
     title: "Review System",
     eyebrow: "Retrieval planning",
-    description: "Immediate, journey, unit, delayed, mixed, and exact-name review opportunities will be visible on a concept timeline and editable as validated drafts.",
+    description: "Review scheduling and retrieval timelines will build on the normalized question and concept graph.",
   },
   challenge: {
     title: "Challenge Lab",
     eyebrow: "Application",
-    description: "Challenge scenarios, data, graphs, variables, questions, expected reasoning, scoring guidance, and prerequisite links will be managed here.",
+    description: "Browse Challenge Lab records, prerequisite scenes, and linked scientific concepts across all units.",
   },
   media: {
     title: "Media Library",
     eyebrow: "Assets",
-    description: "Images, diagrams, audio, alt text, source notes, usage locations, replacements, and orphan detection will be managed here.",
+    description: "Media dependency indexing will be added after the draft store is established.",
   },
   preview: {
     title: "Student Preview",
     eyebrow: "Experience check",
-    description: "Draft content will be previewed through the real student interface across desktop, tablet, and phone views before publication.",
+    description: "Draft-aware student preview arrives after the revision layer is established.",
   },
   health: {
     title: "Content Health",
     eyebrow: "Validation",
-    description: "Concrete checks will surface broken references, missing fields, orphaned content, duplicate candidates, overloaded scenes, and incomplete retrieval coverage.",
+    description: "Compare normalized totals with the frozen release and surface unresolved references or incomplete records.",
   },
   versions: {
     title: "Version History",
     eyebrow: "Recovery",
-    description: "Every major content item will keep revision history, side-by-side comparisons, release notes, and recoverable prior versions.",
+    description: "Revision history will be implemented with the draft store in the next stage.",
   },
   "import-export": {
     title: "Import and Export",
     eyebrow: "Portability",
-    description: "Validated imports and exports will support structured content, question banks, units, journeys, backups, and future migrations.",
+    description: "Validated import and export will use the normalized catalog as its stable content model.",
   },
   publishing: {
     title: "Publishing",
     eyebrow: "Release control",
-    description: "The publish flow will move from draft through preview, validation, dependency review, version creation, release summary, and controlled publication.",
+    description: "Publishing remains disabled until drafts, revisions, validation, and recoverable snapshots exist.",
   },
   security: {
     title: "Security and Audit",
@@ -105,6 +107,16 @@ const views = {
     eyebrow: "Administration",
     description: "Permissions, editor preferences, validation policy, source settings, and publication configuration will be controlled here.",
   },
+};
+
+const catalogViews = {
+  units: { entityType: "unit", label: "Units" },
+  journeys: { entityType: "journey", label: "Journeys" },
+  scenes: { entityType: "scene", label: "Scenes" },
+  concepts: { entityType: "concept", label: "Canonical concepts" },
+  "memory-objects": { entityType: "memory_object", label: "Memory Objects" },
+  questions: { entityType: "question", label: "Questions" },
+  challenge: { entityType: "challenge", label: "Challenge Lab items" },
 };
 
 const capabilityCards = [
@@ -140,7 +152,7 @@ function escapeHtml(value) {
 }
 
 function number(value) {
-  return new Intl.NumberFormat().format(value || 0);
+  return new Intl.NumberFormat().format(Number(value) || 0);
 }
 
 function formatTimestamp(epochSeconds) {
@@ -154,26 +166,28 @@ function humanizeKey(value) {
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
+function unitLabel(unitId) {
+  if (!unitId) return "Course-wide";
+  return unitId.replace("unit-", "Unit ");
+}
+
 async function apiRequest(url, options = {}) {
   const headers = new Headers(options.headers || {});
   headers.set("Accept", "application/json");
   if (options.body && !headers.has("Content-Type")) headers.set("Content-Type", "application/json");
   if (options.csrf) headers.set("X-CSRF-Token", state.csrfToken);
-
   const response = await fetch(url, {
     cache: "no-store",
     credentials: "same-origin",
     ...options,
     headers,
   });
-
   let payload = null;
   try {
     payload = await response.json();
   } catch {
     payload = null;
   }
-
   if (!response.ok) {
     const message = payload?.detail || `${url} returned ${response.status}`;
     const error = new Error(message);
@@ -183,27 +197,24 @@ async function apiRequest(url, options = {}) {
   return payload;
 }
 
-function renderMetrics(units) {
-  const totals = units.reduce(
-    (acc, unit) => {
-      acc.units += 1;
-      acc.journeys += Number(unit.journey_count || unit.journeys || 0);
-      acc.scenes += Number(unit.scene_count || unit.permanent_loci || 0);
-      acc.challenges += Number(unit.application_challenges || unit.challenge_lab_records || 0);
-      acc.canonical += Number(unit.canonical_records || 0);
-      return acc;
-    },
-    { units: 0, journeys: 0, scenes: 0, challenges: 0, canonical: 0 }
-  );
+function handleApiError(error, target = null) {
+  if (error.status === 401) {
+    showLogin("Your admin session has expired. Sign in again.");
+    return true;
+  }
+  if (target) target.innerHTML = `<p class="empty-state">${escapeHtml(error.message)}</p>`;
+  return false;
+}
 
+function renderMetrics(summary) {
+  const counts = summary?.counts || {};
   const metrics = [
-    ["Units", totals.units, "released course units"],
-    ["Journeys", totals.journeys, "guided narrative routes"],
-    ["Scenes", totals.scenes, "permanent scene locations"],
-    ["Canonical records", totals.canonical, "reported locked records"],
-    ["Application challenges", totals.challenges, "reported unit challenges"],
+    ["Units", counts.unit, "normalized unit records"],
+    ["Journeys", counts.journey, "guided narrative routes"],
+    ["Scenes", counts.scene, "permanent scenes"],
+    ["Canonical records", counts.concept, "scientific concept records"],
+    ["Challenge items", counts.challenge, "application challenges"],
   ];
-
   el("metric-grid").innerHTML = metrics
     .map(
       ([label, value, note]) => `
@@ -216,20 +227,67 @@ function renderMetrics(units) {
     .join("");
 }
 
-function renderUnits(units) {
+function renderUnits(courseMap) {
+  const units = Array.isArray(courseMap?.units) ? courseMap.units : [];
   el("unit-list").innerHTML = units
     .map(
       (unit) => `
         <article class="unit-row">
           <div>
             <h3>Unit ${number(unit.number)} · ${escapeHtml(unit.title)}</h3>
-            <p>${escapeHtml(unit.source_status || "No source status recorded")}</p>
+            <p>${escapeHtml(unit.unit_id)}</p>
           </div>
-          <div class="unit-meta" aria-label="Unit ${number(unit.number)} summary">
-            <span>${number(unit.journey_count || unit.journeys)} journeys</span>
-            <span>${number(unit.scene_count || unit.permanent_loci)} scenes</span>
-            <span>${escapeHtml(unit.status || "Unknown")}</span>
+          <div class="unit-meta" aria-label="Unit ${number(unit.number)} normalized summary">
+            <span>${number(unit.journey_count)} journeys</span>
+            <span>${number(unit.scene_count)} scenes</span>
           </div>
+        </article>`
+    )
+    .join("");
+}
+
+function renderAlignment(targetId, alignment) {
+  const target = el(targetId);
+  const entries = Object.entries(alignment || {});
+  if (!entries.length) {
+    target.innerHTML = '<p class="empty-state">No frozen release comparison is available.</p>';
+    return;
+  }
+  target.innerHTML = entries
+    .map(([key, item]) => {
+      const status = item.matches ? "match" : "mismatch";
+      return `
+        <div class="alignment-row ${status}">
+          <div>
+            <strong>${escapeHtml(humanizeKey(key))}</strong>
+            <span>${number(item.actual)} normalized · ${number(item.expected)} frozen release</span>
+          </div>
+          <span class="alignment-status">${item.matches ? "Match" : "Mismatch"}</span>
+        </div>`;
+    })
+    .join("");
+}
+
+function renderCatalogTypes(summary) {
+  const labels = {
+    unit: "Units",
+    journey: "Journeys",
+    scene: "Scenes",
+    location: "Locations",
+    character: "Characters and objects",
+    concept: "Canonical concepts",
+    memory_object: "Memory Objects",
+    question: "Questions",
+    question_set: "Mixed question sets",
+    challenge: "Challenge Lab items",
+  };
+  const entries = Object.entries(summary?.counts || {}).filter(([key]) => key !== "course");
+  el("catalog-type-grid").innerHTML = entries
+    .map(
+      ([key, value]) => `
+        <article class="capability-card">
+          <strong>${number(value)} ${escapeHtml(labels[key] || humanizeKey(key))}</strong>
+          <span>Indexed with stable IDs and dependency links.</span>
         </article>`
     )
     .join("");
@@ -247,6 +305,231 @@ function renderCapabilities() {
     .join("");
 }
 
+function renderCourseMap(data) {
+  const target = el("course-map-tree");
+  const units = Array.isArray(data?.units) ? data.units : [];
+  if (!units.length) {
+    target.innerHTML = '<p class="empty-state">No normalized course structure is available.</p>';
+    return;
+  }
+  target.innerHTML = units
+    .map(
+      (unit, unitIndex) => `
+        <details class="map-unit" ${unitIndex === 0 ? "open" : ""}>
+          <summary>
+            <span>Unit ${number(unit.number)} · ${escapeHtml(unit.title)}</span>
+            <small>${number(unit.journey_count)} journeys · ${number(unit.scene_count)} scenes</small>
+          </summary>
+          <div class="map-journeys">
+            ${unit.journeys
+              .map(
+                (journey) => `
+                  <details class="map-journey">
+                    <summary>
+                      <span>${escapeHtml(journey.palace_id)} · ${escapeHtml(journey.title)}</span>
+                      <small>${number(journey.scene_count)} scenes · ${number(journey.checkpoint_count)} recalls</small>
+                    </summary>
+                    <div class="map-scenes">
+                      ${journey.scenes
+                        .map(
+                          (scene) => `
+                            <button class="map-scene" type="button" data-entity-id="${escapeHtml(scene.id)}">
+                              <span class="scene-index">${number(Number(scene.scene_index) + 1)}</span>
+                              <span class="scene-name">
+                                <strong>${escapeHtml(scene.title)}</strong>
+                                <small>${escapeHtml(scene.locus || "")}</small>
+                              </span>
+                              <span class="scene-stats">${number(scene.object_count)} objects · ${number(scene.character_count)} cast · ${number(scene.story_word_count)} words${scene.checkpoint ? " · recall" : ""}</span>
+                            </button>`
+                        )
+                        .join("")}
+                    </div>
+                  </details>`
+              )
+              .join("")}
+          </div>
+        </details>`
+    )
+    .join("");
+  target.querySelectorAll("[data-entity-id]").forEach((button) => {
+    button.addEventListener("click", () => inspectEntity(button.dataset.entityId, "map"));
+  });
+}
+
+function compactEntity(entity) {
+  const title = entity?.title || entity?.id || "Untitled";
+  const details = [entity?.type, entity?.unit_id, entity?.palace_id, entity?.locus_id]
+    .filter(Boolean)
+    .map(humanizeKey)
+    .join(" · ");
+  return { title, details };
+}
+
+function dependencyRows(items, direction) {
+  if (!items?.length) return '<p class="empty-state compact">None</p>';
+  return items
+    .slice(0, 30)
+    .map((item) => {
+      const compact = compactEntity(item.entity);
+      return `
+        <button class="dependency-row" type="button" data-related-id="${escapeHtml(item.entity.id)}">
+          <span>${escapeHtml(item.edge.kind)}</span>
+          <strong>${escapeHtml(compact.title)}</strong>
+          <small>${escapeHtml(compact.details || direction)}</small>
+        </button>`;
+    })
+    .join("");
+}
+
+function renderDependencyReport(report, targetId, titleId) {
+  const target = el(targetId);
+  const titleNode = el(titleId);
+  const entity = report?.entity || {};
+  titleNode.textContent = entity.title || entity.id || "Linked record";
+  const counts = Object.entries(report?.related_counts_by_type || {});
+  target.innerHTML = `
+    <div class="entity-meta">
+      <span>${escapeHtml(humanizeKey(entity.type || "record"))}</span>
+      <span>${escapeHtml(unitLabel(entity.unit_id))}</span>
+      <code>${escapeHtml(entity.id || "")}</code>
+    </div>
+    ${entity.story_preview ? `<p class="inspector-preview">${escapeHtml(entity.story_preview)}</p>` : ""}
+    <div class="dependency-counts">
+      ${counts.map(([key, value]) => `<span><strong>${number(value)}</strong> ${escapeHtml(humanizeKey(key))}</span>`).join("") || "<span>No linked records within selected depth</span>"}
+    </div>
+    <section class="dependency-section">
+      <h3>Directly uses or contains</h3>
+      ${dependencyRows(report.direct_outbound, "outbound")}
+    </section>
+    <section class="dependency-section">
+      <h3>Directly used by</h3>
+      ${dependencyRows(report.direct_inbound, "inbound")}
+    </section>
+    ${entity.source_path ? `<p class="source-path"><strong>Source</strong><br/><code>${escapeHtml(entity.source_path)}</code></p>` : ""}
+  `;
+  target.querySelectorAll("[data-related-id]").forEach((button) => {
+    button.addEventListener("click", () => inspectEntity(button.dataset.relatedId, targetId === "dependency-inspector" ? "map" : "catalog"));
+  });
+}
+
+async function inspectEntity(entityId, destination = "map") {
+  const targetId = destination === "catalog" ? "catalog-inspector" : "dependency-inspector";
+  const titleId = destination === "catalog" ? "catalog-inspector-title" : "inspector-title";
+  const target = el(targetId);
+  target.innerHTML = '<p class="empty-state">Loading dependencies…</p>';
+  try {
+    const report = await apiRequest(`/api/admin/catalog/dependencies?entity_id=${encodeURIComponent(entityId)}&depth=2&limit=500`);
+    renderDependencyReport(report, targetId, titleId);
+  } catch (error) {
+    handleApiError(error, target);
+  }
+}
+
+async function loadCourseMap(force = false) {
+  const target = el("course-map-tree");
+  if (state.courseMap && !force) {
+    renderCourseMap(state.courseMap);
+    return;
+  }
+  target.innerHTML = '<p class="empty-state">Building normalized course map…</p>';
+  try {
+    state.courseMap = await apiRequest("/api/admin/catalog/course-map");
+    renderCourseMap(state.courseMap);
+  } catch (error) {
+    handleApiError(error, target);
+  }
+}
+
+function entitySubtitle(item) {
+  if (item.type === "scene") return `${item.palace_id || ""} · ${item.locus || ""}`;
+  if (item.type === "journey") return item.palace_name || item.palace_id || "";
+  if (item.type === "concept") return item.knowledge_id || "";
+  if (item.type === "memory_object") return item.memory_object_id || "";
+  if (item.type === "question") return item.question_type || "";
+  if (item.type === "challenge") return item.domain || item.challenge_type || "";
+  return item.id || "";
+}
+
+function renderCatalogRecords(payload) {
+  const list = el("catalog-record-list");
+  const items = Array.isArray(payload?.items) ? payload.items : [];
+  el("catalog-result-count").textContent = `${number(payload?.total)} records`;
+  if (!items.length) {
+    list.innerHTML = '<p class="empty-state">No records match the selected filter.</p>';
+    return;
+  }
+  list.innerHTML = items
+    .map(
+      (item) => `
+        <button class="catalog-record" type="button" data-entity-id="${escapeHtml(item.id)}">
+          <span class="record-type">${escapeHtml(humanizeKey(item.type))}</span>
+          <span class="record-copy">
+            <strong>${escapeHtml(item.title || item.id)}</strong>
+            <small>${escapeHtml(unitLabel(item.unit_id))} · ${escapeHtml(entitySubtitle(item))}</small>
+          </span>
+          <span class="record-links">${number(item.dependency_counts?.inbound)} in · ${number(item.dependency_counts?.outbound)} out</span>
+        </button>`
+    )
+    .join("");
+  list.querySelectorAll("[data-entity-id]").forEach((button) => {
+    button.addEventListener("click", () => inspectEntity(button.dataset.entityId, "catalog"));
+  });
+}
+
+async function loadCatalogView(entityType = state.currentCatalogType) {
+  if (!entityType) return;
+  state.currentCatalogType = entityType;
+  const unitId = el("catalog-unit-filter").value;
+  const config = Object.values(catalogViews).find((item) => item.entityType === entityType);
+  el("catalog-view-title").textContent = config?.label || humanizeKey(entityType);
+  const list = el("catalog-record-list");
+  list.innerHTML = '<p class="empty-state">Loading normalized records…</p>';
+  const params = new URLSearchParams({ entity_type: entityType, limit: "500" });
+  if (unitId) params.set("unit_id", unitId);
+  try {
+    const payload = await apiRequest(`/api/admin/catalog/entities?${params.toString()}`);
+    renderCatalogRecords(payload);
+  } catch (error) {
+    handleApiError(error, list);
+  }
+}
+
+function renderHealth(summary) {
+  renderAlignment("health-alignment", summary?.release_alignment || {});
+  const health = summary?.health || {};
+  el("health-summary").innerHTML = `
+    <div class="health-number"><strong>${number(health.error_count)}</strong><span>blocking catalog errors</span></div>
+    <div class="health-number"><strong>${number(health.warning_count)}</strong><span>catalog warnings</span></div>
+    <div class="health-number"><strong>${number(summary?.unresolved_reference_count)}</strong><span>unresolved source references</span></div>
+  `;
+  const problems = Array.isArray(health.problems) ? health.problems : [];
+  el("health-problems").innerHTML = problems.length
+    ? problems
+        .map(
+          (problem) => `
+            <article class="health-problem ${escapeHtml(problem.severity)}">
+              <span>${escapeHtml(problem.severity)}</span>
+              <div><strong>${escapeHtml(humanizeKey(problem.code))}</strong><p>${escapeHtml(problem.message)}</p></div>
+              ${problem.count != null ? `<b>${number(problem.count)}</b>` : ""}
+            </article>`
+        )
+        .join("")
+    : '<p class="empty-state">No normalized catalog warnings or errors are currently reported.</p>';
+}
+
+async function loadHealth(force = false) {
+  if (state.catalogSummary && !force) {
+    renderHealth(state.catalogSummary);
+    return;
+  }
+  try {
+    state.catalogSummary = await apiRequest("/api/admin/catalog/summary");
+    renderHealth(state.catalogSummary);
+  } catch (error) {
+    handleApiError(error, el("health-problems"));
+  }
+}
+
 function renderSecurity(data) {
   const protections = data?.protections || {};
   el("security-grid").innerHTML = Object.entries(protections)
@@ -258,7 +541,6 @@ function renderSecurity(data) {
         </div>`
     )
     .join("");
-
   const session = data?.session || {};
   el("session-details").innerHTML = `
     <div class="session-line"><span>User</span><strong>${escapeHtml(session.username || "Unknown")}</strong></div>
@@ -295,9 +577,15 @@ async function loadSecurity() {
     renderSecurity(security);
     renderAudit(Array.isArray(audit?.events) ? audit.events : []);
   } catch (error) {
-    if (error.status === 401) return showLogin("Your admin session has expired. Sign in again.");
+    if (handleApiError(error)) return;
     el("audit-list").innerHTML = `<p class="audit-empty">${escapeHtml(error.message)}</p>`;
   }
+}
+
+function hideAllViews() {
+  ["dashboard-view", "course-map-view", "catalog-view", "health-view", "security-view", "placeholder-view"].forEach((id) => {
+    el(id).classList.add("hidden");
+  });
 }
 
 function activateView(name) {
@@ -305,52 +593,93 @@ function activateView(name) {
   document.querySelectorAll(".nav-item").forEach((button) => {
     button.classList.toggle("active", button.dataset.view === name);
   });
-
   el("view-title").textContent = view.title;
   el("view-eyebrow").textContent = view.eyebrow;
   el("view-description").textContent = view.description;
+  hideAllViews();
 
-  const isDashboard = name === "dashboard";
-  const isSecurity = name === "security";
-  el("dashboard-view").classList.toggle("hidden", !isDashboard);
-  el("security-view").classList.toggle("hidden", !isSecurity);
-  el("placeholder-view").classList.toggle("hidden", isDashboard || isSecurity);
-
-  if (isSecurity) loadSecurity();
-  if (!isDashboard && !isSecurity) {
-    el("placeholder-title").textContent = view.title;
-    el("placeholder-copy").textContent = `${view.description} The protected content catalog and draft layer are built in the next implementation stage.`;
+  if (name === "dashboard") {
+    el("dashboard-view").classList.remove("hidden");
+    return;
   }
+  if (name === "course-map") {
+    el("course-map-view").classList.remove("hidden");
+    loadCourseMap();
+    return;
+  }
+  if (name === "health") {
+    el("health-view").classList.remove("hidden");
+    loadHealth();
+    return;
+  }
+  if (name === "security") {
+    el("security-view").classList.remove("hidden");
+    loadSecurity();
+    return;
+  }
+  if (catalogViews[name]) {
+    el("catalog-view").classList.remove("hidden");
+    el("catalog-unit-filter").value = "";
+    loadCatalogView(catalogViews[name].entityType);
+    return;
+  }
+  el("placeholder-view").classList.remove("hidden");
+  el("placeholder-title").textContent = view.title;
+  el("placeholder-copy").textContent = `${view.description} Step 3 has established the normalized catalog and dependency layer this workspace will use.`;
 }
 
-async function loadCourse() {
+async function loadDashboard() {
   const banner = el("status-banner");
   banner.classList.remove("ok", "error");
   try {
-    const course = await apiRequest("/api/admin/course");
-    const registryUnits = Array.isArray(course.units) ? course.units : [];
-    const summaries = await Promise.all(
-      registryUnits.map(async (unit) => {
-        try {
-          return await apiRequest(`/api/admin/units/${encodeURIComponent(unit.unit_id)}`);
-        } catch {
-          return {};
-        }
-      })
-    );
-    const units = registryUnits.map((unit, index) => ({ ...unit, ...summaries[index] }));
-    renderMetrics(units);
-    renderUnits(units);
-    state.courseLoaded = true;
-    banner.textContent = `Loaded ${units.length} released units through the protected admin API. Content editing remains disabled in Step 2.`;
-    banner.classList.add("ok");
+    const [summary, map] = await Promise.all([
+      apiRequest("/api/admin/catalog/summary"),
+      apiRequest("/api/admin/catalog/course-map"),
+    ]);
+    state.catalogSummary = summary;
+    state.courseMap = map;
+    renderMetrics(summary);
+    renderUnits(map);
+    renderAlignment("release-alignment", summary.release_alignment);
+    renderCatalogTypes(summary);
+    renderCapabilities();
+    const health = summary.health || {};
+    banner.textContent = `Normalized ${number(summary.counts?.concept)} scientific records, ${number(summary.counts?.journey)} journeys, and ${number(summary.counts?.scene)} scenes. ${number(health.error_count)} release-alignment errors and ${number(summary.unresolved_reference_count)} unresolved source references are currently reported.`;
+    banner.classList.add(health.error_count ? "error" : "ok");
   } catch (error) {
-    if (error.status === 401) return showLogin("Your admin session has expired. Sign in again.");
-    banner.textContent = `The protected course inventory could not be read. ${error.message}`;
+    if (handleApiError(error)) return;
+    banner.textContent = `The protected content catalog could not be built. ${error.message}`;
     banner.classList.add("error");
-    el("metric-grid").innerHTML = "";
-    el("unit-list").innerHTML = "";
   }
+}
+
+function renderSearchResults(items, query) {
+  const target = el("catalog-search-results");
+  target.classList.remove("hidden");
+  if (!items.length) {
+    target.innerHTML = `<p class="empty-state">No normalized records match “${escapeHtml(query)}”.</p>`;
+    return;
+  }
+  target.innerHTML = `
+    <div class="search-results-heading"><strong>${number(items.length)} results</strong><button id="close-search-results" class="text-button" type="button">Close</button></div>
+    ${items
+      .map(
+        (item) => `
+          <button class="search-result" type="button" data-entity-id="${escapeHtml(item.id)}">
+            <span>${escapeHtml(humanizeKey(item.type))}</span>
+            <strong>${escapeHtml(item.title || item.id)}</strong>
+            <small>${escapeHtml(unitLabel(item.unit_id))} · ${escapeHtml(entitySubtitle(item))}</small>
+          </button>`
+      )
+      .join("")}
+  `;
+  target.querySelectorAll("[data-entity-id]").forEach((button) => {
+    button.addEventListener("click", () => {
+      activateView("course-map");
+      inspectEntity(button.dataset.entityId, "map");
+    });
+  });
+  el("close-search-results")?.addEventListener("click", () => target.classList.add("hidden"));
 }
 
 function showStudio(session) {
@@ -361,15 +690,15 @@ function showStudio(session) {
   el("studio-shell").classList.remove("hidden");
   el("login-message").textContent = "";
   el("admin-password").value = "";
-  renderCapabilities();
   activateView("dashboard");
-  loadCourse();
+  loadDashboard();
 }
 
 function showLogin(message = "") {
   state.session = null;
   state.csrfToken = "";
-  state.courseLoaded = false;
+  state.catalogSummary = null;
+  state.courseMap = null;
   el("studio-shell").classList.add("hidden");
   el("login-view").classList.remove("hidden");
   const messageNode = el("login-message");
@@ -399,7 +728,6 @@ el("login-form").addEventListener("submit", async (event) => {
   button.disabled = true;
   messageNode.classList.remove("error");
   messageNode.textContent = "Signing in…";
-
   try {
     const session = await apiRequest("/api/admin/login", {
       method: "POST",
@@ -429,7 +757,25 @@ el("logout-button").addEventListener("click", async () => {
   showLogin("You have signed out.");
 });
 
+el("catalog-search-form").addEventListener("submit", async (event) => {
+  event.preventDefault();
+  const query = el("catalog-search-input").value.trim();
+  if (query.length < 2) return;
+  const target = el("catalog-search-results");
+  target.classList.remove("hidden");
+  target.innerHTML = '<p class="empty-state">Searching normalized content…</p>';
+  try {
+    const result = await apiRequest(`/api/admin/catalog/search?q=${encodeURIComponent(query)}&limit=50`);
+    renderSearchResults(Array.isArray(result.items) ? result.items : [], query);
+  } catch (error) {
+    handleApiError(error, target);
+  }
+});
+
+el("refresh-course-map").addEventListener("click", () => loadCourseMap(true));
+el("refresh-health").addEventListener("click", () => loadHealth(true));
 el("refresh-audit").addEventListener("click", loadSecurity);
+el("catalog-filter-apply").addEventListener("click", () => loadCatalogView());
 
 document.querySelectorAll(".nav-item").forEach((button) => {
   button.addEventListener("click", () => activateView(button.dataset.view));
