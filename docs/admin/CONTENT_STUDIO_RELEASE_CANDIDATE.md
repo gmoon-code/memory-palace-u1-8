@@ -60,6 +60,12 @@ The release candidate inherits the complete administrator acceptance suite from 
 
 The release-specific gate is `scripts/qa_content_studio_release_candidate.py`. It verifies the frozen implementation commit and tree, exact key Git objects, publication-off defaults, zero-cost lock, deterministic manifest expansion, student-site invariants, and the restriction that all post-freeze changes are release evidence only.
 
+## Clean install and recovery rehearsal
+
+The final practical RC1 gate is `scripts/qa_content_studio_rc1_clean_rehearsal.py`. It expands the exact frozen implementation into a clean temporary copy and verifies every tracked path, size, and Git blob before use. It then runs real first-use owner setup, local authentication, CSRF-protected draft editing, process restart persistence, Content Health, an allowlisted database repair, publication-lock enforcement, local backup creation, deliberate post-backup draft mutation, validated restore, post-recovery sign-in, updater-safety acceptance, and final byte-for-byte student-content invariants.
+
+The rehearsal uses no real teacher credentials, no hosted infrastructure, no cloud database, no paid API, no billing account, and no payment method. Publication, GitHub delivery, and merge remain disabled for the entire rehearsal. Details are recorded in `docs/admin/CONTENT_STUDIO_RC1_CLEAN_REHEARSAL.md`.
+
 ## Merge status
 
 This file does not authorize a merge into `main`. Production remains frozen until the release candidate has passed the complete GitHub Actions workflow on the exact final evidence head and a separate integration decision is made.
