@@ -56,8 +56,15 @@ def _raise_replacement_error(exc: Exception) -> None:
 @assets.get("/admin/drafts.js")
 def replacement_admin_loader():
     _admin_enabled()
+    # This is the canonical Content Studio boot chain. The first registered exact
+    # /admin/drafts.js route wins, so every administrator module that must be live
+    # is imported here explicitly.
     return Response(
-        'import "/admin/drafts-core.js";\nimport "/admin/replacement.js";\n',
+        'import "/admin/drafts-core.js";\n'
+        'import "/admin/replacement.js";\n'
+        'import "/admin/publication.js";\n'
+        'import "/admin/health-repair.js";\n'
+        'import "/admin/capability-audit.js";\n',
         media_type="text/javascript",
         headers={"Cache-Control": "no-store"},
     )

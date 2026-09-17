@@ -7,6 +7,7 @@ from pydantic import BaseModel, Field
 
 from . import (
     admin_auth,
+    admin_capability_routes,
     admin_drafts,
     admin_editor_routes,
     admin_health_routes,
@@ -247,8 +248,8 @@ def draft_compare(
 
 
 # Main imports one router. Keep draft, field-editor, replacement, management,
-# quality, publication, and local system-health APIs behind the same authenticated
-# Content Studio registration point.
+# quality, publication, system-health, and capability-audit APIs behind the same
+# authenticated Content Studio registration point.
 router = APIRouter()
 router.include_router(admin_replacement_routes.assets)
 router.include_router(admin_publication_routes.assets)
@@ -259,3 +260,4 @@ router.include_router(admin_management_routes.router)
 router.include_router(admin_quality_routes.router)
 router.include_router(admin_publication_routes.router)
 router.include_router(admin_health_routes.router)
+router.include_router(admin_capability_routes.router)
