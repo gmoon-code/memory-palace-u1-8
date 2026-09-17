@@ -85,9 +85,10 @@ function ensureGuide() {
 }
 
 function visible(node) {
-  if (!node) return false;
+  if (!node || !document.body.contains(node)) return false;
   if (node.classList.contains("hidden") || node.classList.contains("replacement-hidden")) return false;
-  return node.getClientRects().length > 0 || !document.body.contains(node) ? false : window.getComputedStyle(node).display !== "none";
+  const style = window.getComputedStyle(node);
+  return style.display !== "none" && style.visibility !== "hidden";
 }
 
 function textSuggestsUnsaved(node) {
