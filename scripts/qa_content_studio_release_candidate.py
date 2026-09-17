@@ -19,11 +19,14 @@ ALLOWED_EVIDENCE = {
     ".github/workflows/qa.yml",
     "docs/admin/CONTENT_STUDIO_RELEASE_CANDIDATE.md",
     "docs/admin/CONTENT_STUDIO_RC1_CLEAN_REHEARSAL.md",
+    "docs/admin/CONTENT_STUDIO_V1_RELEASE.md",
     "release/content-studio/VERSION",
     "release/content-studio/v1.0.0-rc1.json",
+    "release/content-studio/v1.0.0.json",
     "scripts/export_content_studio_release_manifest.py",
     "scripts/qa_content_studio_release_candidate.py",
     "scripts/qa_content_studio_rc1_clean_rehearsal.py",
+    "scripts/qa_content_studio_stable_release.py",
 }
 
 KEY_OBJECTS = {
@@ -63,9 +66,9 @@ def main() -> None:
     require(VERSION.exists(), "release VERSION file is missing")
     require((ROOT / "docs/admin/CONTENT_STUDIO_RC1_CLEAN_REHEARSAL.md").exists(), "clean rehearsal evidence document is missing")
     require((ROOT / "scripts/qa_content_studio_rc1_clean_rehearsal.py").exists(), "clean rehearsal gate is missing")
+    require(bool(VERSION.read_text(encoding="utf-8").strip()), "release VERSION file is empty")
     lock = json.loads(LOCK.read_text(encoding="utf-8"))
 
-    require(VERSION.read_text(encoding="utf-8").strip() == EXPECTED_VERSION, "VERSION does not match RC1")
     require(lock.get("version") == EXPECTED_VERSION, "release lock version mismatch")
     require(lock.get("implementation_commit") == EXPECTED_IMPLEMENTATION, "implementation commit changed")
     require(lock.get("implementation_tree") == EXPECTED_TREE, "implementation tree changed")
@@ -148,14 +151,15 @@ def main() -> None:
         require(first.read_bytes() == second.read_bytes(), "exact manifest expansion is not deterministic")
 
     print("CONTENT STUDIO RELEASE CANDIDATE QA PASS")
-    print(f"- version: {EXPECTED_VERSION}")
+    print(f"- historical RC1 version: {EXPECTED_VERSION}")
+    print(f"- current release pointer: {VERSION.read_text(encoding='utf-8').strip()}")
     print(f"- frozen implementation commit: {EXPECTED_IMPLEMENTATION}")
     print(f"- frozen implementation tree: {EXPECTED_TREE}")
     print(f"- exact tracked-file manifest entries: {expanded['file_count']}")
     print("- post-freeze changes are limited to release evidence")
     print("- published AP Biology content and student frontend match the production baseline")
     print("- local $0 operation and publication-off defaults remain locked")
-    print("- clean install and recovery rehearsal is present as release evidence")
+    print("- clean install and recovery rehearsal is present as historical RC1 evidence")
 
 
 if __name__ == "__main__":
