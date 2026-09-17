@@ -1,0 +1,68 @@
+{
+  "schema": "story-method-content-studio-release-candidate-1.0",
+  "release_id": "content-studio-v1.0.0-rc1",
+  "version": "1.0.0-rc1",
+  "status": "frozen-candidate",
+  "branch": "admin/content-studio-release-candidate",
+  "implementation_commit": "cdf4bb2a1ea91415dd1634323ac5ab40ccba863f",
+  "implementation_tree": "133a3bc9b00c2149662d4e6dba8517f0706b585c",
+  "baseline_main_commit": "6d561f19a19b07b9a386442d327db3ca12299bef",
+  "zero_cost_required": true,
+  "publication_defaults": {
+    "admin_enabled": false,
+    "publication_enabled": false,
+    "github_publication_enabled": false,
+    "github_merge_enabled": false
+  },
+  "frozen_runtime_scopes": [
+    "backend",
+    "frontend/admin",
+    "deploy/content-studio",
+    "Start Content Studio.cmd",
+    "Backup Content Studio.cmd",
+    "Restore Content Studio.cmd",
+    "Repair Content Studio.cmd",
+    "Update Content Studio.cmd",
+    ".env.example",
+    "requirements.txt"
+  ],
+  "acceptance_scopes": [
+    "scripts",
+    "tests",
+    ".github/workflows/qa.yml"
+  ],
+  "student_invariant_scopes": [
+    "content",
+    "frontend/index.html",
+    "frontend/css",
+    "frontend/js"
+  ],
+  "release_evidence_paths": [
+    "release/content-studio/",
+    "docs/admin/CONTENT_STUDIO_RELEASE_CANDIDATE.md",
+    "scripts/export_content_studio_release_manifest.py",
+    "scripts/qa_content_studio_release_candidate.py",
+    ".github/workflows/qa.yml"
+  ],
+  "exact_manifest": {
+    "identity_method": "git-commit-and-tree-object",
+    "repository_tree_sha": "133a3bc9b00c2149662d4e6dba8517f0706b585c",
+    "backend_tree_sha": "e50cc927229aaa04da05e9011242add339537993",
+    "frontend_admin_tree_sha": "5ca9e35331d68bd156c4b596911c430ba9ec17c3",
+    "frontend_student_js_tree_sha": "5df314588165696062ed431cba266154d8351ca5",
+    "env_example_blob_sha": "e9d3e685a128d5d827c2e576e947c10149f46c45",
+    "start_launcher_blob_sha": "b097e7babef109ed20a6b927b47ded3d58e3731b",
+    "backup_launcher_blob_sha": "5bcc9c28a78095057878bc2031cefe88dffd6bea",
+    "restore_launcher_blob_sha": "da85a766c0d5abeeeb6ce8a7665bcad076da9233",
+    "repair_launcher_blob_sha": "dbf331f485506da7f5fb4b8f43901f116b3fdd87",
+    "update_launcher_blob_sha": "6801056db3ba6ff80b0a11efe0bd90965db05974",
+    "expansion_command": "python scripts/export_content_studio_release_manifest.py --ref cdf4bb2a1ea91415dd1634323ac5ab40ccba863f --output /tmp/content-studio-v1.0.0-rc1-files.json"
+  },
+  "safety_contract": {
+    "published_curriculum_unchanged_until_explicit_publication": true,
+    "student_site_unchanged_by_release_evidence": true,
+    "private_state_remains_git_ignored": true,
+    "local_zero_cost_operation_required": true,
+    "publication_gates_remain_off_by_default": true
+  }
+}
