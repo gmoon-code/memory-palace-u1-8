@@ -84,6 +84,7 @@ jobs:
       - run: python scripts/qa_zero_cost_local_updater.py
       - run: python scripts/qa_content_studio_health_repair.py
       - run: python scripts/qa_admin_capability_audit.py
+      - run: python scripts/qa_admin_workflow.py
       - run: docker build -f deploy/content-studio/Dockerfile -t story-method-content-studio:ci .
       - name: Smoke production Content Studio container with admin gates off
         run: |
@@ -115,6 +116,7 @@ jobs:
       - run: node --check frontend/admin/publication.js
       - run: node --check frontend/admin/health-repair.js
       - run: node --check frontend/admin/capability-audit.js
+      - run: node --check frontend/admin/workflow.js
       - run: node --check scripts/qa_github_pages_static.mjs
       - run: python -m compileall -q backend scripts tests
       - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-a.zip
