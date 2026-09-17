@@ -12,6 +12,8 @@ VERSION = ROOT / "release" / "content-studio" / "VERSION"
 EXPECTED_VERSION = "1.0.0"
 EXPECTED_STABLE_BASELINE = "562f09e1d72f3bceaa3f97cf3b19d7683c864877"
 EXPECTED_STABLE_TREE = "53e7182c271f0a82a473e527b0f2c77c16a4ae85"
+EXPECTED_STABLE_PROMOTION = "4727a86b3670f0375b66191849e76c2912a40e46"
+EXPECTED_STABLE_PROMOTION_TREE = "429332c7c465e98f46975499584e8be8b0045348"
 EXPECTED_RC1_HEAD = "0fef459bde6fb913f186c91df8f5492f58f2fa9b"
 EXPECTED_IMPLEMENTATION = "cdf4bb2a1ea91415dd1634323ac5ab40ccba863f"
 EXPECTED_IMPLEMENTATION_TREE = "133a3bc9b00c2149662d4e6dba8517f0706b585c"
@@ -22,6 +24,15 @@ ALLOWED_STABLE_EVIDENCE = {
     "docs/admin/CONTENT_STUDIO_V1_RELEASE.md",
     "release/content-studio/VERSION",
     "release/content-studio/v1.0.0.json",
+    "scripts/qa_content_studio_release_candidate.py",
+    "scripts/qa_content_studio_stable_release.py",
+}
+
+ALLOWED_POST_STABLE_MAINTENANCE = {
+    "Backup Content Studio.cmd",
+    "Restore Content Studio.cmd",
+    "scripts/backup_content_studio_local.py",
+    "scripts/qa_zero_cost_backup_restore.py",
     "scripts/qa_content_studio_release_candidate.py",
     "scripts/qa_content_studio_stable_release.py",
 }
@@ -108,42 +119,43 @@ def main() -> None:
     require(stable_tree == EXPECTED_STABLE_TREE, "stable baseline tree changed")
     require(git_text("rev-parse", f"{EXPECTED_RC1_HEAD}^{{tree}}") == EXPECTED_STABLE_TREE, "RC1 evidence tree differs from merged stable tree")
     require(git_text("rev-parse", f"{EXPECTED_IMPLEMENTATION}^{{tree}}") == EXPECTED_IMPLEMENTATION_TREE, "implementation tree changed")
+    require(git_text("rev-parse", f"{EXPECTED_STABLE_PROMOTION}^{{tree}}") == EXPECTED_STABLE_PROMOTION_TREE, "stable promotion tree changed")
 
     parent_line = git_text("rev-list", "--parents", "-n", "1", EXPECTED_STABLE_BASELINE).split()
     require(len(parent_line) == 3, "stable integration commit is not a two-parent merge")
     require(parent_line[1] == EXPECTED_PRE_INTEGRATION_MAIN, "stable merge first parent is not the locked production baseline")
     require(parent_line[2] == EXPECTED_RC1_HEAD, "stable merge second parent is not the approved RC1 head")
 
-    ancestor = git("merge-base", "--is-ancestor", EXPECTED_STABLE_BASELINE, "HEAD", check=False)
-    require(ancestor.returncode == 0, "stable baseline is not an ancestor of the release metadata head")
+    ancestor = git("merge-base", "--is-ancestor", EXPECTED_STABLE_PROMOTION, "HEAD", check=False)
+    require(ancestor.returncode == 0, "stable promotion is not an ancestor of the current maintenance head")
 
-    changed_after_stable = {
+    promotion_changes = {
         line.strip()
-        for line in git_text("diff", "--name-only", f"{EXPECTED_STABLE_BASELINE}..HEAD").splitlines()
+        for line in git_text("diff", "--name-only", f"{EXPECTED_STABLE_BASELINE}..{EXPECTED_STABLE_PROMOTION}").splitlines()
         if line.strip()
     }
-    unexpected = sorted(changed_after_stable - ALLOWED_STABLE_EVIDENCE)
-    require(not unexpected, f"non-release files changed after stable baseline: {unexpected}")
+    require(not sorted(promotion_changes - ALLOWED_STABLE_EVIDENCE), "v1.0.0 promotion contains non-evidence files")
 
-    runtime_diff = git(
-        "diff",
-        "--quiet",
-        EXPECTED_STABLE_BASELINE,
-        "HEAD",
-        "--",
-        *RUNTIME_PATHS,
-        check=False,
+    promotion_runtime_diff = git(
+        "diff", "--quiet", EXPECTED_STABLE_BASELINE, EXPECTED_STABLE_PROMOTION, "--", *RUNTIME_PATHS, check=False
     )
-    require(runtime_diff.returncode == 0, "administrator runtime changed during v1.0.0 promotion")
+    require(promotion_runtime_diff.returncode == 0, "administrator runtime changed during v1.0.0 promotion")
+
+    maintenance_changes = {
+        line.strip()
+        for line in git_text("diff", "--name-only", f"{EXPECTED_STABLE_PROMOTION}..HEAD").splitlines()
+        if line.strip()
+    }
+    unexpected_maintenance = sorted(maintenance_changes - ALLOWED_POST_STABLE_MAINTENANCE)
+    require(not unexpected_maintenance, f"unexpected post-stable maintenance files: {unexpected_maintenance}")
+
+    student_after_stable = git(
+        "diff", "--quiet", EXPECTED_STABLE_PROMOTION, "HEAD", "--", *STUDENT_PATHS, check=False
+    )
+    require(student_after_stable.returncode == 0, "post-stable maintenance changed published curriculum or student frontend")
 
     student_diff = git(
-        "diff",
-        "--quiet",
-        EXPECTED_PRE_INTEGRATION_MAIN,
-        EXPECTED_STABLE_BASELINE,
-        "--",
-        *STUDENT_PATHS,
-        check=False,
+        "diff", "--quiet", EXPECTED_PRE_INTEGRATION_MAIN, EXPECTED_STABLE_BASELINE, "--", *STUDENT_PATHS, check=False
     )
     require(student_diff.returncode == 0, "integration changed published curriculum or student frontend")
 
@@ -151,7 +163,7 @@ def main() -> None:
         actual = git_text("rev-parse", f"{EXPECTED_STABLE_BASELINE}:{path}")
         require(actual == expected_object, f"stable runtime object mismatch for {path}: {actual}")
 
-    env_text = git_text("show", f"{EXPECTED_STABLE_BASELINE}:.env.example")
+    env_text = git_text("show", "HEAD:.env.example")
     for gate in (
         "MEMORY_PALACE_ADMIN_ENABLED=false",
         "MEMORY_PALACE_ADMIN_PUBLICATION_ENABLED=false",
@@ -169,11 +181,10 @@ def main() -> None:
 
     print("CONTENT STUDIO STABLE RELEASE QA PASS")
     print(f"- version: {EXPECTED_VERSION}")
-    print(f"- stable baseline commit: {EXPECTED_STABLE_BASELINE}")
-    print(f"- stable baseline tree: {EXPECTED_STABLE_TREE}")
-    print(f"- approved RC1 head: {EXPECTED_RC1_HEAD}")
-    print("- promotion changes are limited to stable release evidence")
-    print("- administrator runtime is byte-identical to the validated merged baseline")
+    print(f"- stable runtime baseline: {EXPECTED_STABLE_BASELINE}")
+    print(f"- stable promotion commit: {EXPECTED_STABLE_PROMOTION}")
+    print("- original v1.0.0 promotion remains metadata-only")
+    print("- post-stable maintenance is restricted to the Windows backup/restore hotfix allowlist")
     print("- published AP Biology content and student frontend remain unchanged")
     print("- local $0 operation and publication-off defaults remain locked")
 

@@ -28,8 +28,16 @@ def sha256_file(path: Path) -> str:
 def _copy_sqlite_snapshot(source: Path, target: Path) -> None:
     target.parent.mkdir(parents=True, exist_ok=True)
     source_uri = f"file:{source.resolve().as_posix()}?mode=ro"
-    with sqlite3.connect(source_uri, uri=True) as src, sqlite3.connect(target) as dst:
+    src = sqlite3.connect(source_uri, uri=True)
+    dst = sqlite3.connect(target)
+    try:
         src.backup(dst)
+    finally:
+        # sqlite3.Connection context managers commit/rollback but do not close
+        # the connection object. Explicit close is required on Windows so the
+        # temporary snapshot can be removed when the backup workspace exits.
+        dst.close()
+        src.close()
 
 
 def _snapshot_state(state_dir: Path, snapshot_dir: Path) -> list[Path]:
