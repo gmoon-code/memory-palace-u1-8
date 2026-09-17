@@ -3,6 +3,12 @@ from __future__ import annotations
 import argparse
 import os
 from pathlib import Path
+import sys
+
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 
 def load_env_file(path: Path) -> None:
@@ -68,7 +74,8 @@ def main() -> None:
     if port < 1024 or port > 65535:
         raise SystemExit("MEMORY_PALACE_PORT must be between 1024 and 65535")
 
-    Path("server_data").mkdir(parents=True, exist_ok=True)
+    (ROOT / "server_data").mkdir(parents=True, exist_ok=True)
+    os.chdir(ROOT)
 
     import uvicorn
 
