@@ -40,7 +40,7 @@ If Python is missing, the Windows launcher stops before creating Content Studio 
 
 ## Local backup and restore
 
-Content Studio now has a second protection layer for the local-only architecture. Double-click `Backup Content Studio.cmd` to create a timestamped ZIP archive in the ignored `content-studio-backups` folder. The backup tool uses SQLite's backup API for `.sqlite3` files, so each database is captured as a consistent SQLite snapshot even if write-ahead-log files exist. Media staging and other files under `server_data` are copied into the same archive.
+Content Studio has a local protection layer for the zero-cost architecture. Double-click `Backup Content Studio.cmd` to create a timestamped ZIP archive in the ignored `content-studio-backups` folder. The backup tool uses SQLite's backup API for `.sqlite3` files, so each database is captured as a consistent SQLite snapshot even if write-ahead-log files exist. Media staging and other files under `server_data` are copied into the same archive.
 
 Every archive contains a manifest with the backup format version, file list, file sizes, and SHA-256 digests. A separate `.sha256` checksum file is created beside the ZIP. The local credential file is deliberately excluded. Password hashes, session secrets, `.env` files, the virtual environment, source code, and Git metadata are not placed inside a state backup.
 
@@ -49,6 +49,20 @@ Double-click `Restore Content Studio.cmd` to restore a backup. Content Studio sh
 Restoring state does not replace the owner credential file. If a computer is replaced, copy the repository and backup archive to the new computer, run `Start Content Studio.cmd` once to create a new local owner credential file, stop Content Studio, and then restore the backup. Existing drafts, revisions, snapshots, staged media, audit history, and other backed-up local state can then be recovered while the new local owner credentials remain in control.
 
 Backup archives remain local by default and are ignored by Git. They can be copied manually to another storage device if desired without purchasing cloud storage.
+
+## Safe local updates
+
+`Update Content Studio.cmd` provides the local zero-cost update path. Content Studio must be stopped first. The updater uses the free Git client and accepts updates only from the official `gmoon-code/memory-palace-u1-8` GitHub repository on an approved Content Studio update branch. It refuses detached checkouts, local source changes, unexpected remotes, rewritten branch history, and non-fast-forward updates.
+
+The updater fetches the candidate commit without applying it. It then queries the public GitHub Actions metadata for that exact commit and requires a completed successful `Memory Palace QA` run. A different commit's successful run does not authorize the candidate. If GitHub cannot be reached or the exact commit has not passed the required workflow, the updater stops before changing code.
+
+Before applying a validated update, the updater creates a normal local Content Studio state backup and a code-recovery record containing the current commit, target commit, branch, and backup path. Local credentials remain ignored and untouched. The code update itself is restricted to a Git fast-forward.
+
+After the fast-forward, the updater synchronizes the repository's open-source Python requirements and runs the local zero-cost rehearsal, runtime smoke test, Windows-launcher QA, backup-and-restore QA, updater QA, and Python compilation checks. If local validation fails, the updater automatically resets the tracked code to the previously working commit and resynchronizes that version's requirements. The safety backup and recovery record remain available.
+
+The updater never publishes AP Biology content, never enables GitHub merge controls, never exposes Content Studio to the public internet, and never enrolls the computer in a paid service. It also does not use an unconstrained `git pull` operation.
+
+A checkout downloaded only as a ZIP is not modified by the updater because there is no Git history available for safe fast-forward and rollback verification. In that case, the current local Content Studio remains usable. A normal Git clone using the free Git client is required before using the automatic updater.
 
 ## Command-line local start
 
@@ -77,6 +91,12 @@ python scripts/backup_content_studio_local.py
 python scripts/restore_content_studio_local.py path/to/content-studio-backup-YYYYMMDD-HHMMSSZ.zip
 ```
 
+The safe updater can also be run from the command line after Content Studio is stopped.
+
+```bash
+python scripts/update_content_studio_local.py
+```
+
 ## Rehearsal verification
 
 The repository QA performs a fully automated local-only rehearsal with temporary credentials. It starts Content Studio on loopback, performs the authenticated read-only deployment smoke test, stops the process, starts it again, repeats the authenticated smoke test, and checks that the local security database retained audit state across the restart.
@@ -84,6 +104,8 @@ The repository QA performs a fully automated local-only rehearsal with temporary
 A separate Windows-launcher QA verifies that the one-click launcher uses only the local virtual environment, local credential file, loopback server, ignored state directory, and the repository's open-source Python dependencies. It also verifies that publication and merge controls remain locked off.
 
 Backup and restore QA builds a temporary SQLite database and media file, creates a real backup, changes the local state, restores the archive, and verifies that the original data returns. It also tampers with a backup and verifies that hash validation rejects the archive without changing state. The test confirms that credentials are excluded and that a safety backup is created before overwriting existing local state.
+
+Updater QA verifies branch and origin restrictions, exact-commit workflow approval, fast-forward requirements, the stopped-server precondition, and real Git fast-forward and rollback behavior inside a temporary repository. It does not contact a paid provider or alter published curriculum content.
 
 The rehearsal intentionally does not publish content, create GitHub release branches, merge pull requests, expose Content Studio to the public internet, or require a cloud provider.
 
