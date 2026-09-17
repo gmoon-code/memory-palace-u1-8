@@ -16,6 +16,9 @@ import urllib.request
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 BACKUP_DIR = ROOT / "content-studio-backups"
 ENV_FILE = ROOT / ".env.content-studio-local"
 VENV_DIR = ROOT / ".venv"
@@ -27,7 +30,9 @@ ALLOWED_BRANCHES = {"admin/content-studio-local-updater", "main"}
 APPROVED_ORIGINS = {
     "https://github.com/gmoon-code/memory-palace-u1-8",
     "https://github.com/gmoon-code/memory-palace-u1-8.git",
+    "git@github.com:gmoon-code/memory-palace-u1-8",
     "git@github.com:gmoon-code/memory-palace-u1-8.git",
+    "ssh://git@github.com/gmoon-code/memory-palace-u1-8",
     "ssh://git@github.com/gmoon-code/memory-palace-u1-8.git",
 }
 VALIDATION_COMMANDS = (
