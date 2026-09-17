@@ -5,7 +5,13 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from backend import admin_auth, admin_capabilities, admin_capability_routes, admin_draft_routes
+from backend import (
+    admin_auth,
+    admin_capabilities,
+    admin_capability_routes,
+    admin_draft_routes,
+    admin_replacement_routes,
+)
 from backend import main as main_module
 
 PASSWORD = "correct-horse-battery-staple"
@@ -19,6 +25,7 @@ def client(monkeypatch: pytest.MonkeyPatch, tmp_path: Path):
     monkeypatch.setattr(main_module, "ADMIN_ENABLED", True)
     monkeypatch.setattr(admin_draft_routes, "ADMIN_ENABLED", True)
     monkeypatch.setattr(admin_capability_routes, "ADMIN_ENABLED", True)
+    monkeypatch.setattr(admin_replacement_routes, "ADMIN_ENABLED", True)
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_USERNAME", USERNAME)
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_PASSWORD_HASH", password_hash)
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_SESSION_SECRET", SESSION_SECRET)
