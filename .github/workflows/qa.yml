@@ -82,6 +82,7 @@ jobs:
       - run: python scripts/qa_zero_cost_windows_launcher.py
       - run: python scripts/qa_zero_cost_backup_restore.py
       - run: python scripts/qa_zero_cost_local_updater.py
+      - run: python scripts/qa_content_studio_health_repair.py
       - run: docker build -f deploy/content-studio/Dockerfile -t story-method-content-studio:ci .
       - name: Smoke production Content Studio container with admin gates off
         run: |
@@ -111,6 +112,7 @@ jobs:
       - run: node --check frontend/admin/management.js
       - run: node --check frontend/admin/quality.js
       - run: node --check frontend/admin/publication.js
+      - run: node --check frontend/admin/health-repair.js
       - run: node --check scripts/qa_github_pages_static.mjs
       - run: python -m compileall -q backend scripts tests
       - run: python scripts/build_site_ux1_release.py --output /tmp/site-ux1-a.zip

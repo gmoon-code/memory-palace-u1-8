@@ -9,6 +9,7 @@ from . import (
     admin_auth,
     admin_drafts,
     admin_editor_routes,
+    admin_health_routes,
     admin_management_routes,
     admin_publication_routes,
     admin_quality_routes,
@@ -246,7 +247,8 @@ def draft_compare(
 
 
 # Main imports one router. Keep draft, field-editor, replacement, management,
-# quality, and publication APIs behind the same authenticated Content Studio registration point.
+# quality, publication, and local system-health APIs behind the same authenticated
+# Content Studio registration point.
 router = APIRouter()
 router.include_router(admin_replacement_routes.assets)
 router.include_router(admin_publication_routes.assets)
@@ -256,3 +258,4 @@ router.include_router(admin_replacement_routes.router)
 router.include_router(admin_management_routes.router)
 router.include_router(admin_quality_routes.router)
 router.include_router(admin_publication_routes.router)
+router.include_router(admin_health_routes.router)
