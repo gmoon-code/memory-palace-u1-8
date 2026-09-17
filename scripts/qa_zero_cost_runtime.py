@@ -11,10 +11,14 @@ import time
 import urllib.error
 import urllib.request
 
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from backend.admin_auth import hash_password
 
 
-ROOT = Path(__file__).resolve().parents[1]
 RUNNER = ROOT / "scripts" / "run_content_studio_local.py"
 SMOKE = ROOT / "scripts" / "smoke_content_studio.py"
 USERNAME = "ci-zero-cost-owner"
