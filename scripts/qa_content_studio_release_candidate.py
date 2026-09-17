@@ -29,6 +29,15 @@ ALLOWED_EVIDENCE = {
     "scripts/qa_content_studio_stable_release.py",
 }
 
+# Historical RC1 remains frozen. These files are narrowly scoped post-release
+# maintenance discovered during the clean Windows teacher acceptance rehearsal.
+ALLOWED_POST_RELEASE_MAINTENANCE = {
+    "Backup Content Studio.cmd",
+    "Restore Content Studio.cmd",
+    "scripts/backup_content_studio_local.py",
+    "scripts/qa_zero_cost_backup_restore.py",
+}
+
 KEY_OBJECTS = {
     "backend": "e50cc927229aaa04da05e9011242add339537993",
     "frontend/admin": "5ca9e35331d68bd156c4b596911c430ba9ec17c3",
@@ -88,8 +97,9 @@ def main() -> None:
         for line in git_text("diff", "--name-only", f"{EXPECTED_IMPLEMENTATION}..HEAD").splitlines()
         if line.strip()
     }
-    unexpected = sorted(changed_after_freeze - ALLOWED_EVIDENCE)
-    require(not unexpected, f"runtime changed after freeze: {unexpected}")
+    allowed_after_freeze = ALLOWED_EVIDENCE | ALLOWED_POST_RELEASE_MAINTENANCE
+    unexpected = sorted(changed_after_freeze - allowed_after_freeze)
+    require(not unexpected, f"unexpected changes after frozen RC1: {unexpected}")
 
     student_diff = git(
         "diff",
@@ -156,7 +166,7 @@ def main() -> None:
     print(f"- frozen implementation commit: {EXPECTED_IMPLEMENTATION}")
     print(f"- frozen implementation tree: {EXPECTED_TREE}")
     print(f"- exact tracked-file manifest entries: {expanded['file_count']}")
-    print("- post-freeze changes are limited to release evidence")
+    print("- historical RC1 remains frozen; narrowly scoped post-release maintenance is separately allowlisted")
     print("- published AP Biology content and student frontend match the production baseline")
     print("- local $0 operation and publication-off defaults remain locked")
     print("- clean install and recovery rehearsal is present as historical RC1 evidence")
