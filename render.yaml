@@ -1,0 +1,43 @@
+services:
+  - type: web
+    name: story-method-content-studio-rehearsal
+    runtime: docker
+    repo: https://github.com/gmoon-code/memory-palace-u1-8
+    branch: admin/content-studio-render-rehearsal
+    region: singapore
+    plan: starter
+    autoDeployTrigger: off
+    dockerfilePath: ./deploy/content-studio/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    numInstances: 1
+    maxShutdownDelaySeconds: 30
+    disk:
+      name: content-studio-data
+      mountPath: /app/server_data
+      sizeGB: 1
+    envVars:
+      - key: MEMORY_PALACE_ENV
+        value: production
+      - key: MEMORY_PALACE_ADMIN_ENABLED
+        value: "true"
+      - key: MEMORY_PALACE_ADMIN_USERNAME
+        sync: false
+      - key: MEMORY_PALACE_ADMIN_PASSWORD_HASH
+        sync: false
+      - key: MEMORY_PALACE_ADMIN_SESSION_SECRET
+        generateValue: true
+      - key: MEMORY_PALACE_ADMIN_DB
+        value: /app/server_data/admin-security.sqlite3
+      - key: MEMORY_PALACE_ADMIN_DRAFT_DB
+        value: /app/server_data/content-studio-drafts.sqlite3
+      - key: MEMORY_PALACE_ADMIN_PUBLICATION_ENABLED
+        value: "false"
+      - key: MEMORY_PALACE_ADMIN_PUBLICATION_DB
+        value: /app/server_data/content-studio-publication.sqlite3
+      - key: MEMORY_PALACE_ADMIN_PUBLICATION_DIR
+        value: /app/server_data/content-studio-publications
+      - key: MEMORY_PALACE_GITHUB_PUBLICATION_ENABLED
+        value: "false"
+      - key: MEMORY_PALACE_GITHUB_ALLOW_MERGE
+        value: "false"
