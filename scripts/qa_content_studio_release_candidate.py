@@ -121,11 +121,17 @@ def main() -> None:
         "backend/admin_publication.py",
         "frontend/admin/workflow.js",
         "frontend/admin/usability.js",
-        "scripts/local_content_studio.py",
-        "scripts/content_studio_backup.py",
-        "scripts/update_content_studio.py",
+        "scripts/bootstrap_content_studio_windows.py",
+        "scripts/backup_content_studio_local.py",
+        "scripts/restore_content_studio_local.py",
+        "scripts/repair_content_studio_local.py",
+        "scripts/update_content_studio_local.py",
         "tests/test_admin_acceptance_workflows.py",
         "Start Content Studio.cmd",
+        "Backup Content Studio.cmd",
+        "Restore Content Studio.cmd",
+        "Repair Content Studio.cmd",
+        "Update Content Studio.cmd",
     ):
         require(required in paths, f"exact manifest is missing {required}")
 
