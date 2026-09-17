@@ -77,6 +77,8 @@ jobs:
       - run: python scripts/qa_admin_quality.py
       - run: python scripts/qa_admin_publication.py
       - run: python scripts/qa_content_studio_integration.py
+      - run: python scripts/qa_zero_cost_rehearsal.py
+      - run: python scripts/qa_zero_cost_runtime.py
       - run: docker build -f deploy/content-studio/Dockerfile -t story-method-content-studio:ci .
       - name: Smoke production Content Studio container with admin gates off
         run: |
