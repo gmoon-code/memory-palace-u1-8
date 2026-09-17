@@ -11,22 +11,25 @@ echo ================================================
 echo.
 
 where py >nul 2>nul
-if %errorlevel%==0 (
+if not errorlevel 1 (
   set "PYTHON_COMMAND=py -3"
-) else (
-  where python >nul 2>nul
-  if %errorlevel%==0 (
-    set "PYTHON_COMMAND=python"
-  ) else (
-    echo Python was not found on this computer.
-    echo Install a free Python 3 release, then double-click this file again.
-    echo No account, hosting plan, billing method, or paid service is required.
-    echo.
-    pause
-    exit /b 1
-  )
+  goto :python_found
 )
 
+where python >nul 2>nul
+if not errorlevel 1 (
+  set "PYTHON_COMMAND=python"
+  goto :python_found
+)
+
+echo Python was not found on this computer.
+echo Install a free Python 3 release, then double-click this file again.
+echo No account, hosting plan, billing method, or paid service is required.
+echo.
+pause
+exit /b 1
+
+:python_found
 %PYTHON_COMMAND% "%~dp0scripts\bootstrap_content_studio_windows.py"
 set "CONTENT_STUDIO_EXIT=%errorlevel%"
 
