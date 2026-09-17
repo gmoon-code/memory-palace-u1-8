@@ -15,18 +15,21 @@ def main() -> None:
     routes = ROOT / "backend" / "admin_draft_routes.py"
     main_py = (ROOT / "backend" / "main.py").read_text(encoding="utf-8")
     html = (ROOT / "frontend" / "admin" / "index.html").read_text(encoding="utf-8")
-    js = ROOT / "frontend" / "admin" / "drafts.js"
+    bootstrap = ROOT / "frontend" / "admin" / "drafts.js"
+    js = ROOT / "frontend" / "admin" / "drafts_core.js"
     css = ROOT / "frontend" / "admin" / "drafts.css"
     env = (ROOT / ".env.example").read_text(encoding="utf-8")
     ignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
 
     require(drafts.is_file(), "backend/admin_drafts.py is missing")
     require(routes.is_file(), "backend/admin_draft_routes.py is missing")
-    require(js.is_file(), "frontend/admin/drafts.js is missing")
+    require(bootstrap.is_file(), "frontend/admin/drafts.js bootstrap is missing")
+    require(js.is_file(), "frontend/admin/drafts_core.js is missing")
     require(css.is_file(), "frontend/admin/drafts.css is missing")
 
     draft_text = drafts.read_text(encoding="utf-8")
     route_text = routes.read_text(encoding="utf-8")
+    bootstrap_text = bootstrap.read_text(encoding="utf-8")
     js_text = js.read_text(encoding="utf-8")
 
     require("content_drafts" in draft_text, "draft table is missing")
@@ -55,6 +58,8 @@ def main() -> None:
     require("Draft Workspace" in html, "Draft Workspace navigation is missing")
     require("Advanced structured draft payload" in html, "Step 4 working-copy editor is missing")
     require("/admin/drafts.js" in html and "/admin/drafts.css" in html, "draft UI assets are not loaded")
+    require('import "./drafts_core.js";' in bootstrap_text, "draft bootstrap does not load the working-copy module")
+    require('import "./publication.js";' in bootstrap_text, "Content Studio bootstrap does not load Step 9 publication controls")
     require('method: "PATCH"' in js_text, "autosave draft PATCH is missing")
     require("restoreRevision" in js_text and "restoreSnapshot" in js_text, "revision restoration controls are missing")
     require("scheduleTitleAutosave" in js_text, "autosave behavior is missing")
@@ -66,6 +71,7 @@ def main() -> None:
     print("- named snapshots and revision restore are non-destructive")
     print("- archive and restore preserve history")
     print("- all draft mutations require authenticated CSRF-protected requests")
+    print("- Content Studio bootstrap loads controlled publication")
     print("- published AP Biology content remains locked")
 
 
