@@ -93,11 +93,28 @@ def test_canonical_admin_loader_boots_late_stage_modules(client):
     response = client.get("/admin/drafts.js")
     assert response.status_code == 200
     source = response.text
-    for module in (
+    modules = (
         "/admin/drafts-core.js",
         "/admin/replacement.js",
         "/admin/publication.js",
         "/admin/health-repair.js",
         "/admin/capability-audit.js",
-    ):
+        "/admin/workflow.js",
+    )
+    for module in modules:
         assert f'import "{module}"' in source
+    assert source.rfind('import "/admin/workflow.js"') > source.rfind('import "/admin/capability-audit.js"')
+
+
+def test_workflow_asset_preserves_context_without_automatic_mutations(client):
+    login(client)
+    response = client.get("/admin/workflow.js")
+    assert response.status_code == 200
+    source = response.text
+    assert "story-method-content-studio-workflow-context-v1" in source
+    assert "sessionStorage" in source
+    assert "workflow-version-history" in source
+    for stage in ("browse", "edit", "draft", "preview", "validate", "publish", "recover"):
+        assert f'data-workflow-stage="{stage}"' in source
+    assert 'method: "POST"' not in source
+    assert "content/ap-biology" not in source
