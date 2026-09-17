@@ -16,3 +16,4 @@ UNIT8_DIR = APBIO_DIR / "unit-8"
 HOST = os.getenv("MEMORY_PALACE_HOST", "0.0.0.0")
 PORT = int(os.getenv("MEMORY_PALACE_PORT", "8000"))
 ENV = os.getenv("MEMORY_PALACE_ENV", "development")
+ADMIN_ENABLED = os.getenv("MEMORY_PALACE_ADMIN_ENABLED", "false").strip().lower() in {"1", "true", "yes", "on"}
