@@ -100,9 +100,17 @@ def main() -> None:
     updater = load_updater()
     if updater.ALLOWED_BRANCHES != {"admin/content-studio-local-updater", "main"}:
         fail("approved updater branches are broader than the locked release channels")
-    for origin in updater.APPROVED_ORIGINS:
-        if "github.com/gmoon-code/memory-palace-u1-8" not in origin:
-            fail(f"unexpected approved origin: {origin}")
+
+    expected_origins = {
+        "https://github.com/gmoon-code/memory-palace-u1-8",
+        "https://github.com/gmoon-code/memory-palace-u1-8.git",
+        "git@github.com:gmoon-code/memory-palace-u1-8",
+        "git@github.com:gmoon-code/memory-palace-u1-8.git",
+        "ssh://git@github.com/gmoon-code/memory-palace-u1-8",
+        "ssh://git@github.com/gmoon-code/memory-palace-u1-8.git",
+    }
+    if updater.APPROVED_ORIGINS != expected_origins:
+        fail("approved origin set does not exactly match the official HTTPS and SSH repository forms")
 
     updater.require_approved_branch("admin/content-studio-local-updater")
     updater.require_approved_branch("main")
