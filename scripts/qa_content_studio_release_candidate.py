@@ -18,10 +18,12 @@ EXPECTED_BASELINE_MAIN = "6d561f19a19b07b9a386442d327db3ca12299bef"
 ALLOWED_EVIDENCE = {
     ".github/workflows/qa.yml",
     "docs/admin/CONTENT_STUDIO_RELEASE_CANDIDATE.md",
+    "docs/admin/CONTENT_STUDIO_RC1_CLEAN_REHEARSAL.md",
     "release/content-studio/VERSION",
     "release/content-studio/v1.0.0-rc1.json",
     "scripts/export_content_studio_release_manifest.py",
     "scripts/qa_content_studio_release_candidate.py",
+    "scripts/qa_content_studio_rc1_clean_rehearsal.py",
 }
 
 KEY_OBJECTS = {
@@ -59,6 +61,8 @@ def git_text(*args: str) -> str:
 def main() -> None:
     require(LOCK.exists(), "release lock is missing")
     require(VERSION.exists(), "release VERSION file is missing")
+    require((ROOT / "docs/admin/CONTENT_STUDIO_RC1_CLEAN_REHEARSAL.md").exists(), "clean rehearsal evidence document is missing")
+    require((ROOT / "scripts/qa_content_studio_rc1_clean_rehearsal.py").exists(), "clean rehearsal gate is missing")
     lock = json.loads(LOCK.read_text(encoding="utf-8"))
 
     require(VERSION.read_text(encoding="utf-8").strip() == EXPECTED_VERSION, "VERSION does not match RC1")
@@ -135,7 +139,6 @@ def main() -> None:
     ):
         require(required in paths, f"exact manifest is missing {required}")
 
-    # Exercise deterministic serialization without adding generated files to Git.
     with tempfile.TemporaryDirectory(prefix="content-studio-rc-") as temporary:
         first = Path(temporary) / "manifest-a.json"
         second = Path(temporary) / "manifest-b.json"
@@ -152,6 +155,7 @@ def main() -> None:
     print("- post-freeze changes are limited to release evidence")
     print("- published AP Biology content and student frontend match the production baseline")
     print("- local $0 operation and publication-off defaults remain locked")
+    print("- clean install and recovery rehearsal is present as release evidence")
 
 
 if __name__ == "__main__":
