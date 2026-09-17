@@ -24,22 +24,38 @@ def assert_true(condition: bool, message: str) -> None:
 def main() -> None:
     backup_launcher = (ROOT / "Backup Content Studio.cmd").read_text(encoding="utf-8")
     restore_launcher = (ROOT / "Restore Content Studio.cmd").read_text(encoding="utf-8")
+    backup_tool = (ROOT / "scripts" / "backup_content_studio_local.py").read_text(encoding="utf-8")
     gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
 
     assert_true("backup_content_studio_local.py" in backup_launcher, "backup launcher is not wired to backup tool")
     assert_true("restore_content_studio_local.py" in restore_launcher, "restore launcher is not wired to restore tool")
+    assert_true(
+        '"%PYTHON_EXE%" %PYTHON_ARGS% "%~dp0scripts\\backup_content_studio_local.py"' in backup_launcher,
+        "backup launcher does not quote the Python executable for Windows paths containing spaces",
+    )
+    assert_true(
+        '"%PYTHON_EXE%" %PYTHON_ARGS% "%~dp0scripts\\restore_content_studio_local.py"' in restore_launcher,
+        "restore launcher does not quote the Python executable for Windows paths containing spaces",
+    )
+    assert_true(
+        "dst.close()" in backup_tool and "src.close()" in backup_tool,
+        "SQLite snapshot connections are not explicitly closed for Windows temporary-file cleanup",
+    )
     assert_true("content-studio-backups/" in gitignore, "local backup directory is not ignored by Git")
 
-    with tempfile.TemporaryDirectory(prefix="content-studio-backup-qa-") as tmp_raw:
+    with tempfile.TemporaryDirectory(prefix="content studio backup qa ") as tmp_raw:
         root = Path(tmp_raw)
-        state = root / "server_data"
-        backups = root / "backups"
+        state = root / "server data"
+        backups = root / "backup archives"
         state.mkdir()
         database = state / "content-studio-drafts.sqlite3"
-        with sqlite3.connect(database) as connection:
+        connection = sqlite3.connect(database)
+        try:
             connection.execute("CREATE TABLE notes (value TEXT NOT NULL)")
             connection.execute("INSERT INTO notes(value) VALUES (?)", ("original",))
             connection.commit()
+        finally:
+            connection.close()
         media = state / "content-studio-media" / "sample.txt"
         media.parent.mkdir(parents=True)
         media.write_text("original-media", encoding="utf-8")
@@ -56,16 +72,22 @@ def main() -> None:
             assert_true(manifest.get("contains_credentials") is False, "manifest does not lock credentials out")
             assert_true(manifest.get("file_count") == 2, "unexpected backup file count")
 
-        with sqlite3.connect(database) as connection:
+        connection = sqlite3.connect(database)
+        try:
             connection.execute("UPDATE notes SET value = ?", ("changed",))
             connection.commit()
+        finally:
+            connection.close()
         media.write_text("changed-media", encoding="utf-8")
         (state / "temporary.txt").write_text("remove-me", encoding="utf-8")
 
         safety = restore_backup(archive, state_dir=state, backup_dir=backups)
         assert_true(safety is not None and safety.is_file(), "pre-restore safety backup was not created")
-        with sqlite3.connect(database) as connection:
+        connection = sqlite3.connect(database)
+        try:
             row = connection.execute("SELECT value FROM notes").fetchone()
+        finally:
+            connection.close()
         assert_true(row == ("original",), "SQLite state did not restore to backup value")
         assert_true(media.read_text(encoding="utf-8") == "original-media", "media state did not restore")
         assert_true(not (state / "temporary.txt").exists(), "restore left files that were not in the backup")
@@ -92,6 +114,9 @@ def main() -> None:
         assert_true(media.read_bytes() == before, "failed restore modified local state")
 
     print("ZERO-COST BACKUP/RESTORE QA PASS")
+    print("- Windows launcher paths with spaces are quoted")
+    print("- SQLite snapshot handles are explicitly released before temporary cleanup")
+    print("- backup/restore runs through temporary paths containing spaces")
     print("- SQLite backup uses a consistent SQLite snapshot")
     print("- media and staged state are included")
     print("- credentials are excluded")
