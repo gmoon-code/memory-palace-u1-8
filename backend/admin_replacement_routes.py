@@ -58,13 +58,15 @@ def replacement_admin_loader():
     _admin_enabled()
     # This is the canonical Content Studio boot chain. The first registered exact
     # /admin/drafts.js route wins, so every administrator module that must be live
-    # is imported here explicitly.
+    # is imported here explicitly. Workflow integration loads last so it can
+    # preserve context across all previously initialized workspaces.
     return Response(
         'import "/admin/drafts-core.js";\n'
         'import "/admin/replacement.js";\n'
         'import "/admin/publication.js";\n'
         'import "/admin/health-repair.js";\n'
-        'import "/admin/capability-audit.js";\n',
+        'import "/admin/capability-audit.js";\n'
+        'import "/admin/workflow.js";\n',
         media_type="text/javascript",
         headers={"Cache-Control": "no-store"},
     )
