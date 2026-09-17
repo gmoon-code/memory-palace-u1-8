@@ -40,10 +40,22 @@
   "release_evidence_paths": [
     "release/content-studio/",
     "docs/admin/CONTENT_STUDIO_RELEASE_CANDIDATE.md",
+    "docs/admin/CONTENT_STUDIO_RC1_CLEAN_REHEARSAL.md",
     "scripts/export_content_studio_release_manifest.py",
     "scripts/qa_content_studio_release_candidate.py",
+    "scripts/qa_content_studio_rc1_clean_rehearsal.py",
     ".github/workflows/qa.yml"
   ],
+  "clean_rehearsal_gate": {
+    "command": "python scripts/qa_content_studio_rc1_clean_rehearsal.py",
+    "exact_frozen_copy_required": true,
+    "owner_authentication_required": true,
+    "draft_restart_persistence_required": true,
+    "backup_restore_required": true,
+    "health_repair_required": true,
+    "publication_must_remain_disabled": true,
+    "student_bytes_must_remain_unchanged": true
+  },
   "exact_manifest": {
     "identity_method": "git-commit-and-tree-object",
     "repository_tree_sha": "133a3bc9b00c2149662d4e6dba8517f0706b585c",
