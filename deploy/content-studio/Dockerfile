@@ -5,6 +5,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     MEMORY_PALACE_ENV=production \
     MEMORY_PALACE_HOST=0.0.0.0 \
     MEMORY_PALACE_PORT=8000 \
+    PORT=8000 \
     MEMORY_PALACE_ADMIN_ENABLED=false \
     MEMORY_PALACE_ADMIN_PUBLICATION_ENABLED=false \
     MEMORY_PALACE_GITHUB_PUBLICATION_ENABLED=false \
@@ -25,6 +26,6 @@ USER app
 EXPOSE 8000
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
-  CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3).read()" || exit 1
+  CMD python -c "import os, urllib.request; port=os.getenv('PORT', '8000'); urllib.request.urlopen(f'http://127.0.0.1:{port}/api/health', timeout=3).read()" || exit 1
 
-CMD ["python", "-m", "uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "exec python -m uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
