@@ -42,6 +42,8 @@ def main() -> None:
         "SQLite snapshot connections are not explicitly closed for Windows temporary-file cleanup",
     )
     assert_true("content-studio-backups/" in gitignore, "local backup directory is not ignored by Git")
+    assert_true("!server_data/.gitkeep" in gitignore, "server_data placeholder is not explicitly preserved by Git")
+    assert_true((ROOT / "server_data" / ".gitkeep").is_file(), "tracked server_data/.gitkeep placeholder is missing")
 
     with tempfile.TemporaryDirectory(prefix="content studio backup qa ") as tmp_raw:
         root = Path(tmp_raw)
@@ -117,6 +119,7 @@ def main() -> None:
     print("- Windows launcher paths with spaces are quoted")
     print("- SQLite snapshot handles are explicitly released before temporary cleanup")
     print("- backup/restore runs through temporary paths containing spaces")
+    print("- tracked server_data/.gitkeep keeps restore-created placeholder from dirtying the checkout")
     print("- SQLite backup uses a consistent SQLite snapshot")
     print("- media and staged state are included")
     print("- credentials are excluded")
