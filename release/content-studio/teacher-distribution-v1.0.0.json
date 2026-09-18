@@ -1,0 +1,34 @@
+{
+  "content_studio_version": "1.0.0",
+  "distribution_revision": "2026-09-18.1",
+  "status": "teacher-distribution",
+  "repository": "gmoon-code/memory-palace-u1-8",
+  "runtime_branch": "main",
+  "validated_runtime_commit": "f5d4fe65d56797803e324f5a66805765a6c07714",
+  "validated_runtime_tree": "5b2ff607bf5c4077a86bc059a0493b166c76828a",
+  "zero_cost_required": true,
+  "credentials_included": false,
+  "private_state_included": false,
+  "publication_enabled_by_default": false,
+  "github_publication_enabled_by_default": false,
+  "github_merge_enabled_by_default": false,
+  "windows_teacher_acceptance": {
+    "status": "passed",
+    "date": "2026-09-18",
+    "first_install_and_login": "passed",
+    "draft_persistence_and_version_history": "passed",
+    "backup_and_restore": "passed",
+    "health_and_repair": "passed",
+    "safe_updater_and_rollback": "passed",
+    "admin_navigation": "passed",
+    "complete_story_replacement": "passed",
+    "final_repository_integrity": "passed"
+  },
+  "post_merge_validation": {
+    "memory_palace_qa_run": 381,
+    "memory_palace_qa_conclusion": "success",
+    "pages_run": 361,
+    "pages_conclusion": "success",
+    "validated_commit": "f5d4fe65d56797803e324f5a66805765a6c07714"
+  }
+}
