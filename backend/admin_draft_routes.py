@@ -23,6 +23,7 @@ draft_router = APIRouter(prefix="/api/admin/drafts", tags=["content-studio-draft
 
 class CreateDraftRequest(BaseModel):
     entity_id: str = Field(min_length=1, max_length=512)
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
 
 
 class SaveDraftRequest(BaseModel):
@@ -64,14 +65,15 @@ def _raise_draft_error(exc: Exception) -> None:
 
 
 @draft_router.get("/summary")
-def draft_summary(request: Request):
+def draft_summary(request: Request, course_id: str | None = None):
     _owner(request)
-    return admin_drafts.draft_summary()
+    return admin_drafts.draft_summary(course_id=course_id)
 
 
 @draft_router.get("")
 def drafts_list(
     request: Request,
+    course_id: str | None = None,
     status: str | None = None,
     unit_id: str | None = None,
     entity_type: str | None = None,
@@ -80,6 +82,7 @@ def drafts_list(
     _owner(request)
     try:
         return admin_drafts.list_drafts(
+            course_id=course_id,
             status=status,
             unit_id=unit_id,
             entity_type=entity_type,
@@ -93,7 +96,7 @@ def drafts_list(
 def drafts_create(payload: CreateDraftRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
-        return admin_drafts.create_draft(payload.entity_id, session.username)
+        return admin_drafts.create_draft(payload.entity_id, session.username, payload.course_id)
     except Exception as exc:
         _raise_draft_error(exc)
 
