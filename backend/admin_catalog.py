@@ -10,8 +10,37 @@ from typing import Any, Iterable
 from . import content
 from .settings import APBIO_DIR
 
-CATALOG_SCHEMA = "story-method-content-studio-catalog-1.0"
-COURSE_ENTITY_ID = "course:ap-biology"
+CATALOG_SCHEMA = "story-method-content-studio-catalog-1.1"
+DEFAULT_COURSE_ID = "ap-biology"
+SUPPORTED_CATALOG_COURSES = {"ap-biology"}
+
+
+def catalog_courses() -> dict[str, Any]:
+    registry = content.course_registry()
+    items: list[dict[str, Any]] = []
+    for record in registry.get("courses", []):
+        if not isinstance(record, dict):
+            continue
+        course_id = str(record.get("course_id") or "")
+        items.append(
+            {
+                **record,
+                "catalog_ready": course_id in SUPPORTED_CATALOG_COURSES,
+                "editable": course_id in SUPPORTED_CATALOG_COURSES,
+            }
+        )
+    return {
+        "platform_id": registry.get("platform_id", "the-story-method"),
+        "platform_title": registry.get("platform_title", "The Story Method"),
+        "courses": items,
+    }
+
+
+def _catalog_course_id(course_id: str | None) -> str:
+    resolved = str(course_id or DEFAULT_COURSE_ID).strip()
+    if resolved not in SUPPORTED_CATALOG_COURSES:
+        raise ValueError(f"Content Studio catalog is not available for course '{resolved}'")
+    return resolved
 
 
 def _read_json(path: Path) -> Any:
@@ -139,7 +168,9 @@ def _release_manifest() -> dict[str, Any]:
 
 
 class CatalogBuilder:
-    def __init__(self) -> None:
+    def __init__(self, course_id: str = DEFAULT_COURSE_ID) -> None:
+        self.course_id = _catalog_course_id(course_id)
+        self.course_entity_id = f"course:{self.course_id}"
         self.entities: dict[str, dict[str, Any]] = {}
         self.edges: list[dict[str, str]] = []
         self._edge_keys: set[tuple[str, str, str]] = set()
@@ -155,6 +186,7 @@ class CatalogBuilder:
         entity: dict[str, Any],
         aliases: Iterable[tuple[str, str | None]] = (),
     ) -> str:
+        entity.setdefault("course_id", self.course_id)
         entity_id = str(entity["id"])
         current = self.entities.get(entity_id)
         if current is None:
@@ -205,14 +237,16 @@ class CatalogBuilder:
         )
 
     def build(self) -> dict[str, Any]:
-        course_payload = content.course()
+        course_payload = content.course_by_id(self.course_id)
+        if not isinstance(course_payload, dict):
+            raise ValueError(f"Course '{self.course_id}' is not available")
         release = _release_manifest()
         self.add_entity(
             {
-                "id": COURSE_ENTITY_ID,
+                "id": self.course_entity_id,
                 "type": "course",
-                "course_id": course_payload.get("course_id", "ap-biology"),
-                "title": course_payload.get("title", "AP Biology"),
+                "course_id": self.course_id,
+                "title": course_payload.get("course_title") or course_payload.get("title", self.course_id),
                 "release_status": release.get("release_status"),
                 "runtime_version": release.get("runtime_version"),
             }
@@ -253,7 +287,7 @@ class CatalogBuilder:
             },
             aliases=[(unit_id, unit_id)],
         )
-        self.edge(COURSE_ENTITY_ID, entity_id, "contains")
+        self.edge(self.course_entity_id, entity_id, "contains")
 
     def _add_concepts(self, unit_id: str) -> None:
         records, source_path = _canonical_records(unit_id)
@@ -763,8 +797,11 @@ class CatalogBuilder:
             }
             for key in actual
         }
+        course_entity = self.entities.get(self.course_entity_id, {})
         return {
             "schema": CATALOG_SCHEMA,
+            "course_id": self.course_id,
+            "course_title": course_entity.get("title", self.course_id),
             "release_status": release.get("release_status"),
             "runtime_version": release.get("runtime_version"),
             "counts": dict(sorted(counts.items())),
@@ -789,17 +826,17 @@ class CatalogBuilder:
         }
 
 
-@lru_cache(maxsize=1)
-def catalog() -> dict[str, Any]:
-    return CatalogBuilder().build()
+@lru_cache(maxsize=16)
+def catalog(course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any]:
+    return CatalogBuilder(_catalog_course_id(course_id)).build()
 
 
 def clear_catalog_cache() -> None:
     catalog.cache_clear()
 
 
-def content_health() -> dict[str, Any]:
-    snapshot = catalog()
+def content_health(course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any]:
+    snapshot = catalog(_catalog_course_id(course_id))
     problems: list[dict[str, Any]] = []
     for key, record in snapshot["release_alignment"].items():
         if not record["matches"]:
@@ -848,22 +885,24 @@ def content_health() -> dict[str, Any]:
     }
 
 
-def catalog_summary() -> dict[str, Any]:
-    snapshot = catalog()
+def catalog_summary(course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any]:
+    snapshot = catalog(_catalog_course_id(course_id))
     return {
         "schema": snapshot["schema"],
+        "course_id": snapshot["course_id"],
+        "course_title": snapshot["course_title"],
         "release_status": snapshot["release_status"],
         "runtime_version": snapshot["runtime_version"],
         "counts": snapshot["counts"],
         "question_counts": snapshot["question_counts"],
         "release_alignment": snapshot["release_alignment"],
         "unresolved_reference_count": snapshot["unresolved_reference_count"],
-        "health": content_health(),
+        "health": content_health(course_id),
     }
 
 
-def course_map() -> dict[str, Any]:
-    snapshot = catalog()
+def course_map(course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any]:
+    snapshot = catalog(_catalog_course_id(course_id))
     entities = snapshot["entities"]
     units = sorted(
         (entity for entity in entities.values() if entity["type"] == "unit"),
@@ -924,17 +963,18 @@ def course_map() -> dict[str, Any]:
                 "journeys": normalized_journeys,
             }
         )
-    return {"schema": CATALOG_SCHEMA, "units": result}
+    return {"schema": CATALOG_SCHEMA, "course_id": snapshot["course_id"], "course_title": snapshot["course_title"], "units": result}
 
 
-def get_entity(entity_id: str) -> dict[str, Any] | None:
-    return catalog()["entities"].get(entity_id)
+def get_entity(entity_id: str, course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any] | None:
+    return catalog(_catalog_course_id(course_id))["entities"].get(entity_id)
 
 
-def resolve_reference(unit_id: str, raw_reference: str) -> dict[str, Any]:
-    snapshot = catalog()
+def resolve_reference(unit_id: str, raw_reference: str, course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any]:
+    snapshot = catalog(_catalog_course_id(course_id))
     mapping = snapshot["aliases"].get(f"{unit_id}|{raw_reference}", {})
     return {
+        "course_id": snapshot["course_id"],
         "unit_id": unit_id,
         "raw_reference": raw_reference,
         "matches": [
@@ -947,12 +987,13 @@ def resolve_reference(unit_id: str, raw_reference: str) -> dict[str, Any]:
 
 def list_entities(
     *,
+    course_id: str = DEFAULT_COURSE_ID,
     entity_type: str | None = None,
     unit_id: str | None = None,
     offset: int = 0,
     limit: int = 100,
 ) -> dict[str, Any]:
-    snapshot = catalog()
+    snapshot = catalog(_catalog_course_id(course_id))
     safe_offset = max(0, int(offset))
     safe_limit = max(1, min(int(limit), 500))
     items = [
@@ -970,6 +1011,7 @@ def list_entities(
         )
     )
     return {
+        "course_id": snapshot["course_id"],
         "total": len(items),
         "offset": safe_offset,
         "limit": safe_limit,
@@ -980,6 +1022,7 @@ def list_entities(
 def search_entities(
     query: str,
     *,
+    course_id: str = DEFAULT_COURSE_ID,
     unit_id: str | None = None,
     entity_type: str | None = None,
     limit: int = 50,
@@ -989,7 +1032,8 @@ def search_entities(
     if not q:
         return {"query": query, "items": []}
     matches: list[tuple[int, str, dict[str, Any]]] = []
-    for entity in catalog()["entities"].values():
+    snapshot = catalog(_catalog_course_id(course_id))
+    for entity in snapshot["entities"].values():
         if unit_id and entity.get("unit_id") != unit_id:
             continue
         if entity_type and entity.get("type") != entity_type:
@@ -1020,16 +1064,17 @@ def search_entities(
             score += 90
         matches.append((score, title.casefold(), entity))
     matches.sort(key=lambda item: (-item[0], item[1], item[2]["id"]))
-    return {"query": query, "items": [item[2] for item in matches[:safe_limit]]}
+    return {"course_id": snapshot["course_id"], "query": query, "items": [item[2] for item in matches[:safe_limit]]}
 
 
 def dependency_report(
     entity_id: str,
     *,
+    course_id: str = DEFAULT_COURSE_ID,
     depth: int = 2,
     limit: int = 500,
 ) -> dict[str, Any] | None:
-    snapshot = catalog()
+    snapshot = catalog(_catalog_course_id(course_id))
     entities = snapshot["entities"]
     if entity_id not in entities:
         return None
@@ -1077,6 +1122,7 @@ def dependency_report(
     for item in related:
         by_type[item["entity"]["type"]] += 1
     return {
+        "course_id": snapshot["course_id"],
         "entity": entities[entity_id],
         "direct_outbound": direct_outbound,
         "direct_inbound": direct_inbound,
