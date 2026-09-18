@@ -16,6 +16,20 @@
       "content_root": "content/ap-biology",
       "package_manifest": "platform/course-packages/ap-biology.json",
       "package_schema": "story-method-course-package-1.0"
+    },
+    {
+      "course_id": "ap-chemistry",
+      "title": "AP Chemistry",
+      "short_title": "AP Chemistry",
+      "subject": "Chemistry",
+      "level": "Advanced Placement",
+      "status": "development",
+      "student_visible": false,
+      "unit_count": 2,
+      "description": "Hidden two-unit architecture fixture used to validate multi-course isolation before AP Chemistry curriculum production.",
+      "content_root": "content/ap-chemistry",
+      "package_manifest": "platform/course-packages/ap-chemistry.json",
+      "package_schema": "story-method-course-package-1.0"
     }
   ]
 }
