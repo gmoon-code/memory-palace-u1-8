@@ -465,43 +465,64 @@ def admin_logout(request: Request):
     return response
 
 
-@app.get("/api/admin/course")
-def admin_course(request: Request):
+@app.get("/api/admin/courses")
+def admin_courses(request: Request):
     _owner_session(request)
-    return content.course()
+    return admin_catalog.catalog_courses()
+
+
+@app.get("/api/admin/course")
+def admin_course(request: Request, course_id: str = "ap-biology"):
+    _owner_session(request)
+    item = content.course_by_id(course_id)
+    if not item:
+        raise HTTPException(404, "Course not found")
+    return item
 
 
 @app.get("/api/admin/units/{unit_id}")
-def admin_unit(unit_id: str, request: Request):
+def admin_unit(unit_id: str, request: Request, course_id: str = "ap-biology"):
     _owner_session(request)
+    if course_id != "ap-biology":
+        raise HTTPException(404, "Course catalog not available")
     item = content.unit_summary(unit_id)
     if not item:
         raise HTTPException(404, "Unit not found")
     return item
 
 
+def _admin_catalog_call(function, *args, **kwargs):
+    try:
+        return function(*args, **kwargs)
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from exc
+
+
 @app.get("/api/admin/catalog/summary")
-def admin_catalog_summary(request: Request):
+def admin_catalog_summary(request: Request, course_id: str = "ap-biology"):
     _owner_session(request)
-    return admin_catalog.catalog_summary()
+    return _admin_catalog_call(admin_catalog.catalog_summary, course_id)
 
 
 @app.get("/api/admin/catalog/course-map")
-def admin_catalog_course_map(request: Request):
+def admin_catalog_course_map(request: Request, course_id: str = "ap-biology"):
     _owner_session(request)
-    return admin_catalog.course_map()
+    return _admin_catalog_call(admin_catalog.course_map, course_id)
 
 
 @app.get("/api/admin/catalog/entities")
 def admin_catalog_entities(
     request: Request,
+    course_id: str = "ap-biology",
     entity_type: str | None = None,
     unit_id: str | None = None,
     offset: int = 0,
     limit: int = 100,
 ):
     _owner_session(request)
-    return admin_catalog.list_entities(
+    return _admin_catalog_call(
+        admin_catalog.list_entities,
+        course_id=course_id,
         entity_type=entity_type,
         unit_id=unit_id,
         offset=offset,
@@ -513,6 +534,7 @@ def admin_catalog_entities(
 def admin_catalog_search(
     request: Request,
     q: str,
+    course_id: str = "ap-biology",
     unit_id: str | None = None,
     entity_type: str | None = None,
     limit: int = 50,
@@ -520,8 +542,10 @@ def admin_catalog_search(
     _owner_session(request)
     if len(q.strip()) < 2:
         raise HTTPException(400, "Search query must contain at least 2 characters")
-    return admin_catalog.search_entities(
+    return _admin_catalog_call(
+        admin_catalog.search_entities,
         q,
+        course_id=course_id,
         unit_id=unit_id,
         entity_type=entity_type,
         limit=limit,
@@ -529,15 +553,15 @@ def admin_catalog_search(
 
 
 @app.get("/api/admin/catalog/resolve")
-def admin_catalog_resolve(request: Request, unit_id: str, ref: str):
+def admin_catalog_resolve(request: Request, unit_id: str, ref: str, course_id: str = "ap-biology"):
     _owner_session(request)
-    return admin_catalog.resolve_reference(unit_id, ref)
+    return _admin_catalog_call(admin_catalog.resolve_reference, unit_id, ref, course_id)
 
 
 @app.get("/api/admin/catalog/entity")
-def admin_catalog_entity(request: Request, entity_id: str):
+def admin_catalog_entity(request: Request, entity_id: str, course_id: str = "ap-biology"):
     _owner_session(request)
-    item = admin_catalog.get_entity(entity_id)
+    item = _admin_catalog_call(admin_catalog.get_entity, entity_id, course_id)
     if item is None:
         raise HTTPException(404, "Catalog entity not found")
     return item
@@ -547,20 +571,21 @@ def admin_catalog_entity(request: Request, entity_id: str):
 def admin_catalog_dependencies(
     request: Request,
     entity_id: str,
+    course_id: str = "ap-biology",
     depth: int = 2,
     limit: int = 500,
 ):
     _owner_session(request)
-    item = admin_catalog.dependency_report(entity_id, depth=depth, limit=limit)
+    item = _admin_catalog_call(admin_catalog.dependency_report, entity_id, course_id=course_id, depth=depth, limit=limit)
     if item is None:
         raise HTTPException(404, "Catalog entity not found")
     return item
 
 
 @app.get("/api/admin/catalog/health")
-def admin_catalog_health(request: Request):
+def admin_catalog_health(request: Request, course_id: str = "ap-biology"):
     _owner_session(request)
-    return admin_catalog.content_health()
+    return _admin_catalog_call(admin_catalog.content_health, course_id)
 
 
 @app.get("/api/admin/security")
