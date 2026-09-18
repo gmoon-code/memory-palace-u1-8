@@ -13,7 +13,7 @@ const views = {
   dashboard: {
     title: "Dashboard",
     eyebrow: "Content overview",
-    description: "A protected normalized inventory of the current eight-unit AP Biology release.",
+    description: "A protected normalized inventory of the currently selected Story Method course.",
   },
   "course-map": {
     title: "Course Map",
@@ -28,7 +28,7 @@ const views = {
   journeys: {
     title: "Journeys",
     eyebrow: "Narrative structure",
-    description: "Browse all guided journeys through one consistent catalog regardless of the source unit schema.",
+    description: "Browse all guided journeys in the selected course through one consistent normalized catalog.",
   },
   scenes: {
     title: "Scenes",
@@ -68,7 +68,7 @@ const views = {
   challenge: {
     title: "Challenge Lab",
     eyebrow: "Application",
-    description: "Browse Challenge Lab records, prerequisite scenes, and linked scientific concepts across all units.",
+    description: "Browse Challenge Lab records, prerequisite scenes, and linked scientific concepts within the selected course.",
   },
   media: {
     title: "Media Library",
