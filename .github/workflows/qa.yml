@@ -18,6 +18,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/build_site_ux1.py
       - run: python scripts/verify_content.py
+      - run: python scripts/qa_course_package_contract.py
       - run: python scripts/qa_unit1_full.py
       - run: python scripts/qa_unit2_f5.py
       - run: python scripts/qa_unit3_f6.py
