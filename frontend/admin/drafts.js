@@ -504,3 +504,10 @@ document.querySelectorAll(".nav-item").forEach((button) => {
     }
   });
 });
+window.addEventListener("story-method-course-changed", () => {
+  clearTimeout(draftState.autosaveTimer);
+  draftState.currentDraft = null;
+  el("draft-editor")?.classList.add("hidden");
+  el("draft-empty-state")?.classList.remove("hidden");
+  if (!el("draft-view")?.classList.contains("hidden")) loadDraftWorkspace();
+});
