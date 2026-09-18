@@ -34,6 +34,7 @@ def build(output: Path) -> None:
     copy_file(ROOT / ".nojekyll", output / ".nojekyll")
     copy_tree(ROOT / "frontend" / "css", output / "frontend" / "css")
     copy_tree(ROOT / "frontend" / "js", output / "frontend" / "js")
+    copy_file(ROOT / "platform" / "courses.json", output / "platform" / "courses.json")
     copy_file(APBIO / "course.json", output / "content" / "ap-biology" / "course.json")
 
     course = json.loads((APBIO / "course.json").read_text(encoding="utf-8"))
