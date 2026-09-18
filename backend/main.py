@@ -7,7 +7,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import admin_auth, admin_catalog, admin_draft_routes, content
+from . import admin_auth, admin_catalog, admin_draft_routes, content, course_packages
 from .settings import ADMIN_ENABLED, FRONTEND_DIR, HOST, PORT
 
 RUNTIME_VERSION = "v2-apbio-0.30.0-u8-f6"
@@ -86,10 +86,10 @@ def health():
 
 
 def _require_course_id(course_id: str) -> dict:
-    item = content.course_by_id(course_id)
-    if not item:
-        raise HTTPException(404, "Course not found")
-    return item
+    try:
+        return course_packages.course(course_id)
+    except course_packages.CoursePackageError as exc:
+        raise HTTPException(404, str(exc)) from exc
 
 
 @app.get("/api/courses")
@@ -331,44 +331,70 @@ def list_course_units(course_id: str):
 @app.get("/api/courses/{course_id}/units/{unit_id}")
 def get_course_unit(course_id: str, unit_id: str):
     _require_course_id(course_id)
-    return get_unit(unit_id)
+    item = course_packages.unit(course_id, unit_id)
+    if not item:
+        raise HTTPException(404, "Unit not found")
+    return item
 
 
 @app.get("/api/courses/{course_id}/units/{unit_id}/journeys")
 def list_course_journeys(course_id: str, unit_id: str):
     _require_course_id(course_id)
-    payload = list_journeys(unit_id)
-    return {"course_id": course_id, **payload}
+    try:
+        return course_packages.journeys(course_id, unit_id)
+    except course_packages.CoursePackageError as exc:
+        raise HTTPException(404, str(exc)) from exc
 
 
 @app.get("/api/courses/{course_id}/units/{unit_id}/journeys/{palace_id}")
 def get_course_journey(course_id: str, unit_id: str, palace_id: str):
     _require_course_id(course_id)
-    return get_journey(unit_id, palace_id)
+    try:
+        item = course_packages.journey(course_id, unit_id, palace_id)
+    except course_packages.CoursePackageError as exc:
+        raise HTTPException(404, str(exc)) from exc
+    if not item:
+        raise HTTPException(404, "Journey not found")
+    return item
 
 
 @app.get("/api/courses/{course_id}/units/{unit_id}/application-lab")
 def get_course_application_lab(course_id: str, unit_id: str):
     _require_course_id(course_id)
-    return get_application_lab(unit_id)
+    try:
+        return course_packages.application_lab(course_id, unit_id)
+    except course_packages.CoursePackageError as exc:
+        raise HTTPException(404, str(exc)) from exc
 
 
 @app.get("/api/courses/{course_id}/units/{unit_id}/review-manifest")
 def get_course_review_manifest(course_id: str, unit_id: str):
     _require_course_id(course_id)
-    return get_review_manifest(unit_id)
+    try:
+        return course_packages.review_manifest(course_id, unit_id)
+    except course_packages.CoursePackageError as exc:
+        raise HTTPException(404, str(exc)) from exc
 
 
 @app.get("/api/courses/{course_id}/units/{unit_id}/mixed-discrimination")
 def get_course_mixed_discrimination(course_id: str, unit_id: str):
     _require_course_id(course_id)
-    return get_mixed_discrimination(unit_id)
+    try:
+        return course_packages.mixed_discrimination(course_id, unit_id)
+    except course_packages.CoursePackageError as exc:
+        raise HTTPException(404, str(exc)) from exc
 
 
 @app.get("/api/courses/{course_id}/units/{unit_id}/objects/{object_id}")
 def get_course_object(course_id: str, unit_id: str, object_id: str):
     _require_course_id(course_id)
-    return get_object(unit_id, object_id)
+    try:
+        item = course_packages.memory_object(course_id, unit_id, object_id)
+    except course_packages.CoursePackageError as exc:
+        raise HTTPException(404, str(exc)) from exc
+    if not item:
+        raise HTTPException(404, "Memory Object not found")
+    return item
 
 
 # Temporary Unit 1 compatibility routes for the original V2 starter.
