@@ -61,6 +61,8 @@ def test_create_save_compare_and_optimistic_concurrency(draft_client):
     client, csrf = draft_client
     draft = create_unit_draft(client, csrf)
     assert draft["status"] == "draft"
+    assert draft["course_id"] == "ap-biology"
+    assert draft["payload"]["course_id"] == "ap-biology"
     assert draft["version"] == 1
     assert draft["changed_from_base"] is False
 
@@ -205,3 +207,29 @@ def test_summary_and_lists_report_recoverable_state(draft_client):
     listing = client.get("/api/admin/drafts?status=draft")
     assert listing.status_code == 200
     assert listing.json()["items"][0]["draft_id"] == draft["draft_id"]
+
+
+def test_draft_registry_and_filters_are_course_scoped(draft_client):
+    client, csrf = draft_client
+    registry = client.get("/api/admin/courses")
+    assert registry.status_code == 200
+    course = next(item for item in registry.json()["courses"] if item["course_id"] == "ap-biology")
+    assert course["catalog_ready"] is True
+
+    draft = client.post(
+        "/api/admin/drafts",
+        json={"entity_id": "unit:unit-1", "course_id": "ap-biology"},
+        headers=csrf_headers(csrf),
+    )
+    assert draft.status_code == 200
+    assert draft.json()["course_id"] == "ap-biology"
+
+    scoped = client.get("/api/admin/drafts?course_id=ap-biology&status=draft")
+    assert scoped.status_code == 200
+    assert len(scoped.json()["items"]) == 1
+    assert scoped.json()["items"][0]["course_id"] == "ap-biology"
+
+    summary = client.get("/api/admin/drafts/summary?course_id=ap-biology")
+    assert summary.status_code == 200
+    assert summary.json()["course_id"] == "ap-biology"
+    assert summary.json()["active_drafts"] == 1
