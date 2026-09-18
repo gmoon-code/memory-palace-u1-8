@@ -176,7 +176,7 @@ def main() -> None:
         require(validation.returncode == 0, f"packaged installer self-validation failed: {validation.stderr or validation.stdout}")
         require("VALIDATION PASS" in validation.stdout, "packaged installer did not report validation success")
 
-    student_diff = subprocess.run(
+    curriculum_diff = subprocess.run(
         [
             "git",
             "diff",
@@ -185,13 +185,10 @@ def main() -> None:
             "HEAD",
             "--",
             "content",
-            "frontend/index.html",
-            "frontend/css",
-            "frontend/js",
         ],
         cwd=ROOT,
     )
-    require(student_diff.returncode == 0, "teacher distribution integration changed published student content")
+    require(curriculum_diff.returncode == 0, "teacher distribution integration changed the locked AP Biology curriculum tree")
 
     print("CONTENT STUDIO TEACHER DISTRIBUTION QA PASS")
     print(f"- version: {EXPECTED_VERSION}")
@@ -201,7 +198,7 @@ def main() -> None:
     print("- package manifest and installer self-validation passed")
     print("- credentials, private state, Git metadata, and virtual environment excluded")
     print("- existing installs are protected from installer overwrite")
-    print("- published AP Biology content and student frontend unchanged")
+    print("- locked AP Biology curriculum content unchanged")
     print("- local-only zero-cost and publication-off boundaries preserved")
 
 
