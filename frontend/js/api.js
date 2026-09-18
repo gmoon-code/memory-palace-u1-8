@@ -25,47 +25,86 @@ function staticJSON(relativePath){
   if(!STATIC_CACHE.has(url))STATIC_CACHE.set(url,getJSON(url).catch(err=>{STATIC_CACHE.delete(url);throw err}));
   return STATIC_CACHE.get(url);
 }
-function courseDir(courseId=DEFAULT_COURSE_ID){return `content/${courseId}`}
-function unitDir(courseId,unitId){return `${courseDir(courseId)}/${unitId}`}
 async function staticCourses(){return staticJSON('platform/courses.json')}
-async function staticCourse(courseId=DEFAULT_COURSE_ID){return staticJSON(`${courseDir(courseId)}/course.json`)}
+async function staticPackage(courseId=DEFAULT_COURSE_ID){return staticJSON(`platform/course-packages/${courseId}.json`)}
+async function staticCourse(courseId=DEFAULT_COURSE_ID){
+  const pkg=await staticPackage(courseId);
+  return staticJSON(pkg.course_file);
+}
 async function staticUnits(courseId=DEFAULT_COURSE_ID){return{course_id:courseId,units:(await staticCourse(courseId)).units||[]}}
 async function staticUnit(courseId,unitId){return((await staticCourse(courseId)).units||[]).find(u=>u.unit_id===unitId)||null}
-async function staticJourneys(courseId,unitId='unit-1'){
-  const base=unitDir(courseId,unitId);
-  const rel=courseId===DEFAULT_COURSE_ID
-    ?(unitId==='unit-1'?`${base}/journeys.json`:`${base}/journeys-f5.json`)
-    :`${base}/journeys.json`;
-  const data=await staticJSON(rel);return{course_id:courseId,unit_id:unitId,guided_journeys:data.guided_journeys||[]};
+async function staticUnitPackage(courseId,unitId){
+  const pkg=await staticPackage(courseId);
+  return(pkg.units||[]).find(u=>u.unit_id===unitId)||null;
 }
-async function staticJourney(courseId,unitId,id){return staticJSON(`${unitDir(courseId,unitId)}/journeys/${encodeURIComponent(id)}.json`)}
+async function staticArtifact(spec){
+  if(spec?.mode==='empty')return spec.empty_payload||{};
+  if(spec?.mode!=='file'||!spec.path)throw new Error('Course package artifact is not available.');
+  return staticJSON(spec.path);
+}
+function records(payload,keys=[]){
+  if(Array.isArray(payload))return payload.filter(x=>x&&typeof x==='object');
+  if(payload&&typeof payload==='object'){
+    for(const key of keys){
+      if(Array.isArray(payload[key]))return payload[key].filter(x=>x&&typeof x==='object');
+    }
+  }
+  return[];
+}
+function first(record,keys,fallback=''){
+  for(const key of keys){if(record?.[key]!==undefined&&record[key]!==null&&record[key]!=='')return record[key]}
+  return fallback;
+}
 function canonicalObject(record){
-  return{memory_object_id:record.knowledge_id,canonical_term:record.canonical_label,canonical_definition:record.canonical_verified_statement,exact_name_recall:record.exact_name_recall||false,source_reference:record.source_reference||'',canonical_lock:record.canonical_lock||''};
+  const id=String(first(record,['knowledge_id','Knowledge ID','id'],''));
+  const exact=first(record,['exact_name_recall','Exact Name Recall','exact_name_required'],false);
+  return{
+    memory_object_id:id,
+    source_knowledge_id:id,
+    canonical_term:first(record,['canonical_label','Canonical Label','canonical_term','term'],id),
+    canonical_definition:first(record,['canonical_verified_statement','Canonical Verified Statement','canonical_definition','definition'],''),
+    exact_name_recall:typeof exact==='string'?['YES','TRUE','REQUIRED'].includes(exact.trim().toUpperCase()):!!exact,
+    source_reference:first(record,['source_reference','Source Reference'],''),
+    canonical_lock:first(record,['canonical_lock','Canonical Lock'],'')
+  };
+}
+async function staticJourneys(courseId,unitId='unit-1'){
+  const unit=await staticUnitPackage(courseId,unitId);
+  if(!unit)throw new Error('Unit package is not available.');
+  const spec=unit.journeys;
+  const data=await staticJSON(spec.registry_path);
+  return{course_id:courseId,unit_id:unitId,guided_journeys:Array.isArray(data?.[spec.collection_key])?data[spec.collection_key]:[]};
+}
+async function staticJourney(courseId,unitId,id){
+  const unit=await staticUnitPackage(courseId,unitId);
+  if(!unit)throw new Error('Unit package is not available.');
+  const spec=unit.journeys;
+  const filename=String(spec.filename_template).replace('{journey_id}',encodeURIComponent(id));
+  return staticJSON(`${String(spec.directory).replace(/\/$/,'')}/${filename}`);
 }
 async function staticObject(courseId,unitId,id){
-  const base=unitDir(courseId,unitId);
-  if(courseId!==DEFAULT_COURSE_ID){
-    const data=await staticJSON(`${base}/memory-objects.json`);return(data.memory_objects||[]).find(o=>o.memory_object_id===id)||null;
+  const unit=await staticUnitPackage(courseId,unitId);
+  if(!unit)throw new Error('Unit package is not available.');
+  const spec=unit.memory_objects;
+  const data=await staticArtifact(spec);
+  const list=records(data,spec.collection_keys||['memory_objects','records','items']);
+  if(spec.format==='canonical_catalog_as_memory_objects'){
+    const record=list.find(item=>String(first(item,['knowledge_id','Knowledge ID','id'],''))===id);
+    return record?canonicalObject(record):null;
   }
-  if(unitId==='unit-1'){
-    const data=await staticJSON(`${base}/memory-objects.json`);return(data.memory_objects||[]).find(o=>o.memory_object_id===id)||null;
-  }
-  if(unitId==='unit-2'||unitId==='unit-3'){
-    const data=await staticJSON(`${base}/source/canonical-${unitId.replace('unit-','unit')}-f1.json`);
-    const record=(data.canonical_catalog||[]).find(r=>r.knowledge_id===id);return record?canonicalObject(record):null;
-  }
-  const data=await staticJSON(`${base}/memory-objects-f5.json`);return(data.memory_objects||[]).find(o=>o.memory_object_id===id)||null;
+  return list.find(item=>String(first(item,['memory_object_id','object_id','knowledge_id','Knowledge ID'],''))===id)||null;
 }
-async function staticApplicationLab(courseId,unitId='unit-1'){return staticJSON(`${unitDir(courseId,unitId)}/application-lab.json`)}
+async function staticApplicationLab(courseId,unitId='unit-1'){
+  const unit=await staticUnitPackage(courseId,unitId);if(!unit)throw new Error('Unit package is not available.');
+  return staticArtifact(unit.challenge_lab);
+}
 async function staticReviewManifest(courseId,unitId){
-  if(courseId===DEFAULT_COURSE_ID&&unitId==='unit-1')return{course_id:courseId,unit_id:unitId,target_count:0,targets:[]};
-  const name=courseId===DEFAULT_COURSE_ID?'review-manifest-f5.json':'review-manifest.json';
-  return staticJSON(`${unitDir(courseId,unitId)}/${name}`);
+  const unit=await staticUnitPackage(courseId,unitId);if(!unit)throw new Error('Unit package is not available.');
+  return staticArtifact(unit.review);
 }
 async function staticMixedDiscrimination(courseId,unitId){
-  if(courseId===DEFAULT_COURSE_ID&&unitId==='unit-1')return{course_id:courseId,unit_id:unitId,set_count:0,question_count:0,sets:[]};
-  const name=courseId===DEFAULT_COURSE_ID?'mixed-discrimination-f5.json':'mixed-discrimination.json';
-  return staticJSON(`${unitDir(courseId,unitId)}/${name}`);
+  const unit=await staticUnitPackage(courseId,unitId);if(!unit)throw new Error('Unit package is not available.');
+  return staticArtifact(unit.mixed_discrimination);
 }
 
 const dynamicApi={
