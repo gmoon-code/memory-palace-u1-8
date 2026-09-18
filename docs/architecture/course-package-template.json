@@ -1,0 +1,57 @@
+{
+  "schema": "story-method-course-package-1.0",
+  "course_id": "example-science",
+  "course_file": "content/example-science/course.json",
+  "content_root": "content/example-science",
+  "student_runtime": {
+    "journeys": true,
+    "memory_objects": true,
+    "review": true,
+    "mixed_discrimination": true,
+    "challenge_lab": true
+  },
+  "science_components": ["concept", "memory_object"],
+  "units": [
+    {
+      "unit_id": "unit-1",
+      "title": "Example Unit",
+      "content_root": "content/example-science/unit-1",
+      "journeys": {
+        "registry_path": "content/example-science/unit-1/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/example-science/unit-1/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/example-science/unit-1/concepts.json",
+        "collection_keys": ["concepts"],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/example-science/unit-1/memory-objects.json",
+        "collection_keys": ["memory_objects"],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/example-science/unit-1/review-manifest.json",
+        "collection_keys": ["targets"],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/example-science/unit-1/mixed-discrimination.json",
+        "collection_keys": ["sets"],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/example-science/unit-1/application-lab.json",
+        "collection_keys": ["items"],
+        "format": "native"
+      }
+    }
+  ]
+}
