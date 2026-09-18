@@ -211,6 +211,16 @@ function populateUnitFilter(courseMap) {
   if ([...select.options].some((option) => option.value === previous)) select.value = previous;
 }
 
+function announceCourseContext() {
+  window.dispatchEvent(new CustomEvent("story-method-course-changed", {
+    detail: {
+      courseId: state.selectedCourseId,
+      course: state.selectedCourse,
+      units: Array.isArray(state.courseMap?.units) ? state.courseMap.units : [],
+    },
+  }));
+}
+
 async function apiRequest(url, options = {}) {
   const headers = new Headers(options.headers || {});
   headers.set("Accept", "application/json");
@@ -752,6 +762,7 @@ async function showStudio(session) {
     await loadCourseContext();
     activateView("dashboard");
     await loadDashboard();
+    announceCourseContext();
   } catch (error) {
     const banner = el("status-banner");
     banner.textContent = `Content Studio could not load the course registry. ${error.message}`;
@@ -860,6 +871,7 @@ el("admin-course-select").addEventListener("change", async (event) => {
   el("catalog-search-input").value = "";
   activateView("dashboard");
   await loadDashboard();
+  announceCourseContext();
 });
 
 document.querySelectorAll(".nav-item").forEach((button) => {
