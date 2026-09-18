@@ -1,0 +1,19 @@
+{
+  "schema": "story-method-challenge-lab-1.0",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "title": "AP Chemistry Fixture Unit 1 Challenge Lab",
+  "challenge_count": 1,
+  "items": [
+    {
+      "challenge_id": "APCHEM-U1-APP-01",
+      "knowledge_id": "APCHEM-U1-K002",
+      "domain": "Isotopic abundance",
+      "title": "Weighted isotope sample",
+      "prompt": "A hypothetical element occurs as 10.0 amu atoms with 20.0% abundance and 11.0 amu atoms with 80.0% abundance. Calculate its average atomic mass.",
+      "answer_guide": "Convert the percentages to fractions and calculate (10.0 × 0.200) + (11.0 × 0.800) = 10.8 amu.",
+      "story_hint": "Use the weighted balance from the second scene.",
+      "success_criterion": "Set up the weighted average correctly and report 10.8 amu."
+    }
+  ]
+}
