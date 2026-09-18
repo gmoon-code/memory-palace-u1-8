@@ -25,6 +25,10 @@ const editorState = {
   changeSerial: 0,
 };
 
+function currentAdminCourseId() {
+  return document.getElementById("admin-course-select")?.value || "ap-biology";
+}
+
 function e(id) {
   return document.getElementById(id);
 }
@@ -264,7 +268,7 @@ async function loadSchema() {
 }
 
 async function loadRecords() {
-  const params = new URLSearchParams({ entity_type: editorState.entityType, limit: "500" });
+  const params = new URLSearchParams({ course_id: currentAdminCourseId(), entity_type: editorState.entityType, limit: "500" });
   const unit = e("editor-unit-filter")?.value;
   if (unit) params.set("unit_id", unit);
   e("editor-record-list").innerHTML = '<p class="empty-state">Loading records…</p>';
@@ -316,8 +320,8 @@ async function selectEntity(entityId) {
   if (editorState.dirty && !window.confirm("This editor has unsaved local changes. Leave this record and discard those unsaved changes?")) return;
   try {
     const [payload, dependencies] = await Promise.all([
-      editorApi(`/api/admin/editors/entity?entity_id=${encodeURIComponent(entityId)}`),
-      editorApi(`/api/admin/catalog/dependencies?entity_id=${encodeURIComponent(entityId)}&depth=2&limit=500`),
+      editorApi(`/api/admin/editors/entity?entity_id=${encodeURIComponent(entityId)}&course_id=${encodeURIComponent(currentAdminCourseId())}`),
+      editorApi(`/api/admin/catalog/dependencies?entity_id=${encodeURIComponent(entityId)}&course_id=${encodeURIComponent(currentAdminCourseId())}&depth=2&limit=500`),
     ]);
     editorState.selectedEntity = payload.entity;
     editorState.schema = payload.editor_schema || editorState.schema;
@@ -626,13 +630,13 @@ async function openWorkingCopy() {
     const draft = await editorApi("/api/admin/editors/drafts", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ entity_id: editorState.selectedEntity.id }),
+      body: JSON.stringify({ entity_id: editorState.selectedEntity.id, course_id: currentAdminCourseId() }),
     });
     editorState.currentDraft = draft;
     editorState.workingPayload = structuredClone(draft.payload || {});
     editorState.dirty = false;
     editorState.changeSerial = 0;
-    const dependencies = await editorApi(`/api/admin/catalog/dependencies?entity_id=${encodeURIComponent(draft.entity_id)}&depth=2&limit=500`);
+    const dependencies = await editorApi(`/api/admin/catalog/dependencies?entity_id=${encodeURIComponent(draft.entity_id)}&course_id=${encodeURIComponent(draft.course_id || currentAdminCourseId())}&depth=2&limit=500`);
     renderEditor(editorState.workingPayload, dependencies, draft.status === "draft");
     if (draft.status === "archived") {
       e("editor-readonly-note").classList.remove("hidden");
