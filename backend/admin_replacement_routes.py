@@ -17,6 +17,7 @@ ADMIN_FRONTEND = (Path(FRONTEND_DIR).resolve() / "admin").resolve()
 
 class CreateReplacementDraftRequest(BaseModel):
     entity_id: str = Field(min_length=1, max_length=512)
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
 
 
 class ReplacementRequest(BaseModel):
@@ -84,10 +85,10 @@ def replacement_admin_core():
 
 
 @router.get("/plan")
-def replacement_plan(request: Request, entity_id: str):
+def replacement_plan(request: Request, entity_id: str, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_replacements.target_plan(entity_id)
+        return admin_replacements.target_plan(entity_id, course_id)
     except Exception as exc:
         _raise_replacement_error(exc)
 
@@ -96,7 +97,7 @@ def replacement_plan(request: Request, entity_id: str):
 def replacement_draft_create(payload: CreateReplacementDraftRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
-        return admin_replacements.create_replacement_draft(payload.entity_id, session.username)
+        return admin_replacements.create_replacement_draft(payload.entity_id, session.username, payload.course_id)
     except Exception as exc:
         _raise_replacement_error(exc)
 
