@@ -31,7 +31,7 @@ for(let n=1;n<=8;n++){
   const review=n===1?{target_count:0,targets:[]}:read(reviewPath(n));exactTotal+=review.target_count||0;
   const mixed=n===1?{set_count:0,question_count:0,sets:[]}:read(mixedPath(n));mixedSetTotal+=mixed.set_count||0;mixedQuestionTotal+=mixed.question_count||0;
 
-  const homeState={activeUnit:`unit-${n}`,activeJourney:null,sceneByJourney:{},review:[],storySeen:{},completedJourneys:{},encounteredObjects:{},assistedRecalls:{},assistedReviews:{},version:4};
+  const homeState={activeUnit:`unit-${n}`,activeJourney:null,sceneByJourney:{},review:[],storySeen:{},completedJourneys:{},encounteredObjects:{},assistedRecalls:{},assistedReviews:{},version:5};
   const home=homeView(course,unit,reg.guided_journeys,homeState,0,reg.guided_journeys[0]?.palace_id);
   assert(home.includes('id="main-content"')&&home.includes('Course map'),`Unit ${n} Home lacks main/course-map semantics`);
   assert(count(home,'class="card journey-card"')===reg.journey_count,`Unit ${n} Home journey-card count wrong`);
@@ -87,10 +87,10 @@ for(let n=1;n<=8;n++){
 assert(JSON.stringify({journeyTotal,sceneTotal,recallTotal,challengeTotal,exactTotal,mixedSetTotal,mixedQuestionTotal})===JSON.stringify({journeyTotal:58,sceneTotal:448,recallTotal:152,challengeTotal:112,exactTotal:887,mixedSetTotal:220,mixedQuestionTotal:600}),'Whole-course accounting drifted');
 
 // First-run and corrupted-state recovery.
-localStorage.clear();let st=stateMod.loadState();assert(st.activeUnit==='unit-1'&&st.activeJourney===null&&st.version===4,'First-run state does not begin cleanly in Unit 1');
-localStorage.setItem('memory-palace-v2:progress','{broken json');st=stateMod.loadState();assert(st.activeUnit==='unit-1'&&st.version===4,'Malformed JSON did not recover safely');
+localStorage.clear();let st=stateMod.loadState();assert(st.activeUnit==='unit-1'&&st.activeJourney===null&&st.version===5&&st.courseId==='ap-biology','First-run state does not begin cleanly in AP Biology Unit 1');
+localStorage.setItem('memory-palace-v2:progress','{broken json');st=stateMod.loadState();assert(st.activeUnit==='unit-1'&&st.version===5,'Malformed JSON did not recover safely');
 localStorage.setItem('memory-palace-v2:progress',JSON.stringify({activeUnit:7,activeJourney:42,sceneByJourney:{X:-9,Y:'oops',Z:3.9},review:'bad',storySeen:['bad'],version:1}));st=stateMod.loadState();assert(st.activeUnit==='unit-1'&&st.activeJourney===null&&st.sceneByJourney.Z===3&&!('X' in st.sceneByJourney)&&Array.isArray(st.review),'Malformed saved-state fields were not normalized');
-const throwing={getItem(){throw new Error('blocked')},setItem(){throw new Error('blocked')}};global.localStorage=throwing;st=stateMod.loadState();assert(st.activeUnit==='unit-1','Unavailable localStorage did not recover in memory');assert(stateMod.saveState(st).version===4,'Unavailable localStorage prevented in-memory state use');
+const throwing={getItem(){throw new Error('blocked')},setItem(){throw new Error('blocked')}};global.localStorage=throwing;st=stateMod.loadState();assert(st.activeUnit==='unit-1','Unavailable localStorage did not recover in memory');assert(stateMod.saveState(st).version===5,'Unavailable localStorage prevented in-memory state use');
 global.localStorage={store:new Map(),setItem(k,v){this.store.set(k,String(v))},getItem(k){return this.store.has(k)?this.store.get(k):null},removeItem(k){this.store.delete(k)},clear(){this.store.clear()}};
 
 // Assisted Quick Recall persists across a reload and expires after the two-hour protection window.
