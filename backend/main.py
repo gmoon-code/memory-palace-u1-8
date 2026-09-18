@@ -15,7 +15,7 @@ FRONTEND_ROOT = Path(FRONTEND_DIR).resolve()
 ADMIN_ROOT = (FRONTEND_ROOT / "admin").resolve()
 
 app = FastAPI(
-    title="Memory Palace V2 · AP Biology",
+    title="The Story Method · Science Courses",
     version="0.30.0-u8-f6",
     docs_url=None,
     redoc_url=None,
@@ -83,6 +83,23 @@ def _owner_session(request: Request, *, require_csrf: bool = False) -> admin_aut
 @app.get("/api/health")
 def health():
     return {"ok": True, "version": RUNTIME_VERSION}
+
+
+def _require_course_id(course_id: str) -> dict:
+    item = content.course_by_id(course_id)
+    if not item:
+        raise HTTPException(404, "Course not found")
+    return item
+
+
+@app.get("/api/courses")
+def list_courses():
+    return content.course_registry()
+
+
+@app.get("/api/courses/{course_id}")
+def get_course_by_id(course_id: str):
+    return _require_course_id(course_id)
 
 
 @app.get("/api/course")
@@ -301,6 +318,57 @@ def get_object(unit_id: str, object_id: str):
     if not item:
         raise HTTPException(404, "Memory Object not found")
     return item
+
+
+# Course-aware student routes. AP Biology remains available through the
+# original routes during migration so existing links and tests keep working.
+@app.get("/api/courses/{course_id}/units")
+def list_course_units(course_id: str):
+    course_item = _require_course_id(course_id)
+    return {"course_id": course_id, "units": course_item.get("units", [])}
+
+
+@app.get("/api/courses/{course_id}/units/{unit_id}")
+def get_course_unit(course_id: str, unit_id: str):
+    _require_course_id(course_id)
+    return get_unit(unit_id)
+
+
+@app.get("/api/courses/{course_id}/units/{unit_id}/journeys")
+def list_course_journeys(course_id: str, unit_id: str):
+    _require_course_id(course_id)
+    payload = list_journeys(unit_id)
+    return {"course_id": course_id, **payload}
+
+
+@app.get("/api/courses/{course_id}/units/{unit_id}/journeys/{palace_id}")
+def get_course_journey(course_id: str, unit_id: str, palace_id: str):
+    _require_course_id(course_id)
+    return get_journey(unit_id, palace_id)
+
+
+@app.get("/api/courses/{course_id}/units/{unit_id}/application-lab")
+def get_course_application_lab(course_id: str, unit_id: str):
+    _require_course_id(course_id)
+    return get_application_lab(unit_id)
+
+
+@app.get("/api/courses/{course_id}/units/{unit_id}/review-manifest")
+def get_course_review_manifest(course_id: str, unit_id: str):
+    _require_course_id(course_id)
+    return get_review_manifest(unit_id)
+
+
+@app.get("/api/courses/{course_id}/units/{unit_id}/mixed-discrimination")
+def get_course_mixed_discrimination(course_id: str, unit_id: str):
+    _require_course_id(course_id)
+    return get_mixed_discrimination(unit_id)
+
+
+@app.get("/api/courses/{course_id}/units/{unit_id}/objects/{object_id}")
+def get_course_object(course_id: str, unit_id: str, object_id: str):
+    _require_course_id(course_id)
+    return get_object(unit_id, object_id)
 
 
 # Temporary Unit 1 compatibility routes for the original V2 starter.
