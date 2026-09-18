@@ -612,3 +612,42 @@ textarea{
     print-color-adjust:exact;
   }
 }
+
+/* ---------------------------------------------------------
+   Course context
+   --------------------------------------------------------- */
+
+.admin-course-context{
+  display:grid;
+  gap:.28rem;
+  margin-top:.8rem;
+  padding-top:.75rem;
+  border-top:1px solid var(--border);
+}
+
+.admin-course-context label{
+  color:#333;
+  font-size:.78rem;
+  font-weight:700;
+}
+
+.admin-course-context select{
+  width:100%;
+  min-height:38px;
+  padding:.42rem .5rem;
+  background:#fff;
+  border:1px solid #999995;
+  border-radius:2px;
+  font-weight:700;
+}
+
+.admin-course-context small{
+  color:#666;
+  font-size:.72rem;
+  line-height:1.35;
+}
+
+.admin-course-context select:disabled{
+  color:#777;
+  background:#f5f5f2;
+}
