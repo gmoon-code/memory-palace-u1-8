@@ -1,9 +1,14 @@
-const KEY='memory-palace-v2:progress';
+const LEGACY_KEY='memory-palace-v2:progress';
+const COURSE_KEY_PREFIX='story-method-v3:progress:';
+const DEFAULT_COURSE_ID='ap-biology';
+const STATE_VERSION=5;
 const HOUR=60*60*1000, DAY=24*HOUR, ASSIST_TTL=2*HOUR;
 
 function plainObject(value){return value&&typeof value==='object'&&!Array.isArray(value)?value:{}}
 function finiteNonNegative(value,fallback=0){const n=Number(value);return Number.isFinite(n)&&n>=0?Math.floor(n):fallback}
-function fresh(){return{activeUnit:'unit-1',activeJourney:null,sceneByJourney:{},review:[],storySeen:{},completedJourneys:{},encounteredObjects:{},assistedRecalls:{},assistedReviews:{},version:4}}
+function validCourseId(value){return typeof value==='string'&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value)}
+function keyForCourse(courseId=DEFAULT_COURSE_ID){const id=validCourseId(courseId)?courseId:DEFAULT_COURSE_ID;return `${COURSE_KEY_PREFIX}${id}`}
+function fresh(courseId=DEFAULT_COURSE_ID){return{courseId:validCourseId(courseId)?courseId:DEFAULT_COURSE_ID,activeUnit:'unit-1',activeJourney:null,sceneByJourney:{},review:[],storySeen:{},completedJourneys:{},encounteredObjects:{},assistedRecalls:{},assistedReviews:{},version:STATE_VERSION}}
 function cleanBooleanMap(value){const src=plainObject(value),out={};for(const [k,v] of Object.entries(src))if(typeof k==='string'&&v===true)out[k]=true;return out}
 function cleanSceneMap(value){const src=plainObject(value),out={};for(const [k,v] of Object.entries(src)){if(typeof k!=='string')continue;const n=finiteNonNegative(v,-1);if(n>=0)out[k]=n}return out}
 function cleanTimedMap(value,now=Date.now()){
@@ -17,9 +22,10 @@ function cleanReview(value){
  if(!Array.isArray(value))return[];
  return value.filter(x=>x&&typeof x==='object'&&typeof x.objectId==='string'&&Number.isFinite(Number(x.dueAt))).map(x=>({...x,dueAt:Number(x.dueAt),strength:finiteNonNegative(x.strength,0),questionIndex:finiteNonNegative(x.questionIndex,0)}));
 }
-function normalize(raw){
- const base=fresh(),src=plainObject(raw),unit=typeof src.activeUnit==='string'&&/^unit-\d+$/.test(src.activeUnit)?src.activeUnit:base.activeUnit;
+function normalize(raw,courseId=DEFAULT_COURSE_ID){
+ const base=fresh(courseId),src=plainObject(raw),unit=typeof src.activeUnit==='string'&&/^unit-\d+$/.test(src.activeUnit)?src.activeUnit:base.activeUnit;
  return{
+   courseId:base.courseId,
    activeUnit:unit,
    activeJourney:typeof src.activeJourney==='string'&&src.activeJourney.trim()?src.activeJourney:null,
    sceneByJourney:cleanSceneMap(src.sceneByJourney),
@@ -29,17 +35,52 @@ function normalize(raw){
    encounteredObjects:cleanBooleanMap(src.encounteredObjects),
    assistedRecalls:cleanTimedMap(src.assistedRecalls),
    assistedReviews:cleanTimedMap(src.assistedReviews),
-   version:4,
+   version:STATE_VERSION,
  };
 }
 function storage(){try{return globalThis.localStorage||null}catch{return null}}
-export function loadState(){
- try{const s=storage();if(!s)return fresh();const raw=s.getItem(KEY);return normalize(raw?JSON.parse(raw):{})}catch{return fresh()}
+function meaningful(state){
+ return !!(
+   state?.activeUnit&&state.activeUnit!=='unit-1'||
+   state?.activeJourney||
+   Object.keys(plainObject(state?.sceneByJourney)).length||
+   Array.isArray(state?.review)&&state.review.length||
+   Object.keys(plainObject(state?.storySeen)).length||
+   Object.keys(plainObject(state?.completedJourneys)).length||
+   Object.keys(plainObject(state?.encounteredObjects)).length
+ );
+}
+export function loadState(courseId=DEFAULT_COURSE_ID){
+ const id=validCourseId(courseId)?courseId:DEFAULT_COURSE_ID;
+ try{
+   const s=storage();if(!s)return fresh(id);
+   const raw=s.getItem(keyForCourse(id));
+   if(raw)return normalize(JSON.parse(raw),id);
+   if(id===DEFAULT_COURSE_ID){
+     const legacy=s.getItem(LEGACY_KEY);
+     if(legacy){
+       const migrated=normalize(JSON.parse(legacy),id);
+       try{s.setItem(keyForCourse(id),JSON.stringify(migrated))}catch{}
+       return migrated;
+     }
+   }
+   return fresh(id);
+ }catch{return fresh(id)}
 }
 export function saveState(state){
- const normalized=normalize(state);Object.assign(state,normalized);
- try{const s=storage();if(s)s.setItem(KEY,JSON.stringify(normalized))}catch{/* Progress remains usable in memory when storage is unavailable. */}
+ const id=validCourseId(state?.courseId)?state.courseId:DEFAULT_COURSE_ID;
+ const normalized=normalize(state,id);Object.assign(state,normalized);
+ try{const s=storage();if(s)s.setItem(keyForCourse(id),JSON.stringify(normalized))}catch{/* Progress remains usable in memory when storage is unavailable. */}
  return state;
+}
+export function hasSavedProgress(courseId=DEFAULT_COURSE_ID){return meaningful(loadState(courseId))}
+export function clearCourseProgress(courseId=DEFAULT_COURSE_ID){
+ const id=validCourseId(courseId)?courseId:DEFAULT_COURSE_ID;
+ try{
+   const s=storage();if(!s)return;
+   s.removeItem(keyForCourse(id));
+   if(id===DEFAULT_COURSE_ID)s.removeItem(LEGACY_KEY);
+ }catch{}
 }
 export function sceneIndex(state,id){return finiteNonNegative(state?.sceneByJourney?.[id],0)}
 export function setSceneIndex(state,id,index){if(typeof id!=='string'||!id)return;state.sceneByJourney={...plainObject(state.sceneByJourney),[id]:finiteNonNegative(index,0)};saveState(state)}
