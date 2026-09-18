@@ -93,6 +93,21 @@ localStorage.setItem('memory-palace-v2:progress',JSON.stringify({activeUnit:7,ac
 const throwing={getItem(){throw new Error('blocked')},setItem(){throw new Error('blocked')}};global.localStorage=throwing;st=stateMod.loadState();assert(st.activeUnit==='unit-1','Unavailable localStorage did not recover in memory');assert(stateMod.saveState(st).version===5,'Unavailable localStorage prevented in-memory state use');
 global.localStorage={store:new Map(),setItem(k,v){this.store.set(k,String(v))},getItem(k){return this.store.has(k)?this.store.get(k):null},removeItem(k){this.store.delete(k)},clear(){this.store.clear()}};
 
+// Course isolation and legacy AP Biology migration.
+localStorage.setItem('memory-palace-v2:progress',JSON.stringify({activeUnit:'unit-8',storySeen:{'U8-J1:0':true},review:[],completedJourneys:{},encounteredObjects:{},sceneByJourney:{},assistedRecalls:{},assistedReviews:{}}));
+const migratedBio=stateMod.loadState('ap-biology');
+assert(migratedBio.courseId==='ap-biology'&&migratedBio.storySeen['U8-J1:0'],'Legacy AP Biology progress did not migrate');
+assert(localStorage.getItem('story-method-v3:progress:ap-biology'),'Migrated AP Biology progress was not written to the course-scoped key');
+assert(localStorage.getItem('memory-palace-v2:progress'),'Legacy rollback copy was removed during migration');
+const freshChem=stateMod.loadState('ap-chemistry');
+assert(freshChem.courseId==='ap-chemistry'&&!freshChem.storySeen['U8-J1:0'],'AP Chemistry inherited AP Biology progress');
+stateMod.markSeen(freshChem,'CHEM-J1',0);
+assert(stateMod.loadState('ap-chemistry').storySeen['CHEM-J1:0'],'AP Chemistry progress did not persist to its own key');
+assert(!stateMod.loadState('ap-biology').storySeen['CHEM-J1:0'],'AP Chemistry progress leaked into AP Biology');
+stateMod.clearCourseProgress('ap-chemistry');
+assert(stateMod.loadState('ap-biology').storySeen['U8-J1:0'],'Clearing AP Chemistry affected AP Biology progress');
+localStorage.clear();
+
 // Assisted Quick Recall persists across a reload and expires after the two-hour protection window.
 st=stateMod.loadState();stateMod.markRecallAssisted(st,'U8-J1','K001');const reloaded=stateMod.loadState();assert(stateMod.wasRecallAssisted(reloaded,'U8-J1','K001'),'Assisted recall marker did not survive reload');reloaded.assistedRecalls['U8-J1:K001']=Date.now()-3*60*60*1000;stateMod.saveState(reloaded);assert(!stateMod.wasRecallAssisted(stateMod.loadState(),'U8-J1','K001'),'Expired assisted recall marker did not clear');
 
