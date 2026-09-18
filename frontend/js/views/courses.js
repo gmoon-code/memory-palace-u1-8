@@ -1,17 +1,10 @@
 function esc(v=''){return String(v).replace(/[&<>'\"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[ch]))}
 
-function hasProgress(state){
-  const seen=state?.storySeen&&Object.keys(state.storySeen).length>0;
-  const completed=state?.completedJourneys&&Object.keys(state.completedJourneys).length>0;
-  const reviews=Array.isArray(state?.review)&&state.review.length>0;
-  return !!(seen||completed||reviews);
-}
-
-export function coursesView(registry,state){
+export function coursesView(registry,progressByCourse={}){
   const courses=(registry?.courses||[]).filter(c=>c?.student_visible!==false&&c?.status==='available');
   const cards=courses.map((course,index)=>{
     const theme=['yellow','green','turquoise','pink'][index%4];
-    const progress=course.course_id==='ap-biology'&&hasProgress(state);
+    const progress=!!progressByCourse[course.course_id];
     return `<article class="card course-choice-card" data-course-theme="${theme}">
       <div class="course-choice-head">
         <span class="course-choice-label">${esc(course.subject||'Science')}</span>
