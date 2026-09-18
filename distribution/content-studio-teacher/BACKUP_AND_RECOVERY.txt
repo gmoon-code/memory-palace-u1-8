@@ -1,0 +1,39 @@
+CONTENT STUDIO BACKUP AND RECOVERY
+
+LOCAL STATE
+
+Drafts, revisions, recovery snapshots, media staging, audit records, and other private administrator state are stored under the ignored server_data folder.
+
+Owner credentials are stored separately in the ignored .env.content-studio-local file.
+
+BACKUP
+
+Stop active editing when practical and double-click "Backup Content Studio.cmd".
+
+A timestamped ZIP and SHA-256 sidecar are created under content-studio-backups.
+
+The backup includes Content Studio state and SQLite snapshots. It excludes the owner credential file, source code, Git metadata, and the private Python environment.
+
+RESTORE
+
+1. Stop Content Studio with Ctrl+C.
+2. Double-click "Restore Content Studio.cmd".
+3. Enter the exact path to the backup ZIP.
+4. Type RESTORE when prompted.
+5. The restore validates the archive before changing server_data.
+6. A pre-restore safety backup is created when current state exists.
+7. Start Content Studio again and verify the restored draft or revision.
+
+Restoring a state backup does not replace the owner credential file.
+
+REPAIR
+
+If local setup or dependencies appear damaged, stop Content Studio and run "Repair Content Studio.cmd".
+
+UPDATE FAILURE
+
+The safe updater creates a state backup and code recovery record before applying a newer validated commit. If local validation fails, the updater restores the previous code commit automatically and keeps the state backup.
+
+Do not delete content-studio-backups until you are sure the recovered installation is working.
+
+No cloud backup or paid storage service is required by this workflow.
