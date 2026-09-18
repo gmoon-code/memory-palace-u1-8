@@ -619,3 +619,20 @@ async function applyReplacement() {
 }
 
 ensureReplacementUi();
+
+window.addEventListener("story-method-course-changed", (event) => {
+  replacementState.records = [];
+  replacementState.plan = null;
+  replacementState.draft = null;
+  replacementState.analysis = null;
+  const units = Array.isArray(event.detail?.units) ? event.detail.units : [];
+  const select = r("replacement-unit-filter");
+  if (select && units.length) {
+    select.innerHTML = units
+      .map((unit) => `<option value="${esc(unit.unit_id)}">Unit ${Number(unit.number) || ""} · ${esc(unit.title || unit.unit_id)}</option>`)
+      .join("");
+    replacementState.unitId = select.value || units[0].unit_id;
+  }
+  resetReplacementDetail();
+  if (!r("replacement-view")?.classList.contains("hidden")) loadReplacementTargets();
+});
