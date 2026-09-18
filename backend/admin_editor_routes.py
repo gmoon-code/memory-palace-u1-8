@@ -13,6 +13,7 @@ router = APIRouter(prefix="/api/admin/editors", tags=["content-studio-editors"])
 
 class CreateEditorDraftRequest(BaseModel):
     entity_id: str = Field(min_length=1, max_length=512)
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
 
 
 class SaveEditorDraftRequest(BaseModel):
@@ -65,10 +66,10 @@ def editor_schema(request: Request, entity_type: str):
 
 
 @router.get("/entity")
-def editor_entity(request: Request, entity_id: str):
+def editor_entity(request: Request, entity_id: str, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        entity = admin_editors.editable_entity(entity_id)
+        entity = admin_editors.editable_entity(entity_id, course_id)
         return {
             "entity": entity,
             "editor_schema": admin_editors.schema_for(entity["type"]),
@@ -90,7 +91,7 @@ def editor_validate(payload: ValidateEditorPayloadRequest, request: Request):
 def editor_draft_create(payload: CreateEditorDraftRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
-        return admin_editors.create_editor_draft(payload.entity_id, session.username)
+        return admin_editors.create_editor_draft(payload.entity_id, session.username, payload.course_id)
     except Exception as exc:
         _raise_editor_error(exc)
 
