@@ -86,8 +86,11 @@ def smoke(port: int) -> None:
 def audit_count(database: Path) -> int:
     if not database.exists():
         raise SystemExit("ZERO-COST RUNTIME QA FAIL: security database was not persisted")
-    with sqlite3.connect(database) as connection:
+    connection = sqlite3.connect(database)
+    try:
         row = connection.execute("SELECT COUNT(*) FROM admin_audit").fetchone()
+    finally:
+        connection.close()
     return int(row[0])
 
 
@@ -145,6 +148,7 @@ def main() -> None:
         print("- service restarted using the same local state directory")
         print(f"- persistent audit events increased from {first_audit_count} to {second_audit_count}")
         print("- publication and GitHub publication remained disabled")
+        print("- SQLite verification handles were explicitly closed for Windows temporary-file cleanup")
 
 
 if __name__ == "__main__":
