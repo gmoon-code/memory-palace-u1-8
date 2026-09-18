@@ -422,8 +422,8 @@ def _enrich_memory(entity: dict[str, Any], source: Any) -> None:
         return
 
 
-def editable_entity(entity_id: str) -> dict[str, Any]:
-    base = admin_catalog.get_entity(entity_id)
+def editable_entity(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    base = admin_catalog.get_entity(entity_id, course_id)
     if base is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
     entity = deepcopy(base)
@@ -519,9 +519,9 @@ def validate_payload(entity_type: str, payload: dict[str, Any]) -> dict[str, Any
     return {"valid": True, "entity_type": entity_type, "fields_checked": checked}
 
 
-def create_editor_draft(entity_id: str, username: str) -> dict[str, Any]:
-    enriched = editable_entity(entity_id)
-    draft = admin_drafts.create_draft(entity_id, username)
+def create_editor_draft(entity_id: str, username: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    enriched = editable_entity(entity_id, course_id)
+    draft = admin_drafts.create_draft(entity_id, username, course_id)
     if draft.get("existing"):
         draft["editor_schema"] = schema_for(draft["entity_type"])
         return draft
