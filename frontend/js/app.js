@@ -1,6 +1,7 @@
-import {api} from './api.js';
+import {api,defaultCourseId} from './api.js';
 import {loadState,saveState,sceneIndex,setSceneIndex,markSeen,markJourneyComplete,markEncountered,scheduleReview,scheduleEncounteredReview,scheduleEligibleMixedReviews,dueReviews,totalDue,completeReview,completeMixedReview,markRecallAssisted,wasRecallAssisted,clearRecallAssisted,markReviewAssisted,wasReviewAssisted,clearReviewAssisted} from './state.js';
 import {speak,stopSpeech} from './audio.js';
+import {coursesView} from './views/courses.js';
 import {homeView} from './views/home.js';
 import {learnView,sceneSpeech} from './views/learn.js';
 import {reviewView} from './views/review.js';
@@ -8,13 +9,18 @@ import {practiceView} from './views/practice.js';
 
 const root=document.querySelector('#app');
 const state=loadState();
-let course=null,unit=null,journeys=[],activeJourney=null,applicationLab={items:[]},reviewManifest={targets:[]},mixedData={sets:[]};
-let practiceIndex=0,practiceRevealed=false,view='home',recallOpen=false;
+let registry={courses:[]},selectedCourseId=null,course=null,unit=null,journeys=[],activeJourney=null,applicationLab={items:[]},reviewManifest={targets:[]},mixedData={sets:[]};
+let practiceIndex=0,practiceRevealed=false,view='courses',recallOpen=false;
 
 function esc(v=''){return String(v).replace(/[&<>'\"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[ch]))}
 function shell(content){
- return `<div class="shell"><header class="topbar"><div class="brand">Memory Palace <span>AP Biology</span></div><nav class="nav" aria-label="Primary"><button data-nav="home" ${view==='home'?'class="active" aria-current="page"':''}>Home</button><button data-nav="learn" ${view==='learn'?'class="active" aria-current="page"':''}>Learn</button><button data-nav="review" ${view==='review'?'class="active" aria-current="page"':''}>Review</button></nav></header>${content}</div>`;
+ const courseTitle=course?.course_title||course?.title||'';
+ if(view==='courses'){
+   return `<div class="shell"><header class="topbar"><div class="brand">The Story Method</div><nav class="nav" aria-label="Primary"><button data-nav="courses" class="active" aria-current="page">Courses</button></nav></header>${content}</div>`;
+ }
+ return `<div class="shell"><header class="topbar"><div class="brand">The Story Method <span>${esc(courseTitle)}</span></div><nav class="nav" aria-label="Primary"><button data-nav="courses">Courses</button><button data-nav="home" ${view==='home'?'class="active" aria-current="page"':''}>Home</button><button data-nav="learn" ${view==='learn'?'class="active" aria-current="page"':''}>Learn</button><button data-nav="review" ${view==='review'?'class="active" aria-current="page"':''}>Review</button></nav></header>${content}</div>`;
 }
+function currentCourseId(){return selectedCourseId||defaultCourseId}
 function currentUnitId(){return state.activeUnit||'unit-1'}
 function targetMap(){return new Map((reviewManifest?.targets||[]).map(x=>[x.knowledge_id,x]))}
 function seenCount(j){return Array.from({length:Number(j?.scene_count||0)},(_,i)=>state.storySeen?.[`${j.palace_id}:${i}`]).filter(Boolean).length}
@@ -54,34 +60,62 @@ function centerCurrentRoute(){
  const target=current.offsetLeft-(strip.clientWidth-current.clientWidth)/2;strip.scrollLeft=Math.max(0,target);
 }
 function render({focus=false}={}){
- const recommended=nextUsefulJourney();
- if(view==='home')root.innerHTML=shell(homeView(course,unit,journeys,state,totalDue(state,currentUnitId()),recommended?.palace_id));
- else if(view==='learn'&&activeJourney)root.innerHTML=shell(learnView(activeJourney,sceneIndex(state,activeJourney.palace_id),recallOpen,visitedIndexes(activeJourney)));
- else if(view==='review')root.innerHTML=shell(reviewView(dueReviews(state,5,currentUnitId()),totalDue(state,currentUnitId()),mixedData?.sets||[]));
- else if(view==='practice')root.innerHTML=shell(practiceView(applicationLab,practiceIndex,practiceRevealed));
- else{view='home';root.innerHTML=shell(homeView(course,unit,journeys,state,totalDue(state,currentUnitId()),recommended?.palace_id));}
+ if(view==='courses'){
+   document.title='The Story Method · Science Courses';
+   root.innerHTML=shell(coursesView(registry,state));
+ }else{
+   document.title=`The Story Method · ${course?.course_title||course?.title||'Science'}`;
+   const recommended=nextUsefulJourney();
+   if(view==='home')root.innerHTML=shell(homeView(course,unit,journeys,state,totalDue(state,currentUnitId()),recommended?.palace_id));
+   else if(view==='learn'&&activeJourney)root.innerHTML=shell(learnView(activeJourney,sceneIndex(state,activeJourney.palace_id),recallOpen,visitedIndexes(activeJourney)));
+   else if(view==='review')root.innerHTML=shell(reviewView(dueReviews(state,5,currentUnitId()),totalDue(state,currentUnitId()),mixedData?.sets||[]));
+   else if(view==='practice')root.innerHTML=shell(practiceView(applicationLab,practiceIndex,practiceRevealed));
+   else{view='home';root.innerHTML=shell(homeView(course,unit,journeys,state,totalDue(state,currentUnitId()),recommended?.palace_id));}
+ }
  bind();centerCurrentRoute();if(focus)focusMain();
 }
 async function loadUnit(unitId){
- const [unitData,journeyData,labData,reviewData,mixedReviewData]=await Promise.all([api.unit(unitId),api.journeys(unitId),api.applicationLab(unitId),api.reviewManifest(unitId),api.mixedDiscrimination(unitId)]);
+ const courseId=currentCourseId();
+ const [unitData,journeyData,labData,reviewData,mixedReviewData]=await Promise.all([api.unit(courseId,unitId),api.journeys(courseId,unitId),api.applicationLab(courseId,unitId),api.reviewManifest(courseId,unitId),api.mixedDiscrimination(courseId,unitId)]);
  unit=unitData;journeys=Array.isArray(journeyData?.guided_journeys)?journeyData.guided_journeys:[];applicationLab=labData||{items:[]};reviewManifest=reviewData||{targets:[]};mixedData=mixedReviewData||{sets:[]};state.activeUnit=unitId;
  const useful=nextUsefulJourney();state.activeJourney=useful?.palace_id||null;activeJourney=null;saveState(state);
 }
 function releasedUnitIds(){return new Set((course?.units||[]).filter(u=>u.status==='STUDENT_READY').map(u=>u.unit_id))}
 function safeRequestedUnit(requested){const valid=releasedUnitIds();if(requested&&valid.has(requested))return requested;if(valid.has(state.activeUnit))return state.activeUnit;if(valid.has('unit-1'))return'unit-1';return [...valid][0]||'unit-1'}
-function syncUnitUrl(unitId){const u=new URL(location.href);if(unitId==='unit-1')u.searchParams.delete('unit');else u.searchParams.set('unit',unitId);history.replaceState({},'',u)}
+function syncCourseUnitUrl(courseId,unitId){
+ const u=new URL(location.href);u.searchParams.set('course',courseId);
+ if(unitId==='unit-1')u.searchParams.delete('unit');else u.searchParams.set('unit',unitId);
+ history.replaceState({},'',u);
+}
+function syncCoursesUrl(){const u=new URL(location.href);u.search='';u.hash='';history.replaceState({},'',u)}
+async function openCourse(courseId,requestedUnit=null){
+ const available=(registry?.courses||[]).find(c=>c.course_id===courseId&&c.student_visible!==false&&c.status==='available');
+ if(!available)return;
+ stopSpeech();recallOpen=false;practiceRevealed=false;activeJourney=null;
+ selectedCourseId=courseId;
+ try{
+   course=await api.course(courseId);
+   const unitId=safeRequestedUnit(requestedUnit);
+   await loadUnit(unitId);
+   view='home';syncCourseUnitUrl(courseId,unitId);render({focus:true});
+ }catch(err){showError(err,()=>openCourse(courseId,requestedUnit))}
+}
+function goCourses(){
+ stopSpeech();recallOpen=false;practiceRevealed=false;activeJourney=null;view='courses';
+ selectedCourseId=null;course=null;unit=null;journeys=[];syncCoursesUrl();render({focus:true});
+}
 async function switchUnit(unitId){
  if(!releasedUnitIds().has(unitId))return;
  stopSpeech();recallOpen=false;view='home';practiceRevealed=false;
- try{await loadUnit(unitId);syncUnitUrl(unitId);render({focus:true})}catch(err){showError(err,()=>switchUnit(unitId))}
+ try{await loadUnit(unitId);syncCourseUnitUrl(currentCourseId(),unitId);render({focus:true})}catch(err){showError(err,()=>switchUnit(unitId))}
 }
 async function openJourney(id=null){
  const selected=journeys.find(j=>j.palace_id===(id||nextUsefulJourney()?.palace_id));if(!selected)return;
- try{activeJourney=await api.journey(currentUnitId(),selected.palace_id);state.activeJourney=selected.palace_id;saveState(state);view='learn';recallOpen=false;stopSpeech();render({focus:true})}catch(err){showError(err,()=>openJourney(selected.palace_id))}
+ try{activeJourney=await api.journey(currentCourseId(),currentUnitId(),selected.palace_id);state.activeJourney=selected.palace_id;saveState(state);view='learn';recallOpen=false;stopSpeech();render({focus:true})}catch(err){showError(err,()=>openJourney(selected.palace_id))}
 }
 function currentScene(){if(!activeJourney)return null;return activeJourney.scenes[sceneIndex(state,activeJourney.palace_id)]||activeJourney.scenes[0]}
 async function recallData(objectId){
- const scene=currentScene(),beat=(scene?.story_beats||[]).find(x=>x.object_id===objectId),obj=await api.object(currentUnitId(),objectId);
+ const scene=currentScene(),beat=(scene?.story_beats||[]).find(x=>x.object_id===objectId),obj=await api.object(currentCourseId(),currentUnitId(),objectId);
  return{obj,hint:scene?.checkpoint_hint||beat?.hint||obj.mnemonic_actor_or_object||obj.phonological_keyword||'Return to the defining action in the scene.',answer:scene?.checkpoint_answer||beat?.term||obj.canonical_term,prompt:scene?.checkpoint_prompt||`What term or idea matches this scientific meaning?`};
 }
 async function showRecallHint(objectId){
@@ -119,7 +153,8 @@ function showReviewHint(objectId){
 function showReviewAnswer(objectId){const x=exactDue(objectId);if(!x)return;markReviewAssisted(state,objectId);const host=document.getElementById('reviewFeedback');if(host)host.innerHTML=`<div class="hint"><span class="eyebrow">Answer</span><p><strong>${esc(x.answer||'')}</strong></p><button class="primary" data-action="review-next" data-object="${esc(objectId)}">Continue review</button></div>`;document.querySelector('[data-action="review-next"]')?.addEventListener('click',()=>finishExactReview(objectId,false))}
 function finishExactReview(objectId,remembered){const assisted=wasReviewAssisted(state,objectId);completeReview(state,objectId,remembered&&!assisted);clearReviewAssisted(state,objectId);render({focus:true})}
 function bind(){
- document.querySelectorAll('[data-nav]').forEach(b=>b.onclick=()=>{const v=b.dataset.nav;if(v==='learn')openJourney(nextUsefulJourney()?.palace_id);else if(v==='home')goHome();else{view='review';recallOpen=false;stopSpeech();render({focus:true})}});
+ document.querySelectorAll('[data-nav]').forEach(b=>b.onclick=()=>{const v=b.dataset.nav;if(v==='courses')goCourses();else if(v==='learn')openJourney(nextUsefulJourney()?.palace_id);else if(v==='home')goHome();else{view='review';recallOpen=false;stopSpeech();render({focus:true})}});
+ document.querySelectorAll('[data-action="open-course"]').forEach(b=>b.onclick=()=>openCourse(b.dataset.course));
  document.querySelectorAll('[data-action="home"]').forEach(b=>b.onclick=goHome);
  document.querySelectorAll('[data-action="learn"]').forEach(b=>b.onclick=()=>openJourney(b.dataset.id));
  document.querySelectorAll('[data-action="switch-unit"]').forEach(b=>b.onclick=()=>switchUnit(b.dataset.unit));
@@ -149,6 +184,12 @@ function showError(err,retry){
  document.getElementById('retryApp')?.addEventListener('click',retry);document.getElementById('errorHome')?.addEventListener('click',()=>boot());focusMain();
 }
 async function boot(){
- try{course=await api.course();const requested=new URLSearchParams(location.search).get('unit'),unitId=safeRequestedUnit(requested);await loadUnit(unitId);if(requested!==unitId&&!(requested===null&&unitId==='unit-1'))syncUnitUrl(unitId);view='home';render({focus:false})}catch(err){showError(err,boot)}
+ try{
+   registry=await api.courses();
+   const params=new URLSearchParams(location.search),requestedCourse=params.get('course'),requestedUnit=params.get('unit');
+   if(requestedCourse){await openCourse(requestedCourse,requestedUnit);return}
+   if(requestedUnit){await openCourse(defaultCourseId,requestedUnit);return}
+   view='courses';render({focus:false});
+ }catch(err){showError(err,boot)}
 }
 boot();
