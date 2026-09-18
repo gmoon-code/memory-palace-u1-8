@@ -36,6 +36,7 @@ ALLOWED_POST_RELEASE_MAINTENANCE = {
     "Restore Content Studio.cmd",
     "scripts/backup_content_studio_local.py",
     "scripts/qa_zero_cost_backup_restore.py",
+    "scripts/qa_zero_cost_runtime.py",
     "server_data/.gitkeep",
 }
 
