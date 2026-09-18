@@ -737,24 +737,54 @@ def compare_draft(
     }
 
 
-def draft_summary() -> dict[str, Any]:
+def draft_summary(course_id: str | None = None) -> dict[str, Any]:
     with _connect() as connection:
-        totals = connection.execute(
-            "SELECT status, COUNT(*) AS n FROM content_drafts GROUP BY status"
-        ).fetchall()
-        revision_count = connection.execute("SELECT COUNT(*) AS n FROM content_draft_revisions").fetchone()["n"]
-        snapshot_count = connection.execute("SELECT COUNT(*) AS n FROM content_draft_snapshots").fetchone()["n"]
-        changed_count = 0
-        rows = connection.execute(
-            "SELECT base_fingerprint, payload_json FROM content_drafts WHERE status = 'draft'"
-        ).fetchall()
-        for row in rows:
-            if _fingerprint(_load(row["payload_json"])) != row["base_fingerprint"]:
-                changed_count += 1
+        if course_id:
+            totals = connection.execute(
+                "SELECT status, COUNT(*) AS n FROM content_drafts WHERE course_id = ? GROUP BY status",
+                (course_id,),
+            ).fetchall()
+            revision_count = connection.execute(
+                """
+                SELECT COUNT(*) AS n
+                FROM content_draft_revisions r
+                JOIN content_drafts d ON d.draft_id = r.draft_id
+                WHERE d.course_id = ?
+                """,
+                (course_id,),
+            ).fetchone()["n"]
+            snapshot_count = connection.execute(
+                """
+                SELECT COUNT(*) AS n
+                FROM content_draft_snapshots s
+                JOIN content_drafts d ON d.draft_id = s.draft_id
+                WHERE d.course_id = ?
+                """,
+                (course_id,),
+            ).fetchone()["n"]
+            rows = connection.execute(
+                "SELECT base_fingerprint, payload_json FROM content_drafts WHERE course_id = ? AND status = 'draft'",
+                (course_id,),
+            ).fetchall()
+        else:
+            totals = connection.execute(
+                "SELECT status, COUNT(*) AS n FROM content_drafts GROUP BY status"
+            ).fetchall()
+            revision_count = connection.execute("SELECT COUNT(*) AS n FROM content_draft_revisions").fetchone()["n"]
+            snapshot_count = connection.execute("SELECT COUNT(*) AS n FROM content_draft_snapshots").fetchone()["n"]
+            rows = connection.execute(
+                "SELECT base_fingerprint, payload_json FROM content_drafts WHERE status = 'draft'"
+            ).fetchall()
+        changed_count = sum(
+            1
+            for row in rows
+            if _fingerprint(_load(row["payload_json"])) != row["base_fingerprint"]
+        )
     counts = {"draft": 0, "archived": 0}
     counts.update({row["status"]: int(row["n"]) for row in totals})
     return {
         "schema": DRAFT_SCHEMA,
+        "course_id": course_id,
         "active_drafts": counts["draft"],
         "archived_drafts": counts["archived"],
         "changed_active_drafts": changed_count,
