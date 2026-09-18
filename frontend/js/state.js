@@ -41,8 +41,6 @@ function normalize(raw,courseId=DEFAULT_COURSE_ID){
 function storage(){try{return globalThis.localStorage||null}catch{return null}}
 function meaningful(state){
  return !!(
-   state?.activeUnit&&state.activeUnit!=='unit-1'||
-   state?.activeJourney||
    Object.keys(plainObject(state?.sceneByJourney)).length||
    Array.isArray(state?.review)&&state.review.length||
    Object.keys(plainObject(state?.storySeen)).length||
