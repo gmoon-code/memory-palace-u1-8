@@ -1,13 +1,13 @@
 from functools import lru_cache
 import json
 from pathlib import Path
-from .settings import CONTENT_DIR, APBIO_DIR, UNIT1_DIR, UNIT2_DIR, UNIT3_DIR, UNIT4_DIR, UNIT5_DIR, UNIT6_DIR, UNIT7_DIR, UNIT8_DIR
+from .settings import ROOT, CONTENT_DIR, APBIO_DIR, UNIT1_DIR, UNIT2_DIR, UNIT3_DIR, UNIT4_DIR, UNIT5_DIR, UNIT6_DIR, UNIT7_DIR, UNIT8_DIR
 
 def _read_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 @lru_cache(maxsize=1)
-def course_registry(): return _read_json(CONTENT_DIR / "courses.json")
+def course_registry(): return _read_json(ROOT / "platform" / "courses.json")
 
 @lru_cache(maxsize=1)
 def course(): return _read_json(APBIO_DIR / "course.json")
