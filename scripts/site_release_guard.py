@@ -16,8 +16,14 @@ def sha256(path: Path) -> str:
 
 
 def content_tree(root: Path) -> tuple[int, str]:
+    """Return the immutable AP Biology curriculum tree used by the historical UX1 lock.
+
+    The repository can now contain additional course namespaces under content/.
+    They must not retroactively alter the frozen AP Biology fingerprint.
+    """
     rows = []
-    for path in sorted(p for p in (root / 'content').rglob('*') if p.is_file()):
+    ap_biology = root / 'content' / 'ap-biology'
+    for path in sorted(p for p in ap_biology.rglob('*') if p.is_file()):
         rel = path.relative_to(root).as_posix()
         rows.append(f'{rel}\t{sha256(path)}\n')
     return len(rows), hashlib.sha256(''.join(rows).encode('utf-8')).hexdigest()
