@@ -29,11 +29,22 @@ ALLOWED_STABLE_EVIDENCE = {
 }
 
 ALLOWED_POST_STABLE_MAINTENANCE = {
+    ".github/workflows/qa.yml",
     "Backup Content Studio.cmd",
     "Restore Content Studio.cmd",
     "scripts/backup_content_studio_local.py",
     "scripts/qa_zero_cost_backup_restore.py",
     "scripts/qa_zero_cost_runtime.py",
+    "distribution/content-studio-teacher/Install Content Studio.cmd",
+    "distribution/content-studio-teacher/install_content_studio.py",
+    "distribution/content-studio-teacher/START_HERE.txt",
+    "distribution/content-studio-teacher/DAILY_USE.txt",
+    "distribution/content-studio-teacher/BACKUP_AND_RECOVERY.txt",
+    "distribution/content-studio-teacher/FIRST_RUN_CHECKLIST.txt",
+    "docs/admin/CONTENT_STUDIO_TEACHER_HANDOFF.md",
+    "release/content-studio/teacher-distribution-v1.0.0.json",
+    "scripts/build_content_studio_teacher_distribution.py",
+    "scripts/qa_content_studio_teacher_distribution.py",
     "scripts/qa_content_studio_release_candidate.py",
     "scripts/qa_content_studio_stable_release.py",
     "server_data/.gitkeep",

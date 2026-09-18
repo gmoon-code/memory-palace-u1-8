@@ -1,0 +1,22 @@
+CONTENT STUDIO FIRST RUN CHECKLIST
+
+After installation, verify each item.
+
+[ ] Content Studio opens in your browser.
+[ ] Your local owner login works.
+[ ] Dashboard opens.
+[ ] Course Map opens.
+[ ] Units 1 through 8 are visible.
+[ ] A unit, journey, and scene can be opened.
+[ ] A protected draft can be saved.
+[ ] Student Preview loads the draft.
+[ ] Content Health loads.
+[ ] Version History loads.
+[ ] Publishing shows the local safety state and remains disabled.
+[ ] Security and Audit loads.
+[ ] "Backup Content Studio.cmd" creates a local backup successfully.
+[ ] After stopping Content Studio, "Update Content Studio.cmd" reports either a validated update or that the installation is already current.
+
+Keep publication disabled during normal local drafting unless you deliberately begin the separate publication workflow.
+
+If a launcher reports an error, keep the full command-window message. The safety tools are designed to stop before destructive actions when validation fails.

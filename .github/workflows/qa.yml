@@ -85,6 +85,7 @@ jobs:
       - run: python scripts/qa_zero_cost_backup_restore.py
       - run: python scripts/qa_zero_cost_local_updater.py
       - run: python scripts/qa_content_studio_health_repair.py
+      - run: python scripts/qa_content_studio_teacher_distribution.py
       - run: python scripts/qa_admin_capability_audit.py
       - run: python scripts/qa_admin_workflow.py
       - run: python scripts/qa_admin_e2e_usability.py

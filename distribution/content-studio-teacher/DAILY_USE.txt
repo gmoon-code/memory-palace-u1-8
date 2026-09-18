@@ -1,0 +1,39 @@
+CONTENT STUDIO DAILY USE
+
+START
+
+Double-click "Start Content Studio.cmd" inside the installed Story Method Content Studio folder.
+
+Sign in with the local owner credentials you created during first-time setup.
+
+STOP
+
+Return to the Content Studio command window and press Ctrl+C.
+
+NORMAL WORKFLOW
+
+Browse the course and content.
+Open or create a protected draft.
+Edit the draft.
+Use Student Preview.
+Run Content Health.
+Review Version History.
+Keep publication disabled unless you deliberately enter a separate publication workflow.
+
+BACKUP
+
+Double-click "Backup Content Studio.cmd" whenever you want a manual local backup.
+
+UPDATE
+
+Stop Content Studio first, then double-click "Update Content Studio.cmd".
+
+The updater accepts only a clean checkout of the official repository, only fast-forward updates, and only an exact remote commit that has successfully completed Memory Palace QA. It creates a local state backup before changing code and rolls code back automatically if local validation fails.
+
+REPAIR
+
+Stop Content Studio first, then double-click "Repair Content Studio.cmd".
+
+Repair creates a safety backup, restores the local-only safety locks, checks the private Python environment, and validates Content Studio without editing AP Biology curriculum.
+
+All supported daily-use tools remain local and zero-cost.
