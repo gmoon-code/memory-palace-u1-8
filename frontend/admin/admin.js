@@ -1,6 +1,9 @@
 const state = {
   csrfToken: "",
   session: null,
+  courses: [],
+  selectedCourseId: "ap-biology",
+  selectedCourse: null,
   catalogSummary: null,
   courseMap: null,
   currentCatalogType: null,
@@ -169,6 +172,43 @@ function humanizeKey(value) {
 function unitLabel(unitId) {
   if (!unitId) return "Course-wide";
   return unitId.replace("unit-", "Unit ");
+}
+
+function courseApiUrl(path) {
+  const url = new URL(path, window.location.origin);
+  url.searchParams.set("course_id", state.selectedCourseId || "ap-biology");
+  return `${url.pathname}${url.search}`;
+}
+
+function selectedCourseTitle() {
+  return state.selectedCourse?.title || state.selectedCourse?.short_title || state.catalogSummary?.course_title || state.selectedCourseId || "Course";
+}
+
+function updateCourseChrome() {
+  const course = state.courses.find((item) => item.course_id === state.selectedCourseId) || null;
+  state.selectedCourse = course;
+  const note = el("admin-course-note");
+  if (note) {
+    note.textContent = course?.catalog_ready
+      ? `${course.unit_count || 0} units · catalog ready`
+      : "Course content is registered but the teacher catalog is not ready yet.";
+  }
+  const studentLink = el("student-site-link");
+  if (studentLink) {
+    studentLink.href = `/?course=${encodeURIComponent(state.selectedCourseId)}`;
+    studentLink.setAttribute("aria-label", `Open ${selectedCourseTitle()} student site`);
+  }
+}
+
+function populateUnitFilter(courseMap) {
+  const select = el("catalog-unit-filter");
+  if (!select) return;
+  const units = Array.isArray(courseMap?.units) ? courseMap.units : [];
+  const previous = select.value;
+  select.innerHTML = '<option value="">All units</option>' + units
+    .map((unit) => `<option value="${escapeHtml(unit.unit_id)}">Unit ${number(unit.number)} · ${escapeHtml(unit.title)}</option>`)
+    .join("");
+  if ([...select.options].some((option) => option.value === previous)) select.value = previous;
 }
 
 async function apiRequest(url, options = {}) {
@@ -418,7 +458,7 @@ async function inspectEntity(entityId, destination = "map") {
   const target = el(targetId);
   target.innerHTML = '<p class="empty-state">Loading dependencies…</p>';
   try {
-    const report = await apiRequest(`/api/admin/catalog/dependencies?entity_id=${encodeURIComponent(entityId)}&depth=2&limit=500`);
+    const report = await apiRequest(courseApiUrl(`/api/admin/catalog/dependencies?entity_id=${encodeURIComponent(entityId)}&depth=2&limit=500`));
     renderDependencyReport(report, targetId, titleId);
   } catch (error) {
     handleApiError(error, target);
@@ -433,7 +473,8 @@ async function loadCourseMap(force = false) {
   }
   target.innerHTML = '<p class="empty-state">Building normalized course map…</p>';
   try {
-    state.courseMap = await apiRequest("/api/admin/catalog/course-map");
+    state.courseMap = await apiRequest(courseApiUrl("/api/admin/catalog/course-map"));
+    populateUnitFilter(state.courseMap);
     renderCourseMap(state.courseMap);
   } catch (error) {
     handleApiError(error, target);
@@ -484,7 +525,7 @@ async function loadCatalogView(entityType = state.currentCatalogType) {
   el("catalog-view-title").textContent = config?.label || humanizeKey(entityType);
   const list = el("catalog-record-list");
   list.innerHTML = '<p class="empty-state">Loading normalized records…</p>';
-  const params = new URLSearchParams({ entity_type: entityType, limit: "500" });
+  const params = new URLSearchParams({ course_id: state.selectedCourseId, entity_type: entityType, limit: "500" });
   if (unitId) params.set("unit_id", unitId);
   try {
     const payload = await apiRequest(`/api/admin/catalog/entities?${params.toString()}`);
@@ -523,7 +564,7 @@ async function loadHealth(force = false) {
     return;
   }
   try {
-    state.catalogSummary = await apiRequest("/api/admin/catalog/summary");
+    state.catalogSummary = await apiRequest(courseApiUrl("/api/admin/catalog/summary"));
     renderHealth(state.catalogSummary);
   } catch (error) {
     handleApiError(error, el("health-problems"));
@@ -633,18 +674,19 @@ async function loadDashboard() {
   banner.classList.remove("ok", "error");
   try {
     const [summary, map] = await Promise.all([
-      apiRequest("/api/admin/catalog/summary"),
-      apiRequest("/api/admin/catalog/course-map"),
+      apiRequest(courseApiUrl("/api/admin/catalog/summary")),
+      apiRequest(courseApiUrl("/api/admin/catalog/course-map")),
     ]);
     state.catalogSummary = summary;
     state.courseMap = map;
+    populateUnitFilter(map);
     renderMetrics(summary);
     renderUnits(map);
     renderAlignment("release-alignment", summary.release_alignment);
     renderCatalogTypes(summary);
     renderCapabilities();
     const health = summary.health || {};
-    banner.textContent = `Normalized ${number(summary.counts?.concept)} scientific records, ${number(summary.counts?.journey)} journeys, and ${number(summary.counts?.scene)} scenes. ${number(health.error_count)} release-alignment errors and ${number(summary.unresolved_reference_count)} unresolved source references are currently reported.`;
+    banner.textContent = `${selectedCourseTitle()} · normalized ${number(summary.counts?.concept)} scientific records, ${number(summary.counts?.journey)} journeys, and ${number(summary.counts?.scene)} scenes. ${number(health.error_count)} release-alignment errors and ${number(summary.unresolved_reference_count)} unresolved source references are currently reported.`;
     banner.classList.add(health.error_count ? "error" : "ok");
   } catch (error) {
     if (handleApiError(error)) return;
@@ -682,7 +724,23 @@ function renderSearchResults(items, query) {
   el("close-search-results")?.addEventListener("click", () => target.classList.add("hidden"));
 }
 
-function showStudio(session) {
+async function loadCourseContext() {
+  const payload = await apiRequest("/api/admin/courses");
+  state.courses = Array.isArray(payload?.courses) ? payload.courses : [];
+  const editable = state.courses.filter((item) => item.catalog_ready && item.editable !== false);
+  if (!editable.length) throw new Error("No Content Studio course catalog is available.");
+  if (!editable.some((item) => item.course_id === state.selectedCourseId)) {
+    state.selectedCourseId = editable[0].course_id;
+  }
+  const select = el("admin-course-select");
+  select.innerHTML = state.courses
+    .map((course) => `<option value="${escapeHtml(course.course_id)}" ${course.catalog_ready ? "" : "disabled"}>${escapeHtml(course.title || course.course_id)}${course.catalog_ready ? "" : " · preparing"}</option>`)
+    .join("");
+  select.value = state.selectedCourseId;
+  updateCourseChrome();
+}
+
+async function showStudio(session) {
   state.session = session;
   state.csrfToken = session.csrf_token || "";
   el("session-user").textContent = `${session.username} · ${session.role}`;
@@ -690,8 +748,15 @@ function showStudio(session) {
   el("studio-shell").classList.remove("hidden");
   el("login-message").textContent = "";
   el("admin-password").value = "";
-  activateView("dashboard");
-  loadDashboard();
+  try {
+    await loadCourseContext();
+    activateView("dashboard");
+    await loadDashboard();
+  } catch (error) {
+    const banner = el("status-banner");
+    banner.textContent = `Content Studio could not load the course registry. ${error.message}`;
+    banner.classList.add("error");
+  }
 }
 
 function showLogin(message = "") {
@@ -699,6 +764,8 @@ function showLogin(message = "") {
   state.csrfToken = "";
   state.catalogSummary = null;
   state.courseMap = null;
+  state.courses = [];
+  state.selectedCourse = null;
   el("studio-shell").classList.add("hidden");
   el("login-view").classList.remove("hidden");
   const messageNode = el("login-message");
@@ -711,7 +778,7 @@ function showLogin(message = "") {
 async function restoreSession() {
   try {
     const session = await apiRequest("/api/admin/session");
-    showStudio(session);
+    await showStudio(session);
   } catch (error) {
     if (error.status === 401) return showLogin();
     if (error.status === 503) return showLogin("Admin authentication is enabled but has not been fully configured on the server.");
@@ -733,7 +800,7 @@ el("login-form").addEventListener("submit", async (event) => {
       method: "POST",
       body: JSON.stringify({ username, password }),
     });
-    showStudio(session);
+    await showStudio(session);
   } catch (error) {
     messageNode.textContent = error.message;
     messageNode.classList.add("error");
@@ -765,7 +832,7 @@ el("catalog-search-form").addEventListener("submit", async (event) => {
   target.classList.remove("hidden");
   target.innerHTML = '<p class="empty-state">Searching normalized content…</p>';
   try {
-    const result = await apiRequest(`/api/admin/catalog/search?q=${encodeURIComponent(query)}&limit=50`);
+    const result = await apiRequest(courseApiUrl(`/api/admin/catalog/search?q=${encodeURIComponent(query)}&limit=50`));
     renderSearchResults(Array.isArray(result.items) ? result.items : [], query);
   } catch (error) {
     handleApiError(error, target);
@@ -776,6 +843,24 @@ el("refresh-course-map").addEventListener("click", () => loadCourseMap(true));
 el("refresh-health").addEventListener("click", () => loadHealth(true));
 el("refresh-audit").addEventListener("click", loadSecurity);
 el("catalog-filter-apply").addEventListener("click", () => loadCatalogView());
+
+el("admin-course-select").addEventListener("change", async (event) => {
+  const next = event.target.value;
+  const record = state.courses.find((item) => item.course_id === next);
+  if (!record?.catalog_ready) {
+    event.target.value = state.selectedCourseId;
+    return;
+  }
+  state.selectedCourseId = next;
+  state.catalogSummary = null;
+  state.courseMap = null;
+  state.currentCatalogType = null;
+  updateCourseChrome();
+  el("catalog-search-results").classList.add("hidden");
+  el("catalog-search-input").value = "";
+  activateView("dashboard");
+  await loadDashboard();
+});
 
 document.querySelectorAll(".nav-item").forEach((button) => {
   button.addEventListener("click", () => activateView(button.dataset.view));
