@@ -1,5 +1,5 @@
 import {api,defaultCourseId} from './api.js';
-import {loadState,saveState,sceneIndex,setSceneIndex,markSeen,markJourneyComplete,markEncountered,scheduleReview,scheduleEncounteredReview,scheduleEligibleMixedReviews,dueReviews,totalDue,completeReview,completeMixedReview,markRecallAssisted,wasRecallAssisted,clearRecallAssisted,markReviewAssisted,wasReviewAssisted,clearReviewAssisted} from './state.js';
+import {loadState,hasSavedProgress,saveState,sceneIndex,setSceneIndex,markSeen,markJourneyComplete,markEncountered,scheduleReview,scheduleEncounteredReview,scheduleEligibleMixedReviews,dueReviews,totalDue,completeReview,completeMixedReview,markRecallAssisted,wasRecallAssisted,clearRecallAssisted,markReviewAssisted,wasReviewAssisted,clearReviewAssisted} from './state.js';
 import {speak,stopSpeech} from './audio.js';
 import {coursesView} from './views/courses.js';
 import {homeView} from './views/home.js';
@@ -8,7 +8,7 @@ import {reviewView} from './views/review.js';
 import {practiceView} from './views/practice.js';
 
 const root=document.querySelector('#app');
-const state=loadState();
+let state=loadState(defaultCourseId);
 let registry={courses:[]},selectedCourseId=null,course=null,unit=null,journeys=[],activeJourney=null,applicationLab={items:[]},reviewManifest={targets:[]},mixedData={sets:[]};
 let practiceIndex=0,practiceRevealed=false,view='courses',recallOpen=false;
 
@@ -62,7 +62,8 @@ function centerCurrentRoute(){
 function render({focus=false}={}){
  if(view==='courses'){
    document.title='The Story Method · Science Courses';
-   root.innerHTML=shell(coursesView(registry,state));
+   const progressByCourse=Object.fromEntries((registry?.courses||[]).map(item=>[item.course_id,hasSavedProgress(item.course_id)]));
+   root.innerHTML=shell(coursesView(registry,progressByCourse));
  }else{
    document.title=`The Story Method · ${course?.course_title||course?.title||'Science'}`;
    const recommended=nextUsefulJourney();
@@ -92,7 +93,7 @@ async function openCourse(courseId,requestedUnit=null){
  const available=(registry?.courses||[]).find(c=>c.course_id===courseId&&c.student_visible!==false&&c.status==='available');
  if(!available)return;
  stopSpeech();recallOpen=false;practiceRevealed=false;activeJourney=null;
- selectedCourseId=courseId;
+ selectedCourseId=courseId;state=loadState(courseId);
  try{
    course=await api.course(courseId);
    const unitId=safeRequestedUnit(requestedUnit);
