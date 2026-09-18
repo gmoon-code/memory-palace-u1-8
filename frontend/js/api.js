@@ -27,7 +27,7 @@ function staticJSON(relativePath){
 }
 function courseDir(courseId=DEFAULT_COURSE_ID){return `content/${courseId}`}
 function unitDir(courseId,unitId){return `${courseDir(courseId)}/${unitId}`}
-async function staticCourses(){return staticJSON('content/courses.json')}
+async function staticCourses(){return staticJSON('platform/courses.json')}
 async function staticCourse(courseId=DEFAULT_COURSE_ID){return staticJSON(`${courseDir(courseId)}/course.json`)}
 async function staticUnits(courseId=DEFAULT_COURSE_ID){return{course_id:courseId,units:(await staticCourse(courseId)).units||[]}}
 async function staticUnit(courseId,unitId){return((await staticCourse(courseId)).units||[]).find(u=>u.unit_id===unitId)||null}
