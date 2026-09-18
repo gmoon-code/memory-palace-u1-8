@@ -49,8 +49,8 @@ class ReplacementBlocked(admin_drafts.DraftError):
     pass
 
 
-def _target_type(entity_id: str) -> str:
-    entity = admin_catalog.get_entity(entity_id)
+def _target_type(entity_id: str, course_id: str = "ap-biology") -> str:
+    entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
     entity_type = str(entity.get("type") or "")
@@ -59,8 +59,8 @@ def _target_type(entity_id: str) -> str:
     return entity_type
 
 
-def _full_journey(entity_id: str) -> dict[str, Any]:
-    entity = admin_catalog.get_entity(entity_id)
+def _full_journey(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
     source = admin_editors._load_source(entity.get("source_path"))
@@ -78,11 +78,11 @@ def _full_journey(entity_id: str) -> dict[str, Any]:
     return payload
 
 
-def replacement_base(entity_id: str) -> dict[str, Any]:
-    entity_type = _target_type(entity_id)
+def replacement_base(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    entity_type = _target_type(entity_id, course_id)
     if entity_type == "scene":
-        return admin_editors.editable_entity(entity_id)
-    return _full_journey(entity_id)
+        return admin_editors.editable_entity(entity_id, course_id)
+    return _full_journey(entity_id, course_id)
 
 
 def _route_signature(payload: dict[str, Any]) -> list[tuple[Any, Any]]:
@@ -140,15 +140,15 @@ def _coverage_refs(payload: dict[str, Any]) -> set[str]:
     return _scene_refs(payload)
 
 
-def _resolve_knowledge(unit_id: str, raw_reference: str) -> list[dict[str, Any]]:
-    resolved = admin_catalog.resolve_reference(unit_id, raw_reference)
+def _resolve_knowledge(unit_id: str, raw_reference: str, course_id: str = "ap-biology") -> list[dict[str, Any]]:
+    resolved = admin_catalog.resolve_reference(unit_id, raw_reference, course_id)
     items: list[dict[str, Any]] = []
     for entity in resolved.get("matches", []):
         if entity.get("type") not in {"concept", "memory_object"}:
             continue
         items.append(entity)
         if entity.get("type") == "memory_object":
-            report = admin_catalog.dependency_report(entity["id"], depth=1, limit=40) or {}
+            report = admin_catalog.dependency_report(entity["id"], course_id=course_id, depth=1, limit=40) or {}
             for linked in report.get("direct_outbound", []):
                 edge = linked.get("edge", {})
                 target = linked.get("entity", {})
@@ -157,24 +157,24 @@ def _resolve_knowledge(unit_id: str, raw_reference: str) -> list[dict[str, Any]]
     return items
 
 
-def _scene_catalog_ids_for_journey(journey_id: str, unit_id: str) -> list[str]:
-    items = admin_catalog.list_entities(entity_type="scene", unit_id=unit_id, limit=500).get("items", [])
+def _scene_catalog_ids_for_journey(journey_id: str, unit_id: str, course_id: str = "ap-biology") -> list[str]:
+    items = admin_catalog.list_entities(course_id=course_id, entity_type="scene", unit_id=unit_id, limit=500).get("items", [])
     items = [item for item in items if item.get("journey_id") == journey_id]
     items.sort(key=lambda item: (item.get("scene_index") or 0, item["id"]))
     return [item["id"] for item in items]
 
 
-def required_knowledge(entity_id: str) -> list[dict[str, Any]]:
-    base = replacement_base(entity_id)
+def required_knowledge(entity_id: str, course_id: str = "ap-biology") -> list[dict[str, Any]]:
+    base = replacement_base(entity_id, course_id)
     unit_id = str(base.get("unit_id") or "")
     raw_refs = set(_coverage_refs(base))
     target_ids = [entity_id]
     if base.get("type") == "journey":
-        target_ids.extend(_scene_catalog_ids_for_journey(entity_id, unit_id))
+        target_ids.extend(_scene_catalog_ids_for_journey(entity_id, unit_id, course_id))
 
     direct_entities: list[dict[str, Any]] = []
     for target_id in target_ids:
-        report = admin_catalog.dependency_report(target_id, depth=1, limit=500) or {}
+        report = admin_catalog.dependency_report(target_id, course_id=course_id, depth=1, limit=500) or {}
         for item in report.get("direct_outbound", []):
             edge = item.get("edge", {})
             entity = item.get("entity", {})
@@ -183,7 +183,7 @@ def required_knowledge(entity_id: str) -> list[dict[str, Any]]:
 
     records: dict[str, dict[str, Any]] = {}
     for raw in sorted(raw_refs):
-        matches = _resolve_knowledge(unit_id, raw)
+        matches = _resolve_knowledge(unit_id, raw, course_id)
         if not matches:
             key = f"raw:{raw}"
             records[key] = {
@@ -225,8 +225,8 @@ def required_knowledge(entity_id: str) -> list[dict[str, Any]]:
     return sorted(records.values(), key=lambda item: (str(item.get("canonical_term") or "").casefold(), item["id"]))
 
 
-def dependency_impact(entity_id: str) -> dict[str, Any]:
-    report = admin_catalog.dependency_report(entity_id, depth=3, limit=1000)
+def dependency_impact(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    report = admin_catalog.dependency_report(entity_id, course_id=course_id, depth=3, limit=1000)
     if report is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
     downstream: list[dict[str, Any]] = []
@@ -254,16 +254,17 @@ def dependency_impact(entity_id: str) -> dict[str, Any]:
     }
 
 
-def target_plan(entity_id: str) -> dict[str, Any]:
-    base = replacement_base(entity_id)
+def target_plan(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    base = replacement_base(entity_id, course_id)
     entity_type = base["type"]
     modes = list(SCENE_MODES if entity_type == "scene" else JOURNEY_MODES)
-    knowledge = required_knowledge(entity_id)
-    impact = dependency_impact(entity_id)
+    knowledge = required_knowledge(entity_id, course_id)
+    impact = dependency_impact(entity_id, course_id)
     return {
         "schema": REPLACEMENT_SCHEMA,
         "entity_id": entity_id,
         "entity_type": entity_type,
+        "course_id": course_id,
         "title": base.get("title") or base.get("story_title") or entity_id,
         "unit_id": base.get("unit_id"),
         "modes": modes,
@@ -308,21 +309,21 @@ def _rebase_pristine_draft(draft_id: str, payload: dict[str, Any]) -> dict[str, 
     return admin_drafts.get_draft(draft_id)
 
 
-def create_replacement_draft(entity_id: str, username: str) -> dict[str, Any]:
-    base = replacement_base(entity_id)
-    draft = admin_drafts.create_draft(entity_id, username)
+def create_replacement_draft(entity_id: str, username: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    base = replacement_base(entity_id, course_id)
+    draft = admin_drafts.create_draft(entity_id, username, course_id)
     if draft.get("existing"):
         current = draft.get("payload", {})
         complete = bool(current.get("story_paragraphs")) if base.get("type") == "scene" else isinstance(current.get("scenes"), list)
         if complete:
-            draft["replacement_plan"] = target_plan(entity_id)
+            draft["replacement_plan"] = target_plan(entity_id, course_id)
             return draft
         draft = _rebase_pristine_draft(draft["draft_id"], base)
         draft["existing"] = True
     elif draft.get("payload") != base:
         draft = _rebase_pristine_draft(draft["draft_id"], base)
         draft["existing"] = False
-    draft["replacement_plan"] = target_plan(entity_id)
+    draft["replacement_plan"] = target_plan(entity_id, course_id)
     return draft
 
 
@@ -459,8 +460,9 @@ def analyze_replacement(
     if int(draft["version"]) != int(expected_version):
         raise admin_drafts.DraftConflict("Draft changed since this replacement workflow loaded it")
     candidate, preserve = build_candidate(draft["payload"], mode, replacement, preservation)
-    base = replacement_base(draft["entity_id"])
-    knowledge = required_knowledge(draft["entity_id"])
+    course_id = str(draft.get("course_id") or "ap-biology")
+    base = replacement_base(draft["entity_id"], course_id)
+    knowledge = required_knowledge(draft["entity_id"], course_id)
     required_refs = _coverage_refs(base)
     candidate_refs = _coverage_refs(candidate)
     missing_refs = sorted(required_refs - candidate_refs)
@@ -505,7 +507,7 @@ def analyze_replacement(
     if not preserve["location"]:
         warnings.append("Location preservation was disabled. Review spatial orientation and palace-locus continuity.")
 
-    impact = dependency_impact(draft["entity_id"])
+    impact = dependency_impact(draft["entity_id"], course_id)
     counts = impact.get("related_counts_by_type", {})
     external_count = sum(int(counts.get(key, 0) or 0) for key in ("question", "question_set", "challenge"))
     if external_count:
