@@ -26,6 +26,7 @@ ALLOWED_STABLE_EVIDENCE = {
     "release/content-studio/v1.0.0.json",
     "scripts/qa_content_studio_release_candidate.py",
     "scripts/qa_content_studio_stable_release.py",
+    "server_data/.gitkeep",
 }
 
 ALLOWED_POST_STABLE_MAINTENANCE = {
