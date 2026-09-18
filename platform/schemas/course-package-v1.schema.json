@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thestorymethod.local/schema/course-package-v1.schema.json",
+  "title": "The Story Method Course Package",
+  "description": "Manifest contract that lets one Story Method runtime load multiple independent science courses without hard-coded course file names.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "course_id",
+    "course_file",
+    "content_root",
+    "student_runtime",
+    "science_components",
+    "units"
+  ],
+  "properties": {
+    "schema": {
+      "const": "story-method-course-package-1.0"
+    },
+    "course_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "course_file": {
+      "$ref": "#/$defs/repositoryPath"
+    },
+    "content_root": {
+      "$ref": "#/$defs/repositoryPath"
+    },
+    "student_runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["journeys", "memory_objects", "review", "mixed_discrimination", "challenge_lab"],
+      "properties": {
+        "journeys": {"type": "boolean"},
+        "memory_objects": {"type": "boolean"},
+        "review": {"type": "boolean"},
+        "mixed_discrimination": {"type": "boolean"},
+        "challenge_lab": {"type": "boolean"}
+      }
+    },
+    "science_components": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "concept",
+          "memory_object",
+          "equation",
+          "calculation",
+          "graph",
+          "diagram",
+          "data_table",
+          "particulate_model",
+          "vector",
+          "lab_context"
+        ]
+      }
+    },
+    "units": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/unitPackage"}
+    }
+  },
+  "$defs": {
+    "repositoryPath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\.\.(?:/|$))[A-Za-z0-9._/-]+$"
+    },
+    "fileArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {
+        "mode": {"enum": ["file", "empty"]},
+        "path": {"$ref": "#/$defs/repositoryPath"},
+        "collection_keys": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "format": {
+          "enum": [
+            "native",
+            "canonical_catalog_as_memory_objects",
+            "auto_records"
+          ]
+        },
+        "empty_payload": {"type": "object"}
+      },
+      "allOf": [
+        {
+          "if": {"properties": {"mode": {"const": "file"}}},
+          "then": {"required": ["path"]}
+        },
+        {
+          "if": {"properties": {"mode": {"const": "empty"}}},
+          "then": {"required": ["empty_payload"]}
+        }
+      ]
+    },
+    "journeyArtifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["registry_path", "collection_key", "directory", "filename_template"],
+      "properties": {
+        "registry_path": {"$ref": "#/$defs/repositoryPath"},
+        "collection_key": {"const": "guided_journeys"},
+        "directory": {"$ref": "#/$defs/repositoryPath"},
+        "filename_template": {
+          "type": "string",
+          "pattern": "^\{journey_id\}.*\.json$"
+        }
+      }
+    },
+    "unitPackage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "unit_id",
+        "title",
+        "content_root",
+        "journeys",
+        "concepts",
+        "memory_objects",
+        "review",
+        "mixed_discrimination",
+        "challenge_lab"
+      ],
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "pattern": "^unit-[1-9][0-9]*$"
+        },
+        "title": {"type": "string", "minLength": 1},
+        "content_root": {"$ref": "#/$defs/repositoryPath"},
+        "journeys": {"$ref": "#/$defs/journeyArtifact"},
+        "concepts": {"$ref": "#/$defs/fileArtifact"},
+        "memory_objects": {"$ref": "#/$defs/fileArtifact"},
+        "review": {"$ref": "#/$defs/fileArtifact"},
+        "mixed_discrimination": {"$ref": "#/$defs/fileArtifact"},
+        "challenge_lab": {"$ref": "#/$defs/fileArtifact"}
+      }
+    }
+  }
+}
