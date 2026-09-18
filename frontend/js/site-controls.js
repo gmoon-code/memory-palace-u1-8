@@ -1,40 +1,57 @@
-const PROGRESS_KEY='memory-palace-v2:progress';
+import {clearCourseProgress} from './state.js';
+
 const BRAND_NAME='The Story Method';
 
-function homeUrl(){
+function currentCourseId(){
+  const params=new URL(window.location.href).searchParams;
+  return params.get('course')||(params.get('unit')?'ap-biology':null);
+}
+
+function courseHomeUrl(courseId){
+  const url=new URL(window.location.href);
+  url.search='';
+  url.hash='';
+  if(courseId)url.searchParams.set('course',courseId);
+  return url.toString();
+}
+
+function platformHomeUrl(){
   const url=new URL(window.location.href);
   url.search='';
   url.hash='';
   return url.toString();
 }
 
-function goHome(){
-  window.location.assign(homeUrl());
+function goPlatformHome(){
+  window.location.assign(platformHomeUrl());
 }
 
 function clearProgress(){
-  const ok=window.confirm('Clear all saved progress? This removes journey progress, Review items, visited locations, and your current position for every unit. This cannot be undone.');
+  const courseId=currentCourseId();
+  if(!courseId)return;
+  const courseTitle=document.querySelector('.brand span')?.textContent?.trim()||courseId;
+  const ok=window.confirm(`Clear all saved progress for ${courseTitle}? This removes journey progress, Review items, visited locations, and your current position in this course. This cannot be undone.`);
   if(!ok)return;
-  try{window.localStorage.removeItem(PROGRESS_KEY)}catch{}
-  window.location.assign(homeUrl());
+  clearCourseProgress(courseId);
+  window.location.assign(courseHomeUrl(courseId));
 }
 
 function applyBranding(){
   const brand=document.querySelector('.brand');
   if(brand){
     const first=brand.firstChild;
-    if(first&&first.nodeType===Node.TEXT_NODE&&first.textContent!==`${BRAND_NAME} `){
-      first.textContent=`${BRAND_NAME} `;
+    if(first&&first.nodeType===Node.TEXT_NODE&&first.textContent!==`${BRAND_NAME} `&&first.textContent!==BRAND_NAME){
+      first.textContent=brand.querySelector('span')?`${BRAND_NAME} `:BRAND_NAME;
     }
-    brand.setAttribute('aria-label',`Return to ${BRAND_NAME} home`);
+    brand.setAttribute('aria-label',`Return to ${BRAND_NAME} courses`);
   }
 
   document.querySelectorAll('.eyebrow').forEach(el=>{
     if(el.textContent.trim()==='Memory Palace')el.textContent=BRAND_NAME;
   });
 
-  const home=document.querySelector('main[aria-label="AP Biology Memory Palace home"]');
-  if(home)home.setAttribute('aria-label',`AP Biology ${BRAND_NAME} home`);
+  const legacyHome=document.querySelector('main[aria-label="AP Biology Memory Palace home"]');
+  if(legacyHome)legacyHome.setAttribute('aria-label',`AP Biology ${BRAND_NAME} home`);
 }
 
 function enhanceShell(){
@@ -44,24 +61,27 @@ function enhanceShell(){
     brand.dataset.homeControl='true';
     brand.setAttribute('role','button');
     brand.setAttribute('tabindex','0');
-    brand.setAttribute('aria-label',`Return to ${BRAND_NAME} home`);
-    brand.setAttribute('title','Return to Home');
+    brand.setAttribute('aria-label',`Return to ${BRAND_NAME} courses`);
+    brand.setAttribute('title','Return to Courses');
   }
   const nav=document.querySelector('.nav');
-  if(nav&&!nav.querySelector('[data-clear-progress]')){
+  const courseId=currentCourseId();
+  const existing=nav?.querySelector('[data-clear-progress]');
+  if(!courseId&&existing)existing.remove();
+  if(nav&&courseId&&!existing){
     const button=document.createElement('button');
     button.type='button';
     button.className='clear-progress-control';
     button.dataset.clearProgress='true';
     button.textContent='Clear progress';
-    button.setAttribute('aria-label','Clear all saved progress');
+    button.setAttribute('aria-label','Clear saved progress for this course');
     nav.appendChild(button);
   }
 }
 
 document.addEventListener('click',event=>{
   const brand=event.target.closest('.brand[data-home-control]');
-  if(brand){event.preventDefault();goHome();return}
+  if(brand){event.preventDefault();goPlatformHome();return}
   const clear=event.target.closest('[data-clear-progress]');
   if(clear){event.preventDefault();clearProgress()}
 });
@@ -71,7 +91,7 @@ document.addEventListener('keydown',event=>{
   if(!brand)return;
   if(event.key==='Enter'||event.key===' '){
     event.preventDefault();
-    goHome();
+    goPlatformHome();
   }
 });
 
