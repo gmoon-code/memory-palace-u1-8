@@ -8,6 +8,10 @@ const replacementState = {
   csrfToken: "",
 };
 
+function currentAdminCourseId() {
+  return document.getElementById("admin-course-select")?.value || "ap-biology";
+}
+
 function r(id) {
   return document.getElementById(id);
 }
@@ -271,7 +275,7 @@ async function loadReplacementTargets() {
   const target = r("replacement-target-list");
   if (!target) return;
   target.innerHTML = '<p class="empty-state">Loading replacement targets…</p>';
-  const params = new URLSearchParams({ entity_type: replacementState.targetType, unit_id: replacementState.unitId, limit: "500" });
+  const params = new URLSearchParams({ course_id: currentAdminCourseId(), entity_type: replacementState.targetType, unit_id: replacementState.unitId, limit: "500" });
   try {
     const payload = await replacementApi(`/api/admin/catalog/entities?${params.toString()}`);
     replacementState.records = Array.isArray(payload.items) ? payload.items : [];
@@ -310,7 +314,7 @@ async function selectReplacementTarget(entityId) {
   r("replacement-analysis-card")?.classList.add("replacement-hidden");
   r("replacement-editor-card")?.classList.add("replacement-hidden");
   try {
-    const plan = await replacementApi(`/api/admin/replacements/plan?entity_id=${encodeURIComponent(entityId)}`);
+    const plan = await replacementApi(`/api/admin/replacements/plan?entity_id=${encodeURIComponent(entityId)}&course_id=${encodeURIComponent(currentAdminCourseId())}`);
     replacementState.plan = plan;
     renderReplacementTargets();
     renderReplacementPlan(plan);
@@ -399,7 +403,7 @@ async function openReplacementDraft() {
     const draft = await replacementApi("/api/admin/replacements/drafts", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ entity_id: replacementState.plan.entity_id }),
+      body: JSON.stringify({ entity_id: replacementState.plan.entity_id, course_id: currentAdminCourseId() }),
     });
     replacementState.draft = draft;
     r("replacement-draft-state").textContent = `Draft v${draft.version}`;
