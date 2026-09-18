@@ -1,4 +1,4 @@
-import {readFile} from 'node:fs/promises';
+import {readFile,access} from 'node:fs/promises';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import path from 'node:path';
 
@@ -33,6 +33,12 @@ await readFile(path.join(ROOT,'.nojekyll'));
 
 const courseId='ap-biology';
 const registry=await api.courses();
+const chemistryFixture=registry.courses?.find(c=>c.course_id==='ap-chemistry');
+assert(chemistryFixture?.status==='development','AP Chemistry fixture is not development-only');
+assert(chemistryFixture?.student_visible===false,'AP Chemistry fixture is visible in the public course selector');
+let chemistryContentDeployed=true;
+try{await access(path.join(ROOT,'content/ap-chemistry/course.json'))}catch{chemistryContentDeployed=false}
+assert(!chemistryContentDeployed,'hidden AP Chemistry fixture content was copied into public static deployment');
 assert(registry.courses?.some(c=>c.course_id===courseId&&c.status==='available'),'platform course registry does not expose AP Biology');
 const course=await api.course(courseId);
 assert(Array.isArray(course?.units)&&course.units.length===8,'course registry does not expose 8 units');
