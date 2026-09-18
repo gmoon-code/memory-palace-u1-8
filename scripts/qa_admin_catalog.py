@@ -30,7 +30,9 @@ def main() -> None:
     main_py = (ROOT / "backend" / "main.py").read_text(encoding="utf-8")
     admin_js = (ROOT / "frontend" / "admin" / "admin.js").read_text(encoding="utf-8")
 
-    require(summary["schema"] == "story-method-content-studio-catalog-1.0", "unexpected catalog schema")
+    require(summary["schema"] == "story-method-content-studio-catalog-1.1", "unexpected catalog schema")
+    require(summary["course_id"] == "ap-biology", "catalog summary lost AP Biology course identity")
+    require(course_map["course_id"] == "ap-biology", "course map lost AP Biology course identity")
     for key, expected in EXPECTED.items():
         record = summary["release_alignment"].get(key)
         require(record is not None, f"release alignment is missing {key}")
@@ -49,6 +51,7 @@ def main() -> None:
         "course map scene total does not equal 448",
     )
 
+    require('/api/admin/courses' in main_py, "protected course registry route is missing")
     required_routes = [
         '/api/admin/catalog/summary',
         '/api/admin/catalog/course-map',
@@ -84,7 +87,7 @@ def main() -> None:
 
     print("ADMIN CATALOG QA PASS")
     print("- frozen Unit 1-8 totals match the normalized catalog")
-    print("- protected catalog APIs are read-only")
+    print("- protected catalog APIs are read-only and course scoped")
     print("- Course Map, search, health, and dependency inspector are wired")
     print(f"- unresolved source references are reported: {summary['unresolved_reference_count']}")
 
