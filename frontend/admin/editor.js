@@ -734,3 +734,23 @@ async function createEditorSnapshot() {
 }
 
 ensureEditorUi();
+
+window.addEventListener("story-method-course-changed", (event) => {
+  clearTimeout(editorState.saveTimer);
+  editorState.records = [];
+  editorState.selectedEntity = null;
+  editorState.currentDraft = null;
+  editorState.workingPayload = null;
+  editorState.dirty = false;
+  const select = e("editor-unit-filter");
+  if (select) {
+    const units = Array.isArray(event.detail?.units) ? event.detail.units : [];
+    select.innerHTML = '<option value="">All units</option>' + units
+      .map((unit) => `<option value="${esc(unit.unit_id)}">Unit ${Number(unit.number) || ""} · ${esc(unit.title || unit.unit_id)}</option>`)
+      .join("");
+  }
+  resetEditorMain();
+  if (!e("editor-view")?.classList.contains("hidden") && editorState.mode) {
+    loadRecords();
+  }
+});
