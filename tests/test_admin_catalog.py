@@ -81,3 +81,27 @@ def test_catalog_is_read_only_data_projection():
     assert summary["schema"] == admin_catalog.CATALOG_SCHEMA
     assert "draft" not in summary
     assert "publish" not in summary
+
+
+def test_catalog_course_registry_and_scope_are_explicit():
+    courses = admin_catalog.catalog_courses()
+    ap_biology = next(item for item in courses["courses"] if item["course_id"] == "ap-biology")
+    assert ap_biology["catalog_ready"] is True
+    assert ap_biology["editable"] is True
+
+    summary = admin_catalog.catalog_summary("ap-biology")
+    assert summary["course_id"] == "ap-biology"
+    assert summary["course_title"] == "AP Biology"
+
+    snapshot = admin_catalog.catalog("ap-biology")
+    assert snapshot["course_id"] == "ap-biology"
+    assert all(entity.get("course_id") == "ap-biology" for entity in snapshot["entities"].values())
+
+
+def test_unprepared_course_catalog_is_rejected():
+    try:
+        admin_catalog.catalog_summary("ap-chemistry")
+    except ValueError as exc:
+        assert "not available" in str(exc)
+    else:
+        raise AssertionError("unprepared course catalog should not be silently treated as AP Biology")
