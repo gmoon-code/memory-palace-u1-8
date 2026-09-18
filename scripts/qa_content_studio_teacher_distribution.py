@@ -184,7 +184,7 @@ def main() -> None:
             EXPECTED_RUNTIME,
             "HEAD",
             "--",
-            "content",
+            "content/ap-biology",
         ],
         cwd=ROOT,
     )
