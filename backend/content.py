@@ -1,13 +1,37 @@
 from functools import lru_cache
 import json
 from pathlib import Path
-from .settings import APBIO_DIR, UNIT1_DIR, UNIT2_DIR, UNIT3_DIR, UNIT4_DIR, UNIT5_DIR, UNIT6_DIR, UNIT7_DIR, UNIT8_DIR
+from .settings import CONTENT_DIR, APBIO_DIR, UNIT1_DIR, UNIT2_DIR, UNIT3_DIR, UNIT4_DIR, UNIT5_DIR, UNIT6_DIR, UNIT7_DIR, UNIT8_DIR
 
 def _read_json(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 @lru_cache(maxsize=1)
+def course_registry(): return _read_json(CONTENT_DIR / "courses.json")
+
+@lru_cache(maxsize=1)
 def course(): return _read_json(APBIO_DIR / "course.json")
+
+def course_by_id(course_id: str):
+    record = next((item for item in course_registry().get("courses", []) if item.get("course_id") == course_id), None)
+    if record is None:
+        return None
+    if course_id == "ap-biology":
+        payload = dict(course())
+        payload.setdefault("course_id", course_id)
+        payload.setdefault("course_title", record.get("title", "AP Biology"))
+        payload["registry"] = record
+        return payload
+    course_path = CONTENT_DIR / course_id / "course.json"
+    if not course_path.exists():
+        return None
+    payload = _read_json(course_path)
+    if isinstance(payload, dict):
+        payload = dict(payload)
+        payload.setdefault("course_id", course_id)
+        payload.setdefault("course_title", record.get("title", course_id))
+        payload["registry"] = record
+    return payload
 @lru_cache(maxsize=1)
 def canonical(): return _read_json(UNIT1_DIR / "source" / "canonical-unit1.json")
 @lru_cache(maxsize=1)
