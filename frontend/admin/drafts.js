@@ -11,6 +11,10 @@ const draftState = {
   saving: false,
 };
 
+function currentAdminCourseId() {
+  return document.getElementById("admin-course-select")?.value || "ap-biology";
+}
+
 function el(id) {
   return document.getElementById(id);
 }
@@ -156,10 +160,10 @@ function renderDraftList(payload) {
 
 async function loadDraftWorkspace() {
   try {
-    const params = new URLSearchParams({ limit: "500" });
+    const params = new URLSearchParams({ course_id: currentAdminCourseId(), limit: "500" });
     if (draftState.statusFilter) params.set("status", draftState.statusFilter);
     const [summary, drafts] = await Promise.all([
-      draftApi("/api/admin/drafts/summary"),
+      draftApi(`/api/admin/drafts/summary?course_id=${encodeURIComponent(currentAdminCourseId())}`),
       draftApi(`/api/admin/drafts?${params.toString()}`),
     ]);
     renderDraftSummary(summary);
@@ -460,7 +464,7 @@ el("create-draft-form")?.addEventListener("submit", async (event) => {
     const draft = await draftApi("/api/admin/drafts", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ entity_id: entityId }),
+      body: JSON.stringify({ entity_id: entityId, course_id: currentAdminCourseId() }),
     });
     el("draft-entity-id").value = "";
     draftState.statusFilter = "draft";
