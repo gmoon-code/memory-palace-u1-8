@@ -1,0 +1,189 @@
+{
+  "palace_id": "APCHEM-U2-J1",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-2",
+  "palace_name": "Structure Evidence Gallery",
+  "story_title": "The Solid That Changed Its Rules",
+  "tagline": "Separate extended ionic lattices from discrete molecular particles, then move to electron representations.",
+  "guide": {
+    "name": "Dr. Mina Cho",
+    "role": "structure evidence curator",
+    "visual": "white lab coat, black clipboard, and a transparent particle-model tray",
+    "story_job": "Mina makes the particle arrangement visible before naming the structural model."
+  },
+  "premise": "Two solids look similar from across the room but respond differently when their particles and electrons are examined.",
+  "mission": "Distinguish ionic and molecular solids, then use a Lewis representation and formal-charge bookkeeping at the drafting desk.",
+  "finale": "The gallery labels the two structural models correctly and opens the electron drafting archive.",
+  "estimated_minutes": 8,
+  "scene_count": 2,
+  "checkpoint_count": 1,
+  "route_orientation": "Compare the two particle floors, then continue to the electron drafting desk.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Dual Solid Model Floor",
+      "short": "Solid models",
+      "floor": "Structure gallery",
+      "symbol": "+/−"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Electron Drafting Desk",
+      "short": "Electron desk",
+      "floor": "Representation archive",
+      "symbol": "••"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "APCHEM-U2-L01",
+      "locus": "Dual Solid Model Floor",
+      "title": "Two floors, two structures",
+      "scene_kicker": "Decide whether the solid is an extended ionic lattice or a collection of discrete molecules.",
+      "location_description": "A split gallery floor with charged lattice tiles on the left and separate molecule cases on the right.",
+      "scene_layout": {
+        "orientation": "Stand at the center line. An extended charged lattice fills the left floor. Separate molecule cases fill the right floor.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Charged lattice floor",
+            "symbol": "+−",
+            "description": "Positive and negative ions alternate through an extended array."
+          },
+          {
+            "position": "center",
+            "label": "Mobility test gate",
+            "symbol": "heat",
+            "description": "A gate compares particles fixed in a solid with particles able to move after melting."
+          },
+          {
+            "position": "right",
+            "label": "Discrete molecule cases",
+            "symbol": "M",
+            "description": "Individual neutral molecules remain recognizable as separate units."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mina Cho",
+          "kind": "guide",
+          "visual": "transparent particle tray held over the split floor",
+          "job": "Keeps lattice particles and discrete molecules visible at the same scale."
+        },
+        {
+          "name": "Charged lattice tiles",
+          "kind": "particulate model",
+          "visual": "alternating positive and negative tiles extending beyond one local pair",
+          "job": "Represent an extended ionic lattice."
+        },
+        {
+          "name": "Molecule cases",
+          "kind": "particulate model",
+          "visual": "separate closed cases, each containing one molecule model",
+          "job": "Represent discrete molecules in a molecular solid."
+        }
+      ],
+      "story_paragraphs": [
+        "The **Structure Evidence Gallery** begins with a floor split down the middle. On the left, positive and negative tiles alternate in every direction. No single pair is boxed off as a separate particle. On the right, transparent cases hold complete neutral molecules that remain individually recognizable.",
+        "Mina points to the left side only after you trace the repeating charged pattern across several rows. She labels it an **ionic solid**. An ionic solid consists of cations and anions arranged in an extended lattice held together by electrostatic attractions.",
+        "She crosses the center line and taps one transparent case. The molecule inside remains a discrete unit even though neighboring cases attract one another. Mina labels this a **molecular solid**. A molecular solid consists of discrete molecules held together in the solid by intermolecular forces. The two models stay visible together so an extended ionic lattice cannot be confused with a set of separate molecules."
+      ],
+      "story_beats": [
+        {
+          "object_id": "APCHEM-U2-K001",
+          "term": "Ionic solid",
+          "science": "Ionic solids contain cations and anions in an extended electrostatic lattice.",
+          "hint": "The alternating charged floor.",
+          "exact_name": true
+        },
+        {
+          "object_id": "APCHEM-U2-K002",
+          "term": "Molecular solid",
+          "science": "Molecular solids contain discrete molecules held by intermolecular forces.",
+          "hint": "The separate molecule cases.",
+          "exact_name": true
+        }
+      ],
+      "checkpoint": false
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "APCHEM-U2-L02",
+      "locus": "Electron Drafting Desk",
+      "title": "A structure drawn from valence electrons",
+      "scene_kicker": "Move from particle arrangement to a symbolic record of valence electrons and electron bookkeeping.",
+      "location_description": "A drafting desk with element symbols on the left, bond lines and electron dots in the center, and a formal-charge ledger on the right.",
+      "scene_layout": {
+        "orientation": "Face the drafting desk. Element symbols stay on the left, electron dots and bond lines are built in the center, and the bookkeeping ledger stays on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Element-symbol tray",
+            "symbol": "X",
+            "description": "Element symbols provide the atoms to be represented."
+          },
+          {
+            "position": "center",
+            "label": "Electron drafting board",
+            "symbol": "— ••",
+            "description": "Lines represent bonding pairs and dots represent nonbonding valence electrons."
+          },
+          {
+            "position": "right",
+            "label": "Formal-charge ledger",
+            "symbol": "FC",
+            "description": "The ledger assigns bonding electrons equally and compares the assigned count with valence electrons."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mina Cho",
+          "kind": "guide",
+          "visual": "black pencil and electron-counter wheel",
+          "job": "Checks electron placement before any charge bookkeeping is accepted."
+        },
+        {
+          "name": "Electron drafting board",
+          "kind": "scientific representation",
+          "visual": "a white board with element symbols, bond lines, and lone-pair dots",
+          "job": "Builds a Lewis electron-dot structure."
+        },
+        {
+          "name": "Formal-charge ledger",
+          "kind": "scientific calculation",
+          "visual": "a three-column electron-accounting ledger",
+          "job": "Compares valence electrons with assigned nonbonding electrons and half of the bonding electrons."
+        }
+      ],
+      "story_paragraphs": [
+        "The gallery opens into a drafting archive. Element symbols wait on the left. In the center, Mina places dots for valence electrons and converts shared electron pairs into bond lines. The picture is intentionally symbolic. It does not pretend that electrons sit as stationary dots in real space.",
+        "Once the symbols, bond lines, and remaining electron dots are visible, Mina names the **Lewis electron-dot structure**. It is a representation used to track valence electrons and bonding connections.",
+        "The right-hand ledger then opens. For bookkeeping, each atom receives all of its nonbonding electrons and half of the electrons in each bond. That assigned count is compared with the atom's normal valence-electron count. Mina labels the result **formal charge**. The ledger is a bookkeeping model for comparing candidate Lewis structures, not a direct measurement of partial charge."
+      ],
+      "story_beats": [
+        {
+          "object_id": "APCHEM-U2-K003",
+          "term": "Lewis electron-dot structure",
+          "science": "A Lewis structure represents valence electrons and bonding connections with symbols, lines, and dots.",
+          "hint": "The center drafting board.",
+          "exact_name": true
+        },
+        {
+          "object_id": "APCHEM-U2-K004",
+          "term": "Formal charge",
+          "science": "Formal charge is electron bookkeeping that assigns bonding electrons equally between bonded atoms.",
+          "hint": "The right-hand electron ledger.",
+          "exact_name": true
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "APCHEM-U2-K003",
+      "checkpoint_prompt": "What representation uses element symbols, bond lines, and dots to track valence electrons and bonding?",
+      "checkpoint_hint": "Picture the center electron drafting board.",
+      "checkpoint_answer": "Lewis electron-dot structure"
+    }
+  ]
+}
