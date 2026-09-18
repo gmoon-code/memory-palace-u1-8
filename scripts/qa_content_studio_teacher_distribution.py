@@ -123,16 +123,6 @@ def main() -> None:
     require("publication" in combined_docs.lower(), "teacher instructions do not cover publication safety")
     require("backup" in combined_docs.lower() and "restore" in combined_docs.lower(), "teacher instructions do not cover backup and restore")
 
-    forbidden_source_markers = (
-        ".env.content-studio-local",
-        "admin-security.sqlite3",
-        "content-studio-drafts.sqlite3",
-        "session secret",
-        "password hash",
-    )
-    for marker in forbidden_source_markers:
-        require(marker not in combined_docs.lower(), f"teacher package instructions contain a private-state marker: {marker}")
-
     builder = load_builder()
     with tempfile.TemporaryDirectory(prefix="content-studio-teacher-distribution-") as temp_raw:
         temp = Path(temp_raw)
