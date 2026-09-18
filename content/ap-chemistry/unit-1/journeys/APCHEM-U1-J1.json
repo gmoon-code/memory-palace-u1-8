@@ -1,0 +1,183 @@
+{
+  "palace_id": "APCHEM-U1-J1",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "palace_name": "Atomic Records Hall",
+  "story_title": "The Element With Too Many Weights",
+  "tagline": "Keep element identity fixed while neutron counts and isotope abundance change.",
+  "guide": {
+    "name": "Dr. Mina Cho",
+    "role": "atomic records curator",
+    "visual": "white lab coat, black clipboard, and a brass proton counter",
+    "story_job": "Mina keeps proton count, neutron count, isotope mass, and abundance physically separated."
+  },
+  "premise": "A shipment of atoms has arrived with one element label but several measured masses.",
+  "mission": "Sort atoms by proton and neutron count, then reconstruct the weighted average that appears on the periodic table.",
+  "finale": "The records hall accepts several isotopes under one element identity and prints one weighted average atomic mass.",
+  "estimated_minutes": 8,
+  "scene_count": 2,
+  "checkpoint_count": 1,
+  "route_orientation": "Enter the sorting gate, then continue straight to the weighted balance console.",
+  "route": [
+    {
+      "scene_index": 0,
+      "locus": "Isotope Sorting Gate",
+      "short": "Sorting gate",
+      "floor": "Records hall",
+      "symbol": "p/n"
+    },
+    {
+      "scene_index": 1,
+      "locus": "Weighted Balance Console",
+      "short": "Weighted balance",
+      "floor": "Calculation desk",
+      "symbol": "Σ"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_index": 0,
+      "locus_id": "APCHEM-U1-L01",
+      "locus": "Isotope Sorting Gate",
+      "title": "One element, several neutron counts",
+      "scene_kicker": "Keep proton count fixed while the neutron crates change.",
+      "location_description": "A three-lane intake gate with proton badges on the left, nucleus models in the center, and isotope labels on the right.",
+      "scene_layout": {
+        "orientation": "Face the intake gate. Proton badges stay on the left, nucleus models stay in the center, and isotope labels stay on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Proton badge rail",
+            "symbol": "Z",
+            "description": "A fixed badge shows the proton count that identifies the element."
+          },
+          {
+            "position": "center",
+            "label": "Nucleus sorting table",
+            "symbol": "p+n",
+            "description": "Nuclei with the same proton count arrive carrying different numbers of neutron crates."
+          },
+          {
+            "position": "right",
+            "label": "Isotope record board",
+            "symbol": "A",
+            "description": "Each record lists the same atomic number and a potentially different mass number."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mina Cho",
+          "kind": "guide",
+          "visual": "white lab coat and brass proton counter",
+          "job": "Keeps proton and neutron counts physically separate."
+        },
+        {
+          "name": "Proton badge rail",
+          "kind": "scientific reference",
+          "visual": "a row of identical element-identity badges",
+          "job": "Shows the atomic number that remains fixed for all isotopes of one element."
+        },
+        {
+          "name": "Neutron crates",
+          "kind": "scientific quantity",
+          "visual": "gray crates added to or removed from the nucleus model",
+          "job": "Change the mass number without changing the element's identity."
+        }
+      ],
+      "story_paragraphs": [
+        "The **Atomic Records Hall** opens at a sorting gate with three fixed lanes. On your left, every incoming atom receives the same brass proton badge. In the center, clear nucleus models arrive on a conveyor. On the right, a record board waits for a label. Dr. Mina Cho locks the proton counter so it cannot change while the first two nuclei move under the light.",
+        "The two nuclei carry the same number of protons, so Mina keeps the element name unchanged. One nucleus carries extra neutron crates. The other carries fewer. Only after you can see the fixed proton count and the changing neutron count does she place the word **isotope** on the record board. Isotopes are atoms of the same element with the same number of protons and different numbers of neutrons.",
+        "Mina taps the permanent proton badge and writes **atomic number** beside it. Atomic number is the number of protons in the nucleus and identifies the element. Then she turns to a separate headcount display that adds protons and neutrons for one nucleus. That total is the **mass number**. The two quantities sit on different sides of the gate so they cannot be merged."
+      ],
+      "story_beats": [
+        {
+          "object_id": "APCHEM-U1-K001",
+          "term": "Isotope",
+          "science": "Atoms of the same element can differ in neutron count.",
+          "hint": "Same proton badge, different neutron crates.",
+          "exact_name": true
+        },
+        {
+          "object_id": "APCHEM-U1-K003",
+          "term": "Atomic number",
+          "science": "Atomic number equals the number of protons and identifies the element.",
+          "hint": "The permanent proton badge.",
+          "exact_name": true
+        },
+        {
+          "object_id": "APCHEM-U1-K004",
+          "term": "Mass number",
+          "science": "Mass number equals protons plus neutrons for one isotope.",
+          "hint": "The nucleus headcount display.",
+          "exact_name": true
+        }
+      ],
+      "checkpoint": false
+    },
+    {
+      "scene_index": 1,
+      "locus_id": "APCHEM-U1-L02",
+      "locus": "Weighted Balance Console",
+      "title": "The periodic-table value is a weighted average",
+      "scene_kicker": "Let isotope abundance determine how strongly each isotope pulls on the final average.",
+      "location_description": "A calculation desk with isotope masses on the left, fractional abundances in the center, and a summing balance on the right.",
+      "scene_layout": {
+        "orientation": "Face the balance console. Isotope masses stay on the left, fractional abundances stay in the center, and the summed weighted value appears on the right.",
+        "zones": [
+          {
+            "position": "left",
+            "label": "Isotope mass cards",
+            "symbol": "m",
+            "description": "Each card gives the mass for one isotope."
+          },
+          {
+            "position": "center",
+            "label": "Abundance dials",
+            "symbol": "f",
+            "description": "Each dial converts percentage abundance to a fraction."
+          },
+          {
+            "position": "right",
+            "label": "Weighted sum balance",
+            "symbol": "Σmf",
+            "description": "The console multiplies each isotope mass by its fractional abundance and adds the contributions."
+          }
+        ]
+      },
+      "cast": [
+        {
+          "name": "Dr. Mina Cho",
+          "kind": "guide",
+          "visual": "black clipboard beside the balance console",
+          "job": "Makes each multiplication visible before the sum appears."
+        },
+        {
+          "name": "Weighted sum balance",
+          "kind": "scientific calculation",
+          "visual": "two balance arms feeding a single digital total",
+          "job": "Calculates Σ(isotope mass × fractional abundance)."
+        }
+      ],
+      "story_paragraphs": [
+        "A short corridor ends at a balance console. The left tray holds isotope-mass cards. The middle panel holds abundance dials. The right display is blank. Mina places a 10.0 amu card beside a 20.0% dial and an 11.0 amu card beside an 80.0% dial. The console refuses to average 10 and 11 directly.",
+        "She turns each percentage into a fraction, multiplies each isotope mass by its own fractional abundance, and sends both products to the final display. Only then does the console show 10.8 amu. Mina labels the process **average atomic mass**. Average atomic mass is the weighted average of the naturally occurring isotope masses using their fractional abundances.",
+        "The equation remains lit above the scale as Σ(isotopic mass × fractional abundance). A rare isotope contributes less to the final value than a common isotope. The balance therefore records both mass and abundance, which is why a periodic-table atomic mass need not match the mass number of any single isotope."
+      ],
+      "story_beats": [
+        {
+          "object_id": "APCHEM-U1-K002",
+          "term": "Average atomic mass",
+          "science": "Average atomic mass is a weighted average based on isotope mass and fractional abundance.",
+          "hint": "The Σmf balance.",
+          "exact_name": true
+        }
+      ],
+      "checkpoint": true,
+      "checkpoint_object_id": "APCHEM-U1-K002",
+      "checkpoint_prompt": "What quantity is calculated by summing each isotope mass multiplied by its fractional abundance?",
+      "checkpoint_hint": "Picture the Σmf balance at the right side of the desk.",
+      "checkpoint_answer": "Average atomic mass"
+    }
+  ]
+}
