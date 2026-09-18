@@ -26,7 +26,6 @@ ALLOWED_STABLE_EVIDENCE = {
     "release/content-studio/v1.0.0.json",
     "scripts/qa_content_studio_release_candidate.py",
     "scripts/qa_content_studio_stable_release.py",
-    "server_data/.gitkeep",
 }
 
 ALLOWED_POST_STABLE_MAINTENANCE = {
@@ -36,6 +35,7 @@ ALLOWED_POST_STABLE_MAINTENANCE = {
     "scripts/qa_zero_cost_backup_restore.py",
     "scripts/qa_content_studio_release_candidate.py",
     "scripts/qa_content_studio_stable_release.py",
+    "server_data/.gitkeep",
 }
 
 RUNTIME_PATHS = (
@@ -185,7 +185,7 @@ def main() -> None:
     print(f"- stable runtime baseline: {EXPECTED_STABLE_BASELINE}")
     print(f"- stable promotion commit: {EXPECTED_STABLE_PROMOTION}")
     print("- original v1.0.0 promotion remains metadata-only")
-    print("- post-stable maintenance is restricted to the Windows backup/restore hotfix allowlist")
+    print("- post-stable maintenance is restricted to the validated local-maintenance allowlist")
     print("- published AP Biology content and student frontend remain unchanged")
     print("- local $0 operation and publication-off defaults remain locked")
 
