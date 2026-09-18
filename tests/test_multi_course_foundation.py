@@ -1,3 +1,4 @@
+from pathlib import Path
 from fastapi.testclient import TestClient
 
 from backend.main import app
@@ -52,3 +53,12 @@ def test_unknown_course_is_rejected_and_legacy_routes_remain_available():
     assert client.get("/api/courses/not-a-course/units").status_code == 404
     assert client.get("/api/course").status_code == 200
     assert client.get("/api/units/unit-8").status_code == 200
+
+
+def test_student_progress_is_course_scoped_and_migrates_legacy_ap_biology_state():
+    state_js = (Path(__file__).resolve().parents[1] / "frontend/js/state.js").read_text(encoding="utf-8")
+    assert "story-method-v3:progress:" in state_js
+    assert "memory-palace-v2:progress" in state_js
+    assert "STATE_VERSION=5" in state_js
+    assert "loadState(courseId=DEFAULT_COURSE_ID)" in state_js
+    assert "clearCourseProgress(courseId=DEFAULT_COURSE_ID)" in state_js
