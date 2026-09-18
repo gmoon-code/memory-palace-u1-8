@@ -1,0 +1,46 @@
+{
+  "schema": "story-method-mixed-discrimination-1.0",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "set_count": 1,
+  "question_count": 2,
+  "sets": [
+    {
+      "set_id": "APCHEM-U1-MD01",
+      "title": "Atomic number versus mass number",
+      "knowledge_ids": [
+        "APCHEM-U1-K003",
+        "APCHEM-U1-K004"
+      ],
+      "terms": [
+        "Atomic number",
+        "Mass number"
+      ],
+      "initial_delay_hours": 48,
+      "questions": [
+        {
+          "question_id": "APCHEM-U1-MD01-Q01",
+          "prompt": "A value reports the number of protons and therefore fixes the element's identity.",
+          "choices": [
+            "Atomic number",
+            "Mass number"
+          ],
+          "answer": "Atomic number",
+          "explanation": "Atomic number equals the number of protons.",
+          "knowledge_id": "APCHEM-U1-K003"
+        },
+        {
+          "question_id": "APCHEM-U1-MD01-Q02",
+          "prompt": "A value reports the total number of protons and neutrons in one isotope.",
+          "choices": [
+            "Atomic number",
+            "Mass number"
+          ],
+          "answer": "Mass number",
+          "explanation": "Mass number equals protons plus neutrons.",
+          "knowledge_id": "APCHEM-U1-K004"
+        }
+      ]
+    }
+  ]
+}
