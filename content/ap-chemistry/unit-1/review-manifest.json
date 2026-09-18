@@ -1,0 +1,48 @@
+{
+  "schema": "story-method-review-manifest-1.0",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "target_count": 4,
+  "targets": [
+    {
+      "knowledge_id": "APCHEM-U1-K001",
+      "target_answer": "Isotope",
+      "prompt": "What term describes atoms of the same element that have the same number of protons but different numbers of neutrons?",
+      "hint": "Same proton badge, different neutron crates.",
+      "journey_id": "APCHEM-U1-J1",
+      "scene_index": 0,
+      "scene_title": "The Sorting Gate",
+      "canonical_science": "Isotopes are atoms of the same element with the same number of protons and different numbers of neutrons."
+    },
+    {
+      "knowledge_id": "APCHEM-U1-K002",
+      "target_answer": "Average atomic mass",
+      "prompt": "What quantity is the weighted average of isotope masses using fractional abundance?",
+      "hint": "Multiply each isotope mass by its fractional abundance, then add.",
+      "journey_id": "APCHEM-U1-J1",
+      "scene_index": 1,
+      "scene_title": "The Weighted Balance",
+      "canonical_science": "Average atomic mass is the weighted average of the naturally occurring isotope masses using their fractional abundances."
+    },
+    {
+      "knowledge_id": "APCHEM-U1-K003",
+      "target_answer": "Atomic number",
+      "prompt": "What quantity equals the number of protons and identifies the element?",
+      "hint": "It is fixed for all isotopes of one element.",
+      "journey_id": "APCHEM-U1-J1",
+      "scene_index": 0,
+      "scene_title": "The Sorting Gate",
+      "canonical_science": "Atomic number is the number of protons in an atom's nucleus and identifies the element."
+    },
+    {
+      "knowledge_id": "APCHEM-U1-K004",
+      "target_answer": "Mass number",
+      "prompt": "What quantity equals protons plus neutrons for one isotope?",
+      "hint": "Count the nucleons in one nucleus.",
+      "journey_id": "APCHEM-U1-J1",
+      "scene_index": 0,
+      "scene_title": "The Sorting Gate",
+      "canonical_science": "Mass number is the total number of protons and neutrons in a specific isotope."
+    }
+  ]
+}
