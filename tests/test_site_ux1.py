@@ -67,8 +67,9 @@ def test_site_ux1_frontend_accessibility_and_navigation_contracts():
 def test_site_ux1_state_and_retrieval_integrity_contracts():
     state = (ROOT / 'frontend/js/state.js').read_text(encoding='utf-8')
     appjs = (ROOT / 'frontend/js/app.js').read_text(encoding='utf-8')
-    assert "activeJourney:null" in state and 'version:4' in state
+    assert "activeJourney:null" in state and 'STATE_VERSION=5' in state
     assert 'assistedRecalls' in state and 'ASSIST_TTL=2*HOUR' in state
+    assert "COURSE_KEY_PREFIX='story-method-v3:progress:'" in state and "LEGACY_KEY='memory-palace-v2:progress'" in state
     assert 'markRecallAssisted' in appjs and 'wasRecallAssisted' in appjs
     assert 'review-show-answer' in appjs and "recallOpen?skipRecallAndContinue():nextScene()" in appjs
     assert 'nextUsefulJourney' in appjs and 'previous-scene' in appjs and 'practice-previous' in appjs
