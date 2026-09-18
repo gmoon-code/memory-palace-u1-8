@@ -37,7 +37,12 @@
       <div class="brand-block">
         <span class="eyebrow">The Story Method</span>
         <strong>Content Studio</strong>
-        <span class="status-pill">Step 4 draft and revision layer</span>
+        <span class="status-pill">Multi-course foundation</span>
+        <div class="admin-course-context">
+          <label for="admin-course-select">Course</label>
+          <select id="admin-course-select" aria-label="Current Content Studio course"></select>
+          <small id="admin-course-note">Loading available courses…</small>
+        </div>
       </div>
 
       <nav class="admin-nav">
@@ -70,12 +75,12 @@
         <div>
           <p class="eyebrow" id="view-eyebrow">Content overview</p>
           <h1 id="view-title">Dashboard</h1>
-          <p class="lede" id="view-description">A protected normalized inventory of the current eight-unit AP Biology release.</p>
+          <p class="lede" id="view-description">A protected normalized inventory of the selected Story Method course.</p>
         </div>
         <div class="header-actions">
           <span class="read-only-badge">Published content locked</span>
           <span id="session-user" class="session-user" aria-label="Signed in user"></span>
-          <a class="button secondary" href="/" target="_blank" rel="noopener">Open student site</a>
+          <a id="student-site-link" class="button secondary" href="/" target="_blank" rel="noopener">Open student site</a>
           <button id="logout-button" class="button secondary" type="button">Sign out</button>
         </div>
       </header>
@@ -277,7 +282,7 @@
             <div id="draft-empty-state" class="draft-empty-state">
               <p class="eyebrow">Protected working area</p>
               <h2>Select or create a draft</h2>
-              <p>Step 4 stores every change in a separate server-side working copy with revision history. Published AP Biology files remain untouched.</p>
+              <p>Step 4 stores every change in a separate server-side working copy with revision history. Published course files remain untouched.</p>
             </div>
 
             <div id="draft-editor" class="hidden">
