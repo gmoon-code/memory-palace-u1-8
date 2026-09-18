@@ -13,12 +13,14 @@ def test_course_registry_exposes_ap_biology_without_changing_curriculum():
     data = payload.json()
     assert data["platform_title"] == "The Story Method"
     assert data["registry_version"] == "1.0"
-    assert len(data["courses"]) == 1
-    course = data["courses"][0]
-    assert course["course_id"] == "ap-biology"
+    assert len(data["courses"]) == 2
+    course = next(item for item in data["courses"] if item["course_id"] == "ap-biology")
     assert course["status"] == "available"
     assert course["student_visible"] is True
     assert course["unit_count"] == 8
+    hidden = next(item for item in data["courses"] if item["course_id"] == "ap-chemistry")
+    assert hidden["status"] == "development"
+    assert hidden["student_visible"] is False
 
 
 def test_course_aware_routes_wrap_the_existing_ap_biology_runtime():
