@@ -12,9 +12,9 @@ import uuid
 from . import admin_catalog
 from .settings import ROOT
 
-DRAFT_SCHEMA = "story-method-content-studio-drafts-1.0"
+DRAFT_SCHEMA = "story-method-content-studio-drafts-1.1"
 ALLOWED_STATUSES = {"draft", "archived"}
-IMMUTABLE_ENTITY_FIELDS = {"id", "type", "unit_id"}
+IMMUTABLE_ENTITY_FIELDS = {"id", "type", "course_id", "unit_id"}
 MAX_DIFF_ITEMS = 500
 
 
@@ -55,6 +55,7 @@ def _connect() -> sqlite3.Connection:
             draft_id TEXT PRIMARY KEY,
             entity_id TEXT NOT NULL,
             entity_type TEXT NOT NULL,
+            course_id TEXT NOT NULL DEFAULT 'ap-biology',
             unit_id TEXT,
             title TEXT,
             status TEXT NOT NULL CHECK(status IN ('draft', 'archived')),
@@ -70,12 +71,24 @@ def _connect() -> sqlite3.Connection:
         )
         """
     )
+    columns = {
+        str(row["name"])
+        for row in connection.execute("PRAGMA table_info(content_drafts)").fetchall()
+    }
+    if "course_id" not in columns:
+        connection.execute(
+            "ALTER TABLE content_drafts ADD COLUMN course_id TEXT NOT NULL DEFAULT 'ap-biology'"
+        )
+    connection.execute("DROP INDEX IF EXISTS idx_content_drafts_active_entity")
     connection.execute(
         """
         CREATE UNIQUE INDEX IF NOT EXISTS idx_content_drafts_active_entity
-        ON content_drafts(entity_id)
+        ON content_drafts(course_id, entity_id)
         WHERE status = 'draft'
         """
+    )
+    connection.execute(
+        "CREATE INDEX IF NOT EXISTS idx_content_drafts_course_status_updated ON content_drafts(course_id, status, updated_at DESC)"
     )
     connection.execute(
         "CREATE INDEX IF NOT EXISTS idx_content_drafts_status_updated ON content_drafts(status, updated_at DESC)"
@@ -143,6 +156,7 @@ def _draft_from_row(row: sqlite3.Row, *, include_payload: bool = True) -> dict[s
         "draft_id": row["draft_id"],
         "entity_id": row["entity_id"],
         "entity_type": row["entity_type"],
+        "course_id": row["course_id"],
         "unit_id": row["unit_id"],
         "title": row["title"],
         "status": row["status"],
@@ -235,15 +249,15 @@ def _insert_revision(
     return int(cursor.lastrowid)
 
 
-def create_draft(entity_id: str, username: str) -> dict[str, Any]:
-    entity = admin_catalog.get_entity(entity_id)
+def create_draft(entity_id: str, username: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise DraftNotFound("Catalog entity not found")
     now = _now()
     with _connect() as connection:
         existing = connection.execute(
-            "SELECT * FROM content_drafts WHERE entity_id = ? AND status = 'draft'",
-            (entity_id,),
+            "SELECT * FROM content_drafts WHERE course_id = ? AND entity_id = ? AND status = 'draft'",
+            (course_id, entity_id),
         ).fetchone()
         if existing is not None:
             result = _draft_from_row(existing)
@@ -256,15 +270,16 @@ def create_draft(entity_id: str, username: str) -> dict[str, Any]:
         connection.execute(
             """
             INSERT INTO content_drafts(
-                draft_id, entity_id, entity_type, unit_id, title, status,
+                draft_id, entity_id, entity_type, course_id, unit_id, title, status,
                 base_payload_json, base_fingerprint, payload_json, version,
                 created_at, updated_at, archived_at, created_by, updated_by
-            ) VALUES (?, ?, ?, ?, ?, 'draft', ?, ?, ?, 1, ?, ?, NULL, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, 'draft', ?, ?, ?, 1, ?, ?, NULL, ?, ?)
             """,
             (
                 draft_id,
                 entity_id,
                 entity.get("type"),
+                course_id,
                 entity.get("unit_id"),
                 entity.get("title") or entity.get("canonical_term") or entity_id,
                 _dump(payload),
@@ -310,6 +325,7 @@ def get_draft(draft_id: str) -> dict[str, Any]:
 
 def list_drafts(
     *,
+    course_id: str | None = None,
     status: str | None = None,
     unit_id: str | None = None,
     entity_type: str | None = None,
@@ -319,6 +335,9 @@ def list_drafts(
         raise DraftError("Invalid draft status")
     clauses: list[str] = []
     params: list[Any] = []
+    if course_id:
+        clauses.append("course_id = ?")
+        params.append(course_id)
     if status:
         clauses.append("status = ?")
         params.append(status)
@@ -335,9 +354,15 @@ def list_drafts(
             f"SELECT * FROM content_drafts {where} ORDER BY updated_at DESC, draft_id LIMIT ?",
             (*params, safe_limit),
         ).fetchall()
-        counts = connection.execute(
-            "SELECT status, COUNT(*) AS n FROM content_drafts GROUP BY status"
-        ).fetchall()
+        if course_id:
+            counts = connection.execute(
+                "SELECT status, COUNT(*) AS n FROM content_drafts WHERE course_id = ? GROUP BY status",
+                (course_id,),
+            ).fetchall()
+        else:
+            counts = connection.execute(
+                "SELECT status, COUNT(*) AS n FROM content_drafts GROUP BY status"
+            ).fetchall()
     return {
         "schema": DRAFT_SCHEMA,
         "items": [_draft_from_row(row, include_payload=False) for row in rows],
