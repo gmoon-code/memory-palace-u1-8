@@ -36,7 +36,7 @@ export function homeView(course,unit,journeys,state,dueCount=0,recommendedId=nul
  }).join('');
  const challenge=(unit?.application_challenges||0)>0?`<section class="card challenge-strip"><div><span class="eyebrow">Unit ${esc(unit.number)}</span><h2>Challenge Lab</h2><p>${esc(unit.title)} application questions.</p></div><div class="challenge-side"><strong>${esc(unit.application_challenges)} challenges</strong><button class="secondary" data-action="practice">Open challenge lab</button></div></section>`:'';
  const recommendation=active?`${activeStats.seen?`Continue at location ${currentIndex} of ${activeStats.total}`:'Start with the first location'}`:'';
- return `<main id="main-content" tabindex="-1" class="stack course-home" aria-label="AP Biology Memory Palace home">
+ return `<main id="main-content" tabindex="-1" class="stack course-home" aria-label="${esc(course?.course_title||'Course')} The Story Method home">
   <section class="course-units-section" aria-labelledby="course-units-title">
    <div class="course-section-heading"><div><h2 id="course-units-title">Unit Overview</h2></div></div>
    <div class="course-unit-grid">${unitCards}</div>
