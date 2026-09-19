@@ -24,6 +24,10 @@ function m(id) {
   return document.getElementById(id);
 }
 
+function currentAdminCourseEditable() {
+  return document.getElementById("admin-course-select")?.selectedOptions?.[0]?.dataset?.editable === "true";
+}
+
 function esc(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -147,7 +151,7 @@ function ensureManagementUi() {
       "click",
       (event) => {
         const mode = button.dataset.view;
-        if (managementModes.has(mode)) {
+        if (managementModes.has(mode) && currentAdminCourseEditable()) {
           event.preventDefault();
           event.stopImmediatePropagation();
           activateManagement(mode);
