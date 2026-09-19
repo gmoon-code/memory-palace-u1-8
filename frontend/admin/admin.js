@@ -190,7 +190,9 @@ function updateCourseChrome() {
   const note = el("admin-course-note");
   if (note) {
     note.textContent = course?.catalog_ready
-      ? `${course.unit_count || 0} units · catalog ready`
+      ? course?.editable
+        ? `${course.unit_count || 0} units · catalog ready · editing enabled`
+        : `${course.unit_count || 0} units · catalog ready · read-only architecture preview`
       : "Course content is registered but the teacher catalog is not ready yet.";
   }
   const studentLink = el("student-site-link");
@@ -744,7 +746,14 @@ async function loadCourseContext() {
   }
   const select = el("admin-course-select");
   select.innerHTML = state.courses
-    .map((course) => `<option value="${escapeHtml(course.course_id)}" ${course.catalog_ready ? "" : "disabled"}>${escapeHtml(course.title || course.course_id)}${course.catalog_ready ? "" : " · preparing"}</option>`)
+    .map((course) => {
+      const suffix = !course.catalog_ready
+        ? " · preparing"
+        : course.editable
+          ? ""
+          : " · catalog preview";
+      return `<option value="${escapeHtml(course.course_id)}" data-catalog-ready="${course.catalog_ready ? "true" : "false"}" data-editable="${course.editable ? "true" : "false"}" ${course.catalog_ready ? "" : "disabled"}>${escapeHtml(course.title || course.course_id)}${suffix}</option>`;
+    })
     .join("");
   select.value = state.selectedCourseId;
   updateCourseChrome();
