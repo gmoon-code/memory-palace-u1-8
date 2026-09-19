@@ -5,7 +5,7 @@ from typing import Any
 
 from . import admin_catalog, admin_drafts, admin_editors
 
-REPLACEMENT_SCHEMA = "story-method-content-studio-replacements-1.0"
+REPLACEMENT_SCHEMA = "story-method-content-studio-replacements-1.1"
 SCENE_MODES = ("narrative_only", "narrative_plus_scene_design", "complete_scene")
 JOURNEY_MODES = ("complete_journey",)
 
@@ -22,6 +22,7 @@ DEFAULT_PRESERVATION = {
 }
 
 SCENE_LOCKED_FIELDS = {
+    "course_id",
     "id",
     "type",
     "unit_id",
@@ -32,6 +33,7 @@ SCENE_LOCKED_FIELDS = {
     "source_path",
 }
 JOURNEY_LOCKED_FIELDS = {
+    "course_id",
     "id",
     "type",
     "unit_id",
@@ -282,12 +284,21 @@ def target_plan(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]
     }
 
 
-def _rebase_pristine_draft(draft_id: str, payload: dict[str, Any]) -> dict[str, Any]:
+def _rebase_pristine_draft(
+    draft_id: str,
+    payload: dict[str, Any],
+    *,
+    course_id: str,
+) -> dict[str, Any]:
+    admin_drafts.get_draft(draft_id, course_id=course_id)
     with admin_drafts._connect() as connection:
         connection.execute("BEGIN IMMEDIATE")
-        row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
+        row = connection.execute(
+            "SELECT * FROM content_drafts WHERE draft_id = ? AND course_id = ?",
+            (draft_id, course_id),
+        ).fetchone()
         if row is None:
-            raise admin_drafts.DraftNotFound("Draft not found")
+            raise admin_drafts.DraftNotFound("Draft not found for course")
         if row["status"] != "draft" or int(row["version"]) != 1:
             raise admin_drafts.DraftConflict("An existing changed draft must be archived before this replacement workflow can prepare a full source baseline")
         current = admin_drafts._load(row["payload_json"])
@@ -297,8 +308,15 @@ def _rebase_pristine_draft(draft_id: str, payload: dict[str, Any]) -> dict[str, 
         fingerprint = admin_drafts._fingerprint(payload)
         title = payload.get("title") or payload.get("story_title") or row["title"]
         connection.execute(
-            "UPDATE content_drafts SET base_payload_json = ?, base_fingerprint = ?, payload_json = ?, title = ? WHERE draft_id = ?",
-            (admin_drafts._dump(payload), fingerprint, admin_drafts._dump(payload), str(title), draft_id),
+            "UPDATE content_drafts SET base_payload_json = ?, base_fingerprint = ?, payload_json = ?, title = ? WHERE draft_id = ? AND course_id = ?",
+            (
+                admin_drafts._dump(payload),
+                fingerprint,
+                admin_drafts._dump(payload),
+                str(title),
+                draft_id,
+                course_id,
+            ),
         )
         connection.execute(
             "UPDATE content_draft_revisions SET payload_json = ?, payload_fingerprint = ?, note = ? WHERE draft_id = ? AND revision_number = 1",
@@ -310,7 +328,7 @@ def _rebase_pristine_draft(draft_id: str, payload: dict[str, Any]) -> dict[str, 
             ),
         )
         connection.commit()
-    return admin_drafts.get_draft(draft_id)
+    return admin_drafts.get_draft(draft_id, course_id=course_id)
 
 
 def create_replacement_draft(entity_id: str, username: str, course_id: str = "ap-biology") -> dict[str, Any]:
@@ -322,10 +340,10 @@ def create_replacement_draft(entity_id: str, username: str, course_id: str = "ap
         if complete:
             draft["replacement_plan"] = target_plan(entity_id, course_id)
             return draft
-        draft = _rebase_pristine_draft(draft["draft_id"], base)
+        draft = _rebase_pristine_draft(draft["draft_id"], base, course_id=course_id)
         draft["existing"] = True
     elif draft.get("payload") != base:
-        draft = _rebase_pristine_draft(draft["draft_id"], base)
+        draft = _rebase_pristine_draft(draft["draft_id"], base, course_id=course_id)
         draft["existing"] = False
     draft["replacement_plan"] = target_plan(entity_id, course_id)
     return draft
@@ -457,14 +475,16 @@ def analyze_replacement(
     mode: str,
     replacement: dict[str, Any],
     preservation: dict[str, Any] | None = None,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
-    draft = admin_drafts.get_draft(draft_id)
+    draft = admin_drafts.get_draft(draft_id, course_id=course_id)
     if draft["status"] != "draft":
         raise admin_drafts.DraftError("Archived drafts cannot be replaced")
     if int(draft["version"]) != int(expected_version):
         raise admin_drafts.DraftConflict("Draft changed since this replacement workflow loaded it")
     candidate, preserve = build_candidate(draft["payload"], mode, replacement, preservation)
-    course_id = str(draft.get("course_id") or "ap-biology")
+    if str(draft.get("course_id") or "") != str(course_id):
+        raise admin_drafts.DraftNotFound("Draft not found for course")
     base = replacement_base(draft["entity_id"], course_id)
     knowledge = required_knowledge(draft["entity_id"], course_id)
     required_refs = _coverage_refs(base)
@@ -531,6 +551,7 @@ def analyze_replacement(
     return {
         "schema": REPLACEMENT_SCHEMA,
         "draft_id": draft_id,
+        "course_id": course_id,
         "entity_id": draft["entity_id"],
         "entity_type": draft["entity_type"],
         "mode": mode,
@@ -560,6 +581,7 @@ def apply_replacement(
     replacement: dict[str, Any],
     preservation: dict[str, Any] | None,
     username: str,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
     analysis = analyze_replacement(
         draft_id,
@@ -567,6 +589,7 @@ def apply_replacement(
         mode=mode,
         replacement=replacement,
         preservation=preservation,
+        course_id=course_id,
     )
     if analysis["blockers"]:
         raise ReplacementBlocked("Replacement blocked: " + " | ".join(analysis["blockers"]))
@@ -575,6 +598,7 @@ def apply_replacement(
         draft_id,
         label=f"Before {mode.replace('_', ' ')} replacement · v{expected_version}",
         username=username,
+        course_id=course_id,
     )
     saved = admin_drafts.update_draft(
         draft_id,
@@ -583,6 +607,7 @@ def apply_replacement(
         username=username,
         note=f"Complete Story Replacement applied · {mode}",
         autosave=False,
+        course_id=course_id,
     )
     return {
         "schema": REPLACEMENT_SCHEMA,

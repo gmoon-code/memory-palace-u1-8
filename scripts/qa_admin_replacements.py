@@ -47,10 +47,13 @@ def main() -> None:
     require("create_snapshot(" in engine_text, "automatic pre-replacement snapshot is missing")
     require(engine_text.index("create_snapshot(") < engine_text.index("update_draft(\n        draft_id,\n        payload=analysis"), "snapshot must be created before replacement save")
     require("published_story_text" in engine_text and "candidate_story_text" in engine_text, "old-versus-new story comparison is missing")
+    require('"course_id"' in engine_text and "course_id=course_id" in engine_text, "replacement engine does not preserve explicit course identity")
+    require("WHERE draft_id = ? AND course_id = ?" in engine_text, "replacement draft rebase is not course-scoped")
     require("write_text(" not in engine_text and "open(" not in engine_text, "replacement engine writes directly to repository course files")
 
     require('prefix="/api/admin/replacements"' in route_text, "replacement API is outside protected admin namespace")
     require(route_text.count("csrf=True") >= 3, "replacement mutations are not consistently CSRF protected")
+    require('course_id: str = Field(default="ap-biology"' in route_text, "replacement mutation request does not carry course_id")
     for endpoint in ("/plan", "/drafts", "/analyze", "/apply"):
         require(endpoint in route_text, f"replacement endpoint missing: {endpoint}")
     require('/admin/drafts-core.js' in route_text and '/admin/replacement.js' in route_text, "replacement frontend is not loaded through the protected admin asset loader")
@@ -69,6 +72,8 @@ def main() -> None:
     ):
         require(ui in js_text, f"replacement UI capability missing: {ui}")
     require("window.confirm" in js_text, "replacement apply confirmation is missing")
+    require("course_id: replacementState.draft.course_id || currentAdminCourseId()" in js_text, "replacement analyze/apply requests do not carry draft course identity")
+    require('<option value="unit-8">Unit 8</option>' not in js_text, "replacement unit selector is still hard-coded to AP Biology")
     require("published student content was not modified" in js_text.lower(), "replacement UI does not state published-content isolation")
 
     print("ADMIN REPLACEMENT QA PASS")
@@ -79,7 +84,8 @@ def main() -> None:
     print("- old and new narratives are compared before acceptance")
     print("- an automatic recovery snapshot is created before replacement save")
     print("- all mutations remain inside the protected draft store")
-    print("- published AP Biology course files are not directly written")
+    print("- replacement draft reads and writes remain explicitly course-scoped")
+    print("- published course files are not directly written")
 
 
 if __name__ == "__main__":

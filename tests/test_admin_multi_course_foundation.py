@@ -178,6 +178,9 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     assert 'currentAdminCourseEditable()' in editor
     assert 'Read-only architecture preview' in editor
     assert 'currentAdminCourseEditable()' in replacement
+    assert '<option value="unit-8">Unit 8</option>' not in replacement
+    assert 'course_id: replacementState.draft.course_id || currentAdminCourseId()' in replacement
+    assert 'course_id: replacementState.plan.course_id || currentAdminCourseId()' in replacement
     assert 'managementModes.has(mode) && currentAdminCourseEditable()' in management
     assert 'qualityModes.has(mode) && currentAdminCourseEditable()' in quality
     assert '<option value="unit-8">Unit 8</option>' not in editor

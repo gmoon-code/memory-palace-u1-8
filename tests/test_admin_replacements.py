@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from backend import admin_auth, admin_draft_routes, admin_replacement_routes, admin_replacements
+from backend import admin_auth, admin_catalog, admin_draft_routes, admin_replacement_routes, admin_replacements
 from backend import main as main_module
 from backend.settings import ROOT
 
@@ -34,6 +34,7 @@ def replacement_client(monkeypatch: pytest.MonkeyPatch, tmp_path: Path):
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_DB", str(tmp_path / "admin-security.sqlite3"))
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_DRAFT_DB", str(tmp_path / "content-studio-drafts.sqlite3"))
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_SESSION_TTL_SECONDS", "3600")
+    admin_catalog.clear_catalog_cache()
     with TestClient(main_module.app) as client:
         login = client.post(
             "/api/admin/login",
@@ -187,3 +188,196 @@ def test_complete_journey_preserves_scene_route(replacement_client):
 def test_replacement_mutations_require_csrf(replacement_client):
     client, _ = replacement_client
     assert client.post("/api/admin/replacements/drafts", json={"entity_id": SCENE_ID}).status_code == 403
+
+
+
+def test_chemistry_replacement_plan_is_course_scoped_and_write_locked(replacement_client):
+    client, token = replacement_client
+    chemistry_scene = "scene:unit-1:APCHEM-U1-J1:0"
+    plan = client.get(
+        "/api/admin/replacements/plan",
+        params={"course_id": "ap-chemistry", "entity_id": chemistry_scene},
+    )
+    assert plan.status_code == 200
+    payload = plan.json()
+    assert payload["course_id"] == "ap-chemistry"
+    assert payload["unit_id"] == "unit-1"
+    assert payload["published_base"]["course_id"] == "ap-chemistry"
+    assert payload["published_base"]["source_path"].startswith("content/ap-chemistry/")
+    assert payload["published_story_text"].startswith("The **Atomic Records Hall**")
+
+    blocked = client.post(
+        "/api/admin/replacements/drafts",
+        json={"course_id": "ap-chemistry", "entity_id": chemistry_scene},
+        headers=csrf(token),
+    )
+    assert blocked.status_code == 400
+    assert "editing is not enabled" in blocked.json()["detail"]
+
+
+def test_replacement_analysis_and_apply_reject_wrong_course(replacement_client):
+    client, token = replacement_client
+    draft = client.post(
+        "/api/admin/replacements/drafts",
+        json={"course_id": "ap-biology", "entity_id": SCENE_ID},
+        headers=csrf(token),
+    ).json()
+    replacement = dict(draft["payload"])
+    replacement["story_paragraphs"] = list(replacement["story_paragraphs"]) + [
+        "Course isolation validation paragraph."
+    ]
+    body = {
+        "draft_id": draft["draft_id"],
+        "course_id": "ap-chemistry",
+        "expected_version": draft["version"],
+        "mode": "narrative_only",
+        "replacement": replacement,
+        "preservation": {},
+    }
+
+    analyzed = client.post(
+        "/api/admin/replacements/analyze",
+        json=body,
+        headers=csrf(token),
+    )
+    assert analyzed.status_code == 404
+
+    applied = client.post(
+        "/api/admin/replacements/apply",
+        json=body,
+        headers=csrf(token),
+    )
+    assert applied.status_code == 404
+
+    unchanged = client.get(
+        f"/api/admin/drafts/{draft['draft_id']}",
+        params={"course_id": "ap-biology"},
+    )
+    assert unchanged.status_code == 200
+    assert unchanged.json()["version"] == draft["version"]
+
+
+def test_identical_replacement_entity_ids_remain_isolated_across_courses(
+    replacement_client,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    client, token = replacement_client
+    shared_id = "scene:unit-1:shared-route:0"
+
+    def fake_entity(entity_id: str, course_id: str = "ap-biology"):
+        if entity_id != shared_id:
+            return None
+        label = "Biology" if course_id == "ap-biology" else "Chemistry"
+        return {
+            "id": shared_id,
+            "type": "scene",
+            "course_id": course_id,
+            "unit_id": "unit-1",
+            "journey_id": "journey:unit-1:shared-route",
+            "palace_id": "shared-route",
+            "scene_index": 0,
+            "locus_id": f"{course_id}-L01",
+            "locus": f"{label} shared locus",
+            "title": f"{label} shared scene",
+            "story_paragraphs": [f"{label} original narrative."],
+            "object_ids": [],
+            "cast": [],
+            "checkpoint": False,
+            "source_path": None,
+        }
+
+    monkeypatch.setattr(
+        admin_catalog,
+        "require_editable_course",
+        lambda course_id: {"course_id": course_id, "editable": True},
+    )
+    monkeypatch.setattr(admin_catalog, "get_entity", fake_entity)
+    monkeypatch.setattr(admin_replacements, "required_knowledge", lambda entity_id, course_id="ap-biology": [])
+    monkeypatch.setattr(
+        admin_replacements,
+        "dependency_impact",
+        lambda entity_id, course_id="ap-biology": {
+            "related_counts_by_type": {},
+            "direct_outbound": [],
+            "direct_inbound": [],
+            "downstream": [],
+            "truncated": False,
+        },
+    )
+
+    biology = client.post(
+        "/api/admin/replacements/drafts",
+        json={"course_id": "ap-biology", "entity_id": shared_id},
+        headers=csrf(token),
+    )
+    chemistry = client.post(
+        "/api/admin/replacements/drafts",
+        json={"course_id": "ap-chemistry", "entity_id": shared_id},
+        headers=csrf(token),
+    )
+    assert biology.status_code == chemistry.status_code == 200
+    biology_draft = biology.json()
+    chemistry_draft = chemistry.json()
+    assert biology_draft["draft_id"] != chemistry_draft["draft_id"]
+    assert biology_draft["course_id"] == "ap-biology"
+    assert chemistry_draft["course_id"] == "ap-chemistry"
+
+    wrong_course = client.post(
+        "/api/admin/replacements/analyze",
+        json={
+            "draft_id": chemistry_draft["draft_id"],
+            "course_id": "ap-biology",
+            "expected_version": chemistry_draft["version"],
+            "mode": "narrative_only",
+            "replacement": chemistry_draft["payload"],
+            "preservation": {},
+        },
+        headers=csrf(token),
+    )
+    assert wrong_course.status_code == 404
+
+    biology_replacement = dict(biology_draft["payload"])
+    biology_replacement["story_paragraphs"] = ["Biology replacement narrative."]
+    biology_apply = client.post(
+        "/api/admin/replacements/apply",
+        json={
+            "draft_id": biology_draft["draft_id"],
+            "course_id": "ap-biology",
+            "expected_version": biology_draft["version"],
+            "mode": "narrative_only",
+            "replacement": biology_replacement,
+            "preservation": {},
+        },
+        headers=csrf(token),
+    )
+    assert biology_apply.status_code == 200
+
+    chemistry_replacement = dict(chemistry_draft["payload"])
+    chemistry_replacement["story_paragraphs"] = ["Chemistry replacement narrative."]
+    chemistry_apply = client.post(
+        "/api/admin/replacements/apply",
+        json={
+            "draft_id": chemistry_draft["draft_id"],
+            "course_id": "ap-chemistry",
+            "expected_version": chemistry_draft["version"],
+            "mode": "narrative_only",
+            "replacement": chemistry_replacement,
+            "preservation": {},
+        },
+        headers=csrf(token),
+    )
+    assert chemistry_apply.status_code == 200
+
+    biology_after = client.get(
+        f"/api/admin/drafts/{biology_draft['draft_id']}",
+        params={"course_id": "ap-biology"},
+    ).json()
+    chemistry_after = client.get(
+        f"/api/admin/drafts/{chemistry_draft['draft_id']}",
+        params={"course_id": "ap-chemistry"},
+    ).json()
+
+    assert biology_after["payload"]["story_paragraphs"] == ["Biology replacement narrative."]
+    assert chemistry_after["payload"]["story_paragraphs"] == ["Chemistry replacement narrative."]
+    assert biology_after["payload"]["locus_id"] == "ap-biology-L01"
+    assert chemistry_after["payload"]["locus_id"] == "ap-chemistry-L01"

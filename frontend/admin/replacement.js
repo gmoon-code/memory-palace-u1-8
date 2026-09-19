@@ -112,10 +112,7 @@ function ensureReplacementUi() {
               <button type="button" data-replacement-type="journey">Journey</button>
             </div>
             <select id="replacement-unit-filter" aria-label="Unit">
-              <option value="unit-1">Unit 1</option><option value="unit-2">Unit 2</option>
-              <option value="unit-3">Unit 3</option><option value="unit-4">Unit 4</option>
-              <option value="unit-5">Unit 5</option><option value="unit-6">Unit 6</option>
-              <option value="unit-7">Unit 7</option><option value="unit-8">Unit 8</option>
+              <option value="">Select unit</option>
             </select>
             <input id="replacement-filter" type="search" placeholder="Filter titles or IDs…" maxlength="160"/>
           </div>
@@ -408,7 +405,10 @@ async function openReplacementDraft() {
     const draft = await replacementApi("/api/admin/replacements/drafts", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ entity_id: replacementState.plan.entity_id, course_id: currentAdminCourseId() }),
+      body: JSON.stringify({
+        entity_id: replacementState.plan.entity_id,
+        course_id: replacementState.plan.course_id || currentAdminCourseId(),
+      }),
     });
     replacementState.draft = draft;
     r("replacement-draft-state").textContent = `Draft v${draft.version}`;
@@ -540,6 +540,7 @@ function collectReplacementPayload() {
 function requestPayload() {
   return {
     draft_id: replacementState.draft.draft_id,
+    course_id: replacementState.draft.course_id || currentAdminCourseId(),
     expected_version: replacementState.draft.version,
     mode: r("replacement-mode").value,
     replacement: collectReplacementPayload(),

@@ -22,6 +22,7 @@ class CreateReplacementDraftRequest(BaseModel):
 
 class ReplacementRequest(BaseModel):
     draft_id: str = Field(min_length=1, max_length=512)
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     expected_version: int = Field(ge=1)
     mode: str = Field(min_length=1, max_length=80)
     replacement: dict[str, Any]
@@ -112,6 +113,7 @@ def replacement_analyze(payload: ReplacementRequest, request: Request):
             mode=payload.mode,
             replacement=payload.replacement,
             preservation=payload.preservation,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_replacement_error(exc)
@@ -128,6 +130,7 @@ def replacement_apply(payload: ReplacementRequest, request: Request):
             replacement=payload.replacement,
             preservation=payload.preservation,
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_replacement_error(exc)
