@@ -14,6 +14,7 @@ CATALOG_SCHEMA = "story-method-content-studio-catalog-1.1"
 DEFAULT_COURSE_ID = "ap-biology"
 
 
+@lru_cache(maxsize=1)
 def catalog_courses() -> dict[str, Any]:
     registry = content.course_registry()
     items: list[dict[str, Any]] = []
@@ -831,6 +832,7 @@ def catalog(course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any]:
 
 def clear_catalog_cache() -> None:
     catalog.cache_clear()
+    catalog_courses.cache_clear()
 
 
 def content_health(course_id: str = DEFAULT_COURSE_ID) -> dict[str, Any]:
