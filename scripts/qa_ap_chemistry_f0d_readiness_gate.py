@@ -138,7 +138,7 @@ def main() -> None:
     for marker in (
         "BLOCKED_PENDING_TEACHER_LAB_SOURCE",
         "The teacher laboratory source is still unresolved",
-        "Topic 9.7",
+        "9.7 Coupled Reactions",
         "real nine-unit package",
         "F0D will not invent",
     ):
