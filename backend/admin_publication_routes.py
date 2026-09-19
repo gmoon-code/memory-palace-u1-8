@@ -15,6 +15,7 @@ ADMIN_INDEX = Path(FRONTEND_DIR) / "admin" / "index.html"
 
 
 class CandidateRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     draft_ids: list[str] = Field(min_length=1, max_length=100)
     title: str = Field(min_length=1, max_length=300)
     notes: str | None = Field(default=None, max_length=12000)
@@ -22,6 +23,7 @@ class CandidateRequest(BaseModel):
 
 
 class RollbackRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     title: str | None = Field(default=None, max_length=300)
 
 
@@ -90,43 +92,46 @@ def step9_admin_shell():
 
 
 @router.get("/status")
-def status(request: Request):
+def status(request: Request, course_id: str = "ap-biology"):
     _owner(request)
-    return admin_publication.publication_status()
+    try:
+        return admin_publication.publication_status(course_id)
+    except Exception as exc:
+        _raise(exc)
 
 
 @router.get("/eligible")
-def eligible(request: Request):
+def eligible(request: Request, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_publication.eligible_drafts()
+        return admin_publication.eligible_drafts(course_id)
     except Exception as exc:
         _raise(exc)
 
 
 @router.get("/candidates")
-def candidates(request: Request, limit: int = 100):
+def candidates(request: Request, course_id: str = "ap-biology", limit: int = 100):
     _owner(request)
     try:
-        return admin_publication.list_candidates(limit=limit)
+        return admin_publication.list_candidates(course_id=course_id, limit=limit)
     except Exception as exc:
         _raise(exc)
 
 
 @router.get("/candidates/{candidate_id}")
-def candidate(candidate_id: str, request: Request):
+def candidate(candidate_id: str, request: Request, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_publication.get_candidate(candidate_id)
+        return admin_publication.get_candidate(candidate_id, course_id)
     except Exception as exc:
         _raise(exc)
 
 
 @router.get("/candidates/{candidate_id}/summary", response_class=PlainTextResponse)
-def candidate_summary(candidate_id: str, request: Request):
+def candidate_summary(candidate_id: str, request: Request, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return PlainTextResponse(admin_publication.release_summary(candidate_id))
+        return PlainTextResponse(admin_publication.release_summary(candidate_id, course_id))
     except Exception as exc:
         _raise(exc)
 
@@ -141,6 +146,7 @@ def create_candidate(payload: CandidateRequest, request: Request):
             notes=payload.notes,
             warnings_acknowledged=payload.warnings_acknowledged,
             username=session.username,
+            course_id=payload.course_id,
         )
         _audit(request, session, "publication_candidate", "success", f"created {result['candidate_id']}")
         return result
@@ -150,10 +156,10 @@ def create_candidate(payload: CandidateRequest, request: Request):
 
 
 @router.post("/candidates/{candidate_id}/validate")
-def validate_candidate(candidate_id: str, request: Request):
+def validate_candidate(candidate_id: str, request: Request, course_id: str = "ap-biology"):
     session = _owner(request, csrf=True)
     try:
-        result = admin_publication.validate_candidate(candidate_id)
+        result = admin_publication.validate_candidate(candidate_id, course_id)
         outcome = "success" if result.get("status") == "validated" else "failure"
         _audit(request, session, "publication_validation", outcome, f"{candidate_id} → {result.get('status')}")
         return result
@@ -163,10 +169,10 @@ def validate_candidate(candidate_id: str, request: Request):
 
 
 @router.post("/candidates/{candidate_id}/submit")
-def submit_candidate(candidate_id: str, request: Request):
+def submit_candidate(candidate_id: str, request: Request, course_id: str = "ap-biology"):
     session = _owner(request, csrf=True)
     try:
-        result = admin_publication.submit_candidate(candidate_id)
+        result = admin_publication.submit_candidate(candidate_id, course_id)
         _audit(request, session, "publication_submit", "success", f"submitted {candidate_id} as PR {result['github'].get('pr_number')}")
         return result
     except Exception as exc:
@@ -175,10 +181,10 @@ def submit_candidate(candidate_id: str, request: Request):
 
 
 @router.post("/candidates/{candidate_id}/checks")
-def refresh_checks(candidate_id: str, request: Request):
+def refresh_checks(candidate_id: str, request: Request, course_id: str = "ap-biology"):
     session = _owner(request, csrf=True)
     try:
-        result = admin_publication.refresh_github_checks(candidate_id)
+        result = admin_publication.refresh_github_checks(candidate_id, course_id)
         _audit(request, session, "publication_checks", "success", f"refreshed checks for {candidate_id}")
         return result
     except Exception as exc:
@@ -187,10 +193,10 @@ def refresh_checks(candidate_id: str, request: Request):
 
 
 @router.post("/candidates/{candidate_id}/merge")
-def merge_candidate(candidate_id: str, request: Request):
+def merge_candidate(candidate_id: str, request: Request, course_id: str = "ap-biology"):
     session = _owner(request, csrf=True)
     try:
-        result = admin_publication.merge_candidate(candidate_id)
+        result = admin_publication.merge_candidate(candidate_id, course_id)
         _audit(request, session, "publication_merge", "success", f"merged {candidate_id}")
         return result
     except Exception as exc:
@@ -199,10 +205,14 @@ def merge_candidate(candidate_id: str, request: Request):
 
 
 @router.post("/candidates/{candidate_id}/verify")
-def verify_candidate(candidate_id: str, request: Request):
+def verify_candidate(candidate_id: str, request: Request, course_id: str = "ap-biology"):
     session = _owner(request, csrf=True)
     try:
-        result = admin_publication.verify_release(candidate_id, username=session.username)
+        result = admin_publication.verify_release(
+            candidate_id,
+            username=session.username,
+            course_id=course_id,
+        )
         _audit(request, session, "publication_verify", "success", f"verified {candidate_id} as {result['release_id']}")
         return result
     except Exception as exc:
@@ -211,19 +221,19 @@ def verify_candidate(candidate_id: str, request: Request):
 
 
 @router.get("/releases")
-def releases(request: Request, limit: int = 100):
+def releases(request: Request, course_id: str = "ap-biology", limit: int = 100):
     _owner(request)
     try:
-        return admin_publication.list_releases(limit=limit)
+        return admin_publication.list_releases(course_id=course_id, limit=limit)
     except Exception as exc:
         _raise(exc)
 
 
 @router.get("/releases/{release_id}")
-def release(release_id: str, request: Request):
+def release(release_id: str, request: Request, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_publication.get_release(release_id)
+        return admin_publication.get_release(release_id, course_id)
     except Exception as exc:
         _raise(exc)
 
@@ -236,6 +246,7 @@ def rollback(release_id: str, payload: RollbackRequest, request: Request):
             release_id,
             title=payload.title,
             username=session.username,
+            course_id=payload.course_id,
         )
         _audit(request, session, "publication_rollback", "success", f"created rollback candidate {result['candidate_id']} from {release_id}")
         return result

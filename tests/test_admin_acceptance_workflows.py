@@ -145,7 +145,7 @@ def test_scene_edit_preview_validate_candidate_and_recovery_path_is_non_destruct
     assert quality.status_code == 200
     assert "findings" in quality.json()
 
-    eligible = client.get("/api/admin/publication/eligible")
+    eligible = client.get("/api/admin/publication/eligible", params={"course_id": "ap-biology"})
     assert eligible.status_code == 200
     matching = [item for item in eligible.json()["items"] if item["draft_id"] == draft["draft_id"]]
     assert matching
@@ -154,6 +154,7 @@ def test_scene_edit_preview_validate_candidate_and_recovery_path_is_non_destruct
     candidate = client.post(
         "/api/admin/publication/candidates",
         json={
+            "course_id": "ap-biology",
             "draft_ids": [draft["draft_id"]],
             "title": "Administrator acceptance candidate",
             "notes": "Created only inside the isolated publication workspace.",

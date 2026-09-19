@@ -30,6 +30,7 @@ def main() -> None:
     require("refreshDraftContext" in js, "active working-copy linking is missing")
     require("contextualQualitySummary" in js, "record-level quality summary is missing")
     require("candidate-draft-check" in js, "publication candidate handoff is missing")
+    require("new URLSearchParams({ course_id: context.course_id || currentWorkflowCourseId() })" in js, "publication workflow status lookup is not course-scoped")
     require("data-editor-entity" in js, "field editor selections do not feed workflow context")
     require("data-managed-id" in js, "Question Bank and Challenge Lab selections do not feed workflow context")
     require("data-preview-id" in js, "Student Preview selections do not feed workflow context")
@@ -51,7 +52,7 @@ def main() -> None:
     print("- record-level Version History remains available from the context bar")
     print("- Question Bank, Challenge Lab, Story Replacement, editors, preview, and drafts feed the same context")
     print("- workflow integration performs navigation and read-only lookups only")
-    print("- no published AP Biology source path is written by the workflow layer")
+    print("- no published course source path is written by the workflow layer")
 
 
 if __name__ == "__main__":

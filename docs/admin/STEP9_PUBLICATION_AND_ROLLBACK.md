@@ -2,7 +2,7 @@
 
 ## Controlled publication, release history, and rollback
 
-Step 9 connects the protected Content Studio working-copy system to a release workflow without giving browser editing code a direct path to the published AP Biology files.
+Step 9 connects the protected Content Studio working-copy system to a release workflow without giving browser editing code a direct path to published course files. Publication state is scoped by the selected course from candidate discovery through release history and rollback.
 
 The student release remains authoritative until an owner deliberately creates a candidate, validates it, submits it through the configured GitHub repository, and verifies that the configured publication branch contains the exact candidate hashes.
 
@@ -10,7 +10,7 @@ The student release remains authoritative until an owner deliberately creates a 
 
 Step 9 keeps three layers separate.
 
-1. Published AP Biology source files remain under `content/ap-biology`.
+1. Published source files remain inside the selected course package content root. File resolution comes from the course package manifest and its declared unit artifacts.
 2. Teacher drafts, revisions, snapshots, media staging, and Content Studio state remain under server-side storage.
 3. Publication candidates are immutable before/after packages under the configured Step 9 publication directory.
 
@@ -30,7 +30,15 @@ Each candidate stores the exact draft version and payload fingerprint used to cr
 
 The candidate package is overlaid onto a temporary copy of the repository. Step 9 runs a fixed release-validation command set there. The temporary validation tree is discarded afterward. The real repository working tree and the published source files are not rewritten by this process.
 
-The local release gate currently checks the AP Biology content lock, the Units 1–8 mainline, global student UI logic, contrast, the Python regression suite, and Python compilation. GitHub Actions remains the complete external regression gate before merge.
+The local release gate checks the repository content locks, package contract, current student UI logic, contrast, the Python regression suite, and Python compilation. The existing AP Biology mainline lock remains part of the repository-wide regression set. GitHub Actions remains the complete external regression gate before merge.
+
+## Multi-course publication boundary
+
+Every candidate and release record stores a `course_id`. Existing pre-migration records are assigned to `ap-biology` for backward compatibility. Candidate lists, release history, status counts, exact-file inspection, validation, GitHub actions, verification, and rollback all require the selected course identity.
+
+A candidate may contain working copies from only one course. Publication source paths must be either the selected package's course metadata file or a file declared by that package for the working copy's unit. Managed Question Bank, Review, mixed-discrimination, and Challenge Lab destinations are resolved from package artifact declarations. Course-local unit IDs and entity IDs therefore cannot redirect publication into another course.
+
+A course can remain catalog-ready while publication writes stay disabled. The current AP Chemistry package is read-only, so teachers can inspect its publication workspace and history scope, while candidate creation, candidate-state mutations, GitHub delivery, release verification, and rollback preparation are blocked until that course is explicitly made editable.
 
 ## GitHub publication
 
@@ -105,7 +113,7 @@ Step 9 is complete only when automated QA verifies that
 
 - publication is disabled by default
 - mutating publication endpoints require owner authentication and CSRF
-- candidate creation leaves published AP Biology files byte-for-byte unchanged
+- candidate creation leaves published course files byte-for-byte unchanged
 - candidate before and after hashes are recorded
 - pre-publication draft snapshots are created
 - stale draft candidates are rejected

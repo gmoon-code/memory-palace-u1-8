@@ -15,6 +15,19 @@ function p(id) {
   return document.getElementById(id);
 }
 
+function currentAdminCourseId() {
+  return document.getElementById("admin-course-select")?.value || "ap-biology";
+}
+
+function currentAdminCourseEditable() {
+  return document.getElementById("admin-course-select")?.selectedOptions?.[0]?.dataset?.editable === "true";
+}
+
+function courseUrl(path) {
+  const separator = path.includes("?") ? "&" : "?";
+  return `${path}${separator}course_id=${encodeURIComponent(currentAdminCourseId())}`;
+}
+
 function esc(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -137,15 +150,20 @@ function gateCard(label, value, enabled) {
 }
 
 function renderStatus(status) {
+  const writeEnabled = Boolean(status.publication_enabled && status.course_editable);
   p("publication-gates").innerHTML = [
-    gateCard("Candidate creation", status.publication_enabled ? "Enabled" : "Disabled", status.publication_enabled),
+    gateCard("Course", status.course_title || status.course_id || currentAdminCourseId(), true),
+    gateCard("Course writes", status.course_editable ? "Enabled" : "Read-only", Boolean(status.course_editable)),
+    gateCard("Candidate creation", writeEnabled ? "Enabled" : "Disabled", writeEnabled),
     gateCard("GitHub submission", status.github_enabled ? "Enabled" : "Disabled", status.github_enabled),
     gateCard("GitHub repository", status.github_repository || "Not active", Boolean(status.github_repository)),
     gateCard("Server-side merge", status.github_merge_enabled ? "Enabled" : "Manual PR merge", status.github_merge_enabled),
   ].join("");
-  p("publication-safety-note").textContent = status.publication_enabled
-    ? "Candidate creation writes only to isolated server-side release packages. Student content changes only after a validated GitHub candidate is merged and then verified."
-    : "Controlled publication is disabled on this server. Drafting, preview, and quality checks remain available. Enable the Step 9 server gate only on a trusted deployment.";
+  p("publication-safety-note").textContent = !status.course_editable
+    ? "This course is available as a read-only catalog preview. Publication history can be inspected, while candidate creation, rollback preparation, and release mutations remain disabled."
+    : status.publication_enabled
+      ? "Candidate creation writes only to isolated server-side release packages. Student content changes only after a validated GitHub candidate is merged and then verified."
+      : "Controlled publication is disabled on this server. Drafting, preview, and quality checks remain available. Enable the publication server gate only on a trusted deployment.";
 }
 
 function renderEligible(items) {
@@ -213,7 +231,7 @@ function renderReleases(items) {
           <span class="release-row-top"><strong>${esc(item.title)}</strong><span class="publication-status-chip released">Released</span></span>
           <small class="publication-meta">${esc(item.release_id)} · ${esc(time(item.created_at))}</small>
           <small class="publication-meta">${number(item.summary?.files?.length)} changed files · candidate ${esc(item.candidate_id)}</small>
-          <div class="publication-actions"><button class="button secondary rollback-release" type="button" data-release-id="${esc(item.release_id)}">Prepare rollback candidate</button></div>
+          <div class="publication-actions"><button class="button secondary rollback-release" type="button" data-release-id="${esc(item.release_id)}" ${currentAdminCourseEditable() ? "" : "disabled"}>Prepare rollback candidate</button></div>
         </article>`
     )
     .join("");
@@ -225,7 +243,9 @@ function renderReleases(items) {
 function actionButtons(candidate) {
   const status = candidate.status;
   const github = publicationState.status || {};
+  const canWrite = currentAdminCourseEditable();
   const buttons = [];
+  if (!canWrite) return '<span class="management-state">Read-only course</span>';
   if (["created", "failed", "validated"].includes(status)) {
     buttons.push('<button class="button primary" id="candidate-validate" type="button">Run release validation</button>');
   }
@@ -250,7 +270,7 @@ async function renderCandidateDetail(candidate) {
   const manifest = candidate.manifest || {};
   let summaryText = "";
   try {
-    const response = await fetch(`/api/admin/publication/candidates/${encodeURIComponent(candidate.candidate_id)}/summary`, {
+    const response = await fetch(courseUrl(`/api/admin/publication/candidates/${encodeURIComponent(candidate.candidate_id)}/summary`), {
       credentials: "same-origin",
       cache: "no-store",
     });
@@ -291,7 +311,7 @@ async function selectCandidate(candidateId) {
   renderCandidates(publicationState.candidates);
   p("publication-detail").innerHTML = '<p class="empty-state">Loading candidate…</p>';
   try {
-    const candidate = await publicationApi(`/api/admin/publication/candidates/${encodeURIComponent(candidateId)}`);
+    const candidate = await publicationApi(courseUrl(`/api/admin/publication/candidates/${encodeURIComponent(candidateId)}`));
     await renderCandidateDetail(candidate);
   } catch (error) {
     p("publication-detail").innerHTML = `<p class="publication-message error">${esc(error.message)}</p>`;
@@ -303,7 +323,7 @@ async function candidateAction(candidateId, action, pendingMessage) {
   publicationState.busy = true;
   message(pendingMessage, "pending");
   try {
-    const result = await publicationApi(`/api/admin/publication/candidates/${encodeURIComponent(candidateId)}/${action}`, {
+    const result = await publicationApi(courseUrl(`/api/admin/publication/candidates/${encodeURIComponent(candidateId)}/${action}`), {
       method: "POST",
       csrf: true,
     });
@@ -326,7 +346,7 @@ async function rollbackRelease(releaseId) {
     const candidate = await publicationApi(`/api/admin/publication/releases/${encodeURIComponent(releaseId)}/rollback`, {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ title: null }),
+      body: JSON.stringify({ course_id: currentAdminCourseId(), title: null }),
     });
     message("Rollback candidate created. Validate it before any GitHub submission.", "success");
     await loadPublicationData();
@@ -355,7 +375,13 @@ async function createCandidate(event) {
     const candidate = await publicationApi("/api/admin/publication/candidates", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ draft_ids: draftIds, title, notes, warnings_acknowledged: warningsAcknowledged }),
+      body: JSON.stringify({
+        course_id: currentAdminCourseId(),
+        draft_ids: draftIds,
+        title,
+        notes,
+        warnings_acknowledged: warningsAcknowledged,
+      }),
     });
     message("Candidate created. Published course files are still unchanged.", "success");
     p("candidate-title").value = "";
@@ -391,7 +417,7 @@ function workspaceMarkup(mode) {
             <label for="candidate-notes">Release notes</label>
             <textarea id="candidate-notes" rows="5" maxlength="12000" placeholder="Describe the teacher-approved changes in this candidate."></textarea>
             <label class="publication-warning-ack"><input id="candidate-warning-ack" type="checkbox"/><span>I reviewed any teacher-review warnings for the selected working copies and accept them for this candidate. Blocking errors can never be acknowledged away.</span></label>
-            <button class="button primary" type="submit">Create isolated candidate</button>
+            <button class="button primary" type="submit" ${currentAdminCourseEditable() ? "" : "disabled"}>Create isolated candidate</button>
           </form>
         </section>
         <section class="panel">
@@ -415,10 +441,12 @@ function workspaceMarkup(mode) {
 
 async function loadPublicationData() {
   try {
-    const status = await publicationApi("/api/admin/publication/status");
+    const status = await publicationApi(courseUrl("/api/admin/publication/status"));
     publicationState.status = status;
     renderStatus(status);
-    const eligiblePromise = publicationState.mode === "publishing" ? publicationApi("/api/admin/publication/eligible") : Promise.resolve({ items: [] });
+    const eligiblePromise = publicationState.mode === "publishing"
+      ? publicationApi(courseUrl("/api/admin/publication/eligible"))
+      : Promise.resolve({ items: [] });
     if (!status.publication_enabled) {
       publicationState.eligible = (await eligiblePromise).items || [];
       publicationState.candidates = [];
@@ -430,8 +458,8 @@ async function loadPublicationData() {
     }
     const [eligible, candidates, releases] = await Promise.all([
       eligiblePromise,
-      publicationApi("/api/admin/publication/candidates?limit=200"),
-      publicationApi("/api/admin/publication/releases?limit=200"),
+      publicationApi(courseUrl("/api/admin/publication/candidates?limit=200")),
+      publicationApi(courseUrl("/api/admin/publication/releases?limit=200")),
     ]);
     publicationState.eligible = eligible.items || [];
     publicationState.candidates = candidates.items || [];
@@ -468,5 +496,17 @@ async function activatePublication(mode) {
   p("candidate-form")?.addEventListener("submit", createCandidate);
   await loadPublicationData();
 }
+
+window.addEventListener("story-method-course-changed", async () => {
+  publicationState.eligible = [];
+  publicationState.candidates = [];
+  publicationState.releases = [];
+  publicationState.selectedCandidateId = null;
+  publicationState.status = null;
+  publicationState.busy = false;
+  if (publicationState.mode && !p("publication-view")?.classList.contains("hidden")) {
+    await activatePublication(publicationState.mode);
+  }
+});
 
 ensurePublicationUi();

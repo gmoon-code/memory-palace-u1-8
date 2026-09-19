@@ -162,6 +162,7 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     replacement = (root / "frontend/admin/replacement.js").read_text(encoding="utf-8")
     management = (root / "frontend/admin/management.js").read_text(encoding="utf-8")
     quality = (root / "frontend/admin/quality.js").read_text(encoding="utf-8")
+    publication = (root / "frontend/admin/publication.js").read_text(encoding="utf-8")
     workflow = (root / "frontend/admin/workflow.js").read_text(encoding="utf-8")
     assert 'id="admin-course-select"' in html
     assert 'id="admin-course-note"' in html
@@ -197,7 +198,12 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     assert 'qualityState.units' in quality
     assert 'course_id: currentAdminCourseId()' in quality
     assert 'story-method-course-changed' in quality
+    assert 'courseUrl("/api/admin/publication/status")' in publication
+    assert 'course_id: currentAdminCourseId()' in publication
+    assert 'currentAdminCourseEditable()' in publication
+    assert 'story-method-course-changed' in publication
     assert 'course_id: parsed.course_id || "ap-biology"' in workflow
+    assert 'new URLSearchParams({ course_id: context.course_id || currentWorkflowCourseId() })' in workflow
     assert 'workflowState.context?.course_id === next.course_id' in workflow
     assert 'story-method-course-changed' in workflow
     assert 'context.course_id || currentWorkflowCourseId()' in workflow

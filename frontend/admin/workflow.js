@@ -535,7 +535,8 @@ async function openPublishing() {
   const checkbox = await waitFor(() => [...document.querySelectorAll(".candidate-draft-check")].find((item) => item.value === draft.draft_id), 6500);
   let status = null;
   try {
-    status = await workflowApi("/api/admin/publication/status");
+    const statusParams = new URLSearchParams({ course_id: context.course_id || currentWorkflowCourseId() });
+    status = await workflowApi(`/api/admin/publication/status?${statusParams.toString()}`);
   } catch {
     status = null;
   }

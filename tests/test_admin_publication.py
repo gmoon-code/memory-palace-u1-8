@@ -51,14 +51,24 @@ def publication_client(monkeypatch: pytest.MonkeyPatch, tmp_path: Path):
 
 
 def changed_scene(client: TestClient, token: str, title: str = "Step 9 candidate-only scene title") -> dict:
-    created = client.post("/api/admin/editors/drafts", json={"entity_id": SCENE_ID}, headers=csrf(token))
+    created = client.post(
+        "/api/admin/editors/drafts",
+        json={"entity_id": SCENE_ID, "course_id": "ap-biology"},
+        headers=csrf(token),
+    )
     assert created.status_code == 200
     draft = created.json()
     payload = dict(draft["payload"])
     payload["title"] = title
     saved = client.patch(
         f"/api/admin/editors/drafts/{draft['draft_id']}",
-        json={"payload": payload, "expected_version": draft["version"], "note": "Step 9 publication test", "autosave": False},
+        json={
+            "course_id": "ap-biology",
+            "payload": payload,
+            "expected_version": draft["version"],
+            "note": "Step 9 publication test",
+            "autosave": False,
+        },
         headers=csrf(token),
     )
     assert saved.status_code == 200
@@ -69,6 +79,7 @@ def create_candidate(client: TestClient, token: str, draft_id: str) -> dict:
     response = client.post(
         "/api/admin/publication/candidates",
         json={
+            "course_id": "ap-biology",
             "draft_ids": [draft_id],
             "title": "Step 9 test release",
             "notes": "Candidate-only publication regression.",
@@ -87,6 +98,8 @@ def test_candidate_creation_is_non_destructive_and_hashes_exact_files(publicatio
 
     candidate = create_candidate(client, token, draft["draft_id"])
     assert candidate["status"] == "created"
+    assert candidate["course_id"] == "ap-biology"
+    assert candidate["manifest"]["course_id"] == "ap-biology"
     assert digest(SCENE_SOURCE) == before
     manifest = candidate["manifest"]
     assert manifest["publication_model"].startswith("candidate package only")
@@ -113,7 +126,12 @@ def test_candidate_creation_requires_csrf(publication_client):
     draft = changed_scene(client, token)
     response = client.post(
         "/api/admin/publication/candidates",
-        json={"draft_ids": [draft["draft_id"]], "title": "Blocked request", "warnings_acknowledged": True},
+        json={
+            "course_id": "ap-biology",
+            "draft_ids": [draft["draft_id"]],
+            "title": "Blocked request",
+            "warnings_acknowledged": True,
+        },
     )
     assert response.status_code == 403
 
@@ -127,7 +145,12 @@ def test_stale_candidate_is_rejected_before_validation(publication_client, monke
     payload["title"] = "Changed after candidate creation"
     updated = client.patch(
         f"/api/admin/editors/drafts/{draft['draft_id']}",
-        json={"payload": payload, "expected_version": draft["version"], "autosave": False},
+        json={
+            "course_id": "ap-biology",
+            "payload": payload,
+            "expected_version": draft["version"],
+            "autosave": False,
+        },
         headers=csrf(token),
     )
     assert updated.status_code == 200
@@ -224,12 +247,14 @@ def test_validation_and_github_delivery_use_exact_hash_gates(publication_client,
 
     rollback = client.post(
         f"/api/admin/publication/releases/{release['release_id']}/rollback",
-        json={"title": "Rollback Step 9 test release"},
+        json={"course_id": "ap-biology", "title": "Rollback Step 9 test release"},
         headers=csrf(token),
     )
     assert rollback.status_code == 200, rollback.text
     rollback_candidate = rollback.json()
     assert rollback_candidate["kind"] == "rollback"
+    assert rollback_candidate["course_id"] == "ap-biology"
+    assert rollback_candidate["manifest"]["course_id"] == "ap-biology"
     rollback_file = rollback_candidate["manifest"]["files"][0]
     assert rollback_file["before_sha256"] == file_record["after_sha256"]
     assert rollback_file["after_sha256"] == file_record["before_sha256"]
@@ -249,3 +274,63 @@ def test_remote_base_change_blocks_submission(publication_client, monkeypatch: p
     result = client.post(f"/api/admin/publication/candidates/{candidate['candidate_id']}/submit", headers=csrf(token))
     assert result.status_code == 409
     assert "GitHub base file changed" in result.json()["detail"]
+
+
+
+def test_publication_reads_are_course_scoped_and_chemistry_writes_stay_blocked(publication_client):
+    client, token, _ = publication_client
+    draft = changed_scene(client, token, "Course-scoped publication candidate")
+    candidate = create_candidate(client, token, draft["draft_id"])
+
+    chemistry_status = client.get(
+        "/api/admin/publication/status",
+        params={"course_id": "ap-chemistry"},
+    )
+    assert chemistry_status.status_code == 200
+    assert chemistry_status.json()["course_id"] == "ap-chemistry"
+    assert chemistry_status.json()["course_editable"] is False
+
+    chemistry_eligible = client.get(
+        "/api/admin/publication/eligible",
+        params={"course_id": "ap-chemistry"},
+    )
+    assert chemistry_eligible.status_code == 200
+    assert chemistry_eligible.json()["course_id"] == "ap-chemistry"
+    assert chemistry_eligible.json()["items"] == []
+
+    chemistry_candidates = client.get(
+        "/api/admin/publication/candidates",
+        params={"course_id": "ap-chemistry", "limit": 100},
+    )
+    assert chemistry_candidates.status_code == 200
+    assert chemistry_candidates.json()["course_id"] == "ap-chemistry"
+    assert chemistry_candidates.json()["items"] == []
+
+    wrong_course_candidate = client.get(
+        f"/api/admin/publication/candidates/{candidate['candidate_id']}",
+        params={"course_id": "ap-chemistry"},
+    )
+    assert wrong_course_candidate.status_code == 404
+
+    blocked = client.post(
+        "/api/admin/publication/candidates",
+        json={
+            "course_id": "ap-chemistry",
+            "draft_ids": [draft["draft_id"]],
+            "title": "Chemistry must remain read-only",
+            "warnings_acknowledged": True,
+        },
+        headers=csrf(token),
+    )
+    assert blocked.status_code == 400
+    assert "editing is not enabled" in blocked.json()["detail"]
+
+
+def test_publication_source_resolution_rejects_cross_course_paths(publication_client):
+    _client, _token, _ = publication_client
+    with pytest.raises(admin_publication.PublicationError, match="outside course"):
+        admin_publication._safe_repo_path(
+            "content/ap-biology/unit-8/journeys/U8-J1.json",
+            "ap-chemistry",
+            "unit-1",
+        )

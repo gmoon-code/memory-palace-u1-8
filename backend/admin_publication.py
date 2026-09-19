@@ -17,7 +17,7 @@ import uuid
 
 import httpx
 
-from . import admin_catalog, admin_drafts, admin_editors, admin_management, admin_quality
+from . import admin_catalog, admin_drafts, admin_editors, admin_management, admin_quality, course_packages
 from .settings import ROOT
 
 PUBLICATION_SCHEMA = "story-method-content-studio-publication-1.0"
@@ -31,7 +31,6 @@ CANDIDATE_STATUSES = {
     "released",
     "failed",
 }
-UNIT_IDS = {f"unit-{number}" for number in range(1, 9)}
 MAX_DRAFTS_PER_CANDIDATE = 100
 JSON_INDENT = 2
 
@@ -120,20 +119,53 @@ def _json_bytes(payload: Any) -> bytes:
     return (json.dumps(payload, ensure_ascii=False, indent=JSON_INDENT) + "\n").encode("utf-8")
 
 
-def _safe_repo_path(source_path: str) -> Path:
+
+def _course_access(course_id: str, *, editable: bool = False) -> dict[str, Any]:
+    try:
+        access = (
+            admin_catalog.require_editable_course(course_id)
+            if editable
+            else admin_catalog.course_access(course_id)
+        )
+    except ValueError as exc:
+        raise PublicationError(str(exc)) from exc
+    if not access.get("catalog_ready"):
+        raise PublicationError(f"Content Studio catalog is not available for course '{course_id}'")
+    return access
+
+
+def _safe_repo_path(source_path: str, course_id: str, unit_id: str | None = None) -> Path:
+    _course_access(course_id)
     candidate = (ROOT / source_path).resolve()
     root = ROOT.resolve()
     try:
-        candidate.relative_to(root)
+        relative = candidate.relative_to(root).as_posix()
     except ValueError as exc:
         raise PublicationError("Candidate source path escapes the repository root") from exc
-    if not source_path.startswith("content/ap-biology/"):
-        raise PublicationError("Step 9 may publish only AP Biology content files")
-    if candidate.suffix.lower() != ".json":
-        raise PublicationError("Step 9 currently publishes JSON curriculum records only")
-    if not candidate.exists() or not candidate.is_file():
-        raise PublicationError(f"Published source file does not exist: {source_path}")
-    return candidate
+
+    try:
+        manifest = course_packages.package_manifest(course_id)
+    except course_packages.CoursePackageError as exc:
+        raise PublicationError(str(exc)) from exc
+    content_root = str(manifest.get("content_root") or "").rstrip("/")
+    if not content_root or (relative != content_root and not relative.startswith(f"{content_root}/")):
+        raise PublicationError(f"Candidate source path is outside course '{course_id}': {relative}")
+
+    course_file = str(manifest.get("course_file") or "")
+    if relative == course_file:
+        if candidate.suffix.lower() != ".json" or not candidate.is_file():
+            raise PublicationError(f"Published course source is not a readable JSON file: {relative}")
+        return candidate
+
+    if not unit_id:
+        raise PublicationError(f"Unit identity is required for publication source: {relative}")
+    try:
+        declared = course_packages.declared_source_file(course_id, unit_id, relative)
+    except course_packages.CoursePackageError as exc:
+        raise PublicationError(str(exc)) from exc
+    if declared.suffix.lower() != ".json":
+        raise PublicationError("Controlled publication currently publishes JSON curriculum records only")
+    return declared
 
 
 def _connect(config: PublicationConfig | None = None) -> sqlite3.Connection:
@@ -147,6 +179,7 @@ def _connect(config: PublicationConfig | None = None) -> sqlite3.Connection:
         """
         CREATE TABLE IF NOT EXISTS publication_candidates (
             candidate_id TEXT PRIMARY KEY,
+            course_id TEXT NOT NULL DEFAULT 'ap-biology',
             kind TEXT NOT NULL,
             title TEXT NOT NULL,
             notes TEXT,
@@ -169,6 +202,7 @@ def _connect(config: PublicationConfig | None = None) -> sqlite3.Connection:
         CREATE TABLE IF NOT EXISTS publication_releases (
             release_id TEXT PRIMARY KEY,
             candidate_id TEXT NOT NULL,
+            course_id TEXT NOT NULL DEFAULT 'ap-biology',
             title TEXT NOT NULL,
             summary_json TEXT NOT NULL,
             created_at TEXT NOT NULL,
@@ -178,15 +212,36 @@ def _connect(config: PublicationConfig | None = None) -> sqlite3.Connection:
         )
         """
     )
+    candidate_columns = {
+        str(row["name"])
+        for row in connection.execute("PRAGMA table_info(publication_candidates)").fetchall()
+    }
+    if "course_id" not in candidate_columns:
+        connection.execute(
+            "ALTER TABLE publication_candidates ADD COLUMN course_id TEXT NOT NULL DEFAULT 'ap-biology'"
+        )
+    release_columns = {
+        str(row["name"])
+        for row in connection.execute("PRAGMA table_info(publication_releases)").fetchall()
+    }
+    if "course_id" not in release_columns:
+        connection.execute(
+            "ALTER TABLE publication_releases ADD COLUMN course_id TEXT NOT NULL DEFAULT 'ap-biology'"
+        )
     connection.execute(
         "CREATE INDEX IF NOT EXISTS idx_publication_candidates_updated ON publication_candidates(updated_at DESC)"
     )
     connection.execute(
+        "CREATE INDEX IF NOT EXISTS idx_publication_candidates_course_updated ON publication_candidates(course_id, updated_at DESC)"
+    )
+    connection.execute(
         "CREATE INDEX IF NOT EXISTS idx_publication_releases_created ON publication_releases(created_at DESC)"
+    )
+    connection.execute(
+        "CREATE INDEX IF NOT EXISTS idx_publication_releases_course_created ON publication_releases(course_id, created_at DESC)"
     )
     connection.commit()
     return connection
-
 
 def _candidate_dir(candidate_id: str, config: PublicationConfig | None = None) -> Path:
     cfg = config or PublicationConfig.from_env()
@@ -205,6 +260,7 @@ def _candidate_row(row: sqlite3.Row) -> dict[str, Any]:
     validation = json.loads(row["validation_json"]) if row["validation_json"] else None
     return {
         "schema": PUBLICATION_SCHEMA,
+        "course_id": row["course_id"],
         "candidate_id": row["candidate_id"],
         "kind": row["kind"],
         "title": row["title"],
@@ -228,6 +284,7 @@ def _candidate_row(row: sqlite3.Row) -> dict[str, Any]:
 def _release_row(row: sqlite3.Row) -> dict[str, Any]:
     return {
         "schema": RELEASE_SCHEMA,
+        "course_id": row["course_id"],
         "release_id": row["release_id"],
         "candidate_id": row["candidate_id"],
         "title": row["title"],
@@ -238,16 +295,31 @@ def _release_row(row: sqlite3.Row) -> dict[str, Any]:
     }
 
 
-def publication_status() -> dict[str, Any]:
+
+def publication_status(course_id: str = "ap-biology") -> dict[str, Any]:
+    access = _course_access(course_id)
     cfg = PublicationConfig.from_env()
     candidate_count = 0
     release_count = 0
     if cfg.enabled:
         with _connect(cfg) as connection:
-            candidate_count = int(connection.execute("SELECT COUNT(*) AS n FROM publication_candidates").fetchone()["n"])
-            release_count = int(connection.execute("SELECT COUNT(*) AS n FROM publication_releases").fetchone()["n"])
+            candidate_count = int(
+                connection.execute(
+                    "SELECT COUNT(*) AS n FROM publication_candidates WHERE course_id = ?",
+                    (course_id,),
+                ).fetchone()["n"]
+            )
+            release_count = int(
+                connection.execute(
+                    "SELECT COUNT(*) AS n FROM publication_releases WHERE course_id = ?",
+                    (course_id,),
+                ).fetchone()["n"]
+            )
     return {
         "schema": PUBLICATION_SCHEMA,
+        "course_id": course_id,
+        "course_title": access.get("title") or access.get("course_title") or course_id,
+        "course_editable": bool(access.get("editable")),
         "publication_enabled": cfg.enabled,
         "github_enabled": cfg.github_enabled,
         "github_configured": bool(cfg.github_repository and cfg.github_token),
@@ -262,24 +334,31 @@ def publication_status() -> dict[str, Any]:
     }
 
 
-def _active_changed_drafts() -> list[dict[str, Any]]:
+def _active_changed_drafts(course_id: str = "ap-biology") -> list[dict[str, Any]]:
+    _course_access(course_id)
     result: list[dict[str, Any]] = []
-    for summary in admin_drafts.list_drafts(status="draft", limit=500).get("items", []):
-        draft = admin_drafts.get_draft(summary["draft_id"])
+    for summary in admin_drafts.list_drafts(
+        course_id=course_id,
+        status="draft",
+        limit=500,
+    ).get("items", []):
+        draft = admin_drafts.get_draft(summary["draft_id"], course_id=course_id)
         if not draft.get("changed_from_base") and not str(draft.get("entity_id") or "").startswith("new:"):
             continue
         result.append(draft)
     return result
 
 
-def eligible_drafts() -> dict[str, Any]:
+def eligible_drafts(course_id: str = "ap-biology") -> dict[str, Any]:
+    access = _course_access(course_id)
     items: list[dict[str, Any]] = []
-    for draft in _active_changed_drafts():
+    for draft in _active_changed_drafts(course_id):
         try:
             quality = admin_quality.entity_quality(
                 draft["entity_id"],
                 draft_id=draft["draft_id"],
                 source="draft",
+                course_id=course_id,
             )
             supported, reason = _publication_support(draft, draft.get("payload") or {})
         except admin_drafts.DraftError as exc:
@@ -287,6 +366,7 @@ def eligible_drafts() -> dict[str, Any]:
             supported, reason = False, str(exc)
         items.append(
             {
+                "course_id": course_id,
                 "draft_id": draft["draft_id"],
                 "entity_id": draft["entity_id"],
                 "entity_type": draft["entity_type"],
@@ -299,21 +379,33 @@ def eligible_drafts() -> dict[str, Any]:
                     "warnings": int(quality.get("warning_count") or 0),
                     "advisories": int(quality.get("advisory_count") or 0),
                 },
-                "publication_supported": supported,
-                "publication_note": reason,
+                "publication_supported": bool(access.get("editable")) and supported,
+                "publication_note": (
+                    reason
+                    if access.get("editable")
+                    else "Publication writes are disabled for this read-only course"
+                ),
             }
         )
     items.sort(key=lambda item: (item.get("unit_id") or "", item["entity_type"], str(item.get("title") or "").casefold()))
-    return {"schema": PUBLICATION_SCHEMA, "items": items, "count": len(items)}
+    return {
+        "schema": PUBLICATION_SCHEMA,
+        "course_id": course_id,
+        "course_editable": bool(access.get("editable")),
+        "items": items,
+        "count": len(items),
+    }
 
 
 def _publication_support(draft: dict[str, Any], payload: dict[str, Any]) -> tuple[bool, str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
     entity_type = str(draft.get("entity_type") or "")
     entity_id = str(draft.get("entity_id") or "")
+    unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
     if entity_type in set(admin_editors.editor_types()):
         if entity_type in {"location", "character"}:
             return True, "Published through the owning journey scene records"
-        entity = admin_catalog.get_entity(entity_id)
+        entity = admin_catalog.get_entity(entity_id, course_id)
         if entity and entity.get("source_path"):
             return True, "Source-backed editor record"
         return False, "The record has no publishable source path"
@@ -321,21 +413,42 @@ def _publication_support(draft: dict[str, Any], payload: dict[str, Any]) -> tupl
         return False, "This entity type is not supported by the current student runtime"
     if not entity_id.startswith("new:"):
         return True, "Existing assessment or application record"
+
+    artifact_name: str | None = None
     if entity_type == "challenge":
-        return True, "New Challenge Lab proposal"
-    if entity_type == "question_set":
-        return True, "New mixed-discrimination question set proposal"
-    question_type = str(payload.get("question_type") or "")
-    if question_type == "review":
-        return True, "New delayed-review question proposal"
-    if question_type == "mixed_discrimination" and payload.get("set_id"):
-        return True, "New question for an existing mixed-discrimination set"
-    return False, "New standalone teacher-created questions have no student-runtime destination yet"
+        artifact_name = "challenge_lab"
+    elif entity_type == "question_set":
+        artifact_name = "mixed_discrimination"
+    elif entity_type == "question":
+        question_type = str(payload.get("question_type") or "")
+        if question_type == "review":
+            artifact_name = "review"
+        elif question_type == "mixed_discrimination" and payload.get("set_id"):
+            artifact_name = "mixed_discrimination"
+        else:
+            return False, "New standalone teacher-created questions have no student-runtime destination yet"
+
+    if artifact_name:
+        try:
+            path = course_packages.artifact_source_path(course_id, unit_id, artifact_name)
+        except course_packages.CoursePackageError as exc:
+            return False, str(exc)
+        if not path:
+            return False, f"The selected course unit has no file-backed {artifact_name} publication destination"
+        return True, f"New proposal uses the package-declared {artifact_name} destination"
+    return False, "This proposal has no compatible student-runtime publication destination"
 
 
-def _read_json(path: str, docs: dict[str, Any], before_bytes: dict[str, bytes]) -> Any:
+def _read_json(
+    path: str,
+    docs: dict[str, Any],
+    before_bytes: dict[str, bytes],
+    *,
+    course_id: str,
+    unit_id: str | None = None,
+) -> Any:
     if path not in docs:
-        source = _safe_repo_path(path)
+        source = _safe_repo_path(path, course_id, unit_id)
         raw = source.read_bytes()
         before_bytes[path] = raw
         try:
@@ -343,7 +456,6 @@ def _read_json(path: str, docs: dict[str, Any], before_bytes: dict[str, bytes]) 
         except (UnicodeDecodeError, json.JSONDecodeError) as exc:
             raise PublicationError(f"Published source is not valid UTF-8 JSON: {path}") from exc
     return docs[path]
-
 
 def _records_container(payload: Any, keys: Iterable[str]) -> list[dict[str, Any]]:
     if isinstance(payload, list):
@@ -364,24 +476,26 @@ def _set_alias(record: dict[str, Any], normalized: str, value: Any, aliases: Ite
     record[normalized] = deepcopy(value)
 
 
-def _source_path(entity_id: str) -> str:
-    entity = admin_catalog.get_entity(entity_id)
+
+def _source_path(entity_id: str, course_id: str) -> str:
+    entity = admin_catalog.get_entity(entity_id, course_id)
     path = str((entity or {}).get("source_path") or "")
     if not path:
         raise PublicationError(f"No source path is indexed for {entity_id}")
     return path
 
 
-def _unit_file(unit_id: str, preferred: str, pattern: str) -> str:
-    unit_dir = ROOT / "content" / "ap-biology" / unit_id
-    exact = unit_dir / preferred
-    if exact.exists():
-        return str(exact.relative_to(ROOT))
-    candidates = sorted(unit_dir.glob(pattern))
-    if not candidates:
-        raise PublicationError(f"No source file matching {pattern} exists for {unit_id}")
-    return str(candidates[-1].relative_to(ROOT))
-
+def _unit_artifact_file(course_id: str, unit_id: str, artifact_name: str) -> str:
+    try:
+        path = course_packages.artifact_source_path(course_id, unit_id, artifact_name)
+    except course_packages.CoursePackageError as exc:
+        raise PublicationError(str(exc)) from exc
+    if not path:
+        raise PublicationError(
+            f"Course package has no file-backed '{artifact_name}' destination for {course_id}/{unit_id}"
+        )
+    _safe_repo_path(path, course_id, unit_id)
+    return path
 
 def _scene_record(journey: dict[str, Any], payload: dict[str, Any]) -> dict[str, Any]:
     scenes = journey.get("scenes")
@@ -409,26 +523,44 @@ def _apply_scene_fields(scene: dict[str, Any], payload: dict[str, Any]) -> None:
             scene[key] = deepcopy(payload[key])
 
 
-def _apply_unit(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes]) -> list[str]:
-    path = "content/ap-biology/course.json"
-    course = _read_json(path, docs, before)
+
+def _apply_unit(
+    draft: dict[str, Any],
+    payload: dict[str, Any],
+    docs: dict[str, Any],
+    before: dict[str, bytes],
+) -> list[str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
+    try:
+        manifest = course_packages.package_manifest(course_id)
+    except course_packages.CoursePackageError as exc:
+        raise PublicationError(str(exc)) from exc
+    path = str(manifest.get("course_file") or "")
+    course = _read_json(path, docs, before, course_id=course_id)
     units = course.get("units") if isinstance(course, dict) else None
     if not isinstance(units, list):
         raise PublicationError("Course registry has no unit list")
     unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
     record = next((item for item in units if isinstance(item, dict) and item.get("unit_id") == unit_id), None)
     if record is None:
-        raise PublicationError("Unit record is missing from course.json")
+        raise PublicationError("Unit record is missing from the selected course metadata")
     for key in ("title", "status", "subtitle", "description", "introduction", "instructions", "prerequisites", "ap_mapping", "conclusion"):
         if key in payload:
             record[key] = deepcopy(payload[key])
     return [path]
 
 
-def _apply_journey_or_scene(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes]) -> list[str]:
+def _apply_journey_or_scene(
+    draft: dict[str, Any],
+    payload: dict[str, Any],
+    docs: dict[str, Any],
+    before: dict[str, bytes],
+) -> list[str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
+    unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
     entity_id = str(draft["entity_id"])
-    path = _source_path(entity_id)
-    journey = _read_json(path, docs, before)
+    path = _source_path(entity_id, course_id)
+    journey = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
     if draft["entity_type"] == "journey":
         for key in (
             "story_title", "palace_name", "tagline", "premise", "mission", "finale",
@@ -442,9 +574,16 @@ def _apply_journey_or_scene(draft: dict[str, Any], payload: dict[str, Any], docs
     return [path]
 
 
-def _apply_concept(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes]) -> list[str]:
-    path = _source_path(str(draft["entity_id"]))
-    source = _read_json(path, docs, before)
+def _apply_concept(
+    draft: dict[str, Any],
+    payload: dict[str, Any],
+    docs: dict[str, Any],
+    before: dict[str, bytes],
+) -> list[str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
+    unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
+    path = _source_path(str(draft["entity_id"]), course_id)
+    source = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
     records = _records_container(source, ("canonical_records", "canonical_catalog", "records", "items"))
     target = str(payload.get("knowledge_id") or "")
     match = None
@@ -473,9 +612,16 @@ def _apply_concept(draft: dict[str, Any], payload: dict[str, Any], docs: dict[st
     return [path]
 
 
-def _apply_memory(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes]) -> list[str]:
-    path = _source_path(str(draft["entity_id"]))
-    source = _read_json(path, docs, before)
+def _apply_memory(
+    draft: dict[str, Any],
+    payload: dict[str, Any],
+    docs: dict[str, Any],
+    before: dict[str, bytes],
+) -> list[str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
+    unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
+    path = _source_path(str(draft["entity_id"]), course_id)
+    source = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
     records = _records_container(source, ("memory_objects", "records", "items"))
     target = str(payload.get("memory_object_id") or "")
     match = None
@@ -514,14 +660,21 @@ def _apply_memory(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str
     return [path]
 
 
-def _apply_location(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes]) -> list[str]:
-    entity = admin_catalog.get_entity(str(draft["entity_id"])) or {}
+def _apply_location(
+    draft: dict[str, Any],
+    payload: dict[str, Any],
+    docs: dict[str, Any],
+    before: dict[str, bytes],
+) -> list[str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
+    unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
+    entity = admin_catalog.get_entity(str(draft["entity_id"]), course_id) or {}
     scene_id = str(entity.get("scene_id") or "")
-    scene_entity = admin_catalog.get_entity(scene_id) or {}
+    scene_entity = admin_catalog.get_entity(scene_id, course_id) or {}
     path = str(scene_entity.get("source_path") or "")
     if not path:
         raise PublicationError("Location has no owning scene source")
-    journey = _read_json(path, docs, before)
+    journey = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
     scene_payload = {
         "scene_index": scene_entity.get("scene_index"),
         "locus_id": scene_entity.get("locus_id"),
@@ -542,19 +695,26 @@ def _apply_location(draft: dict[str, Any], payload: dict[str, Any], docs: dict[s
     return [path]
 
 
-def _apply_character(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes]) -> list[str]:
-    entity = admin_catalog.get_entity(str(draft["entity_id"])) or {}
+def _apply_character(
+    draft: dict[str, Any],
+    payload: dict[str, Any],
+    docs: dict[str, Any],
+    before: dict[str, bytes],
+) -> list[str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
+    unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
+    entity = admin_catalog.get_entity(str(draft["entity_id"]), course_id) or {}
     original_name = str(entity.get("name") or entity.get("title") or "")
     if not original_name:
         raise PublicationError("Character source identity is missing")
     touched: list[str] = []
     journey_ids = [str(item) for item in entity.get("journey_ids", [])]
     for journey_id in journey_ids:
-        journey_entity = admin_catalog.get_entity(journey_id) or {}
+        journey_entity = admin_catalog.get_entity(journey_id, course_id) or {}
         path = str(journey_entity.get("source_path") or "")
         if not path:
             continue
-        journey = _read_json(path, docs, before)
+        journey = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
         changed = False
         guide = journey.get("guide") if isinstance(journey, dict) else None
         candidates: list[dict[str, Any]] = []
@@ -577,67 +737,97 @@ def _apply_character(draft: dict[str, Any], payload: dict[str, Any], docs: dict[
         raise PublicationError("Character could not be located in its owning journey sources")
     return touched
 
-
 def _find_record(records: list[dict[str, Any]], predicate) -> dict[str, Any] | None:
     return next((item for item in records if isinstance(item, dict) and predicate(item)), None)
 
 
-def _apply_managed(draft: dict[str, Any], payload: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes], candidate_id: str) -> list[str]:
+
+def _apply_managed(
+    draft: dict[str, Any],
+    payload: dict[str, Any],
+    docs: dict[str, Any],
+    before: dict[str, bytes],
+    candidate_id: str,
+) -> list[str]:
+    course_id = str(draft.get("course_id") or payload.get("course_id") or "ap-biology")
     entity_id = str(draft["entity_id"])
     entity_type = str(draft["entity_type"])
     unit_id = str(draft.get("unit_id") or payload.get("unit_id") or "")
-    if unit_id not in UNIT_IDS:
-        raise PublicationError("Managed content must belong to a valid AP Biology unit")
+    try:
+        unit = course_packages.unit(course_id, unit_id)
+    except course_packages.CoursePackageError as exc:
+        raise PublicationError(str(exc)) from exc
+    if unit is None:
+        raise PublicationError(f"Managed content must belong to a declared unit in course '{course_id}'")
     is_new = entity_id.startswith("new:")
 
     if entity_type == "challenge":
-        path = _source_path(entity_id) if not is_new else f"content/ap-biology/{unit_id}/application-lab.json"
-        source = _read_json(path, docs, before)
+        path = (
+            _source_path(entity_id, course_id)
+            if not is_new
+            else _unit_artifact_file(course_id, unit_id, "challenge_lab")
+        )
+        source = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
         records = _records_container(source, ("items", "challenges", "records"))
         if is_new:
             record = deepcopy(payload)
-            record.pop("id", None); record.pop("type", None); record.pop("unit_id", None); record.pop("proposal", None)
+            for key in ("id", "type", "course_id", "unit_id", "proposal"):
+                record.pop(key, None)
             record["challenge_id"] = record.get("challenge_id") or f"CS-{candidate_id[-8:]}-{len(records)+1:03d}"
             records.append(record)
         else:
-            target = str(payload.get("challenge_id") or (admin_catalog.get_entity(entity_id) or {}).get("challenge_id") or "")
+            target = str(
+                payload.get("challenge_id")
+                or (admin_catalog.get_entity(entity_id, course_id) or {}).get("challenge_id")
+                or ""
+            )
             record = _find_record(records, lambda item: str(item.get("challenge_id") or "") == target)
             if record is None:
                 raise PublicationError("Challenge Lab record could not be located")
             for key, value in payload.items():
-                if key not in {"id", "type", "unit_id", "source_path", "dependency_counts", "coverage"}:
+                if key not in {"id", "type", "course_id", "unit_id", "source_path", "dependency_counts", "coverage"}:
                     record[key] = deepcopy(value)
         return [path]
 
     if entity_type == "question_set":
-        path = _source_path(entity_id) if not is_new else _unit_file(unit_id, "mixed-discrimination.json", "mixed-discrimination*.json")
-        source = _read_json(path, docs, before)
+        path = (
+            _source_path(entity_id, course_id)
+            if not is_new
+            else _unit_artifact_file(course_id, unit_id, "mixed_discrimination")
+        )
+        source = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
         sets = _records_container(source, ("sets", "records", "items"))
         if is_new:
             record = deepcopy(payload)
-            record.pop("id", None); record.pop("type", None); record.pop("unit_id", None); record.pop("proposal", None)
+            for key in ("id", "type", "course_id", "unit_id", "proposal"):
+                record.pop(key, None)
             record["set_id"] = record.get("set_id") or f"CS-{candidate_id[-8:]}-{len(sets)+1:03d}"
             sets.append(record)
         else:
-            target = str(payload.get("set_id") or (admin_catalog.get_entity(entity_id) or {}).get("set_id") or "")
+            target = str(
+                payload.get("set_id")
+                or (admin_catalog.get_entity(entity_id, course_id) or {}).get("set_id")
+                or ""
+            )
             record = _find_record(sets, lambda item: str(item.get("set_id") or "") == target)
             if record is None:
                 raise PublicationError("Question set could not be located")
             for key, value in payload.items():
-                if key not in {"id", "type", "unit_id", "source_path", "dependency_counts", "coverage"}:
+                if key not in {"id", "type", "course_id", "unit_id", "source_path", "dependency_counts", "coverage"}:
                     record[key] = deepcopy(value)
         return [path]
 
     if entity_type != "question":
         raise PublicationError("Unsupported managed content type")
     question_type = str(payload.get("question_type") or "")
+
     if question_type == "quick_recall" and not is_new:
-        entity = admin_catalog.get_entity(entity_id) or {}
-        scene = admin_catalog.get_entity(str(entity.get("scene_id") or "")) or {}
+        entity = admin_catalog.get_entity(entity_id, course_id) or {}
+        scene = admin_catalog.get_entity(str(entity.get("scene_id") or ""), course_id) or {}
         path = str(scene.get("source_path") or "")
         if not path:
             raise PublicationError("Quick Recall has no owning scene source")
-        journey = _read_json(path, docs, before)
+        journey = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
         target_scene = _scene_record(journey, scene)
         target_scene["checkpoint"] = bool((payload.get("quick_recall") or {}).get("checkpoint", True))
         if "prompt" in payload:
@@ -648,12 +838,17 @@ def _apply_managed(draft: dict[str, Any], payload: dict[str, Any], docs: dict[st
         return [path]
 
     if question_type == "review":
-        path = _source_path(entity_id) if not is_new else _unit_file(unit_id, "review-manifest.json", "review-manifest*.json")
-        source = _read_json(path, docs, before)
+        path = (
+            _source_path(entity_id, course_id)
+            if not is_new
+            else _unit_artifact_file(course_id, unit_id, "review")
+        )
+        source = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
         records = _records_container(source, ("targets", "records", "items"))
         if is_new:
             record = deepcopy(payload)
-            record.pop("id", None); record.pop("type", None); record.pop("unit_id", None); record.pop("proposal", None)
+            for key in ("id", "type", "course_id", "unit_id", "proposal"):
+                record.pop(key, None)
             knowledge = record.get("knowledge_ids") or []
             if knowledge and not record.get("knowledge_id"):
                 record["knowledge_id"] = knowledge[0]
@@ -663,22 +858,37 @@ def _apply_managed(draft: dict[str, Any], payload: dict[str, Any], docs: dict[st
                 record["canonical_science"] = record["explanation"]
             records.append(record)
         else:
-            base = admin_catalog.get_entity(entity_id) or {}
+            base = admin_catalog.get_entity(entity_id, course_id) or {}
             knowledge = [str(item) for item in payload.get("knowledge_ids", [])]
-            record = _find_record(records, lambda item: (knowledge and str(item.get("knowledge_id") or item.get("memory_object_id") or item.get("object_id") or "") in knowledge and (not base.get("prompt") or item.get("prompt") == base.get("prompt"))))
+            record = _find_record(
+                records,
+                lambda item: (
+                    knowledge
+                    and str(item.get("knowledge_id") or item.get("memory_object_id") or item.get("object_id") or "") in knowledge
+                    and (not base.get("prompt") or item.get("prompt") == base.get("prompt"))
+                ),
+            )
             if record is None:
                 record = _find_record(records, lambda item: base.get("prompt") and item.get("prompt") == base.get("prompt"))
             if record is None:
                 raise PublicationError("Review question could not be located")
-            if "prompt" in payload: record["prompt"] = deepcopy(payload["prompt"])
-            if payload.get("answer") is not None: record["target_answer"] = deepcopy(payload.get("answer"))
-            if payload.get("explanation") is not None: record["canonical_science"] = deepcopy(payload.get("explanation"))
-            if knowledge: record["knowledge_id"] = knowledge[0]
+            if "prompt" in payload:
+                record["prompt"] = deepcopy(payload["prompt"])
+            if payload.get("answer") is not None:
+                record["target_answer"] = deepcopy(payload.get("answer"))
+            if payload.get("explanation") is not None:
+                record["canonical_science"] = deepcopy(payload.get("explanation"))
+            if knowledge:
+                record["knowledge_id"] = knowledge[0]
         return [path]
 
     if question_type == "mixed_discrimination":
-        path = _source_path(entity_id) if not is_new else _unit_file(unit_id, "mixed-discrimination.json", "mixed-discrimination*.json")
-        source = _read_json(path, docs, before)
+        path = (
+            _source_path(entity_id, course_id)
+            if not is_new
+            else _unit_artifact_file(course_id, unit_id, "mixed_discrimination")
+        )
+        source = _read_json(path, docs, before, course_id=course_id, unit_id=unit_id)
         sets = _records_container(source, ("sets", "records", "items"))
         if is_new:
             set_id = str(payload.get("set_id") or "")
@@ -687,19 +897,21 @@ def _apply_managed(draft: dict[str, Any], payload: dict[str, Any], docs: dict[st
                 raise PublicationError("New mixed-discrimination questions must target an existing set_id")
             questions = question_set.setdefault("questions", [])
             record = deepcopy(payload)
-            for key in ("id", "type", "unit_id", "proposal", "set_id"):
+            for key in ("id", "type", "course_id", "unit_id", "proposal", "set_id"):
                 record.pop(key, None)
             record["question_id"] = record.get("question_id") or f"CS-{candidate_id[-8:]}-{len(questions)+1:03d}"
             questions.append(record)
         else:
-            base = admin_catalog.get_entity(entity_id) or {}
+            base = admin_catalog.get_entity(entity_id, course_id) or {}
             raw_id = entity_id.split(":", 2)[-1]
             match = None
             for question_set in sets:
                 for question in question_set.get("questions", []) if isinstance(question_set, dict) else []:
                     if not isinstance(question, dict):
                         continue
-                    if str(question.get("question_id") or "") == raw_id or (base.get("prompt") and question.get("prompt") == base.get("prompt")):
+                    if str(question.get("question_id") or "") == raw_id or (
+                        base.get("prompt") and question.get("prompt") == base.get("prompt")
+                    ):
                         match = question
                         break
                 if match is not None:
@@ -707,12 +919,11 @@ def _apply_managed(draft: dict[str, Any], payload: dict[str, Any], docs: dict[st
             if match is None:
                 raise PublicationError("Mixed-discrimination question could not be located")
             for key, value in payload.items():
-                if key not in {"id", "type", "unit_id", "source_path", "dependency_counts", "coverage", "set_id"}:
+                if key not in {"id", "type", "course_id", "unit_id", "source_path", "dependency_counts", "coverage", "set_id"}:
                     match[key] = deepcopy(value)
         return [path]
 
     raise PublicationError("This question type has no compatible student-runtime publication destination")
-
 
 def _apply_draft(draft: dict[str, Any], docs: dict[str, Any], before: dict[str, bytes], candidate_id: str) -> list[str]:
     payload = deepcopy(draft.get("payload") or {})
@@ -737,12 +948,28 @@ def _apply_draft(draft: dict[str, Any], docs: dict[str, Any], before: dict[str, 
     raise PublicationError(f"Unsupported publication entity type: {entity_type}")
 
 
+
 def _candidate_manifest_draft(draft: dict[str, Any]) -> dict[str, Any]:
+    course_id = str(draft.get("course_id") or "ap-biology")
     quality = admin_quality.entity_quality(
-        draft["entity_id"], draft_id=draft["draft_id"], source="draft"
+        draft["entity_id"],
+        draft_id=draft["draft_id"],
+        source="draft",
+        course_id=course_id,
     )
-    dependency = admin_catalog.dependency_report(draft["entity_id"], depth=2, limit=500) if admin_catalog.get_entity(draft["entity_id"]) else None
+    entity = admin_catalog.get_entity(draft["entity_id"], course_id)
+    dependency = (
+        admin_catalog.dependency_report(
+            draft["entity_id"],
+            course_id=course_id,
+            depth=2,
+            limit=500,
+        )
+        if entity
+        else None
+    )
     return {
+        "course_id": course_id,
         "draft_id": draft["draft_id"],
         "entity_id": draft["entity_id"],
         "entity_type": draft["entity_type"],
@@ -758,7 +985,6 @@ def _candidate_manifest_draft(draft: dict[str, Any]) -> dict[str, Any]:
         },
         "dependency_counts": dependency.get("related_counts_by_type", {}) if dependency else {},
     }
-
 
 def _write_candidate_files(candidate_id: str, docs: dict[str, Any], before: dict[str, bytes], config: PublicationConfig) -> list[dict[str, Any]]:
     root = _candidate_dir(candidate_id, config)
@@ -793,9 +1019,12 @@ def _write_candidate_files(candidate_id: str, docs: dict[str, Any], before: dict
     return files
 
 
+
 def _release_summary_markdown(manifest: dict[str, Any]) -> str:
     lines = [
         f"# {manifest['title']}",
+        "",
+        f"Course `{manifest.get('course_id') or 'ap-biology'}`",
         "",
         f"Candidate `{manifest['candidate_id']}`",
         "",
@@ -833,9 +1062,11 @@ def create_candidate(
     notes: str | None,
     warnings_acknowledged: bool,
     username: str,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
     config = PublicationConfig.from_env()
     config.require_enabled()
+    access = _course_access(course_id, editable=True)
     clean_ids = list(dict.fromkeys(str(item) for item in draft_ids if str(item).strip()))
     if not clean_ids:
         raise PublicationError("Select at least one changed working copy")
@@ -849,7 +1080,9 @@ def create_candidate(
     drafts: list[dict[str, Any]] = []
     manifest_drafts: list[dict[str, Any]] = []
     for draft_id in clean_ids:
-        draft = admin_drafts.get_draft(draft_id)
+        draft = admin_drafts.get_draft(draft_id, course_id=course_id)
+        if str(draft.get("course_id") or "") != course_id:
+            raise PublicationConflict("Working copy belongs to a different course")
         if draft["status"] != "draft":
             raise PublicationConflict("Archived working copies cannot enter a publication candidate")
         if not draft.get("changed_from_base") and not str(draft["entity_id"]).startswith("new:"):
@@ -870,17 +1103,20 @@ def create_candidate(
     try:
         for draft in drafts:
             touched = _apply_draft(draft, docs, before, candidate_id)
-            for path in touched:
-                touched_by.setdefault(path, []).append(draft["entity_id"])
+            for source_path in touched:
+                touched_by.setdefault(source_path, []).append(draft["entity_id"])
         files = _write_candidate_files(candidate_id, docs, before, config)
         for draft in drafts:
             admin_drafts.create_snapshot(
                 draft["draft_id"],
                 label=f"Pre-publication snapshot · {candidate_id[-12:]}",
                 username=username,
+                course_id=course_id,
             )
         manifest = {
             "schema": PUBLICATION_SCHEMA,
+            "course_id": course_id,
+            "course_title": access.get("title") or access.get("course_title") or course_id,
             "candidate_id": candidate_id,
             "kind": "content_release",
             "title": clean_title,
@@ -898,19 +1134,23 @@ def create_candidate(
             "publication_model": "candidate package only; no local published source write",
         }
         root = _candidate_dir(candidate_id, config)
-        (root / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        (root / "manifest.json").write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
         (root / "release-summary.md").write_text(_release_summary_markdown(manifest), encoding="utf-8")
         now = _now()
         with _connect(config) as connection:
             connection.execute(
                 """
                 INSERT INTO publication_candidates(
-                    candidate_id, kind, title, notes, status, warnings_acknowledged,
+                    candidate_id, course_id, kind, title, notes, status, warnings_acknowledged,
                     manifest_json, validation_json, created_at, updated_at, created_by
-                ) VALUES (?, 'content_release', ?, ?, 'created', ?, ?, NULL, ?, ?, ?)
+                ) VALUES (?, ?, 'content_release', ?, ?, 'created', ?, ?, NULL, ?, ?, ?)
                 """,
                 (
                     candidate_id,
+                    course_id,
                     clean_title,
                     manifest["notes"],
                     1 if warnings_acknowledged else 0,
@@ -921,7 +1161,7 @@ def create_candidate(
                 ),
             )
             connection.commit()
-        return get_candidate(candidate_id)
+        return get_candidate(candidate_id, course_id)
     except Exception:
         if candidate_id:
             shutil.rmtree(_candidate_dir(candidate_id, config), ignore_errors=True)
@@ -931,8 +1171,9 @@ def create_candidate(
 def _assert_candidate_fresh(candidate: dict[str, Any]) -> None:
     if candidate.get("kind") == "rollback":
         return
+    course_id = str(candidate.get("course_id") or candidate.get("manifest", {}).get("course_id") or "ap-biology")
     for expected in candidate["manifest"].get("drafts", []):
-        current = admin_drafts.get_draft(expected["draft_id"])
+        current = admin_drafts.get_draft(expected["draft_id"], course_id=course_id)
         if current["status"] != "draft":
             raise PublicationConflict(f"{expected['entity_id']} is no longer an active working copy")
         if int(current["version"]) != int(expected["version"]):
@@ -941,67 +1182,96 @@ def _assert_candidate_fresh(candidate: dict[str, Any]) -> None:
             raise PublicationConflict(f"{expected['entity_id']} fingerprint changed after candidate creation")
 
 
-def get_candidate(candidate_id: str) -> dict[str, Any]:
+def get_candidate(candidate_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    _course_access(course_id)
     config = PublicationConfig.from_env()
     config.require_enabled()
     with _connect(config) as connection:
-        row = connection.execute("SELECT * FROM publication_candidates WHERE candidate_id = ?", (candidate_id,)).fetchone()
+        row = connection.execute(
+            "SELECT * FROM publication_candidates WHERE candidate_id = ? AND course_id = ?",
+            (candidate_id, course_id),
+        ).fetchone()
     if row is None:
-        raise admin_drafts.DraftNotFound("Publication candidate not found")
+        raise admin_drafts.DraftNotFound("Publication candidate not found for course")
     return _candidate_row(row)
 
 
-def list_candidates(limit: int = 100) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_enabled()
+def list_candidates(course_id: str = "ap-biology", limit: int = 100) -> dict[str, Any]:
+    _course_access(course_id)
+    config = PublicationConfig.from_env()
+    config.require_enabled()
     safe_limit = max(1, min(int(limit), 500))
     with _connect(config) as connection:
-        rows = connection.execute("SELECT * FROM publication_candidates ORDER BY created_at DESC LIMIT ?", (safe_limit,)).fetchall()
-    return {"schema": PUBLICATION_SCHEMA, "items": [_candidate_row(row) for row in rows]}
+        rows = connection.execute(
+            "SELECT * FROM publication_candidates WHERE course_id = ? ORDER BY created_at DESC LIMIT ?",
+            (course_id, safe_limit),
+        ).fetchall()
+    return {
+        "schema": PUBLICATION_SCHEMA,
+        "course_id": course_id,
+        "items": [_candidate_row(row) for row in rows],
+    }
 
 
-def list_releases(limit: int = 100) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_enabled()
+def list_releases(course_id: str = "ap-biology", limit: int = 100) -> dict[str, Any]:
+    _course_access(course_id)
+    config = PublicationConfig.from_env()
+    config.require_enabled()
     safe_limit = max(1, min(int(limit), 500))
     with _connect(config) as connection:
-        rows = connection.execute("SELECT * FROM publication_releases ORDER BY created_at DESC LIMIT ?", (safe_limit,)).fetchall()
-    return {"schema": RELEASE_SCHEMA, "items": [_release_row(row) for row in rows]}
+        rows = connection.execute(
+            "SELECT * FROM publication_releases WHERE course_id = ? ORDER BY created_at DESC LIMIT ?",
+            (course_id, safe_limit),
+        ).fetchall()
+    return {
+        "schema": RELEASE_SCHEMA,
+        "course_id": course_id,
+        "items": [_release_row(row) for row in rows],
+    }
 
 
-def _update_candidate(candidate_id: str, *, status: str | None = None, validation: dict[str, Any] | None = None, github: dict[str, Any] | None = None) -> dict[str, Any]:
+def _update_candidate(
+    candidate_id: str,
+    *,
+    course_id: str = "ap-biology",
+    status: str | None = None,
+    validation: dict[str, Any] | None = None,
+    github: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     if status and status not in CANDIDATE_STATUSES:
         raise PublicationError("Invalid candidate status")
-    config = PublicationConfig.from_env(); config.require_enabled()
+    _course_access(course_id)
+    config = PublicationConfig.from_env()
+    config.require_enabled()
     sets = ["updated_at = ?"]
     values: list[Any] = [_now()]
     if status:
-        sets.append("status = ?"); values.append(status)
+        sets.append("status = ?")
+        values.append(status)
     if validation is not None:
-        sets.append("validation_json = ?"); values.append(json.dumps(validation, ensure_ascii=False, sort_keys=True))
+        sets.append("validation_json = ?")
+        values.append(json.dumps(validation, ensure_ascii=False, sort_keys=True))
     if github:
         mapping = {
-            "branch": "github_branch", "pr_number": "github_pr_number", "commit_sha": "github_commit_sha", "merge_sha": "github_merge_sha"
+            "branch": "github_branch",
+            "pr_number": "github_pr_number",
+            "commit_sha": "github_commit_sha",
+            "merge_sha": "github_merge_sha",
         }
         for key, column in mapping.items():
             if key in github:
-                sets.append(f"{column} = ?"); values.append(github[key])
-    values.append(candidate_id)
+                sets.append(f"{column} = ?")
+                values.append(github[key])
+    values.extend([candidate_id, course_id])
     with _connect(config) as connection:
-        cursor = connection.execute(f"UPDATE publication_candidates SET {', '.join(sets)} WHERE candidate_id = ?", values)
+        cursor = connection.execute(
+            f"UPDATE publication_candidates SET {', '.join(sets)} WHERE candidate_id = ? AND course_id = ?",
+            values,
+        )
         if cursor.rowcount != 1:
-            raise admin_drafts.DraftNotFound("Publication candidate not found")
+            raise admin_drafts.DraftNotFound("Publication candidate not found for course")
         connection.commit()
-    return get_candidate(candidate_id)
-
-
-LOCAL_QA_COMMANDS = (
-    ("python", "scripts/verify_content.py"),
-    ("python", "scripts/qa_mainline_u1_u8.py"),
-    ("node", "scripts/qa_site_ux.mjs"),
-    ("python", "scripts/qa_site_contrast.py"),
-    ("python", "-m", "pytest", "-q"),
-    ("python", "-m", "compileall", "-q", "backend", "scripts", "tests"),
-)
-
+    return get_candidate(candidate_id, course_id)
 
 def _run_candidate_qa(candidate: dict[str, Any]) -> dict[str, Any]:
     config = PublicationConfig.from_env()
@@ -1045,14 +1315,23 @@ def _run_candidate_qa(candidate: dict[str, Any]) -> dict[str, Any]:
         return {"passed": passed, "commands": commands, "validated_at": _now()}
 
 
-def validate_candidate(candidate_id: str) -> dict[str, Any]:
-    candidate = get_candidate(candidate_id)
+
+def validate_candidate(
+    candidate_id: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    _course_access(course_id, editable=True)
+    candidate = get_candidate(candidate_id, course_id)
     if candidate["status"] not in {"created", "validated", "failed"}:
         raise PublicationConflict("Only an unsubmitted candidate can be locally revalidated")
     _assert_candidate_fresh(candidate)
     validation = _run_candidate_qa(candidate)
-    return _update_candidate(candidate_id, status="validated" if validation["passed"] else "failed", validation=validation)
-
+    return _update_candidate(
+        candidate_id,
+        course_id=course_id,
+        status="validated" if validation["passed"] else "failed",
+        validation=validation,
+    )
 
 def _gh(config: PublicationConfig, method: str, path: str, **kwargs: Any) -> Any:
     config.require_github()
@@ -1084,9 +1363,15 @@ def _assert_remote_base(config: PublicationConfig, candidate: dict[str, Any]) ->
             raise PublicationConflict(f"GitHub base file changed after candidate creation: {record['path']}")
 
 
-def submit_candidate(candidate_id: str) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_github()
-    candidate = get_candidate(candidate_id)
+
+def submit_candidate(
+    candidate_id: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    config = PublicationConfig.from_env()
+    config.require_github()
+    _course_access(course_id, editable=True)
+    candidate = get_candidate(candidate_id, course_id)
     if candidate["status"] != "validated" or not (candidate.get("validation") or {}).get("passed"):
         raise PublicationConflict("Candidate must pass local release validation before GitHub submission")
     _assert_candidate_fresh(candidate)
@@ -1107,7 +1392,12 @@ def submit_candidate(candidate_id: str) -> dict[str, Any]:
             json={"content": base64.b64encode(raw).decode("ascii"), "encoding": "base64"},
         )
         tree_items.append({"path": record["path"], "mode": "100644", "type": "blob", "sha": blob["sha"]})
-    tree = _gh(config, "POST", f"/repos/{config.github_repository}/git/trees", json={"base_tree": base_tree, "tree": tree_items})
+    tree = _gh(
+        config,
+        "POST",
+        f"/repos/{config.github_repository}/git/trees",
+        json={"base_tree": base_tree, "tree": tree_items},
+    )
     commit = _gh(
         config,
         "POST",
@@ -1118,8 +1408,13 @@ def submit_candidate(candidate_id: str) -> dict[str, Any]:
             "parents": [base_sha],
         },
     )
-    branch = f"content-studio/{candidate_id}"
-    _gh(config, "POST", f"/repos/{config.github_repository}/git/refs", json={"ref": f"refs/heads/{branch}", "sha": commit["sha"]})
+    branch = f"content-studio/{course_id}/{candidate_id}"
+    _gh(
+        config,
+        "POST",
+        f"/repos/{config.github_repository}/git/refs",
+        json={"ref": f"refs/heads/{branch}", "sha": commit["sha"]},
+    )
     pr = _gh(
         config,
         "POST",
@@ -1133,14 +1428,20 @@ def submit_candidate(candidate_id: str) -> dict[str, Any]:
     )
     return _update_candidate(
         candidate_id,
+        course_id=course_id,
         status="submitted",
         github={"branch": branch, "pr_number": int(pr["number"]), "commit_sha": commit["sha"]},
     )
 
 
-def refresh_github_checks(candidate_id: str) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_github()
-    candidate = get_candidate(candidate_id)
+def refresh_github_checks(
+    candidate_id: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    config = PublicationConfig.from_env()
+    config.require_github()
+    _course_access(course_id, editable=True)
+    candidate = get_candidate(candidate_id, course_id)
     sha = candidate["github"].get("commit_sha")
     if not sha:
         raise PublicationConflict("Candidate has not been submitted to GitHub")
@@ -1154,20 +1455,34 @@ def refresh_github_checks(candidate_id: str) -> dict[str, Any]:
         "complete": complete,
         "successful": successful,
         "checks": [
-            {"name": item.get("name"), "status": item.get("status"), "conclusion": item.get("conclusion"), "html_url": item.get("html_url")}
+            {
+                "name": item.get("name"),
+                "status": item.get("status"),
+                "conclusion": item.get("conclusion"),
+                "html_url": item.get("html_url"),
+            }
             for item in required
         ],
     }
-    result = _update_candidate(candidate_id, status="merge_ready" if successful else "submitted")
+    result = _update_candidate(
+        candidate_id,
+        course_id=course_id,
+        status="merge_ready" if successful else "submitted",
+    )
     result["github_checks"] = summary
     return result
 
 
-def merge_candidate(candidate_id: str) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_github()
+def merge_candidate(
+    candidate_id: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    config = PublicationConfig.from_env()
+    config.require_github()
+    _course_access(course_id, editable=True)
     if not config.github_allow_merge:
         raise PublicationDisabled("Server-side GitHub merge is disabled; review and merge the pull request manually")
-    candidate = refresh_github_checks(candidate_id)
+    candidate = refresh_github_checks(candidate_id, course_id)
     if candidate["status"] != "merge_ready":
         raise PublicationConflict("GitHub Actions have not completed successfully")
     pr_number = candidate["github"].get("pr_number")
@@ -1180,21 +1495,36 @@ def merge_candidate(candidate_id: str) -> dict[str, Any]:
     )
     if not merged.get("merged"):
         raise PublicationConflict(str(merged.get("message") or "GitHub did not merge the candidate"))
-    return _update_candidate(candidate_id, status="merged_pending_verify", github={"merge_sha": merged.get("sha")})
+    return _update_candidate(
+        candidate_id,
+        course_id=course_id,
+        status="merged_pending_verify",
+        github={"merge_sha": merged.get("sha")},
+    )
 
 
-def verify_release(candidate_id: str, *, username: str) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_github()
-    candidate = get_candidate(candidate_id)
+def verify_release(
+    candidate_id: str,
+    *,
+    username: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    config = PublicationConfig.from_env()
+    config.require_github()
+    _course_access(course_id, editable=True)
+    candidate = get_candidate(candidate_id, course_id)
     if candidate["status"] not in {"submitted", "merge_ready", "merged_pending_verify"}:
         raise PublicationConflict("Only a submitted or merged candidate can be verified as released")
     for record in candidate["manifest"]["files"]:
         remote = _remote_file_bytes(config, record["path"], config.github_base_branch)
         if _sha_bytes(remote) != record["after_sha256"]:
-            raise PublicationConflict(f"GitHub base branch does not yet contain the candidate version of {record['path']}")
+            raise PublicationConflict(
+                f"GitHub base branch does not yet contain the candidate version of {record['path']}"
+            )
 
     release_id = f"release-{uuid.uuid4().hex}"
     summary = {
+        "course_id": course_id,
         "candidate_id": candidate_id,
         "kind": candidate["kind"],
         "title": candidate["title"],
@@ -1204,11 +1534,28 @@ def verify_release(candidate_id: str, *, username: str) -> dict[str, Any]:
         "released_at": _now(),
     }
     with _connect(config) as connection:
-        existing = connection.execute("SELECT * FROM publication_releases WHERE candidate_id = ?", (candidate_id,)).fetchone()
+        existing = connection.execute(
+            "SELECT * FROM publication_releases WHERE candidate_id = ? AND course_id = ?",
+            (candidate_id, course_id),
+        ).fetchone()
         if existing is None:
             connection.execute(
-                "INSERT INTO publication_releases(release_id, candidate_id, title, summary_json, created_at, created_by, github_merge_sha) VALUES (?, ?, ?, ?, ?, ?, ?)",
-                (release_id, candidate_id, candidate["title"], json.dumps(summary, ensure_ascii=False, sort_keys=True), _now(), username, candidate["github"].get("merge_sha")),
+                """
+                INSERT INTO publication_releases(
+                    release_id, candidate_id, course_id, title, summary_json,
+                    created_at, created_by, github_merge_sha
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    release_id,
+                    candidate_id,
+                    course_id,
+                    candidate["title"],
+                    json.dumps(summary, ensure_ascii=False, sort_keys=True),
+                    _now(),
+                    username,
+                    candidate["github"].get("merge_sha"),
+                ),
             )
         else:
             release_id = existing["release_id"]
@@ -1217,30 +1564,55 @@ def verify_release(candidate_id: str, *, username: str) -> dict[str, Any]:
     if candidate["kind"] == "content_release":
         for expected in candidate["manifest"].get("drafts", []):
             try:
-                current = admin_drafts.get_draft(expected["draft_id"])
-                if current["status"] == "draft" and int(current["version"]) == int(expected["version"]) and current.get("payload_fingerprint") == expected.get("payload_fingerprint"):
-                    admin_drafts.archive_draft(current["draft_id"], expected_version=current["version"], username=username)
+                current = admin_drafts.get_draft(expected["draft_id"], course_id=course_id)
+                if (
+                    current["status"] == "draft"
+                    and int(current["version"]) == int(expected["version"])
+                    and current.get("payload_fingerprint") == expected.get("payload_fingerprint")
+                ):
+                    admin_drafts.archive_draft(
+                        current["draft_id"],
+                        expected_version=current["version"],
+                        username=username,
+                        course_id=course_id,
+                    )
             except admin_drafts.DraftError:
                 pass
     admin_catalog.clear_catalog_cache()
     admin_quality.clear_quality_cache()
-    _update_candidate(candidate_id, status="released")
-    return get_release(release_id)
+    _update_candidate(candidate_id, course_id=course_id, status="released")
+    return get_release(release_id, course_id)
 
 
-def get_release(release_id: str) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_enabled()
+def get_release(
+    release_id: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    _course_access(course_id)
+    config = PublicationConfig.from_env()
+    config.require_enabled()
     with _connect(config) as connection:
-        row = connection.execute("SELECT * FROM publication_releases WHERE release_id = ?", (release_id,)).fetchone()
+        row = connection.execute(
+            "SELECT * FROM publication_releases WHERE release_id = ? AND course_id = ?",
+            (release_id, course_id),
+        ).fetchone()
     if row is None:
-        raise admin_drafts.DraftNotFound("Release not found")
+        raise admin_drafts.DraftNotFound("Release not found for course")
     return _release_row(row)
 
 
-def create_rollback_candidate(release_id: str, *, title: str | None, username: str) -> dict[str, Any]:
-    config = PublicationConfig.from_env(); config.require_enabled()
-    release = get_release(release_id)
-    original = get_candidate(release["candidate_id"])
+def create_rollback_candidate(
+    release_id: str,
+    *,
+    title: str | None,
+    username: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    config = PublicationConfig.from_env()
+    config.require_enabled()
+    _course_access(course_id, editable=True)
+    release = get_release(release_id, course_id)
+    original = get_candidate(release["candidate_id"], course_id)
     candidate_id = f"candidate-{uuid.uuid4().hex}"
     source_root = _candidate_dir(original["candidate_id"], config)
     rollback_root = _candidate_dir(candidate_id, config)
@@ -1253,8 +1625,10 @@ def create_rollback_candidate(release_id: str, *, title: str | None, username: s
             restored_version = (source_root / "before" / record["path"]).read_bytes()
             before_dest = rollback_root / "before" / record["path"]
             after_dest = rollback_root / "after" / record["path"]
-            before_dest.parent.mkdir(parents=True, exist_ok=True); after_dest.parent.mkdir(parents=True, exist_ok=True)
-            before_dest.write_bytes(current_version); after_dest.write_bytes(restored_version)
+            before_dest.parent.mkdir(parents=True, exist_ok=True)
+            after_dest.parent.mkdir(parents=True, exist_ok=True)
+            before_dest.write_bytes(current_version)
+            after_dest.write_bytes(restored_version)
             files.append(
                 {
                     "path": record["path"],
@@ -1266,6 +1640,8 @@ def create_rollback_candidate(release_id: str, *, title: str | None, username: s
             )
         manifest = {
             "schema": PUBLICATION_SCHEMA,
+            "course_id": course_id,
+            "course_title": original["manifest"].get("course_title") or course_id,
             "candidate_id": candidate_id,
             "kind": "rollback",
             "rollback_of_release": release_id,
@@ -1283,23 +1659,42 @@ def create_rollback_candidate(release_id: str, *, title: str | None, username: s
             "base_branch": config.github_base_branch,
             "publication_model": "rollback is a new validated candidate; history is never rewritten",
         }
-        (rollback_root / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        (rollback_root / "manifest.json").write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
         (rollback_root / "release-summary.md").write_text(_release_summary_markdown(manifest), encoding="utf-8")
         now = _now()
         with _connect(config) as connection:
             connection.execute(
-                "INSERT INTO publication_candidates(candidate_id, kind, title, notes, status, warnings_acknowledged, manifest_json, validation_json, created_at, updated_at, created_by) VALUES (?, 'rollback', ?, ?, 'created', 1, ?, NULL, ?, ?, ?)",
-                (candidate_id, manifest["title"], manifest["notes"], json.dumps(manifest, ensure_ascii=False, sort_keys=True), now, now, username),
+                """
+                INSERT INTO publication_candidates(
+                    candidate_id, course_id, kind, title, notes, status, warnings_acknowledged,
+                    manifest_json, validation_json, created_at, updated_at, created_by
+                ) VALUES (?, ?, 'rollback', ?, ?, 'created', 1, ?, NULL, ?, ?, ?)
+                """,
+                (
+                    candidate_id,
+                    course_id,
+                    manifest["title"],
+                    manifest["notes"],
+                    json.dumps(manifest, ensure_ascii=False, sort_keys=True),
+                    now,
+                    now,
+                    username,
+                ),
             )
             connection.commit()
-        return get_candidate(candidate_id)
+        return get_candidate(candidate_id, course_id)
     except Exception:
         shutil.rmtree(rollback_root, ignore_errors=True)
         raise
 
-
-def release_summary(candidate_id: str) -> str:
-    candidate = get_candidate(candidate_id)
+def release_summary(
+    candidate_id: str,
+    course_id: str = "ap-biology",
+) -> str:
+    candidate = get_candidate(candidate_id, course_id)
     path = _candidate_dir(candidate_id) / "release-summary.md"
     if not path.exists():
         return _release_summary_markdown(candidate["manifest"])
