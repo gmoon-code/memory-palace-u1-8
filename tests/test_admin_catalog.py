@@ -98,10 +98,28 @@ def test_catalog_course_registry_and_scope_are_explicit():
     assert all(entity.get("course_id") == "ap-biology" for entity in snapshot["entities"].values())
 
 
-def test_unprepared_course_catalog_is_rejected():
+def test_development_course_catalog_is_read_only_and_isolated():
+    courses = admin_catalog.catalog_courses()
+    chemistry = next(item for item in courses["courses"] if item["course_id"] == "ap-chemistry")
+    assert chemistry["catalog_ready"] is True
+    assert chemistry["editable"] is False
+    assert chemistry["catalog_mode"] == "read_only"
+
+    summary = admin_catalog.catalog_summary("ap-chemistry")
+    assert summary["course_id"] == "ap-chemistry"
+    assert summary["course_title"] == "AP Chemistry"
+    assert summary["counts"]["unit"] == 2
+    assert summary["counts"]["journey"] == 2
+    assert summary["counts"]["scene"] == 4
+    assert summary["counts"]["concept"] == 8
+    assert summary["counts"]["memory_object"] == 8
+
+    snapshot = admin_catalog.catalog("ap-chemistry")
+    assert all(entity.get("course_id") == "ap-chemistry" for entity in snapshot["entities"].values())
+
     try:
-        admin_catalog.catalog_summary("ap-chemistry")
+        admin_catalog.require_editable_course("ap-chemistry")
     except ValueError as exc:
-        assert "not available" in str(exc)
+        assert "editing is not enabled" in str(exc)
     else:
-        raise AssertionError("unprepared course catalog should not be silently treated as AP Biology")
+        raise AssertionError("development course catalog must remain read only")
