@@ -87,6 +87,36 @@ def test_teacher_catalog_requests_are_course_scoped(admin_client):
     assert chemistry_unit.json()["title"] == "Atomic Structure and Properties"
 
 
+def test_teacher_dependencies_and_source_paths_do_not_cross_courses(admin_client):
+    client, _ = admin_client
+
+    chemistry_entities = client.get(
+        "/api/admin/catalog/entities?course_id=ap-chemistry&entity_type=scene&limit=50"
+    )
+    assert chemistry_entities.status_code == 200
+    items = chemistry_entities.json()["items"]
+    assert len(items) == 4
+    assert all(item["course_id"] == "ap-chemistry" for item in items)
+    assert all(item["source_path"].startswith("content/ap-chemistry/") for item in items)
+
+    report = client.get(
+        "/api/admin/catalog/dependencies",
+        params={
+            "course_id": "ap-chemistry",
+            "entity_id": "scene:unit-1:APCHEM-U1-J1:1",
+            "depth": 3,
+            "limit": 500,
+        },
+    )
+    assert report.status_code == 200
+    payload = report.json()
+    assert payload["course_id"] == "ap-chemistry"
+    related = [item["entity"] for item in payload["related"]]
+    assert related
+    assert all(item["course_id"] == "ap-chemistry" for item in related)
+    assert not any("U1-K-" in str(item) for item in related)
+
+
 def test_teacher_drafts_and_replacements_carry_course_identity(admin_client):
     client, token = admin_client
     draft = client.post(
@@ -106,6 +136,22 @@ def test_teacher_drafts_and_replacements_carry_course_identity(admin_client):
     )
     assert plan.status_code == 200
     assert plan.json()["course_id"] == "ap-biology"
+
+
+    chemistry_plan = client.get(
+        "/api/admin/replacements/plan",
+        params={"entity_id": "scene:unit-1:APCHEM-U1-J1:0", "course_id": "ap-chemistry"},
+    )
+    assert chemistry_plan.status_code == 200
+    assert chemistry_plan.json()["course_id"] == "ap-chemistry"
+
+    blocked = client.post(
+        "/api/admin/drafts",
+        json={"entity_id": "scene:unit-1:APCHEM-U1-J1:0", "course_id": "ap-chemistry"},
+        headers=csrf(token),
+    )
+    assert blocked.status_code == 400
+    assert "editing is not enabled" in blocked.json()["detail"]
 
 
 def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
