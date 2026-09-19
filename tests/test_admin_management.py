@@ -573,8 +573,8 @@ def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(manag
         "/api/admin/management/bulk/preview",
         json={
             "course_id": "ap-chemistry",
-            "find": "The Sorting Gate",
-            "replacement": "The Sorting Gate Revised",
+            "find": "Atomic Records Hall",
+            "replacement": "Atomic Records Hall Revised",
             "case_sensitive": True,
             "unit_id": "unit-1",
             "entity_types": ["scene"],
