@@ -249,6 +249,7 @@ def test_media_staging_is_private_versioned_and_csrf_protected(management_client
     assert uploaded.status_code == 200
     asset = uploaded.json()
     assert asset["status"] == "staged"
+    assert asset["course_id"] == "ap-biology"
     assert asset["sha256"] == hashlib.sha256(png).hexdigest()
     staged_files = list((tmp_path / "content-studio-media").iterdir())
     assert len(staged_files) == 1
@@ -257,6 +258,28 @@ def test_media_staging_is_private_versioned_and_csrf_protected(management_client
     preview = client.get(f"/api/admin/management/media/{asset['asset_id']}/file")
     assert preview.status_code == 200
     assert preview.content == png
+
+    wrong_course_preview = client.get(
+        f"/api/admin/management/media/{asset['asset_id']}/file",
+        params={"course_id": "ap-chemistry"},
+    )
+    assert wrong_course_preview.status_code == 404
+
+    chemistry_staged = client.get(
+        "/api/admin/management/media/staged",
+        params={"course_id": "ap-chemistry", "status": "staged", "limit": 100},
+    )
+    assert chemistry_staged.status_code == 200
+    assert chemistry_staged.json()["course_id"] == "ap-chemistry"
+    assert chemistry_staged.json()["items"] == []
+
+    chemistry_upload = client.post(
+        "/api/admin/management/media/upload?filename=chemistry.png&course_id=ap-chemistry&unit_id=unit-1",
+        content=png,
+        headers={**csrf(token), "Content-Type": "image/png"},
+    )
+    assert chemistry_upload.status_code == 400
+    assert "editing is not enabled" in chemistry_upload.json()["detail"]
 
     updated = client.patch(
         f"/api/admin/management/media/{asset['asset_id']}",
@@ -474,3 +497,169 @@ def test_managed_duplicate_entity_ids_are_isolated_across_courses(
     ).json()
     assert biology_after["payload"]["prompt"] == "Biology isolated prompt"
     assert chemistry_after["payload"]["prompt"] == "Chemistry isolated prompt"
+
+
+
+def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(management_client):
+    client, token, _ = management_client
+
+    search = client.get(
+        "/api/admin/management/search",
+        params={
+            "course_id": "ap-chemistry",
+            "q": "Atomic Structure and Properties",
+            "limit": 100,
+        },
+    )
+    assert search.status_code == 200
+    search_payload = search.json()
+    assert search_payload["course_id"] == "ap-chemistry"
+    assert search_payload["items"]
+    assert all(item.get("course_id") == "ap-chemistry" for item in search_payload["items"])
+
+    exported = client.get(
+        "/api/admin/management/export",
+        params={
+            "course_id": "ap-chemistry",
+            "unit_id": "unit-1",
+            "entity_types": "question",
+            "include_drafts": "true",
+            "include_catalog": "true",
+        },
+    )
+    assert exported.status_code == 200
+    bundle = exported.json()
+    assert bundle["scope"]["course_id"] == "ap-chemistry"
+    assert bundle["records"]
+    assert all(record["course_id"] == "ap-chemistry" for record in bundle["records"])
+    assert all(record["payload"].get("course_id") == "ap-chemistry" for record in bundle["records"])
+    assert "content/ap-biology/" not in str(bundle)
+
+    small_bundle = {
+        **bundle,
+        "records": [bundle["records"][0]],
+        "record_count": 1,
+    }
+    import_preview = client.post(
+        "/api/admin/management/import/preview",
+        json={"course_id": "ap-chemistry", "bundle": small_bundle},
+        headers=csrf(token),
+    )
+    assert import_preview.status_code == 200
+    assert import_preview.json()["course_id"] == "ap-chemistry"
+    assert import_preview.json()["error_count"] == 0
+
+    blocked_import = client.post(
+        "/api/admin/management/import/apply",
+        json={
+            "course_id": "ap-chemistry",
+            "bundle": small_bundle,
+            "conflict_policy": "skip",
+        },
+        headers=csrf(token),
+    )
+    assert blocked_import.status_code == 400
+    assert "editing is not enabled" in blocked_import.json()["detail"]
+
+    wrong_course_import = client.post(
+        "/api/admin/management/import/preview",
+        json={"course_id": "ap-biology", "bundle": small_bundle},
+        headers=csrf(token),
+    )
+    assert wrong_course_import.status_code == 400
+    assert "belongs to course 'ap-chemistry'" in wrong_course_import.json()["detail"]
+
+    bulk = client.post(
+        "/api/admin/management/bulk/preview",
+        json={
+            "course_id": "ap-chemistry",
+            "find": "The Sorting Gate",
+            "replacement": "The Sorting Gate Revised",
+            "case_sensitive": True,
+            "unit_id": "unit-1",
+            "entity_types": ["scene"],
+            "limit": 100,
+        },
+        headers=csrf(token),
+    )
+    assert bulk.status_code == 200
+    bulk_payload = bulk.json()
+    assert bulk_payload["course_id"] == "ap-chemistry"
+    assert bulk_payload["candidate_count"] > 0
+    assert all(item["course_id"] == "ap-chemistry" for item in bulk_payload["candidates"])
+
+    candidate = bulk_payload["candidates"][0]
+    blocked_apply = client.post(
+        "/api/admin/management/bulk/apply",
+        json={
+            "course_id": "ap-chemistry",
+            "find": bulk_payload["find"],
+            "replacement": bulk_payload["replacement"],
+            "case_sensitive": bulk_payload["case_sensitive"],
+            "targets": [
+                {
+                    "entity_id": candidate["entity_id"],
+                    "expected_version": candidate["expected_version"],
+                }
+            ],
+        },
+        headers=csrf(token),
+    )
+    assert blocked_apply.status_code == 400
+    assert "editing is not enabled" in blocked_apply.json()["detail"]
+
+
+def test_staged_media_rows_are_isolated_by_course_when_second_course_is_editable(
+    management_client,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    client, token, _ = management_client
+    png = b"\x89PNG\r\n\x1a\n" + b"course-isolated-media"
+
+    monkeypatch.setattr(
+        admin_catalog,
+        "require_editable_course",
+        lambda course_id: {"course_id": course_id, "editable": True, "catalog_ready": True},
+    )
+
+    biology = client.post(
+        "/api/admin/management/media/upload?filename=biology.png&course_id=ap-biology&unit_id=unit-1",
+        content=png,
+        headers={**csrf(token), "Content-Type": "image/png"},
+    )
+    chemistry = client.post(
+        "/api/admin/management/media/upload?filename=chemistry.png&course_id=ap-chemistry&unit_id=unit-1",
+        content=png,
+        headers={**csrf(token), "Content-Type": "image/png"},
+    )
+    assert biology.status_code == chemistry.status_code == 200
+    assert biology.json()["course_id"] == "ap-biology"
+    assert chemistry.json()["course_id"] == "ap-chemistry"
+
+    biology_list = client.get(
+        "/api/admin/management/media/staged",
+        params={"course_id": "ap-biology", "status": "staged", "limit": 100},
+    ).json()
+    chemistry_list = client.get(
+        "/api/admin/management/media/staged",
+        params={"course_id": "ap-chemistry", "status": "staged", "limit": 100},
+    ).json()
+
+    assert {item["original_filename"] for item in biology_list["items"]} == {"biology.png"}
+    assert {item["original_filename"] for item in chemistry_list["items"]} == {"chemistry.png"}
+
+    chemistry_asset = chemistry.json()
+    wrong_course = client.patch(
+        f"/api/admin/management/media/{chemistry_asset['asset_id']}",
+        json={
+            "course_id": "ap-biology",
+            "expected_version": chemistry_asset["version"],
+            "alt_text": "wrong course",
+            "caption": "",
+            "transcript": "",
+            "unit_id": "unit-1",
+            "entity_id": None,
+        },
+        headers=csrf(token),
+    )
+    assert wrong_course.status_code == 404

@@ -34,6 +34,7 @@ class CreateProposalRequest(BaseModel):
 
 
 class BulkPreviewRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     find: str = Field(min_length=2, max_length=500)
     replacement: str = Field(default="", max_length=5000)
     case_sensitive: bool = False
@@ -48,6 +49,7 @@ class BulkTarget(BaseModel):
 
 
 class BulkApplyRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     find: str = Field(min_length=2, max_length=500)
     replacement: str = Field(default="", max_length=5000)
     case_sensitive: bool = False
@@ -55,15 +57,18 @@ class BulkApplyRequest(BaseModel):
 
 
 class ImportBundleRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     bundle: dict[str, Any]
 
 
 class ApplyImportRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     bundle: dict[str, Any]
     conflict_policy: str = Field(default="skip", max_length=40)
 
 
 class MediaMetadataRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     expected_version: int = Field(ge=1)
     alt_text: str | None = Field(default=None, max_length=4000)
     caption: str | None = Field(default=None, max_length=8000)
@@ -73,6 +78,7 @@ class MediaMetadataRequest(BaseModel):
 
 
 class MediaStatusRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     expected_version: int = Field(ge=1)
 
 
@@ -214,10 +220,21 @@ def review_timeline(request: Request, unit_id: str, course_id: str = "ap-biology
 
 
 @router.get("/search")
-def workspace_search(request: Request, q: str, unit_id: str | None = None, limit: int = 100):
+def workspace_search(
+    request: Request,
+    q: str,
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+    limit: int = 100,
+):
     _owner(request)
     try:
-        return admin_management.workspace_search(q, unit_id=unit_id, limit=limit)
+        return admin_management.workspace_search(
+            q,
+            course_id=course_id,
+            unit_id=unit_id,
+            limit=limit,
+        )
     except Exception as exc:
         _raise_management_error(exc)
 
@@ -230,6 +247,7 @@ def bulk_preview(payload: BulkPreviewRequest, request: Request):
             find=payload.find,
             replacement=payload.replacement,
             case_sensitive=payload.case_sensitive,
+            course_id=payload.course_id,
             unit_id=payload.unit_id,
             entity_types=payload.entity_types,
             limit=payload.limit,
@@ -248,6 +266,7 @@ def bulk_apply(payload: BulkApplyRequest, request: Request):
             case_sensitive=payload.case_sensitive,
             targets=[target.model_dump() for target in payload.targets],
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_management_error(exc)
@@ -256,6 +275,7 @@ def bulk_apply(payload: BulkApplyRequest, request: Request):
 @router.get("/export")
 def export_bundle(
     request: Request,
+    course_id: str = "ap-biology",
     unit_id: str | None = None,
     entity_types: str | None = None,
     include_drafts: bool = True,
@@ -265,6 +285,7 @@ def export_bundle(
     types = [item.strip() for item in (entity_types or "").split(",") if item.strip()] or None
     try:
         return admin_management.export_bundle(
+            course_id=course_id,
             unit_id=unit_id,
             entity_types=types,
             include_drafts=include_drafts,
@@ -278,7 +299,7 @@ def export_bundle(
 def import_preview(payload: ImportBundleRequest, request: Request):
     _owner(request, csrf=True)
     try:
-        return admin_management.validate_import_bundle(payload.bundle)
+        return admin_management.validate_import_bundle(payload.bundle, payload.course_id)
     except Exception as exc:
         _raise_management_error(exc)
 
@@ -291,16 +312,17 @@ def import_apply(payload: ApplyImportRequest, request: Request):
             payload.bundle,
             username=session.username,
             conflict_policy=payload.conflict_policy,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_management_error(exc)
 
 
 @router.get("/media/existing")
-def media_existing(request: Request, limit: int = 1000):
+def media_existing(request: Request, course_id: str = "ap-biology", limit: int = 1000):
     _owner(request)
     try:
-        return admin_management.existing_media_inventory(limit=limit)
+        return admin_management.existing_media_inventory(course_id=course_id, limit=limit)
     except Exception as exc:
         _raise_management_error(exc)
 
@@ -308,13 +330,14 @@ def media_existing(request: Request, limit: int = 1000):
 @router.get("/media/staged")
 def media_staged(
     request: Request,
+    course_id: str = "ap-biology",
     status: str | None = "staged",
     unit_id: str | None = None,
     limit: int = 200,
 ):
     _owner(request)
     try:
-        return admin_management.list_staged_media(status=status, unit_id=unit_id, limit=limit)
+        return admin_management.list_staged_media(course_id=course_id, status=status, unit_id=unit_id, limit=limit)
     except Exception as exc:
         _raise_management_error(exc)
 
@@ -323,6 +346,7 @@ def media_staged(
 async def media_upload(
     request: Request,
     filename: str = Query(min_length=1, max_length=240),
+    course_id: str = Query(default="ap-biology", min_length=1, max_length=128),
     kind: str | None = Query(default=None, max_length=40),
     unit_id: str | None = Query(default=None, max_length=40),
     entity_id: str | None = Query(default=None, max_length=512),
@@ -342,6 +366,7 @@ async def media_upload(
         raise HTTPException(413, "Media file exceeds the 25 MB staging limit")
     try:
         return admin_management.stage_media(
+            course_id=course_id,
             filename=filename,
             content=content,
             supplied_mime=request.headers.get("content-type"),
@@ -370,6 +395,7 @@ def media_update(asset_id: str, payload: MediaMetadataRequest, request: Request)
             unit_id=payload.unit_id,
             entity_id=payload.entity_id,
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_management_error(exc)
@@ -384,6 +410,7 @@ def media_archive(asset_id: str, payload: MediaStatusRequest, request: Request):
             expected_version=payload.expected_version,
             status="archived",
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_management_error(exc)
@@ -398,16 +425,17 @@ def media_restore(asset_id: str, payload: MediaStatusRequest, request: Request):
             expected_version=payload.expected_version,
             status="staged",
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_management_error(exc)
 
 
 @router.get("/media/{asset_id}/file")
-def media_file(asset_id: str, request: Request):
+def media_file(asset_id: str, request: Request, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        path, metadata = admin_management.media_file(asset_id)
+        path, metadata = admin_management.media_file(asset_id, course_id)
     except Exception as exc:
         _raise_management_error(exc)
     return FileResponse(

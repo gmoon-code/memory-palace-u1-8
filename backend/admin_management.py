@@ -12,7 +12,7 @@ from typing import Any, Iterable
 import uuid
 
 from . import admin_catalog, admin_drafts, admin_editors, course_packages
-from .settings import APBIO_DIR, FRONTEND_DIR, ROOT
+from .settings import FRONTEND_DIR, ROOT
 
 MANAGEMENT_SCHEMA = "story-method-content-studio-management-1.1"
 PORTABLE_SCHEMA = "story-method-content-studio-portable-1.0"
@@ -103,9 +103,8 @@ def _as_list(value: Any) -> list[Any]:
     return [value]
 
 
-def _require_course_unit(
+def _require_course_catalog(
     course_id: str,
-    unit_id: str,
     *,
     editable: bool = False,
 ) -> dict[str, Any]:
@@ -119,6 +118,16 @@ def _require_course_unit(
         raise ManagementError(str(exc)) from exc
     if not access.get("catalog_ready"):
         raise ManagementError(f"Content Studio catalog is not available for course '{course_id}'")
+    return access
+
+
+def _require_course_unit(
+    course_id: str,
+    unit_id: str,
+    *,
+    editable: bool = False,
+) -> dict[str, Any]:
+    _require_course_catalog(course_id, editable=editable)
     try:
         unit = course_packages.unit(course_id, unit_id)
     except course_packages.CoursePackageError as exc:
@@ -882,10 +891,14 @@ def bulk_replace_preview(
     find: str,
     replacement: str,
     case_sensitive: bool = False,
+    course_id: str = "ap-biology",
     unit_id: str | None = None,
     entity_types: list[str] | None = None,
     limit: int = MAX_BULK_MATCHES,
 ) -> dict[str, Any]:
+    _require_course_catalog(course_id)
+    if unit_id:
+        _require_course_unit(course_id, unit_id)
     needle = find.strip()
     if len(needle) < 2:
         raise ManagementError("Find text must contain at least two characters")
@@ -893,8 +906,8 @@ def bulk_replace_preview(
     invalid = allowed_types - EDITABLE_TYPES
     if invalid:
         raise ManagementError(f"Unsupported bulk entity types: {', '.join(sorted(invalid))}")
-    snapshot = admin_catalog.catalog()
-    active = _active_draft_rows()
+    snapshot = admin_catalog.catalog(course_id)
+    active = _active_draft_rows(course_id)
     candidates: list[dict[str, Any]] = []
     safe_limit = max(1, min(int(limit), MAX_BULK_MATCHES))
     for entity in snapshot["entities"].values():
@@ -903,7 +916,7 @@ def bulk_replace_preview(
         if unit_id and entity.get("unit_id") != unit_id:
             continue
         try:
-            payload = _editable_base(entity["id"])
+            payload = _editable_base(entity["id"], course_id)
         except admin_drafts.DraftError:
             continue
         _new_payload, changes = _safe_text_transform(
@@ -917,6 +930,7 @@ def bulk_replace_preview(
         draft = active.get(entity["id"])
         candidates.append(
             {
+                "course_id": course_id,
                 "entity_id": entity["id"],
                 "entity_type": entity.get("type"),
                 "unit_id": entity.get("unit_id"),
@@ -932,6 +946,7 @@ def bulk_replace_preview(
     total_occurrences = sum(item["occurrence_count"] for item in candidates)
     return {
         "schema": MANAGEMENT_SCHEMA,
+        "course_id": course_id,
         "find": needle,
         "replacement": replacement,
         "case_sensitive": case_sensitive,
@@ -942,17 +957,22 @@ def bulk_replace_preview(
     }
 
 
-def _ensure_editable_draft(entity_id: str, username: str) -> dict[str, Any]:
-    active = _active_draft_for_entity(entity_id)
+def _ensure_editable_draft(
+    entity_id: str,
+    username: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    _require_course_catalog(course_id, editable=True)
+    active = _active_draft_for_entity(entity_id, course_id)
     if active is not None:
         return active
-    entity = admin_catalog.get_entity(entity_id)
+    entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
     if entity.get("type") in MANAGED_TYPES:
-        return create_managed_draft(entity_id, username)
+        return create_managed_draft(entity_id, username, course_id)
     if entity.get("type") in set(admin_editors.editor_types()):
-        return admin_editors.create_editor_draft(entity_id, username)
+        return admin_editors.create_editor_draft(entity_id, username, course_id)
     raise ManagementError("This entity cannot be edited through Step 7 bulk tools")
 
 
@@ -963,7 +983,9 @@ def bulk_replace_apply(
     case_sensitive: bool,
     targets: list[dict[str, Any]],
     username: str,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
+    _require_course_catalog(course_id, editable=True)
     needle = find.strip()
     if len(needle) < 2:
         raise ManagementError("Find text must contain at least two characters")
@@ -975,12 +997,12 @@ def bulk_replace_apply(
     for target in targets:
         entity_id = str(target.get("entity_id") or "")
         expected = int(target.get("expected_version") or 0)
-        active = _active_draft_for_entity(entity_id)
+        active = _active_draft_for_entity(entity_id, course_id)
         if active is not None and expected != int(active["version"]):
             raise admin_drafts.DraftConflict(f"{entity_id} changed after the bulk preview was generated")
         if active is None and expected != 0:
             raise admin_drafts.DraftConflict(f"{entity_id} no longer matches the bulk preview state")
-        draft = _ensure_editable_draft(entity_id, username)
+        draft = _ensure_editable_draft(entity_id, username, course_id)
         payload, changes = _safe_text_transform(
             draft["payload"],
             find=needle,
@@ -994,6 +1016,7 @@ def bulk_replace_apply(
             draft["draft_id"],
             label=f"Before bulk replace · {needle[:80]}",
             username=username,
+            course_id=course_id,
         )
         saved = admin_drafts.update_draft(
             draft["draft_id"],
@@ -1002,9 +1025,11 @@ def bulk_replace_apply(
             username=username,
             note=f"Controlled bulk replacement: {needle!r} → {replacement!r}",
             autosave=False,
+            course_id=course_id,
         )
         results.append(
             {
+                "course_id": course_id,
                 "entity_id": entity_id,
                 "draft_id": saved["draft_id"],
                 "version": saved["version"],
@@ -1014,19 +1039,29 @@ def bulk_replace_apply(
         )
     return {
         "schema": MANAGEMENT_SCHEMA,
+        "course_id": course_id,
         "updated_count": sum(1 for item in results if item["status"] == "updated"),
         "occurrence_count": sum(item["occurrence_count"] for item in results),
         "results": results,
     }
 
 
-def workspace_search(query: str, *, unit_id: str | None = None, limit: int = 100) -> dict[str, Any]:
+def workspace_search(
+    query: str,
+    *,
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+    limit: int = 100,
+) -> dict[str, Any]:
+    _require_course_catalog(course_id)
+    if unit_id:
+        _require_course_unit(course_id, unit_id)
     q = query.strip().casefold()
     if len(q) < 2:
         raise ManagementError("Search query must contain at least two characters")
     safe_limit = max(1, min(int(limit), 200))
     results: list[dict[str, Any]] = []
-    for entity in admin_catalog.catalog()["entities"].values():
+    for entity in admin_catalog.catalog(course_id)["entities"].values():
         if unit_id and entity.get("unit_id") != unit_id:
             continue
         haystack = " ".join(
@@ -1037,6 +1072,7 @@ def workspace_search(query: str, *, unit_id: str | None = None, limit: int = 100
             results.append(
                 {
                     "source": "catalog",
+                    "course_id": course_id,
                     "entity_id": entity["id"],
                     "entity_type": entity.get("type"),
                     "unit_id": entity.get("unit_id"),
@@ -1047,7 +1083,10 @@ def workspace_search(query: str, *, unit_id: str | None = None, limit: int = 100
                 break
     if len(results) < safe_limit:
         with admin_drafts._connect() as connection:
-            rows = connection.execute("SELECT * FROM content_drafts WHERE status = 'draft' ORDER BY updated_at DESC").fetchall()
+            rows = connection.execute(
+                "SELECT * FROM content_drafts WHERE course_id = ? AND status = 'draft' ORDER BY updated_at DESC",
+                (course_id,),
+            ).fetchall()
         catalog_ids = {item["entity_id"] for item in results}
         for row in rows:
             if unit_id and row["unit_id"] != unit_id:
@@ -1067,6 +1106,7 @@ def workspace_search(query: str, *, unit_id: str | None = None, limit: int = 100
                 results.append(
                     {
                         "source": "new_proposal" if str(row["entity_id"]).startswith("new:") else "draft",
+                        "course_id": course_id,
                         "entity_id": row["entity_id"],
                         "entity_type": row["entity_type"],
                         "unit_id": row["unit_id"],
@@ -1077,7 +1117,7 @@ def workspace_search(query: str, *, unit_id: str | None = None, limit: int = 100
                 )
             if len(results) >= safe_limit:
                 break
-    for media in list_staged_media(status="staged", limit=safe_limit).get("items", []):
+    for media in list_staged_media(course_id=course_id, status="staged", limit=safe_limit).get("items", []):
         if len(results) >= safe_limit:
             break
         if unit_id and media.get("unit_id") != unit_id:
@@ -1087,6 +1127,7 @@ def workspace_search(query: str, *, unit_id: str | None = None, limit: int = 100
             results.append(
                 {
                     "source": "media",
+                    "course_id": course_id,
                     "asset_id": media["asset_id"],
                     "entity_type": "media_asset",
                     "unit_id": media.get("unit_id"),
@@ -1094,22 +1135,26 @@ def workspace_search(query: str, *, unit_id: str | None = None, limit: int = 100
                     "kind": media.get("kind"),
                 }
             )
-    return {"schema": MANAGEMENT_SCHEMA, "query": query, "total": len(results), "items": results[:safe_limit]}
+    return {"schema": MANAGEMENT_SCHEMA, "course_id": course_id, "query": query, "total": len(results), "items": results[:safe_limit]}
 
 
 def export_bundle(
     *,
+    course_id: str = "ap-biology",
     unit_id: str | None = None,
     entity_types: list[str] | None = None,
     include_drafts: bool = True,
     include_catalog: bool = True,
 ) -> dict[str, Any]:
+    _require_course_catalog(course_id)
+    if unit_id:
+        _require_course_unit(course_id, unit_id)
     types = set(entity_types or EDITABLE_TYPES)
-    active = _active_draft_rows() if include_drafts else {}
+    active = _active_draft_rows(course_id) if include_drafts else {}
     records: list[dict[str, Any]] = []
     seen: set[str] = set()
     if include_catalog:
-        for entity in admin_catalog.catalog()["entities"].values():
+        for entity in admin_catalog.catalog(course_id)["entities"].values():
             if entity.get("type") not in types:
                 continue
             if unit_id and entity.get("unit_id") != unit_id:
@@ -1117,18 +1162,19 @@ def export_bundle(
             entity_id = entity["id"]
             draft_summary = active.get(entity_id)
             if draft_summary and include_drafts:
-                payload = admin_drafts.get_draft(draft_summary["draft_id"])["payload"]
+                payload = admin_drafts.get_draft(draft_summary["draft_id"], course_id=course_id)["payload"]
                 source_state = "draft"
                 version = draft_summary["version"]
             else:
                 try:
-                    payload = _editable_base(entity_id)
+                    payload = _editable_base(entity_id, course_id)
                 except admin_drafts.DraftError:
                     payload = deepcopy(entity)
                 source_state = "published"
                 version = 0
             records.append(
                 {
+                    "course_id": course_id,
                     "entity_id": entity_id,
                     "entity_type": entity.get("type"),
                     "unit_id": entity.get("unit_id"),
@@ -1139,12 +1185,13 @@ def export_bundle(
             )
             seen.add(entity_id)
     if include_drafts:
-        for proposal in _proposal_rows(unit_id=unit_id):
+        for proposal in _proposal_rows(course_id=course_id, unit_id=unit_id):
             if proposal.get("entity_type") not in types or proposal["entity_id"] in seen:
                 continue
-            draft = admin_drafts.get_draft(proposal["draft_id"])
+            draft = admin_drafts.get_draft(proposal["draft_id"], course_id=course_id)
             records.append(
                 {
+                    "course_id": course_id,
                     "entity_id": proposal["entity_id"],
                     "entity_type": proposal["entity_type"],
                     "unit_id": proposal.get("unit_id"),
@@ -1156,7 +1203,7 @@ def export_bundle(
     bundle = {
         "schema": PORTABLE_SCHEMA,
         "exported_at": _now(),
-        "scope": {"unit_id": unit_id, "entity_types": sorted(types)},
+        "scope": {"course_id": course_id, "unit_id": unit_id, "entity_types": sorted(types)},
         "record_count": len(records),
         "records": records,
     }
@@ -1166,7 +1213,11 @@ def export_bundle(
     return bundle
 
 
-def validate_import_bundle(bundle: dict[str, Any]) -> dict[str, Any]:
+def validate_import_bundle(
+    bundle: dict[str, Any],
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    _require_course_catalog(course_id)
     if not isinstance(bundle, dict):
         raise ManagementError("Import payload must be a JSON object")
     if bundle.get("schema") != PORTABLE_SCHEMA:
@@ -1176,7 +1227,17 @@ def validate_import_bundle(bundle: dict[str, Any]) -> dict[str, Any]:
         raise ManagementError("Import bundle records must be a list")
     if len(records) > MAX_IMPORT_RECORDS:
         raise ManagementError(f"Import bundle exceeds the {MAX_IMPORT_RECORDS}-record safety limit")
-    active = _active_draft_rows()
+    scope = bundle.get("scope") if isinstance(bundle.get("scope"), dict) else {}
+    scope_course_id = str(scope.get("course_id") or "")
+    if scope_course_id and scope_course_id != course_id:
+        raise ManagementError(
+            f"Import bundle belongs to course '{scope_course_id}', not selected course '{course_id}'"
+        )
+    if not scope_course_id and course_id != "ap-biology":
+        raise ManagementError(
+            "Legacy import bundles without course_id may only be imported into ap-biology"
+        )
+    active = _active_draft_rows(course_id)
     preview: list[dict[str, Any]] = []
     error_count = 0
     for index, record in enumerate(records):
@@ -1189,6 +1250,14 @@ def validate_import_bundle(bundle: dict[str, Any]) -> dict[str, Any]:
         entity_type = str(record.get("entity_type") or "")
         unit_id = str(record.get("unit_id") or "")
         payload = record.get("payload")
+        record_course_id = str(
+            record.get("course_id")
+            or (payload.get("course_id") if isinstance(payload, dict) else "")
+            or scope_course_id
+            or "ap-biology"
+        )
+        if record_course_id != course_id:
+            errors.append("Record course_id does not match the selected course")
         if entity_type not in EDITABLE_TYPES:
             errors.append("Unsupported entity type")
         if not isinstance(payload, dict):
@@ -1197,7 +1266,9 @@ def validate_import_bundle(bundle: dict[str, Any]) -> dict[str, Any]:
             for key, expected in (("id", entity_id), ("type", entity_type), ("unit_id", unit_id)):
                 if payload.get(key) != expected:
                     errors.append(f"Payload {key} does not match the record envelope")
-        catalog_entity = admin_catalog.get_entity(entity_id) if entity_id else None
+            if "course_id" in payload and str(payload.get("course_id")) != course_id:
+                errors.append("Payload course_id does not match the selected course")
+        catalog_entity = admin_catalog.get_entity(entity_id, course_id) if entity_id else None
         is_new = entity_id.startswith("new:")
         if catalog_entity is None and not is_new:
             errors.append("Entity ID is neither a current catalog record nor a Step 7 proposal ID")
@@ -1205,12 +1276,15 @@ def validate_import_bundle(bundle: dict[str, Any]) -> dict[str, Any]:
             errors.append("New proposal type is not supported")
         if catalog_entity is not None and catalog_entity.get("type") != entity_type:
             errors.append("Catalog entity type does not match import type")
-        if unit_id not in {f"unit-{number}" for number in range(1, 9)}:
-            errors.append("Invalid AP Biology unit")
+        try:
+            _require_course_unit(course_id, unit_id)
+        except ManagementError as exc:
+            errors.append(str(exc))
         conflict = active.get(entity_id)
         preview.append(
             {
                 "index": index,
+                "course_id": course_id,
                 "entity_id": entity_id,
                 "entity_type": entity_type,
                 "unit_id": unit_id,
@@ -1223,6 +1297,7 @@ def validate_import_bundle(bundle: dict[str, Any]) -> dict[str, Any]:
         error_count += 1 if errors else 0
     return {
         "schema": MANAGEMENT_SCHEMA,
+        "course_id": course_id,
         "record_count": len(records),
         "error_count": error_count,
         "conflict_count": sum(1 for item in preview if item.get("status") == "conflict"),
@@ -1232,10 +1307,17 @@ def validate_import_bundle(bundle: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def apply_import_bundle(bundle: dict[str, Any], *, username: str, conflict_policy: str = "skip") -> dict[str, Any]:
+def apply_import_bundle(
+    bundle: dict[str, Any],
+    *,
+    username: str,
+    conflict_policy: str = "skip",
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    _require_course_catalog(course_id, editable=True)
     if conflict_policy not in {"skip", "replace_draft"}:
         raise ManagementError("Import conflict policy must be 'skip' or 'replace_draft'")
-    preview = validate_import_bundle(bundle)
+    preview = validate_import_bundle(bundle, course_id)
     if preview["error_count"]:
         raise ManagementError("Import bundle contains invalid records")
     results: list[dict[str, Any]] = []
@@ -1244,7 +1326,8 @@ def apply_import_bundle(bundle: dict[str, Any], *, username: str, conflict_polic
         entity_type = str(record["entity_type"])
         unit_id = str(record["unit_id"])
         payload = deepcopy(record["payload"])
-        active = _active_draft_for_entity(entity_id)
+        payload.setdefault("course_id", course_id)
+        active = _active_draft_for_entity(entity_id, course_id)
         if active is not None and conflict_policy == "skip":
             results.append({"entity_id": entity_id, "status": "skipped_conflict", "draft_id": active["draft_id"]})
             continue
@@ -1257,31 +1340,45 @@ def apply_import_bundle(bundle: dict[str, Any], *, username: str, conflict_polic
                     username,
                     seed=payload,
                     entity_id=entity_id,
+                    course_id=course_id,
                 )
                 active = created
             else:
-                admin_drafts.create_snapshot(active["draft_id"], label="Before imported proposal replacement", username=username)
+                admin_drafts.create_snapshot(
+                    active["draft_id"],
+                    label="Before imported proposal replacement",
+                    username=username,
+                    course_id=course_id,
+                )
                 active = admin_drafts.update_draft(
                     active["draft_id"],
                     payload=payload,
                     expected_version=int(active["version"]),
                     username=username,
                     note="Imported Step 7 proposal replacement",
+                    course_id=course_id,
                 )
         else:
-            draft = active or _ensure_editable_draft(entity_id, username)
+            draft = active or _ensure_editable_draft(entity_id, username, course_id)
             if active is not None:
-                admin_drafts.create_snapshot(draft["draft_id"], label="Before import replacement", username=username)
+                admin_drafts.create_snapshot(
+                    draft["draft_id"],
+                    label="Before import replacement",
+                    username=username,
+                    course_id=course_id,
+                )
             active = admin_drafts.update_draft(
                 draft["draft_id"],
                 payload=payload,
                 expected_version=int(draft["version"]),
                 username=username,
                 note="Imported Content Studio working copy",
+                course_id=course_id,
             )
         results.append({"entity_id": entity_id, "status": "imported", "draft_id": active["draft_id"], "version": active["version"]})
     return {
         "schema": MANAGEMENT_SCHEMA,
+        "course_id": course_id,
         "imported_count": sum(1 for item in results if item["status"] == "imported"),
         "skipped_count": sum(1 for item in results if item["status"].startswith("skipped")),
         "results": results,
@@ -1316,6 +1413,7 @@ def _media_connect() -> sqlite3.Connection:
         """
         CREATE TABLE IF NOT EXISTS media_assets (
             asset_id TEXT PRIMARY KEY,
+            course_id TEXT NOT NULL DEFAULT 'ap-biology',
             original_filename TEXT NOT NULL,
             stored_filename TEXT NOT NULL,
             kind TEXT NOT NULL,
@@ -1336,7 +1434,18 @@ def _media_connect() -> sqlite3.Connection:
         )
         """
     )
+    columns = {
+        str(row["name"])
+        for row in connection.execute("PRAGMA table_info(media_assets)").fetchall()
+    }
+    if "course_id" not in columns:
+        connection.execute(
+            "ALTER TABLE media_assets ADD COLUMN course_id TEXT NOT NULL DEFAULT 'ap-biology'"
+        )
     connection.execute("CREATE INDEX IF NOT EXISTS idx_media_assets_status ON media_assets(status, updated_at DESC)")
+    connection.execute(
+        "CREATE INDEX IF NOT EXISTS idx_media_assets_course_status ON media_assets(course_id, status, updated_at DESC)"
+    )
     connection.commit()
     return connection
 
@@ -1344,6 +1453,7 @@ def _media_connect() -> sqlite3.Connection:
 def _media_row(row: sqlite3.Row) -> dict[str, Any]:
     return {
         "schema": MEDIA_SCHEMA,
+        "course_id": row["course_id"],
         "asset_id": row["asset_id"],
         "original_filename": row["original_filename"],
         "kind": row["kind"],
@@ -1386,6 +1496,24 @@ def _validate_media_bytes(extension: str, content: bytes) -> None:
         raise ManagementError("Media file signature does not match its extension")
 
 
+def _validate_media_association(
+    course_id: str,
+    *,
+    unit_id: str | None,
+    entity_id: str | None,
+    editable: bool,
+) -> None:
+    _require_course_catalog(course_id, editable=editable)
+    if unit_id:
+        _require_course_unit(course_id, unit_id, editable=editable)
+    if not entity_id:
+        return
+    catalog_entity = admin_catalog.get_entity(entity_id, course_id)
+    proposal = _active_draft_for_entity(entity_id, course_id) if entity_id.startswith("new:") else None
+    if catalog_entity is None and proposal is None:
+        raise ManagementError("Associated entity ID is not known to the selected course")
+
+
 def stage_media(
     *,
     filename: str,
@@ -1398,7 +1526,14 @@ def stage_media(
     caption: str | None,
     transcript: str | None,
     username: str,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
+    _validate_media_association(
+        course_id,
+        unit_id=unit_id,
+        entity_id=entity_id,
+        editable=True,
+    )
     safe_name = Path(filename).name.strip()
     if not safe_name or safe_name in {".", ".."}:
         raise ManagementError("A valid media filename is required")
@@ -1415,10 +1550,6 @@ def stage_media(
     if len(content) > MAX_MEDIA_BYTES:
         raise ManagementError("Media file exceeds the 25 MB staging limit")
     _validate_media_bytes(extension, content)
-    if unit_id and unit_id not in {f"unit-{number}" for number in range(1, 9)}:
-        raise ManagementError("Invalid AP Biology unit")
-    if entity_id and not (admin_catalog.get_entity(entity_id) or entity_id.startswith("new:")):
-        raise ManagementError("Associated entity ID is not known to Content Studio")
 
     asset_id = f"asset-{uuid.uuid4().hex}"
     stored_filename = f"{asset_id}{extension}"
@@ -1434,13 +1565,14 @@ def stage_media(
             connection.execute(
                 """
                 INSERT INTO media_assets(
-                    asset_id, original_filename, stored_filename, kind, mime_type,
+                    asset_id, course_id, original_filename, stored_filename, kind, mime_type,
                     size_bytes, sha256, alt_text, caption, transcript, unit_id, entity_id,
                     status, version, created_at, updated_at, created_by, updated_by
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'staged', 1, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'staged', 1, ?, ?, ?, ?)
                 """,
                 (
                     asset_id,
+                    course_id,
                     safe_name,
                     stored_filename,
                     expected_kind,
@@ -1459,32 +1591,48 @@ def stage_media(
                 ),
             )
             connection.commit()
-            row = connection.execute("SELECT * FROM media_assets WHERE asset_id = ?", (asset_id,)).fetchone()
+            row = connection.execute(
+                "SELECT * FROM media_assets WHERE asset_id = ? AND course_id = ?",
+                (asset_id, course_id),
+            ).fetchone()
     except Exception:
         destination.unlink(missing_ok=True)
         raise
     return _media_row(row)
 
 
-def list_staged_media(*, status: str | None = "staged", unit_id: str | None = None, limit: int = 200) -> dict[str, Any]:
+def list_staged_media(
+    *,
+    course_id: str = "ap-biology",
+    status: str | None = "staged",
+    unit_id: str | None = None,
+    limit: int = 200,
+) -> dict[str, Any]:
+    _require_course_catalog(course_id)
+    if unit_id:
+        _require_course_unit(course_id, unit_id)
     if status not in {None, "", "staged", "archived"}:
         raise ManagementError("Invalid media status")
-    clauses: list[str] = []
-    params: list[Any] = []
+    clauses: list[str] = ["course_id = ?"]
+    params: list[Any] = [course_id]
     if status:
         clauses.append("status = ?")
         params.append(status)
     if unit_id:
         clauses.append("unit_id = ?")
         params.append(unit_id)
-    where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
+    where = f"WHERE {' AND '.join(clauses)}"
     safe_limit = max(1, min(int(limit), 500))
     with _media_connect() as connection:
         rows = connection.execute(
             f"SELECT * FROM media_assets {where} ORDER BY updated_at DESC, asset_id LIMIT ?",
             (*params, safe_limit),
         ).fetchall()
-    return {"schema": MEDIA_SCHEMA, "items": [_media_row(row) for row in rows]}
+    return {
+        "schema": MEDIA_SCHEMA,
+        "course_id": course_id,
+        "items": [_media_row(row) for row in rows],
+    }
 
 
 def update_media_metadata(
@@ -1497,16 +1645,22 @@ def update_media_metadata(
     unit_id: str | None,
     entity_id: str | None,
     username: str,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
-    if unit_id and unit_id not in {f"unit-{number}" for number in range(1, 9)}:
-        raise ManagementError("Invalid AP Biology unit")
-    if entity_id and not (admin_catalog.get_entity(entity_id) or entity_id.startswith("new:")):
-        raise ManagementError("Associated entity ID is not known to Content Studio")
+    _validate_media_association(
+        course_id,
+        unit_id=unit_id,
+        entity_id=entity_id,
+        editable=True,
+    )
     with _media_connect() as connection:
         connection.execute("BEGIN IMMEDIATE")
-        row = connection.execute("SELECT * FROM media_assets WHERE asset_id = ?", (asset_id,)).fetchone()
+        row = connection.execute(
+            "SELECT * FROM media_assets WHERE asset_id = ? AND course_id = ?",
+            (asset_id, course_id),
+        ).fetchone()
         if row is None:
-            raise admin_drafts.DraftNotFound("Media asset not found")
+            raise admin_drafts.DraftNotFound("Media asset not found for course")
         if int(row["version"]) != int(expected_version):
             raise admin_drafts.DraftConflict("Media metadata changed since this editor loaded it")
         new_version = int(row["version"]) + 1
@@ -1515,7 +1669,7 @@ def update_media_metadata(
             UPDATE media_assets
             SET alt_text = ?, caption = ?, transcript = ?, unit_id = ?, entity_id = ?,
                 version = ?, updated_at = ?, updated_by = ?
-            WHERE asset_id = ?
+            WHERE asset_id = ? AND course_id = ?
             """,
             (
                 (alt_text or "")[:4000],
@@ -1527,38 +1681,63 @@ def update_media_metadata(
                 _now(),
                 username,
                 asset_id,
+                course_id,
             ),
         )
         connection.commit()
-        updated = connection.execute("SELECT * FROM media_assets WHERE asset_id = ?", (asset_id,)).fetchone()
+        updated = connection.execute(
+            "SELECT * FROM media_assets WHERE asset_id = ? AND course_id = ?",
+            (asset_id, course_id),
+        ).fetchone()
     return _media_row(updated)
 
 
-def set_media_status(asset_id: str, *, expected_version: int, status: str, username: str) -> dict[str, Any]:
+def set_media_status(
+    asset_id: str,
+    *,
+    expected_version: int,
+    status: str,
+    username: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    _require_course_catalog(course_id, editable=True)
     if status not in {"staged", "archived"}:
         raise ManagementError("Invalid media status")
     with _media_connect() as connection:
         connection.execute("BEGIN IMMEDIATE")
-        row = connection.execute("SELECT * FROM media_assets WHERE asset_id = ?", (asset_id,)).fetchone()
+        row = connection.execute(
+            "SELECT * FROM media_assets WHERE asset_id = ? AND course_id = ?",
+            (asset_id, course_id),
+        ).fetchone()
         if row is None:
-            raise admin_drafts.DraftNotFound("Media asset not found")
+            raise admin_drafts.DraftNotFound("Media asset not found for course")
         if int(row["version"]) != int(expected_version):
             raise admin_drafts.DraftConflict("Media asset changed since this editor loaded it")
         new_version = int(row["version"]) + 1
         connection.execute(
-            "UPDATE media_assets SET status = ?, version = ?, updated_at = ?, updated_by = ? WHERE asset_id = ?",
-            (status, new_version, _now(), username, asset_id),
+            "UPDATE media_assets SET status = ?, version = ?, updated_at = ?, updated_by = ? WHERE asset_id = ? AND course_id = ?",
+            (status, new_version, _now(), username, asset_id, course_id),
         )
         connection.commit()
-        updated = connection.execute("SELECT * FROM media_assets WHERE asset_id = ?", (asset_id,)).fetchone()
+        updated = connection.execute(
+            "SELECT * FROM media_assets WHERE asset_id = ? AND course_id = ?",
+            (asset_id, course_id),
+        ).fetchone()
     return _media_row(updated)
 
 
-def media_file(asset_id: str) -> tuple[Path, dict[str, Any]]:
+def media_file(
+    asset_id: str,
+    course_id: str = "ap-biology",
+) -> tuple[Path, dict[str, Any]]:
+    _require_course_catalog(course_id)
     with _media_connect() as connection:
-        row = connection.execute("SELECT * FROM media_assets WHERE asset_id = ?", (asset_id,)).fetchone()
+        row = connection.execute(
+            "SELECT * FROM media_assets WHERE asset_id = ? AND course_id = ?",
+            (asset_id, course_id),
+        ).fetchone()
     if row is None:
-        raise admin_drafts.DraftNotFound("Media asset not found")
+        raise admin_drafts.DraftNotFound("Media asset not found for course")
     root = _media_root()
     path = (root / row["stored_filename"]).resolve()
     try:
@@ -1570,28 +1749,43 @@ def media_file(asset_id: str) -> tuple[Path, dict[str, Any]]:
     return path, _media_row(row)
 
 
-def existing_media_inventory(limit: int = 1000) -> dict[str, Any]:
-    roots = [Path(FRONTEND_DIR).resolve(), APBIO_DIR.resolve()]
+def existing_media_inventory(
+    course_id: str = "ap-biology",
+    limit: int = 1000,
+) -> dict[str, Any]:
+    _require_course_catalog(course_id)
+    manifest = course_packages.package_manifest(course_id)
+    course_root = (ROOT / str(manifest.get("content_root") or "")).resolve()
+    try:
+        course_root.relative_to(ROOT.resolve())
+    except ValueError as exc:
+        raise ManagementError("Course media root escapes repository") from exc
+    roots = [
+        ("course", course_root),
+        ("shared_frontend", Path(FRONTEND_DIR).resolve()),
+    ]
     items: list[dict[str, Any]] = []
     safe_limit = max(1, min(int(limit), 2000))
-    for root in roots:
+    for scope, root in roots:
         if not root.exists():
             continue
-        for path in root.rglob("*"):
-            if not path.is_file() or path.suffix.lower() not in MEDIA_TYPES:
+        for media_path in root.rglob("*"):
+            if not media_path.is_file() or media_path.suffix.lower() not in MEDIA_TYPES:
                 continue
-            kind, mime_type = MEDIA_TYPES[path.suffix.lower()]
+            kind, mime_type = MEDIA_TYPES[media_path.suffix.lower()]
             try:
-                relative = path.relative_to(ROOT.resolve())
+                relative = media_path.relative_to(ROOT.resolve())
             except ValueError:
                 continue
             items.append(
                 {
-                    "path": str(relative).replace(os.sep, "/"),
-                    "filename": path.name,
+                    "course_id": course_id,
+                    "scope": scope,
+                    "path": relative.as_posix(),
+                    "filename": media_path.name,
                     "kind": kind,
                     "mime_type": mime_type,
-                    "size_bytes": path.stat().st_size,
+                    "size_bytes": media_path.stat().st_size,
                     "published": True,
                 }
             )
@@ -1600,4 +1794,10 @@ def existing_media_inventory(limit: int = 1000) -> dict[str, Any]:
         if len(items) >= safe_limit:
             break
     items.sort(key=lambda item: (item["kind"], item["path"].casefold()))
-    return {"schema": MEDIA_SCHEMA, "total": len(items), "items": items, "truncated": len(items) >= safe_limit}
+    return {
+        "schema": MEDIA_SCHEMA,
+        "course_id": course_id,
+        "total": len(items),
+        "items": items,
+        "truncated": len(items) >= safe_limit,
+    }

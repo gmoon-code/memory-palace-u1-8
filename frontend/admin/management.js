@@ -29,6 +29,10 @@ function currentAdminCourseId() {
   return document.getElementById("admin-course-select")?.value || "ap-biology";
 }
 
+function currentAdminCourseCatalogReady() {
+  return document.getElementById("admin-course-select")?.selectedOptions?.[0]?.dataset?.catalogReady === "true";
+}
+
 function currentAdminCourseEditable() {
   return document.getElementById("admin-course-select")?.selectedOptions?.[0]?.dataset?.editable === "true";
 }
@@ -161,7 +165,7 @@ function ensureManagementUi() {
       "click",
       (event) => {
         const mode = button.dataset.view;
-        if (managementModes.has(mode) && currentAdminCourseEditable()) {
+        if (managementModes.has(mode) && currentAdminCourseCatalogReady()) {
           event.preventDefault();
           event.stopImmediatePropagation();
           activateManagement(mode);
@@ -206,7 +210,7 @@ async function renderQuestionBank() {
   m("management-content").innerHTML = `
     <div class="management-grid">
       <aside class="panel management-browser">
-        <div class="panel-heading"><div><p class="eyebrow">Assessment inventory</p><h2>Questions and sets</h2></div><button id="new-question" class="button primary" type="button">New question</button></div>
+        <div class="panel-heading"><div><p class="eyebrow">Assessment inventory</p><h2>Questions and sets</h2></div><button id="new-question" class="button primary" type="button" ${currentAdminCourseEditable() ? "" : "disabled"}>New question</button></div>
         <div class="management-toolbar">
           <select id="question-unit" aria-label="Unit">${unitOptions(true)}</select>
           <select id="question-type" aria-label="Question type">
@@ -217,7 +221,7 @@ async function renderQuestionBank() {
             <option value="teacher_created">Teacher-created proposals</option>
           </select>
           <input id="question-search" type="search" maxlength="160" placeholder="Filter prompt, title, or ID…" value="${esc(managementState.query)}"/>
-          <button id="new-question-set" class="button secondary" type="button">New question set</button>
+          <button id="new-question-set" class="button secondary" type="button" ${currentAdminCourseEditable() ? "" : "disabled"}>New question set</button>
         </div>
         <div id="question-list" class="management-record-list"></div>
       </aside>
@@ -305,45 +309,52 @@ async function openManagedEntity(entityId) {
 }
 
 function editorActionHeader(payload, draft, proposal) {
-  const state = draft ? `Working copy v${draft.version}` : "Published base";
+  const canEdit = currentAdminCourseEditable();
+  const state = draft ? `Working copy v${draft.version}` : canEdit ? "Published base" : "Catalog preview";
+  const actions = draft && canEdit
+    ? '<button id="managed-snapshot" class="button secondary" type="button">Snapshot</button><button id="managed-save" class="button primary" type="button">Save now</button>'
+    : !draft && canEdit
+      ? '<button id="managed-open-draft" class="button primary" type="button">Open working copy</button>'
+      : '<span class="management-state">Read-only</span>';
   return `
     <header class="management-editor-header">
       <div><p class="eyebrow">${esc(proposal ? "New proposal" : humanize(payload.type || "record"))}</p><h2>${esc(payload.title || payload.id)}</h2><p class="muted">${esc(payload.id || "")} · ${esc(payload.unit_id || "")}</p></div>
-      <div class="management-editor-actions"><span id="managed-save-state" class="management-state">${esc(state)}</span>${draft ? '<button id="managed-snapshot" class="button secondary" type="button">Snapshot</button><button id="managed-save" class="button primary" type="button">Save now</button>' : '<button id="managed-open-draft" class="button primary" type="button">Open working copy</button>'}</div>
+      <div class="management-editor-actions"><span id="managed-save-state" class="management-state">${esc(state)}</span>${actions}</div>
     </header>`;
 }
 
 function renderQuestionEditor(payload, draft, proposal = false) {
   const target = m("management-editor-body");
   if (!target) return;
+  const writable = Boolean(draft && currentAdminCourseEditable());
   const questionSet = payload.type === "question_set";
   if (questionSet) {
     target.innerHTML = `${editorActionHeader(payload, draft, proposal)}
       <form id="managed-form" class="managed-form">
-        <label>Title<input data-managed-field="title" type="text" maxlength="500" value="${esc(payload.title || "")}" ${draft ? "" : "disabled"}/></label>
-        <label>Purpose<textarea data-managed-field="purpose" rows="5" ${draft ? "" : "disabled"}>${esc(payload.purpose || "")}</textarea></label>
-        <label>Knowledge IDs<textarea data-managed-list="knowledge_ids" rows="5" ${draft ? "" : "disabled"}>${esc(listToLines(payload.knowledge_ids))}</textarea><small>One ID per line.</small></label>
-        <label>Terms students must discriminate<textarea data-managed-list="terms" rows="5" ${draft ? "" : "disabled"}>${esc(listToLines(payload.terms))}</textarea></label>
-        <label>Initial delay in hours<input data-managed-number="initial_delay_hours" type="number" min="0" max="8760" value="${esc(payload.initial_delay_hours ?? "")}" ${draft ? "" : "disabled"}/></label>
+        <label>Title<input data-managed-field="title" type="text" maxlength="500" value="${esc(payload.title || "")}" ${writable ? "" : "disabled"}/></label>
+        <label>Purpose<textarea data-managed-field="purpose" rows="5" ${writable ? "" : "disabled"}>${esc(payload.purpose || "")}</textarea></label>
+        <label>Knowledge IDs<textarea data-managed-list="knowledge_ids" rows="5" ${writable ? "" : "disabled"}>${esc(listToLines(payload.knowledge_ids))}</textarea><small>One ID per line.</small></label>
+        <label>Terms students must discriminate<textarea data-managed-list="terms" rows="5" ${writable ? "" : "disabled"}>${esc(listToLines(payload.terms))}</textarea></label>
+        <label>Initial delay in hours<input data-managed-number="initial_delay_hours" type="number" min="0" max="8760" value="${esc(payload.initial_delay_hours ?? "")}" ${writable ? "" : "disabled"}/></label>
         <section class="management-info-box"><strong>${number(Array.isArray(payload.questions) ? payload.questions.length : 0)} source questions in this set</strong><p>Individual question records remain editable from the Question Bank. This set editor controls grouping, timing, and discrimination targets.</p></section>
       </form>`;
   } else {
     target.innerHTML = `${editorActionHeader(payload, draft, proposal)}
       <form id="managed-form" class="managed-form">
         <div class="managed-two-col">
-          <label>Title<input data-managed-field="title" type="text" maxlength="500" value="${esc(payload.title || "")}" ${draft ? "" : "disabled"}/></label>
-          <label>Question type<input data-managed-field="question_type" type="text" maxlength="120" value="${esc(payload.question_type || "")}" ${draft && proposal ? "" : "disabled"}/></label>
+          <label>Title<input data-managed-field="title" type="text" maxlength="500" value="${esc(payload.title || "")}" ${writable ? "" : "disabled"}/></label>
+          <label>Question type<input data-managed-field="question_type" type="text" maxlength="120" value="${esc(payload.question_type || "")}" ${writable && proposal ? "" : "disabled"}/></label>
         </div>
-        <label>Prompt<textarea data-managed-field="prompt" rows="7" ${draft ? "" : "disabled"}>${esc(payload.prompt || "")}</textarea></label>
-        <label>Choices<textarea data-managed-list="choices" rows="6" ${draft ? "" : "disabled"}>${esc(listToLines(payload.choices))}</textarea><small>One choice per line. Structured choice metadata already present in the source payload is preserved until this field is edited.</small></label>
-        <label>Answer<textarea data-managed-field="answer" rows="4" ${draft ? "" : "disabled"}>${esc(payload.answer || payload.target_answer || "")}</textarea></label>
-        <label>Explanation or canonical science<textarea data-managed-field="explanation" rows="6" ${draft ? "" : "disabled"}>${esc(payload.explanation || payload.canonical_science || "")}</textarea></label>
-        <label>Knowledge IDs<textarea data-managed-list="knowledge_ids" rows="5" ${draft ? "" : "disabled"}>${esc(listToLines(payload.knowledge_ids))}</textarea><small>One Memory Object or canonical knowledge ID per line.</small></label>
+        <label>Prompt<textarea data-managed-field="prompt" rows="7" ${writable ? "" : "disabled"}>${esc(payload.prompt || "")}</textarea></label>
+        <label>Choices<textarea data-managed-list="choices" rows="6" ${writable ? "" : "disabled"}>${esc(listToLines(payload.choices))}</textarea><small>One choice per line. Structured choice metadata already present in the source payload is preserved until this field is edited.</small></label>
+        <label>Answer<textarea data-managed-field="answer" rows="4" ${writable ? "" : "disabled"}>${esc(payload.answer || payload.target_answer || "")}</textarea></label>
+        <label>Explanation or canonical science<textarea data-managed-field="explanation" rows="6" ${writable ? "" : "disabled"}>${esc(payload.explanation || payload.canonical_science || "")}</textarea></label>
+        <label>Knowledge IDs<textarea data-managed-list="knowledge_ids" rows="5" ${writable ? "" : "disabled"}>${esc(listToLines(payload.knowledge_ids))}</textarea><small>One Memory Object or canonical knowledge ID per line.</small></label>
         <div class="managed-two-col">
-          <label>Initial review window in hours<input data-managed-number="initial_review_window_hours" type="number" min="0" max="8760" value="${esc(payload.initial_review_window_hours ?? "")}" ${draft ? "" : "disabled"}/></label>
-          <label>AP skill<input data-managed-field="ap_skill" type="text" maxlength="300" value="${esc(payload.ap_skill || "")}" ${draft ? "" : "disabled"}/></label>
-          <label>Difficulty<input data-managed-field="difficulty" type="text" maxlength="120" value="${esc(payload.difficulty || "")}" ${draft ? "" : "disabled"}/></label>
-          <label>Distractor notes<textarea data-managed-field="distractor_notes" rows="3" ${draft ? "" : "disabled"}>${esc(payload.distractor_notes || "")}</textarea></label>
+          <label>Initial review window in hours<input data-managed-number="initial_review_window_hours" type="number" min="0" max="8760" value="${esc(payload.initial_review_window_hours ?? "")}" ${writable ? "" : "disabled"}/></label>
+          <label>AP skill<input data-managed-field="ap_skill" type="text" maxlength="300" value="${esc(payload.ap_skill || "")}" ${writable ? "" : "disabled"}/></label>
+          <label>Difficulty<input data-managed-field="difficulty" type="text" maxlength="120" value="${esc(payload.difficulty || "")}" ${writable ? "" : "disabled"}/></label>
+          <label>Distractor notes<textarea data-managed-field="distractor_notes" rows="3" ${writable ? "" : "disabled"}>${esc(payload.distractor_notes || "")}</textarea></label>
         </div>
       </form>`;
   }
@@ -526,7 +537,7 @@ async function renderChallengeLab() {
   );
   m("management-content").innerHTML = `
     <div class="management-grid">
-      <aside class="panel management-browser"><div class="panel-heading"><div><p class="eyebrow">Application inventory</p><h2>Challenge Lab</h2></div><button id="new-challenge" class="button primary" type="button">New challenge</button></div><div class="management-toolbar"><select id="challenge-unit">${unitOptions(true)}</select><input id="challenge-search" type="search" maxlength="160" placeholder="Filter title, prompt, or domain…"/></div><div id="challenge-list" class="management-record-list"></div></aside>
+      <aside class="panel management-browser"><div class="panel-heading"><div><p class="eyebrow">Application inventory</p><h2>Challenge Lab</h2></div><button id="new-challenge" class="button primary" type="button" ${currentAdminCourseEditable() ? "" : "disabled"}>New challenge</button></div><div class="management-toolbar"><select id="challenge-unit">${unitOptions(true)}</select><input id="challenge-search" type="search" maxlength="160" placeholder="Filter title, prompt, or domain…"/></div><div id="challenge-list" class="management-record-list"></div></aside>
       <section class="panel management-editor"><div id="management-editor-body" class="management-empty"><p class="eyebrow">Protected editor</p><h2>Select a challenge</h2><p>Changes remain draft-only until the later validation and publication stages.</p></div></section>
     </div>`;
   m("challenge-unit").value = managementState.unitId;
@@ -584,13 +595,14 @@ async function createChallengeProposal() {
 function renderChallengeEditor(payload, draft, proposal = false) {
   const target = m("management-editor-body");
   if (!target) return;
+  const writable = Boolean(draft && currentAdminCourseEditable());
   target.innerHTML = `${editorActionHeader(payload, draft, proposal)}
     <form id="managed-form" class="managed-form">
-      <div class="managed-two-col"><label>Title<input data-managed-field="title" type="text" maxlength="500" value="${esc(payload.title || "")}" ${draft ? "" : "disabled"}/></label><label>Domain<input data-managed-field="domain" type="text" maxlength="300" value="${esc(payload.domain || "")}" ${draft ? "" : "disabled"}/></label><label>Challenge type<input data-managed-field="challenge_type" type="text" maxlength="200" value="${esc(payload.challenge_type || payload.type_detail || "")}" ${draft ? "" : "disabled"}/></label><label>Source assessment<input data-managed-field="source_assessment" type="text" maxlength="500" value="${esc(payload.source_assessment || "")}" ${draft ? "" : "disabled"}/></label></div>
-      <label>Prompt<textarea data-managed-field="prompt" rows="8" ${draft ? "" : "disabled"}>${esc(payload.prompt || "")}</textarea></label>
-      <label>Answer guide<textarea data-managed-field="answer" rows="7" ${draft ? "" : "disabled"}>${esc(payload.answer || payload.answer_guide || "")}</textarea></label>
-      <label>Knowledge IDs<textarea data-managed-list="knowledge_ids" rows="5" ${draft ? "" : "disabled"}>${esc(listToLines(payload.knowledge_ids))}</textarea></label>
-      <div class="managed-two-col"><label>Prerequisite loci<textarea data-managed-list="prerequisite_loci" rows="6" ${draft ? "" : "disabled"}>${esc(listToLines(payload.prerequisite_loci))}</textarea></label><label>Prerequisite scene titles<textarea data-managed-list="prerequisite_scene_titles" rows="6" ${draft ? "" : "disabled"}>${esc(listToLines(payload.prerequisite_scene_titles))}</textarea></label></div>
+      <div class="managed-two-col"><label>Title<input data-managed-field="title" type="text" maxlength="500" value="${esc(payload.title || "")}" ${writable ? "" : "disabled"}/></label><label>Domain<input data-managed-field="domain" type="text" maxlength="300" value="${esc(payload.domain || "")}" ${writable ? "" : "disabled"}/></label><label>Challenge type<input data-managed-field="challenge_type" type="text" maxlength="200" value="${esc(payload.challenge_type || payload.type_detail || "")}" ${writable ? "" : "disabled"}/></label><label>Source assessment<input data-managed-field="source_assessment" type="text" maxlength="500" value="${esc(payload.source_assessment || "")}" ${writable ? "" : "disabled"}/></label></div>
+      <label>Prompt<textarea data-managed-field="prompt" rows="8" ${writable ? "" : "disabled"}>${esc(payload.prompt || "")}</textarea></label>
+      <label>Answer guide<textarea data-managed-field="answer" rows="7" ${writable ? "" : "disabled"}>${esc(payload.answer || payload.answer_guide || "")}</textarea></label>
+      <label>Knowledge IDs<textarea data-managed-list="knowledge_ids" rows="5" ${writable ? "" : "disabled"}>${esc(listToLines(payload.knowledge_ids))}</textarea></label>
+      <div class="managed-two-col"><label>Prerequisite loci<textarea data-managed-list="prerequisite_loci" rows="6" ${writable ? "" : "disabled"}>${esc(listToLines(payload.prerequisite_loci))}</textarea></label><label>Prerequisite scene titles<textarea data-managed-list="prerequisite_scene_titles" rows="6" ${writable ? "" : "disabled"}>${esc(listToLines(payload.prerequisite_scene_titles))}</textarea></label></div>
     </form>`;
   bindManagedEditor(draft);
 }
@@ -602,7 +614,7 @@ async function renderMediaLibrary() {
     "Inventory existing published media and stage new images, audio, video, or PDFs with accessibility metadata before any later publication step."
   );
   m("management-content").innerHTML = `
-    <section class="panel media-upload-panel"><div><p class="eyebrow">Staged assets</p><h2>Add media</h2><p class="muted">Uploads are stored in protected server_data and never appear on the student site automatically.</p></div><form id="media-upload-form" class="media-upload-form"><input id="media-file" type="file" accept="image/png,image/jpeg,image/webp,image/gif,audio/mpeg,audio/wav,audio/ogg,audio/mp4,video/mp4,video/webm,application/pdf" required/><select id="media-unit"><option value="">No unit</option>${unitOptions(false)}</select><input id="media-entity" type="text" maxlength="512" placeholder="Optional associated entity ID"/><input id="media-alt" type="text" maxlength="4000" placeholder="Alt text or accessibility description"/><input id="media-caption" type="text" maxlength="8000" placeholder="Caption or teacher note"/><button class="button primary" type="submit">Stage asset</button></form></section>
+    <section class="panel media-upload-panel"><div><p class="eyebrow">Staged assets</p><h2>Add media</h2><p class="muted">Uploads are stored in protected server_data and never appear on the student site automatically.</p></div><form id="media-upload-form" class="media-upload-form"><input id="media-file" type="file" accept="image/png,image/jpeg,image/webp,image/gif,audio/mpeg,audio/wav,audio/ogg,audio/mp4,video/mp4,video/webm,application/pdf" required/><select id="media-unit"><option value="">No unit</option>${unitOptions(false)}</select><input id="media-entity" type="text" maxlength="512" placeholder="Optional associated entity ID"/><input id="media-alt" type="text" maxlength="4000" placeholder="Alt text or accessibility description"/><input id="media-caption" type="text" maxlength="8000" placeholder="Caption or teacher note"/><button class="button primary" type="submit" ${currentAdminCourseEditable() ? "" : "disabled"}>Stage asset</button></form></section>
     <div class="management-grid media-grid"><section class="panel"><div class="panel-heading"><div><p class="eyebrow">Protected staging</p><h2>Staged assets</h2></div><button id="refresh-media" class="button secondary" type="button">Refresh</button></div><div id="staged-media-list" class="media-list"></div></section><section class="panel"><div id="media-editor" class="management-empty"><p class="eyebrow">Metadata</p><h2>Select a staged asset</h2><p>Edit alt text, captions, transcripts, and content associations without touching the published site.</p></div></section></div>
     <section class="panel published-media-panel"><div class="panel-heading"><div><p class="eyebrow">Current repository</p><h2>Published media inventory</h2></div></div><div id="existing-media-list" class="published-media-list"></div></section>`;
   m("media-unit").value = "";
@@ -615,7 +627,7 @@ async function uploadMedia(event) {
   event.preventDefault();
   const file = m("media-file").files?.[0];
   if (!file) return;
-  const params = new URLSearchParams({ filename: file.name });
+  const params = new URLSearchParams({ filename: file.name, course_id: currentAdminCourseId() });
   if (m("media-unit").value) params.set("unit_id", m("media-unit").value);
   if (m("media-entity").value.trim()) params.set("entity_id", m("media-entity").value.trim());
   if (m("media-alt").value.trim()) params.set("alt_text", m("media-alt").value.trim());
@@ -646,9 +658,10 @@ async function uploadMedia(event) {
 
 async function loadMediaLibrary() {
   try {
+    const courseId = encodeURIComponent(currentAdminCourseId());
     const [staged, existing] = await Promise.all([
-      managementApi("/api/admin/management/media/staged?status=staged&limit=500"),
-      managementApi("/api/admin/management/media/existing?limit=1000"),
+      managementApi(`/api/admin/management/media/staged?course_id=${courseId}&status=staged&limit=500`),
+      managementApi(`/api/admin/management/media/existing?course_id=${courseId}&limit=1000`),
     ]);
     managementState.mediaItems = staged.items || [];
     m("staged-media-list").innerHTML = managementState.mediaItems.length
@@ -670,13 +683,13 @@ function renderMediaEditor(item) {
   managementState.selectedMedia = item;
   m("media-editor").className = "media-metadata-editor";
   m("media-editor").innerHTML = `
-    <div class="panel-heading"><div><p class="eyebrow">Staged ${esc(item.kind)}</p><h2>${esc(item.original_filename)}</h2></div><a class="button secondary" href="/api/admin/management/media/${encodeURIComponent(item.asset_id)}/file" target="_blank" rel="noopener">Preview</a></div>
+    <div class="panel-heading"><div><p class="eyebrow">Staged ${esc(item.kind)}</p><h2>${esc(item.original_filename)}</h2></div><a class="button secondary" href="/api/admin/management/media/${encodeURIComponent(item.asset_id)}/file?course_id=${encodeURIComponent(item.course_id || currentAdminCourseId())}" target="_blank" rel="noopener">Preview</a></div>
     <p class="muted">SHA-256 ${esc(item.sha256)} · ${number(item.size_bytes)} bytes</p>
     <label>Alt text or accessibility description<textarea id="media-edit-alt" rows="4">${esc(item.alt_text || "")}</textarea></label>
     <label>Caption<textarea id="media-edit-caption" rows="4">${esc(item.caption || "")}</textarea></label>
     <label>Transcript or narration text<textarea id="media-edit-transcript" rows="8">${esc(item.transcript || "")}</textarea></label>
     <div class="managed-two-col"><label>Unit<select id="media-edit-unit"><option value="">No unit</option>${unitOptions(false)}</select></label><label>Associated entity ID<input id="media-edit-entity" type="text" maxlength="512" value="${esc(item.entity_id || "")}"/></label></div>
-    <div class="management-editor-actions"><button id="media-save" class="button primary" type="button">Save metadata</button><button id="media-archive" class="button secondary" type="button">Archive staged asset</button></div>`;
+    <div class="management-editor-actions"><button id="media-save" class="button primary" type="button" ${currentAdminCourseEditable() ? "" : "disabled"}>Save metadata</button><button id="media-archive" class="button secondary" type="button" ${currentAdminCourseEditable() ? "" : "disabled"}>Archive staged asset</button></div>`;
   m("media-edit-unit").value = item.unit_id || "";
   m("media-save").addEventListener("click", saveMediaMetadata);
   m("media-archive").addEventListener("click", archiveMedia);
@@ -689,7 +702,15 @@ async function saveMediaMetadata() {
     const updated = await managementApi(`/api/admin/management/media/${encodeURIComponent(item.asset_id)}`, {
       method: "PATCH",
       csrf: true,
-      body: JSON.stringify({ expected_version: item.version, alt_text: m("media-edit-alt").value, caption: m("media-edit-caption").value, transcript: m("media-edit-transcript").value, unit_id: m("media-edit-unit").value || null, entity_id: m("media-edit-entity").value.trim() || null }),
+      body: JSON.stringify({
+        course_id: item.course_id || currentAdminCourseId(),
+        expected_version: item.version,
+        alt_text: m("media-edit-alt").value,
+        caption: m("media-edit-caption").value,
+        transcript: m("media-edit-transcript").value,
+        unit_id: m("media-edit-unit").value || null,
+        entity_id: m("media-edit-entity").value.trim() || null,
+      }),
     });
     managementState.selectedMedia = updated;
     managementMessage(`Media metadata saved as v${updated.version}.`);
@@ -707,7 +728,10 @@ async function archiveMedia() {
     await managementApi(`/api/admin/management/media/${encodeURIComponent(item.asset_id)}/archive`, {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ expected_version: item.version }),
+      body: JSON.stringify({
+        course_id: item.course_id || currentAdminCourseId(),
+        expected_version: item.version,
+      }),
     });
     managementState.selectedMedia = null;
     m("media-editor").className = "management-empty";
@@ -727,7 +751,7 @@ async function renderImportExport() {
   m("management-content").innerHTML = `
     <div class="management-grid import-grid">
       <section class="panel"><div class="panel-heading"><div><p class="eyebrow">Portable JSON</p><h2>Export</h2></div></div><p class="muted">Exports contain curriculum records and working-copy content only. Sessions, passwords, CSRF tokens, and security logs are excluded.</p><label>Unit<select id="export-unit"><option value="">All units</option>${unitOptions(false)}</select></label><label>Entity types<input id="export-types" type="text" value="question,question_set,challenge,scene,journey,concept,memory_object"/></label><button id="export-button" class="button primary" type="button">Download JSON bundle</button></section>
-      <section class="panel"><div class="panel-heading"><div><p class="eyebrow">Draft-only import</p><h2>Import</h2></div></div><p class="muted">Imported content becomes a protected working copy or new proposal. It never writes published AP Biology files.</p><input id="import-file" type="file" accept="application/json,.json"/><select id="import-conflict"><option value="skip">Skip active draft conflicts</option><option value="replace_draft">Replace active drafts after snapshot</option></select><div class="management-editor-actions"><button id="import-preview" class="button secondary" type="button">Preview import</button><button id="import-apply" class="button primary" type="button" disabled>Apply to drafts</button></div><div id="import-results" class="import-results"></div></section>
+      <section class="panel"><div class="panel-heading"><div><p class="eyebrow">Draft-only import</p><h2>Import</h2></div></div><p class="muted">Imported content becomes a protected working copy or new proposal. It never writes published course files.</p><input id="import-file" type="file" accept="application/json,.json"/><select id="import-conflict"><option value="skip">Skip active draft conflicts</option><option value="replace_draft">Replace active drafts after snapshot</option></select><div class="management-editor-actions"><button id="import-preview" class="button secondary" type="button">Preview import</button><button id="import-apply" class="button primary" type="button" disabled>Apply to drafts</button></div><div id="import-results" class="import-results"></div></section>
     </div>
     <section class="panel bulk-panel"><div class="panel-heading"><div><p class="eyebrow">Controlled replacement</p><h2>Global draft-safe find and replace</h2></div></div><p class="muted">Only approved human-readable text fields are searched. Stable IDs, source paths, unit IDs, palace IDs, loci IDs, and other identity fields are never rewritten.</p><div class="bulk-controls"><input id="bulk-find" type="text" minlength="2" maxlength="500" placeholder="Find text"/><input id="bulk-replace" type="text" maxlength="5000" placeholder="Replacement text"/><select id="bulk-unit"><option value="">All units</option>${unitOptions(false)}</select><input id="bulk-types" type="text" value="scene,journey,concept,memory_object,question,question_set,challenge"/><label class="checkbox-label"><input id="bulk-case" type="checkbox"/> Case-sensitive</label><button id="bulk-preview" class="button secondary" type="button">Preview</button><button id="bulk-apply" class="button primary" type="button" disabled>Apply selected</button></div><div id="bulk-results" class="bulk-results"></div></section>
     <section class="panel"><div class="panel-heading"><div><p class="eyebrow">Workspace search</p><h2>Search published records, active drafts, proposals, and staged media</h2></div></div><div class="bulk-controls"><input id="workspace-search" type="search" minlength="2" maxlength="160" placeholder="Search all Content Studio work…"/><button id="workspace-search-button" class="button secondary" type="button">Search</button></div><div id="workspace-search-results" class="workspace-search-results"></div></section>`;
@@ -741,7 +765,7 @@ async function renderImportExport() {
 }
 
 async function exportContentBundle() {
-  const params = new URLSearchParams({ include_drafts: "true", include_catalog: "true" });
+  const params = new URLSearchParams({ course_id: currentAdminCourseId(), include_drafts: "true", include_catalog: "true" });
   if (m("export-unit").value) params.set("unit_id", m("export-unit").value);
   const types = m("export-types").value.split(",").map((item) => item.trim()).filter(Boolean);
   if (types.length) params.set("entity_types", types.join(","));
@@ -751,7 +775,7 @@ async function exportContentBundle() {
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = `story-method-content-${m("export-unit").value || "all-units"}.json`;
+    anchor.download = `story-method-${currentAdminCourseId()}-${m("export-unit").value || "all-units"}.json`;
     document.body.appendChild(anchor);
     anchor.click();
     anchor.remove();
@@ -785,10 +809,10 @@ async function previewImport() {
     return;
   }
   try {
-    const preview = await managementApi("/api/admin/management/import/preview", { method: "POST", csrf: true, body: JSON.stringify({ bundle: managementState.importBundle }) });
+    const preview = await managementApi("/api/admin/management/import/preview", { method: "POST", csrf: true, body: JSON.stringify({ course_id: currentAdminCourseId(), bundle: managementState.importBundle }) });
     managementState.importPreview = preview;
     m("import-results").innerHTML = `<div class="import-summary"><strong>${number(preview.record_count)} records</strong><span>${number(preview.ready_count)} ready</span><span>${number(preview.conflict_count)} conflicts</span><span>${number(preview.error_count)} invalid</span></div>${(preview.records || []).slice(0, 100).map((item) => `<div class="import-row ${esc(item.status || "")}"><span><strong>${esc(item.title || item.entity_id || `Record ${item.index + 1}`)}</strong><small>${esc(item.entity_type || "")} · ${esc(item.unit_id || "")}</small></span><span>${esc(item.status || "")}${item.errors?.length ? ` · ${esc(item.errors.join("; "))}` : ""}</span></div>`).join("")}`;
-    m("import-apply").disabled = !preview.can_apply;
+    m("import-apply").disabled = !preview.can_apply || !currentAdminCourseEditable();
   } catch (error) {
     managementMessage(error.message, true);
   }
@@ -798,7 +822,7 @@ async function applyImport() {
   if (!managementState.importBundle || !managementState.importPreview?.can_apply) return;
   if (!window.confirm("Apply this import to protected working copies? Published student content will remain unchanged.")) return;
   try {
-    const result = await managementApi("/api/admin/management/import/apply", { method: "POST", csrf: true, body: JSON.stringify({ bundle: managementState.importBundle, conflict_policy: m("import-conflict").value }) });
+    const result = await managementApi("/api/admin/management/import/apply", { method: "POST", csrf: true, body: JSON.stringify({ course_id: currentAdminCourseId(), bundle: managementState.importBundle, conflict_policy: m("import-conflict").value }) });
     managementMessage(`Imported ${number(result.imported_count)} records into drafts. ${number(result.skipped_count)} conflicts skipped.`);
     m("import-apply").disabled = true;
   } catch (error) {
@@ -814,10 +838,10 @@ async function previewBulkReplace() {
   }
   const entityTypes = m("bulk-types").value.split(",").map((item) => item.trim()).filter(Boolean);
   try {
-    const preview = await managementApi("/api/admin/management/bulk/preview", { method: "POST", csrf: true, body: JSON.stringify({ find, replacement: m("bulk-replace").value, case_sensitive: m("bulk-case").checked, unit_id: m("bulk-unit").value || null, entity_types: entityTypes, limit: 500 }) });
+    const preview = await managementApi("/api/admin/management/bulk/preview", { method: "POST", csrf: true, body: JSON.stringify({ course_id: currentAdminCourseId(), find, replacement: m("bulk-replace").value, case_sensitive: m("bulk-case").checked, unit_id: m("bulk-unit").value || null, entity_types: entityTypes, limit: 500 }) });
     managementState.bulkPreview = preview;
     m("bulk-results").innerHTML = `<p class="muted">${number(preview.candidate_count)} records · ${number(preview.occurrence_count)} occurrences. Select the records to change.</p>${(preview.candidates || []).map((item, index) => `<label class="bulk-result"><input type="checkbox" data-bulk-index="${index}" checked/><span><strong>${esc(item.title || item.entity_id)}</strong><small>${esc(item.entity_type)} · ${esc(item.unit_id || "")} · ${number(item.occurrence_count)} matches · ${esc(item.source_state)}</small></span><span class="bulk-paths">${esc((item.changes || []).slice(0, 4).map((change) => change.path).join(" · "))}</span></label>`).join("")}`;
-    m("bulk-apply").disabled = !preview.candidate_count;
+    m("bulk-apply").disabled = !preview.candidate_count || !currentAdminCourseEditable();
   } catch (error) {
     managementMessage(error.message, true);
   }
@@ -837,7 +861,7 @@ async function applyBulkReplace() {
   }
   if (!window.confirm(`Apply this replacement to ${targets.length} protected working copies? A recovery snapshot will be created for each record.`)) return;
   try {
-    const result = await managementApi("/api/admin/management/bulk/apply", { method: "POST", csrf: true, body: JSON.stringify({ find: preview.find, replacement: preview.replacement, case_sensitive: preview.case_sensitive, targets }) });
+    const result = await managementApi("/api/admin/management/bulk/apply", { method: "POST", csrf: true, body: JSON.stringify({ course_id: preview.course_id || currentAdminCourseId(), find: preview.find, replacement: preview.replacement, case_sensitive: preview.case_sensitive, targets }) });
     managementMessage(`Updated ${number(result.updated_count)} working copies across ${number(result.occurrence_count)} text occurrences.`);
     m("bulk-apply").disabled = true;
     await previewBulkReplace();
@@ -850,7 +874,8 @@ async function workspaceSearch() {
   const query = m("workspace-search").value.trim();
   if (query.length < 2) return;
   try {
-    const data = await managementApi(`/api/admin/management/search?q=${encodeURIComponent(query)}&limit=150`);
+    const params = new URLSearchParams({ q: query, course_id: currentAdminCourseId(), limit: "150" });
+    const data = await managementApi(`/api/admin/management/search?${params.toString()}`);
     m("workspace-search-results").innerHTML = data.items?.length
       ? data.items.map((item) => `<div class="workspace-search-row"><span><strong>${esc(item.title || item.entity_id || item.asset_id)}</strong><small>${esc(item.entity_type || "record")} · ${esc(item.unit_id || "course-wide")}</small></span><span>${esc(item.source)}</span></div>`).join("")
       : '<p class="empty-state compact">No matches across catalog, drafts, proposals, or staged media.</p>';
