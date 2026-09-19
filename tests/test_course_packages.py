@@ -49,3 +49,16 @@ def test_unit1_explicit_empty_review_adapters_are_returned():
 def test_unknown_course_package_is_rejected():
     with pytest.raises(course_packages.CoursePackageError):
         course_packages.package_manifest("not-a-course")
+
+
+def test_repository_relative_paths_use_forward_slashes_for_namespace_checks(tmp_path, monkeypatch):
+    root = tmp_path / "repo"
+    artifact = root / "content" / "ap-biology" / "unit-1" / "memory-objects.json"
+    artifact.parent.mkdir(parents=True)
+    artifact.write_text("{}", encoding="utf-8")
+
+    monkeypatch.setattr(course_packages, "ROOT", root)
+    relative = course_packages._repo_relative_posix(artifact)
+
+    assert relative == "content/ap-biology/unit-1/memory-objects.json"
+    assert "\\" not in relative
