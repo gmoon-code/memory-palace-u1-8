@@ -104,7 +104,12 @@ def main() -> None:
     contract_text = CONTRACT.read_text(encoding="utf-8")
     for marker in ("F0A Source Inventory", "F0B Framework Crosswalk", "F0C Science Component Coverage Plan", "F0D Readiness Gate"):
         require(marker in intake_text, f"missing F0 deliverable marker: {marker}")
-    require("Narrative writing begins" in intake_text and "F0D" in intake_text, "narrative production is not gated behind F0")
+    phase_rank = PHASE_ORDER.get(data.get("phase_status"), 0)
+    if phase_rank < PHASE_ORDER["F0D_COMPLETE"]:
+        require("Narrative writing begins" in intake_text and "F0D" in intake_text, "narrative production is not gated behind F0")
+    else:
+        require("Narrative writing is now authorized" in intake_text and "F0D" in intake_text, "completed F0D narrative authorization is not documented")
+        require(data.get("f0d_readiness_status") == "COMPLETE", "completed phase must record completed F0D readiness")
     require("General model knowledge is not used to silently fill source gaps" in contract_text, "source-gap rule is missing")
     require("Particulate models" in contract_text and "quantitative relationships" in contract_text, "chemistry representation contract is incomplete")
 
@@ -116,7 +121,10 @@ def main() -> None:
     print("- fixture discrepancies are recorded without changing fixture content")
     print("- AP Chemistry content and package files remain byte-for-byte at the frozen architecture baseline")
     print("- AP Chemistry remains development-only and hidden from students")
-    print("- real curriculum and narrative production remain gated behind F0D")
+    if PHASE_ORDER.get(data.get("phase_status"), 0) >= PHASE_ORDER["F0D_COMPLETE"]:
+        print("- F0D is complete; later package/content production is authorized while publication remains locked")
+    else:
+        print("- real curriculum and narrative production remain gated behind F0D")
 
 
 if __name__ == "__main__":
