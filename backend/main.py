@@ -509,9 +509,11 @@ def admin_course(request: Request, course_id: str = "ap-biology"):
 @app.get("/api/admin/units/{unit_id}")
 def admin_unit(unit_id: str, request: Request, course_id: str = "ap-biology"):
     _owner_session(request)
-    if course_id != "ap-biology":
-        raise HTTPException(404, "Course catalog not available")
-    item = content.unit_summary(unit_id)
+    try:
+        admin_catalog.course_access(course_id)
+        item = course_packages.unit(course_id, unit_id)
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from exc
     if not item:
         raise HTTPException(404, "Unit not found")
     return item
