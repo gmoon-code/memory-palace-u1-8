@@ -7,12 +7,11 @@ from pathlib import Path
 import re
 from typing import Any, Iterable
 
-from . import content
-from .settings import APBIO_DIR
+from . import content, course_packages
+from .settings import ROOT
 
 CATALOG_SCHEMA = "story-method-content-studio-catalog-1.1"
 DEFAULT_COURSE_ID = "ap-biology"
-SUPPORTED_CATALOG_COURSES = {"ap-biology"}
 
 
 def catalog_courses() -> dict[str, Any]:
@@ -22,11 +21,24 @@ def catalog_courses() -> dict[str, Any]:
         if not isinstance(record, dict):
             continue
         course_id = str(record.get("course_id") or "")
+        package_result: dict[str, Any] = {"valid": False, "errors": ["Course package not checked"]}
+        try:
+            package_result = course_packages.validate_package(course_id)
+        except Exception as exc:
+            package_result = {"valid": False, "errors": [str(exc)], "warnings": []}
+        catalog_ready = bool(package_result.get("valid"))
+        editable = catalog_ready and record.get("status") == "available"
         items.append(
             {
                 **record,
-                "catalog_ready": course_id in SUPPORTED_CATALOG_COURSES,
-                "editable": course_id in SUPPORTED_CATALOG_COURSES,
+                "catalog_ready": catalog_ready,
+                "editable": editable,
+                "catalog_mode": "editable" if editable else ("read_only" if catalog_ready else "preparing"),
+                "package_validation": {
+                    "valid": catalog_ready,
+                    "errors": package_result.get("errors", []),
+                    "warnings": package_result.get("warnings", []),
+                },
             }
         )
     return {
@@ -36,11 +48,32 @@ def catalog_courses() -> dict[str, Any]:
     }
 
 
-def _catalog_course_id(course_id: str | None) -> str:
+def course_access(course_id: str | None) -> dict[str, Any]:
     resolved = str(course_id or DEFAULT_COURSE_ID).strip()
-    if resolved not in SUPPORTED_CATALOG_COURSES:
-        raise ValueError(f"Content Studio catalog is not available for course '{resolved}'")
-    return resolved
+    record = next(
+        (item for item in catalog_courses()["courses"] if item.get("course_id") == resolved),
+        None,
+    )
+    if record is None:
+        raise ValueError(f"Course '{resolved}' is not registered")
+    return record
+
+
+def require_editable_course(course_id: str | None) -> dict[str, Any]:
+    record = course_access(course_id)
+    if not record.get("editable"):
+        raise ValueError(
+            f"Content Studio editing is not enabled for course '{record.get('course_id')}'. "
+            "The course catalog is available in read-only architecture preview mode."
+        )
+    return record
+
+
+def _catalog_course_id(course_id: str | None) -> str:
+    record = course_access(course_id)
+    if not record.get("catalog_ready"):
+        raise ValueError(f"Content Studio catalog is not available for course '{record.get('course_id')}'")
+    return str(record["course_id"])
 
 
 def _read_json(path: Path) -> Any:
@@ -77,29 +110,9 @@ def _word_count(paragraphs: Any) -> int:
 
 def _repo_path(path: Path) -> str:
     try:
-        return str(path.relative_to(APBIO_DIR.parent.parent))
+        return path.resolve().relative_to(ROOT.resolve()).as_posix()
     except ValueError:
         return str(path)
-
-
-def _prefer_file(unit_dir: Path, exact_name: str, pattern: str) -> Path | None:
-    exact = unit_dir / exact_name
-    if exact.exists():
-        return exact
-    candidates = sorted(unit_dir.glob(pattern))
-    return candidates[-1] if candidates else None
-
-
-def _canonical_path(unit_id: str) -> Path | None:
-    number = unit_id.split("-")[-1]
-    unit_dir = APBIO_DIR / unit_id
-    if unit_id == "unit-1":
-        path = unit_dir / "source" / "canonical-unit1.json"
-    elif unit_id == "unit-8":
-        path = unit_dir / "canonical-catalog.json"
-    else:
-        path = unit_dir / "source" / f"canonical-unit{number}-f1.json"
-    return path if path.exists() else None
 
 
 def _records_from_payload(payload: Any, keys: Iterable[str]) -> list[dict[str, Any]]:
@@ -113,57 +126,41 @@ def _records_from_payload(payload: Any, keys: Iterable[str]) -> list[dict[str, A
     return []
 
 
-def _canonical_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
-    path = _canonical_path(unit_id)
-    if path is None:
-        return [], None
-    records = _records_from_payload(
-        _read_json(path),
-        ("canonical_records", "canonical_catalog", "records", "items"),
+def _artifact_records(course_id: str, unit_id: str, artifact_name: str) -> tuple[list[dict[str, Any]], str | None]:
+    records = course_packages.artifact_records(course_id, unit_id, artifact_name)
+    return records, course_packages.artifact_source_path(course_id, unit_id, artifact_name)
+
+
+def _canonical_records(course_id: str, unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
+    return _artifact_records(course_id, unit_id, "concepts")
+
+
+def _memory_records(course_id: str, unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
+    return (
+        course_packages.memory_objects(course_id, unit_id),
+        course_packages.artifact_source_path(course_id, unit_id, "memory_objects"),
     )
-    return records, _repo_path(path)
 
 
-def _memory_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
-    unit_dir = APBIO_DIR / unit_id
-    path = _prefer_file(unit_dir, "memory-objects.json", "memory-objects*.json")
-    if path is not None:
-        records = _records_from_payload(_read_json(path), ("memory_objects", "records", "items"))
-        if records:
-            return records, _repo_path(path)
-    fallback = list(content.object_index(unit_id).values())
-    return [item for item in fallback if isinstance(item, dict)], None
+def _review_records(course_id: str, unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
+    return _artifact_records(course_id, unit_id, "review")
 
 
-def _review_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
-    unit_dir = APBIO_DIR / unit_id
-    path = _prefer_file(unit_dir, "review-manifest.json", "review-manifest*.json")
-    if path is None:
-        return [], None
-    records = _records_from_payload(_read_json(path), ("targets", "records", "items"))
-    return records, _repo_path(path)
+def _mixed_sets(course_id: str, unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
+    return _artifact_records(course_id, unit_id, "mixed_discrimination")
 
 
-def _mixed_sets(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
-    unit_dir = APBIO_DIR / unit_id
-    path = _prefer_file(unit_dir, "mixed-discrimination.json", "mixed-discrimination*.json")
-    if path is None:
-        return [], None
-    records = _records_from_payload(_read_json(path), ("sets", "records", "items"))
-    return records, _repo_path(path)
+def _challenge_records(course_id: str, unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
+    return _artifact_records(course_id, unit_id, "challenge_lab")
 
 
-def _challenge_records(unit_id: str) -> tuple[list[dict[str, Any]], str | None]:
-    path = APBIO_DIR / unit_id / "application-lab.json"
-    if not path.exists():
-        return [], None
-    records = _records_from_payload(_read_json(path), ("items", "challenges", "records"))
-    return records, _repo_path(path)
-
-
-def _release_manifest() -> dict[str, Any]:
-    path = APBIO_DIR / "mainline-release-u1-u8.json"
-    payload = _read_json(path) if path.exists() else {}
+def _release_manifest(course_id: str) -> dict[str, Any]:
+    manifest = course_packages.package_manifest(course_id)
+    content_root = ROOT / str(manifest.get("content_root") or f"content/{course_id}")
+    preferred = content_root / "mainline-release-u1-u8.json"
+    candidates = [preferred] if preferred.exists() else sorted(content_root.glob("mainline-release*.json"))
+    path = candidates[-1] if candidates else None
+    payload = _read_json(path) if path is not None and path.exists() else {}
     return payload if isinstance(payload, dict) else {}
 
 
