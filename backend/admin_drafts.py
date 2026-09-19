@@ -250,6 +250,10 @@ def _insert_revision(
 
 
 def create_draft(entity_id: str, username: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    try:
+        admin_catalog.require_editable_course(course_id)
+    except ValueError as exc:
+        raise DraftError(str(exc)) from exc
     entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise DraftNotFound("Catalog entity not found")
