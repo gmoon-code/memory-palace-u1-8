@@ -63,7 +63,11 @@ def _full_journey(entity_id: str, course_id: str = "ap-biology") -> dict[str, An
     entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
-    source = admin_editors._load_source(entity.get("source_path"))
+    source = admin_editors._load_source(
+        entity.get("source_path"),
+        course_id=course_id,
+        unit_id=str(entity.get("unit_id") or ""),
+    )
     if not isinstance(source, dict):
         raise admin_drafts.DraftError("The journey source could not be loaded")
     payload = deepcopy(source)

@@ -91,6 +91,57 @@ def journey_source_path(course_id: str, unit_id: str, journey_id: str) -> str:
     return f"{str(spec['directory']).rstrip('/')}/{filename}"
 
 
+def declared_unit_source_paths(course_id: str, unit_id: str) -> set[str]:
+    """Return repository-relative POSIX paths explicitly declared by a unit package."""
+    unit_spec = unit_package(course_id, unit_id)
+    declared: set[str] = set()
+
+    journey_spec = unit_spec.get("journeys")
+    if isinstance(journey_spec, dict):
+        registry_path = journey_spec.get("registry_path")
+        if isinstance(registry_path, str) and registry_path:
+            declared.add(_repo_relative_posix(_safe_repo_path(registry_path)))
+        registry = journeys(course_id, unit_id)
+        for item in registry.get("guided_journeys", []):
+            if not isinstance(item, dict):
+                continue
+            journey_id = str(item.get("palace_id") or "")
+            if journey_id:
+                declared.add(
+                    _repo_relative_posix(
+                        _safe_repo_path(journey_source_path(course_id, unit_id, journey_id))
+                    )
+                )
+
+    for spec in unit_spec.values():
+        if not isinstance(spec, dict) or spec.get("mode") != "file":
+            continue
+        raw_path = spec.get("path")
+        if isinstance(raw_path, str) and raw_path:
+            declared.add(_repo_relative_posix(_safe_repo_path(raw_path)))
+
+    return declared
+
+
+def declared_source_file(course_id: str, unit_id: str, source_path: str) -> Path:
+    """Resolve a source only when the selected course package declares it for the unit."""
+    candidate = _safe_repo_path(source_path)
+    relative = _repo_relative_posix(candidate)
+    unit_spec = unit_package(course_id, unit_id)
+    unit_root = _repo_relative_posix(_safe_repo_path(str(unit_spec.get("content_root") or "")))
+    if relative != unit_root and not relative.startswith(f"{unit_root}/"):
+        raise CoursePackageError(
+            f"Source path is outside course unit namespace for {course_id}/{unit_id}: {relative}"
+        )
+    if relative not in declared_unit_source_paths(course_id, unit_id):
+        raise CoursePackageError(
+            f"Source path is not declared by course package for {course_id}/{unit_id}: {relative}"
+        )
+    if not candidate.is_file():
+        raise CoursePackageError(f"Declared course source is missing: {relative}")
+    return candidate
+
+
 def _artifact_payload(spec: dict[str, Any]) -> Any:
     mode = spec.get("mode")
     if mode == "empty":

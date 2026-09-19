@@ -88,7 +88,8 @@ function loadStoredContext() {
     const raw = window.sessionStorage.getItem(WORKFLOW_STORAGE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw);
-    return parsed && typeof parsed === "object" && parsed.entity_id ? parsed : null;
+    if (!parsed || typeof parsed !== "object" || !parsed.entity_id) return null;
+    return { ...parsed, course_id: parsed.course_id || "ap-biology" };
   } catch {
     return null;
   }
@@ -146,8 +147,11 @@ function normalizeContext(record, extras = {}) {
 
 function setContext(next, { quiet = false } = {}) {
   if (!next?.entity_id) return;
+  const sameRecord =
+    workflowState.context?.entity_id === next.entity_id &&
+    workflowState.context?.course_id === next.course_id;
   workflowState.context = {
-    ...(workflowState.context?.entity_id === next.entity_id ? workflowState.context : {}),
+    ...(sameRecord ? workflowState.context : {}),
     ...next,
     updated_at: new Date().toISOString(),
   };
@@ -621,6 +625,13 @@ function restoreWorkflowContext() {
   renderWorkflowBar();
   refreshDraftContext();
 }
+
+window.addEventListener("story-method-course-changed", (event) => {
+  const nextCourseId = event.detail?.courseId || currentWorkflowCourseId();
+  if (workflowState.context && workflowState.context.course_id !== nextCourseId) {
+    clearContext();
+  }
+});
 
 ensureWorkflowUi();
 document.addEventListener("click", captureSelection, true);

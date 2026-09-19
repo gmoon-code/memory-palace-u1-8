@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from . import admin_catalog, admin_drafts
+from . import admin_catalog, admin_drafts, course_packages
 from .settings import ROOT
 
 EDITOR_SCHEMA = "story-method-content-studio-editors-1.0"
@@ -37,7 +37,7 @@ SCHEMAS: dict[str, dict[str, Any]] = {
                     _field("introduction", "Unit introduction", "textarea", rows=7, max_length=20000),
                     _field("instructions", "Student instructions", "textarea", rows=6, max_length=20000),
                     _field("prerequisites", "Prerequisites", "list"),
-                    _field("ap_mapping", "AP Biology mapping", "list"),
+                    _field("ap_mapping", "Course framework mapping", "list"),
                     _field("conclusion", "Unit conclusion", "textarea", rows=6, max_length=20000),
                 ],
             },
@@ -152,7 +152,7 @@ SCHEMAS: dict[str, dict[str, Any]] = {
                 "fields": [
                     _field("name", "Name", "text", required=True, max_length=300),
                     _field("kind", "Kind", "text", max_length=250),
-                    _field("role", "Biological or narrative role", "textarea", rows=4, max_length=8000),
+                    _field("role", "Scientific or narrative role", "textarea", rows=4, max_length=8000),
                     _field("visual", "Visual description", "textarea", rows=5, max_length=12000),
                     _field("job", "What it does", "textarea", rows=5, max_length=12000),
                 ],
@@ -275,25 +275,35 @@ def editor_types() -> list[str]:
     return sorted(SCHEMAS)
 
 
-def _repo_file(source_path: str | None) -> Path | None:
+def _repo_file(
+    source_path: str | None,
+    *,
+    course_id: str,
+    unit_id: str,
+) -> Path | None:
     if not source_path:
         return None
-    candidate = (ROOT / source_path).resolve()
     try:
-        candidate.relative_to(ROOT.resolve())
-    except ValueError:
-        return None
-    return candidate if candidate.exists() and candidate.is_file() else None
+        return course_packages.declared_source_file(course_id, unit_id, source_path)
+    except course_packages.CoursePackageError as exc:
+        raise admin_drafts.DraftError(str(exc)) from exc
 
 
-def _load_source(source_path: str | None) -> Any:
-    path = _repo_file(source_path)
+def _load_source(
+    source_path: str | None,
+    *,
+    course_id: str,
+    unit_id: str,
+) -> Any:
+    path = _repo_file(source_path, course_id=course_id, unit_id=unit_id)
     if path is None:
         return None
     try:
         return json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError):
-        return None
+    except (OSError, json.JSONDecodeError) as exc:
+        raise admin_drafts.DraftError(
+            f"Declared source could not be read for {course_id}/{unit_id}: {source_path}"
+        ) from exc
 
 
 def _records(payload: Any) -> list[dict[str, Any]]:
@@ -426,12 +436,22 @@ def editable_entity(entity_id: str, course_id: str = "ap-biology") -> dict[str, 
     base = admin_catalog.get_entity(entity_id, course_id)
     if base is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
+    if str(base.get("course_id") or "") != str(course_id):
+        raise admin_drafts.DraftError("Catalog entity course identity does not match requested course")
     entity = deepcopy(base)
     entity_type = str(entity.get("type") or "")
     if entity_type not in SCHEMAS:
         raise admin_drafts.DraftError(f"No field-specific editor exists for entity type '{entity_type}'")
 
-    source = _load_source(entity.get("source_path"))
+    source_path = entity.get("source_path")
+    unit_id = str(entity.get("unit_id") or "")
+    if source_path and not unit_id:
+        raise admin_drafts.DraftError("Source-backed editor entity is missing unit identity")
+    source = _load_source(
+        source_path,
+        course_id=course_id,
+        unit_id=unit_id,
+    ) if source_path else None
     if entity_type == "journey" and isinstance(source, dict):
         _enrich_journey(entity, source)
     elif entity_type == "scene" and isinstance(source, dict):
@@ -543,7 +563,7 @@ def create_editor_draft(entity_id: str, username: str, course_id: str = "ap-biol
                 """
                 UPDATE content_drafts
                 SET base_payload_json = ?, base_fingerprint = ?, payload_json = ?, title = ?
-                WHERE draft_id = ?
+                WHERE draft_id = ? AND course_id = ?
                 """,
                 (
                     admin_drafts._dump(enriched),
@@ -551,6 +571,7 @@ def create_editor_draft(entity_id: str, username: str, course_id: str = "ap-biol
                     admin_drafts._dump(enriched),
                     str(title),
                     draft["draft_id"],
+                    course_id,
                 ),
             )
             connection.execute(

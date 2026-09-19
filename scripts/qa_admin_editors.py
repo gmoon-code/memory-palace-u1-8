@@ -68,7 +68,7 @@ def main() -> None:
     print("- narrative paragraphs, scene zones, and cast records are individually editable")
     print("- friendly editor saves remain isolated in the Step 4 draft store")
     print("- autosave and named snapshots remain available")
-    print("- protected published AP Biology files are not directly written by Step 5")
+    print("- protected published course files are not directly written by Step 5")
 
 
 if __name__ == "__main__":

@@ -162,6 +162,7 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     replacement = (root / "frontend/admin/replacement.js").read_text(encoding="utf-8")
     management = (root / "frontend/admin/management.js").read_text(encoding="utf-8")
     quality = (root / "frontend/admin/quality.js").read_text(encoding="utf-8")
+    workflow = (root / "frontend/admin/workflow.js").read_text(encoding="utf-8")
     assert 'id="admin-course-select"' in html
     assert 'id="admin-course-note"' in html
     assert 'id="student-site-link"' in html
@@ -179,3 +180,8 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     assert 'currentAdminCourseEditable()' in replacement
     assert 'managementModes.has(mode) && currentAdminCourseEditable()' in management
     assert 'qualityModes.has(mode) && currentAdminCourseEditable()' in quality
+    assert '<option value="unit-8">Unit 8</option>' not in editor
+    assert 'course_id: parsed.course_id || "ap-biology"' in workflow
+    assert 'workflowState.context?.course_id === next.course_id' in workflow
+    assert 'story-method-course-changed' in workflow
+    assert 'context.course_id || currentWorkflowCourseId()' in workflow

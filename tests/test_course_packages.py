@@ -62,3 +62,34 @@ def test_repository_relative_paths_use_forward_slashes_for_namespace_checks(tmp_
 
     assert relative == "content/ap-biology/unit-1/memory-objects.json"
     assert "\\" not in relative
+
+
+
+def test_declared_source_file_is_course_and_unit_scoped():
+    biology = course_packages.declared_source_file(
+        "ap-biology",
+        "unit-1",
+        "content/ap-biology/unit-1/journeys/Z1.json",
+    )
+    chemistry = course_packages.declared_source_file(
+        "ap-chemistry",
+        "unit-1",
+        "content/ap-chemistry/unit-1/concepts.json",
+    )
+
+    assert biology.as_posix().endswith("content/ap-biology/unit-1/journeys/Z1.json")
+    assert chemistry.as_posix().endswith("content/ap-chemistry/unit-1/concepts.json")
+
+    with pytest.raises(course_packages.CoursePackageError, match="outside course unit namespace"):
+        course_packages.declared_source_file(
+            "ap-chemistry",
+            "unit-1",
+            "content/ap-biology/unit-1/journeys/Z1.json",
+        )
+
+    with pytest.raises(course_packages.CoursePackageError, match="not declared by course package"):
+        course_packages.declared_source_file(
+            "ap-chemistry",
+            "unit-1",
+            "content/ap-chemistry/unit-1/course-notes.json",
+        )

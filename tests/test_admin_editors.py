@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from backend import admin_auth, admin_draft_routes, admin_editor_routes
+from backend import admin_auth, admin_catalog, admin_draft_routes, admin_editor_routes
 from backend import main as main_module
 from backend.settings import ROOT
 
@@ -33,6 +33,7 @@ def editor_client(monkeypatch: pytest.MonkeyPatch, tmp_path: Path):
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_DB", str(tmp_path / "admin-security.sqlite3"))
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_DRAFT_DB", str(tmp_path / "content-studio-drafts.sqlite3"))
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_SESSION_TTL_SECONDS", "3600")
+    admin_catalog.clear_catalog_cache()
     with TestClient(main_module.app) as client:
         login = client.post(
             "/api/admin/login",
@@ -163,3 +164,159 @@ def test_editor_mutations_require_csrf(editor_client):
         json={"entity_type": "scene", "payload": {"id": SCENE_ID, "type": "scene", "unit_id": "unit-8"}},
     )
     assert validate.status_code == 403
+
+
+
+def test_generic_editor_reads_all_chemistry_record_types_without_enabling_writes(editor_client):
+    client, token = editor_client
+
+    biology_unit = client.get(
+        "/api/admin/editors/entity",
+        params={"course_id": "ap-biology", "entity_id": "unit:unit-1"},
+    )
+    chemistry_unit = client.get(
+        "/api/admin/editors/entity",
+        params={"course_id": "ap-chemistry", "entity_id": "unit:unit-1"},
+    )
+    assert biology_unit.status_code == chemistry_unit.status_code == 200
+    assert biology_unit.json()["entity"]["title"] == "Chemistry of Life"
+    assert chemistry_unit.json()["entity"]["title"] == "Atomic Structure and Properties"
+
+    for entity_type in (
+        "unit",
+        "journey",
+        "scene",
+        "character",
+        "location",
+        "concept",
+        "memory_object",
+    ):
+        listing = client.get(
+            "/api/admin/catalog/entities",
+            params={
+                "course_id": "ap-chemistry",
+                "entity_type": entity_type,
+                "unit_id": "unit-1",
+                "limit": 50,
+            },
+        )
+        assert listing.status_code == 200
+        items = listing.json()["items"]
+        assert items, entity_type
+        target = items[0]
+        response = client.get(
+            "/api/admin/editors/entity",
+            params={"course_id": "ap-chemistry", "entity_id": target["id"]},
+        )
+        assert response.status_code == 200, entity_type
+        entity = response.json()["entity"]
+        assert entity["course_id"] == "ap-chemistry"
+        assert entity["unit_id"] == "unit-1"
+        if entity.get("source_path"):
+            assert entity["source_path"].startswith("content/ap-chemistry/")
+
+    chemistry_scene = client.get(
+        "/api/admin/editors/entity",
+        params={
+            "course_id": "ap-chemistry",
+            "entity_id": "scene:unit-1:APCHEM-U1-J1:0",
+        },
+    )
+    assert chemistry_scene.status_code == 200
+    scene = chemistry_scene.json()["entity"]
+    assert scene["story_paragraphs"][0].startswith("The **Atomic Records Hall**")
+    assert scene["scene_layout"]["zones"][0]["label"] == "Proton badge rail"
+
+    blocked = client.post(
+        "/api/admin/editors/drafts",
+        json={
+            "course_id": "ap-chemistry",
+            "entity_id": "unit:unit-1",
+        },
+        headers=csrf(token),
+    )
+    assert blocked.status_code == 400
+    assert "editing is not enabled" in blocked.json()["detail"]
+
+
+def test_editor_writes_are_isolated_for_duplicate_entity_ids_when_second_course_is_simulated_editable(
+    editor_client,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    client, token = editor_client
+    monkeypatch.setattr(
+        admin_catalog,
+        "require_editable_course",
+        lambda course_id: {"course_id": course_id, "editable": True},
+    )
+
+    biology = client.post(
+        "/api/admin/editors/drafts",
+        json={"course_id": "ap-biology", "entity_id": "unit:unit-1"},
+        headers=csrf(token),
+    )
+    chemistry = client.post(
+        "/api/admin/editors/drafts",
+        json={"course_id": "ap-chemistry", "entity_id": "unit:unit-1"},
+        headers=csrf(token),
+    )
+    assert biology.status_code == chemistry.status_code == 200
+    biology_draft = biology.json()
+    chemistry_draft = chemistry.json()
+    assert biology_draft["draft_id"] != chemistry_draft["draft_id"]
+    assert biology_draft["payload"]["title"] == "Chemistry of Life"
+    assert chemistry_draft["payload"]["title"] == "Atomic Structure and Properties"
+
+    biology_payload = dict(biology_draft["payload"])
+    biology_payload["title"] = "Biology editor isolation check"
+    biology_saved = client.patch(
+        f"/api/admin/editors/drafts/{biology_draft['draft_id']}",
+        json={
+            "course_id": "ap-biology",
+            "payload": biology_payload,
+            "expected_version": biology_draft["version"],
+            "note": "Course isolation check",
+            "autosave": False,
+        },
+        headers=csrf(token),
+    )
+    assert biology_saved.status_code == 200
+
+    wrong_course = client.patch(
+        f"/api/admin/editors/drafts/{chemistry_draft['draft_id']}",
+        json={
+            "course_id": "ap-biology",
+            "payload": chemistry_draft["payload"],
+            "expected_version": chemistry_draft["version"],
+            "autosave": False,
+        },
+        headers=csrf(token),
+    )
+    assert wrong_course.status_code == 404
+
+    chemistry_payload = dict(chemistry_draft["payload"])
+    chemistry_payload["title"] = "Chemistry editor isolation check"
+    chemistry_saved = client.patch(
+        f"/api/admin/editors/drafts/{chemistry_draft['draft_id']}",
+        json={
+            "course_id": "ap-chemistry",
+            "payload": chemistry_payload,
+            "expected_version": chemistry_draft["version"],
+            "note": "Course isolation check",
+            "autosave": False,
+        },
+        headers=csrf(token),
+    )
+    assert chemistry_saved.status_code == 200
+
+    biology_after = client.get(
+        f"/api/admin/drafts/{biology_draft['draft_id']}",
+        params={"course_id": "ap-biology"},
+    )
+    chemistry_after = client.get(
+        f"/api/admin/drafts/{chemistry_draft['draft_id']}",
+        params={"course_id": "ap-chemistry"},
+    )
+    assert biology_after.status_code == chemistry_after.status_code == 200
+    assert biology_after.json()["payload"]["title"] == "Biology editor isolation check"
+    assert chemistry_after.json()["payload"]["title"] == "Chemistry editor isolation check"

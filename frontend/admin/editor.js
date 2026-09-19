@@ -136,14 +136,6 @@ function ensureEditorUi() {
               <input id="editor-search" type="search" placeholder="Filter records…" maxlength="160"/>
               <select id="editor-unit-filter" aria-label="Filter by unit">
                 <option value="">All units</option>
-                <option value="unit-1">Unit 1</option>
-                <option value="unit-2">Unit 2</option>
-                <option value="unit-3">Unit 3</option>
-                <option value="unit-4">Unit 4</option>
-                <option value="unit-5">Unit 5</option>
-                <option value="unit-6">Unit 6</option>
-                <option value="unit-7">Unit 7</option>
-                <option value="unit-8">Unit 8</option>
               </select>
             </div>
             <p class="muted">Select a published record, then open a protected working copy to edit it.</p>
