@@ -37,6 +37,7 @@ def quality_devices(request: Request):
 def quality_preview(
     request: Request,
     entity_id: str,
+    course_id: str = "ap-biology",
     draft_id: str | None = None,
     source: str = "auto",
     scene_index: int = 0,
@@ -48,6 +49,7 @@ def quality_preview(
             draft_id=draft_id,
             source=source,
             scene_index=scene_index,
+            course_id=course_id,
         )
     except Exception as exc:
         _raise_quality_error(exc)
@@ -57,20 +59,30 @@ def quality_preview(
 def quality_entity(
     request: Request,
     entity_id: str,
+    course_id: str = "ap-biology",
     draft_id: str | None = None,
     source: str = "auto",
 ):
     _owner(request)
     try:
-        return admin_quality.entity_quality(entity_id, draft_id=draft_id, source=source)
+        return admin_quality.entity_quality(
+            entity_id,
+            draft_id=draft_id,
+            source=source,
+            course_id=course_id,
+        )
     except Exception as exc:
         _raise_quality_error(exc)
 
 
 @router.get("/report")
-def quality_report(request: Request, unit_id: str | None = None):
+def quality_report(
+    request: Request,
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+):
     _owner(request)
     try:
-        return admin_quality.quality_report(unit_id=unit_id)
+        return admin_quality.quality_report(course_id=course_id, unit_id=unit_id)
     except Exception as exc:
         _raise_quality_error(exc)

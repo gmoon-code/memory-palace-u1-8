@@ -6,7 +6,7 @@ from functools import lru_cache
 import re
 from typing import Any, Iterable
 
-from . import admin_catalog, admin_drafts, admin_editors, admin_management, content
+from . import admin_catalog, admin_drafts, admin_editors, admin_management, course_packages
 
 QUALITY_SCHEMA = "story-method-content-studio-quality-1.0"
 PREVIEW_SCHEMA = "story-method-content-studio-preview-1.0"
@@ -97,19 +97,46 @@ def _finding(
     }
 
 
-def _catalog_entity(entity_id: str) -> dict[str, Any] | None:
-    return admin_catalog.get_entity(entity_id)
+def _require_course_catalog(course_id: str) -> dict[str, Any]:
+    try:
+        access = admin_catalog.course_access(course_id)
+    except ValueError as exc:
+        raise QualityError(str(exc)) from exc
+    if not access.get("catalog_ready"):
+        raise QualityError(f"Content Studio catalog is not available for course '{course_id}'")
+    return access
 
 
-def _published_payload(entity_id: str) -> dict[str, Any]:
-    entity = _catalog_entity(entity_id)
+def _require_course_unit(course_id: str, unit_id: str) -> dict[str, Any]:
+    _require_course_catalog(course_id)
+    try:
+        unit = course_packages.unit(course_id, unit_id)
+    except course_packages.CoursePackageError as exc:
+        raise QualityError(str(exc)) from exc
+    if unit is None:
+        raise QualityError(f"Unit '{unit_id}' is not declared for course '{course_id}'")
+    return unit
+
+
+def _course_title(course_id: str) -> str:
+    access = _require_course_catalog(course_id)
+    return str(access.get("title") or access.get("course_title") or course_id)
+
+
+def _catalog_entity(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any] | None:
+    _require_course_catalog(course_id)
+    return admin_catalog.get_entity(entity_id, course_id)
+
+
+def _published_payload(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    entity = _catalog_entity(entity_id, course_id)
     if entity is None:
         raise admin_drafts.DraftNotFound("Published catalog entity not found")
     entity_type = str(entity.get("type") or "")
     if entity_type in MANAGED_TYPES:
-        return admin_management.managed_entity(entity_id)
+        return admin_management.managed_entity(entity_id, course_id)
     if entity_type in EDITOR_TYPES:
-        return admin_editors.editable_entity(entity_id)
+        return admin_editors.editable_entity(entity_id, course_id)
     return deepcopy(entity)
 
 
@@ -118,19 +145,21 @@ def _resolve_payload(
     *,
     draft_id: str | None = None,
     source: str = "auto",
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
+    _require_course_catalog(course_id)
     if source not in VALID_SOURCES:
         raise QualityError("Preview source must be auto, published, or draft")
-    entity = _catalog_entity(entity_id)
+    entity = _catalog_entity(entity_id, course_id)
     draft: dict[str, Any] | None = None
 
     if source != "published":
         if draft_id:
-            draft = admin_drafts.get_draft(draft_id)
+            draft = admin_drafts.get_draft(draft_id, course_id=course_id)
             if draft.get("entity_id") != entity_id:
                 raise QualityError("Draft does not belong to the requested entity")
         else:
-            draft = admin_management._active_draft_for_entity(entity_id)
+            draft = admin_management._active_draft_for_entity(entity_id, course_id)
 
     if source == "draft" and draft is None:
         raise admin_drafts.DraftNotFound("No active working copy exists for this entity")
@@ -138,6 +167,7 @@ def _resolve_payload(
     if draft is not None:
         payload = deepcopy(draft.get("payload") or {})
         return {
+            "course_id": course_id,
             "entity_id": entity_id,
             "entity_type": str(draft.get("entity_type") or payload.get("type") or ""),
             "unit_id": draft.get("unit_id") or payload.get("unit_id"),
@@ -151,8 +181,9 @@ def _resolve_payload(
 
     if entity is None:
         raise admin_drafts.DraftNotFound("Entity is available only as a working-copy proposal")
-    payload = _published_payload(entity_id)
+    payload = _published_payload(entity_id, course_id)
     return {
+        "course_id": course_id,
         "entity_id": entity_id,
         "entity_type": str(entity.get("type") or payload.get("type") or ""),
         "unit_id": entity.get("unit_id") or payload.get("unit_id"),
@@ -167,7 +198,7 @@ def _resolve_payload(
 
 def _merge_source(base: dict[str, Any], overlay: dict[str, Any], *, skip: set[str] | None = None) -> dict[str, Any]:
     result = deepcopy(base)
-    blocked = {"id", "type", "unit_id", "source_path", "dependency_counts", "coverage"} | (skip or set())
+    blocked = {"id", "type", "course_id", "unit_id", "source_path", "dependency_counts", "coverage"} | (skip or set())
     for key, value in overlay.items():
         if key in blocked:
             continue
@@ -175,15 +206,19 @@ def _merge_source(base: dict[str, Any], overlay: dict[str, Any], *, skip: set[st
     return result
 
 
-def _scene_journey(entity_id: str, payload: dict[str, Any]) -> tuple[dict[str, Any], int]:
-    entity = _catalog_entity(entity_id)
+def _scene_journey(
+    entity_id: str,
+    payload: dict[str, Any],
+    course_id: str = "ap-biology",
+) -> tuple[dict[str, Any], int]:
+    entity = _catalog_entity(entity_id, course_id)
     if entity is None:
         raise QualityError("Scene preview requires a current catalog scene")
     unit_id = str(entity.get("unit_id") or payload.get("unit_id") or "")
     palace_id = str(entity.get("palace_id") or payload.get("palace_id") or "")
     if not unit_id or not palace_id:
         raise QualityError("Scene preview is missing its unit or journey reference")
-    journey = content.journey_by_id(unit_id, palace_id)
+    journey = course_packages.journey(course_id, unit_id, palace_id)
     if not isinstance(journey, dict):
         raise admin_drafts.DraftNotFound("Student journey source was not found")
     rendered = deepcopy(journey)
@@ -204,13 +239,18 @@ def _scene_journey(entity_id: str, payload: dict[str, Any]) -> tuple[dict[str, A
     return rendered, target_index
 
 
-def _journey_preview(entity_id: str, payload: dict[str, Any], requested_index: int = 0) -> tuple[dict[str, Any], int]:
-    entity = _catalog_entity(entity_id)
+def _journey_preview(
+    entity_id: str,
+    payload: dict[str, Any],
+    requested_index: int = 0,
+    course_id: str = "ap-biology",
+) -> tuple[dict[str, Any], int]:
+    entity = _catalog_entity(entity_id, course_id)
     if entity is None:
         raise QualityError("Journey preview requires a current catalog journey")
     unit_id = str(entity.get("unit_id") or payload.get("unit_id") or "")
     palace_id = str(entity.get("palace_id") or payload.get("palace_id") or "")
-    source = content.journey_by_id(unit_id, palace_id)
+    source = course_packages.journey(course_id, unit_id, palace_id)
     if not isinstance(source, dict):
         raise admin_drafts.DraftNotFound("Student journey source was not found")
     rendered = _merge_source(source, payload)
@@ -221,18 +261,18 @@ def _journey_preview(entity_id: str, payload: dict[str, Any], requested_index: i
     return rendered, index
 
 
-def _question_preview(resolved: dict[str, Any]) -> dict[str, Any]:
+def _question_preview(resolved: dict[str, Any], course_id: str = "ap-biology") -> dict[str, Any]:
     payload = resolved["payload"]
     question_type = str(payload.get("question_type") or "review")
     scene_id = payload.get("scene_id")
-    if question_type == "quick_recall" and scene_id and _catalog_entity(str(scene_id)):
-        scene_payload = _published_payload(str(scene_id))
+    if question_type == "quick_recall" and scene_id and _catalog_entity(str(scene_id), course_id):
+        scene_payload = _published_payload(str(scene_id), course_id)
         scene_payload["checkpoint"] = True
         scene_payload["checkpoint_prompt"] = payload.get("prompt") or scene_payload.get("checkpoint_prompt")
         knowledge_ids = [str(item) for item in _as_list(payload.get("knowledge_ids")) if item not in (None, "")]
         if knowledge_ids:
             scene_payload["checkpoint_object_id"] = knowledge_ids[0]
-        journey, index = _scene_journey(str(scene_id), scene_payload)
+        journey, index = _scene_journey(str(scene_id), scene_payload, course_id)
         return {
             "renderer": "learn_recall",
             "journey": journey,
@@ -266,10 +306,10 @@ def _question_preview(resolved: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def _challenge_preview(payload: dict[str, Any]) -> dict[str, Any]:
+def _challenge_preview(payload: dict[str, Any], course_id: str = "ap-biology") -> dict[str, Any]:
     item = deepcopy(payload)
     item["answer_guide"] = item.get("answer_guide") or item.get("answer") or ""
-    item["domain"] = item.get("domain") or "AP Biology"
+    item["domain"] = item.get("domain") or _course_title(course_id)
     item["story_hint"] = item.get("story_hint") or "Return to the relevant story scene and reconstruct the mechanism."
     return {
         "renderer": "practice",
@@ -283,22 +323,28 @@ def build_preview(
     draft_id: str | None = None,
     source: str = "auto",
     scene_index: int = 0,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
-    resolved = _resolve_payload(entity_id, draft_id=draft_id, source=source)
+    resolved = _resolve_payload(
+        entity_id,
+        draft_id=draft_id,
+        source=source,
+        course_id=course_id,
+    )
     entity_type = resolved["entity_type"]
     payload = resolved["payload"]
     model: dict[str, Any]
 
     if entity_type == "scene":
-        journey, index = _scene_journey(entity_id, payload)
+        journey, index = _scene_journey(entity_id, payload, course_id)
         model = {"renderer": "learn", "journey": journey, "scene_index": index, "scene_count": len(journey.get("scenes", []))}
     elif entity_type == "journey":
-        journey, index = _journey_preview(entity_id, payload, scene_index)
+        journey, index = _journey_preview(entity_id, payload, scene_index, course_id)
         model = {"renderer": "learn", "journey": journey, "scene_index": index, "scene_count": len(journey.get("scenes", []))}
     elif entity_type == "question":
-        model = _question_preview(resolved)
+        model = _question_preview(resolved, course_id)
     elif entity_type == "challenge":
-        model = _challenge_preview(payload)
+        model = _challenge_preview(payload, course_id)
     elif entity_type in {"concept", "memory_object"}:
         model = {"renderer": "knowledge", "record": deepcopy(payload)}
     elif entity_type == "unit":
@@ -306,9 +352,16 @@ def build_preview(
     else:
         model = {"renderer": "record", "record": deepcopy(payload)}
 
-    quality = entity_quality(entity_id, draft_id=resolved.get("draft_id"), source="draft" if resolved.get("draft_id") else "published")
+    quality = entity_quality(
+        entity_id,
+        draft_id=resolved.get("draft_id"),
+        source="draft" if resolved.get("draft_id") else "published",
+        course_id=course_id,
+    )
     return {
         "schema": PREVIEW_SCHEMA,
+        "course_id": course_id,
+        "course_title": _course_title(course_id),
         "entity_id": entity_id,
         "entity_type": entity_type,
         "unit_id": resolved.get("unit_id"),
@@ -428,12 +481,18 @@ def entity_quality(
     *,
     draft_id: str | None = None,
     source: str = "auto",
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
-    resolved = _resolve_payload(entity_id, draft_id=draft_id, source=source)
+    resolved = _resolve_payload(
+        entity_id,
+        draft_id=draft_id,
+        source=source,
+        course_id=course_id,
+    )
     base_payload = None
     if resolved.get("published_available") and resolved.get("source_state") != "published":
         try:
-            base_payload = _published_payload(entity_id)
+            base_payload = _published_payload(entity_id, course_id)
         except admin_drafts.DraftError:
             base_payload = None
     findings = _payload_quality(
@@ -443,9 +502,15 @@ def entity_quality(
         unit_id=resolved.get("unit_id"),
         base_payload=base_payload,
     )
-    dependency = admin_catalog.dependency_report(entity_id, depth=1, limit=200) if _catalog_entity(entity_id) else None
+    dependency = (
+        admin_catalog.dependency_report(entity_id, course_id=course_id, depth=1, limit=200)
+        if _catalog_entity(entity_id, course_id)
+        else None
+    )
     return {
         "schema": QUALITY_SCHEMA,
+        "course_id": course_id,
+        "course_title": _course_title(course_id),
         "entity_id": entity_id,
         "entity_type": resolved["entity_type"],
         "unit_id": resolved.get("unit_id"),
@@ -484,12 +549,13 @@ def _aggregate_findings(findings: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return result
 
 
-@lru_cache(maxsize=1)
-def _published_quality_findings() -> tuple[dict[str, Any], ...]:
+@lru_cache(maxsize=32)
+def _published_quality_findings(course_id: str = "ap-biology") -> tuple[dict[str, Any], ...]:
+    _require_course_catalog(course_id)
     findings: list[dict[str, Any]] = []
-    snapshot = admin_catalog.catalog()
+    snapshot = admin_catalog.catalog(course_id)
 
-    for problem in admin_catalog.content_health().get("problems", []):
+    for problem in admin_catalog.content_health(course_id).get("problems", []):
         findings.append(
             _finding(
                 str(problem.get("severity") or "warning"),
@@ -516,25 +582,29 @@ def _published_quality_findings() -> tuple[dict[str, Any], ...]:
         if no_retrieval:
             findings.append(_finding("advisory", "concept-retrieval-coverage-gap", "Canonical concepts have no indexed question, mixed-discrimination set, or Challenge Lab link.", category="retrieval", unit_id=unit_id, details={"count": len(no_retrieval), "sample_entity_ids": [item["id"] for item in no_retrieval[:12]]}))
 
-    for number in range(1, 9):
-        unit_id = f"unit-{number}"
+    course_payload = course_packages.course(course_id)
+    for unit in course_payload.get("units", []):
+        if not isinstance(unit, dict) or not unit.get("unit_id"):
+            continue
+        unit_id = str(unit["unit_id"])
         try:
-            timeline = admin_management.review_timeline(unit_id)
+            timeline = admin_management.review_timeline(unit_id, course_id)
         except admin_drafts.DraftError:
             continue
         gaps = timeline.get("coverage_gaps", [])
         if gaps:
             findings.append(_finding("warning", "review-timeline-gap", "Scene-linked knowledge IDs have no indexed later retrieval event in the review timeline.", category="retrieval", unit_id=unit_id, details={"count": len(gaps), "sample_knowledge_ids": [item.get("knowledge_id") for item in gaps[:15]]}))
 
-    for unit in content.course().get("units", []):
+    for unit in course_payload.get("units", []):
         if not isinstance(unit, dict) or not unit.get("unit_id"):
             continue
         unit_id = str(unit["unit_id"])
-        for registry in content.journey_registry(unit_id):
+        registry_payload = course_packages.journeys(course_id, unit_id)
+        for registry in registry_payload.get("guided_journeys", []):
             if not isinstance(registry, dict) or not registry.get("palace_id"):
                 continue
             palace_id = str(registry["palace_id"])
-            journey = content.journey_by_id(unit_id, palace_id)
+            journey = course_packages.journey(course_id, unit_id, palace_id)
             if not isinstance(journey, dict):
                 continue
             scenes = [item for item in _as_list(journey.get("scenes")) if isinstance(item, dict)]
@@ -562,20 +632,23 @@ def clear_quality_cache() -> None:
     _published_quality_findings.cache_clear()
 
 
-def _draft_findings(unit_id: str | None = None) -> list[dict[str, Any]]:
+def _draft_findings(
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+) -> list[dict[str, Any]]:
     findings: list[dict[str, Any]] = []
-    active = admin_management._active_draft_rows()
+    active = admin_management._active_draft_rows(course_id)
     for entity_id, summary in active.items():
         if unit_id and summary.get("unit_id") != unit_id:
             continue
         try:
-            draft = admin_drafts.get_draft(summary["draft_id"])
+            draft = admin_drafts.get_draft(summary["draft_id"], course_id=course_id)
         except admin_drafts.DraftError:
             continue
         base_payload = None
-        if _catalog_entity(entity_id):
+        if _catalog_entity(entity_id, course_id):
             try:
-                base_payload = _published_payload(entity_id)
+                base_payload = _published_payload(entity_id, course_id)
             except admin_drafts.DraftError:
                 base_payload = None
         findings.extend(
@@ -590,10 +663,18 @@ def _draft_findings(unit_id: str | None = None) -> list[dict[str, Any]]:
     return findings
 
 
-def _media_findings(unit_id: str | None = None) -> list[dict[str, Any]]:
+def _media_findings(
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+) -> list[dict[str, Any]]:
     findings: list[dict[str, Any]] = []
     try:
-        media = admin_management.list_staged_media(status="staged", unit_id=unit_id, limit=500).get("items", [])
+        media = admin_management.list_staged_media(
+            course_id=course_id,
+            status="staged",
+            unit_id=unit_id,
+            limit=500,
+        ).get("items", [])
     except (admin_drafts.DraftError, OSError):
         return findings
     for item in media:
@@ -609,12 +690,21 @@ def _media_findings(unit_id: str | None = None) -> list[dict[str, Any]]:
     return findings
 
 
-def quality_report(*, unit_id: str | None = None) -> dict[str, Any]:
-    if unit_id and unit_id not in {f"unit-{number}" for number in range(1, 9)}:
-        raise QualityError("A valid AP Biology unit is required")
-    findings = [deepcopy(item) for item in _published_quality_findings() if not unit_id or item.get("unit_id") in {None, unit_id}]
-    findings.extend(_draft_findings(unit_id))
-    findings.extend(_media_findings(unit_id))
+def quality_report(
+    *,
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+) -> dict[str, Any]:
+    _require_course_catalog(course_id)
+    if unit_id:
+        _require_course_unit(course_id, unit_id)
+    findings = [
+        deepcopy(item)
+        for item in _published_quality_findings(course_id)
+        if not unit_id or item.get("unit_id") in {None, unit_id}
+    ]
+    findings.extend(_draft_findings(course_id, unit_id))
+    findings.extend(_media_findings(course_id, unit_id))
     severity_order = {"error": 0, "warning": 1, "advisory": 2}
     findings.sort(key=lambda item: (severity_order.get(item["severity"], 9), item.get("unit_id") or "", item["category"], item["code"], item.get("entity_id") or ""))
     categories: dict[str, int] = defaultdict(int)
@@ -622,7 +712,9 @@ def quality_report(*, unit_id: str | None = None) -> dict[str, Any]:
         categories[item["category"]] += 1
     return {
         "schema": QUALITY_SCHEMA,
-        "scope": {"unit_id": unit_id or "all"},
+        "course_id": course_id,
+        "course_title": _course_title(course_id),
+        "scope": {"course_id": course_id, "unit_id": unit_id or "all"},
         "error_count": sum(1 for item in findings if item["severity"] == "error"),
         "warning_count": sum(1 for item in findings if item["severity"] == "warning"),
         "advisory_count": sum(1 for item in findings if item["severity"] == "advisory"),

@@ -191,8 +191,12 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     assert 'managementState.units' in management
     assert 'course_id: managementState.currentDraft.course_id || currentAdminCourseId()' in management
     assert 'story-method-course-changed' in management
-    assert 'qualityModes.has(mode) && currentAdminCourseEditable()' in quality
+    assert 'qualityModes.has(mode) && currentAdminCourseCatalogReady()' in quality
     assert '<option value="unit-8">Unit 8</option>' not in editor
+    assert 'for (let index = 1; index <= 8; index += 1)' not in quality
+    assert 'qualityState.units' in quality
+    assert 'course_id: currentAdminCourseId()' in quality
+    assert 'story-method-course-changed' in quality
     assert 'course_id: parsed.course_id || "ap-biology"' in workflow
     assert 'workflowState.context?.course_id === next.course_id' in workflow
     assert 'story-method-course-changed' in workflow

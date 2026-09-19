@@ -182,3 +182,96 @@ def test_quality_endpoints_are_read_only_and_require_authentication(quality_clie
 
     client.cookies.clear()
     assert client.get("/api/admin/quality/preview", params={"entity_id": SCENE_ID}).status_code == 401
+
+
+
+def test_read_only_chemistry_quality_preview_and_report_are_course_scoped(quality_client):
+    client, token = quality_client
+
+    biology_unit = client.get(
+        "/api/admin/quality/preview",
+        params={
+            "course_id": "ap-biology",
+            "entity_id": "unit:unit-1",
+            "source": "published",
+        },
+    )
+    chemistry_unit = client.get(
+        "/api/admin/quality/preview",
+        params={
+            "course_id": "ap-chemistry",
+            "entity_id": "unit:unit-1",
+            "source": "published",
+        },
+    )
+    assert biology_unit.status_code == chemistry_unit.status_code == 200
+    assert biology_unit.json()["title"] == "Chemistry of Life"
+    assert chemistry_unit.json()["title"] == "Atomic Structure and Properties"
+    assert chemistry_unit.json()["course_id"] == "ap-chemistry"
+    assert chemistry_unit.json()["course_title"] == "AP Chemistry"
+
+    chemistry_scene = client.get(
+        "/api/admin/quality/preview",
+        params={
+            "course_id": "ap-chemistry",
+            "entity_id": "scene:unit-1:APCHEM-U1-J1:0",
+            "source": "published",
+        },
+    )
+    assert chemistry_scene.status_code == 200
+    chemistry_scene_body = chemistry_scene.json()
+    assert chemistry_scene_body["course_id"] == "ap-chemistry"
+    assert chemistry_scene_body["model"]["renderer"] == "learn"
+    assert chemistry_scene_body["model"]["journey"]["palace_name"] == "Atomic Records Hall"
+    assert chemistry_scene_body["model"]["journey"]["scenes"][0]["story_paragraphs"][0].startswith(
+        "The **Atomic Records Hall**"
+    )
+
+    wrong_course_scene = client.get(
+        "/api/admin/quality/preview",
+        params={
+            "course_id": "ap-biology",
+            "entity_id": "scene:unit-1:APCHEM-U1-J1:0",
+            "source": "published",
+        },
+    )
+    assert wrong_course_scene.status_code == 404
+
+    chemistry_report = client.get(
+        "/api/admin/quality/report",
+        params={"course_id": "ap-chemistry", "unit_id": "unit-1"},
+    )
+    assert chemistry_report.status_code == 200
+    report = chemistry_report.json()
+    assert report["course_id"] == "ap-chemistry"
+    assert report["course_title"] == "AP Chemistry"
+    assert report["scope"] == {"course_id": "ap-chemistry", "unit_id": "unit-1"}
+    assert all(item.get("unit_id") in {None, "unit-1"} for item in report["findings"])
+    assert not any("unit-8" in str(item.get("entity_id") or "") for item in report["findings"])
+
+    biology_draft = client.post(
+        "/api/admin/editors/drafts",
+        json={"course_id": "ap-biology", "entity_id": "unit:unit-1"},
+        headers=csrf(token),
+    )
+    assert biology_draft.status_code == 200
+    cross_course_draft = client.get(
+        "/api/admin/quality/preview",
+        params={
+            "course_id": "ap-chemistry",
+            "entity_id": "unit:unit-1",
+            "draft_id": biology_draft.json()["draft_id"],
+            "source": "draft",
+        },
+    )
+    assert cross_course_draft.status_code == 404
+
+
+def test_quality_rejects_units_outside_selected_course(quality_client):
+    client, _ = quality_client
+    response = client.get(
+        "/api/admin/quality/report",
+        params={"course_id": "ap-chemistry", "unit_id": "unit-8"},
+    )
+    assert response.status_code == 400
+    assert "not declared for course 'ap-chemistry'" in response.json()["detail"]

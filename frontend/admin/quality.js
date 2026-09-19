@@ -4,6 +4,7 @@ import { practiceView } from "/static/js/views/practice.js";
 
 const qualityState = {
   mode: null,
+  units: [],
   unitId: "unit-1",
   entityType: "scene",
   query: "",
@@ -32,6 +33,14 @@ const STUDENT_STYLES = [
 
 function q(id) {
   return document.getElementById(id);
+}
+
+function currentAdminCourseId() {
+  return document.getElementById("admin-course-select")?.value || "ap-biology";
+}
+
+function currentAdminCourseCatalogReady() {
+  return document.getElementById("admin-course-select")?.selectedOptions?.[0]?.dataset?.catalogReady === "true";
 }
 
 function currentAdminCourseEditable() {
@@ -116,7 +125,7 @@ function ensureQualityUi() {
       "click",
       (event) => {
         const mode = button.dataset.view;
-        if (qualityModes.has(mode) && currentAdminCourseEditable()) {
+        if (qualityModes.has(mode) && currentAdminCourseCatalogReady()) {
           event.preventDefault();
           event.stopImmediatePropagation();
           activateQuality(mode);
@@ -143,8 +152,13 @@ async function activateQuality(mode) {
 function unitOptions(includeAll = false) {
   const items = [];
   if (includeAll) items.push('<option value="">All units</option>');
-  for (let index = 1; index <= 8; index += 1) {
-    items.push(`<option value="unit-${index}" ${qualityState.unitId === `unit-${index}` ? "selected" : ""}>Unit ${index}</option>`);
+  for (const unit of qualityState.units) {
+    const label = unit.number
+      ? `Unit ${unit.number} · ${unit.title || unit.unit_id}`
+      : unit.title || unit.unit_id;
+    items.push(
+      `<option value="${esc(unit.unit_id)}" ${qualityState.unitId === unit.unit_id ? "selected" : ""}>${esc(label)}</option>`
+    );
   }
   return items.join("");
 }
@@ -220,9 +234,10 @@ async function loadPreviewTargets() {
   const unit = encodeURIComponent(qualityState.unitId);
   const type = encodeURIComponent(qualityState.entityType);
   try {
+    const course = encodeURIComponent(currentAdminCourseId());
     const [catalog, drafts] = await Promise.all([
-      qualityApi(`/api/admin/catalog/entities?entity_type=${type}&unit_id=${unit}&limit=500`),
-      qualityApi(`/api/admin/drafts?status=draft&entity_type=${type}&unit_id=${unit}&limit=500`),
+      qualityApi(`/api/admin/catalog/entities?course_id=${course}&entity_type=${type}&unit_id=${unit}&limit=500`),
+      qualityApi(`/api/admin/drafts?course_id=${course}&status=draft&entity_type=${type}&unit_id=${unit}&limit=500`),
     ]);
     const draftMap = new Map((drafts.items || []).map((item) => [item.entity_id, item]));
     const merged = (catalog.items || []).map((item) => ({
@@ -295,6 +310,7 @@ async function loadPreview(entityId, options = {}) {
   q("preview-detail").innerHTML = '<p class="quality-loading">Building protected student preview…</p>';
   try {
     const params = new URLSearchParams({
+      course_id: currentAdminCourseId(),
       entity_id: entityId,
       source: qualityState.previewSource,
       scene_index: String(qualityState.sceneIndex),
@@ -329,7 +345,7 @@ function previewHtml(preview) {
     return `<main id="main-content" tabindex="-1" class="review-wrap"><section class="card review-card"><span class="eyebrow">${esc(preview.entity_type === "memory_object" ? "Memory Object" : "Concept")}</span><h1>${esc(record.canonical_term || record.title || preview.title)}</h1><p>${esc(definition)}</p>${retrieval ? `<div class="hint"><span class="eyebrow">Retrieval target</span><p>${esc(retrieval)}</p></div>` : ""}<button class="ghost" type="button">Back to learning</button></section></main>`;
   }
   if (model.renderer === "unit") {
-    return `<main id="main-content" tabindex="-1" class="review-wrap"><section class="card review-card"><span class="eyebrow">AP Biology unit</span><h1>${esc(record.title || preview.title)}</h1><p>${esc(record.description || record.introduction || "")}</p></section></main>`;
+    return `<main id="main-content" tabindex="-1" class="review-wrap"><section class="card review-card"><span class="eyebrow">${esc(preview.course_title || "Course")} unit</span><h1>${esc(record.title || preview.title)}</h1><p>${esc(record.description || record.introduction || "")}</p></section></main>`;
   }
   return `<main id="main-content" tabindex="-1" class="review-wrap"><section class="card review-card"><span class="eyebrow">Student-facing record preview</span><h1>${esc(preview.title)}</h1><p>${esc(record.prompt || record.description || record.canonical_definition || "")}</p></section></main>`;
 }
@@ -466,7 +482,7 @@ async function renderHealthWorkspace() {
 }
 
 async function loadHealthReport() {
-  const params = new URLSearchParams();
+  const params = new URLSearchParams({ course_id: currentAdminCourseId() });
   if (qualityState.unitId) params.set("unit_id", qualityState.unitId);
   const suffix = params.toString() ? `?${params.toString()}` : "";
   q("health-step8-body").innerHTML = '<p class="quality-loading">Running Content Studio quality checks…</p>';
@@ -518,7 +534,7 @@ function renderHealthReport() {
   body.querySelectorAll("[data-health-preview]").forEach((button) => {
     button.addEventListener("click", async () => {
       const entityId = button.dataset.healthPreview;
-      const entity = await qualityApi(`/api/admin/catalog/entity?entity_id=${encodeURIComponent(entityId)}`).catch(() => null);
+      const entity = await qualityApi(`/api/admin/catalog/entity?course_id=${encodeURIComponent(currentAdminCourseId())}&entity_id=${encodeURIComponent(entityId)}`).catch(() => null);
       qualityState.unitId = entity?.unit_id || qualityState.unitId || "unit-1";
       qualityState.entityType = entity?.type || "scene";
       qualityState.selectedEntityId = entityId;
@@ -528,5 +544,23 @@ function renderHealthReport() {
     });
   });
 }
+
+window.addEventListener("story-method-course-changed", (event) => {
+  qualityState.units = Array.isArray(event.detail?.units) ? event.detail.units : [];
+  qualityState.unitId = qualityState.units[0]?.unit_id || "";
+  qualityState.entityType = "scene";
+  qualityState.query = "";
+  qualityState.records = [];
+  qualityState.selectedEntityId = null;
+  qualityState.preview = null;
+  qualityState.previewSource = "auto";
+  qualityState.sceneIndex = 0;
+  qualityState.recallOpen = false;
+  qualityState.answerRevealed = false;
+  qualityState.health = null;
+  qualityState.healthSeverity = "";
+  qualityState.healthCategory = "";
+  q("quality-view")?.classList.add("hidden");
+});
 
 ensureQualityUi();
