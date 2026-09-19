@@ -739,10 +739,26 @@ function renderSearchResults(items, query) {
 async function loadCourseContext() {
   const payload = await apiRequest("/api/admin/courses");
   state.courses = Array.isArray(payload?.courses) ? payload.courses : [];
-  const editable = state.courses.filter((item) => item.catalog_ready && item.editable !== false);
-  if (!editable.length) throw new Error("No Content Studio course catalog is available.");
-  if (!editable.some((item) => item.course_id === state.selectedCourseId)) {
-    state.selectedCourseId = editable[0].course_id;
+  const availableCatalogs = state.courses.filter((item) => item.catalog_ready === true);
+  if (!availableCatalogs.length) {
+    const details = state.courses
+      .map((item) => {
+        const errors = Array.isArray(item?.package_validation?.errors)
+          ? item.package_validation.errors.filter(Boolean).join("; ")
+          : "";
+        return `${item?.title || item?.course_id || "course"}${errors ? `: ${errors}` : ""}`;
+      })
+      .filter(Boolean)
+      .join(" | ");
+    throw new Error(
+      details
+        ? `No Content Studio course catalog is available. ${details}`
+        : "No Content Studio course catalog is available."
+    );
+  }
+  if (!availableCatalogs.some((item) => item.course_id === state.selectedCourseId)) {
+    const preferred = availableCatalogs.find((item) => item.course_id === "ap-biology");
+    state.selectedCourseId = (preferred || availableCatalogs[0]).course_id;
   }
   const select = el("admin-course-select");
   select.innerHTML = state.courses
