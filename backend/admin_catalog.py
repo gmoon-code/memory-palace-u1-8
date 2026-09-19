@@ -234,10 +234,10 @@ class CatalogBuilder:
         )
 
     def build(self) -> dict[str, Any]:
-        course_payload = content.course_by_id(self.course_id)
+        course_payload = course_packages.course(self.course_id)
         if not isinstance(course_payload, dict):
             raise ValueError(f"Course '{self.course_id}' is not available")
-        release = _release_manifest()
+        release = _release_manifest(self.course_id)
         self.add_entity(
             {
                 "id": self.course_entity_id,
@@ -267,7 +267,7 @@ class CatalogBuilder:
 
     def _add_unit(self, unit: dict[str, Any]) -> None:
         unit_id = str(unit.get("unit_id"))
-        summary = content.unit_summary(unit_id) or unit
+        summary = course_packages.unit(self.course_id, unit_id) or unit
         entity_id = f"unit:{unit_id}"
         self.add_entity(
             {
@@ -287,7 +287,7 @@ class CatalogBuilder:
         self.edge(self.course_entity_id, entity_id, "contains")
 
     def _add_concepts(self, unit_id: str) -> None:
-        records, source_path = _canonical_records(unit_id)
+        records, source_path = _canonical_records(self.course_id, unit_id)
         unit_entity = f"unit:{unit_id}"
         for index, record in enumerate(records):
             knowledge_id = str(
@@ -335,7 +335,7 @@ class CatalogBuilder:
             self.edge(unit_entity, entity_id, "defines")
 
     def _add_memory_objects(self, unit_id: str) -> None:
-        records, source_path = _memory_records(unit_id)
+        records, source_path = _memory_records(self.course_id, unit_id)
         unit_entity = f"unit:{unit_id}"
         for index, record in enumerate(records):
             memory_id = str(
@@ -383,9 +383,10 @@ class CatalogBuilder:
 
     def _add_journeys(self, unit_id: str) -> None:
         unit_entity = f"unit:{unit_id}"
-        for journey_index, registry_record in enumerate(content.journey_registry(unit_id)):
+        registry = course_packages.journeys(self.course_id, unit_id).get("guided_journeys", [])
+        for journey_index, registry_record in enumerate(registry):
             palace_id = str(registry_record.get("palace_id") or f"journey-{journey_index + 1}")
-            payload = content.journey_by_id(unit_id, palace_id) or dict(registry_record)
+            payload = course_packages.journey(self.course_id, unit_id, palace_id) or dict(registry_record)
             journey_id = f"journey:{unit_id}:{palace_id}"
             self.journey_by_raw[(unit_id, palace_id)] = journey_id
             self.add_entity(
@@ -407,7 +408,7 @@ class CatalogBuilder:
                     "scene_count": payload.get("scene_count") or registry_record.get("scene_count"),
                     "checkpoint_count": payload.get("checkpoint_count") or registry_record.get("checkpoint_count"),
                     "guide": payload.get("guide"),
-                    "source_path": f"content/ap-biology/{unit_id}/journeys/{palace_id}.json",
+                    "source_path": course_packages.journey_source_path(self.course_id, unit_id, palace_id),
                 },
                 aliases=[(unit_id, palace_id)],
             )
@@ -503,7 +504,7 @@ class CatalogBuilder:
                 "story_word_count": _word_count(paragraphs),
                 "story_paragraph_count": len(_as_list(paragraphs)),
                 "story_preview": str(paragraphs[0])[:320] if isinstance(paragraphs, list) and paragraphs else str(scene.get("story_open") or "")[:320],
-                "source_path": f"content/ap-biology/{unit_id}/journeys/{palace_id}.json",
+                "source_path": course_packages.journey_source_path(self.course_id, unit_id, palace_id),
             },
             aliases=[(unit_id, str(locus_id))] if locus_id else [],
         )
@@ -572,7 +573,7 @@ class CatalogBuilder:
                     "prompt": checkpoint_prompt or "Quick Recall",
                     "answer": None,
                     "knowledge_ids": [checkpoint_object_id] if checkpoint_object_id else [],
-                    "source_path": f"content/ap-biology/{unit_id}/journeys/{palace_id}.json",
+                    "source_path": course_packages.journey_source_path(self.course_id, unit_id, palace_id),
                 }
             )
             self.edge(scene_id, question_id, "contains_question")
@@ -585,7 +586,7 @@ class CatalogBuilder:
                     self.unresolved_ref(unit_id, question_id, checkpoint_object_id, "assesses")
 
     def _add_review_questions(self, unit_id: str) -> None:
-        records, source_path = _review_records(unit_id)
+        records, source_path = _review_records(self.course_id, unit_id)
         for index, record in enumerate(records):
             knowledge_id = _first(record, ("knowledge_id", "memory_object_id", "object_id"))
             raw_id = str(knowledge_id or f"review-{index + 1:04d}")
@@ -629,7 +630,7 @@ class CatalogBuilder:
                     self.unresolved_ref(unit_id, question_id, knowledge_id, "assesses")
 
     def _add_mixed_questions(self, unit_id: str) -> None:
-        sets, source_path = _mixed_sets(unit_id)
+        sets, source_path = _mixed_sets(self.course_id, unit_id)
         unit_entity = f"unit:{unit_id}"
         for set_index, record in enumerate(sets):
             set_raw = str(record.get("set_id") or f"MD-{set_index + 1}")
@@ -688,7 +689,7 @@ class CatalogBuilder:
                         self.unresolved_ref(unit_id, question_id, knowledge_id, "assesses")
 
     def _add_challenges(self, unit_id: str) -> None:
-        records, source_path = _challenge_records(unit_id)
+        records, source_path = _challenge_records(self.course_id, unit_id)
         unit_entity = f"unit:{unit_id}"
         for index, record in enumerate(records):
             raw_id = str(record.get("challenge_id") or f"CL-{index + 1}")
