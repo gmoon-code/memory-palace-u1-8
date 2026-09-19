@@ -81,6 +81,7 @@ jobs:
       - run: python scripts/qa_admin_management.py
       - run: python scripts/qa_admin_quality.py
       - run: python scripts/qa_admin_publication.py
+      - run: python scripts/qa_multi_course_integration_gate.py
       - run: python scripts/qa_content_studio_integration.py
       - run: python scripts/qa_zero_cost_rehearsal.py
       - run: python scripts/qa_zero_cost_runtime.py

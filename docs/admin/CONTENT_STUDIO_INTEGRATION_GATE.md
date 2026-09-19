@@ -8,7 +8,9 @@ The gate is deliberately separate from the nine implementation steps. It does no
 
 ## Current branch model
 
-The integration branch begins from the validated Step 9 head. Production `main` remains unchanged until an explicit release decision is made. No integration-gate file should modify AP Biology curriculum content or the existing student application runtime.
+The integration branch begins from the validated Step 9 head. Production `main` remains unchanged until an explicit release decision is made. Integration-gate files must not modify published course curriculum or the existing student application runtime.
+
+The later multi-course foundation is covered by a separate architecture gate at `docs/architecture/MULTI_COURSE_INTEGRATION_GATE.md`. That gate preserves AP Biology as the editable student-visible course while AP Chemistry remains a hidden, catalog-ready, read-only fixture.
 
 ## Whole-system invariants
 
