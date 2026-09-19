@@ -224,15 +224,17 @@ def test_chemistry_classroom_preview_is_complete_but_all_authoring_stays_locked(
     assert challenge.json()["items"] == []
     assert publication.json()["course_editable"] is False
 
+    retired_replacement = client.post(
+        "/api/admin/replacements/drafts",
+        json={"course_id": "ap-chemistry", "entity_id": "scene:unit-1:APCHEM-U1-J1:0"},
+        headers=csrf(token),
+    )
+    assert retired_replacement.status_code == 404
+
     blocked = [
         client.post(
             "/api/admin/editors/drafts",
             json={"course_id": "ap-chemistry", "entity_id": entity_id},
-            headers=csrf(token),
-        ),
-        client.post(
-            "/api/admin/replacements/drafts",
-            json={"course_id": "ap-chemistry", "entity_id": "scene:unit-1:APCHEM-U1-J1:0"},
             headers=csrf(token),
         ),
         client.post(
