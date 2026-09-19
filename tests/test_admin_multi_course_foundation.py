@@ -158,6 +158,10 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     root = Path(__file__).resolve().parents[1]
     html = (root / "frontend/admin/index.html").read_text(encoding="utf-8")
     js = (root / "frontend/admin/admin.js").read_text(encoding="utf-8")
+    editor = (root / "frontend/admin/editor.js").read_text(encoding="utf-8")
+    replacement = (root / "frontend/admin/replacement.js").read_text(encoding="utf-8")
+    management = (root / "frontend/admin/management.js").read_text(encoding="utf-8")
+    quality = (root / "frontend/admin/quality.js").read_text(encoding="utf-8")
     assert 'id="admin-course-select"' in html
     assert 'id="admin-course-note"' in html
     assert 'id="student-site-link"' in html
@@ -165,4 +169,11 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     assert 'apiRequest("/api/admin/courses")' in js
     assert 'courseApiUrl(' in js
     assert 'story-method-course-changed' in js
+    assert 'data-editable=' in js
+    assert 'catalog preview' in js
     assert 'studentLink.href = `/?course=${encodeURIComponent(state.selectedCourseId)}`' in js
+    assert 'currentAdminCourseEditable()' in editor
+    assert 'Read-only architecture preview' in editor
+    assert 'currentAdminCourseEditable()' in replacement
+    assert 'managementModes.has(mode) && currentAdminCourseEditable()' in management
+    assert 'qualityModes.has(mode) && currentAdminCourseEditable()' in quality
