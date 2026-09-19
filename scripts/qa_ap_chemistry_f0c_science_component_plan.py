@@ -12,7 +12,7 @@ CROSSWALK = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWA
 REGISTER = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_SOURCE_REGISTER.json"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
 PHASE_ORDER = {"F0A_COMPLETE": 1, "F0B_COMPLETE": 2, "F0C_COMPLETE": 3, "F0D_COMPLETE": 4}
-VALID_COMPONENT_STATES = {"required", "supporting", "not_primary", "excluded", "not_used", "pending_teacher_lab_source"}
+VALID_COMPONENT_STATES = {"required", "supporting", "not_primary", "excluded", "not_used"}
 EXPECTED_GAPS = ["1.4", "2.2", "7.8", "8.10", "8.11", "9.6", "9.7"]
 
 
@@ -33,10 +33,10 @@ def main() -> None:
     crosswalk = json.loads(CROSSWALK.read_text(encoding="utf-8"))
     register = json.loads(REGISTER.read_text(encoding="utf-8"))
 
-    require(plan.get("schema") == "story-method-ap-chemistry-f0c-science-component-plan-1.0", "unexpected plan schema")
+    require(plan.get("schema") == "story-method-ap-chemistry-f0c-science-component-plan-1.1", "unexpected plan schema")
     require(plan.get("course_id") == "ap-chemistry", "plan is not AP Chemistry")
     require(plan.get("phase") == "F0C", "plan phase is not F0C")
-    require(plan.get("status") == "COMPLETE_WITH_LAB_SOURCE_PENDING_AND_F0B_GAPS", "F0C completion status is wrong")
+    require(plan.get("status") == "COMPLETE_WITH_COLLEGE_BOARD_LAB_BASIS_AND_F0B_GAPS", "F0C completion status is wrong")
     require(plan.get("topic_count") == 91, "F0C must cover 91 topics")
 
     records = plan.get("topics") or []
@@ -57,8 +57,12 @@ def main() -> None:
         require(components["concept"] == "required", f"{topic} concept is not required")
         require(components["memory_object"] == "required", f"{topic} Memory Object pathway is not required")
         require(components["vector"] == "not_used", f"{topic} unexpectedly uses vector capability")
-        require(components["lab_context"] == "pending_teacher_lab_source", f"{topic} incorrectly claims completed teacher lab mapping")
-        require(record.get("lab_mapping_status") == "pending_teacher_lab_collection", f"{topic} lab-source state changed")
+        require(components["lab_context"] in {"supporting", "not_primary"}, f"{topic} has invalid lab-context state")
+        require(record.get("lab_mapping_status") == "college_board_public_guidance_mapped", f"{topic} lab-source mapping is incomplete")
+        planning = record.get("lab_planning") or {}
+        require(planning.get("candidate_class") in {"core_candidate", "supporting_candidate", "context_only"}, f"{topic} has invalid lab candidate class")
+        require(planning.get("official_college_board_topic_assignment") is False, f"{topic} incorrectly claims an official College Board lab assignment")
+        require(planning.get("teacher_specific_procedure") is False, f"{topic} incorrectly claims a teacher-specific procedure")
         require(record.get("representation_levels"), f"{topic} has no representation-level plan")
         basis = record.get("source_basis") or {}
         require(basis.get("chemistry_reference_sections"), f"{topic} lost its Zumdahl source mapping")
@@ -77,13 +81,16 @@ def main() -> None:
     require("25 percent" in lab_guard.get("ced_requirement", ""), "CED lab-time requirement is missing")
     require("16 hands-on" in lab_guard.get("ced_requirement", ""), "CED hands-on lab count is missing")
     require("6 of the 16 guided inquiry" in lab_guard.get("ced_requirement", ""), "CED guided-inquiry count is missing")
-    require(lab_guard.get("f0d_blocker") is True, "teacher lab source must remain an F0D blocker")
+    require(lab_guard.get("f0d_blocker") is False, "lab source blocker should be cleared")
+    require(lab_guard.get("source_basis") == "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json", "F0C does not point to the inventoried lab source basis")
+    require(lab_guard.get("mapping_is_official_college_board_assignment") is False, "F0C incorrectly labels project mappings as official College Board assignments")
 
     summary = plan.get("coverage_summary") or {}
     for component in ("equation", "calculation", "graph", "diagram", "data_table", "particulate_model"):
         counts = Counter(r["science_components"][component] for r in records)
         require(dict(counts) == summary.get(component), f"{component} summary counts do not match topic records")
-    require(summary.get("lab_context") == {"pending_teacher_lab_source": 91}, "lab summary must show 91 pending topic mappings")
+    require(summary.get("lab_context") == {"supporting": 43, "not_primary": 48}, "lab-context summary changed")
+    require(summary.get("lab_planning_candidate_class") == {"core_candidate": 18, "supporting_candidate": 25, "context_only": 48}, "lab candidate summary changed")
     require(summary.get("vector") == {"not_used": 91}, "vector summary changed")
 
     require(str(register.get("schema") or "").startswith("story-method-ap-chemistry-source-register-1."), "unexpected source-register schema")
@@ -109,9 +116,9 @@ def main() -> None:
     print("- vector capability remains unused for AP Chemistry")
     print("- Topic 7.8 particulate-model requirement and Topics 8.11/9.10 scope guards are locked")
     print("- all seven F0B source gaps remain explicit")
-    print("- CED lab requirement is recorded while 91 teacher-lab topic mappings remain pending")
+    print("- all 91 topics have College Board-guidance-based project lab-planning classes without claiming official College Board topic assignments")
     print("- AP Chemistry fixture, package manifest, development status, and student-hidden lock remain unchanged")
-    print("- F0D Readiness Gate is the next authorized phase")
+    print("- updated F0C lab mapping supports the completed F0D readiness gate")
 
 
 if __name__ == "__main__":

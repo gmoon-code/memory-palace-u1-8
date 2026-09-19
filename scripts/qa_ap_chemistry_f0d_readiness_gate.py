@@ -11,6 +11,7 @@ REGISTER = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_SOURCE_REGISTER.json"
 F0A = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json"
 F0B = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json"
 F0C = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json"
+LAB = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_LAB_SOURCE_BASIS.json"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
 
 EXPECTED_UNIT_TITLES = [
@@ -38,7 +39,7 @@ def git(*args: str) -> str:
 
 
 def main() -> None:
-    for path in (GATE, REPORT, REGISTER, F0A, F0B, F0C):
+    for path in (GATE, REPORT, REGISTER, F0A, F0B, F0C, LAB):
         require(path.is_file(), f"missing F0D dependency: {path.relative_to(ROOT)}")
 
     gate = json.loads(GATE.read_text(encoding="utf-8"))
@@ -46,17 +47,19 @@ def main() -> None:
     f0a = json.loads(F0A.read_text(encoding="utf-8"))
     f0b = json.loads(F0B.read_text(encoding="utf-8"))
     f0c = json.loads(F0C.read_text(encoding="utf-8"))
+    lab = json.loads(LAB.read_text(encoding="utf-8"))
 
-    require(gate.get("schema") == "story-method-ap-chemistry-f0d-readiness-gate-1.0", "unexpected F0D schema")
+    require(gate.get("schema") == "story-method-ap-chemistry-f0d-readiness-gate-1.1", "unexpected F0D schema")
     require(gate.get("course_id") == "ap-chemistry", "F0D is not AP Chemistry")
     require(gate.get("phase") == "F0D", "readiness artifact is not F0D")
-    require(gate.get("result") == "BLOCKED_PENDING_TEACHER_LAB_SOURCE", "F0D must remain blocked until lab source is cleared")
-    require(gate.get("phase_status_after_gate") == "F0C_COMPLETE", "blocked F0D must not claim completion")
+    require(gate.get("result") == "COMPLETE", "F0D is not complete")
+    require(gate.get("phase_status_after_gate") == "F0D_COMPLETE", "completed F0D phase status is wrong")
 
     artifacts = gate.get("source_artifacts") or {}
     require(artifacts["f0a_inventory"]["git_blob"] == git("rev-parse", "HEAD:docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json"), "F0A artifact fingerprint changed")
     require(artifacts["f0b_crosswalk"]["git_blob"] == git("rev-parse", "HEAD:docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json"), "F0B artifact fingerprint changed")
     require(artifacts["f0c_component_plan"]["git_blob"] == git("rev-parse", "HEAD:docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json"), "F0C artifact fingerprint changed")
+    require(artifacts["lab_source_basis"]["git_blob"] == git("rev-parse", "HEAD:docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json"), "lab-source artifact fingerprint changed")
 
     checks = gate.get("readiness_checks") or {}
     for key in (
@@ -69,9 +72,11 @@ def main() -> None:
         "component_plan_complete",
         "source_conflicts_and_gaps_recorded",
         "fixture_excluded_as_academic_evidence",
+        "topic_specific_teacher_lab_mapping_complete",
+        "lab_source_basis_inventoried",
+        "college_board_lab_guidance_selected_by_user",
     ):
         require(checks.get(key) is True, f"readiness check is not complete: {key}")
-    require(checks.get("topic_specific_teacher_lab_mapping_complete") is False, "F0D incorrectly claims lab mapping is complete")
 
     units = gate.get("official_unit_and_topic_lock") or []
     require(len(units) == 9, "F0D must lock nine units")
@@ -86,25 +91,20 @@ def main() -> None:
     require(all(item.get("production_guard") for item in resolutions), "one or more gap dispositions lack production guards")
     topic_97 = next(item for item in resolutions if item["topic_id"] == "9.7")
     require(topic_97.get("disposition") == "ready_at_ced_minimum_with_teacher_depth_gap_retained", "Topic 9.7 teacher-depth gap was hidden")
-    require(f0b.get("source_gap_topic_ids") == EXPECTED_GAPS, "F0B source-gap history changed")
-    require(f0c.get("carried_f0b_source_gaps") == EXPECTED_GAPS, "F0C source-gap history changed")
 
-    blockers = gate.get("hard_blockers") or []
-    require(len(blockers) == 1, "F0D should currently have exactly one hard blocker")
-    blocker = blockers[0]
-    require(blocker.get("blocker_id") == "teacher-lab-source" and blocker.get("status") == "unresolved", "teacher lab blocker is missing")
-    require("25 percent" in blocker.get("ced_course_requirement", ""), "CED lab-time requirement is missing")
-    require("16 hands-on" in blocker.get("ced_course_requirement", ""), "CED hands-on lab count is missing")
-    require("6 guided-inquiry" in blocker.get("ced_course_requirement", ""), "CED guided-inquiry requirement is missing")
-    require(len(blocker.get("clearance_options") or []) == 2, "F0D must document both lab-source clearance paths")
+    require(gate.get("hard_blockers") == [], "completed F0D must have no hard blockers")
+    cleared = gate.get("cleared_blockers") or []
+    require(len(cleared) == 1 and cleared[0].get("blocker_id") == "teacher-lab-source", "teacher-lab blocker clearance is missing")
+    require(lab.get("status") == "INVENTORIED_AND_AUTHORIZED_BY_USER_DIRECTIVE", "lab-source basis is not authorized")
+    require((lab.get("clearance_effect") or {}).get("f0d_teacher_lab_blocker_cleared") is True, "lab-source basis does not clear F0D")
 
     f0c_guard = f0c.get("lab_requirement_guard") or {}
-    require(f0c_guard.get("f0d_blocker") is True, "F0C no longer marks lab source as an F0D blocker")
-    require((f0c.get("coverage_summary") or {}).get("lab_context") == {"pending_teacher_lab_source": 91}, "F0C no longer shows 91 pending lab mappings")
+    require(f0c_guard.get("f0d_blocker") is False, "F0C still marks lab source as blocker")
+    require((f0c.get("coverage_summary") or {}).get("lab_planning_candidate_class") == {"core_candidate": 18, "supporting_candidate": 25, "context_only": 48}, "F0C lab candidate classes changed")
 
     auth = gate.get("authorization") or {}
-    require(auth.get("planning_documentation") is True, "blocked F0D should still allow source planning")
     for key in (
+        "planning_documentation",
         "real_package_construction",
         "real_scientific_record_production",
         "memory_object_production",
@@ -112,46 +112,40 @@ def main() -> None:
         "question_bank_production",
         "review_system_production",
         "challenge_lab_production",
-        "student_visibility",
-        "teacher_editability",
     ):
-        require(auth.get(key) is False, f"blocked F0D incorrectly authorizes {key}")
+        require(auth.get(key) is True, f"completed F0D does not authorize {key}")
+    require(auth.get("student_visibility") is False, "F0D must not make AP Chemistry student-visible")
+    require(auth.get("teacher_editability") is False, "F0D must not make AP Chemistry editable")
 
-    require(register.get("schema") == "story-method-ap-chemistry-source-register-1.4", "source register schema did not advance")
-    require(register.get("phase_status") == "F0C_COMPLETE", "blocked F0D must leave phase_status at F0C_COMPLETE")
-    require(register.get("f0d_readiness_status") == "BLOCKED_PENDING_TEACHER_LAB_SOURCE", "source register does not record blocked F0D")
-    require(register.get("f0d_readiness_gate") == "docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.json", "source register does not point to F0D gate")
+    require(register.get("schema") == "story-method-ap-chemistry-source-register-1.5", "source register schema did not advance")
+    require(register.get("phase_status") == "F0D_COMPLETE", "source register does not record F0D completion")
+    require(register.get("f0d_readiness_status") == "COMPLETE", "source register does not record completed F0D")
+    require(register.get("lab_source_basis") == "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json", "source register does not point to lab source basis")
 
     require(f0a.get("status") == "COMPLETE", "F0A is no longer complete")
     require(f0b.get("status") == "COMPLETE_WITH_RECORDED_SOURCE_GAPS", "F0B state changed")
-    require(f0c.get("status") == "COMPLETE_WITH_LAB_SOURCE_PENDING_AND_F0B_GAPS", "F0C state changed")
+    require(f0c.get("status") == "COMPLETE_WITH_COLLEGE_BOARD_LAB_BASIS_AND_F0B_GAPS", "F0C state changed")
 
     require(git("rev-parse", "HEAD:content/ap-chemistry") == git("rev-parse", f"{FROZEN}:content/ap-chemistry"), "F0D modified the AP Chemistry architecture fixture")
     require(git("rev-parse", "HEAD:platform/course-packages/ap-chemistry.json") == git("rev-parse", f"{FROZEN}:platform/course-packages/ap-chemistry.json"), "F0D modified the AP Chemistry package manifest")
 
     registry = json.loads((ROOT / "platform" / "courses.json").read_text(encoding="utf-8"))
     chemistry = next(item for item in registry["courses"] if item["course_id"] == "ap-chemistry")
-    require(chemistry.get("status") == "development", "AP Chemistry left development status during blocked F0D")
-    require(chemistry.get("student_visible") is False, "AP Chemistry became student-visible during blocked F0D")
+    require(chemistry.get("status") == "development", "AP Chemistry left development status during F0D")
+    require(chemistry.get("student_visible") is False, "AP Chemistry became student-visible during F0D")
 
     report = REPORT.read_text(encoding="utf-8")
-    for marker in (
-        "BLOCKED_PENDING_TEACHER_LAB_SOURCE",
-        "The teacher laboratory source is still unresolved",
-        "9.7 Coupled Reactions",
-        "real nine-unit package",
-        "F0D will not invent",
-    ):
+    for marker in ("**COMPLETE**", "Laboratory blocker clearance", "9.7 Coupled Reactions", "real nine-unit AP Chemistry package", "student visibility"):
         require(marker in report, f"F0D report is missing marker: {marker}")
 
     print("AP CHEMISTRY F0D READINESS GATE PASS")
-    print("- readiness gate executed and correctly remains blocked on the unresolved teacher-lab source")
-    print("- all nine unit titles and all 91 CED topic boundaries are locked")
-    print("- all seven F0B source gaps have explicit bounded production dispositions")
-    print("- Topic 9.7 retains its teacher-depth warning")
-    print("- F0A, F0B, and F0C artifact fingerprints remain unchanged")
-    print("- no real package, scientific records, Memory Objects, narratives, questions, review, or Challenge Lab work is authorized")
-    print("- AP Chemistry fixture, package manifest, development status, and student-hidden lock remain unchanged")
+    print("- F0D is complete with no unresolved hard blockers")
+    print("- CED/public College Board laboratory guidance is inventoried and selected by explicit user directive")
+    print("- all nine unit titles and all 91 CED topic boundaries remain locked")
+    print("- all seven F0B source gaps retain bounded production dispositions")
+    print("- real package and content production are authorized for later commits")
+    print("- student visibility and teacher editability remain locked")
+    print("- AP Chemistry architecture fixture and package manifest remain unchanged in the F0D completion commit")
 
 
 if __name__ == "__main__":

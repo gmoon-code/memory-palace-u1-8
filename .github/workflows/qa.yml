@@ -88,6 +88,7 @@ jobs:
       - run: python scripts/qa_ap_chemistry_f0_source_intake.py
       - run: python scripts/qa_ap_chemistry_f0a_source_inventory.py
       - run: python scripts/qa_ap_chemistry_f0b_framework_crosswalk.py
+      - run: python scripts/qa_ap_chemistry_lab_source_basis.py
       - run: python scripts/qa_ap_chemistry_f0c_science_component_plan.py
       - run: python scripts/qa_ap_chemistry_f0d_readiness_gate.py
       - run: python scripts/qa_content_studio_integration.py

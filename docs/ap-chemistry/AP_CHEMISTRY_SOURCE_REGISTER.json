@@ -1,8 +1,8 @@
 {
-  "schema": "story-method-ap-chemistry-source-register-1.4",
+  "schema": "story-method-ap-chemistry-source-register-1.5",
   "course_id": "ap-chemistry",
   "phase": "F0",
-  "phase_status": "F0C_COMPLETE",
+  "phase_status": "F0D_COMPLETE",
   "verified_date": "2026-09-19",
   "framework_authority": {
     "source_id": "college-board-ap-chemistry-ced-fall-2024",
@@ -105,9 +105,10 @@
     },
     {
       "source_id": "teacher-ap-chemistry-labs",
-      "status": "pending",
+      "status": "waived_by_user_directive",
       "requested_content": "Laboratory procedures, lab sequence, inquiry tasks, or lab manual materials intended for the course",
-      "role": "Lab contexts, experimental reasoning, measurement, data analysis, and Challenge Lab design"
+      "role": "Replaced by inventoried CED/public College Board laboratory source basis for course-level requirements, inquiry expectations, and later original lab design.",
+      "received": "Teacher-specific laboratory collection not required. User directed the project to use the CED/public College Board laboratory guidance as the lab-source basis."
     },
     {
       "source_id": "teacher-ap-chemistry-assessment-resources",
@@ -185,7 +186,7 @@
     "data_table_required": 38,
     "particulate_model_required": 45,
     "vector_used": false,
-    "lab_topic_mapping_status": "pending_teacher_lab_collection",
+    "lab_topic_mapping_status": "college_board_public_guidance_mapped",
     "source_gap_topic_ids": [
       "1.4",
       "2.2",
@@ -199,20 +200,31 @@
       "8.11 qualitative pH-solubility only; no solubility-as-function-of-pH calculations",
       "9.10 no required Nernst-equation calculations"
     ],
-    "next_phase": "F0D Readiness Gate"
+    "next_phase": "F0D Readiness Gate",
+    "lab_candidate_counts": {
+      "core_candidate": 18,
+      "supporting_candidate": 25,
+      "context_only": 48
+    }
   },
   "f0d_readiness_gate": "docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.json",
-  "f0d_readiness_status": "BLOCKED_PENDING_TEACHER_LAB_SOURCE",
+  "f0d_readiness_status": "COMPLETE",
   "f0d_summary": {
     "official_units_locked": 9,
     "ced_topics_locked": 91,
     "source_gap_dispositions": 7,
-    "unresolved_hard_blockers": [
+    "unresolved_hard_blockers": [],
+    "cleared_blockers": [
       "teacher-lab-source"
     ],
-    "package_construction_authorized": false,
-    "narrative_authoring_authorized": false,
+    "lab_source_basis": "CED/public College Board laboratory guidance",
+    "package_construction_authorized": true,
+    "narrative_authoring_authorized": true,
+    "challenge_lab_authoring_authorized": true,
     "student_visibility_authorized": false,
-    "clearance_required": "Inventory the teacher AP Chemistry laboratory source basis, or receive an explicit directive to use CED/public College Board laboratory guidance and inventory that basis before rerunning F0D."
-  }
+    "teacher_editability_authorized": false,
+    "next_phase": "Real AP Chemistry package foundation"
+  },
+  "lab_source_basis": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json",
+  "lab_source_directive": "Use the CED/public College Board laboratory guidance as the lab-source basis."
 }

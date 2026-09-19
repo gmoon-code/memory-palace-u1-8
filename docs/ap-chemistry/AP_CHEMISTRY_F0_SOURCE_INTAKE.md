@@ -45,7 +45,7 @@ F0A Source Inventory is complete. The received source set contains the Fall 2024
 
 The source inventory is `docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json`, with a human-readable audit at `docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.md`.
 
-A separate teacher laboratory collection remains pending. A separate pacing guide is no longer required because the user explicitly directed the final course to follow CED organization and order.
+A separate teacher laboratory collection is no longer required. The user explicitly directed the project to use the CED/public College Board laboratory guidance as the lab-source basis. A separate pacing guide is also not required because CED organization and order govern the course.
 
 Additional sources may still be added before F0D. Each new source must be inventoried before it influences the crosswalk.
 
@@ -59,7 +59,7 @@ The College Board AP Chemistry Clarifications and Corrections document implement
 
 The machine-readable crosswalk is `docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json`, with a human-readable audit at `docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.md`.
 
-A separate teacher laboratory collection remains pending and is carried into F0C/F0D as an unresolved source state.
+The laboratory source basis is now the inventoried CED/public College Board laboratory guidance. No teacher-specific procedure set is claimed.
 
 ## F0C science-component state
 
@@ -67,19 +67,19 @@ F0C Science Component Coverage Plan is complete. Each of the 91 CED topics now h
 
 The plan preserves the seven F0B source-gap topics and adds explicit scope guards where the CED or teacher materials set a boundary. Topic 8.11 remains qualitative with solubility-as-a-function-of-pH calculations excluded. Topic 9.10 does not require Nernst-equation calculations. Topic 7.8 retains the CED-required particulate-model treatment despite partial teacher-PPT coverage. Topic 9.7 retains its direct teacher-PPT depth gap.
 
-The CED laboratory requirement is recorded as a course-level constraint. A separate teacher laboratory collection is still pending, so F0C does not claim topic-specific lab assignments or invent teacher procedures. This unresolved lab source remains an F0D readiness blocker.
+The CED laboratory requirement is recorded as a course-level constraint. By user directive, F0C now maps topics to project lab-planning classes using the CED/public College Board guidance. The mapping does not claim official College Board topic assignments and does not invent or attribute unsourced procedures.
 
 The machine-readable plan is `docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json`, with a human-readable audit at `docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.md`.
 
 ## F0D readiness state
 
-F0D Readiness Gate has been executed and is **blocked pending the teacher laboratory source basis**.
+F0D Readiness Gate has been rerun and is **COMPLETE**.
 
 The academic structure is otherwise ready for production planning. The nine CED units and all 91 topic boundaries are locked, the seven F0B source gaps have bounded production dispositions, and the F0C component plan is complete. Topic 9.7 retains a visible teacher-depth warning because no direct teacher-PPT treatment was located.
 
-The gate does not authorize the real AP Chemistry package, scientific records, Memory Objects, narratives, questions, review records, Challenge Lab content, teacher editing, or student visibility. The source register therefore remains at `F0C_COMPLETE`.
+The gate now authorizes later construction of the real AP Chemistry package and source-backed content production. Student visibility and teacher editability remain locked. The source register is now at `F0D_COMPLETE`.
 
-The blocker can be cleared by inventorying the teacher's AP Chemistry lab procedures/manual/sequence, or by an explicit user directive to use the CED/public College Board laboratory guidance as the lab-source basis followed by inventory of that basis.
+The laboratory blocker was cleared through the explicit user directive to use the CED/public College Board laboratory guidance and by inventorying that basis.
 
 The machine-readable gate is `docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.json`, with a human-readable report at `docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.md`.
 
@@ -95,10 +95,10 @@ F0 will close through four linked artifacts.
 
 - F0A Source Inventory records each supplied source, its role, coverage, version or edition, ingestion status, file size, page count, and SHA-256 fingerprint. F0A is complete.
 - F0B Framework Crosswalk maps every College Board topic and suggested science-practice skill to the teacher materials, textbook, assessment evidence, and pending lab-source state. F0B is complete with seven explicitly recorded teacher-depth gaps.
-- F0C Science Component Coverage Plan identifies where equations, calculations, graphs, diagrams, data tables, particulate models, and lab contexts are required or supporting. F0C is complete with the teacher-lab mapping still pending.
-- F0D Readiness Gate verifies source coverage, records unresolved blockers, locks unit titles and topic boundaries, and authorizes construction only when every hard blocker is cleared. The current F0D run is blocked pending the laboratory source basis.
+- F0C Science Component Coverage Plan identifies where equations, calculations, graphs, diagrams, data tables, particulate models, and lab contexts are required or supporting. F0C now includes College Board-guidance-based lab-planning classes.
+- F0D Readiness Gate verifies source coverage, records blocker clearance, locks unit titles and topic boundaries, and authorizes construction only when every hard blocker is cleared. The rerun F0D gate is complete.
 
-Narrative writing begins only after a later F0D run reaches `COMPLETE`.
+Narrative writing is now authorized for later production phases because F0D has reached `COMPLETE`.
 
 ## F0 safety lock
 

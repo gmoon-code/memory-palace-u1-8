@@ -2,7 +2,7 @@
 
 ## Status
 
-F0C is complete with the teacher laboratory source still pending and all seven F0B source gaps preserved. Every one of the 91 CED topics now has an explicit component classification for concepts, Memory Objects, equations, calculations, graphs, diagrams, data tables, particulate models, laboratory contexts, and vectors.
+F0C is complete with an inventoried CED/public College Board laboratory source basis and all seven F0B source gaps preserved. Every one of the 91 CED topics now has an explicit component classification for concepts, Memory Objects, equations, calculations, graphs, diagrams, data tables, particulate models, laboratory contexts, and vectors.
 
 This is a planning artifact. It creates no AP Chemistry runtime curriculum.
 
@@ -14,9 +14,9 @@ Every topic requires a concept representation and a Memory Object pathway. AP Ch
 
 ## Source basis
 
-The CED controls required content, topic order, suggested science practices, and exclusions. The teacher PowerPoints control intended student depth. Zumdahl 11e controls chemistry accuracy within CED scope. Scoring guides provide assessment-demand evidence. Teacher laboratory materials have not been supplied, so F0C does not invent teacher procedures or assign specific labs to topics.
+The CED controls required content, topic order, suggested science practices, and exclusions. The teacher PowerPoints control intended student depth. Zumdahl 11e controls chemistry accuracy within CED scope. Scoring guides provide assessment-demand evidence. Teacher-specific laboratory materials are not being used. By explicit user directive, the CED/public College Board laboratory guidance is the lab-source basis. F0C does not invent or attribute College Board procedures and does not claim that its topic-level lab candidates are official College Board lab assignments.
 
-The CED requires a minimum of 25 percent of instructional time in laboratory investigations, at least 16 hands-on investigations, and at least 6 guided-inquiry investigations. F0C therefore preserves `lab_context` as a required course capability while leaving every topic's teacher-lab mapping pending until source material is available.
+The CED requires a minimum of 25 percent of instructional time in laboratory investigations, at least 16 hands-on investigations, and at least 6 guided-inquiry investigations. F0C therefore preserves `lab_context` as a course capability and maps all 91 topics to project lab-planning classes using the existing experimental-reasoning priority. The exact 16-lab slate remains a later Challenge Lab design task.
 
 ## Coverage totals
 
@@ -28,7 +28,7 @@ The CED requires a minimum of 25 percent of instructional time in laboratory inv
 | diagram | 57 | 15 | 19 | 0 |
 | data table | 38 | 20 | 33 | 0 |
 | particulate model | 45 | 20 | 26 | 0 |
-| lab context | 0 topic-specific | 0 | 0 | 91 pending teacher-lab source |
+| lab context | 0 required topic-specific | 43 supporting | 48 not primary | 0 |
 | vector | 0 | 0 | 91 not used | 0 |
 
 Experimental-reasoning priority is marked high for 18 topics, medium for 25, and general for 48. These priorities guide later question and Challenge Lab planning. They do not substitute for the missing teacher lab source.
@@ -197,4 +197,4 @@ F0C retains the seven F0B source-gap topics 1.4, 2.2, 7.8, 8.10, 8.11, 9.6, and 
 
 ## F0C exit
 
-F0C authorizes the **F0D Readiness Gate**. F0D must determine whether the remaining teacher-lab source state and the seven source-gap topics have been resolved sufficiently to authorize construction of the real nine-unit AP Chemistry package. Until F0D passes, the architecture fixture remains unchanged and AP Chemistry stays hidden and read-only.
+F0C supplies the updated laboratory mapping used by the rerun F0D Readiness Gate. The lab-source blocker is now cleared by the inventoried CED/public College Board guidance basis. The exact 16-lab sequence remains a later design task.

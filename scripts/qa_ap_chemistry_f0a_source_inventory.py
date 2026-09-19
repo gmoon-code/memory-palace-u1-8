@@ -93,7 +93,7 @@ def main() -> None:
     require("F0B" in sequence.get("crosswalk_rule", ""), "crosswalk relocation rule is missing")
 
     pending = {item.get("source_id"): item for item in inventory.get("still_pending") or []}
-    require(pending.get("teacher-ap-chemistry-labs", {}).get("status") == "pending", "teacher lab source state is not pending")
+    require(pending.get("teacher-ap-chemistry-labs", {}).get("status") == "pending", "historical F0A inventory must preserve the lab source as pending at F0A time")
     no_longer_required = {item.get("source_id"): item for item in inventory.get("explicitly_not_required") or []}
     require(no_longer_required.get("teacher-ap-chemistry-pacing", {}).get("status") == "not_required", "pacing source should be waived by CED-order directive")
 
@@ -124,7 +124,7 @@ def main() -> None:
     print("- CED controls unit/topic order; PPT numbering is explicitly non-structural")
     print("- teacher PPTs control intended student depth; Zumdahl 11e controls chemistry truth within CED scope")
     print("- scoring guides cover CED Units 1-9, with Unit 3 represented by 3A and 3B")
-    print("- teacher lab materials remain pending and separate pacing is waived by the CED-order directive")
+    print("- historical F0A inventory correctly records teacher labs as pending at the time of F0A; later source-register state may advance")
     print("- AP Chemistry fixture, package manifest, development status, and student-hidden lock remain unchanged")
     print("- F0B Framework Crosswalk is the next authorized phase")
 

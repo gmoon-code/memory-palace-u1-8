@@ -1,10 +1,10 @@
 {
-  "schema": "story-method-ap-chemistry-f0d-readiness-gate-1.0",
+  "schema": "story-method-ap-chemistry-f0d-readiness-gate-1.1",
   "course_id": "ap-chemistry",
   "phase": "F0D",
   "gate_date": "2026-09-19",
-  "result": "BLOCKED_PENDING_TEACHER_LAB_SOURCE",
-  "phase_status_after_gate": "F0C_COMPLETE",
+  "result": "COMPLETE",
+  "phase_status_after_gate": "F0D_COMPLETE",
   "source_artifacts": {
     "f0a_inventory": {
       "path": "docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json",
@@ -18,8 +18,13 @@
     },
     "f0c_component_plan": {
       "path": "docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json",
-      "git_blob": "d5d6f2c12a533b51f5df15f866d1da72425ea78d",
-      "status": "complete_with_lab_source_pending_and_f0b_gaps"
+      "git_blob": "690c5efa7b8a1bece6714ee19398d7386195ea32",
+      "status": "complete_with_college_board_lab_basis_and_f0b_gaps"
+    },
+    "lab_source_basis": {
+      "path": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json",
+      "git_blob": "82183f48fc8d493a16485bbc7fd40d5ccc217b41",
+      "status": "inventoried_and_authorized_by_user_directive"
     }
   },
   "authority_lock": {
@@ -27,7 +32,7 @@
     "student_depth": "Teacher PPT U1-U15 after relocation into CED order",
     "chemistry_truth": "Zumdahl, Zumdahl, and DeCoste, Chemistry 11e, within CED scope",
     "assessment_demand": "Teacher-supplied Unit 1-9 scoring guides, evidence only, no verbatim reuse",
-    "laboratory_context": "Teacher-specific lab source not yet supplied"
+    "laboratory_context": "CED and current public College Board laboratory guidance, selected by explicit user directive; no teacher-specific lab sequence is claimed."
   },
   "readiness_checks": {
     "source_inventory_complete": true,
@@ -39,7 +44,9 @@
     "component_plan_complete": true,
     "source_conflicts_and_gaps_recorded": true,
     "fixture_excluded_as_academic_evidence": true,
-    "topic_specific_teacher_lab_mapping_complete": false
+    "topic_specific_teacher_lab_mapping_complete": true,
+    "lab_source_basis_inventoried": true,
+    "college_board_lab_guidance_selected_by_user": true
   },
   "official_unit_and_topic_lock": [
     {
@@ -252,35 +259,16 @@
     "Topic 9.7 has no direct teacher-PPT depth source. Production is bounded to the CED minimum and Zumdahl-verified chemistry until a teacher-depth source is supplied.",
     "The seven F0B gap identifiers remain retained in audit history even where F0D defines a bounded production treatment."
   ],
-  "hard_blockers": [
-    {
-      "blocker_id": "teacher-lab-source",
-      "status": "unresolved",
-      "evidence": "No separate teacher laboratory collection has been supplied or inventoried.",
-      "reason": "F0C explicitly classified all 91 topic lab mappings as pending and marked the teacher lab source as an F0D blocker. The CED requires substantial laboratory instruction, while the project source contract says laboratory contexts should trace to supplied lab sources when available.",
-      "ced_course_requirement": "Minimum 25 percent of instructional time in lab investigations; at least 16 hands-on lab investigations; at least 6 guided-inquiry investigations.",
-      "blocked_outputs": [
-        "real AP Chemistry package construction",
-        "topic-specific lab-context records",
-        "Challenge Lab authoring",
-        "narrative authoring that embeds teacher lab procedures",
-        "student publication"
-      ],
-      "clearance_options": [
-        "Inventory the teacher's AP Chemistry lab procedures, lab manual, or intended lab sequence.",
-        "Receive an explicit user directive that no teacher-specific lab collection will be used and that the course should use CED/public College Board laboratory guidance as the lab-source basis; inventory that basis before clearing F0D."
-      ]
-    }
-  ],
+  "hard_blockers": [],
   "authorization": {
     "planning_documentation": true,
-    "real_package_construction": false,
-    "real_scientific_record_production": false,
-    "memory_object_production": false,
-    "narrative_story_authoring": false,
-    "question_bank_production": false,
-    "review_system_production": false,
-    "challenge_lab_production": false,
+    "real_package_construction": true,
+    "real_scientific_record_production": true,
+    "memory_object_production": true,
+    "narrative_story_authoring": true,
+    "question_bank_production": true,
+    "review_system_production": true,
+    "challenge_lab_production": true,
     "student_visibility": false,
     "teacher_editability": false
   },
@@ -291,6 +279,21 @@
     "student_visible": false,
     "editable": false
   },
-  "clearance_rule": "F0D may be changed to COMPLETE only after the laboratory blocker is cleared by an inventoried lab-source basis and the readiness gate is rerun without modifying the frozen architecture fixture as academic evidence.",
-  "next_action_if_blocked": "Collect or explicitly define the AP Chemistry laboratory source basis, inventory it, update F0C lab mappings, and rerun F0D."
+  "clearance_rule": "Satisfied. The teacher-specific lab collection is waived by explicit user directive, and the CED/public College Board laboratory source basis is inventoried. Future lab design must remain within that source boundary.",
+  "next_action_if_blocked": "Collect or explicitly define the AP Chemistry laboratory source basis, inventory it, update F0C lab mappings, and rerun F0D.",
+  "previous_blocked_gate": {
+    "commit": "4c6a3038c69ec838190d394e53a5061aa9c67968",
+    "result": "BLOCKED_PENDING_TEACHER_LAB_SOURCE",
+    "blocker": "teacher-lab-source"
+  },
+  "cleared_blockers": [
+    {
+      "blocker_id": "teacher-lab-source",
+      "cleared_by": "explicit user directive plus inventoried CED/public College Board laboratory guidance",
+      "source_basis": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json",
+      "clearance_date": "2026-09-19",
+      "residual_guard": "The exact 16-lab sequence is not yet selected. Later Challenge Lab planning must satisfy the College Board course-level requirements and may not attribute unsourced procedures to College Board."
+    }
+  ],
+  "next_action_if_complete": "Construct the real nine-unit AP Chemistry package foundation while keeping AP Chemistry development-only, student-hidden, and read-only until later publication gates."
 }

@@ -2,7 +2,7 @@
 
 ## Academic scope contract
 
-The real AP Chemistry course will be constructed from an explicit source crosswalk. Every required framework topic must trace to the current College Board framework. Course organization and topic order follow the CED. Explanatory depth, examples, classroom emphases, and expected student reasoning trace to the supplied teacher PowerPoints. Chemistry accuracy and explanatory truth trace to Zumdahl, Zumdahl, and DeCoste, Chemistry, 11th edition, within CED scope. Laboratory contexts trace to supplied laboratory sources when available.
+The real AP Chemistry course will be constructed from an explicit source crosswalk. Every required framework topic must trace to the current College Board framework. Course organization and topic order follow the CED. Explanatory depth, examples, classroom emphases, and expected student reasoning trace to the supplied teacher PowerPoints. Chemistry accuracy and explanatory truth trace to Zumdahl, Zumdahl, and DeCoste, Chemistry, 11th edition, within CED scope. Laboratory contexts trace to the inventoried CED/public College Board laboratory guidance selected by user directive; specific procedures require their own source or original design.
 
 General model knowledge is not used to silently fill source gaps during source intake.
 
@@ -67,11 +67,11 @@ The current fixture/official Unit 2 title difference is the first recorded archi
 
 ## F0C component lock
 
-The topic-level component plan is `docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json`. Later production must preserve its required, supporting, not-primary, excluded, and pending-source states unless a newly inventoried source justifies a documented revision.
+The topic-level component plan is `docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json`. Later production must preserve its required, supporting, not-primary, and excluded states unless a newly inventoried source justifies a documented revision. Lab-context planning is now grounded in the inventoried CED/public College Board laboratory source basis.
 
 The component lock includes two explicit assessment-scope guards. Topic 8.11 does not require calculations of solubility as a function of pH. Topic 9.10 does not require Nernst-equation calculations. The CED-required particulate representation in Topic 7.8 remains required even though the teacher-PPT treatment is partial.
 
-A separate teacher laboratory collection remains pending. F0C records the CED lab requirement and leaves topic-specific teacher-lab mapping unresolved for F0D.
+A teacher-specific laboratory collection is waived by user directive. F0C records the CED/public College Board lab basis and project topic-level lab-planning classes without claiming official College Board topic assignments.
 
 ## F0D gate outcome
 
@@ -79,7 +79,7 @@ The first F0D run is recorded in `docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_G
 
 The gate locks all nine official CED unit titles and all 91 topic boundaries. It also assigns bounded production treatments to the seven F0B source-gap topics. Topic 9.7 remains explicitly marked as lacking a direct teacher-PPT depth source and is restricted to the minimum CED requirement with Zumdahl-verified chemistry if production is later authorized.
 
-The gate remains blocked because the teacher laboratory source basis has not been supplied or explicitly replaced by another authorized lab-source basis. While blocked, no real AP Chemistry runtime package or content production is authorized.
+The gate has been rerun after the user selected the CED/public College Board laboratory guidance as the lab-source basis. That basis is inventoried, the laboratory blocker is cleared, and F0D is complete. Package and content production are authorized for later commits, while student visibility and teacher editability remain locked.
 
 ## Readiness rule
 
@@ -94,4 +94,4 @@ F0D passes only when
 - chemistry-specific component requirements are mapped
 - package construction can proceed without using the architecture fixture as academic evidence
 
-Until F0D passes, the real AP Chemistry package is not created and AP Chemistry remains read-only.
+F0D has passed. The next phase may construct the real AP Chemistry package while AP Chemistry remains development-only, student-hidden, and read-only.

@@ -71,7 +71,10 @@ def main() -> None:
     require(requested["teacher-ap-chemistry-unit-materials"].get("status") == "received", "teacher PowerPoints are not registered")
     require(requested["primary-ap-chemistry-textbook"].get("status") == "received", "primary textbook is not registered")
     require(requested["teacher-ap-chemistry-assessment-resources"].get("status") == "received", "assessment guides are not registered")
-    require(requested["teacher-ap-chemistry-labs"].get("status") == "pending", "lab-source state changed unexpectedly")
+    require(requested["teacher-ap-chemistry-labs"].get("status") in {"pending", "waived_by_user_directive"}, "lab-source state is invalid")
+    if PHASE_ORDER.get(data.get("phase_status"), 0) >= PHASE_ORDER["F0D_COMPLETE"]:
+        require(requested["teacher-ap-chemistry-labs"].get("status") == "waived_by_user_directive", "completed F0D must record the lab-source directive")
+        require(data.get("lab_source_basis") == "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json", "completed F0D must register the lab-source basis")
     require(requested["teacher-ap-chemistry-pacing"].get("status") == "not_required", "CED-order pacing directive is not registered")
 
     directives = data.get("user_source_directives") or {}
@@ -109,7 +112,7 @@ def main() -> None:
     print("- current College Board framework authority is registered")
     print("- all nine official units and current titles are locked for crosswalking")
     print("- teacher PowerPoints, Zumdahl 11e, and scoring guides are registered as received")
-    print("- CED order is locked; separate pacing is not required; teacher labs remain pending")
+    print("- CED order is locked; separate pacing is not required; lab source state is explicitly tracked")
     print("- fixture discrepancies are recorded without changing fixture content")
     print("- AP Chemistry content and package files remain byte-for-byte at the frozen architecture baseline")
     print("- AP Chemistry remains development-only and hidden from students")

@@ -1,8 +1,8 @@
 {
-  "schema": "story-method-ap-chemistry-f0c-science-component-plan-1.0",
+  "schema": "story-method-ap-chemistry-f0c-science-component-plan-1.1",
   "course_id": "ap-chemistry",
   "phase": "F0C",
-  "status": "COMPLETE_WITH_LAB_SOURCE_PENDING_AND_F0B_GAPS",
+  "status": "COMPLETE_WITH_COLLEGE_BOARD_LAB_BASIS_AND_F0B_GAPS",
   "plan_date": "2026-09-19",
   "source_crosswalk": "docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json",
   "topic_count": 91,
@@ -24,7 +24,7 @@
       "supporting": "The component may be used when it improves explanation or AP-style reasoning at the established teacher depth.",
       "not_primary": "The component is not required as a primary representation for this topic.",
       "excluded": "The component is explicitly barred as a required student outcome by a source-supported scope guard.",
-      "pending_teacher_lab_source": "The course requires laboratory work, but a topic-specific teacher lab mapping cannot be locked until teacher lab sources are supplied."
+      "college_board_guidance_mapped": "Topic has a laboratory-planning classification grounded in the inventoried CED/public College Board laboratory source basis; no specific procedure is implied."
     }
   },
   "source_rules": {
@@ -32,12 +32,15 @@
     "teacher_ppts": "Control intended student depth and whether a representation is already taught directly or only partially.",
     "zumdahl_11e": "Controls chemistry accuracy and explanatory truth within CED scope.",
     "scoring_guides": "Provide assessment-demand evidence without verbatim reuse.",
-    "lab_sources": "Still pending. F0C does not invent teacher lab procedures or claim topic-specific lab assignments."
+    "lab_sources": "CED/public College Board laboratory guidance is the authorized lab-source basis by explicit user directive. It governs course-level lab requirements and topic planning but does not prescribe or authorize copying a specific lab procedure."
   },
   "lab_requirement_guard": {
+    "source_basis": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json",
     "ced_requirement": "Minimum 25 percent of instructional time in lab investigations; at least 16 hands-on lab investigations; at least 6 of the 16 guided inquiry.",
-    "topic_level_state": "pending_teacher_lab_collection",
-    "f0d_blocker": true
+    "topic_level_state": "college_board_public_guidance_mapped",
+    "mapping_is_official_college_board_assignment": false,
+    "exact_16_lab_sequence_selected": false,
+    "f0d_blocker": false
   },
   "carried_f0b_source_gaps": [
     "1.4",
@@ -81,7 +84,8 @@
       "not_primary": 26
     },
     "lab_context": {
-      "pending_teacher_lab_source": 91
+      "supporting": 43,
+      "not_primary": 48
     },
     "vector": {
       "not_used": 91
@@ -96,6 +100,11 @@
       "high": 18,
       "medium": 25,
       "general": 48
+    },
+    "lab_planning_candidate_class": {
+      "core_candidate": 18,
+      "supporting_candidate": 25,
+      "context_only": 48
     }
   },
   "topics": [
@@ -141,7 +150,7 @@
         "data_table": "supporting",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -151,9 +160,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "1.2",
@@ -190,7 +212,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -201,9 +223,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "1.3",
@@ -241,7 +276,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -252,9 +287,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "1.4",
@@ -293,7 +341,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -304,9 +352,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": "Use the CED mixture-composition framing while keeping calculation depth consistent with the PPT percent-composition and purity material.",
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "1.5",
@@ -353,7 +414,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -363,9 +424,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "1.6",
@@ -402,7 +476,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -413,9 +487,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "1.7",
@@ -454,7 +541,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -465,9 +552,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "1.8",
@@ -518,7 +618,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -528,9 +628,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "2.1",
@@ -569,7 +682,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -579,9 +692,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "2.2",
@@ -620,7 +746,7 @@
         "data_table": "supporting",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -631,9 +757,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": "The potential-energy-versus-internuclear-distance graph is required by the CED. Teacher slides provide related bond-order, distance, strength, and bond-energy material but only partial direct treatment of the full graph.",
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "2.3",
@@ -671,7 +810,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -681,9 +820,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "2.4",
@@ -720,7 +872,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -729,9 +881,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "2.5",
@@ -770,7 +935,7 @@
         "data_table": "not_primary",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -779,9 +944,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "2.6",
@@ -819,7 +997,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -830,9 +1008,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "2.7",
@@ -871,7 +1062,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -880,9 +1071,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.1",
@@ -921,7 +1125,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -931,9 +1135,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.2",
@@ -975,7 +1192,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -985,9 +1202,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.3",
@@ -1032,7 +1262,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1042,9 +1272,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.4",
@@ -1085,7 +1328,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1096,9 +1339,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.5",
@@ -1137,7 +1393,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1148,9 +1404,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.6",
@@ -1189,7 +1458,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1199,9 +1468,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.7",
@@ -1245,7 +1527,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1256,9 +1538,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.8",
@@ -1303,7 +1598,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1312,9 +1607,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.9",
@@ -1352,7 +1660,7 @@
         "data_table": "supporting",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1362,9 +1670,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.10",
@@ -1403,7 +1724,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1414,9 +1735,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.11",
@@ -1460,7 +1794,7 @@
         "data_table": "supporting",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1471,9 +1805,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.12",
@@ -1512,7 +1859,7 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1520,9 +1867,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "3.13",
@@ -1560,7 +1920,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1569,9 +1929,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.1",
@@ -1610,7 +1983,7 @@
         "data_table": "not_primary",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1621,9 +1994,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.2",
@@ -1662,7 +2048,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1673,9 +2059,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.3",
@@ -1713,7 +2112,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1724,9 +2123,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.4",
@@ -1765,7 +2177,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1775,9 +2187,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.5",
@@ -1821,7 +2246,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1832,9 +2257,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.6",
@@ -1873,7 +2311,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -1884,9 +2322,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.7",
@@ -1926,7 +2377,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1936,9 +2387,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.8",
@@ -1981,7 +2445,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -1991,9 +2455,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "4.9",
@@ -2036,7 +2513,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2047,9 +2524,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.1",
@@ -2086,7 +2576,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2097,9 +2587,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.2",
@@ -2137,7 +2640,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2148,9 +2651,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.3",
@@ -2187,7 +2703,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2196,9 +2712,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.4",
@@ -2235,7 +2764,7 @@
         "data_table": "supporting",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2243,9 +2772,22 @@
         "data_experimental"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.5",
@@ -2282,7 +2824,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2293,9 +2835,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.6",
@@ -2332,7 +2887,7 @@
         "data_table": "supporting",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2341,9 +2896,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.7",
@@ -2380,7 +2948,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2390,9 +2958,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.8",
@@ -2429,7 +3010,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2437,9 +3018,22 @@
         "data_experimental"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.9",
@@ -2476,16 +3070,29 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
         "mathematical"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.10",
@@ -2523,7 +3130,7 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2531,9 +3138,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "5.11",
@@ -2570,7 +3190,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2580,9 +3200,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.1",
@@ -2620,7 +3253,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2631,9 +3264,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.2",
@@ -2671,7 +3317,7 @@
         "data_table": "not_primary",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2681,9 +3327,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.3",
@@ -2721,7 +3380,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2732,9 +3391,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.4",
@@ -2771,7 +3443,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2780,9 +3452,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.5",
@@ -2824,7 +3509,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -2834,9 +3519,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.6",
@@ -2873,7 +3571,7 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2881,9 +3579,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.7",
@@ -2925,7 +3636,7 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2933,9 +3644,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.8",
@@ -2977,7 +3701,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -2985,9 +3709,22 @@
         "data_experimental"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "6.9",
@@ -3029,16 +3766,29 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
         "mathematical"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.1",
@@ -3075,7 +3825,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -3086,9 +3836,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.2",
@@ -3126,7 +3889,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3136,9 +3899,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.3",
@@ -3177,7 +3953,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3188,9 +3964,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.4",
@@ -3229,7 +4018,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3238,9 +4027,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.5",
@@ -3277,7 +4079,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3287,9 +4089,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.6",
@@ -3328,7 +4143,7 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3336,9 +4151,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.7",
@@ -3375,7 +4203,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -3384,9 +4212,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.8",
@@ -3424,7 +4265,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3434,9 +4275,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": "Particulate-model coverage is required by the CED even though the teacher PPT provides only partial coverage. Do not infer additional teacher-depth expectations beyond the CED requirement.",
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.9",
@@ -3473,7 +4327,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -3483,9 +4337,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.10",
@@ -3523,7 +4390,7 @@
         "data_table": "supporting",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3532,9 +4399,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.11",
@@ -3571,7 +4451,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -3582,9 +4462,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "7.12",
@@ -3622,7 +4515,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3633,9 +4526,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.1",
@@ -3674,7 +4580,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3684,9 +4590,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.2",
@@ -3725,7 +4644,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3734,9 +4653,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.3",
@@ -3776,7 +4708,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -3787,9 +4719,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.4",
@@ -3828,7 +4773,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -3838,9 +4783,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.5",
@@ -3879,7 +4837,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -3890,9 +4848,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.6",
@@ -3931,7 +4902,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3941,9 +4912,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.7",
@@ -3982,7 +4966,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -3991,9 +4975,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.8",
@@ -4030,7 +5027,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4040,9 +5037,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.9",
@@ -4079,7 +5089,7 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -4087,9 +5097,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.10",
@@ -4126,7 +5149,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4136,9 +5159,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": "Buffer-capacity treatment must remain at CED scope. Teacher PPT coverage is partial, while the Unit 8 scoring guide supplies direct assessment evidence.",
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "8.11",
@@ -4182,7 +5218,7 @@
         "data_table": "required",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4193,11 +5229,24 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": "Keep pH-and-solubility reasoning qualitative as required by the CED; do not introduce quantitative solubility-as-a-function-of-pH calculations.",
       "exclusions": [
         "Do not require calculations of solubility as a function of pH; the CED exclusion states these computations are not assessed."
-      ]
+      ],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.1",
@@ -4235,7 +5284,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -4245,9 +5294,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.2",
@@ -4284,7 +5346,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -4293,9 +5355,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.3",
@@ -4334,7 +5409,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -4344,9 +5419,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.4",
@@ -4389,7 +5477,7 @@
         "data_table": "not_primary",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -4398,9 +5486,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.5",
@@ -4437,7 +5538,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -4447,9 +5548,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.6",
@@ -4493,7 +5607,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4503,9 +5617,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": "Integrate solution-formation and thermodynamic ideas only to the CED Free Energy of Dissolution objective. The PPT material is split across sources and does not supply one direct sequence.",
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.7",
@@ -4536,7 +5663,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "not_primary"
       },
       "representation_levels": [
         "symbolic",
@@ -4546,9 +5673,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "general",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": "No direct teacher-PPT treatment was located in F0B. Keep required CED treatment concise and source-bounded using the CED and Zumdahl 11e until teacher depth is explicitly confirmed.",
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "context_only",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.8",
@@ -4587,7 +5727,7 @@
         "data_table": "not_primary",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4598,9 +5738,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.9",
@@ -4638,7 +5791,7 @@
         "data_table": "required",
         "particulate_model": "supporting",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4649,9 +5802,22 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.10",
@@ -4688,7 +5854,7 @@
         "data_table": "supporting",
         "particulate_model": "required",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4699,11 +5865,24 @@
         "macroscopic_connection"
       ],
       "experimental_reasoning_priority": "medium",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
       "exclusions": [
         "Do not require Nernst-equation calculations. The teacher PPT marks the Nernst equation as not required, and CED Topic 9.10 frames the relationship qualitatively through Q, K, E°, and distance from equilibrium."
-      ]
+      ],
+      "lab_planning": {
+        "candidate_class": "supporting_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     },
     {
       "topic_id": "9.11",
@@ -4741,7 +5920,7 @@
         "data_table": "required",
         "particulate_model": "not_primary",
         "vector": "not_used",
-        "lab_context": "pending_teacher_lab_source"
+        "lab_context": "supporting"
       },
       "representation_levels": [
         "symbolic",
@@ -4750,9 +5929,22 @@
         "visual_model"
       ],
       "experimental_reasoning_priority": "high",
-      "lab_mapping_status": "pending_teacher_lab_collection",
+      "lab_mapping_status": "college_board_public_guidance_mapped",
       "source_gap_guard": null,
-      "exclusions": []
+      "exclusions": [],
+      "lab_planning": {
+        "candidate_class": "core_candidate",
+        "source_basis_ids": [
+          "college-board-ap-chemistry-ced-lab-guidance",
+          "college-board-ap-chemistry-course-audit",
+          "college-board-hands-on-lab-faq"
+        ],
+        "source_basis_type": "CED/public College Board laboratory guidance",
+        "official_college_board_topic_assignment": false,
+        "teacher_specific_procedure": false,
+        "exact_lab_selected": false,
+        "procedure_rule": "Later lab design must be original or independently sourced and must satisfy the CED/public College Board laboratory requirements without attributing an unsourced procedure to College Board."
+      }
     }
   ],
   "f0c_exit_conditions": {
@@ -4761,9 +5953,11 @@
     "all_f0b_source_gaps_preserved": true,
     "equation_calculation_graph_diagram_data_table_particulate_model_coverage_mapped": true,
     "lab_context_capability_preserved": true,
-    "topic_specific_teacher_lab_mapping_complete": false,
+    "topic_specific_teacher_lab_mapping_complete": true,
     "vector_not_used": true,
     "ap_chemistry_runtime_fixture_unchanged": true,
-    "next_phase": "F0D Readiness Gate"
+    "next_phase": "F0D Readiness Gate rerun",
+    "lab_source_basis": "CED/public College Board laboratory guidance",
+    "exact_16_lab_sequence_selected": false
   }
 }

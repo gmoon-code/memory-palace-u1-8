@@ -1,0 +1,67 @@
+{
+  "schema": "story-method-ap-chemistry-lab-source-basis-1.0",
+  "course_id": "ap-chemistry",
+  "phase": "F0D-lab-clearance",
+  "status": "INVENTORIED_AND_AUTHORIZED_BY_USER_DIRECTIVE",
+  "directive_date": "2026-09-19",
+  "user_directive": "Use the CED/public College Board laboratory guidance as the lab-source basis.",
+  "sources": [
+    {
+      "source_id": "college-board-ap-chemistry-ced-lab-guidance",
+      "title": "AP Chemistry Course and Exam Description",
+      "source_kind": "uploaded_official_document",
+      "role": "Course framework, science practices, laboratory expectations, and AP Chemistry scope.",
+      "governing_requirements": [
+        "Minimum 25 percent of instructional time in laboratory investigations.",
+        "At least 16 hands-on laboratory investigations.",
+        "At least 6 of the 16 laboratory investigations conducted in guided-inquiry format."
+      ]
+    },
+    {
+      "source_id": "college-board-ap-chemistry-course-audit",
+      "title": "AP Chemistry Course Audit",
+      "source_kind": "public_college_board_web_guidance",
+      "url": "https://apcentral.collegeboard.org/courses/ap-chemistry/course-audit",
+      "verified_date": "2026-09-19",
+      "role": "Current 2026-27 curricular and resource requirements for laboratory instruction.",
+      "governing_requirements": [
+        "Laboratory investigations support required content and science-practice development.",
+        "Students record evidence of investigations in lab reports or notebooks and present evidence orally, in writing, or visually.",
+        "Students have access to AP Chemistry Guided Inquiry Experiments: Applying the Science Practices or other inquiry-based or student-directed activities that meet course objectives.",
+        "Virtual labs, simulations with student work, and safe home labs can satisfy hands-on laboratory time when circumstances prevent onsite access, with educator supervision and student records."
+      ]
+    },
+    {
+      "source_id": "college-board-hands-on-lab-faq",
+      "title": "What is a hands-on lab in an AP course?",
+      "source_kind": "public_college_board_web_guidance",
+      "url": "https://apcentral.collegeboard.org/courses/ap-course-audit/faqs/hands-on-lab",
+      "verified_date": "2026-09-19",
+      "role": "Public definition of hands-on and virtual laboratory experience for AP Course Audit.",
+      "governing_requirements": [
+        "Students manipulate, observe, explore, and think about science using concrete materials in a hands-on experience.",
+        "Virtual laboratory experiences involve student interaction with computer-generated objects, data, or phenomena to fulfill laboratory learning objectives.",
+        "Teacher-led demonstrations alone do not count as hands-on or virtual laboratory experiences."
+      ]
+    }
+  ],
+  "named_but_not_ingested_resource": {
+    "title": "AP Chemistry Guided Inquiry Experiments: Applying the Science Practices",
+    "status": "referenced_by_current_course_audit_not_ingested_as_source_document",
+    "rule": "Do not reproduce or attribute procedures from this manual unless the document is later supplied or otherwise lawfully available as a source."
+  },
+  "mapping_policy": {
+    "source_basis_scope": "The public College Board guidance establishes laboratory requirements, inquiry expectations, supervision/recordkeeping expectations, and acceptable laboratory modalities. It does not prescribe a topic-by-topic teacher lab sequence.",
+    "topic_mapping_method": "Use the existing F0C experimental-reasoning priority to mark CED topics as core lab candidates, supporting lab candidates, or context-only topics. This is a project planning classification, not a College Board official lab assignment.",
+    "procedure_rule": "Do not invent or attribute College Board procedures. Later original laboratory activities may be authored from CED objectives, science practices, public Course Audit requirements, and source-supported chemistry.",
+    "count_rule": "A later Challenge Lab plan must select at least 16 hands-on investigations, including at least 6 guided-inquiry investigations, and maintain at least 25 percent laboratory instructional time.",
+    "documentation_rule": "Later lab experiences must include student evidence records and opportunities to communicate findings."
+  },
+  "clearance_effect": {
+    "teacher_specific_lab_collection_required": false,
+    "f0d_teacher_lab_blocker_cleared": true,
+    "topic_specific_source_basis_available": true,
+    "exact_16_lab_sequence_selected": false,
+    "challenge_lab_design_authorized_after_f0d": true
+  }
+}
