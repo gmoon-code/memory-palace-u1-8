@@ -48,18 +48,43 @@ def test_teacher_course_registry_is_explicit_and_safe(admin_client):
     assert ap_biology["catalog_ready"] is True
     assert ap_biology["editable"] is True
 
+    ap_chemistry = next(item for item in payload["courses"] if item["course_id"] == "ap-chemistry")
+    assert ap_chemistry["catalog_ready"] is True
+    assert ap_chemistry["editable"] is False
+    assert ap_chemistry["catalog_mode"] == "read_only"
+
 
 def test_teacher_catalog_requests_are_course_scoped(admin_client):
     client, _ = admin_client
-    summary = client.get("/api/admin/catalog/summary?course_id=ap-biology")
-    assert summary.status_code == 200
-    assert summary.json()["course_id"] == "ap-biology"
-    course_map = client.get("/api/admin/catalog/course-map?course_id=ap-biology")
-    assert course_map.status_code == 200
-    assert len(course_map.json()["units"]) == 8
-    unprepared = client.get("/api/admin/catalog/summary?course_id=ap-chemistry")
-    assert unprepared.status_code == 404
-    assert "not available" in unprepared.json()["detail"]
+    biology = client.get("/api/admin/catalog/summary?course_id=ap-biology")
+    assert biology.status_code == 200
+    assert biology.json()["course_id"] == "ap-biology"
+    biology_map = client.get("/api/admin/catalog/course-map?course_id=ap-biology")
+    assert biology_map.status_code == 200
+    assert len(biology_map.json()["units"]) == 8
+
+    chemistry = client.get("/api/admin/catalog/summary?course_id=ap-chemistry")
+    assert chemistry.status_code == 200
+    assert chemistry.json()["course_id"] == "ap-chemistry"
+    assert chemistry.json()["counts"]["unit"] == 2
+    assert chemistry.json()["counts"]["journey"] == 2
+    assert chemistry.json()["counts"]["scene"] == 4
+    assert chemistry.json()["counts"]["concept"] == 8
+    assert chemistry.json()["counts"]["memory_object"] == 8
+    assert chemistry.json()["unresolved_reference_count"] == 0
+
+    chemistry_map = client.get("/api/admin/catalog/course-map?course_id=ap-chemistry")
+    assert chemistry_map.status_code == 200
+    assert [unit["title"] for unit in chemistry_map.json()["units"]] == [
+        "Atomic Structure and Properties",
+        "Molecular and Ionic Compound Structure and Properties",
+    ]
+
+    biology_unit = client.get("/api/admin/catalog/entity?course_id=ap-biology&entity_id=unit:unit-1")
+    chemistry_unit = client.get("/api/admin/catalog/entity?course_id=ap-chemistry&entity_id=unit:unit-1")
+    assert biology_unit.status_code == chemistry_unit.status_code == 200
+    assert biology_unit.json()["title"] == "Chemistry of Life"
+    assert chemistry_unit.json()["title"] == "Atomic Structure and Properties"
 
 
 def test_teacher_drafts_and_replacements_carry_course_identity(admin_client):
