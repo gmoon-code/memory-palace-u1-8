@@ -32,24 +32,22 @@ F0 uses the following source hierarchy for different purposes.
 
 1. The College Board Course and Exam Description defines AP Chemistry framework scope, required content, science practices, and unit/topic expectations.
 2. College Board clarifications and corrections modify or clarify the framework when applicable.
-3. Teacher-provided PowerPoints, guided notes, pacing documents, and handouts establish the intended classroom sequence, examples, emphases, and terminology.
-4. The selected textbook provides explanatory depth, worked examples, and reference support.
-5. Teacher-provided lab materials establish the intended experimental contexts and inquiry sequence.
-6. Public released College Board free-response materials may inform later assessment-format and reasoning coverage. Secure AP Classroom content is outside the repository source-ingestion workflow unless the user explicitly supplies material they are permitted to use.
+3. Teacher-provided PowerPoints establish the intended student understanding depth, examples, emphases, classroom terminology, and expected reasoning. Their U1 through U15 labels do not establish course sequence.
+4. Zumdahl, Zumdahl, and DeCoste, Chemistry, 11th edition, provides the chemistry-accuracy and explanatory reference within CED scope.
+5. Teacher-provided lab materials, when supplied, establish the intended experimental contexts and inquiry sequence.
+6. Teacher-supplied scoring guides inform assessment reasoning, representation, calculation, experimental-analysis, and explanation demands. Their source questions and scoring language are not copied verbatim into Story Method content.
 
 No source conflict is silently resolved. Conflicts are recorded and brought forward into the crosswalk.
 
-## Materials still required
+## F0A intake state
 
-The following source groups are pending before F0 can close.
+F0A Source Inventory is complete. The received source set contains the Fall 2024 AP Chemistry CED, Zumdahl Chemistry 11e, fifteen teacher PowerPoint decks, and ten scoring-guide PDFs covering CED Units 1 through 9.
 
-- Unit 1–9 AP Chemistry PowerPoints, guided notes, or equivalent teacher-created course materials
-- the primary textbook or textbook chapters used for the course
-- laboratory procedures, inquiry sequence, or lab manual materials
-- public or teacher-authored review and assessment resources that should inform retrieval and application design
-- a pacing guide or preferred sequence when the classroom sequence differs from the College Board suggested order
+The source inventory is `docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json`, with a human-readable audit at `docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.md`.
 
-A source can be absent if the user does not use it. The source register will record that absence explicitly.
+A separate teacher laboratory collection remains pending. A separate pacing guide is no longer required because the user explicitly directed the final course to follow CED organization and order.
+
+Additional sources may still be added before F0D. Each new source must be inventoried before it influences the crosswalk.
 
 ## Fixture discrepancies already identified
 
@@ -61,7 +59,7 @@ F0 records that discrepancy without changing the fixture. Units 3 through 9 are 
 
 F0 will close through four linked artifacts.
 
-- F0A Source Inventory records each supplied source, its role, coverage, version or edition, and ingestion status.
+- F0A Source Inventory records each supplied source, its role, coverage, version or edition, ingestion status, file size, page count, and SHA-256 fingerprint. F0A is complete.
 - F0B Framework Crosswalk maps every College Board topic and science-practice expectation to the teacher materials, textbook, labs, and later Story Method content components.
 - F0C Science Component Coverage Plan identifies where equations, calculations, graphs, diagrams, data tables, particulate models, and lab contexts are required.
 - F0D Readiness Gate verifies complete source coverage, records unresolved conflicts, locks unit titles and topic boundaries, and authorizes construction of the real AP Chemistry package.

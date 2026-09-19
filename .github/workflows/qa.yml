@@ -86,6 +86,7 @@ jobs:
       - run: python -m pytest -q tests/test_multi_course_classroom_browser_acceptance.py
       - run: python scripts/qa_multi_course_foundation_freeze.py
       - run: python scripts/qa_ap_chemistry_f0_source_intake.py
+      - run: python scripts/qa_ap_chemistry_f0a_source_inventory.py
       - run: python scripts/qa_content_studio_integration.py
       - run: python scripts/qa_zero_cost_rehearsal.py
       - run: python scripts/qa_zero_cost_runtime.py

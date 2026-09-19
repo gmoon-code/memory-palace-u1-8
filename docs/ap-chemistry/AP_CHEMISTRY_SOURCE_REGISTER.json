@@ -1,8 +1,8 @@
 {
-  "schema": "story-method-ap-chemistry-source-register-1.0",
+  "schema": "story-method-ap-chemistry-source-register-1.1",
   "course_id": "ap-chemistry",
   "phase": "F0",
-  "phase_status": "SOURCE_INTAKE_OPEN",
+  "phase_status": "F0A_COMPLETE",
   "verified_date": "2026-09-19",
   "framework_authority": {
     "source_id": "college-board-ap-chemistry-ced-fall-2024",
@@ -89,15 +89,17 @@
   "required_user_sources": [
     {
       "source_id": "teacher-ap-chemistry-unit-materials",
-      "status": "pending",
+      "status": "received",
       "requested_content": "Unit 1–9 PowerPoints, guided notes, handouts, or equivalent teacher-created instructional materials",
-      "role": "Teacher sequencing, examples, emphases, classroom terminology, and instructional context"
+      "role": "Student understanding depth, examples, emphases, classroom terminology, and expected reasoning after CED reordering",
+      "received": "15 PowerPoint decks, APCHEM-U1-PPT.pdf through APCHEM-U15-PPT.pdf"
     },
     {
       "source_id": "primary-ap-chemistry-textbook",
-      "status": "pending",
+      "status": "received",
       "requested_content": "Primary AP Chemistry or college-level chemistry textbook used for explanation depth",
-      "role": "Explanatory depth, worked examples, conceptual development, and reference support"
+      "role": "Chemistry accuracy, explanatory truth, worked reference, and terminology support within CED scope",
+      "received": "Chemistry, 11th edition, Steven S. Zumdahl, Susan A. Zumdahl, and Donald J. DeCoste"
     },
     {
       "source_id": "teacher-ap-chemistry-labs",
@@ -107,15 +109,17 @@
     },
     {
       "source_id": "teacher-ap-chemistry-assessment-resources",
-      "status": "pending",
+      "status": "received",
       "requested_content": "Public or teacher-authored review sheets, question sets, practice materials, or non-secure assessment resources",
-      "role": "Retrieval design, discrimination practice, application questions, and assessment coverage"
+      "role": "Assessment reasoning, representation, calculation, experimental-analysis, and explanation-demand evidence",
+      "received": "10 scoring-guide PDFs covering CED Units 1–9, with Unit 3 split into 3A and 3B"
     },
     {
       "source_id": "teacher-ap-chemistry-pacing",
-      "status": "pending",
+      "status": "not_required",
       "requested_content": "Pacing guide or preferred topic sequence if it differs from the College Board suggested sequence",
-      "role": "Journey ordering and classroom implementation"
+      "role": "No separate pacing source controls course order",
+      "received": "CED sequence explicitly selected by user"
     }
   ],
   "fixture_differences_to_reconcile": [
@@ -135,9 +139,20 @@
   "source_rules": [
     "Do not treat architecture-fixture content as an academic source.",
     "Do not generate real AP Chemistry curriculum records from general model knowledge during F0.",
-    "Do not silently reconcile conflicts among College Board documents, teacher materials, textbook materials, and lab resources.",
+    "Follow the College Board CED Unit 1 through Unit 9 structure and its topic order.",
+    "Treat PPT U1 through U15 labels as source labels only; do not preserve their numbering as curriculum order.",
+    "Use the teacher PowerPoints to set the intended level of student understanding, examples, emphases, and expected reasoning.",
+    "Use Zumdahl Chemistry 11e as the chemistry-accuracy and explanatory-truth reference within CED scope.",
+    "Use teacher-supplied scoring guides as assessment-demand evidence and do not copy source questions or scoring language verbatim into Story Method content.",
+    "Do not silently reconcile conflicts among the CED, teacher materials, textbook, or assessment evidence; record the conflict and apply the relevant authority rule explicitly.",
     "Record the source supporting every required topic before content production.",
-    "Use the College Board framework and current clarifications/corrections as the AP scope authority.",
     "Keep AP Chemistry status development, student_visible false, and editable false throughout F0."
-  ]
+  ],
+  "f0a_inventory": "docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json",
+  "user_source_directives": {
+    "organization_and_order": "Follow the College Board CED Unit 1 through Unit 9 organization and the topic order within each unit.",
+    "ppt_role": "The fifteen PPTs set the intended level of student understanding, examples, classroom emphases, and expected reasoning. PPT numbering is not a course sequence.",
+    "textbook_role": "Chemistry information and explanations must be true to Zumdahl, Zumdahl, and DeCoste, Chemistry, 11th edition.",
+    "scope_rule": "CED scope controls inclusion. Textbook depth beyond the CED is not automatically added."
+  }
 }

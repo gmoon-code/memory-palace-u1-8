@@ -1,0 +1,451 @@
+{
+  "schema": "story-method-ap-chemistry-f0a-source-inventory-1.0",
+  "course_id": "ap-chemistry",
+  "phase": "F0A",
+  "status": "COMPLETE",
+  "inventory_date": "2026-09-19",
+  "source_count": 27,
+  "total_pages": 3204,
+  "total_size_bytes": 142649849,
+  "authority_contract": {
+    "organization_and_order": "College Board AP Chemistry Course and Exam Description, effective Fall 2024",
+    "ap_scope": "College Board AP Chemistry Course and Exam Description, effective Fall 2024",
+    "student_understanding_depth": "Teacher PowerPoint collection APCHEM-U1-PPT.pdf through APCHEM-U15-PPT.pdf",
+    "chemistry_truth_and_explanatory_reference": "Chemistry, Eleventh Edition, Steven S. Zumdahl, Susan A. Zumdahl, and Donald J. DeCoste",
+    "assessment_reasoning_evidence": "Teacher-supplied AP Chemistry unit scoring-guide collection",
+    "architecture_fixture": "Excluded as an academic source"
+  },
+  "sequencing_contract": {
+    "rule": "The final course follows the CED Unit 1 through Unit 9 order and the topic order inside each CED unit.",
+    "ppt_numbering_rule": "PPT labels U1 through U15 are source labels only. They do not determine course units, journey order, or topic order.",
+    "crosswalk_rule": "F0B assigns each PPT concept to the CED topic where it belongs, including splitting one PPT across multiple CED units/topics when necessary."
+  },
+  "framework_source": {
+    "source_id": "college-board-ap-chemistry-ced-fall-2024-upload",
+    "filename": "ap-chemistry-course-and-exam-description.pdf",
+    "pages": 238,
+    "size_bytes": 7852554,
+    "sha256": "b5dfe8677ef3d88c613865d2e2a3e8d6125d652e2b24c71ef1e8ce4e011094f0",
+    "title": "AP Chemistry Course and Exam Description",
+    "effective": "Fall 2024",
+    "role": "course_structure_scope_and_science_practices_authority",
+    "status": "received"
+  },
+  "chemistry_reference": {
+    "source_id": "zumdahl-chemistry-11e-upload",
+    "filename": "Chemistry 11e By Steven Zumdahl, DeCoste.pdf",
+    "pages": 1218,
+    "size_bytes": 64339064,
+    "sha256": "ee534be1bdef04c6a8fac28efbee6bae5250046b67cb38a263906d4be74d3adc",
+    "title": "Chemistry",
+    "edition": "11th",
+    "authors": [
+      "Steven S. Zumdahl",
+      "Susan A. Zumdahl",
+      "Donald J. DeCoste"
+    ],
+    "publisher": "Cengage",
+    "copyright_year": 2024,
+    "role": "chemistry_truth_explanation_and_worked_reference",
+    "status": "received",
+    "scope_rule": "Use only CED-relevant material at the student-depth target established by the teacher materials."
+  },
+  "ced_order_lock": [
+    {
+      "unit_id": "unit-1",
+      "number": 1,
+      "title": "Atomic Structure and Properties",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-2",
+      "number": 2,
+      "title": "Compound Structure and Properties",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-3",
+      "number": 3,
+      "title": "Properties of Substances and Mixtures",
+      "mcq_weighting": "18%–22%"
+    },
+    {
+      "unit_id": "unit-4",
+      "number": 4,
+      "title": "Chemical Reactions",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-5",
+      "number": 5,
+      "title": "Kinetics",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-6",
+      "number": 6,
+      "title": "Thermochemistry",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-7",
+      "number": 7,
+      "title": "Equilibrium",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-8",
+      "number": 8,
+      "title": "Acids and Bases",
+      "mcq_weighting": "11%–15%"
+    },
+    {
+      "unit_id": "unit-9",
+      "number": 9,
+      "title": "Thermodynamics and Electrochemistry",
+      "mcq_weighting": "7%–9%"
+    }
+  ],
+  "teacher_instructional_materials": [
+    {
+      "source_id": "teacher-ppt-01",
+      "filename": "APCHEM-U1-PPT.pdf",
+      "pages": 80,
+      "size_bytes": 926881,
+      "sha256": "381525f4e1ebd0ab6f33e75786cb5b2f3bd1c5978b8dc687caa0d64a1a155798",
+      "source_label": "PPT U1",
+      "title": "Introduction to AP Chemistry",
+      "declared_coverage": "Significant figures, temperature scale and thermometer reading, nomenclature, and basic mole calculations",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-02",
+      "filename": "APCHEM-U2-PPT.pdf",
+      "pages": 88,
+      "size_bytes": 2304614,
+      "sha256": "6f6c9798b34525558bafcdfb30039eff6c69fd38e6e82be2100771acdd6e32dc",
+      "source_label": "PPT U2",
+      "title": "Stoichiometry",
+      "declared_coverage": "Atomic theory, average atomic mass, mass spectrometry, Avogadro's number, percent composition, empirical and molecular formulas, stoichiometry, limiting/excess reactants, and percent yield",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-03",
+      "filename": "APCHEM-U3-PPT.pdf",
+      "pages": 60,
+      "size_bytes": 1575323,
+      "sha256": "b0c338412c87171d755ea493cb449367fd0fa64d93b6119564b274c3c91a0ec7",
+      "source_label": "PPT U3",
+      "title": "Chemical Reactions",
+      "declared_coverage": "Precipitation, acid-base and oxidation-reduction reactions, net ionic equations, particulate representations, electrolytes, oxidation numbers, and oxidized/reduced species",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-04",
+      "filename": "APCHEM-U4-PPT.pdf",
+      "pages": 40,
+      "size_bytes": 1047208,
+      "sha256": "ee213ee4f62ca8b36faea10683a381e876c42c193d5422d24217874c9105d3d3",
+      "source_label": "PPT U4",
+      "title": "Introduction to Solutions",
+      "declared_coverage": "Molarity, dilutions, solution stoichiometry, precipitates, and acid-base titrations",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-05",
+      "filename": "APCHEM-U5-PPT.pdf",
+      "pages": 79,
+      "size_bytes": 1995391,
+      "sha256": "5a5e8e5ab17a280dc0d8ca5763685e2bbe569c8bad8edd3c70877504a41c1574",
+      "source_label": "PPT U5",
+      "title": "Gases",
+      "declared_coverage": "Gas properties, pressure, gas-law relationships, kinetic-molecular reasoning, and gas calculations",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-06",
+      "filename": "APCHEM-U6-PPT.pdf",
+      "pages": 59,
+      "size_bytes": 1912745,
+      "sha256": "f768c7cd6145129d700ec0f856745cc5f21519d4b427f21b0588bb762ea99cd1",
+      "source_label": "PPT U6",
+      "title": "Basic Thermochemistry",
+      "declared_coverage": "Heat, energy transfer, thermochemical equations, and enthalpy-change calculations",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-07",
+      "filename": "APCHEM-U7-PPT.pdf",
+      "pages": 107,
+      "size_bytes": 3542559,
+      "sha256": "4ecbef00181c1e72481fe88d4e7c90db4750c014e05a595ea4aea37c82ce9f8a",
+      "source_label": "PPT U7",
+      "title": "Electrons and Periodicity",
+      "declared_coverage": "Electron configurations, orbital diagrams, periodic trends, Coulomb's law, ionic radii, photoelectron spectroscopy, and the electromagnetic spectrum",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-08",
+      "filename": "APCHEM-U8-PPT.pdf",
+      "pages": 154,
+      "size_bytes": 4459595,
+      "sha256": "439063b681338f45a885239641257dc3ec4753f23999535688d2d0e9d2937f54",
+      "source_label": "PPT U8",
+      "title": "Chemical Bonding, Intermolecular Forces and Properties of Solids",
+      "declared_coverage": "Bond types and polarity, alloys, Lewis structures, resonance, VSEPR, molecular polarity, formal charge, bond order, internuclear distance, bond strength, hybridization, sigma/pi bonds, phase changes, intermolecular forces, liquids, and solids",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-09",
+      "filename": "APCHEM-U9-PPT.pdf",
+      "pages": 76,
+      "size_bytes": 3365172,
+      "sha256": "e82cd9933b1d5c855efaf9729b7a7cde7821075d51f1977bb8c7262003296937",
+      "source_label": "PPT U9",
+      "title": "Advanced Solutions",
+      "declared_coverage": "Molarity review, solution formation, mixture separation, solubility curves, solution preparation and glassware, solution energy changes, and Beer's law",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-10",
+      "filename": "APCHEM-U10-PPT.pdf",
+      "pages": 74,
+      "size_bytes": 1926919,
+      "sha256": "90c3dba575dd2917b8778515b143966198136299fb13c7bd17834d8f21762cd3",
+      "source_label": "PPT U10",
+      "title": "Chemical Kinetics",
+      "declared_coverage": "Reaction rates, rate laws, concentration change over time, elementary reactions, collision model, reaction-energy profiles, mechanisms, pre-equilibrium approximation, and catalysis",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-11",
+      "filename": "APCHEM-U11-PPT.pdf",
+      "pages": 81,
+      "size_bytes": 1077519,
+      "sha256": "de374814cf8b233d84b7bd60f2aeb4c5fb09e66f1944a521a108b2330c6bc287",
+      "source_label": "PPT U11",
+      "title": "General Equilibrium",
+      "declared_coverage": "Dynamic equilibrium, equilibrium constants, equilibrium calculations, reaction quotient reasoning, and Le Châtelier-type changes",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-12",
+      "filename": "APCHEM-U12-PPT.pdf",
+      "pages": 95,
+      "size_bytes": 2451148,
+      "sha256": "eae5787f400f7728c6c3607800e6c5acdfe9a2389d140c4708b555e8d485b8d2",
+      "source_label": "PPT U12",
+      "title": "Acid and Base Equilibrium",
+      "declared_coverage": "Strong and weak acids/bases, acid-base models, conjugate pairs, pH, equilibrium constants, buffers, and titration reasoning",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-13",
+      "filename": "APCHEM-U13-PPT.pdf",
+      "pages": 24,
+      "size_bytes": 877519,
+      "sha256": "21c077f427c11dec1eef0c608b23db1c550b4dc1c7007b7121ef0b9963e12d61",
+      "source_label": "PPT U13",
+      "title": "Solubility Product Constant: Ksp",
+      "declared_coverage": "Solubility equilibria, Ksp expressions, molar solubility, ICE-table patterns, and precipitation calculations",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-14",
+      "filename": "APCHEM-U14-PPT.pdf",
+      "pages": 79,
+      "size_bytes": 1701968,
+      "sha256": "e58c308ecb89439e910beaebc683e4f039034abd93408674172361c75ca326ee",
+      "source_label": "PPT U14",
+      "title": "Advanced Thermochemistry",
+      "declared_coverage": "Enthalpy review, Hess's law, formation enthalpy, entropy, free energy, thermodynamic favorability, and related calculations",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    },
+    {
+      "source_id": "teacher-ppt-15",
+      "filename": "APCHEM-U15-PPT.pdf",
+      "pages": 65,
+      "size_bytes": 2134619,
+      "sha256": "98bb6a23f644bd48d2cf9bda83b4b6bf033cea97ac472cfdd4e0efefb0c8519c",
+      "source_label": "PPT U15",
+      "title": "Electrochemistry",
+      "declared_coverage": "Redox review, galvanic/voltaic cells, electrolytic cells, cell potential and free energy, nonstandard conditions, electrolysis, and Faraday's law",
+      "role": "student_depth_and_classroom_emphasis",
+      "organization_authority": false,
+      "status": "received"
+    }
+  ],
+  "assessment_guides": [
+    {
+      "source_id": "assessment-guide-01",
+      "filename": "APCHEM-1-SG.pdf",
+      "pages": 66,
+      "size_bytes": 3661939,
+      "sha256": "563a6c4ea90ddbaf57eddf93b5e7ede2f5a2bd4f329686fd3cae923143e3a5b8",
+      "ced_unit_id": "unit-1",
+      "document_label": "Unit 1 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-02",
+      "filename": "APCHEM-2-SG.pdf",
+      "pages": 55,
+      "size_bytes": 2398939,
+      "sha256": "0518cab5de10a132f777517b9ebcd070be84b4b77088961fd8c4c080b0cadb48",
+      "ced_unit_id": "unit-2",
+      "document_label": "Unit 2 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-03",
+      "filename": "APCHEM-3A-SG.pdf",
+      "pages": 48,
+      "size_bytes": 2711551,
+      "sha256": "e43152558335d44dc4e4614ea21d84b38b57d23a032cb12bb105949adb37e34d",
+      "ced_unit_id": "unit-3",
+      "document_label": "Unit 3a - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-04",
+      "filename": "APCHEM-3B-SG.pdf",
+      "pages": 58,
+      "size_bytes": 3244068,
+      "sha256": "3cb02d9db3941f508bdc221172912c295f3727c5302e89d0981e02e3db392e36",
+      "ced_unit_id": "unit-3",
+      "document_label": "Unit 3b - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-05",
+      "filename": "APCHEM-4-SG.pdf",
+      "pages": 70,
+      "size_bytes": 4933045,
+      "sha256": "a99bb5969ef23f997ee8925fbc281338cee0d787311c1ece55b16f3039a435ab",
+      "ced_unit_id": "unit-4",
+      "document_label": "Unit 4 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-06",
+      "filename": "APCHEM-5-SG.pdf",
+      "pages": 67,
+      "size_bytes": 4170073,
+      "sha256": "16745da659191517473a3b274c8468b772103530bfd1960da2c86ab48cd92f0d",
+      "ced_unit_id": "unit-5",
+      "document_label": "Unit 5 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-07",
+      "filename": "APCHEM-6-SG.pdf",
+      "pages": 46,
+      "size_bytes": 4429120,
+      "sha256": "035f84c8cec29e914fc3f31de36086680ee0d3cffe8e6fb7f4201496e0ec20fe",
+      "ced_unit_id": "unit-6",
+      "document_label": "Unit 6 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-08",
+      "filename": "APCHEM-7-SG.pdf",
+      "pages": 58,
+      "size_bytes": 4673796,
+      "sha256": "d3cf5e6f7528f2e9fcec94f70c9a3aaf3ada92213e5feea7968cc75ea6739401",
+      "ced_unit_id": "unit-7",
+      "document_label": "Unit 7 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-09",
+      "filename": "APCHEM-8-SG.pdf",
+      "pages": 61,
+      "size_bytes": 4877876,
+      "sha256": "016e58cc10c8e0927dbc7c2615527fd29ae29b2e2d8df3027bc775e8e4dd6f06",
+      "ced_unit_id": "unit-8",
+      "document_label": "Unit 8 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    },
+    {
+      "source_id": "assessment-guide-10",
+      "filename": "APCHEM-9-SG.pdf",
+      "pages": 58,
+      "size_bytes": 4058644,
+      "sha256": "99b1caf4f2bbc6bfcc5621434b2a3f3c16ecd28e5a217833f60950e16a6dce44",
+      "ced_unit_id": "unit-9",
+      "document_label": "Unit 9 - MCQ & FRQ",
+      "role": "assessment_reasoning_and_representation_evidence",
+      "status": "received",
+      "republication_policy": "Do not copy source questions, scoring text, or answer explanations verbatim into Story Method content."
+    }
+  ],
+  "still_pending": [
+    {
+      "source_id": "teacher-ap-chemistry-labs",
+      "status": "pending",
+      "role": "Lab contexts, experimental reasoning, measurement, data analysis, and later Challenge Lab design",
+      "f0a_effect": "F0A can complete without this source. F0D must explicitly resolve whether separate teacher lab materials will be supplied."
+    }
+  ],
+  "explicitly_not_required": [
+    {
+      "source_id": "teacher-ap-chemistry-pacing",
+      "status": "not_required",
+      "reason": "The user explicitly directed the course to follow CED organization and order."
+    }
+  ],
+  "conflict_resolution_contract": [
+    "CED governs AP scope, unit boundaries, and topic order.",
+    "Zumdahl Chemistry 11e governs chemistry accuracy and explanatory truth.",
+    "Teacher PowerPoints govern the intended student understanding depth, examples, emphases, and classroom expectations after they are relocated into CED order.",
+    "Teacher-supplied scoring guides inform assessment reasoning, representations, and skill demand; they are evidence sources and are not copied verbatim.",
+    "When a source conflict appears, record it in the F0B crosswalk. Apply the relevant authority rule explicitly and preserve the conflict record."
+  ],
+  "next_phase": "F0B Framework Crosswalk"
+}

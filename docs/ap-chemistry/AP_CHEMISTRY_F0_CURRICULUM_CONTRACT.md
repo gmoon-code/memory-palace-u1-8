@@ -2,15 +2,17 @@
 
 ## Academic scope contract
 
-The real AP Chemistry course will be constructed from an explicit source crosswalk. Every required framework topic must trace to the current College Board framework. Explanatory depth, examples, classroom sequencing, and laboratory contexts must trace to supplied instructional sources or clearly identified public official resources.
+The real AP Chemistry course will be constructed from an explicit source crosswalk. Every required framework topic must trace to the current College Board framework. Course organization and topic order follow the CED. Explanatory depth, examples, classroom emphases, and expected student reasoning trace to the supplied teacher PowerPoints. Chemistry accuracy and explanatory truth trace to Zumdahl, Zumdahl, and DeCoste, Chemistry, 11th edition, within CED scope. Laboratory contexts trace to supplied laboratory sources when available.
 
 General model knowledge is not used to silently fill source gaps during source intake.
 
 ## Course organization
 
-The starting framework is the current nine-unit College Board organization. The user's preferred instructional sequence may later reorganize journeys or classroom ordering while preserving complete framework coverage.
+The final course uses the current nine-unit College Board organization in CED order. Topic ordering inside each unit also follows the CED.
 
-The final package may contain more than one journey per College Board unit. Journey boundaries are instructional and mnemonic design decisions. Unit and topic coverage remain auditable against the framework.
+Teacher PowerPoint labels U1 through U15 are source identifiers only. They do not become Story Method units. F0B relocates each source concept into the CED topic where it belongs and may split one PowerPoint across multiple CED topics or units.
+
+The final package may contain more than one journey per College Board unit. Journey boundaries are instructional and mnemonic design decisions. They may subdivide a CED unit while preserving CED topic order and complete auditable framework coverage.
 
 ## Story Method content contract
 
@@ -55,11 +57,13 @@ When sources disagree
 
 1. record the disagreement
 2. identify the source and version on each side
-3. determine whether the disagreement concerns AP framework scope, scientific explanation, notation, sequence, or classroom convention
-4. do not rewrite either source silently
-5. resolve the issue explicitly before the affected real content record is locked
+3. classify the disagreement as AP scope/organization, chemistry accuracy/explanation, student-depth expectation, assessment convention, notation, or classroom convention
+4. apply the authority rule explicitly: CED for AP scope and order, Zumdahl 11e for chemistry truth, teacher PowerPoints for intended student depth, and supplied scoring guides for assessment-demand evidence
+5. preserve AP-specific notation or conventions when the CED requires them while keeping the underlying chemistry consistent with Zumdahl
+6. do not rewrite or reconcile a disagreement silently
+7. resolve the issue before the affected real content record is locked
 
-The current fixture/official Unit 2 title difference is the first recorded example.
+The current fixture/official Unit 2 title difference is the first recorded architecture discrepancy.
 
 ## Readiness rule
 

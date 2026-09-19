@@ -32,10 +32,10 @@ def main() -> None:
         require(path.is_file(), f"missing F0 artifact: {path.relative_to(ROOT)}")
 
     data = json.loads(REGISTER.read_text(encoding="utf-8"))
-    require(data.get("schema") == "story-method-ap-chemistry-source-register-1.0", "unexpected source-register schema")
+    require(data.get("schema") == "story-method-ap-chemistry-source-register-1.1", "unexpected source-register schema")
     require(data.get("course_id") == "ap-chemistry", "source register is not AP Chemistry")
     require(data.get("phase") == "F0", "source register is not in F0")
-    require(data.get("phase_status") == "SOURCE_INTAKE_OPEN", "F0 source intake is not open")
+    require(data.get("phase_status") == "F0A_COMPLETE", "F0A source inventory has not completed")
 
     framework = data.get("framework_authority") or {}
     require(framework.get("publisher") == "College Board", "College Board is not recorded as framework authority")
@@ -58,9 +58,19 @@ def main() -> None:
     require([item.get("title") for item in units] == expected_titles, "official unit titles changed")
     require([item.get("unit_id") for item in units] == [f"unit-{n}" for n in range(1, 10)], "official unit IDs are incomplete")
 
-    requested = data.get("required_user_sources") or []
-    require(len(requested) >= 5, "source intake does not request the full teacher-source set")
-    require(all(item.get("status") == "pending" for item in requested), "F0 claims a user source that has not been ingested")
+    requested = {item.get("source_id"): item for item in data.get("required_user_sources") or []}
+    require(len(requested) >= 5, "source intake does not track the full teacher-source set")
+    require(requested["teacher-ap-chemistry-unit-materials"].get("status") == "received", "teacher PowerPoints are not registered")
+    require(requested["primary-ap-chemistry-textbook"].get("status") == "received", "primary textbook is not registered")
+    require(requested["teacher-ap-chemistry-assessment-resources"].get("status") == "received", "assessment guides are not registered")
+    require(requested["teacher-ap-chemistry-labs"].get("status") == "pending", "lab-source state changed unexpectedly")
+    require(requested["teacher-ap-chemistry-pacing"].get("status") == "not_required", "CED-order pacing directive is not registered")
+
+    directives = data.get("user_source_directives") or {}
+    require("College Board CED" in directives.get("organization_and_order", ""), "CED organization/order directive is missing")
+    require("PPT" in directives.get("ppt_role", ""), "PPT depth directive is missing")
+    require("Zumdahl" in directives.get("textbook_role", ""), "Zumdahl chemistry authority is missing")
+    require(data.get("f0a_inventory") == "docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json", "F0A inventory link is missing")
 
     differences = {item.get("issue_id"): item for item in data.get("fixture_differences_to_reconcile") or []}
     require("fixture-unit-2-title" in differences, "fixture Unit 2 title discrepancy is not recorded")
@@ -90,7 +100,8 @@ def main() -> None:
     print("AP CHEMISTRY F0 SOURCE INTAKE PASS")
     print("- current College Board framework authority is registered")
     print("- all nine official units and current titles are locked for crosswalking")
-    print("- teacher materials, textbook, labs, assessment resources, and pacing remain explicitly pending")
+    print("- teacher PowerPoints, Zumdahl 11e, and scoring guides are registered as received")
+    print("- CED order is locked; separate pacing is not required; teacher labs remain pending")
     print("- fixture discrepancies are recorded without changing fixture content")
     print("- AP Chemistry content and package files remain byte-for-byte at the frozen architecture baseline")
     print("- AP Chemistry remains development-only and hidden from students")
