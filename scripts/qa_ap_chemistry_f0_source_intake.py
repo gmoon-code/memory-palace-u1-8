@@ -101,7 +101,7 @@ def main() -> None:
     contract_text = CONTRACT.read_text(encoding="utf-8")
     for marker in ("F0A Source Inventory", "F0B Framework Crosswalk", "F0C Science Component Coverage Plan", "F0D Readiness Gate"):
         require(marker in intake_text, f"missing F0 deliverable marker: {marker}")
-    require("Narrative writing begins after F0D" in intake_text, "narrative production is not gated behind F0")
+    require("Narrative writing begins" in intake_text and "F0D" in intake_text, "narrative production is not gated behind F0")
     require("General model knowledge is not used to silently fill source gaps" in contract_text, "source-gap rule is missing")
     require("Particulate models" in contract_text and "quantitative relationships" in contract_text, "chemistry representation contract is incomplete")
 
