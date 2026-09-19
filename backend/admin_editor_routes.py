@@ -17,6 +17,7 @@ class CreateEditorDraftRequest(BaseModel):
 
 
 class SaveEditorDraftRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     payload: dict[str, Any]
     expected_version: int = Field(ge=1)
     note: str | None = Field(default=None, max_length=500)
@@ -111,6 +112,7 @@ def editor_draft_save(
             username=session.username,
             note=payload.note,
             autosave=payload.autosave,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_editor_error(exc)

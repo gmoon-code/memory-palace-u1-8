@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from backend import admin_auth, admin_catalog, admin_draft_routes
+from backend import admin_auth, admin_catalog, admin_draft_routes, admin_drafts
 from backend import main as main_module
 
 PASSWORD = "correct-horse-battery-staple"
@@ -233,3 +233,86 @@ def test_draft_registry_and_filters_are_course_scoped(draft_client):
     assert summary.status_code == 200
     assert summary.json()["course_id"] == "ap-biology"
     assert summary.json()["active_drafts"] == 1
+
+
+def test_identical_entity_ids_remain_isolated_across_courses(draft_client, monkeypatch: pytest.MonkeyPatch):
+    client, csrf = draft_client
+
+    monkeypatch.setattr(admin_catalog, "require_editable_course", lambda course_id: {"course_id": course_id})
+
+    def fake_entity(entity_id: str, course_id: str = "ap-biology"):
+        if entity_id != "unit:unit-1":
+            return None
+        return {
+            "id": entity_id,
+            "type": "unit",
+            "course_id": course_id,
+            "unit_id": "unit-1",
+            "title": "Biology Unit 1" if course_id == "ap-biology" else "Chemistry Unit 1",
+        }
+
+    monkeypatch.setattr(admin_catalog, "get_entity", fake_entity)
+
+    biology = client.post(
+        "/api/admin/drafts",
+        json={"entity_id": "unit:unit-1", "course_id": "ap-biology"},
+        headers=csrf_headers(csrf),
+    )
+    chemistry = client.post(
+        "/api/admin/drafts",
+        json={"entity_id": "unit:unit-1", "course_id": "ap-chemistry"},
+        headers=csrf_headers(csrf),
+    )
+    assert biology.status_code == chemistry.status_code == 200
+    biology_draft = biology.json()
+    chemistry_draft = chemistry.json()
+    assert biology_draft["draft_id"] != chemistry_draft["draft_id"]
+    assert biology_draft["title"] == "Biology Unit 1"
+    assert chemistry_draft["title"] == "Chemistry Unit 1"
+
+    wrong_course = client.get(
+        f"/api/admin/drafts/{chemistry_draft['draft_id']}?course_id=ap-biology"
+    )
+    assert wrong_course.status_code == 404
+
+    biology_payload = dict(biology_draft["payload"])
+    biology_payload["title"] = "Biology Unit 1 revised"
+    wrong_update = client.patch(
+        f"/api/admin/drafts/{biology_draft['draft_id']}",
+        json={
+            "course_id": "ap-chemistry",
+            "payload": biology_payload,
+            "expected_version": biology_draft["version"],
+        },
+        headers=csrf_headers(csrf),
+    )
+    assert wrong_update.status_code == 404
+
+    saved = client.patch(
+        f"/api/admin/drafts/{biology_draft['draft_id']}",
+        json={
+            "course_id": "ap-biology",
+            "payload": biology_payload,
+            "expected_version": biology_draft["version"],
+        },
+        headers=csrf_headers(csrf),
+    )
+    assert saved.status_code == 200
+    assert saved.json()["payload"]["title"] == "Biology Unit 1 revised"
+
+    chemistry_after = client.get(
+        f"/api/admin/drafts/{chemistry_draft['draft_id']}?course_id=ap-chemistry"
+    )
+    assert chemistry_after.status_code == 200
+    assert chemistry_after.json()["payload"]["title"] == "Chemistry Unit 1"
+
+    archived = client.post(
+        f"/api/admin/drafts/{biology_draft['draft_id']}/archive",
+        json={"course_id": "ap-biology", "expected_version": saved.json()["version"]},
+        headers=csrf_headers(csrf),
+    )
+    assert archived.status_code == 200
+    assert archived.json()["status"] == "archived"
+    assert client.get(
+        f"/api/admin/drafts/{chemistry_draft['draft_id']}?course_id=ap-chemistry"
+    ).json()["status"] == "draft"

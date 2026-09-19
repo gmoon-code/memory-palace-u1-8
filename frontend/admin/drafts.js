@@ -195,7 +195,7 @@ function renderDraftEditor(draft) {
 async function openDraft(draftId) {
   clearTimeout(draftState.autosaveTimer);
   try {
-    const draft = await draftApi(`/api/admin/drafts/${encodeURIComponent(draftId)}`);
+    const draft = await draftApi(`/api/admin/drafts/${encodeURIComponent(draftId)}?course_id=${encodeURIComponent(currentAdminCourseId())}`);
     renderDraftEditor(draft);
     await loadDraftHistory();
     await loadDraftDiff();
@@ -215,6 +215,7 @@ async function savePayload(payload, options = {}) {
       method: "PATCH",
       csrf: true,
       body: JSON.stringify({
+        course_id: draft.course_id || currentAdminCourseId(),
         payload,
         expected_version: draft.version,
         note: options.note || null,
@@ -323,8 +324,8 @@ async function loadDraftHistory() {
   if (!draft) return;
   try {
     const [revisions, snapshots] = await Promise.all([
-      draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/revisions?limit=200`),
-      draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/snapshots?limit=200`),
+      draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/revisions?limit=200&course_id=${encodeURIComponent(draft.course_id || currentAdminCourseId())}`),
+      draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/snapshots?limit=200&course_id=${encodeURIComponent(draft.course_id || currentAdminCourseId())}`),
     ]);
     renderRevisions(revisions);
     renderSnapshots(snapshots);
@@ -368,7 +369,7 @@ async function loadDraftDiff() {
   const draft = draftState.currentDraft;
   if (!draft) return;
   try {
-    const payload = await draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/compare`);
+    const payload = await draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/compare?course_id=${encodeURIComponent(draft.course_id || currentAdminCourseId())}`);
     renderDiff(payload);
   } catch (error) {
     el("draft-diff").innerHTML = `<p class="empty-state compact">${escapeHtml(error.message)}</p>`;
@@ -385,7 +386,7 @@ async function restoreRevision(revisionId) {
       {
         method: "POST",
         csrf: true,
-        body: JSON.stringify({ expected_version: draft.version }),
+        body: JSON.stringify({ course_id: draft.course_id || currentAdminCourseId(), expected_version: draft.version }),
       }
     );
     renderDraftEditor(restored);
@@ -405,7 +406,7 @@ async function restoreSnapshot(snapshotId) {
       {
         method: "POST",
         csrf: true,
-        body: JSON.stringify({ expected_version: draft.version }),
+        body: JSON.stringify({ course_id: draft.course_id || currentAdminCourseId(), expected_version: draft.version }),
       }
     );
     renderDraftEditor(restored);
@@ -425,7 +426,7 @@ async function createSnapshot() {
     await draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/snapshots`, {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ label: label.trim() }),
+      body: JSON.stringify({ course_id: draft.course_id || currentAdminCourseId(), label: label.trim() }),
     });
     await Promise.all([loadDraftHistory(), loadDraftWorkspace()]);
   } catch (error) {
@@ -443,7 +444,7 @@ async function toggleArchive() {
     const updated = await draftApi(`/api/admin/drafts/${encodeURIComponent(draft.draft_id)}/${endpoint}`, {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ expected_version: draft.version }),
+      body: JSON.stringify({ course_id: draft.course_id || currentAdminCourseId(), expected_version: draft.version }),
     });
     renderDraftEditor(updated);
     draftState.statusFilter = updated.status;

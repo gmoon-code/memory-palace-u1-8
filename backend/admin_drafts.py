@@ -12,7 +12,7 @@ import uuid
 from . import admin_catalog
 from .settings import ROOT
 
-DRAFT_SCHEMA = "story-method-content-studio-drafts-1.1"
+DRAFT_SCHEMA = "story-method-content-studio-drafts-1.2"
 ALLOWED_STATUSES = {"draft", "archived"}
 IMMUTABLE_ENTITY_FIELDS = {"id", "type", "course_id", "unit_id"}
 MAX_DIFF_ITEMS = 500
@@ -150,6 +150,11 @@ def _load(raw: str) -> Any:
     return json.loads(raw)
 
 
+def _ensure_draft_course(row: sqlite3.Row, course_id: str | None) -> None:
+    if course_id is not None and str(row["course_id"]) != str(course_id):
+        raise DraftNotFound("Draft not found for course")
+
+
 def _draft_from_row(row: sqlite3.Row, *, include_payload: bool = True) -> dict[str, Any]:
     result: dict[str, Any] = {
         "schema": DRAFT_SCHEMA,
@@ -257,6 +262,8 @@ def create_draft(entity_id: str, username: str, course_id: str = "ap-biology") -
     entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise DraftNotFound("Catalog entity not found")
+    if str(entity.get("course_id") or "") != str(course_id):
+        raise DraftError("Catalog entity course identity does not match requested course")
     now = _now()
     with _connect() as connection:
         existing = connection.execute(
@@ -310,11 +317,12 @@ def create_draft(entity_id: str, username: str, course_id: str = "ap-biology") -
     return result
 
 
-def get_draft(draft_id: str) -> dict[str, Any]:
+def get_draft(draft_id: str, *, course_id: str | None = None) -> dict[str, Any]:
     with _connect() as connection:
         row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
         if row is None:
             raise DraftNotFound("Draft not found")
+        _ensure_draft_course(row, course_id)
         revision_count = connection.execute(
             "SELECT COUNT(*) AS n FROM content_draft_revisions WHERE draft_id = ?", (draft_id,)
         ).fetchone()["n"]
@@ -376,6 +384,8 @@ def list_drafts(
 
 def _validate_payload_identity(draft: sqlite3.Row, payload: dict[str, Any]) -> None:
     current = _load(draft["payload_json"])
+    if "course_id" in payload and str(payload.get("course_id")) != str(draft["course_id"]):
+        raise DraftError("Draft field 'course_id' is immutable")
     for field in IMMUTABLE_ENTITY_FIELDS:
         if field in current and payload.get(field) != current.get(field):
             raise DraftError(f"Draft field '{field}' is immutable")
@@ -389,6 +399,7 @@ def update_draft(
     username: str,
     note: str | None = None,
     autosave: bool = False,
+    course_id: str | None = None,
 ) -> dict[str, Any]:
     if not isinstance(payload, dict):
         raise DraftError("Draft payload must be an object")
@@ -397,6 +408,7 @@ def update_draft(
         row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
         if row is None:
             raise DraftNotFound("Draft not found")
+        _ensure_draft_course(row, course_id)
         if row["status"] != "draft":
             raise DraftError("Archived drafts cannot be edited")
         if int(row["version"]) != int(expected_version):
@@ -439,12 +451,13 @@ def update_draft(
     return result
 
 
-def archive_draft(draft_id: str, *, expected_version: int, username: str) -> dict[str, Any]:
+def archive_draft(draft_id: str, *, expected_version: int, username: str, course_id: str | None = None) -> dict[str, Any]:
     with _connect() as connection:
         connection.execute("BEGIN IMMEDIATE")
         row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
         if row is None:
             raise DraftNotFound("Draft not found")
+        _ensure_draft_course(row, course_id)
         if row["status"] == "archived":
             connection.rollback()
             return _draft_from_row(row)
@@ -470,20 +483,21 @@ def archive_draft(draft_id: str, *, expected_version: int, username: str) -> dic
     return _draft_from_row(updated)
 
 
-def unarchive_draft(draft_id: str, *, expected_version: int, username: str) -> dict[str, Any]:
+def unarchive_draft(draft_id: str, *, expected_version: int, username: str, course_id: str | None = None) -> dict[str, Any]:
     with _connect() as connection:
         connection.execute("BEGIN IMMEDIATE")
         row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
         if row is None:
             raise DraftNotFound("Draft not found")
+        _ensure_draft_course(row, course_id)
         if row["status"] == "draft":
             connection.rollback()
             return _draft_from_row(row)
         if int(row["version"]) != int(expected_version):
             raise DraftConflict("Draft changed since this editor loaded it")
         conflict = connection.execute(
-            "SELECT draft_id FROM content_drafts WHERE entity_id = ? AND status = 'draft' AND draft_id <> ?",
-            (row["entity_id"], draft_id),
+            "SELECT draft_id FROM content_drafts WHERE course_id = ? AND entity_id = ? AND status = 'draft' AND draft_id <> ?",
+            (row["course_id"], row["entity_id"], draft_id),
         ).fetchone()
         if conflict is not None:
             raise DraftConflict("Another active draft already exists for this entity")
@@ -507,8 +521,8 @@ def unarchive_draft(draft_id: str, *, expected_version: int, username: str) -> d
     return _draft_from_row(updated)
 
 
-def list_revisions(draft_id: str, limit: int = 100) -> dict[str, Any]:
-    get_draft(draft_id)
+def list_revisions(draft_id: str, limit: int = 100, *, course_id: str | None = None) -> dict[str, Any]:
+    get_draft(draft_id, course_id=course_id)
     safe_limit = max(1, min(int(limit), 500))
     with _connect() as connection:
         rows = connection.execute(
@@ -518,7 +532,8 @@ def list_revisions(draft_id: str, limit: int = 100) -> dict[str, Any]:
     return {"draft_id": draft_id, "items": [_revision_from_row(row) for row in rows]}
 
 
-def get_revision(draft_id: str, revision_id: int) -> dict[str, Any]:
+def get_revision(draft_id: str, revision_id: int, *, course_id: str | None = None) -> dict[str, Any]:
+    get_draft(draft_id, course_id=course_id)
     with _connect() as connection:
         row = connection.execute(
             "SELECT * FROM content_draft_revisions WHERE draft_id = ? AND revision_id = ?",
@@ -535,13 +550,15 @@ def restore_revision(
     *,
     expected_version: int,
     username: str,
+    course_id: str | None = None,
 ) -> dict[str, Any]:
-    target = get_revision(draft_id, revision_id)
+    target = get_revision(draft_id, revision_id, course_id=course_id)
     with _connect() as connection:
         connection.execute("BEGIN IMMEDIATE")
         row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
         if row is None:
             raise DraftNotFound("Draft not found")
+        _ensure_draft_course(row, course_id)
         if row["status"] != "draft":
             raise DraftError("Archived drafts must be restored before revising")
         if int(row["version"]) != int(expected_version):
@@ -572,7 +589,7 @@ def restore_revision(
     return result
 
 
-def create_snapshot(draft_id: str, *, label: str, username: str) -> dict[str, Any]:
+def create_snapshot(draft_id: str, *, label: str, username: str, course_id: str | None = None) -> dict[str, Any]:
     clean_label = label.strip()[:160]
     if not clean_label:
         raise DraftError("Snapshot label is required")
@@ -580,6 +597,7 @@ def create_snapshot(draft_id: str, *, label: str, username: str) -> dict[str, An
         row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
         if row is None:
             raise DraftNotFound("Draft not found")
+        _ensure_draft_course(row, course_id)
         payload = _load(row["payload_json"])
         cursor = connection.execute(
             """
@@ -613,8 +631,8 @@ def create_snapshot(draft_id: str, *, label: str, username: str) -> dict[str, An
     return _snapshot_from_row(snapshot, include_payload=True)
 
 
-def list_snapshots(draft_id: str, limit: int = 100) -> dict[str, Any]:
-    get_draft(draft_id)
+def list_snapshots(draft_id: str, limit: int = 100, *, course_id: str | None = None) -> dict[str, Any]:
+    get_draft(draft_id, course_id=course_id)
     safe_limit = max(1, min(int(limit), 500))
     with _connect() as connection:
         rows = connection.execute(
@@ -630,7 +648,9 @@ def restore_snapshot(
     *,
     expected_version: int,
     username: str,
+    course_id: str | None = None,
 ) -> dict[str, Any]:
+    get_draft(draft_id, course_id=course_id)
     with _connect() as connection:
         snapshot = connection.execute(
             "SELECT * FROM content_draft_snapshots WHERE draft_id = ? AND snapshot_id = ?",
@@ -642,6 +662,7 @@ def restore_snapshot(
         row = connection.execute("SELECT * FROM content_drafts WHERE draft_id = ?", (draft_id,)).fetchone()
         if row is None:
             raise DraftNotFound("Draft not found")
+        _ensure_draft_course(row, course_id)
         if row["status"] != "draft":
             raise DraftError("Archived drafts must be restored before revising")
         if int(row["version"]) != int(expected_version):
@@ -711,12 +732,13 @@ def compare_draft(
     *,
     revision_id: int | None = None,
     snapshot_id: int | None = None,
+    course_id: str | None = None,
 ) -> dict[str, Any]:
-    draft = get_draft(draft_id)
+    draft = get_draft(draft_id, course_id=course_id)
     before_label = "published_catalog_base"
     before = draft["base_payload"]
     if revision_id is not None:
-        revision = get_revision(draft_id, revision_id)
+        revision = get_revision(draft_id, revision_id, course_id=course_id)
         before = revision["payload"]
         before_label = f"revision:{revision_id}"
     elif snapshot_id is not None:

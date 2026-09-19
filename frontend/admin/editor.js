@@ -675,6 +675,7 @@ async function saveDraft(autosave) {
       method: "PATCH",
       csrf: true,
       body: JSON.stringify({
+        course_id: editorState.currentDraft.course_id || currentAdminCourseId(),
         payload,
         expected_version: editorState.currentDraft.version,
         note: autosave ? "Field editor autosave" : "Field editor save",
@@ -711,7 +712,7 @@ async function reloadSavedDraft() {
   if (!editorState.currentDraft) return;
   if (editorState.dirty && !window.confirm("Discard local unsaved changes and reload the last saved draft revision?")) return;
   try {
-    const draft = await editorApi(`/api/admin/drafts/${encodeURIComponent(editorState.currentDraft.draft_id)}`);
+    const draft = await editorApi(`/api/admin/drafts/${encodeURIComponent(editorState.currentDraft.draft_id)}?course_id=${encodeURIComponent(editorState.currentDraft.course_id || currentAdminCourseId())}`);
     editorState.currentDraft = draft;
     editorState.workingPayload = structuredClone(draft.payload || {});
     editorState.dirty = false;
@@ -735,7 +736,7 @@ async function createEditorSnapshot() {
     await editorApi(`/api/admin/drafts/${encodeURIComponent(editorState.currentDraft.draft_id)}/snapshots`, {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ label: label.trim() }),
+      body: JSON.stringify({ course_id: editorState.currentDraft.course_id || currentAdminCourseId(), label: label.trim() }),
     });
     showMessage(`Snapshot “${label.trim()}” created.`);
   } catch (error) {

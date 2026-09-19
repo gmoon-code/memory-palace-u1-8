@@ -27,6 +27,7 @@ class CreateDraftRequest(BaseModel):
 
 
 class SaveDraftRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     payload: dict[str, Any]
     expected_version: int = Field(ge=1)
     note: str | None = Field(default=None, max_length=500)
@@ -34,14 +35,17 @@ class SaveDraftRequest(BaseModel):
 
 
 class VersionRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     expected_version: int = Field(ge=1)
 
 
 class RevisionRestoreRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     expected_version: int = Field(ge=1)
 
 
 class SnapshotRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     label: str = Field(min_length=1, max_length=160)
 
 
@@ -65,7 +69,7 @@ def _raise_draft_error(exc: Exception) -> None:
 
 
 @draft_router.get("/summary")
-def draft_summary(request: Request, course_id: str | None = None):
+def draft_summary(request: Request, course_id: str = "ap-biology"):
     _owner(request)
     return admin_drafts.draft_summary(course_id=course_id)
 
@@ -73,7 +77,7 @@ def draft_summary(request: Request, course_id: str | None = None):
 @draft_router.get("")
 def drafts_list(
     request: Request,
-    course_id: str | None = None,
+    course_id: str = "ap-biology",
     status: str | None = None,
     unit_id: str | None = None,
     entity_type: str | None = None,
@@ -102,10 +106,10 @@ def drafts_create(payload: CreateDraftRequest, request: Request):
 
 
 @draft_router.get("/{draft_id}")
-def draft_get(draft_id: str, request: Request):
+def draft_get(draft_id: str, request: Request, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_drafts.get_draft(draft_id)
+        return admin_drafts.get_draft(draft_id, course_id=course_id)
     except Exception as exc:
         _raise_draft_error(exc)
 
@@ -121,6 +125,7 @@ def draft_save(draft_id: str, payload: SaveDraftRequest, request: Request):
             username=session.username,
             note=payload.note,
             autosave=payload.autosave,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_draft_error(exc)
@@ -134,6 +139,7 @@ def draft_archive(draft_id: str, payload: VersionRequest, request: Request):
             draft_id,
             expected_version=payload.expected_version,
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_draft_error(exc)
@@ -147,25 +153,26 @@ def draft_restore_archive(draft_id: str, payload: VersionRequest, request: Reque
             draft_id,
             expected_version=payload.expected_version,
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_draft_error(exc)
 
 
 @draft_router.get("/{draft_id}/revisions")
-def draft_revisions(draft_id: str, request: Request, limit: int = 100):
+def draft_revisions(draft_id: str, request: Request, limit: int = 100, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_drafts.list_revisions(draft_id, limit=limit)
+        return admin_drafts.list_revisions(draft_id, limit=limit, course_id=course_id)
     except Exception as exc:
         _raise_draft_error(exc)
 
 
 @draft_router.get("/{draft_id}/revisions/{revision_id}")
-def draft_revision(draft_id: str, revision_id: int, request: Request):
+def draft_revision(draft_id: str, revision_id: int, request: Request, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_drafts.get_revision(draft_id, revision_id)
+        return admin_drafts.get_revision(draft_id, revision_id, course_id=course_id)
     except Exception as exc:
         _raise_draft_error(exc)
 
@@ -184,16 +191,17 @@ def draft_restore_revision(
             revision_id,
             expected_version=payload.expected_version,
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_draft_error(exc)
 
 
 @draft_router.get("/{draft_id}/snapshots")
-def draft_snapshots(draft_id: str, request: Request, limit: int = 100):
+def draft_snapshots(draft_id: str, request: Request, limit: int = 100, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_drafts.list_snapshots(draft_id, limit=limit)
+        return admin_drafts.list_snapshots(draft_id, limit=limit, course_id=course_id)
     except Exception as exc:
         _raise_draft_error(exc)
 
@@ -206,6 +214,7 @@ def draft_snapshot_create(draft_id: str, payload: SnapshotRequest, request: Requ
             draft_id,
             label=payload.label,
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_draft_error(exc)
@@ -225,6 +234,7 @@ def draft_snapshot_restore(
             snapshot_id,
             expected_version=payload.expected_version,
             username=session.username,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_draft_error(exc)
@@ -236,6 +246,7 @@ def draft_compare(
     request: Request,
     revision_id: int | None = None,
     snapshot_id: int | None = None,
+    course_id: str = "ap-biology",
 ):
     _owner(request)
     if revision_id is not None and snapshot_id is not None:
@@ -245,6 +256,7 @@ def draft_compare(
             draft_id,
             revision_id=revision_id,
             snapshot_id=snapshot_id,
+            course_id=course_id,
         )
     except Exception as exc:
         _raise_draft_error(exc)

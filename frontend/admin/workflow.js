@@ -107,6 +107,10 @@ function currentView() {
   return document.querySelector(".nav-item.active")?.dataset.view || "";
 }
 
+function currentWorkflowCourseId() {
+  return document.getElementById("admin-course-select")?.value || "ap-biology";
+}
+
 function preferredViewForType(entityType) {
   return WORKFLOW_EDIT_VIEW[entityType] || "course-map";
 }
@@ -115,6 +119,7 @@ function normalizeContext(record, extras = {}) {
   const entityId = record?.id || record?.entity_id || extras.entity_id || "";
   const entityType = record?.type || record?.entity_type || extras.entity_type || "";
   const unitId = record?.unit_id || extras.unit_id || "";
+  const courseId = record?.course_id || extras.course_id || currentWorkflowCourseId();
   const title = record?.title || record?.canonical_term || record?.name || extras.title || entityId;
   const active = extras.preferred_view || currentView();
   const typeDefault = preferredViewForType(entityType);
@@ -126,6 +131,7 @@ function normalizeContext(record, extras = {}) {
     ? active
     : typeDefault;
   return {
+    course_id: courseId,
     entity_id: entityId,
     entity_type: entityType,
     unit_id: unitId,
@@ -267,7 +273,7 @@ function ensureWorkflowUi() {
 async function refreshDraftContext({ quiet = true } = {}) {
   const context = workflowState.context;
   if (!context?.entity_id || !context.entity_type) return null;
-  const params = new URLSearchParams({ status: "draft", entity_type: context.entity_type, limit: "500" });
+  const params = new URLSearchParams({ course_id: context.course_id || currentWorkflowCourseId(), status: "draft", entity_type: context.entity_type, limit: "500" });
   if (context.unit_id) params.set("unit_id", context.unit_id);
   try {
     const payload = await workflowApi(`/api/admin/drafts?${params.toString()}`);
@@ -294,7 +300,7 @@ async function resolveEntityContext(entityId, preferredView = "") {
   let record = null;
   let draft = null;
   try {
-    const payload = await workflowApi(`/api/admin/catalog/entity?entity_id=${encodeURIComponent(entityId)}`);
+    const payload = await workflowApi(`/api/admin/catalog/entity?entity_id=${encodeURIComponent(entityId)}&course_id=${encodeURIComponent(currentWorkflowCourseId())}`);
     record = payload?.entity || payload;
   } catch {
     try {
@@ -318,8 +324,9 @@ async function resolveEntityContext(entityId, preferredView = "") {
 async function resolveDraftContext(draftId) {
   if (!draftId) return;
   try {
-    const draft = await workflowApi(`/api/admin/drafts/${encodeURIComponent(draftId)}`);
+    const draft = await workflowApi(`/api/admin/drafts/${encodeURIComponent(draftId)}?course_id=${encodeURIComponent(currentWorkflowCourseId())}`);
     setContext(normalizeContext(draft.payload || {}, {
+      course_id: draft.course_id,
       entity_id: draft.entity_id,
       entity_type: draft.entity_type,
       unit_id: draft.unit_id,

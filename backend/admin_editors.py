@@ -532,8 +532,8 @@ def create_editor_draft(entity_id: str, username: str, course_id: str = "ap-biol
         with admin_drafts._connect() as connection:
             connection.execute("BEGIN IMMEDIATE")
             row = connection.execute(
-                "SELECT version, status FROM content_drafts WHERE draft_id = ?",
-                (draft["draft_id"],),
+                "SELECT version, status FROM content_drafts WHERE draft_id = ? AND course_id = ?",
+                (draft["draft_id"], course_id),
             ).fetchone()
             if row is None:
                 raise admin_drafts.DraftNotFound("Draft not found")
@@ -567,7 +567,7 @@ def create_editor_draft(entity_id: str, username: str, course_id: str = "ap-biol
                 ),
             )
             connection.commit()
-        draft = admin_drafts.get_draft(draft["draft_id"])
+        draft = admin_drafts.get_draft(draft["draft_id"], course_id=course_id)
         draft["existing"] = False
 
     draft["editor_schema"] = schema_for(draft["entity_type"])
@@ -582,8 +582,9 @@ def save_editor_draft(
     username: str,
     note: str | None,
     autosave: bool,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
-    current = admin_drafts.get_draft(draft_id)
+    current = admin_drafts.get_draft(draft_id, course_id=course_id)
     entity_type = str(current["entity_type"])
     validation = validate_payload(entity_type, payload)
     saved = admin_drafts.update_draft(
@@ -593,6 +594,7 @@ def save_editor_draft(
         username=username,
         note=note,
         autosave=autosave,
+        course_id=course_id,
     )
     saved["editor_schema"] = schema_for(entity_type)
     saved["editor_validation"] = validation
