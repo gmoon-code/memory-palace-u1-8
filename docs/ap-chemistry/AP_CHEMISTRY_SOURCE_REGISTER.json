@@ -1,8 +1,8 @@
 {
-  "schema": "story-method-ap-chemistry-source-register-1.1",
+  "schema": "story-method-ap-chemistry-source-register-1.2",
   "course_id": "ap-chemistry",
   "phase": "F0",
-  "phase_status": "F0A_COMPLETE",
+  "phase_status": "F0B_COMPLETE",
   "verified_date": "2026-09-19",
   "framework_authority": {
     "source_id": "college-board-ap-chemistry-ced-fall-2024",
@@ -14,7 +14,9 @@
     "ced_pdf": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
     "course_changes_page": "https://apcentral.collegeboard.org/courses/how-ap-develops-courses-and-exams/course-changes-overview",
     "corrections_source": "AP Chemistry Course and Exam Description Clarifications and Corrections",
-    "role": "Authoritative course framework, required content, science practices, unit topics, and exam-aligned scope"
+    "role": "Authoritative course framework, required content, science practices, unit topics, and exam-aligned scope",
+    "corrections_verified": "June 2026",
+    "corrections_topic_effect": "No topic-level content, unit-order, or science-practice changes listed; June 2026 corrections concern front matter, resource links, and Progress Check language."
   },
   "supplemental_official_sources": [
     {
@@ -154,5 +156,23 @@
     "ppt_role": "The fifteen PPTs set the intended level of student understanding, examples, classroom emphases, and expected reasoning. PPT numbering is not a course sequence.",
     "textbook_role": "Chemistry information and explanations must be true to Zumdahl, Zumdahl, and DeCoste, Chemistry, 11th edition.",
     "scope_rule": "CED scope controls inclusion. Textbook depth beyond the CED is not automatically added."
+  },
+  "f0b_crosswalk": "docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json",
+  "f0b_summary": {
+    "topic_count": 91,
+    "complete_source_crosswalk": 84,
+    "partial_teacher_coverage": 6,
+    "teacher_depth_gap": 1,
+    "source_gap_topic_ids": [
+      "1.4",
+      "2.2",
+      "7.8",
+      "8.10",
+      "8.11",
+      "9.6",
+      "9.7"
+    ],
+    "lab_mapping_status": "pending_teacher_lab_collection",
+    "next_phase": "F0C Science Component Coverage Plan"
   }
 }

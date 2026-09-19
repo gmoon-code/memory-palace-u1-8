@@ -1,0 +1,2736 @@
+{
+  "schema": "story-method-ap-chemistry-f0b-framework-crosswalk-1.0",
+  "course_id": "ap-chemistry",
+  "phase": "F0B",
+  "status": "COMPLETE_WITH_RECORDED_SOURCE_GAPS",
+  "crosswalk_date": "2026-09-19",
+  "source_inventory": "docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json",
+  "authority_contract": {
+    "organization_scope_and_order": "College Board AP Chemistry Course and Exam Description effective Fall 2024",
+    "official_corrections": "College Board AP Chemistry Clarifications and Corrections implemented as of June 2026",
+    "corrections_effect_on_topic_crosswalk": "No topic-level content, unit-order, or science-practice changes are listed in the June 2026 corrections document; listed changes concern front matter, resource links, and Progress Check language.",
+    "student_depth": "Teacher PowerPoints APCHEM-U1-PPT.pdf through APCHEM-U15-PPT.pdf, relocated into CED order",
+    "chemistry_truth": "Zumdahl, Zumdahl, and DeCoste, Chemistry 11e, constrained to CED scope",
+    "assessment_demand": "Teacher-supplied unit scoring guides, used as evidence and never as verbatim content",
+    "lab_context": "Teacher laboratory collection still pending"
+  },
+  "science_practice_families": {
+    "1": "Models and Representations",
+    "2": "Question and Method",
+    "3": "Representing Data and Phenomena",
+    "4": "Model Analysis",
+    "5": "Mathematical Routines",
+    "6": "Argumentation"
+  },
+  "topic_count": 91,
+  "coverage_summary": {
+    "complete_source_crosswalk": 84,
+    "partial_teacher_coverage": 6,
+    "teacher_depth_gap": 1,
+    "lab_mapping_pending_for_all_topics": true
+  },
+  "source_gap_topic_ids": [
+    "1.4",
+    "2.2",
+    "7.8",
+    "8.10",
+    "8.11",
+    "9.6",
+    "9.7"
+  ],
+  "ced_topics": [
+    {
+      "topic_id": "1.1",
+      "unit_id": "unit-1",
+      "title": "Moles and Molar Mass",
+      "ced_pdf_page": 37,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-01",
+          "pages": "50-62",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-02",
+          "pages": "26-37",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "1.7 Dimensional Analysis",
+        "3.3 The Mole",
+        "3.4 Molar Mass"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "1.2",
+      "unit_id": "unit-1",
+      "title": "Mass Spectra of Elements",
+      "ced_pdf_page": 38,
+      "ced_suggested_skill": {
+        "code": "5.D",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-02",
+          "pages": "8-23",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "3.2 Atomic Masses"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "1.3",
+      "unit_id": "unit-1",
+      "title": "Elemental Composition of Pure Substances",
+      "ced_pdf_page": 39,
+      "ced_suggested_skill": {
+        "code": "2.A",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-02",
+          "pages": "42-66",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "3.6 Percent Composition of Compounds",
+        "3.7 Determining the Formula of a Compound"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "1.4",
+      "unit_id": "unit-1",
+      "title": "Composition of Mixtures",
+      "ced_pdf_page": 40,
+      "ced_suggested_skill": {
+        "code": "5.A",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-02",
+          "pages": "42-51, 82",
+          "coverage": "partial"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "1.10 Classification of Matter",
+        "3.6 Percent Composition of Compounds",
+        "3.7 Determining the Formula of a Compound"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "partial_teacher_coverage",
+      "source_note": "The PPT collection teaches percent composition and purity-related calculations but does not present the CED composition-of-mixtures topic as a distinct instructional sequence. Preserve the CED framing during production.",
+      "assessment_note": null
+    },
+    {
+      "topic_id": "1.5",
+      "unit_id": "unit-1",
+      "title": "Atomic Structure and Electron Configuration",
+      "ced_pdf_page": 41,
+      "ced_suggested_skill": {
+        "code": "1.A",
+        "practice_family": "Models and Representations"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-07",
+          "pages": "2-43",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-02",
+          "pages": "2-7",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "2.5 The Modern View of Atomic Structure: An Introduction",
+        "7.5 The Quantum Mechanical Model of the Atom",
+        "7.7 Orbital Shapes and Energies",
+        "7.9 Polyelectronic Atoms",
+        "7.11 The Aufbau Principle and the Periodic Table",
+        "8.4 Ions: Electron Configurations and Sizes"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "1.6",
+      "unit_id": "unit-1",
+      "title": "Photoelectron Spectroscopy",
+      "ced_pdf_page": 43,
+      "ced_suggested_skill": {
+        "code": "4.B",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-07",
+          "pages": "71-80",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "7.12 Periodic Trends in Atomic Properties (PES discussion)"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "1.7",
+      "unit_id": "unit-1",
+      "title": "Periodic Trends",
+      "ced_pdf_page": 44,
+      "ced_suggested_skill": {
+        "code": "4.A",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-07",
+          "pages": "44-70",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "7.12 Periodic Trends in Atomic Properties",
+        "8.2 Electronegativity",
+        "8.4 Ions: Electron Configurations and Sizes"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "1.8",
+      "unit_id": "unit-1",
+      "title": "Valence Electrons and Ionic Compounds",
+      "ced_pdf_page": 45,
+      "ced_suggested_skill": {
+        "code": "4.C",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-07",
+          "pages": "44-70",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "3-11",
+          "coverage": "supporting"
+        },
+        {
+          "source_id": "teacher-ppt-01",
+          "pages": "20-41",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "2.6 Molecules and Ions",
+        "2.7 An Introduction to the Periodic Table",
+        "7.12 Periodic Trends in Atomic Properties",
+        "8.1 Types of Chemical Bonds",
+        "8.4 Ions: Electron Configurations and Sizes"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-01"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "2.1",
+      "unit_id": "unit-2",
+      "title": "Types of Chemical Bonds",
+      "ced_pdf_page": 51,
+      "ced_suggested_skill": {
+        "code": "6.A",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "2-31",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "8.1 Types of Chemical Bonds",
+        "8.2 Electronegativity",
+        "8.3 Bond Polarity and Dipole Moments"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-02"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "2.2",
+      "unit_id": "unit-2",
+      "title": "Intramolecular Force and Potential Energy",
+      "ced_pdf_page": 53,
+      "ced_suggested_skill": {
+        "code": "3.A",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "92-106",
+          "coverage": "partial"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "8.5 Energy Effects in Binary Ionic Compounds",
+        "8.7 The Covalent Chemical Bond: A Model",
+        "8.8 Covalent Bond Energies and Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-02"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "partial_teacher_coverage",
+      "source_note": "Teacher slides directly teach bond order, internuclear distance, bond strength, and bond-energy calculations. They do not clearly teach the full CED potential-energy-versus-internuclear-distance curve as a dedicated concept. CED and Zumdahl must supply that representation without exceeding PPT depth.",
+      "assessment_note": null
+    },
+    {
+      "topic_id": "2.3",
+      "unit_id": "unit-2",
+      "title": "Structure of Ionic Solids",
+      "ced_pdf_page": 54,
+      "ced_suggested_skill": {
+        "code": "4.C",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "9-11, 146-154",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "8.5 Energy Effects in Binary Ionic Compounds",
+        "10.8 Ionic Solids"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-02"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "2.4",
+      "unit_id": "unit-2",
+      "title": "Structure of Metals and Alloys",
+      "ced_pdf_page": 55,
+      "ced_suggested_skill": {
+        "code": "4.C",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "24-31, 146-151",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "10.5 Structure and Bonding in Metals"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-02"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "2.5",
+      "unit_id": "unit-2",
+      "title": "Lewis Diagrams",
+      "ced_pdf_page": 56,
+      "ced_suggested_skill": {
+        "code": "3.B",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "32-54",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "8.9 The Localized Electron Bonding Model",
+        "8.10 Lewis Structures",
+        "8.11 Exceptions to the Octet Rule"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-02"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "2.6",
+      "unit_id": "unit-2",
+      "title": "Resonance and Formal Charge",
+      "ced_pdf_page": 57,
+      "ced_suggested_skill": {
+        "code": "6.C",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "55-63, 88-91",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "8.10 Lewis Structures",
+        "8.12 Resonance"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-02"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "2.7",
+      "unit_id": "unit-2",
+      "title": "VSEPR and Hybridization",
+      "ced_pdf_page": 58,
+      "ced_suggested_skill": {
+        "code": "6.C",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "64-87, 92-110",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "8.13 Molecular Structure: The VSEPR Model",
+        "9.1 Hybridization and the Localized Electron Model",
+        "8.3 Bond Polarity and Dipole Moments"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-02"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.1",
+      "unit_id": "unit-3",
+      "title": "Intermolecular and Interparticle Forces",
+      "ced_pdf_page": 65,
+      "ced_suggested_skill": {
+        "code": "4.D",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "122-144",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "10.2 Intermolecular Forces",
+        "11.2 The Energies of Solution Formation"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.2",
+      "unit_id": "unit-3",
+      "title": "Properties of Solids",
+      "ced_pdf_page": 67,
+      "ced_suggested_skill": {
+        "code": "4.C",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "146-154",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "10.4 An Introduction to Structures and Types of Solids",
+        "10.5 Structure and Bonding in Metals",
+        "10.6 Carbon and Silicon: Network Atomic Solids",
+        "10.7 Molecular Solids",
+        "10.8 Ionic Solids"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.3",
+      "unit_id": "unit-3",
+      "title": "Solids, Liquids, and Gases",
+      "ced_pdf_page": 69,
+      "ced_suggested_skill": {
+        "code": "3.C",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "112-121, 145-151",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-05",
+          "pages": "2",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "10.1 A Review of States of Matter",
+        "10.3 The Liquid State",
+        "10.9 Vapor Pressure and Changes of State"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.4",
+      "unit_id": "unit-3",
+      "title": "Ideal Gas Law",
+      "ced_pdf_page": 70,
+      "ced_suggested_skill": {
+        "code": "5.C",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-05",
+          "pages": "22-33, 45-61",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "5.2 The Gas Laws of Boyle, Charles, and Avogadro",
+        "5.3 The Ideal Gas Law",
+        "5.4 Gas Stoichiometry",
+        "5.5 Dalton’s Law of Partial Pressures"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.5",
+      "unit_id": "unit-3",
+      "title": "Kinetic Molecular Theory",
+      "ced_pdf_page": 71,
+      "ced_suggested_skill": {
+        "code": "4.A",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-05",
+          "pages": "62-79",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "5.6 The Kinetic Molecular Theory of Gases",
+        "5.7 Effusion and Diffusion"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.6",
+      "unit_id": "unit-3",
+      "title": "Deviation from Ideal Gas Law",
+      "ced_pdf_page": 72,
+      "ced_suggested_skill": {
+        "code": "6.E",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-05",
+          "pages": "34-41",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "5.8 Real Gases",
+        "5.9 Characteristics of Several Real Gases"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.7",
+      "unit_id": "unit-3",
+      "title": "Solutions and Mixtures",
+      "ced_pdf_page": 73,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-04",
+          "pages": "2-18",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-09",
+          "pages": "2-5, 48-61",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.3 The Composition of Solutions",
+        "11.1 Solution Composition"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.8",
+      "unit_id": "unit-3",
+      "title": "Representations of Solutions",
+      "ced_pdf_page": 74,
+      "ced_suggested_skill": {
+        "code": "3.C",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-09",
+          "pages": "7-16",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "11-19",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.1 Water, the Common Solvent",
+        "4.2 The Nature of Aqueous Solutions: Strong and Weak Electrolytes",
+        "11.2 The Energies of Solution Formation"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.9",
+      "unit_id": "unit-3",
+      "title": "Separation of Solutions and Mixtures",
+      "ced_pdf_page": 75,
+      "ced_suggested_skill": {
+        "code": "2.C",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-09",
+          "pages": "29-40",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "1.11 Separation of Mixtures"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.10",
+      "unit_id": "unit-3",
+      "title": "Solubility",
+      "ced_pdf_page": 76,
+      "ced_suggested_skill": {
+        "code": "4.D",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-09",
+          "pages": "7-24, 41-47",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "11.2 The Energies of Solution Formation",
+        "11.3 Factors Affecting Solubility"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.11",
+      "unit_id": "unit-3",
+      "title": "Spectroscopy and the Electromagnetic Spectrum",
+      "ced_pdf_page": 77,
+      "ced_suggested_skill": {
+        "code": "4.A",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-07",
+          "pages": "81-107",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-09",
+          "pages": "68-76",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "7.1 Electromagnetic Radiation",
+        "Appendix 7 Molecular Spectroscopy: An Introduction"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.12",
+      "unit_id": "unit-3",
+      "title": "Properties of Photons",
+      "ced_pdf_page": 78,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-07",
+          "pages": "81-107",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "7.1 Electromagnetic Radiation",
+        "7.2 The Nature of Matter"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "3.13",
+      "unit_id": "unit-3",
+      "title": "Beer-Lambert Law",
+      "ced_pdf_page": 79,
+      "ced_suggested_skill": {
+        "code": "2.E",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-09",
+          "pages": "68-76",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "Appendix 7 Molecular Spectroscopy: Beer–Lambert law and quantitative analysis"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-03",
+        "assessment-guide-04"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.1",
+      "unit_id": "unit-4",
+      "title": "Introduction for Reactions",
+      "ced_pdf_page": 85,
+      "ced_suggested_skill": {
+        "code": "2.B",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "2-7",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "3.8 Chemical Equations",
+        "3.9 Balancing Chemical Equations",
+        "4.4 Types of Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.2",
+      "unit_id": "unit-4",
+      "title": "Net Ionic Equations",
+      "ced_pdf_page": 86,
+      "ced_suggested_skill": {
+        "code": "5.E",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "8-35",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.5 Precipitation Reactions",
+        "4.6 Describing Reactions in Solution",
+        "4.8 Acid–Base Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.3",
+      "unit_id": "unit-4",
+      "title": "Representations of Reactions",
+      "ced_pdf_page": 87,
+      "ced_suggested_skill": {
+        "code": "3.B",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "11-19, 36-38",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.2 The Nature of Aqueous Solutions: Strong and Weak Electrolytes",
+        "4.6 Describing Reactions in Solution"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.4",
+      "unit_id": "unit-4",
+      "title": "Physical and Chemical Changes",
+      "ced_pdf_page": 88,
+      "ced_suggested_skill": {
+        "code": "6.B",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "2",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "1.10 Classification of Matter",
+        "3.8 Chemical Equations",
+        "4.4 Types of Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.5",
+      "unit_id": "unit-4",
+      "title": "Stoichiometry",
+      "ced_pdf_page": 89,
+      "ced_suggested_skill": {
+        "code": "5.C",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-02",
+          "pages": "67-88",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-04",
+          "pages": "20-27",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "3.10 Stoichiometric Calculations: Amounts of Reactants and Products",
+        "3.11 The Concept of Limiting Reactant",
+        "4.7 Stoichiometry of Precipitation Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.6",
+      "unit_id": "unit-4",
+      "title": "Introduction to Titration",
+      "ced_pdf_page": 90,
+      "ced_suggested_skill": {
+        "code": "3.A",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-04",
+          "pages": "26-30, 38-40",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.8 Acid–Base Reactions",
+        "4.11 Simple Oxidation–Reduction Titrations",
+        "15.4 Titrations and pH Curves"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.7",
+      "unit_id": "unit-4",
+      "title": "Types of Chemical Reactions",
+      "ced_pdf_page": 91,
+      "ced_suggested_skill": {
+        "code": "1.B",
+        "practice_family": "Models and Representations"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "5-7, 25-60",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.4 Types of Chemical Reactions",
+        "4.5 Precipitation Reactions",
+        "4.8 Acid–Base Reactions",
+        "4.9 Oxidation–Reduction Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.8",
+      "unit_id": "unit-4",
+      "title": "Introduction to Acid-Base Reactions",
+      "ced_pdf_page": 93,
+      "ced_suggested_skill": {
+        "code": "1.B",
+        "practice_family": "Models and Representations"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "25-38",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "5-17",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.8 Acid–Base Reactions",
+        "14.1 The Nature of Acids and Bases"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "4.9",
+      "unit_id": "unit-4",
+      "title": "Oxidation-Reduction (Redox) Reactions",
+      "ced_pdf_page": 94,
+      "ced_suggested_skill": {
+        "code": "5.E",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-03",
+          "pages": "39-60",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-15",
+          "pages": "2-19",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.9 Oxidation–Reduction Reactions",
+        "4.10 Balancing Oxidation–Reduction Equations"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-05"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.1",
+      "unit_id": "unit-5",
+      "title": "Reaction Rates",
+      "ced_pdf_page": 101,
+      "ced_suggested_skill": {
+        "code": "6.E",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "2-19",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.1 Reaction Rates"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.2",
+      "unit_id": "unit-5",
+      "title": "Introduction to Rate Law",
+      "ced_pdf_page": 102,
+      "ced_suggested_skill": {
+        "code": "5.C",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "20-37",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.2 Rate Laws: An Introduction",
+        "12.3 Determining the Form of the Rate Law"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.3",
+      "unit_id": "unit-5",
+      "title": "Concentration Changes Over Time",
+      "ced_pdf_page": 103,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "38-59",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.4 The Integrated Rate Law"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.4",
+      "unit_id": "unit-5",
+      "title": "Elementary Reactions",
+      "ced_pdf_page": 105,
+      "ced_suggested_skill": {
+        "code": "5.E",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "60-63, 69-70",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.5 Reaction Mechanisms"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.5",
+      "unit_id": "unit-5",
+      "title": "Collision Model",
+      "ced_pdf_page": 106,
+      "ced_suggested_skill": {
+        "code": "6.E",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "8-10, 61-63",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.6 A Model for Chemical Kinetics"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.6",
+      "unit_id": "unit-5",
+      "title": "Reaction Energy Profile",
+      "ced_pdf_page": 107,
+      "ced_suggested_skill": {
+        "code": "3.B",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "13-15, 64-65",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.6 A Model for Chemical Kinetics"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.7",
+      "unit_id": "unit-5",
+      "title": "Introduction to Reaction Mechanisms",
+      "ced_pdf_page": 108,
+      "ced_suggested_skill": {
+        "code": "1.B",
+        "practice_family": "Models and Representations"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "60-63",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.5 Reaction Mechanisms"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.8",
+      "unit_id": "unit-5",
+      "title": "Reaction Mechanism and Rate Law",
+      "ced_pdf_page": 109,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "61-70",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.5 Reaction Mechanisms"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.9",
+      "unit_id": "unit-5",
+      "title": "Pre-Equilibrium Approximation",
+      "ced_pdf_page": 110,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "71-74",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.5 Reaction Mechanisms"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.10",
+      "unit_id": "unit-5",
+      "title": "Multistep Reaction Energy Profile",
+      "ced_pdf_page": 111,
+      "ced_suggested_skill": {
+        "code": "3.B",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "64-68",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.5 Reaction Mechanisms",
+        "12.6 A Model for Chemical Kinetics"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "5.11",
+      "unit_id": "unit-5",
+      "title": "Catalysis",
+      "ced_pdf_page": 112,
+      "ced_suggested_skill": {
+        "code": "6.E",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "13-15, 63",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.7 Catalysis"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-06"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.1",
+      "unit_id": "unit-6",
+      "title": "Endothermic and Exothermic Processes",
+      "ced_pdf_page": 119,
+      "ced_suggested_skill": {
+        "code": "6.D",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "4-17",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "6.1 The Nature of Energy",
+        "6.2 Enthalpy and Calorimetry"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.2",
+      "unit_id": "unit-6",
+      "title": "Energy Diagrams",
+      "ced_pdf_page": 120,
+      "ced_suggested_skill": {
+        "code": "3.A",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "8-15",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "6.1 The Nature of Energy",
+        "6.2 Enthalpy and Calorimetry"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.3",
+      "unit_id": "unit-6",
+      "title": "Heat Transfer and Thermal Equilibrium",
+      "ced_pdf_page": 121,
+      "ced_suggested_skill": {
+        "code": "6.E",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "4-5, 18-32",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "6.1 The Nature of Energy",
+        "6.2 Enthalpy and Calorimetry"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.4",
+      "unit_id": "unit-6",
+      "title": "Heat Capacity and Calorimetry",
+      "ced_pdf_page": 122,
+      "ced_suggested_skill": {
+        "code": "2.D",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "18-37",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "6.2 Enthalpy and Calorimetry"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.5",
+      "unit_id": "unit-6",
+      "title": "Energy of Phase Changes",
+      "ced_pdf_page": 124,
+      "ced_suggested_skill": {
+        "code": "1.B",
+        "practice_family": "Models and Representations"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "112-121",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "7, 11",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "10.9 Vapor Pressure and Changes of State"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.6",
+      "unit_id": "unit-6",
+      "title": "Introduction to Enthalpy of Reaction",
+      "ced_pdf_page": 125,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "33-44",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "6.2 Enthalpy and Calorimetry"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.7",
+      "unit_id": "unit-6",
+      "title": "Bond Enthalpies",
+      "ced_pdf_page": 126,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-08",
+          "pages": "98-106",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "53-63",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "8.8 Covalent Bond Energies and Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.8",
+      "unit_id": "unit-6",
+      "title": "Enthalpy of Formation",
+      "ced_pdf_page": 127,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "54-59",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "7-11",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "6.4 Standard Enthalpies of Formation"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "6.9",
+      "unit_id": "unit-6",
+      "title": "Hess’s Law",
+      "ced_pdf_page": 128,
+      "ced_suggested_skill": {
+        "code": "5.A",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-06",
+          "pages": "45-53",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "3-11",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "6.3 Hess’s Law"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-07"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.1",
+      "unit_id": "unit-7",
+      "title": "Introduction to Equilibrium",
+      "ced_pdf_page": 135,
+      "ced_suggested_skill": {
+        "code": "6.D",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "3-6",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.1 The Equilibrium Condition"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.2",
+      "unit_id": "unit-7",
+      "title": "Direction of Reversible Reactions",
+      "ced_pdf_page": 136,
+      "ced_suggested_skill": {
+        "code": "4.D",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "3-5, 27-38",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.1 The Equilibrium Condition",
+        "13.5 Applications of the Equilibrium Constant"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.3",
+      "unit_id": "unit-7",
+      "title": "Reaction Quotient and Equilibrium Constant",
+      "ced_pdf_page": 137,
+      "ced_suggested_skill": {
+        "code": "3.A",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "27-38",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.2 The Equilibrium Constant",
+        "13.3 Equilibrium Expressions Involving Pressures",
+        "13.5 Applications of the Equilibrium Constant"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.4",
+      "unit_id": "unit-7",
+      "title": "Calculating the Equilibrium Constant",
+      "ced_pdf_page": 139,
+      "ced_suggested_skill": {
+        "code": "5.C",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "6-26",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.2 The Equilibrium Constant",
+        "13.3 Equilibrium Expressions Involving Pressures",
+        "13.4 Heterogeneous Equilibria"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.5",
+      "unit_id": "unit-7",
+      "title": "Magnitude of the Equilibrium Constant",
+      "ced_pdf_page": 140,
+      "ced_suggested_skill": {
+        "code": "6.D",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "24-26",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.5 Applications of the Equilibrium Constant"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.6",
+      "unit_id": "unit-7",
+      "title": "Properties of the Equilibrium Constant",
+      "ced_pdf_page": 141,
+      "ced_suggested_skill": {
+        "code": "5.A",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "16-20",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.2 The Equilibrium Constant",
+        "13.4 Heterogeneous Equilibria",
+        "13.5 Applications of the Equilibrium Constant"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.7",
+      "unit_id": "unit-7",
+      "title": "Calculating Equilibrium Concentrations",
+      "ced_pdf_page": 142,
+      "ced_suggested_skill": {
+        "code": "3.A",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "39-67",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.6 Solving Equilibrium Problems"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.8",
+      "unit_id": "unit-7",
+      "title": "Representations of Equilibrium",
+      "ced_pdf_page": 143,
+      "ced_suggested_skill": {
+        "code": "3.C",
+        "practice_family": "Representing Data and Phenomena"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "3-5",
+          "coverage": "partial"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.1 The Equilibrium Condition",
+        "13.6 Solving Equilibrium Problems"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "partial_teacher_coverage",
+      "source_note": "The equilibrium PPT teaches dynamic equilibrium, Q, K, ICE tables, and equilibrium graphs, but a direct particulate-model treatment matching CED Topic 7.8 was not located. This teacher-depth gap must remain visible before content lock.",
+      "assessment_note": "No textual particulate-model marker was located in APCHEM-7-SG.pdf during F0B screening. Treat the unit guide as general assessment evidence only."
+    },
+    {
+      "topic_id": "7.9",
+      "unit_id": "unit-7",
+      "title": "Introduction to Le Châtelier’s Principle",
+      "ced_pdf_page": 144,
+      "ced_suggested_skill": {
+        "code": "6.F",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "68-81",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.7 Le Châtelier’s Principle"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.10",
+      "unit_id": "unit-7",
+      "title": "Reaction Quotient and Le Châtelier’s Principle",
+      "ced_pdf_page": 145,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-11",
+          "pages": "28-38, 68-81",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "13.5 Applications of the Equilibrium Constant",
+        "13.7 Le Châtelier’s Principle"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.11",
+      "unit_id": "unit-7",
+      "title": "Introduction to Solubility Equilibria",
+      "ced_pdf_page": 146,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-13",
+          "pages": "1-12",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "16.1 Solubility Equilibria and the Solubility Product"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "7.12",
+      "unit_id": "unit-7",
+      "title": "Common-Ion Effect",
+      "ced_pdf_page": 147,
+      "ced_suggested_skill": {
+        "code": "2.F",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-13",
+          "pages": "13-18",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "15.1 Solutions of Acids or Bases Containing a Common Ion",
+        "16.1 Solubility Equilibria and the Solubility Product"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-08"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.1",
+      "unit_id": "unit-8",
+      "title": "Introduction to Acids and Bases",
+      "ced_pdf_page": 153,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "3-18, 46-50",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "14.1 The Nature of Acids and Bases",
+        "14.2 Acid Strength",
+        "14.3 The pH Scale"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.2",
+      "unit_id": "unit-8",
+      "title": "pH and pOH of Strong Acids and Bases",
+      "ced_pdf_page": 154,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "19-24",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "14.3 The pH Scale",
+        "14.4 Calculating the pH of Strong Acid Solutions",
+        "14.6 Bases"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.3",
+      "unit_id": "unit-8",
+      "title": "Weak Acid and Base Equilibria",
+      "ced_pdf_page": 155,
+      "ced_suggested_skill": {
+        "code": "5.C",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "25-61",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "14.5 Calculating the pH of Weak Acid Solutions",
+        "14.6 Bases",
+        "14.7 Polyprotic Acids",
+        "14.8 Acid–Base Properties of Salts"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.4",
+      "unit_id": "unit-8",
+      "title": "Acid-Base Reactions and Buffers",
+      "ced_pdf_page": 157,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "64-68, 84-95",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "4.8 Acid–Base Reactions",
+        "15.1 Solutions of Acids or Bases Containing a Common Ion",
+        "15.2 Buffered Solutions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.5",
+      "unit_id": "unit-8",
+      "title": "Acid-Base Titrations",
+      "ced_pdf_page": 159,
+      "ced_suggested_skill": {
+        "code": "5.D",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "64-83",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "15.4 Titrations and pH Curves",
+        "15.5 Acid–Base Indicators",
+        "15.6 Polyprotic Acid Titrations"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.6",
+      "unit_id": "unit-8",
+      "title": "Molecular Structure of Acids and Bases",
+      "ced_pdf_page": 161,
+      "ced_suggested_skill": {
+        "code": "6.C",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "62-63",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "14.9 The Effect of Structure on Acid–Base Properties",
+        "14.10 Acid–Base Properties of Oxides",
+        "14.11 The Lewis Acid–Base Model"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.7",
+      "unit_id": "unit-8",
+      "title": "pH and pKa",
+      "ced_pdf_page": 162,
+      "ced_suggested_skill": {
+        "code": "2.D",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "31-34, 77-78, 85-91",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "14.2 Acid Strength",
+        "14.3 The pH Scale",
+        "15.2 Buffered Solutions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.8",
+      "unit_id": "unit-8",
+      "title": "Properties of Buffers",
+      "ced_pdf_page": 163,
+      "ced_suggested_skill": {
+        "code": "6.D",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "84-95",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "15.2 Buffered Solutions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.9",
+      "unit_id": "unit-8",
+      "title": "Henderson-Hasselbalch Equation",
+      "ced_pdf_page": 164,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "85-95",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "15.2 Buffered Solutions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "8.10",
+      "unit_id": "unit-8",
+      "title": "Buffer Capacity",
+      "ced_pdf_page": 165,
+      "ced_suggested_skill": {
+        "code": "6.G",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "84-95",
+          "coverage": "partial"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "15.3 Buffering Capacity"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "partial_teacher_coverage",
+      "source_note": "The acid-base PPT teaches buffers and Henderson-Hasselbalch but does not explicitly teach buffer capacity as a named quantitative or experimental topic. The supplied Unit 8 scoring guide does contain buffer-capacity assessment evidence.",
+      "assessment_note": "APCHEM-8-SG.pdf contains explicit buffer-capacity assessment evidence."
+    },
+    {
+      "topic_id": "8.11",
+      "unit_id": "unit-8",
+      "title": "pH and Solubility",
+      "ced_pdf_page": 166,
+      "ced_suggested_skill": {
+        "code": "2.D",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-13",
+          "pages": "12, 18",
+          "coverage": "partial"
+        },
+        {
+          "source_id": "teacher-ppt-12",
+          "pages": "58-63",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "16.1 Solubility Equilibria and the Solubility Product",
+        "16.2 Precipitation and Qualitative Analysis",
+        "14.8 Acid–Base Properties of Salts"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-09"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "partial_teacher_coverage",
+      "source_note": "The Ksp PPT includes a limited pH/solubility prompt but does not develop the CED pH-sensitive-solubility relationship systematically. CED and Zumdahl provide the scientific basis; the student-depth target stays conservative until confirmed.",
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.1",
+      "unit_id": "unit-9",
+      "title": "Introduction to Entropy",
+      "ced_pdf_page": 173,
+      "ced_suggested_skill": {
+        "code": "6.C",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "12-21",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "17.1 Spontaneous Processes and Entropy",
+        "17.2 Entropy and the Second Law of Thermodynamics"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.2",
+      "unit_id": "unit-9",
+      "title": "Absolute Entropy and Entropy Change",
+      "ced_pdf_page": 174,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "34-40",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "17.6 Entropy Changes in Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.3",
+      "unit_id": "unit-9",
+      "title": "Gibbs Free Energy and Thermodynamic Favorability",
+      "ced_pdf_page": 175,
+      "ced_suggested_skill": {
+        "code": "6.E",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "22-52",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "17.3 The Effect of Temperature on Spontaneity",
+        "17.4 Free Energy",
+        "17.7 Free Energy and Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.4",
+      "unit_id": "unit-9",
+      "title": "Thermodynamic and Kinetic Control",
+      "ced_pdf_page": 177,
+      "ced_suggested_skill": {
+        "code": "6.E",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "22-33",
+          "coverage": "direct"
+        },
+        {
+          "source_id": "teacher-ppt-10",
+          "pages": "13-15",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "12.6 A Model for Chemical Kinetics",
+        "17.7 Free Energy and Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.5",
+      "unit_id": "unit-9",
+      "title": "Free Energy and Equilibrium",
+      "ced_pdf_page": 178,
+      "ced_suggested_skill": {
+        "code": "6.D",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "68-79",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "17.9 Free Energy and Equilibrium"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.6",
+      "unit_id": "unit-9",
+      "title": "Free Energy of Dissolution",
+      "ced_pdf_page": 179,
+      "ced_suggested_skill": {
+        "code": "4.D",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-09",
+          "pages": "62-67",
+          "coverage": "partial"
+        },
+        {
+          "source_id": "teacher-ppt-14",
+          "pages": "22-52",
+          "coverage": "supporting"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "11.2 The Energies of Solution Formation",
+        "17.4 Free Energy",
+        "17.7 Free Energy and Chemical Reactions"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "partial_teacher_coverage",
+      "source_note": "The solutions PPT teaches enthalpy changes in solution formation, while the advanced thermochemistry PPT teaches entropy and free energy separately. No single PPT sequence directly integrates these into the CED Free Energy of Dissolution topic.",
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.7",
+      "unit_id": "unit-9",
+      "title": "Coupled Reactions",
+      "ced_pdf_page": 180,
+      "ced_suggested_skill": {
+        "code": "4.D",
+        "practice_family": "Model Analysis"
+      },
+      "teacher_depth_sources": [],
+      "chemistry_reference_sections": [
+        "17.7 Free Energy and Chemical Reactions (external energy and coupled reactions)"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "teacher_depth_gap",
+      "source_note": "No direct teacher-PPT treatment of coupled reactions was located. Zumdahl 11e explicitly covers external energy and coupled thermodynamically unfavorable and favorable reactions, while the CED requires the topic. This gap must remain flagged through F0D.",
+      "assessment_note": "No direct coupled-reaction wording was located in APCHEM-9-SG.pdf during F0B screening. CED and Zumdahl remain the direct sources."
+    },
+    {
+      "topic_id": "9.8",
+      "unit_id": "unit-9",
+      "title": "Galvanic (Voltaic) and Electrolytic Cells",
+      "ced_pdf_page": 181,
+      "ced_suggested_skill": {
+        "code": "2.F",
+        "practice_family": "Question and Method"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-15",
+          "pages": "20-33, 55-58",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "18.1 Galvanic Cells",
+        "18.2 Standard Reduction Potentials",
+        "18.7 Electrolysis"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.9",
+      "unit_id": "unit-9",
+      "title": "Cell Potential and Free Energy",
+      "ced_pdf_page": 182,
+      "ced_suggested_skill": {
+        "code": "5.F",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-15",
+          "pages": "26-41",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "18.2 Standard Reduction Potentials",
+        "18.3 Cell Potential, Electrical Work, and Free Energy"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.10",
+      "unit_id": "unit-9",
+      "title": "Cell Potential Under Nonstandard Conditions",
+      "ced_pdf_page": 183,
+      "ced_suggested_skill": {
+        "code": "6.D",
+        "practice_family": "Argumentation"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-15",
+          "pages": "42-54",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "18.4 Dependence of Cell Potential on Concentration"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    },
+    {
+      "topic_id": "9.11",
+      "unit_id": "unit-9",
+      "title": "Electrolysis and Faraday’s Law",
+      "ced_pdf_page": 185,
+      "ced_suggested_skill": {
+        "code": "5.B",
+        "practice_family": "Mathematical Routines"
+      },
+      "teacher_depth_sources": [
+        {
+          "source_id": "teacher-ppt-15",
+          "pages": "55-65",
+          "coverage": "direct"
+        }
+      ],
+      "chemistry_reference_sections": [
+        "18.7 Electrolysis",
+        "18.8 Commercial Electrolytic Processes"
+      ],
+      "assessment_evidence_source_ids": [
+        "assessment-guide-10"
+      ],
+      "lab_source_status": "pending_teacher_lab_collection",
+      "crosswalk_status": "complete_source_crosswalk",
+      "source_note": null,
+      "assessment_note": null
+    }
+  ],
+  "ppt_background_or_nonstructural_material": [
+    {
+      "source_id": "teacher-ppt-01",
+      "material": "Significant figures, thermometer reading, and nomenclature",
+      "disposition": "Prerequisite/support material. Do not create non-CED units from these slide labels."
+    },
+    {
+      "source_id": "teacher-ppt-05",
+      "material": "Boyle, Charles, combined gas-law practice; effusion and diffusion",
+      "disposition": "Supporting gas-model practice where consistent with CED Topics 3.4-3.6. Do not expand the CED topic structure."
+    },
+    {
+      "source_id": "teacher-ppt-07",
+      "material": "Orbital-shape, orbital-diagram, excited-state, and magnetic-property detail",
+      "disposition": "Use only where it supports CED Atomic Structure and Properties. Honor CED exclusions and do not elevate background detail into new required content."
+    },
+    {
+      "source_id": "teacher-ppt-08",
+      "material": "Sigma/pi bond detail and additional bonding examples",
+      "disposition": "Supporting explanation only when it serves CED Topic 2.7 or related required concepts."
+    },
+    {
+      "source_id": "teacher-ppt-15",
+      "material": "Nernst-equation reference",
+      "disposition": "The PPT marks this as not required. Do not make Nernst-equation calculation a required student outcome unless the CED explicitly requires it."
+    }
+  ],
+  "f0b_exit_conditions": {
+    "all_91_ced_topics_present": true,
+    "ced_order_preserved": true,
+    "ppt_numbering_used_as_structure": false,
+    "textbook_sections_mapped_for_all_topics": true,
+    "assessment_sources_mapped_for_all_topics": true,
+    "teacher_ppt_gaps_preserved_not_silently_filled": true,
+    "teacher_lab_mapping_complete": false,
+    "next_phase": "F0C Science Component Coverage Plan"
+  }
+}

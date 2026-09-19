@@ -49,6 +49,18 @@ A separate teacher laboratory collection remains pending. A separate pacing guid
 
 Additional sources may still be added before F0D. Each new source must be inventoried before it influences the crosswalk.
 
+## F0B crosswalk state
+
+F0B Framework Crosswalk is complete. All 91 CED topics are represented in exact CED Unit 1 through Unit 9 order, with CED suggested science-practice skills, teacher-PPT depth sources, Zumdahl 11e chemistry references, and unit-aligned scoring-guide evidence recorded.
+
+Eighty-four topics have complete teacher-depth/source mappings. Six topics retain partial teacher-PPT coverage and one topic has no direct teacher-PPT source. The seven topics carried forward as explicit source gaps are 1.4, 2.2, 7.8, 8.10, 8.11, 9.6, and 9.7. These gaps are not silently filled from textbook depth or general model knowledge.
+
+The College Board AP Chemistry Clarifications and Corrections document implemented as of June 2026 was checked during F0B. Its listed changes concern front matter, resource locations, and Progress Check language. It does not list topic-level content, unit-order, or science-practice changes that alter the crosswalk.
+
+The machine-readable crosswalk is `docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json`, with a human-readable audit at `docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.md`.
+
+A separate teacher laboratory collection remains pending and is carried into F0C/F0D as an unresolved source state.
+
 ## Fixture discrepancies already identified
 
 The architecture fixture currently contains only Units 1 and 2. Its Unit 2 title is `Molecular and Ionic Compound Structure and Properties`. The current official framework title is `Compound Structure and Properties`.
@@ -60,7 +72,7 @@ F0 records that discrepancy without changing the fixture. Units 3 through 9 are 
 F0 will close through four linked artifacts.
 
 - F0A Source Inventory records each supplied source, its role, coverage, version or edition, ingestion status, file size, page count, and SHA-256 fingerprint. F0A is complete.
-- F0B Framework Crosswalk maps every College Board topic and science-practice expectation to the teacher materials, textbook, labs, and later Story Method content components.
+- F0B Framework Crosswalk maps every College Board topic and suggested science-practice skill to the teacher materials, textbook, assessment evidence, and pending lab-source state. F0B is complete with seven explicitly recorded teacher-depth gaps.
 - F0C Science Component Coverage Plan identifies where equations, calculations, graphs, diagrams, data tables, particulate models, and lab contexts are required.
 - F0D Readiness Gate verifies complete source coverage, records unresolved conflicts, locks unit titles and topic boundaries, and authorizes construction of the real AP Chemistry package.
 
