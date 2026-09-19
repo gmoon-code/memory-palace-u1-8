@@ -12,6 +12,10 @@ function currentAdminCourseId() {
   return document.getElementById("admin-course-select")?.value || "ap-biology";
 }
 
+function currentAdminCourseEditable() {
+  return document.getElementById("admin-course-select")?.selectedOptions?.[0]?.dataset?.editable === "true";
+}
+
 function r(id) {
   return document.getElementById(id);
 }
@@ -329,9 +333,10 @@ function renderReplacementPlan(plan) {
   r("replacement-type-label").textContent = `${humanize(plan.entity_type)} replacement`;
   r("replacement-title").textContent = plan.title || plan.entity_id;
   r("replacement-meta").textContent = `${plan.entity_id} · ${plan.unit_id} · ${plan.required_knowledge_count} required knowledge records`;
-  r("replacement-draft-state").textContent = "Published base";
-  r("replacement-open-draft").classList.remove("replacement-hidden");
-  r("replacement-open-draft").disabled = false;
+  const courseEditable = currentAdminCourseEditable();
+  r("replacement-draft-state").textContent = courseEditable ? "Published base" : "Read-only catalog";
+  r("replacement-open-draft").classList.toggle("replacement-hidden", !courseEditable);
+  r("replacement-open-draft").disabled = !courseEditable;
 
   const knowledge = Array.isArray(plan.required_knowledge) ? plan.required_knowledge : [];
   r("replacement-knowledge").innerHTML = knowledge.length ? knowledge.map((item) => `
