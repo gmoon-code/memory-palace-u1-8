@@ -29,6 +29,10 @@ function currentAdminCourseId() {
   return document.getElementById("admin-course-select")?.value || "ap-biology";
 }
 
+function currentAdminCourseEditable() {
+  return document.getElementById("admin-course-select")?.selectedOptions?.[0]?.dataset?.editable === "true";
+}
+
 function e(id) {
   return document.getElementById(id);
 }
@@ -344,20 +348,26 @@ function renderDependencyStrip(report) {
 }
 
 function renderEditor(payload, dependencies, editable) {
+  const courseEditable = currentAdminCourseEditable();
   e("editor-empty").classList.add("hidden");
   e("editor-active").classList.remove("hidden");
-  e("editor-record-type").textContent = `${humanize(payload.type)} · ${editable ? "working copy" : "published base"}`;
+  e("editor-record-type").textContent = `${humanize(payload.type)} · ${editable ? "working copy" : courseEditable ? "published base" : "read-only catalog"}`;
   e("editor-record-title").textContent = payload.title || payload.canonical_term || payload.id;
   e("editor-record-meta").textContent = `${payload.id} · ${unitLabel(payload.unit_id)}${editorState.currentDraft ? ` · draft v${editorState.currentDraft.version}` : ""}`;
   e("editor-published-summary").textContent = editable
     ? "You are editing a protected working copy. Student-facing files remain unchanged until the later validation and publication workflow is completed."
-    : "This is the current normalized published record. Opening a working copy creates an isolated, revisioned draft without changing what students see.";
+    : courseEditable
+      ? "This is the current normalized published record. Opening a working copy creates an isolated, revisioned draft without changing what students see."
+      : "This development course is available for catalog and dependency inspection only. Editing remains locked until the course-specific authoring workflows pass isolation QA.";
   renderDependencyStrip(dependencies);
   e("editor-readonly-note").classList.toggle("hidden", editable);
-  e("editor-start-draft").classList.toggle("hidden", editable);
+  e("editor-readonly-note").textContent = courseEditable
+    ? "You are viewing the published base. Open a working copy to make changes."
+    : "Read-only architecture preview. Working copies are disabled for this course.";
+  e("editor-start-draft").classList.toggle("hidden", editable || !courseEditable);
   e("editor-snapshot").classList.toggle("hidden", !editable);
   e("editor-footer").classList.toggle("hidden", !editable);
-  setEditorState(editable ? "Saved" : "Published base");
+  setEditorState(editable ? "Saved" : courseEditable ? "Published base" : "Read only");
   renderForm(payload, editable);
 }
 
