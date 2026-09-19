@@ -83,7 +83,7 @@ def journey_source_path(course_id: str, unit_id: str, journey_id: str) -> str:
     return f"{str(spec['directory']).rstrip('/')}/{filename}"
 
 
-def _artifact_payload(spec: dict[str, Any]) -> dict[str, Any]:
+def _artifact_payload(spec: dict[str, Any]) -> Any:
     mode = spec.get("mode")
     if mode == "empty":
         payload = spec.get("empty_payload")
@@ -96,8 +96,8 @@ def _artifact_payload(spec: dict[str, Any]) -> dict[str, Any]:
     if not path.is_file():
         raise CoursePackageError(f"Course package artifact is missing: {path.relative_to(ROOT)}")
     payload = _read_json(path)
-    if not isinstance(payload, dict):
-        raise CoursePackageError(f"Expected object artifact at {path.relative_to(ROOT)}")
+    if not isinstance(payload, (dict, list)):
+        raise CoursePackageError(f"Expected JSON object or list artifact at {path.relative_to(ROOT)}")
     return payload
 
 
