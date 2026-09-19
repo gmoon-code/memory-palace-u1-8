@@ -31,6 +31,14 @@ def _safe_repo_path(raw: str) -> Path:
     return candidate
 
 
+def _repo_relative_posix(path: Path) -> str:
+    """Return a repository-relative path with forward slashes on every OS."""
+    try:
+        return path.resolve().relative_to(ROOT.resolve()).as_posix()
+    except ValueError as exc:
+        raise CoursePackageError(f"Path escapes repository root: {path}") from exc
+
+
 @lru_cache(maxsize=32)
 def package_manifest(course_id: str) -> dict[str, Any]:
     path = PACKAGE_DIR / f"{course_id}.json"
@@ -94,10 +102,10 @@ def _artifact_payload(spec: dict[str, Any]) -> Any:
         raise CoursePackageError(f"Unsupported artifact mode: {mode}")
     path = _safe_repo_path(str(spec.get("path") or ""))
     if not path.is_file():
-        raise CoursePackageError(f"Course package artifact is missing: {path.relative_to(ROOT)}")
+        raise CoursePackageError(f"Course package artifact is missing: {_repo_relative_posix(path)}")
     payload = _read_json(path)
     if not isinstance(payload, (dict, list)):
-        raise CoursePackageError(f"Expected JSON object or list artifact at {path.relative_to(ROOT)}")
+        raise CoursePackageError(f"Expected JSON object or list artifact at {_repo_relative_posix(path)}")
     return payload
 
 
@@ -278,7 +286,7 @@ def validate_package(course_id: str) -> dict[str, Any]:
                     path = _safe_repo_path(str(spec.get("path") or ""))
                     if not path.is_file():
                         errors.append(f"{unit_id} artifact missing: {artifact_name} -> {spec.get('path')}")
-                    elif not str(path.relative_to(ROOT)).startswith(f"content/{course_id}/"):
+                    elif not _repo_relative_posix(path).startswith(f"content/{course_id}/"):
                         errors.append(f"{unit_id} artifact escapes course namespace: {artifact_name}")
                 except Exception as exc:
                     errors.append(f"{unit_id} {artifact_name}: {exc}")
