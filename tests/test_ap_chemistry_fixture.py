@@ -58,10 +58,11 @@ def test_course_namespace_blocks_cross_course_memory_object_resolution():
     assert biology.status_code == 404
 
 
-def test_content_studio_lists_fixture_as_preparing_not_editable():
+def test_content_studio_lists_fixture_as_read_only_catalog():
     from backend import admin_catalog
 
     payload = admin_catalog.catalog_courses()
     chemistry = next(item for item in payload["courses"] if item["course_id"] == "ap-chemistry")
-    assert chemistry["catalog_ready"] is False
+    assert chemistry["catalog_ready"] is True
     assert chemistry["editable"] is False
+    assert chemistry["catalog_mode"] == "read_only"
