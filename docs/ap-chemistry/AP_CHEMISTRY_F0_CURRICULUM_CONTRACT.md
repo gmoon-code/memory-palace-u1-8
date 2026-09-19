@@ -65,6 +65,14 @@ When sources disagree
 
 The current fixture/official Unit 2 title difference is the first recorded architecture discrepancy.
 
+## F0C component lock
+
+The topic-level component plan is `docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json`. Later production must preserve its required, supporting, not-primary, excluded, and pending-source states unless a newly inventoried source justifies a documented revision.
+
+The component lock includes two explicit assessment-scope guards. Topic 8.11 does not require calculations of solubility as a function of pH. Topic 9.10 does not require Nernst-equation calculations. The CED-required particulate representation in Topic 7.8 remains required even though the teacher-PPT treatment is partial.
+
+A separate teacher laboratory collection remains pending. F0C records the CED lab requirement and leaves topic-specific teacher-lab mapping unresolved for F0D.
+
 ## Readiness rule
 
 F0D passes only when

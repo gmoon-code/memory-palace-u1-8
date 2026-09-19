@@ -1,8 +1,8 @@
 {
-  "schema": "story-method-ap-chemistry-source-register-1.2",
+  "schema": "story-method-ap-chemistry-source-register-1.3",
   "course_id": "ap-chemistry",
   "phase": "F0",
-  "phase_status": "F0B_COMPLETE",
+  "phase_status": "F0C_COMPLETE",
   "verified_date": "2026-09-19",
   "framework_authority": {
     "source_id": "college-board-ap-chemistry-ced-fall-2024",
@@ -174,5 +174,31 @@
     ],
     "lab_mapping_status": "pending_teacher_lab_collection",
     "next_phase": "F0C Science Component Coverage Plan"
+  },
+  "f0c_component_plan": "docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json",
+  "f0c_summary": {
+    "topic_count": 91,
+    "equation_required": 55,
+    "calculation_required": 43,
+    "graph_required": 32,
+    "diagram_required": 57,
+    "data_table_required": 38,
+    "particulate_model_required": 45,
+    "vector_used": false,
+    "lab_topic_mapping_status": "pending_teacher_lab_collection",
+    "source_gap_topic_ids": [
+      "1.4",
+      "2.2",
+      "7.8",
+      "8.10",
+      "8.11",
+      "9.6",
+      "9.7"
+    ],
+    "scope_guards": [
+      "8.11 qualitative pH-solubility only; no solubility-as-function-of-pH calculations",
+      "9.10 no required Nernst-equation calculations"
+    ],
+    "next_phase": "F0D Readiness Gate"
   }
 }
