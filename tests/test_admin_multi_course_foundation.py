@@ -171,6 +171,8 @@ def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     assert 'story-method-course-changed' in js
     assert 'data-editable=' in js
     assert 'catalog preview' in js
+    assert 'const availableCatalogs = state.courses.filter((item) => item.catalog_ready === true);' in js
+    assert 'item.editable !== false' not in js
     assert 'studentLink.href = `/?course=${encodeURIComponent(state.selectedCourseId)}`' in js
     assert 'currentAdminCourseEditable()' in editor
     assert 'Read-only architecture preview' in editor
