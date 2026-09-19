@@ -10,6 +10,14 @@ INVENTORY = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0A_SOURCE_INVENTORY.
 REGISTER = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_SOURCE_REGISTER.json"
 AUDIT = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0A_SOURCE_INVENTORY.md"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
+PHASE_ORDER = {
+    "F0A_COMPLETE": 1,
+    "F0B_COMPLETE": 2,
+    "F0C_COMPLETE": 3,
+    "F0D_COMPLETE": 4,
+}
+REGISTER_SCHEMA_PREFIX = "story-method-ap-chemistry-source-register-1."
+
 SHA256 = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -89,8 +97,8 @@ def main() -> None:
     no_longer_required = {item.get("source_id"): item for item in inventory.get("explicitly_not_required") or []}
     require(no_longer_required.get("teacher-ap-chemistry-pacing", {}).get("status") == "not_required", "pacing source should be waived by CED-order directive")
 
-    require(register.get("schema") == "story-method-ap-chemistry-source-register-1.1", "source register schema did not advance")
-    require(register.get("phase_status") == "F0A_COMPLETE", "source register does not record F0A completion")
+    require(str(register.get("schema") or "").startswith(REGISTER_SCHEMA_PREFIX), "unexpected source-register schema")
+    require(PHASE_ORDER.get(register.get("phase_status"), 0) >= PHASE_ORDER["F0A_COMPLETE"], "source register does not record F0A completion")
     require(register.get("f0a_inventory") == "docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json", "source register does not point to inventory")
 
     current_fixture = git("rev-parse", "HEAD:content/ap-chemistry")

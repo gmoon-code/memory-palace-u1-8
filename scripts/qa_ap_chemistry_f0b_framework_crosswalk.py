@@ -12,6 +12,14 @@ AUDIT = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.m
 REGISTER = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_SOURCE_REGISTER.json"
 F0A = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
+PHASE_ORDER = {
+    "F0A_COMPLETE": 1,
+    "F0B_COMPLETE": 2,
+    "F0C_COMPLETE": 3,
+    "F0D_COMPLETE": 4,
+}
+REGISTER_SCHEMA_PREFIX = "story-method-ap-chemistry-source-register-1."
+
 
 EXPECTED_COUNTS = {1: 8, 2: 7, 3: 13, 4: 9, 5: 11, 6: 9, 7: 12, 8: 11, 9: 11}
 EXPECTED_GAPS = ["1.4", "2.2", "7.8", "8.10", "8.11", "9.6", "9.7"]
@@ -97,8 +105,8 @@ def main() -> None:
     require("PowerPoints" in authority.get("student_depth", ""), "PPT depth authority is missing")
     require("Zumdahl" in authority.get("chemistry_truth", ""), "Zumdahl chemistry authority is missing")
 
-    require(register.get("schema") == "story-method-ap-chemistry-source-register-1.2", "source register schema did not advance")
-    require(register.get("phase_status") == "F0B_COMPLETE", "source register does not record F0B completion")
+    require(str(register.get("schema") or "").startswith(REGISTER_SCHEMA_PREFIX), "unexpected source-register schema")
+    require(PHASE_ORDER.get(register.get("phase_status"), 0) >= PHASE_ORDER["F0B_COMPLETE"], "source register does not record F0B completion")
     require(register.get("f0b_crosswalk") == "docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json", "source register does not point to F0B crosswalk")
 
     require(git("rev-parse", "HEAD:content/ap-chemistry") == git("rev-parse", f"{FROZEN}:content/ap-chemistry"), "F0B modified the AP Chemistry architecture fixture")

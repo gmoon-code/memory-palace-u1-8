@@ -9,6 +9,14 @@ REGISTER = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_SOURCE_REGISTER.json"
 INTAKE = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0_SOURCE_INTAKE.md"
 CONTRACT = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0_CURRICULUM_CONTRACT.md"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
+PHASE_ORDER = {
+    "F0A_COMPLETE": 1,
+    "F0B_COMPLETE": 2,
+    "F0C_COMPLETE": 3,
+    "F0D_COMPLETE": 4,
+}
+REGISTER_SCHEMA_PREFIX = "story-method-ap-chemistry-source-register-1."
+
 
 
 def require(condition: bool, message: str) -> None:
@@ -32,10 +40,10 @@ def main() -> None:
         require(path.is_file(), f"missing F0 artifact: {path.relative_to(ROOT)}")
 
     data = json.loads(REGISTER.read_text(encoding="utf-8"))
-    require(data.get("schema") == "story-method-ap-chemistry-source-register-1.1", "unexpected source-register schema")
+    require(str(data.get("schema") or "").startswith(REGISTER_SCHEMA_PREFIX), "unexpected source-register schema")
     require(data.get("course_id") == "ap-chemistry", "source register is not AP Chemistry")
     require(data.get("phase") == "F0", "source register is not in F0")
-    require(data.get("phase_status") == "F0A_COMPLETE", "F0A source inventory has not completed")
+    require(PHASE_ORDER.get(data.get("phase_status"), 0) >= PHASE_ORDER["F0A_COMPLETE"], "F0A source inventory has not completed")
 
     framework = data.get("framework_authority") or {}
     require(framework.get("publisher") == "College Board", "College Board is not recorded as framework authority")
