@@ -59,6 +59,8 @@ Only the freeze evidence files and the workflow registration for the freeze gate
 
 ## Boundary for future work
 
-Future AP Chemistry work should begin after this checkpoint. New AP Chemistry source material, scope mapping, unit architecture, scientific records, narratives, questions, review records, labs, and student-facing publication state must be developed in later commits while preserving this rollback boundary.
+Future AP Chemistry work begins after this checkpoint. The freeze gate validates the historical implementation commit and the historical freeze-evidence checkpoint. It does not require later development heads to remain byte-identical to the frozen implementation.
+
+New AP Chemistry source intake, scope mapping, unit architecture, scientific records, narratives, questions, review records, labs, and student-facing publication state may therefore be developed in later commits while the rollback branch and recorded fingerprints continue to preserve the known-good architecture boundary.
 
 The architecture freeze itself adds no curriculum content and changes no current course permissions.

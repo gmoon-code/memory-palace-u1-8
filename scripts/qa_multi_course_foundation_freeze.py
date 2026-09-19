@@ -117,18 +117,28 @@ def main() -> None:
         "AP Chemistry frozen registry state changed",
     )
 
-    current = git("rev-parse", "HEAD")
-    ancestor = subprocess.run(
-        ["git", "merge-base", "--is-ancestor", baseline, current],
+    checkpoint = str(manifest.get("freeze_checkpoint_commit") or "")
+    require(len(checkpoint) == 40, "freeze checkpoint commit is missing")
+    require(
+        git("rev-parse", f"{checkpoint}^{{commit}}") == checkpoint,
+        "freeze checkpoint commit cannot be resolved",
+    )
+    require(
+        object_at(checkpoint, None) == manifest.get("freeze_checkpoint_tree"),
+        "freeze checkpoint tree does not match the manifest",
+    )
+
+    checkpoint_ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", baseline, checkpoint],
         cwd=ROOT,
         capture_output=True,
         text=True,
     )
-    require(ancestor.returncode == 0, "current head does not descend from the frozen implementation")
+    require(checkpoint_ancestor.returncode == 0, "freeze checkpoint does not descend from the implementation")
 
     changed = {
         line.strip()
-        for line in git("diff", "--name-only", f"{baseline}..HEAD").splitlines()
+        for line in git("diff", "--name-only", f"{baseline}..{checkpoint}").splitlines()
         if line.strip()
     }
     unexpected = sorted(changed - ALLOWED_FREEZE_EVIDENCE)
@@ -144,9 +154,18 @@ def main() -> None:
         ("platform_tree", "platform"),
     ):
         require(
-            object_at("HEAD", path) == fingerprints[key],
-            f"freeze evidence commit changed protected {path} scope",
+            object_at(checkpoint, path) == fingerprints[key],
+            f"freeze checkpoint changed protected {path} scope",
         )
+
+    current = git("rev-parse", "HEAD")
+    current_ancestor = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", checkpoint, current],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    require(current_ancestor.returncode == 0, "current head does not descend from the freeze checkpoint")
 
     evidence = manifest.get("acceptance_evidence") or []
     for path in evidence:
@@ -174,8 +193,10 @@ def main() -> None:
     print(f"- repository tree locked at {manifest['implementation_tree']}")
     print("- architecture-critical source trees and package blobs match the frozen fingerprints")
     print("- AP Biology remains the production course and AP Chemistry remains a hidden read-only fixture")
-    print("- freeze evidence changed no protected runtime, curriculum, frontend, or platform scope")
+    print("- freeze checkpoint changed no protected runtime, curriculum, frontend, or platform scope")
+    print(f"- freeze checkpoint locked at {checkpoint}")
     print(f"- rollback reference recorded as {manifest['rollback_ref']}")
+    print("- later development may proceed while this historical checkpoint remains verifiable")
     print("- prior classroom/browser acceptance run is preserved as successful evidence")
 
 

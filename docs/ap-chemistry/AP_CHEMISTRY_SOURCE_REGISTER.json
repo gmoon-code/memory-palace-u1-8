@@ -1,0 +1,143 @@
+{
+  "schema": "story-method-ap-chemistry-source-register-1.0",
+  "course_id": "ap-chemistry",
+  "phase": "F0",
+  "phase_status": "SOURCE_INTAKE_OPEN",
+  "verified_date": "2026-09-19",
+  "framework_authority": {
+    "source_id": "college-board-ap-chemistry-ced-fall-2024",
+    "title": "AP Chemistry Course and Exam Description",
+    "publisher": "College Board",
+    "effective": "Fall 2024",
+    "status_for_2026_27": "current",
+    "course_page": "https://apcentral.collegeboard.org/courses/ap-chemistry",
+    "ced_pdf": "https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf",
+    "course_changes_page": "https://apcentral.collegeboard.org/courses/how-ap-develops-courses-and-exams/course-changes-overview",
+    "corrections_source": "AP Chemistry Course and Exam Description Clarifications and Corrections",
+    "role": "Authoritative course framework, required content, science practices, unit topics, and exam-aligned scope"
+  },
+  "supplemental_official_sources": [
+    {
+      "source_id": "college-board-ap-chemistry-exam",
+      "title": "AP Chemistry Exam",
+      "url": "https://apcentral.collegeboard.org/courses/ap-chemistry/exam",
+      "role": "Current exam structure and science-practice assessment context"
+    },
+    {
+      "source_id": "college-board-ap-chemistry-released-frqs",
+      "title": "AP Chemistry Exam Questions",
+      "url": "https://apcentral.collegeboard.org/courses/ap-chemistry/exam/past-exam-questions",
+      "role": "Released free-response questions, scoring guidelines, and public scoring evidence"
+    }
+  ],
+  "official_unit_framework": [
+    {
+      "unit_id": "unit-1",
+      "number": 1,
+      "title": "Atomic Structure and Properties",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-2",
+      "number": 2,
+      "title": "Compound Structure and Properties",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-3",
+      "number": 3,
+      "title": "Properties of Substances and Mixtures",
+      "mcq_weighting": "18%–22%"
+    },
+    {
+      "unit_id": "unit-4",
+      "number": 4,
+      "title": "Chemical Reactions",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-5",
+      "number": 5,
+      "title": "Kinetics",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-6",
+      "number": 6,
+      "title": "Thermochemistry",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-7",
+      "number": 7,
+      "title": "Equilibrium",
+      "mcq_weighting": "7%–9%"
+    },
+    {
+      "unit_id": "unit-8",
+      "number": 8,
+      "title": "Acids and Bases",
+      "mcq_weighting": "11%–15%"
+    },
+    {
+      "unit_id": "unit-9",
+      "number": 9,
+      "title": "Thermodynamics and Electrochemistry",
+      "mcq_weighting": "7%–9%"
+    }
+  ],
+  "required_user_sources": [
+    {
+      "source_id": "teacher-ap-chemistry-unit-materials",
+      "status": "pending",
+      "requested_content": "Unit 1–9 PowerPoints, guided notes, handouts, or equivalent teacher-created instructional materials",
+      "role": "Teacher sequencing, examples, emphases, classroom terminology, and instructional context"
+    },
+    {
+      "source_id": "primary-ap-chemistry-textbook",
+      "status": "pending",
+      "requested_content": "Primary AP Chemistry or college-level chemistry textbook used for explanation depth",
+      "role": "Explanatory depth, worked examples, conceptual development, and reference support"
+    },
+    {
+      "source_id": "teacher-ap-chemistry-labs",
+      "status": "pending",
+      "requested_content": "Laboratory procedures, lab sequence, inquiry tasks, or lab manual materials intended for the course",
+      "role": "Lab contexts, experimental reasoning, measurement, data analysis, and Challenge Lab design"
+    },
+    {
+      "source_id": "teacher-ap-chemistry-assessment-resources",
+      "status": "pending",
+      "requested_content": "Public or teacher-authored review sheets, question sets, practice materials, or non-secure assessment resources",
+      "role": "Retrieval design, discrimination practice, application questions, and assessment coverage"
+    },
+    {
+      "source_id": "teacher-ap-chemistry-pacing",
+      "status": "pending",
+      "requested_content": "Pacing guide or preferred topic sequence if it differs from the College Board suggested sequence",
+      "role": "Journey ordering and classroom implementation"
+    }
+  ],
+  "fixture_differences_to_reconcile": [
+    {
+      "issue_id": "fixture-unit-2-title",
+      "fixture_value": "Molecular and Ionic Compound Structure and Properties",
+      "official_framework_value": "Compound Structure and Properties",
+      "action": "Do not silently rename during F0. Resolve when the real AP Chemistry package is constructed."
+    },
+    {
+      "issue_id": "fixture-units-3-through-9",
+      "fixture_value": "Absent from the architecture fixture",
+      "official_framework_value": "Nine-unit framework includes Units 3 through 9",
+      "action": "Add only after source crosswalk and F0 readiness gate."
+    }
+  ],
+  "source_rules": [
+    "Do not treat architecture-fixture content as an academic source.",
+    "Do not generate real AP Chemistry curriculum records from general model knowledge during F0.",
+    "Do not silently reconcile conflicts among College Board documents, teacher materials, textbook materials, and lab resources.",
+    "Record the source supporting every required topic before content production.",
+    "Use the College Board framework and current clarifications/corrections as the AP scope authority.",
+    "Keep AP Chemistry status development, student_visible false, and editable false throughout F0."
+  ]
+}
