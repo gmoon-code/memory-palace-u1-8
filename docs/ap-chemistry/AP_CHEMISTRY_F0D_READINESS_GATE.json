@@ -1,0 +1,296 @@
+{
+  "schema": "story-method-ap-chemistry-f0d-readiness-gate-1.0",
+  "course_id": "ap-chemistry",
+  "phase": "F0D",
+  "gate_date": "2026-09-19",
+  "result": "BLOCKED_PENDING_TEACHER_LAB_SOURCE",
+  "phase_status_after_gate": "F0C_COMPLETE",
+  "source_artifacts": {
+    "f0a_inventory": {
+      "path": "docs/ap-chemistry/AP_CHEMISTRY_F0A_SOURCE_INVENTORY.json",
+      "git_blob": "7cfc75fefa4760b17a8c9399a977606a5a96fe0c",
+      "status": "complete"
+    },
+    "f0b_crosswalk": {
+      "path": "docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json",
+      "git_blob": "a81c3f9eac7336486de1d7fa7fdee804b1a0d415",
+      "status": "complete_with_recorded_source_gaps"
+    },
+    "f0c_component_plan": {
+      "path": "docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json",
+      "git_blob": "d5d6f2c12a533b51f5df15f866d1da72425ea78d",
+      "status": "complete_with_lab_source_pending_and_f0b_gaps"
+    }
+  },
+  "authority_lock": {
+    "structure_scope_order": "College Board AP Chemistry CED effective Fall 2024",
+    "student_depth": "Teacher PPT U1-U15 after relocation into CED order",
+    "chemistry_truth": "Zumdahl, Zumdahl, and DeCoste, Chemistry 11e, within CED scope",
+    "assessment_demand": "Teacher-supplied Unit 1-9 scoring guides, evidence only, no verbatim reuse",
+    "laboratory_context": "Teacher-specific lab source not yet supplied"
+  },
+  "readiness_checks": {
+    "source_inventory_complete": true,
+    "official_units_locked": true,
+    "all_91_topics_crosswalked": true,
+    "teacher_materials_inventoried": true,
+    "textbook_inventoried": true,
+    "assessment_resources_inventoried": true,
+    "component_plan_complete": true,
+    "source_conflicts_and_gaps_recorded": true,
+    "fixture_excluded_as_academic_evidence": true,
+    "topic_specific_teacher_lab_mapping_complete": false
+  },
+  "official_unit_and_topic_lock": [
+    {
+      "unit_id": "unit-1",
+      "number": 1,
+      "title": "Atomic Structure and Properties",
+      "topic_ids": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ]
+    },
+    {
+      "unit_id": "unit-2",
+      "number": 2,
+      "title": "Compound Structure and Properties",
+      "topic_ids": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ]
+    },
+    {
+      "unit_id": "unit-3",
+      "number": 3,
+      "title": "Properties of Substances and Mixtures",
+      "topic_ids": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13"
+      ]
+    },
+    {
+      "unit_id": "unit-4",
+      "number": 4,
+      "title": "Chemical Reactions",
+      "topic_ids": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9"
+      ]
+    },
+    {
+      "unit_id": "unit-5",
+      "number": 5,
+      "title": "Kinetics",
+      "topic_ids": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11"
+      ]
+    },
+    {
+      "unit_id": "unit-6",
+      "number": 6,
+      "title": "Thermochemistry",
+      "topic_ids": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9"
+      ]
+    },
+    {
+      "unit_id": "unit-7",
+      "number": 7,
+      "title": "Equilibrium",
+      "topic_ids": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8",
+        "7.9",
+        "7.10",
+        "7.11",
+        "7.12"
+      ]
+    },
+    {
+      "unit_id": "unit-8",
+      "number": 8,
+      "title": "Acids and Bases",
+      "topic_ids": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.7",
+        "8.8",
+        "8.9",
+        "8.10",
+        "8.11"
+      ]
+    },
+    {
+      "unit_id": "unit-9",
+      "number": 9,
+      "title": "Thermodynamics and Electrochemistry",
+      "topic_ids": [
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4",
+        "9.5",
+        "9.6",
+        "9.7",
+        "9.8",
+        "9.9",
+        "9.10",
+        "9.11"
+      ]
+    }
+  ],
+  "source_gap_resolutions": [
+    {
+      "topic_id": "1.4",
+      "title": "Composition of Mixtures",
+      "disposition": "ready_with_bounded_resolution",
+      "basis": "CED supplies the mixture/purity framing. Teacher PPT U2 supplies percent-composition calculations, impurity reasoning, and purity checks. Zumdahl remains the chemistry reference.",
+      "production_guard": "Teach the CED relationship between elemental mass composition and mixture composition using PPT-level percent-composition and purity reasoning. Do not expand into additional mixture-analysis methods without a new source."
+    },
+    {
+      "topic_id": "2.2",
+      "title": "Intramolecular Force and Potential Energy",
+      "disposition": "ready_with_bounded_resolution",
+      "basis": "CED requires the potential-energy-versus-internuclear-distance representation. Teacher PPT U8 directly teaches bond order, equilibrium bond length/internuclear distance, the minimum on the curve, bond strength, and bond energy. Zumdahl supplies chemistry support.",
+      "production_guard": "Include the required potential-energy curve and its minimum, bond length, and bond energy. Keep depth at the CED/PPT level."
+    },
+    {
+      "topic_id": "7.8",
+      "title": "Representations of Equilibrium",
+      "disposition": "ready_with_bounded_resolution",
+      "basis": "CED explicitly requires a particulate model for reversible reactions at equilibrium. Teacher PPT U11 supplies dynamic-equilibrium and concentration/rate representations but does not directly supply the particulate model.",
+      "production_guard": "Teach the CED-required particulate representation at minimum CED depth. Do not claim the teacher PPT provides a broader particulate-model sequence."
+    },
+    {
+      "topic_id": "8.10",
+      "title": "Buffer Capacity",
+      "disposition": "ready_with_bounded_resolution",
+      "basis": "CED defines the buffer-capacity relationships. Teacher PPT U12 supplies buffer composition and response to added acid/base. The Unit 8 scoring guide directly assesses how component concentration changes buffer capacity while the ratio and pH remain the same.",
+      "production_guard": "Teach capacity through concentration and conjugate-pair proportions at CED depth. Keep calculations limited to what the supplied instructional and assessment sources support."
+    },
+    {
+      "topic_id": "8.11",
+      "title": "pH and Solubility",
+      "disposition": "ready_with_bounded_resolution",
+      "basis": "CED requires a qualitative pH-solubility relationship. Teacher PPT U13 supplies Ksp/common-ion and qualitative solubility reasoning, with supporting acid-base material from PPT U12.",
+      "production_guard": "Keep reasoning qualitative. Do not require computations of solubility as a function of pH."
+    },
+    {
+      "topic_id": "9.6",
+      "title": "Free Energy of Dissolution",
+      "disposition": "ready_with_bounded_resolution",
+      "basis": "Teacher PPT U9 supplies the three energetic steps of solution formation. Teacher PPT U14 supplies free-energy, enthalpy, and entropy reasoning. CED supplies the integrated dissolution free-energy objective, with Zumdahl as chemistry reference.",
+      "production_guard": "Integrate the PPT solution-formation and thermodynamics material only to the CED objective. Do not add textbook-only dissolution thermodynamics beyond that scope."
+    },
+    {
+      "topic_id": "9.7",
+      "title": "Coupled Reactions",
+      "disposition": "ready_at_ced_minimum_with_teacher_depth_gap_retained",
+      "basis": "No direct teacher-PPT treatment was located. CED requires external-energy and coupled-reaction reasoning, including shared intermediates and overall favorable free energy. Zumdahl 11e directly explains external-energy driving and coupled favorable/unfavorable reactions.",
+      "production_guard": "Teach only the CED-required minimum using CED framing and Zumdahl-verified chemistry. Retain the missing teacher-depth source as a visible warning and do not add textbook-only depth."
+    }
+  ],
+  "remaining_warnings": [
+    "Topic 9.7 has no direct teacher-PPT depth source. Production is bounded to the CED minimum and Zumdahl-verified chemistry until a teacher-depth source is supplied.",
+    "The seven F0B gap identifiers remain retained in audit history even where F0D defines a bounded production treatment."
+  ],
+  "hard_blockers": [
+    {
+      "blocker_id": "teacher-lab-source",
+      "status": "unresolved",
+      "evidence": "No separate teacher laboratory collection has been supplied or inventoried.",
+      "reason": "F0C explicitly classified all 91 topic lab mappings as pending and marked the teacher lab source as an F0D blocker. The CED requires substantial laboratory instruction, while the project source contract says laboratory contexts should trace to supplied lab sources when available.",
+      "ced_course_requirement": "Minimum 25 percent of instructional time in lab investigations; at least 16 hands-on lab investigations; at least 6 guided-inquiry investigations.",
+      "blocked_outputs": [
+        "real AP Chemistry package construction",
+        "topic-specific lab-context records",
+        "Challenge Lab authoring",
+        "narrative authoring that embeds teacher lab procedures",
+        "student publication"
+      ],
+      "clearance_options": [
+        "Inventory the teacher's AP Chemistry lab procedures, lab manual, or intended lab sequence.",
+        "Receive an explicit user directive that no teacher-specific lab collection will be used and that the course should use CED/public College Board laboratory guidance as the lab-source basis; inventory that basis before clearing F0D."
+      ]
+    }
+  ],
+  "authorization": {
+    "planning_documentation": true,
+    "real_package_construction": false,
+    "real_scientific_record_production": false,
+    "memory_object_production": false,
+    "narrative_story_authoring": false,
+    "question_bank_production": false,
+    "review_system_production": false,
+    "challenge_lab_production": false,
+    "student_visibility": false,
+    "teacher_editability": false
+  },
+  "fixture_state": {
+    "content_fixture_must_remain_frozen": true,
+    "package_manifest_must_remain_fixture": true,
+    "registry_status": "development",
+    "student_visible": false,
+    "editable": false
+  },
+  "clearance_rule": "F0D may be changed to COMPLETE only after the laboratory blocker is cleared by an inventoried lab-source basis and the readiness gate is rerun without modifying the frozen architecture fixture as academic evidence.",
+  "next_action_if_blocked": "Collect or explicitly define the AP Chemistry laboratory source basis, inventory it, update F0C lab mappings, and rerun F0D."
+}

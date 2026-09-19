@@ -1,5 +1,5 @@
 {
-  "schema": "story-method-ap-chemistry-source-register-1.3",
+  "schema": "story-method-ap-chemistry-source-register-1.4",
   "course_id": "ap-chemistry",
   "phase": "F0",
   "phase_status": "F0C_COMPLETE",
@@ -200,5 +200,19 @@
       "9.10 no required Nernst-equation calculations"
     ],
     "next_phase": "F0D Readiness Gate"
+  },
+  "f0d_readiness_gate": "docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.json",
+  "f0d_readiness_status": "BLOCKED_PENDING_TEACHER_LAB_SOURCE",
+  "f0d_summary": {
+    "official_units_locked": 9,
+    "ced_topics_locked": 91,
+    "source_gap_dispositions": 7,
+    "unresolved_hard_blockers": [
+      "teacher-lab-source"
+    ],
+    "package_construction_authorized": false,
+    "narrative_authoring_authorized": false,
+    "student_visibility_authorized": false,
+    "clearance_required": "Inventory the teacher AP Chemistry laboratory source basis, or receive an explicit directive to use CED/public College Board laboratory guidance and inventory that basis before rerunning F0D."
   }
 }

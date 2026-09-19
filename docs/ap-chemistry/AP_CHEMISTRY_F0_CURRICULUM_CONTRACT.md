@@ -73,6 +73,14 @@ The component lock includes two explicit assessment-scope guards. Topic 8.11 doe
 
 A separate teacher laboratory collection remains pending. F0C records the CED lab requirement and leaves topic-specific teacher-lab mapping unresolved for F0D.
 
+## F0D gate outcome
+
+The first F0D run is recorded in `docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.json`.
+
+The gate locks all nine official CED unit titles and all 91 topic boundaries. It also assigns bounded production treatments to the seven F0B source-gap topics. Topic 9.7 remains explicitly marked as lacking a direct teacher-PPT depth source and is restricted to the minimum CED requirement with Zumdahl-verified chemistry if production is later authorized.
+
+The gate remains blocked because the teacher laboratory source basis has not been supplied or explicitly replaced by another authorized lab-source basis. While blocked, no real AP Chemistry runtime package or content production is authorized.
+
 ## Readiness rule
 
 F0D passes only when
