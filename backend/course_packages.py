@@ -46,7 +46,7 @@ def package_manifest(course_id: str) -> dict[str, Any]:
     return payload
 
 
-def _unit_manifest(course_id: str, unit_id: str) -> dict[str, Any]:
+def unit_package(course_id: str, unit_id: str) -> dict[str, Any]:
     manifest = package_manifest(course_id)
     unit = next(
         (item for item in manifest.get("units", []) if isinstance(item, dict) and item.get("unit_id") == unit_id),
@@ -55,6 +55,32 @@ def _unit_manifest(course_id: str, unit_id: str) -> dict[str, Any]:
     if unit is None:
         raise CoursePackageError(f"Unit '{unit_id}' is not declared in course package '{course_id}'")
     return unit
+
+
+def _unit_manifest(course_id: str, unit_id: str) -> dict[str, Any]:
+    return unit_package(course_id, unit_id)
+
+
+def artifact_spec(course_id: str, unit_id: str, artifact_name: str) -> dict[str, Any]:
+    unit = unit_package(course_id, unit_id)
+    spec = unit.get(artifact_name)
+    if not isinstance(spec, dict):
+        raise CoursePackageError(
+            f"Unit '{unit_id}' in course '{course_id}' has no artifact declaration '{artifact_name}'"
+        )
+    return spec
+
+
+def artifact_source_path(course_id: str, unit_id: str, artifact_name: str) -> str | None:
+    spec = artifact_spec(course_id, unit_id, artifact_name)
+    path = spec.get("path")
+    return str(path) if isinstance(path, str) and path else None
+
+
+def journey_source_path(course_id: str, unit_id: str, journey_id: str) -> str:
+    spec = unit_package(course_id, unit_id)["journeys"]
+    filename = str(spec["filename_template"]).replace("{journey_id}", journey_id)
+    return f"{str(spec['directory']).rstrip('/')}/{filename}"
 
 
 def _artifact_payload(spec: dict[str, Any]) -> dict[str, Any]:
@@ -155,18 +181,23 @@ def journey(course_id: str, unit_id: str, journey_id: str) -> dict[str, Any] | N
     return payload if isinstance(payload, dict) else None
 
 
-def memory_object(course_id: str, unit_id: str, object_id: str) -> dict[str, Any] | None:
-    spec = _unit_manifest(course_id, unit_id)["memory_objects"]
+def artifact_records(course_id: str, unit_id: str, artifact_name: str) -> list[dict[str, Any]]:
+    spec = artifact_spec(course_id, unit_id, artifact_name)
     payload = _artifact_payload(spec)
-    keys = spec.get("collection_keys") or ["memory_objects", "records", "items"]
-    records = _records(payload, keys)
+    keys = spec.get("collection_keys") or ["records", "items"]
+    return _records(payload, keys)
+
+
+def memory_objects(course_id: str, unit_id: str) -> list[dict[str, Any]]:
+    spec = artifact_spec(course_id, unit_id, "memory_objects")
+    records = artifact_records(course_id, unit_id, "memory_objects")
     if spec.get("format") == "canonical_catalog_as_memory_objects":
-        for record in records:
-            normalized = _canonical_as_memory_object(record)
-            if normalized["memory_object_id"] == object_id:
-                return normalized
-        return None
-    for record in records:
+        return [_canonical_as_memory_object(record) for record in records]
+    return [dict(record) for record in records]
+
+
+def memory_object(course_id: str, unit_id: str, object_id: str) -> dict[str, Any] | None:
+    for record in memory_objects(course_id, unit_id):
         record_id = _first(record, "memory_object_id", "object_id", "knowledge_id", "Knowledge ID")
         if str(record_id or "") == object_id:
             return record
