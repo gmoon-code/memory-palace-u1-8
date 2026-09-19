@@ -321,7 +321,6 @@ def test_management_mutations_require_csrf(management_client):
     assert preview.status_code == 403
 
 
-
 def test_chemistry_question_review_and_challenge_reads_are_course_scoped(management_client):
     client, token, _ = management_client
 
@@ -332,26 +331,8 @@ def test_chemistry_question_review_and_challenge_reads_are_course_scoped(managem
     assert bank.status_code == 200
     bank_payload = bank.json()
     assert bank_payload["course_id"] == "ap-chemistry"
-    assert bank_payload["items"]
-    assert all(item.get("course_id") == "ap-chemistry" for item in bank_payload["items"])
-    assert not any("U1-K-" in str(item) and "APCHEM-U1-K" not in str(item) for item in bank_payload["items"])
-
-    review_question = next(
-        item
-        for item in bank_payload["items"]
-        if item.get("type") == "question"
-        and item.get("question_type") == "review"
-        and item.get("source_path")
-    )
-    detail = client.get(
-        "/api/admin/management/entity",
-        params={"course_id": "ap-chemistry", "entity_id": review_question["id"]},
-    )
-    assert detail.status_code == 200
-    entity = detail.json()["entity"]
-    assert entity["course_id"] == "ap-chemistry"
-    assert entity["source_path"].startswith("content/ap-chemistry/")
-    assert entity["prompt"]
+    assert bank_payload["total"] == 0
+    assert bank_payload["items"] == []
 
     timeline = client.get(
         "/api/admin/management/review-timeline",
@@ -360,8 +341,8 @@ def test_chemistry_question_review_and_challenge_reads_are_course_scoped(managem
     assert timeline.status_code == 200
     timeline_payload = timeline.json()
     assert timeline_payload["course_id"] == "ap-chemistry"
-    assert timeline_payload["event_count"] > 0
-    assert all(event["course_id"] == "ap-chemistry" for event in timeline_payload["events"])
+    assert timeline_payload["event_count"] == 0
+    assert timeline_payload["events"] == []
 
     challenges = client.get(
         "/api/admin/management/challenge-bank",
@@ -370,16 +351,7 @@ def test_chemistry_question_review_and_challenge_reads_are_course_scoped(managem
     assert challenges.status_code == 200
     challenge_payload = challenges.json()
     assert challenge_payload["course_id"] == "ap-chemistry"
-    assert challenge_payload["items"]
-    assert all(item.get("course_id") == "ap-chemistry" for item in challenge_payload["items"])
-
-    blocked_existing = client.post(
-        "/api/admin/management/drafts",
-        json={"course_id": "ap-chemistry", "entity_id": review_question["id"]},
-        headers=csrf(token),
-    )
-    assert blocked_existing.status_code == 400
-    assert "editing is not enabled" in blocked_existing.json()["detail"]
+    assert challenge_payload["items"] == []
 
     blocked_proposal = client.post(
         "/api/admin/management/proposals",
@@ -393,7 +365,6 @@ def test_chemistry_question_review_and_challenge_reads_are_course_scoped(managem
     )
     assert blocked_proposal.status_code == 400
     assert "editing is not enabled" in blocked_proposal.json()["detail"]
-
 
 def test_managed_duplicate_entity_ids_are_isolated_across_courses(
     management_client,
@@ -499,17 +470,12 @@ def test_managed_duplicate_entity_ids_are_isolated_across_courses(
     assert chemistry_after["payload"]["prompt"] == "Chemistry isolated prompt"
 
 
-
 def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(management_client):
     client, token, _ = management_client
 
     search = client.get(
         "/api/admin/management/search",
-        params={
-            "course_id": "ap-chemistry",
-            "q": "Atomic Structure and Properties",
-            "limit": 100,
-        },
+        params={"course_id": "ap-chemistry", "q": "Atomic Structure and Properties", "limit": 100},
     )
     assert search.status_code == 200
     search_payload = search.json()
@@ -522,7 +488,7 @@ def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(manag
         params={
             "course_id": "ap-chemistry",
             "unit_id": "unit-1",
-            "entity_types": "question",
+            "entity_types": "unit",
             "include_drafts": "true",
             "include_catalog": "true",
         },
@@ -535,11 +501,7 @@ def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(manag
     assert all(record["payload"].get("course_id") == "ap-chemistry" for record in bundle["records"])
     assert "content/ap-biology/" not in str(bundle)
 
-    small_bundle = {
-        **bundle,
-        "records": [bundle["records"][0]],
-        "record_count": 1,
-    }
+    small_bundle = {**bundle, "records": [bundle["records"][0]], "record_count": 1}
     import_preview = client.post(
         "/api/admin/management/import/preview",
         json={"course_id": "ap-chemistry", "bundle": small_bundle},
@@ -551,11 +513,7 @@ def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(manag
 
     blocked_import = client.post(
         "/api/admin/management/import/apply",
-        json={
-            "course_id": "ap-chemistry",
-            "bundle": small_bundle,
-            "conflict_policy": "skip",
-        },
+        json={"course_id": "ap-chemistry", "bundle": small_bundle, "conflict_policy": "skip"},
         headers=csrf(token),
     )
     assert blocked_import.status_code == 400
@@ -573,11 +531,11 @@ def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(manag
         "/api/admin/management/bulk/preview",
         json={
             "course_id": "ap-chemistry",
-            "find": "Atomic Records Hall",
-            "replacement": "Atomic Records Hall Revised",
+            "find": "Atomic Structure and Properties",
+            "replacement": "Atomic Structure and Properties Revised",
             "case_sensitive": True,
             "unit_id": "unit-1",
-            "entity_types": ["scene"],
+            "entity_types": ["unit"],
             "limit": 100,
         },
         headers=csrf(token),
@@ -596,18 +554,12 @@ def test_chemistry_search_export_bulk_preview_and_import_are_course_scoped(manag
             "find": bulk_payload["find"],
             "replacement": bulk_payload["replacement"],
             "case_sensitive": bulk_payload["case_sensitive"],
-            "targets": [
-                {
-                    "entity_id": candidate["entity_id"],
-                    "expected_version": candidate["expected_version"],
-                }
-            ],
+            "targets": [{"entity_id": candidate["entity_id"], "expected_version": candidate["expected_version"]}],
         },
         headers=csrf(token),
     )
     assert blocked_apply.status_code == 400
     assert "editing is not enabled" in blocked_apply.json()["detail"]
-
 
 def test_staged_media_rows_are_isolated_by_course_when_second_course_is_editable(
     management_client,

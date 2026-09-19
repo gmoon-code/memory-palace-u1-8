@@ -166,8 +166,7 @@ def test_editor_mutations_require_csrf(editor_client):
     assert validate.status_code == 403
 
 
-
-def test_generic_editor_reads_all_chemistry_record_types_without_enabling_writes(editor_client):
+def test_generic_editor_reads_chemistry_foundation_units_without_enabling_writes(editor_client):
     client, token = editor_client
 
     biology_unit = client.get(
@@ -182,62 +181,28 @@ def test_generic_editor_reads_all_chemistry_record_types_without_enabling_writes
     assert biology_unit.json()["entity"]["title"] == "Chemistry of Life"
     assert chemistry_unit.json()["entity"]["title"] == "Atomic Structure and Properties"
 
-    for entity_type in (
-        "unit",
-        "journey",
-        "scene",
-        "character",
-        "location",
-        "concept",
-        "memory_object",
-    ):
+    chemistry_unit9 = client.get(
+        "/api/admin/editors/entity",
+        params={"course_id": "ap-chemistry", "entity_id": "unit:unit-9"},
+    )
+    assert chemistry_unit9.status_code == 200
+    assert chemistry_unit9.json()["entity"]["title"] == "Thermodynamics and Electrochemistry"
+
+    for entity_type in ("journey", "scene", "character", "location", "concept", "memory_object"):
         listing = client.get(
             "/api/admin/catalog/entities",
-            params={
-                "course_id": "ap-chemistry",
-                "entity_type": entity_type,
-                "unit_id": "unit-1",
-                "limit": 50,
-            },
+            params={"course_id": "ap-chemistry", "entity_type": entity_type, "unit_id": "unit-1", "limit": 50},
         )
         assert listing.status_code == 200
-        items = listing.json()["items"]
-        assert items, entity_type
-        target = items[0]
-        response = client.get(
-            "/api/admin/editors/entity",
-            params={"course_id": "ap-chemistry", "entity_id": target["id"]},
-        )
-        assert response.status_code == 200, entity_type
-        entity = response.json()["entity"]
-        assert entity["course_id"] == "ap-chemistry"
-        assert entity["unit_id"] == "unit-1"
-        if entity.get("source_path"):
-            assert entity["source_path"].startswith("content/ap-chemistry/")
-
-    chemistry_scene = client.get(
-        "/api/admin/editors/entity",
-        params={
-            "course_id": "ap-chemistry",
-            "entity_id": "scene:unit-1:APCHEM-U1-J1:0",
-        },
-    )
-    assert chemistry_scene.status_code == 200
-    scene = chemistry_scene.json()["entity"]
-    assert scene["story_paragraphs"][0].startswith("The **Atomic Records Hall**")
-    assert scene["scene_layout"]["zones"][0]["label"] == "Proton badge rail"
+        assert listing.json()["items"] == []
 
     blocked = client.post(
         "/api/admin/editors/drafts",
-        json={
-            "course_id": "ap-chemistry",
-            "entity_id": "unit:unit-1",
-        },
+        json={"course_id": "ap-chemistry", "entity_id": "unit:unit-1"},
         headers=csrf(token),
     )
     assert blocked.status_code == 400
     assert "editing is not enabled" in blocked.json()["detail"]
-
 
 def test_editor_writes_are_isolated_for_duplicate_entity_ids_when_second_course_is_simulated_editable(
     editor_client,

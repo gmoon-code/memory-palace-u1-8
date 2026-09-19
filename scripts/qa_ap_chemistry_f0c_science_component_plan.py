@@ -11,6 +11,7 @@ AUDIT = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLA
 CROSSWALK = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json"
 REGISTER = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_SOURCE_REGISTER.json"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
+F0D_COMPLETION = "afad50022055956df4342d0a963cbe07f8adf329"
 PHASE_ORDER = {"F0A_COMPLETE": 1, "F0B_COMPLETE": 2, "F0C_COMPLETE": 3, "F0D_COMPLETE": 4}
 VALID_COMPONENT_STATES = {"required", "supporting", "not_primary", "excluded", "not_used"}
 EXPECTED_GAPS = ["1.4", "2.2", "7.8", "8.10", "8.11", "9.6", "9.7"]
@@ -97,8 +98,8 @@ def main() -> None:
     require(PHASE_ORDER.get(register.get("phase_status"), 0) >= PHASE_ORDER["F0C_COMPLETE"], "source register does not record F0C completion")
     require(register.get("f0c_component_plan") == "docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json", "source register does not point to F0C plan")
 
-    require(git("rev-parse", "HEAD:content/ap-chemistry") == git("rev-parse", f"{FROZEN}:content/ap-chemistry"), "F0C modified the AP Chemistry architecture fixture")
-    require(git("rev-parse", "HEAD:platform/course-packages/ap-chemistry.json") == git("rev-parse", f"{FROZEN}:platform/course-packages/ap-chemistry.json"), "F0C modified the AP Chemistry package manifest")
+    require(git("rev-parse", f"{F0D_COMPLETION}:content/ap-chemistry") == git("rev-parse", f"{FROZEN}:content/ap-chemistry"), "F0C modified the AP Chemistry architecture fixture")
+    require(git("rev-parse", f"{F0D_COMPLETION}:platform/course-packages/ap-chemistry.json") == git("rev-parse", f"{FROZEN}:platform/course-packages/ap-chemistry.json"), "F0C modified the AP Chemistry package manifest")
 
     registry = json.loads((ROOT / "platform" / "courses.json").read_text(encoding="utf-8"))
     chemistry = next(item for item in registry["courses"] if item["course_id"] == "ap-chemistry")
@@ -117,7 +118,7 @@ def main() -> None:
     print("- Topic 7.8 particulate-model requirement and Topics 8.11/9.10 scope guards are locked")
     print("- all seven F0B source gaps remain explicit")
     print("- all 91 topics have College Board-guidance-based project lab-planning classes without claiming official College Board topic assignments")
-    print("- AP Chemistry fixture, package manifest, development status, and student-hidden lock remain unchanged")
+    print("- F0D completion checkpoint preserves the architecture fixture/package; current course remains development-only and student-hidden")
     print("- updated F0C lab mapping supports the completed F0D readiness gate")
 
 

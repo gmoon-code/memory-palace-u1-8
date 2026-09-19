@@ -2,18 +2,9 @@
   "schema": "story-method-challenge-lab-1.0",
   "course_id": "ap-chemistry",
   "unit_id": "unit-2",
-  "title": "AP Chemistry Fixture Unit 2 Challenge Lab",
-  "challenge_count": 1,
-  "items": [
-    {
-      "challenge_id": "APCHEM-U2-APP-01",
-      "knowledge_id": "APCHEM-U2-K001",
-      "domain": "Structure and properties",
-      "title": "Unknown solid classification",
-      "prompt": "An unknown solid has a high melting point, does not conduct electricity as a solid, and conducts when molten. Which broad structural model is most consistent with these observations?",
-      "answer_guide": "An ionic-solid model is consistent. The ions are fixed in the solid lattice and become mobile when the lattice melts, allowing charge to move.",
-      "story_hint": "Return to the charged-tile lattice and ask when the charged particles can move.",
-      "success_criterion": "Identify an ionic solid and connect conductivity to ion mobility."
-    }
-  ]
+  "title": "Compound Structure and Properties Challenge Lab Scaffold",
+  "foundation_status": "SOURCE_BACKED_SCAFFOLD",
+  "lab_source_basis": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json",
+  "challenge_count": 0,
+  "items": []
 }

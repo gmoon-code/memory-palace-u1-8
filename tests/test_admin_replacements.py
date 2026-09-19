@@ -190,30 +190,35 @@ def test_replacement_mutations_require_csrf(replacement_client):
     assert client.post("/api/admin/replacements/drafts", json={"entity_id": SCENE_ID}).status_code == 403
 
 
-
-def test_chemistry_replacement_plan_is_course_scoped_and_write_locked(replacement_client):
+def test_chemistry_replacement_workspace_has_no_fixture_story_and_remains_write_locked(replacement_client):
     client, token = replacement_client
-    chemistry_scene = "scene:unit-1:APCHEM-U1-J1:0"
+    retired_scene = "scene:unit-1:APCHEM-U1-J1:0"
+
     plan = client.get(
         "/api/admin/replacements/plan",
-        params={"course_id": "ap-chemistry", "entity_id": chemistry_scene},
+        params={"course_id": "ap-chemistry", "entity_id": retired_scene},
     )
-    assert plan.status_code == 200
-    payload = plan.json()
-    assert payload["course_id"] == "ap-chemistry"
-    assert payload["unit_id"] == "unit-1"
-    assert payload["published_base"]["course_id"] == "ap-chemistry"
-    assert payload["published_base"]["source_path"].startswith("content/ap-chemistry/")
-    assert payload["published_story_text"].startswith("The **Atomic Records Hall**")
+    assert plan.status_code == 404
+
+    journeys = client.get(
+        "/api/admin/catalog/entities",
+        params={"course_id": "ap-chemistry", "entity_type": "journey", "unit_id": "unit-1", "limit": 50},
+    )
+    scenes = client.get(
+        "/api/admin/catalog/entities",
+        params={"course_id": "ap-chemistry", "entity_type": "scene", "unit_id": "unit-1", "limit": 50},
+    )
+    assert journeys.status_code == scenes.status_code == 200
+    assert journeys.json()["items"] == []
+    assert scenes.json()["items"] == []
 
     blocked = client.post(
         "/api/admin/replacements/drafts",
-        json={"course_id": "ap-chemistry", "entity_id": chemistry_scene},
+        json={"course_id": "ap-chemistry", "entity_id": retired_scene},
         headers=csrf(token),
     )
     assert blocked.status_code == 400
     assert "editing is not enabled" in blocked.json()["detail"]
-
 
 def test_replacement_analysis_and_apply_reject_wrong_course(replacement_client):
     client, token = replacement_client

@@ -13,6 +13,7 @@ F0B = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.jso
 F0C = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json"
 LAB = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_LAB_SOURCE_BASIS.json"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
+F0D_COMPLETION = "afad50022055956df4342d0a963cbe07f8adf329"
 
 EXPECTED_UNIT_TITLES = [
     "Atomic Structure and Properties",
@@ -117,7 +118,7 @@ def main() -> None:
     require(auth.get("student_visibility") is False, "F0D must not make AP Chemistry student-visible")
     require(auth.get("teacher_editability") is False, "F0D must not make AP Chemistry editable")
 
-    require(register.get("schema") == "story-method-ap-chemistry-source-register-1.5", "source register schema did not advance")
+    require(str(register.get("schema") or "").startswith("story-method-ap-chemistry-source-register-1."), "unexpected source-register schema")
     require(register.get("phase_status") == "F0D_COMPLETE", "source register does not record F0D completion")
     require(register.get("f0d_readiness_status") == "COMPLETE", "source register does not record completed F0D")
     require(register.get("lab_source_basis") == "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json", "source register does not point to lab source basis")
@@ -126,8 +127,8 @@ def main() -> None:
     require(f0b.get("status") == "COMPLETE_WITH_RECORDED_SOURCE_GAPS", "F0B state changed")
     require(f0c.get("status") == "COMPLETE_WITH_COLLEGE_BOARD_LAB_BASIS_AND_F0B_GAPS", "F0C state changed")
 
-    require(git("rev-parse", "HEAD:content/ap-chemistry") == git("rev-parse", f"{FROZEN}:content/ap-chemistry"), "F0D modified the AP Chemistry architecture fixture")
-    require(git("rev-parse", "HEAD:platform/course-packages/ap-chemistry.json") == git("rev-parse", f"{FROZEN}:platform/course-packages/ap-chemistry.json"), "F0D modified the AP Chemistry package manifest")
+    require(git("rev-parse", f"{F0D_COMPLETION}:content/ap-chemistry") == git("rev-parse", f"{FROZEN}:content/ap-chemistry"), "F0D modified the AP Chemistry architecture fixture")
+    require(git("rev-parse", f"{F0D_COMPLETION}:platform/course-packages/ap-chemistry.json") == git("rev-parse", f"{FROZEN}:platform/course-packages/ap-chemistry.json"), "F0D modified the AP Chemistry package manifest")
 
     registry = json.loads((ROOT / "platform" / "courses.json").read_text(encoding="utf-8"))
     chemistry = next(item for item in registry["courses"] if item["course_id"] == "ap-chemistry")
@@ -145,7 +146,7 @@ def main() -> None:
     print("- all seven F0B source gaps retain bounded production dispositions")
     print("- real package and content production are authorized for later commits")
     print("- student visibility and teacher editability remain locked")
-    print("- AP Chemistry architecture fixture and package manifest remain unchanged in the F0D completion commit")
+    print("- historical F0D completion checkpoint preserved the architecture fixture and package manifest before F1 construction")
 
 
 if __name__ == "__main__":

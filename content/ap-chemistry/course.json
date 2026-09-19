@@ -2,26 +2,1035 @@
   "course_id": "ap-chemistry",
   "course_title": "AP Chemistry",
   "content_model_version": "story-method-course-1.0",
-  "status": "ARCHITECTURE_FIXTURE",
-  "student_experience": "Architecture fixture for validating a second Story Method science course before curriculum production.",
+  "status": "PACKAGE_FOUNDATION",
+  "production_phase": "F1_PACKAGE_FOUNDATION",
+  "student_experience": "Source-backed nine-unit development scaffold. CED topic boundaries are locked; production journeys and student-facing curriculum are not yet populated.",
+  "source_basis": {
+    "framework_crosswalk": "docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json",
+    "science_component_plan": "docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json",
+    "readiness_gate": "docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.json",
+    "laboratory_basis": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json",
+    "chemistry_reference": "Zumdahl, Zumdahl, and DeCoste, Chemistry, 11th edition",
+    "student_depth_source": "Teacher PowerPoints APCHEM-U1-PPT.pdf through APCHEM-U15-PPT.pdf"
+  },
   "units": [
     {
       "unit_id": "unit-1",
       "number": 1,
       "title": "Atomic Structure and Properties",
-      "status": "ARCHITECTURE_FIXTURE",
-      "journey_count": 1,
-      "scene_count": 2,
-      "application_challenges": 1
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 8,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "1.1",
+          "title": "Moles and Molar Mass",
+          "ced_pdf_page": 37,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "1.2",
+          "title": "Mass Spectra of Elements",
+          "ced_pdf_page": 38,
+          "suggested_skill": {
+            "code": "5.D",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "1.3",
+          "title": "Elemental Composition of Pure Substances",
+          "ced_pdf_page": 39,
+          "suggested_skill": {
+            "code": "2.A",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "1.4",
+          "title": "Composition of Mixtures",
+          "ced_pdf_page": 40,
+          "suggested_skill": {
+            "code": "5.A",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "partial_teacher_coverage"
+        },
+        {
+          "topic_id": "1.5",
+          "title": "Atomic Structure and Electron Configuration",
+          "ced_pdf_page": 41,
+          "suggested_skill": {
+            "code": "1.A",
+            "practice_family": "Models and Representations"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "1.6",
+          "title": "Photoelectron Spectroscopy",
+          "ced_pdf_page": 43,
+          "suggested_skill": {
+            "code": "4.B",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "1.7",
+          "title": "Periodic Trends",
+          "ced_pdf_page": 44,
+          "suggested_skill": {
+            "code": "4.A",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "1.8",
+          "title": "Valence Electrons and Ionic Compounds",
+          "ced_pdf_page": 45,
+          "suggested_skill": {
+            "code": "4.C",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
     },
     {
       "unit_id": "unit-2",
       "number": 2,
-      "title": "Molecular and Ionic Compound Structure and Properties",
-      "status": "ARCHITECTURE_FIXTURE",
-      "journey_count": 1,
-      "scene_count": 2,
-      "application_challenges": 1
+      "title": "Compound Structure and Properties",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 7,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "2.1",
+          "title": "Types of Chemical Bonds",
+          "ced_pdf_page": 51,
+          "suggested_skill": {
+            "code": "6.A",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "2.2",
+          "title": "Intramolecular Force and Potential Energy",
+          "ced_pdf_page": 53,
+          "suggested_skill": {
+            "code": "3.A",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "partial_teacher_coverage"
+        },
+        {
+          "topic_id": "2.3",
+          "title": "Structure of Ionic Solids",
+          "ced_pdf_page": 54,
+          "suggested_skill": {
+            "code": "4.C",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "2.4",
+          "title": "Structure of Metals and Alloys",
+          "ced_pdf_page": 55,
+          "suggested_skill": {
+            "code": "4.C",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "2.5",
+          "title": "Lewis Diagrams",
+          "ced_pdf_page": 56,
+          "suggested_skill": {
+            "code": "3.B",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "2.6",
+          "title": "Resonance and Formal Charge",
+          "ced_pdf_page": 57,
+          "suggested_skill": {
+            "code": "6.C",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "2.7",
+          "title": "VSEPR and Hybridization",
+          "ced_pdf_page": 58,
+          "suggested_skill": {
+            "code": "6.C",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-3",
+      "number": 3,
+      "title": "Properties of Substances and Mixtures",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 13,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "3.1",
+          "title": "Intermolecular and Interparticle Forces",
+          "ced_pdf_page": 65,
+          "suggested_skill": {
+            "code": "4.D",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.2",
+          "title": "Properties of Solids",
+          "ced_pdf_page": 67,
+          "suggested_skill": {
+            "code": "4.C",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.3",
+          "title": "Solids, Liquids, and Gases",
+          "ced_pdf_page": 69,
+          "suggested_skill": {
+            "code": "3.C",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.4",
+          "title": "Ideal Gas Law",
+          "ced_pdf_page": 70,
+          "suggested_skill": {
+            "code": "5.C",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.5",
+          "title": "Kinetic Molecular Theory",
+          "ced_pdf_page": 71,
+          "suggested_skill": {
+            "code": "4.A",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.6",
+          "title": "Deviation from Ideal Gas Law",
+          "ced_pdf_page": 72,
+          "suggested_skill": {
+            "code": "6.E",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.7",
+          "title": "Solutions and Mixtures",
+          "ced_pdf_page": 73,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.8",
+          "title": "Representations of Solutions",
+          "ced_pdf_page": 74,
+          "suggested_skill": {
+            "code": "3.C",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.9",
+          "title": "Separation of Solutions and Mixtures",
+          "ced_pdf_page": 75,
+          "suggested_skill": {
+            "code": "2.C",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.10",
+          "title": "Solubility",
+          "ced_pdf_page": 76,
+          "suggested_skill": {
+            "code": "4.D",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.11",
+          "title": "Spectroscopy and the Electromagnetic Spectrum",
+          "ced_pdf_page": 77,
+          "suggested_skill": {
+            "code": "4.A",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.12",
+          "title": "Properties of Photons",
+          "ced_pdf_page": 78,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "3.13",
+          "title": "Beer-Lambert Law",
+          "ced_pdf_page": 79,
+          "suggested_skill": {
+            "code": "2.E",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-4",
+      "number": 4,
+      "title": "Chemical Reactions",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 9,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "4.1",
+          "title": "Introduction for Reactions",
+          "ced_pdf_page": 85,
+          "suggested_skill": {
+            "code": "2.B",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.2",
+          "title": "Net Ionic Equations",
+          "ced_pdf_page": 86,
+          "suggested_skill": {
+            "code": "5.E",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.3",
+          "title": "Representations of Reactions",
+          "ced_pdf_page": 87,
+          "suggested_skill": {
+            "code": "3.B",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.4",
+          "title": "Physical and Chemical Changes",
+          "ced_pdf_page": 88,
+          "suggested_skill": {
+            "code": "6.B",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.5",
+          "title": "Stoichiometry",
+          "ced_pdf_page": 89,
+          "suggested_skill": {
+            "code": "5.C",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.6",
+          "title": "Introduction to Titration",
+          "ced_pdf_page": 90,
+          "suggested_skill": {
+            "code": "3.A",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.7",
+          "title": "Types of Chemical Reactions",
+          "ced_pdf_page": 91,
+          "suggested_skill": {
+            "code": "1.B",
+            "practice_family": "Models and Representations"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.8",
+          "title": "Introduction to Acid-Base Reactions",
+          "ced_pdf_page": 93,
+          "suggested_skill": {
+            "code": "1.B",
+            "practice_family": "Models and Representations"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "4.9",
+          "title": "Oxidation-Reduction (Redox) Reactions",
+          "ced_pdf_page": 94,
+          "suggested_skill": {
+            "code": "5.E",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-5",
+      "number": 5,
+      "title": "Kinetics",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 11,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "5.1",
+          "title": "Reaction Rates",
+          "ced_pdf_page": 101,
+          "suggested_skill": {
+            "code": "6.E",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.2",
+          "title": "Introduction to Rate Law",
+          "ced_pdf_page": 102,
+          "suggested_skill": {
+            "code": "5.C",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.3",
+          "title": "Concentration Changes Over Time",
+          "ced_pdf_page": 103,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.4",
+          "title": "Elementary Reactions",
+          "ced_pdf_page": 105,
+          "suggested_skill": {
+            "code": "5.E",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.5",
+          "title": "Collision Model",
+          "ced_pdf_page": 106,
+          "suggested_skill": {
+            "code": "6.E",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.6",
+          "title": "Reaction Energy Profile",
+          "ced_pdf_page": 107,
+          "suggested_skill": {
+            "code": "3.B",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.7",
+          "title": "Introduction to Reaction Mechanisms",
+          "ced_pdf_page": 108,
+          "suggested_skill": {
+            "code": "1.B",
+            "practice_family": "Models and Representations"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.8",
+          "title": "Reaction Mechanism and Rate Law",
+          "ced_pdf_page": 109,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.9",
+          "title": "Pre-Equilibrium Approximation",
+          "ced_pdf_page": 110,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.10",
+          "title": "Multistep Reaction Energy Profile",
+          "ced_pdf_page": 111,
+          "suggested_skill": {
+            "code": "3.B",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "5.11",
+          "title": "Catalysis",
+          "ced_pdf_page": 112,
+          "suggested_skill": {
+            "code": "6.E",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-6",
+      "number": 6,
+      "title": "Thermochemistry",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 9,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "6.1",
+          "title": "Endothermic and Exothermic Processes",
+          "ced_pdf_page": 119,
+          "suggested_skill": {
+            "code": "6.D",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.2",
+          "title": "Energy Diagrams",
+          "ced_pdf_page": 120,
+          "suggested_skill": {
+            "code": "3.A",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.3",
+          "title": "Heat Transfer and Thermal Equilibrium",
+          "ced_pdf_page": 121,
+          "suggested_skill": {
+            "code": "6.E",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.4",
+          "title": "Heat Capacity and Calorimetry",
+          "ced_pdf_page": 122,
+          "suggested_skill": {
+            "code": "2.D",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.5",
+          "title": "Energy of Phase Changes",
+          "ced_pdf_page": 124,
+          "suggested_skill": {
+            "code": "1.B",
+            "practice_family": "Models and Representations"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.6",
+          "title": "Introduction to Enthalpy of Reaction",
+          "ced_pdf_page": 125,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.7",
+          "title": "Bond Enthalpies",
+          "ced_pdf_page": 126,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.8",
+          "title": "Enthalpy of Formation",
+          "ced_pdf_page": 127,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "6.9",
+          "title": "Hess’s Law",
+          "ced_pdf_page": 128,
+          "suggested_skill": {
+            "code": "5.A",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-7",
+      "number": 7,
+      "title": "Equilibrium",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 12,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "7.1",
+          "title": "Introduction to Equilibrium",
+          "ced_pdf_page": 135,
+          "suggested_skill": {
+            "code": "6.D",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.2",
+          "title": "Direction of Reversible Reactions",
+          "ced_pdf_page": 136,
+          "suggested_skill": {
+            "code": "4.D",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.3",
+          "title": "Reaction Quotient and Equilibrium Constant",
+          "ced_pdf_page": 137,
+          "suggested_skill": {
+            "code": "3.A",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.4",
+          "title": "Calculating the Equilibrium Constant",
+          "ced_pdf_page": 139,
+          "suggested_skill": {
+            "code": "5.C",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.5",
+          "title": "Magnitude of the Equilibrium Constant",
+          "ced_pdf_page": 140,
+          "suggested_skill": {
+            "code": "6.D",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.6",
+          "title": "Properties of the Equilibrium Constant",
+          "ced_pdf_page": 141,
+          "suggested_skill": {
+            "code": "5.A",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.7",
+          "title": "Calculating Equilibrium Concentrations",
+          "ced_pdf_page": 142,
+          "suggested_skill": {
+            "code": "3.A",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.8",
+          "title": "Representations of Equilibrium",
+          "ced_pdf_page": 143,
+          "suggested_skill": {
+            "code": "3.C",
+            "practice_family": "Representing Data and Phenomena"
+          },
+          "source_crosswalk_status": "partial_teacher_coverage"
+        },
+        {
+          "topic_id": "7.9",
+          "title": "Introduction to Le Châtelier’s Principle",
+          "ced_pdf_page": 144,
+          "suggested_skill": {
+            "code": "6.F",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.10",
+          "title": "Reaction Quotient and Le Châtelier’s Principle",
+          "ced_pdf_page": 145,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.11",
+          "title": "Introduction to Solubility Equilibria",
+          "ced_pdf_page": 146,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "7.12",
+          "title": "Common-Ion Effect",
+          "ced_pdf_page": 147,
+          "suggested_skill": {
+            "code": "2.F",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-8",
+      "number": 8,
+      "title": "Acids and Bases",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 11,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "8.1",
+          "title": "Introduction to Acids and Bases",
+          "ced_pdf_page": 153,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.2",
+          "title": "pH and pOH of Strong Acids and Bases",
+          "ced_pdf_page": 154,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.3",
+          "title": "Weak Acid and Base Equilibria",
+          "ced_pdf_page": 155,
+          "suggested_skill": {
+            "code": "5.C",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.4",
+          "title": "Acid-Base Reactions and Buffers",
+          "ced_pdf_page": 157,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.5",
+          "title": "Acid-Base Titrations",
+          "ced_pdf_page": 159,
+          "suggested_skill": {
+            "code": "5.D",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.6",
+          "title": "Molecular Structure of Acids and Bases",
+          "ced_pdf_page": 161,
+          "suggested_skill": {
+            "code": "6.C",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.7",
+          "title": "pH and pKa",
+          "ced_pdf_page": 162,
+          "suggested_skill": {
+            "code": "2.D",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.8",
+          "title": "Properties of Buffers",
+          "ced_pdf_page": 163,
+          "suggested_skill": {
+            "code": "6.D",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.9",
+          "title": "Henderson-Hasselbalch Equation",
+          "ced_pdf_page": 164,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "8.10",
+          "title": "Buffer Capacity",
+          "ced_pdf_page": 165,
+          "suggested_skill": {
+            "code": "6.G",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "partial_teacher_coverage"
+        },
+        {
+          "topic_id": "8.11",
+          "title": "pH and Solubility",
+          "ced_pdf_page": 166,
+          "suggested_skill": {
+            "code": "2.D",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "partial_teacher_coverage"
+        }
+      ]
+    },
+    {
+      "unit_id": "unit-9",
+      "number": 9,
+      "title": "Thermodynamics and Electrochemistry",
+      "status": "SOURCE_BACKED_SCAFFOLD",
+      "topic_count": 11,
+      "journey_count": 0,
+      "scene_count": 0,
+      "application_challenges": 0,
+      "topics": [
+        {
+          "topic_id": "9.1",
+          "title": "Introduction to Entropy",
+          "ced_pdf_page": 173,
+          "suggested_skill": {
+            "code": "6.C",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.2",
+          "title": "Absolute Entropy and Entropy Change",
+          "ced_pdf_page": 174,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.3",
+          "title": "Gibbs Free Energy and Thermodynamic Favorability",
+          "ced_pdf_page": 175,
+          "suggested_skill": {
+            "code": "6.E",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.4",
+          "title": "Thermodynamic and Kinetic Control",
+          "ced_pdf_page": 177,
+          "suggested_skill": {
+            "code": "6.E",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.5",
+          "title": "Free Energy and Equilibrium",
+          "ced_pdf_page": 178,
+          "suggested_skill": {
+            "code": "6.D",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.6",
+          "title": "Free Energy of Dissolution",
+          "ced_pdf_page": 179,
+          "suggested_skill": {
+            "code": "4.D",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "partial_teacher_coverage"
+        },
+        {
+          "topic_id": "9.7",
+          "title": "Coupled Reactions",
+          "ced_pdf_page": 180,
+          "suggested_skill": {
+            "code": "4.D",
+            "practice_family": "Model Analysis"
+          },
+          "source_crosswalk_status": "teacher_depth_gap"
+        },
+        {
+          "topic_id": "9.8",
+          "title": "Galvanic (Voltaic) and Electrolytic Cells",
+          "ced_pdf_page": 181,
+          "suggested_skill": {
+            "code": "2.F",
+            "practice_family": "Question and Method"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.9",
+          "title": "Cell Potential and Free Energy",
+          "ced_pdf_page": 182,
+          "suggested_skill": {
+            "code": "5.F",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.10",
+          "title": "Cell Potential Under Nonstandard Conditions",
+          "ced_pdf_page": 183,
+          "suggested_skill": {
+            "code": "6.D",
+            "practice_family": "Argumentation"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        },
+        {
+          "topic_id": "9.11",
+          "title": "Electrolysis and Faraday’s Law",
+          "ced_pdf_page": 185,
+          "suggested_skill": {
+            "code": "5.B",
+            "practice_family": "Mathematical Routines"
+          },
+          "source_crosswalk_status": "complete_source_crosswalk"
+        }
+      ]
     }
   ]
 }

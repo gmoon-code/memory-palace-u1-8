@@ -44,29 +44,31 @@ def main() -> None:
     courses = admin_catalog.catalog_courses()
     chemistry_record = next(item for item in courses["courses"] if item["course_id"] == "ap-chemistry")
     require(chemistry_record["catalog_ready"] is True, "AP Chemistry package did not become catalog ready")
-    require(chemistry_record["editable"] is False, "development AP Chemistry fixture unexpectedly became editable")
-    require(chemistry_record["catalog_mode"] == "read_only", "AP Chemistry fixture is not marked read only")
+    require(chemistry_record["editable"] is False, "development AP Chemistry package unexpectedly became editable")
+    require(chemistry_record["catalog_mode"] == "read_only", "AP Chemistry package is not marked read only")
 
     chemistry = admin_catalog.catalog_summary("ap-chemistry")
     require(chemistry["course_id"] == "ap-chemistry", "chemistry catalog lost course identity")
-    require(chemistry["counts"].get("unit") == 2, "chemistry catalog does not contain two fixture units")
-    require(chemistry["counts"].get("journey") == 2, "chemistry catalog does not contain two fixture journeys")
-    require(chemistry["counts"].get("scene") == 4, "chemistry catalog does not contain four fixture scenes")
-    require(chemistry["counts"].get("concept") == 8, "chemistry catalog does not contain eight fixture concepts")
-    require(chemistry["counts"].get("memory_object") == 8, "chemistry catalog does not contain eight fixture Memory Objects")
-    require(chemistry["unresolved_reference_count"] == 0, "chemistry catalog has unresolved fixture references")
+    require(chemistry["counts"].get("unit") == 9, "chemistry catalog does not contain nine CED units")
+    require(chemistry["counts"].get("journey", 0) == 0, "F1 chemistry catalog unexpectedly contains journeys")
+    require(chemistry["counts"].get("scene", 0) == 0, "F1 chemistry catalog unexpectedly contains scenes")
+    require(chemistry["counts"].get("concept", 0) == 0, "F1 chemistry catalog unexpectedly contains concepts")
+    require(chemistry["counts"].get("memory_object", 0) == 0, "F1 chemistry catalog unexpectedly contains Memory Objects")
+    require(chemistry["unresolved_reference_count"] == 0, "chemistry catalog has unresolved references")
 
     chemistry_snapshot = admin_catalog.catalog("ap-chemistry")
     require(
         all(entity.get("course_id") == "ap-chemistry" for entity in chemistry_snapshot["entities"].values()),
         "chemistry catalog contains an entity from another course",
     )
-    chemistry_scenes = [
-        entity for entity in chemistry_snapshot["entities"].values() if entity.get("type") == "scene"
+    chemistry_units = [
+        entity for entity in chemistry_snapshot["entities"].values() if entity.get("type") == "unit"
     ]
+    require(len(chemistry_units) == 9, "chemistry catalog does not normalize all nine foundation units")
     require(
-        chemistry_scenes and all(str(entity.get("source_path") or "").startswith("content/ap-chemistry/") for entity in chemistry_scenes),
-        "chemistry scene source paths escaped the chemistry namespace",
+        [entity.get("title") for entity in sorted(chemistry_units, key=lambda item: item.get("number") or 0)]
+        == ['Atomic Structure and Properties','Compound Structure and Properties','Properties of Substances and Mixtures','Chemical Reactions','Kinetics','Thermochemistry','Equilibrium','Acids and Bases','Thermodynamics and Electrochemistry'],
+        "chemistry foundation unit order or titles changed",
     )
     try:
         admin_catalog.require_editable_course("ap-chemistry")

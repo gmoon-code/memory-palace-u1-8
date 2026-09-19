@@ -1,0 +1,214 @@
+{
+  "schema": "story-method-ap-chemistry-f1-package-foundation-1.0",
+  "course_id": "ap-chemistry",
+  "phase": "F1",
+  "status": "COMPLETE",
+  "completed_date": "2026-09-19",
+  "predecessor_commit": "afad50022055956df4342d0a963cbe07f8adf329",
+  "source_basis": {
+    "f0b": "docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json",
+    "f0c": "docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json",
+    "f0d": "docs/ap-chemistry/AP_CHEMISTRY_F0D_READINESS_GATE.json",
+    "lab": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json"
+  },
+  "foundation_contract": {
+    "unit_count": 9,
+    "topic_count": 91,
+    "exact_ced_unit_order": true,
+    "exact_ced_topic_order": true,
+    "production_journeys": 0,
+    "production_scenes": 0,
+    "production_concepts": 0,
+    "production_memory_objects": 0,
+    "production_review_targets": 0,
+    "production_mixed_sets": 0,
+    "production_challenge_items": 0,
+    "status": "development",
+    "student_visible": false,
+    "editable": false
+  },
+  "retired_fixture": {
+    "old_unit_count": 2,
+    "old_journey_ids": [
+      "APCHEM-U1-J1",
+      "APCHEM-U2-J1"
+    ],
+    "old_unit_2_title": "Molecular and Ionic Compound Structure and Properties",
+    "policy": "Fixture content is removed from the live AP Chemistry content tree and remains recoverable through the frozen multi-course architecture checkpoint."
+  },
+  "units": [
+    {
+      "unit_id": "unit-1",
+      "number": 1,
+      "title": "Atomic Structure and Properties",
+      "topic_count": 8,
+      "topic_ids": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-2",
+      "number": 2,
+      "title": "Compound Structure and Properties",
+      "topic_count": 7,
+      "topic_ids": [
+        "2.1",
+        "2.2",
+        "2.3",
+        "2.4",
+        "2.5",
+        "2.6",
+        "2.7"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-3",
+      "number": 3,
+      "title": "Properties of Substances and Mixtures",
+      "topic_count": 13,
+      "topic_ids": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4",
+        "3.5",
+        "3.6",
+        "3.7",
+        "3.8",
+        "3.9",
+        "3.10",
+        "3.11",
+        "3.12",
+        "3.13"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-4",
+      "number": 4,
+      "title": "Chemical Reactions",
+      "topic_count": 9,
+      "topic_ids": [
+        "4.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5",
+        "4.6",
+        "4.7",
+        "4.8",
+        "4.9"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-5",
+      "number": 5,
+      "title": "Kinetics",
+      "topic_count": 11,
+      "topic_ids": [
+        "5.1",
+        "5.2",
+        "5.3",
+        "5.4",
+        "5.5",
+        "5.6",
+        "5.7",
+        "5.8",
+        "5.9",
+        "5.10",
+        "5.11"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-6",
+      "number": 6,
+      "title": "Thermochemistry",
+      "topic_count": 9,
+      "topic_ids": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4",
+        "6.5",
+        "6.6",
+        "6.7",
+        "6.8",
+        "6.9"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-7",
+      "number": 7,
+      "title": "Equilibrium",
+      "topic_count": 12,
+      "topic_ids": [
+        "7.1",
+        "7.2",
+        "7.3",
+        "7.4",
+        "7.5",
+        "7.6",
+        "7.7",
+        "7.8",
+        "7.9",
+        "7.10",
+        "7.11",
+        "7.12"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-8",
+      "number": 8,
+      "title": "Acids and Bases",
+      "topic_count": 11,
+      "topic_ids": [
+        "8.1",
+        "8.2",
+        "8.3",
+        "8.4",
+        "8.5",
+        "8.6",
+        "8.7",
+        "8.8",
+        "8.9",
+        "8.10",
+        "8.11"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    },
+    {
+      "unit_id": "unit-9",
+      "number": 9,
+      "title": "Thermodynamics and Electrochemistry",
+      "topic_count": 11,
+      "topic_ids": [
+        "9.1",
+        "9.2",
+        "9.3",
+        "9.4",
+        "9.5",
+        "9.6",
+        "9.7",
+        "9.8",
+        "9.9",
+        "9.10",
+        "9.11"
+      ],
+      "scaffold_status": "SOURCE_BACKED_SCAFFOLD"
+    }
+  ],
+  "next_phase": "F2 Unit 1 scientific catalog and journey architecture"
+}

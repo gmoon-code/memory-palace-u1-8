@@ -9,6 +9,7 @@ REGISTER = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_SOURCE_REGISTER.json"
 INTAKE = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0_SOURCE_INTAKE.md"
 CONTRACT = ROOT / "docs" / "ap-chemistry" / "AP_CHEMISTRY_F0_CURRICULUM_CONTRACT.md"
 FROZEN = "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
+F0D_COMPLETION = "afad50022055956df4342d0a963cbe07f8adf329"
 PHASE_ORDER = {
     "F0A_COMPLETE": 1,
     "F0B_COMPLETE": 2,
@@ -87,11 +88,11 @@ def main() -> None:
     require("fixture-unit-2-title" in differences, "fixture Unit 2 title discrepancy is not recorded")
     require("fixture-units-3-through-9" in differences, "missing fixture Units 3 through 9 are not recorded")
 
-    current_fixture = git("rev-parse", "HEAD:content/ap-chemistry")
+    current_fixture = git("rev-parse", f"{F0D_COMPLETION}:content/ap-chemistry")
     frozen_fixture = git("rev-parse", f"{FROZEN}:content/ap-chemistry")
     require(current_fixture == frozen_fixture, "F0 modified the AP Chemistry architecture fixture")
 
-    current_package = git("rev-parse", "HEAD:platform/course-packages/ap-chemistry.json")
+    current_package = git("rev-parse", f"{F0D_COMPLETION}:platform/course-packages/ap-chemistry.json")
     frozen_package = git("rev-parse", f"{FROZEN}:platform/course-packages/ap-chemistry.json")
     require(current_package == frozen_package, "F0 modified the AP Chemistry package manifest")
 
@@ -119,7 +120,7 @@ def main() -> None:
     print("- teacher PowerPoints, Zumdahl 11e, and scoring guides are registered as received")
     print("- CED order is locked; separate pacing is not required; lab source state is explicitly tracked")
     print("- fixture discrepancies are recorded without changing fixture content")
-    print("- AP Chemistry content and package files remain byte-for-byte at the frozen architecture baseline")
+    print("- F0D completion checkpoint preserved the frozen architecture content and package baseline")
     print("- AP Chemistry remains development-only and hidden from students")
     if PHASE_ORDER.get(data.get("phase_status"), 0) >= PHASE_ORDER["F0D_COMPLETE"]:
         print("- F0D is complete; later package/content production is authorized while publication remains locked")

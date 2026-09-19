@@ -86,15 +86,16 @@ def main() -> None:
     require(set(["error_count", "warning_count", "advisory_count"]).issubset(entity_quality), "entity quality counts are incomplete")
 
     chemistry_preview = admin_quality.build_preview(
-        "scene:unit-1:APCHEM-U1-J1:0",
+        "unit:unit-1",
         source="published",
         course_id="ap-chemistry",
     )
     require(chemistry_preview["course_id"] == "ap-chemistry", "Chemistry preview lost course identity")
     require(chemistry_preview["course_title"] == "AP Chemistry", "Chemistry preview title is not course-scoped")
+    require(chemistry_preview["model"]["renderer"] == "unit", "Chemistry F1 unit preview did not use unit renderer")
     require(
-        chemistry_preview["model"]["journey"].get("palace_name") == "Atomic Records Hall",
-        "Chemistry preview did not load its package-declared journey",
+        chemistry_preview["model"]["record"].get("title") == "Atomic Structure and Properties",
+        "Chemistry F1 unit preview loaded the wrong package unit",
     )
 
     chemistry_report = admin_quality.quality_report(

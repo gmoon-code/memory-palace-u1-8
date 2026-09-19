@@ -111,7 +111,7 @@ def test_teacher_can_switch_courses_and_inspect_course_local_records(classroom_c
     )
     assert biology_map.status_code == chemistry_map.status_code == 200
     assert len(biology_map.json()["units"]) == 8
-    assert len(chemistry_map.json()["units"]) == 2
+    assert len(chemistry_map.json()["units"]) == 9
 
     biology_unit = client.get(
         "/api/admin/catalog/entity",
@@ -164,37 +164,37 @@ def test_biology_authoring_path_remains_available_and_non_destructive(classroom_
 
 def test_chemistry_classroom_preview_is_complete_but_all_authoring_stays_locked(classroom_client):
     client, token = classroom_client
-    scene = _first_entity(client, "ap-chemistry", "scene", "unit-1")
-    question = _first_entity(client, "ap-chemistry", "question", "unit-1")
+    entity_id = "unit:unit-1"
 
     editor = client.get(
         "/api/admin/editors/entity",
-        params={"course_id": "ap-chemistry", "entity_id": scene["id"]},
+        params={"course_id": "ap-chemistry", "entity_id": entity_id},
     )
     assert editor.status_code == 200
     assert editor.json()["entity"]["course_id"] == "ap-chemistry"
 
     preview = client.get(
         "/api/admin/quality/preview",
-        params={
-            "course_id": "ap-chemistry",
-            "entity_id": scene["id"],
-            "source": "published",
-        },
+        params={"course_id": "ap-chemistry", "entity_id": entity_id, "source": "published"},
     )
     assert preview.status_code == 200
     preview_body = preview.json()
     assert preview_body["course_id"] == "ap-chemistry"
     assert preview_body["unit_id"] == "unit-1"
     assert preview_body["source_state"] == "published"
-    assert preview_body["model"]["renderer"] in {"learn", "learn_recall"}
+    assert preview_body["model"]["renderer"] == "unit"
 
-    replacement = client.get(
-        "/api/admin/replacements/plan",
-        params={"course_id": "ap-chemistry", "entity_id": scene["id"]},
+    journeys = client.get(
+        "/api/admin/catalog/entities",
+        params={"course_id": "ap-chemistry", "entity_type": "journey", "unit_id": "unit-1", "limit": 50},
     )
-    assert replacement.status_code == 200
-    assert replacement.json()["course_id"] == "ap-chemistry"
+    scenes = client.get(
+        "/api/admin/catalog/entities",
+        params={"course_id": "ap-chemistry", "entity_type": "scene", "unit_id": "unit-1", "limit": 50},
+    )
+    assert journeys.status_code == scenes.status_code == 200
+    assert journeys.json()["items"] == []
+    assert scenes.json()["items"] == []
 
     questions = client.get(
         "/api/admin/management/question-bank",
@@ -220,33 +220,24 @@ def test_chemistry_classroom_preview_is_complete_but_all_authoring_stays_locked(
         assert response.status_code == 200
         assert response.json()["course_id"] == "ap-chemistry"
 
-    publication_body = publication.json()
-    assert publication_body["course_editable"] is False
+    assert questions.json()["items"] == []
+    assert challenge.json()["items"] == []
+    assert publication.json()["course_editable"] is False
 
     blocked = [
         client.post(
             "/api/admin/editors/drafts",
-            json={"course_id": "ap-chemistry", "entity_id": scene["id"]},
+            json={"course_id": "ap-chemistry", "entity_id": entity_id},
             headers=csrf(token),
         ),
         client.post(
             "/api/admin/replacements/drafts",
-            json={"course_id": "ap-chemistry", "entity_id": scene["id"]},
-            headers=csrf(token),
-        ),
-        client.post(
-            "/api/admin/management/drafts",
-            json={"course_id": "ap-chemistry", "entity_id": question["id"]},
+            json={"course_id": "ap-chemistry", "entity_id": "scene:unit-1:APCHEM-U1-J1:0"},
             headers=csrf(token),
         ),
         client.post(
             "/api/admin/management/proposals",
-            json={
-                "course_id": "ap-chemistry",
-                "entity_type": "question",
-                "unit_id": "unit-1",
-                "title": "Acceptance lock check",
-            },
+            json={"course_id": "ap-chemistry", "entity_type": "question", "unit_id": "unit-1", "title": "Acceptance lock check"},
             headers=csrf(token),
         ),
         client.post(
@@ -265,11 +256,9 @@ def test_chemistry_classroom_preview_is_complete_but_all_authoring_stays_locked(
         assert response.status_code == 400
         assert "editing is not enabled" in response.json()["detail"]
 
-
 def test_switching_course_context_cannot_reuse_a_biology_draft_in_chemistry(classroom_client):
     client, token = classroom_client
     biology_scene = _first_entity(client, "ap-biology", "scene", "unit-1")
-    chemistry_scene = _first_entity(client, "ap-chemistry", "scene", "unit-1")
 
     draft = client.post(
         "/api/admin/editors/drafts",
@@ -287,12 +276,9 @@ def test_switching_course_context_cannot_reuse_a_biology_draft_in_chemistry(clas
 
     chemistry_preview = client.get(
         "/api/admin/quality/preview",
-        params={
-            "course_id": "ap-chemistry",
-            "entity_id": chemistry_scene["id"],
-            "source": "auto",
-        },
+        params={"course_id": "ap-chemistry", "entity_id": "unit:unit-1", "source": "auto"},
     )
     assert chemistry_preview.status_code == 200
     assert chemistry_preview.json()["course_id"] == "ap-chemistry"
     assert chemistry_preview.json()["source_state"] == "published"
+    assert chemistry_preview.json()["model"]["renderer"] == "unit"

@@ -1,5 +1,5 @@
 {
-  "schema": "story-method-ap-chemistry-source-register-1.5",
+  "schema": "story-method-ap-chemistry-source-register-1.6",
   "course_id": "ap-chemistry",
   "phase": "F0",
   "phase_status": "F0D_COMPLETE",
@@ -130,13 +130,17 @@
       "issue_id": "fixture-unit-2-title",
       "fixture_value": "Molecular and Ionic Compound Structure and Properties",
       "official_framework_value": "Compound Structure and Properties",
-      "action": "Do not silently rename during F0. Resolve when the real AP Chemistry package is constructed."
+      "action": "Do not silently rename during F0. Resolve when the real AP Chemistry package is constructed.",
+      "status": "resolved_in_f1_package_foundation",
+      "resolution": "Real package foundation uses the current CED title Compound Structure and Properties."
     },
     {
       "issue_id": "fixture-units-3-through-9",
       "fixture_value": "Absent from the architecture fixture",
       "official_framework_value": "Nine-unit framework includes Units 3 through 9",
-      "action": "Add only after source crosswalk and F0 readiness gate."
+      "action": "Add only after source crosswalk and F0 readiness gate.",
+      "status": "resolved_in_f1_package_foundation",
+      "resolution": "Real package foundation declares all nine CED units."
     }
   ],
   "source_rules": [
@@ -223,8 +227,10 @@
     "challenge_lab_authoring_authorized": true,
     "student_visibility_authorized": false,
     "teacher_editability_authorized": false,
-    "next_phase": "Real AP Chemistry package foundation"
+    "next_phase": "F1 package foundation complete; next phase is Unit 1 scientific catalog and journey architecture"
   },
   "lab_source_basis": "docs/ap-chemistry/AP_CHEMISTRY_LAB_SOURCE_BASIS.json",
-  "lab_source_directive": "Use the CED/public College Board laboratory guidance as the lab-source basis."
+  "lab_source_directive": "Use the CED/public College Board laboratory guidance as the lab-source basis.",
+  "f1_package_foundation": "docs/ap-chemistry/AP_CHEMISTRY_F1_PACKAGE_FOUNDATION.json",
+  "f1_package_status": "COMPLETE"
 }

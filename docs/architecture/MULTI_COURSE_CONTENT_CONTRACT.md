@@ -69,3 +69,9 @@ The first AP Chemistry package should begin as a very small architecture fixture
 The static student-site builder copies only package-declared student artifacts for courses that are both available and student-visible.
 
 Teacher-only source material, draft databases, private state, PDFs, office files, and administration assets remain outside the public student deployment.
+
+## AP Chemistry fixture graduation
+
+The two-unit AP Chemistry architecture fixture completed its purpose and is preserved by the frozen multi-course foundation checkpoint. After F0D readiness passed, F1 replaced the active fixture with a nine-unit, 91-topic source-backed development package.
+
+The real AP Chemistry package remains `development`, student-hidden, and read-only while curriculum production proceeds. Empty F1 runtime collections are intentional scaffolds and do not indicate missing package declarations.

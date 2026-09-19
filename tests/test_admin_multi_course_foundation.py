@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-from backend import admin_auth, admin_catalog, admin_draft_routes, admin_replacement_routes
+from backend import admin_auth, admin_catalog, admin_draft_routes, admin_replacement_routes, course_packages
 from backend import main as main_module
 
 
@@ -66,19 +66,16 @@ def test_teacher_catalog_requests_are_course_scoped(admin_client):
     chemistry = client.get("/api/admin/catalog/summary?course_id=ap-chemistry")
     assert chemistry.status_code == 200
     assert chemistry.json()["course_id"] == "ap-chemistry"
-    assert chemistry.json()["counts"]["unit"] == 2
-    assert chemistry.json()["counts"]["journey"] == 2
-    assert chemistry.json()["counts"]["scene"] == 4
-    assert chemistry.json()["counts"]["concept"] == 8
-    assert chemistry.json()["counts"]["memory_object"] == 8
+    assert chemistry.json()["counts"]["unit"] == 9
+    assert chemistry.json()["counts"].get("journey", 0) == 0
+    assert chemistry.json()["counts"].get("scene", 0) == 0
+    assert chemistry.json()["counts"].get("concept", 0) == 0
+    assert chemistry.json()["counts"].get("memory_object", 0) == 0
     assert chemistry.json()["unresolved_reference_count"] == 0
 
     chemistry_map = client.get("/api/admin/catalog/course-map?course_id=ap-chemistry")
     assert chemistry_map.status_code == 200
-    assert [unit["title"] for unit in chemistry_map.json()["units"]] == [
-        "Atomic Structure and Properties",
-        "Molecular and Ionic Compound Structure and Properties",
-    ]
+    assert [unit["title"] for unit in chemistry_map.json()["units"]] == ['Atomic Structure and Properties','Compound Structure and Properties','Properties of Substances and Mixtures','Chemical Reactions','Kinetics','Thermochemistry','Equilibrium','Acids and Bases','Thermodynamics and Electrochemistry']
 
     biology_unit = client.get("/api/admin/catalog/entity?course_id=ap-biology&entity_id=unit:unit-1")
     chemistry_unit = client.get("/api/admin/catalog/entity?course_id=ap-chemistry&entity_id=unit:unit-1")
@@ -86,36 +83,31 @@ def test_teacher_catalog_requests_are_course_scoped(admin_client):
     assert biology_unit.json()["title"] == "Chemistry of Life"
     assert chemistry_unit.json()["title"] == "Atomic Structure and Properties"
 
-
 def test_teacher_dependencies_and_source_paths_do_not_cross_courses(admin_client):
     client, _ = admin_client
 
     chemistry_entities = client.get(
-        "/api/admin/catalog/entities?course_id=ap-chemistry&entity_type=scene&limit=50"
+        "/api/admin/catalog/entities?course_id=ap-chemistry&entity_type=unit&limit=50"
     )
     assert chemistry_entities.status_code == 200
     items = chemistry_entities.json()["items"]
-    assert len(items) == 4
+    assert len(items) == 9
     assert all(item["course_id"] == "ap-chemistry" for item in items)
-    assert all(item["source_path"].startswith("content/ap-chemistry/") for item in items)
+
+    declared = course_packages.declared_unit_source_paths("ap-chemistry", "unit-1")
+    assert len(declared) == 6
+    assert all(path.startswith("content/ap-chemistry/unit-1/") for path in declared)
+    assert not any(path.startswith("content/ap-biology/") for path in declared)
 
     report = client.get(
         "/api/admin/catalog/dependencies",
-        params={
-            "course_id": "ap-chemistry",
-            "entity_id": "scene:unit-1:APCHEM-U1-J1:1",
-            "depth": 3,
-            "limit": 500,
-        },
+        params={"course_id": "ap-chemistry", "entity_id": "unit:unit-1", "depth": 3, "limit": 500},
     )
     assert report.status_code == 200
     payload = report.json()
     assert payload["course_id"] == "ap-chemistry"
     related = [item["entity"] for item in payload["related"]]
-    assert related
     assert all(item["course_id"] == "ap-chemistry" for item in related)
-    assert not any("U1-K-" in str(item) for item in related)
-
 
 def test_teacher_drafts_and_replacements_carry_course_identity(admin_client):
     client, token = admin_client
@@ -130,6 +122,7 @@ def test_teacher_drafts_and_replacements_carry_course_identity(admin_client):
     listed = client.get("/api/admin/drafts?course_id=ap-biology&limit=50")
     assert listed.status_code == 200
     assert any(item["draft_id"] == draft.json()["draft_id"] for item in listed.json()["items"])
+
     plan = client.get(
         "/api/admin/replacements/plan",
         params={"entity_id": "scene:unit-8:U8-J1:0", "course_id": "ap-biology"},
@@ -137,22 +130,19 @@ def test_teacher_drafts_and_replacements_carry_course_identity(admin_client):
     assert plan.status_code == 200
     assert plan.json()["course_id"] == "ap-biology"
 
-
-    chemistry_plan = client.get(
+    retired_plan = client.get(
         "/api/admin/replacements/plan",
         params={"entity_id": "scene:unit-1:APCHEM-U1-J1:0", "course_id": "ap-chemistry"},
     )
-    assert chemistry_plan.status_code == 200
-    assert chemistry_plan.json()["course_id"] == "ap-chemistry"
+    assert retired_plan.status_code == 404
 
     blocked = client.post(
         "/api/admin/drafts",
-        json={"entity_id": "scene:unit-1:APCHEM-U1-J1:0", "course_id": "ap-chemistry"},
+        json={"entity_id": "unit:unit-1", "course_id": "ap-chemistry"},
         headers=csrf(token),
     )
     assert blocked.status_code == 400
     assert "editing is not enabled" in blocked.json()["detail"]
-
 
 def test_teacher_frontend_exposes_course_selector_and_course_change_contract():
     root = Path(__file__).resolve().parents[1]

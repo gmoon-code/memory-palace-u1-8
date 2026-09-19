@@ -50,11 +50,11 @@ def main() -> None:
     biology = records.get("ap-biology")
     chemistry = records.get("ap-chemistry")
     require(biology is not None, "AP Biology is missing from the course registry")
-    require(chemistry is not None, "AP Chemistry architecture fixture is missing from the course registry")
+    require(chemistry is not None, "AP Chemistry development package is missing from the course registry")
     require(biology.get("status") == "available", "AP Biology must remain available")
     require(biology.get("student_visible") is True, "AP Biology must remain student-visible")
-    require(chemistry.get("status") == "development", "AP Chemistry fixture must remain development-only")
-    require(chemistry.get("student_visible") is False, "AP Chemistry fixture must remain hidden from students")
+    require(chemistry.get("status") == "development", "AP Chemistry development package must remain development-only")
+    require(chemistry.get("student_visible") is False, "AP Chemistry development package must remain hidden from students")
 
     admin_catalog.clear_catalog_cache()
     course_packages.package_manifest.cache_clear()
@@ -62,8 +62,8 @@ def main() -> None:
     access = {item["course_id"]: item for item in admin_catalog.catalog_courses()["courses"]}
     require(access["ap-biology"]["catalog_ready"] is True, "AP Biology catalog must remain ready")
     require(access["ap-biology"]["editable"] is True, "AP Biology editing must remain enabled")
-    require(access["ap-chemistry"]["catalog_ready"] is True, "AP Chemistry fixture catalog must remain inspectable")
-    require(access["ap-chemistry"]["editable"] is False, "AP Chemistry fixture must remain read-only")
+    require(access["ap-chemistry"]["catalog_ready"] is True, "AP Chemistry development catalog must remain inspectable")
+    require(access["ap-chemistry"]["editable"] is False, "AP Chemistry development package must remain read-only")
 
     try:
         admin_catalog.require_editable_course("ap-chemistry")
@@ -164,7 +164,7 @@ def main() -> None:
 
     print("MULTI-COURSE INTEGRATION GATE PASS")
     print("- AP Biology remains the editable student-visible production course")
-    print("- AP Chemistry remains a hidden catalog-ready read-only architecture fixture")
+    print("- AP Chemistry remains a hidden catalog-ready read-only development package")
     print("- package roots and declared source files remain course- and unit-scoped")
     print("- drafts, media, quality, management, and publication retain explicit course boundaries")
     print("- catalog-ready inspection remains separate from editable write access")

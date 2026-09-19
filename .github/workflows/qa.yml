@@ -91,6 +91,7 @@ jobs:
       - run: python scripts/qa_ap_chemistry_lab_source_basis.py
       - run: python scripts/qa_ap_chemistry_f0c_science_component_plan.py
       - run: python scripts/qa_ap_chemistry_f0d_readiness_gate.py
+      - run: python scripts/qa_ap_chemistry_f1_package_foundation.py
       - run: python scripts/qa_content_studio_integration.py
       - run: python scripts/qa_zero_cost_rehearsal.py
       - run: python scripts/qa_zero_cost_runtime.py

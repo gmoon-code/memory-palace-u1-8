@@ -2,47 +2,7 @@
   "schema": "story-method-review-manifest-1.0",
   "course_id": "ap-chemistry",
   "unit_id": "unit-2",
-  "target_count": 4,
-  "targets": [
-    {
-      "knowledge_id": "APCHEM-U2-K001",
-      "target_answer": "Ionic solid",
-      "prompt": "What type of solid contains cations and anions in an extended electrostatic lattice?",
-      "hint": "Alternating charged tiles continue across the floor.",
-      "journey_id": "APCHEM-U2-J1",
-      "scene_index": 0,
-      "scene_title": "Two Floors, Two Structures",
-      "canonical_science": "An ionic solid consists of cations and anions arranged in an extended lattice held together by electrostatic attractions."
-    },
-    {
-      "knowledge_id": "APCHEM-U2-K002",
-      "target_answer": "Molecular solid",
-      "prompt": "What type of solid contains discrete molecules held together by intermolecular forces?",
-      "hint": "Separate molecule cases remain identifiable.",
-      "journey_id": "APCHEM-U2-J1",
-      "scene_index": 0,
-      "scene_title": "Two Floors, Two Structures",
-      "canonical_science": "A molecular solid consists of discrete molecules held together in the solid by intermolecular forces."
-    },
-    {
-      "knowledge_id": "APCHEM-U2-K003",
-      "target_answer": "Lewis electron-dot structure",
-      "prompt": "What representation uses element symbols, bond lines, and dots to show valence electrons and bonding?",
-      "hint": "Think of the electron drafting board.",
-      "journey_id": "APCHEM-U2-J1",
-      "scene_index": 1,
-      "scene_title": "The Electron Drafting Desk",
-      "canonical_science": "A Lewis electron-dot structure represents valence electrons and bonding connections using element symbols, lines, and dots."
-    },
-    {
-      "knowledge_id": "APCHEM-U2-K004",
-      "target_answer": "Formal charge",
-      "prompt": "What bookkeeping quantity compares assigned bonding and nonbonding electrons with an atom's valence-electron count?",
-      "hint": "The ledger gives each bonded atom half of the shared electrons.",
-      "journey_id": "APCHEM-U2-J1",
-      "scene_index": 1,
-      "scene_title": "The Electron Drafting Desk",
-      "canonical_science": "Formal charge assigns bonding electrons equally between bonded atoms and compares the assigned electrons with the atom's valence-electron count."
-    }
-  ]
+  "foundation_status": "SOURCE_BACKED_SCAFFOLD",
+  "target_count": 0,
+  "targets": []
 }

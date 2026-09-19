@@ -75,7 +75,7 @@
     },
     {
       "unit_id": "unit-2",
-      "title": "Molecular and Ionic Compound Structure and Properties",
+      "title": "Compound Structure and Properties",
       "content_root": "content/ap-chemistry/unit-2",
       "journeys": {
         "registry_path": "content/ap-chemistry/unit-2/journeys.json",
@@ -118,6 +118,363 @@
       "challenge_lab": {
         "mode": "file",
         "path": "content/ap-chemistry/unit-2/application-lab.json",
+        "collection_keys": [
+          "items"
+        ],
+        "format": "native"
+      }
+    },
+    {
+      "unit_id": "unit-3",
+      "title": "Properties of Substances and Mixtures",
+      "content_root": "content/ap-chemistry/unit-3",
+      "journeys": {
+        "registry_path": "content/ap-chemistry/unit-3/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/ap-chemistry/unit-3/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-3/concepts.json",
+        "collection_keys": [
+          "concepts"
+        ],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-3/memory-objects.json",
+        "collection_keys": [
+          "memory_objects"
+        ],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-3/review-manifest.json",
+        "collection_keys": [
+          "targets"
+        ],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-3/mixed-discrimination.json",
+        "collection_keys": [
+          "sets"
+        ],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-3/application-lab.json",
+        "collection_keys": [
+          "items"
+        ],
+        "format": "native"
+      }
+    },
+    {
+      "unit_id": "unit-4",
+      "title": "Chemical Reactions",
+      "content_root": "content/ap-chemistry/unit-4",
+      "journeys": {
+        "registry_path": "content/ap-chemistry/unit-4/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/ap-chemistry/unit-4/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-4/concepts.json",
+        "collection_keys": [
+          "concepts"
+        ],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-4/memory-objects.json",
+        "collection_keys": [
+          "memory_objects"
+        ],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-4/review-manifest.json",
+        "collection_keys": [
+          "targets"
+        ],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-4/mixed-discrimination.json",
+        "collection_keys": [
+          "sets"
+        ],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-4/application-lab.json",
+        "collection_keys": [
+          "items"
+        ],
+        "format": "native"
+      }
+    },
+    {
+      "unit_id": "unit-5",
+      "title": "Kinetics",
+      "content_root": "content/ap-chemistry/unit-5",
+      "journeys": {
+        "registry_path": "content/ap-chemistry/unit-5/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/ap-chemistry/unit-5/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-5/concepts.json",
+        "collection_keys": [
+          "concepts"
+        ],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-5/memory-objects.json",
+        "collection_keys": [
+          "memory_objects"
+        ],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-5/review-manifest.json",
+        "collection_keys": [
+          "targets"
+        ],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-5/mixed-discrimination.json",
+        "collection_keys": [
+          "sets"
+        ],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-5/application-lab.json",
+        "collection_keys": [
+          "items"
+        ],
+        "format": "native"
+      }
+    },
+    {
+      "unit_id": "unit-6",
+      "title": "Thermochemistry",
+      "content_root": "content/ap-chemistry/unit-6",
+      "journeys": {
+        "registry_path": "content/ap-chemistry/unit-6/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/ap-chemistry/unit-6/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-6/concepts.json",
+        "collection_keys": [
+          "concepts"
+        ],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-6/memory-objects.json",
+        "collection_keys": [
+          "memory_objects"
+        ],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-6/review-manifest.json",
+        "collection_keys": [
+          "targets"
+        ],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-6/mixed-discrimination.json",
+        "collection_keys": [
+          "sets"
+        ],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-6/application-lab.json",
+        "collection_keys": [
+          "items"
+        ],
+        "format": "native"
+      }
+    },
+    {
+      "unit_id": "unit-7",
+      "title": "Equilibrium",
+      "content_root": "content/ap-chemistry/unit-7",
+      "journeys": {
+        "registry_path": "content/ap-chemistry/unit-7/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/ap-chemistry/unit-7/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-7/concepts.json",
+        "collection_keys": [
+          "concepts"
+        ],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-7/memory-objects.json",
+        "collection_keys": [
+          "memory_objects"
+        ],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-7/review-manifest.json",
+        "collection_keys": [
+          "targets"
+        ],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-7/mixed-discrimination.json",
+        "collection_keys": [
+          "sets"
+        ],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-7/application-lab.json",
+        "collection_keys": [
+          "items"
+        ],
+        "format": "native"
+      }
+    },
+    {
+      "unit_id": "unit-8",
+      "title": "Acids and Bases",
+      "content_root": "content/ap-chemistry/unit-8",
+      "journeys": {
+        "registry_path": "content/ap-chemistry/unit-8/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/ap-chemistry/unit-8/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-8/concepts.json",
+        "collection_keys": [
+          "concepts"
+        ],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-8/memory-objects.json",
+        "collection_keys": [
+          "memory_objects"
+        ],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-8/review-manifest.json",
+        "collection_keys": [
+          "targets"
+        ],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-8/mixed-discrimination.json",
+        "collection_keys": [
+          "sets"
+        ],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-8/application-lab.json",
+        "collection_keys": [
+          "items"
+        ],
+        "format": "native"
+      }
+    },
+    {
+      "unit_id": "unit-9",
+      "title": "Thermodynamics and Electrochemistry",
+      "content_root": "content/ap-chemistry/unit-9",
+      "journeys": {
+        "registry_path": "content/ap-chemistry/unit-9/journeys.json",
+        "collection_key": "guided_journeys",
+        "directory": "content/ap-chemistry/unit-9/journeys",
+        "filename_template": "{journey_id}.json"
+      },
+      "concepts": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-9/concepts.json",
+        "collection_keys": [
+          "concepts"
+        ],
+        "format": "auto_records"
+      },
+      "memory_objects": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-9/memory-objects.json",
+        "collection_keys": [
+          "memory_objects"
+        ],
+        "format": "native"
+      },
+      "review": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-9/review-manifest.json",
+        "collection_keys": [
+          "targets"
+        ],
+        "format": "native"
+      },
+      "mixed_discrimination": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-9/mixed-discrimination.json",
+        "collection_keys": [
+          "sets"
+        ],
+        "format": "native"
+      },
+      "challenge_lab": {
+        "mode": "file",
+        "path": "content/ap-chemistry/unit-9/application-lab.json",
         "collection_keys": [
           "items"
         ],
