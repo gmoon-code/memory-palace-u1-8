@@ -41,6 +41,39 @@ def main() -> None:
         require(record["matches"], f"{key} does not match the frozen release")
 
     require(summary["health"]["error_count"] == 0, "catalog has blocking release-alignment errors")
+    courses = admin_catalog.catalog_courses()
+    chemistry_record = next(item for item in courses["courses"] if item["course_id"] == "ap-chemistry")
+    require(chemistry_record["catalog_ready"] is True, "AP Chemistry package did not become catalog ready")
+    require(chemistry_record["editable"] is False, "development AP Chemistry fixture unexpectedly became editable")
+    require(chemistry_record["catalog_mode"] == "read_only", "AP Chemistry fixture is not marked read only")
+
+    chemistry = admin_catalog.catalog_summary("ap-chemistry")
+    require(chemistry["course_id"] == "ap-chemistry", "chemistry catalog lost course identity")
+    require(chemistry["counts"].get("unit") == 2, "chemistry catalog does not contain two fixture units")
+    require(chemistry["counts"].get("journey") == 2, "chemistry catalog does not contain two fixture journeys")
+    require(chemistry["counts"].get("scene") == 4, "chemistry catalog does not contain four fixture scenes")
+    require(chemistry["counts"].get("concept") == 8, "chemistry catalog does not contain eight fixture concepts")
+    require(chemistry["counts"].get("memory_object") == 8, "chemistry catalog does not contain eight fixture Memory Objects")
+    require(chemistry["unresolved_reference_count"] == 0, "chemistry catalog has unresolved fixture references")
+
+    chemistry_snapshot = admin_catalog.catalog("ap-chemistry")
+    require(
+        all(entity.get("course_id") == "ap-chemistry" for entity in chemistry_snapshot["entities"].values()),
+        "chemistry catalog contains an entity from another course",
+    )
+    chemistry_scenes = [
+        entity for entity in chemistry_snapshot["entities"].values() if entity.get("type") == "scene"
+    ]
+    require(
+        chemistry_scenes and all(str(entity.get("source_path") or "").startswith("content/ap-chemistry/") for entity in chemistry_scenes),
+        "chemistry scene source paths escaped the chemistry namespace",
+    )
+    try:
+        admin_catalog.require_editable_course("ap-chemistry")
+    except ValueError:
+        pass
+    else:
+        require(False, "development chemistry catalog did not enforce its write lock")
     require(len(course_map["units"]) == 8, "course map does not contain all eight units")
     require(
         sum(unit["journey_count"] for unit in course_map["units"]) == 58,
@@ -89,6 +122,7 @@ def main() -> None:
     print("- frozen Unit 1-8 totals match the normalized catalog")
     print("- protected catalog APIs are read-only and course scoped")
     print("- Course Map, search, health, and dependency inspector are wired")
+    print("- AP Chemistry read-only catalog is isolated from AP Biology")
     print(f"- unresolved source references are reported: {summary['unresolved_reference_count']}")
 
 
