@@ -11,6 +11,7 @@ from backend import (
     admin_catalog,
     admin_draft_routes,
     admin_editor_routes,
+    admin_management,
     admin_management_routes,
     admin_replacement_routes,
 )
@@ -44,6 +45,7 @@ def management_client(monkeypatch: pytest.MonkeyPatch, tmp_path: Path):
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_MEDIA_DB", str(tmp_path / "content-studio-media.sqlite3"))
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_MEDIA_DIR", str(tmp_path / "content-studio-media"))
     monkeypatch.setenv("MEMORY_PALACE_ADMIN_SESSION_TTL_SECONDS", "3600")
+    admin_catalog.clear_catalog_cache()
     with TestClient(main_module.app) as client:
         login = client.post(
             "/api/admin/login",
@@ -294,3 +296,181 @@ def test_management_mutations_require_csrf(management_client):
         json={"find": "osmosis", "replacement": "osmosis"},
     )
     assert preview.status_code == 403
+
+
+
+def test_chemistry_question_review_and_challenge_reads_are_course_scoped(management_client):
+    client, token, _ = management_client
+
+    bank = client.get(
+        "/api/admin/management/question-bank",
+        params={"course_id": "ap-chemistry", "unit_id": "unit-1", "limit": 1000},
+    )
+    assert bank.status_code == 200
+    bank_payload = bank.json()
+    assert bank_payload["course_id"] == "ap-chemistry"
+    assert bank_payload["items"]
+    assert all(item.get("course_id") == "ap-chemistry" for item in bank_payload["items"])
+    assert not any("U1-K-" in str(item) and "APCHEM-U1-K" not in str(item) for item in bank_payload["items"])
+
+    review_question = next(
+        item
+        for item in bank_payload["items"]
+        if item.get("type") == "question"
+        and item.get("question_type") == "review"
+        and item.get("source_path")
+    )
+    detail = client.get(
+        "/api/admin/management/entity",
+        params={"course_id": "ap-chemistry", "entity_id": review_question["id"]},
+    )
+    assert detail.status_code == 200
+    entity = detail.json()["entity"]
+    assert entity["course_id"] == "ap-chemistry"
+    assert entity["source_path"].startswith("content/ap-chemistry/")
+    assert entity["prompt"]
+
+    timeline = client.get(
+        "/api/admin/management/review-timeline",
+        params={"course_id": "ap-chemistry", "unit_id": "unit-1"},
+    )
+    assert timeline.status_code == 200
+    timeline_payload = timeline.json()
+    assert timeline_payload["course_id"] == "ap-chemistry"
+    assert timeline_payload["event_count"] > 0
+    assert all(event["course_id"] == "ap-chemistry" for event in timeline_payload["events"])
+
+    challenges = client.get(
+        "/api/admin/management/challenge-bank",
+        params={"course_id": "ap-chemistry", "unit_id": "unit-1", "limit": 1000},
+    )
+    assert challenges.status_code == 200
+    challenge_payload = challenges.json()
+    assert challenge_payload["course_id"] == "ap-chemistry"
+    assert challenge_payload["items"]
+    assert all(item.get("course_id") == "ap-chemistry" for item in challenge_payload["items"])
+
+    blocked_existing = client.post(
+        "/api/admin/management/drafts",
+        json={"course_id": "ap-chemistry", "entity_id": review_question["id"]},
+        headers=csrf(token),
+    )
+    assert blocked_existing.status_code == 400
+    assert "editing is not enabled" in blocked_existing.json()["detail"]
+
+    blocked_proposal = client.post(
+        "/api/admin/management/proposals",
+        json={
+            "course_id": "ap-chemistry",
+            "entity_type": "question",
+            "unit_id": "unit-1",
+            "title": "Read-only chemistry proposal check",
+        },
+        headers=csrf(token),
+    )
+    assert blocked_proposal.status_code == 400
+    assert "editing is not enabled" in blocked_proposal.json()["detail"]
+
+
+def test_managed_duplicate_entity_ids_are_isolated_across_courses(
+    management_client,
+    monkeypatch: pytest.MonkeyPatch,
+):
+    client, token, _ = management_client
+    shared_id = "question:unit-1:shared-course-record"
+
+    def fake_entity(entity_id: str, course_id: str = "ap-biology"):
+        if entity_id != shared_id:
+            return None
+        label = "Biology" if course_id == "ap-biology" else "Chemistry"
+        return {
+            "id": shared_id,
+            "type": "question",
+            "course_id": course_id,
+            "unit_id": "unit-1",
+            "title": f"{label} shared question",
+            "question_type": "review",
+            "prompt": f"{label} prompt",
+            "answer": f"{label} answer",
+            "explanation": f"{label} explanation",
+            "knowledge_ids": [],
+            "source_path": None,
+        }
+
+    monkeypatch.setattr(
+        admin_catalog,
+        "require_editable_course",
+        lambda course_id: {"course_id": course_id, "editable": True, "catalog_ready": True},
+    )
+    monkeypatch.setattr(admin_catalog, "get_entity", fake_entity)
+
+    biology = client.post(
+        "/api/admin/management/drafts",
+        json={"course_id": "ap-biology", "entity_id": shared_id},
+        headers=csrf(token),
+    )
+    chemistry = client.post(
+        "/api/admin/management/drafts",
+        json={"course_id": "ap-chemistry", "entity_id": shared_id},
+        headers=csrf(token),
+    )
+    assert biology.status_code == chemistry.status_code == 200
+    biology_draft = biology.json()
+    chemistry_draft = chemistry.json()
+    assert biology_draft["draft_id"] != chemistry_draft["draft_id"]
+    assert biology_draft["course_id"] == "ap-biology"
+    assert chemistry_draft["course_id"] == "ap-chemistry"
+
+    biology_payload = dict(biology_draft["payload"])
+    biology_payload["prompt"] = "Biology isolated prompt"
+    biology_saved = client.patch(
+        f"/api/admin/management/drafts/{biology_draft['draft_id']}",
+        json={
+            "course_id": "ap-biology",
+            "payload": biology_payload,
+            "expected_version": biology_draft["version"],
+            "note": "Biology management isolation",
+            "autosave": False,
+        },
+        headers=csrf(token),
+    )
+    assert biology_saved.status_code == 200
+
+    wrong_course = client.patch(
+        f"/api/admin/management/drafts/{chemistry_draft['draft_id']}",
+        json={
+            "course_id": "ap-biology",
+            "payload": chemistry_draft["payload"],
+            "expected_version": chemistry_draft["version"],
+            "note": "Wrong course should fail",
+            "autosave": False,
+        },
+        headers=csrf(token),
+    )
+    assert wrong_course.status_code == 404
+
+    chemistry_payload = dict(chemistry_draft["payload"])
+    chemistry_payload["prompt"] = "Chemistry isolated prompt"
+    chemistry_saved = client.patch(
+        f"/api/admin/management/drafts/{chemistry_draft['draft_id']}",
+        json={
+            "course_id": "ap-chemistry",
+            "payload": chemistry_payload,
+            "expected_version": chemistry_draft["version"],
+            "note": "Chemistry management isolation",
+            "autosave": False,
+        },
+        headers=csrf(token),
+    )
+    assert chemistry_saved.status_code == 200
+
+    biology_after = client.get(
+        f"/api/admin/drafts/{biology_draft['draft_id']}",
+        params={"course_id": "ap-biology"},
+    ).json()
+    chemistry_after = client.get(
+        f"/api/admin/drafts/{chemistry_draft['draft_id']}",
+        params={"course_id": "ap-chemistry"},
+    ).json()
+    assert biology_after["payload"]["prompt"] == "Biology isolated prompt"
+    assert chemistry_after["payload"]["prompt"] == "Chemistry isolated prompt"

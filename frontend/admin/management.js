@@ -1,6 +1,6 @@
 const managementState = {
   mode: null,
-  unitId: "unit-1",
+  unitId: "",
   questionType: "",
   query: "",
   records: [],
@@ -16,12 +16,17 @@ const managementState = {
   importBundle: null,
   importPreview: null,
   bulkPreview: null,
+  units: [],
 };
 
 const managementModes = new Set(["questions", "review", "challenge", "media", "import-export"]);
 
 function m(id) {
   return document.getElementById(id);
+}
+
+function currentAdminCourseId() {
+  return document.getElementById("admin-course-select")?.value || "ap-biology";
 }
 
 function currentAdminCourseEditable() {
@@ -50,8 +55,13 @@ function humanize(value) {
 function unitOptions(includeAll = false) {
   const options = [];
   if (includeAll) options.push('<option value="">All units</option>');
-  for (let value = 1; value <= 8; value += 1) {
-    options.push(`<option value="unit-${value}" ${managementState.unitId === `unit-${value}` ? "selected" : ""}>Unit ${value}</option>`);
+  for (const unit of managementState.units) {
+    const numberLabel = Number(unit.number) || "";
+    const prefix = numberLabel ? `Unit ${numberLabel}` : unit.unit_id;
+    const label = unit.title ? `${prefix} · ${unit.title}` : prefix;
+    options.push(
+      `<option value="${esc(unit.unit_id)}" ${managementState.unitId === unit.unit_id ? "selected" : ""}>${esc(label)}</option>`
+    );
   }
   return options.join("");
 }
@@ -233,7 +243,7 @@ async function renderQuestionBank() {
 }
 
 async function loadQuestionRecords() {
-  const params = new URLSearchParams({ limit: "1000" });
+  const params = new URLSearchParams({ course_id: currentAdminCourseId(), limit: "1000" });
   if (managementState.unitId) params.set("unit_id", managementState.unitId);
   if (managementState.questionType) params.set("question_type", managementState.questionType);
   if (managementState.query.trim()) params.set("q", managementState.query.trim());
@@ -251,14 +261,19 @@ async function loadQuestionRecords() {
 }
 
 async function createProposal(entityType) {
-  const unitId = managementState.unitId || "unit-1";
+  const unitId = managementState.unitId || managementState.units[0]?.unit_id || "";
   const title = window.prompt(entityType === "question_set" ? "Name the new question set" : "Name the new question", entityType === "question_set" ? "New discrimination set" : "New question");
   if (!title?.trim()) return;
   try {
     const draft = await managementApi("/api/admin/management/proposals", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ entity_type: entityType, unit_id: unitId, title: title.trim() }),
+      body: JSON.stringify({
+        course_id: currentAdminCourseId(),
+        entity_type: entityType,
+        unit_id: unitId,
+        title: title.trim(),
+      }),
     });
     managementState.selectedEntityId = draft.entity_id;
     managementState.currentDraft = draft;
@@ -274,7 +289,11 @@ async function openManagedEntity(entityId) {
   clearTimeout(managementState.saveTimer);
   managementState.selectedEntityId = entityId;
   try {
-    const payload = await managementApi(`/api/admin/management/entity?entity_id=${encodeURIComponent(entityId)}`);
+    const params = new URLSearchParams({
+      entity_id: entityId,
+      course_id: currentAdminCourseId(),
+    });
+    const payload = await managementApi(`/api/admin/management/entity?${params.toString()}`);
     managementState.currentEntity = payload.entity;
     managementState.currentDraft = payload.draft || null;
     managementState.workingPayload = structuredClone(payload.draft?.payload || payload.entity || {});
@@ -373,7 +392,10 @@ async function openWorkingCopyForManaged() {
     const draft = await managementApi("/api/admin/management/drafts", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ entity_id: managementState.selectedEntityId }),
+      body: JSON.stringify({
+        entity_id: managementState.selectedEntityId,
+        course_id: currentAdminCourseId(),
+      }),
     });
     managementState.currentDraft = draft;
     managementState.workingPayload = structuredClone(draft.payload || {});
@@ -395,7 +417,13 @@ async function saveManagedDraft(autosave) {
     const saved = await managementApi(`/api/admin/management/drafts/${encodeURIComponent(managementState.currentDraft.draft_id)}`, {
       method: "PATCH",
       csrf: true,
-      body: JSON.stringify({ payload, expected_version: managementState.currentDraft.version, note: autosave ? "Step 7 editor autosave" : "Step 7 editor save", autosave }),
+      body: JSON.stringify({
+        course_id: managementState.currentDraft.course_id || currentAdminCourseId(),
+        payload,
+        expected_version: managementState.currentDraft.version,
+        note: autosave ? "Step 7 editor autosave" : "Step 7 editor save",
+        autosave,
+      }),
     });
     managementState.currentDraft = saved;
     managementState.workingPayload = structuredClone(saved.payload || payload);
@@ -422,7 +450,10 @@ async function snapshotManagedDraft() {
     await managementApi(`/api/admin/drafts/${encodeURIComponent(saved.draft_id)}/snapshots`, {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ label: label.trim() }),
+      body: JSON.stringify({
+        label: label.trim(),
+        course_id: saved.course_id || currentAdminCourseId(),
+      }),
     });
     managementMessage(`Snapshot “${label.trim()}” created.`);
   } catch (error) {
@@ -440,7 +471,7 @@ async function renderReviewSystem() {
     <section class="panel review-controls"><div><p class="eyebrow">Retrieval timeline</p><h2>Review coverage by unit</h2></div><div class="management-toolbar horizontal"><select id="review-unit">${unitOptions(false)}</select><button id="refresh-review" class="button secondary" type="button">Refresh</button></div></section>
     <div id="review-phase-grid" class="review-phase-grid"></div>
     <div class="management-grid review-grid"><section class="panel"><div class="panel-heading"><div><p class="eyebrow">Scheduled retrieval</p><h2>Timeline</h2></div></div><div id="review-timeline" class="review-timeline"></div></section><section class="panel"><div class="panel-heading"><div><p class="eyebrow">Coverage check</p><h2>Knowledge without later retrieval</h2></div></div><div id="review-gaps" class="review-gaps"></div></section></div>`;
-  m("review-unit").value = managementState.unitId || "unit-1";
+  m("review-unit").value = managementState.unitId || managementState.units[0]?.unit_id || "";
   m("review-unit").addEventListener("change", async (event) => {
     managementState.unitId = event.target.value;
     await loadReviewTimeline();
@@ -451,7 +482,11 @@ async function renderReviewSystem() {
 
 async function loadReviewTimeline() {
   try {
-    const data = await managementApi(`/api/admin/management/review-timeline?unit_id=${encodeURIComponent(managementState.unitId || "unit-1")}`);
+    const params = new URLSearchParams({
+      unit_id: managementState.unitId || managementState.units[0]?.unit_id || "",
+      course_id: currentAdminCourseId(),
+    });
+    const data = await managementApi(`/api/admin/management/review-timeline?${params.toString()}`);
     const phases = [
       ["Immediate", data.phase_counts?.immediate, "Quick Recall"],
       ["Delayed", data.phase_counts?.delayed, "review prompts"],
@@ -508,7 +543,7 @@ async function renderChallengeLab() {
 }
 
 async function loadChallengeRecords() {
-  const params = new URLSearchParams({ limit: "1000" });
+  const params = new URLSearchParams({ course_id: currentAdminCourseId(), limit: "1000" });
   if (managementState.unitId) params.set("unit_id", managementState.unitId);
   if (managementState.query.trim()) params.set("q", managementState.query.trim());
   try {
@@ -522,14 +557,19 @@ async function loadChallengeRecords() {
 }
 
 async function createChallengeProposal() {
-  const unitId = managementState.unitId || "unit-1";
+  const unitId = managementState.unitId || managementState.units[0]?.unit_id || "";
   const title = window.prompt("Name the new Challenge Lab item", "New application challenge");
   if (!title?.trim()) return;
   try {
     const draft = await managementApi("/api/admin/management/proposals", {
       method: "POST",
       csrf: true,
-      body: JSON.stringify({ entity_type: "challenge", unit_id: unitId, title: title.trim() }),
+      body: JSON.stringify({
+        course_id: currentAdminCourseId(),
+        entity_type: "challenge",
+        unit_id: unitId,
+        title: title.trim(),
+      }),
     });
     managementState.selectedEntityId = draft.entity_id;
     managementState.currentDraft = draft;
@@ -818,5 +858,22 @@ async function workspaceSearch() {
     managementMessage(error.message, true);
   }
 }
+
+window.addEventListener("story-method-course-changed", (event) => {
+  managementState.units = Array.isArray(event.detail?.units) ? event.detail.units : [];
+  managementState.unitId = managementState.units[0]?.unit_id || "";
+  managementState.questionType = "";
+  managementState.query = "";
+  managementState.records = [];
+  managementState.selectedEntityId = null;
+  managementState.currentEntity = null;
+  managementState.currentDraft = null;
+  managementState.workingPayload = null;
+  managementState.importBundle = null;
+  managementState.importPreview = null;
+  managementState.bulkPreview = null;
+  clearTimeout(managementState.saveTimer);
+  m("management-view")?.classList.add("hidden");
+});
 
 ensureManagementUi();

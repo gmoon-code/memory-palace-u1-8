@@ -14,9 +14,11 @@ router = APIRouter(prefix="/api/admin/management", tags=["content-studio-managem
 
 class CreateManagedDraftRequest(BaseModel):
     entity_id: str = Field(min_length=1, max_length=512)
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
 
 
 class SaveManagedDraftRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     payload: dict[str, Any]
     expected_version: int = Field(ge=1)
     note: str | None = Field(default=None, max_length=500)
@@ -24,6 +26,7 @@ class SaveManagedDraftRequest(BaseModel):
 
 
 class CreateProposalRequest(BaseModel):
+    course_id: str = Field(default="ap-biology", min_length=1, max_length=128)
     entity_type: str = Field(min_length=1, max_length=80)
     unit_id: str = Field(min_length=1, max_length=40)
     title: str = Field(min_length=1, max_length=500)
@@ -95,6 +98,7 @@ def _raise_management_error(exc: Exception) -> None:
 @router.get("/question-bank")
 def question_bank(
     request: Request,
+    course_id: str = "ap-biology",
     unit_id: str | None = None,
     question_type: str | None = None,
     q: str | None = None,
@@ -103,6 +107,7 @@ def question_bank(
     _owner(request)
     try:
         return admin_management.question_bank(
+            course_id=course_id,
             unit_id=unit_id,
             question_type=question_type,
             query=q,
@@ -115,30 +120,35 @@ def question_bank(
 @router.get("/challenge-bank")
 def challenge_bank(
     request: Request,
+    course_id: str = "ap-biology",
     unit_id: str | None = None,
     q: str | None = None,
     limit: int = 500,
 ):
     _owner(request)
     try:
-        return admin_management.challenge_bank(unit_id=unit_id, query=q, limit=limit)
+        return admin_management.challenge_bank(course_id=course_id, unit_id=unit_id, query=q, limit=limit)
     except Exception as exc:
         _raise_management_error(exc)
 
 
 @router.get("/entity")
-def managed_entity(request: Request, entity_id: str):
+def managed_entity(request: Request, entity_id: str, course_id: str = "ap-biology"):
     _owner(request)
     if entity_id.startswith("new:"):
         try:
-            draft = admin_management._active_draft_for_entity(entity_id)
+            draft = admin_management._active_draft_for_entity(entity_id, course_id)
             if draft is None:
                 raise admin_drafts.DraftNotFound("Proposed record not found")
             return {"entity": draft["payload"], "draft": draft, "proposal": True}
         except Exception as exc:
             _raise_management_error(exc)
     try:
-        return {"entity": admin_management.managed_entity(entity_id), "draft": admin_management._active_draft_for_entity(entity_id), "proposal": False}
+        return {
+            "entity": admin_management.managed_entity(entity_id, course_id),
+            "draft": admin_management._active_draft_for_entity(entity_id, course_id),
+            "proposal": False,
+        }
     except Exception as exc:
         _raise_management_error(exc)
 
@@ -148,11 +158,15 @@ def create_managed_draft(payload: CreateManagedDraftRequest, request: Request):
     session = _owner(request, csrf=True)
     try:
         if payload.entity_id.startswith("new:"):
-            draft = admin_management._active_draft_for_entity(payload.entity_id)
+            draft = admin_management._active_draft_for_entity(payload.entity_id, payload.course_id)
             if draft is None:
                 raise admin_drafts.DraftNotFound("Proposed record not found")
             return draft
-        return admin_management.create_managed_draft(payload.entity_id, session.username)
+        return admin_management.create_managed_draft(
+            payload.entity_id,
+            session.username,
+            payload.course_id,
+        )
     except Exception as exc:
         _raise_management_error(exc)
 
@@ -168,6 +182,7 @@ def save_managed_draft(draft_id: str, payload: SaveManagedDraftRequest, request:
             username=session.username,
             note=payload.note,
             autosave=payload.autosave,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_management_error(exc)
@@ -183,16 +198,17 @@ def create_proposal(payload: CreateProposalRequest, request: Request):
             payload.title,
             session.username,
             seed=payload.seed,
+            course_id=payload.course_id,
         )
     except Exception as exc:
         _raise_management_error(exc)
 
 
 @router.get("/review-timeline")
-def review_timeline(request: Request, unit_id: str):
+def review_timeline(request: Request, unit_id: str, course_id: str = "ap-biology"):
     _owner(request)
     try:
-        return admin_management.review_timeline(unit_id)
+        return admin_management.review_timeline(unit_id, course_id)
     except Exception as exc:
         _raise_management_error(exc)
 

@@ -11,10 +11,10 @@ import sqlite3
 from typing import Any, Iterable
 import uuid
 
-from . import admin_catalog, admin_drafts, admin_editors
+from . import admin_catalog, admin_drafts, admin_editors, course_packages
 from .settings import APBIO_DIR, FRONTEND_DIR, ROOT
 
-MANAGEMENT_SCHEMA = "story-method-content-studio-management-1.0"
+MANAGEMENT_SCHEMA = "story-method-content-studio-management-1.1"
 PORTABLE_SCHEMA = "story-method-content-studio-portable-1.0"
 MEDIA_SCHEMA = "story-method-content-studio-media-1.0"
 MANAGED_TYPES = {"question", "question_set", "challenge"}
@@ -103,6 +103,31 @@ def _as_list(value: Any) -> list[Any]:
     return [value]
 
 
+def _require_course_unit(
+    course_id: str,
+    unit_id: str,
+    *,
+    editable: bool = False,
+) -> dict[str, Any]:
+    try:
+        access = (
+            admin_catalog.require_editable_course(course_id)
+            if editable
+            else admin_catalog.course_access(course_id)
+        )
+    except ValueError as exc:
+        raise ManagementError(str(exc)) from exc
+    if not access.get("catalog_ready"):
+        raise ManagementError(f"Content Studio catalog is not available for course '{course_id}'")
+    try:
+        unit = course_packages.unit(course_id, unit_id)
+    except course_packages.CoursePackageError as exc:
+        raise ManagementError(str(exc)) from exc
+    if unit is None:
+        raise ManagementError(f"Unit '{unit_id}' is not declared for course '{course_id}'")
+    return unit
+
+
 def _repo_file(source_path: str | None) -> Path | None:
     if not source_path:
         return None
@@ -138,7 +163,7 @@ def _records(payload: Any, keys: Iterable[str]) -> list[dict[str, Any]]:
 def _normalized_overlay(base: dict[str, Any], raw: dict[str, Any] | None) -> dict[str, Any]:
     payload = deepcopy(raw) if isinstance(raw, dict) else {}
     for key, value in base.items():
-        if key in {"id", "type", "unit_id", "source_path", "question_type", "question_set_id", "scene_id", "journey_id"}:
+        if key in {"id", "type", "course_id", "unit_id", "source_path", "question_type", "question_set_id", "scene_id", "journey_id"}:
             payload[key] = deepcopy(value)
         elif key not in payload or payload[key] in (None, "", [], {}):
             payload[key] = deepcopy(value)
@@ -197,13 +222,13 @@ def _match_challenge(entity: dict[str, Any], source: Any) -> dict[str, Any] | No
     return None
 
 
-def _quick_recall_payload(entity: dict[str, Any]) -> dict[str, Any]:
+def _quick_recall_payload(entity: dict[str, Any], course_id: str = "ap-biology") -> dict[str, Any]:
     result = deepcopy(entity)
     scene_id = entity.get("scene_id")
     if not scene_id:
         return result
     try:
-        scene = admin_editors.editable_entity(str(scene_id))
+        scene = admin_editors.editable_entity(str(scene_id), course_id)
     except admin_drafts.DraftError:
         return result
     result["prompt"] = scene.get("checkpoint_prompt") or entity.get("prompt")
@@ -216,17 +241,29 @@ def _quick_recall_payload(entity: dict[str, Any]) -> dict[str, Any]:
     return result
 
 
-def managed_entity(entity_id: str) -> dict[str, Any]:
-    base = admin_catalog.get_entity(entity_id)
+def managed_entity(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    base = admin_catalog.get_entity(entity_id, course_id)
     if base is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
+    if str(base.get("course_id") or "") != str(course_id):
+        raise ManagementError("Catalog entity course identity does not match requested course")
     entity_type = str(base.get("type") or "")
     if entity_type not in MANAGED_TYPES:
         raise ManagementError(f"Entity type '{entity_type}' is not managed by Step 7")
     if entity_type == "question" and base.get("question_type") == "quick_recall":
-        return _quick_recall_payload(base)
+        return _quick_recall_payload(base, course_id)
 
-    source = _load_source(base.get("source_path"))
+    source_path = base.get("source_path")
+    unit_id = str(base.get("unit_id") or "")
+    source = (
+        admin_editors._load_source(
+            source_path,
+            course_id=course_id,
+            unit_id=unit_id,
+        )
+        if source_path
+        else None
+    )
     raw: dict[str, Any] | None = None
     if entity_type == "question":
         if base.get("question_type") == "review":
@@ -247,7 +284,14 @@ def managed_entity(entity_id: str) -> dict[str, Any]:
     return payload
 
 
-def _replace_baseline(draft: dict[str, Any], enriched: dict[str, Any], username: str, note: str) -> dict[str, Any]:
+def _replace_baseline(
+    draft: dict[str, Any],
+    enriched: dict[str, Any],
+    username: str,
+    note: str,
+    *,
+    course_id: str,
+) -> dict[str, Any]:
     if draft.get("existing"):
         return draft
     if draft.get("payload") == enriched:
@@ -257,8 +301,8 @@ def _replace_baseline(draft: dict[str, Any], enriched: dict[str, Any], username:
     with admin_drafts._connect() as connection:
         connection.execute("BEGIN IMMEDIATE")
         row = connection.execute(
-            "SELECT version, status FROM content_drafts WHERE draft_id = ?",
-            (draft["draft_id"],),
+            "SELECT version, status FROM content_drafts WHERE draft_id = ? AND course_id = ?",
+            (draft["draft_id"], course_id),
         ).fetchone()
         if row is None:
             raise admin_drafts.DraftNotFound("Draft not found")
@@ -268,7 +312,7 @@ def _replace_baseline(draft: dict[str, Any], enriched: dict[str, Any], username:
             """
             UPDATE content_drafts
             SET base_payload_json = ?, base_fingerprint = ?, payload_json = ?, title = ?
-            WHERE draft_id = ?
+            WHERE draft_id = ? AND course_id = ?
             """,
             (
                 admin_drafts._dump(enriched),
@@ -276,6 +320,7 @@ def _replace_baseline(draft: dict[str, Any], enriched: dict[str, Any], username:
                 admin_drafts._dump(enriched),
                 str(title),
                 draft["draft_id"],
+                course_id,
             ),
         )
         connection.execute(
@@ -292,19 +337,28 @@ def _replace_baseline(draft: dict[str, Any], enriched: dict[str, Any], username:
             ),
         )
         connection.commit()
-    result = admin_drafts.get_draft(draft["draft_id"])
+    result = admin_drafts.get_draft(draft["draft_id"], course_id=course_id)
     result["existing"] = False
     return result
 
 
-def create_managed_draft(entity_id: str, username: str) -> dict[str, Any]:
-    enriched = managed_entity(entity_id)
-    draft = admin_drafts.create_draft(entity_id, username)
+def create_managed_draft(
+    entity_id: str,
+    username: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any]:
+    try:
+        admin_catalog.require_editable_course(course_id)
+    except ValueError as exc:
+        raise ManagementError(str(exc)) from exc
+    enriched = managed_entity(entity_id, course_id)
+    draft = admin_drafts.create_draft(entity_id, username, course_id)
     return _replace_baseline(
         draft,
         enriched,
         username,
         "Step 7 working copy created from the complete source assessment record",
+        course_id=course_id,
     )
 
 
@@ -354,11 +408,11 @@ def create_proposed_draft(
     *,
     seed: dict[str, Any] | None = None,
     entity_id: str | None = None,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
     if entity_type not in PROPOSAL_TYPES:
         raise ManagementError("Only questions, question sets, and Challenge Lab items can be created in Step 7")
-    if unit_id not in {f"unit-{number}" for number in range(1, 9)}:
-        raise ManagementError("A valid AP Biology unit is required")
+    _require_course_unit(course_id, unit_id, editable=True)
     clean_title = title.strip()[:500]
     if not clean_title:
         raise ManagementError("A title is required")
@@ -371,6 +425,7 @@ def create_proposed_draft(
     base = {
         "id": proposed_id,
         "type": entity_type,
+        "course_id": course_id,
         "unit_id": unit_id,
         "title": clean_title,
         "proposal": True,
@@ -380,14 +435,14 @@ def create_proposed_draft(
         for key, value in seed.items():
             if key not in admin_drafts.IMMUTABLE_ENTITY_FIELDS:
                 payload[key] = deepcopy(value)
-    payload.update({"id": proposed_id, "type": entity_type, "unit_id": unit_id, "proposal": True})
+    payload.update({"id": proposed_id, "type": entity_type, "course_id": course_id, "unit_id": unit_id, "proposal": True})
     payload["title"] = str(payload.get("title") or clean_title)[:500]
 
     now = admin_drafts._now()
     with admin_drafts._connect() as connection:
         existing = connection.execute(
-            "SELECT * FROM content_drafts WHERE entity_id = ? AND status = 'draft'",
-            (proposed_id,),
+            "SELECT * FROM content_drafts WHERE course_id = ? AND entity_id = ? AND status = 'draft'",
+            (course_id, proposed_id),
         ).fetchone()
         if existing is not None:
             result = admin_drafts._draft_from_row(existing)
@@ -398,15 +453,16 @@ def create_proposed_draft(
         connection.execute(
             """
             INSERT INTO content_drafts(
-                draft_id, entity_id, entity_type, unit_id, title, status,
+                draft_id, entity_id, entity_type, course_id, unit_id, title, status,
                 base_payload_json, base_fingerprint, payload_json, version,
                 created_at, updated_at, archived_at, created_by, updated_by
-            ) VALUES (?, ?, ?, ?, ?, 'draft', ?, ?, ?, 1, ?, ?, NULL, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, 'draft', ?, ?, ?, 1, ?, ?, NULL, ?, ?)
             """,
             (
                 draft_id,
                 proposed_id,
                 entity_type,
+                course_id,
                 unit_id,
                 payload["title"],
                 admin_drafts._dump(base),
@@ -488,8 +544,13 @@ def save_managed_draft(
     username: str,
     note: str | None = None,
     autosave: bool = False,
+    course_id: str = "ap-biology",
 ) -> dict[str, Any]:
-    current = admin_drafts.get_draft(draft_id)
+    try:
+        admin_catalog.require_editable_course(course_id)
+    except ValueError as exc:
+        raise ManagementError(str(exc)) from exc
+    current = admin_drafts.get_draft(draft_id, course_id=course_id)
     entity_type = str(current.get("entity_type") or "")
     validation = validate_managed_payload(entity_type, payload)
     saved = admin_drafts.update_draft(
@@ -499,23 +560,30 @@ def save_managed_draft(
         username=username,
         note=note,
         autosave=autosave,
+        course_id=course_id,
     )
     saved["management_validation"] = validation
     saved["proposal"] = str(saved.get("entity_id") or "").startswith("new:")
     return saved
 
 
-def _active_draft_rows() -> dict[str, dict[str, Any]]:
+def _active_draft_rows(course_id: str = "ap-biology") -> dict[str, dict[str, Any]]:
     with admin_drafts._connect() as connection:
         rows = connection.execute(
-            "SELECT * FROM content_drafts WHERE status = 'draft' ORDER BY updated_at DESC"
+            "SELECT * FROM content_drafts WHERE course_id = ? AND status = 'draft' ORDER BY updated_at DESC",
+            (course_id,),
         ).fetchall()
     return {row["entity_id"]: admin_drafts._draft_from_row(row, include_payload=False) for row in rows}
 
 
-def _proposal_rows(*, unit_id: str | None = None, entity_type: str | None = None) -> list[dict[str, Any]]:
-    clauses = ["status = 'draft'", "entity_id LIKE 'new:%'"]
-    params: list[Any] = []
+def _proposal_rows(
+    *,
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+    entity_type: str | None = None,
+) -> list[dict[str, Any]]:
+    clauses = ["course_id = ?", "status = 'draft'", "entity_id LIKE 'new:%'"]
+    params: list[Any] = [course_id]
     if unit_id:
         clauses.append("unit_id = ?")
         params.append(unit_id)
@@ -532,13 +600,16 @@ def _proposal_rows(*, unit_id: str | None = None, entity_type: str | None = None
 
 def question_bank(
     *,
+    course_id: str = "ap-biology",
     unit_id: str | None = None,
     question_type: str | None = None,
     query: str | None = None,
     limit: int = 500,
 ) -> dict[str, Any]:
-    snapshot = admin_catalog.catalog()
-    active = _active_draft_rows()
+    if unit_id:
+        _require_course_unit(course_id, unit_id)
+    snapshot = admin_catalog.catalog(course_id)
+    active = _active_draft_rows(course_id)
     q = (query or "").strip().casefold()
     items: list[dict[str, Any]] = []
     for entity in snapshot["entities"].values():
@@ -559,12 +630,12 @@ def question_bank(
         item["draft"] = draft
         item["source_state"] = "draft" if draft else "published"
         items.append(item)
-    for proposal in _proposal_rows(unit_id=unit_id):
+    for proposal in _proposal_rows(course_id=course_id, unit_id=unit_id):
         if proposal.get("entity_type") not in {"question", "question_set"}:
             continue
         if question_type:
             try:
-                body = admin_drafts.get_draft(proposal["draft_id"])["payload"]
+                body = admin_drafts.get_draft(proposal["draft_id"], course_id=course_id)["payload"]
             except admin_drafts.DraftError:
                 continue
             if body.get("question_type") != question_type:
@@ -575,6 +646,7 @@ def question_bank(
             {
                 "id": proposal["entity_id"],
                 "type": proposal["entity_type"],
+                "course_id": course_id,
                 "unit_id": proposal.get("unit_id"),
                 "title": proposal.get("title"),
                 "source_state": "new_proposal",
@@ -588,12 +660,20 @@ def question_bank(
     for item in items:
         key = str(item.get("question_type") or item.get("type") or "unknown")
         counts[key] = counts.get(key, 0) + 1
-    return {"schema": MANAGEMENT_SCHEMA, "total": len(items), "counts": counts, "items": items[:safe_limit]}
+    return {"schema": MANAGEMENT_SCHEMA, "course_id": course_id, "total": len(items), "counts": counts, "items": items[:safe_limit]}
 
 
-def challenge_bank(*, unit_id: str | None = None, query: str | None = None, limit: int = 500) -> dict[str, Any]:
-    snapshot = admin_catalog.catalog()
-    active = _active_draft_rows()
+def challenge_bank(
+    *,
+    course_id: str = "ap-biology",
+    unit_id: str | None = None,
+    query: str | None = None,
+    limit: int = 500,
+) -> dict[str, Any]:
+    if unit_id:
+        _require_course_unit(course_id, unit_id)
+    snapshot = admin_catalog.catalog(course_id)
+    active = _active_draft_rows(course_id)
     q = (query or "").strip().casefold()
     items: list[dict[str, Any]] = []
     for entity in snapshot["entities"].values():
@@ -609,13 +689,14 @@ def challenge_bank(*, unit_id: str | None = None, query: str | None = None, limi
         item["draft"] = draft
         item["source_state"] = "draft" if draft else "published"
         items.append(item)
-    for proposal in _proposal_rows(unit_id=unit_id, entity_type="challenge"):
+    for proposal in _proposal_rows(course_id=course_id, unit_id=unit_id, entity_type="challenge"):
         if q and q not in f"{proposal.get('entity_id')} {proposal.get('title')}".casefold():
             continue
         items.append(
             {
                 "id": proposal["entity_id"],
                 "type": "challenge",
+                "course_id": course_id,
                 "unit_id": proposal.get("unit_id"),
                 "title": proposal.get("title"),
                 "source_state": "new_proposal",
@@ -625,13 +706,12 @@ def challenge_bank(*, unit_id: str | None = None, query: str | None = None, limi
         )
     safe_limit = max(1, min(int(limit), 1000))
     items.sort(key=lambda item: (item.get("unit_id") or "", str(item.get("title") or "").casefold(), item["id"]))
-    return {"schema": MANAGEMENT_SCHEMA, "total": len(items), "items": items[:safe_limit]}
+    return {"schema": MANAGEMENT_SCHEMA, "course_id": course_id, "total": len(items), "items": items[:safe_limit]}
 
 
-def review_timeline(unit_id: str) -> dict[str, Any]:
-    if unit_id not in {f"unit-{number}" for number in range(1, 9)}:
-        raise ManagementError("A valid AP Biology unit is required")
-    snapshot = admin_catalog.catalog()
+def review_timeline(unit_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    _require_course_unit(course_id, unit_id)
+    snapshot = admin_catalog.catalog(course_id)
     entities = snapshot["entities"]
     events: list[dict[str, Any]] = []
     assessed: set[str] = set()
@@ -663,6 +743,7 @@ def review_timeline(unit_id: str) -> dict[str, Any]:
             {
                 "phase": phase,
                 "delay_hours": delay,
+                "course_id": course_id,
                 "entity_id": entity["id"],
                 "entity_type": entity_type,
                 "question_type": question_type,
@@ -693,6 +774,7 @@ def review_timeline(unit_id: str) -> dict[str, Any]:
     )
     return {
         "schema": MANAGEMENT_SCHEMA,
+        "course_id": course_id,
         "unit_id": unit_id,
         "event_count": len(events),
         "coverage_gap_count": len(gaps),
@@ -705,27 +787,30 @@ def review_timeline(unit_id: str) -> dict[str, Any]:
     }
 
 
-def _active_draft_for_entity(entity_id: str) -> dict[str, Any] | None:
+def _active_draft_for_entity(
+    entity_id: str,
+    course_id: str = "ap-biology",
+) -> dict[str, Any] | None:
     with admin_drafts._connect() as connection:
         row = connection.execute(
-            "SELECT * FROM content_drafts WHERE entity_id = ? AND status = 'draft'",
-            (entity_id,),
+            "SELECT * FROM content_drafts WHERE course_id = ? AND entity_id = ? AND status = 'draft'",
+            (course_id, entity_id),
         ).fetchone()
     return admin_drafts._draft_from_row(row) if row is not None else None
 
 
-def _editable_base(entity_id: str) -> dict[str, Any]:
-    draft = _active_draft_for_entity(entity_id)
+def _editable_base(entity_id: str, course_id: str = "ap-biology") -> dict[str, Any]:
+    draft = _active_draft_for_entity(entity_id, course_id)
     if draft is not None:
         return deepcopy(draft["payload"])
-    entity = admin_catalog.get_entity(entity_id)
+    entity = admin_catalog.get_entity(entity_id, course_id)
     if entity is None:
         raise admin_drafts.DraftNotFound("Catalog entity not found")
     entity_type = entity.get("type")
     if entity_type in MANAGED_TYPES:
-        return managed_entity(entity_id)
+        return managed_entity(entity_id, course_id)
     if entity_type in set(admin_editors.editor_types()):
-        return admin_editors.editable_entity(entity_id)
+        return admin_editors.editable_entity(entity_id, course_id)
     raise ManagementError(f"Entity type '{entity_type}' does not support draft text operations")
 
 

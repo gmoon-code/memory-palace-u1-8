@@ -50,6 +50,11 @@ def main() -> None:
     require("MAX_BULK_TARGETS" in backend_text, "bulk write safety limit is missing")
     require("MAX_IMPORT_RECORDS" in backend_text, "import record safety limit is missing")
     require("MAX_MEDIA_BYTES" in backend_text, "media upload size limit is missing")
+    require("course_id: str = \"ap-biology\"" in backend_text, "management services do not carry explicit course identity")
+    require("WHERE course_id = ? AND entity_id = ? AND status = 'draft'" in backend_text, "managed draft lookup is not course-scoped")
+    require("admin_catalog.catalog(course_id)" in backend_text, "Question/Review/Challenge catalog reads are not course-scoped")
+    require("_require_course_unit(course_id, unit_id" in backend_text, "management unit validation is not package-driven")
+    require("admin_editors._load_source(" in backend_text and "course_id=course_id" in backend_text, "managed source enrichment is not course-package scoped")
     require("server_data" in backend_text, "staged media is not explicitly isolated under private server data")
     require("destination.open(\"xb\")" in backend_text, "media writes are not exclusive create-only staging writes")
     require("write_text(" not in backend_text, "Step 7 writes text directly into repository content files")
@@ -57,6 +62,8 @@ def main() -> None:
 
     require('prefix="/api/admin/management"' in route_text, "management endpoints are outside the protected admin namespace")
     require(route_text.count("csrf=True") >= 10, "Step 7 mutations are not consistently CSRF protected")
+    require(route_text.count('course_id: str = Field(default="ap-biology"') >= 3, "management mutation requests do not carry course_id")
+    require('course_id: str = "ap-biology"' in route_text, "management read routes do not carry course_id")
     require("admin_management_routes.router" in draft_route_text, "Step 7 management router is not registered")
 
     for mode in ("questions", "review", "challenge", "media", "import-export"):
@@ -76,12 +83,17 @@ def main() -> None:
         require(marker in frontend_text, f"management UI missing API workflow {marker}")
     require('import "./replacement.js"' in loader_text, "Step 6 replacement UI is not loaded by Content Studio")
     require('import "./management.js"' in loader_text, "Step 7 management UI is not loaded by Content Studio")
+    require("currentAdminCourseId()" in frontend_text, "management frontend does not preserve selected course identity")
+    require("managementState.units" in frontend_text, "management unit choices are not course-driven")
+    require('for (let value = 1; value <= 8; value += 1)' not in frontend_text, "management unit selector is still hard-coded to eight AP Biology units")
+    require("story-method-course-changed" in frontend_text, "management frontend does not reset on course changes")
 
     pages_builder = (ROOT / "scripts" / "build_github_pages.py").read_text(encoding="utf-8")
     require('"frontend", "admin"' not in pages_builder, "public GitHub Pages builder explicitly copies admin files")
 
     print("ADMIN MANAGEMENT QA PASS")
     print("- Question Bank, Review System, Challenge Lab, Media Library, Import/Export, search, and bulk tools are present")
+    print("- Question Bank, Review System, and Challenge Lab reads and writes are explicitly course-scoped")
     print("- new assessment content is represented as protected proposals outside the published catalog")
     print("- controlled replacement is limited to allowlisted human-readable fields and creates recovery snapshots")
     print("- media uploads are staged in private server_data and are never published automatically")
