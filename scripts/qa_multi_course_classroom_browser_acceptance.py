@@ -36,7 +36,7 @@ def main() -> None:
     require('data-catalog-ready=' in admin, "course selector does not expose catalog-ready state")
     require('data-editable=' in admin, "course selector does not expose editable state")
     require('" · catalog preview"' in admin, "read-only course selector label is missing")
-    require('"read-only architecture preview"' in admin, "selected-course read-only status is missing")
+    require("read-only architecture preview" in admin, "selected-course read-only status is missing")
     require('new CustomEvent("story-method-course-changed"' in admin, "course-change browser event is missing")
     require("record?.catalog_ready" in admin, "course selection does not reject unavailable catalogs")
 
