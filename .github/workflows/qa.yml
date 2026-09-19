@@ -84,6 +84,7 @@ jobs:
       - run: python scripts/qa_multi_course_integration_gate.py
       - run: python scripts/qa_multi_course_classroom_browser_acceptance.py
       - run: python -m pytest -q tests/test_multi_course_classroom_browser_acceptance.py
+      - run: python scripts/qa_multi_course_foundation_freeze.py
       - run: python scripts/qa_content_studio_integration.py
       - run: python scripts/qa_zero_cost_rehearsal.py
       - run: python scripts/qa_zero_cost_runtime.py

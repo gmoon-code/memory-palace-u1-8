@@ -61,6 +61,10 @@ The gate must pass together with the existing package QA, AP Chemistry fixture Q
 
 After this architecture gate, the repository also runs the dedicated teacher-facing acceptance documented in `docs/architecture/MULTI_COURSE_CLASSROOM_BROWSER_ACCEPTANCE.md`. That pass exercises course switching, AP Biology authoring, AP Chemistry read-only inspection, cross-course draft rejection, browser workspace resets, and the student deployment boundary.
 
+## Foundation freeze
+
+After the classroom/browser acceptance pass succeeds, the validated implementation is preserved by `release/architecture/multi-course-foundation-v1.0.0.json` and the rollback branch `freeze/multi-course-foundation-2026-09-19`. The freeze QA verifies the exact implementation commit, repository tree, architecture-critical source fingerprints, package blobs, course states, and the absence of protected-source drift in the freeze-evidence commit.
+
 ## Completion condition
 
-The multi-course foundation is considered integrated when this gate, the classroom/browser acceptance gate, and the full repository workflow succeed on the exact architecture branch head, AP Chemistry remains hidden and read-only, AP Biology content locks continue to pass, no administrator subsystem can cross course boundaries through reused local IDs, and production `main` remains unmerged.
+The multi-course foundation is considered integrated when this gate, the classroom/browser acceptance gate, the foundation freeze gate, and the full repository workflow succeed, AP Chemistry remains hidden and read-only, AP Biology content locks continue to pass, no administrator subsystem can cross course boundaries through reused local IDs, and production `main` remains unmerged.

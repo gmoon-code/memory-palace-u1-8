@@ -1,0 +1,71 @@
+{
+  "schema": "story-method-multi-course-foundation-freeze-1.0",
+  "freeze_id": "multi-course-foundation-2026-09-19",
+  "status": "validated-foundation-freeze",
+  "source_branch": "architecture/multi-course-foundation",
+  "implementation_commit": "8d6a94fbab3bec63e53daaf80b949825d7eacccd",
+  "implementation_tree": "e10f742f128c557797ce167c3243879d44b779bd",
+  "rollback_ref": "freeze/multi-course-foundation-2026-09-19",
+  "rollback_commit": "8d6a94fbab3bec63e53daaf80b949825d7eacccd",
+  "production_main_at_freeze": "31da83df397acfe53d03a77bf54dff7b5ab6346c",
+  "validated_actions": {
+    "workflow": "Memory Palace QA",
+    "run_id": 35435465751,
+    "conclusion": "success",
+    "validated_commit": "8d6a94fbab3bec63e53daaf80b949825d7eacccd"
+  },
+  "course_states": {
+    "ap-biology": {
+      "status": "available",
+      "student_visible": true,
+      "catalog_ready": true,
+      "editable": true,
+      "role": "production curriculum"
+    },
+    "ap-chemistry": {
+      "status": "development",
+      "student_visible": false,
+      "catalog_ready": true,
+      "editable": false,
+      "role": "architecture fixture only"
+    }
+  },
+  "git_object_fingerprints": {
+    "repository_tree": "e10f742f128c557797ce167c3243879d44b779bd",
+    "backend_tree": "06e259fcac240b6f3dbd667717470d139b779552",
+    "content_tree": "c1a5ef0014000201a72b9a1fdea2c9de502caa73",
+    "ap_biology_content_tree": "49c20720b9d316466787aa4de264ec1127f31afa",
+    "ap_chemistry_fixture_tree": "e77f041a7b8c69e36f26a57f737439dc0f5b1765",
+    "frontend_tree": "b504de45ca80000ca596604ae456ff237ea10bee",
+    "frontend_admin_tree": "9b735525cffac485221a577ef0a282629c1123aa",
+    "frontend_student_js_tree": "1b7c037355a0fa88dc26cb67557f2751e8cc5cb8",
+    "platform_tree": "2a22aa6f1bb477a233b860e3e655fe25ec0aab9d",
+    "course_packages_tree": "ad7e3d0467785e021d75611415e08f4141e29f94",
+    "package_schemas_tree": "c35a722ce841cfa08e5ca44f5112ca9b99f8e067",
+    "scripts_tree": "cf32038cd7f36cbc7764cb52c6179dfe06859c7e",
+    "tests_tree": "98c80f2bf393d88f28d4534ac0e9274f46bd581b"
+  },
+  "package_file_fingerprints": {
+    "platform/courses.json": "acef7e5e636924e84eab62c9e4641e1f89251b9c",
+    "platform/course-packages/ap-biology.json": "11d9942e07f10fc3f93ff7f2d6f4c9760d37f8ab",
+    "platform/course-packages/ap-chemistry.json": "c26671f35a3dfe12bbf92addbd621be145aefcca",
+    "platform/schemas/course-package-v1.schema.json": "2bf2537bba222ea29d878862466e4c1c52140f4e"
+  },
+  "acceptance_evidence": [
+    "scripts/qa_multi_course_integration_gate.py",
+    "scripts/qa_multi_course_classroom_browser_acceptance.py",
+    "tests/test_multi_course_classroom_browser_acceptance.py",
+    "docs/architecture/MULTI_COURSE_INTEGRATION_GATE.md",
+    "docs/architecture/MULTI_COURSE_CLASSROOM_BROWSER_ACCEPTANCE.md"
+  ],
+  "expansion_command": "python scripts/export_content_studio_release_manifest.py --ref 8d6a94fbab3bec63e53daaf80b949825d7eacccd --output /tmp/multi-course-foundation-files.json",
+  "safety_contract": {
+    "main_merged": false,
+    "ap_biology_curriculum_changed_by_freeze": false,
+    "ap_chemistry_real_curriculum_started": false,
+    "ap_chemistry_writes_enabled": false,
+    "student_pages_exposes_ap_chemistry": false,
+    "admin_assets_exposed_to_student_pages": false,
+    "publication_defaults_remain_closed": true
+  }
+}
