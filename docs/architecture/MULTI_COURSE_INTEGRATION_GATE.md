@@ -57,6 +57,10 @@ inside the normal GitHub Actions workflow. The gate verifies registry state, pac
 
 The gate must pass together with the existing package QA, AP Chemistry fixture QA, Steps 1 through 9 administrator QA, deployment integration checks, the complete Python test suite, JavaScript syntax checks, deterministic release packaging, and no-source-drift verification.
 
+## Classroom and browser acceptance
+
+After this architecture gate, the repository also runs the dedicated teacher-facing acceptance documented in `docs/architecture/MULTI_COURSE_CLASSROOM_BROWSER_ACCEPTANCE.md`. That pass exercises course switching, AP Biology authoring, AP Chemistry read-only inspection, cross-course draft rejection, browser workspace resets, and the student deployment boundary.
+
 ## Completion condition
 
-The multi-course foundation is considered integrated when this gate and the full repository workflow succeed on the exact architecture branch head, AP Chemistry remains hidden and read-only, AP Biology content locks continue to pass, no administrator subsystem can cross course boundaries through reused local IDs, and production `main` remains unmerged.
+The multi-course foundation is considered integrated when this gate, the classroom/browser acceptance gate, and the full repository workflow succeed on the exact architecture branch head, AP Chemistry remains hidden and read-only, AP Biology content locks continue to pass, no administrator subsystem can cross course boundaries through reused local IDs, and production `main` remains unmerged.
