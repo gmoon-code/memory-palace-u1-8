@@ -35,8 +35,9 @@ def main() -> None:
     require(result["unit_count"] == 9, "package manifest must expose nine units")
 
     course = course_packages.course(COURSE_ID)
-    require(course.get("status") == "PACKAGE_FOUNDATION", "course status is not PACKAGE_FOUNDATION")
-    require(course.get("production_phase") == "F1_PACKAGE_FOUNDATION", "course production phase is not F1")
+    phase = course.get("production_phase")
+    require(course.get("status") in {"PACKAGE_FOUNDATION", "UNIT1_SCIENTIFIC_CATALOG"}, "course status is outside authorized F1/F2 development states")
+    require(phase in {"F1_PACKAGE_FOUNDATION", "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE"}, "course production phase is not an authorized F1/F2 state")
     units = course.get("units", [])
     require(len(units) == 9, "course metadata must expose nine units")
     require([u.get("title") for u in units] == EXPECTED_TITLES, "CED unit titles or order changed")
@@ -50,7 +51,11 @@ def main() -> None:
         registry_payload = course_packages.journeys(COURSE_ID, unit_id)
         require(registry_payload["guided_journeys"] == [], f"{unit_id} must have no production journeys in F1")
         require(unit.get("journey_count") == 0 and unit.get("scene_count") == 0, f"{unit_id} incorrectly reports produced narrative content")
-        require(course_packages.artifact_records(COURSE_ID, unit_id, "concepts") == [], f"{unit_id} concepts must remain empty in F1")
+        concept_records = course_packages.artifact_records(COURSE_ID, unit_id, "concepts")
+        if phase == "F1_PACKAGE_FOUNDATION" or unit_id != "unit-1":
+            require(concept_records == [], f"{unit_id} concepts are populated before their authorized phase")
+        else:
+            require(len(concept_records) == 48, "Unit 1 F2 must expose 48 source-backed concepts")
         require(course_packages.memory_objects(COURSE_ID, unit_id) == [], f"{unit_id} Memory Objects must remain empty in F1")
         require(course_packages.review_manifest(COURSE_ID, unit_id).get("targets") == [], f"{unit_id} review must remain empty in F1")
         require(course_packages.mixed_discrimination(COURSE_ID, unit_id).get("sets") == [], f"{unit_id} mixed discrimination must remain empty in F1")
@@ -69,13 +74,18 @@ def main() -> None:
 
     summary = admin_catalog.catalog_summary(COURSE_ID)
     require(summary["counts"].get("unit") == 9, "catalog does not expose nine units")
-    for key in ("journey", "scene", "concept", "memory_object", "question", "challenge"):
-        require(summary["counts"].get(key, 0) == 0, f"F1 unexpectedly produced {key} entities")
+    for key in ("journey", "scene", "memory_object", "question", "challenge"):
+        require(summary["counts"].get(key, 0) == 0, f"development package unexpectedly produced {key} entities")
+    expected_concepts = 48 if phase == "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE" else 0
+    require(summary["counts"].get("concept", 0) == expected_concepts, "catalog concept count does not match current development phase")
     require(summary["unresolved_reference_count"] == 0, "foundation catalog has unresolved references")
 
     print("AP CHEMISTRY DEVELOPMENT PACKAGE QA PASS")
     print("- nine CED units and all 91 topic boundaries are loaded")
-    print("- all production content collections remain intentionally empty at F1")
+    if phase == "F1_PACKAGE_FOUNDATION":
+        print("- all production content collections remain intentionally empty at F1")
+    else:
+        print("- Unit 1 exposes 48 source-backed F2 concepts while production journeys, scenes, Memory Objects, questions, and challenges remain empty")
     print("- architecture fixture journeys are retired from the live content tree")
     print("- package source paths remain course- and unit-scoped")
     print("- AP Chemistry remains catalog-ready, read-only, development-only, and student-hidden")
