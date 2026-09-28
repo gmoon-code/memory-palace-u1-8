@@ -69,7 +69,7 @@ def test_teacher_catalog_requests_are_course_scoped(admin_client):
     assert chemistry.json()["counts"]["unit"] == 9
     assert chemistry.json()["counts"].get("journey", 0) == 0
     assert chemistry.json()["counts"].get("scene", 0) == 0
-    assert chemistry.json()["counts"].get("concept", 0) == 0
+    assert chemistry.json()["counts"].get("concept", 0) == 48
     assert chemistry.json()["counts"].get("memory_object", 0) == 0
     assert chemistry.json()["unresolved_reference_count"] == 0
 

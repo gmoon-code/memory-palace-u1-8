@@ -20,7 +20,8 @@ def test_course_aware_student_api_loads_hidden_nine_unit_foundation():
     assert course.status_code == 200
     body = course.json()
     assert body["course_id"] == "ap-chemistry"
-    assert body["status"] == "PACKAGE_FOUNDATION"
+    assert body["status"] == "UNIT1_SCIENTIFIC_CATALOG"
+    assert body["production_phase"] == "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE"
     assert len(body["units"]) == 9
     assert sum(unit["topic_count"] for unit in body["units"]) == 91
 

@@ -194,7 +194,13 @@ def test_generic_editor_reads_chemistry_foundation_units_without_enabling_writes
             params={"course_id": "ap-chemistry", "entity_type": entity_type, "unit_id": "unit-1", "limit": 50},
         )
         assert listing.status_code == 200
-        assert listing.json()["items"] == []
+        items = listing.json()["items"]
+        if entity_type == "concept":
+            assert len(items) == 48
+            assert all(item["course_id"] == "ap-chemistry" for item in items)
+            assert all(item["unit_id"] == "unit-1" for item in items)
+        else:
+            assert items == []
 
     blocked = client.post(
         "/api/admin/editors/drafts",
