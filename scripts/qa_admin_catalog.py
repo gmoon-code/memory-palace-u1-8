@@ -50,10 +50,10 @@ def main() -> None:
     chemistry = admin_catalog.catalog_summary("ap-chemistry")
     require(chemistry["course_id"] == "ap-chemistry", "chemistry catalog lost course identity")
     require(chemistry["counts"].get("unit") == 9, "chemistry catalog does not contain nine CED units")
-    require(chemistry["counts"].get("journey", 0) == 0, "F1 chemistry catalog unexpectedly contains journeys")
-    require(chemistry["counts"].get("scene", 0) == 0, "F1 chemistry catalog unexpectedly contains scenes")
-    require(chemistry["counts"].get("concept", 0) == 0, "F1 chemistry catalog unexpectedly contains concepts")
-    require(chemistry["counts"].get("memory_object", 0) == 0, "F1 chemistry catalog unexpectedly contains Memory Objects")
+    require(chemistry["counts"].get("journey", 0) == 0, "chemistry catalog unexpectedly contains production journeys")
+    require(chemistry["counts"].get("scene", 0) == 0, "chemistry catalog unexpectedly contains production scenes")
+    require(chemistry["counts"].get("concept", 0) == 48, "F2 chemistry catalog does not expose the 48 locked Unit 1 concepts")
+    require(chemistry["counts"].get("memory_object", 0) == 0, "F2 chemistry catalog unexpectedly contains Memory Objects")
     require(chemistry["unresolved_reference_count"] == 0, "chemistry catalog has unresolved references")
 
     chemistry_snapshot = admin_catalog.catalog("ap-chemistry")
@@ -124,7 +124,7 @@ def main() -> None:
     print("- frozen Unit 1-8 totals match the normalized catalog")
     print("- protected catalog APIs are read-only and course scoped")
     print("- Course Map, search, health, and dependency inspector are wired")
-    print("- AP Chemistry read-only catalog is isolated from AP Biology")
+    print("- AP Chemistry read-only catalog exposes 48 Unit 1 F2 concepts and remains isolated from AP Biology")
     print(f"- unresolved source references are reported: {summary['unresolved_reference_count']}")
 
 
