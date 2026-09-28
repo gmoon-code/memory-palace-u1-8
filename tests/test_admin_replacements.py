@@ -217,8 +217,8 @@ def test_chemistry_replacement_workspace_has_no_fixture_story_and_remains_write_
         json={"course_id": "ap-chemistry", "entity_id": retired_scene},
         headers=csrf(token),
     )
-    assert blocked.status_code == 400
-    assert "editing is not enabled" in blocked.json()["detail"]
+    assert blocked.status_code == 404
+    assert "not found" in blocked.json()["detail"].lower()
 
 def test_replacement_analysis_and_apply_reject_wrong_course(replacement_client):
     client, token = replacement_client

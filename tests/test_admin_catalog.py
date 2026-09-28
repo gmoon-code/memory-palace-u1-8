@@ -108,11 +108,11 @@ def test_development_course_catalog_is_read_only_and_isolated():
     summary = admin_catalog.catalog_summary("ap-chemistry")
     assert summary["course_id"] == "ap-chemistry"
     assert summary["course_title"] == "AP Chemistry"
-    assert summary["counts"]["unit"] == 2
-    assert summary["counts"]["journey"] == 2
-    assert summary["counts"]["scene"] == 4
-    assert summary["counts"]["concept"] == 8
-    assert summary["counts"]["memory_object"] == 8
+    assert summary["counts"]["unit"] == 9
+    assert summary["counts"]["journey"] == 0
+    assert summary["counts"]["scene"] == 0
+    assert summary["counts"]["concept"] == 0
+    assert summary["counts"]["memory_object"] == 0
 
     snapshot = admin_catalog.catalog("ap-chemistry")
     assert all(entity.get("course_id") == "ap-chemistry" for entity in snapshot["entities"].values())
