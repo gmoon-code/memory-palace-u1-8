@@ -1,0 +1,398 @@
+{
+  "schema": "story-method-ap-chemistry-journey-architecture-1.0",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "unit_title": "Atomic Structure and Properties",
+  "phase": "F2",
+  "status": "ARCHITECTURE_LOCKED_NARRATIVE_NOT_AUTHORED",
+  "design_rules": [
+    "CED topic order is preserved across the route.",
+    "A topic may span multiple planned loci, but a later topic may not be taught before an earlier CED topic is established.",
+    "Each locus must have a visible physical layout, a distinct scientific job, and a causal transition to the next locus.",
+    "Mnemonic actors and story events are deferred to the narrative phase. F2 locks only spatial and scientific architecture.",
+    "Equations, graphs, tables, particulate models, and other representations must match the F0C component plan.",
+    "No production journey is added to journeys.json until its narrative and scene records pass the later narrative gate."
+  ],
+  "planned_journey_count": 4,
+  "planned_locus_count": 20,
+  "journeys": [
+    {
+      "journey_plan_id": "APCHEM-U1-JP1",
+      "order": 1,
+      "working_palace_name": "Matter Accounting Works",
+      "ced_topics": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4"
+      ],
+      "scientific_mission": "Move from measurable sample mass to particle amount, isotope evidence, fixed compound composition, and variable mixture composition.",
+      "route_orientation": "One-way industrial analysis line from receiving scale to mixture audit station.",
+      "loci": [
+        {
+          "order": 1,
+          "name": "Mass Receiving Scale",
+          "topics": [
+            "1.1"
+          ],
+          "scientific_job": "Establish molar mass, mass-to-mole conversion, and dimensional-analysis unit cancellation.",
+          "required_record_ids": [
+            "U1-K001",
+            "U1-K003",
+            "U1-K004",
+            "U1-K005"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Particle Counting Vault",
+          "topics": [
+            "1.1"
+          ],
+          "scientific_job": "Connect moles to constituent particles with the Avogadro constant.",
+          "required_record_ids": [
+            "U1-K002"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Isotope Spectrum Bay",
+          "topics": [
+            "1.2"
+          ],
+          "scientific_job": "Read a single-element mass spectrum, distinguish isotope mass from abundance, and calculate a weighted average atomic mass.",
+          "required_record_ids": [
+            "U1-K006",
+            "U1-K007",
+            "U1-K008",
+            "U1-K009",
+            "U1-K010"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Pure-Compound Analysis Bench",
+          "topics": [
+            "1.3"
+          ],
+          "scientific_job": "Connect fixed composition, percent composition, and empirical formula to pure compounds.",
+          "required_record_ids": [
+            "U1-K011",
+            "U1-K012",
+            "U1-K013",
+            "U1-K014",
+            "U1-K015"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Mixture Purity Station",
+          "topics": [
+            "1.4"
+          ],
+          "scientific_job": "Contrast variable mixtures with fixed pure substances and use elemental composition to reason about purity and mixture composition.",
+          "required_record_ids": [
+            "U1-K016",
+            "U1-K017",
+            "U1-K018"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_plan_id": "APCHEM-U1-JP2",
+      "order": 2,
+      "working_palace_name": "Electron Structure Observatory",
+      "ced_topics": [
+        "1.5",
+        "1.6"
+      ],
+      "scientific_mission": "Build the electron-structure model, then test that model against photoelectron-spectroscopy evidence.",
+      "route_orientation": "Vertical observatory from nucleus floor through electron levels to a spectrum theater at the top.",
+      "loci": [
+        {
+          "order": 1,
+          "name": "Nucleus Floor",
+          "topics": [
+            "1.5"
+          ],
+          "scientific_job": "Establish charged atomic components and the Coulombic interaction used throughout the unit.",
+          "required_record_ids": [
+            "U1-K019",
+            "U1-K020"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Shell and Subshell Stairwell",
+          "topics": [
+            "1.5"
+          ],
+          "scientific_job": "Separate shells, subshells, core electrons, and valence electrons spatially.",
+          "required_record_ids": [
+            "U1-K021",
+            "U1-K022",
+            "U1-K023"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Ground-State Configuration Board",
+          "topics": [
+            "1.5"
+          ],
+          "scientific_job": "Construct ground-state electron configurations with the Aufbau principle while preserving AP exclusions.",
+          "required_record_ids": [
+            "U1-K024",
+            "U1-K025",
+            "U1-K028"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Ion Configuration Lift",
+          "topics": [
+            "1.5"
+          ],
+          "scientific_job": "Track electron gain/loss for ions and connect electron removal to nuclear attraction.",
+          "required_record_ids": [
+            "U1-K026",
+            "U1-K027"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "PES Spectrum Theater",
+          "topics": [
+            "1.6"
+          ],
+          "scientific_job": "Use PES peak positions and relative intensities to test and infer electron configurations and binding-energy differences.",
+          "required_record_ids": [
+            "U1-K029",
+            "U1-K030",
+            "U1-K031",
+            "U1-K032",
+            "U1-K033"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_plan_id": "APCHEM-U1-JP3",
+      "order": 3,
+      "working_palace_name": "Periodic Forces Tower",
+      "ced_topics": [
+        "1.7"
+      ],
+      "scientific_mission": "Use one electrostatic and electron-structure model to explain periodic patterns instead of memorizing isolated trend arrows.",
+      "route_orientation": "A periodic-table-shaped tower with a horizontal period corridor and vertical group elevator.",
+      "loci": [
+        {
+          "order": 1,
+          "name": "Periodicity Grid Lobby",
+          "topics": [
+            "1.7"
+          ],
+          "scientific_job": "Connect recurring periodic properties to recurring ground-state electron configurations.",
+          "required_record_ids": [
+            "U1-K034"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Attraction Control Room",
+          "topics": [
+            "1.7"
+          ],
+          "scientific_job": "Coordinate nuclear charge, shielding, electron repulsion, and distance as the causal model for trends.",
+          "required_record_ids": [
+            "U1-K035"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Radius Corridor",
+          "topics": [
+            "1.7"
+          ],
+          "scientific_job": "Explain neutral atomic-radius trends from the causal model.",
+          "required_record_ids": [
+            "U1-K036"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Ionization Stair",
+          "topics": [
+            "1.7"
+          ],
+          "scientific_job": "Explain first and successive ionization energies, including large jumps and local deviations.",
+          "required_record_ids": [
+            "U1-K037",
+            "U1-K038"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Affinity and Electronegativity Gallery",
+          "topics": [
+            "1.7"
+          ],
+          "scientific_job": "Treat electron affinity and electronegativity as distinct properties explained by electron structure.",
+          "required_record_ids": [
+            "U1-K039",
+            "U1-K040"
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Ionic Radius Balcony",
+          "topics": [
+            "1.7"
+          ],
+          "scientific_job": "Compare parent atoms, cations, anions, and isoelectronic species by attraction and electron occupancy.",
+          "required_record_ids": [
+            "U1-K041"
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Prediction Deck",
+          "topics": [
+            "1.7"
+          ],
+          "scientific_job": "Use periodic location to predict unknown properties while enforcing the Aufbau-exception scope guard.",
+          "required_record_ids": [
+            "U1-K042",
+            "U1-K043"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_plan_id": "APCHEM-U1-JP4",
+      "order": 4,
+      "working_palace_name": "Valence and Ion Assembly Hall",
+      "ced_topics": [
+        "1.8"
+      ],
+      "scientific_mission": "Turn periodic valence patterns into predictions about reactivity, typical ionic charge, analogous compounds, and charge-balanced ionic formulas.",
+      "route_orientation": "Assembly hall moving from valence inspection to group-pattern racks and a final charge-balance station.",
+      "loci": [
+        {
+          "order": 1,
+          "name": "Valence Inspection Gate",
+          "topics": [
+            "1.8"
+          ],
+          "scientific_job": "Connect valence-electron configuration to reactivity and bond formation.",
+          "required_record_ids": [
+            "U1-K044"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Group Pattern Racks",
+          "topics": [
+            "1.8"
+          ],
+          "scientific_job": "Recognize why elements in one group often form analogous compounds.",
+          "required_record_ids": [
+            "U1-K045"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Ion Charge Workshop",
+          "topics": [
+            "1.8"
+          ],
+          "scientific_job": "Predict typical main-group ionic charges from periodic position and electron gain/loss.",
+          "required_record_ids": [
+            "U1-K046"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Formula Balance Scale",
+          "topics": [
+            "1.8"
+          ],
+          "scientific_job": "Balance total cation and anion charge to form neutral ionic formulas without moving into Unit 2 lattice-property depth.",
+          "required_record_ids": [
+            "U1-K047",
+            "U1-K048"
+          ]
+        }
+      ]
+    }
+  ],
+  "coverage_check": {
+    "ced_topic_sequence": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7",
+      "1.8"
+    ],
+    "catalog_record_count": 48,
+    "records_assigned_once": [
+      "U1-K001",
+      "U1-K002",
+      "U1-K003",
+      "U1-K004",
+      "U1-K005",
+      "U1-K006",
+      "U1-K007",
+      "U1-K008",
+      "U1-K009",
+      "U1-K010",
+      "U1-K011",
+      "U1-K012",
+      "U1-K013",
+      "U1-K014",
+      "U1-K015",
+      "U1-K016",
+      "U1-K017",
+      "U1-K018",
+      "U1-K019",
+      "U1-K020",
+      "U1-K021",
+      "U1-K022",
+      "U1-K023",
+      "U1-K024",
+      "U1-K025",
+      "U1-K026",
+      "U1-K027",
+      "U1-K028",
+      "U1-K029",
+      "U1-K030",
+      "U1-K031",
+      "U1-K032",
+      "U1-K033",
+      "U1-K034",
+      "U1-K035",
+      "U1-K036",
+      "U1-K037",
+      "U1-K038",
+      "U1-K039",
+      "U1-K040",
+      "U1-K041",
+      "U1-K042",
+      "U1-K043",
+      "U1-K044",
+      "U1-K045",
+      "U1-K046",
+      "U1-K047",
+      "U1-K048"
+    ],
+    "production_journey_count": 0,
+    "production_scene_count": 0,
+    "narrative_authored": false,
+    "memory_objects_authored": false
+  },
+  "next_phase": "F3 Unit 1 Memory Object and retrieval architecture"
+}

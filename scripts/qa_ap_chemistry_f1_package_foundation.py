@@ -37,8 +37,8 @@ def main() -> None:
     require(foundation.get("schema") == "story-method-ap-chemistry-f1-package-foundation-1.0", "unexpected F1 schema")
     require(foundation.get("status") == "COMPLETE", "F1 is not complete")
     require(f0d.get("result") == "COMPLETE", "F1 cannot exist before completed F0D")
-    require(course.get("status") == "PACKAGE_FOUNDATION", "course is not in package-foundation state")
-    require(course.get("production_phase") == "F1_PACKAGE_FOUNDATION", "course production phase changed")
+    require(course.get("status") in {"PACKAGE_FOUNDATION", "UNIT1_SCIENTIFIC_CATALOG"}, "course is outside the authorized F1/F2 development states")
+    require(course.get("production_phase") in {"F1_PACKAGE_FOUNDATION", "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE"}, "course production phase is not F1/F2 compatible")
 
     units = course.get("units") or []
     require(len(units) == 9, "F1 course must have nine units")
@@ -52,7 +52,9 @@ def main() -> None:
         unit_id = unit["unit_id"]
         actual = [(item["topic_id"], item["title"]) for item in unit.get("topics") or []]
         require(actual == cross_by_unit[unit_id], f"{unit_id} topic scaffold diverges from F0B")
-        require(unit.get("journey_count") == 0 and unit.get("scene_count") == 0, f"{unit_id} contains narrative content before F2")
+        require(unit.get("journey_count") == 0 and unit.get("scene_count") == 0, f"{unit_id} contains production narrative content before narrative authoring")
+        if unit_id != "unit-1":
+            require(not unit.get("canonical_records"), f"{unit_id} gained production concepts before its authorized phase")
 
     course_packages.clear_package_cache()
     package = course_packages.package_manifest("ap-chemistry")

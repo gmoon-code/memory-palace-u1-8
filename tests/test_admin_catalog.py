@@ -111,7 +111,7 @@ def test_development_course_catalog_is_read_only_and_isolated():
     assert summary["counts"]["unit"] == 9
     assert summary["counts"].get("journey", 0) == 0
     assert summary["counts"].get("scene", 0) == 0
-    assert summary["counts"].get("concept", 0) == 0
+    assert summary["counts"].get("concept", 0) == 48
     assert summary["counts"].get("memory_object", 0) == 0
 
     snapshot = admin_catalog.catalog("ap-chemistry")

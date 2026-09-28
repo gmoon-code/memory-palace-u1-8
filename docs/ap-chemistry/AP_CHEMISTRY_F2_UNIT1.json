@@ -1,0 +1,36 @@
+{
+  "schema": "story-method-ap-chemistry-f2-unit1-1.0",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "phase": "F2",
+  "status": "COMPLETE",
+  "completed_date": "2026-09-28",
+  "predecessor_commit": "6378f3ecb8629ad2707588076e556ca9f9576874",
+  "deliverables": {
+    "scientific_catalog": "content/ap-chemistry/unit-1/source/scientific-catalog.json",
+    "runtime_concepts": "content/ap-chemistry/unit-1/concepts.json",
+    "journey_architecture": "content/ap-chemistry/unit-1/source/journey-architecture.json"
+  },
+  "counts": {
+    "ced_topics": 8,
+    "scientific_records": 48,
+    "planned_journeys": 4,
+    "planned_loci": 20,
+    "production_journeys": 0,
+    "production_scenes": 0,
+    "memory_objects": 0,
+    "review_targets": 0,
+    "mixed_sets": 0,
+    "challenge_items": 0
+  },
+  "locks": {
+    "ced_order": true,
+    "source_hierarchy": true,
+    "source_gap_1_4_bounded": true,
+    "narrative_not_authored": true,
+    "units_2_through_9_unchanged": true,
+    "student_visible": false,
+    "editable": false
+  },
+  "next_phase": "F3 Unit 1 Memory Object and retrieval architecture"
+}
