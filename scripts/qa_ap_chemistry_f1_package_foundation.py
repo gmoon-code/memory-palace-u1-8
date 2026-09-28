@@ -37,8 +37,16 @@ def main() -> None:
     require(foundation.get("schema") == "story-method-ap-chemistry-f1-package-foundation-1.0", "unexpected F1 schema")
     require(foundation.get("status") == "COMPLETE", "F1 is not complete")
     require(f0d.get("result") == "COMPLETE", "F1 cannot exist before completed F0D")
-    require(course.get("status") in {"PACKAGE_FOUNDATION", "UNIT1_SCIENTIFIC_CATALOG"}, "course is outside the authorized F1/F2 development states")
-    require(course.get("production_phase") in {"F1_PACKAGE_FOUNDATION", "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE"}, "course production phase is not F1/F2 compatible")
+    require(course.get("status") in {
+        "PACKAGE_FOUNDATION",
+        "UNIT1_SCIENTIFIC_CATALOG",
+        "UNIT1_MEMORY_RETRIEVAL_ARCHITECTURE",
+    }, "course is outside the authorized F1/F2/F3 development states")
+    require(course.get("production_phase") in {
+        "F1_PACKAGE_FOUNDATION",
+        "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE",
+        "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE",
+    }, "course production phase is not F1/F2/F3 compatible")
 
     units = course.get("units") or []
     require(len(units) == 9, "F1 course must have nine units")
@@ -83,10 +91,10 @@ def main() -> None:
     print("AP CHEMISTRY F1 PACKAGE FOUNDATION PASS")
     print("- architecture fixture has graduated into the real nine-unit development package")
     print("- all 91 CED topic IDs and titles exactly match the F0B crosswalk")
-    print("- package-declared runtime scaffolds exist for every unit and remain empty")
+    print("- package-declared runtime scaffolds remain valid; later authorized Unit 1 phases may populate concepts and Memory Objects")
     print("- retired fixture journeys and old Unit 2 title are absent from the active content tree")
     print("- AP Chemistry remains development-only, student-hidden, catalog-ready, and read-only")
-    print("- F2 Unit 1 scientific catalog and journey architecture is the next authorized phase")
+    print("- historical F1 package foundation remains valid after later authorized Unit 1 production phases")
 
 
 if __name__ == "__main__":
