@@ -58,7 +58,7 @@ def main() -> None:
     require(arch.get("status") == "ARCHITECTURE_LOCKED_NARRATIVE_NOT_AUTHORED", "journey architecture status changed")
     journeys = arch.get("journeys") or []
     require(len(journeys) == 4, "F2 must plan four Unit 1 journeys")
-    require(sum(len(j.get("loci") or []) for j in journeys) == 20, "F2 must plan twenty Unit 1 loci")
+    require(sum(len(j.get("loci") or []) for j in journeys) == 21, "F2 must plan twenty-one Unit 1 loci")
     flattened_topics = []
     for journey in journeys:
         flattened_topics.extend(journey.get("ced_topics") or [])
@@ -76,7 +76,7 @@ def main() -> None:
     require(course.get("production_phase") == "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE", "course production phase is not F2")
     require(u1.get("status") == "SCIENTIFIC_CATALOG_LOCKED", "Unit 1 status is not F2 locked")
     require(u1.get("canonical_records") == 48, "course metadata does not report 48 Unit 1 records")
-    require(u1.get("planned_journey_count") == 4 and u1.get("planned_locus_count") == 20, "course metadata does not report F2 architecture")
+    require(u1.get("planned_journey_count") == 4 and u1.get("planned_locus_count") == 21, "course metadata does not report F2 architecture")
     require(u1.get("journey_count") == 0 and u1.get("scene_count") == 0, "F2 must not create production journeys or scenes")
 
     for unit in course["units"][1:]:
@@ -108,7 +108,7 @@ def main() -> None:
     print("AP CHEMISTRY F2 UNIT 1 PASS")
     print("- 48 source-backed scientific records cover CED Topics 1.1-1.8")
     print("- Unit 1 scientific concepts are inspectable in the read-only Content Studio catalog")
-    print("- four planned journeys and twenty planned loci preserve exact CED topic order")
+    print("- four planned journeys and twenty-one planned loci preserve exact CED topic order")
     print("- every scientific record is assigned exactly once to a planned locus")
     print("- no narrative scene, Memory Object, review, mixed set, or Challenge Lab item is authored")
     print("- Units 2-9 remain F1 scaffolds")

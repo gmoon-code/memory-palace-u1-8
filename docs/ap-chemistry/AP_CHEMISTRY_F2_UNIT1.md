@@ -4,7 +4,7 @@
 
 F2 is complete for Unit 1, Atomic Structure and Properties.
 
-The phase creates a source-backed scientific catalog of **48 locked records** spanning CED Topics 1.1 through 1.8. It also locks a four-journey, twenty-locus spatial architecture for later Story Method writing.
+The phase creates a source-backed scientific catalog of **48 locked records** spanning CED Topics 1.1 through 1.8. It also locks a four-journey, twenty-one-locus spatial architecture for later Story Method writing.
 
 F2 does not author narrative scenes, Memory Objects, review questions, mixed-discrimination sets, or Challenge Lab items.
 
