@@ -36,8 +36,12 @@ def main() -> None:
 
     course = course_packages.course(COURSE_ID)
     phase = course.get("production_phase")
-    require(course.get("status") in {"PACKAGE_FOUNDATION", "UNIT1_SCIENTIFIC_CATALOG"}, "course status is outside authorized F1/F2 development states")
-    require(phase in {"F1_PACKAGE_FOUNDATION", "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE"}, "course production phase is not an authorized F1/F2 state")
+    require(course.get("status") in {"PACKAGE_FOUNDATION", "UNIT1_SCIENTIFIC_CATALOG", "UNIT1_MEMORY_RETRIEVAL_ARCHITECTURE"}, "course status is outside authorized F1/F2/F3 development states")
+    require(phase in {
+        "F1_PACKAGE_FOUNDATION",
+        "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE",
+        "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE",
+    }, "course production phase is not an authorized F1/F2/F3 state")
     units = course.get("units", [])
     require(len(units) == 9, "course metadata must expose nine units")
     require([u.get("title") for u in units] == EXPECTED_TITLES, "CED unit titles or order changed")
@@ -56,7 +60,11 @@ def main() -> None:
             require(concept_records == [], f"{unit_id} concepts are populated before their authorized phase")
         else:
             require(len(concept_records) == 48, "Unit 1 F2 must expose 48 source-backed concepts")
-        require(course_packages.memory_objects(COURSE_ID, unit_id) == [], f"{unit_id} Memory Objects must remain empty in F1")
+        memory_records = course_packages.memory_objects(COURSE_ID, unit_id)
+        if phase == "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE" and unit_id == "unit-1":
+            require(len(memory_records) == 48, "Unit 1 F3 must expose 48 Memory Objects")
+        else:
+            require(memory_records == [], f"{unit_id} Memory Objects are populated before their authorized phase")
         require(course_packages.review_manifest(COURSE_ID, unit_id).get("targets") == [], f"{unit_id} review must remain empty in F1")
         require(course_packages.mixed_discrimination(COURSE_ID, unit_id).get("sets") == [], f"{unit_id} mixed discrimination must remain empty in F1")
         require(course_packages.application_lab(COURSE_ID, unit_id).get("items") == [], f"{unit_id} Challenge Lab must remain empty in F1")
@@ -74,18 +82,25 @@ def main() -> None:
 
     summary = admin_catalog.catalog_summary(COURSE_ID)
     require(summary["counts"].get("unit") == 9, "catalog does not expose nine units")
-    for key in ("journey", "scene", "memory_object", "question", "challenge"):
+    for key in ("journey", "scene", "question", "challenge"):
         require(summary["counts"].get(key, 0) == 0, f"development package unexpectedly produced {key} entities")
-    expected_concepts = 48 if phase == "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE" else 0
+    expected_concepts = 48 if phase in {
+        "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE",
+        "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE",
+    } else 0
+    expected_memory = 48 if phase == "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE" else 0
     require(summary["counts"].get("concept", 0) == expected_concepts, "catalog concept count does not match current development phase")
+    require(summary["counts"].get("memory_object", 0) == expected_memory, "catalog Memory Object count does not match current development phase")
     require(summary["unresolved_reference_count"] == 0, "foundation catalog has unresolved references")
 
     print("AP CHEMISTRY DEVELOPMENT PACKAGE QA PASS")
     print("- nine CED units and all 91 topic boundaries are loaded")
     if phase == "F1_PACKAGE_FOUNDATION":
         print("- all production content collections remain intentionally empty at F1")
-    else:
+    elif phase == "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE":
         print("- Unit 1 exposes 48 source-backed F2 concepts while production journeys, scenes, Memory Objects, questions, and challenges remain empty")
+    else:
+        print("- Unit 1 exposes 48 source-backed F2 concepts and 48 F3 Memory Objects while production journeys, scenes, questions, and challenges remain empty")
     print("- architecture fixture journeys are retired from the live content tree")
     print("- package source paths remain course- and unit-scoped")
     print("- AP Chemistry remains catalog-ready, read-only, development-only, and student-hidden")

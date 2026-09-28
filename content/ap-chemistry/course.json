@@ -2,9 +2,9 @@
   "course_id": "ap-chemistry",
   "course_title": "AP Chemistry",
   "content_model_version": "story-method-course-1.0",
-  "status": "UNIT1_SCIENTIFIC_CATALOG",
-  "production_phase": "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE",
-  "student_experience": "Unit 1 scientific catalog is source-backed and inspectable in the read-only development catalog. Journey spatial architecture is planned, but narrative scenes and Memory Objects are not yet populated.",
+  "status": "UNIT1_MEMORY_RETRIEVAL_ARCHITECTURE",
+  "production_phase": "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE",
+  "student_experience": "Unit 1 scientific records and Memory Object retrieval architecture are source-backed and inspectable in the read-only development catalog. Production journeys and narrative scenes remain unpopulated.",
   "source_basis": {
     "framework_crosswalk": "docs/ap-chemistry/AP_CHEMISTRY_F0B_FRAMEWORK_CROSSWALK.json",
     "science_component_plan": "docs/ap-chemistry/AP_CHEMISTRY_F0C_SCIENCE_COMPONENT_PLAN.json",
@@ -18,7 +18,7 @@
       "unit_id": "unit-1",
       "number": 1,
       "title": "Atomic Structure and Properties",
-      "status": "SCIENTIFIC_CATALOG_LOCKED",
+      "status": "MEMORY_RETRIEVAL_LOCKED",
       "topic_count": 8,
       "journey_count": 0,
       "scene_count": 0,
@@ -109,7 +109,10 @@
       "planned_journey_count": 4,
       "planned_locus_count": 21,
       "f2_source_catalog": "content/ap-chemistry/unit-1/source/scientific-catalog.json",
-      "f2_journey_architecture": "content/ap-chemistry/unit-1/source/journey-architecture.json"
+      "f2_journey_architecture": "content/ap-chemistry/unit-1/source/journey-architecture.json",
+      "memory_object_count": 48,
+      "f3_retrieval_architecture": "content/ap-chemistry/unit-1/source/retrieval-architecture.json",
+      "f3_memory_objects": "content/ap-chemistry/unit-1/memory-objects.json"
     },
     {
       "unit_id": "unit-2",

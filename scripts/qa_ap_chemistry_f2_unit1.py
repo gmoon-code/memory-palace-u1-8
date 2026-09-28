@@ -73,8 +73,11 @@ def main() -> None:
     require(arch.get("coverage_check", {}).get("memory_objects_authored") is False, "F2 incorrectly claims Memory Object authoring")
 
     u1 = next(u for u in course["units"] if u["unit_id"] == "unit-1")
-    require(course.get("production_phase") == "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE", "course production phase is not F2")
-    require(u1.get("status") == "SCIENTIFIC_CATALOG_LOCKED", "Unit 1 status is not F2 locked")
+    require(course.get("production_phase") in {
+        "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE",
+        "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE",
+    }, "course production phase is earlier than F2 or unknown")
+    require(u1.get("status") in {"SCIENTIFIC_CATALOG_LOCKED", "MEMORY_RETRIEVAL_LOCKED"}, "Unit 1 status is earlier than F2 or unknown")
     require(u1.get("canonical_records") == 48, "course metadata does not report 48 Unit 1 records")
     require(u1.get("planned_journey_count") == 4 and u1.get("planned_locus_count") == 21, "course metadata does not report F2 architecture")
     require(u1.get("journey_count") == 0 and u1.get("scene_count") == 0, "F2 must not create production journeys or scenes")
@@ -110,7 +113,7 @@ def main() -> None:
     print("- Unit 1 scientific concepts are inspectable in the read-only Content Studio catalog")
     print("- four planned journeys and twenty-one planned loci preserve exact CED topic order")
     print("- every scientific record is assigned exactly once to a planned locus")
-    print("- no narrative scene, Memory Object, review, mixed set, or Challenge Lab item is authored")
+    print("- F2 itself authored no Memory Objects or narrative scenes; later F3 may add Memory Objects while preserving this historical F2 artifact")
     print("- Units 2-9 remain F1 scaffolds")
     print("- AP Chemistry remains development-only, student-hidden, and read-only")
     print("- F3 Unit 1 Memory Object and retrieval architecture is the next authorized phase")

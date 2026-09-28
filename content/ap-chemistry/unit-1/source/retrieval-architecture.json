@@ -1,0 +1,425 @@
+{
+  "schema": "story-method-ap-chemistry-retrieval-architecture-1.0",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "unit_title": "Atomic Structure and Properties",
+  "phase": "F3",
+  "status": "RETRIEVAL_ARCHITECTURE_LOCKED_NARRATIVE_NOT_AUTHORED",
+  "scientific_catalog": "content/ap-chemistry/unit-1/source/scientific-catalog.json",
+  "journey_architecture": "content/ap-chemistry/unit-1/source/journey-architecture.json",
+  "memory_object_file": "content/ap-chemistry/unit-1/memory-objects.json",
+  "counts": {
+    "scientific_records": 48,
+    "memory_objects": 48,
+    "journeys_planned": 4,
+    "loci_planned": 21,
+    "exact_name_required": 18,
+    "spelling_required": 13,
+    "confusable_objects": 26,
+    "application_questions_authored": 0,
+    "production_journeys": 0,
+    "production_scenes": 0
+  },
+  "object_type_counts": {
+    "CONTRAST_OR_DISCRIMINATION": 26,
+    "QUANTITATIVE_RELATION": 6,
+    "CORRECTIVE_GUARD": 3,
+    "REPRESENTATION_INTERPRETATION": 7,
+    "TERM_OR_FACT": 5,
+    "MODEL_CONCEPT": 1
+  },
+  "retrieval_mode_counts": {
+    "name_to_meaning": 48,
+    "meaning_to_exact_name": 18,
+    "equation_or_quantitative_reasoning": 13,
+    "confusable_discrimination": 26,
+    "spelling": 13,
+    "meaning_to_explanation": 30,
+    "graph_interpretation": 10,
+    "data_interpretation": 11,
+    "scope_discrimination": 3,
+    "particulate_model_interpretation": 6,
+    "diagram_interpretation": 10
+  },
+  "design_rules": [
+    "Each locked scientific record maps to exactly one Memory Object.",
+    "Memory Objects remain in the F2 journey and locus assignment; F3 may add a micro-locus anchor but may not reorder CED topics.",
+    "Canonical chemistry and AP scope remain source locked. Mnemonic surface cues may encode the science but cannot replace or distort it.",
+    "Scope-guard records are encoded as corrective guards and must never be turned into positive assessment requirements.",
+    "Exact-name retrieval is required only where the canonical vocabulary itself is an intended retrieval target; relationship records may use accurate explanatory retrieval.",
+    "Spelling retrieval is reserved for selected high-value scientific vocabulary and is not applied to every record.",
+    "Equation/calculation, graph, data-table, diagram, and particulate-model retrieval are added only when the F2 scientific record carries that component type.",
+    "Application questions are not authored in F3. Each Memory Object carries an application prompt specification for later question authoring.",
+    "Pronunciation remains deferred because the supplied academic sources do not provide a pronunciation record.",
+    "Narrative scene prose, guides, dialogue, transitions, and finales remain deferred to the narrative phase."
+  ],
+  "confusable_sets": [
+    {
+      "set_id": "U1-CF-01",
+      "members": [
+        "Mole",
+        "Molar mass",
+        "Avogadro constant"
+      ],
+      "purpose": "Separate amount of substance, mass per mole, and particles-per-mole constant."
+    },
+    {
+      "set_id": "U1-CF-02",
+      "members": [
+        "Isotope",
+        "Relative isotopic abundance",
+        "Weighted average atomic mass"
+      ],
+      "purpose": "Separate isotope identity/mass, abundance, and the weighted average."
+    },
+    {
+      "set_id": "U1-CF-03",
+      "members": [
+        "Pure substance fixed composition",
+        "Mixture"
+      ],
+      "purpose": "Separate fixed composition from variable composition."
+    },
+    {
+      "set_id": "U1-CF-04",
+      "members": [
+        "Electron shell",
+        "Electron subshell"
+      ],
+      "purpose": "Separate principal energy level from subdivision within a shell."
+    },
+    {
+      "set_id": "U1-CF-05",
+      "members": [
+        "PES peak position",
+        "PES peak relative intensity"
+      ],
+      "purpose": "Separate binding-energy information from electron-count information."
+    },
+    {
+      "set_id": "U1-CF-06",
+      "members": [
+        "Atomic radius trend",
+        "Ionic radius"
+      ],
+      "purpose": "Separate neutral-atom periodic radius reasoning from ion-size reasoning."
+    },
+    {
+      "set_id": "U1-CF-07",
+      "members": [
+        "First ionization energy trend",
+        "Electron affinity trend concept",
+        "Electronegativity trend"
+      ],
+      "purpose": "Separate electron removal, electron addition energy change, and attraction for shared electrons."
+    },
+    {
+      "set_id": "U1-CF-08",
+      "members": [
+        "Typical ionic charge from periodic position",
+        "Ionic compound charge balance",
+        "Ionic attraction"
+      ],
+      "purpose": "Separate ion charge prediction, neutral formula ratio, and attraction among formed ions."
+    }
+  ],
+  "journey_retrieval_plan": [
+    {
+      "journey_plan_id": "APCHEM-U1-JP1",
+      "palace_name": "Matter Accounting Works",
+      "loci": [
+        {
+          "locus_id": "APCHEM-U1-JP1-L1",
+          "locus_name": "Mass Receiving Scale",
+          "source_knowledge_ids": [
+            "U1-K001",
+            "U1-K003",
+            "U1-K004",
+            "U1-K005"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-001",
+            "MO-APCHEM-U1-003",
+            "MO-APCHEM-U1-004",
+            "MO-APCHEM-U1-005"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP1-L2",
+          "locus_name": "Particle Counting Vault",
+          "source_knowledge_ids": [
+            "U1-K002"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-002"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP1-L3",
+          "locus_name": "Isotope Spectrum Bay",
+          "source_knowledge_ids": [
+            "U1-K006",
+            "U1-K007",
+            "U1-K008",
+            "U1-K009",
+            "U1-K010"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-006",
+            "MO-APCHEM-U1-007",
+            "MO-APCHEM-U1-008",
+            "MO-APCHEM-U1-009",
+            "MO-APCHEM-U1-010"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP1-L4",
+          "locus_name": "Pure-Compound Analysis Bench",
+          "source_knowledge_ids": [
+            "U1-K011",
+            "U1-K012",
+            "U1-K013",
+            "U1-K014",
+            "U1-K015"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-011",
+            "MO-APCHEM-U1-012",
+            "MO-APCHEM-U1-013",
+            "MO-APCHEM-U1-014",
+            "MO-APCHEM-U1-015"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP1-L5",
+          "locus_name": "Mixture Purity Station",
+          "source_knowledge_ids": [
+            "U1-K016",
+            "U1-K017",
+            "U1-K018"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-016",
+            "MO-APCHEM-U1-017",
+            "MO-APCHEM-U1-018"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_plan_id": "APCHEM-U1-JP2",
+      "palace_name": "Electron Structure Observatory",
+      "loci": [
+        {
+          "locus_id": "APCHEM-U1-JP2-L1",
+          "locus_name": "Nucleus Floor",
+          "source_knowledge_ids": [
+            "U1-K019",
+            "U1-K020"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-019",
+            "MO-APCHEM-U1-020"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP2-L2",
+          "locus_name": "Shell and Subshell Stairwell",
+          "source_knowledge_ids": [
+            "U1-K021",
+            "U1-K022",
+            "U1-K023"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-021",
+            "MO-APCHEM-U1-022",
+            "MO-APCHEM-U1-023"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP2-L3",
+          "locus_name": "Ground-State Configuration Board",
+          "source_knowledge_ids": [
+            "U1-K024",
+            "U1-K025",
+            "U1-K028"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-024",
+            "MO-APCHEM-U1-025",
+            "MO-APCHEM-U1-028"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP2-L4",
+          "locus_name": "Ion Configuration Lift",
+          "source_knowledge_ids": [
+            "U1-K026",
+            "U1-K027"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-026",
+            "MO-APCHEM-U1-027"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP2-L5",
+          "locus_name": "PES Spectrum Theater",
+          "source_knowledge_ids": [
+            "U1-K029",
+            "U1-K030",
+            "U1-K031",
+            "U1-K032",
+            "U1-K033"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-029",
+            "MO-APCHEM-U1-030",
+            "MO-APCHEM-U1-031",
+            "MO-APCHEM-U1-032",
+            "MO-APCHEM-U1-033"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_plan_id": "APCHEM-U1-JP3",
+      "palace_name": "Periodic Forces Tower",
+      "loci": [
+        {
+          "locus_id": "APCHEM-U1-JP3-L1",
+          "locus_name": "Periodicity Grid Lobby",
+          "source_knowledge_ids": [
+            "U1-K034"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-034"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP3-L2",
+          "locus_name": "Attraction Control Room",
+          "source_knowledge_ids": [
+            "U1-K035"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-035"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP3-L3",
+          "locus_name": "Radius Corridor",
+          "source_knowledge_ids": [
+            "U1-K036"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-036"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP3-L4",
+          "locus_name": "Ionization Stair",
+          "source_knowledge_ids": [
+            "U1-K037",
+            "U1-K038"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-037",
+            "MO-APCHEM-U1-038"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP3-L5",
+          "locus_name": "Affinity and Electronegativity Gallery",
+          "source_knowledge_ids": [
+            "U1-K039",
+            "U1-K040"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-039",
+            "MO-APCHEM-U1-040"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP3-L6",
+          "locus_name": "Ionic Radius Balcony",
+          "source_knowledge_ids": [
+            "U1-K041"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-041"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP3-L7",
+          "locus_name": "Prediction Deck",
+          "source_knowledge_ids": [
+            "U1-K042",
+            "U1-K043"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-042",
+            "MO-APCHEM-U1-043"
+          ]
+        }
+      ]
+    },
+    {
+      "journey_plan_id": "APCHEM-U1-JP4",
+      "palace_name": "Valence and Ion Assembly Hall",
+      "loci": [
+        {
+          "locus_id": "APCHEM-U1-JP4-L1",
+          "locus_name": "Valence Inspection Gate",
+          "source_knowledge_ids": [
+            "U1-K044"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-044"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP4-L2",
+          "locus_name": "Group Pattern Racks",
+          "source_knowledge_ids": [
+            "U1-K045"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-045"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP4-L3",
+          "locus_name": "Ion Charge Workshop",
+          "source_knowledge_ids": [
+            "U1-K046"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-046"
+          ]
+        },
+        {
+          "locus_id": "APCHEM-U1-JP4-L4",
+          "locus_name": "Formula Balance Scale",
+          "source_knowledge_ids": [
+            "U1-K047",
+            "U1-K048"
+          ],
+          "memory_object_ids": [
+            "MO-APCHEM-U1-047",
+            "MO-APCHEM-U1-048"
+          ]
+        }
+      ]
+    }
+  ],
+  "production_boundaries": {
+    "narrative_authored": false,
+    "production_journeys": 0,
+    "production_scenes": 0,
+    "review_questions_authored": false,
+    "mixed_discrimination_authored": false,
+    "challenge_lab_authored": false
+  },
+  "next_phase": "F4 Unit 1 narrative briefs and scene-writing architecture"
+}

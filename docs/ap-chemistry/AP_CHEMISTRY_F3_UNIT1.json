@@ -1,0 +1,42 @@
+{
+  "schema": "story-method-ap-chemistry-f3-unit1-1.0",
+  "course_id": "ap-chemistry",
+  "unit_id": "unit-1",
+  "phase": "F3",
+  "status": "COMPLETE",
+  "completed_date": "2026-09-28",
+  "predecessor_commit": "5d90bf0b181fdfc03d960992d955b3b4126df151",
+  "deliverables": {
+    "scientific_catalog": "content/ap-chemistry/unit-1/source/scientific-catalog.json",
+    "journey_architecture": "content/ap-chemistry/unit-1/source/journey-architecture.json",
+    "retrieval_architecture": "content/ap-chemistry/unit-1/source/retrieval-architecture.json",
+    "memory_objects": "content/ap-chemistry/unit-1/memory-objects.json"
+  },
+  "counts": {
+    "scientific_records": 48,
+    "memory_objects": 48,
+    "journeys_planned": 4,
+    "loci_planned": 21,
+    "exact_name_required": 18,
+    "spelling_required": 13,
+    "confusable_objects": 26,
+    "application_questions_authored": 0,
+    "production_journeys": 0,
+    "production_scenes": 0
+  },
+  "locks": {
+    "one_memory_object_per_scientific_record": true,
+    "f2_locus_assignments_preserved": true,
+    "exact_name_and_spelling_requirements_locked": true,
+    "confusable_sets_locked": true,
+    "representation_retrieval_modes_locked": true,
+    "application_questions_deferred": true,
+    "narrative_not_authored": true,
+    "production_journeys": 0,
+    "production_scenes": 0,
+    "units_2_through_9_unchanged": true,
+    "student_visible": false,
+    "editable": false
+  },
+  "next_phase": "F4 Unit 1 narrative briefs and scene-writing architecture"
+}

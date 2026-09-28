@@ -20,8 +20,8 @@ def test_course_aware_student_api_loads_hidden_nine_unit_foundation():
     assert course.status_code == 200
     body = course.json()
     assert body["course_id"] == "ap-chemistry"
-    assert body["status"] == "UNIT1_SCIENTIFIC_CATALOG"
-    assert body["production_phase"] == "F2_UNIT1_SCIENTIFIC_CATALOG_AND_JOURNEY_ARCHITECTURE"
+    assert body["status"] == "UNIT1_MEMORY_RETRIEVAL_ARCHITECTURE"
+    assert body["production_phase"] == "F3_UNIT1_MEMORY_OBJECT_AND_RETRIEVAL_ARCHITECTURE"
     assert len(body["units"]) == 9
     assert sum(unit["topic_count"] for unit in body["units"]) == 91
 
@@ -36,6 +36,10 @@ def test_course_aware_student_api_loads_hidden_nine_unit_foundation():
 
     missing_journey = client.get("/api/courses/ap-chemistry/units/unit-1/journeys/APCHEM-U1-J1")
     assert missing_journey.status_code == 404
+
+    memory_object = client.get("/api/courses/ap-chemistry/units/unit-1/objects/MO-APCHEM-U1-001")
+    assert memory_object.status_code == 200
+    assert memory_object.json()["source_knowledge_id"] == "U1-K001"
 
     missing_object = client.get("/api/courses/ap-chemistry/units/unit-1/objects/APCHEM-U1-K002")
     assert missing_object.status_code == 404
