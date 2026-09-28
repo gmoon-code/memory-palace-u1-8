@@ -195,7 +195,7 @@ def test_generic_editor_reads_chemistry_foundation_units_without_enabling_writes
         )
         assert listing.status_code == 200
         items = listing.json()["items"]
-        if entity_type == "concept":
+        if entity_type in {"concept", "memory_object"}:
             assert len(items) == 48
             assert all(item["course_id"] == "ap-chemistry" for item in items)
             assert all(item["unit_id"] == "unit-1" for item in items)

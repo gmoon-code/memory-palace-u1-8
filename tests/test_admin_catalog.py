@@ -112,7 +112,7 @@ def test_development_course_catalog_is_read_only_and_isolated():
     assert summary["counts"].get("journey", 0) == 0
     assert summary["counts"].get("scene", 0) == 0
     assert summary["counts"].get("concept", 0) == 48
-    assert summary["counts"].get("memory_object", 0) == 0
+    assert summary["counts"].get("memory_object", 0) == 48
 
     snapshot = admin_catalog.catalog("ap-chemistry")
     assert all(entity.get("course_id") == "ap-chemistry" for entity in snapshot["entities"].values())
