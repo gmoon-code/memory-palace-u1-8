@@ -89,8 +89,8 @@ def main() -> None:
     require(course_packages.journeys("ap-chemistry", "unit-1")["guided_journeys"] == [], "production Unit 1 journey registry must remain empty")
 
     admin_catalog.clear_catalog_cache()
-    snapshot = admin_catalog.catalog_snapshot("ap-chemistry")
-    counts = snapshot.get("summary", {}).get("counts", {})
+    summary = admin_catalog.catalog_summary("ap-chemistry")
+    counts = summary.get("counts", {})
     require(counts.get("unit") == 9, "Content Studio no longer sees nine AP Chemistry units")
     require(counts.get("concept") == 48, "Content Studio does not expose 48 Unit 1 concepts")
     require(counts.get("journey", 0) == 0 and counts.get("scene", 0) == 0, "Content Studio exposes premature Unit 1 narrative content")
