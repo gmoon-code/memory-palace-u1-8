@@ -7,11 +7,11 @@
 @media print{.moon-appearance{display:none!important}}
 /* Story Method dark palette: page, paper, raised panels, and deliberate highlights. */
 :root[data-moon-theme="dark"]{
-  --moon-page:#121212;--moon-paper:#1e1e1e;--moon-raised:#292929;
+  --moon-page:#0f0f0f;--moon-paper:#161616;--moon-raised:#1c1c1c;
   --moon-ink:#ececec;--moon-muted:#b8b8b8;
-  --moon-rule:#3d3d3d;--moon-rule-dark:#595959;
-  --moon-soft-yellow:#282828;--moon-soft-green:#282828;
-  --moon-soft-turquoise:#282828;--moon-soft-pink:#282828;
+  --moon-rule:#303030;--moon-rule-dark:#484848;
+  --moon-soft-yellow:#1c1c1c;--moon-soft-green:#1c1c1c;
+  --moon-soft-turquoise:#1c1c1c;--moon-soft-pink:#1c1c1c;
   --bg:var(--moon-page);--surface:var(--moon-paper);--surface-2:var(--moon-raised);
   --text:var(--moon-ink);--muted:var(--moon-muted);--line:var(--moon-rule);
   --danger-bg:var(--moon-soft-pink);--danger-text:#f5c5e7;
@@ -78,10 +78,10 @@ html[data-moon-theme="dark"] :is(.roadmap summary strong,.memory-panel summary s
 html[data-moon-theme="dark"] :is(.eyebrow,.journey-card .eyebrow,.course-card .eyebrow,.scene-orientation .eyebrow,
  .cast-section .eyebrow,.narrative-section .eyebrow,.memory-panel summary .eyebrow,
  .recall-card .eyebrow,.review-card .eyebrow,.practice-card .eyebrow,.route-label span,
- .progress-head span){color:#121212!important}
+ .progress-head span){color:#0f0f0f!important}
 html[data-moon-theme="dark"] :is(.guide-chip,.route-label,.stage-zone,.review-answer){color:var(--moon-ink)}
 html[data-moon-theme="dark"] :is(.primary,.primary:hover){
-  color:#121212;background:var(--moon-ink);border-color:var(--moon-ink)
+  color:#0f0f0f;background:var(--moon-ink);border-color:var(--moon-ink)
 }
 html[data-moon-theme="dark"] :is(.secondary,.ghost,.choice-button,.route-node,.review-choice,.answer-choice){
   background:var(--moon-paper);color:var(--moon-ink);border-color:var(--moon-rule-dark)
@@ -149,3 +149,38 @@ html[data-moon-theme="dark"] :is(.shell :is(p,li,figcaption) a:not(.primary):not
  color:#ffffff;background:var(--moon-link-hover)
 }
 html[data-moon-theme="dark"] .shell a:focus-visible{outline:2px solid var(--moon-link-accent);outline-offset:3px}
+
+/* Reduce boxed surfaces in reading and narrative areas. Keep interactive
+   lesson cards and feedback fields visually distinct. */
+html[data-moon-theme="dark"] :is(
+ .hero,.challenge-strip,.roadmap,.journey-banner,.scene-orientation,
+ .cast-section,.narrative-section,.course-home-intro
+){
+ background:transparent;
+}
+html[data-moon-theme="dark"] :is(.metric,.cast-card,.guide-chip){
+ background:transparent;
+ border-color:var(--moon-rule);
+}
+html[data-moon-theme="dark"] :is(.hero-side,.story-side,.lesson-side){
+ background:transparent;
+ border-color:var(--moon-rule);
+}
+html[data-moon-theme="dark"] :is(.roadmap-row.current-unit,.route-node.current){
+ background:var(--moon-raised);
+ border-color:var(--moon-rule-dark);
+}
+html[data-moon-theme="dark"] :is(.stage-zone,.scene-media,.progress-wrap){
+ background:var(--moon-raised);
+ border-color:var(--moon-rule);
+}
+html[data-moon-theme="dark"] :is(.journey-card,.story-card,.recall-card,
+ .review-card,.review-empty,.practice-card,.route-wrap){
+ background:var(--moon-paper);
+ border-color:var(--moon-rule);
+}
+html[data-moon-theme="dark"] :is(.hint,.recall-prompt,.memory-image,
+ .answer-guide,.practice-feedback){
+ background:var(--moon-raised);
+ border-color:var(--moon-rule);
+}
