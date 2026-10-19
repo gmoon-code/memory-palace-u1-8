@@ -7,11 +7,11 @@
 @media print{.moon-appearance{display:none!important}}
 /* Story Method dark palette: page, paper, raised panels, and deliberate highlights. */
 :root[data-moon-theme="dark"]{
-  --moon-page:#11161b;--moon-paper:#1b2229;--moon-raised:#232c35;
-  --moon-ink:#e8edf1;--moon-muted:#b5c0c8;
-  --moon-rule:#39444e;--moon-rule-dark:#53616d;
-  --moon-soft-yellow:#34331e;--moon-soft-green:#1b3826;
-  --moon-soft-turquoise:#19383c;--moon-soft-pink:#3a2540;
+  --moon-page:#121212;--moon-paper:#1e1e1e;--moon-raised:#292929;
+  --moon-ink:#ececec;--moon-muted:#b8b8b8;
+  --moon-rule:#3d3d3d;--moon-rule-dark:#595959;
+  --moon-soft-yellow:#282828;--moon-soft-green:#282828;
+  --moon-soft-turquoise:#282828;--moon-soft-pink:#282828;
   --bg:var(--moon-page);--surface:var(--moon-paper);--surface-2:var(--moon-raised);
   --text:var(--moon-ink);--muted:var(--moon-muted);--line:var(--moon-rule);
   --danger-bg:var(--moon-soft-pink);--danger-text:#f5c5e7;
@@ -78,10 +78,10 @@ html[data-moon-theme="dark"] :is(.roadmap summary strong,.memory-panel summary s
 html[data-moon-theme="dark"] :is(.eyebrow,.journey-card .eyebrow,.course-card .eyebrow,.scene-orientation .eyebrow,
  .cast-section .eyebrow,.narrative-section .eyebrow,.memory-panel summary .eyebrow,
  .recall-card .eyebrow,.review-card .eyebrow,.practice-card .eyebrow,.route-label span,
- .progress-head span){color:#11161b!important}
+ .progress-head span){color:#121212!important}
 html[data-moon-theme="dark"] :is(.guide-chip,.route-label,.stage-zone,.review-answer){color:var(--moon-ink)}
 html[data-moon-theme="dark"] :is(.primary,.primary:hover){
-  color:#11161b;background:var(--moon-ink);border-color:var(--moon-ink)
+  color:#121212;background:var(--moon-ink);border-color:var(--moon-ink)
 }
 html[data-moon-theme="dark"] :is(.secondary,.ghost,.choice-button,.route-node,.review-choice,.answer-choice){
   background:var(--moon-paper);color:var(--moon-ink);border-color:var(--moon-rule-dark)
@@ -106,8 +106,8 @@ html[data-moon-theme="dark"] .skip-link:focus{background:var(--moon-paper);color
 
 /* Legible secondary labels and links on all story and review screens. */
 html[data-moon-theme="dark"]{
- --moon-link-ink:#9eeaf2;--moon-link-visited:#e3b5f9;
- --moon-link-accent:#66f0f0;--moon-link-hover:#283e45;
+ --moon-link-ink:#b8f2ce;--moon-link-visited:#f0c8e5;
+ --moon-link-accent:#91dbaa;--moon-link-hover:#303030;
 }
 html[data-moon-theme="dark"] :is(.journey-meta,.roadmap-row span,.roadmap-row em,.summary-chevron,
  .guide-chip span:not(.guide-dot),.guide-chip small,.route-label,.route-floor,
@@ -146,6 +146,6 @@ html[data-moon-theme="dark"] :is(.shell :is(p,li,figcaption) a:not(.primary):not
 }
 html[data-moon-theme="dark"] :is(.shell :is(p,li,figcaption) a:not(.primary):not(.secondary):not(.ghost),
  .shell .source-link,.shell .resource-link):is(:hover,:focus-visible){
- color:#e3faff;background:var(--moon-link-hover)
+ color:#ffffff;background:var(--moon-link-hover)
 }
 html[data-moon-theme="dark"] .shell a:focus-visible{outline:2px solid var(--moon-link-accent);outline-offset:3px}
