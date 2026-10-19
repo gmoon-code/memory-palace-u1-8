@@ -42,3 +42,29 @@ html[data-moon-theme="dark"] :is(.route-node:not(:disabled):hover,.choice-button
 html[data-moon-theme="dark"] :is(svg text,svg tspan){fill:var(--moon-ink)}
 html[data-moon-theme="dark"] .moon-appearance-select{background:var(--moon-paper);color:var(--moon-ink)}
 @media print{:root[data-moon-theme="dark"]{color-scheme:light}}
+
+/* In dark mode, headings with partial highlighter stripes need a complete,
+   dark-lettered highlight so neither half of the lettering disappears. */
+html[data-moon-theme="dark"] .hero h1,
+html[data-moon-theme="dark"] .journey-banner h1,
+html[data-moon-theme="dark"] .recall-card h1{
+  color:#101317!important;background:var(--moon-yellow);
+}
+html[data-moon-theme="dark"] :is(.library-heading h2,.orientation-copy h2,.stage-zone strong,.cast-section .section-heading h3){
+  color:#101317!important;background:var(--moon-green);
+}
+html[data-moon-theme="dark"] :is(.challenge-strip h2,.narrative-section .section-heading h3,.story-term,.practice-card h1){
+  color:#101317!important;background:var(--moon-turquoise);
+}
+html[data-moon-theme="dark"] :is(.roadmap summary strong,.memory-panel summary strong){
+  color:#101317!important;background:var(--moon-pink);
+}
+html[data-moon-theme="dark"] :is(.review-card h1,.review-empty h1,.review-card h2,.review-empty h2){
+  color:#101317!important;background:var(--moon-green);
+}
+html[data-moon-theme="dark"] :is(.metric,.cast-card,.route-node,.story-shell,.listen-row,.scene-media,.practice-card,.choice-button,.note-card){background:var(--moon-paper);color:var(--moon-ink);border-color:var(--moon-rule)}
+html[data-moon-theme="dark"] :is(.hero-side strong,.metric strong,.metric span,.library-heading p,.hero p,.story-card p,.journey-banner p,.course-home-intro p,.course-home-kicker){color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.error-note,.error-message){color:#ffd3e6;background:var(--moon-soft-pink)}
+html[data-moon-theme="dark"] .skip-link:focus{background:var(--moon-paper);color:var(--moon-ink);border-color:var(--moon-rule-dark)}
+html[data-moon-theme="dark"] .moon-appearance-label{color:var(--moon-muted)}
+@media print{:root[data-moon-theme="dark"]{--moon-page:#fff;--moon-paper:#fff;--moon-ink:#111;--moon-muted:#575757;--moon-rule:#d8d8d8;--moon-rule-dark:#b7b7b7}}
