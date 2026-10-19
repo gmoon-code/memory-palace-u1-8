@@ -1,0 +1,44 @@
+/* Appearance control, shared with the other Moon Notes sites. */
+.moon-appearance{display:flex;align-items:center;justify-content:flex-end;gap:7px;flex:none;font-family:"Times New Roman",Times,serif;font-size:13px}
+.moon-appearance-label{color:var(--moon-muted,#575757);font-size:12px;white-space:nowrap}
+.moon-appearance-select{font:inherit;min-width:85px;max-width:110px;padding:6px 7px;border:1px solid var(--moon-rule-dark,#b7b7b7);border-radius:3px;background:var(--moon-paper,#fff);color:var(--moon-ink,#111);cursor:pointer;line-height:1.3}
+.moon-appearance-select:focus-visible{outline:2px solid var(--moon-ink,#111);outline-offset:2px}
+@media(max-width:700px){.moon-appearance{justify-content:flex-start;gap:8px}.moon-appearance-select{min-height:36px}}
+@media print{.moon-appearance{display:none!important}}
+/* Story Method dark surfaces. The four highlighter colours stay vivid. */
+:root[data-moon-theme="dark"]{
+  --moon-paper:#1d242b;--moon-page:#12171c;--moon-ink:#edf1f4;
+  --moon-muted:#b9c3cb;--moon-rule:#3a4651;--moon-rule-dark:#566574;
+  --moon-soft-yellow:#343420;--moon-soft-green:#1b3825;
+  --moon-soft-turquoise:#18363b;--moon-soft-pink:#39243c;
+  --bg:var(--moon-page);--surface:var(--moon-paper);--surface-2:#252e36;
+  --text:var(--moon-ink);--muted:var(--moon-muted);--line:var(--moon-rule);
+  --danger-bg:var(--moon-soft-pink);--danger-text:#ffb9dc;
+  color-scheme:dark;
+}
+html[data-moon-theme="dark"],html[data-moon-theme="dark"] body{background:var(--moon-page);color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(h1,h2,h3,h4,h5,h6,p,li,blockquote,figcaption,small,dt,dd,th,td,label){color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.topbar,.card,.hero,.journey-card,.story-card,.story-shell,.route-wrap,.review-card,.review-empty,.recall-card,.practice-card,.challenge-strip,.roadmap,.preview-banner,.loading-card,.error-card,.story-actions,.cast-section,.scene-orientation,.narrative-section,.memory-panel,.practice-panel,.review-panel,.lesson-panel,.chapter-panel,.course-panel,.journey-banner,.nav-panel){background:var(--moon-paper);border-color:var(--moon-rule)}
+html[data-moon-theme="dark"] .topbar{background:var(--moon-page);border-bottom-color:var(--moon-rule-dark)}
+html[data-moon-theme="dark"] :is(.brand,.brand span,.nav button,.nav button.active){color:var(--moon-ink)}
+html[data-moon-theme="dark"] .nav button.active{border-bottom-color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.nav button:hover,.secondary:hover,.ghost:hover){background:#2d3843;color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.secondary,.ghost,.choice-button,.route-node,.action-btn,.review-choice,.answer-choice){background:var(--moon-paper);color:var(--moon-ink);border-color:var(--moon-rule-dark)}
+html[data-moon-theme="dark"] :is(.secondary:hover,.ghost:hover,.choice-button:hover,.route-node:hover,.review-choice:hover){background:#2d3843;color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.primary,.primary:hover){background:var(--moon-ink);color:var(--moon-page);border-color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.muted,.eyebrow-muted,.meta,.help-text,.status-note){color:var(--moon-muted)}
+html[data-moon-theme="dark"] :is(.course-home-kicker,.course-section-heading h2,.route-label span,.current-unit-label){color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.course-home-intro,.course-section-heading,.roadmap,.lesson-header,.review-header){border-color:var(--moon-rule)}
+html[data-moon-theme="dark"] :is(.hero-side,.metric,.step-card,.progress-wrap,.route-panel,.story-side,.lesson-side,.data-table,.item-card){background:#242e37;border-color:var(--moon-rule)}
+html[data-moon-theme="dark"] :is(input,select,textarea,button){color:var(--moon-ink);border-color:var(--moon-rule-dark)}
+html[data-moon-theme="dark"] :is(input,textarea,select){background:var(--moon-paper)}
+html[data-moon-theme="dark"] :is(input,textarea)::placeholder{color:var(--moon-muted)}
+html[data-moon-theme="dark"] :is(table,thead,tbody,tr,th,td){border-color:var(--moon-rule)}
+html[data-moon-theme="dark"] :is(thead th,pre,code,.code-example){background:#27313a;color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.route-node.current,.roadmap-row.current-unit,.memory-panel .hint,.hint-panel,.hint-box,.answer-guide,.practice-feedback){background:var(--moon-soft-yellow);color:var(--moon-ink)}
+html[data-moon-theme="dark"] :is(.error-message,.error-card){color:#ffc2dc}
+html[data-moon-theme="dark"] :is(.eyebrow,.journey-card .eyebrow,.course-card .eyebrow,.route-label span,.scene-orientation .eyebrow,.cast-section .eyebrow,.narrative-section .eyebrow,.memory-panel summary .eyebrow,.recall-card .eyebrow,.review-card .eyebrow,.practice-card .eyebrow){color:#101317!important}
+html[data-moon-theme="dark"] :is(.route-node:not(:disabled):hover,.choice-button:hover:not(:disabled)){border-color:var(--moon-rule-dark)}
+html[data-moon-theme="dark"] :is(svg text,svg tspan){fill:var(--moon-ink)}
+html[data-moon-theme="dark"] .moon-appearance-select{background:var(--moon-paper);color:var(--moon-ink)}
+@media print{:root[data-moon-theme="dark"]{color-scheme:light}}
