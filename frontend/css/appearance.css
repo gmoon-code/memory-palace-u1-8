@@ -103,3 +103,49 @@ html[data-moon-theme="dark"] .skip-link:focus{background:var(--moon-paper);color
  .moon-appearance-label{display:none}
 }
 @media print{:root[data-moon-theme="dark"]{--moon-page:#fff;--moon-paper:#fff;--moon-raised:#fff;--moon-ink:#111;--moon-muted:#575757;--moon-rule:#ddd;--moon-rule-dark:#aaa;color-scheme:light}}
+
+/* Legible secondary labels and links on all story and review screens. */
+html[data-moon-theme="dark"]{
+ --moon-link-ink:#9eeaf2;--moon-link-visited:#e3b5f9;
+ --moon-link-accent:#66f0f0;--moon-link-hover:#283e45;
+}
+html[data-moon-theme="dark"] :is(.journey-meta,.roadmap-row span,.roadmap-row em,.summary-chevron,
+ .guide-chip span:not(.guide-dot),.guide-chip small,.route-label,.route-floor,
+ .stage-position,.cast-kind,.memory-image span,.recall-progress,.preview-banner span){
+ color:var(--moon-muted);
+}
+html[data-moon-theme="dark"] :is(.roadmap-row strong,.guide-chip strong,.cast-card h4,.cast-card p strong,
+ .memory-anchor h4,.preview-banner strong,.story-paragraph.lead:first-letter){
+ color:var(--moon-ink);
+}
+html[data-moon-theme="dark"] :is(.story-paragraph,.cast-card p,.memory-anchor p,
+ .challenge-strip p,.challenge-side span,.orientation-copy p,.stage-zone p,
+ .practice-prompt,.field-label,.recall-prompt,.hint,.memory-image){
+ color:var(--moon-ink);
+}
+html[data-moon-theme="dark"] .roadmap-row.current-unit{background:var(--moon-soft-pink)}
+html[data-moon-theme="dark"] :is(.guide-chip,.review-answer,.route-node.visited){
+ background:var(--moon-raised);border-color:var(--moon-rule);
+}
+html[data-moon-theme="dark"] .guide-dot{
+ background:var(--moon-soft-yellow);color:var(--moon-ink);
+}
+html[data-moon-theme="dark"] .pill{
+ background:var(--moon-raised);color:var(--moon-ink);border-color:var(--moon-rule-dark)
+}
+html[data-moon-theme="dark"] :is(.recall-prompt,.hint,.memory-image){
+ border-color:var(--moon-yellow);
+}
+html[data-moon-theme="dark"] :is(.shell :is(p,li,figcaption) a:not(.primary):not(.secondary):not(.ghost),
+ .shell .source-link,.shell .resource-link){
+ color:var(--moon-link-ink);text-decoration-color:var(--moon-link-accent);
+}
+html[data-moon-theme="dark"] :is(.shell :is(p,li,figcaption) a:not(.primary):not(.secondary):not(.ghost),
+ .shell .source-link,.shell .resource-link):visited{
+ color:var(--moon-link-visited);text-decoration-color:var(--moon-link-visited);
+}
+html[data-moon-theme="dark"] :is(.shell :is(p,li,figcaption) a:not(.primary):not(.secondary):not(.ghost),
+ .shell .source-link,.shell .resource-link):is(:hover,:focus-visible){
+ color:#e3faff;background:var(--moon-link-hover)
+}
+html[data-moon-theme="dark"] .shell a:focus-visible{outline:2px solid var(--moon-link-accent);outline-offset:3px}
