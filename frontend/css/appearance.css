@@ -68,3 +68,11 @@ html[data-moon-theme="dark"] :is(.error-note,.error-message){color:#ffd3e6;backg
 html[data-moon-theme="dark"] .skip-link:focus{background:var(--moon-paper);color:var(--moon-ink);border-color:var(--moon-rule-dark)}
 html[data-moon-theme="dark"] .moon-appearance-label{color:var(--moon-muted)}
 @media print{:root[data-moon-theme="dark"]{--moon-page:#fff;--moon-paper:#fff;--moon-ink:#111;--moon-muted:#575757;--moon-rule:#d8d8d8;--moon-rule-dark:#b7b7b7}}
+
+@media(max-width:700px){
+ .topbar:has(>.moon-appearance){display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px}
+ .topbar>.brand{grid-column:1;grid-row:1}
+ .topbar>.moon-appearance{grid-column:2;grid-row:1}
+ .topbar>.nav{grid-column:1/-1;grid-row:2;width:100%}
+ .moon-appearance-label{display:none}
+}
