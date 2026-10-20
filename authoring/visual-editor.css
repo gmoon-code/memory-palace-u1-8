@@ -13,7 +13,7 @@ button.primary{background:#181818;color:#fff;border-color:#181818;font-weight:70
 button:hover:not(:disabled){background:#ededeb}
 button.primary:hover:not(:disabled){background:#393939}
 :focus-visible{outline:2px solid #111;outline-offset:3px}
-textarea,select{width:100%;border:1px solid #aaa;background:#fff;border-radius:3px;padding:9px;color:#161616}
+textarea,select,input[type="search"]{width:100%;border:1px solid #aaa;background:#fff;border-radius:3px;padding:9px;color:#161616}
 textarea{resize:vertical;line-height:1.5}
 [hidden]{display:none!important}
 .topbar{background:#fff;min-height:76px;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
@@ -35,6 +35,15 @@ textarea{resize:vertical;line-height:1.5}
 #sceneList button{width:100%;font-size:13px;text-align:left;border:0;border-left:3px solid transparent;border-radius:0;line-height:1.35;padding:9px 10px}
 #sceneList button[aria-current="true"]{border-left-color:var(--green);background:#f2f4ee;font-weight:700}
 #sceneList button span{color:var(--muted);display:block;font-size:11px}
+.narrative-search{border-top:1px solid var(--line);margin-top:20px;padding-top:2px}
+.narrative-search label{display:block;font-size:13px;font-weight:700;margin:0 0 8px}
+.narrative-search h3{margin-top:16px}
+.search-status{font-size:12px;line-height:1.45;color:var(--muted);margin:9px 0}
+.search-results{display:grid;gap:5px;max-height:350px;overflow:auto}
+.search-results button{display:block;width:100%;padding:8px 9px;border:1px solid var(--line);font-size:12px;text-align:left;line-height:1.35;overflow-wrap:anywhere}
+.search-results button strong,.search-results button span{display:block}
+.search-results button span{color:var(--muted);margin-top:4px}
+.search-results button:hover,.search-results button:focus-visible{border-color:#287c59;background:#f1f6f1}
 .sidebar-note,.inspector-note{border-top:1px solid var(--line);margin-top:24px;padding-top:2px}
 .sidebar-note p,.inspector-note p,.preview-note{font-size:13px;color:var(--muted);line-height:1.55}
 .workspace{padding:22px;min-width:0}
