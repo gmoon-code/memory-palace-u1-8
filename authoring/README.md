@@ -9,6 +9,7 @@ Serve the repository root using a local static server and open `/authoring/visua
 ## Current capabilities
 
 - Select an AP Biology unit, journey, and scene.
+- Search scene titles, kickers, descriptions, and existing narrative paragraphs across the current journey. Each result links directly to its editable field without changing any curriculum data.
 - Click scene titles, kickers, location descriptions, or narrative paragraphs to edit them directly.
 - Read narrative text with the same bold scientific-term emphasis used in the student interface. While editing, the inspector and selected paragraph expose the original `**term**` Markdown, which is preserved in JSON export.
 - Use the inspector for longer edits.
