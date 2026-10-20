@@ -3,8 +3,10 @@
 "use strict";
 const $=id=>document.getElementById(id);
 const PREFIX="story-method-narrative-draft-v1:";
-const s={unit:"",journey:"",original:null,draft:null,hash:"",scene:0,
-  selected:null,dirty:new Set(),history:[],stale:false,timer:null,ticket:0};
+const s={unit:"",journey:"",loadedUnit:"",loadedJourney:"",
+  original:null,draft:null,hash:"",scene:0,
+  selected:null,dirty:new Set(),history:[],stale:false,timer:null,
+  ticket:0,unitTicket:0};
 const clone=x=>JSON.parse(JSON.stringify(x));
 const key=(i,f,p)=>String(i)+":"+f+(p===undefined?"":":"+p);
 function fingerprint(str){let n=2166136261;for(let i=0;i<str.length;i++){
@@ -66,8 +68,11 @@ function checkpoint(){if(!s.draft)return;const json=JSON.stringify(s.draft);
  if(s.history.at(-1)?.json===json)return;s.history.push({json,scene:s.scene});
  if(s.history.length>25)s.history.shift();recalc()}
 function save(){
- if(!s.unit||!s.journey||!s.draft)return;
- const name=PREFIX+s.unit+":"+s.journey;
+ // The picker can already point to a different journey when the outgoing
+ // draft is saved. Its file identity must come from the successfully loaded
+ // data, never the current picker values.
+ if(!s.loadedUnit||!s.loadedJourney||!s.draft)return;
+ const name=PREFIX+s.loadedUnit+":"+s.loadedJourney;
  try{
   if(!s.dirty.size){if(!s.stale)localStorage.removeItem(name);return}
   localStorage.setItem(name,JSON.stringify({version:1,hash:s.hash,
@@ -76,7 +81,7 @@ function save(){
  }catch{$("saveStatus").textContent="Storage unavailable; export to retain changes"}}
 function queue(){clearTimeout(s.timer);s.timer=setTimeout(save,600)}
 function restore(){
- try{const raw=localStorage.getItem(PREFIX+s.unit+":"+s.journey);if(!raw)return;
+ try{const raw=localStorage.getItem(PREFIX+s.loadedUnit+":"+s.loadedJourney);if(!raw)return;
   const d=JSON.parse(raw);if(!Array.isArray(d.changes)||d.version!==1)return;
   if(d.hash!==s.hash){s.stale=true;return}
   for(const c of d.changes)if(identify(c.key)&&typeof c.text==="string")
@@ -251,14 +256,17 @@ async function loadJourney(){
   if(ticket!==s.ticket)return;
   if(data.data.palace_id!==j||!Array.isArray(data.data.scenes))
    throw Error("Journey identity was not recognized.");
-  s.original=data.data;s.draft=clone(data.data);s.hash=fingerprint(data.raw);
+  s.original=data.data;s.draft=clone(data.data);
+  s.loadedUnit=unit;s.loadedJourney=j;s.hash=fingerprint(data.raw);
   s.scene=0;s.history=[];s.stale=false;restore();recalc();render();
  }catch(e){notice(e.message);$("saveStatus").textContent="Load failed"}}
 async function loadUnit(unit){
  if(s.draft)save();
  if(!/^unit-[1-8]$/.test(unit))return;
+ const unitTicket=++s.unitTicket;
  const file=unit==="unit-1"?"journeys.json":"journeys-f5.json";
  const registry=(await fetchData(unit+"/"+file)).data;
+ if(unitTicket!==s.unitTicket)return;
  const select=$("journey");select.replaceChildren();
  for(const item of registry.guided_journeys||[]){
   if(!/^[A-Za-z0-9-]+$/.test(item.palace_id||""))continue;
