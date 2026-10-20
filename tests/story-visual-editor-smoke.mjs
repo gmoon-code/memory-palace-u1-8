@@ -24,6 +24,14 @@ try{
  assert.equal(await page.locator("#sceneList button").count(),9);
  const original=await (await page.request.get(origin+"/content/ap-biology/unit-1/journeys/Z1.json")).json();
  assert.equal(await page.locator("#export").isDisabled(),true);
+ const emphasized=page.locator('[data-edit-key="0:paragraphs:1"]');
+ assert(await emphasized.locator("strong.story-term").count()>0,
+   "Narrative Markdown should render as accessible emphasis in reading preview");
+ assert(!(await emphasized.textContent()).includes("**observation**"),
+   "Reading preview should hide Markdown source markers");
+ await emphasized.click();
+ assert((await page.locator("#editText").inputValue()).includes("**observation**"),
+   "The inspector must keep the exact editable Markdown source");
  const title=page.locator('[data-edit-key="0:title"]');
  await title.click();
  await page.locator("#editText").fill("The Observation That Begins the Investigation");
