@@ -19,6 +19,15 @@ EXPECTED_REVISION = "2026-09-18.1"
 EXPECTED_RUNTIME = "f5d4fe65d56797803e324f5a66805765a6c07714"
 EXPECTED_RUNTIME_TREE = "5b2ff607bf5c4077a86bc059a0493b166c76828a"
 EXPECTED_REPOSITORY = "gmoon-code/memory-palace-u1-8"
+# The teacher distribution is locked to its September runtime. Later approved
+# appearance updates on main modified only these three frontend assets. Their
+# exact blobs are pinned here so future student-facing changes cannot silently
+# pass the teacher-distribution compatibility gate.
+APPROVED_POST_RUNTIME_FRONTEND_BLOBS = {
+    "frontend/css/appearance.css": "e87a52139664eeee913e9bb2d2a8830fe8b9c235",
+    "frontend/css/base.css": "b39a68cb0c64d98601d0fba89161c896795f0d99",
+    "frontend/js/appearance.js": "9226ac14c87eaf383843673ba046a146a0d3fc3f",
+}
 EXPECTED_SOURCE_FILES = {
     "Install Content Studio.cmd",
     "install_content_studio.py",
@@ -176,22 +185,31 @@ def main() -> None:
         require(validation.returncode == 0, f"packaged installer self-validation failed: {validation.stderr or validation.stdout}")
         require("VALIDATION PASS" in validation.stdout, "packaged installer did not report validation success")
 
-    student_diff = subprocess.run(
-        [
-            "git",
-            "diff",
-            "--quiet",
-            EXPECTED_RUNTIME,
-            "HEAD",
-            "--",
-            "content",
-            "frontend/index.html",
-            "frontend/css",
-            "frontend/js",
-        ],
-        cwd=ROOT,
+    # Preserve the distribution's historical runtime lock, while explicitly
+    # recognizing the separately approved site appearance update now on main.
+    # All other student files remain byte-identical to the validated runtime.
+    frontend_paths = [
+        "content",
+        "frontend/index.html",
+        "frontend/css",
+        "frontend/js",
+    ]
+    changed = git_text(
+        "diff", "--name-only", EXPECTED_RUNTIME, "HEAD",
+        "--", *frontend_paths
     )
-    require(student_diff.returncode == 0, "teacher distribution integration changed published student content")
+    changed_files = set(changed.splitlines()) if changed else set()
+    unexpected = changed_files - set(APPROVED_POST_RUNTIME_FRONTEND_BLOBS)
+    require(
+        not unexpected,
+        f"teacher distribution integration changed unapproved student files: {sorted(unexpected)}",
+    )
+    for path, approved_blob in APPROVED_POST_RUNTIME_FRONTEND_BLOBS.items():
+        actual_blob = git_text("rev-parse", f"HEAD:{path}")
+        require(
+            actual_blob == approved_blob,
+            f"approved post-runtime appearance file changed unexpectedly: {path}",
+        )
 
     print("CONTENT STUDIO TEACHER DISTRIBUTION QA PASS")
     print(f"- version: {EXPECTED_VERSION}")
