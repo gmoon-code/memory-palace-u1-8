@@ -10,6 +10,7 @@ Serve the repository root using a local static server and open `/authoring/visua
 
 - Select an AP Biology unit, journey, and scene.
 - Click scene titles, kickers, location descriptions, or narrative paragraphs to edit them directly.
+- Read narrative text with the same bold scientific-term emphasis used in the student interface. While editing, the inspector and selected paragraph expose the original `**term**` Markdown, which is preserved in JSON export.
 - Use the inspector for longer edits.
 - Preview the scene at desktop or mobile width.
 - Save local drafts in browser storage, undo, reset, revert a field, and review before-and-after text.
