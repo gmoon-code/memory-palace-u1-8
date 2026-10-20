@@ -99,7 +99,7 @@ function sceneButtons(){
    textContent, so narrative text cannot inject HTML into the editor. */
 function renderInline(node,source){
  node.replaceChildren();
- const tokens=String(source).split(/(\\*\\*[^*]+\\*\\*)/g);
+ const tokens=String(source).split(/(\*\*[^*]+\*\*)/g);
  for(const token of tokens){
   if(token.startsWith("**")&&token.endsWith("**")&&token.length>4){
    const strong=document.createElement("strong");
