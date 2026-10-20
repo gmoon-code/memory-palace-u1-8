@@ -24,6 +24,21 @@ try{
  assert.equal(await page.locator("#sceneList button").count(),9);
  const original=await (await page.request.get(origin+"/content/ap-biology/unit-1/journeys/Z1.json")).json();
  assert.equal(await page.locator("#export").isDisabled(),true);
+ // Search inspects editable narrative fields across scenes without changing
+ // the protected curriculum or creating an unpublished draft.
+ await page.locator("#narrativeSearch").fill("observation");
+ assert(await page.locator("#searchResults button").count()>0,
+   "Search should find narrative text beyond the current selection");
+ assert.match(await page.locator("#searchStatus").textContent(),/matching narrative field/);
+ await page.locator("#searchResults button").first().click();
+ assert.equal(await page.locator("#editingControls").isVisible(),true);
+ assert.match(await page.locator("#editText").inputValue(),/observation/i);
+ assert.equal(await page.locator("#export").isDisabled(),true,
+   "Selecting a search result should not edit the curriculum");
+ await page.locator("#narrativeSearch").fill("phrase-never-present-90210");
+ assert.equal(await page.locator("#searchResults button").count(),0);
+ assert.match(await page.locator("#searchStatus").textContent(),/No matching narrative fields/);
+ await page.locator("#narrativeSearch").fill("");
  const emphasized=page.locator('[data-edit-key="0:paragraphs:1"]');
  assert(await emphasized.locator("strong.story-term").count()>0,
    "Narrative Markdown should render as accessible emphasis in reading preview");
