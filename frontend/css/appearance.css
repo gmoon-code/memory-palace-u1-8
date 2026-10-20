@@ -258,3 +258,12 @@ html[data-moon-theme="dark"] .nav .clear-progress-control:is(:hover,:focus-visib
  background:var(--moon-raised)!important;color:var(--moon-ink)!important;
  border-color:var(--moon-pink)!important;
 }
+
+/* Course overview accents and labels with transparent backgrounds. */
+html[data-moon-theme="dark"] .course-home-hero{
+ border-top-color:var(--unit-line,var(--moon-rule-dark));
+}
+html[data-moon-theme="dark"] .current-unit-mark{color:var(--moon-ink)}
+html[data-moon-theme="dark"] .course-unit-card .unit-number-highlight{
+ color:#101010;
+}
