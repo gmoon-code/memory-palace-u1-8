@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Narrative Editor | The Story Method</title>
+  <link rel="stylesheet" href="visual-editor.css">
+  <script src="visual-editor.js" defer></script>
+</head>
+<body>
+<div class="editor-shell">
+  <header class="topbar">
+    <div class="branding"><span class="logo" aria-hidden="true"></span><div>
+      <h1>Narrative Editor</h1>
+      <small>The Story Method · AP Biology</small>
+    </div></div>
+    <div class="top-actions">
+      <span id="saveStatus" aria-live="polite">Local drafts only · Not published</span>
+      <button type="button" id="undo" disabled>Undo</button>
+      <button type="button" id="reset" disabled>Reset journey</button>
+      <button type="button" id="review" disabled>Review changes</button>
+      <button type="button" id="export" class="primary" disabled>Export journey JSON</button>
+    </div>
+  </header>
+  <div class="editor-layout">
+    <aside class="sidebar">
+      <h2>Curriculum</h2>
+      <label for="unit">Unit</label>
+      <select id="unit"></select>
+      <label for="journey">Journey</label>
+      <select id="journey"></select>
+      <h3>Scenes</h3>
+      <nav id="sceneList" aria-label="Journey scenes"></nav>
+      <section class="sidebar-note">
+        <h3>Protected content</h3>
+        <p>Scene identifiers, scientific definitions, memory objects, checkpoints, and review targets are read-only.</p>
+        <p>No changes are sent to the student site. Edited JSON must pass the curriculum tests before a future release.</p>
+      </section>
+    </aside>
+    <main class="workspace">
+      <div class="workspace-heading">
+        <div><p id="journeyLabel" class="eyebrow">Select a journey</p>
+        <h2 id="journeyTitle">Scene preview</h2></div>
+        <div class="viewport-controls"><label for="viewport">Preview width</label>
+        <select id="viewport"><option value="wide">Desktop</option><option value="narrow">Mobile</option></select></div>
+      </div>
+      <div class="preview-surround"><article id="scenePreview" class="scene-preview wide" aria-label="Editable scene">
+        <p class="placeholder">Loading curriculum…</p>
+      </article></div>
+      <p class="preview-note">Select any narrative field or paragraph to edit it. The original scientific records remain protected.</p>
+    </main>
+    <aside class="inspector">
+      <h2>Element settings</h2>
+      <p id="selectionStatus" aria-live="polite">Select text in the scene preview.</p>
+      <div id="editingControls" hidden>
+        <label for="editText">Selected text</label>
+        <textarea id="editText" rows="12" spellcheck="true"></textarea>
+        <button id="revertField" type="button">Revert this field</button>
+      </div>
+      <section class="inspector-note">
+        <h3>What you can edit</h3>
+        <p>Scene titles, kickers, descriptions, and narrative paragraphs. Adding or removing scenes, paragraphs, or scientific records is disabled.</p>
+        <h3>Drafts and publishing</h3>
+        <p>Changes save in this browser. Export creates an updated copy of the journey JSON for review. Publishing requires the frozen curriculum QA checks.</p>
+      </section>
+    </aside>
+  </div>
+</div>
+<dialog id="reviewDialog">
+  <h2>Review narrative changes</h2>
+  <p id="reviewSummary"></p>
+  <div id="reviewList"></div>
+  <p id="reviewValidation" aria-live="polite"></p>
+  <form method="dialog"><button class="primary" type="submit">Close</button></form>
+</dialog>
+<dialog id="errorDialog">
+  <h2>Editor notice</h2>
+  <p id="errorMessage"></p>
+  <form method="dialog"><button class="primary" type="submit">Close</button></form>
+</dialog>
+</body>
+</html>
