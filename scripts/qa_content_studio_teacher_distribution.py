@@ -219,7 +219,8 @@ def main() -> None:
     print("- package manifest and installer self-validation passed")
     print("- credentials, private state, Git metadata, and virtual environment excluded")
     print("- existing installs are protected from installer overwrite")
-    print("- published AP Biology content and student frontend unchanged")
+    print("- published AP Biology curriculum content unchanged from the validated runtime")
+    print("- three previously approved appearance-only frontend blobs are pinned exactly")
     print("- local-only zero-cost and publication-off boundaries preserved")
 
 
