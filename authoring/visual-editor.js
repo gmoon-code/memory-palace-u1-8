@@ -83,6 +83,56 @@ function restore(){
     change(s.draft,c.key,c.text);
   if(validate())s.draft=clone(s.original);
  }catch{s.draft=clone(s.original)}}
+function searchLabel(k) {
+ const entry=identify(k);
+ if(!entry)return "Narrative";
+ const field={
+  title:"Scene title",scene_kicker:"Scene kicker",
+  location_description:"Location description",paragraphs:"Paragraph"
+ }[entry.field]||"Narrative";
+ return field+(entry.field==="paragraphs"?" "+(entry.part+1):"");
+}
+function refreshNarrativeSearch(){
+ const results=$("searchResults"),status=$("searchStatus");
+ if(!results||!status)return;
+ results.replaceChildren();
+ const query=$("narrativeSearch").value.trim().toLocaleLowerCase();
+ if(!query){
+  status.textContent="Search scene titles, descriptions, and paragraphs.";
+  return;
+ }
+ if(!s.draft){
+  status.textContent="Choose a journey before searching.";
+  return;
+ }
+ const matches=[];
+ for(const k of allKeys()){
+  const text=String(valueOf(s.draft,k)||"");
+  const index=text.toLocaleLowerCase().indexOf(query);
+  if(index>=0)matches.push({key:k,text,index,scene:identify(k).scene});
+ }
+ status.textContent=matches.length?
+  matches.length+" matching narrative field"+(matches.length===1?"":"s")+
+  " in this journey. Select a result to edit.":
+  "No matching narrative fields in this journey.";
+ for(const item of matches.slice(0,60)){
+  const button=document.createElement("button");button.type="button";
+  button.setAttribute("role","listitem");
+  const heading=document.createElement("strong");
+  heading.textContent="Scene "+(item.scene+1)+" · "+searchLabel(item.key);
+  const snippet=document.createElement("span");
+  const start=Math.max(0,item.index-42),end=Math.min(item.text.length,item.index+query.length+65);
+  snippet.textContent=(start?"…":"")+
+   item.text.slice(start,end).replace(/\s+/g," ")+(end<item.text.length?"…":"");
+  button.append(heading,snippet);
+  button.addEventListener("click",()=>{
+   if(s.scene!==item.scene){s.scene=item.scene;render();}
+   select(item.key);
+  });
+  results.appendChild(button);
+ }
+ if(matches.length>60)status.textContent+=" First 60 results shown.";
+}
 function sceneButtons(){
  const nav=$("sceneList");nav.replaceChildren();
  s.draft.scenes.forEach((scene,i)=>{
@@ -129,7 +179,7 @@ function render(){
  const prose=document.createElement("div");prose.className="narrative";
  scene.story_paragraphs.forEach((text,p)=>
    prose.appendChild(previewElement("p","",key(s.scene,"paragraphs",p),text)));
- box.appendChild(prose);sceneButtons();recalc()}
+ box.appendChild(prose);sceneButtons();recalc();refreshNarrativeSearch()}
 function select(k){
  const el=document.querySelector('[data-edit-key="'+k+'"]');if(!el)return;
  document.querySelectorAll("[data-selected]").forEach(n=>{
@@ -145,7 +195,7 @@ function select(k){
  $("selectionStatus").textContent="Selected "+k.split(":").slice(1).join(" ");
  el.focus({preventScroll:true})}
 function sync(k,v){if(!change(s.draft,k,v))return;
- recalc();queue();sceneButtons()}
+ recalc();queue();sceneButtons();refreshNarrativeSearch()}
 function pastePlain(event){
  const node=event.target.closest("[data-edit-key][contenteditable]");
  if(!node)return;event.preventDefault();
@@ -193,6 +243,9 @@ async function loadJourney(){
  const unit=s.unit,j=s.journey;
  if(!/^unit-[1-8]$/.test(unit)||!/^[A-Za-z0-9-]+$/.test(j))return;
  const ticket=++s.ticket;$("saveStatus").textContent="Loading…";
+ $("narrativeSearch").value="";
+ $("searchResults").replaceChildren();
+ $("searchStatus").textContent="Loading journey narrative…";
  try{
   const data=await fetchData(unit+"/journeys/"+j+".json");
   if(ticket!==s.ticket)return;
@@ -225,6 +278,7 @@ async function init(){
  $("unit").addEventListener("change",event=>loadUnit(event.target.value).catch(e=>notice(e.message)));
  $("journey").addEventListener("change",event=>{
   s.journey=event.target.value;loadJourney()});
+ $("narrativeSearch").addEventListener("input",refreshNarrativeSearch);
  $("viewport").addEventListener("change",event=>{
   $("scenePreview").className="scene-preview "+event.target.value});
  $("scenePreview").addEventListener("click",event=>{
