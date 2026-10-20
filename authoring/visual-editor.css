@@ -74,3 +74,16 @@ dialog form{text-align:right;margin-top:20px}
 @media(max-width:870px){.editor-layout{grid-template-columns:minmax(0,1fr) 240px}.sidebar{grid-column:1/-1;border-right:0;border-bottom:1px solid var(--line)}#sceneList{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
 @media(max-width:620px){.editor-layout{display:flex;flex-direction:column}.workspace{padding:12px}.sidebar,.inspector{border:0;border-bottom:1px solid var(--line)}.workspace-heading{align-items:start;flex-direction:column}.preview-surround{padding:8px}.scene-preview{padding:18px}.topbar{padding:12px}}
 @media(prefers-reduced-motion:reduce){.scene-preview{transition:none}}
+
+/* Render Markdown scientific-term emphasis as students actually see it. */
+.scene-preview .narrative .story-term{
+  font-weight:700;
+  text-decoration:underline;
+  text-decoration-color:var(--yellow);
+  text-decoration-thickness:.15em;
+  text-underline-offset:.10em;
+}
+.scene-preview .narrative p[contenteditable]{
+  white-space:pre-wrap;
+  outline-color:#258564;
+}
