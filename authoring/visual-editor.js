@@ -95,9 +95,26 @@ function sceneButtons(){
   button.addEventListener("click",()=>{s.scene=i;render()});
   nav.appendChild(button)});
 }
+/* Mirror the student reading view. Build emphasis with DOM nodes and
+   textContent, so narrative text cannot inject HTML into the editor. */
+function renderInline(node,source){
+ node.replaceChildren();
+ const tokens=String(source).split(/(\\*\\*[^*]+\\*\\*)/g);
+ for(const token of tokens){
+  if(token.startsWith("**")&&token.endsWith("**")&&token.length>4){
+   const strong=document.createElement("strong");
+   strong.className="story-term";
+   strong.textContent=token.slice(2,-2);
+   node.appendChild(strong);
+  }else node.appendChild(document.createTextNode(token));
+ }
+}
 function previewElement(tag,className,k,text){
  const el=document.createElement(tag);el.className=className;
- el.dataset.editKey=k;el.textContent=text;return el}
+ el.dataset.editKey=k;
+ if(k.includes(":paragraphs:"))renderInline(el,text);
+ else el.textContent=text;
+ return el}
 function render(){
  const box=$("scenePreview");box.replaceChildren();s.selected=null;$("editingControls").hidden=true;
  const scene=s.draft?.scenes?.[s.scene];if(!scene)return;
@@ -116,8 +133,14 @@ function render(){
 function select(k){
  const el=document.querySelector('[data-edit-key="'+k+'"]');if(!el)return;
  document.querySelectorAll("[data-selected]").forEach(n=>{
-  n.removeAttribute("data-selected");n.removeAttribute("contenteditable")});
- s.selected=k;el.setAttribute("data-selected","");el.setAttribute("contenteditable","plaintext-only");
+  n.removeAttribute("data-selected");n.removeAttribute("contenteditable");
+  if(n.dataset.editKey?.includes(":paragraphs:"))
+   renderInline(n,valueOf(s.draft,n.dataset.editKey));
+ });
+ s.selected=k;el.setAttribute("data-selected","");
+ // The author edits original Markdown text. Read mode stays formatted.
+ if(k.includes(":paragraphs:"))el.textContent=valueOf(s.draft,k);
+ el.setAttribute("contenteditable","plaintext-only");
  $("editingControls").hidden=false;$("editText").value=valueOf(s.draft,k);
  $("selectionStatus").textContent="Selected "+k.split(":").slice(1).join(" ");
  el.focus({preventScroll:true})}
@@ -212,6 +235,14 @@ async function init(){
   if(event.key==="Enter"&&event.target.closest('[data-edit-key][contenteditable]'))
    event.preventDefault()});
  $("scenePreview").addEventListener("paste",pastePlain);
+ $("scenePreview").addEventListener("focusout",event=>{
+  const el=event.target.closest("[data-edit-key]");
+  if(!el||!el.dataset.editKey?.includes(":paragraphs:"))return;
+  // Keep the original Markdown in the model; restore formatted reading
+  // whenever editing focus moves away from the paragraph.
+  el.removeAttribute("contenteditable");
+  renderInline(el,valueOf(s.draft,el.dataset.editKey));
+ });
  $("scenePreview").addEventListener("input",event=>{
   const el=event.target.closest("[data-edit-key]");if(!el)return;
   const v=el.textContent;sync(el.dataset.editKey,v);
@@ -220,7 +251,13 @@ async function init(){
  $("editText").addEventListener("input",event=>{
   if(!s.selected)return;const v=event.target.value;
   const el=document.querySelector('[data-edit-key="'+s.selected+'"]');
-  if(el)el.textContent=v;sync(s.selected,v)});
+  if(el){
+   if(s.selected.includes(":paragraphs:")&&document.activeElement!==el){
+    el.removeAttribute("contenteditable");
+    renderInline(el,v);
+   }else el.textContent=v;
+  }
+  sync(s.selected,v)});
  $("revertField").addEventListener("click",revertField);
  $("undo").addEventListener("click",undo);
  $("reset").addEventListener("click",reset);
