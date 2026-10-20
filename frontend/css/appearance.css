@@ -205,3 +205,39 @@ html[data-moon-theme="dark"] .preview-banner{
 html[data-moon-theme="dark"] :is(.error-note,.error-message){
  background:var(--moon-raised);color:#f5c5e7;
 }
+
+/* Course overview uses a separate unit stylesheet with fixed white tiles. */
+html[data-moon-theme="dark"] :is(.course-home-summary>div,.course-unit-card,
+ .current-unit-panel,.practice-meta-row .pill,.course-kicker){
+ background:var(--moon-paper);border-color:var(--moon-rule);
+}
+html[data-moon-theme="dark"] :is(.course-home-hero p,.course-home-intro h1,
+ .course-home-summary strong,.course-unit-stats strong,.current-unit-main p,
+ .current-unit-progress>strong,.current-unit-main>h1,.course-unit-card h2){
+ color:var(--moon-ink);
+}
+html[data-moon-theme="dark"] :is(.course-home-summary span,.course-unit-stats,
+ .current-unit-progress>p,.course-home-intro p,.course-home-kicker,
+ .current-unit-label,.course-section-heading p,.practice-meta-row .pill){
+ color:var(--moon-muted);
+}
+html[data-moon-theme="dark"] :is(.course-kicker,.practice-meta-row .pill){
+ background:var(--moon-raised);
+ color:var(--moon-ink);
+ border:1px solid var(--moon-rule-dark);
+}
+html[data-moon-theme="dark"] .course-unit-card.current-unit-card{
+ border-color:var(--moon-rule-dark);
+ border-top-color:var(--card-line);
+ box-shadow:inset 0 0 0 1px var(--moon-rule-dark);
+}
+html[data-moon-theme="dark"] .current-unit-main h2{
+ color:#101010;
+ background:var(--unit-highlight);
+}
+html[data-moon-theme="dark"] :is(.unit-number-highlight,.current-unit-mark){
+ color:#101010;
+}
+html[data-moon-theme="dark"] .course-unit-card .secondary:hover{
+ background:var(--moon-raised);color:var(--moon-ink);
+}
