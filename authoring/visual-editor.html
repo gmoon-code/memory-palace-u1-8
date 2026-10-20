@@ -33,6 +33,16 @@
       <select id="journey"></select>
       <h3>Scenes</h3>
       <nav id="sceneList" aria-label="Journey scenes"></nav>
+      <section class="narrative-search" aria-labelledby="findNarrativeTitle">
+        <h3 id="findNarrativeTitle">Find narrative text</h3>
+        <label for="narrativeSearch">Search the current journey</label>
+        <input type="search" id="narrativeSearch" autocomplete="off"
+          placeholder="Word or phrase in a scene">
+        <p id="searchStatus" role="status" aria-live="polite"
+          class="search-status">Search scene titles, descriptions, and paragraphs.</p>
+        <div id="searchResults" class="search-results" role="list"
+          aria-label="Matching narrative fields"></div>
+      </section>
       <section class="sidebar-note">
         <h3>Protected content</h3>
         <p>Scene identifiers, scientific definitions, memory objects, checkpoints, and review targets are read-only.</p>
