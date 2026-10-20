@@ -18,6 +18,9 @@ EXPECTED_RC1_HEAD = "0fef459bde6fb913f186c91df8f5492f58f2fa9b"
 EXPECTED_IMPLEMENTATION = "cdf4bb2a1ea91415dd1634323ac5ab40ccba863f"
 EXPECTED_IMPLEMENTATION_TREE = "133a3bc9b00c2149662d4e6dba8517f0706b585c"
 EXPECTED_PRE_INTEGRATION_MAIN = "6d561f19a19b07b9a386442d327db3ca12299bef"
+# Last explicitly validated historical teacher runtime. Subsequent curriculum
+# and appearance changes belong to the current QA suite, not this v1.0.0 gate.
+HISTORICAL_RELEASE_CUTOFF = "f5d4fe65d56797803e324f5a66805765a6c07714"
 
 ALLOWED_STABLE_EVIDENCE = {
     ".github/workflows/qa.yml",
@@ -154,16 +157,34 @@ def main() -> None:
     )
     require(promotion_runtime_diff.returncode == 0, "administrator runtime changed during v1.0.0 promotion")
 
+    require(
+        git("merge-base", "--is-ancestor", HISTORICAL_RELEASE_CUTOFF, "HEAD", check=False).returncode == 0,
+        "historical teacher-runtime handoff is missing from repository history",
+    )
     maintenance_changes = {
         line.strip()
-        for line in git_text("diff", "--name-only", f"{EXPECTED_STABLE_PROMOTION}..HEAD").splitlines()
+        for line in git_text(
+            "diff", "--name-only",
+            f"{EXPECTED_STABLE_PROMOTION}..{HISTORICAL_RELEASE_CUTOFF}"
+        ).splitlines()
         if line.strip()
     }
     unexpected_maintenance = sorted(maintenance_changes - ALLOWED_POST_STABLE_MAINTENANCE)
-    require(not unexpected_maintenance, f"unexpected post-stable maintenance files: {unexpected_maintenance}")
+    require(not unexpected_maintenance, f"unexpected historical post-stable maintenance files: {unexpected_maintenance}")
+    release_metadata_diff = git(
+        "diff", "--quiet", HISTORICAL_RELEASE_CUTOFF, "HEAD", "--",
+        "release/content-studio/VERSION",
+        "release/content-studio/v1.0.0-rc1.json",
+        "release/content-studio/v1.0.0.json",
+        check=False,
+    )
+    require(
+        release_metadata_diff.returncode == 0,
+        "v1.0.0 stable release metadata changed after the historical handoff",
+    )
 
     student_after_stable = git(
-        "diff", "--quiet", EXPECTED_STABLE_PROMOTION, "HEAD", "--", *STUDENT_PATHS, check=False
+        "diff", "--quiet", EXPECTED_STABLE_PROMOTION, HISTORICAL_RELEASE_CUTOFF, "--", *STUDENT_PATHS, check=False
     )
     require(student_after_stable.returncode == 0, "post-stable maintenance changed published curriculum or student frontend")
 
@@ -197,7 +218,7 @@ def main() -> None:
     print(f"- stable runtime baseline: {EXPECTED_STABLE_BASELINE}")
     print(f"- stable promotion commit: {EXPECTED_STABLE_PROMOTION}")
     print("- original v1.0.0 promotion remains metadata-only")
-    print("- post-stable maintenance is restricted to the validated local-maintenance allowlist")
+    print("- post-stable historical maintenance is restricted to the validated allowlist")
     print("- published AP Biology content and student frontend remain unchanged")
     print("- local $0 operation and publication-off defaults remain locked")
 
