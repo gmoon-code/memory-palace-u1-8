@@ -241,3 +241,20 @@ html[data-moon-theme="dark"] :is(.unit-number-highlight,.current-unit-mark){
 html[data-moon-theme="dark"] .course-unit-card .secondary:hover{
  background:var(--moon-raised);color:var(--moon-ink);
 }
+
+/* Site controls inject their own light styles after the stylesheets load. */
+html[data-moon-theme="dark"] .brand[data-home-control]:hover{
+ background:var(--moon-raised)!important;color:var(--moon-ink)!important;
+ border-color:var(--moon-rule)!important;
+}
+html[data-moon-theme="dark"] .brand[data-home-control]:focus-visible{
+ outline:2px solid var(--moon-ink)!important;outline-offset:3px;
+}
+html[data-moon-theme="dark"] .nav .clear-progress-control{
+ background:var(--moon-paper)!important;color:var(--moon-muted)!important;
+ border-color:var(--moon-rule-dark)!important;
+}
+html[data-moon-theme="dark"] .nav .clear-progress-control:is(:hover,:focus-visible){
+ background:var(--moon-raised)!important;color:var(--moon-ink)!important;
+ border-color:var(--moon-pink)!important;
+}
