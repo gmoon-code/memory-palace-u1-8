@@ -74,6 +74,38 @@ try{
  assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
    original.scenes[0].title);
 
+ // Switching a picker must never file the outgoing journey's draft under
+ // the newly selected journey's storage key.
+ const specificZ1="Unsaved Z1 title remains attached to Z1";
+ await page.locator('[data-edit-key="0:title"]').click();
+ await page.locator("#editText").fill(specificZ1);
+ await page.locator("#journey").selectOption("Z2");
+ await page.waitForFunction(()=>document.querySelector("#journey")?.value==="Z2"&&
+   document.querySelector('#scenePreview [data-edit-key="0:title"]')?.textContent.trim()!=="Unsaved Z1 title remains attached to Z1");
+ const specificZ2="Another separate Z2 draft";
+ await page.locator('[data-edit-key="0:title"]').click();
+ await page.locator("#editText").fill(specificZ2);
+ await page.locator("#journey").selectOption("Z1");
+ await page.waitForFunction(expected=>
+   document.querySelector('#scenePreview [data-edit-key="0:title"]')?.textContent.trim()===expected,
+   specificZ1);
+ assert.equal(await page.locator("#editText").isVisible(),false);
+ await page.reload();
+ await page.locator('[data-edit-key="0:title"]').waitFor();
+ assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),specificZ1);
+ await page.locator("#journey").selectOption("Z2");
+ await page.waitForFunction(expected=>
+   document.querySelector('#scenePreview [data-edit-key="0:title"]')?.textContent.trim()===expected,
+   specificZ2);
+ page.once("dialog",dialog=>dialog.accept());
+ await page.locator("#reset").click();
+ await page.locator("#journey").selectOption("Z1");
+ await page.waitForFunction(expected=>
+   document.querySelector('#scenePreview [data-edit-key="0:title"]')?.textContent.trim()===expected,
+   specificZ1);
+ page.once("dialog",dialog=>dialog.accept());
+ await page.locator("#reset").click();
+
  await page.locator("#unit").selectOption("unit-2");
  await page.locator("#journey").waitFor();
  await page.waitForFunction(()=>document.querySelector("#journey")?.value==="U2-J1"&&
