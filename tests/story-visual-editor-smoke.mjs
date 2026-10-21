@@ -17,7 +17,8 @@ async function downloadJourney(expected){
  return data;
 }
 try{
- await page.goto(origin+"/authoring/visual-editor.html",{waitUntil:"domcontentloaded"});
+ await page.goto(origin+"/editor.html",{waitUntil:"domcontentloaded"});
+ await page.waitForURL("**/authoring/visual-editor.html");
  await page.locator('#scenePreview [data-edit-key="0:title"]').waitFor();
  assert.equal(await page.locator("#unit").inputValue(),"unit-1");
  assert.equal(await page.locator("#journey").inputValue(),"Z1");
