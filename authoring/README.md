@@ -1,6 +1,8 @@
 # Story Method narrative editor foundation
 
-This is a **local-first development authoring tool** for the frozen AP Biology Story Method curriculum. It is not part of the public student experience and is intentionally excluded from `scripts/build_github_pages.py`.
+This is a **browser-local narrative authoring tool** for the frozen AP Biology Story Method curriculum. Its standalone HTML, CSS and JavaScript are now explicitly included in the GitHub Pages build **on this unmerged draft branch**. The prospective route after an approved release is `https://gmoon-code.github.io/memory-palace-u1-8/authoring/visual-editor.html`. The student navigation and student runtime are unchanged.
+
+GitHub Pages hosts the editor's files publicly, as it does with other static pages. Anyone with the editor URL could open the **local editor interface**, but it does not grant any permission to change the published curriculum or write to GitHub. The editor stores drafts in its own browser storage and only exports a JSON proposal. Real publication requires a separate authorised workflow. A `noindex` tag is not authentication.
 
 ## Run locally
 
@@ -35,7 +37,7 @@ The number and order of narrative paragraphs cannot be changed. Editing them doe
 
 ## Testing
 
-`node tests/story-visual-editor-smoke.mjs` runs a Chromium smoke test against a locally served repository. It edits genuine Unit 1 and Unit 2 journeys, checks local drafts and JSON export, and compares protected structures against the released content. GitHub Actions runs this test on the draft pull request.
+`node tests/story-visual-editor-smoke.mjs` runs a Chromium smoke test against a locally served repository. It edits genuine Unit 1 and Unit 2 journeys, checks local drafts and JSON export, and compares protected structures against the released content. GitHub Actions tests both the repository editor and the **complete prospective GitHub Pages build artifact**, including `scripts/qa_github_pages_static.mjs`. This verifies the intended public Pages path before any deployment.
 
 The previous course's full QA suite remains authoritative for any curriculum release. This isolated editor test does not replace frozen scientific-content checks.
 
