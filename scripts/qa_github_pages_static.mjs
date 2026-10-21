@@ -1,4 +1,4 @@
-import {readFile} from 'node:fs/promises';
+import {readFile,stat} from 'node:fs/promises';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import path from 'node:path';
 
@@ -30,6 +30,35 @@ assert(!index.includes('href="/static/'),'root entrypoint contains server-only a
 await readFile(path.join(ROOT,'frontend/css/unit-theme.css'));
 await readFile(path.join(ROOT,'frontend/js/unit-theme.js'));
 await readFile(path.join(ROOT,'.nojekyll'));
+
+// The public Pages artifact contains the local-first authoring UI, but it
+// must never contain the backend's privileged admin editor, dev distribution,
+// or server-side files. GitHub Pages only serves static assets.
+const editorEntry=await readFile(path.join(ROOT,'editor.html'),'utf8');
+assert(editorEntry.includes('./authoring/visual-editor.html'),
+  'stable editor.html must lead to the protected-structure browser-local authoring surface');
+const editorHtml=await readFile(path.join(ROOT,'authoring/visual-editor.html'),'utf8');
+const editorJs=await readFile(path.join(ROOT,'authoring/visual-editor.js'),'utf8');
+await readFile(path.join(ROOT,'authoring/visual-editor.css'));
+assert(editorHtml.includes('visual-editor.js')&&editorHtml.includes('visual-editor.css'),
+  'standalone visual editor must use repository-relative assets');
+assert(editorJs.includes('../content/ap-biology/'),
+  'editor must load the released journey content through relative paths');
+assert(editorJs.includes('localStorage')&&editorHtml.includes('Export journey JSON'),
+  'editor must retain browser-local drafts and controlled JSON export');
+assert(!editorJs.includes('/api/admin/')&&!editorHtml.includes('/api/admin/'),
+  'Pages narrative editor may not embed protected admin service routes');
+if(ROOT!==SOURCE_ROOT){
+  for(const forbidden of [
+    'frontend/admin/editor.js','backend/cloudflare-workers-ai',
+    'distribution/content-studio-teacher','authoring/README.md'
+  ]){
+    let exists=false;
+    try{await stat(path.join(ROOT,forbidden));exists=true;}
+    catch(e){if(e.code!=='ENOENT')throw e;}
+    assert(!exists,'Pages artifact leaked non-public server or distribution file '+forbidden);
+  }
+}
 
 const course=await api.course();
 assert(Array.isArray(course?.units)&&course.units.length===8,'course registry does not expose 8 units');

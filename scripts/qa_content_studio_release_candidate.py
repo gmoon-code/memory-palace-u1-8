@@ -14,6 +14,10 @@ EXPECTED_VERSION = "1.0.0-rc1"
 EXPECTED_IMPLEMENTATION = "cdf4bb2a1ea91415dd1634323ac5ab40ccba863f"
 EXPECTED_TREE = "133a3bc9b00c2149662d4e6dba8517f0706b585c"
 EXPECTED_BASELINE_MAIN = "6d561f19a19b07b9a386442d327db3ca12299bef"
+# Historical teacher runtime after the RC1 and stable-release maintenance.
+# Validate the frozen release against this exact known-good cutoff, while
+# newer feature branches are checked by their own current-runtime QA gates.
+HISTORICAL_RELEASE_CUTOFF = "f5d4fe65d56797803e324f5a66805765a6c07714"
 
 ALLOWED_EVIDENCE = {
     ".github/workflows/qa.yml",
@@ -104,14 +108,32 @@ def main() -> None:
     ancestor = git("merge-base", "--is-ancestor", EXPECTED_IMPLEMENTATION, "HEAD", check=False)
     require(ancestor.returncode == 0, "frozen implementation is not an ancestor of the candidate evidence head")
 
+    require(
+        git("merge-base", "--is-ancestor", HISTORICAL_RELEASE_CUTOFF, "HEAD", check=False).returncode == 0,
+        "historical release maintenance cutoff is missing from the current history",
+    )
     changed_after_freeze = {
         line.strip()
-        for line in git_text("diff", "--name-only", f"{EXPECTED_IMPLEMENTATION}..HEAD").splitlines()
+        for line in git_text(
+            "diff", "--name-only",
+            f"{EXPECTED_IMPLEMENTATION}..{HISTORICAL_RELEASE_CUTOFF}"
+        ).splitlines()
         if line.strip()
     }
     allowed_after_freeze = ALLOWED_EVIDENCE | ALLOWED_POST_RELEASE_MAINTENANCE
     unexpected = sorted(changed_after_freeze - allowed_after_freeze)
-    require(not unexpected, f"unexpected changes after frozen RC1: {unexpected}")
+    require(not unexpected, f"unexpected changes in frozen RC1 release history: {unexpected}")
+    release_metadata_diff = git(
+        "diff", "--quiet", HISTORICAL_RELEASE_CUTOFF, "HEAD", "--",
+        "release/content-studio/VERSION",
+        "release/content-studio/v1.0.0-rc1.json",
+        "release/content-studio/v1.0.0.json",
+        check=False,
+    )
+    require(
+        release_metadata_diff.returncode == 0,
+        "frozen release metadata was modified after the historical handoff",
+    )
 
     student_diff = git(
         "diff",
@@ -178,7 +200,7 @@ def main() -> None:
     print(f"- frozen implementation commit: {EXPECTED_IMPLEMENTATION}")
     print(f"- frozen implementation tree: {EXPECTED_TREE}")
     print(f"- exact tracked-file manifest entries: {expanded['file_count']}")
-    print("- historical RC1 remains frozen; narrowly scoped post-release maintenance is separately allowlisted")
+    print("- historical RC1 and post-release maintenance are checked at the pinned historical handoff")
     print("- published AP Biology content and student frontend match the production baseline")
     print("- local $0 operation and publication-off defaults remain locked")
     print("- clean install and recovery rehearsal is present as historical RC1 evidence")

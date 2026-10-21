@@ -1,0 +1,65 @@
+name: Narrative visual editor smoke test
+
+on:
+  pull_request:
+    paths:
+      - "authoring/**"
+      - "tests/story-visual-editor-smoke.mjs"
+      - "scripts/build_github_pages.py"
+      - "scripts/qa_github_pages_static.mjs"
+      - ".github/workflows/story-visual-editor.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Chromium for authoring smoke tests
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start isolated static editor server
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/story-editor-server.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl --silent --fail http://127.0.0.1:8765/authoring/visual-editor.html >/dev/null && break
+            sleep 1
+          done
+      - name: Test real frozen journey data and visual editing
+        env:
+          STORY_EDITOR_TEST_URL: http://127.0.0.1:8765
+        run: node tests/story-visual-editor-smoke.mjs
+      - name: Build GitHub Pages artifact without deployment
+        run: |
+          python scripts/build_github_pages.py --output "$RUNNER_TEMP/story-pages-preview"
+          PAGES_SITE_ROOT="$RUNNER_TEMP/story-pages-preview" node scripts/qa_github_pages_static.mjs
+          test -f "$RUNNER_TEMP/story-pages-preview/authoring/visual-editor.html"
+      - name: Serve exactly the prospective Pages artifact
+        run: |
+          python -m http.server 8766 --bind 127.0.0.1 --directory "$RUNNER_TEMP/story-pages-preview" >/tmp/story-pages-preview.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl --silent --fail http://127.0.0.1:8766/authoring/visual-editor.html >/dev/null && break
+            sleep 1
+          done
+      - name: Browser-test editor from built Pages artifact
+        env:
+          STORY_EDITOR_TEST_URL: http://127.0.0.1:8766
+        run: node tests/story-visual-editor-smoke.mjs
+      - name: Keep screenshot for review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: story-narrative-editor-screenshot
+          path: /tmp/story-editor-artifacts/
+          if-no-files-found: ignore

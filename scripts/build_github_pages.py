@@ -31,7 +31,14 @@ def build(output: Path) -> None:
     output.mkdir(parents=True)
 
     copy_file(ROOT / "index.html", output / "index.html")
+    copy_file(ROOT / "editor.html", output / "editor.html")
     copy_file(ROOT / ".nojekyll", output / ".nojekyll")
+    # Standalone, browser-local authoring surface. These three static files
+    # expose no private API or publishing authority. The editor reads the
+    # released JSON already included in the student Pages artifact, and its
+    # only output is a local downloadable proposal for later review.
+    for name in ("visual-editor.html", "visual-editor.css", "visual-editor.js"):
+        copy_file(ROOT / "authoring" / name, output / "authoring" / name)
     copy_tree(ROOT / "frontend" / "css", output / "frontend" / "css")
     copy_tree(ROOT / "frontend" / "js", output / "frontend" / "js")
     copy_file(APBIO / "course.json", output / "content" / "ap-biology" / "course.json")

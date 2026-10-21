@@ -29,6 +29,8 @@ def ratio(fg: str, bg: str) -> float:
     return (hi + 0.05) / (lo + 0.05)
 
 
+# Audit the current released fluorescent highlighter palette on light surfaces.
+# Older preliminary Moon Notes hex values are not current design tokens.
 # Moon Notes uses color as a structural highlighter behind dark text.
 # Normal-sized text must remain at least 4.5:1, and utility controls stay neutral.
 PAIRS = [
@@ -37,10 +39,10 @@ PAIRS = [
     ('muted text on paper', '#575757', '#ffffff'),
     ('muted text on page', '#575757', '#fbfbfa'),
     ('primary button', '#ffffff', '#111111'),
-    ('yellow highlighter text', '#111111', '#fff36d'),
-    ('green highlighter text', '#111111', '#8cff8a'),
-    ('turquoise highlighter text', '#111111', '#72e6e3'),
-    ('pink highlighter text', '#111111', '#ff8fd3'),
+    ('yellow highlighter text', '#111111', '#f5f566'),
+    ('green highlighter text', '#111111', '#66f566'),
+    ('turquoise highlighter text', '#111111', '#66f0f0'),
+    ('pink highlighter text', '#111111', '#f066f0'),
     ('soft yellow note text', '#111111', '#fffbd1'),
     ('soft green note text', '#111111', '#eaffea'),
     ('soft turquoise note text', '#111111', '#e8fbfb'),
@@ -63,10 +65,10 @@ for label, fg, bg in PAIRS:
 # the site to the previous rounded-dashboard or arbitrary multi-color language.
 for required in [
     'font-family:"Times New Roman", Times, serif',
-    '--moon-yellow:#fff36d',
-    '--moon-green:#8cff8a',
-    '--moon-turquoise:#72e6e3',
-    '--moon-pink:#ff8fd3',
+    '--moon-yellow:#f5f566',
+    '--moon-green:#66f566',
+    '--moon-turquoise:#66f0f0',
+    '--moon-pink:#f066f0',
     'border-radius:5px',
     'box-shadow:none',
 ]:
