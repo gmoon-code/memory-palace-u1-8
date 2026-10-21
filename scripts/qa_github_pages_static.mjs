@@ -41,7 +41,7 @@ assert(editorHtml.includes('visual-editor.js')&&editorHtml.includes('visual-edit
   'standalone visual editor must use repository-relative assets');
 assert(editorJs.includes('../content/ap-biology/'),
   'editor must load the released journey content through relative paths');
-assert(editorJs.includes('localStorage')&&editorJs.includes('Export'),
+assert(editorJs.includes('localStorage')&&editorHtml.includes('Export journey JSON'),
   'editor must retain browser-local drafts and controlled JSON export');
 assert(!editorJs.includes('/api/admin/')&&!editorHtml.includes('/api/admin/'),
   'Pages narrative editor may not embed protected admin service routes');
