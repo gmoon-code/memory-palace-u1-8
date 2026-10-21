@@ -1,4 +1,4 @@
-import {readFile} from 'node:fs/promises';
+import {readFile,stat} from 'node:fs/promises';
 import {fileURLToPath,pathToFileURL} from 'node:url';
 import path from 'node:path';
 
@@ -45,13 +45,16 @@ assert(editorJs.includes('localStorage')&&editorJs.includes('Export'),
   'editor must retain browser-local drafts and controlled JSON export');
 assert(!editorJs.includes('/api/admin/')&&!editorHtml.includes('/api/admin/'),
   'Pages narrative editor may not embed protected admin service routes');
-for(const forbidden of [
-  'frontend/admin/editor.js','backend/cloudflare-workers-ai',
-  'distribution/content-studio-teacher','authoring/README.md'
-]){
-  try{await readFile(path.join(ROOT,forbidden));assert(false,
-    'Pages artifact leaked non-public server or distribution file '+forbidden);}
-  catch(e){if(e.code!=='ENOENT')throw e;}
+if(ROOT!==SOURCE_ROOT){
+  for(const forbidden of [
+    'frontend/admin/editor.js','backend/cloudflare-workers-ai',
+    'distribution/content-studio-teacher','authoring/README.md'
+  ]){
+    let exists=false;
+    try{await stat(path.join(ROOT,forbidden));exists=true;}
+    catch(e){if(e.code!=='ENOENT')throw e;}
+    assert(!exists,'Pages artifact leaked non-public server or distribution file '+forbidden);
+  }
 }
 
 const course=await api.course();
