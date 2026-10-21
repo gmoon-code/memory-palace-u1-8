@@ -24,8 +24,13 @@
       <button type="button" id="export" class="primary" disabled>Export journey JSON</button>
     </div>
   </header>
+  <nav class="editor-jump-nav" aria-label="Go to editing area">
+    <a href="#storyWorkspace">Edit the scene</a>
+    <a href="#storyCurriculum">Choose a journey</a>
+    <a href="#storyInspector">Element settings</a>
+  </nav>
   <div class="editor-layout">
-    <aside class="sidebar">
+    <aside class="sidebar" id="storyCurriculum">
       <h2>Curriculum</h2>
       <label for="unit">Unit</label>
       <select id="unit"></select>
@@ -59,7 +64,7 @@
         </nav>
       </section>
     </aside>
-    <main class="workspace">
+    <main class="workspace" id="storyWorkspace" tabindex="-1">
       <div class="workspace-heading">
         <div><p id="journeyLabel" class="eyebrow">Select a journey</p>
         <h2 id="journeyTitle">Scene preview</h2></div>
@@ -71,7 +76,7 @@
       </article></div>
       <p class="preview-note">Select any narrative field or paragraph to edit it. The original scientific records remain protected.</p>
     </main>
-    <aside class="inspector">
+    <aside class="inspector" id="storyInspector">
       <h2>Element settings</h2>
       <p id="selectionStatus" aria-live="polite">Select text in the scene preview.</p>
       <div id="editingControls" hidden>
