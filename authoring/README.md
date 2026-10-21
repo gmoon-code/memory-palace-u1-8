@@ -1,6 +1,6 @@
 # Story Method narrative editor foundation
 
-This is a **browser-local narrative authoring tool** for the frozen AP Biology Story Method curriculum. Its standalone HTML, CSS and JavaScript are now explicitly included in the GitHub Pages build **on this unmerged draft branch**. The prospective route after an approved release is `https://gmoon-code.github.io/memory-palace-u1-8/authoring/visual-editor.html`. The student navigation and student runtime are unchanged.
+This is a **browser-local narrative authoring tool** for the frozen AP Biology Story Method curriculum. Its standalone HTML, CSS and JavaScript are now explicitly included in the GitHub Pages build **on this unmerged draft branch**. The prospective public editor bookmark after an approved release is `https://gmoon-code.github.io/memory-palace-u1-8/editor.html`, which opens the narrative authoring surface at `/authoring/visual-editor.html`. The student navigation and student runtime are unchanged.
 
 GitHub Pages hosts the editor's files publicly, as it does with other static pages. Anyone with the editor URL could open the **local editor interface**, but it does not grant any permission to change the published curriculum or write to GitHub. The editor stores drafts in its own browser storage and only exports a JSON proposal. Real publication requires a separate authorised workflow. A `noindex` tag is not authentication.
 
