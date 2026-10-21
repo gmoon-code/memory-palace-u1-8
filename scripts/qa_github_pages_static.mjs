@@ -34,6 +34,9 @@ await readFile(path.join(ROOT,'.nojekyll'));
 // The public Pages artifact contains the local-first authoring UI, but it
 // must never contain the backend's privileged admin editor, dev distribution,
 // or server-side files. GitHub Pages only serves static assets.
+const editorEntry=await readFile(path.join(ROOT,'editor.html'),'utf8');
+assert(editorEntry.includes('./authoring/visual-editor.html'),
+  'stable editor.html must lead to the protected-structure browser-local authoring surface');
 const editorHtml=await readFile(path.join(ROOT,'authoring/visual-editor.html'),'utf8');
 const editorJs=await readFile(path.join(ROOT,'authoring/visual-editor.js'),'utf8');
 await readFile(path.join(ROOT,'authoring/visual-editor.css'));
