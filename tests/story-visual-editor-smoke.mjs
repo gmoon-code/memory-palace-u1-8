@@ -20,6 +20,18 @@ try{
  await page.goto(origin+"/editor.html",{waitUntil:"domcontentloaded"});
  await page.waitForURL("**/authoring/visual-editor.html");
  await page.locator('#scenePreview [data-edit-key="0:title"]').waitFor();
+ const otherEditors=await page.locator('.other-editors nav a').evaluateAll(
+   links=>links.map(link=>({
+     pathname:new URL(link.href).pathname,
+     target:link.target,
+     noopener:link.rel.split(/\s+/).includes('noopener')
+   }))
+ );
+ assert.deepEqual(otherEditors,[
+   {pathname:'/editor.html',target:'_blank',noopener:true},
+   {pathname:'/research-methods/editor.html',target:'_blank',noopener:true}
+ ]);
+ assert.equal(await page.locator('.other-editors').isVisible(),true);
  assert.equal(await page.locator("#unit").inputValue(),"unit-1");
  assert.equal(await page.locator("#journey").inputValue(),"Z1");
  assert.equal(await page.locator("#sceneList button").count(),9);
