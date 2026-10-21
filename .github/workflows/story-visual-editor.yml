@@ -5,6 +5,8 @@ on:
     paths:
       - "authoring/**"
       - "tests/story-visual-editor-smoke.mjs"
+      - "scripts/build_github_pages.py"
+      - "scripts/qa_github_pages_static.mjs"
       - ".github/workflows/story-visual-editor.yml"
   workflow_dispatch:
 
@@ -37,6 +39,22 @@ jobs:
       - name: Test real frozen journey data and visual editing
         env:
           STORY_EDITOR_TEST_URL: http://127.0.0.1:8765
+        run: node tests/story-visual-editor-smoke.mjs
+      - name: Build GitHub Pages artifact without deployment
+        run: |
+          python scripts/build_github_pages.py --output "$RUNNER_TEMP/story-pages-preview"
+          PAGES_SITE_ROOT="$RUNNER_TEMP/story-pages-preview" node scripts/qa_github_pages_static.mjs
+          test -f "$RUNNER_TEMP/story-pages-preview/authoring/visual-editor.html"
+      - name: Serve exactly the prospective Pages artifact
+        run: |
+          python -m http.server 8766 --bind 127.0.0.1 --directory "$RUNNER_TEMP/story-pages-preview" >/tmp/story-pages-preview.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl --silent --fail http://127.0.0.1:8766/authoring/visual-editor.html >/dev/null && break
+            sleep 1
+          done
+      - name: Browser-test editor from built Pages artifact
+        env:
+          STORY_EDITOR_TEST_URL: http://127.0.0.1:8766
         run: node tests/story-visual-editor-smoke.mjs
       - name: Keep screenshot for review
         if: always()
