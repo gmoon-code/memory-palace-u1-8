@@ -31,6 +31,29 @@ await readFile(path.join(ROOT,'frontend/css/unit-theme.css'));
 await readFile(path.join(ROOT,'frontend/js/unit-theme.js'));
 await readFile(path.join(ROOT,'.nojekyll'));
 
+// The public Pages artifact contains the local-first authoring UI, but it
+// must never contain the backend's privileged admin editor, dev distribution,
+// or server-side files. GitHub Pages only serves static assets.
+const editorHtml=await readFile(path.join(ROOT,'authoring/visual-editor.html'),'utf8');
+const editorJs=await readFile(path.join(ROOT,'authoring/visual-editor.js'),'utf8');
+await readFile(path.join(ROOT,'authoring/visual-editor.css'));
+assert(editorHtml.includes('visual-editor.js')&&editorHtml.includes('visual-editor.css'),
+  'standalone visual editor must use repository-relative assets');
+assert(editorJs.includes('../content/ap-biology/'),
+  'editor must load the released journey content through relative paths');
+assert(editorJs.includes('localStorage')&&editorJs.includes('Export'),
+  'editor must retain browser-local drafts and controlled JSON export');
+assert(!editorJs.includes('/api/admin/')&&!editorHtml.includes('/api/admin/'),
+  'Pages narrative editor may not embed protected admin service routes');
+for(const forbidden of [
+  'frontend/admin/editor.js','backend/cloudflare-workers-ai',
+  'distribution/content-studio-teacher','authoring/README.md'
+]){
+  try{await readFile(path.join(ROOT,forbidden));assert(false,
+    'Pages artifact leaked non-public server or distribution file '+forbidden);}
+  catch(e){if(e.code!=='ENOENT')throw e;}
+}
+
 const course=await api.course();
 assert(Array.isArray(course?.units)&&course.units.length===8,'course registry does not expose 8 units');
 assert(course.units.every(u=>u.status==='STUDENT_READY'),'a released unit is not STUDENT_READY');
