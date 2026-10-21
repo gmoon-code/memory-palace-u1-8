@@ -141,6 +141,37 @@ try{
 
  await page.locator("#viewport").selectOption("narrow");
  assert.match(await page.locator("#scenePreview").getAttribute("class"),/narrow/);
+ // Viewport-size testing must check the actual mobile layout. The viewport
+ // selector above simulates the student preview width only.
+ await page.setViewportSize({width:390,height:844});
+ const mobileLayout=await page.evaluate(()=>{
+   const rect=id=>document.getElementById(id).getBoundingClientRect();
+   return {
+     viewport:window.innerWidth,
+     documentWidth:document.documentElement.scrollWidth,
+     jumpNavVisible:getComputedStyle(document.querySelector('.editor-jump-nav')).display!=="none",
+     sceneTop:rect('storyWorkspace').top,
+     inspectorTop:rect('storyInspector').top,
+     curriculumTop:rect('storyCurriculum').top,
+     previewMinHeight:getComputedStyle(document.getElementById('scenePreview')).minHeight
+   };
+ });
+ assert.equal(mobileLayout.jumpNavVisible,true,
+   "Mobile editors need direct navigation links to scenes, curricula and element settings");
+ assert(mobileLayout.sceneTop<mobileLayout.inspectorTop,
+   "The mobile narrative preview must appear before the inspector");
+ assert(mobileLayout.inspectorTop<mobileLayout.curriculumTop,
+   "The inspector must appear before the long curriculum picker on phones");
+ assert(mobileLayout.documentWidth<=mobileLayout.viewport+1,
+   "A 390px browser viewport must not have horizontal page overflow");
+ assert.equal(mobileLayout.previewMinHeight,"0px");
+ const jumpLinks=await page.locator('.editor-jump-nav a').evaluateAll(links=>
+   links.map(a=>a.getAttribute('href')));
+ assert.deepEqual(jumpLinks,['#storyWorkspace','#storyCurriculum','#storyInspector']);
+ await page.locator('.editor-jump-nav a[href="#storyCurriculum"]').click();
+ assert.equal(new URL(page.url()).hash,'#storyCurriculum');
+ await page.locator('.editor-jump-nav a[href="#storyWorkspace"]').click();
+ assert.equal(new URL(page.url()).hash,'#storyWorkspace');
  await page.screenshot({path:"/tmp/story-editor-artifacts/story-editor-mobile.png",fullPage:true});
  assert.deepEqual(errors,[]);
  console.log("PASS: journey navigation, scene editing, protected science, JSON export, drafts, mobile layout");
