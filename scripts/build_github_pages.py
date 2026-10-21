@@ -31,6 +31,7 @@ def build(output: Path) -> None:
     output.mkdir(parents=True)
 
     copy_file(ROOT / "index.html", output / "index.html")
+    copy_file(ROOT / "editor.html", output / "editor.html")
     copy_file(ROOT / ".nojekyll", output / ".nojekyll")
     # Standalone, browser-local authoring surface. These three static files
     # expose no private API or publishing authority. The editor reads the
