@@ -23,6 +23,7 @@ textarea{resize:vertical;line-height:1.5}
 .logo{width:24px;height:24px;border:1px solid #151515;background:conic-gradient(var(--green) 0 25%,var(--cyan) 25% 50%,var(--pink) 50% 75%,var(--yellow) 75% 100%);flex:0 0 24px}
 .top-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 #saveStatus{font-size:12px;color:var(--muted);margin-right:10px}
+.editor-jump-nav{display:none}
 .editor-layout{display:grid;grid-template-columns:235px minmax(0,1fr) 285px;min-height:calc(100vh - 76px)}
 .sidebar,.inspector{background:#fff;min-width:0;padding:20px 16px}
 .sidebar{border-right:1px solid var(--line)}
@@ -90,7 +91,30 @@ dialog form{text-align:right;margin-top:20px}
 #reviewValidation{font-size:13px;background:#f3f4ef;border-left:4px solid var(--green);padding:11px}
 @media(max-width:1100px){.editor-layout{grid-template-columns:200px minmax(0,1fr) 235px}.scene-preview{padding:25px}}
 @media(max-width:870px){.editor-layout{grid-template-columns:minmax(0,1fr) 240px}.sidebar{grid-column:1/-1;border-right:0;border-bottom:1px solid var(--line)}#sceneList{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}}
-@media(max-width:620px){.editor-layout{display:flex;flex-direction:column}.workspace{padding:12px}.sidebar,.inspector{border:0;border-bottom:1px solid var(--line)}.workspace-heading{align-items:start;flex-direction:column}.preview-surround{padding:8px}.scene-preview{padding:18px}.topbar{padding:12px}}
+@media(max-width:620px){
+  .editor-jump-nav{
+    display:flex;gap:8px;flex-wrap:wrap;padding:10px 12px;
+    background:#fff;border-bottom:1px solid var(--line);
+  }
+  .editor-jump-nav a{
+    display:inline-flex;align-items:center;min-height:44px;
+    border:1px solid var(--line);border-radius:4px;
+    padding:9px 11px;color:#171717;background:var(--paper);
+    font-size:14px;text-decoration:none;
+  }
+  .editor-jump-nav a:hover{background:#f2f4ef;border-color:#477f60}
+  .editor-jump-nav a:focus-visible{outline:2px solid #171717;outline-offset:3px}
+  .editor-layout{display:flex;flex-direction:column}
+  .workspace{order:0;padding:12px}
+  .inspector{order:1}
+  .sidebar{order:2}
+  .sidebar,.inspector{border:0;border-top:1px solid var(--line)}
+  .workspace-heading{align-items:start;flex-direction:column}
+  .preview-surround{padding:8px;min-height:0}
+  .scene-preview{padding:18px;min-height:0}
+  .topbar{position:static;padding:12px}
+  #storyWorkspace,#storyCurriculum,#storyInspector{scroll-margin-top:12px}
+}
 @media(prefers-reduced-motion:reduce){.scene-preview{transition:none}}
 
 /* Render Markdown scientific-term emphasis as students actually see it. */
