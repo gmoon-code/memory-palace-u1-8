@@ -491,8 +491,10 @@ async function init(){
   if(!s.selected)return;
   const target=$("scenePreview").querySelector('[data-edit-key="'+s.selected+'"]');
   if(!target)return;
+  // Paragraphs return to formatted, non-editable reading mode when the
+  // inspector gains focus. Re-select the field to restore its editable mode.
+  select(s.selected);
   target.scrollIntoView({block:"center",behavior:"auto"});
-  target.focus({preventScroll:true});
   $("mobileSelectionBar").hidden=false;
  });
  $("mobileDismissSelection").addEventListener("click",()=>{
