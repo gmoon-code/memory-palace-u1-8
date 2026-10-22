@@ -3,6 +3,7 @@
 "use strict";
 const $=id=>document.getElementById(id);
 const PREFIX="story-method-narrative-draft-v1:";
+let pendingImport=null;
 const s={unit:"",journey:"",loadedUnit:"",loadedJourney:"",
   original:null,draft:null,hash:"",scene:0,
   selected:null,dirty:new Set(),history:[],redo:[],stale:false,timer:null,
@@ -29,12 +30,17 @@ function protectedData(data){const c=clone(data);
  for(const x of c.scenes||[]){for(const field of
  ["title","scene_kicker","location_description","story_paragraphs","story_open","story_close"])
  delete x[field]}return JSON.stringify(c)}
-function validate(){
- if(!s.original||!s.draft)return "No journey loaded";
- if(protectedData(s.original)!==protectedData(s.draft))
+function validate(candidate=s.draft){
+ if(!s.original||!candidate||typeof candidate!=="object"||Array.isArray(candidate))
+ return "No valid journey loaded.";
+ if(!Array.isArray(candidate.scenes)||
+    candidate.scenes.length!==s.original.scenes.length||
+    candidate.scenes.some(scene=>!scene||typeof scene!=="object"||Array.isArray(scene)))
+ return "Journey scenes do not match the current source.";
+ if(protectedData(s.original)!==protectedData(candidate))
  return "A protected scientific, review, or identity field has changed.";
  for(let i=0;i<s.original.scenes.length;i++){
-  const a=s.original.scenes[i],b=s.draft.scenes[i];
+  const a=s.original.scenes[i],b=candidate.scenes[i];
   if(!["title","scene_kicker","location_description"].every(f=>
    typeof b[f]==="string"&&b[f].trim().length>0&&b[f].length<5000))
    return "Scene "+(i+1)+" contains an empty or overlong field.";
@@ -50,6 +56,7 @@ function validate(){
   }else if(b.story_close!==a.story_close)return "Protected closing changed.";
  }
  return ""}
+
 function allKeys(){if(!s.original)return [];const result=[];
  s.original.scenes.forEach((scene,i)=>{
   for(const f of ["scene_kicker","title","location_description"])result.push(key(i,f));
@@ -275,6 +282,53 @@ function exportFile(){
  document.body.appendChild(link);link.click();link.remove();
  setTimeout(()=>URL.revokeObjectURL(url),10000);
  $("saveStatus").textContent="JSON exported · Not published"}
+// Restoring a previously exported narrative never publishes a file. Check
+// the full frozen science and journey identity before showing Apply.
+async function prepareNarrativeImport(event){
+ const file=event.target.files?.[0];
+ event.target.value="";
+ if(!file)return;
+ if(!s.original||!s.draft){notice("Choose a journey before restoring a narrative.");return}
+ if(file.size>2*1024*1024){notice("Narrative JSON exceeds the 2 MB import limit.");return}
+ const unit=s.loadedUnit,journey=s.loadedJourney,hash=s.hash;
+ let candidate;
+ try{candidate=JSON.parse(await file.text())}
+ catch{notice("The selected file is not valid JSON.");return}
+ if(s.loadedUnit!==unit||s.loadedJourney!==journey||s.hash!==hash){
+  notice("The selected journey changed during import. Choose the file again.");return}
+ const problem=validate(candidate);
+ if(problem){notice("Import blocked. "+problem);return}
+ const changed=allKeys().filter(k=>valueOf(s.original,k)!==valueOf(candidate,k));
+ pendingImport={candidate,unit,journey,hash};
+ $("importSummary").textContent=unit+" · "+journey+" · "+changed.length+
+  " changed narrative field"+(changed.length===1?"":"s")+
+  ". Applying this file replaces the current browser-local draft for this journey. "+
+  "It will not publish or change any protected curriculum content.";
+ const list=$("importChanges");list.replaceChildren();
+ for(const k of changed.slice(0,8)){
+  const li=document.createElement("li");
+  li.textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
+  list.append(li)}
+ if(changed.length>8){const li=document.createElement("li");
+  li.textContent="And "+(changed.length-8)+" more editable fields";list.append(li)}
+ $("importDialog").showModal();
+}
+function applyNarrativeImport(){
+ const entry=pendingImport;
+ if(!entry)return;
+ if(s.loadedUnit!==entry.unit||s.loadedJourney!==entry.journey||
+    s.hash!==entry.hash||validate(entry.candidate)){
+  pendingImport=null;$("importDialog").close();
+  notice("Import no longer matches the selected frozen journey.");return}
+ if(JSON.stringify(entry.candidate)!==JSON.stringify(s.draft)){
+  checkpoint();
+  s.redo.length=0;
+  s.draft=clone(entry.candidate);s.stale=false;
+  recalc();render();save();
+ }
+ pendingImport=null;$("importDialog").close();
+ $("saveStatus").textContent="Narrative export restored to local draft · Not published";
+}
 async function fetchData(relative){
  const url=new URL("../content/ap-biology/"+relative,location.href);
  const result=await fetch(url,{cache:"no-store",credentials:"same-origin"});
@@ -365,6 +419,10 @@ async function init(){
  $("reset").addEventListener("click",reset);
  $("review").addEventListener("click",review);
  $("export").addEventListener("click",exportFile);
+ $("restoreExport").addEventListener("click",()=>$("importNarrativeFile").click());
+ $("importNarrativeFile").addEventListener("change",prepareNarrativeImport);
+ $("applyImport").addEventListener("click",applyNarrativeImport);
+ $("importDialog").addEventListener("close",()=>{pendingImport=null});
  window.addEventListener("beforeunload",()=>{if(s.draft)save()});
 }
 document.addEventListener("DOMContentLoaded",init);

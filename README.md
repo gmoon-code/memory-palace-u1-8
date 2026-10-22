@@ -91,3 +91,7 @@ python scripts/build_site_ux1_release.py --output MemoryPalace_V2_Mainline_Units
 ## Release boundary
 
 **AP Biology Units 1–8 are complete at F6, and the student shell remains Site UX1 over that frozen curriculum.** The GitHub Pages work changes production hosting and data delivery only. Future curriculum work should begin from the frozen F6 content boundary. Future interface work should create a new site revision without silently rewriting the Site UX1 lock.
+
+## Narrative editor draft restore (development branch)
+
+The authoring-only Story Method narrative editor can restore a previously exported journey JSON file to the **current browser-local draft**. It displays the editable fields that differ from the frozen source and requires explicit confirmation. Validation compares protected scene, scientific, review and identity records with the loaded journey and checks narrative lengths and synchronized opening/closing paragraphs before allowing restoration. The user can cancel without changing the draft, and restoration participates in Undo/Redo. Imports are limited to 2 MB and never publish or modify the frozen curriculum. This feature is under draft PR review until the editor browser test and Memory Palace QA pass.

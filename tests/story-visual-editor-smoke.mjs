@@ -134,6 +134,45 @@ try{
  assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
    original.scenes[0].title);
 
+ // The downloaded narrative can restore the selected journey's local draft.
+ // Previewing and cancelling the import may not change any content.
+ const upload={name:"Z1.json",mimeType:"application/json",
+   buffer:Buffer.from(JSON.stringify(edited))};
+ await page.locator("#importNarrativeFile").setInputFiles(upload);
+ assert.equal(await page.locator("#importDialog").isVisible(),true);
+ assert.match(await page.locator("#importSummary").textContent(),
+   /unit-1 · Z1 · 1 changed narrative field/);
+ assert.equal(await page.locator("#export").isDisabled(),true);
+ await page.locator('#importDialog button:has-text("Cancel")').click();
+ assert.equal(await page.locator("#export").isDisabled(),true);
+ await page.locator("#importNarrativeFile").setInputFiles(upload);
+ await page.locator("#applyImport").click();
+ assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
+   edited.scenes[0].title);
+ assert.equal(await page.locator("#export").isEnabled(),true);
+ assert.equal(await page.locator("#undo").isEnabled(),true);
+ await page.locator("#undo").click();
+ assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
+   original.scenes[0].title);
+ await page.locator("#redo").click();
+ assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
+   edited.scenes[0].title);
+ // Reject JSON that attempts to mutate any protected scientific field.
+ const tampered=structuredClone(edited);
+ tampered.scenes[0].object_ids=["intruder-object"];
+ await page.locator("#importNarrativeFile").setInputFiles({
+   name:"tampered.json",mimeType:"application/json",
+   buffer:Buffer.from(JSON.stringify(tampered))
+ });
+ assert.equal(await page.locator("#errorDialog").isVisible(),true);
+ assert.match(await page.locator("#errorMessage").textContent(),/Import blocked/);
+ assert.equal(await page.locator("#importDialog").isVisible(),false);
+ await page.locator("#errorDialog button").click();
+ assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
+   edited.scenes[0].title);
+ page.once("dialog",dialog=>dialog.accept());
+ await page.locator("#reset").click();
+
  // Switching a picker must never file the outgoing journey's draft under
  // the newly selected journey's storage key.
  const specificZ1="Unsaved Z1 title remains attached to Z1";

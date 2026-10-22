@@ -100,6 +100,9 @@
         <p>Scene titles, kickers, descriptions, and narrative paragraphs. Adding or removing scenes, paragraphs, or scientific records is disabled.</p>
         <h3>Drafts and publishing</h3>
         <p>Changes save in this browser. Export creates an updated copy of the journey JSON for review. Publishing requires the frozen curriculum QA checks.</p>
+        <button id="restoreExport" type="button">Restore exported narrative JSON…</button>
+        <input id="importNarrativeFile" type="file" accept=".json,application/json" hidden>
+        <p>Restore an earlier export for the selected journey. The editor checks its scene identity and protected scientific records before applying anything. Your current draft is replaced only after your confirmation.</p>
       </section>
     </aside>
   </div>
@@ -110,6 +113,15 @@
   <div id="reviewList"></div>
   <p id="reviewValidation" aria-live="polite"></p>
   <form method="dialog"><button class="primary" type="submit">Close</button></form>
+</dialog>
+<dialog id="importDialog" aria-labelledby="importTitle">
+  <h2 id="importTitle">Review narrative restoration</h2>
+  <p id="importSummary"></p>
+  <ul id="importChanges" class="import-change-list"></ul>
+  <div class="import-actions">
+    <button id="applyImport" class="primary" type="button">Restore to local draft</button>
+    <form method="dialog"><button type="submit">Cancel</button></form>
+  </div>
 </dialog>
 <dialog id="errorDialog">
   <h2>Editor notice</h2>
