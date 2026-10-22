@@ -70,6 +70,21 @@ try{
  await page.locator("#editText").fill("The Observation That Begins the Investigation");
  assert.equal((await title.textContent()).trim(),"The Observation That Begins the Investigation");
  assert.equal(await page.locator("#export").isEnabled(),true);
+ assert.equal(await page.locator("#redo").isDisabled(),true);
+ await page.locator("#undo").click();
+ assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
+   original.scenes[0].title,"Undo must restore the original narrative");
+ assert.equal(await page.locator("#redo").isEnabled(),true);
+ await page.locator("#redo").click();
+ assert.equal((await page.locator('[data-edit-key="0:title"]').textContent()).trim(),
+   "The Observation That Begins the Investigation","Redo must restore the edited narrative");
+ assert.equal(await page.locator("#redo").isDisabled(),true);
+ await page.locator("#undo").click();
+ await page.locator('[data-edit-key="0:title"]').click();
+ await page.locator("#editText").fill("A different draft after undo");
+ assert.equal(await page.locator("#redo").isDisabled(),true,
+   "A new narrative edit must invalidate old redo history");
+ await page.locator("#editText").fill("The Observation That Begins the Investigation");
  await page.locator("#review").click();
  assert.match(await page.locator("#reviewValidation").textContent(),/Protected curriculum fields match/);
  await page.locator("#reviewDialog button").click();
