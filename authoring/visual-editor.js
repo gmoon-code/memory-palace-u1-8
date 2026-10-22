@@ -483,8 +483,17 @@ async function init(){
   if(s.selected===el.dataset.editKey)$("editText").value=v});
  $("mobileEditInInspector").addEventListener("click",()=>{
   if(!s.selected)return;
+  $("mobileSelectionBar").hidden=true;
   $("storyInspector").scrollIntoView({block:"start",behavior:"auto"});
   $("editText").focus({preventScroll:true});
+ });
+ $("mobileBackToPassage").addEventListener("click",()=>{
+  if(!s.selected)return;
+  const target=$("scenePreview").querySelector('[data-edit-key="'+s.selected+'"]');
+  if(!target)return;
+  target.scrollIntoView({block:"center",behavior:"auto"});
+  target.focus({preventScroll:true});
+  $("mobileSelectionBar").hidden=false;
  });
  $("mobileDismissSelection").addEventListener("click",()=>{
   $("mobileSelectionBar").hidden=true;

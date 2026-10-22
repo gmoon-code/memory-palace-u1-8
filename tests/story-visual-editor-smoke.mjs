@@ -289,8 +289,16 @@ try{
  await page.locator("#mobileEditInInspector").click();
  assert.equal(await page.locator("#editText").evaluate(el=>document.activeElement===el),true,
    "Mobile shortcut must focus the selected field's inspector text area");
+ assert.equal(await page.locator("#mobileSelectionBar").isVisible(),false,
+   "The floating controls should not cover the phone inspector during text editing");
+ assert.equal(await page.locator("#mobileBackToPassage").isVisible(),true);
  assert.equal(await page.locator("#export").isEnabled(),beforeShortcut,
    "Opening the inspector must never modify the narrative draft");
+ await page.locator("#mobileBackToPassage").click();
+ assert.equal(await page.locator('[data-edit-key="0:paragraphs:0"]').evaluate(
+   el=>document.activeElement===el),true,
+   "Back to passage should refocus the original narrative text");
+ assert.equal(await page.locator("#mobileSelectionBar").isVisible(),true);
  await page.locator("#mobileDismissSelection").click();
  assert.equal(await page.locator("#mobileSelectionBar").isVisible(),false);
  await page.locator('[data-edit-key="0:paragraphs:1"]').click();
