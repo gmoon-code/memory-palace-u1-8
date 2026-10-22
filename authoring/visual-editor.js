@@ -255,6 +255,7 @@ function previewElement(tag,className,k,text){
  return el}
 function render(){
  const box=$("scenePreview");box.replaceChildren();s.selected=null;$("editingControls").hidden=true;
+ $("mobileSelectionBar").hidden=true;
  const scene=s.draft?.scenes?.[s.scene];if(!scene)return;
  $("journeyLabel").textContent="Scene "+(s.scene+1)+" of "+s.draft.scenes.length+
    " · "+scene.locus;
@@ -281,6 +282,8 @@ function select(k){
  el.setAttribute("contenteditable","plaintext-only");
  $("editingControls").hidden=false;$("editText").value=valueOf(s.draft,k);
  $("selectionStatus").textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
+ $("mobileSelectionLabel").textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
+ $("mobileSelectionBar").hidden=false;
  updateFieldNavigation();
  updateSelectedInspector();
  el.focus({preventScroll:true})}
@@ -478,6 +481,14 @@ async function init(){
   const el=event.target.closest("[data-edit-key]");if(!el)return;
   const v=el.textContent;sync(el.dataset.editKey,v);
   if(s.selected===el.dataset.editKey)$("editText").value=v});
+ $("mobileEditInInspector").addEventListener("click",()=>{
+  if(!s.selected)return;
+  $("storyInspector").scrollIntoView({block:"start",behavior:"auto"});
+  $("editText").focus({preventScroll:true});
+ });
+ $("mobileDismissSelection").addEventListener("click",()=>{
+  $("mobileSelectionBar").hidden=true;
+ });
  $("editText").addEventListener("focus",checkpoint);
  $("editText").addEventListener("input",event=>{
   if(!s.selected)return;const v=event.target.value;

@@ -281,6 +281,25 @@ try{
  assert(mobileLayout.documentWidth<=mobileLayout.viewport+1,
    "A 390px browser viewport must not have horizontal page overflow");
  assert.equal(mobileLayout.previewMinHeight,"0px");
+ await page.locator('[data-edit-key="0:paragraphs:0"]').click();
+ assert.equal(await page.locator("#mobileSelectionBar").isVisible(),true,
+   "Selecting narrative on mobile must offer an immediately accessible inspector shortcut");
+ assert.match(await page.locator("#mobileSelectionLabel").textContent(),/Scene 1 · Paragraph 1/);
+ const beforeShortcut=await page.locator("#export").isEnabled();
+ await page.locator("#mobileEditInInspector").click();
+ assert.equal(await page.locator("#editText").evaluate(el=>document.activeElement===el),true,
+   "Mobile shortcut must focus the selected field's inspector text area");
+ assert.equal(await page.locator("#export").isEnabled(),beforeShortcut,
+   "Opening the inspector must never modify the narrative draft");
+ await page.locator("#mobileDismissSelection").click();
+ assert.equal(await page.locator("#mobileSelectionBar").isVisible(),false);
+ await page.locator('[data-edit-key="0:paragraphs:1"]').click();
+ assert.equal(await page.locator("#mobileSelectionBar").isVisible(),true,
+   "Selecting another passage must reopen the quick controls");
+ assert.equal(await page.locator("#mobileSelectionBar").evaluate(el=>{
+   const r=el.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth+1;
+ }),true,"Mobile quick controls must stay inside the screen width");
+ await page.locator("#mobileDismissSelection").click();
  const jumpLinks=await page.locator('.editor-jump-nav a').evaluateAll(links=>
    links.map(a=>a.getAttribute('href')));
  assert.deepEqual(jumpLinks,['#storyWorkspace','#storyCurriculum','#storyInspector']);
