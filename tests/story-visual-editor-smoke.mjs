@@ -57,6 +57,39 @@ try{
  assert.equal(await page.locator("#searchResults button").count(),0);
  assert.match(await page.locator("#searchStatus").textContent(),/No matching narrative fields/);
  await page.locator("#narrativeSearch").fill("");
+ // Review-before-replace updates only editable narrative content and
+ // must preserve the protected journey and offer a single-step undo.
+ await page.locator(".narrative-replace summary").click();
+ await page.locator("#narrativeSearch").fill(original.scenes[0].title.toUpperCase());
+ await page.locator("#narrativeReplaceWith").fill("Temporary heading for search replace");
+ await page.locator("#reviewReplace").click();
+ await page.locator("#replaceDialog").waitFor({state:"visible"});
+ assert.match(await page.locator("#replaceSummary").textContent(),/1 replacement across 1 editable narrative field/);
+ assert.equal(await page.locator("#export").isDisabled(),true);
+ await page.locator('#replaceDialog button:has-text("Cancel")').click();
+ assert.equal(await page.locator("#export").isDisabled(),true,
+   "Cancelling bulk replacement must preserve the original draft");
+ await page.locator("#reviewReplace").click();
+ await page.locator("#replaceDialog").waitFor({state:"visible"});
+ await page.locator("#applyReplace").click();
+ assert.equal(await page.locator('[data-edit-key="0:title"]').textContent(),
+   "Temporary heading for search replace");
+ assert.equal(await page.locator("#export").isEnabled(),true);
+ await page.locator("#undo").click();
+ assert.equal(await page.locator('[data-edit-key="0:title"]').textContent(),
+   original.scenes[0].title);
+ await page.locator("#redo").click();
+ assert.equal(await page.locator('[data-edit-key="0:title"]').textContent(),
+   "Temporary heading for search replace");
+ await page.locator("#undo").click();
+ assert.equal(await page.locator("#export").isDisabled(),true,
+   "Undo must restore the entire unchanged journey");
+ await page.locator("#narrativeReplaceWith").fill("");
+ await page.locator("#reviewReplace").click();
+ assert.match(await page.locator("#replaceStatus").textContent(),/Replacement blocked/,
+   "Replacing the complete title with empty text must fail schema validation");
+ assert.equal(await page.locator("#replaceDialog").isVisible(),false);
+ await page.locator("#narrativeSearch").fill("");
  const emphasized=page.locator('[data-edit-key="0:paragraphs:1"]');
  assert(await emphasized.locator("strong.story-term").count()>0,
    "Narrative Markdown should render as accessible emphasis in reading preview");

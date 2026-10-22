@@ -4,6 +4,7 @@
 const $=id=>document.getElementById(id);
 const PREFIX="story-method-narrative-draft-v1:";
 let pendingImport=null;
+let pendingReplacement=null;
 const s={unit:"",journey:"",loadedUnit:"",loadedJourney:"",
   original:null,draft:null,hash:"",scene:0,
   selected:null,dirty:new Set(),history:[],redo:[],stale:false,timer:null,
@@ -145,6 +146,66 @@ function refreshNarrativeSearch(){
   results.appendChild(button);
  }
  if(matches.length>60)status.textContent+=" First 60 results shown.";
+}
+// This search-and-replace operation touches only explicitly editable
+// narrative fields. Always validate the complete reconstructed journey.
+function reviewNarrativeReplacement(){
+ const term=$("narrativeSearch").value.trim();
+ const replacement=$("narrativeReplaceWith").value;
+ const message=$("replaceStatus");
+ if(!s.original||!s.draft){message.textContent="Choose a journey first.";return}
+ if(!term){message.textContent="Enter a word or phrase in the search box above.";return}
+ if(term.length>200){message.textContent="Choose a search phrase shorter than 201 characters.";return}
+ const escaped=term.replace(/[.*+?^${}()|[\]\\]/g,"\\function sceneButtons(){");
+ const pattern=new RegExp(escaped,"gi");
+ const candidate=clone(s.draft),changed=[];
+ let count=0;
+ for(const k of allKeys()){
+  const source=valueOf(s.draft,k);
+  if(typeof source!=="string")continue;
+  const matches=source.match(pattern)?.length||0;
+  if(!matches)continue;
+  const next=source.replace(pattern,()=>replacement);
+  if(next===source)continue;
+  if(!change(candidate,k,next)){message.textContent="Replacement cannot edit this field.";return}
+  count+=matches;changed.push({key:k,matches});
+ }
+ if(!count){message.textContent="No changes to review. Check the search phrase and replacement.";return}
+ const problem=validate(candidate);
+ if(problem){message.textContent="Replacement blocked. "+problem;return}
+ pendingReplacement={unit:s.loadedUnit,journey:s.loadedJourney,hash:s.hash,
+  before:JSON.stringify(s.draft),candidate,count,changed};
+ const list=$("replaceChanges");list.replaceChildren();
+ for(const entry of changed.slice(0,15)){
+  const item=document.createElement("li");
+  item.textContent="Scene "+(identify(entry.key).scene+1)+" · "+searchLabel(entry.key)+
+   " · "+entry.matches+" occurrence"+(entry.matches===1?"":"s");
+  list.appendChild(item);
+ }
+ if(changed.length>15){const more=document.createElement("li");
+  more.textContent=(changed.length-15)+" additional narrative fields";list.appendChild(more)}
+ $("replaceSummary").textContent=count+" replacement"+(count===1?"":"s")+
+  " across "+changed.length+" editable narrative field"+(changed.length===1?"":"s")+
+  " in "+s.loadedUnit+" · "+s.loadedJourney+
+  ". Confirm to update the local draft. Scientific and curriculum fields remain unchanged.";
+ $("replaceDialog").showModal();
+ message.textContent="Review the replacement before applying it.";
+}
+function applyNarrativeReplacement(){
+ const entry=pendingReplacement;
+ if(!entry)return;
+ if(entry.unit!==s.loadedUnit||entry.journey!==s.loadedJourney||
+    entry.hash!==s.hash||entry.before!==JSON.stringify(s.draft)||
+    validate(entry.candidate)){
+  pendingReplacement=null;$("replaceDialog").close();
+  $("replaceStatus").textContent="Replacement cancelled. The draft or journey changed.";
+  return;
+ }
+ checkpoint();s.redo.length=0;
+ s.draft=clone(entry.candidate);recalc();render();queue();
+ pendingReplacement=null;$("replaceDialog").close();
+ $("replaceStatus").textContent=entry.count+" replacement"+
+  (entry.count===1?"":"s")+" applied to your local narrative draft. Undo is available.";
 }
 function sceneButtons(){
  const nav=$("sceneList");nav.replaceChildren();
@@ -378,6 +439,9 @@ async function init(){
  $("journey").addEventListener("change",event=>{
   s.journey=event.target.value;loadJourney()});
  $("narrativeSearch").addEventListener("input",refreshNarrativeSearch);
+ $("reviewReplace").addEventListener("click",reviewNarrativeReplacement);
+ $("applyReplace").addEventListener("click",applyNarrativeReplacement);
+ $("replaceDialog").addEventListener("close",()=>{pendingReplacement=null});
  $("viewport").addEventListener("change",event=>{
   $("scenePreview").className="scene-preview "+event.target.value});
  $("scenePreview").addEventListener("click",event=>{

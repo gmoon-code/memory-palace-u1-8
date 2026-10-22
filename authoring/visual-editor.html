@@ -48,6 +48,15 @@
           class="search-status">Search scene titles, descriptions, and paragraphs.</p>
         <div id="searchResults" class="search-results" role="list"
           aria-label="Matching narrative fields"></div>
+        <details class="narrative-replace">
+          <summary>Find and replace in this journey</summary>
+          <p>Use the search phrase above. Only editable narrative text is affected.</p>
+          <label for="narrativeReplaceWith">Replace all matches with</label>
+          <input id="narrativeReplaceWith" type="text" maxlength="250"
+            placeholder="Replacement text">
+          <button id="reviewReplace" type="button">Review replacements</button>
+          <p id="replaceStatus" role="status" aria-live="polite"></p>
+        </details>
       </section>
       <section class="sidebar-note">
         <h3>Protected content</h3>
@@ -113,6 +122,15 @@
   <div id="reviewList"></div>
   <p id="reviewValidation" aria-live="polite"></p>
   <form method="dialog"><button class="primary" type="submit">Close</button></form>
+</dialog>
+<dialog id="replaceDialog" aria-labelledby="replaceTitle">
+  <h2 id="replaceTitle">Review narrative replacements</h2>
+  <p id="replaceSummary"></p>
+  <ul id="replaceChanges" class="replace-change-list"></ul>
+  <div class="import-actions">
+    <button id="applyReplace" class="primary" type="button">Apply to local draft</button>
+    <form method="dialog"><button type="submit">Cancel</button></form>
+  </div>
 </dialog>
 <dialog id="importDialog" aria-labelledby="importTitle">
   <h2 id="importTitle">Review narrative restoration</h2>
