@@ -164,7 +164,7 @@ try{
    name:"tampered.json",mimeType:"application/json",
    buffer:Buffer.from(JSON.stringify(tampered))
  });
- assert.equal(await page.locator("#errorDialog").isVisible(),true);
+ await page.locator("#errorDialog").waitFor({state:"visible"});
  assert.match(await page.locator("#errorMessage").textContent(),/Import blocked/);
  assert.equal(await page.locator("#importDialog").isVisible(),false);
  await page.locator("#errorDialog button").click();
