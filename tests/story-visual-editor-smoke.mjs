@@ -139,7 +139,7 @@ try{
  const upload={name:"Z1.json",mimeType:"application/json",
    buffer:Buffer.from(JSON.stringify(edited))};
  await page.locator("#importNarrativeFile").setInputFiles(upload);
- assert.equal(await page.locator("#importDialog").isVisible(),true);
+ await page.locator("#importDialog").waitFor({state:"visible"});
  assert.match(await page.locator("#importSummary").textContent(),
    /unit-1 · Z1 · 1 changed narrative field/);
  assert.equal(await page.locator("#export").isDisabled(),true);
