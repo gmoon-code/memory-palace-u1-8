@@ -200,6 +200,7 @@ function select(k){
  $("editingControls").hidden=false;$("editText").value=valueOf(s.draft,k);
  $("selectionStatus").textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
  updateFieldNavigation();
+ updateSelectedInspector();
  el.focus({preventScroll:true})}
 function updateFieldNavigation(){
  const fields=allKeys(),index=fields.indexOf(s.selected);
@@ -216,11 +217,21 @@ function navigateField(direction){
  if(scene!==s.scene){s.scene=scene;render()}
  select(next);
 }
+function updateSelectedInspector(){
+ if(!s.selected)return;
+ const spec=identify(s.selected),value=String(valueOf(s.draft,s.selected)||"");
+ const baseline=String(valueOf(s.original,s.selected)||"");
+ const limit=spec.field==="paragraphs"?5999:4999;
+ $("originalFieldText").textContent=baseline;
+ $("selectionLength").textContent=value.length+" of "+limit+" permitted characters";
+ $("selectionLength").dataset.warning=String(value.length>limit);
+}
 function sync(k,v){
  if(valueOf(s.draft,k)===v)return;
  if(!change(s.draft,k,v))return;
  s.redo.length=0;
- recalc();queue();sceneButtons();refreshNarrativeSearch()}
+ recalc();queue();sceneButtons();refreshNarrativeSearch();
+ if(s.selected===k)updateSelectedInspector()}
 function pastePlain(event){
  const node=event.target.closest("[data-edit-key][contenteditable]");
  if(!node)return;event.preventDefault();

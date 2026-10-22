@@ -135,3 +135,10 @@ dialog form{text-align:right;margin-top:20px}
 .field-navigation button{min-height:38px;padding:8px 10px;flex:0 0 auto}
 .field-navigation span{font:13px/1.4 system-ui,sans-serif;color:var(--muted);flex:1 1 110px;min-width:0}
 @media(max-width:400px){.field-navigation span{flex-basis:100%;order:-1}}
+
+/* Source comparison stays collapsed until requested, without altering the draft. */
+.field-length{margin:7px 0 12px;color:var(--muted);font:12px/1.5 system-ui,sans-serif}
+.field-length[data-warning="true"]{color:#993c38;font-weight:700}
+.original-field-compare{margin:8px 0 14px;border:1px solid var(--line);border-radius:3px;padding:9px;background:#f8f8f6}
+.original-field-compare summary{cursor:pointer;font-size:13px;font-weight:700}
+.original-field-compare p{white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;font-size:13px;line-height:1.55;margin:10px 0 0}

@@ -87,8 +87,15 @@ try{
    "Field navigation must never edit student narrative");
  const title=page.locator('[data-edit-key="0:title"]');
  await title.click();
+ assert.equal(await page.locator("#originalFieldText").textContent(),original.scenes[0].title,
+   "The inspector must expose the exact original narrative when comparison is requested");
+ await page.locator(".original-field-compare summary").click();
+ assert.equal(await page.locator("#originalFieldText").isVisible(),true);
  await page.locator("#editText").fill("The Observation That Begins the Investigation");
  assert.equal((await title.textContent()).trim(),"The Observation That Begins the Investigation");
+ assert.equal(await page.locator("#originalFieldText").textContent(),original.scenes[0].title,
+   "Editing a draft must never overwrite its comparison baseline");
+ assert.match(await page.locator("#selectionLength").textContent(),/of 4999 permitted characters/);
  assert.equal(await page.locator("#export").isEnabled(),true);
  assert.equal(await page.locator("#redo").isDisabled(),true);
  await page.locator("#undo").click();
