@@ -5,7 +5,7 @@ const $=id=>document.getElementById(id);
 const PREFIX="story-method-narrative-draft-v1:";
 const s={unit:"",journey:"",loadedUnit:"",loadedJourney:"",
   original:null,draft:null,hash:"",scene:0,
-  selected:null,dirty:new Set(),history:[],stale:false,timer:null,
+  selected:null,dirty:new Set(),history:[],redo:[],stale:false,timer:null,
   ticket:0,unitTicket:0};
 const clone=x=>JSON.parse(JSON.stringify(x));
 const key=(i,f,p)=>String(i)+":"+f+(p===undefined?"":":"+p);
@@ -63,6 +63,7 @@ function recalc(){
  $("reset").disabled=!count;$("review").disabled=!count;
  $("export").disabled=!count||!!validate();
  $("undo").disabled=!s.history.length;
+ $("redo").disabled=!s.redo.length;
 }
 function checkpoint(){if(!s.draft)return;const json=JSON.stringify(s.draft);
  if(s.history.at(-1)?.json===json)return;s.history.push({json,scene:s.scene});
@@ -199,7 +200,10 @@ function select(k){
  $("editingControls").hidden=false;$("editText").value=valueOf(s.draft,k);
  $("selectionStatus").textContent="Selected "+k.split(":").slice(1).join(" ");
  el.focus({preventScroll:true})}
-function sync(k,v){if(!change(s.draft,k,v))return;
+function sync(k,v){
+ if(valueOf(s.draft,k)===v)return;
+ if(!change(s.draft,k,v))return;
+ s.redo.length=0;
  recalc();queue();sceneButtons();refreshNarrativeSearch()}
 function pastePlain(event){
  const node=event.target.closest("[data-edit-key][contenteditable]");
@@ -211,11 +215,17 @@ function pastePlain(event){
  selection.removeAllRanges();selection.addRange(range);
  node.dispatchEvent(new Event("input",{bubbles:true}))}
 function revertField(){if(!s.selected)return;checkpoint();
+ s.redo.length=0;
  change(s.draft,s.selected,valueOf(s.original,s.selected));recalc();queue();render()}
 function undo(){const entry=s.history.pop();if(!entry)return;
+ s.redo.push({json:JSON.stringify(s.draft),scene:s.scene});
+ s.draft=JSON.parse(entry.json);s.scene=entry.scene;recalc();render();queue()}
+function redo(){const entry=s.redo.pop();if(!entry)return;
+ s.history.push({json:JSON.stringify(s.draft),scene:s.scene});
+ if(s.history.length>25)s.history.shift();
  s.draft=JSON.parse(entry.json);s.scene=entry.scene;recalc();render();queue()}
 function reset(){if(!s.dirty.size||!confirm("Discard this journey's narrative draft?"))return;
- s.draft=clone(s.original);s.history=[];s.stale=false;recalc();render();save()}
+ s.draft=clone(s.original);s.history=[];s.redo=[];s.stale=false;recalc();render();save()}
 function review(){
  const list=$("reviewList");list.replaceChildren();
  $("reviewSummary").textContent=s.dirty.size+" edited narrative fields in "+s.journey+".";
@@ -258,7 +268,7 @@ async function loadJourney(){
    throw Error("Journey identity was not recognized.");
   s.original=data.data;s.draft=clone(data.data);
   s.loadedUnit=unit;s.loadedJourney=j;s.hash=fingerprint(data.raw);
-  s.scene=0;s.history=[];s.stale=false;restore();recalc();render();
+   s.scene=0;s.history=[];s.redo=[];s.stale=false;restore();recalc();render();
  }catch(e){notice(e.message);$("saveStatus").textContent="Load failed"}}
 async function loadUnit(unit){
  if(s.draft)save();
@@ -322,6 +332,7 @@ async function init(){
   sync(s.selected,v)});
  $("revertField").addEventListener("click",revertField);
  $("undo").addEventListener("click",undo);
+ $("redo").addEventListener("click",redo);
  $("reset").addEventListener("click",reset);
  $("review").addEventListener("click",review);
  $("export").addEventListener("click",exportFile);
