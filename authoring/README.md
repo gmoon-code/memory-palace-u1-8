@@ -1,6 +1,6 @@
 # Story Method narrative editor foundation
 
-This is a **browser-local narrative authoring tool** for the frozen AP Biology Story Method curriculum. Its standalone HTML, CSS and JavaScript are now explicitly included in the GitHub Pages build **on this unmerged draft branch**. The prospective public editor bookmark after an approved release is `https://gmoon-code.github.io/memory-palace-u1-8/editor.html`, which opens the narrative authoring surface at `/authoring/visual-editor.html`. The student navigation and student runtime are unchanged.
+This is a **browser-local narrative authoring tool** for the frozen AP Biology Story Method curriculum. Its standalone HTML, CSS and JavaScript are included in the GitHub Pages build. The public editor bookmark is `https://gmoon-code.github.io/memory-palace-u1-8/editor.html`, which opens the narrative authoring surface at `/authoring/visual-editor.html`. The student navigation and student runtime are unchanged.
 
 GitHub Pages hosts the editor's files publicly, as it does with other static pages. Anyone with the editor URL could open the **local editor interface**, but it does not grant any permission to change the published curriculum or write to GitHub. The editor stores drafts in its own browser storage and only exports a JSON proposal. Real publication requires a separate authorised workflow. A `noindex` tag is not authentication.
 
@@ -16,7 +16,7 @@ Serve the repository root using a local static server and open `/authoring/visua
 - Read narrative text with the same bold scientific-term emphasis used in the student interface. While editing, the inspector and selected paragraph expose the original `**term**` Markdown, which is preserved in JSON export.
 - Use the inspector for longer edits.
 - Preview the scene at desktop or mobile width.
-- Save local drafts in browser storage, undo, reset, revert a field, and review before-and-after text.
+- Save local drafts in browser storage, undo and redo narrative edits, reset, revert a field, and review before-and-after text. New edits clear the redo history; changing journeys also clears the transient undo and redo stacks.
 - Export a complete journey JSON with stable indentation that matches the repository's source format.
 
 **No edit is sent to the public site or GitHub.** JSON files must be reviewed, checked for scientific accuracy, and validated through the existing frozen-curriculum QA chain before any release.
