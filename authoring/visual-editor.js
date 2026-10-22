@@ -52,7 +52,7 @@ function validate(){
  return ""}
 function allKeys(){if(!s.original)return [];const result=[];
  s.original.scenes.forEach((scene,i)=>{
-  for(const f of ["title","scene_kicker","location_description"])result.push(key(i,f));
+  for(const f of ["scene_kicker","title","location_description"])result.push(key(i,f));
   scene.story_paragraphs.forEach((_,p)=>result.push(key(i,"paragraphs",p)));
  });return result}
 function recalc(){
