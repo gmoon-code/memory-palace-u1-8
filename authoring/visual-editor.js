@@ -178,16 +178,30 @@ function reviewNarrativeReplacement(){
  const list=$("replaceChanges");list.replaceChildren();
  for(const entry of changed.slice(0,15)){
   const item=document.createElement("li");
-  item.textContent="Scene "+(identify(entry.key).scene+1)+" · "+searchLabel(entry.key)+
+  const name=document.createElement("strong");
+  name.textContent="Scene "+(identify(entry.key).scene+1)+" · "+searchLabel(entry.key)+
    " · "+entry.matches+" occurrence"+(entry.matches===1?"":"s");
-  list.appendChild(item);
+  const before=valueOf(s.draft,entry.key),after=valueOf(candidate,entry.key);
+  const first=Math.max(0,before.search(pattern));
+  const snippet=(text)=>{
+   const start=Math.max(0,first-32),end=Math.min(text.length,first+112);
+   return (start?"…":"")+text.slice(start,end).replace(/\s+/g," ")+
+    (end<text.length?"…":"");
+  };
+  const old=document.createElement("p");old.className="replace-before";
+  old.textContent="Before  "+snippet(before);
+  const next=document.createElement("p");next.className="replace-after";
+  next.textContent="After  "+snippet(after);
+  item.append(name,old,next);list.appendChild(item);
  }
  if(changed.length>15){const more=document.createElement("li");
   more.textContent=(changed.length-15)+" additional narrative fields";list.appendChild(more)}
  $("replaceSummary").textContent=count+" replacement"+(count===1?"":"s")+
   " across "+changed.length+" editable narrative field"+(changed.length===1?"":"s")+
   " in "+s.loadedUnit+" · "+s.loadedJourney+
-  ". Confirm to update the local draft. Scientific and curriculum fields remain unchanged.";
+  ". Review the before and after excerpts below"+
+  (changed.length>15?" (first 15 fields shown)":"")+
+  ", then confirm to update the local draft. Scientific and curriculum fields remain unchanged.";
  $("replaceDialog").showModal();
  message.textContent="Review the replacement before applying it.";
 }

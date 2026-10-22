@@ -65,6 +65,8 @@ try{
  await page.locator("#reviewReplace").click();
  await page.locator("#replaceDialog").waitFor({state:"visible"});
  assert.match(await page.locator("#replaceSummary").textContent(),/1 replacement across 1 editable narrative field/);
+ assert.match(await page.locator("#replaceChanges .replace-before").textContent(),/Before/);
+ assert.match(await page.locator("#replaceChanges .replace-after").textContent(),/Temporary heading for search replace/);
  assert.equal(await page.locator("#export").isDisabled(),true);
  await page.locator('#replaceDialog button:has-text("Cancel")').click();
  assert.equal(await page.locator("#export").isDisabled(),true,
