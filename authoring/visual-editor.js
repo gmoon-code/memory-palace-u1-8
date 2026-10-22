@@ -156,7 +156,7 @@ function reviewNarrativeReplacement(){
  if(!s.original||!s.draft){message.textContent="Choose a journey first.";return}
  if(!term){message.textContent="Enter a word or phrase in the search box above.";return}
  if(term.length>200){message.textContent="Choose a search phrase shorter than 201 characters.";return}
- const escaped=term.replace(/[.*+?^${}()|[\]\\]/g,"\\function sceneButtons(){");
+ const escaped=[...term].map(ch=>"\\^$.*+?()|{}[]".includes(ch)?"\\"+ch:ch).join("");
  const pattern=new RegExp(escaped,"gi");
  const candidate=clone(s.draft),changed=[];
  let count=0;
