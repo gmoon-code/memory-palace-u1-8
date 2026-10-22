@@ -198,8 +198,24 @@ function select(k){
  if(k.includes(":paragraphs:"))el.textContent=valueOf(s.draft,k);
  el.setAttribute("contenteditable","plaintext-only");
  $("editingControls").hidden=false;$("editText").value=valueOf(s.draft,k);
- $("selectionStatus").textContent="Selected "+k.split(":").slice(1).join(" ");
+ $("selectionStatus").textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
+ updateFieldNavigation();
  el.focus({preventScroll:true})}
+function updateFieldNavigation(){
+ const fields=allKeys(),index=fields.indexOf(s.selected);
+ $("previousField").disabled=index<=0;
+ $("nextField").disabled=index<0||index===fields.length-1;
+ $("fieldPosition").textContent=index>=0?
+  "Editable field "+(index+1)+" of "+fields.length+" in this journey.":"";
+}
+function navigateField(direction){
+ const fields=allKeys(),index=fields.indexOf(s.selected);
+ if(index<0)return;
+ const next=fields[index+direction];if(!next)return;
+ const scene=identify(next).scene;
+ if(scene!==s.scene){s.scene=scene;render()}
+ select(next);
+}
 function sync(k,v){
  if(valueOf(s.draft,k)===v)return;
  if(!change(s.draft,k,v))return;
@@ -331,6 +347,8 @@ async function init(){
   }
   sync(s.selected,v)});
  $("revertField").addEventListener("click",revertField);
+ $("previousField").addEventListener("click",()=>navigateField(-1));
+ $("nextField").addEventListener("click",()=>navigateField(1));
  $("undo").addEventListener("click",undo);
  $("redo").addEventListener("click",redo);
  $("reset").addEventListener("click",reset);

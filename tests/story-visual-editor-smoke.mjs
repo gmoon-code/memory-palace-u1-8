@@ -65,6 +65,26 @@ try{
  await emphasized.click();
  assert((await page.locator("#editText").inputValue()).includes("**observation**"),
    "The inspector must keep the exact editable Markdown source");
+ assert.match(await page.locator("#fieldPosition").textContent(),/Editable field 5 of /);
+ await page.locator("#previousField").click();
+ assert.equal(await page.locator('[data-edit-key="0:paragraphs:0"][data-selected]').count(),1);
+ await page.locator("#nextField").click();
+ assert.equal(await page.locator('[data-edit-key="0:paragraphs:1"][data-selected]').count(),1);
+ await page.locator('[data-edit-key="0:scene_kicker"]').click();
+ assert.equal(await page.locator("#previousField").isDisabled(),true,
+   "Previous must stop at the first editable narrative field");
+ const lastParagraph=original.scenes[0].story_paragraphs.length-1;
+ await page.locator('[data-edit-key="0:paragraphs:'+lastParagraph+'"]').click();
+ await page.locator("#nextField").click();
+ assert.equal(await page.locator('[data-edit-key="1:scene_kicker"][data-selected]').count(),1,
+   "Next must continue into the next scene");
+ assert.match(await page.locator("#journeyLabel").textContent(),/Scene 2 of /);
+ await page.locator("#previousField").click();
+ assert.equal(await page.locator(
+   '[data-edit-key="0:paragraphs:'+lastParagraph+'"][data-selected]').count(),1,
+   "Previous must return to the previous scene's final paragraph");
+ assert.equal(await page.locator("#export").isDisabled(),true,
+   "Field navigation must never edit student narrative");
  const title=page.locator('[data-edit-key="0:title"]');
  await title.click();
  await page.locator("#editText").fill("The Observation That Begins the Investigation");

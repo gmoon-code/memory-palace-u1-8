@@ -81,6 +81,11 @@
       <h2>Element settings</h2>
       <p id="selectionStatus" aria-live="polite">Select text in the scene preview.</p>
       <div id="editingControls" hidden>
+        <div class="field-navigation" role="group" aria-label="Move between editable narrative fields">
+          <button id="previousField" type="button" disabled>← Previous</button>
+          <span id="fieldPosition" role="status" aria-live="polite"></span>
+          <button id="nextField" type="button" disabled>Next →</button>
+        </div>
         <label for="editText">Selected text</label>
         <textarea id="editText" rows="12" spellcheck="true"></textarea>
         <button id="revertField" type="button">Revert this field</button>

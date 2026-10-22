@@ -129,3 +129,9 @@ dialog form{text-align:right;margin-top:20px}
   white-space:pre-wrap;
   outline-color:#258564;
 }
+
+/* Navigate narrative fields without exposing science data. */
+.field-navigation{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:12px 0 16px}
+.field-navigation button{min-height:38px;padding:8px 10px;flex:0 0 auto}
+.field-navigation span{font:13px/1.4 system-ui,sans-serif;color:var(--muted);flex:1 1 110px;min-width:0}
+@media(max-width:400px){.field-navigation span{flex-basis:100%;order:-1}}
