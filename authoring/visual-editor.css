@@ -129,3 +129,30 @@ dialog form{text-align:right;margin-top:20px}
   white-space:pre-wrap;
   outline-color:#258564;
 }
+
+/* Navigate narrative fields without exposing science data. */
+.field-navigation{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:12px 0 16px}
+.field-navigation button{min-height:38px;padding:8px 10px;flex:0 0 auto}
+.field-navigation span{font:13px/1.4 system-ui,sans-serif;color:var(--muted);flex:1 1 110px;min-width:0}
+@media(max-width:400px){.field-navigation span{flex-basis:100%;order:-1}}
+
+/* Source comparison stays collapsed until requested, without altering the draft. */
+.field-length{margin:7px 0 12px;color:var(--muted);font:12px/1.5 system-ui,sans-serif}
+.field-length[data-warning="true"]{color:#993c38;font-weight:700}
+.original-field-compare{margin:8px 0 14px;border:1px solid var(--line);border-radius:3px;padding:9px;background:#f8f8f6}
+.original-field-compare summary{cursor:pointer;font-size:13px;font-weight:700}
+.original-field-compare p{white-space:pre-wrap;overflow-wrap:anywhere;max-height:300px;overflow:auto;font-size:13px;line-height:1.55;margin:10px 0 0}
+
+/* Narrative restore review remains local until the user confirms. */
+#restoreExport{margin-top:6px;max-width:100%;white-space:normal;text-align:left}
+#importChanges{max-height:200px;overflow:auto;font-size:13px;line-height:1.6;padding-left:22px}
+.import-actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:18px}
+.import-actions form{margin:0}
+
+/* Bulk narrative replacement is a deliberate, collapsed editing action. */
+.narrative-replace{margin-top:14px;padding:10px 0;border-top:1px solid var(--line)}
+.narrative-replace summary{cursor:pointer;font-weight:700;font-size:13px;line-height:1.5}
+.narrative-replace p{font-size:12px;color:var(--muted);line-height:1.5}
+.narrative-replace input{min-width:0;width:100%;margin-bottom:10px}
+.narrative-replace button{width:100%;white-space:normal}
+.replace-change-list{max-height:240px;overflow:auto;padding-left:24px;font-size:13px;line-height:1.7}

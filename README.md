@@ -91,3 +91,15 @@ python scripts/build_site_ux1_release.py --output MemoryPalace_V2_Mainline_Units
 ## Release boundary
 
 **AP Biology Units 1–8 are complete at F6, and the student shell remains Site UX1 over that frozen curriculum.** The GitHub Pages work changes production hosting and data delivery only. Future curriculum work should begin from the frozen F6 content boundary. Future interface work should create a new site revision without silently rewriting the Site UX1 lock.
+
+## Narrative editor draft restore (development branch)
+
+The authoring-only Story Method narrative editor can restore a previously exported journey JSON file to the **current browser-local draft**. It displays the editable fields that differ from the frozen source and requires explicit confirmation. Validation compares protected scene, scientific, review and identity records with the loaded journey and checks narrative lengths and synchronized opening/closing paragraphs before allowing restoration. The user can cancel without changing the draft, and restoration participates in Undo/Redo. Imports are limited to 2 MB and never publish or modify the frozen curriculum. This feature is under draft PR review until the editor browser test and Memory Palace QA pass.
+
+## Narrative search and replacement (development branch)
+
+The Story Method narrative-only editor now supports reviewed, journey-scoped, case-insensitive replacement of words or phrases within editable scene titles, kickers, location descriptions and story paragraphs. The replacement control remains collapsed until requested. The user reviews matching fields and occurrence counts, then explicitly confirms a single local-draft operation. The editor validates the complete candidate against frozen scientific and curriculum data before presenting a confirmation, verifies the loaded journey and draft have not changed, and records a single Undo checkpoint. A cancelled or invalid replacement leaves the draft unchanged. Original scene identity, scientific records, checkpoint data and published files remain protected.
+
+## Mobile narrative editing shortcut (draft)
+
+On screens up to 620 px wide, selecting narrative text in the Story Method scene preview shows a compact, dismissible quick-edit bar. **Edit in settings** scrolls to the existing inspector and focuses the selected field's editable text area. The shortcut does not alter scientific content, create a draft change or bypass export validation; it also remains invisible on wider viewports. Browser tests check the 390 px layout, focus placement, dismissal, re-selection and absence of accidental draft changes.

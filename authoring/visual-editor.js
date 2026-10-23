@@ -3,9 +3,11 @@
 "use strict";
 const $=id=>document.getElementById(id);
 const PREFIX="story-method-narrative-draft-v1:";
+let pendingImport=null;
+let pendingReplacement=null;
 const s={unit:"",journey:"",loadedUnit:"",loadedJourney:"",
   original:null,draft:null,hash:"",scene:0,
-  selected:null,dirty:new Set(),history:[],stale:false,timer:null,
+  selected:null,dirty:new Set(),history:[],redo:[],stale:false,timer:null,
   ticket:0,unitTicket:0};
 const clone=x=>JSON.parse(JSON.stringify(x));
 const key=(i,f,p)=>String(i)+":"+f+(p===undefined?"":":"+p);
@@ -29,12 +31,17 @@ function protectedData(data){const c=clone(data);
  for(const x of c.scenes||[]){for(const field of
  ["title","scene_kicker","location_description","story_paragraphs","story_open","story_close"])
  delete x[field]}return JSON.stringify(c)}
-function validate(){
- if(!s.original||!s.draft)return "No journey loaded";
- if(protectedData(s.original)!==protectedData(s.draft))
+function validate(candidate=s.draft){
+ if(!s.original||!candidate||typeof candidate!=="object"||Array.isArray(candidate))
+ return "No valid journey loaded.";
+ if(!Array.isArray(candidate.scenes)||
+    candidate.scenes.length!==s.original.scenes.length||
+    candidate.scenes.some(scene=>!scene||typeof scene!=="object"||Array.isArray(scene)))
+ return "Journey scenes do not match the current source.";
+ if(protectedData(s.original)!==protectedData(candidate))
  return "A protected scientific, review, or identity field has changed.";
  for(let i=0;i<s.original.scenes.length;i++){
-  const a=s.original.scenes[i],b=s.draft.scenes[i];
+  const a=s.original.scenes[i],b=candidate.scenes[i];
   if(!["title","scene_kicker","location_description"].every(f=>
    typeof b[f]==="string"&&b[f].trim().length>0&&b[f].length<5000))
    return "Scene "+(i+1)+" contains an empty or overlong field.";
@@ -50,9 +57,10 @@ function validate(){
   }else if(b.story_close!==a.story_close)return "Protected closing changed.";
  }
  return ""}
+
 function allKeys(){if(!s.original)return [];const result=[];
  s.original.scenes.forEach((scene,i)=>{
-  for(const f of ["title","scene_kicker","location_description"])result.push(key(i,f));
+  for(const f of ["scene_kicker","title","location_description"])result.push(key(i,f));
   scene.story_paragraphs.forEach((_,p)=>result.push(key(i,"paragraphs",p)));
  });return result}
 function recalc(){
@@ -63,6 +71,7 @@ function recalc(){
  $("reset").disabled=!count;$("review").disabled=!count;
  $("export").disabled=!count||!!validate();
  $("undo").disabled=!s.history.length;
+ $("redo").disabled=!s.redo.length;
 }
 function checkpoint(){if(!s.draft)return;const json=JSON.stringify(s.draft);
  if(s.history.at(-1)?.json===json)return;s.history.push({json,scene:s.scene});
@@ -138,6 +147,80 @@ function refreshNarrativeSearch(){
  }
  if(matches.length>60)status.textContent+=" First 60 results shown.";
 }
+// This search-and-replace operation touches only explicitly editable
+// narrative fields. Always validate the complete reconstructed journey.
+function reviewNarrativeReplacement(){
+ const term=$("narrativeSearch").value.trim();
+ const replacement=$("narrativeReplaceWith").value;
+ const message=$("replaceStatus");
+ if(!s.original||!s.draft){message.textContent="Choose a journey first.";return}
+ if(!term){message.textContent="Enter a word or phrase in the search box above.";return}
+ if(term.length>200){message.textContent="Choose a search phrase shorter than 201 characters.";return}
+ const escaped=[...term].map(ch=>"\\^$.*+?()|{}[]".includes(ch)?"\\"+ch:ch).join("");
+ const pattern=new RegExp(escaped,"gi");
+ const candidate=clone(s.draft),changed=[];
+ let count=0;
+ for(const k of allKeys()){
+  const source=valueOf(s.draft,k);
+  if(typeof source!=="string")continue;
+  const matches=source.match(pattern)?.length||0;
+  if(!matches)continue;
+  const next=source.replace(pattern,()=>replacement);
+  if(next===source)continue;
+  if(!change(candidate,k,next)){message.textContent="Replacement cannot edit this field.";return}
+  count+=matches;changed.push({key:k,matches});
+ }
+ if(!count){message.textContent="No changes to review. Check the search phrase and replacement.";return}
+ const problem=validate(candidate);
+ if(problem){message.textContent="Replacement blocked. "+problem;return}
+ pendingReplacement={unit:s.loadedUnit,journey:s.loadedJourney,hash:s.hash,
+  before:JSON.stringify(s.draft),candidate,count,changed};
+ const list=$("replaceChanges");list.replaceChildren();
+ for(const entry of changed.slice(0,15)){
+  const item=document.createElement("li");
+  const name=document.createElement("strong");
+  name.textContent="Scene "+(identify(entry.key).scene+1)+" · "+searchLabel(entry.key)+
+   " · "+entry.matches+" occurrence"+(entry.matches===1?"":"s");
+  const before=valueOf(s.draft,entry.key),after=valueOf(candidate,entry.key);
+  const first=Math.max(0,before.search(pattern));
+  const snippet=(text)=>{
+   const start=Math.max(0,first-32),end=Math.min(text.length,first+112);
+   return (start?"…":"")+text.slice(start,end).replace(/\s+/g," ")+
+    (end<text.length?"…":"");
+  };
+  const old=document.createElement("p");old.className="replace-before";
+  old.textContent="Before  "+snippet(before);
+  const next=document.createElement("p");next.className="replace-after";
+  next.textContent="After  "+snippet(after);
+  item.append(name,old,next);list.appendChild(item);
+ }
+ if(changed.length>15){const more=document.createElement("li");
+  more.textContent=(changed.length-15)+" additional narrative fields";list.appendChild(more)}
+ $("replaceSummary").textContent=count+" replacement"+(count===1?"":"s")+
+  " across "+changed.length+" editable narrative field"+(changed.length===1?"":"s")+
+  " in "+s.loadedUnit+" · "+s.loadedJourney+
+  ". Review the before and after excerpts below"+
+  (changed.length>15?" (first 15 fields shown)":"")+
+  ", then confirm to update the local draft. Scientific and curriculum fields remain unchanged.";
+ $("replaceDialog").showModal();
+ message.textContent="Review the replacement before applying it.";
+}
+function applyNarrativeReplacement(){
+ const entry=pendingReplacement;
+ if(!entry)return;
+ if(entry.unit!==s.loadedUnit||entry.journey!==s.loadedJourney||
+    entry.hash!==s.hash||entry.before!==JSON.stringify(s.draft)||
+    validate(entry.candidate)){
+  pendingReplacement=null;$("replaceDialog").close();
+  $("replaceStatus").textContent="Replacement cancelled. The draft or journey changed.";
+  return;
+ }
+ checkpoint();s.redo.length=0;
+ s.draft=clone(entry.candidate);recalc();render();queue();
+ pendingReplacement=null;$("replaceDialog").close();
+ $("replaceStatus").textContent=entry.count+" replacement"+
+  (entry.count===1?"":"s")+" applied to your local narrative draft. Undo is available.";
+}
 function sceneButtons(){
  const nav=$("sceneList");nav.replaceChildren();
  s.draft.scenes.forEach((scene,i)=>{
@@ -172,6 +255,7 @@ function previewElement(tag,className,k,text){
  return el}
 function render(){
  const box=$("scenePreview");box.replaceChildren();s.selected=null;$("editingControls").hidden=true;
+ $("mobileSelectionBar").hidden=true;
  const scene=s.draft?.scenes?.[s.scene];if(!scene)return;
  $("journeyLabel").textContent="Scene "+(s.scene+1)+" of "+s.draft.scenes.length+
    " · "+scene.locus;
@@ -197,10 +281,42 @@ function select(k){
  if(k.includes(":paragraphs:"))el.textContent=valueOf(s.draft,k);
  el.setAttribute("contenteditable","plaintext-only");
  $("editingControls").hidden=false;$("editText").value=valueOf(s.draft,k);
- $("selectionStatus").textContent="Selected "+k.split(":").slice(1).join(" ");
+ $("selectionStatus").textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
+ $("mobileSelectionLabel").textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
+ $("mobileSelectionBar").hidden=false;
+ updateFieldNavigation();
+ updateSelectedInspector();
  el.focus({preventScroll:true})}
-function sync(k,v){if(!change(s.draft,k,v))return;
- recalc();queue();sceneButtons();refreshNarrativeSearch()}
+function updateFieldNavigation(){
+ const fields=allKeys(),index=fields.indexOf(s.selected);
+ $("previousField").disabled=index<=0;
+ $("nextField").disabled=index<0||index===fields.length-1;
+ $("fieldPosition").textContent=index>=0?
+  "Editable field "+(index+1)+" of "+fields.length+" in this journey.":"";
+}
+function navigateField(direction){
+ const fields=allKeys(),index=fields.indexOf(s.selected);
+ if(index<0)return;
+ const next=fields[index+direction];if(!next)return;
+ const scene=identify(next).scene;
+ if(scene!==s.scene){s.scene=scene;render()}
+ select(next);
+}
+function updateSelectedInspector(){
+ if(!s.selected)return;
+ const spec=identify(s.selected),value=String(valueOf(s.draft,s.selected)||"");
+ const baseline=String(valueOf(s.original,s.selected)||"");
+ const limit=spec.field==="paragraphs"?5999:4999;
+ $("originalFieldText").textContent=baseline;
+ $("selectionLength").textContent=value.length+" of "+limit+" permitted characters";
+ $("selectionLength").dataset.warning=String(value.length>limit);
+}
+function sync(k,v){
+ if(valueOf(s.draft,k)===v)return;
+ if(!change(s.draft,k,v))return;
+ s.redo.length=0;
+ recalc();queue();sceneButtons();refreshNarrativeSearch();
+ if(s.selected===k)updateSelectedInspector()}
 function pastePlain(event){
  const node=event.target.closest("[data-edit-key][contenteditable]");
  if(!node)return;event.preventDefault();
@@ -211,11 +327,17 @@ function pastePlain(event){
  selection.removeAllRanges();selection.addRange(range);
  node.dispatchEvent(new Event("input",{bubbles:true}))}
 function revertField(){if(!s.selected)return;checkpoint();
+ s.redo.length=0;
  change(s.draft,s.selected,valueOf(s.original,s.selected));recalc();queue();render()}
 function undo(){const entry=s.history.pop();if(!entry)return;
+ s.redo.push({json:JSON.stringify(s.draft),scene:s.scene});
+ s.draft=JSON.parse(entry.json);s.scene=entry.scene;recalc();render();queue()}
+function redo(){const entry=s.redo.pop();if(!entry)return;
+ s.history.push({json:JSON.stringify(s.draft),scene:s.scene});
+ if(s.history.length>25)s.history.shift();
  s.draft=JSON.parse(entry.json);s.scene=entry.scene;recalc();render();queue()}
 function reset(){if(!s.dirty.size||!confirm("Discard this journey's narrative draft?"))return;
- s.draft=clone(s.original);s.history=[];s.stale=false;recalc();render();save()}
+ s.draft=clone(s.original);s.history=[];s.redo=[];s.stale=false;recalc();render();save()}
 function review(){
  const list=$("reviewList");list.replaceChildren();
  $("reviewSummary").textContent=s.dirty.size+" edited narrative fields in "+s.journey+".";
@@ -238,6 +360,53 @@ function exportFile(){
  document.body.appendChild(link);link.click();link.remove();
  setTimeout(()=>URL.revokeObjectURL(url),10000);
  $("saveStatus").textContent="JSON exported · Not published"}
+// Restoring a previously exported narrative never publishes a file. Check
+// the full frozen science and journey identity before showing Apply.
+async function prepareNarrativeImport(event){
+ const file=event.target.files?.[0];
+ event.target.value="";
+ if(!file)return;
+ if(!s.original||!s.draft){notice("Choose a journey before restoring a narrative.");return}
+ if(file.size>2*1024*1024){notice("Narrative JSON exceeds the 2 MB import limit.");return}
+ const unit=s.loadedUnit,journey=s.loadedJourney,hash=s.hash;
+ let candidate;
+ try{candidate=JSON.parse(await file.text())}
+ catch{notice("The selected file is not valid JSON.");return}
+ if(s.loadedUnit!==unit||s.loadedJourney!==journey||s.hash!==hash){
+  notice("The selected journey changed during import. Choose the file again.");return}
+ const problem=validate(candidate);
+ if(problem){notice("Import blocked. "+problem);return}
+ const changed=allKeys().filter(k=>valueOf(s.original,k)!==valueOf(candidate,k));
+ pendingImport={candidate,unit,journey,hash};
+ $("importSummary").textContent=unit+" · "+journey+" · "+changed.length+
+  " changed narrative field"+(changed.length===1?"":"s")+
+  ". Applying this file replaces the current browser-local draft for this journey. "+
+  "It will not publish or change any protected curriculum content.";
+ const list=$("importChanges");list.replaceChildren();
+ for(const k of changed.slice(0,8)){
+  const li=document.createElement("li");
+  li.textContent="Scene "+(identify(k).scene+1)+" · "+searchLabel(k);
+  list.append(li)}
+ if(changed.length>8){const li=document.createElement("li");
+  li.textContent="And "+(changed.length-8)+" more editable fields";list.append(li)}
+ $("importDialog").showModal();
+}
+function applyNarrativeImport(){
+ const entry=pendingImport;
+ if(!entry)return;
+ if(s.loadedUnit!==entry.unit||s.loadedJourney!==entry.journey||
+    s.hash!==entry.hash||validate(entry.candidate)){
+  pendingImport=null;$("importDialog").close();
+  notice("Import no longer matches the selected frozen journey.");return}
+ if(JSON.stringify(entry.candidate)!==JSON.stringify(s.draft)){
+  checkpoint();
+  s.redo.length=0;
+  s.draft=clone(entry.candidate);s.stale=false;
+  recalc();render();save();
+ }
+ pendingImport=null;$("importDialog").close();
+ $("saveStatus").textContent="Narrative export restored to local draft · Not published";
+}
 async function fetchData(relative){
  const url=new URL("../content/ap-biology/"+relative,location.href);
  const result=await fetch(url,{cache:"no-store",credentials:"same-origin"});
@@ -258,7 +427,7 @@ async function loadJourney(){
    throw Error("Journey identity was not recognized.");
   s.original=data.data;s.draft=clone(data.data);
   s.loadedUnit=unit;s.loadedJourney=j;s.hash=fingerprint(data.raw);
-  s.scene=0;s.history=[];s.stale=false;restore();recalc();render();
+   s.scene=0;s.history=[];s.redo=[];s.stale=false;restore();recalc();render();
  }catch(e){notice(e.message);$("saveStatus").textContent="Load failed"}}
 async function loadUnit(unit){
  if(s.draft)save();
@@ -287,6 +456,9 @@ async function init(){
  $("journey").addEventListener("change",event=>{
   s.journey=event.target.value;loadJourney()});
  $("narrativeSearch").addEventListener("input",refreshNarrativeSearch);
+ $("reviewReplace").addEventListener("click",reviewNarrativeReplacement);
+ $("applyReplace").addEventListener("click",applyNarrativeReplacement);
+ $("replaceDialog").addEventListener("close",()=>{pendingReplacement=null});
  $("viewport").addEventListener("change",event=>{
   $("scenePreview").className="scene-preview "+event.target.value});
  $("scenePreview").addEventListener("click",event=>{
@@ -309,6 +481,25 @@ async function init(){
   const el=event.target.closest("[data-edit-key]");if(!el)return;
   const v=el.textContent;sync(el.dataset.editKey,v);
   if(s.selected===el.dataset.editKey)$("editText").value=v});
+ $("mobileEditInInspector").addEventListener("click",()=>{
+  if(!s.selected)return;
+  $("mobileSelectionBar").hidden=true;
+  $("storyInspector").scrollIntoView({block:"start",behavior:"auto"});
+  $("editText").focus({preventScroll:true});
+ });
+ $("mobileBackToPassage").addEventListener("click",()=>{
+  if(!s.selected)return;
+  const target=$("scenePreview").querySelector('[data-edit-key="'+s.selected+'"]');
+  if(!target)return;
+  // Paragraphs return to formatted, non-editable reading mode when the
+  // inspector gains focus. Re-select the field to restore its editable mode.
+  select(s.selected);
+  target.scrollIntoView({block:"center",behavior:"auto"});
+  $("mobileSelectionBar").hidden=false;
+ });
+ $("mobileDismissSelection").addEventListener("click",()=>{
+  $("mobileSelectionBar").hidden=true;
+ });
  $("editText").addEventListener("focus",checkpoint);
  $("editText").addEventListener("input",event=>{
   if(!s.selected)return;const v=event.target.value;
@@ -321,10 +512,17 @@ async function init(){
   }
   sync(s.selected,v)});
  $("revertField").addEventListener("click",revertField);
+ $("previousField").addEventListener("click",()=>navigateField(-1));
+ $("nextField").addEventListener("click",()=>navigateField(1));
  $("undo").addEventListener("click",undo);
+ $("redo").addEventListener("click",redo);
  $("reset").addEventListener("click",reset);
  $("review").addEventListener("click",review);
  $("export").addEventListener("click",exportFile);
+ $("restoreExport").addEventListener("click",()=>$("importNarrativeFile").click());
+ $("importNarrativeFile").addEventListener("change",prepareNarrativeImport);
+ $("applyImport").addEventListener("click",applyNarrativeImport);
+ $("importDialog").addEventListener("close",()=>{pendingImport=null});
  window.addEventListener("beforeunload",()=>{if(s.draft)save()});
 }
 document.addEventListener("DOMContentLoaded",init);
